@@ -1,0 +1,169 @@
+{
+ "purpose": "봉신/vassal 계열 전환(게이트 C1): 위키 문서(030). 봉신 가문·세력→산하 가문·세력, 휴머노이드 가신→수행원(가정 업무 보조, 봉건 주종 아님), 철도후국→용산 선로권, 현대의 봉건제→임명제. 개국공신/founding retainer는 CANON-BIBLE 2.7 용어라 유지한다.",
+ "hold": [],
+ "rules": [
+  {
+   "id": "vs-ca-en",
+   "file": "030",
+   "from": "telegraph offices and vassal families remaining within them",
+   "to": "telegraph offices and subordinate families remaining within them",
+   "expect": 1,
+   "key": "Century-Annals",
+   "col": "body_md"
+  },
+  {
+   "id": "vs-ca-ko",
+   "file": "030",
+   "from": "전신국과 봉신 가문",
+   "to": "전신국과 산하 가문",
+   "expect": 1,
+   "key": "Century-Annals",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-fcs-head-en",
+   "file": "030",
+   "from": "## Households and Humanoid Retainers",
+   "to": "## Households and Humanoid Attendants",
+   "expect": 1,
+   "key": "Faith-Culture-Schism",
+   "col": "body_md"
+  },
+  {
+   "id": "vs-fcs-ret-en",
+   "file": "030",
+   "from": "\\b(humanoid )?retainers\\b",
+   "to": "$1attendants",
+   "expect": 4,
+   "re": true,
+   "key": "Faith-Culture-Schism",
+   "col": "body_md"
+  },
+  {
+   "id": "vs-fcs-ko-noun",
+   "file": "030",
+   "from": "휴머노이드 가신",
+   "to": "휴머노이드 수행원",
+   "expect": 2,
+   "key": "Faith-Culture-Schism",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-fcs-ko-1",
+   "file": "030",
+   "from": "가신을 들이는",
+   "to": "수행원을 들이는",
+   "expect": 1,
+   "key": "Faith-Culture-Schism",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-fcs-ko-2",
+   "file": "030",
+   "from": "직급만으로 가신이나",
+   "to": "직급만으로 수행원이나",
+   "expect": 1,
+   "key": "Faith-Culture-Schism",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-fcs-ko-3",
+   "file": "030",
+   "from": "주인의 가신 성별",
+   "to": "주인의 수행원 성별",
+   "expect": 1,
+   "key": "Faith-Culture-Schism",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-fcs-ko-4",
+   "file": "030",
+   "from": "가신과 주인의",
+   "to": "수행원과 주인의",
+   "expect": 1,
+   "key": "Faith-Culture-Schism",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-g02-ko",
+   "file": "030",
+   "from": "철도후국 선로원",
+   "to": "용산 선로권의 선로원",
+   "expect": 1,
+   "key": "Hostile-Group-G02",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-ltl-en-1",
+   "file": "030",
+   "from": "dynasties and vassal powers inherited",
+   "to": "dynasties and subordinate powers inherited",
+   "expect": 1,
+   "key": "Lost-Technology-Lineage",
+   "col": "body_md"
+  },
+  {
+   "id": "vs-ltl-en-2",
+   "file": "030",
+   "from": "Dynasties and the vassal powers following them",
+   "to": "Dynasties and the subordinate powers following them",
+   "expect": 1,
+   "key": "Lost-Technology-Lineage",
+   "col": "body_md"
+  },
+  {
+   "id": "vs-ltl-en-3",
+   "file": "030",
+   "from": "If one vassal house",
+   "to": "If one subordinate house",
+   "expect": 1,
+   "key": "Lost-Technology-Lineage",
+   "col": "body_md"
+  },
+  {
+   "id": "vs-ltl-ko-1",
+   "file": "030",
+   "from": "왕조와 봉신 세력은",
+   "to": "왕조와 산하 세력은",
+   "expect": 1,
+   "key": "Lost-Technology-Lineage",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-ltl-ko-2",
+   "file": "030",
+   "from": "따르는 봉신 세력은",
+   "to": "따르는 산하 세력은",
+   "expect": 1,
+   "key": "Lost-Technology-Lineage",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-ltl-ko-3",
+   "file": "030",
+   "from": "한 봉신 가문이",
+   "to": "한 산하 가문이",
+   "expect": 1,
+   "key": "Lost-Technology-Lineage",
+   "col": "body_ko_md"
+  },
+  {
+   "id": "vs-st-en",
+   "file": "030",
+   "from": "in reality it is a modern feudal system.",
+   "to": "in reality it is a modern system of rule by appointment.",
+   "expect": 1,
+   "key": "Scenario-Timeline",
+   "col": "body_md"
+  },
+  {
+   "id": "vs-st-ko",
+   "file": "030",
+   "from": "실상은 현대의 봉건제다.",
+   "to": "실상은 대통령의 임명으로 굴러가는 현대의 임명제다.",
+   "expect": 1,
+   "key": "Scenario-Timeline",
+   "col": "body_ko_md"
+  }
+ ]
+}

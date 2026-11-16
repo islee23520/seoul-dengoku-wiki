@@ -2028,7 +2028,7 @@ In May 2122 nineteen young record officers from the Government''s duty families 
 
 ##### B. The Declaration
 
-In June 2122 Onminui posted a document titled "Seoul United and a Whole Republic of Korea" on the government complex bulletin board. The document stated that the various powers of Seoul, along with the telegraph offices and vassal families remaining within them and the 13 strongholds, must be bound together again under the Government''s emergency decree. Its nineteen signatories included Gim Yeongyu.
+In June 2122 Onminui posted a document titled "Seoul United and a Whole Republic of Korea" on the government complex bulletin board. The document stated that the various powers of Seoul, along with the telegraph offices and subordinate families remaining within them and the 13 strongholds, must be bound together again under the Government''s emergency decree. Its nineteen signatories included Gim Yeongyu.
 
 <a id="ch41-i3"></a>
 
@@ -4022,7 +4022,7 @@ The present is the winter of 2126. The Government''s President is Kim Yeongyu, t
 
 ##### 나. 선언
 
-2122년 6월 온민의는 ''서울 1통과 온전한 대한민국''이라는 제목의 문서를 청사 게시판에 붙였다. 문서에는 서울의 여러 세력과 그 안에 남은 전신국과 봉신 가문, 13개 거점을 정부의 긴급명령 아래 다시 묶어야 한다고 적혔다. 서명자는 김연규를 포함한 19명이었다.
+2122년 6월 온민의는 ''서울 1통과 온전한 대한민국''이라는 제목의 문서를 청사 게시판에 붙였다. 문서에는 서울의 여러 세력과 그 안에 남은 전신국과 산하 가문, 13개 거점을 정부의 긴급명령 아래 다시 묶어야 한다고 적혔다. 서명자는 김연규를 포함한 19명이었다.
 
 <a id="ch41-i3"></a>
 
@@ -6329,11 +6329,11 @@ Winter is the problem Arc''s teaching answered. People fled the cold into the su
 
 The religions that stood before Arc do not remain. In today''s Seoul there is no organised religion other than Arc.
 
-## Households and Humanoid Retainers
+## Households and Humanoid Attendants
 
-Higher-ranking houses retain humanoids for ledger checks, communication, escort assistance, and household work. Admission requires quarters, a responsible maintainer, spare parts, and sustained power. Rank makes these resources easier to secure but does not create retainers or maintenance supplies by itself. Each humanoid remains subject to its own memory and communication limits and does not know every affair of the house.
+Higher-ranking houses retain humanoids for ledger checks, communication, escort assistance, and household work. Admission requires quarters, a responsible maintainer, spare parts, and sustained power. Rank makes these resources easier to secure but does not create attendants or maintenance supplies by itself. Each humanoid remains subject to its own memory and communication limits and does not know every affair of the house.
 
-A heterosexual male head prefers female humanoid retainers, and a heterosexual female head prefers male retainers. Other orientations do not fix retainers to one gender. This preference concerns household admission, not a romantic or familial relationship. Duties, limits on obedience and refusal, custody, and maintenance responsibility are specified separately for each appointment.
+A heterosexual male head prefers female humanoid attendants, and a heterosexual female head prefers male attendants. Other orientations do not fix attendants to one gender. This preference concerns household admission, not a romantic or familial relationship. Duties, limits on obedience and refusal, custody, and maintenance responsibility are specified separately for each appointment.
 
 Go Ye-jin keeps no humanoid at her side. To command something better than oneself struck her as a contradiction. That is why her bodyguard is a person.
 
@@ -6389,11 +6389,11 @@ Go Ye-jin keeps no humanoid at her side. To command something better than onesel
 
 아크가 서기 전의 종교는 남아 있지 않다. 현재 서울에는 아크 외에 조직된 종교가 없다.
 
-## 가문과 휴머노이드 가신
+## 가문과 휴머노이드 수행원
 
-상위 직급의 가문은 장부 대조, 연락, 호위 보조와 살림 업무를 맡는 휴머노이드 가신을 둔다. 가신을 들이는 데에는 거처, 정비 담당자, 교체 부품과 전력 공급을 유지할 수 있는 기반이 필요하다. 높은 직급은 이런 기반을 갖추기 쉽지만, 직급만으로 가신이나 정비 자원이 생기지는 않는다. 휴머노이드의 기억과 통신은 기체별 한계를 따르며 가문의 모든 사정을 아는 존재가 아니다.
+상위 직급의 가문은 장부 대조, 연락, 호위 보조와 살림 업무를 맡는 휴머노이드 수행원을 둔다. 수행원을 들이는 데에는 거처, 정비 담당자, 교체 부품과 전력 공급을 유지할 수 있는 기반이 필요하다. 높은 직급은 이런 기반을 갖추기 쉽지만, 직급만으로 수행원이나 정비 자원이 생기지는 않는다. 휴머노이드의 기억과 통신은 기체별 한계를 따르며 가문의 모든 사정을 아는 존재가 아니다.
 
-이성을 선호하는 남성 주인은 여성 휴머노이드를, 여성 주인은 남성 휴머노이드를 선호한다. 이성 선호가 아닌 주인의 가신 성별은 한 방향으로 고정되지 않는다. 이 선호는 누구를 가문에 들일지에 관한 선택이며, 가신과 주인의 연애 관계나 가족 관계를 뜻하지 않는다. 맡는 직무, 복종과 거부의 경계, 보관과 정비 책임은 각 관계에서 따로 정한다.
+이성을 선호하는 남성 주인은 여성 휴머노이드를, 여성 주인은 남성 휴머노이드를 선호한다. 이성 선호가 아닌 주인의 수행원 성별은 한 방향으로 고정되지 않는다. 이 선호는 누구를 가문에 들일지에 관한 선택이며, 수행원과 주인의 연애 관계나 가족 관계를 뜻하지 않는다. 맡는 직무, 복종과 거부의 경계, 보관과 정비 책임은 각 관계에서 따로 정한다.
 
 고예진은 휴머노이드를 곁에 두지 않는다. 자기보다 나은 것을 부하로 부리는 것은 앞뒤가 맞지 않는다고 보기 때문이다. 그래서 고예진의 경호원은 사람이다.
 
@@ -16686,7 +16686,7 @@ G02-SC1에서 두목 쌍이 음형을 멀리 보내려고 고른 개체가 이 �
 
 ### 협상·도덕 선택
 
-G02-SC2의 가짜 정전 분류가 울리기 전에 해륜 기동문과 철도후국 선로원과 골목 종지기가 중계 횃대 보관자를 한 명만 남긴다. 보관자가 바뀌는 주에는 점검 종의 메아리 경로가 사람 손으로 옮겨지며, 손을 비우면 울음이 정전 전조로 다시 붙는다. 잘못된 작업 지시서 한 장이 다른 탑의 절연 공백으로 이어지고, 그 뒤는 선로원 교대가 맡는다.
+G02-SC2의 가짜 정전 분류가 울리기 전에 해륜 기동문과 용산 선로권의 선로원과 골목 종지기가 중계 횃대 보관자를 한 명만 남긴다. 보관자가 바뀌는 주에는 점검 종의 메아리 경로가 사람 손으로 옮겨지며, 손을 비우면 울음이 정전 전조로 다시 붙는다. 잘못된 작업 지시서 한 장이 다른 탑의 절연 공백으로 이어지고, 그 뒤는 선로원 교대가 맡는다.
 
 <a id="Hostile-Group-G02-heading-0101"></a>
 
@@ -43394,7 +43394,7 @@ In later Seoul an old lost tech did not become a relic merely because years had 
 
 B. Struggles among successor polities
 
-The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn their jurisdiction.
+The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and subordinate powers inherited in turn their jurisdiction.
 
 C. Fixed roles of the two lines
 
@@ -43457,7 +43457,7 @@ With the servers cut and even the vault holding the drawings firmly shut, the re
 4. Survival in the same place had to repeat
 Only a community that had clung to one module and stubbornly survived three times or more took that mass of iron as its center. A single lucky chance remained merely a useful trading item.
 5. A place-power had to claim jurisdiction
-The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
+The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the subordinate powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
 
 ### Relic Interpretation by Lineage
 
@@ -43475,7 +43475,7 @@ The very same G25 charging module was the core of the substation equipment to on
 
 D. Public and hidden customs
 
-The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
+The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one subordinate house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
 
 E. Fixed number of lines
 
@@ -43637,7 +43637,7 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 
 나. 후계 정치체의 다툼
 
-옛 국가의 영광은 전설로 남았다. 지역 후계 정치체들이 낡은 잔해를 두고 다툰다. 지역 분열은 거창한 이념보다 구와 역, 노선 단위에서 먼저 나타난다. 왕조와 봉신 세력은 관할권을 차례로 상속받는다.
+옛 국가의 영광은 전설로 남았다. 지역 후계 정치체들이 낡은 잔해를 두고 다툰다. 지역 분열은 거창한 이념보다 구와 역, 노선 단위에서 먼저 나타난다. 왕조와 산하 세력은 관할권을 차례로 상속받는다.
 
 다. 두 라인의 역할 고정
 
@@ -43700,7 +43700,7 @@ G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다.
 4. 같은 자리의 생존이 반복될 것
 하나의 모듈에 기대어 세 번 이상 살아남은 공동체만이 그 모듈을 중심으로 삼는다. 한 번의 요행은 거래 품목으로 남는다.
 5. 장소 세력이 관할을 주장할 것
-노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 관리 방식, 금기를 각각 정한다. 왕조와 이를 따르는 봉신 세력은 관할권까지 상속받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 유물을 지키려는 쪽이 봉인 갤러리에서 맞선다.
+노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 관리 방식, 금기를 각각 정한다. 왕조와 이를 따르는 산하 세력은 관할권까지 상속받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 유물을 지키려는 쪽이 봉인 갤러리에서 맞선다.
 
 ### 계열별 유물 해석
 
@@ -43718,7 +43718,7 @@ G25 축전 모듈은 한 계열에서는 변전 설비의 핵심이다. 다른 �
 
 라. 공개 관습과 숨은 관습
 
-공개된 관습은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 관습은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 봉신 가문이 변전 시설 관리와 역 표지 관리를 같은 갤러리에 겹쳐 두면 대상은 하나다. 관할은 둘로 나뉜다.
+공개된 관습은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 관습은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 산하 가문이 변전 시설 관리와 역 표지 관리를 같은 갤러리에 겹쳐 두면 대상은 하나다. 관할은 둘로 나뉜다.
 
 마. 라인 수의 고정
 
@@ -46154,7 +46154,7 @@ In the Government, scarcity made people keep doing their parents'' work, and a v
 
 In 2126, Seoul has only three factions: the Government, the Free City, and the Arc. Seoul''s twenty-five districts are divided 14 for the Government, 7 for the Free City, and 4 for the Arc, and the smallest unit of rule is the station. The three factions share one frame of ranks. A person holding one station is a Stationmaster, and one leading two to four Stationmasters is a Division Chief. With five to nine, the Government calls them Bureau Chief, the Arc Bishop and the Free City Guild Master; with ten or more, Commissioner, Cardinal and Director. Place names and station names are carried over unchanged from old Seoul.
 
-The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. At the top is a President for life, now Kim Yeongyu. Commissioners are appointed by the President. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
+The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern system of rule by appointment. At the top is a President for life, now Kim Yeongyu. Commissioners are appointed by the President. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
 
 The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city standing on its own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work; because plumbing, power distribution, and water purification all depend on one another, the cities have survived by trading supplies and expertise with one another. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. There is no name for them taken together. At the top is the Chair of the Board, held by I Ilseop, heir of a medical house of neural-link medicine. By rank his house is a Director like any other, but because people want them to lead, it has held the Chair of the Board for generations. Directors are appointed by the Board.
 
@@ -46270,7 +46270,7 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 2126년 서울의 세력은 정부, 자유도시, 아크 셋뿐이다. 서울의 스물다섯 구는 정부 14구, 자유도시 7구, 아크 4구로 나뉘고, 다스림의 가장 작은 단위는 역이다. 세 세력은 같은 계층 골격을 쓴다. 역 하나를 가진 사람이 역장이고, 거느린 역장이 둘에서 넷이면 본부장이다. 다섯에서 아홉이면 정부는 국장, 아크는 주교, 자유도시는 조합장이고, 열 명 이상이면 정부는 청장, 아크는 추기경, 자유도시는 이사다. 지명과 역은 옛 서울의 것을 그대로 쓴다.
 
-정부는 한강 북쪽 14구를 차지한다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만 실제로 남은 당은 둘뿐이고, 실상은 현대의 봉건제다. 최상단은 종신 대통령이며, 지금은 김연규다. 청장은 대통령이 임명한다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 정부는 선거를 계속 치르지만 매번 같은 답이 나온다. 강 건너는 "야만인들 사는 데"로 여긴다. 정부가 이런 형태를 갖춘 시기는 기록되지 않았다.
+정부는 한강 북쪽 14구를 차지한다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만 실제로 남은 당은 둘뿐이고, 실상은 대통령의 임명으로 굴러가는 현대의 임명제다. 최상단은 종신 대통령이며, 지금은 김연규다. 청장은 대통령이 임명한다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 정부는 선거를 계속 치르지만 매번 같은 답이 나온다. 강 건너는 "야만인들 사는 데"로 여긴다. 정부가 이런 형태를 갖춘 시기는 기록되지 않았다.
 
 자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 역과 역 사이에 흩어진 독립 도시국가들이며, 도시마다 각자 서 있고, 지배를 거부하는 것을 자유로 여긴다. 주민 대부분은 손으로 먹고사는 기술자로, 배관과 배전과 정수가 서로 의존하는 탓에 도시끼리 물자와 기술을 주고받으며 살아왔다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 이들을 묶어 부르는 이름은 없다. 최상단은 이사회장이며, 신경 연결 의술 의료 가문의 후계자 이일섭이 맡는다. 이일섭의 가문은 계급으로는 다른 이사와 같은 이사지만, 사람들이 그들이 이끌어 주기를 바라므로 대대로 이사회장이다. 이사는 이사회가 임명한다.
 
