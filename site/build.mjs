@@ -155,8 +155,8 @@ fs.mkdirSync(SRC, { recursive: true });
 // Pick the field for a locale: English columns are plain, Korean ones end in _ko.
 const f = (L) => (row, k) => (L === UI.ko ? row[`${k}_ko`] : row[k]);
 
-// Territory: one geographic district (gu) per map title of rank 'duchy' (enum value kept), faction per owner rule (map.mjs DISTRICT_FACTION).
-// Districts live at /wiki/districts/<gu code>/; the old /wiki/duchies/ paths are static redirect stubs written after the VitePress build.
+// Territory: one geographic district (gu) per map title whose stored rank enum is the district level, faction per owner rule (map.mjs DISTRICT_FACTION).
+// Districts live at /wiki/districts/<gu code>/; the retired path (LEGACY_DISTRICT_ROUTE) gets static redirect stubs after the VitePress build.
 const DISTRICT_ROUTE = 'wiki/districts/';
 const LEGACY_DISTRICT_ROUTE = 'wiki/duchies/';
 const titleById = new Map(raw.map.titles.map((t) => [t.id, t]));
@@ -437,7 +437,7 @@ const decodeHtmlAttr = (v) => v.replace(/&quot;/g, '"').replace(/&#39;|&apos;/g,
   console.log(`fragment href normalization: ${rewritten} href(s) rewritten to real ids`);
 }
 
-// ---- redirect stubs for the retired /wiki/duchies/ route (2026-11-16, v4: duchies became districts) ----
+// ---- redirect stubs for the retired district route (LEGACY_DISTRICT_ROUTE, 2026-11-16 v4 rename to /wiki/districts/) ----
 // GitHub Pages cannot send 301s, so each old URL (en and /ko/, index and one per gu code) gets a static page with
 // a zero-second meta refresh, a canonical link and a plain link to its /wiki/districts/ replacement. The stubs are
 // written straight into OUT after VitePress, so they are not in the sidebar, search index or dead-link check, and
