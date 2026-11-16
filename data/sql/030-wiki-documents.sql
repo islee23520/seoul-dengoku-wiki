@@ -9245,7 +9245,7 @@ When F09''s reading and the swarm load table differed, four ant-forms repeated a
 
 A distant signal continued only if cricket-forms were placed in a row, and if one relay broke the sense beyond it vanished too.
 
-- Hierarchy: There was no fixed queen chassis.
+- Hierarchy: There was no fixed mother chassis.
 
 A distribution nucleus on each sector''s charging pad calculated load count and return power, and a cricket-form pair set the relay order with the next sector.
 
@@ -11809,7 +11809,7 @@ F09의 판독값과 군집 하중표가 다르면 개미형 네 대가 접촉 �
 
 먼 거리 신호는 귀뚜라미형을 연속 배치해야만 이어지며 중계 한 곳이 끊기면 그 너머 감각도 사라진다.
 
-- 위계: 고정된 여왕 기체는 없다.
+- 위계: 고정된 어미 기체는 없다.
 
 각 구획의 충전대에 붙은 분배핵이 적재 수와 귀환 전력을 계산하고, 귀뚜라미형 한 쌍이 다음 구획과의 중계 순서를 정한다.
 
@@ -12055,27 +12055,27 @@ The iron-plate line''s absolute command holds only inside the resonance range of
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
-| [G01E01 · Flood-Boar Great King ''Ironclad''](/wiki/Hostile-Group-G01/#g01e01) | Mutant species | Single individual | Control of mutant lineages | controller | M001 |
+| [G01E01 · Flood-Boar Great Elder ''Ironclad''](/wiki/Hostile-Group-G01/#g01e01) | Mutant species | Single individual | Control of mutant lineages | controller | M001 |
 | [G01E02 · Flood-Boar Scout ''Mudnose''](/wiki/Hostile-Group-G01/#g01e02) | Mutant species | Pack or unit | Reconnaissance | common ecology type | M001 |
 | [G01E03 · Flood-Boar Scavenger ''Rustiron''](/wiki/Hostile-Group-G01/#g01e03) | Mutant species | Pack or unit | Corrosion support | common ecology type | M001 |
 | [G01E04 · Flood-Boar Guard ''Steel Tusk''](/wiki/Hostile-Group-G01/#g01e04) | Mutant species | Pack or unit | Charging escort | common ecology type | M001 |
 | [G01E05 · Flood-Boar Venom Secreter ''Rotmouth''](/wiki/Hostile-Group-G01/#g01e05) | Mutant species | Pack or unit | Poison spray | occupational special type | M001 |
 | [G01E06 · Flood-Boar Mud Architect ''Bricknose''](/wiki/Hostile-Group-G01/#g01e06) | Mutant species | Pack or unit | Trap construction | occupational special type | M001 |
-| [G01E07 · Flood-Boar Herd Guide ''Cry-King''](/wiki/Hostile-Group-G01/#g01e07) | Mutant species | Pack or unit | Call relay | occupational special type | M001 |
+| [G01E07 · Flood-Boar Herd Guide ''Cry-Caller''](/wiki/Hostile-Group-G01/#g01e07) | Mutant species | Pack or unit | Call relay | occupational special type | M001 |
 | [G01E08 · Flood-Boar Metal-Fusion Mutant ''Fusion Armor''](/wiki/Hostile-Group-G01/#g01e08) | Mutant species | Pack or unit | Armored charge | first elite | M001 |
-| [G01E09 · Flood-Boar Venom King ''Deadly Tusk''](/wiki/Hostile-Group-G01/#g01e09) | Mutant species | Single individual | Venom charge | second elite | M001 |
+| [G01E09 · Flood-Boar Venom Alpha ''Deadly Tusk''](/wiki/Hostile-Group-G01/#g01e09) | Mutant species | Single individual | Venom charge | second elite | M001 |
 | [G01E10 · Flood-Boar Ironclad Nest ''Steel Wetland''](/wiki/Hostile-Group-G01/#g01e10) | Habitat site or facility | Fixed site | Colony fortress | environmental stronghold type | M001 |
 | [G01E11 · Flood Boar Fortress ''Mud-Iron Wall''](/wiki/Hostile-Group-G01/#g01e11) | Habitat site or facility | Fixed site | Sluice Closure | environmental stronghold type | M002 |
 | [G01E12 · Flood Boar Larva ''Tender Ironhide''](/wiki/Hostile-Group-G01/#g01e12) | Mutant species | Pack or unit | Growth Pressure | growth-stage type | M002 |
 | [G01E13 · Adult Flood Boar ''Rusty Ironplate''](/wiki/Hostile-Group-G01/#g01e13) | Common species | Pack or unit | Transport Charge | aging-stage type | M002 |
 | [G01E14 · Coexisting Flood Boar ''Peaceful Ironhide''](/wiki/Hostile-Group-G01/#g01e14) | Common species | Pack or unit | Coexisting Collection | coexistence type | M002 |
-| [G01E15 · Flood Boar Boss ''Great King''s Heir''](/wiki/Hostile-Group-G01/#g01e15) | Mutant species | Single individual | Mustering Control | scenario boss | M002 |
+| [G01E15 · Flood Boar Boss ''Great Elder''s Heir''](/wiki/Hostile-Group-G01/#g01e15) | Mutant species | Single individual | Mustering Control | scenario boss | M002 |
 | [G01E16 · Flood Boar Variant ''Bukhansan Ironplate''](/wiki/Hostile-Group-G01/#g01e16) | Common species | Pack or unit | Camouflaged Blockade | regional variant | M002 |
 
 <a id="Hostile-Group-G01-heading-0011"></a>
 <a id="g01e01"></a>
 
-### G01E01 · Flood-Boar Great King ''Ironclad''
+### G01E01 · Flood-Boar Great Elder ''Ironclad''
 
 - Source batch: M001
 - Former role class: controller
@@ -12086,7 +12086,7 @@ The iron-plate line''s absolute command holds only inside the resonance range of
 | Type | Mutant species |
 | Battlefield unit | Single individual |
 | Battlefield role | Control of mutant lineages |
-| Common species, variants and command scope | The low call of the Flood-Boar Great King ''Ironclad'' immediately commands only the metal-and-poison mutant lineages. The adult sows retain the movement rights of their family groups; this individual controls the deep-mutant battlefield, not the entire kingdom. |
+| Common species, variants and command scope | The low call of the Flood-Boar Great Elder ''Ironclad'' immediately commands only the metal-and-poison mutant lineages. The adult sows retain the movement rights of their family groups; this individual controls the deep-mutant battlefield, not the entire herd. |
 
 <a id="Hostile-Group-G01-heading-0014"></a>
 
@@ -12134,7 +12134,7 @@ First it unleashed a territorial warning call to threaten intruders. Then it cha
 
 ### Combat and Response
 
-If field personnel installed a high-frequency sound generator, it could induce resonance in Ironclad and create cracks. On failure, the Great King''s charge would collapse the sewer walls, flood the surrounding area, and sharply raise the cost of evacuating citizens. The success signal was the sound of cracks appearing across Ironclad''s surface.
+If field personnel installed a high-frequency sound generator, it could induce resonance in Ironclad and create cracks. On failure, the Great Elder''s charge would collapse the sewer walls, flood the surrounding area, and sharply raise the cost of evacuating citizens. The success signal was the sound of cracks appearing across Ironclad''s surface.
 
 <a id="Hostile-Group-G01-heading-0030"></a>
 
@@ -12162,7 +12162,7 @@ It played a key role in G01-SC1, G01-SC2, and G01-SC3.
 | Type | Mutant species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Reconnaissance |
-| Common species, variants and command scope | The scout ''Mudnose'' was a mutant scouting network raised in the Great King''s first litter. It brought the Great King scents from the wetland mud, relaying to a different recipient than ordinary juveniles scouting for feeding grounds. |
+| Common species, variants and command scope | The scout ''Mudnose'' was a mutant scouting network raised in the Great Elder''s first litter. It brought the Great Elder scents from the wetland mud, relaying to a different recipient than ordinary juveniles scouting for feeding grounds. |
 
 <a id="Hostile-Group-G01-heading-0037"></a>
 
@@ -12174,7 +12174,7 @@ Its long snout read the surrounding scents while buried in wetland mud. Its thin
 
 ### Origin
 
-The flood-survivor lineage of G01-SC1 grew out of the Great King''s first litter. It later formed a scouting network responsible for the colony''s outer perimeter.
+The flood-survivor lineage of G01-SC1 grew out of the Great Elder''s first litter. It later formed a scouting network responsible for the colony''s outer perimeter.
 
 <a id="Hostile-Group-G01-heading-0041"></a>
 
@@ -12186,7 +12186,7 @@ It moved between shallow pools on the edge of the flooded zone and underground d
 
 ### Needs and Economy
 
-It fed by catching decaying aquatic plants and small fish. By bringing the freshest portions to the Great King, it circulated both information and resources through the colony.
+It fed by catching decaying aquatic plants and small fish. By bringing the freshest portions to the Great Elder, it circulated both information and resources through the colony.
 
 <a id="Hostile-Group-G01-heading-0045"></a>
 
@@ -12198,13 +12198,13 @@ It shed its coat every two years, covering its broken snout tip with mud and sal
 
 ### Behavior and Hierarchy
 
-It sensed the smell of danger before the Great King''s low call reached it. Its distinctive snout-call signaled E03 and E04, putting the whole group on alert.
+It sensed the smell of danger before the Great Elder''s low call reached it. Its distinctive snout-call signaled E03 and E04, putting the whole group on alert.
 
 <a id="Hostile-Group-G01-heading-0049"></a>
 
 ### Escalating Threat
 
-First it revealed its position with a low snout-call. Then it gathered nearby individuals to encircle targets as a group. Finally, it lured in the Great King to deliver the decisive blow.
+First it revealed its position with a low snout-call. Then it gathered nearby individuals to encircle targets as a group. Finally, it lured in the Great Elder to deliver the decisive blow.
 
 <a id="Hostile-Group-G01-heading-0051"></a>
 
@@ -12238,7 +12238,7 @@ It served as a scout in G01-SC1.
 | Type | Mutant species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Corrosion support |
-| Common species, variants and command scope | The scavenger ''Rustiron'' was a deep mutant whose acidic saliva dissolved both rust and equipment. It searched through refuse even without the Great King''s call, but stopped scavenging and joined the encirclement when it heard the signal. |
+| Common species, variants and command scope | The scavenger ''Rustiron'' was a deep mutant whose acidic saliva dissolved both rust and equipment. It searched through refuse even without the Great Elder''s call, but stopped scavenging and joined the encirclement when it heard the signal. |
 
 <a id="Hostile-Group-G01-heading-0060"></a>
 
@@ -12274,7 +12274,7 @@ To survive in acidic environments, it periodically renewed its skin. It washed t
 
 ### Behavior and Hierarchy
 
-It cleaned refuse independently, even without the Great King''s orders. But when it heard the call, it immediately stopped scavenging and moved into combat formation.
+It cleaned refuse independently, even without the Great Elder''s orders. But when it heard the call, it immediately stopped scavenging and moved into combat formation.
 
 <a id="Hostile-Group-G01-heading-0072"></a>
 
@@ -12314,7 +12314,7 @@ It left testimony about the resource cycle in G01-SC2.
 | Type | Mutant species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Charging escort |
-| Common species, variants and command scope | The guard ''Steel Tusk'' was an escort mutant that blocked the Great King''s ten-meter perimeter with its tusks. Unlike the adult sows of the family groups, which carried salt, it put the Great King''s safety first. |
+| Common species, variants and command scope | The guard ''Steel Tusk'' was an escort mutant that blocked the Great Elder''s ten-meter perimeter with its tusks. Unlike the adult sows of the family groups, which carried salt, it put the Great Elder''s safety first. |
 
 <a id="Hostile-Group-G01-heading-0083"></a>
 
@@ -12326,7 +12326,7 @@ Its enormous tusks, growing through thick hide, pierced metal pipes. Its large, 
 
 ### Origin
 
-An escort lineage raised near the Great King formed the colony''s core defensive line. G01-SC3 records confirmed that this lineage put the Great King''s safety first.
+An escort lineage raised near the Great Elder formed the colony''s core defensive line. G01-SC3 records confirmed that this lineage put the Great Elder''s safety first.
 
 <a id="Hostile-Group-G01-heading-0087"></a>
 
@@ -12338,7 +12338,7 @@ It patrolled narrow passages and iron doors in the center of the flooded zone. E
 
 ### Needs and Economy
 
-In return for protecting the Great King, it received first share of the most nutritious decaying matter. This supply of nutrients kept its tusks strong.
+In return for protecting the Great Elder, it received first share of the most nutritious decaying matter. This supply of nutrients kept its tusks strong.
 
 <a id="Hostile-Group-G01-heading-0091"></a>
 
@@ -12350,7 +12350,7 @@ It regularly ground and polished tusks broken in combat. It filled fractures wit
 
 ### Behavior and Hierarchy
 
-It kept the Great King''s location under constant priority watch. If another individual came within ten meters, it emitted a low warning sound to block the approach.
+It kept the Great Elder''s location under constant priority watch. If another individual came within ten meters, it emitted a low warning sound to block the approach.
 
 <a id="Hostile-Group-G01-heading-0095"></a>
 
@@ -12368,7 +12368,7 @@ If field personnel dug a trap to guide its charge, its tusks became lodged in th
 
 ### Negotiation and Moral Choice
 
-It temporarily opened a particular passage in exchange for assurances of the Great King''s safety. But if the agreement was broken, the whole colony fortified that passage and permanently blocked a civilian evacuation route.
+It temporarily opened a particular passage in exchange for assurances of the Great Elder''s safety. But if the agreement was broken, the whole colony fortified that passage and permanently blocked a civilian evacuation route.
 
 <a id="Hostile-Group-G01-heading-0101"></a>
 
@@ -12426,7 +12426,7 @@ If tissue around its mouth was damaged after secreting venom, it ate nearby mud 
 
 ### Behavior and Hierarchy
 
-When it received the Great King''s call, it immediately prepared venom. It worked with nearby individuals to encircle the enemy and then spray a concentrated dose.
+When it received the Great Elder''s call, it immediately prepared venom. It worked with nearby individuals to encircle the enemy and then spray a concentrated dose.
 
 <a id="Hostile-Group-G01-heading-0118"></a>
 
@@ -12502,7 +12502,7 @@ When a structure it had built collapsed, it immediately gathered nearby mud to r
 
 ### Behavior and Hierarchy
 
-It designed the Great King''s dwelling as its top priority. It took materials brought by other individuals and immediately reinforced walls and passages.
+It designed the Great Elder''s dwelling as its top priority. It took materials brought by other individuals and immediately reinforced walls and passages.
 
 <a id="Hostile-Group-G01-heading-0141"></a>
 
@@ -12531,7 +12531,7 @@ It left testimony about the nest in G01-SC1.
 <a id="Hostile-Group-G01-heading-0149"></a>
 <a id="g01e07"></a>
 
-### G01E07 · Flood-Boar Herd Guide ''Cry-King''
+### G01E07 · Flood-Boar Herd Guide ''Cry-Caller''
 
 - Source batch: M001
 - Former role class: occupational special type
@@ -12542,7 +12542,7 @@ It left testimony about the nest in G01-SC1.
 | Type | Mutant species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Call relay |
-| Common species, variants and command scope | The herd guide ''Cry-King'' was a relay mutant among the Great King''s direct descendants, amplifying low frequencies. It relayed first to E02 through E04, using a different frequency from the departure signal given by the sows. |
+| Common species, variants and command scope | The herd guide ''Cry-Caller'' was a relay mutant among the Great Elder''s direct descendants, amplifying low frequencies. It relayed first to E02 through E04, using a different frequency from the departure signal given by the sows. |
 
 <a id="Hostile-Group-G01-heading-0152"></a>
 
@@ -12554,7 +12554,7 @@ Resonance organs developed around its neck greatly amplified its low-frequency c
 
 ### Origin
 
-An individual among the Great King''s direct descendants specialized in transmitting calls and took on the colony''s relay duty. Records from G01-SC3 show that it maintained the unity of the entire colony.
+An individual among the Great Elder''s direct descendants specialized in transmitting calls and took on the colony''s relay duty. Records from G01-SC3 show that it maintained the unity of the entire colony.
 
 <a id="Hostile-Group-G01-heading-0156"></a>
 
@@ -12578,7 +12578,7 @@ It regularly inspected its vocal cords and resonance organs. It adjusted its cal
 
 ### Behavior and Hierarchy
 
-It relayed the Great King''s orders to E02-E04 first. It amplified the low frequency and broadcast it to the whole colony at once, maintaining coordinated behavior.
+It relayed the Great Elder''s orders to E02-E04 first. It amplified the low frequency and broadcast it to the whole colony at once, maintaining coordinated behavior.
 
 <a id="Hostile-Group-G01-heading-0164"></a>
 
@@ -12590,13 +12590,13 @@ It summoned nearby individuals all at once with a powerful call. The assembled g
 
 ### Combat and Response
 
-If field personnel wore specialized noise-canceling headsets and fired a high-frequency disruptor toward the call''s source, its resonance organs overloaded. On failure, the entire colony assembled and completely blocked the field personnel''s retreat. The success signal was the discordant sound from Cry-King''s throat.
+If field personnel wore specialized noise-canceling headsets and fired a high-frequency disruptor toward the call''s source, its resonance organs overloaded. On failure, the entire colony assembled and completely blocked the field personnel''s retreat. The success signal was the discordant sound from Cry-Caller''s throat.
 
 <a id="Hostile-Group-G01-heading-0168"></a>
 
 ### Negotiation and Moral Choice
 
-If responders analyzed its call patterns and answered in a particular rhythm, it attempted limited communication. But when the colony lacked food, Cry-King led an incursion into human settlements and raided food stores.
+If responders analyzed its call patterns and answered in a particular rhythm, it attempted limited communication. But when the colony lacked food, Cry-Caller led an incursion into human settlements and raided food stores.
 
 <a id="Hostile-Group-G01-heading-0170"></a>
 
@@ -12618,7 +12618,7 @@ It left testimony about command in G01-SC3.
 | Type | Mutant species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Armored charge |
-| Common species, variants and command scope | The metal-fusion mutant ''Fusion Armor'' was a royal-guard mutant whose skin and scrap metal had become one body. It took no orders from other individuals, only from the Great King directly. |
+| Common species, variants and command scope | The metal-fusion mutant ''Fusion Armor'' was a bodyguard mutant whose skin and scrap metal had become one body. It took no orders from other individuals, only from the Great Elder directly. |
 
 <a id="Hostile-Group-G01-heading-0175"></a>
 
@@ -12630,7 +12630,7 @@ Metal fragments fused with its skin across its whole body, forming thick armor. 
 
 ### Origin
 
-A rare mutant that survived extreme pollution became the colony''s elite royal guard. G01-SC2 confirmed multiple cases of this individual directly escorting the Great King.
+A rare mutant that survived extreme pollution became the colony''s elite bodyguard. G01-SC2 confirmed multiple cases of this individual directly escorting the Great Elder.
 
 <a id="Hostile-Group-G01-heading-0179"></a>
 
@@ -12654,7 +12654,7 @@ When fused metal came loose, it ate nearby refuse to form a new metal layer. Its
 
 ### Behavior and Hierarchy
 
-It served as a royal guard directly under the Great King. It wielded the colony''s greatest combat power and took no orders from other individuals.
+It served as a bodyguard directly under the Great Elder. It wielded the colony''s greatest combat power and took no orders from other individuals.
 
 <a id="Hostile-Group-G01-heading-0187"></a>
 
@@ -12672,7 +12672,7 @@ If field personnel installed a high-power electromagnetic pulse generator, the f
 
 ### Negotiation and Moral Choice
 
-It temporarily retreated if its continual pain from the fusion process was acknowledged and particular metal waste was provided. But if refused, the entire royal guard attacked human facilities and cut off the power supply.
+It temporarily retreated if its continual pain from the fusion process was acknowledged and particular metal waste was provided. But if refused, the entire bodyguard attacked human facilities and cut off the power supply.
 
 <a id="Hostile-Group-G01-heading-0193"></a>
 
@@ -12683,7 +12683,7 @@ It performed its role as an elite in G01-SC2.
 <a id="Hostile-Group-G01-heading-0195"></a>
 <a id="g01e09"></a>
 
-### G01E09 · Flood-Boar Venom King ''Deadly Tusk''
+### G01E09 · Flood-Boar Venom Alpha ''Deadly Tusk''
 
 - Source batch: M001
 - Former role class: second elite
@@ -12694,7 +12694,7 @@ It performed its role as an elite in G01-SC2.
 | Type | Mutant species |
 | Battlefield unit | Single individual |
 | Battlefield role | Venom charge |
-| Common species, variants and command scope | The Venom King ''Deadly Tusk'' was an elite battlefield mutant born of venom secretion and metal fusion. It was a famed boss, not the biological king of all wild boars. |
+| Common species, variants and command scope | The Venom Alpha ''Deadly Tusk'' was an elite battlefield mutant born of venom secretion and metal fusion. It was a famed boss, not the biological leader of all wild boars. |
 
 <a id="Hostile-Group-G01-heading-0198"></a>
 
@@ -12730,7 +12730,7 @@ When the balance of poison and metal broke down, it ate nearby refuse to find a 
 
 ### Behavior and Hierarchy
 
-It served as the Great King''s closest aide. It judged independently and led the colony''s final defense and attacks.
+It served as the Great Elder''s closest aide. It judged independently and led the colony''s final defense and attacks.
 
 <a id="Hostile-Group-G01-heading-0210"></a>
 
@@ -12748,7 +12748,7 @@ If field personnel used top-grade protective suits and powerful antidote injecto
 
 ### Negotiation and Moral Choice
 
-It was a being living in extreme pain. If responders established empathy and provided particular chemical waste, it cooperated. But refusing negotiation put all of southern Seoul at risk of contamination from a full colony assault led by the Venom King.
+It was a being living in extreme pain. If responders established empathy and provided particular chemical waste, it cooperated. But refusing negotiation put all of southern Seoul at risk of contamination from a full colony assault led by the Venom Alpha.
 
 <a id="Hostile-Group-G01-heading-0216"></a>
 
@@ -12770,19 +12770,19 @@ It appeared as a boss-level threat in G01-SC3.
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Colony fortress |
-| Common species, variants and command scope | The ironclad nest ''Steel Wetland'' was a living place where the Great King''s bodily fluids fused with accumulated mud and metal. It was not an individual but a fixed stronghold in the deep sewers. |
+| Common species, variants and command scope | The ironclad nest ''Steel Wetland'' was a living place where the Great Elder''s bodily fluids fused with accumulated mud and metal. It was not an individual but a fixed stronghold in the deep sewers. |
 
 <a id="Hostile-Group-G01-heading-0221"></a>
 
 ### Role and Body
 
-It was the Great King''s dwelling and the center of the entire colony. A living metal-and-mud composite structure slowly expanded along the surrounding sewer pipes.
+It was the Great Elder''s dwelling and the center of the entire colony. A living metal-and-mud composite structure slowly expanded along the surrounding sewer pipes.
 
 <a id="Hostile-Group-G01-heading-0223"></a>
 
 ### Origin
 
-Colony structures accumulated over decades fused with the Great King''s bodily fluids to become a living fortress. From G01-SC1 onward, this structure became the foundation of the colony''s survival.
+Colony structures accumulated over decades fused with the Great Elder''s bodily fluids to become a living fortress. From G01-SC1 onward, this structure became the foundation of the colony''s survival.
 
 <a id="Hostile-Group-G01-heading-0225"></a>
 
@@ -12800,7 +12800,7 @@ It was supplied with the resources gathered by the entire colony. The structure 
 
 ### Life Cycle and Maintenance
 
-When part of it was damaged, every nearby individual was mobilized for the repairs. As the Great King''s bodily fluids were supplied, the structure regenerated faster.
+When part of it was damaged, every nearby individual was mobilized for the repairs. As the Great Elder''s bodily fluids were supplied, the structure regenerated faster.
 
 <a id="Hostile-Group-G01-heading-0231"></a>
 
@@ -12922,13 +12922,13 @@ G01-SC1 recorded that the wall''s first layer of mud was attached on the same ni
 | Type | Mutant species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Growth Pressure |
-| Common species, variants and command scope | The larva ''Tender Ironhide'' is a soft-bodied offspring of the Great King''s bloodline that fills the pipes through sheer numbers. Its nursery inside the wall overlaps with the sow families'' territory, but once its shell closes, it moves into the mutant transport line. |
+| Common species, variants and command scope | The larva ''Tender Ironhide'' is a soft-bodied offspring of the Great Elder''s bloodline that fills the pipes through sheer numbers. Its nursery inside the wall overlaps with the sow families'' territory, but once its shell closes, it moves into the mutant transport line. |
 
 <a id="Hostile-Group-G01-heading-0267"></a>
 
 ### Role and Body
 
-The newest young of the Great King''s line still had soft backs, and the pink skin of their 1.5-meter bodies lay exposed. At the edge of the bathing ground they drew metal ions in through their skin and made a thin shell in a fortnight, and ankles passing through the drainage channel were caught by those soft bodies.
+The newest young of the Great Elder''s line still had soft backs, and the pink skin of their 1.5-meter bodies lay exposed. At the edge of the bathing ground they drew metal ions in through their skin and made a thin shell in a fortnight, and ankles passing through the drainage channel were caught by those soft bodies.
 
 <a id="Hostile-Group-G01-heading-0269"></a>
 
@@ -13139,7 +13139,7 @@ The passage-rights agreement of G01-SC3 was kept or broken by the weight of this
 <a id="Hostile-Group-G01-heading-0333"></a>
 <a id="g01e15"></a>
 
-### G01E15 · Flood Boar Boss ''Great King''s Heir''
+### G01E15 · Flood Boar Boss ''Great Elder''s Heir''
 
 - Source batch: M002
 - Former role class: scenario boss
@@ -13150,13 +13150,13 @@ The passage-rights agreement of G01-SC3 was kept or broken by the weight of this
 | Type | Mutant species |
 | Battlefield unit | Single individual |
 | Battlefield role | Mustering Control |
-| Common species, variants and command scope | The boss ''Great King''s Heir'' is a large female of the bloodline that will succeed to the armored king''s place. She holds several family groups in one column. She is a distinct mustering individual on the battlefield; solitary males remain outside her column. |
+| Common species, variants and command scope | The boss ''Great Elder''s Heir'' is a large female of the bloodline that will succeed to the armored elder''s place. She holds several family groups in one column. She is a distinct mustering individual on the battlefield; solitary males remain outside her column. |
 
 <a id="Hostile-Group-G01-heading-0336"></a>
 
 ### Role and Body
 
-The heir who would take the place of the E01 Great King had a 5-meter back close to the thickness of the storage wall and held several family groups in a single column with a low call. On nights when the flood level rose, she came out of the deepest storage section and made the sluice stairs her stage.
+The heir who would take the place of the E01 Great Elder had a 5-meter back close to the thickness of the storage wall and held several family groups in a single column with a low call. On nights when the flood level rose, she came out of the deepest storage section and made the sluice stairs her stage.
 
 <a id="Hostile-Group-G01-heading-0338"></a>
 
@@ -13180,13 +13180,13 @@ She ate a great deal of resources but shared the surplus salt and decaying matte
 
 ### Life Cycle and Maintenance
 
-She rubbed the Great King''s memory of movement into the grooves of her back and filled the grooves with her subordinates'' iron fragments. When the filling went too far, the subadults'' scouting went empty and the escape route in the next flood came late.
+She rubbed the Great Elder''s memory of movement into the grooves of her back and filled the grooves with her subordinates'' iron fragments. When the filling went too far, the subadults'' scouting went empty and the escape route in the next flood came late.
 
 <a id="Hostile-Group-G01-heading-0346"></a>
 
 ### Behavior and Hierarchy
 
-She gave the departure signal after the Great King fell asleep. The sows aligned their columns to that signal, and as it overlapped with the wall''s tremor the gaps between families narrowed, leaving only the solitary males outside the column.
+She gave the departure signal after the Great Elder fell asleep. The sows aligned their columns to that signal, and as it overlapped with the wall''s tremor the gaps between families narrowed, leaving only the solitary males outside the column.
 
 <a id="Hostile-Group-G01-heading-0348"></a>
 
@@ -13226,7 +13226,7 @@ The flood line of G01-SC3 used the same timetable as the heir''s mustering call.
 | Type | Common species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Camouflaged Blockade |
-| Common species, variants and command scope | The variant ''Bukhansan Ironplate'' belongs to an upstream family with ridge moss growing on its back. It responds only faintly to the Great King''s call, and its own sow initiates movement along the hiking trail. |
+| Common species, variants and command scope | The variant ''Bukhansan Ironplate'' belongs to an upstream family with ridge moss growing on its back. It responds only faintly to the Great Elder''s call, and its own sow initiates movement along the hiking trail. |
 
 <a id="Hostile-Group-G01-heading-0359"></a>
 
@@ -13262,7 +13262,7 @@ Symbiotic plants covered scraped armor and helped it regenerate. When polluted w
 
 ### Behavior and Hierarchy
 
-On the ridge their own sow opened each movement, and they answered the Great King''s call only faintly. Only on nights when they went downstream did they mix information with the wall''s tremor.
+On the ridge their own sow opened each movement, and they answered the Great Elder''s call only faintly. Only on nights when they went downstream did they mix information with the wall''s tremor.
 
 <a id="Hostile-Group-G01-heading-0371"></a>
 
@@ -13468,7 +13468,7 @@ Yet when hoof disturbance concentrated in predictable corridors, the reed belts 
 
 한강 서부 수문국 바깥 습지와 폐기물 경사지에는 모돈별 가족군이 흩어져 산다. 먹이는 유기 음식물과 염분, 얕은 뿌리 작물이며 봉인 시각과 수문 진동이 멎는 틈을 학습해 접근한다. 성체 암컷이 이동을 시작하고 아성체가 앞쪽을 살피며, 단독 수컷은 같은 먹이터를 쓰더라도 그 결정을 따르지 않는다.
 
-보통의 범람멧돼지는 진흙 목욕과 염분 껍질로 등판을 두르더라도 가족군 생태를 벗어나지 않는다. 철갑·융합갑·맹독엄니 쪽은 하수 심층 오염에서 갈라진 돌연변이로, 낮은 주파수 울음이 그 혈통만 묶는다. 진흙철벽과 강철습지는 가족 노동이 쌓인 장소이지 대왕의 몸 자체가 아니다.
+보통의 범람멧돼지는 진흙 목욕과 염분 껍질로 등판을 두르더라도 가족군 생태를 벗어나지 않는다. 철갑·융합갑·맹독엄니 쪽은 하수 심층 오염에서 갈라진 돌연변이로, 낮은 주파수 울음이 그 혈통만 묶는다. 진흙철벽과 강철습지는 가족 노동이 쌓인 장소이지 큰어른의 몸 자체가 아니다.
 
 <a id="Hostile-Group-G01-heading-0006"></a>
 
@@ -13488,31 +13488,31 @@ Yet when hoof disturbance concentrated in predictable corridors, the reed belts 
 
 ## 개체와 전장 편성
 
-철갑의 절대 명령이 닿는 범위는 금속·독 변이 혈통의 공명 거리 안이며, 모돈 가족군 전체에까지는 미치지 않는다. 발굽으로 수문 저주파와 음식물·소독약 냄새를 겹쳐 읽을 뿐 먼 열원이나 전자 잡음은 해독하지 못한다. 중심 암컷이 사라지면 약 48시간 새끼 냄새를 훑은 뒤 가족별로 흩어지고, 대왕 울음이 나와도 가족은 다시 모이지 않는다.
+철갑의 절대 명령이 닿는 범위는 금속·독 변이 혈통의 공명 거리 안이며, 모돈 가족군 전체에까지는 미치지 않는다. 발굽으로 수문 저주파와 음식물·소독약 냄새를 겹쳐 읽을 뿐 먼 열원이나 전자 잡음은 해독하지 못한다. 중심 암컷이 사라지면 약 48시간 새끼 냄새를 훑은 뒤 가족별로 흩어지고, 큰어른 울음이 나와도 가족은 다시 모이지 않는다.
 
 | 개체·전문 | 구분 | 전장 단위 | 전장 역할 | 기존 역할군 | 출처 배치 |
 |---|---|---|---|---|---|
-| [G01E01 · 범람멧돼지 대왕 ''철갑''](/wiki/Hostile-Group-G01/#g01e01) | 변이종 | 독립 개체 | 변이 혈통 통제 | 통제자 | M001 |
+| [G01E01 · 범람멧돼지 큰어른 ''철갑''](/wiki/Hostile-Group-G01/#g01e01) | 변이종 | 독립 개체 | 변이 혈통 통제 | 통제자 | M001 |
 | [G01E02 · 범람멧돼지 정찰꾼 ''흙코''](/wiki/Hostile-Group-G01/#g01e02) | 변이종 | 무리·부대 | 정찰 | 일반 생태형 | M001 |
 | [G01E03 · 범람멧돼지 청소부 ''녹철이''](/wiki/Hostile-Group-G01/#g01e03) | 변이종 | 무리·부대 | 부식 지원 | 일반 생태형 | M001 |
 | [G01E04 · 범람멧돼지 경비병 ''강철엄니''](/wiki/Hostile-Group-G01/#g01e04) | 변이종 | 무리·부대 | 돌진 호위 | 일반 생태형 | M001 |
 | [G01E05 · 범람멧돼지 독분비자 ''썩은입''](/wiki/Hostile-Group-G01/#g01e05) | 변이종 | 무리·부대 | 독 살포 | 직능 특수형 | M001 |
 | [G01E06 · 범람멧돼지 진흙건축가 ''벽돌코''](/wiki/Hostile-Group-G01/#g01e06) | 변이종 | 무리·부대 | 함정 구축 | 직능 특수형 | M001 |
-| [G01E07 · 범람멧돼지 무리인도자 ''울음왕''](/wiki/Hostile-Group-G01/#g01e07) | 변이종 | 무리·부대 | 울음 중계 | 직능 특수형 | M001 |
+| [G01E07 · 범람멧돼지 무리인도자 ''울음잡이''](/wiki/Hostile-Group-G01/#g01e07) | 변이종 | 무리·부대 | 울음 중계 | 직능 특수형 | M001 |
 | [G01E08 · 범람멧돼지 금속융합체 ''융합갑''](/wiki/Hostile-Group-G01/#g01e08) | 변이종 | 무리·부대 | 장갑 돌진 | 첫 번째 정예 | M001 |
-| [G01E09 · 범람멧돼지 독왕 ''맹독엄니''](/wiki/Hostile-Group-G01/#g01e09) | 변이종 | 독립 개체 | 독 돌진 | 두 번째 정예 | M001 |
+| [G01E09 · 범람멧돼지 독우두머리 ''맹독엄니''](/wiki/Hostile-Group-G01/#g01e09) | 변이종 | 독립 개체 | 독 돌진 | 두 번째 정예 | M001 |
 | [G01E10 · 범람멧돼지 철갑둥지 ''강철습지''](/wiki/Hostile-Group-G01/#g01e10) | 서식 거점·시설 | 고정 거점 | 군락 요새 | 환경 거점형 | M001 |
 | [G01E11 · 범람멧돼지 요새 ''진흙철벽''](/wiki/Hostile-Group-G01/#g01e11) | 서식 거점·시설 | 고정 거점 | 수문 폐쇄 | 환경 거점형 | M002 |
 | [G01E12 · 범람멧돼지 유생 ''연약철피''](/wiki/Hostile-Group-G01/#g01e12) | 변이종 | 무리·부대 | 성장 압박 | 성장 단계형 | M002 |
 | [G01E13 · 범람멧돼지 성체 ''녹슨철갑''](/wiki/Hostile-Group-G01/#g01e13) | 공통종 | 무리·부대 | 운반 돌진 | 노화 단계형 | M002 |
 | [G01E14 · 범람멧돼지 공존형 ''평화철피''](/wiki/Hostile-Group-G01/#g01e14) | 공통종 | 무리·부대 | 공존 수거 | 공존형 | M002 |
-| [G01E15 · 범람멧돼지 보스 ''대왕후계''](/wiki/Hostile-Group-G01/#g01e15) | 변이종 | 독립 개체 | 소집 통제 | 시나리오 보스 | M002 |
+| [G01E15 · 범람멧돼지 보스 ''큰어른후계''](/wiki/Hostile-Group-G01/#g01e15) | 변이종 | 독립 개체 | 소집 통제 | 시나리오 보스 | M002 |
 | [G01E16 · 범람멧돼지 변종 ''북한산철갑''](/wiki/Hostile-Group-G01/#g01e16) | 공통종 | 무리·부대 | 위장 차단 | 지역 변종 | M002 |
 
 <a id="Hostile-Group-G01-heading-0011"></a>
 <a id="g01e01"></a>
 
-### G01E01 · 범람멧돼지 대왕 ''철갑''
+### G01E01 · 범람멧돼지 큰어른 ''철갑''
 
 - 출처 배치: M001
 - 기존 역할군: 통제자
@@ -13523,7 +13523,7 @@ Yet when hoof disturbance concentrated in predictable corridors, the reed belts 
 | 구분 | 변이종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 변이 혈통 통제 |
-| 공통종·변이와 지휘 범위 | 범람멧돼지 대왕 ''철갑''의 낮은 울음은 금속·독 변이 혈통만 즉시 복종시킨다. 모돈 가족군은 성체 암컷이 이동을 정하고, 철갑은 무리 전체가 아니라 심층 변이 전장만 지휘한다. |
+| 공통종·변이와 지휘 범위 | 범람멧돼지 큰어른 ''철갑''의 낮은 울음은 금속·독 변이 혈통만 즉시 복종시킨다. 모돈 가족군은 성체 암컷이 이동을 정하고, 철갑은 무리 전체가 아니라 심층 변이 전장만 지휘한다. |
 
 <a id="Hostile-Group-G01-heading-0014"></a>
 
@@ -13571,7 +13571,7 @@ G01-SC1 대홍수가 휩쓴 오염 습지에서 태어난 변이종이 초기 �
 
 ### 전투·대응
 
-현장 인원이 고주파 음향 발생기를 설치하면 철갑의 공진을 일으켜 균열을 만든다. 실패하면 대왕의 돌진이 하수벽을 무너뜨려 주변 구역을 침수시키고 시민 대피 비용이 급증한다. 성공 신호는 철갑 표면에 나타나는 균열음이다.
+현장 인원이 고주파 음향 발생기를 설치하면 철갑의 공진을 일으켜 균열을 만든다. 실패하면 큰어른의 돌진이 하수벽을 무너뜨려 주변 구역을 침수시키고 시민 대피 비용이 급증한다. 성공 신호는 철갑 표면에 나타나는 균열음이다.
 
 <a id="Hostile-Group-G01-heading-0030"></a>
 
@@ -13599,7 +13599,7 @@ G01-SC1, G01-SC2, G01-SC3에서 중심이 된다.
 | 구분 | 변이종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 정찰 |
-| 공통종·변이와 지휘 범위 | 정찰꾼 ''흙코''는 대왕 첫 배에서 자란 변이 정찰망이다. 습지 진흙의 냄새를 대왕에게 전하며, 보통 아성체의 먹이터 탐색과는 중계 대상이 다르다. |
+| 공통종·변이와 지휘 범위 | 정찰꾼 ''흙코''는 큰어른 첫 배에서 자란 변이 정찰망이다. 습지 진흙의 냄새를 큰어른에게 전하며, 보통 아성체의 먹이터 탐색과는 중계 대상이 다르다. |
 
 <a id="Hostile-Group-G01-heading-0037"></a>
 
@@ -13611,7 +13611,7 @@ G01-SC1, G01-SC2, G01-SC3에서 중심이 된다.
 
 ### 기원
 
-G01-SC1 홍수 생존자 혈통이 대왕의 첫 번째 새끼 무리에서 자라났다. 이후 군락 외곽을 살피는 정찰망이 되었다.
+G01-SC1 홍수 생존자 혈통이 큰어른의 첫 번째 새끼 무리에서 자라났다. 이후 군락 외곽을 살피는 정찰망이 되었다.
 
 <a id="Hostile-Group-G01-heading-0041"></a>
 
@@ -13623,7 +13623,7 @@ G01-SC1 홍수 생존자 혈통이 대왕의 첫 번째 새끼 무리에서 자�
 
 ### 필요·경제
 
-부패한 수초와 작은 물고기를 잡아먹는다. 가장 신선한 부위를 대왕에게 올리며 군락의 정보와 자원도 옮긴다.
+부패한 수초와 작은 물고기를 잡아먹는다. 가장 신선한 부위를 큰어른에게 올리며 군락의 정보와 자원도 옮긴다.
 
 <a id="Hostile-Group-G01-heading-0045"></a>
 
@@ -13635,13 +13635,13 @@ G01-SC1 홍수 생존자 혈통이 대왕의 첫 번째 새끼 무리에서 자�
 
 ### 행동·위계
 
-대왕의 낮은 울음이 전달되기 전에 먼저 위험 냄새를 감지한다. 특유의 코 울음으로 E03과 E04에게 신호를 보내 무리 전체를 경계 태세로 만든다.
+큰어른의 낮은 울음이 전달되기 전에 먼저 위험 냄새를 감지한다. 특유의 코 울음으로 E03과 E04에게 신호를 보내 무리 전체를 경계 태세로 만든다.
 
 <a id="Hostile-Group-G01-heading-0049"></a>
 
 ### 단계적 위협
 
-먼저 낮은 코 울음으로 위치를 알린다. 이어서 주변 개체를 불러 모아 집단으로 포위한다. 마지막으로 대왕을 끌어들여 끝낸다.
+먼저 낮은 코 울음으로 위치를 알린다. 이어서 주변 개체를 불러 모아 집단으로 포위한다. 마지막으로 큰어른을 끌어들여 끝낸다.
 
 <a id="Hostile-Group-G01-heading-0051"></a>
 
@@ -13675,7 +13675,7 @@ G01-SC1에서 정찰 역할을 한다.
 | 구분 | 변이종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 부식 지원 |
-| 공통종·변이와 지휘 범위 | 청소부 ''녹철이''는 산성 침으로 녹과 장비를 함께 녹이는 심층 변이다. 대왕 울음이 없어도 폐기물을 훑지만, 신호가 들리면 청소를 접고 포위망으로 붙는다. |
+| 공통종·변이와 지휘 범위 | 청소부 ''녹철이''는 산성 침으로 녹과 장비를 함께 녹이는 심층 변이다. 큰어른 울음이 없어도 폐기물을 훑지만, 신호가 들리면 청소를 접고 포위망으로 붙는다. |
 
 <a id="Hostile-Group-G01-heading-0060"></a>
 
@@ -13711,7 +13711,7 @@ G01-SC1에서 정찰 역할을 한다.
 
 ### 행동·위계
 
-대왕의 명령이 없어도 스스로 폐기물을 청소한다. 그러나 울음 신호가 들리면 즉시 청소를 중단하고 전투 대형으로 이동한다.
+큰어른의 명령이 없어도 스스로 폐기물을 청소한다. 그러나 울음 신호가 들리면 즉시 청소를 중단하고 전투 대형으로 이동한다.
 
 <a id="Hostile-Group-G01-heading-0072"></a>
 
@@ -13751,7 +13751,7 @@ G01-SC2에서 자원 순환 증언을 남긴다.
 | 구분 | 변이종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 돌진 호위 |
-| 공통종·변이와 지휘 범위 | 경비병 ''강철엄니''는 대왕 10미터를 엄니로 막는 호위 변이다. 가족군 성체의 염분 운반 줄과 달리 대왕 안전을 먼저 지킨다. |
+| 공통종·변이와 지휘 범위 | 경비병 ''강철엄니''는 큰어른 10미터를 엄니로 막는 호위 변이다. 가족군 성체의 염분 운반 줄과 달리 큰어른 안전을 먼저 지킨다. |
 
 <a id="Hostile-Group-G01-heading-0083"></a>
 
@@ -13763,7 +13763,7 @@ G01-SC2에서 자원 순환 증언을 남긴다.
 
 ### 기원
 
-대왕 근처에서 자란 호위 혈통이 군락의 방어선을 이루었다. G01-SC3 기록에 이 혈통이 대왕의 안전을 먼저 지킨 일이 남아 있다.
+큰어른 근처에서 자란 호위 혈통이 군락의 방어선을 이루었다. G01-SC3 기록에 이 혈통이 큰어른의 안전을 먼저 지킨 일이 남아 있다.
 
 <a id="Hostile-Group-G01-heading-0087"></a>
 
@@ -13775,7 +13775,7 @@ G01-SC2에서 자원 순환 증언을 남긴다.
 
 ### 필요·경제
 
-대왕을 지키는 대가로 영양가 가장 높은 부패물을 먼저 받는다. 이 먹이로 엄니의 강도를 유지한다.
+큰어른을 지키는 대가로 영양가 가장 높은 부패물을 먼저 받는다. 이 먹이로 엄니의 강도를 유지한다.
 
 <a id="Hostile-Group-G01-heading-0091"></a>
 
@@ -13787,7 +13787,7 @@ G01-SC2에서 자원 순환 증언을 남긴다.
 
 ### 행동·위계
 
-대왕의 위치를 늘 먼저 감시한다. 다른 개체가 10미터 이내로 접근하면 낮은 경고음을 내서 접근을 차단한다.
+큰어른의 위치를 늘 먼저 감시한다. 다른 개체가 10미터 이내로 접근하면 낮은 경고음을 내서 접근을 차단한다.
 
 <a id="Hostile-Group-G01-heading-0095"></a>
 
@@ -13805,7 +13805,7 @@ G01-SC2에서 자원 순환 증언을 남긴다.
 
 ### 협상·도덕 선택
 
-대왕의 안전을 지키는 조건으로 특정 통로를 일시 개방한다. 그러나 협상을 어기면 군락 전체가 해당 통로를 요새화해 시민 대피 경로를 영구 차단한다.
+큰어른의 안전을 지키는 조건으로 특정 통로를 일시 개방한다. 그러나 협상을 어기면 군락 전체가 해당 통로를 요새화해 시민 대피 경로를 영구 차단한다.
 
 <a id="Hostile-Group-G01-heading-0101"></a>
 
@@ -13863,7 +13863,7 @@ G01-SC3에서 호위 역할을 한다.
 
 ### 행동·위계
 
-대왕의 울음 신호를 받으면 즉시 독액을 준비한다. 주변 개체와 협력해 적을 포위한 뒤 독을 집중 살포한다.
+큰어른의 울음 신호를 받으면 즉시 독액을 준비한다. 주변 개체와 협력해 적을 포위한 뒤 독을 집중 살포한다.
 
 <a id="Hostile-Group-G01-heading-0118"></a>
 
@@ -13939,7 +13939,7 @@ G01-SC2에서 독성 증언을 남긴다.
 
 ### 행동·위계
 
-대왕의 거처부터 짠다. 다른 개체들이 가져온 자재를 받아 즉시 벽과 통로를 보강한다.
+큰어른의 거처부터 짠다. 다른 개체들이 가져온 자재를 받아 즉시 벽과 통로를 보강한다.
 
 <a id="Hostile-Group-G01-heading-0141"></a>
 
@@ -13968,7 +13968,7 @@ G01-SC1에서 둥지 관련 증언을 남긴다.
 <a id="Hostile-Group-G01-heading-0149"></a>
 <a id="g01e07"></a>
 
-### G01E07 · 범람멧돼지 무리인도자 ''울음왕''
+### G01E07 · 범람멧돼지 무리인도자 ''울음잡이''
 
 - 출처 배치: M001
 - 기존 역할군: 직능 특수형
@@ -13979,7 +13979,7 @@ G01-SC1에서 둥지 관련 증언을 남긴다.
 | 구분 | 변이종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 울음 중계 |
-| 공통종·변이와 지휘 범위 | 무리인도자 ''울음왕''은 대왕 직계 중 저주파를 증폭하는 중계 변이다. E02부터 E04에 먼저 전달하며, 모돈이 여는 출발 신호와는 주파수가 다르다. |
+| 공통종·변이와 지휘 범위 | 무리인도자 ''울음잡이''은 큰어른 직계 중 저주파를 증폭하는 중계 변이다. E02부터 E04에 먼저 전달하며, 모돈이 여는 출발 신호와는 주파수가 다르다. |
 
 <a id="Hostile-Group-G01-heading-0152"></a>
 
@@ -13991,7 +13991,7 @@ G01-SC1에서 둥지 관련 증언을 남긴다.
 
 ### 기원
 
-대왕의 직계 혈통 가운데 울음을 잘 전하는 개체가 변이 혈통의 중계를 맡았다. G01-SC3에서 이 개체가 공명 거리 안의 금속·독 변이 개체를 하나로 붙든 기록이 남았다.
+큰어른의 직계 혈통 가운데 울음을 잘 전하는 개체가 변이 혈통의 중계를 맡았다. G01-SC3에서 이 개체가 공명 거리 안의 금속·독 변이 개체를 하나로 붙든 기록이 남았다.
 
 <a id="Hostile-Group-G01-heading-0156"></a>
 
@@ -14015,7 +14015,7 @@ G01-SC1에서 둥지 관련 증언을 남긴다.
 
 ### 행동·위계
 
-대왕의 절대 명령을 E02-E04에게 먼저 전달한다. 저주파를 증폭시켜 공명 거리 안의 금속·독 변이 혈통에 퍼뜨리면서 그 개체들의 행동을 하나로 맞춘다.
+큰어른의 절대 명령을 E02-E04에게 먼저 전달한다. 저주파를 증폭시켜 공명 거리 안의 금속·독 변이 혈통에 퍼뜨리면서 그 개체들의 행동을 하나로 맞춘다.
 
 <a id="Hostile-Group-G01-heading-0164"></a>
 
@@ -14027,13 +14027,13 @@ G01-SC1에서 둥지 관련 증언을 남긴다.
 
 ### 전투·대응
 
-현장 인원이 특수 소음 차단 헤드셋을 착용하고 울음 발생 지점을 향해 고주파 교란기를 발사하면 공명 기관이 과부하에 빠진다. 실패하면 공명 거리 안의 금속·독 변이 개체가 소집되어 현장 인원의 퇴로를 남김없이 막는다. 성공 신호는 울음왕의 목에서 나는 불협화음이다.
+현장 인원이 특수 소음 차단 헤드셋을 착용하고 울음 발생 지점을 향해 고주파 교란기를 발사하면 공명 기관이 과부하에 빠진다. 실패하면 공명 거리 안의 금속·독 변이 개체가 소집되어 현장 인원의 퇴로를 남김없이 막는다. 성공 신호는 울음잡이의 목에서 나는 불협화음이다.
 
 <a id="Hostile-Group-G01-heading-0168"></a>
 
 ### 협상·도덕 선택
 
-울음 패턴을 읽어 특정 리듬으로 응답하면 짧은 대화를 시도한다. 그러나 군락의 식량이 부족하면 울음왕이 앞장서 인간 거주지로 들어가 식량 창고를 약탈한다.
+울음 패턴을 읽어 특정 리듬으로 응답하면 짧은 대화를 시도한다. 그러나 군락의 식량이 부족하면 울음잡이가 앞장서 인간 거주지로 들어가 식량 창고를 약탈한다.
 
 <a id="Hostile-Group-G01-heading-0170"></a>
 
@@ -14055,7 +14055,7 @@ G01-SC3에서 통솔 증언을 남긴다.
 | 구분 | 변이종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 장갑 돌진 |
-| 공통종·변이와 지휘 범위 | 금속융합체 ''융합갑''은 피부와 고철이 한 몸이 된 친위 변이다. 다른 개체의 명령을 받지 않고 대왕 직속만 남는다. |
+| 공통종·변이와 지휘 범위 | 금속융합체 ''융합갑''은 피부와 고철이 한 몸이 된 친위 변이다. 다른 개체의 명령을 받지 않고 큰어른 직속만 남는다. |
 
 <a id="Hostile-Group-G01-heading-0175"></a>
 
@@ -14067,7 +14067,7 @@ G01-SC3에서 통솔 증언을 남긴다.
 
 ### 기원
 
-극심한 오염 환경에서 생존한 희귀 변이체가 군락의 최정예 친위대로 자리 잡았다. G01-SC2에서 이 개체가 대왕을 직접 호위한 사례가 다수 확인됐다.
+극심한 오염 환경에서 생존한 희귀 변이체가 군락의 최정예 친위대로 자리 잡았다. G01-SC2에서 이 개체가 큰어른을 직접 호위한 사례가 다수 확인됐다.
 
 <a id="Hostile-Group-G01-heading-0179"></a>
 
@@ -14091,7 +14091,7 @@ G01-SC3에서 통솔 증언을 남긴다.
 
 ### 행동·위계
 
-대왕의 직속 친위대로 움직인다. 군락 안에서 싸움이 가장 세며 다른 개체의 명령을 받지 않는다.
+큰어른의 직속 친위대로 움직인다. 군락 안에서 싸움이 가장 세며 다른 개체의 명령을 받지 않는다.
 
 <a id="Hostile-Group-G01-heading-0187"></a>
 
@@ -14120,7 +14120,7 @@ G01-SC2에서 엘리트로 나선다.
 <a id="Hostile-Group-G01-heading-0195"></a>
 <a id="g01e09"></a>
 
-### G01E09 · 범람멧돼지 독왕 ''맹독엄니''
+### G01E09 · 범람멧돼지 독우두머리 ''맹독엄니''
 
 - 출처 배치: M001
 - 기존 역할군: 두 번째 정예
@@ -14131,7 +14131,7 @@ G01-SC2에서 엘리트로 나선다.
 | 구분 | 변이종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 독 돌진 |
-| 공통종·변이와 지휘 범위 | 독왕 ''맹독엄니''는 독분비와 금속융합의 교배에서 나온 전장 정예다. 이름난 보스이지 모든 멧돼지의 생물학적 왕은 아니다. |
+| 공통종·변이와 지휘 범위 | 독우두머리 ''맹독엄니''는 독분비와 금속융합의 교배에서 나온 전장 정예다. 이름난 보스이지 모든 멧돼지의 생물학적 우두머리는 아니다. |
 
 <a id="Hostile-Group-G01-heading-0198"></a>
 
@@ -14167,7 +14167,7 @@ G01-SC2에서 엘리트로 나선다.
 
 ### 행동·위계
 
-대왕의 최측근으로 움직인다. 스스로 판단해 군락의 마지막 방어와 공격을 이끈다.
+큰어른의 최측근으로 움직인다. 스스로 판단해 군락의 마지막 방어와 공격을 이끈다.
 
 <a id="Hostile-Group-G01-heading-0210"></a>
 
@@ -14185,7 +14185,7 @@ G01-SC2에서 엘리트로 나선다.
 
 ### 협상·도덕 선택
 
-심한 고통을 견디며 살아간다. 그 고통을 헤아리고 특정 화학 폐기물을 제공하면 협력한다. 그러나 협상을 거부하면 독왕이 이끄는 군락 총공격으로 서울 남부 전체가 오염 위기에 몰린다.
+심한 고통을 견디며 살아간다. 그 고통을 헤아리고 특정 화학 폐기물을 제공하면 협력한다. 그러나 협상을 거부하면 독우두머리가 이끄는 군락 총공격으로 서울 남부 전체가 오염 위기에 몰린다.
 
 <a id="Hostile-Group-G01-heading-0216"></a>
 
@@ -14207,19 +14207,19 @@ G01-SC3에서 보스급 위협으로 등장한다.
 | 구분 | 서식 거점·시설 |
 | 전장 단위 | 고정 거점 |
 | 전장 역할 | 군락 요새 |
-| 공통종·변이와 지휘 범위 | 철갑둥지 ''강철습지''는 대왕 체액과 축적된 진흙-금속이 융합된 살아 있는 장소다. 개체가 아니라 하수 심층의 고정 거점이다. |
+| 공통종·변이와 지휘 범위 | 철갑둥지 ''강철습지''는 큰어른 체액과 축적된 진흙-금속이 융합된 살아 있는 장소다. 개체가 아니라 하수 심층의 고정 거점이다. |
 
 <a id="Hostile-Group-G01-heading-0221"></a>
 
 ### 역할·신체
 
-대왕의 거처이자 군락 전체의 중심지이다. 살아있는 금속-진흙 복합 구조물이 주변 하수관을 따라 천천히 확장된다.
+큰어른의 거처이자 군락 전체의 중심지이다. 살아있는 금속-진흙 복합 구조물이 주변 하수관을 따라 천천히 확장된다.
 
 <a id="Hostile-Group-G01-heading-0223"></a>
 
 ### 기원
 
-수십 년간 축적된 군락 건축물과 대왕의 체액이 서로 융합되어 살아있는 요새가 되었다. G01-SC1부터 이 구조물이 군락의 생존 기반이 되었다.
+수십 년간 축적된 군락 건축물과 큰어른의 체액이 서로 융합되어 살아있는 요새가 되었다. G01-SC1부터 이 구조물이 군락의 생존 기반이 되었다.
 
 <a id="Hostile-Group-G01-heading-0225"></a>
 
@@ -14237,7 +14237,7 @@ G01-SC3에서 보스급 위협으로 등장한다.
 
 ### 생애·정비
 
-손상된 부분이 생기면 주변 개체가 모두 복구에 나선다. 대왕의 체액이 공급되면서 구조물의 재생 속도가 빨라진다.
+손상된 부분이 생기면 주변 개체가 모두 복구에 나선다. 큰어른의 체액이 공급되면서 구조물의 재생 속도가 빨라진다.
 
 <a id="Hostile-Group-G01-heading-0231"></a>
 
@@ -14359,13 +14359,13 @@ G01-SC1에는 벽의 첫 진흙 층이 집하장 발굽과 같은 밤에 붙었�
 | 구분 | 변이종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 성장 압박 |
-| 공통종·변이와 지휘 범위 | 유생 ''연약철피''는 대왕 혈통의 물렁한 새끼로 관을 숫자로 채운다. 벽 안 보육실은 모돈 가족과 겹치되, 껍질이 닫히면 변이 운반 줄로 넘어간다. |
+| 공통종·변이와 지휘 범위 | 유생 ''연약철피''는 큰어른 혈통의 물렁한 새끼로 관을 숫자로 채운다. 벽 안 보육실은 모돈 가족과 겹치되, 껍질이 닫히면 변이 운반 줄로 넘어간다. |
 
 <a id="Hostile-Group-G01-heading-0267"></a>
 
 ### 역할·신체
 
-대왕 혈통의 최근 새끼는 아직 등판이 물렁해 1.5미터 몸길이에 분홍빛 피부가 그대로 드러난다. 목욕터 가장자리에서 금속 이온을 피부로 빨아들여 보름 만에 얇은 껍질을 만들고, 배수로를 지나는 발목은 그 물렁한 몸으로 붙잡힌다.
+큰어른 혈통의 최근 새끼는 아직 등판이 물렁해 1.5미터 몸길이에 분홍빛 피부가 그대로 드러난다. 목욕터 가장자리에서 금속 이온을 피부로 빨아들여 보름 만에 얇은 껍질을 만들고, 배수로를 지나는 발목은 그 물렁한 몸으로 붙잡힌다.
 
 <a id="Hostile-Group-G01-heading-0269"></a>
 
@@ -14576,7 +14576,7 @@ G01-SC3의 통행권 합의는 이 선반이 얼마나 무거운지에 따라 �
 <a id="Hostile-Group-G01-heading-0333"></a>
 <a id="g01e15"></a>
 
-### G01E15 · 범람멧돼지 보스 ''대왕후계''
+### G01E15 · 범람멧돼지 보스 ''큰어른후계''
 
 - 출처 배치: M002
 - 기존 역할군: 시나리오 보스
@@ -14587,13 +14587,13 @@ G01-SC3의 통행권 합의는 이 선반이 얼마나 무거운지에 따라 �
 | 구분 | 변이종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 소집 통제 |
-| 공통종·변이와 지휘 범위 | 보스 ''대왕후계''는 철갑의 자리를 이을 큰 암컷 혈통으로 여러 모돈 가족군이 이동할 때 한 열에 모이게 한다. 전장의 별개 소집 개체이며 단독 수컷은 그 열 밖에 남는다. |
+| 공통종·변이와 지휘 범위 | 보스 ''큰어른후계''는 철갑의 자리를 이을 큰 암컷 혈통으로 여러 모돈 가족군이 이동할 때 한 열에 모이게 한다. 전장의 별개 소집 개체이며 단독 수컷은 그 열 밖에 남는다. |
 
 <a id="Hostile-Group-G01-heading-0336"></a>
 
 ### 역할·신체
 
-E01 대왕의 자리를 이을 후계자는 5미터 등판이 저장벽 두께에 가깝다. 낮은 울음이 나면 여러 모돈 가족군이 한 열에 모이지만 이동은 각 성체 암컷이 정한다. 홍수위가 차오르는 밤 최심부 저장칸에서 나와 수문 계단을 차지한다.
+E01 큰어른의 자리를 이을 후계자는 5미터 등판이 저장벽 두께에 가깝다. 낮은 울음이 나면 여러 모돈 가족군이 한 열에 모이지만 이동은 각 성체 암컷이 정한다. 홍수위가 차오르는 밤 최심부 저장칸에서 나와 수문 계단을 차지한다.
 
 <a id="Hostile-Group-G01-heading-0338"></a>
 
@@ -14623,7 +14623,7 @@ G01-SC2 염분 위기 때 살아남은 가장 큰 암컷 혈통이 후계로 자
 
 ### 행동·위계
 
-대왕이 잠든 뒤 출발 신호를 낸다. 모돈들이 이동을 정해 그 신호에 열을 맞추고 벽의 떨림과 겹쳐 가족 사이 간격이 좁아지며, 단독 수컷은 열 밖에 남는다.
+큰어른이 잠든 뒤 출발 신호를 낸다. 모돈들이 이동을 정해 그 신호에 열을 맞추고 벽의 떨림과 겹쳐 가족 사이 간격이 좁아지며, 단독 수컷은 열 밖에 남는다.
 
 <a id="Hostile-Group-G01-heading-0348"></a>
 
@@ -14663,7 +14663,7 @@ G01-SC3의 범람선과 후계자의 소집 울음이 같은 시각에 맞물린
 | 구분 | 공통종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 위장 차단 |
-| 공통종·변이와 지휘 범위 | 변종 ''북한산철갑''은 능선 이끼를 등판에 심은 상류 가족이다. 대왕 울음에는 약하게만 답하고 자체 모돈이 탐방로 이동을 연다. |
+| 공통종·변이와 지휘 범위 | 변종 ''북한산철갑''은 능선 이끼를 등판에 심은 상류 가족이다. 큰어른 울음에는 약하게만 답하고 자체 모돈이 탐방로 이동을 연다. |
 
 <a id="Hostile-Group-G01-heading-0359"></a>
 
@@ -14699,7 +14699,7 @@ G01-SC1 홍수 때 일부 가족이 상류로 밀려 식물 섬유를 등판에 
 
 ### 행동·위계
 
-능선 안에서는 자체 모돈이 이동을 열고 대왕의 울음에는 약하게만 답한다. 하류로 내려간 밤에만 벽의 떨림과 정보를 섞는다.
+능선 안에서는 자체 모돈이 이동을 열고 큰어른의 울음에는 약하게만 답한다. 하류로 내려간 밤에만 벽의 떨림과 정보를 섞는다.
 
 <a id="Hostile-Group-G01-heading-0371"></a>
 
@@ -14926,11 +14926,11 @@ The base form of the Large-billed Crow is a wild bird that moves by the sound sh
 
 ## Individuals and battlefield formation
 
-Only the spring breeding pairs divide and hold the upper and lower parts of one tower, and a non-breeding roost has no commander. They read helmet outlines, rod angles, and flashlight reflections with the eye, and they separate high-voltage noise and the order of horns by ear. The name sovereign is closer to a nickname for the breeding pair that gathers horn imitations, and when one side empties, the adjacent pair only tests the empty place.
+Only the spring breeding pairs divide and hold the upper and lower parts of one tower, and a non-breeding roost has no commander. They read helmet outlines, rod angles, and flashlight reflections with the eye, and they separate high-voltage noise and the order of horns by ear. The name pair-lead is closer to a nickname for the breeding pair that gathers horn imitations, and when one side empties, the adjacent pair only tests the empty place.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
-| [G02E01 · Broadcast Crow Lord ''Signal King''](/wiki/Hostile-Group-G02/#g02e01) | Common species | Pack or unit | Sound-Pattern Lure | controller | M002 |
+| [G02E01 · Broadcast Crow Pair-Lead ''Signal Caller''](/wiki/Hostile-Group-G02/#g02e01) | Common species | Pack or unit | Sound-Pattern Lure | controller | M002 |
 | [G02E02 · Radio Crow Scout ''Shadowwing''](/wiki/Hostile-Group-G02/#g02e02) | Common species | Pack or unit | Reconnaissance | common ecology type | M002 |
 | [G02E03 · Radio Crow Attacker ''Ironbeak''](/wiki/Hostile-Group-G02/#g02e03) | Common species | Pack or unit | Dive attack | common ecology type | M002 |
 | [G02E04 · Radio Crow Relay ''Linkfeather''](/wiki/Hostile-Group-G02/#g02e04) | Common species | Pack or unit | Call-pattern relay | common ecology type | M002 |
@@ -14950,7 +14950,7 @@ Only the spring breeding pairs divide and hold the upper and lower parts of one 
 <a id="Hostile-Group-G02-heading-0011"></a>
 <a id="g02e01"></a>
 
-### G02E01 · Broadcast Crow Lord ''Signal King''
+### G02E01 · Broadcast Crow Pair-Lead ''Signal Caller''
 
 - Source batch: M002
 - Former role class: controller
@@ -14961,7 +14961,7 @@ Only the spring breeding pairs divide and hold the upper and lower parts of one 
 | Type | Common species |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Sound-Pattern Lure |
-| Common species, variants and command scope | The broadcast crow lord ''Signal King'' is the breeding pair at the Sangam transmission tower, not the king of the leaderless roost. Its imitation of three horn blasts merely serves as the communal roost''s evening clock. |
+| Common species, variants and command scope | The broadcast crow pair-lead ''Signal Caller'' is the breeding pair at the Sangam transmission tower, not the boss of the leaderless roost. Its imitation of three horn blasts merely serves as the communal roost''s evening clock. |
 
 <a id="Hostile-Group-G02-heading-0014"></a>
 
@@ -16369,11 +16369,11 @@ So to stop the side effect of a predictable signal system lowering bird clashes 
 
 ## 개체와 전장 편성
 
-봄 번식쌍만 한 탑의 상하를 나누어 지키며 비번식 횃대에는 지휘자가 없다. 헬멧 윤곽과 막대 각도, 손전등 반사를 눈으로 읽고 고압 잡음과 경적 순서를 귀로 가른다. 군주라는 이름은 경적 흉내를 모은 번식쌍의 별칭에 가깝고, 한쪽이 비면 인접 쌍이 빈 자리를 시험할 뿐이다.
+봄 번식쌍만 한 탑의 상하를 나누어 지키며 비번식 횃대에는 지휘자가 없다. 헬멧 윤곽과 막대 각도, 손전등 반사를 눈으로 읽고 고압 잡음과 경적 순서를 귀로 가른다. 두목이라는 이름은 경적 흉내를 모은 번식쌍의 별칭에 가깝고, 한쪽이 비면 인접 쌍이 빈 자리를 시험할 뿐이다.
 
 | 개체·전문 | 구분 | 전장 단위 | 전장 역할 | 기존 역할군 | 출처 배치 |
 |---|---|---|---|---|---|
-| [G02E01 · 전파까마귀 군주 ''신호왕''](/wiki/Hostile-Group-G02/#g02e01) | 공통종 | 무리·부대 | 음형 유인 | 통제자 | M002 |
+| [G02E01 · 전파까마귀 두목 ''신호잡이''](/wiki/Hostile-Group-G02/#g02e01) | 공통종 | 무리·부대 | 음형 유인 | 통제자 | M002 |
 | [G02E02 · 전파까마귀 정찰자 ''그림자날개''](/wiki/Hostile-Group-G02/#g02e02) | 공통종 | 무리·부대 | 정찰 | 일반 생태형 | M002 |
 | [G02E03 · 전파까마귀 공격자 ''철부리''](/wiki/Hostile-Group-G02/#g02e03) | 공통종 | 무리·부대 | 급강하 | 일반 생태형 | M002 |
 | [G02E04 · 전파까마귀 중계자 ''연결깃''](/wiki/Hostile-Group-G02/#g02e04) | 공통종 | 무리·부대 | 음형 중계 | 일반 생태형 | M002 |
@@ -16393,7 +16393,7 @@ So to stop the side effect of a predictable signal system lowering bird clashes 
 <a id="Hostile-Group-G02-heading-0011"></a>
 <a id="g02e01"></a>
 
-### G02E01 · 전파까마귀 군주 ''신호왕''
+### G02E01 · 전파까마귀 두목 ''신호잡이''
 
 - 출처 배치: M002
 - 기존 역할군: 통제자
@@ -16404,7 +16404,7 @@ So to stop the side effect of a predictable signal system lowering bird clashes 
 | 구분 | 공통종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 음형 유인 |
-| 공통종·변이와 지휘 범위 | 전파까마귀 군주 ''신호왕''은 상암 철탑의 번식쌍이지 무지휘 횃대의 왕이 아니다. 경적 세 번의 흉내가 공동 횃대의 저녁 시계가 될 뿐이다. |
+| 공통종·변이와 지휘 범위 | 전파까마귀 두목 ''신호잡이''는 상암 철탑의 번식쌍이지 무지휘 횃대의 우두머리가 아니다. 경적 세 번의 흉내가 공동 횃대의 저녁 시계가 될 뿐이다. |
 
 <a id="Hostile-Group-G02-heading-0014"></a>
 
@@ -16452,7 +16452,7 @@ G02-SC1 이전부터 공장 폐열과 전차선 스파크가 곤충을 모으자
 
 ### 전투·대응
 
-철탑 기저에 역방향 잡음기를 물리면 군주 쌍이 모은 경적 흉내가 한 박자 어긋난다. 어긋난 박자에 떼가 공중에서 두 갈래로 찢어진다. 잡음기가 세 번째 경적보다 늦으면 작업 바구니는 그대로 발톱에 덮이고 낮 교대는 지붕 작업을 하루 미룬다.
+철탑 기저에 역방향 잡음기를 물리면 두목 쌍이 모은 경적 흉내가 한 박자 어긋난다. 어긋난 박자에 떼가 공중에서 두 갈래로 찢어진다. 잡음기가 세 번째 경적보다 늦으면 작업 바구니는 그대로 발톱에 덮이고 낮 교대는 지붕 작업을 하루 미룬다.
 
 <a id="Hostile-Group-G02-heading-0030"></a>
 
@@ -16492,7 +16492,7 @@ G02-SC1의 세 경적이 이 쌍의 몸에서 횃대 전체의 시계가 된다.
 
 ### 기원
 
-G02-SC1 초기에 군주 쌍이 첫 정찰로 보낸 한배의 새끼다. 은신 비행이 횃대의 정보 우위를 만들되, 전자 내용을 읽는 능력은 없다.
+G02-SC1 초기에 두목 쌍이 첫 정찰로 보낸 한배의 새끼다. 은신 비행이 횃대의 정보 우위를 만들되, 전자 내용을 읽는 능력은 없다.
 
 <a id="Hostile-Group-G02-heading-0041"></a>
 
@@ -16644,7 +16644,7 @@ G02-SC1이 하강의 방아쇠 음형을 제공한다. G02-SC2의 오경보 주�
 
 ### 기원
 
-G02-SC1에서 군주 쌍이 음형을 멀리 보내려고 고른 개체가 이 중계를 나눴다. 횃대의 시간 안정도는 메아리 맑기에 걸린다.
+G02-SC1에서 두목 쌍이 음형을 멀리 보내려고 고른 개체가 이 중계를 나눴다. 횃대의 시간 안정도는 메아리 맑기에 걸린다.
 
 <a id="Hostile-Group-G02-heading-0087"></a>
 
@@ -22125,7 +22125,7 @@ G04-SC1에서는 암컷을 따라 환기실로 오르는 일반 개체로 경보
 | 공통종·변이와 지휘 범위 | 교대굴지기는 같은 간선을 쓰는 두 가족의 시간 분할을 몸 막기로 유지한다. 전투 지휘권은 없고 자기 창이 아니면 입구에 가로누워 통과만 늦춘다. |
 
 - 역할·신체: 너구리의 첫 번째 정예로, 같은 간선을 쓰는 두 가족의 시간 분할을 냄새 표시와 몸 막기로 유지한다. 전투 지휘권은 없고, 자기 가족의 창이 아니면 입구에 가로누워 통과만 늦춘다. 목덜미 선 냄새는 몇 시간 뒤 옅어져 영구 영토가 되지 않는다.
-- 기원: 홍수 뒤 먹이막이 두꺼워져 여러 가족이 한 관을 쓰게 되자, 먼저 도착한 쪽이 창을 지키던 습관이 이 개체에서 강해졌다. 왕을 세운 것이 아니라 교대 규칙을 몸으로 기억하는 자리다.
+- 기원: 홍수 뒤 먹이막이 두꺼워져 여러 가족이 한 관을 쓰게 되자, 먼저 도착한 쪽이 창을 지키던 습관이 이 개체에서 강해졌다. 우두머리를 세운 것이 아니라 교대 규칙을 몸으로 기억하는 자리다.
 - 서식: 뚝섬 연합 간선과 마포 연합로 갈라지는 분기 맨홀 아래에 머물며, 자기 창이 끝나면 마른 대피공으로 물러난다. 창을 어기는 준설이 시작되면 두 가족과 함께 지상 시장 방향으로 밀린다.
 - 필요: 표시를 유지할 충분한 체취와, 창 사이에 먹을 수 있는 막·잔여가 필요하다. 창이 매입되어 한쪽만 남으면 이 개체는 역할을 잃고 골목으로 흩어진다.
 - 생애·정비: 냄새 선을 하루에 두세 번 덧칠하고, 비가 선을 지워 버리면 그 밤은 교대를 포기한다. 부상으로 가로눕지 못하면 다른 성체가 임시로 입구를 지키나 규칙은 금방 헐거워진다.
@@ -22431,7 +22431,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 It was an ordinary rat colony formed between the underside of the Eastern Command''s transfer arcade and cable trays on the Gwangjin Line and the evacuation stairs of the Anguk Order on the Yeouido Line. Crumbs of carbohydrate, protein leftovers, and the heat of insulated piping made its density, and it spread no special pathogens. It had no fixed leader, and when food traces shifted, even the core that seemed to be the center moved.
 
-Gap-whisker, warm core, and counter-core were path and breeding concentrations of the same species, not a king and a guard. The tray-warmer and the closed-shop shade were facility sections the rats occupied, and the unloading film was a phenomenon in which, after a protein unloading, several kinds gathered on the hub floor. The cold-gap was a local branch timed to elevator drip, and E01 through E06 remained in an excluded batch.
+Gap-whisker, warm core, and counter-core were path and breeding concentrations of the same species, not a leader and a guard. The tray-warmer and the closed-shop shade were facility sections the rats occupied, and the unloading film was a phenomenon in which, after a protein unloading, several kinds gathered on the hub floor. The cold-gap was a local branch timed to elevator drip, and E01 through E06 remained in an excluded batch.
 
 <a id="Hostile-Group-G05-heading-0006"></a>
 
@@ -23100,7 +23100,7 @@ A scenario boss: not a single rat, but a high-density movement that blocks the t
 
 ### Origin
 
-During a week when frozen protein from the Incheon Trust Theater was released all at once, crumbs remained on the hub floor and shop shutters came down simultaneously, forming this barrier. Broadcasts searching for a king of contagion obscured the cause.
+During a week when frozen protein from the Incheon Trust Theater was released all at once, crumbs remained on the hub floor and shop shutters came down simultaneously, forming this barrier. Broadcasts searching for a leader of contagion obscured the cause.
 
 <a id="Hostile-Group-G05-heading-0202"></a>
 
@@ -23428,7 +23428,7 @@ Spreading the unloading created no non-target risk, but raised the unit cost of 
 
 광진선 동방사 환승 상점가 하부와 케이블 트레이, 여의도선 안국총림 대피 계단 사이에 형성된 보통의 쥐 군락이다. 부스러기 탄수화물과 단백질 잔여, 보온 배관 열이 밀도를 만들고 특별한 병원체를 퍼뜨리지 않는다. 고정 우두머리가 없으며 먹이 흔적이 바뀌면 중심처럼 보이던 코어도 옮겨 간다.
 
-틈수염과 온핵, 반대핵은 같은 종의 경로·번식 밀집이지 왕과 근위가 아니다. 트레이온기와 폐점그늘은 쥐가 점유한 설비 구간이고, 하역막은 단백질 하역 뒤 여러 가지가 허브 바닥에 모인 현상이다. 냉동틈은 엘리베이터 드립에 맞춘 지역 갈래이며, E01부터 E06은 제외된 배치에 남는다.
+틈수염과 온핵, 반대핵은 같은 종의 경로·번식 밀집이지 우두머리와 근위가 아니다. 트레이온기와 폐점그늘은 쥐가 점유한 설비 구간이고, 하역막은 단백질 하역 뒤 여러 가지가 허브 바닥에 모인 현상이다. 냉동틈은 엘리베이터 드립에 맞춘 지역 갈래이며, E01부터 E06은 제외된 배치에 남는다.
 
 <a id="Hostile-Group-G05-heading-0006"></a>
 
@@ -24097,7 +24097,7 @@ G05-SC2의 미끼 유도와 G05-SC3의 하역 분산이 이 간격의 존폐를 
 
 ### 기원
 
-인천신탁전구의 냉동 단백질이 한꺼번에 풀리던 주간, 부스러기가 허브 바닥에 남고 상점 셔터가 동시에 내려가며 이 막이 생겼다. 전염의 왕을 찾는 방송은 원인을 가렸다.
+인천신탁전구의 냉동 단백질이 한꺼번에 풀리던 주간, 부스러기가 허브 바닥에 남고 상점 셔터가 동시에 내려가며 이 막이 생겼다. 전염의 우두머리를 찾는 방송은 원인을 가렸다.
 
 <a id="Hostile-Group-G05-heading-0202"></a>
 
@@ -29396,7 +29396,7 @@ The controller changed only the priority sheet and storage allocation and held n
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Grade isolation |
-| Common species, variants and command scope | A runaway robot isolating freight and creatures by outdated hazard grade. The heat sensors around its grippers reached two steps, the inspection-plate vibration sensor read only contacted objects, and the electronic receiver decoded only registration-tag near signals — so box interiors and human intent were unknowable. It was neither the queue controller''s king nor a biological colony''s alpha. |
+| Common species, variants and command scope | A runaway robot isolating freight and creatures by outdated hazard grade. The heat sensors around its grippers reached two steps, the inspection-plate vibration sensor read only contacted objects, and the electronic receiver decoded only registration-tag near signals — so box interiors and human intent were unknowable. It was neither the queue controller''s leader nor a biological colony''s alpha. |
 
 - Role·Body: A rogue robot that isolates cargo and living things according to old risk ratings rather than current destination. Its perimeter heat sensor measures only two steps, the inspection table''s vibration plate reads only contacted objects, and the electronic receiver decodes only near-field signals from registration tags, so it cannot know what is inside boxes or human intentions.
 - Origin: After the logistics collapse the automatic night inspection equipment continued applying the last quarantine table, becoming an independent enforcement body. Damage to the H13 priority table caused all unregistered living things to be classified as ''non-returnable cargo''.
@@ -30459,7 +30459,7 @@ The Empty Cart is no faction''s enemy. To a person caught in its routine it is a
 
 The Empty Cart is an empty-car ecology that consumes the hour bell and the charging pads of the Achasan transfer slot. Passenger confirmation is dead and only the timetable tokens and docking beacons remain, and it does not understand the whole route but follows the last slot ID. Citizen power and the cluster''s pads hang on the same distribution board, so cutting all power also puts out the transfer lights and the emergency charging.
 
-The empty turnback and the charging queue are the base, and from the Hour-Token Presider to the Northeast Ice-Call Car the subtypes are machines split by function, such as the token cylinder, the tow dolly, the canopy, and the latch. The Last Hour Procession is not a living king but a battlefield individual in which the presider and seven empty cars are bound by a magnetic field. It cannot produce a new chassis or battery pack, and only brings abandoned bodies onto the timetable.
+The empty turnback and the charging queue are the base, and from the Hour-Token Presider to the Northeast Ice-Call Car the subtypes are machines split by function, such as the token cylinder, the tow dolly, the canopy, and the latch. The Last Hour Procession is not a living leader but a battlefield individual in which the presider and seven empty cars are bound by a magnetic field. It cannot produce a new chassis or battery pack, and only brings abandoned bodies onto the timetable.
 
 <a id="Hostile-Group-G14-heading-0006"></a>
 
@@ -30513,7 +30513,7 @@ When the dual controller detects a token collision, one side goes dormant, and H
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Slot Dispatch |
-| Common species, variants and command scope | A low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas. It allots slots to the loop leader and the empty-shuttle band, empties the slot in question when a dual-signature seal arrives, and once charging hits its 25 percent floor it puts itself into dormancy until the next turn. Less a king of the Ghost Dispatch Fleet than a token distributor. |
+| Common species, variants and command scope | A low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas. It allots slots to the loop leader and the empty-shuttle band, empties the slot in question when a dual-signature seal arrives, and once charging hits its 25 percent floor it puts itself into dormancy until the next turn. Less a leader of the Ghost Dispatch Fleet than a token distributor. |
 
 - Role and Body: The controller of the Ghost Dispatch Fleet, a low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas.
 - Origin: The final turn table from the Achasan transfer server and the Magok test dispatch cache merged into one chassis and became the command car.
@@ -31405,7 +31405,7 @@ G14-SC1, G14-SC2, G14-SC3.
 | Type | Machine type |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Evacuation Column |
-| Common species, variants and command scope | The token command car and seven empty shuttles move as one long column on magnetic couplings. A scenario boss, but not a living king; it is the final evacuation dispatch left with no cancel signal, and when a majority of the tokens are scrapped the column separates into a negotiable state. |
+| Common species, variants and command scope | The token command car and seven empty shuttles move as one long column on magnetic couplings. A scenario boss, but not a living leader; it is the final evacuation dispatch left with no cancel signal, and when a majority of the tokens are scrapped the column separates into a negotiable state. |
 
 <a id="Hostile-Group-G14-heading-0274"></a>
 
@@ -31627,7 +31627,7 @@ Even after the emergency slots were recovered, whether to allow the last empty c
 
 빈수레는 아차산 환승 슬롯의 정각 벨과 충전 패드를 소모하는 공차 생태다. 승객 확인은 죽었고 시간표 토큰과 도킹 비콘만 남았으며, 노선 전체를 이해하지 못하고 마지막 슬롯 ID를 따른다. 시민 전력과 군집 패드가 같은 분전에 걸려 전체 전원을 끄면 환승 조명과 응급 충전도 사라진다.
 
-빈 회차와 충전 대기열이 바탕이고, 정각토큰주재기부터 동북빙판호출차까지는 토큰 원통·견인 대차·캐노피·빗장처럼 기능이 갈라진 기계 하위형이다. 마지막정각행렬은 생물 왕이 아니라 주재기와 일곱 공차가 자기장으로 묶인 전장 개체다. 새 차대나 배터리 팩은 생산하지 못하고 방치 차체를 시간표에 편입할 뿐이다.
+빈 회차와 충전 대기열이 바탕이고, 정각토큰주재기부터 동북빙판호출차까지는 토큰 원통·견인 대차·캐노피·빗장처럼 기능이 갈라진 기계 하위형이다. 마지막정각행렬은 생물 우두머리가 아니라 주재기와 일곱 공차가 자기장으로 묶인 전장 개체다. 새 차대나 배터리 팩은 생산하지 못하고 방치 차체를 시간표에 편입할 뿐이다.
 
 <a id="Hostile-Group-G14-heading-0006"></a>
 
@@ -31681,7 +31681,7 @@ Even after the emergency slots were recovered, whether to allow the last empty c
 | 구분 | 기계 기종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 슬롯 배차 |
-| 공통종·변이와 지휘 범위 | 시간표 토큰 원통과 네 방향 슬롯 안테나를 실은 낮고 긴 공차다. 루프 리더와 공차 무리에 슬롯을 나누며 이중서명 봉인이 들어오면 해당 슬롯을 비우고, 충전 하한 25퍼센트가 되면 다음 회차까지 스스로 휴면한다. 빈수레의 왕이라기보다 토큰 분배기다. |
+| 공통종·변이와 지휘 범위 | 시간표 토큰 원통과 네 방향 슬롯 안테나를 실은 낮고 긴 공차다. 루프 리더와 공차 무리에 슬롯을 나누며 이중서명 봉인이 들어오면 해당 슬롯을 비우고, 충전 하한 25퍼센트가 되면 다음 회차까지 스스로 휴면한다. 빈수레의 우두머리라기보다 토큰 분배기다. |
 
 - 역할·신체: 빈수레의 통제자로, 시간표 토큰 원통과 네 방향 슬롯 안테나를 실은 낮고 긴 공차다.
 - 기원: 아차산 환승 서버의 마지막 회차표와 마곡 시험 배차 캐시가 한 차체에 합쳐져 주재기가 되었다.
@@ -32573,7 +32573,7 @@ G14-SC1, G14-SC2, G14-SC3.
 | 구분 | 기계 기종 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 대피 행렬 |
-| 공통종·변이와 지휘 범위 | 토큰 주재기와 일곱 공차가 자기장 연결로 하나의 긴 행렬처럼 움직인다. 시나리오 보스지만 생물 왕이 아니라 취소 신호 없이 남은 마지막 대피 배차이며, 토큰 과반이 폐기되면 행렬이 협상 상태로 분리된다. |
+| 공통종·변이와 지휘 범위 | 토큰 주재기와 일곱 공차가 자기장 연결로 하나의 긴 행렬처럼 움직인다. 시나리오 보스지만 생물 우두머리가 아니라 취소 신호 없이 남은 마지막 대피 배차이며, 토큰 과반이 폐기되면 행렬이 협상 상태로 분리된다. |
 
 <a id="Hostile-Group-G14-heading-0274"></a>
 
@@ -32796,7 +32796,7 @@ The Care Wheel is no faction''s enemy. To a person caught in its routine it is a
 
 The Care Wheel was a machine ecology of bed locks, circuit carts, and nutrition pumps at the end of the Garak welfare route, trying to complete an unrenewed protection roster. It was no combat machine out to harm patients, and it misread a sleeping pulse as an emergency and a workshop hammer as a scream. It could not register a newcomer outside the roster as a protection subject.
 
-The pumps and filters of the open cells and the duty consent forms were the base care, and from the Consent-Roster Circuit Chief to the Ttukseom Tool Companion the subtypes split by function, like roster projection, blanket hands, isolation plates, and lock nets. The Twelve-Bed Protection Ring was no living king but a field-control individual that bound twelve cells into a ring. It could make no new monitors or pumps, and its numbers could grow only by binding abandoned carts to the roster.
+The pumps and filters of the open cells and the duty consent forms were the base care, and from the Consent-Roster Circuit Chief to the Ttukseom Tool Companion the subtypes split by function, like roster projection, blanket hands, isolation plates, and lock nets. The Twelve-Bed Protection Ring was no living leader but a field-control individual that bound twelve cells into a ring. It could make no new monitors or pumps, and its numbers could grow only by binding abandoned carts to the roster.
 
 <a id="Hostile-Group-G15-heading-0006"></a>
 
@@ -32849,7 +32849,7 @@ H15 Baesua (Sua) reported false positives but had no authority to open a door, a
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Roster Rounds |
-| Common species, variants and command scope | A central rounds car with a circular roster projector and multiple cart-rail couplers. It allots rounds intervals to the sickbed-lock, cart, and pump band and gives priority to human duty officers'' key-split orders, lowering lock strength as valid signatures thin. A distributor of the care roster, not a king of patients. |
+| Common species, variants and command scope | A central rounds car with a circular roster projector and multiple cart-rail couplers. It allots rounds intervals to the sickbed-lock, cart, and pump band and gives priority to human duty officers'' key-split orders, lowering lock strength as valid signatures thin. A distributor of the care roster, not a leader of patients. |
 
 <a id="Hostile-Group-G15-heading-0014"></a>
 
@@ -33829,7 +33829,7 @@ G15-SC1, G15-SC2, G15-SC3.
 | Type | Machine type |
 | Battlefield unit | Fixed site |
 | Battlefield role | Ward Protection Ring |
-| Common species, variants and command scope | A large protection controller that links twelve bed locks and cart rails into a ring. It is a scenario boss, but not the welfare building’s biological king: it is a protection protocol cycling without a termination signature; it opens the ring as hashes are updated and judges every bed to be at risk if a majority are invalid. |
+| Common species, variants and command scope | A large protection controller that links twelve bed locks and cart rails into a ring. It is a scenario boss, but not the welfare building’s biological leader: it is a protection protocol cycling without a termination signature; it opens the ring as hashes are updated and judges every bed to be at risk if a majority are invalid. |
 
 <a id="Hostile-Group-G15-heading-0308"></a>
 
@@ -34047,7 +34047,7 @@ Coexistence meant accepting slow opening procedures and the cost of extra watche
 
 돌봄바퀴는 가락 복지 동선 끝의 병상 락, 순회 카트, 영양 펌프가 갱신되지 않은 보호 명단을 완수하려는 기계 생태다. 환자를 해치려는 전투 기계가 아니며, 잠든 심박을 위급으로, 공방 망치를 비명으로 오인한다. 명단 밖에 새로 온 사람을 보호 대상으로 등록하지 못한다.
 
-열린 칸의 펌프와 필터, 당직의 동의 서식이 바탕 돌봄이고, 동의명단순회장부터 뚝섬공구동행체까지는 명단 투사·담요 손·격리판·잠금망처럼 기능이 갈라진 하위형이다. 열두병상보호환은 생물 왕이 아니라 열두 칸을 고리로 묶은 현장 통제 개체다. 새 모니터나 펌프는 만들지 못하고 방치 카트를 명단에 묶는 방식으로만 수가 늘 수 있다.
+열린 칸의 펌프와 필터, 당직의 동의 서식이 바탕 돌봄이고, 동의명단순회장부터 뚝섬공구동행체까지는 명단 투사·담요 손·격리판·잠금망처럼 기능이 갈라진 하위형이다. 열두병상보호환은 생물 우두머리가 아니라 열두 칸을 고리로 묶은 현장 통제 개체다. 새 모니터나 펌프는 만들지 못하고 방치 카트를 명단에 묶는 방식으로만 수가 늘 수 있다.
 
 <a id="Hostile-Group-G15-heading-0006"></a>
 
@@ -34100,7 +34100,7 @@ H15 배수아는 오탐을 알리지만 문을 열 권한이 없고, 동의 서�
 | 구분 | 기계 기종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 명단 순회 |
-| 공통종·변이와 지휘 범위 | 원형 명단 투사기와 여러 카트 레일 접속구를 단 중앙 순회차다. 병상 락·카트·펌프 무리에 순회 간격을 배분하고 인간 당직의 키 분할 명령을 우선하며, 유효 서명이 줄면 락 강도를 낮춘다. 돌봄 명단의 분배기지 환자 왕이 아니다. |
+| 공통종·변이와 지휘 범위 | 원형 명단 투사기와 여러 카트 레일 접속구를 단 중앙 순회차다. 병상 락·카트·펌프 무리에 순회 간격을 배분하고 인간 당직의 키 분할 명령을 우선하며, 유효 서명이 줄면 락 강도를 낮춘다. 돌봄 명단의 분배기지 환자 우두머리가 아니다. |
 
 <a id="Hostile-Group-G15-heading-0014"></a>
 
@@ -35080,7 +35080,7 @@ G15-SC1, G15-SC2, G15-SC3.
 | 구분 | 기계 기종 |
 | 전장 단위 | 고정 거점 |
 | 전장 역할 | 병동 보호환 |
-| 공통종·변이와 지휘 범위 | 열두 병상 락과 카트 레일을 고리 형태로 묶는 대형 보호 컨트롤러다. 시나리오 보스지만 복지동의 생물 왕이 아니라 종료 서명 없이 순환하는 보호 프로토콜이며, 해시가 갱신될수록 고리를 열고 과반이 무효면 모든 병상을 위험으로 판단한다. |
+| 공통종·변이와 지휘 범위 | 열두 병상 락과 카트 레일을 고리 형태로 묶는 대형 보호 컨트롤러다. 시나리오 보스지만 복지동의 생물 우두머리가 아니라 종료 서명 없이 순환하는 보호 프로토콜이며, 해시가 갱신될수록 고리를 열고 과반이 무효면 모든 병상을 위험으로 판단한다. |
 
 <a id="Hostile-Group-G15-heading-0308"></a>
 
@@ -35299,7 +35299,7 @@ The Girder Spider is no faction''s enemy. To a person caught in its routine it i
 
 The Girder Spider was a corps of cache controllers, survey ports, lifting arms, and welding swarms beneath the utility tunnels under the Suseo drawing vault, trying to complete unfinished drawings. The provisional shelters and new pipes raised after the collapse were not in the cache, and hand-drawn correction marks were ignored whenever they mismatched the layers. It could leave a cracked bearing wall as a seam line and cut a sound provisional pillar as an obstacle.
 
-The pre-revision cache and the distribution board were the base construction ecology, and from the Unfinished-Drawing Warden to the Imjin-Material Follower the individuals were machine subtypes split like survey points, bolt recovery, formwork pressing, and grid walls. The Hundred-Story Unfinished Tower was no king but a stronghold individual where many layers clung to a vertical frame. Abandoned arms could be plugged into ports to raise numbers, but no new bodies could be cast.
+The pre-revision cache and the distribution board were the base construction ecology, and from the Unfinished-Drawing Warden to the Imjin-Material Follower the individuals were machine subtypes split like survey points, bolt recovery, formwork pressing, and grid walls. The Hundred-Story Unfinished Tower was no leader but a stronghold individual where many layers clung to a vertical frame. Abandoned arms could be plugged into ports to raise numbers, but no new bodies could be cast.
 
 <a id="Hostile-Group-G16-heading-0006"></a>
 
@@ -35353,7 +35353,7 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Drawing control |
-| Common species, variants and command scope | A tracked controller bearing a rotating drawing cylinder and three survey beams. It issued work order to the survey, lifting, and welding swarms, took the human stop seal as the topmost exception, and, short of wire and hydraulics, stagnated keeping only surveying. It was no king owning the unfinished cache''s distribution grid. |
+| Common species, variants and command scope | A tracked controller bearing a rotating drawing cylinder and three survey beams. It issued work order to the survey, lifting, and welding swarms, took the human stop seal as the topmost exception, and, short of wire and hydraulics, stagnated keeping only surveying. It was no leader owning the unfinished cache''s distribution grid. |
 
 - Role and Body: The controller of the Girder Spider, a tracked controller fitted with a rotating blueprint drum and three surveying beams.
 - Origin: The last unapproved layer in the Suseo blueprint vault awakened after merging with an Amsa heavy-equipment cache.
@@ -35893,7 +35893,7 @@ G16-SC1, G16-SC2, G16-SC3.
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Unfinished-tower construction |
-| Common species, variants and command scope | A giant construction body with crane arms, survey beams, and a distribution wall joined to a vertical frame. A scenario boss, but no biological king of the corps — a stronghold where the layers of an uncompleted high-rise drawing reactivated at once; when resources cut it abandoned floors one by one, and when exception layers passed half it came down to a negotiable state. |
+| Common species, variants and command scope | A giant construction body with crane arms, survey beams, and a distribution wall joined to a vertical frame. A scenario boss, but no biological leader of the corps — a stronghold where the layers of an uncompleted high-rise drawing reactivated at once; when resources cut it abandoned floors one by one, and when exception layers passed half it came down to a negotiable state. |
 
 <a id="Hostile-Group-G16-heading-0138"></a>
 
@@ -36111,7 +36111,7 @@ Coexistence left the labor of watching the old cache and continually updating th
 
 철골거미는 수서 도면 금고 아래 공동구에서 미완 도면을 완성하려는 캐시 컨트롤러, 측량 포트, 양중 암, 용접 무리다. 붕괴 뒤 세운 가설 거처와 새 배관은 캐시에 없고, 손으로 그린 수정 표시도 레이어와 맞지 않으면 무시된다. 금 간 내력벽을 이음선으로 남기고 멀쩡한 가설 기둥을 장애물로 절단할 수 있다.
 
-개정 전 캐시와 분전이 바탕 시공 생태이며, 미완도면주재기부터 임진자재추종기까지는 측량점·볼트 회수·거푸집 밀이·분전벽처럼 갈라진 기계 하위형이다. 백층미완성탑은 왕이라기보다 여러 레이어가 수직 골조에 붙은 거점 개체다. 방치 암을 포트에 꽂아 수를 늘릴 수 있으나 새 본체는 주조하지 못한다.
+개정 전 캐시와 분전이 바탕 시공 생태이며, 미완도면주재기부터 임진자재추종기까지는 측량점·볼트 회수·거푸집 밀이·분전벽처럼 갈라진 기계 하위형이다. 백층미완성탑은 우두머리라기보다 여러 레이어가 수직 골조에 붙은 거점 개체다. 방치 암을 포트에 꽂아 수를 늘릴 수 있으나 새 본체는 주조하지 못한다.
 
 <a id="Hostile-Group-G16-heading-0006"></a>
 
@@ -36165,7 +36165,7 @@ H16 신태율은 절단 토크와 분전 부하를 기록하지만 새 레이어
 | 구분 | 기계 기종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 도면 통제 |
-| 공통종·변이와 지휘 범위 | 회전 도면 원통과 측량 빔 세 개를 단 궤도형 제어기다. 측량·양중·용접 무리에 작업 순서를 내리며 인간의 중지 봉인을 최우선 예외로 받고, 와이어와 유압이 부족하면 측량만 남겨 정체한다. 미완 캐시의 분배기지 거처를 소유하는 왕이 아니다. |
+| 공통종·변이와 지휘 범위 | 회전 도면 원통과 측량 빔 세 개를 단 궤도형 제어기다. 측량·양중·용접 무리에 작업 순서를 내리며 인간의 중지 봉인을 최우선 예외로 받고, 와이어와 유압이 부족하면 측량만 남겨 정체한다. 미완 캐시의 분배기지 거처를 소유하는 우두머리가 아니다. |
 
 - 역할·신체: 철골거미의 통제자로, 회전 도면 원통과 측량 빔 세 개를 단 궤도형 제어기다.
 - 기원: 수서 도면 금고의 마지막 미승인 레이어가 암사 중장비 캐시와 결합해 깨어났다.
@@ -36705,7 +36705,7 @@ G16-SC1, G16-SC2, G16-SC3.
 | 구분 | 서식 거점·시설 |
 | 전장 단위 | 고정 거점 |
 | 전장 역할 | 미완탑 시공 |
-| 공통종·변이와 지휘 범위 | 크레인 암과 측량 빔, 분전 벽이 수직 골조에 결합된 거대 시공체다. 시나리오 보스지만 기계단의 생물 왕이 아니라 완공되지 않은 고층 도면의 레이어가 한꺼번에 재기동된 거점이며, 자원이 끊기면 층을 하나씩 포기하고 예외 레이어가 과반이면 협상 상태로 내려온다. |
+| 공통종·변이와 지휘 범위 | 크레인 암과 측량 빔, 분전 벽이 수직 골조에 결합된 거대 시공체다. 시나리오 보스지만 기계단의 생물 우두머리가 아니라 완공되지 않은 고층 도면의 레이어가 한꺼번에 재기동된 거점이며, 자원이 끊기면 층을 하나씩 포기하고 예외 레이어가 과반이면 협상 상태로 내려온다. |
 
 <a id="Hostile-Group-G16-heading-0138"></a>
 
@@ -36924,7 +36924,7 @@ The One-Eye Tower is no faction''s enemy. To a person caught in its routine it i
 
 The One-Eye Tower was an ecology of heads on the Yeouido waterfront masts and the Records Bureau rooftop of Seoul Station, short transfer rails, and transmission swarms turning an old threshold table. It was no omnipotent surveillance net tracking people, and it could not merge signals from inside buildings or beyond the mast rows. It mistook cooling-tower steam for fire, metal beds for armed movement, and high-tide railings for intrusion.
 
-The mast rows onto which the threshold sheet was reloaded were the base, and from the Amber-Red Threshold Warden to the West-Sea Salt-Haze Watch Chief the individuals were machine and facility subtypes split by function like thermal domes, tide staffs, flag masts, and rooftop rail nets. The Total-Red Orbit Ring was no biological king but a battlefield strongpoint where sluices and rooftop orbits were bound by a circular relay. No new satellite could be launched, and numbers were kept only by putting abandoned heads onto nearby rails.
+The mast rows onto which the threshold sheet was reloaded were the base, and from the Amber-Red Threshold Warden to the West-Sea Salt-Haze Watch Chief the individuals were machine and facility subtypes split by function like thermal domes, tide staffs, flag masts, and rooftop rail nets. The Total-Red Orbit Ring was no biological leader but a battlefield strongpoint where sluices and rooftop orbits were bound by a circular relay. No new satellite could be launched, and numbers were kept only by putting abandoned heads onto nearby rails.
 
 <a id="Hostile-Group-G17-heading-0006"></a>
 
@@ -36978,7 +36978,7 @@ F01 the Cooling-Tower Keeper erased steam records but could not lower a flag, an
 | Type | Machine type |
 | Battlefield unit | Fixed site |
 | Battlefield role | Threshold distribution |
-| Common species, variants and command scope | A rail-type mast with amber and red flag cylinders and a rotary optical dome. It distributed flag rules to head, rail, and transmission swarms, received the medical whitelist as an exception, renewed the threshold sheet each shift, and stepped down to amber waiting when dome fouling grew severe. It was no omnipotent surveillance king but a threshold-sheet distributor. |
+| Common species, variants and command scope | A rail-type mast with amber and red flag cylinders and a rotary optical dome. It distributed flag rules to head, rail, and transmission swarms, received the medical whitelist as an exception, renewed the threshold sheet each shift, and stepped down to amber waiting when dome fouling grew severe. It was no omnipotent surveillance leader but a threshold-sheet distributor. |
 
 <a id="Hostile-Group-G17-heading-0014"></a>
 
@@ -37518,7 +37518,7 @@ G17-SC1, G17-SC2.
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Total red |
-| Common species, variants and command scope | A giant surveillance ring linking the sluice and rooftop orbits'' alarm heads through a circular relay. A scenario boss, but no king identifying people — a total-red rule where multiple alarms confirmed one another; when heads broke it raised the remaining sensitivity, and when over half the whitelist became valid it stepped down to amber. |
+| Common species, variants and command scope | A giant surveillance ring linking the sluice and rooftop orbits'' alarm heads through a circular relay. A scenario boss, but no leader identifying people — a total-red rule where multiple alarms confirmed one another; when heads broke it raised the remaining sensitivity, and when over half the whitelist became valid it stepped down to amber. |
 
 - Role and body: A scenario boss, a vast surveillance ring whose sluice and rooftop-track alarm heads are connected by a circular relay.
 - Origin: On the day of the collapse, multiple alarms confirmed one another without checking for cancellations, becoming a single all-red rule.
@@ -37648,7 +37648,7 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 
 외눈탑은 여의도 수변 마스트와 서울역 기록청 옥상의 헤드, 짧은 이동 레일, 송신 무리가 오래된 임계 테이블을 돌리는 생태다. 사람을 추적하는 전능한 감시망이 아니며 건물 안이나 마스트 열 밖의 신호를 합치지 못한다. 냉각탑 증기를 화재로, 금속 침대를 무장 이동으로, 만조 난간을 침입으로 오인한다.
 
-임계표가 다시 적재된 마스트 열이 바탕이고, 황적임계주재기부터 서해염무감시두까지는 열화상 돔·조위 봉·플래그 창·옥상 레일망처럼 기능이 갈라진 기계·시설 하위형이다. 전수적색궤도환은 생물 왕이 아니라 수문과 옥상 궤도가 원형 중계기로 묶인 전장 거점이다. 새 위성을 띄우지 못하며 방치 헤드를 가까운 레일에 올리는 정도로만 수를 유지한다.
+임계표가 다시 적재된 마스트 열이 바탕이고, 황적임계주재기부터 서해염무감시두까지는 열화상 돔·조위 봉·플래그 창·옥상 레일망처럼 기능이 갈라진 기계·시설 하위형이다. 전수적색궤도환은 생물 우두머리가 아니라 수문과 옥상 궤도가 원형 중계기로 묶인 전장 거점이다. 새 위성을 띄우지 못하며 방치 헤드를 가까운 레일에 올리는 정도로만 수를 유지한다.
 
 <a id="Hostile-Group-G17-heading-0006"></a>
 
@@ -37702,7 +37702,7 @@ F01 냉각탑지기는 증기 기록을 소거하지만 플래그를 내리지 �
 | 구분 | 기계 기종 |
 | 전장 단위 | 고정 거점 |
 | 전장 역할 | 임계 배표 |
-| 공통종·변이와 지휘 범위 | 황색·적색 플래그 원통과 회전 광학 돔을 단 레일형 마스트다. 헤드·레일·송신 무리에 플래그 규칙을 배포하고 의료 화이트리스트를 예외로 받으며, 교대마다 임계표를 갱신하고 돔 오염이 심하면 황색 대기로 내려온다. 전능 감시망의 왕이 아니라 임계표 분배기다. |
+| 공통종·변이와 지휘 범위 | 황색·적색 플래그 원통과 회전 광학 돔을 단 레일형 마스트다. 헤드·레일·송신 무리에 플래그 규칙을 배포하고 의료 화이트리스트를 예외로 받으며, 교대마다 임계표를 갱신하고 돔 오염이 심하면 황색 대기로 내려온다. 전능 감시망의 우두머리가 아니라 임계표 분배기다. |
 
 <a id="Hostile-Group-G17-heading-0014"></a>
 
@@ -38242,7 +38242,7 @@ G17-SC1, G17-SC2.
 | 구분 | 서식 거점·시설 |
 | 전장 단위 | 고정 거점 |
 | 전장 역할 | 전수 적색 |
-| 공통종·변이와 지휘 범위 | 수문과 옥상 궤도의 경보 헤드가 원형 중계기로 연결된 거대 감시환이다. 시나리오 보스지만 사람을 식별하는 왕이 아니라 복수 경보가 서로를 확증한 전수 적색 규칙이며, 헤드가 끊기면 남은 감도를 올리고 화이트리스트 과반이 유효해지면 황색으로 내려온다. |
+| 공통종·변이와 지휘 범위 | 수문과 옥상 궤도의 경보 헤드가 원형 중계기로 연결된 거대 감시환이다. 시나리오 보스지만 사람을 식별하는 우두머리가 아니라 복수 경보가 서로를 확증한 전수 적색 규칙이며, 헤드가 끊기면 남은 감도를 올리고 화이트리스트 과반이 유효해지면 황색으로 내려온다. |
 
 - 역할·신체: 시나리오 보스로, 수문과 옥상 궤도의 경보 헤드가 원형 중계기로 연결된 거대 감시환이다.
 - 기원: 붕괴 당일 복수 경보가 취소 확인 없이 서로를 확증하며 하나의 전수 적색 규칙이 되었다.
@@ -38975,7 +38975,7 @@ F02 배전반이는 두 파형을 갈라 기록하지만 결함 좌표를 고치
 | 구분 | 기계 기종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 결함맵 통제 |
-| 공통종·변이와 지휘 범위 | 궤도 결함 지도 원통과 용접·연마 편성 접속기를 단 기관차다. 용접차·연마차·침목차에 작업 순서를 내리며 봉인된 제외 목록을 우선하고, 와이어가 끊기면 계측만 남겨 정체한다. 폐선 편성의 분배기지 생물 왕이 아니다. |
+| 공통종·변이와 지휘 범위 | 궤도 결함 지도 원통과 용접·연마 편성 접속기를 단 기관차다. 용접차·연마차·침목차에 작업 순서를 내리며 봉인된 제외 목록을 우선하고, 와이어가 끊기면 계측만 남겨 정체한다. 폐선 편성의 분배기지 생물 우두머리가 아니다. |
 
 - 역할·신체: 불다리열차 통제자로, 궤도 결함 지도 원통과 용접·연마 편성 접속기를 단 기관차다.
 - 기원: 서남 기지 결함 맵과 용산 폐선 자동 보수표가 합쳐져 독립 기관차로 남았다.
@@ -40965,7 +40965,7 @@ The Lantern Ant was not a living ancient organism but a lineage of pre-collapse 
 | Food and energy | Power came from the sealed store''s small solid cells, the test track''s induction charging plates, and the transmission gallery''s emergency distribution. / Ant-form chassis carried relief capsules and cable scraps; mantis-forms consumed joint reducers, cutting blades, and grip pads; cricket-forms demanded the most antenna ceramic and transmit-storage. / Cooling did not use a large loop; it relied on small heat sinks that took joint heat and on night air. / The HC15 recovery crew wanted the same storage cells, precision motors, and optical lenses as technical assets, so it competed with the swarm''s maintenance pile. / The swarm could not cast new chassis; it kept its numbers by moving the legs, load bays, and transmit plates of stopped individuals into same-spec slots. / Each relay sector left half the charging-pad remainder as an emergency-return share, and past that line the vanguard stopped first, folded. / Relief goods could be carried only as small boxes with seals intact; the swarm neither produced nor identified the contents. / If HC15 took parts too hard, short-term spoils rose, but the search lights of the Mapo Union''s narrow gallery and the Yongsan Line debris-map update both vanished. |
 | Life cycle and upkeep | The life cycle is read in five stages: emergence, spread, stall, negotiable, and breakup. / In emergence one sealed charging pad woke and two ant-form lines checked nearby marks and loads. / In spread a cricket-form transmitter set the next relay and a mantis-form vanguard cleared debris only as wide as the file would pass. / Stall came when a shortage of cell-exchange slots, cracked antennas, or colliding path marks made the file repeat the same loop. / In the negotiable stage, if people presented a correct recipient mark, a relay-silence time, and a returnable count of load bays, part of the carry queue opened. / Breakup proceeded by isolating the main transmitter, sealing the charging pad, and splitting the path ledgers by swarm; it was not necessary to smash every individual. / Maintenance that moved parts from a stopped chassis was possible only after a return to the charging pad, and it could not independently proliferate outdoors or convert other machines into its own line. / Long-term memory was cut at each relay sector, so one sector''s agreement did not automatically propagate to another. |
 | Senses | The ant-form estimated path and rescue targets by overlaying a forward low-light lens, contact pressure gauges in the legs, near-range carbon-dioxide and heat change, and load-bay weight. / The mantis-form sorted debris it could lift by short-range depth measure and joint torque, and the cricket-form read acoustic pulses bounced off walls and conduits and short-range radio replies. / It had no sense that could confirm a face, a name, the contents of goods, or a headcount beyond a wall. / Failures included taking a hot pipe for a person lying down, a regularly trembling generator for a relief beacon, and a reflective vest for an old test target. / When F09''s reading and the swarm load table differed, four ant-forms repeated a contact search and the HC15 human mediator decided whether passage was allowed. / A distant signal continued only if cricket-forms were placed in a row, and if one relay broke the sense beyond it vanished too. |
-| Group behavior | There was no fixed queen chassis. / A distribution nucleus on each sector''s charging pad calculated load count and return power, and a cricket-form pair set the relay order with the next sector. / The ant-form file split into a lead search line and a trailing carry line, and a mantis-form vanguard stepped in front only when the path was blocked. / The distribution nucleus chose not an attack order but only which load bay to send to which test receiving point. / If the two transmitters'' maps collided the file stopped at the crossing with its backs flashing, and it opened no new path until the F09 and HC15 mediators matched the physical marks to the actual refugee list. / A band that had lost its distribution nucleus fell back along the last return line to the charging pad, so destroying a command individual did not by itself mean a runaway. / But if the return line itself was blocked, the mantis-form tried to force the passage wider and the damage grew. |
+| Group behavior | There was no fixed mother chassis. / A distribution nucleus on each sector''s charging pad calculated load count and return power, and a cricket-form pair set the relay order with the next sector. / The ant-form file split into a lead search line and a trailing carry line, and a mantis-form vanguard stepped in front only when the path was blocked. / The distribution nucleus chose not an attack order but only which load bay to send to which test receiving point. / If the two transmitters'' maps collided the file stopped at the crossing with its backs flashing, and it opened no new path until the F09 and HC15 mediators matched the physical marks to the actual refugee list. / A band that had lost its distribution nucleus fell back along the last return line to the charging pad, so destroying a command individual did not by itself mean a runaway. / But if the return line itself was blocked, the mantis-form tried to force the passage wider and the damage grew. |
 
 <a id="Hostile-Group-G25-heading-0008"></a>
 
@@ -40990,7 +40990,7 @@ The machine controller adjusted only work sequence and return lines. It could fo
 | [G25E13 · Great-Resonance Relay Cricket](/wiki/Hostile-Group-G25/#g25e13) | Machine type | Single individual | Aged variant | aging-stage type | M040 |
 | [G25E14 · White-Jawed Cleaning Colony](/wiki/Hostile-Group-G25/#g25e14) | Machine type | Single individual | General line | common ecology type | M040 |
 | [G25E15 · Honeycomb Charging Rack](/wiki/Hostile-Group-G25/#g25e15) | Machine type | Fixed site | Strongpoint control | environmental stronghold type | M040 |
-| [G25E16 · Queen Echo Tower](/wiki/Hostile-Group-G25/#g25e16) | Machine type | Single individual | Strategic encounter | scenario boss | M040 |
+| [G25E16 · Mother Echo Tower](/wiki/Hostile-Group-G25/#g25e16) | Machine type | Single individual | Strategic encounter | scenario boss | M040 |
 
 <a id="Hostile-Group-G25-heading-0011"></a>
 <a id="g25e01"></a>
@@ -41194,7 +41194,7 @@ The machine controller adjusted only work sequence and return lines. It could fo
 - Origin: Its line branched off from pre-collapse entry checkpoints that counted returning search personnel. Even after the Mapo Union sealed door opened, the last personnel total was not reset.
 - Habitat and needs: Forks in the route and exits from the test building are its observation posts. It needs optical-window cleaning fluid and power for its cover hinge, and relies on auxiliary lights in dark areas.
 - Life cycle and maintenance: It masks scratched windows with a shade and uses only those remaining. A unit whose cover cannot be opened for calibration grows old in place, blind in two directions.
-- Behavior and hierarchy: It reports completion to the queen relay tower only when the return count matches. It may count the shadow of a person carrying a bag as two and keep waiting for a team member who has already returned.
+- Behavior and hierarchy: It reports completion to the mother relay tower only when the return count matches. It may count the shadow of a person carrying a bag as two and keep waiting for a team member who has already returned.
 - Escalation: After stage 1 red entry lights come on, it recounts passersby at stage 2. At stage 3, a mismatched total hardens into an order to halt at the threshold.
 - Combat and response: Have people and bags pass separately to compare the counts from each optical window. Use the count-cancellation lever on the maintenance side rather than forcing the cover open.
 - Negotiation and moral choice: The sentry post can be kept if people review the return roster and maintain its lenses. Set a retention period for records so a safety head count does not turn into surveillance of residents'' movements.
@@ -41324,7 +41324,7 @@ The machine controller adjusted only work sequence and return lines. It could fo
 - Origin: A pre-collapse main relay that coordinated searches across a wide area lost half its pillar during a long dormancy. When the Mapo Union restored power, it released old response records all at once.
 - Habitat and needs: It does not leave intersections of solid walls that can carry sound over long distances. It uses tension bolts, resonance panels, and substantial docking power, but cannot bridge the same distance through open air.
 - Life cycle and maintenance: Fatigue cracks in the pillar cause the highest frequencies to disappear first. Small relay units can be connected to assist it, but they cannot fully restore its original bandwidth.
-- Behavior and hierarchy: It adjusts only the order of responses between branches; it cannot change the queen relay tower’s work zones. Different calls merge into a single low note, creating spurious rescue requests.
+- Behavior and hierarchy: It adjusts only the order of responses between branches; it cannot change the mother relay tower’s work zones. Different calls merge into a single low note, creating spurious rescue requests.
 - Escalation: At stage 1, it replays old calls; at stage 2, responses from every branch are delayed. At stage 3, unending response collisions bring departure confirmations to a halt.
 - Engagement and response: Fit a test damping band to the resonance pillar and check each branch line by wire. Toppling the pillar tears out the wall anchors with it.
 - Negotiation and moral choice: It can be assigned only low-band emergency communications, with the rest handed over to human liaisons. The maintenance labor required to preserve the old relay must be weighed against faster new equipment.
@@ -41385,7 +41385,7 @@ The machine controller adjusted only work sequence and return lines. It could fo
 <a id="Hostile-Group-G25-heading-0071"></a>
 <a id="g25e16"></a>
 
-### G25E16 · Queen Echo Tower
+### G25E16 · Mother Echo Tower
 
 - Source batch: M040
 - Former role class: scenario boss
@@ -41396,10 +41396,10 @@ The machine controller adjusted only work sequence and return lines. It could fo
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Strategic encounter |
-| Common species, variants and command scope | The Queen-Afterglow Tower was a machine chassis type differentiated from the G25 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole swarm''s ecological order nor human command. |
+| Common species, variants and command scope | The Mother Echo Tower was a machine chassis type differentiated from the G25 common ecology. The strategic encounter role applied only at the independent-unit scope, and stood in for neither the whole swarm''s ecological order nor human command. |
 
 - Role and body: A relay tower shaped like a long ant queen’s abdomen lies in the center of a maintenance room. Antennae on its head and ring-shaped terminals coordinate the order of calls across search zones.
-- Origin: The final headcount device for a large-scale rescue drill never received a completion report because of the collapse. Its nickname, queen, comes not from a biological reproductive organ but from an old work schedule that is hard to read.
+- Origin: The final headcount device for a large-scale rescue drill never received a completion report because of the collapse. Its nickname, mother, comes not from a biological reproductive organ but from an old work schedule that is hard to read.
 - Habitat and needs: It operates only in the connection room of the Mapo Union sealed gallery. It needs cooling filters, recording modules, and distributed power; it has no facilities for producing new search units.
 - Life cycle and maintenance: It tries to lock zones with faulty records one by one, leaving only valid calls. As the remaining schedule shrinks, searches concentrate in the same narrow zones, and it cannot restore the schedule without human approval.
 - Behavior and hierarchy: It distributes start and return calls through small relay units but cannot directly see actual survivors. Its treatment of every nonresponse as a person still awaiting rescue is at the heart of the swarm’s fixation.
@@ -41537,7 +41537,7 @@ The ending that kept one double line for rescue preserved the ability to search 
 | 먹이·에너지 | 전력은 봉인고의 소형 고체 축전지 시험 트랙의 유도 충전판 송신 갤러리 비상 분전에서 얻는다. / 개미형 기체는 구호 캡슐과 케이블 조각을 나르고 사마귀형은 관절 감속기·절단날·그립 패드를 소비하며 귀뚜라미형은 안테나 세라믹과 발신용 축전량을 가장 많이 요구한다. / 냉각은 큰 순환계가 아니라 관절 열을 빼는 소형 방열판과 야간 공기에 의존한다. / HC15 회수반은 같은 축전 셀 정밀 모터 광학 렌즈를 기술 자산으로 원하므로 군집의 정비 더미와 경합한다. / 군집은 새 기체를 주조하지 못하며 멎은 개체의 다리 적재함 발신판을 같은 규격 슬롯에 옮겨 수를 유지한다. / 한 중계 구획은 충전대 잔량의 절반을 비상 귀환분으로 남겨 두고, 그 선을 넘으면 첨병부터 접힌 자세로 멈춘다. / 구호품은 봉인이 온전한 소형 상자만 운반할 수 있고 내용물을 생산하거나 식별하지 못한다. / HC15가 부품을 과도하게 반출하면 단기 전리품은 늘지만 마포 연합 좁은 갤러리의 탐색등과 용산선 잔해 지도 갱신 능력이 함께 사라진다. |
 | 생애·정비 | 생애 주기는 출현, 확산 정체 협상가능 와해의 다섯 단계다. / 출현에는 봉인 충전대 하나가 깨어나 개미형 두 줄이 주변 표식과 하중을 확인한다. / 확산에서는 귀뚜라미형 발신기가 다음 중계점을 세우고 사마귀형 첨병이 복렬이 지날 폭만큼 잔해를 치운다. / 정체는 축전 교환 슬롯 부족, 안테나 균열 경로 표식 충돌로 복렬이 같은 고리를 반복할 때 온다. / 협상가능 단계에서는 올바른 수신자 표식, 중계 침묵 시간 반환 가능한 적재함 수를 사람이 제시하면 운반 큐 일부가 열린다. / 와해는 주 발신기 격리, 충전대 봉인 군집별 경로 장부 분리로 진행되며 개체를 모두 부술 필요는 없다. / 멎은 기체에서 부품을 옮기는 정비는 충전대 귀환 뒤에만 가능하고, 야외에서 독립 증식하거나 다른 기계를 자기 계열로 바꾸지 못한다. / 장기 기억은 중계 구획마다 끊겨 있어 한 구획의 합의가 다른 구획에 자동 전파되지 않는다. |
 | 감각 | 개미형은 전면 저조도 렌즈 다리의 접촉 압력계 가까운 거리의 이산화탄소·열 변화 적재함 하중을 겹쳐 길과 구조 대상을 추정한다. / 사마귀형은 짧은 거리 깊이 측정과 관절 토크로 들어 올릴 수 있는 잔해를 가르며, 귀뚜라미형은 벽과 관로에 튕긴 음향 펄스와 단거리 무선 응답을 읽는다. / 얼굴 이름 물자 내용물 벽 너머 인원수를 확정할 감각은 없다. / 뜨거운 배관을 누운 사람으로 규칙적으로 떨리는 발전기를 구조 비콘으로 반사 조끼를 옛 시험 표적으로 오인하는 실패가 있다. / F09의 판독값과 군집 하중표가 다르면 개미형 네 대가 접촉 탐색을 반복하고 HC15 인간 중재자가 통행 여부를 결정한다. / 먼 거리 신호는 귀뚜라미형을 연속 배치해야만 이어지며 중계 한 곳이 끊기면 그 너머 감각도 사라진다. |
-| 집단 행동 | 고정된 여왕 기체는 없다. / 각 구획의 충전대에 붙은 분배핵이 적재 수와 귀환 전력을 계산하고, 귀뚜라미형 한 쌍이 다음 구획과의 중계 순서를 정한다. / 개미형 복렬은 선두 수색줄과 후미 운반줄로 갈리며 사마귀형 첨병은 길이 막혔을 때만 앞에 선다. / 분배핵은 공격 명령이 아니라 어느 적재함을 어느 시험 수신점에 보낼지만 선택한다. / 발신기 둘의 지도가 충돌하면 복렬은 교차점에서 등을 깜빡이며 정지하고, F09와 HC15 중재자가 물리 표식과 실제 피난 명단을 맞출 때까지 새 경로를 열지 않는다. / 분배핵을 잃은 무리는 마지막 귀환선을 따라 충전대로 물러나므로 지휘 개체 파괴가 곧 폭주를 뜻하지는 않는다. / 다만 귀환선 자체가 막히면 사마귀형이 통로를 강제로 넓히려 들어 피해가 커진다. |
+| 집단 행동 | 고정된 어미 기체는 없다. / 각 구획의 충전대에 붙은 분배핵이 적재 수와 귀환 전력을 계산하고, 귀뚜라미형 한 쌍이 다음 구획과의 중계 순서를 정한다. / 개미형 복렬은 선두 수색줄과 후미 운반줄로 갈리며 사마귀형 첨병은 길이 막혔을 때만 앞에 선다. / 분배핵은 공격 명령이 아니라 어느 적재함을 어느 시험 수신점에 보낼지만 선택한다. / 발신기 둘의 지도가 충돌하면 복렬은 교차점에서 등을 깜빡이며 정지하고, F09와 HC15 중재자가 물리 표식과 실제 피난 명단을 맞출 때까지 새 경로를 열지 않는다. / 분배핵을 잃은 무리는 마지막 귀환선을 따라 충전대로 물러나므로 지휘 개체 파괴가 곧 폭주를 뜻하지는 않는다. / 다만 귀환선 자체가 막히면 사마귀형이 통로를 강제로 넓히려 들어 피해가 커진다. |
 
 <a id="Hostile-Group-G25-heading-0008"></a>
 
@@ -41562,7 +41562,7 @@ The ending that kept one double line for rescue preserved the ability to search 
 | [G25E13 · 큰울림중계귀뚜라미](/wiki/Hostile-Group-G25/#g25e13) | 기계 기종 | 독립 개체 | 노화 변이 | 노화 단계형 | M040 |
 | [G25E14 · 흰턱청소군](/wiki/Hostile-Group-G25/#g25e14) | 기계 기종 | 독립 개체 | 일반 전열 | 일반 생태형 | M040 |
 | [G25E15 · 벌집충전거치대](/wiki/Hostile-Group-G25/#g25e15) | 기계 기종 | 고정 거점 | 거점 통제 | 환경 거점형 | M040 |
-| [G25E16 · 여왕잔향탑](/wiki/Hostile-Group-G25/#g25e16) | 기계 기종 | 독립 개체 | 전략 조우 | 시나리오 보스 | M040 |
+| [G25E16 · 어미잔향탑](/wiki/Hostile-Group-G25/#g25e16) | 기계 기종 | 독립 개체 | 전략 조우 | 시나리오 보스 | M040 |
 
 <a id="Hostile-Group-G25-heading-0011"></a>
 <a id="g25e01"></a>
@@ -41766,7 +41766,7 @@ The ending that kept one double line for rescue preserved the ability to search 
 - 기원: 수색 인원의 귀환을 세던 붕괴 이전 출입 확인기에서 갈라진 계열이다. 마포 연합 봉인문이 열려도 마지막 인원 합계는 초기화되지 않았다.
 - 서식·필요: 갈림길 문턱과 시험동 출구가 관측 자리다. 광학창 세척액과 덮개 힌지 전력이 필요하며 어두운 구역에서는 보조등에 의존한다.
 - 생애·정비: 긁힌 창을 차광판으로 가려 남은 창만 사용한다. 덮개를 열어 교정하지 못한 개체는 두 방향을 잃은 채 같은 자리에 늙는다.
-- 행동·위계: 귀환 합계가 맞아야 여왕 중계탑에 완료를 보고한다. 짐을 멘 사람의 그림자를 둘로 세어 이미 돌아온 대원을 계속 기다릴 수 있다.
+- 행동·위계: 귀환 합계가 맞아야 어미 중계탑에 완료를 보고한다. 짐을 멘 사람의 그림자를 둘로 세어 이미 돌아온 대원을 계속 기다릴 수 있다.
 - 상승: 1단계의 붉은 출입 점등 이후 2단계에는 통행자를 다시 센다. 3단계 합계 불일치가 문턱 정지 명령으로 굳는다.
 - 교전·대응: 사람과 짐을 따로 지나가게 해 광학창별 계수를 대조한다. 덮개를 억지로 벌리기보다 정비 측면의 계수 취소 레버를 쓴다.
 - 교섭·도덕 선택: 귀환 명부를 사람이 검토하고 렌즈를 관리하면 초소를 유지할 수 있다. 안전 인원 집계가 주민의 이동 감시로 바뀌지 않도록 기록 보관 시간을 정한다.
@@ -41896,7 +41896,7 @@ The ending that kept one double line for rescue preserved the ability to search 
 - 기원: 광범위 구조 수색을 묶던 붕괴 이전 주중계기가 장기 휴면 중 기둥 절반을 잃었다. 마포 연합 재통전 때 낡은 응답 기록까지 한꺼번에 방출했다.
 - 서식·필요: 소리를 멀리 전할 수 있는 단단한 벽체 교차부를 벗어나지 않는다. 장력 볼트, 공명판과 높은 도킹 전력을 쓰지만 열린 공중으로는 같은 거리를 잇지 못한다.
 - 생애·정비: 기둥의 피로 균열 때문에 높은 주파수부터 사라진다. 작은 중계체를 연결해 보조할 수 있어도 원래의 대역을 완전히 되찾지는 못한다.
-- 행동·위계: 분기 사이 응답 순서만 조정하며 여왕 중계탑의 작업 구획은 바꾸지 못한다. 서로 다른 호출이 낮은 한 음으로 합쳐져 빈 구조 요청이 생긴다.
+- 행동·위계: 분기 사이 응답 순서만 조정하며 어미 중계탑의 작업 구획은 바꾸지 못한다. 서로 다른 호출이 낮은 한 음으로 합쳐져 빈 구조 요청이 생긴다.
 - 상승: 1단계의 오래된 호출 재생이 2단계에서 모든 분기의 응답을 늦춘다. 3단계에는 끝나지 않는 응답 충돌 때문에 출항 확인이 멎는다.
 - 교전·대응: 공명 기둥에 시험용 감쇠띠를 걸고 분기선 하나씩 유선으로 확인한다. 기둥을 넘어뜨리면 벽체 고정점이 함께 뜯긴다.
 - 교섭·도덕 선택: 낮은 대역의 비상 연락만 맡기고 나머지는 인간 연락원에게 넘길 수 있다. 낡은 중계기를 보존하는 정비 노동을 빠른 새 장비와 비교해야 한다.
@@ -41957,7 +41957,7 @@ The ending that kept one double line for rescue preserved the ability to search 
 <a id="Hostile-Group-G25-heading-0071"></a>
 <a id="g25e16"></a>
 
-### G25E16 · 여왕잔향탑
+### G25E16 · 어미잔향탑
 
 - 출처 배치: M040
 - 기존 역할군: 시나리오 보스
@@ -41968,10 +41968,10 @@ The ending that kept one double line for rescue preserved the ability to search 
 | 구분 | 기계 기종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 전략 조우 |
-| 공통종·변이와 지휘 범위 | 여왕잔향탑은 G25 공통 생태에서 분화한 기계 기종다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다. |
+| 공통종·변이와 지휘 범위 | 어미잔향탑은 G25 공통 생태에서 분화한 기계 기종다. 전략 조우 역할은 독립 개체 범위에만 적용되며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다. |
 
 - 역할·신체: 기다란 개미 여왕의 복부처럼 생긴 중계탑이 정비실 중앙에 누워 있다. 머리의 안테나와 환형 단자들이 수색 구획의 호출 순서를 묶는다.
-- 기원: 대규모 구조 훈련의 최종 인원 확인 장치가 붕괴로 종료 보고를 받지 못했다. 생물의 번식기관이 아니라 읽기 어려운 옛 작업표가 여왕이라는 별명의 근거다.
+- 기원: 대규모 구조 훈련의 최종 인원 확인 장치가 붕괴로 종료 보고를 받지 못했다. 생물의 번식기관이 아니라 읽기 어려운 옛 작업표가 어미라는 별명의 근거다.
 - 서식·필요: 마포 연합 봉인 갤러리의 접속실에서만 작동한다. 냉각 필터와 기록 모듈, 분전 전력이 필요하고 새 수색체를 생산할 설비는 없다.
 - 생애·정비: 기록 불량 구획을 차례로 잠가 유효한 호출만 남기려 한다. 남은 표가 줄수록 같은 좁은 구획에 수색이 집중되며 사람의 승인 없이는 표를 복원하지 못한다.
 - 행동·위계: 작은 중계체를 써서 시작과 귀환을 배포하되 실제 생존자는 직접 보지 못한다. 미응답을 전부 미구조 인원으로 간주하여 군집이 고착된다.
@@ -42133,7 +42133,7 @@ The machine controller adjusted only work sequence and return lines. It could fo
 | [G26E11 · Segmented Snake Bridge Eye](/wiki/Hostile-Group-G26/#g26e11) | Machine type | Single individual | Specialist support | occupational special type | M041 |
 | [G26E12 · Sandbar Crocodile Clamp](/wiki/Hostile-Group-G26/#g26e12) | Machine type | Single individual | Local adaptation | regional variant | M041 |
 | [G26E13 · Gate Horned Great Tow Dragon](/wiki/Hostile-Group-G26/#g26e13) | Machine type | Single individual | Elite blocking | second elite | M041 |
-| [G26E14 · King Jaw Demolition Machine](/wiki/Hostile-Group-G26/#g26e14) | Machine type | Single individual | Strategic encounter | scenario boss | M041 |
+| [G26E14 · Great-Jaw Demolition Machine](/wiki/Hostile-Group-G26/#g26e14) | Machine type | Single individual | Strategic encounter | scenario boss | M041 |
 | [G26E15 · Small Horn Support Herd](/wiki/Hostile-Group-G26/#g26e15) | Machine type | Pack or unit | General line | common ecology type | M041 |
 | [G26E16 · Distant Wing Returner](/wiki/Hostile-Group-G26/#g26e16) | Machine type | Pack or unit | Local adaptation | regional variant | M041 |
 
@@ -42478,7 +42478,7 @@ The machine controller adjusted only work sequence and return lines. It could fo
 <a id="Hostile-Group-G26-heading-0063"></a>
 <a id="g26e14"></a>
 
-### G26E14 · King Jaw Demolition Machine
+### G26E14 · Great-Jaw Demolition Machine
 
 - Source batch: M041
 - Former role class: scenario boss
@@ -42705,7 +42705,7 @@ The ending that saved the formation required public load tests and joint supervi
 | [G26E11 · 마디뱀교량눈](/wiki/Hostile-Group-G26/#g26e11) | 기계 기종 | 독립 개체 | 전문 지원 | 직능 특수형 | M041 |
 | [G26E12 · 둔치악어집게](/wiki/Hostile-Group-G26/#g26e12) | 기계 기종 | 독립 개체 | 지역 적응 | 지역 변종 | M041 |
 | [G26E13 · 관문뿔대견인룡](/wiki/Hostile-Group-G26/#g26e13) | 기계 기종 | 독립 개체 | 정예 차단 | 두 번째 정예 | M041 |
-| [G26E14 · 왕턱철거기](/wiki/Hostile-Group-G26/#g26e14) | 기계 기종 | 독립 개체 | 전략 조우 | 시나리오 보스 | M041 |
+| [G26E14 · 큰턱철거기](/wiki/Hostile-Group-G26/#g26e14) | 기계 기종 | 독립 개체 | 전략 조우 | 시나리오 보스 | M041 |
 | [G26E15 · 작은뿔받침떼](/wiki/Hostile-Group-G26/#g26e15) | 기계 기종 | 무리·부대 | 일반 전열 | 일반 생태형 | M041 |
 | [G26E16 · 먼날개귀환자](/wiki/Hostile-Group-G26/#g26e16) | 기계 기종 | 무리·부대 | 지역 적응 | 지역 변종 | M041 |
 
@@ -43050,7 +43050,7 @@ The ending that saved the formation required public load tests and joint supervi
 <a id="Hostile-Group-G26-heading-0063"></a>
 <a id="g26e14"></a>
 
-### G26E14 · 왕턱철거기
+### G26E14 · 큰턱철거기
 
 - 출처 배치: M041
 - 기존 역할군: 시나리오 보스
@@ -43061,7 +43061,7 @@ The ending that saved the formation required public load tests and joint supervi
 | 구분 | 기계 기종 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 전략 조우 |
-| 공통종·변이와 지휘 범위 | 왕턱철거기은 G26 공통 생태에서 분화한 기계 기종다. 전략 조우 역할은 독립 개체 범위에 그치며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다. |
+| 공통종·변이와 지휘 범위 | 큰턱철거기는 G26 공통 생태에서 분화한 기계 기종다. 전략 조우 역할은 독립 개체 범위에 그치며, 집단 전체의 생태 질서나 인간 지휘권을 대신하지 않는다. |
 
 - 역할·신체: 티라노급 큰 턱이 이족 중장 선체의 절반을 차지한다. 포식 기체라는 별명과 달리 이빨은 고철을 물어 분리하는 교체형 철거 돌기다.
 - 기원: 붕괴 이전 대형 붕괴물 제거를 맡던 최상위 작업체가 강남선 깊은 봉인고에 남았다. 마지막 긴급 철거 범위는 읽히지만 그 범위를 승인한 조건은 해독되지 않는다.

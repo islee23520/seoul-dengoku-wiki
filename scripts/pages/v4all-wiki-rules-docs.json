@@ -1,0 +1,396 @@
+{
+ "purpose": "v4 전면 전환 레인 B: 위키 문서(030) 적대 집단 도감의 왕·군주·King·Lord 이름과 비유를 바꾼다. 개체 이름은 소유자 검토용 제안이다.",
+ "hold": [
+  "person-0374"
+ ],
+ "rules": [
+  {
+   "id": "v4all-d-001",
+   "file": "030",
+   "from": "대왕후계",
+   "to": "큰어른후계",
+   "expect": 3,
+   "key": "Hostile-Group-G01",
+   "col": "body_ko_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-002",
+   "file": "030",
+   "from": "울음왕이",
+   "to": "울음잡이가",
+   "expect": 1,
+   "key": "Hostile-Group-G01",
+   "col": "body_ko_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-003",
+   "file": "030",
+   "from": "울음왕",
+   "to": "울음잡이",
+   "expect": 4,
+   "key": "Hostile-Group-G01",
+   "col": "body_ko_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-004",
+   "file": "030",
+   "from": "독왕이",
+   "to": "독우두머리가",
+   "expect": 1,
+   "key": "Hostile-Group-G01",
+   "col": "body_ko_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-005",
+   "file": "030",
+   "from": "독왕",
+   "to": "독우두머리",
+   "expect": 3,
+   "key": "Hostile-Group-G01",
+   "col": "body_ko_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-006",
+   "file": "030",
+   "from": "생물학적 왕은",
+   "to": "생물학적 우두머리는",
+   "expect": 1,
+   "key": "Hostile-Group-G01",
+   "col": "body_ko_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-007",
+   "file": "030",
+   "from": "대왕",
+   "to": "큰어른",
+   "expect": 40,
+   "key": "Hostile-Group-G01",
+   "col": "body_ko_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-008",
+   "file": "030",
+   "from": "Great King",
+   "to": "Great Elder",
+   "expect": 42,
+   "key": "Hostile-Group-G01",
+   "col": "body_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-009",
+   "file": "030",
+   "from": "Cry-King",
+   "to": "Cry-Caller",
+   "expect": 5,
+   "key": "Hostile-Group-G01",
+   "col": "body_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-010",
+   "file": "030",
+   "from": "Venom King",
+   "to": "Venom Alpha",
+   "expect": 4,
+   "key": "Hostile-Group-G01",
+   "col": "body_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-011",
+   "file": "030",
+   "from": "biological king of all wild boars",
+   "to": "biological leader of all wild boars",
+   "expect": 1,
+   "key": "Hostile-Group-G01",
+   "col": "body_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-012",
+   "file": "030",
+   "from": "armored king's place",
+   "to": "armored elder's place",
+   "expect": 1,
+   "key": "Hostile-Group-G01",
+   "col": "body_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-013",
+   "file": "030",
+   "from": "not the entire kingdom",
+   "to": "not the entire herd",
+   "expect": 1,
+   "key": "Hostile-Group-G01",
+   "col": "body_md",
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-014",
+   "file": "030",
+   "from": "\\broyal[- ]guard\\b",
+   "to": "bodyguard",
+   "expect": 4,
+   "key": "Hostile-Group-G01",
+   "col": "body_md",
+   "re": true,
+   "group": "creature-G01"
+  },
+  {
+   "id": "v4all-d-015",
+   "file": "030",
+   "from": "전파까마귀 군주 '신호왕'은",
+   "to": "전파까마귀 두목 '신호잡이'는",
+   "expect": 1,
+   "key": "Hostile-Group-G02",
+   "col": "body_ko_md",
+   "group": "creature-G02"
+  },
+  {
+   "id": "v4all-d-016",
+   "file": "030",
+   "from": "신호왕",
+   "to": "신호잡이",
+   "expect": 2,
+   "key": "Hostile-Group-G02",
+   "col": "body_ko_md",
+   "group": "creature-G02"
+  },
+  {
+   "id": "v4all-d-017",
+   "file": "030",
+   "from": "군주라는 이름은",
+   "to": "두목이라는 이름은",
+   "expect": 1,
+   "key": "Hostile-Group-G02",
+   "col": "body_ko_md",
+   "group": "creature-G02"
+  },
+  {
+   "id": "v4all-d-018",
+   "file": "030",
+   "from": "군주",
+   "to": "두목",
+   "expect": 5,
+   "key": "Hostile-Group-G02",
+   "col": "body_ko_md",
+   "group": "creature-G02"
+  },
+  {
+   "id": "v4all-d-019",
+   "file": "030",
+   "from": "Broadcast Crow Lord 'Signal King'",
+   "to": "Broadcast Crow Pair-Lead 'Signal Caller'",
+   "expect": 2,
+   "key": "Hostile-Group-G02",
+   "col": "body_md",
+   "group": "creature-G02"
+  },
+  {
+   "id": "v4all-d-020",
+   "file": "030",
+   "from": "broadcast crow lord 'Signal King'",
+   "to": "broadcast crow pair-lead 'Signal Caller'",
+   "expect": 1,
+   "key": "Hostile-Group-G02",
+   "col": "body_md",
+   "group": "creature-G02"
+  },
+  {
+   "id": "v4all-d-021",
+   "file": "030",
+   "from": "The name sovereign is",
+   "to": "The name pair-lead is",
+   "expect": 1,
+   "key": "Hostile-Group-G02",
+   "col": "body_md",
+   "group": "creature-G02"
+  },
+  {
+   "id": "v4all-d-022",
+   "file": "030",
+   "from": "not the king of the leaderless roost",
+   "to": "not the boss of the leaderless roost",
+   "expect": 1,
+   "key": "Hostile-Group-G02",
+   "col": "body_md",
+   "group": "creature-G02"
+  },
+  {
+   "id": "v4all-d-023",
+   "file": "030",
+   "from": "여왕잔향탑",
+   "to": "어미잔향탑",
+   "expect": 3,
+   "key": "Hostile-Group-G25",
+   "col": "body_ko_md",
+   "group": "creature-G25"
+  },
+  {
+   "id": "v4all-d-024",
+   "file": "030",
+   "from": "여왕 중계탑",
+   "to": "어미 중계탑",
+   "expect": 2,
+   "key": "Hostile-Group-G25",
+   "col": "body_ko_md",
+   "group": "creature-G25"
+  },
+  {
+   "id": "v4all-d-025",
+   "file": "030",
+   "from": "여왕이라는 별명",
+   "to": "어미라는 별명",
+   "expect": 1,
+   "key": "Hostile-Group-G25",
+   "col": "body_ko_md",
+   "group": "creature-G25"
+  },
+  {
+   "id": "v4all-d-026",
+   "file": "030",
+   "from": "\\bQueen[- ](?:Echo|Afterglow) Tower\\b",
+   "to": "Mother Echo Tower",
+   "expect": 3,
+   "key": "Hostile-Group-G25",
+   "col": "body_md",
+   "re": true,
+   "group": "creature-G25"
+  },
+  {
+   "id": "v4all-d-027",
+   "file": "030",
+   "from": "queen relay tower",
+   "to": "mother relay tower",
+   "expect": 2,
+   "key": "Hostile-Group-G25",
+   "col": "body_md",
+   "group": "creature-G25"
+  },
+  {
+   "id": "v4all-d-028",
+   "file": "030",
+   "from": "Its nickname, queen, comes",
+   "to": "Its nickname, mother, comes",
+   "expect": 1,
+   "key": "Hostile-Group-G25",
+   "col": "body_md",
+   "group": "creature-G25"
+  },
+  {
+   "id": "v4all-d-029",
+   "file": "030",
+   "from": "왕턱철거기은",
+   "to": "큰턱철거기는",
+   "expect": 1,
+   "key": "Hostile-Group-G26",
+   "col": "body_ko_md",
+   "group": "creature-G26"
+  },
+  {
+   "id": "v4all-d-030",
+   "file": "030",
+   "from": "왕턱철거기",
+   "to": "큰턱철거기",
+   "expect": 2,
+   "key": "Hostile-Group-G26",
+   "col": "body_ko_md",
+   "group": "creature-G26"
+  },
+  {
+   "id": "v4all-d-031",
+   "file": "030",
+   "from": "King Jaw Demolition Machine",
+   "to": "Great-Jaw Demolition Machine",
+   "expect": 2,
+   "key": "Hostile-Group-G26",
+   "col": "body_md",
+   "group": "creature-G26"
+  },
+  {
+   "id": "v4all-d-032",
+   "file": "030",
+   "from": "왕을 세운 것이 아니라",
+   "to": "우두머리를 세운 것이 아니라",
+   "expect": 1,
+   "key": "Hostile-Group-G04",
+   "col": "body_ko_md",
+   "group": "figure"
+  },
+  {
+   "id": "v4all-d-033",
+   "file": "030",
+   "from": "왕과 근위가",
+   "to": "우두머리와 근위가",
+   "expect": 1,
+   "key": "Hostile-Group-G05",
+   "col": "body_ko_md",
+   "group": "figure"
+  },
+  {
+   "id": "v4all-d-034",
+   "file": "030",
+   "from": "전염의 왕을 찾는",
+   "to": "전염의 우두머리를 찾는",
+   "expect": 1,
+   "key": "Hostile-Group-G05",
+   "col": "body_ko_md",
+   "group": "figure"
+  },
+  {
+   "id": "v4all-d-035",
+   "file": "030",
+   "from": " 왕이 아니",
+   "to": " 우두머리가 아니",
+   "expect": 12,
+   "col": "body_ko_md",
+   "group": "figure"
+  },
+  {
+   "id": "v4all-d-036",
+   "file": "030",
+   "from": "왕이라기보다",
+   "to": "우두머리라기보다",
+   "expect": 2,
+   "col": "body_ko_md",
+   "group": "figure"
+  },
+  {
+   "id": "v4all-d-037",
+   "file": "030",
+   "from": "\\bking\\b",
+   "to": "leader",
+   "expect": 15,
+   "col": "body_md",
+   "re": true,
+   "group": "figure"
+  },
+  {
+   "id": "v4all-d-038",
+   "file": "030",
+   "from": "고정된 여왕 기체",
+   "to": "고정된 어미 기체",
+   "expect": 2,
+   "col": "body_ko_md",
+   "group": "creature-G25"
+  },
+  {
+   "id": "v4all-d-039",
+   "file": "030",
+   "from": "no fixed queen chassis",
+   "to": "no fixed mother chassis",
+   "expect": 2,
+   "col": "body_md",
+   "group": "creature-G25"
+  }
+ ]
+}
