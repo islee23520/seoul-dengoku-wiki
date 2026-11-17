@@ -1,0 +1,144 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v4a-1",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "from": "오해린은 정보기관의 현재 AI 아바타이며 남산타워를 거점으로 삼는다. 정보기관은 약 2026년부터 독립된 중립 조직으로 활동했고 AI가 아바타를 바꾸며 계속 조직을 이끌었다. 첩보 조직이었던 정보기관만이 진정한 대한민국과 청와대 시설 안의 지하 동면소에 잠든 실제 대한민국정부 인사들의 존재를 안다. 정보기관은 이들을 되살려 정통성 있는 조직을 복원하려 한다. 오해린은 정보기관 원장으로 남산타워의 서울 내부 기록과 복구 여부를 대조한다. ",
+   "to": "오해린은 남산타워를 거점으로 서울 안 관측 기록과 수동 신호 일지를 맡는 정부 기록 원장이다. 겨울 정전이 길어져 남산타워의 수동 신호가 늦어지는 밤이면 받은 신호 시각을 기록 원장 한 권에 적어 역마다 같은 시각으로 대조하게 하고, 대조가 어긋난 칸만 경매 가격 기록에 따로 표시해 이웃이 값을 다시 따질 수 있게 한다. ",
+   "expect": 2
+  },
+  {
+   "id": "v4a-2",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "Oh Haerin is the current AI avatar of the intelligence service and uses Namsan Tower as her base. The intelligence service has operated as an independent, neutral organization since around 2026, and the AI continued to lead the organization while changing avatars. Only the intelligence service knows of the true Republic of Korea and of the real Republic of Korea government personnel sleeping in the underground hibernation facility within the Cheongwadae complex. The intelligence service intends to revive them and restore a legitimate organization. As Director of the intelligence service, Oh Haerin cross-checks Namsan Tower's internal Seoul records against the possibility of recovery. ",
+   "to": "Oh Haerin is the Government's records ledger keeper, based at Namsan Tower, who holds the Seoul observation records and the manual-signal log. When a long winter blackout makes Namsan Tower's manual signals late, she writes the signal times into one records ledger and has each station match them to the same hour, and marks only the mismatched bays in the auction price record so that neighbors can reckon the price again. ",
+   "expect": 2
+  },
+  {
+   "id": "v4a-3",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "from": "직함은 정보기관 원장.",
+   "to": "직함은 남산타워 기록 원장.",
+   "expect": 2
+  },
+  {
+   "id": "v4a-4",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "from": "- 소속: 정보기관",
+   "to": "- 소속: 정부",
+   "expect": 2
+  },
+  {
+   "id": "v4a-5",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "from": "- 직함: 정보기관 원장",
+   "to": "- 직함: 남산타워 기록 원장",
+   "expect": 2
+  },
+  {
+   "id": "v4a-6",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "from": "남산타워에 남은 서울 내부 기록을 보존하고 복구 여부를 판단하며 정통성 있는 조직 복원을 추구하는 AI 아바타다.",
+   "to": "남산타워에 남은 서울 안 기록과 수동 신호 일지를 보존하고 역마다 시각을 대조하게 하는 정부 기록 원장이다.",
+   "expect": 1
+  },
+  {
+   "id": "v4a-7",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "from": "장기 연속성이 전지적 정보나 시설 통제권을 뜻하지 않는다",
+   "to": "오랜 기록 연속성이 전지적 정보나 시설 통제권을 뜻하지 않는다",
+   "expect": 1
+  },
+  {
+   "id": "v4a-8",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "Rank: Director. Title: Director of the intelligence service.",
+   "to": "Rank: Ledger. Title: Records Ledger Director at Namsan Tower.",
+   "expect": 2
+  },
+  {
+   "id": "v4a-9",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "- Affiliation: the intelligence service",
+   "to": "- Affiliation: The Government",
+   "expect": 2
+  },
+  {
+   "id": "v4a-10",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "- Rank: Director",
+   "to": "- Rank: Ledger",
+   "expect": 2
+  },
+  {
+   "id": "v4a-11",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "- Title: Director of the intelligence service",
+   "to": "- Title: Records Ledger Director at Namsan Tower",
+   "expect": 2
+  },
+  {
+   "id": "v4a-12",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "She is an AI avatar whose organization preserves records from within Seoul at Namsan Tower, judges whether they can be recovered, and seeks to restore a legitimate organization.",
+   "to": "She is the Government's records ledger keeper who preserves the Seoul observation records and the manual-signal log at Namsan Tower and has each station match their times.",
+   "expect": 1
+  },
+  {
+   "id": "v4a-13",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "organizational continuity grants neither",
+   "to": "long record continuity grants neither",
+   "expect": 1
+  },
+  {
+   "id": "v4a-14",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "from": "정보기관",
+   "to": "정부",
+   "exact": true,
+   "pathRe": "^\\.(stateName|fields\\.소속)$",
+   "expect": 2
+  },
+  {
+   "id": "v4a-15",
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "the intelligence service",
+   "to": "The Government",
+   "exact": true,
+   "pathRe": "^\\.(stateName|fields\\.Affiliation)$",
+   "expect": 2
+  }
+ ]
+}
