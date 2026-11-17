@@ -129,7 +129,7 @@ export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factio
     const abilityRows = Object.entries(ABILITY).filter(([k]) => prof.abilities?.[k]).map(([k, [en, kor]]) => `| ${ko ? kor : en} | ${prof.abilities[k].base} | ${prof.abilities[k].effective} |`);
     out.push(`| ${S.ability} | ${S.base} | ${S.final} |\n| --- | --- | --- |\n${abilityRows.join('\n')}\n\n${S.abilityNote}\n`);
     if (prof.skills?.length) out.push(`### ${S.skills}\n\n| ${S.skill} | ${S.level} |\n| --- | --- |\n${prof.skills.map((s) => `| ${cell(s.name)} | ${s.rating} |`).join('\n')}\n`);
-    if (prof.traits?.length) out.push(`### ${S.traits}\n\n${prof.traits.map((t) => `#### ${t.name}\n\n${cell(t.description)}\n\n- **${S.behavior}:** ${cell(t.behavior)}\n- **${S.stress}:** ${cell(t.stress)}\n- **${S.relationship}:** ${cell(t.relationship)}\n`).join('\n')}`);
+    if (prof.traits?.length) out.push(`### ${S.traits}\n\n${prof.traits.map((t) => `#### ${t.name}\n\n${cell(t.description)}\n\n- **${S.behavior}:** ${cell(t.behavior)}\n${[[S.stress, t.stress], [S.relationship, t.relationship]].filter(([, v]) => hasText(v)).map(([k, v]) => `- **${k}:** ${cell(v)}\n`).join('')}`).join('\n')}`);
     if (prof.health) out.push(`<details><summary>${S.health}</summary>\n\n${prof.health.status === 'unassessed' ? S.unassessed : cell(prof.health.status)}\n\n</details>\n`);
   }
   const rel = [];
