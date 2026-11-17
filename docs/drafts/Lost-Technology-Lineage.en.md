@@ -86,7 +86,7 @@ The precision machine lines fell to lost tech as their manufacture, licensing, a
 
 <a id="로스트-테크-기술세대격차"></a>
 
-Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment, and the lineage runs on to those who founded the great operating houses.
+Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment, and the lineage runs on to the stationmasters who hold the stations.
 
 <a id="축전-발전"></a>
 
@@ -120,7 +120,7 @@ Mechanics recovered and repaired surviving hoses, terminals, and lenses from sto
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The HC22 Magok Test-Line House, nursing the ambition to monopolize the original chassis and modules intact, first pushed a precision recovery team inside the sealed zone. The control software that would run those chassis, however, sits with the Arc. The HC17 Guro Digital Complex Battery House, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections. The HP01 Yeongdeungpo Sluice House took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
+The sealed galleries and maintenance-shed zones were the key contested ground eyed by the stationmasters of the neighboring stations and the professional relic recovery squads. A stationmaster, nursing the ambition to monopolize the original chassis and modules intact, first pushed a precision recovery team inside the sealed zone. The control software that would run those chassis, however, sits with the Arc. Another stationmaster, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections.
 
 <a id="프로토콜-접속과-카드"></a>
 
@@ -156,7 +156,7 @@ The Government does steps 1 and 2 alone and needs an Arc license for step 3. The
 
 - [The hostile ecology compendium](/wiki/Hostile-Ecology-Index/)
 - [The Seoul ecology and variant codex](/wiki/Hostile-Ecology-Index/)
-- [The operating houses](/wiki/Operating-Houses/)
+- [Station-master families](/wiki/Operating-Houses/)
 - [The three factions of Seoul](/wiki/Sixteen-States/)
 - [The arms and technology of this era](/wiki/Era-Arms-and-Tech-Level/)
 - [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/)
@@ -172,7 +172,7 @@ In later Seoul an old lost tech did not become a relic merely because years had 
 
 B. Struggles among successor polities
 
-The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and vassal powers inherited in turn their jurisdiction.
+The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and the families holding the stations inherited their jurisdiction in turn.
 
 C. Fixed roles of the two lines
 
@@ -200,7 +200,7 @@ Circulation practices were the custom of gathering old currency and worn circula
 
 B. What is gathered
 
-Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The HP01 house's auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.
+Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.
 
 C. Two rules of value and passage
 
@@ -229,13 +229,13 @@ A mass of scrap was not kept merely because time had long passed. One of the thr
 1. It had to be Seoul material
 Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line's modules became the center only when firmly attached to this core material.
 2. A living livelihood had to depend on its function
-Lighting that brightened the dark, the water supply, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
+Lighting that brightened the dark, heating, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the platforms, in the crowded unloading yards.
 3. Re-control had to be blocked
 With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that a chassis became the center of its community.
 4. Survival in the same place had to repeat
 Only a community that had clung to one module and stubbornly survived three times or more took that mass of iron as its center. A single lucky chance remained merely a useful trading item.
 5. A place-power had to claim jurisdiction
-The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the vassal powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
+The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. The families holding the stations inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
 
 ### Relic Interpretation by Lineage
 
@@ -253,7 +253,7 @@ The very same G25 charging module was the core of the substation equipment to on
 
 D. Public and hidden customs
 
-The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one vassal house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
+The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one stationmaster family quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
 
 E. Fixed number of lines
 

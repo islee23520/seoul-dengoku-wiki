@@ -13,15 +13,15 @@ model: cpa/claude-opus-5-5
 - **개요**: [권역·피지컬 AI 서사선](/wiki/Regional-Physical-AI-Arcs/) · [대정전](/wiki/World-Unbinding/) · [세계 서사 총람](/wiki/World-Narrative-Atlas/) · [용어 사전](/wiki/Glossary/)
 - **연표**: [서울전국 연표](/wiki/Century-Annals/) · [시나리오 타임라인](/wiki/Scenario-Timeline/) · [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/)
 - **인물**: [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/) · [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
-- **세력**: [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/) · [서울의 세 세력](/wiki/Sixteen-States/) · [세계 확장 관계 원장](/wiki/World-Relation-Ledger/) · [운영 조직](/wiki/Operating-Houses/) · [이주민 회랑](/wiki/Diaspora-Corridors/)
+- **세력**: [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/) · [서울의 세 세력](/wiki/Sixteen-States/) · [세계 관계 원장](/wiki/World-Relation-Ledger/) · [역장 집안](/wiki/Operating-Houses/) · [이주민 회랑](/wiki/Diaspora-Corridors/)
 - **관직**: [관직](/wiki/Offices-and-Ranks/)
-- **지리**: [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/) · [바깥](/wiki/External-Theaters/) · [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/) · [세계 지도](/wiki/World-and-Subway-Layers/) · [세계 지도의 구성](/wiki/World-Map-Construction/) · [역 내부에 들어가면](/wiki/Station-Interior-Construction/)
+- **지리**: [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/) · [서울 밖](/wiki/External-Theaters/) · [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/) · [세계 지도](/wiki/World-and-Subway-Layers/) · [세계 지도의 구성](/wiki/World-Map-Construction/) · [역 내부에 들어가면](/wiki/Station-Interior-Construction/)
 - **문화**: [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/) · [식문화](/wiki/Food-Culture/) · [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/) · [이야기](/wiki/Oral-Stories/)
 - **물건**: [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
 - **구조물**: [구조물 총람](/wiki/Structures/)
 - **기술**: [잃어버린 기술](/wiki/Lost-Technology-Lineage/)
 - **질병**: [질병과 증상](/wiki/Ailments/)
-- **사람과 기체**: [사람과 기체](/wiki/People-and-Machines/) · [합성 사회 인격](/wiki/Synthetic-Actors/)
+- **사람과 기체**: [사람과 기체](/wiki/People-and-Machines/) · [합성 휴머노이드](/wiki/Synthetic-Actors/)
 - **생태 도감**: [서울 생태·변이 도감](/wiki/Hostile-Ecology-Index/); 집단 도감 [G01](/wiki/Hostile-Group-G01/) · [G02](/wiki/Hostile-Group-G02/) · [G03](/wiki/Hostile-Group-G03/) · [G04](/wiki/Hostile-Group-G04/) · [G05](/wiki/Hostile-Group-G05/) · [G06](/wiki/Hostile-Group-G06/) · [G07](/wiki/Hostile-Group-G07/) · [G08](/wiki/Hostile-Group-G08/) · [G09](/wiki/Hostile-Group-G09/) · [G10](/wiki/Hostile-Group-G10/) · [G11](/wiki/Hostile-Group-G11/) · [G12](/wiki/Hostile-Group-G12/) · [G13](/wiki/Hostile-Group-G13/) · [G14](/wiki/Hostile-Group-G14/) · [G15](/wiki/Hostile-Group-G15/) · [G16](/wiki/Hostile-Group-G16/) · [G17](/wiki/Hostile-Group-G17/) · [G18](/wiki/Hostile-Group-G18/) · [G25](/wiki/Hostile-Group-G25/) · [G26](/wiki/Hostile-Group-G26/)
 
 <a id="World-Expansion-Index-heading-0003"></a>

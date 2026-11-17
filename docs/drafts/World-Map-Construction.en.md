@@ -45,7 +45,7 @@ The vast infrastructures essential to the survivors' maintenance of their sphere
 
 B. Treatment plants and depots
 
-The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also worked as principal water-pressure sources.
+The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also operated as large treatment plants outside Seoul.
 
 The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.
 

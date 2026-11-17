@@ -44,7 +44,7 @@ A stronghold grows through five stages. The stage names and figures are provisio
 
 B. Interior layout
 
-Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, water-supply plant, storerooms and signal rooms can occupy them. A treatment plant or depot beside the station changes how the stronghold is used.
+Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, water tanks, storerooms and signal rooms can occupy them. A treatment plant or depot beside the station changes how the stronghold is used.
 
 C. Medical care
 

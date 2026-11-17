@@ -4,11 +4,11 @@ model: cpa/glm-5.3; 0 completion calls; replacement sentences written by the age
 
 **A. Where disease starts**
 
-In 2026, Seoul's tap water was supplied through treatment centers and pipes. Hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over water supply, medicine and contamination control.
+In 2026, Seoul's tap water was supplied through treatment centers and pipes. Hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over water treatment, medicine and contamination control.
 
 **B. Causes in the timeline**
 
-[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
+[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When clean water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
 
 ## Waterborne Disease
 
@@ -18,7 +18,7 @@ In 2026, Seoul's drinking water came from a system that treated raw Han water an
 
 **B. Operation after the Great Blackout**
 
-In the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. The staff manually started the emergency generator and Han Jeonghun operated valves by hand. That year, Yeouido vault representatives supplied two generator parts.
+In the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. The treatment-plant staff started the emergency generator and the valves by hand.
 
 **C. Symptoms**
 
@@ -26,11 +26,11 @@ The main symptoms of waterborne disease were diarrhea, fever and dehydration. As
 
 **D. Tanks and drinking water**
 
-Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening's soup. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/), and the sluices and treatment plants in [Structures](/wiki/Structures/).
+Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening's soup. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/), and the treatment plants in [Structures](/wiki/Structures/).
 
 **E. The first summer**
 
-In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun, life safety research lead of the Magok Life House, opened the seal of a sample in the Yangjae archive.
+In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun, life safety research lead at the Magok research facility, opened the seal of a sample in the Yangjae archive.
 
 **F. The Flood-Mold Breath Cluster**
 
@@ -86,7 +86,7 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **G. Entering station interiors**
 
-[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and water supply had not been checked breathed contaminated air and touched contaminated water.
+[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and water had not been checked breathed contaminated air and touched contaminated water.
 
 | Layer | 2026 starting point | The symptoms remaining in 2126 |
 |---|---|---|

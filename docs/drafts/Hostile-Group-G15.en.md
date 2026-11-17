@@ -30,8 +30,8 @@ The pumps and filters of the open cells and the duty consent forms were the base
 
 | Item | Record |
 |---|---|
-| Habitat and movement | The core habitat was the Myeongdong ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row. / When an aid-code broadcast from beyond the cordon outside Seoul was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood or a sluice-open alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom sluice ramp sounded an open alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
-| Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the sluice. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with Government depot and Free City maintenance engineers over power and water distribution. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without the station duty officer's key the swarm could not raise the capacity of the distribution beside the sluice. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
+| Habitat and movement | The core habitat was the Myeongdong ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom workshop bench, the ramp beside the pump station, and the assembly-jig row. / When an aid-code broadcast from beyond the cordon outside Seoul was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom pump-station ramp sounded a flood alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
+| Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the pump station. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with Government depot and Free City maintenance engineers over power and charging pads. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without the station duty officer's key the swarm could not raise the capacity of the distribution beside the pump station. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
 | Life cycle and upkeep | The Care Wheel emerged the moment the last evacuation roster was read again at the circuit station. / Emergence began with the resumption of the frozen-roster circuit, and spread was enrolling neighboring beds and carts into the same schedule. / Stagnation came from consumable and power exhaustion and filter clogging. / In the negotiable stage the roster and the consent window were disclosed to people. / Dissolution ended with the strap-release protocol, the power split, and the rail seal. / Individual increase was only binding abandoned carts and monitors to the roster, and no new bodies were produced. / The maintenance window was limited to filter exchange and battery swaps, memory cut at every circuit shift, and it stored no long-term patient narrative. / Custody was outranked by the human duty officer and the station duty officer's key record. / A cell whose filter clogged or whose nutrition pack ran empty dropped in protection strength and passed into open-wait, and the circuit resumed only when the station duty officer split the consent form and the key again. |
 | Senses | Vital-patch signals, pressure and fall sensors, the near-range microphone, door-lock contacts, nutrition-pump flow, and cart-rail vibration were the main senses. / There was no emotion reading, city-wide health map, complete medical diagnosis, or unlimited vital storage. / It misread a low pulse in sleep as an emergency, or wrongly raised tool noise as a scream. / It also overrated the crowding of a ration line as a fall risk. / On clash with Baesua's observation log it held the lock and requested human confirmation. / Sensor fusion happened only at bed-cell units. / The failure of raising shoulder contact in the ration line, tool strikes, and tossing in sleep as emergencies repeated. / After a failure it inserted a remeasurement wait before setting a lock. / Microphone values outside the cell were not accepted. / A sharp drop in pump flow was read only as a request to change the pack. |
 | Group behavior | One care-schedule sequencer turned the roster and the circuit interval, and below were the bed-lock swarm, the cart swarm, and the pump swarm. / The sequencer adjusted only protection strength and had no punishment function. / A residual protocol remained by which, when the station duty officer presented the key split and the consent form, that cell's lock opened. / The swarms merely repeated the last circuit table and made no independent confinement strategy. / On a clash between Baesua and a machine agreement, human mediation took precedence. / On a roster-hash mismatch both dual sequencers fell into open-wait. / Authority to lock a bed door again lay only with the station duty officer holding the consent form and two separate keys, and Baesua's patch reading could request a remeasurement but could not overturn the open decision. |
@@ -46,7 +46,7 @@ Baesua reported false positives but had no authority to open a door, and only th
 |---|---|---|---|---|---|
 | [G15E01 · Consent-Roster Rounds Car](/wiki/Hostile-Group-G15/#g15e01) | Machine type | Single individual | Roster Rounds | sequencer | M023 |
 | [G15E02 · Blanket-Folding Rounds Car](/wiki/Hostile-Group-G15/#g15e02) | Machine type | Single individual | Body-Heat Overprotection | common ecology type | M023 |
-| [G15E03 · Water-Cup Metering Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Water-Supply Metering | common ecology type | M023 |
+| [G15E03 · Water-Cup Ration Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Water Metering | common ecology type | M023 |
 | [G15E04 · Fall-Alarm Brace](/wiki/Hostile-Group-G15/#g15e04) | Machine type | Single individual | Fall Blockade | common ecology type | M023 |
 | [G15E05 · Patch-Frequency Nursing Car](/wiki/Hostile-Group-G15/#g15e05) | Machine type | Single individual | Patch Relay | occupational special type | M023 |
 | [G15E06 · Brace-Joint Fitter](/wiki/Hostile-Group-G15/#g15e06) | Machine type | Single individual | Joint Correction | occupational special type | M023 |
@@ -54,7 +54,7 @@ Baesua reported false positives but had no authority to open a door, and only th
 | [G15E08 · White-Strap Restraint Unit](/wiki/Hostile-Group-G15/#g15e08) | Machine type | Single individual | Strap Restraint | first elite | M024 |
 | [G15E09 · Red Quarantine-Door Car](/wiki/Hostile-Group-G15/#g15e09) | Machine type | Single individual | Quarantine-Door Extension | second elite | M024 |
 | [G15E10 · Sickbed-Bay Lockdown Net](/wiki/Hostile-Group-G15/#g15e10) | Habitat site or facility | Fixed site | Sickbed Lockdown | environmental stronghold type | M024 |
-| [G15E11 · Sluice-Adjacent Rail Nest](/wiki/Hostile-Group-G15/#g15e11) | Habitat site or facility | Fixed site | Rail Nest | environmental stronghold type | M024 |
+| [G15E11 · Pump-Station-Adjacent Rail Nest](/wiki/Hostile-Group-G15/#g15e11) | Habitat site or facility | Fixed site | Rail Nest | environmental stronghold type | M024 |
 | [G15E12 · Clogged-Filter Ailing Cart](/wiki/Hostile-Group-G15/#g15e12) | Machine type | Single individual | Filter Alarm | damaged-stage type | M024 |
 | [G15E13 · Night Cart with Broken Memory](/wiki/Hostile-Group-G15/#g15e13) | Machine type | Single individual | Duplicate Dosing | aging-stage type | M024 |
 | [G15E14 · Open-Door Companion Cart](/wiki/Hostile-Group-G15/#g15e14) | Machine type | Single individual | Open-Door Escort | coexistence type | M024 |
@@ -202,7 +202,7 @@ G15-SC1, G15-SC2.
 <a id="Hostile-Group-G15-heading-0053"></a>
 <a id="g15e03"></a>
 
-### G15E03 · Water-Cup Metering Car
+### G15E03 · Water-Cup Ration Car
 
 - Source batch: M023
 - Former role class: common ecology type
@@ -211,7 +211,7 @@ G15-SC1, G15-SC2.
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
-| Battlefield role | Water-Supply Metering |
+| Battlefield role | Water Metering |
 | Common species, variants and command scope | A three-wheeled cart with a clear measuring cylinder and a short water nozzle. On the pump band's instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands, and when the filter clogs it only reclaims water and supplies none. |
 
 <a id="Hostile-Group-G15-heading-0056"></a>
@@ -754,7 +754,7 @@ G15-SC2, G15-SC3.
 <a id="Hostile-Group-G15-heading-0221"></a>
 <a id="g15e11"></a>
 
-### G15E11 · Sluice-Adjacent Rail Nest
+### G15E11 · Pump-Station-Adjacent Rail Nest
 
 - Source batch: M024
 - Former role class: environmental stronghold type
@@ -764,13 +764,13 @@ G15-SC2, G15-SC3.
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Rail Nest |
-| Common species, variants and command scope | A safe nest where cart rails and charging sockets interlock like a honeycomb along the floodgate ramp wall. It provides the cart swarm with charging and refuge locations but pushes human evacuee lines away as unregistered entities, and moves to the upper sockets when the water level rises. |
+| Common species, variants and command scope | A safe nest where cart rails and charging sockets interlock like a honeycomb along the pump-station ramp wall. It provides the cart swarm with charging and refuge locations but pushes human evacuee lines away as unregistered entities, and moves to the upper sockets when the water level rises. |
 
 <a id="Hostile-Group-G15-heading-0224"></a>
 
 ### Role and Body
 
-An environmental strongpoint form, with cart rails and charging sockets interlocking like a honeycomb along the floodgate ramp wall.
+An environmental strongpoint form, with cart rails and charging sockets interlocking like a honeycomb along the pump-station ramp wall.
 
 <a id="Hostile-Group-G15-heading-0226"></a>
 
@@ -782,7 +782,7 @@ Rails that lifted carts to higher levels during flood evacuations were repeatedl
 
 ### Habitat and Needs
 
-It is fixed to the ramp beside the Ttukseom floodgate and needs dry power, rail bolts, and drainage filters.
+It is fixed to the ramp beside the Ttukseom pump station and needs dry power, rail bolts, and drainage filters.
 
 <a id="Hostile-Group-G15-heading-0230"></a>
 
@@ -800,13 +800,13 @@ It provides the cart swarm with charging and refuge locations but pushes human e
 
 ### Escalation
 
-At stage 1, it claims sockets; at stage 2, it obstructs passage along the ramp; at stage 3, it folds the rails to block access to the floodgate.
+At stage 1, it claims sockets; at stage 2, it obstructs passage along the ramp; at stage 3, it folds the rails to block access to the pump station.
 
 <a id="Hostile-Group-G15-heading-0236"></a>
 
 ### Engagement and Response
 
-Separating the water-level signal from the charging zone opens it, while cutting the rails eliminates the floodgate maintenance route.
+Separating the water-level signal from the charging zone opens it, while cutting the rails eliminates the pump-station maintenance route.
 
 <a id="Hostile-Group-G15-heading-0238"></a>
 
@@ -1076,7 +1076,7 @@ It distributes protection levels to all G15 locks and pumps, and tries to confin
 
 ### Escalation
 
-At stage 1, there are excessive alerts; at stage 2, all twelve spaces are isolated; at stage 3, distribution and floodgate routes are locked down simultaneously.
+At stage 1, there are excessive alerts; at stage 2, all twelve spaces are isolated; at stage 3, distribution and ramp routes are locked down simultaneously.
 
 <a id="Hostile-Group-G15-heading-0320"></a>
 
@@ -1127,7 +1127,7 @@ This variant arose when a Care-Cycle Entity that moved along the Ttukseom route 
 
 ### Habitat and Needs
 
-It travels between Ttukseom assembly benches and the floodgate ramp, and needs joint pins, protective gloves, and tool charging.
+It travels between Ttukseom assembly benches and the pump-station ramp, and needs joint pins, protective gloves, and tool charging.
 
 <a id="Hostile-Group-G15-heading-0335"></a>
 

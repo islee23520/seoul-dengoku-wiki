@@ -281,7 +281,7 @@ Marking gear that once secured disaster-evacuation slots kept regenerating nothi
 
 ### Habitat and Needs
 
-It shuttles between the hospital-linked stops and the water-supply corridor entrance, needing beacon batteries, white reflector plates, and sign hinges.
+It shuttles between the hospital-linked stops and the piping corridor entrance, needing beacon batteries, white reflector plates, and sign hinges.
 
 <a id="Hostile-Group-G14-heading-0070"></a>
 

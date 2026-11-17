@@ -506,7 +506,7 @@ When a single knee bearing wore out, the whole semi-upright machine lost its sta
 
 Two stopped units could be combined to revive one, but no stronger power core could be made.
 
-When the Government depot supplied rail steel and fuel, the heavy convoy route opened, but the same resources were needed to repair civilian trains and the water-supply equipment of the Gwangjin Line.
+When the Government depot supplied rail steel and fuel, the heavy convoy route opened, but the same resources were needed to repair civilian trains and the piping equipment of the Gwangjin Line.
 
 The decision to preserve the formation was not a matter of gaining enormous power but of paying for hydraulic oil and floor verification with every job.
 
@@ -538,13 +538,13 @@ Choosing to investigate delayed the fuel wagons from beyond the cordon outside S
 
 ### G26-SC2 · The Pipe the Shields Dragged Out
 
-At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged the guard of a water-supply pipe to be waste reinforcement.
+At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged the guard of a water pipe to be waste reinforcement.
 
 The eastern convoy route widened, but the vibration of the pipe behind the shields grew, and the semi-upright machine tried to enter within the old work boundary drawn by the long-wing units.
 
-The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and build pipe supports first, or accept the water-supply loss and open the way in one go.
+The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and build pipe supports first, or accept the piping loss and open the way in one go.
 
-the depot's supply promise and the Gwangjin Line's water supply hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
+the depot's supply promise and the Gwangjin Line's water piping hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
 
 <a id="Hostile-Group-G26-heading-0114"></a>
 
@@ -556,6 +556,6 @@ The triangular units blocked the entrance with a continuous shield wall, and the
 
 The people on site had to recover the watchers with landing markers and reconcile the maps, hang no-load pulleys on each shield and release the tension in order, or connect external cooling pipes and then lock the reference body's knees.
 
-Blowing up the core opened the passage fastest, but the shock reached even the fuel and water-supply facilities.
+Blowing up the core opened the passage fastest, but the shock reached even the fuel and piping facilities.
 
 The ending that saved the formation required public load tests and joint supervision for every heavy job from then on, and the ending that dismantled it gave parts at once but left the next large piece of collapse debris to be moved by human hands.

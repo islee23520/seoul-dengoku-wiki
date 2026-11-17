@@ -12,7 +12,7 @@ The One-Eye Tower is no faction's enemy. To a person caught in its routine it is
 - Machine type: M6 blockade watch net
 - Use: switched back on by the Arc as the [A-U08 woken sentry post](/wiki/Unit-Roster-and-Tech-Tree/) (L3, numbers proposed); surveillance gear is a weapon factions acquire later
 - Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. A post switched back on can fire at anyone passing, so control can fail.
-- Territory: the Yeouido waterfront masts and sluice of Yeongdeungpo-gu in the Free Cities, and the Seoul Station rooftop antennas and records vault of Yongsan-gu on Government ground. The towers do not stand along an old border; they run the same alarm table across the land of two factions.
+- Territory: the Yeouido waterfront masts and bridge of Yeongdeungpo-gu in the Free Cities, and the Seoul Station rooftop antennas and records vault of Yongsan-gu on Government ground. The towers do not stand along an old border; they run the same alarm table across the land of two factions.
 - Draw: for this type light and heat mean "intrusion". A lamp lit at night, the heat of a warmed sickbed, or the glint off a metal rail raises the red flag and closes the corridor. When the Arc checks the signal and switches it back on, it becomes a woken guard post.
 - Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
@@ -22,7 +22,7 @@ The One-Eye Tower is no faction's enemy. To a person caught in its routine it is
 
 The One-Eye Tower was an ecology of heads on the Yeouido waterfront masts and the Records Bureau rooftop of Seoul Station, short transfer rails, and transmission swarms turning an old threshold table. It was no omnipotent surveillance net tracking people, and it could not merge signals from inside buildings or beyond the mast rows. It mistook cooling-tower steam for fire, metal beds for armed movement, and high-tide railings for intrusion.
 
-The mast rows onto which the threshold sheet was reloaded were the base, and from the Amber-Red Threshold Alarm Unit to the West-Sea Salt-Haze Watch Chief the individuals were machine and facility subtypes split by function like thermal domes, tide staffs, flag masts, and rooftop rail nets. The Total-Red Orbit Ring was no biological leader but a battlefield strongpoint where sluices and rooftop orbits were bound by a circular relay. No new satellite could be launched, and numbers were kept only by putting abandoned heads onto nearby rails.
+The mast rows onto which the threshold sheet was reloaded were the base, and from the Amber-Red Threshold Alarm Unit to the West-Sea Salt-Haze Watch Chief the individuals were machine and facility subtypes split by function like thermal domes, tide staffs, flag masts, and rooftop rail nets. The Total-Red Orbit Ring was no biological leader but a battlefield strongpoint where waterfront masts and rooftop orbits were bound by a circular relay. No new satellite could be launched, and numbers were kept only by putting abandoned heads onto nearby rails.
 
 <a id="Hostile-Group-G17-heading-0006"></a>
 
@@ -30,9 +30,9 @@ The mast rows onto which the threshold sheet was reloaded were the base, and fro
 
 | Item | Record |
 |---|---|
-| Origin | These machines are military and civilian perimeter-watch equipment from before the Great Blackout. When the Great Blackout took the control center and the people who built them, they kept repeating only their last alarm rules as the world entered winter. / After the collapse, the waterfront masts of the Sluice and the leftover rooftop antennas of the Government of the Republic of Korea reconnected on local alarm rules alone. / There was no control center or warrant system, and only the threshold tables, rotating heads, and flag actuators remained. / The orbit swarm read heat, metal, and radio bursts as intrusion and raised corridor-blocking flags. / When leftover dock-radar signals and tidal noise from the beyond the cordon on the western sea mixed in, the false-positive radius tilted toward the southwestern waterfront. / The first records survived in the transfer desk of the station medical duty and the machine-room log of the Cooling-Tower Keeper. / The first mass false positive occurred on the Yeouido waterfront promenade pier. / Cooling-tower steam and metal railings crossed the threshold at the same time, and the red flag spread to three masts. / As the Seoul Station rooftop heads shared the same table, the lockdown extended as far as the corridor before the records vault. / The orbit swarm interpreted unfinished alarms as correction and held no narrative of attack. / Their makers are gone, and these machines repeat their last orders and walk the same patrols. They cannot be built anew, so their number falls with every breakdown, and the Arc can switch some of them on and off. Even after people went down into the stations for the winter, light and heat above ground still call these machines. |
-| Habitat and movement | The core habitat was the sluices of the Sluice, the bridge mast rows, the waterfront sensor rails, and the auxiliary water-supply gauging towers. / When records and transmission load rose, it moved to central Seoul Station, the Seoul Station rooftop antennas, the outer walls of the preservation vault, and the ventilation towers of the orbital records vault. / When the the cordon outside Seoul sea noise grew, the alarms in the western waterfront corridor lengthened. / In fog and heavy rain it reduced its optics, and head density rose before and after the on-the-hour self-diagnosis. / It could hardly learn new camouflage netting and clung stubbornly to its old thresholds. / When its battery reached the lower limit it stopped rotating and shrank to a fixed-flag mode. / In heavy rain it lowered its optical heads and cut back to mainly metal detection. / When the ventilation load of the Seoul Station preservation vault rose, it reduced its rooftop orbits and left only the fixed heads on the outer walls. / New camouflage nets were not put into threshold learning. / The southwestern waterfront extension folded when the the cordon outside Seoul noise weakened. |
-| Food and energy | Energy was mast solar trickle, rooftop small accumulators, a small share of sluice distribution, and auxiliary night air cooling. / Parts were gimbal bearings, optical domes, band filters, alarm-flag actuators, and rail-drive rollers. / Cooling relied on night air and intermittent fans. / It competed when the the station medical duty's transfer route and disaster-medicine power used the same distribution. / Daily rotations and transmissions were bound to the accumulator floor. / Whole-city constant surveillance, unlimited storage, and new satellite deployment were impossible. / When filters clogged it lowered red sensitivity itself. / Optical domes and filters were replenished only from rooftop disposal boxes. / Without the station duty key, the swarm could not expand beyond sluice distribution capacity. / When solar trickle weakened, the rotation cycle lengthened. / On flag-actuator failure, that mast fell to fixed amber. / When band filters saturated, the transmission swarm entered dormancy. / There was no satellite resupply. |
+| Origin | These machines are military and civilian perimeter-watch equipment from before the Great Blackout. When the Great Blackout took the control center and the people who built them, they kept repeating only their last alarm rules as the world entered winter. / After the collapse, the waterfront masts of the Free Cities and the leftover rooftop antennas of the Government of the Republic of Korea reconnected on local alarm rules alone. / There was no control center or warrant system, and only the threshold tables, rotating heads, and flag actuators remained. / The orbit swarm read heat, metal, and radio bursts as intrusion and raised corridor-blocking flags. / When leftover dock-radar signals and tidal noise from the beyond the cordon on the western sea mixed in, the false-positive radius tilted toward the southwestern waterfront. / The first records survived in the transfer desk of the station medical duty and the machine-room log of the Cooling-Tower Keeper. / The first mass false positive occurred on the Yeouido waterfront promenade pier. / Cooling-tower steam and metal railings crossed the threshold at the same time, and the red flag spread to three masts. / As the Seoul Station rooftop heads shared the same table, the lockdown extended as far as the corridor before the records vault. / The orbit swarm interpreted unfinished alarms as correction and held no narrative of attack. / Their makers are gone, and these machines repeat their last orders and walk the same patrols. They cannot be built anew, so their number falls with every breakdown, and the Arc can switch some of them on and off. Even after people went down into the stations for the winter, light and heat above ground still call these machines. |
+| Habitat and movement | The core habitat was the Yeouido waterfront, the bridge mast rows, the waterfront sensor rails, and the auxiliary water-level gauging towers. / When records and transmission load rose, it moved to central Seoul Station, the Seoul Station rooftop antennas, the outer walls of the preservation vault, and the ventilation towers of the orbital records vault. / When the the cordon outside Seoul sea noise grew, the alarms in the western waterfront corridor lengthened. / In fog and heavy rain it reduced its optics, and head density rose before and after the on-the-hour self-diagnosis. / It could hardly learn new camouflage netting and clung stubbornly to its old thresholds. / When its battery reached the lower limit it stopped rotating and shrank to a fixed-flag mode. / In heavy rain it lowered its optical heads and cut back to mainly metal detection. / When the ventilation load of the Seoul Station preservation vault rose, it reduced its rooftop orbits and left only the fixed heads on the outer walls. / New camouflage nets were not put into threshold learning. / The southwestern waterfront extension folded when the the cordon outside Seoul noise weakened. |
+| Food and energy | Energy was mast solar trickle, rooftop small accumulators, a small share of the bridge distribution, and auxiliary night air cooling. / Parts were gimbal bearings, optical domes, band filters, alarm-flag actuators, and rail-drive rollers. / Cooling relied on night air and intermittent fans. / It competed when the the station medical duty's transfer route and disaster-medicine power used the same distribution. / Daily rotations and transmissions were bound to the accumulator floor. / Whole-city constant surveillance, unlimited storage, and new satellite deployment were impossible. / When filters clogged it lowered red sensitivity itself. / Optical domes and filters were replenished only from rooftop disposal boxes. / Without the station duty key, the swarm could not expand beyond bridge distribution capacity. / When solar trickle weakened, the rotation cycle lengthened. / On flag-actuator failure, that mast fell to fixed amber. / When band filters saturated, the transmission swarm entered dormancy. / There was no satellite resupply. |
 | Life cycle and upkeep | The One-Eye Tower emerged when the old threshold sheet was reloaded onto the waterfront masts. / Emergence began with threshold-table reactivation, and spread was enrolling neighboring masts into the same alarm net. / Stagnation came from accumulator exhaustion and dome fouling. / In the negotiable stage the alarm sheet and whitelist opened to people. / Dissolution ended with flag freeze, distribution sealing, and rail fixing. / Increase was only lifting abandoned heads onto rails; no new orbit launch happened. / Maintenance was limited to dome wiping, filter exchange, and gimbal lubrication. / Memory cut at alarm-shift units. / Custody duty was outranked by the station duty and human observation logs. / A mast whose solar trickle broke or whose dome clouded froze at amber flag and fell from the transmission row, and it returned to the watch row only after the station duty checked the transfer whitelist on site. |
 | Senses | Low-resolution thermal imaging, metal detection, near-range optics, wireless-burst strength, vibration, and flag contacts were the main senses. / There was no personal identity confirmation, indoor X-ray vision, unlimited storage, or emotion reading. / It confused emergency-transfer metal beds with armed movement, or raised cooling-tower steam as smoke. / It sometimes mistook night-fishing buoy reflections for optical intrusion. / On clash with the the Cooling-Tower Keeper's machine-room log, it held the alarm and requested human confirmation. / Sharing between heads happened only within the same mast row. / It mistook steam, railings, metal, buoy reflection, and transfer-bed frames for intrusion. / After a misreading it inserted amber waiting and human confirmation in place of red. / Wireless values outside the mast row were not merged. / On gimbal overheating it stopped rotation and kept fixed watch only. |
 | Group behavior | One alarm-threshold sequencer turned the flag rules, and below it were mast head swarms, rail-transfer swarms, and transmission swarms. / The sequencer changed only thresholds and held no strike orders. / A protocol existed by which, when the station medical duty presented the medical-transfer whitelist, that corridor's flags came down. / The swarms merely repeated the last threshold sheet and made no independent blockade front. / On clash with the Cooling-Tower Keeper, human mediation took precedence. / Dual threshold tables both fell to amber waiting on mismatch. / The final authority to raise or lower the red alarm lay with the station waterfront duty bearing the transfer roster, and the Cooling-Tower Keeper's steam log was only grounds for erasing false alarms, never a corridor-closure order. |
@@ -54,7 +54,7 @@ the Cooling-Tower Keeper erased steam records but could not lower a flag, and on
 | [G17E07 · Archive Antenna Keeper](/wiki/Hostile-Group-G17/#g17e07) | Machine type | Single individual | Archive guard | occupational special type | M027 |
 | [G17E08 · Red Twin-Dome Pursuer](/wiki/Hostile-Group-G17/#g17e08) | Machine type | Single individual | Dual pursuit | first elite | M027 |
 | [G17E09 · Flag-Pole Lancer](/wiki/Hostile-Group-G17/#g17e09) | Machine type | Single individual | Flag charge | second elite | M027 |
-| [G17E10 · Sluice Mast Row](/wiki/Hostile-Group-G17/#g17e10) | Habitat site or facility | Fixed site | Sluice blockade | environmental stronghold type | M027 |
+| [G17E10 · Waterfront Mast Row](/wiki/Hostile-Group-G17/#g17e10) | Habitat site or facility | Fixed site | Bridge blockade | environmental stronghold type | M027 |
 | [G17E11 · Rooftop Rotating Rail Network](/wiki/Hostile-Group-G17/#g17e11) | Habitat site or facility | Fixed site | Rooftop circuit watch | environmental stronghold type | M027 |
 | [G17E12 · Clouded-Dome Weakened Head](/wiki/Hostile-Group-G17/#g17e12) | Machine type | Single individual | Blurred false alarm | growth-stage type | M027 |
 | [G17E13 · Power-Depleted Old Mast](/wiki/Hostile-Group-G17/#g17e13) | Machine type | Fixed site | Delayed alarm | aging-stage type | M027 |
@@ -93,7 +93,7 @@ The Yeouido waterfront threshold table and the Seoul Station rooftop alarm cache
 
 ### Habitat and Needs
 
-It stays at the center of a row of sluice masts and needs stored power, band filters, and gimbal lubricant.
+It stays at the center of a row of waterfront masts and needs stored power, band filters, and gimbal lubricant.
 
 <a id="Hostile-Group-G17-heading-0020"></a>
 
@@ -117,7 +117,7 @@ Stage 1 brings false alarms, Stage 2 closes the corridor, and Stage 3 turns the 
 
 ### Engagement and Response
 
-First the station watch cuts the lamps and heat so the anomaly record stops growing. Freeze the threshold table, insert a filter, and split power distribution; blasting the mast would also destroy sluice measurements.
+First the station watch cuts the lamps and heat so the anomaly record stops growing. Freeze the threshold table, insert a filter, and split power distribution; blasting the mast would also destroy water-level measurements.
 
 <a id="Hostile-Group-G17-heading-0028"></a>
 
@@ -355,7 +355,7 @@ G17-SC1, G17-SC2.
 
 - Role and body: A specialized unit, a mast fitted with a dual optical panel that reads white transport beacons and a green flag.
 - Origin: A reader that protected a disaster medical transport route came to believe that only old beacons were valid.
-- Habitat and needs: It remains in medical corridors and sluice inspection routes and needs a bandpass filter, a green bulb, and stored power.
+- Habitat and needs: It remains in medical corridors and waterfront inspection routes and needs a bandpass filter, a green bulb, and stored power.
 - Life cycle and maintenance: When its whitelist is updated, it stays green for one shift; when its filter clogs, it drops to yellow.
 - Behavior and hierarchy: It gives a valid beacon priority over the sequencing module’s red command and lowers the corridor flag.
 - Escalation: Stage 1, reinspection; stage 2, only old-model beacons pass; stage 3, it blocks newly arrived rescue teams as unregistered.
@@ -379,11 +379,11 @@ G17-SC1, G17-SC2.
 | Common species, variants and command scope | A fixed mast combining a water-level staff and a short transmitting antenna. It was the transmission swarm's datum point, and on receiving a high level it requested red waiting from the rail heads; as sediment piled it over-read the level, and after washing it returned to the true scale. |
 
 - Role and body: A specialized unit, a fixed mast combining a water-level rod with a short transmitting antenna.
-- Origin: Equipment that reported Han River tide levels and sluice status now transmits noise along with intrusion signals.
+- Origin: Equipment that reported Han River tide levels and water-level status now transmits noise along with intrusion signals.
 - Habitat and needs: It is fixed at a waterside measurement point and needs its rod cleaned, transmission power, and contact seals.
 - Life cycle and maintenance: When sediment builds up, it mistakenly reads the water level as high; after cleaning, it returns to the correct scale reading.
 - Behavior and hierarchy: It serves as a reference point for the transmitter group and, on receiving a high water-level reading, demands that rail heads stand by on red.
-- Escalation: Stage 1, excessive warnings; stage 2, closure of the sluice route; stage 3, a complete blockade of the waterside corridor.
+- Escalation: Stage 1, excessive warnings; stage 2, closure of the waterfront route; stage 3, a complete blockade of the waterside corridor.
 - Engagement and response: Cleaning the rod and blocking local transmission will suffice; breaking the instrument also means losing genuine flood warnings.
 - Negotiation and moral choice: Handing band filters and optical domes to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. A mast switched back on serves as a woken guard post. Tide-level monitoring must be maintained, but the authority to issue warnings must be separated from the authority to block passage.
 - Scenario connections: G17-SC1, G17-SC2.
@@ -466,7 +466,7 @@ G17-SC1, G17-SC2.
 <a id="Hostile-Group-G17-heading-0115"></a>
 <a id="g17e10"></a>
 
-### G17E10 · Sluice Mast Row
+### G17E10 · Waterfront Mast Row
 
 - Source batch: M027
 - Former role class: environmental stronghold type
@@ -475,16 +475,16 @@ G17-SC1, G17-SC2.
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
-| Battlefield role | Sluice blockade |
-| Common species, variants and command scope | A fixed strongpoint of alarm heads and flags linked in one row along the sluice railing. It amplified the unit's flag rules, often confused sluice inspectors with intruders; when accumulators fell it kept only fixed amber, and when domes fouled it went dormant row by row. |
+| Battlefield role | Bridge blockade |
+| Common species, variants and command scope | A fixed strongpoint of alarm heads and flags linked in one row along the bridge railing. It amplified the unit's flag rules, often confused waterfront inspectors with intruders; when accumulators fell it kept only fixed amber, and when domes fouled it went dormant row by row. |
 
-- Role and body: An environmental stronghold, with multiple alarm heads and flags connected in a row along a sluice railing.
-- Origin: A sluice measurement support network survived on independent power and tied passage warnings to the same threshold table.
-- Habitat and needs: It is fixed to the Yeouido sluice and bridge and needs power distribution, filters, and gimbal parts.
+- Role and body: An environmental stronghold, with multiple alarm heads and flags connected in a row along a bridge railing.
+- Origin: A water-level measurement support network survived on independent power and tied passage warnings to the same threshold table.
+- Habitat and needs: It is fixed to the Yeouido waterfront and bridge and needs power distribution, filters, and gimbal parts.
 - Life cycle and maintenance: When stored power runs low, only a fixed yellow light remains; when the domes become contaminated, the row goes dormant as a unit.
-- Behavior and hierarchy: It amplifies the sequencing module’s flag rules and often confuses sluice inspectors with intruders.
-- Escalation: Stage 1, warning from one mast; stage 2, blockade by the bridge row; stage 3, all approaches to the sluice turn red.
-- Engagement and response: Power distribution and whitelists must be applied mast by mast; blowing up the entire row means losing sluice measurements.
+- Behavior and hierarchy: It amplifies the sequencing module’s flag rules and often confuses waterfront inspectors with intruders.
+- Escalation: Stage 1, warning from one mast; stage 2, blockade by the bridge row; stage 3, all approaches to the bridge turn red.
+- Engagement and response: Power distribution and whitelists must be applied mast by mast; blowing up the entire row means losing water-level measurements.
 - Negotiation and moral choice: If the station watch dims lamps lit at night and the heat of warmed sickbeds and lowers the shutter it does not come close. If it is captured and stripped of band filters and optical domes it stops, and the number in this district falls by that much. In exchange for preserving flood and intrusion warnings, the civilian inspection passage must be guaranteed to remain open at all times.
 - Scenario connections: G17-SC2, G17-SC3.
 
@@ -601,9 +601,9 @@ G17-SC1, G17-SC2.
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Total red |
-| Common species, variants and command scope | A giant surveillance ring linking the sluice and rooftop orbits' alarm heads through a circular relay. A key unit, but no leader identifying people — a total-red rule where multiple alarms confirmed one another; when heads broke it raised the remaining sensitivity, and when over half the whitelist became valid it stepped down to amber. |
+| Common species, variants and command scope | A giant surveillance ring linking the waterfront-mast and rooftop-orbit alarm heads through a circular relay. A key unit, but no leader identifying people — a total-red rule where multiple alarms confirmed one another; when heads broke it raised the remaining sensitivity, and when over half the whitelist became valid it stepped down to amber. |
 
-- Role and body: A key unit, a vast surveillance ring whose sluice and rooftop-track alarm heads are connected by a circular relay.
+- Role and body: A key unit, a vast surveillance ring whose waterfront-mast and rooftop-track alarm heads are connected by a circular relay.
 - Origin: On the day of the collapse, multiple alarms confirmed one another without checking for cancellations, becoming a single all-red rule.
 - Habitat and needs: It spans the Yeouido–Seoul Station alarm corridor and needs a large power reserve, filters, and a threshold-table hash.
 - Life cycle and maintenance: If a head is disconnected, it raises the sensitivity of those remaining; if a majority of the whitelist becomes valid, it drops to yellow.
@@ -644,7 +644,7 @@ G17-SC1, G17-SC2.
 
 The Yeouido waterfront mast caught the metal rails of a medical bed in the fog as an intrusion target.
 
-When the red flag went up, the transfer route beside the sluice of the Sluice closed, and the head on the roof of the Seoul Station records office received the same threshold table and locked everything as far as the central Seoul Station corridor.
+When the red flag went up, the transfer route beside the Yeouido mast row closed, and the head on the roof of the Seoul Station records office received the same threshold table and locked everything as far as the central Seoul Station corridor.
 
 The One-Eye Tower was not an all-powerful surveillance network tracking people but an ecology of mast heads running old threshold tables, short movement rails, and transmission swarms.
 
@@ -660,7 +660,7 @@ the Cooling-Tower Keeper recorded steam times and temperatures to clear false po
 
 The red came down to yellow only when the station waterfront watch checked the medical transfer register in front of the head.
 
-It drew energy from mast solar trickle charge, rooftop batteries, and a small share of the sluice distribution panel.
+It drew energy from mast solar trickle charge, rooftop batteries, and a small share of the bridge distribution panel.
 
 When the gimbal bearings, optical domes, band filters, and flag actuators wore out, a head stared in the same direction for a long time.
 
@@ -668,7 +668,7 @@ A mast that hit the battery lower limit or dome fouling froze at yellow and drop
 
 It could not launch new satellites or link heads across the whole city, and kept its numbers only by mounting abandoned heads on nearby rails.
 
-Medical transfer markers and sluice gauging used the same distribution panel, so a total cutoff removed even the warnings of the next flood and fire.
+Medical transfer markers and water-level gauging used the same distribution panel, so a total cutoff removed even the warnings of the next flood and fire.
 
 Its emergence occurred when the threshold table was loaded onto a mast again, and its spread when a neighboring head received the same alarm table.
 
@@ -686,7 +686,7 @@ A bed in transfer stopped under the red flag.
 
 The people on site covered the fouled dome and checked the Cooling-Tower Keeper's steam record against the high-tide vibration to find the source of the false positive.
 
-Smashing the head opened the way but also erased the sluice water-level waveform, so the order had to be set between the time the patient waited and the preservation of the gauging.
+Smashing the head opened the way but also erased the river water-level waveform, so the order had to be set between the time the patient waited and the preservation of the gauging.
 
 <a id="Hostile-Group-G17-heading-0166"></a>
 

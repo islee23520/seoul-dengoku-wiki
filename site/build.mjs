@@ -80,7 +80,7 @@ const FACTION_STRUCTURE = {
 };
 const UI = {
   en: {
-    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'States', districts: 'Districts', orgs: 'Organizations (former states)', orgsNote: 'The sixteen-state chart is retired. Power is now counted in stations held under three factions; districts are geographic only. The rows below are the organizations that used to be states.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
+    lang: 'en-US', label: 'English', prefix: '', wiki: 'Wiki', states: 'States', districts: 'Districts', orgs: 'Leadership', orgsNote: 'Seoul has three factions. Power is counted in the stations a person holds; districts are geographic only.', factions: 'Factions', people: 'People', gdd: 'Design Docs (GDD)', showcase: 'Showcase',
     updates: 'Update History', wikiHome: 'Wiki Home', gddHome: 'GDD Home', designDocs: 'Design Docs', overview: 'Overview', onThisPage: 'On this page',
     prev: 'Previous page', next: 'Next page', menu: 'Menu', search: 'Search', noResults: 'No results for', reset: 'Reset search', toSelect: 'to select', toNavigate: 'to navigate', toClose: 'to close',
     appearance: 'Appearance', returnTop: 'Return to top', skip: 'Skip to content', footerMsg: 'Public world bible and game design documents.',
@@ -99,7 +99,7 @@ const UI = {
     featUpdates: 'What changed in the wiki and when.', tagline: meta.tagline, siteTitle: meta.title,
   },
   ko: {
-    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '국가', districts: '구', orgs: '단체 (옛 국가)', orgsNote: '십육국 체제는 폐지됐다. 이제 힘은 세 세력 아래 쥔 역의 수로 센다. 구는 지리 단위일 뿐이다. 아래 표는 옛 국가였던 단체들이다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
+    lang: 'ko-KR', label: '한국어', prefix: 'ko/', wiki: '위키', states: '국가', districts: '구', orgs: '최상단', orgsNote: '서울의 세력은 셋이다. 힘은 쥔 역의 수로 센다. 구는 지리 단위일 뿐이다.', factions: '세력', people: '인물', gdd: '설계 문서(GDD)', showcase: '쇼케이스',
     updates: '갱신 이력', wikiHome: '위키 홈', gddHome: 'GDD 홈', designDocs: '설계 문서', overview: '개요', onThisPage: '이 페이지에서',
     prev: '이전 문서', next: '다음 문서', menu: '메뉴', search: '검색', noResults: '결과 없음:', reset: '검색 초기화', toSelect: '선택', toNavigate: '이동', toClose: '닫기',
     appearance: '화면 모드', returnTop: '맨 위로', skip: '본문으로 건너뛰기', footerMsg: '공개 세계관 위키와 게임 설계 문서.',
@@ -140,7 +140,14 @@ const relabelHangulUrlText = (md) => md.replace(/\[(https?:\/\/[^\]\s]*[\uAC00-\
 const slashLinks = (md) => md.replace(/\]\((\/(?:wiki|gdd)\/[^)\s#?]*[^)\s#?/])(#[^)\s]*)?\)/g, ']($1/$2)');
 // Locale-neutral links (/wiki/x/) point at the same locale: prefix Korean pages with /ko.
 const localize = (md, L) => (L.prefix ? md.replace(/\]\(\/(wiki|gdd)\//g, (m, s) => `](/${L.prefix}${s}/`) : md);
-const body = (md, L) => `::: v-pre\n${escapeProse(localize(slashLinks(relabelHangulUrlText(labelBareUrls(encodeUrls(md)))), L))}\n:::\n`;
+// Render-hidden source text: a line '<!-- private:start -->' through '<!-- private:end -->' stays in data/sql but is never rendered.
+// An unpaired marker fails the build instead of silently swallowing the rest of the page.
+const stripPrivate = (md) => {
+  const starts = md.match(/^<!-- private:start -->$/gm)?.length ?? 0, ends = md.match(/^<!-- private:end -->$/gm)?.length ?? 0;
+  if (starts !== ends) throw new Error(`E_PRIVATE_MARKERS: ${starts} private:start vs ${ends} private:end`);
+  return md.replace(/^<!-- private:start -->$[\s\S]*?^<!-- private:end -->$\n?/gm, '');
+};
+const body = (md, L) => `::: v-pre\n${escapeProse(localize(slashLinks(relabelHangulUrlText(labelBareUrls(encodeUrls(stripPrivate(md))))), L))}\n:::\n`;
 const cell = (s) => String(s).replaceAll('|', '\\|').replaceAll('\n', ' ');
 const write = (rel, content) => {
   const p = path.join(SRC, rel);
@@ -162,6 +169,8 @@ const LEGACY_DISTRICT_ROUTE = 'wiki/duchies/';
 // v4: the infected dossiers Hostile-Group-G19..G24 are retired; their old pages get redirect stubs to the ecology index.
 const RETIRED_INFECTED_SLUGS = [19, 20, 21, 22, 23, 24].map((n) => `Hostile-Group-G${n}`);
 const ECOLOGY_INDEX_ROUTE = 'wiki/Hostile-Ecology-Index/';
+// v4: pre-v4 GDD material kept as history (owner Q6 A, 2026-11-17). Pages and sidebar stay; the local search index skips them.
+const PRE_V4_GDD_SLUGS = new Set(['adr-003', 'archify-d09', 'archify-d11', 'archify-d12', 'gdd-lore-node-states', 'mechanism-d09', 'mechanism-d11', 'mechanism-d12', 'mechanism-design-index-d09', 'mechanism-design-index-d11', 'mechanism-design-index-d12']);
 const titleById = new Map(raw.map.titles.map((t) => [t.id, t]));
 const districtRows = raw.map.titles.filter((t) => t.rank === 'duchy');
 const districtSlug = (t) => t.id.split(':').pop();
@@ -256,7 +265,7 @@ for (const L of [UI.en, UI.ko]) {
   // GDD
   raw.gddDocs.forEach((d) => {
     const content = (L === UI.ko ? d.body_ko_md : d.body_md).replace(/^#\s+.+\n+/, '');
-    write(`${L.prefix}gdd/${d.category_id}/${d.slug}/index.md`, page(g(d, 'title'), `# ${g(d, 'title')}\n\n${g(d, 'summary') ? `${g(d, 'summary')}\n\n` : ''}${body(content, L)}`));
+    write(`${L.prefix}gdd/${d.category_id}/${d.slug}/index.md`, page(g(d, 'title'), `# ${g(d, 'title')}\n\n${g(d, 'summary') ? `${g(d, 'summary')}\n\n` : ''}${body(content, L)}`, PRE_V4_GDD_SLUGS.has(d.slug) ? { search: false } : {}));
   });
   const gddGroups = raw.gddCats.map((c) => ({ text: g(c, 'label'), collapsed: true, items: raw.gddDocs.filter((d) => d.category_id === c.id).map((d) => ({ text: g(d, 'title'), link: P(`gdd/${d.category_id}/${d.slug}/`) })) })).filter((x) => x.items.length);
   write(`${L.prefix}gdd/index.md`, page(L.gdd, `# ${L.gdd}\n\n${L.gddLead(raw.gddDocs.length)}\n\n${gddGroups.map((x) => `## ${x.text}\n\n${x.items.map((i) => `- [${i.text}](${i.link})`).join('\n')}\n`).join('\n')}`));

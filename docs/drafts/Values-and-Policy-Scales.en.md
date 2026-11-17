@@ -19,15 +19,15 @@ Left is negative, right is positive.
 
 | # | Axis | −100 | +100 | Decisions affected |
 |---|---|---|---|---|
-| 1 | Authority | Equality · consensus | Command · magistracy | Emergency powers, water cutoffs, protection governments |
-| 2 | Openness | Exclusion · quarantine | Hospitality · citizenship | Migrants, external theaters, corridors |
+| 1 | Authority | Equality · consensus | Command · magistracy | Emergency powers, ration cutoffs, protection governments |
+| 2 | Openness | Exclusion · quarantine | Hospitality · citizenship | Migrants, the land outside Seoul, corridors |
 | 3 | Force | Peace · convoy | Preemption · occupation | Deployments, blockades, sieges |
 | 4 | Material | Rite · sanctity of records | Stock · profit | Cooling keys, auctions, parts |
 | 5 | Community | Personal survival | Family · guild | Registers, leagues, hostages |
 | 6 | Principle | Expediency · compromise | Charter wording | Treaty breaches, false broadcasts |
 | 7 | Disclosure | Secret ledgers | Cross-verified openness | Wills, price bulletins, transmissions |
 | 8 | Qualification | Heredity · bloodline | Examination · apprenticeship | Succession, elders, stewards |
-| 9 | Decentralization | Central monopoly | Living-sphere partition | Water federations, joint negotiation |
+| 9 | Decentralization | Central monopoly | Living-sphere partition | Station alliances, joint negotiation |
 | 10 | Reform | Preservation · oral record | Charter amendment | Empty-century debts, trusts |
 
 ## Person Desires and Tastes
@@ -62,21 +62,21 @@ Organization values were likewise built on the **same ten axes** as persons. The
 
 **A. Policy Choices**
 
-Organization policies have nine categories: war, migrants, water, labor, records, technology, trade, succession and bonding. Each category has its own choices.
+Organization policies have nine categories: war, migrants, rations, labor, records, technology, trade, succession and bonding. Each category has its own choices.
 
 | Slot | Choices | What it looked like in Seoul |
 |---|---|---|
 | War | Defense / limited war / preemption | Garrison only / protection army / preemptive occupation |
 | Migrants | Sending back / admission as the lowest class / ransom exchange | Gate registers, family hostages |
-| Water | Contract / minimum line / hostage | Cutoff sanctions |
+| Rations | Promise / minimum line / hostage | Ration-cutoff sanctions |
 | Labor | Forced service / contract / civic service | The military-household register |
 | Records | Closed / cross-verified / fully public | Wills and ledgers |
-| Technology | House secret / licensed sharing / joint ledger | Pump and cooling keys |
+| Technology | Station secret / licensed sharing / joint ledger | Pump and cooling keys |
 | Trade | Blockade / licensed / open market | Auctions and convoys |
 | Succession | Bloodline / adoptive apprenticeship / open examination | Stewards and elders |
 | Bonding | Monogamy license / contract cohabitation / house bonding / military-register bonding / open bonding | Marriage and cohabitation ledgers. Organizations did not assign sexual taste |
 
-Operating houses HC and HP and external theaters XT use the same fields. House records appear in the [world narrative atlas](/wiki/World-Narrative-Atlas/). Details by layer appear in [Houses](/wiki/Chaebol-Houses-and-Century-Factions/).
+Stationmaster families use the same fields. House records appear in the [world narrative atlas](/wiki/World-Narrative-Atlas/). Details by layer appear in [Houses](/wiki/Chaebol-Houses-and-Century-Factions/).
 
 <a id="개막-핵심-인물-17명"></a>
 

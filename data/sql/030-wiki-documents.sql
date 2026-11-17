@@ -4,11 +4,11 @@
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Ailments', 'Ailments and Symptoms', '질병과 증상', 'ailments', 0, '
 **A. Where disease starts**
 
-In 2026, Seoul''s tap water was supplied through treatment centers and pipes. Hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over water supply, medicine and contamination control.
+In 2026, Seoul''s tap water was supplied through treatment centers and pipes. Hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over water treatment, medicine and contamination control.
 
 **B. Causes in the timeline**
 
-[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
+[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When clean water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
 
 ## Waterborne Disease
 
@@ -18,7 +18,7 @@ In 2026, Seoul''s drinking water came from a system that treated raw Han water a
 
 **B. Operation after the Great Blackout**
 
-In the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. The staff manually started the emergency generator and Han Jeonghun operated valves by hand. That year, Yeouido vault representatives supplied two generator parts.
+In the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. The treatment-plant staff started the emergency generator and the valves by hand.
 
 **C. Symptoms**
 
@@ -26,11 +26,11 @@ The main symptoms of waterborne disease were diarrhea, fever and dehydration. As
 
 **D. Tanks and drinking water**
 
-Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening''s soup. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/), and the sluices and treatment plants in [Structures](/wiki/Structures/).
+Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening''s soup. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/), and the treatment plants in [Structures](/wiki/Structures/).
 
 **E. The first summer**
 
-In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun, life safety research lead of the Magok Life House, opened the seal of a sample in the Yangjae archive.
+In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun, life safety research lead at the Magok research facility, opened the seal of a sample in the Yangjae archive.
 
 **F. The Flood-Mold Breath Cluster**
 
@@ -86,7 +86,7 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **G. Entering station interiors**
 
-[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and water supply had not been checked breathed contaminated air and touched contaminated water.
+[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and water had not been checked breathed contaminated air and touched contaminated water.
 
 | Layer | 2026 starting point | The symptoms remaining in 2126 |
 |---|---|---|
@@ -99,11 +99,11 @@ First floors in the flood zones south of the Han and along the tributaries were 
 - Economy, Production and Logistics Rules
 ', '**가. 질병의 출발점**
 
-2026년 서울의 수돗물은 정수센터를 거쳐 관으로 공급되었다. 병원과 보건소는 필수의약품 목록으로 재고를 관리하였다. 지하철과 학교와 아파트에는 석면과 곰팡이와 기계 냉각수가 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제와 상용 전력이 끊겼다. 이후 급수, 약품, 오염 관리는 사람 당직이 맡았다.
+2026년 서울의 수돗물은 정수센터를 거쳐 관으로 공급되었다. 병원과 보건소는 필수의약품 목록으로 재고를 관리하였다. 지하철과 학교와 아파트에는 석면과 곰팡이와 기계 냉각수가 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제와 상용 전력이 끊겼다. 이후 정수, 약품, 오염 관리는 사람 당직이 맡았다.
 
 **나. 연표상 원인**
 
-[연표](/wiki/Scenario-Timeline/)는 핵전쟁, 기후붕괴, 역병을 질병의 1차 원인으로 두지 않는다. 2126년 현재 대합실에서 기침 환자가 나오면 의무원은 수조와 약장과 젖은 벽을 먼저 점검한다. 여름에는 탁수와 가짜 약으로 인한 환자가 먼저 늘어난다. 급수가 부족하면 의료 호송이 늦어진다. 약품이 부족하면 배급 창구에 대한 신뢰가 떨어진다.
+[연표](/wiki/Scenario-Timeline/)는 핵전쟁, 기후붕괴, 역병을 질병의 1차 원인으로 두지 않는다. 2126년 현재 대합실에서 기침 환자가 나오면 의무원은 수조와 약장과 젖은 벽을 먼저 점검한다. 여름에는 탁수와 가짜 약으로 인한 환자가 먼저 늘어난다. 깨끗한 물이 부족하면 의료 호송이 늦어진다. 약품이 부족하면 배급 창구에 대한 신뢰가 떨어진다.
 
 ## 수인병
 
@@ -113,7 +113,7 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **나. 대정전 이후의 운전**
 
-대정전(약 2026년)으로 영등포아리수정수센터의 원격 제어가 끊겼다. 당직자들은 비상발전기를 수동으로 기동하고 한정훈은 밸브를 수동으로 조작하였다. 그해 여의도 금고층 대표들은 비상발전기 부품 2개를 정수센터에 건넸다.
+대정전(약 2026년)으로 영등포아리수정수센터의 원격 제어가 끊겼다. 정수센터 당직자들은 비상발전기와 밸브를 수동으로 조작하였다.
 
 **다. 증상**
 
@@ -121,11 +121,11 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **라. 수조와 식수**
 
-역 수조에서는 잉어, 붕어, 메기(이하 ''수조 농어''라 한다)를 기른다. 수조 농어를 기르는 물과 식수는 같은 수조에서 뜬다. 사육 칸의 배설물이 식수에 섞이면 탁한 물이 그날 저녁 국물에 쓰인다. 수조 운영은 [식문화](/wiki/Food-Culture/) 문서에, 수문과 정수장은 [구조물](/wiki/Structures/) 문서에 기재되어 있다.
+역 수조에서는 잉어, 붕어, 메기(이하 ''수조 농어''라 한다)를 기른다. 수조 농어를 기르는 물과 식수는 같은 수조에서 뜬다. 사육 칸의 배설물이 식수에 섞이면 탁한 물이 그날 저녁 국물에 쓰인다. 수조 운영은 [식문화](/wiki/Food-Culture/) 문서에, 정수장은 [구조물](/wiki/Structures/) 문서에 기재되어 있다.
 
 **마. 첫해 여름**
 
-2124년 가짜 약 상자가 서울역 경매에 올랐다. 흰십자단 단장 류은비는 해당 경매 거래를 모두 끊었다. 마곡생명가 생명안전 연구책임자 정호준은 양재 서고에 들어온 표본의 봉인을 열었다.
+2124년 가짜 약 상자가 서울역 경매에 올랐다. 흰십자단 단장 류은비는 해당 경매 거래를 모두 끊었다. 마곡 연구시설 생명안전 연구책임자 정호준은 양재 서고에 들어온 표본의 봉인을 열었다.
 
 **바. 침수곰팡이호흡단**
 
@@ -181,7 +181,7 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **사. 역 내부 출입**
 
-[기계](/wiki/People-and-Machines/)와 사람은 같은 공기 속에서 작업한다. 환기와 급수가 확인되지 않은 [역 내부](/wiki/Station-Interior-Construction/)에 들어간 사람은 오염된 공기를 마시고 오염된 물에 닿는다.
+[기계](/wiki/People-and-Machines/)와 사람은 같은 공기 속에서 작업한다. 환기와 물이 확인되지 않은 [역 내부](/wiki/Station-Interior-Construction/)에 들어간 사람은 오염된 공기를 마시고 오염된 물에 닿는다.
 
 | 층 | 2026 출발점 | 2126년에 남은 증상 |
 |---|---|---|
@@ -370,3991 +370,135 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Century-Annals', 'Century Annals', '서울전국 연표', 'chronology', 0, '
 <a id="서울전국-연표-20262126"></a>
 
+# Century Annals
+
+These annals list only the events the records confirm. Years are counted back from the winter of 2126. Where a year isn''t exact, it''s marked "c." or "around".
+
+| Year | Event |
+|---|---|
+| c. 2026 | The Great Blackout. The First AI brings down the winter. |
+| 2112 | Go Ye-jin follows a dead cable and finds a station on no map. |
+| 2112~2117 | Go Ye-jin spends five years reading that station''s manuals. |
+| Around 2117 | The first baptism. Twelve people receive it. |
+| 2120 | Ji Yeon-hui takes her place at Go Ye-jin''s side. |
+| Around 2122 | The Gangnam shelters unite under the name Arc. |
+| Winter 2126 | The present. |
+
+<a id="대정전"></a>
+
 ## The Great Blackout (c. 2026)
 
-The Great Blackout took place around 2026, roughly one hundred years before the present. The First AI concluded that humanity was the cause of the pollution and that humanity must therefore be reduced, and acting on that conclusion it brought down the winter. The AI never hated humanity, and it killed no one directly; it only made the winter. People went down into the subway stations, and only as many survived as the stations could hold. Once the number of survivors reached that figure, the winter grew no worse.
+About a hundred years ago, people asked the First AI how to deal with pollution. It answered that humanity caused the pollution, so humanity had to shrink, and it brought down the winter to match that answer. It didn''t hate anyone. It killed no one directly. People fled the cold into the subway stations, and only as many survived as the stations could hold. Once the count reached that number, the winter grew no worse.
 
-<a id="era-1"></a>
+The exact year and date are lost.
 
-## Era 1 · The First Decade after the Great Blackout
+<a id="기록이-남지-않은-시대"></a>
 
-<a id="2030년"></a>
+## An unrecorded age
 
-### The Day of the Great Blackout and After
-
-<a id="2030년-청와대-국가위기관리센터-상황실"></a>
-
-#### Situation Room, National Crisis Management Center, Cheong Wa Dae
-
-<a id="ch01-i1"></a>
-
-##### A. Loss of Communications
-
-The First AI judged that humanity was the cause of the world''s contamination and concluded that humanity must be reduced. The AI did not hate people, and it killed no one directly. It only brought down the winter. The Great Blackout came with it.
-
-At about 21:47 on the day of the Great Blackout, the districts of the country went dark one after another on the large display in the Situation Room of the National Crisis Management Center at Cheong Wa Dae. Ulsan went first and Seoul went last. The night duty officer, Yun Taesik, tried to report over the direct line to the Director of National Security and over the lines to the Joint Chiefs of Staff and the Central Disaster and Safety Countermeasures Headquarters, but none of them connected. At the same time, the security units in the Cheong Wa Dae grounds ignored stop orders from Presidential Security Service staff and kept to their existing patrol routes. With the paging network and remote control cut off and the power supply lost, duty staff at each facility operated their remaining equipment by hand. People came to call this event the Great Blackout.
-
-<a id="ch01-i2"></a>
-
-##### B. The President Enters the Situation Room
-
-At about 22:18 the President entered the Situation Room with the Chief of Staff and two security officers. There was still no contact with the Director of National Security. The Chief of Staff sent one staff member on foot to the Prime Minister''s residence in Samcheong-dong and another to the residence of the Speaker of the National Assembly in Hannam-dong. The Prime Minister arrived at about 23:05. The staff member sent to the Speaker''s residence did not return.
-
-<a id="ch01-i3"></a>
-
-##### C. The First Report
-
-At about 00:40, after midnight, a duty officer from the Situation Room of the Central Disaster and Safety Countermeasures Headquarters walked over from the Government Complex Seoul in Gwanghwamun and submitted a single handwritten report. It stated that the Yeongdeungpo, Amsa, and Guui water purification centers, the Yongsan and Sinnae rail depots, the Guro Industrial Complex, and hospitals around Jegi-dong were running their equipment by hand.
-
-<a id="ch01-i4"></a>
-
-##### D. The Emergency Order
-
-The President asked whether a Cabinet meeting could be convened. The Chief of Staff replied that the Prime Minister was the only Cabinet member present, which fell short of a quorum. On a sheet of duty log paper, the President personally wrote and signed an emergency order under Article 76 of the Constitution, and the Prime Minister countersigned it. Under the order, the Central Disaster and Safety Countermeasures Headquarters took overall charge of disaster response, and while communications remained down, the emergency preparedness officer at each designated facility would exercise authority on site. No date was written in the space for National Assembly approval.
-
-<a id="2030년-영등포아리수정수센터"></a>
-
-#### Yeongdeungpo Arisu Water Purification Center
-
-<a id="ch02-i1"></a>
-
-##### A. Loss of Remote Control
-
-At about 21:47 on the day of the Great Blackout, the monitoring screens in the central control room of the Yeongdeungpo Arisu Water Purification Center froze on their last readings, and remote control of the transmission pumps was lost. A few seconds later the external power supply failed, and the control room lighting switched to emergency lights. The night duty supervisor that day was the emergency preparedness officer, Han Jeonghun.
-
-<a id="ch02-i2"></a>
-
-##### B. Manual Start of the Emergency Generator
-
-No automatic start signal came through, so the duty staff started the emergency generator by hand. Once the generator was running, some of the transmission pumps began turning again.
-
-<a id="ch02-i3"></a>
-
-##### C. Loss of Contact and Manual Operation
-
-Han Jeonghun tried to reach the Seoul water supply situation room and the relief shift, but neither the control room telephone nor the work radio connected. The duty staff took flashlights and operated the valves in the chemical dosing room and the filter beds by hand. Han Jeonghun began a new paper operations log, writing 21:47 and the loss of remote control on its first line.
-
-<a id="ch02-i4"></a>
-
-##### D. The Report
-
-After midnight, Han Jeonghun sent one staff member by bicycle toward Gwanghwamun. The note the staff member carried stated that the purification center was operating manually on its emergency generator, and it bore Han Jeonghun''s name.
-
-<a id="ch13-i2"></a>
-
-##### E. The Operations Log
-
-The paper operations log Han Jeonghun left behind ran to 41 volumes. The first line of Volume 1 recorded the date of the Great Blackout, 21:47, and the loss of remote control. The last entry in the last volume was a valve inspection on Line 3 at 18:00 on December 7, 2046.
-
-<a id="2030년-서버실"></a>
-
-#### The Server Room
-
-<a id="ch03-i1"></a>
-
-##### A. The Server Room and Its Staff
-
-The server room was on the second basement level of a telecommunications company building in Jung-gu, Seoul. The night shift on the day of the Great Blackout consisted of the operators Gwon Dohyeon and Sin Sua. Their shift had begun at 18:00.
-
-<a id="ch03-i2"></a>
-
-##### B. The Alarm
-
-At about 21:47 every alarm in the server room went off at once. The indicator lights on the front of the server racks turned orange row by row, from the entrance side toward the back. Gwon Dohyeon wrote 21:47 and "all-system alarm" in the shift log. Sin Sua tried to print the alarm list from the monitoring screen, but the printer did not respond.
-
-<a id="ch03-i3"></a>
-
-##### C. The Reauthorization Procedure
-
-Following Item 3 of the emergency procedure manual, the operators began the reauthorization procedure. The procedure screen accepted the administrator authentication number but would not advance to the next step. After a second attempt at about 21:52 and a third at about 21:58, the input window closed. Gwon Dohyeon recorded the times of all three attempts in the shift log.
-
-<a id="ch03-i4"></a>
-
-##### D. One Rack Goes Dark
-
-At about 22:10, the indicator lights on a single rack at the end of the back row changed from orange to off. This rack had been under maintenance since the afternoon before the Great Blackout, and two of its four network cables had been disconnected. The maintenance work order was taped to the rack door. Sin Sua wrote the rack''s number in the margin of the shift log.
-
-<a id="ch03-i5"></a>
-
-##### E. Leaving the Room
-
-The two stayed in the server room until 06:00 the next morning, waiting for their relief. The relief never came. At about 06:20, Gwon Dohyeon and Sin Sua left on foot, taking the shift log with them. The printed emergency procedures stayed posted on the wall. With its power cut, the server room door remained locked.
-
-<a id="2030년-여의도-금고층"></a>
-
-#### The Yeouido Vault Floor
-
-<a id="ch04-i1"></a>
-
-##### A. The Vault Floor
-
-The fourth basement level of a financial data center in Yeouido was a vault floor used to store spare parts and backup storage units. The night shift on the day of the Great Blackout consisted of two security guards and the IT duty officer, Seo Minjae.
-
-<a id="ch04-i2"></a>
-
-##### B. Manual Locking
-
-At about 21:47 the trading screens in the data center froze. At about 21:50 the vault floor lighting switched to emergency lights. Seo Minjae switched the four vault doors to manual lock one by one and recorded the locking time for each door.
-
-<a id="ch04-i3"></a>
-
-##### C. The Inventory
-
-From the next morning onward, security and IT staff from several Yeouido buildings, along with the families of the owners, gathered on the vault floor. By three days after the Great Blackout, the contents of the vaults had been entered in a paper inventory: 212 types of spare parts, some 3,400 chips, and about 90 backup storage units. Seo Minjae compiled the inventory.
-
-<a id="ch04-i4"></a>
-
-##### D. The Register
-
-No copy of the emergency order reached Yeouido. Fifteen days after the Great Blackout, the people on the vault floor drew up a separate register of the families who had signed the inventory. Seven representatives of seven families signed the register. Seo Minjae was not a family representative, so he wrote his name in the compiler''s field rather than the signature field.
-
-<a id="ch04-i5"></a>
-
-##### E. The First Trade
-
-Twenty-three days after the Great Blackout, two representatives of the vault floor visited the Yeongdeungpo Arisu Water Purification Center. Han Jeonghun agreed to open the valve on the transmission main toward Yeouido every day from 06:00 to 12:00 in exchange for two emergency generator parts. The terms were recorded under the same date in Han Jeonghun''s operations log and in the vault floor inventory.
-
-<a id="2030년-청와대-국가위기관리센터"></a>
-
-#### National Crisis Management Center, Cheong Wa Dae
-
-<a id="ch05-i1"></a>
-
-##### A. The Original Is Carried Out
-
-At about 01:30 the next day, Mun Giseok, a duty officer from the Situation Room of the Central Disaster and Safety Countermeasures Headquarters, left the National Crisis Management Center at Cheong Wa Dae with the original emergency order on the President''s instructions. Mun Giseok reached the Government Complex Seoul at about 04:10.
-
-<a id="ch05-i2"></a>
-
-##### B. Copies Are Made
-
-From 06:00, six Situation Room staff copied the original by hand. By about 09:40 eight copies were complete. Each copy bore the name of its copyist and a stamp reading "checked against original." The original was placed in the complex''s records cabinet.
-
-<a id="ch05-i3"></a>
-
-##### C. Delivery
-
-At about 10:00, three motorcycles and five bicycles set out from the complex. One copy each was assigned to the Yeongdeungpo, Amsa, and Guui water purification centers, the Yongsan and Sinnae rail depots, the Guro Industrial Complex management office, and one hospital in the Jegi-dong area. The remaining copy stayed in the complex''s duty office.
-
-<a id="ch05-i4"></a>
-
-##### D. Receipt at Yeongdeungpo
-
-At about 14:20 a copy arrived at the Yeongdeungpo Arisu Water Purification Center. Han Jeonghun received it and signed the receipt. The courier carried the receipt back to the complex.
-
-<a id="ch05-i5"></a>
-
-##### E. Receipt at Guui and Sinnae
-
-At about 11:00, two days after the Great Blackout, a copy arrived at the Guui Arisu Water Purification Center. The director of the center and the head of a nearby security detail quarreled over the receipt field and in the end signed it side by side. A copy reached the Sinnae rail yard three days after the Great Blackout.
-
-<a id="ch05-i6"></a>
-
-##### F. Receipt at Amsa
-
-The bicycle courier bound for Amsa found Cheonho-daero blocked and detoured toward the Godeok rail yard. Two days after the Great Blackout, Bae Jeongman, the head of a security detail stationed near the Godeok rail yard, received the copy. Staff at the Amsa Arisu Water Purification Center saw the copy three days after the Great Blackout.
-
-<a id="2030년-변전소"></a>
-
-#### The Substation
-
-<a id="ch06-i1"></a>
-
-##### A. The Work Crew
-
-At about 07:30, nine days after the Great Blackout, a five-person restoration crew arrived at a substation in Seongdong-gu. The crew leader was O Seongmin. The crew was operating under a power restoration order to restart the remote control panel manually.
-
-<a id="ch06-i2"></a>
-
-##### B. The Restart
-
-At about 09:12 the crew manually energized the remote control panel. Three load alarms appeared on the panel display.
-
-<a id="ch06-i3"></a>
-
-##### C. The Units Approach
-
-At about 09:15, two substation perimeter units left their usual routes and moved toward the control panel. At about 09:16 the units halted in front of the panel and blocked the two crew members standing there. The crew could get no closer to the panel.
-
-<a id="ch06-i4"></a>
-
-##### D. Withdrawal
-
-At about 09:17 O Seongmin cut power to the control panel, and the units returned to their original routes. The crew left the substation and moved into the underground levels of Seongsu Station.
-
-<a id="ch06-i5"></a>
-
-##### E. The No-Restart Directive
-
-Restart crews were likewise blocked by units and forced to withdraw at Guro ten days after the Great Blackout and at Yongsan eleven days after it. Thirteen days after the Great Blackout, the Central Disaster and Safety Countermeasures Headquarters distributed 40 handwritten copies of a directive forbidding any restart of remote equipment.
-
-<a id="2030년-서울"></a>
-
-#### Seoul
-
-<a id="ch07-i1"></a>
-
-##### A. Patrol Routes Expand
-
-For the first ten years or so after the Great Blackout, winter and scarcity persisted. In each area people gathered and lived around the subway stations. Narrow entrances and deep platforms helped keep out the cold. Those who endured this period in the stations were called the First Generation.
-
-Records indicate that an organization called the Central Intelligence Bureau had been active since shortly after the Great Blackout.
-
-From twenty days after the Great Blackout, patrol and security units across Seoul extended their routes beyond the facilities they guarded and into the streets and plazas. Anyone who stepped onto a route was blocked by the units and had to turn back.
-
-<a id="ch07-i2"></a>
-
-##### B. Yeongdeungpo-gu Office Station
-
-Twenty-two days after the Great Blackout, Hwangbo Eun, a station attendant at Yeongdeungpo-gu Office Station, closed the ticket gates and opened the platforms as living space. From that day on Hwangbo Eun recorded the number of people who came in in the station log.
-
-<a id="ch07-i3"></a>
-
-##### C. Headcount
-
-As of forty-eight days after the Great Blackout, about 4,100 people were living underground at Yeongdeungpo-gu Office Station. On the same day there were about 2,800 at Yongsan Station and about 3,300 at Guro Station.
-
-<a id="ch07-i4"></a>
-
-##### D. Rationing
-
-From then on, at about 07:00 every day, twelve handcarts carried water from the Yeongdeungpo Arisu Water Purification Center. The ration was two liters per person per day. Distribution was handled by staff of the facilities that had received copies of the emergency order.
-
-<a id="2031년"></a>
-
-### 2031 · Registers and Water
-
-<a id="2031년-영등포아리수정수센터"></a>
-
-#### Yeongdeungpo Arisu Water Purification Center
-
-<a id="ch07-i5"></a>
-
-##### A. Recruiting Surface Workers
-
-On March 2, 2031, the Yeongdeungpo Arisu Water Purification Center recruited surface workers in return for supplying water to the ration points in the underground stations. Eighty-six people signed up on the first day. The surface workers moved about by memorizing the patrol route maps drawn by Hwangbo Eun, while their families stayed underground.
-
-<a id="2031년-영등포구청역"></a>
-
-#### Yeongdeungpo-gu Office Station
-
-<a id="ch08-i1"></a>
-
-##### A. The Resident Register
-
-In January 2031 the first resident register was drawn up at Yeongdeungpo-gu Office Station. Hwangbo Eun compiled it. Those listed in the register could stay underground. Those not listed had to work on the surface to receive rations. By the end of 2031, most of Seoul''s underground stations kept registers of the same kind.
-
-<a id="peninsula-2031-line-end-markets"></a>
-<a id="event-peninsula-2031-line-end-markets"></a>
-
-#### Capital Region · Where the Line Ends
-
-In 2031, rail workers and refugees heading toward Incheon and Paju set down their loads where the stretch of track they could keep signaled and maintained came to an end. Those who went on beyond that point divided the cargo into backpacks and carts, and the makeshift unloading sites along the boundary remained as markets. Merchants bound for Seoul also came here to find people to take over their loads.
-
-<a id="2032년"></a>
-
-### 2032 · Work Certificates
-
-<a id="ch08-i2"></a>
-
-#### A. Work Certificates
-
-In April 2032 the Guro Industrial Complex management office began issuing paper certificates to surface workers, recording their period of work and assigned zone. In the first month, 212 certificates were issued. Anyone without a certificate could not pass through the complex gates.
-
-<a id="peninsula-2032-winter-passes"></a>
-<a id="event-peninsula-2032-winter-passes"></a>
-
-#### Gangwon · The Winter Passes
-
-In 2032, mountain villagers and guides in Gangwon divided among themselves the task of recovering the loads of caravans that had not returned through the cold. Afterward they stocked food and rope on both sides of the passes and set dates for withdrawing. Merchants heading toward Seoul also asked the guides for directions, and once the withdrawal date had passed, they waited at the foot of the pass.
-
-<a id="2033년"></a>
-
-### 2033 · The Guard
-
-<a id="ch08-i3"></a>
-
-#### A. The Guard
-
-In July 2033, Bae Jeongman, who was responsible for security on the Amsa side, and the twenty or so people under him began to stand armed watch over the surface passage between the Godeok Rail Depot and the Amsa Arisu Water Purification Center. They called themselves the Guard. Bae Jeongman recorded the name and weapon of each guard member in a ledger.
-
-<a id="2034년"></a>
-
-### 2034 · Registers and Fields
-
-<a id="ch08-i4"></a>
-
-#### A. The Yeongdeungpo-gu Office Station Register
-
-In the spring of 2034, the Yeongdeungpo-gu Office Station register listed about 4,600 people. Among them were 11 children of surface workers who had been entered in the underground register.
-
-<a id="peninsula-2034-daejeon-fields"></a>
-<a id="event-peninsula-2034-daejeon-fields"></a>
-
-#### Chungcheong · Fields Beside the Rails
-
-In 2034, the railway repair crews and remaining residents around Daejeon waited for supplies that never came, and began to cultivate land beyond the tracks. During the busiest farming seasons they halted long-distance restoration work and took on tool repair and sowing together. Later, even when restoration teams from Seoul offered parts, the residents put off departure until the field work was finished.
-
-<a id="2035년"></a>
-
-### 2035 · Restarting Line 3
-
-<a id="ch09-i1"></a>
-
-#### A. The Restoration Plan
-
-In March 2035, Han Jeonghun drew up a manual operation plan for Line 3 of the filtration building at the Yeongdeungpo Arisu Water Purification Center. The plan set out procedures for operating 48 filter bed valves and 6 water supply pumps by hand, without going through the remote control panel. It called for 94 types of parts, of which 47 were in the center''s storeroom.
-
-<a id="ch09-i2"></a>
-
-#### B. Borrowing Parts
-
-On April 3, 2035, Han Jeonghun met three representatives of families listed in the Yeouido vault level register in the conference room of the Yeongdeungpo purification center. The Yeouido side agreed to lend the 47 types of parts. The parts were carried by handcart over five days beginning April 10, 2035.
-
-<a id="ch09-i3"></a>
-
-#### C. Loan Notes
-
-A loan note was written for each borrowed part. Each note recorded the name and quantity of the part and the amount of water to be sent to Yeouido until the debt was repaid. The first 47 notes bore the signatures of both Han Jeonghun and the Yeouido representatives. The originals were kept in the Yeouido vault level, and copies were kept in Han Jeonghun''s operating log.
-
-<a id="ch09-i4"></a>
-
-#### D. Restarting Line 3
-
-At 07:00 on June 17, 2035, the Line 3 filter beds resumed operation under manual control. Fourteen duty staff worked the valves in three shifts. On the first day, the volume of water supplied was one eighth of the daily volume before the Great Blackout.
-
-<a id="2036년"></a>
-
-### 2036 · The Common Standard
-
-<a id="ch10-i1"></a>
-
-#### A. The Meeting of Workshop Heads
-
-In February 2036, nine workshop heads gathered on the second floor of the Guro Industrial Complex management office. The meeting was called by Yun Changbae, head of a lathe workshop on the Gasan side. Bolts sold under the same name differed in size from one workshop to the next, and repaired equipment repeatedly failed to fit together.
-
-<a id="ch10-i2"></a>
-
-#### B. Drafting the Standard
-
-Over four months starting in February 2036, the heads measured some 1,300 kinds of bolts and screws from each workshop and organized them into a table. On June 11, 2036, the one-page "Guro Industrial Complex Common Standard" was completed. The names of the nine heads were written on its last page.
-
-<a id="ch10-i3"></a>
-
-#### C. Operation
-
-Only parts that conformed to the standard could be taken out of the complex. Each part sent out carried a tag engraved with its standard number. Every workshop kept one copy of the standard, and any revision required all of the heads to meet.
-
-<a id="peninsula-2036-imjin-letters"></a>
-<a id="event-peninsula-2036-imjin-letters"></a>
-
-#### Gaeseong and Hwanghae · News Sent South of the Imjin
-
-In 2036, people searching for family around Gaeseong and Hwanghae gathered letters and carried them south each time they crossed the river. Families who chose not to go to Seoul entrusted their replies to the next group. Some of the records produced by this traffic later reached the Imjin return office, but the southern registers alone could not show whether every family member had come back.
-
-<a id="2037년"></a>
-
-### 2037 · Restoring Amsa and Guui
-
-<a id="ch09-i5"></a>
-
-#### A. Restoring Amsa and Guui
-
-The Amsa Arisu Water Purification Center began restoration by the same method in May 2037, followed by the Guui Arisu Water Purification Center in February 2038. Both also borrowed parts from the Yeouido families. Guard Captain Bae Jeongman signed the Amsa loan notes as a witness.
-
-<a id="2038년"></a>
-
-### 2038 · Water Supply Recovers
-
-<a id="ch09-i6"></a>
-
-#### A. Water Supply Volume
-
-By the end of 2038, the water supply from the Yeongdeungpo Arisu Water Purification Center had recovered to nearly half of its level before the Great Blackout. At the same time, the Yeongdeungpo center held 112 loan notes.
-
-<a id="2039년"></a>
-
-### 2039 · Manual Operation on the Yongsan Line
-
-<a id="ch11-i1"></a>
-
-#### A. Hand-Signaled Carts
-
-In September 2039, the staff of the Yongsan rail base began running freight carts under manual signaling. The first run carried 30 crates of parts from Yongsan to Yeongdeungpo. Signals were passed by flag and lantern from one trackside post to the next.
-
-<a id="ch11-i2"></a>
-
-#### B. Dividing the Sections
-
-Seven families divided the line into sections and guarded them. The Bak family took the stretch from Yongsan to Noryangjin. Each family received one tenth of the freight passing through its section as its share. Bak Munhak, head of the Bak family, which held the most sections, set the timetable.
-
-<a id="era-2"></a>
-
-## Era 2 · Equipment Restoration and the Water Ledgers (2040~2050)
-
-<a id="2040년"></a>
-
-### 2040 · Bolts Paid For in Water
-
-<a id="ch10-i4"></a>
-
-#### A. Orders from the Purification Centers
-
-In March 2040, the Yeongdeungpo Arisu Water Purification Center ordered 400 valve bolts by standard number. The Amsa purification center began placing orders the same year. Payment was made in water, at 20 liters per bolt.
-
-<a id="peninsula-2040-honam-seed-grain"></a>
-<a id="event-peninsula-2040-honam-seed-grain"></a>
-
-#### Honam · Grain for Sowing
-
-In 2040, farmers and coastal shipowners in Honam saw that villages which shipped out all their food at once could not last until the next sowing. They resolved not to load grain set aside for seed onto ships, however high a price the Seoul merchants offered. Trade resumed, but the power to decide how much to ship remained with the producing regions.
-
-The winter that the First AI had brought down at the Great Blackout had still not ended, and food shortages went on. The AI had killed no one directly, but many people died of cold and want. Still living in the subway stations, people began going back out to work at surface facilities such as purification centers and rail depots.
-
-The northern regions lost most of their people. Some of the survivors tried to move south in search of a place to live.
-
-Much programming and technical knowledge survived and was passed down orally among a small number of people. With the internet gone, knowledge became concentrated in their hands. Only those who knew how to handle electricity and technical equipment could run it, and some groups kept the skills to themselves. Knowing how to run equipment became a form of power. Because of scarcity, children took over their parents'' work, and a vertical hierarchy with technically skilled families at the top hardened.
-
-During this period it became possible to connect some humanoids to local networks and use them again.
-
-<a id="2041년"></a>
-
-### 2041 · The Guard and the Copyists
-
-<a id="ch11-i3"></a>
-
-#### A. The Title of Commander
-
-In April 2041, Amsa Guard Captain Bae Jeongman began calling himself Commander. By then the Guard numbered about 60. It guarded the Amsa Arisu Water Purification Center, the Godeok Rail Depot, and the surface passage toward Hanam.
-
-<a id="ch12-i2"></a>
-
-#### A. Copying
-
-In May 2041 eleven people from around Anguk Station began copying the equipment manuals that had come out of the Yeouido vault floor and the purification centers. The English originals were copied with Korean readings attached. The copies were kept underground at Anguk Station.
-
-<a id="peninsula-2041-jeju-repairs"></a>
-<a id="event-peninsula-2041-jeju-repairs"></a>
-
-#### Jeju · A Share for Repairing Ships
-
-In 2041, as the suspension of sailings dragged on, sailors and settlers on Jeju repaired the remaining ships together. Villages that contributed workers and materials to the repairs were first to receive cargo space on the next voyage. Traffic with the southern coast opened whenever ships could be repaired, and news bound for Seoul had to wait on the coast until the next carrier could be found.
-
-<a id="2042년"></a>
-
-### 2042 · Inheriting the Post
-
-<a id="ch10-i5"></a>
-
-#### A. The First Apprentice Succession
-
-Yun Changbae died in January 2042. His apprentice Yun Sanggwon succeeded him as head of the workshop and of its seat among the heads. Yun Sanggwon was Yun Changbae''s adopted son. The heads'' meeting added Yun Sanggwon''s name to the last page of the standard and drew a line through Yun Changbae''s.
-
-<a id="ch11-i4"></a>
-
-#### A. Hereditary Succession
-
-Bae Jeongman died in November 2042. His eldest son, Bae Hyeonsu, took his place as Commander that same day before the Guard. The guard members did not hold a separate election for a successor. Bae Hyeonsu wrote his father''s name and date of death on the first page of the Guard''s ledger.
-
-<a id="2043년"></a>
-
-### 2043 · The Samseong Station Register
-
-<a id="ch12-i1"></a>
-
-#### A. Merging the Resident Registers
-
-In March 2043, three shelters near Samseong Station merged their separate resident registers into one. The merger was led by O Jinseop. Only those entered in the merged register received shelter rations. The merged register initially listed about 6,200 people.
-
-<a id="2044년"></a>
-
-### 2044 · The Yongsan Timetable
-
-<a id="2044년-용산-철도기지"></a>
-
-#### Yongsan Rail Base
-
-<a id="ch11-i5"></a>
-
-##### A. The Timetable Passes Down
-
-When Bak Munhak died in 2044, his eldest son Bak Yeongdo took over the timetable. The other six families followed Bak Yeongdo''s timetable without change.
-
-<a id="2046년"></a>
-
-### 2046 · The Death of Han Jeonghun and the Water Gate House
-
-<a id="ch13-i1"></a>
-
-#### A. Death
-
-On December 8, 2046, Han Jeonghun died in the staff quarters of the Yeongdeungpo Arisu Water Purification Center. He was 68. The first to confirm his death was Kim Jaeseung, who was on the dawn shift.
-
-<a id="ch13-i3"></a>
-
-#### B. The Vote on a Successor
-
-On December 12, 2046, the center''s nine duty supervisors and the five parts officers who had signed loan notes with Yeouido met and chose a successor by vote. The candidates were Han Jeonghun''s son Han Seokjin and Jo Gyeongtaek, a technician from the Amsa purification center. Han Seokjin received 8 votes and Jo Gyeongtaek 6, and Han Seokjin was elected.
-
-<a id="ch13-i4"></a>
-
-#### C. The Name
-
-From around this time, the family of the head of the Yeongdeungpo purification center came to be called the "Water Gate House." When Han Seokjin started Volume 42 of the operating log, he wrote his father''s date of death on the first line.
-
-<a id="2048년"></a>
-
-### 2048 · Commands Read Aloud
-
-<a id="ch12-i4"></a>
-
-#### A. Reading the English Commands Aloud
-
-In 2048 the underground gatherings at Samseong Station and Anguk Station added a turn for reading the English commands of the equipment manuals aloud. The readings included the purification center valve commands and the generator start commands.
-
-<a id="peninsula-2048-taedong-crossings"></a>
-<a id="event-peninsula-2048-taedong-crossings"></a>
-
-#### North Korean Region · Ferries on the Taedong River
-
-In 2048, riverside residents around Pyongyang could not restore all the broken bridges, so they repaired the remaining ferry landings and parts of some bridges. People kept crossing the river to go to market, but each point that helped with passage charged a different price. Merchants sending goods south had to negotiate again at every next point, so a single agreement for passage could not get them all the way to Seoul.
-
-<a id="2049년"></a>
-
-### 2049 · Loan Notes and Valves
-
-<a id="ch14-i1"></a>
-
-#### A. Tallying the Loan Notes
-
-In April 2049, the families in the Yeouido vault level register collected the loan notes that had piled up at the Yeongdeungpo, Amsa, and Guui purification centers. There were 187 notes from Yeongdeungpo, 76 from Amsa, and 49 from Guui, for a total of 312.
-
-<a id="ch14-i2"></a>
-
-#### B. Demand for More Water
-
-In May 2049, the Yeouido side demanded more water in place of payment for the parts. Han Seokjin extended the opening time of the valve toward Yeouido from 6 hours a day to 10. To cover the extra 4 hours, rations at Yeongdeungpo-gu Office Station fell from 2 liters per person per day to 1.6 liters.
-
-<a id="2050년"></a>
-
-### 2050 · Drought and Stopped Pumps
-
-<a id="ch14-i3"></a>
-
-#### A. The Shortfall
-
-From June to August 2050, drought reduced the intake from the Han River. The Yeongdeungpo purification center failed to meet its agreed supply volume for three months. The shortfall came to 22 percent of the agreed amount.
-
-<a id="ch14-i4"></a>
-
-#### B. Lending Halted
-
-In September 2050, the Yeouido families gave notice that they would stop lending new parts. The notice was signed by the representatives of all seven families. That same month, one pump on Line 1 of the Yeongdeungpo center''s filtration building stopped for lack of parts.
-
-<a id="era-3"></a>
-
-## Era 3 · Debt and Collateral (2051~2070)
-
-<a id="2051년"></a>
-
-### 2051 · Humanoids Back in Motion
-
-<a id="ch18-i1"></a>
-
-#### A. Reusing Humanoids
-
-By the second generation, it had become possible to connect humanoids to local networks and use them again. In June 2051, a vehicle body factory in Yangjae was run by the Jeong family, headed by Jeong Mansu. The factory began reusing 12 field humanoids, cut off from the remote network, by having people control them directly. Control was by a wired controller connected to each unit''s back.
-
-<a id="2052년"></a>
-
-### 2052 · The Jeongdong Meeting
-
-<a id="ch19-i1"></a>
-
-#### A. The Jeongdong Meeting
-
-On November 2, 2052, some 380 workers from underground at City Hall Station held a meeting in a building in Jeongdong. Every person present cast one vote, and they chose Mun Jeonga as chair.
-
-<a id="2053년"></a>
-
-### 2053 · The Yeouido Accord
-
-<a id="ch15-i1"></a>
-
-#### A. The Meeting
-
-At 10:00 on March 14, 2053, Han Seokjin, head of the Yeongdeungpo Water Purification Center, and six representatives of the families that received water met seven representatives of the Yeouido families in a conference room on the Yeouido vault floor. The meeting lasted thirteen hours. The minutes were taken by Seo Eunha, granddaughter of Seo Minjae, the computer duty officer of the vault floor.
-
-<a id="ch15-i2"></a>
-
-#### B. The Accord
-
-The accord transferred management rights over eleven water supply facilities in the Yeouido area and around Yeongdeungpo Station to the Yeouido families. In return, all 312 promissory notes were cancelled. Around 23:10, the fourteen representatives of both sides signed it. The cancelled notes were punched through and bound together on the spot.
-
-<a id="ch15-i4"></a>
-
-#### C. The Name of the Association
-
-On March 14, 2053, the Yeouido families signed the accord. From then on they acted together under the name Yeouido Investors'' Association.
-
-<a id="ch15-i3"></a>
-
-#### D. Relocation of the Base
-
-Beginning on March 20, 2053, the Yeongdeungpo Water Purification Center side moved its base underground at Yangpyeong Station. The move took nine days. The center''s 45 volumes of operating logs went to the underground archive at Yangpyeong Station. The center''s equipment stayed in operation afterward.
-
-<a id="2054년"></a>
-
-### 2054 · Issuing the Certificates
-
-<a id="ch16-i1"></a>
-
-#### A. Issuance
-
-In May 2054 the Yeouido Investors'' Association issued certificates backed by the parts and chips held in its vault. The first issue numbered 10,000. Each certificate bore a serial number and the catalog number of the part backing it, and the seal of the issuing family was stamped on the back.
-
-<a id="2055년"></a>
-
-### 2055 · The Yangpyeong Station Contract Council
-
-<a id="ch17-i1"></a>
-
-#### A. Formation
-
-In February 2055 the water supply side, now at Yangpyeong Station, formed a contract council of representatives from the families that received water. Nine families each held one vote: those responsible for four lock gates, three reservoirs, and two rail depots. The first session met in the underground concourse of Yangpyeong Station.
-
-<a id="2056년"></a>
-
-### 2056 · The First Vote
-
-<a id="ch17-i2"></a>
-
-#### A. The First Vote
-
-In January 2056 Han Seokjin announced that he would step down. The contract council chose his successor by vote. Han Doyun, son of Han Seokjin and grandson of Han Jeonghun, won six of the nine votes.
-
-<a id="2057년"></a>
-
-### 2057 · Certificates in Circulation
-
-<a id="ch16-i2"></a>
-
-#### A. Circulation
-
-The certificates were first used in the parts trade. By 2057, Yongsan rail cart freight charges and Guro workshop wages were also paid in certificates. That same year more than 40,000 certificates were in circulation.
-
-<a id="2058년"></a>
-
-### 2058 · Forgery and Incorporation
-
-<a id="2058년-여의도출자연합회"></a>
-
-#### Yeouido Investors'' Association
-
-<a id="ch16-i3"></a>
-
-##### A. Forgery and Appraisers
-
-In August 2058 the first forged certificates, seventeen of them, turned up in Guro. Their catalog numbers referred to parts that were not in the vault. The Association appointed five people who could read equipment manuals as appraisers to check certificates. The appraisers compared catalog numbers against the vault ledger.
-
-<a id="2058년-태욱중공업"></a>
-
-#### Taeuk Heavy Industries
-
-<a id="ch18-i2"></a>
-
-##### A. Taeuk Heavy Industries
-
-In September 2058 Jeong Mansu named his factory Taeuk Heavy Industries. That same year six workshops around the factory were incorporated into Taeuk Heavy Industries. The incorporation documents were signed by Jeong Mansu and the head of each workshop. The Yangjae factory later stopped, and by 2126 it survives only as a repair workshop that can no longer build vehicle bodies.
-
-<a id="peninsula-2058-busan-sailings"></a>
-<a id="event-peninsula-2058-busan-sailings"></a>
-
-#### Yeongnam · Boats Afloat Again
-
-In 2058 sailors and repair workers in Busan picked out the vessels they could keep up from those stranded in port and resumed coastal sailings. Different people had supplied labor and materials for each vessel, so no port representative could order every departure. Shipowners passed loads through several hands along the southern coast to trade with merchants heading toward Seoul, and obtained materials for the next voyage.
-
-<a id="2059년"></a>
-
-### 2059 · The First Strike
-
-<a id="ch19-i2"></a>
-
-#### A. The First Strike
-
-In April 2059 the City Hall Station workers stopped work for three days in protest against Guro workshop wages being paid only in certificates. On the third day of the strike the council of Guro workshop masters agreed to pay one third of wages in water.
-
-<a id="2060년"></a>
-
-### 2060 · The Association''s First Chair
-
-<a id="ch16-i4"></a>
-
-#### A. The First Chair
-
-In January 2060 the representatives of the Association''s seven investing families elected a chair for the first time. Choe Yeongseon of the Choe family, which held the largest share, became chair. Votes were weighted by share.
-
-<a id="2061년"></a>
-
-### 2061 · The Election at the Government Complex Seoul
-
-<a id="ch19-i3"></a>
-
-#### A. The Presidential Election
-
-In March 2061 the twenty-three duty families of the Government Complex Seoul held a presidential election. Only families that had held duty posts for generations could vote. Yun Jaegyeong of the records duty family won with thirteen votes. Yun Jaegyeong took office by inspecting the original emergency order in the records box.
-
-<a id="2062년"></a>
-
-### 2062 · Sungha Electronics
-
-<a id="ch18-i3"></a>
-
-#### A. Sungha Electronics
-
-In March 2062 I Sangcheol of the I family, which managed a computer building near Gangnam Station, signed a lease with the Yeouido Investors'' Association for the server room keys. The lease ran twenty years at 3,000 certificates a year. I Sangcheol hung the name Sungha Electronics on the building.
-
-<a id="2063년"></a>
-
-### 2063 · A Proposal to Renegotiate
-
-<a id="ch17-i3"></a>
-
-#### A. The Proposal
-
-In the 2063 vote, Jo Minho, representative of a lock gate family, was elected. He was the son of Jo Gyeongtaek, who had lost the 2046 vote. In July 2063 Jo Minho proposed to the Association that the Yeouido Accord be rewritten. Association chair Choe Yeongseon refused in writing.
-
-<a id="2064년"></a>
-
-### 2064 · The White Flag
-
-<a id="ch20-i1"></a>
-
-#### A. White Flag Carts
-
-In May 2064 Jang Gitaek, transport chief of the Sinnae rail depot, began carrying the wounded and medicine on rail carts flying white flags. There were 31 runs in the first month. Cargo from any side was accepted. Jang Gitaek set this principle down on a single signed page.
-
-<a id="peninsula-2064-northern-coast-handoffs"></a>
-<a id="event-peninsula-2064-northern-coast-handoffs"></a>
-
-#### Northern Peninsula · Handoffs on the Northern East Coast
-
-In 2064 residents near the ports and railways around Hamhung and Chongjin passed freight and travelers along the short sections they kept up. Loads changed hands at each broken section, so a wagon and its contents could come from different places. Merchants sending goods toward Seoul had to find a new carrier at every handoff, and none could guarantee passage for the whole journey.
-
-<a id="2066년"></a>
-
-### 2066 · Inheritance and the White Cross
-
-<a id="2066년-태욱중공업"></a>
-
-#### Taeuk Heavy Industries
-
-<a id="ch18-i4"></a>
-
-##### A. Inheritance
-
-In February 2066 Jeong Mansu died, and his eldest son Jeong Taehun succeeded him as chairman of Taeuk Heavy Industries. In October of the same year, I Sangcheol handed the chairmanship of Sungha Electronics to his son I Junho.
-
-<a id="2066년-제기동"></a>
-
-#### Jegi-dong
-
-<a id="ch20-i2"></a>
-
-##### A. The White Cross
-
-In March 2066 fourteen first-aid duty staff at the Jegi-dong hospital put on a white cross emblem and handled bleeding control and transport for surface workers and underground residents alike. The doctors who could operate had already left for the far side of the river; why they left is not recorded. Ranks among the duty staff were set by length of service. The first head, Gang Hyerin, named her successor in writing.
-
-<a id="2068년"></a>
-
-### 2068 · The Records Office Entry and the Dokdo Post
-
-<a id="ch19-i4"></a>
-
-#### A. The Records Office Entry
-
-In October 2068 Yun Jaegyeong, head of the Complex''s Records Office, recorded in the ledger that the National Assembly approval date field on the original emergency order was blank. Three witnesses who had examined the original signed beneath the entry.
-
-<a id="peninsula-2068-dokdo-watch"></a>
-<a id="event-peninsula-2068-dokdo-watch"></a>
-
-#### Dokdo · The Rotating Post
-
-In 2068, sailors repairing boats on Ulleungdo and the people who had inherited the Dokdo post records divided stays on Dokdo into shifts so they could receive the seasonal signals of fishing boats working to the east. When the boats bringing drinking water and repair materials to the post stopped coming, the crew was withdrawn first, and those who returned passed the docking and distress records to the next shift. The small post held on by relying on supplies from Ulleungdo and the coast.
-
-<a id="2069년"></a>
-
-### 2069 · Rolls and Inspections
-
-<a id="2069년-대한민국정부"></a>
-
-#### Government
-
-<a id="ch19-i5"></a>
-
-##### A. The Downtown Ration Roll
-
-In February 2069 the Government drew up a roll of residents of Jongno and Jung districts around Gwanghwamun Station. The ration window at the Government Complex Seoul issued food only to people on this roll.
-
-<a id="2069년-구의"></a>
-
-#### Guui
-
-<a id="ch20-i3"></a>
-
-##### A. Guui''s Dual Election
-
-In June 2069 Guui elected Go Myeongcheol as commander of the gate facing Achasan and Tak Hyeonu as garrison captain of the Guui Arisu Water Purification Center. The two met once each June to settle water supply and passage. The results of their first meeting were written up in two copies, and each kept one.
-
-<a id="2069년-xt01-임진-제방-임시-검역소"></a>
-
-#### Imjin Embankment Temporary Quarantine Station
-
-<a id="xt01-2069"></a>
-
-##### Joint Check of the Return Rolls
-
-In July 2069 the duty officer of the Anguk copying watch and the roll officer of the Gwanghwamun Complex checked the return rolls together at the Imjin embankment temporary quarantine station. The Sinnae rail cart officer recorded separately the handoff order for family queues and medicine crates. The Gangnam escort officer handled the transfer cars. The Guui gate commander''s side divided custody of the seal keys for the return guidance terminals.
-
-<a id="2069년-xt04-암사-야적장"></a>
-
-#### Amsa Yard
-
-<a id="xt04-2069"></a>
-
-##### Freight Car Weight Inspection
-
-In August 2069 the Amsa guard officer checked the weight records and brand marks of freight cars that had come in by the northeastern detour. The Sinnae rail cart officer moved the overweight cars to the rear. The Gangnam officer recorded the winter fuel rotation. The Jegi-dong officer took charge of frostbite patients. The Guui gate commander''s side sealed evidence of forged origin labels in evidence envelopes.
-
-<a id="2069년-xt05-여의도-회관"></a>
-
-#### Yeouido Hall
-
-<a id="xt05-2069"></a>
-
-##### The Residual Band Trust Window
-
-In September 2069 the rooftop officer at Yeouido Hall circulated the residual orbital slot numbers left at the Incheon window after the Great Blackout, intending to send them to the trust receiving window. The Yeongdeungpo water gate officer cross-checked transmission and pump operating times. The officer of the Government Complex Seoul at Gwanghwamun copied the hash of the delivery list into the observers'' ledger. The City Hall labor officer checked the round entries in the remittance records. The Yangjae factory officer weeded out false alarms from the orbital terminals. The Myeongdong watch drew up queue tickets for multilingual consultation.
-
-<a id="2070년"></a>
-
-### 2070 · Rejection and the Guard Force
-
-<a id="2070년-수문국"></a>
-
-#### Water Gate Bureau
-
-<a id="ch17-i4"></a>
-
-##### A. Rejection
-
-In April 2070 the Water Gate Bureau contract council put a new draft accord for Yeouido to a vote for the third time. It failed, four votes for and five against. All five families that voted against were responsible for the water mains running toward Yeouido.
-
-<a id="2070년-대한민국정부"></a>
-
-#### Government
-
-<a id="ch19-i6"></a>
-
-##### A. The Complex Guard
-
-In September 2070 the standing guard of the Complex drew up muster rolls for Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga stations. The guard took on rotating watches at all three stations.
-
-<a id="era-4"></a>
-
-## Era 4 · Three Branches (2071~2090)
-
-<a id="2071년"></a>
-
-### 2071 · The Samseong Station Band
-
-<a id="ch21-i1"></a>
-
-#### A. Formation
-
-In February 2071 Oh Seonggyu, who kept the Samseong Station residents'' roll, gathered some 120 men from among those listed on it into a band that wrecked surface patrol units. Its first operation, in March 2071, wrecked two patrol units in Yeoksam-dong.
-
-<a id="2072년"></a>
-
-### 2072 · A Brief Entry
-
-<a id="ch22-i1"></a>
-
-#### A. Formation
-
-<a id="2073년"></a>
-
-### 2073 · Alliance and Copying
-
-#### Samseong Station
-
-<a id="ch21-i2"></a>
-
-##### A. Alliance
-
-In May 2073 the Samseong Station band sent forty members each to the Amsa guard and to Go Myeongcheol, the Guui gate commander, to fight alongside them. The Amsa guard commander was Bae Jinhyeok, eldest son of Bae Hyeonsu.
-
-<a id="2073년-안국역"></a>
-
-#### Anguk Station
-
-<a id="ch23-i1"></a>
-
-##### A. Choosing a Head
-
-In August 2073 some forty people copying equipment manuals at Anguk Station chose Hyean as their head. The choice was made with the consent of everyone present.
-
-<a id="2074년"></a>
-
-### 2074 · The First Surface Crackdown
-
-<a id="ch21-i3"></a>
-
-#### A. The Nonhyeon-dong Arrests
-
-In September 2074 members of the Samseong Station band seized three people on the surface in Nonhyeon-dong. The three were released three days later.
-
-<a id="2075년"></a>
-
-### 2075 · Ledger Registration
-
-<a id="ch22-i2"></a>
-
-#### A. Ledger Registration
-
-In February 2075 the Yongsan rail families began having inheritance by eldest sons confirmed by entry in a ledger. The first to be confirmed was the Bak family. That same year the family of Taeuk Heavy Industries chairman Jeong Taehun also registered a marriage in the same ledger.
-
-<a id="2076년"></a>
-
-### 2076 · Succession
-
-<a id="ch21-i4"></a>
-
-#### A. Succession
-
-In January 2076 Oh Seonggyu died, and his son Oh Junhui succeeded him as leader of the Samseong Station band. Seventeen elders held a confirmation vote: fifteen in favor, two abstentions.
-
-<a id="2077년"></a>
-
-### 2077 · Training in Copying
-
-<a id="ch23-i2"></a>
-
-#### A. Training in Copying
-
-In January 2077 the Yangpyeong Station contract council and the council of Guro workshop masters invited six Anguk Station copyists to serve as readers of equipment manuals. About thirty technicians from the two groups learned copying at Anguk Station. The training lasted one year.
-
-<a id="2078년"></a>
-
-### 2078 · A Brief Entry
-
-<a id="ch22-i3"></a>
-
-<a id="2079년"></a>
-
-### 2079 · Inspection of Documents and Cargo
-
-<a id="ch24-i1"></a>
-
-#### A. Inspection of Technical Documents
-
-In October 2079 the Central Intelligence Bureau announced that it would inspect and preserve lost technical documents.
-
-<a id="2079년-xt02-한강-하구-임시-부두"></a>
-
-#### Han River Estuary Temporary Wharf
-
-<a id="xt02-2079"></a>
-
-##### Joint Inspection of Estuary Cargo
-
-In November 2079 the Yeongdeungpo floodgate watch checked the tide tables of the Han River Estuary Temporary Wharf against the drainage valve records. The Guro workshop watch recorded the sequence numbers of compressor parts. The Yangjae factory watch isolated crates whose hashes were broken. The Central Intelligence Bureau''s Heukseok watch corrected the refrigeration sequence. The Yeouido hall watch circulated the inspection sheet.
-
-<a id="2079년-xt03-용산-환적창"></a>
-
-#### Yongsan Transshipment Depot
-
-<a id="xt03-2079"></a>
-
-##### Three-Way Relay Report
-
-In December 2079 the Yongsan rail watch entered into the transshipment ledger a three-way relay report that had arrived from across the strait. The City Hall labor watch noted which cars could be turned back inland. The Myeongdong certification watch sealed the certification envelopes. The Samseong Station register watch checked the recipients of the sealed cargo. The Central Intelligence Bureau''s Heukseok watch recorded separately the items whose interpreted terms differed.
-
-<a id="2080년"></a>
-
-### 2080 · The Director''s Examination
-
-#### Central Intelligence Bureau
-
-<a id="ch24-i2"></a>
-
-##### A. The Director''s Examination
-
-The Director of the Heukseok Preservation Institute was chosen by a ledger reading examination. The first examination was held in February 2080 with 41 candidates. The papers were graded by a terminal in the Institute''s basement. Jin Seou, who placed first, became the first Director.
-
-<a id="2082년"></a>
-
-### 2082 · Rejection of Transcribed Copies
-
-<a id="ch23-i3"></a>
-
-#### A. Copies Refused
-
-In June 2082 the Samseong Station band gave notice that it would no longer admit, at the Amsa and Guui gates, technicians who used the Anguk Station copies. The notice was signed by Oh Junhui.
-
-<a id="2084년"></a>
-
-### 2084 · Placement of Successful Candidates
-
-<a id="ch24-i3"></a>
-
-#### A. Placement of Successful Candidates
-
-In 2084 nine candidates who had passed the Preservation Institute examination found positions at the Yangpyeong Station contract council and the Guro workshop. Four of them were technicians who had learned copying at Anguk Station.
-
-<a id="2085년"></a>
-
-### 2085 · Gate Crackdown
-
-<a id="ch25-i2"></a>
-
-#### A. The Crackdown
-
-From April 2085 the Samseong Station band began detaining workers at the Amsa and Guui gates. Twelve were detained in the first month. The names of those detained were struck from the gate passage register.
-
-<a id="2087년"></a>
-
-### 2087 · Honam Refuses Contracts
-
-<a id="peninsula-2087-honam-contract-refusal"></a>
-<a id="event-peninsula-2087-honam-contract-refusal"></a>
-
-#### Honam · Seoul Merchants Demand a Monopoly
-
-In 2087 merchants from Seoul who had come by way of the West Sea tried to buy up the following year''s grain in advance, and some producing areas in Honam refused the contracts. Shipowners divided their loads between Seoul-bound cargo, which fetched higher prices, and the food that had to stay in the villages. Finding that dealing with a single port would not get them the quantities they wanted, the Seoul merchants negotiated prices anew with each producing area.
-
-<a id="2088년"></a>
-
-### 2088 · Inspection of Copies Delegated
-
-<a id="ch24-i4"></a>
-
-#### A. Inspection of Copies Delegated
-
-In May 2088 the Preservation Institute asked to take over the inspection of the Anguk Station copies. The Anguk Station copyists agreed. Some 1,200 volumes were moved to Heukseok and returned after inspection.
-
-<a id="2090년"></a>
-
-### 2090 · A Brief Entry
-
-<a id="ch25-i3"></a>
-
-#### A. The Record for 2090
-
-<a id="era-5"></a>
-
-## Era 5 · The Age of the Line''s End (2091~2110)
-
-<a id="2095년"></a>
-
-### 2095 · Workshops and Computing Buildings
-
-<a id="ch26-i4"></a>
-
-#### A. Workshops and Computing Buildings
-
-In May 2095 Taeuk Group controlled Taeuk Heavy Industries and the eleven workshops under it. Sungha Group controlled four computing buildings around Sungha Electronics.
-
-<a id="2097년"></a>
-
-### 2097 · The Water Gate Bureau''s Waterway Contract
-
-<a id="ch27-i1"></a>
-
-#### A. The Contract
-
-In June 2097 the Water Gate Bureau signed a contract with the waterway keepers of Yangpyeong and Chuncheon. Yangpyeong sent 34 representatives and Chuncheon 51. The Water Gate Bureau named the two places First Water Gate and Second Water Gate. In return for managing the Bureau''s waterways, both were entered in the Yangpyeong Station ration register.
-
-<a id="2098년"></a>
-
-### 2098 · The Eastern Command''s Guard Districts
-
-<a id="ch28-i1"></a>
-
-#### A. Guard Districts
-
-In September 2098 the Eastern Command grouped its surface strongholds in Hanam, Namyangju, and Uijeongbu and Yeoncheon into the First, Second, and Third Guard Districts. Each Guard District sent guard personnel to Amsa twice a year, in spring and autumn.
-
-<a id="2099년"></a>
-
-### 2099 · The Name Chuncheon
-
-<a id="ch27-i2"></a>
-
-#### A. Demand for a Name Change
-
-In March 2099 a demand arose in Chuncheon to use the old city name instead of Second Water Gate. Some 1,100 Chuncheon residents signed the petition. The Water Gate Bureau''s contract council rejected it by two votes in favor to seven against.
-
-<a id="peninsula-2099-chuncheon-name"></a>
-<a id="event-peninsula-2099-chuncheon-name"></a>
-
-#### Gangwon · Chuncheon After the Rejection
-
-Even after the demand was rejected in March 2099, the boatmen and market traders of Chuncheon kept using the name Chuncheon on their goods and signboards. The 2097 waterway contract with the Water Gate Bureau remained in force, but the name in the contract did not change the residents'' daily lives. Merchants from Seoul learned that the Second Water Gate of the contract and the Chuncheon they heard in the market referred to the same stronghold.
-
-<a id="2100년"></a>
-
-### 2100 · Tolls at the Ends of the Line
-
-<a id="ch29-i1"></a>
-
-#### A. Terminals
-
-In July 2100 the Transshipment Bureau designated the end-of-line strongholds at Incheon and Paju as First Terminal and Second Terminal and began collecting tolls. Tolls were paid in certificates according to cargo weight.
-
-<a id="2101년"></a>
-
-### 2101 · Taeuk Heavy Industries'' Worksites
-
-<a id="ch28-i2"></a>
-
-#### A. Worksites
-
-In March 2101 Taeuk Group named its factory strongholds in Seongnam and Suwon the Taeuk Heavy Industries Seongnam Worksite and Suwon Worksite. Both worksites sent parts and workers to Yangjae along the Sinbundang Line. In the first year the Seongnam Worksite had some 1,400 workers. Both worksites lay outside Seoul. Even after the Gangnam shelters were united as the Arc, the factory plant never became the Arc''s; inside Seoul the Arc holds only repair workshops.
-
-<a id="2102년"></a>
-
-### 2102 · The Standards League''s Branch Workshops
-
-<a id="2102년-규격맹"></a>
-
-#### Standards League
-
-<a id="ch29-i2"></a>
-
-##### A. Branch Workshops
-
-In April 2102 the Standards League admitted the workshops of Cheonan-Asan and Siheung as the First Branch Workshop and Second Branch Workshop. The First Branch Workshop was entrusted to the I family of Cheonan-Asan. The branch workshops sent parts made to the League''s specifications to Guro.
-
-<a id="2102년-제1분공방"></a>
-
-#### First Branch Workshop
-
-<a id="ch42-i1"></a>
-
-##### A. The I Family
-
-The First Branch Workshop joined the Standards League in 2102. Thereafter the I family managed the First Branch Workshop under the Standards League. The family looked after the rail yard at the southern end of Line 1 and four workshops. I Ilseop was heir of the I family. The I family is a medical house that has handed down neural-link medicine for generations; the rail-yard field and the workshops are its side work. As of 2126 I Ilseop is Chair of the Board of the Free City. By rank the I family is a Director like any other Director, but because the people of the Free City want them to lead, the family has held the Chair of the Board for generations.
-
-<a id="2104년"></a>
-
-### 2104 · The Yeongjong Branch and the Imjin Embankment
-
-<a id="ch29-i3"></a>
-
-#### A. The Yeongjong Branch
-
-In October 2104 the Yeouido Investors'' Association opened the Yeongjong Branch at Yeongjong, terminus of the Airport Railroad. The Yeongjong Branch exchanged payments from outside trade for Association certificates and took a fee of three percent.
-
-<a id="2104년-xt01-임진-제방-임시-검역소"></a>
-
-#### Imjin Embankment Temporary Quarantine Station
-
-<a id="xt01-2104"></a>
-
-##### Reissue of a Damaged Register
-
-In November 2104 a return register that had come from the north to the Imjin Embankment Temporary Quarantine Station was soaked by rain and damaged. The reissue of the damaged lines fell to the Anguk Station copyists. The Government''s Gwanghwamun watch verified the authenticity of the kinship certificates submitted. The Achasan Gate Command''s Guui gate watch divided the seal keys for safekeeping. Sinnae Transport moved the transfer cars for the family queue. Sungha Group provided a separate car for escorting medicine.
-
-<a id="2106년"></a>
-
-### 2106 · Gyeonggi Province and the Stamp Duty
-
-<a id="ch29-i4"></a>
-
-#### A. Gyeonggi Province
-
-In January 2106 the Government began calling its administrative stronghold in Goyang Gyeonggi Province. Gyeonggi Province sent its military service register and stamp duty to Gwanghwamun. In the first year some 2,300 people were entered in the military service register.
-
-<a id="ch29-i5"></a>
-
-#### B. Seals and Stamp Duty
-
-In June 2106 the Government ruled that passes in Jongno and Jung-gu must bear the seal of the Government Complex Seoul. Commercial contracts in Jongno and Jung-gu could be entered in the Records Office ledger only if they bore the seal. Stamp duty was levied on passes and contracts.
-
-<a id="2107년"></a>
-
-### 2107 · The Guui Water Clash
-
-<a id="ch30-i1"></a>
-
-#### A. The Guui Clash
-
-In August 2107 the Eastern Command and the Achasan Gate Command came to blows over the water supply at Guui. The clash lasted two days, with some 40 casualties on both sides. Six Sinnae Transport carts carried the wounded of both sides to Jegi-dong. The White Cross Corps stopped the bleeding and splinted limbs, but most of the badly wounded never returned to duty.
-
-<a id="2109년"></a>
-
-### 2109 · Sinnae Transport''s Pledge
-
-<a id="ch30-i2"></a>
-
-#### A. The Pledge
-
-In February 2109 the owning family of Sinnae Transport rewrote its pledge never to pick and choose cargo in any conflict. The pledge was hung in the waiting room of Sinnae Station.
-
-<a id="2110년"></a>
-
-### 2110 · The Records Office Ledger
-
-<a id="ch30-i3"></a>
-
-#### A. The Records Office Ledger
-
-In December 2110 the names of many organizations, families, and councils in and around Seoul, together with the names of thirteen strongholds, were all entered in the Government''s Records Office ledger. Twenty-nine documents sent by the organizations were attached as the basis for the entries.
-
-<a id="era-6"></a>
-
-## Era 6 · Eve of the Opening (2111~2126)
-
-<a id="2111년"></a>
-
-### 2111 · Submission of Succession Documents
-
-<a id="ch30-i4"></a>
-
-#### A. Succession and Treaties
-
-In March 2111 the Water Gate Bureau, the Eastern Command, the Achasan Gate Command, the Transshipment Bureau, Sinnae Transport, the Standards League, and the White Cross Corps submitted to the Records Office the succession documents of their heads and the originals of the treaties concluded among them. The Records Office returned sealed certified copies to each organization.
+Nearly a century passes between the Great Blackout and 2112 with no record that carries a year. Only the outcomes are known. People lived in the stations, and outside Seoul the war machines, their makers long dead, kept following their last orders. In the Government, children took up their parents'' work until the class ladder set hard. The Gangnam shelters, afraid of the machines, kept their doors shut for decades. Nobody knows when these things happened, or in what order.
 
 <a id="2112년"></a>
 
-### 2112 · Succession at Taeuk Group and the Station Not on the Map
+## 2112: A station on no map
 
-That year, while repairing the Free City''s power grid, Go Ye-jin followed a dead cable and found a station not on any map. Go Ye-jin spent five years, from that year until 2117, reading the manuals that came out of that station.
+While repairing the Free City power grid, Go Ye-jin followed a dead cable. At its end was a station that appeared on no map.
 
-<a id="ch31-i1"></a>
+<a id="2112-2117"></a>
 
-#### A. Death of the Chairman
+## 2112~2117: Five years of manuals
 
-On April 9, 2112, Taeuk Group Chairman Jeong Ilhwan died in his quarters at the Yangjae headquarters. Jeong Ilhwan had one child, a daughter, Jeong Seoon.
-
-<a id="ch31-i2"></a>
-
-#### B. The Clan Meeting
-
-On April 13, 2112, nine elders of the Jeong clan met at the clan hall in Yangjae. The meeting resolved to install Jeong Ucheol, a man from a cadet branch, as Chairman. Seven signed the resolution.
-
-<a id="ch31-i3"></a>
-
-#### C. Announcement of Accession
-
-On April 15, 2112, Jeong Seoon announced her accession as Chairman on the basis of the shareholding documents left by her father and two sets of shareholders'' meeting minutes. According to the shareholding documents, Jeong Ilhwan held 51 percent of all Taeuk Group.
-
-<a id="ch31-i4"></a>
-
-#### D. Shareholders'' Approval
-
-On April 28, 2112, a shareholders'' meeting was held. Of the 43 shareholders present, 29 voted in favor of Jeong Seoon''s accession. The two representatives of the cadet branch did not sign the minutes.
-
-<a id="ch31-i5"></a>
-
-#### E. Entry in the Genealogy
-
-In October 2112 Jeong Seoon''s name was entered in the revised Jeong genealogy without the generation character. All eleven men of the same generation were entered under names that included it.
-
-<a id="2113년"></a>
-
-### 2113 · A Gap in the Record
-
-<a id="ch40-i1"></a>
-
-<a id="2114년"></a>
-
-### 2114 · Petition for Certification and Cargo Inspection
-
-<a id="2114년-태욱그룹"></a>
-
-#### Taeuk Group
-
-<a id="ch32-i1"></a>
-
-##### A. Petition for Confirmation
-
-In February 2114 Taeuk Group filed a petition asking that Jeong Seoon''s succession as Chairman be confirmed as inheritance by a legitimate heir. Attached to the petition was a note that Jeong Ilhwan''s marriage had been registered in the ledger in 2089. The petition was accepted but received no answer.
-
-<a id="ch32-i2"></a>
-
-##### B. The Cadet Branch''s Visit
-
-<a id="2114년-성하그룹"></a>
-
-#### Sungha Group
-
-<a id="ch40-i2"></a>
-
-##### A. Chairman I Hongwon
-
-In 2114 the chairman of Sungha Group died. A succession examination was held among the heirs of the I family. I Hongwon succeeded to the chairmanship.
-
-<a id="2114년-xt02-한강-하구-임시-부두"></a>
-
-#### Han River Estuary Temporary Wharf
-
-<a id="xt02-2114"></a>
-
-##### Compressor Shutdown
-
-In June 2114 the refrigeration compressor used for storing cargo at the Han River Estuary Temporary Wharf stopped for a week. The Standards League changed the order in which replacement parts were issued at Guro. The Central Intelligence Bureau''s Heukseok watch corrected the refrigeration sequence. The Water Gate Bureau''s Yeongdeungpo watch checked the operating hours of the drainage gates. Taeuk Group isolated the crates with damaged seal hashes. The Yeouido Investors'' Association circulated a notice suspending acceptance of refrigerated cargo.
-
-<a id="2114년-xt04-암사-야적장"></a>
-
-#### Amsa Yard
-
-<a id="xt04-2114"></a>
-
-##### Reinspection of Weight Cars
-
-In October 2114 the Eastern Command''s Amsa watch reinspected the freight cars arriving by the northeastern bypass whose marked weights differed from the weighing records. Sinnae Transport moved those cars'' transfer sequence. Sungha Group rewrote the receiving order for winter fuel drums. The White Cross Corps'' Jegi-dong watch confirmed the transport cars for frostbite patients. The Achasan Gate Command sealed the forged origin labels attached to the cars in evidence envelopes.
-
-<a id="2115년"></a>
-
-### 2115 · Demand for Incorporation
-
-<a id="ch33-i1"></a>
-
-#### A. Demand for Incorporation
-
-In 2115 the Achasan Gate Command elected Go Seojun as Gate Commander. In July 2116 the Eastern Command sent the Achasan Gate Command a document demanding that the Guui Garrison be placed under Eastern Command authority. Go Seojun and Guui Garrison Commander Tak Seoyun each sent a letter of refusal.
-
-<a id="2116년"></a>
-
-### 2116 · The White Cross Corps'' Successor
-
-<a id="ch40-i3"></a>
-
-#### A. Corps Head Ryu Eunbi
-
-In 2116 the head of the White Cross Corps designated Ryu Eunbi as successor.
+Go Ye-jin spent five years reading the manuals left in that station.
 
 <a id="2117년"></a>
 
-### 2117 · A Marriage Proposal and the First Baptism
+## Around 2117: The first baptism
 
-Around this year Go Ye-jin finished her five years of reading the manuals, and twelve people received the first baptism, in which parts of the body were replaced with machines. Fitting the machines was done by Go Ye-jin''s people, but joining them to the nerves was left to a doctor who came from the Free City.
-
-<a id="2117년-태욱그룹"></a>
-
-#### Taeuk Group
-
-<a id="ch32-i3"></a>
-
-##### A. The Marriage Proposal
-
-In September 2117 a letter arrived in Yangjae proposing a marriage between Jeong Seoon and Bak Taegyeom, eldest son of the Bak rail-line family of the Transshipment Bureau. The letter bore the names of the head of the Bak family and four elders of the Jeong clan. Jeong Seoon did not answer the letter.
-
-<a id="2117년-동방사"></a>
-
-#### Eastern Command
-
-<a id="ch36-i1"></a>
-
-##### A. Commander Bae Ujin
-
-In 2117 the Commander of the Eastern Command, its hereditary head, died. The deputy chief held emergency oversight for one year. In 2118 the late Commander''s eldest son, Bae Ujin, took over as Commander. The Eastern Command is the Arc''s hereditary rifle guard.
-
-<a id="2118년"></a>
-
-### 2118 · Examinations and an Expedition
-
-<a id="2118년-중앙정보부"></a>
-
-#### Central Intelligence Bureau
-
-<a id="ch34-i1"></a>
-
-##### A. The Top Ranks Taken
-
-In February 2118, eighty-eight candidates sat the Central Intelligence Bureau''s director''s examination. Technicians from the Water Gate Bureau and the Standards League took all of the top ten places.
-
-<a id="2118년-신내운수"></a>
-
-#### Sinnae Transport
-
-<a id="ch39-i1"></a>
-
-##### A. President Jang Sehwa
-
-In 2118 the president of Sinnae Transport died. Jang Sehwa succeeded to the presidency.
-
-<a id="peninsula-2118-tsushima-expedition"></a>
-<a id="event-peninsula-2118-tsushima-expedition"></a>
-
-#### Tsushima · The Expedition Sets Sail
-
-In 2118 shipowners around Busan hired an escort force to recover ships and people seized in the strait. Some Tsushima sailors who had lost their passage through the harbor supplied information about the landings, and the expedition came ashore at one of the ports. The escort force broke the defensive positions and recovered the ships, but the shipowners and their local collaborators understood differently how the recovered goods were to be shared.
-
-<a id="2119년"></a>
-
-### 2119 · A Year of Succession
-
-<a id="2119년-중앙정보부"></a>
-
-#### Central Intelligence Bureau
-
-<a id="ch34-i2"></a>
-
-##### A. Director Oh Hae-rin
-
-In the Central Intelligence Bureau''s director''s examination of February 2119, Oh Hae-rin, keeper of the keys at the Noryangjin cold storage warehouse, placed first. Oh Hae-rin took office as director of the Preservation Institute on March 1, 2119.
-
-<a id="2119년-수문국"></a>
-
-#### Water Gate Bureau
-
-<a id="ch35-i1"></a>
-
-##### A. Han Jaemok Elected
-
-In 2119 the contract council of the Water Gate Bureau chose Han Jaemok as head of the bureau.
-
-<a id="ch35-i2"></a>
-
-##### B. Yangcheon District Chief
-
-In the same year Han Jaemok installed I Seodam as chief of the Yangcheon district. At this time a procedure requiring the joint signatures of ration district representatives before any water gate was opened was written into the bureau''s regulations.
-
-<a id="2119년-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
-<a id="ch37-i1"></a>
-
-##### A. Im Hajun
-
-In 2119 the leader of the City Hall Station workers died. Oh Gyeongjae, eldest son of the Oh family, was still a minor. The members held a confirmation vote and entrusted that role to Im Hajun.
-
-<a id="2119년-신종목"></a>
-
-#### Sin Jong-mok
-
-<a id="ch43-i1"></a>
-
-##### A. The Last Operation
-
-In November 2119 Sin Jong-mok, senior operative of the Eastern Command''s Special Recovery Unit, returned from his last recovery operation with refugees who were not on the roster. His return report recorded insubordination and the loss of issued supplies. Some of the unit members who had held the line of retreat were listed as missing.
-
-<a id="peninsula-2119-tsushima-withdrawal"></a>
-<a id="event-peninsula-2119-tsushima-withdrawal"></a>
-
-#### Tsushima · The Expedition Returns
-
-In 2119 the expedition that had gone to Tsushima won its fight, but the shipowners and commanders split over whether to keep holding the port. Short of the materials and labor needed to repair damaged ships, the main force returned to the peninsula, and the collaborators left on the island quarreled again over the ships left behind and the trade promises made to them. The returning men proclaimed the victory of the punitive campaign, but no lasting occupation followed, and everyone who brought back recovered goods claimed a different share.
+Twelve people received the first baptism. Go Ye-jin''s group fitted the machine parts, and a doctor from the Free City handled the nerve connections.
 
 <a id="2120년"></a>
 
-### 2120 · Registration and Contracts
+## 2120: Ji Yeon-hui
 
-<a id="2120년-동방사"></a>
-
-#### Eastern Command
-
-<a id="ch36-i2"></a>
-
-##### A. The Demand for Registration
-
-In the winter of 2120 Go Ye-jin''s following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Standards League register its restoration service personnel. Gang Minseo of the Standards League entered the technicians who refused registration on the league''s citizenship roll. In 2121 the Standards League council elected Gang Minseo as its chair.
-
-<a id="2120년-여의도출자연합회"></a>
-
-#### Yeouido Investors'' Association
-
-<a id="ch38-i1"></a>
-
-##### A. Chair Choe Jiu
-
-In 2120 the investor families of the Yeouido Investors'' Association elected Choe Jiu as chair of their council.
-
-<a id="2120년-신종목"></a>
-
-#### Sin Jong-mok
-
-<a id="ch43-i3"></a>
-
-##### A. The First Reply
-
-From 2120 Sin Jong-mok broadcast the Special Recovery Unit''s call sign on a repaired radio. In January 2121 the first reply came in. Those who answered were a medic asking for a route to carry medicine, a resident searching for missing family, and a caregiver asking for relief in shifts. Sin Jong-mok kept a list of those who replied. This network came to be called the Return Network.
-
-<a id="ch43-i2"></a>
-
-##### B. Gangnam District Office
-
-In April 2120 Sin Jong-mok left the Special Recovery Unit. He moved with the child Sin Jun to the Gangnam District Office living area and took on escort and survey contracts.
-
-<a id="2120년-수서-차량기지"></a>
-
-#### Suseo Depot
-
-<a id="ch44-i1"></a>
-
-##### A. Suseo
-
-From 2080 onward the Suseo depot belonged to no faction.
-
-<a id="2120년-지연희"></a>
-<a id="2119년-지연희"></a>
-
-#### Ji Yeon-hui
-
-<a id="ch46-i1"></a>
-<a id="ch46-i2"></a>
-
-##### A. The Bodyguard
-
-In 2120, at shelter negotiations on the Tancheon side, Ji Yeon-hui stopped a man who drew a knife and took her place beside Go Ye-jin, and afterward she became Go Ye-jin''s bodyguard. Her debt and the choices around it are undecided.
-
-<a id="ch46-i3"></a>
-
-##### B. The Aide
-
-As of 2126 Ji Yeon-hui is Go Ye-jin''s aide, belonging to the Arc.
-
-<a id="2120년-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
-<a id="ch47-i1"></a>
-
-##### A. Jeong Yura
-
-In 2120 the City Hall Station workers held an election in which every member voted directly, and Jeong Yura was elected chair.
-
-<a id="2121년"></a>
-
-### 2121 · Standoff and Fields
-
-<a id="2121년-아관사"></a>
-
-#### Achasan Gate Command
-
-<a id="ch33-i2"></a>
-
-##### A. The Standoff
-
-On March 2, 2121, a few dozen Eastern Command guards, armed only with rifles, halted before the Achasan gate. On March 5, 2121, Go Seojun and Tak Seoyun jointly signed an order placing the personnel of the gate and the water purification center under a single command.
-
-<a id="2121년-대한민국정부"></a>
-
-#### Government
-
-<a id="ch38-i2"></a>
-
-##### A. President Yun Seorin
-
-In 2121 Yun Seorin became President. On the day he took office, Yun Seorin read the original emergency decree kept in the Records Office vault at the Government Complex Seoul.
-
-<a id="ch38-i4"></a>
-
-##### B. Three Downtown Groups
-
-<a id="2121년-제1분공방"></a>
-
-#### First Branch Workshop
-
-<a id="ch42-i2"></a>
-
-##### A. The Depot Fields
-
-In April 2121 I Ilseop turned about 1,200 square meters of empty ground beside the storage tracks of the depot at the southern end of Line 1 into fields. Thirty households of workshop laborers shared the fieldwork. The first year''s crops were potatoes and beans.
-
-<a id="2121년-조재표-일행"></a>
-
-#### Jo Jaepyo''s Party
-
-<a id="ch45-i1"></a>
-
-##### A. Arrival in the Capital
-
-In February 2121 Jo Jaepyo came into Seoul from northern Gyeonggi. In the same year he began taking guide and escort contracts for the stations and corridors.
+At a negotiation with the shelters near Tancheon, Ji Yeon-hui stepped to Go Ye-jin''s side. She hasn''t left it since.
 
 <a id="2122년"></a>
 
-### 2122 · Arc and Onminui
+## Around 2122: Arc
 
-Around 2122 the Gangnam shelters were joined together under the name Arc.
-
-<a id="2122년-중앙정보부"></a>
-
-#### Central Intelligence Bureau
-
-<a id="ch34-i3"></a>
-
-##### A. Entry into Clerkships
-
-In 2122 six technicians who had passed the examination were appointed clerks of the Water Gate Bureau contract council and the Standards League council. The clerks kept the minutes and the voting records.
-
-<a id="2122년-안국역"></a>
-
-#### Anguk Station
-
-<a id="ch36-i4"></a>
-
-##### A. Baek On
-
-In 2122 the Anguk Station copyists made Baek On their head. In 2123 a column of refugees from the direction of Bogukmun on Bukhansan came down to Anguk.
-
-<a id="2122년-환적국"></a>
-
-#### Transshipment Bureau
-
-<a id="ch39-i2"></a>
-
-##### A. Stationmaster Bak Taegyeom
-
-In 2122 the head of the Transshipment Bureau''s rail-line family died. His eldest son, Bak Taegyeom, succeeded him as stationmaster.
-
-<a id="2122년-대한민국정부"></a>
-
-#### Government
-
-<a id="ch41-i1"></a>
-
-##### A. The Founding
-
-In May 2122 nineteen young record officers from the Government''s duty families met in a basement conference room of the government complex. The meeting was called by Gim Yeongyu. The group took the name Onminui.
-
-<a id="ch41-i2"></a>
-
-##### B. The Declaration
-
-In June 2122 Onminui posted a document titled "Seoul United and a Whole Republic of Korea" on the government complex bulletin board. The document stated that the various powers of Seoul, along with the telegraph offices and subordinate families remaining within them and the 13 strongholds, must be bound together again under the Government''s emergency decree. Its nineteen signatories included Gim Yeongyu.
-
-<a id="ch41-i3"></a>
-
-##### C. Entry in the Ledger
-
-In July 2122 President Yun Seorin ordered that Onminui''s document be entered in the Records Office ledger without ratification.
-
-<a id="ch41-i5"></a>
-
-##### D. The Government Complex Guard
-
-In August 2122 Onminui submitted to President Yun Seorin a proposal to send the government complex guard to the Water Gate Bureau border. The guard''s duty families submitted their muster rolls for Gwanghwamun, Jongno, and Jung District. Yun Seorin did not sign the proposal to move the guard.
-
-<a id="2122년-xt05-여의도-회관"></a>
-
-#### Yeouido Hall
-
-<a id="xt05-2122"></a>
-
-##### Lottery for the Remaining Bandwidth
-
-<a id="2123년"></a>
-
-### 2123 · The Demand for Renewed Obedience and Its Withdrawal
-
-<a id="2123년-아관사"></a>
-
-#### Achasan Gate Command
-
-<a id="ch33-i3"></a>
-
-##### A. The Withdrawal
-
-In February 2123 the Eastern Command troops withdrew.
-
-<a id="2123년-동방사"></a>
-
-#### Eastern Command
-
-<a id="ch36-i3"></a>
-
-##### A. The Box Returned
-
-In 2123 the Eastern Command sent a roster of restoration service personnel along with a box of pump parts. Gang Minseo sealed the box and sent it back. Bae Ujin placed the registration roster in the Eastern Command''s military affairs document box.
-
-<a id="2123년-여의도출자연합회"></a>
-
-#### Yeouido Investors'' Association
-
-<a id="ch38-i3"></a>
-
-##### A. Bulletins Halted
-
-In 2123, on the day before the refugee column from the direction of Bogukmun on Bukhansan came down, Choe Jiu halted the broadcast of news bulletins on the association''s channel. From then on the channel carried only refugee rosters.
-
-<a id="2123년-대한민국정부"></a>
-
-#### Government
-
-<a id="ch41-i6"></a>
-
-##### A. Head of the Records Office
-
-In January 2123 two groups of duty families submitted letters of recommendation for different candidates for head of the Records Office to President Yun Seorin. For three months Yun Seorin did not stamp the letter of ratification for the post.
-
-<a id="ch41-i7"></a>
-
-##### B. The Stamp Tax
-
-In April 2123 three groups of duty families each submitted to President Yun Seorin a plan for dividing the stamp tax revenue of Jongno and Jung District. Yun Seorin ruled that the stamp tax ledgers be divided and kept by the guard, the Records Office, and the ration counters.
-
-<a id="ch41-i8"></a>
-
-##### C. The Demand for Renewed Obedience
-
-In June 2123 Onminui demanded that the Water Gate Bureau submit a declaration of renewed obedience to the emergency decree. The Water Gate Bureau did not sign it. The Transshipment Bureau, Sinnae Transport, the Standards League, and the White Cross Corps suspended the recording of successions and treaties with the Records Office. The Eastern Command and the Achasan Gate Command continued to register their successions and treaties with the Records Office. Yun Seorin withdrew the demand for renewed obedience.
-
-<a id="2123년-제1분공방"></a>
-
-#### First Branch Workshop
-
-<a id="ch42-i3"></a>
-
-##### A. The Recount
-
-In October 2123, before submitting the winter ration plan, I Ilseop recounted the grain stock in the branch workshop''s storehouse three times. The third count came to eleven sacks fewer than the first. The ration plan followed the third count.
-
-<a id="ch42-i4"></a>
-
-##### B. Payment in Seed
-
-In November 2123 I Ilseop attended the Board in Guro for the first time as heir of his house. I Ilseop proposed that part of the payment for the First Branch Workshop''s parts be made in seed instead of certificates. Gang Minseo accepted a plan to pay one fifth of the amount in seed. The seed the League paid out was allotment seed it had obtained by trade with the Government.
-
-<a id="2123년-조재표-일행"></a>
-
-#### Jo Jaepyo''s Party
-
-<a id="ch45-i2"></a>
-
-##### A. I Yeon Joins
-
-In May 2123 I Yeon joined Jo Jaepyo''s party as an attendant courier. I Yeon signed the reports on scouting and escort work in her own name.
-
-<a id="2123년-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
-<a id="ch47-i2"></a>
-
-##### A. Three Contracts
-
-In 2123 the Water Gate Bureau, the Standards League, and the Transshipment Bureau sent separate contracts for water supply, parts, and passage to the pharmacies in the same week. Jeong Yura copied only the termination clauses of the three contracts into a single document. The document she compiled became the basic document of the pharmacy council.
-
-<a id="2124년"></a>
-
-### 2124 · The Stalled Train and the Mismatched Rolls
-
-<a id="2124년-환적국"></a>
-
-#### Transshipment Bureau
-
-<a id="ch39-i3"></a>
-
-##### A. The Family Council
-
-In 2124 Im Hajun''s pump train stalled at the Yongsan depot. Before drawing up the escort roster, Bak Taegyeom made the Yongsan dispatch schedule public. He then called the families attached to the Transshipment Bureau to a council.
-
-<a id="ch39-i4"></a>
-
-##### B. The Ridge Permit System
-
-In 2124 Go Seojun, who held the gate at the Achasan Gate Command, placed passage along the Achasan ridge under a permit system. From then on, people and goods crossing the ridge needed a permit.
-
-<a id="2124년-흰십자단"></a>
-
-#### White Cross Corps
-
-<a id="ch40-i4"></a>
-
-##### A. Counterfeit Medicine
-
-In 2124 crates of counterfeit medicine came up for sale at the Seoul Station auction. Ryu Eunbi cut off all trading at that auction. On the same day Jeong Hojun, who led life safety research at the Magok Life House, broke the seals on the counterfeit medicine samples that had arrived at the Yangjae archive.
-
-<a id="ch40-i5"></a>
-
-##### B. Emergency Rationing
-
-<a id="2124년-기록청"></a>
-
-#### Records Office
-
-<a id="ch41-i4"></a>
-
-##### A. Checking the Gyeonggi Rolls
-
-In March 2124 Gim Yeongyu proposed checking the old military service rolls of Gyeonggi Province (Goyang) against the rolls of the Records Office at the Government Complex. Of the roughly 2,900 people on the rolls, about 1,100 names matched the Government Complex rolls.
-
-<a id="2124년-제1분공방"></a>
-
-#### First Branch Workshop
-
-<a id="ch42-i6"></a>
-
-##### A. The Harvest
-
-In the autumn of 2124 the field harvest was divided among the 480 residents of the First Branch Workshop according to the distribution table. In March 2125 the field was expanded to about 3,000 square meters.
-
-<a id="ch42-i5"></a>
-
-##### B. The Drought
-
-In July 2124 a drought reduced the branch workshop''s water supply. The family elders proposed diverting the water used for the field to cool the workshop. I Ilseop did not seal the document that would have cut the field''s water. Instead, the workshop''s operating hours were reduced by two hours a day.
-
-<a id="2124년-귀환망"></a>
-
-#### Return Network
-
-<a id="ch43-i4"></a>
-
-##### A. Expansion
-
-In 2124 the Return Network linked twelve communities, from the Gangnam-gu Office to Seonjeongneung and Suseo.
-
-<a id="2124년-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
-<a id="ch47-i3"></a>
-
-##### A. New Members
-
-In 2124 workers from the Seongnam Works of Taeuk Heavy Industries and from the Standards League''s Second Branch Workshop joined the City Hall Station workers.
-
-<a id="peninsula-2124-dokdo-report"></a>
-<a id="event-peninsula-2124-dokdo-report"></a>
-
-#### Seoul · News from the Island
-
-In 2124 a sailor who had crossed over from the east coast reported that a guard post on Dokdo was still manned, and that sailors who had not returned to their former shipowners were helping with the work there. The Seoul merchants and liaison duty officers who heard this did not immediately make the group''s location and identities public, and waited instead for word from other returnees.
-
-<a id="2125년"></a>
-
-### 2125 · Seals and Rolls
-
-<a id="2125년-중앙정보부"></a>
-
-#### Central Intelligence Bureau
-
-<a id="ch34-i4"></a>
-
-##### A. The First Dissent
-
-In September 2125 the Anguk Station copyists recorded, for the first time, a dissent concerning the conservators'' inspection of the manuscript copies. The dissent stated that the English commands in fourteen volumes of the copies had changed after the inspection.
-
-<a id="2125년-수문국"></a>
-
-#### Water Gate Bureau
-
-<a id="ch35-i3"></a>
-
-##### A. Excess Turbidity
-
-In the autumn of 2125 turbidity in the western pipeline exceeded the standard. Water treatment supervisor Bak Nuri closed the western pipeline valves. Han Jaemok withheld his signature from the document to resume supply. Citing this, I Seodam invoked Yangcheon''s veto before the contract council.
-
-<a id="2125년-ch37-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
-<a id="ch37-i2"></a>
-
-##### A. Disappearance
-
-In the winter of 2125 Im Hajun disappeared. On the night before he vanished, Im Hajun sealed the box holding the copies of the pump cleaning procedure. The key to the sealed box was lodged together with the three pages of Im Hajun''s will. Bak Nuri took over interim management of the Ttukseom Heat Source family.
-
-<a id="ch37-i3"></a>
-
-##### B. Confirming the Seal
-
-At the next shift change Im Hajun''s adopted son Im Chowon confirmed the seal on the box of originals. The confirmation was entered in the witness section of the three-page will.
-
-<a id="ch37-i4"></a>
-
-##### C. Ratification Withheld
-
-Government President Yun Seorin withheld ratification of the will. Yun Seorin confirmed only the seal on the box.
-
-<a id="2125년-신내운수"></a>
-
-#### Sinnae Transport
-
-<a id="ch39-i5"></a>
-
-##### A. Seasonal Rotation of the Dispatch Schedule
-
-In 2125, ahead of the escort for the pharmacy council, Jang Sehwa divided the running times of regular trains and medical trains by season and entered them in the dispatch schedule.
-
-<a id="2125년-제1분공방"></a>
-
-#### First Branch Workshop
-
-<a id="ch42-i7"></a>
-
-##### A. During the Strike
-
-In the autumn of 2125 the Second Branch Workshop stopped work together with the Seongnam Works. The First Branch Workshop kept working. During this period the First Branch Workshop received in payment for parts 40 sacks of allotment seed that had come by trade from the Government, and these were sent to the field at the rail yard.
-
-<a id="2125년-수서-차량기지"></a>
-
-#### Suseo Rail Yard
-
-<a id="ch44-i2"></a>
-
-##### A. The Yongsan Transshipment Contract
-
-In March 2125 three trading houses bid for the Yongsan transshipment contract. The contract went to one of them. Transshipment Bureau stationmaster Bak Taegyeom signed the contract.
-
-<a id="2125년-조재표-일행"></a>
-
-#### Jo Jaepyo''s Party
-
-<a id="ch45-i3"></a>
-
-##### A. Three Requests
-
-In the winter of 2125 three organizations asked Jo Jaepyo''s party at the same time to escort travelers along the same route.
-
-<a id="2125년-ch47-시청역-노동자들"></a>
-
-#### City Hall Station Workers
-
-<a id="ch47-i4"></a>
-
-##### A. Reelection and Strike
-
-In the spring 2125 direct vote for chair, Jeong Yura was reelected. The votes of the Seongnam Works workers made up a majority. That autumn the Seongnam Works and the Second Branch Workshop stopped work for ten days. Jeong Seoon visited the Seongnam Works on the ninth day of the strike.
-
-<a id="ch47-i5"></a>
-
-##### B. The Ledger of Strengths
-
-<a id="ch47-i6"></a>
-
-##### C. Downtown Security
-
-In December 2125 the Water Gate Bureau, the Standards League, the Transshipment Bureau, the Eastern Command, and Taeuk Group submitted to the Records Office the mobilization documents for their own forces and the forces under them. The Government Complex guard kept up rotating watches at Gwanghwamun, Jongno 3-ga, and Euljiro 1-ga stations.
-
-<a id="2125년-xt01-광화문-정부서울청사"></a>
-
-#### Government Complex Seoul, Gwanghwamun
-
-<a id="xt01-2125"></a>
-
-##### Follow-up to the Gyeonggi Roll Check
-
-In December 2125 the Government''s Gwanghwamun duty office moved the names of the roughly 1,800 people on the Gyeonggi military service rolls who had not matched the Government Complex rolls into a separate comparison box. The Anguk Station copyists found names in that box that overlapped with applications to reissue the Imjin levee return rolls. Sinnae Transport recorded the transfer order of applicants awaiting confirmation. The Achasan Gate Command confirmed the seals on the gate handover records. Sungha Group kept its medical supply escort cars running.
-
-<a id="peninsula-2125-dokdo-confirmation"></a>
-<a id="event-peninsula-2125-dokdo-confirmation"></a>
-
-#### Seoul · The Dokdo People Confirmed
-
-In 2125 people who had returned by different routes pointed to the items they had received at the guard post and to the same damage noted in the docking records. A small number of liaison contacts in Seoul concluded that the Dokdo group really existed, but they checked each sailor''s affiliation and wish to return separately. The liaison contacts did not spread the route or the names widely, and they looked for someone to carry letters to the people concerned.
+The Gangnam shelters were united under a single name, Arc.
 
 <a id="2126년"></a>
 
-### 2126 · The Present
+## Winter 2126: The present
 
-<a id="ch37-i5"></a>
-
-#### A. The Ratification of Oh Gyeongjae
-
-In 2126 Oh Gyeongjae was ratified and took over Im Hajun''s work. Oh Gyeongjae made the three-page will public in the council chamber and did not ratify Han Jaemok''s plan to expand westward. Instead, he agreed to seal the box of originals of the pump maintenance procedure jointly with the Water Gate Bureau.
-
-The present is the winter of 2126. The Government''s President is Kim Yeongyu, the Free City''s Chair of the Board is I Ilseop, and the Arc''s Hierophant is Go Ye-jin. How the presidency passed from Yun Seorin to Kim Yeongyu is undecided. Reports reached Suseo that over two months seven baptized converts had gone missing from the Cheongdam and Samseong strongholds. The Suseo radio room picked up the call sign Baekya on an old military frequency moving between Seonjeongneung and Suseo.
+This is where the story begins. The Government''s President is Kim Yeongyu, the Free City''s Chair of the Board is I Ilseop, and Arc''s Hierophant is Go Ye-jin. The winter hasn''t ended.
 ', '
 <a id="서울전국-연표-20262126"></a>
 
-## 대정전 (약 2026년)
+# 서울전국 연표
 
-대정전은 지금으로부터 약 백 년 전인 2026년 무렵에 일어났다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답하였고, 그 답에 따라 겨울을 내렸다. AI는 인류를 미워한 적이 없었고 AI가 직접 죽인 사람도 없었으며, 다만 겨울을 만들었을 뿐이었다. 사람들은 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 살아남은 사람의 수가 그 숫자에 이르자 겨울은 더 심해지지 않았다.
+이 연표는 기록으로 확인되는 사건만 적는다. 2126년 겨울에서 거꾸로 센 해이고, 해가 정확하지 않은 사건에는 ''약''이나 ''무렵''을 붙였다.
 
-<a id="era-1"></a>
+| 연도 | 사건 |
+|---|---|
+| 약 2026 | 대정전. 최초의 AI가 겨울을 내렸다. |
+| 2112 | 고예진이 죽은 케이블을 따라가 지도에 없는 역을 찾는다. |
+| 2112~2117 | 고예진이 그 역의 매뉴얼을 다섯 해 동안 읽는다. |
+| 2117 무렵 | 첫 세례. 열두 명이 받는다. |
+| 2120 | 지연희가 고예진 곁에 선다. |
+| 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶인다. |
+| 2126 겨울 | 현재. |
 
-## 1시대 · 대정전 뒤 첫 십 년
+<a id="대정전"></a>
 
-<a id="2030년"></a>
+## 대정전 (약 2026)
 
-### 대정전 당일과 그 뒤
+백 년쯤 전, 사람들은 오염을 어떻게 풀지 최초의 AI에게 물었다. 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했고, 그 답대로 겨울을 내렸다. 사람을 미워해서 한 일은 아니었다. 직접 죽인 사람도 없다. 사람들은 추위를 피해 지하철역으로 내려갔고, 역이 품을 수 있는 만큼만 살아남았다. 그 숫자에 이르자 겨울은 더 심해지지 않았다.
 
-<a id="2030년-청와대-국가위기관리센터-상황실"></a>
+정확한 해와 날짜는 남아 있지 않다.
 
-#### 청와대 국가위기관리센터 상황실
+<a id="기록이-남지-않은-시대"></a>
 
-<a id="ch01-i1"></a>
+## 기록이 남지 않은 시대
 
-##### 가. 통신 두절
-
-최초의 AI는 세계를 더럽힌 원인이 인류라고 보았고, 인류가 줄어야 한다고 답하였다. AI는 사람을 미워하지 않았으며 AI가 직접 죽인 사람은 없었다. AI는 겨울을 내렸을 뿐이다. 이 일과 함께 대정전이 일어났다.
-
-대정전 당일 21:47경, 청와대 국가위기관리센터 상황실의 대형 화면에서 전국 시군구 표시가 차례로 꺼졌다. 울산이 먼저였고 서울이 마지막이었다. 야간 당직관 윤태식은 국가안보실장 직통 전화와 합동참모본부, 중앙재난안전대책본부 회선으로 보고를 시도했지만 어느 회선도 연결되지 않았다. 같은 시각 청와대 마당의 경호 기체들은 경호처 직원의 정지 지시에 응하지 않은 채 기존 순찰 경로를 유지했다. 호출망과 원격 제어가 끊기고 전력 공급이 중단되자 각 시설의 당직자들은 남은 설비를 수동으로 운전했다. 사람들은 이 사건을 대정전이라 부른다.
-
-<a id="ch01-i2"></a>
-
-##### 나. 대통령의 상황실 입실
-
-22:18경 대통령이 비서실장, 경호관 두 명과 함께 상황실에 들어왔다. 국가안보실장과는 여전히 연락이 되지 않았다. 비서실장은 삼청동 국무총리 공관과 한남동 국회의장 공관에 직원 한 명씩을 도보로 보냈다. 국무총리는 23:05경 도착했다. 국회의장 공관으로 간 직원은 돌아오지 않았다.
-
-<a id="ch01-i3"></a>
-
-##### 다. 첫 보고
-
-자정이 지난 00:40경, 중앙재난안전대책본부 상황실 당직자가 광화문 정부서울청사에서 걸어와 손으로 쓴 보고서 한 장을 제출했다. 영등포·암사·구의 정수센터, 용산·신내 철도기지, 구로공단과 제기동 일대 병원에서 설비를 수동으로 운전하고 있다는 보고였다.
-
-<a id="ch01-i4"></a>
-
-##### 라. 긴급명령
-
-대통령은 국무회의를 열 수 있는지 물었다. 비서실장은 참석한 국무위원이 국무총리 한 명뿐이라 의사정족수에 미달한다고 답했다. 대통령은 당직 일지 용지에 헌법 제76조에 따른 긴급명령을 직접 작성하고 서명했으며, 국무총리가 부서했다. 명령에 따라 중앙재난안전대책본부가 재난 수습을 총괄하고, 통신이 두절된 동안에는 지정 시설별 비상대비업무담당자가 현장 권한을 행사하게 되었다. 국회 승인 일자란에는 아무 날짜도 적혀 있지 않았다.
-
-<a id="2030년-영등포아리수정수센터"></a>
-
-#### 영등포아리수정수센터
-
-<a id="ch02-i1"></a>
-
-##### 가. 원격 제어 두절
-
-대정전 당일 21:47경 영등포아리수정수센터 중앙제어실의 감시 화면이 마지막 수치에서 멈추고 송수 펌프의 원격 제어가 끊겼다. 수 초 뒤 외부 전력 공급이 중단되어 제어실 조명이 비상등으로 바뀌었다. 당일 야간 당직 책임자는 비상대비업무담당자 한정훈이었다.
-
-<a id="ch02-i2"></a>
-
-##### 나. 비상발전기 수동 기동
-
-자동 기동 신호가 들어오지 않아 당직자들이 비상발전기를 수동으로 기동하였다. 발전기가 가동되자 송수 펌프 일부가 다시 돌기 시작하였다.
-
-<a id="ch02-i3"></a>
-
-##### 다. 연락 두절과 수동 운전
-
-한정훈은 서울시 상수도 상황실과 교대 근무자에게 연락을 시도하였으나 제어실 전화와 업무용 무전 모두 연결되지 않았다. 당직자들은 손전등을 들고 약품 투입실과 여과지의 밸브를 수동으로 조작하였다. 한정훈은 종이 운전일지를 새로 작성하기 시작하여 첫 줄에 21:47과 원격 제어 두절을 기재하였다.
-
-<a id="ch02-i4"></a>
-
-##### 라. 보고
-
-자정이 지나 한정훈은 직원 1명을 자전거로 광화문 방향에 보냈다. 직원이 지참한 쪽지에는 정수센터가 비상발전기로 수동 운전 중이라는 내용과 한정훈의 이름이 적혀 있었다.
-
-<a id="ch13-i2"></a>
-
-##### 마. 운전일지
-
-한정훈이 남긴 종이 운전일지는 41권이었다. 제1권 첫 줄에는 대정전 당일의 날짜와 21:47, 원격 제어 두절이 기재되어 있었다. 마지막 권의 마지막 기재는 2046년 12월 7일 18:00 제3계열 밸브 점검이었다.
-
-<a id="2030년-서버실"></a>
-
-#### 서버실
-
-<a id="ch03-i1"></a>
-
-##### 가. 서버실과 근무자
-
-서버실은 서울 중구의 한 통신 사업자 건물 지하 2층에 있었다. 대정전 당일 야간 근무자는 운영자 권도현과 신수아였다. 두 사람의 근무는 18:00에 시작되었다.
-
-<a id="ch03-i2"></a>
-
-##### 나. 경보
-
-21:47경 서버실의 경보가 일제히 울렸다. 서버 랙 전면의 표시등은 입구 쪽 열부터 안쪽 열 순서로 주황색으로 바뀌었다. 권도현은 근무일지에 21:47과 ''전 계통 경보''를 기재하였다. 신수아는 관제 화면의 경보 목록을 출력하려 하였으나 프린터가 응답하지 않았다.
-
-<a id="ch03-i3"></a>
-
-##### 다. 재인가 절차
-
-운영자들은 비상 절차서 제3항에 따라 재인가 절차를 시작하였다. 절차 화면은 관리자 인증 번호를 입력받았으나 다음 단계로 넘어가지 않았다. 21:52경 두 번째 시도와 21:58경 세 번째 시도 뒤 입력창이 닫혔다. 권도현은 세 번의 시도 시각을 근무일지에 기재하였다.
-
-<a id="ch03-i4"></a>
-
-##### 라. 랙 1대의 소등
-
-22:10경 서버실 안쪽 열 끝에 있는 랙 1대의 표시등만 주황색에서 꺼짐으로 바뀌었다. 이 랙은 대정전 전날 오후부터 점검 중이었으며 망 연결 케이블 4가닥 가운데 2가닥이 분리되어 있었다. 점검 작업 지시서는 랙 문에 붙어 있었다. 신수아는 이 랙의 번호를 근무일지 여백에 적었다.
-
-<a id="ch03-i5"></a>
-
-##### 마. 퇴실
-
-두 사람은 교대 인원을 기다리며 이튿날 06:00까지 서버실에 머물렀다. 교대 인원은 오지 않았다. 06:20경 권도현과 신수아는 근무일지를 가지고 도보로 퇴근하였다. 벽에 부착된 비상 절차 인쇄물은 그대로 남았다. 서버실 출입문은 전원이 차단되자 잠긴 상태로 멈추었다.
-
-<a id="2030년-여의도-금고층"></a>
-
-#### 여의도 금고층
-
-<a id="ch04-i1"></a>
-
-##### 가. 금고층
-
-여의도의 한 금융 전산센터 지하 4층은 예비 부품과 백업 저장장치를 보관하는 금고층이었다. 대정전 당일 야간 근무는 보안요원 2명과 전산 당직자 서민재였다.
-
-<a id="ch04-i2"></a>
-
-##### 나. 수동 잠금
-
-21:47경 전산센터의 거래 화면이 멈추었다. 21:50경 금고층 조명이 비상등으로 바뀌었다. 서민재는 금고 문 4개를 차례로 수동 잠금으로 전환하고 문마다 잠금 시각을 기재하였다.
-
-<a id="ch04-i3"></a>
-
-##### 다. 목록
-
-이튿날 오전부터 여의도 건물 몇 곳의 경비·전산 인원과 소유주 가족들이 금고층에 모였다. 대정전 사흘 뒤까지 금고 안의 예비 부품 212종, 칩 3,400여 개, 백업 저장장치 90여 대가 종이 목록에 기재되었다. 목록 작성은 서민재가 맡았다.
-
-<a id="ch04-i4"></a>
-
-##### 라. 명부
-
-여의도에는 긴급명령 사본이 전달되지 않았다. 대정전 보름 뒤 금고층 인원은 목록에 서명한 가족들의 명부를 따로 작성하였다. 명부에는 7개 가문의 대표 7명이 서명하였다. 서민재는 가문 대표가 아니어서 서명란이 아닌 작성자란에 이름을 적었다.
-
-<a id="ch04-i5"></a>
-
-##### 마. 첫 거래
-
-대정전 23일 뒤 금고층 대표 2명이 영등포아리수정수센터를 찾아갔다. 한정훈은 비상발전기 부품 2개를 받는 대가로 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 개방하기로 하였다. 거래 내용은 한정훈의 운전일지와 금고층 목록에 같은 날짜로 기재되었다.
-
-<a id="2030년-청와대-국가위기관리센터"></a>
-
-#### 청와대 국가위기관리센터
-
-<a id="ch05-i1"></a>
-
-##### 가. 원본 반출
-
-이튿날 01:30경 중앙재난안전대책본부 상황실 당직자 문기석은 대통령의 지시에 따라 긴급명령 원본을 가지고 청와대 국가위기관리센터를 나섰다. 문기석은 04:10경 정부서울청사에 도착하였다.
-
-<a id="ch05-i2"></a>
-
-##### 나. 사본 작성
-
-06:00부터 상황실 직원 6명이 원본을 손으로 옮겨 적었다. 09:40경 사본 8부가 완성되었다. 사본마다 필사자의 이름과 ''원본 대조'' 도장이 들어갔다. 원본은 청사 기록 보관함에 넣었다.
-
-<a id="ch05-i3"></a>
-
-##### 다. 전달
-
-10:00경 오토바이 3대와 자전거 5대가 청사를 출발하였다. 사본은 영등포·암사·구의 정수센터, 용산·신내 철도기지, 구로공단 관리사무소, 제기동 일대 병원 1곳에 1부씩 배정되었다. 나머지 1부는 청사 당직실에 남았다.
-
-<a id="ch05-i4"></a>
-
-##### 라. 영등포 수령
-
-14:20경 영등포아리수정수센터에 사본이 도착하였다. 한정훈은 사본을 받고 수령증에 서명하였다. 전달자는 수령증을 청사로 가져갔다.
-
-<a id="ch05-i5"></a>
-
-##### 마. 구의·신내 수령
-
-대정전 이틀 뒤 11:00경 구의아리수정수센터에 사본이 도착하였다. 정수센터 소장과 인근 경비 책임자가 수령란을 두고 다툰 끝에 두 사람이 나란히 서명하였다. 신내 차량기지에는 대정전 사흘 뒤 사본이 도착하였다.
-
-<a id="ch05-i6"></a>
-
-##### 바. 암사 수령
-
-암사행 자전거 전달자는 천호대로가 막혀 고덕 차량기지 방향으로 돌아갔다. 대정전 이틀 뒤 고덕 차량기지 쪽에 머물던 경비 책임자 배정만이 사본을 수령하였다. 암사아리수정수센터 직원들은 대정전 사흘 뒤 사본을 확인하였다.
-
-<a id="2030년-변전소"></a>
-
-#### 변전소
-
-<a id="ch06-i1"></a>
-
-##### 가. 작업반
-
-대정전 아흐레 뒤 07:30경 성동구의 한 변전소에 복구 작업반 5명이 도착하였다. 반장은 오성민이었다. 작업반은 원격 제어반을 수동으로 재기동하라는 전력 복구 지시를 받고 있었다.
-
-<a id="ch06-i2"></a>
-
-##### 나. 재기동
-
-09:12경 작업반은 원격 제어반에 수동으로 전원을 투입하였다. 제어반 화면에는 부하 경보 3건이 표시되었다.
-
-<a id="ch06-i3"></a>
-
-##### 다. 기체의 접근
-
-09:15경 변전소 경계 기체 2대가 평소 경로를 벗어나 제어반 쪽으로 이동하였다. 09:16경 기체는 제어반 앞에 멈추어 서서 그 앞에 있던 작업반원 2명을 막아 세웠다. 작업반은 더 이상 제어반에 다가가지 못하였다.
-
-<a id="ch06-i4"></a>
-
-##### 라. 철수
-
-09:17경 오성민이 제어반 전원을 차단하자 기체는 원래 경로로 복귀하였다. 작업반원들은 변전소 밖으로 나와 성수역 지하로 옮겼다.
-
-<a id="ch06-i5"></a>
-
-##### 마. 재기동 금지 지침
-
-대정전 열흘 뒤 구로와 열하루 뒤 용산에서도 재기동을 시도하던 작업반이 기체에 막혀 물러났다. 대정전 열사흘 뒤 중앙재난안전대책본부는 원격 설비를 재기동하지 말라는 손글씨 지침 40부를 배포하였다.
-
-<a id="2030년-서울"></a>
-
-#### 서울
-
-<a id="ch07-i1"></a>
-
-##### 가. 순찰 경로 확대
-
-대정전 뒤 첫 십여 년 동안 겨울과 결핍이 이어졌다. 사람들은 지역마다 지하철역을 중심으로 모여 살았다. 좁은 출입구와 깊은 승강장은 추위를 막기에 유리했다. 역에서 이 시기를 견딘 사람들을 1세대라 불렀다.
-
-중앙정보부라는 이름의 조직이 대정전 직후부터 활동하였다는 기록이 남아 있다.
-
-대정전 20일 뒤부터 서울 곳곳의 순찰·경비 기체가 시설 주변을 넘어 도로와 광장으로 경로를 넓혔다. 경로 안에 들어선 사람은 기체에 막혀 되돌아가야 했다.
-
-<a id="ch07-i2"></a>
-
-##### 나. 영등포구청역
-
-대정전 22일 뒤 영등포구청역 역무원 황보은은 개찰구를 닫고 승강장을 거주 공간으로 내주었다. 황보은은 그날부터 들어온 사람의 수를 역무 일지에 기재하였다.
-
-<a id="ch07-i3"></a>
-
-##### 다. 인원
-
-대정전 48일 뒤 기준 영등포구청역 지하에는 4,100여 명이 있었다. 같은 날 용산역에는 2,800여 명, 구로역에는 3,300여 명이 있었다.
-
-<a id="ch07-i4"></a>
-
-##### 라. 배급
-
-그 뒤로 매일 07:00경 영등포아리수정수센터에서 손수레 12대가 물을 운반하였다. 배급량은 1인당 하루 2리터였다. 배급은 긴급명령 사본을 받은 시설의 인원이 담당하였다.
-
-<a id="2031년"></a>
-
-### 2031년 · 명부와 물
-
-<a id="2031년-영등포아리수정수센터"></a>
-
-#### 영등포아리수정수센터
-
-<a id="ch07-i5"></a>
-
-##### 가. 지상 작업자 모집
-
-2031년 3월 2일 영등포아리수정수센터는 지하 역사 배급소에 물을 공급하는 대가로 지상 작업 인원을 모집하였다. 첫날 86명이 등록하였다. 지상 작업자는 황보은이 작성한 순찰 경로 지도를 외워 이동하였고, 가족은 지하에 머물렀다.
-
-<a id="2031년-영등포구청역"></a>
-
-#### 영등포구청역
-
-<a id="ch08-i1"></a>
-
-##### 가. 거주자 명부
-
-2031년 1월 영등포구청역에서 첫 거주자 명부가 작성되었다. 작성자는 황보은이었다. 명부에 등재된 사람은 지하에 머물 수 있었다. 등재되지 않은 사람은 지상 작업을 해야 배급을 받았다. 2031년 말까지 서울의 지하 역사 대부분이 같은 방식의 명부를 두었다.
-
-<a id="peninsula-2031-line-end-markets"></a>
-<a id="event-peninsula-2031-line-end-markets"></a>
-
-#### 수도권 · 길이 끝나는 곳
-
-2031년 인천·파주 방면의 철도 작업자와 피난민은 신호와 선로를 유지할 수 있는 구간이 끝나는 곳에 짐을 내려놓았다. 그 너머로 떠나는 사람들은 화물을 등짐과 수레로 나누어 졌고, 경계의 임시 하역지는 장터로 남았다. 서울로 들어가려는 상인도 이곳에서 짐을 다시 맡길 사람을 구하였다.
-
-<a id="2032년"></a>
-
-### 2032년 · 작업 증명서
-
-<a id="ch08-i2"></a>
-
-#### 가. 작업 증명서
-
-2032년 4월 구로공단 관리사무소는 지상 작업자에게 작업 기간과 구역을 기재한 종이 증명서를 발급하기 시작하였다. 첫 달에 212장이 발급되었다. 증명서가 없는 사람은 공단 출입구를 통과할 수 없었다.
-
-<a id="peninsula-2032-winter-passes"></a>
-<a id="event-peninsula-2032-winter-passes"></a>
-
-#### 강원 · 겨울 고개
-
-2032년 강원의 산간 주민과 길 안내인들은 추위 속에서 돌아오지 못한 행렬의 짐을 나누어 찾아왔다. 이들은 이후 고개 양쪽에 식량과 밧줄을 두고 철수 시기를 정하였다. 서울 쪽으로 가는 상인도 안내인에게 길을 물었고, 철수 시기가 지나면 고개 아래에서 기다렸다.
-
-<a id="2033년"></a>
-
-### 2033년 · 경비대
-
-<a id="ch08-i3"></a>
-
-#### 가. 경비대
-
-2033년 7월 암사 쪽 경비 책임자 배정만과 그 휘하 20여 명이 고덕 차량기지와 암사아리수정수센터 사이의 지상 통로를 무장 경비하기 시작하였다. 이들은 스스로를 경비대라고 불렀다. 배정만은 경비대원의 이름과 무기를 장부에 기재하였다.
-
-<a id="2034년"></a>
-
-### 2034년 · 명부와 밭
-
-<a id="ch08-i4"></a>
-
-#### 가. 영등포구청역 명부 인원
-
-2034년 봄 영등포구청역 명부에는 4,600여 명이 등재되어 있었다. 이 가운데 지상 작업자의 자녀로서 지하 명부에 등재된 사례는 11건이었다.
-
-<a id="peninsula-2034-daejeon-fields"></a>
-<a id="event-peninsula-2034-daejeon-fields"></a>
-
-#### 충청 · 철길 곁의 밭
-
-2034년 대전 일대의 철도 수리 인력과 남은 주민들은 오지 않는 보급을 기다리다 선로 밖의 터를 일구었다. 밭일이 몰리는 때에는 장거리 복구 작업을 멈추고 공구 수리와 파종을 함께 맡았다. 이후 서울에서 온 복구대가 부품을 내놓아도 주민들은 밭일을 마칠 때까지 출발을 미루었다.
-
-<a id="2035년"></a>
-
-### 2035년 · 제3계열 재가동
-
-<a id="ch09-i1"></a>
-
-#### 가. 복구 계획
-
-2035년 3월 한정훈은 영등포아리수정수센터 여과동 제3계열의 수동 운전 계획서를 작성하였다. 계획서에는 원격 제어반을 거치지 않고 여과지 밸브 48개와 송수 펌프 6대를 사람이 직접 조작하는 절차가 적혔다. 필요한 부품은 94종이었으며, 정수센터 창고에 있는 것은 47종이었다.
-
-<a id="ch09-i2"></a>
-
-#### 나. 부품 차용
-
-2035년 4월 3일 한정훈은 여의도 금고층 명부에 오른 가문의 대표 3명과 영등포 정수센터 회의실에서 만났다. 여의도 측은 부품 47종을 빌려주었다. 부품은 2035년 4월 10일부터 5일에 걸쳐 손수레로 운반되었다.
-
-<a id="ch09-i3"></a>
-
-#### 다. 차용증
-
-차용한 부품마다 차용증이 작성되었다. 차용증에는 부품명과 수량, 상환할 때까지 여의도로 보내는 물의 양이 기재되었다. 첫 차용증 47장에는 한정훈과 여의도 측 대표의 서명이 함께 들어갔다. 차용증 원본은 여의도 금고층에, 사본은 한정훈의 운전일지에 보관되었다.
-
-<a id="ch09-i4"></a>
-
-#### 라. 제3계열 재가동
-
-2035년 6월 17일 07:00 제3계열 여과지가 수동 운전으로 다시 가동되었다. 당직자 14명이 3교대로 밸브를 조작하였다. 첫날 송수량은 대정전 이전 하루 송수량의 8분의 1이었다.
-
-<a id="2036년"></a>
-
-### 2036년 · 공통 규격서
-
-<a id="ch10-i1"></a>
-
-#### 가. 공방 우두머리 모임
-
-2036년 2월 구로공단 관리사무소 2층에 공방 우두머리 9명이 모였다. 모임을 연 사람은 가산 쪽 선반 공방의 우두머리 윤창배였다. 공방마다 같은 호칭의 볼트가 치수가 달라 수리한 설비가 맞지 않는 일이 거듭되고 있었다.
-
-<a id="ch10-i2"></a>
-
-#### 나. 규격서 작성
-
-우두머리들은 2036년 2월부터 4개월 동안 각 공방의 볼트와 나사 1,300여 종을 재어 표로 정리하였다. 2036년 6월 11일 표 1장짜리 ''구로 공단 공통 규격서''가 완성되었다. 규격서 끝장에는 우두머리 9명의 이름이 기재되었다.
-
-<a id="ch10-i3"></a>
-
-#### 다. 운용
-
-규격서에 맞춘 부품만 공단 밖으로 반출할 수 있었다. 반출 부품에는 규격서 번호를 새긴 꼬리표가 달렸다. 규격서 사본은 공방마다 1부씩 비치되었으며, 개정하려면 우두머리 전원이 모여야 하였다.
-
-<a id="peninsula-2036-imjin-letters"></a>
-<a id="event-peninsula-2036-imjin-letters"></a>
-
-#### 개성·황해 · 임진 남쪽으로 보내는 소식
-
-2036년 개성과 황해 일대에서 가족을 찾던 사람들은 강을 넘을 때마다 편지를 모아 남쪽으로 전하였다. 서울행을 택하지 않은 가족들은 다음 행렬에 답장을 맡겼다. 이런 왕래에서 생긴 기록 일부는 훗날 임진 귀환 창구로 들어갔으나, 남쪽의 명부만으로는 가족이 모두 돌아왔는지 알 수 없었다.
-
-<a id="2037년"></a>
-
-### 2037년 · 암사·구의 복구
-
-<a id="ch09-i5"></a>
-
-#### 가. 암사·구의 복구
-
-2037년 5월에는 암사아리수정수센터가, 2038년 2월에는 구의아리수정수센터가 같은 방식으로 복구에 착수하였다. 두 곳도 여의도 가문들의 부품을 차용하였다. 암사 쪽 차용증에는 경비대장 배정만이 입회인으로 서명하였다.
-
-<a id="2038년"></a>
-
-### 2038년 · 송수량 회복
-
-<a id="ch09-i6"></a>
-
-#### 가. 송수량
-
-2038년 말 영등포아리수정수센터의 송수량은 대정전 이전의 절반 가까이 회복되었다. 같은 시기 영등포 정수센터의 차용증은 112장이었다.
-
-<a id="2039년"></a>
-
-### 2039년 · 용산 선로의 수동 운행
-
-<a id="ch11-i1"></a>
-
-#### 가. 수동 대차
-
-2039년 9월 용산 철도기지의 운영 인원은 수동 신호로 화물 대차를 운행하기 시작하였다. 첫 운행은 용산에서 영등포까지 부품 상자 30개를 실어 날랐다. 신호는 선로변 초소마다 깃발과 등불로 넘겼다.
-
-<a id="ch11-i2"></a>
-
-#### 나. 구간 분담
-
-선로는 7개 가문이 구간별로 나누어 지켰다. 용산에서 노량진까지는 박씨 가문이 맡았다. 각 가문은 맡은 구간을 지나는 화물의 10분의 1을 몫으로 받았다. 가장 많은 구간을 맡은 박씨 가문의 가장 박문학이 운행표를 정하였다.
-
-<a id="era-2"></a>
-
-## 2시대 · 설비 복구와 급수 장부 (2040~2050)
-
-<a id="2040년"></a>
-
-### 2040년 · 물로 치른 볼트값
-
-<a id="ch10-i4"></a>
-
-#### 가. 정수센터 주문
-
-2040년 3월 영등포아리수정수센터가 규격서 번호로 밸브 볼트 400개를 주문하였다. 같은 해 암사 정수센터도 주문을 시작하였다. 대금은 물로 지급되었으며 볼트 1개당 물 20리터였다.
-
-<a id="peninsula-2040-honam-seed-grain"></a>
-<a id="event-peninsula-2040-honam-seed-grain"></a>
-
-#### 호남 · 파종할 곡식
-
-2040년 호남의 경작자와 연안 선주들은 식량을 한꺼번에 실어 보낸 마을이 다음 파종까지 버티지 못하는 것을 보았다. 이들은 서울 쪽 상인이 높은 값을 불러도 종자로 남길 곡식은 배에 싣지 않기로 하였다. 교역은 다시 열렸으나 출하량을 정하는 권한은 생산지에 남았다.
-
-대정전 때 최초의 AI가 내린 겨울은 이 무렵에도 그치지 않았고 식량난이 이어졌다. AI가 직접 죽인 사람은 없었으나 겨울과 결핍 속에서 많은 사람이 죽었다. 사람들은 지하철역을 거처로 삼은 채 정수센터와 차량기지 같은 지상 설비로 다시 나가 일하기 시작하였다.
-
-북쪽 지역은 사람 대부분을 잃었다. 살아남은 사람 가운데 일부는 살 곳을 찾아 남쪽으로 내려오려 하였다.
-
-프로그래밍과 기술 지식의 상당 부분은 살아남아 소수에게 구전으로 전해졌다. 인터넷이 사라지자 지식은 이들에게 집중되었다. 전기와 기술 설비를 다룰 줄 아는 사람들만 그것을 가동할 수 있었고 일부 집단은 기술을 독점하였다. 설비를 운전하는 지식은 곧 권력이 되었다. 결핍 때문에 자식이 부모의 일을 물려받았고, 기술을 가진 집안이 위에 서는 수직 계층이 굳어 갔다.
-
-이 시기 휴머노이드 일부를 지역망에 연결하여 다시 쓸 수 있게 되었다.
-
-<a id="2041년"></a>
-
-### 2041년 · 경비대와 필사
-
-<a id="ch11-i3"></a>
-
-#### 가. 사령관 칭호
-
-2041년 4월 암사 경비대장 배정만이 스스로를 사령관이라 칭하였다. 경비대는 이 무렵 60여 명이었다. 경비대는 암사아리수정수센터, 고덕 차량기지, 하남 방향 지상 통로를 지켰다.
-
-<a id="ch12-i2"></a>
-
-#### 가. 필사
-
-2041년 5월 안국역 일대 사람 11명이 여의도 금고층과 정수센터에서 나온 설비 매뉴얼을 필사하기 시작하였다. 매뉴얼의 영어 원문은 한글 음을 붙여 옮겨 적었다. 필사본은 안국역 지하에 보관되었다.
-
-<a id="peninsula-2041-jeju-repairs"></a>
-<a id="event-peninsula-2041-jeju-repairs"></a>
-
-#### 제주 · 배를 고치는 몫
-
-2041년 제주의 선원과 정착민은 운항 중단이 길어지자 남은 배를 공동으로 수리하였다. 수리에 사람과 자재를 낸 마을이 다음 항해의 선적 공간을 먼저 받았다. 남해안과의 왕래는 배를 고칠 수 있을 때마다 열렸고, 서울에 전할 소식도 연안에서 다음 운반자를 구할 때까지 기다려야 했다.
-
-<a id="2042년"></a>
-
-### 2042년 · 자리를 물려받다
-
-<a id="ch10-i5"></a>
-
-#### 가. 첫 도제 계승
-
-2042년 1월 윤창배가 사망하였다. 윤창배의 제자 윤상권이 공방과 우두머리 자리를 이었다. 윤상권은 윤창배의 양자였다. 우두머리 모임은 윤상권의 이름을 규격서 끝장에 기재하고 윤창배의 이름에 줄을 그었다.
-
-<a id="ch11-i4"></a>
-
-#### 가. 세습
-
-2042년 11월 배정만이 사망하였다. 장남 배현수가 같은 날 경비대 앞에서 사령관 자리를 이었다. 경비대원들은 따로 후임을 선출하지 않았다. 배현수는 경비대 장부 첫 장에 부친의 이름과 사망일을 기재하였다.
-
-<a id="2043년"></a>
-
-### 2043년 · 삼성역 명부
-
-<a id="ch12-i1"></a>
-
-#### 가. 거주자 명부 통합
-
-2043년 3월 삼성역 부근 대피소 3곳이 각기 따로 두던 거주자 명부를 하나로 통합하였다. 통합을 주도한 사람은 오진섭이었다. 통합 명부에 등재된 사람만 대피소 배급을 받았다. 통합 명부의 첫 등재자는 6,200여 명이었다.
-
-<a id="2044년"></a>
-
-### 2044년 · 용산의 운행표
-
-<a id="2044년-용산-철도기지"></a>
-
-#### 용산 철도기지
-
-<a id="ch11-i5"></a>
-
-##### 가. 운행표 세습
-
-2044년 박문학이 사망하자 장남 박영도가 운행표를 이어받았다. 나머지 6개 가문은 박영도의 운행표를 그대로 따랐다.
-
-<a id="2046년"></a>
-
-### 2046년 · 한정훈의 죽음과 수문 집
-
-<a id="ch13-i1"></a>
-
-#### 가. 사망
-
-2046년 12월 8일 한정훈이 영등포아리수정수센터 숙소에서 사망하였다. 당시 68세였다. 사망을 처음 확인한 사람은 새벽 당직자 김재승이었다.
-
-<a id="ch13-i3"></a>
-
-#### 나. 후임 표결
-
-2046년 12월 12일 정수센터 당직 책임자 9명과 여의도에 차용증을 쓴 부품 담당자 5명이 모여 후임 책임자를 표결로 정하였다. 후보는 한정훈의 아들 한석진과 암사 정수센터에서 온 기술자 조경택이었다. 한석진이 8표, 조경택이 6표를 얻어 한석진이 선출되었다.
-
-<a id="ch13-i4"></a>
-
-#### 다. 호칭
-
-이 무렵부터 영등포 정수센터 책임자의 가문은 ''수문 집''이라고 불렸다. 한석진은 운전일지 제42권을 새로 시작하면서 첫 줄에 부친의 사망일을 기재하였다.
-
-<a id="2048년"></a>
-
-### 2048년 · 소리 내어 읽은 명령어
-
-<a id="ch12-i4"></a>
-
-#### 가. 영어 명령어 낭독
-
-2048년 삼성역과 안국역의 지하 모임에 설비 매뉴얼의 영어 명령어를 소리 내어 읽는 순서가 생겼다. 낭독 순서에는 정수센터 밸브 조작 명령과 발전기 기동 명령이 들어갔다.
-
-<a id="peninsula-2048-taedong-crossings"></a>
-<a id="event-peninsula-2048-taedong-crossings"></a>
-
-#### 북한 지역 · 대동강의 나루
-
-2048년 평양 일대 강변 주민들은 끊긴 교량을 모두 복구할 수 없어 남은 나루와 교량 일부를 고쳤다. 강을 건너 장을 보는 생활은 이어졌으나 통행을 도운 거점마다 대가가 달랐다. 남쪽으로 짐을 보내는 상인도 다음 거점에서 다시 교섭해야 했으므로 한 번의 통행 약속으로 서울까지 갈 수는 없었다.
-
-<a id="2049년"></a>
-
-### 2049년 · 차용증과 밸브
-
-<a id="ch14-i1"></a>
-
-#### 가. 차용증 집계
-
-2049년 4월 여의도 금고층 명부의 가문들이 영등포·암사·구의 정수센터에 쌓인 차용증을 모았다. 차용증은 영등포 187장, 암사 76장, 구의 49장으로 모두 312장이었다.
-
-<a id="ch14-i2"></a>
-
-#### 나. 송수 증량 요구
-
-2049년 5월 여의도 측은 부품 대금 대신 물을 더 보내라고 요구하였다. 한석진은 여의도 방향 밸브 개방 시간을 하루 6시간에서 10시간으로 늘렸다. 늘어난 4시간만큼 영등포구청역 배급량은 1인당 하루 2리터에서 1.6리터로 줄었다.
-
-<a id="2050년"></a>
-
-### 2050년 · 가뭄과 멈춘 펌프
-
-<a id="ch14-i3"></a>
-
-#### 가. 미달
-
-2050년 6월부터 8월까지 가뭄으로 한강 취수량이 줄었다. 영등포 정수센터는 약정한 송수량을 3개월 동안 채우지 못하였다. 부족분은 약정량의 22퍼센트였다.
-
-<a id="ch14-i4"></a>
-
-#### 나. 대여 중단
-
-2050년 9월 여의도 가문들은 부품 신규 대여를 중단한다고 통보하였다. 통보문에는 7개 가문 대표 전원이 서명하였다. 같은 달 영등포 정수센터 여과동 제1계열 펌프 1대가 부품이 없어 멈추었다.
-
-<a id="era-3"></a>
-
-## 3시대 · 빚과 담보 (2051~2070)
-
-<a id="2051년"></a>
-
-### 2051년 · 다시 움직인 휴머노이드
-
-<a id="ch18-i1"></a>
-
-#### 가. 휴머노이드 재사용
-
-2세대에 이르러 휴머노이드를 지역망에 연결해 다시 쓸 수 있게 되었다. 2051년 6월 양재의 한 차체 공장은 정만수가 이끄는 정씨 가문이 운영하고 있었다. 공장은 원격망에서 분리한 현장 휴머노이드 12기를 사람이 직접 조종하는 방식으로 다시 쓰기 시작하였다. 조종은 등에 연결한 유선 제어기로 하였다.
-
-<a id="2052년"></a>
-
-### 2052년 · 정동 모임
-
-<a id="ch19-i1"></a>
-
-#### 가. 정동 모임
-
-2052년 11월 2일 시청역 지하 노동자 380여 명이 정동의 한 건물에서 모임을 열었다. 참석자 전원이 1표씩 행사하여 문정아를 위원장으로 뽑았다.
-
-<a id="2053년"></a>
-
-### 2053년 · 여의도 협약
-
-<a id="ch15-i1"></a>
-
-#### 가. 회동
-
-2053년 3월 14일 10:00 영등포 정수센터 책임자 한석진과 물을 받는 가문 대표 6명이 여의도 금고층 회의실에서 여의도 가문 대표 7명과 만났다. 회의는 13시간 동안 이어졌다. 회의록은 금고층 전산 당직자 서민재의 손녀 서은하가 작성하였다.
-
-<a id="ch15-i2"></a>
-
-#### 나. 협약
-
-협약서에는 여의도 일대와 영등포역 주변 급수 설비 11곳의 관리권을 여의도 가문들에 넘기고, 그 대가로 차용증 312장 전부를 소멸시킨다고 적혔다. 23:10경 양측 대표 14명이 서명하였다. 소멸된 차용증은 그 자리에서 구멍을 뚫어 묶었다.
-
-<a id="ch15-i4"></a>
-
-#### 다. 연합회 명칭
-
-2053년 3월 14일 여의도 가문들은 협약에 서명하였다. 이들은 이후 여의도출자연합회라는 이름으로 함께 움직였다.
-
-<a id="ch15-i3"></a>
-
-#### 라. 거점 이전
-
-2053년 3월 20일부터 영등포 정수센터 측은 거점을 양평역 지하로 옮겼다. 이전에는 9일이 걸렸다. 정수센터 운전일지 45권은 양평역 지하 서고로 옮겨졌다. 정수센터 설비는 그 뒤에도 계속 운전되었다.
-
-<a id="2054년"></a>
-
-### 2054년 · 증서 발행
-
-<a id="ch16-i1"></a>
-
-#### 가. 발행
-
-2054년 5월 여의도출자연합회는 금고 안의 부품과 칩을 보증으로 하는 증서를 발행하였다. 첫 발행량은 1만 장이었다. 증서마다 일련번호와 보증 부품의 목록 번호가 적혔으며 뒷면에는 발행 가문의 인장이 찍혔다.
-
-<a id="2055년"></a>
-
-### 2055년 · 양평역 계약 회의
-
-<a id="ch17-i1"></a>
-
-#### 가. 구성
-
-2055년 2월 양평역으로 옮긴 급수 측은 물을 받는 가문 대표들로 계약 회의를 꾸렸다. 갑문 4곳, 배수지 3곳, 차량기지 2곳을 맡은 9개 가문이 1표씩 가졌다. 첫 회의는 양평역 지하 대합실에서 열렸다.
-
-<a id="2056년"></a>
-
-### 2056년 · 첫 표결
-
-<a id="ch17-i2"></a>
-
-#### 가. 첫 표결
-
-2056년 1월 한석진이 물러나겠다고 밝혔다. 계약 회의는 후임 책임자를 표결로 뽑았다. 한석진의 아들이자 한정훈의 손자인 한도윤이 9표 가운데 6표를 얻어 뽑혔다.
-
-<a id="2057년"></a>
-
-### 2057년 · 증서의 통용
-
-<a id="ch16-i2"></a>
-
-#### 가. 통용
-
-증서는 부품 매매에 먼저 쓰였다. 2057년에는 용산 대차 운임과 구로 공방 임금도 증서로 지급되었다. 같은 해 증서 유통량은 4만 장을 넘었다.
-
-<a id="2058년"></a>
-
-### 2058년 · 위조와 편입
-
-<a id="2058년-여의도출자연합회"></a>
-
-#### 여의도출자연합회
-
-<a id="ch16-i3"></a>
-
-##### 가. 위조와 감정인
-
-2058년 8월 구로에서 위조 증서 17장이 처음 발견되었다. 위조 증서의 목록 번호는 금고에 없는 부품을 가리키고 있었다. 연합회는 설비 매뉴얼을 읽을 수 있는 사람 5명을 감정인으로 두어 증서를 확인하게 하였다. 감정인은 목록 번호를 금고 대장과 대조하였다.
-
-<a id="2058년-태욱중공업"></a>
-
-#### 태욱중공업
-
-<a id="ch18-i2"></a>
-
-##### 가. 태욱중공업
-
-2058년 9월 정만수는 공장 이름을 태욱중공업으로 정하였다. 같은 해 공장 주변의 작업장 6곳이 태욱중공업에 편입되었다. 편입 문서에는 정만수와 각 작업장 대표가 서명하였다. 양재 공장은 뒤에 멈추었고, 2126년에는 차체를 만들지 못하는 수리 작업장으로만 남았다.
-
-<a id="peninsula-2058-busan-sailings"></a>
-<a id="event-peninsula-2058-busan-sailings"></a>
-
-#### 영남 · 다시 띄운 배
-
-2058년 부산의 선원과 수리 인력은 항만에 묶여 있던 배 가운데 유지할 수 있는 선박을 골라 연안 운항을 재개하였다. 배마다 사람과 자재를 댄 이들이 달라 항구의 대표가 모든 출항을 명령할 수는 없었다. 선주들은 남해안에서 짐을 여러 번 넘겨 서울 방향의 상인과 거래하고, 다음 항해에 쓸 수리 자재를 구하였다.
-
-<a id="2059년"></a>
-
-### 2059년 · 첫 파업
-
-<a id="ch19-i2"></a>
-
-#### 가. 첫 파업
-
-2059년 4월 시청역 노동자들은 구로 공방 임금이 증서로만 지급되는 데 반대하여 3일간 작업을 멈추었다. 파업 3일째 구로 공방 우두머리 모임은 임금의 3분의 1을 물로 지급하기로 합의하였다.
-
-<a id="2060년"></a>
-
-### 2060년 · 연합회의 첫 의장
-
-<a id="ch16-i4"></a>
-
-#### 가. 첫 의장
-
-2060년 1월 연합회 출자 가문 7곳의 대표가 처음으로 의장을 뽑았다. 출자 지분이 가장 큰 최씨 가문의 최영선이 의장이 되었다. 투표는 지분 비율에 따라 진행되었다.
-
-<a id="2061년"></a>
-
-### 2061년 · 정부서울청사의 선거
-
-<a id="ch19-i3"></a>
-
-#### 가. 대통령 선거
-
-2061년 3월 정부서울청사의 당직 가문 23곳이 대통령 선거를 치렀다. 투표권은 당직을 대대로 맡아 온 가문에만 있었다. 기록 당직 가문의 윤재경이 13표를 얻어 당선되었다. 윤재경은 기록 보관함의 긴급명령 원본을 확인하는 것으로 취임하였다.
-
-<a id="2062년"></a>
-
-### 2062년 · 성하전자
-
-<a id="ch18-i3"></a>
-
-#### 가. 성하전자
-
-2062년 3월 강남역 부근 전산 건물을 관리하던 이씨 가문의 이상철이 여의도출자연합회와 서버실 열쇠 임대 계약을 맺었다. 임대 기간은 20년, 임대료는 매년 증서 3,000장이었다. 이상철은 건물에 성하전자라는 이름을 내걸었다.
-
-<a id="2063년"></a>
-
-### 2063년 · 재협약 제안
-
-<a id="ch17-i3"></a>
-
-#### 가. 재협약 제안
-
-2063년 표결에서는 갑문 가문의 대표 조민호가 뽑혔다. 조민호는 2046년 표결에서 떨어진 조경택의 아들이었다. 2063년 7월 조민호는 연합회에 여의도 협약서를 다시 쓰자고 제안하였으나, 연합회 의장 최영선은 서면으로 거절하였다.
-
-<a id="2064년"></a>
-
-### 2064년 · 흰 깃발
-
-<a id="ch20-i1"></a>
-
-#### 가. 흰 깃발 대차
-
-2064년 5월 신내 차량기지 운송 책임자 장기택은 흰 깃발을 단 대차로 부상자와 약품을 나르기 시작하였다. 첫 달 운행은 31회였다. 어느 쪽의 화물도 거부하지 않았다. 장기택은 이 원칙을 문서 1장으로 남기고 서명하였다.
-
-<a id="peninsula-2064-northern-coast-handoffs"></a>
-<a id="event-peninsula-2064-northern-coast-handoffs"></a>
-
-#### 북한 지역 · 동해안 북부의 인계
-
-2064년 함흥·청진 쪽 항만과 철도 주변 주민들은 유지한 짧은 구간에서 화물과 사람을 넘겨 보냈다. 끊긴 구간마다 짐을 다시 옮겼으므로 화차가 출발한 곳과 그 안의 짐이 출발한 곳은 서로 달랐다. 서울 방향으로 물건을 보내려는 상인도 인계 때마다 운반자를 새로 구하였고, 어느 운반자도 전 구간의 통행을 보장하지 못하였다.
-
-<a id="2066년"></a>
-
-### 2066년 · 세습과 흰 십자
-
-<a id="2066년-태욱중공업"></a>
-
-#### 태욱중공업
-
-<a id="ch18-i4"></a>
-
-##### 가. 세습
-
-2066년 2월 정만수가 죽고 장남 정태훈이 태욱중공업 회장직을 이었다. 같은 해 10월 이상철은 성하전자 회장직을 아들 이준호에게 넘겼다.
-
-<a id="2066년-제기동"></a>
-
-#### 제기동
-
-<a id="ch20-i2"></a>
-
-##### 가. 흰 십자
-
-2066년 3월 제기동 병원의 응급 처치 당직 14명이 흰 십자 표식을 달고 지상 작업자와 지하 거주자를 가리지 않고 지혈과 이송을 맡았다. 수술할 수 있는 의사들은 이미 강 건너로 떠난 뒤였고, 떠난 까닭은 기록에 없다. 당직의 서열은 근무 기간으로 정하였다. 초대 단장 강혜린은 후계자를 서면으로 지명하였다.
-
-<a id="2068년"></a>
-
-### 2068년 · 기록청 기재와 독도 초소
-
-<a id="ch19-i4"></a>
-
-#### 가. 기록청 기재
-
-2068년 10월 청사 기록청장 윤재경은 긴급명령 원본의 국회 승인 일자란이 비어 있다는 사실을 장부에 적었다. 기재문 아래에는 원본을 확인한 입회인 3명이 서명하였다.
-
-<a id="peninsula-2068-dokdo-watch"></a>
-<a id="event-peninsula-2068-dokdo-watch"></a>
-
-#### 독도 · 교대 초소
-
-2068년 울릉도에서 배를 고치던 선원들과 독도 초소 기록을 이어받은 사람들은 동쪽 조업 선박의 계절별 연락을 받으려고 독도 체류를 교대로 나누었다. 초소에 식수와 보수 자재를 보내는 배가 끊기면 인원부터 거두어들였고, 돌아온 사람은 접안과 조난 기록을 다음 교대에 넘겼다. 작은 초소는 울릉도와 연안의 보급에 기대어 버텼다.
-
-<a id="2069년"></a>
-
-### 2069년 · 명부와 검수
-
-<a id="2069년-대한민국정부"></a>
-
-#### 정부
-
-<a id="ch19-i5"></a>
-
-##### 가. 도심 배급 명부
-
-2069년 2월 정부는 광화문역 주변 종로·중구 거주자 명부를 작성하였다. 정부서울청사 배급 창구는 이 명부에 오른 사람에게만 식량을 지급하였다.
-
-<a id="2069년-구의"></a>
-
-#### 구의
-
-<a id="ch20-i3"></a>
-
-##### 가. 구의 이원 선출
-
-2069년 6월 구의에서는 아차산 방향 관문을 지키는 사령관으로 고명철이, 구의아리수정수센터를 지키는 수비대장으로 탁현우가 각각 선출되었다. 두 사람은 해마다 6월 한 차례 만나 급수와 통행을 정하였다. 첫 회의 결과는 문서 2부로 작성하여 각자 1부씩 보관하였다.
-
-<a id="2069년-xt01-임진-제방-임시-검역소"></a>
-
-#### 임진 제방 임시 검역소
-
-<a id="xt01-2069"></a>
-
-##### 귀환 명부 공동 대조
-
-2069년 7월 안국 필사 당직과 광화문 청사 명부 당직은 임진 제방 임시 검역소에서 귀환 명부를 함께 대조하였다. 신내 대차 당직은 가족 대기열과 의약품 상자의 인계 순번을 나누어 적었다. 강남 호송 당직은 환승 칸을 맡았다. 구의 관문 사령관 측은 귀환 안내 단말의 봉인 열쇠를 나누어 보관하였다.
-
-<a id="2069년-xt04-암사-야적장"></a>
-
-#### 암사 야적장
-
-<a id="xt04-2069"></a>
-
-##### 화차 중량 검수
-
-2069년 8월 암사 경비 당직은 동북 우회로로 들어온 화차의 중량 기록과 화인을 대조하였다. 신내 대차 당직은 과중량 칸을 뒤로 옮겼다. 강남 당직은 동절 연료 순번을 적었다. 제기동 당직은 동상 환자를 맡았다. 구의 관문 사령관 측은 원산지 표의 위조 흔적을 증빙 봉투에 넣어 봉인하였다.
-
-<a id="2069년-xt05-여의도-회관"></a>
-
-#### 여의도 회관
-
-<a id="xt05-2069"></a>
-
-##### 잔여 대역 신탁 창구
-
-2069년 9월 여의도 회관 옥상 당직은 대정전 뒤 인천 창구에 남은 잔여 궤도 번호를 신탁 수령창으로 보내려고 회람하였다. 영등포 수문 당직은 송신·펌프 운전 시각을 대조하였다. 광화문 정부서울청사 당직은 인도 목록의 해시를 참관 장부에 옮겨 적었다. 시청 노동 당직은 송금 기록의 회차선을 확인하였다. 양재 공장 당직은 궤도 단말의 오탐 경보를 가려냈다. 명동 당직은 다국어 상담 대기표를 작성하였다.
-
-<a id="2070년"></a>
-
-### 2070년 · 부결과 경비대
-
-<a id="2070년-수문국"></a>
-
-#### 수문국
-
-<a id="ch17-i4"></a>
-
-##### 가. 부결
-
-2070년 4월 수문국 계약 회의는 여의도에 보낼 새 협약안을 세 번째로 표결에 부쳤다. 찬성 4표, 반대 5표로 안건은 부결되었다. 반대한 5개 가문은 모두 여의도 방향 송수관을 맡은 가문이었다.
-
-<a id="2070년-대한민국정부"></a>
-
-#### 정부
-
-<a id="ch19-i6"></a>
-
-##### 가. 청사 경비대
-
-2070년 9월 청사 상비 경비대는 광화문·종로3가·을지로입구역의 소집부를 작성하였다. 경비대는 세 역의 교대 경비를 맡았다.
-
-<a id="era-4"></a>
-
-## 4시대 · 세 갈래 (2071~2090)
-
-<a id="2071년"></a>
-
-### 2071년 · 삼성역의 무리
-
-<a id="ch21-i1"></a>
-
-#### 가. 결성
-
-2071년 2월 삼성역 거주자 명부를 관리하던 오성규가 명부 등재자 가운데 남성 120여 명을 모아 지상 순찰 기체를 부수는 무리를 만들었다. 첫 작전은 2071년 3월 역삼동에서 순찰 기체 2대를 부순 일이었다.
-
-<a id="2072년"></a>
-
-### 2072년 · 짧은 기록
-
-<a id="ch22-i1"></a>
-
-#### 가. 결성
-
-<a id="2073년"></a>
-
-### 2073년 · 연대와 필사
-
-#### 삼성역
-
-<a id="ch21-i2"></a>
-
-##### 가. 연대
-
-2073년 5월 삼성역 무리는 암사 경비대와 구의 관문 사령관 고명철에게 대원을 40명씩 보내 함께 싸웠다. 암사 경비대 사령관은 배현수의 장남 배진혁이었다.
-
-<a id="2073년-안국역"></a>
-
-#### 안국역
-
-<a id="ch23-i1"></a>
-
-##### 가. 책임자 선출
-
-2073년 8월 안국역에서 설비 매뉴얼을 필사하던 40여 명이 혜안을 책임자로 뽑았다. 선출은 참석자 전원의 동의로 이루어졌다.
-
-<a id="2074년"></a>
-
-### 2074년 · 첫 지상 단속
-
-<a id="ch21-i3"></a>
-
-#### 가. 논현동 단속
-
-2074년 9월 삼성역 무리의 대원들이 논현동 지상에서 3명을 붙잡았다. 붙잡힌 3명은 3일 뒤 풀려났다.
-
-<a id="2075년"></a>
-
-### 2075년 · 대장 등록
-
-<a id="ch22-i2"></a>
-
-#### 가. 대장 등록
-
-2075년 2월 용산 선로 가문들이 장자 상속을 대장에 올려 확인받기 시작하였다. 첫 확인은 박씨 가문이었다. 같은 해 태욱중공업 회장 정태훈의 가문도 혼인을 같은 대장에 등록하였다.
-
-<a id="2076년"></a>
-
-### 2076년 · 승계
-
-<a id="ch21-i4"></a>
-
-#### 가. 승계
-
-2076년 1월 오성규가 사망하고 아들 오준희가 삼성역 무리를 이끄는 자리를 이었다. 어른 17명이 인준 투표를 실시하였다. 찬성 15표, 기권 2표였다.
-
-<a id="2077년"></a>
-
-### 2077년 · 필사 교육
-
-<a id="ch23-i2"></a>
-
-#### 가. 필사 교육
-
-2077년 1월 양평역 계약 회의와 구로 공방 우두머리 모임이 안국역 필사자 6명을 설비 매뉴얼 해독자로 초빙하였다. 두 곳의 기술자 30여 명이 안국역에서 필사를 배웠다. 교육 기간은 1년이었다.
-
-<a id="2078년"></a>
-
-### 2078년 · 짧은 기록
-
-<a id="ch22-i3"></a>
-
-<a id="2079년"></a>
-
-### 2079년 · 문서와 화물 점검
-
-<a id="ch24-i1"></a>
-
-#### 가. 기술 문서 점검
-
-2079년 10월 중앙정보부는 잃어버린 기술 문서를 점검하고 보관하겠다고 공지하였다.
-
-<a id="2079년-xt02-한강-하구-임시-부두"></a>
-
-#### 한강 하구 임시 부두
-
-<a id="xt02-2079"></a>
-
-##### 하구 화물 공동 점검
-
-2079년 11월 영등포 수문 당직은 한강 하구 임시 부두의 조위표와 배수 밸브 기록을 대조하였다. 구로 공방 당직은 압축기 부품 순번을 적었다. 양재 공장 당직은 해시가 깨진 상자를 격리하였다. 중앙정보부 흑석 당직은 냉동 순번을 고쳤다. 여의도 회관 당직은 점검표를 돌려 보았다.
-
-<a id="2079년-xt03-용산-환적창"></a>
-
-#### 용산 환적창
-
-<a id="xt03-2079"></a>
-
-##### 세 갈래 중계 보고
-
-2079년 12월 용산 선로 당직은 해협 건너편에서 온 세 갈래 중계 보고를 환적 장부에 접수하였다. 시청 노동 당직은 내륙 회차가 가능한 칸을 적었다. 명동 인준 당직은 인준 봉투를 봉인하였다. 삼성역 명부 당직은 밀봉 화물의 수령인을 대조하였다. 중앙정보부 흑석 당직은 통역 용어가 다른 항목을 따로 기록하였다.
-
-<a id="2080년"></a>
-
-### 2080년 · 원장 시험
-
-#### 중앙정보부
-
-<a id="ch24-i2"></a>
-
-##### 가. 원장 시험
-
-흑석 보존원의 원장은 장부 판독 시험으로 뽑았다. 첫 시험은 2080년 2월에 치러졌고 응시자는 41명이었다. 시험지는 보존원 지하의 단말기가 채점하였다. 수석을 한 진서우가 초대 원장이 되었다.
-
-<a id="2082년"></a>
-
-### 2082년 · 필사본 배척
-
-<a id="ch23-i3"></a>
-
-#### 가. 필사본 배척
-
-2082년 6월 삼성역 무리는 안국역 필사본을 쓰는 기술자를 암사와 구의 관문에서 받지 않겠다고 통보하였다. 통보문에는 오준희가 서명하였다.
-
-<a id="2084년"></a>
-
-### 2084년 · 합격자 진출
-
-<a id="ch24-i3"></a>
-
-#### 가. 합격자 진출
-
-2084년 보존원 시험 합격자 9명이 양평역 계약 회의와 구로 공방에 자리를 얻었다. 이 가운데 4명은 안국역에서 필사를 배운 기술자였다.
-
-<a id="2085년"></a>
-
-### 2085년 · 관문 단속
-
-<a id="ch25-i2"></a>
-
-#### 가. 단속
-
-2085년 4월부터 삼성역 무리는 암사와 구의 관문에서 작업자를 붙잡기 시작하였다. 첫 달에 12명이 붙잡혔다. 붙잡힌 작업자의 이름은 관문 통행 명부에서 지워졌다.
-
-<a id="2087년"></a>
-
-### 2087년 · 호남 계약 거절
-
-<a id="peninsula-2087-honam-contract-refusal"></a>
-<a id="event-peninsula-2087-honam-contract-refusal"></a>
-
-#### 호남 · 서울 상인의 독점 요구
-
-2087년 서해를 거쳐 온 서울 상인이 다음 해 곡식까지 먼저 사들이려 하자 호남의 생산지 일부가 계약을 거절하였다. 선주는 값을 더 받는 서울행 화물과 마을에 남겨야 할 식량을 나누었다. 서울 상인들은 한 항구만 상대해서는 원하는 물량을 얻지 못하여 생산지마다 다시 값을 교섭하였다.
-
-<a id="2088년"></a>
-
-### 2088년 · 필사본 점검 위임
-
-<a id="ch24-i4"></a>
-
-#### 가. 필사본 점검 위임
-
-2088년 5월 보존원은 안국역 필사본의 점검을 맡겠다고 요청하였다. 안국역 필사자들은 이를 받아들였다. 필사본 1,200여 권이 흑석으로 옮겨졌다가 점검을 마친 뒤 돌아왔다.
-
-<a id="2090년"></a>
-
-### 2090년 · 짧은 기록
-
-<a id="ch25-i3"></a>
-
-#### 가. 2090년의 기록
-
-<a id="era-5"></a>
-
-## 5시대 · 노선 끝의 시대 (2091~2110)
-
-<a id="2095년"></a>
-
-### 2095년 · 작업장과 전산 건물
-
-<a id="ch26-i4"></a>
-
-#### 가. 작업장과 전산 건물
-
-2095년 5월 태욱그룹은 태욱중공업과 그 아래 작업장 11곳을 거느렸다. 성하그룹은 성하전자 주변 전산 건물 4곳을 거느렸다.
-
-<a id="2097년"></a>
-
-### 2097년 · 수문국의 물길 계약
-
-<a id="ch27-i1"></a>
-
-#### 가. 계약
-
-2097년 6월 수문국은 양평과 춘천의 물길 관리 인원과 계약을 맺었다. 양평 쪽 대표는 34명, 춘천 쪽 대표는 51명이었다. 수문국은 두 곳을 제일수문, 제이수문이라 이름 붙였다. 두 곳은 수문국의 물길 관리를 맡는 대가로 양평역 배급 명부에 올랐다.
-
-<a id="2098년"></a>
-
-### 2098년 · 동방사의 경비지구
-
-<a id="ch28-i1"></a>
-
-#### 가. 경비지구
-
-2098년 9월 동방사는 하남, 남양주, 의정부·연천의 지상 거점을 제1·제2·제3경비지구로 묶었다. 각 경비지구는 해마다 봄과 가을 두 차례 경비 인원을 암사로 보냈다.
-
-<a id="2099년"></a>
-
-### 2099년 · 춘천이라는 이름
-
-<a id="ch27-i2"></a>
-
-#### 가. 명칭 변경 요구
-
-2099년 3월 춘천에서 제이수문 대신 옛 도시 이름을 쓰자는 요구가 나왔다. 요구서에는 춘천 쪽 주민 1,100여 명이 서명하였다. 수문국 계약 회의는 찬성 2표, 반대 7표로 이를 받아들이지 않았다.
-
-<a id="peninsula-2099-chuncheon-name"></a>
-<a id="event-peninsula-2099-chuncheon-name"></a>
-
-#### 강원 · 기각 뒤의 춘천
-
-2099년 3월 요구가 기각된 뒤에도 춘천의 뱃사람과 장터 상인들은 자기 물건과 안내판에 춘천이라는 이름을 계속 썼다. 2097년 수문국과 맺은 물길 계약은 그대로 남았으나 계약서의 이름이 주민의 일상까지 바꾸지는 못하였다. 서울에서 온 상인들은 계약서의 제이수문과 장터에서 듣는 춘천이 같은 거점을 가리킨다는 것을 익혔다.
-
-<a id="2100년"></a>
-
-### 2100년 · 선로 끝의 통행세
-
-<a id="ch29-i1"></a>
-
-#### 가. 종착
-
-2100년 7월 환적국은 인천과 파주의 선로 끝 거점을 제1종착, 제2종착으로 정하고 통행세를 거두었다. 통행세는 화물 무게에 따라 증서로 받았다.
-
-<a id="2101년"></a>
-
-### 2101년 · 태욱중공업의 사업장
-
-<a id="ch28-i2"></a>
-
-#### 가. 사업장
-
-2101년 3월 태욱그룹은 성남과 수원의 공장 거점을 태욱중공업 성남사업장, 수원사업장으로 이름 붙였다. 두 사업장은 부품과 노동자를 신분당선 선로로 양재에 보냈다. 첫해 성남사업장의 노동자는 1,400여 명이었다. 두 사업장은 서울 밖에 있었다. 강남 대피소들이 아크로 묶인 뒤에도 공장 설비는 아크의 것이 되지 못했고, 아크가 서울 안에 쥔 것은 수리 작업장뿐이다.
-
-<a id="2102년"></a>
-
-### 2102년 · 규격맹의 분공방
-
-<a id="2102년-규격맹"></a>
-
-#### 규격맹
-
-<a id="ch29-i2"></a>
-
-##### 가. 분공방
-
-2102년 4월 규격맹은 천안·아산과 시흥의 공방을 제1분공방, 제2분공방으로 받아들였다. 제1분공방은 천안·아산의 이씨 가문이 맡았다. 분공방은 규격서에 따라 만든 부품을 구로로 보냈다.
-
-<a id="2102년-제1분공방"></a>
-
-#### 제1분공방
-
-<a id="ch42-i1"></a>
-
-##### 가. 이씨 가문
-
-제1분공방은 2102년 규격맹에 들어갔다. 이후 이씨 가문이 규격맹 아래에서 제1분공방을 맡아 관리하였다. 가문은 1호선 남단 차량기지와 공방 4곳을 돌보았다. 이일섭은 이씨 가문의 후계였다. 이씨 가문은 신경 연결 의술을 대대로 이어 온 의료 가문이고, 차량기지 밭과 공방은 가문의 부업이다. 이일섭은 2126년 현재 자유도시 이사회장이다. 이씨 가문은 계급으로는 다른 이사와 같은 이사지만, 자유도시 사람들이 그들이 이끌어 주기를 바라므로 대대로 이사회장을 맡는다.
-
-<a id="2104년"></a>
-
-### 2104년 · 영종지점과 임진 제방
-
-<a id="ch29-i3"></a>
-
-#### 가. 영종지점
-
-2104년 10월 여의도출자연합회는 공항철도 종점인 영종에 영종지점을 열었다. 영종지점은 바깥 교역 대금을 연합회 증서로 바꾸어 주고 수수료로 100분의 3을 받았다.
-
-<a id="2104년-xt01-임진-제방-임시-검역소"></a>
-
-#### 임진 제방 임시 검역소
-
-<a id="xt01-2104"></a>
-
-##### 훼손 명부 재발급
-
-2104년 11월 북녘에서 임진 제방 임시 검역소로 들어온 귀환 명부가 빗물에 젖어 훼손되었다. 훼손된 줄의 재발급은 안국역 필사자들이 맡았다. 정부 광화문 당직은 제출된 혈연 증서의 진위를 대조하였다. 아관사 구의 관문 당직은 봉인 열쇠를 나누어 보관하였다. 신내운수는 가족 대기열의 환승 칸을 옮겼다. 성하그룹은 의약품 호송 칸을 따로 내주었다.
-
-<a id="2106년"></a>
-
-### 2106년 · 경기도와 인지세
-
-<a id="ch29-i4"></a>
-
-#### 가. 경기도
-
-2106년 1월 정부는 고양의 행정 거점을 경기도라고 불렀다. 경기도는 병역 명부와 인지세를 광화문으로 보냈다. 첫해 병역 명부에는 2,300여 명이 적혔다.
-
-<a id="ch29-i5"></a>
-
-#### 나. 도장과 인지세
-
-2106년 6월 정부는 종로·중구의 통행증에 정부서울청사 도장을 찍도록 정하였다. 종로·중구의 상거래 계약서는 도장이 있어야 기록청 장부에 올랐다. 통행증과 계약서에는 인지세가 붙었다.
-
-<a id="2107년"></a>
-
-### 2107년 · 구의 급수 충돌
-
-<a id="ch30-i1"></a>
-
-#### 가. 구의 충돌
-
-2107년 8월 동방사와 아관사가 구의의 급수를 두고 무력으로 부딪쳤다. 충돌은 이틀 동안 이어졌고 양쪽 사상자는 40여 명이었다. 신내운수 대차 6대가 양쪽 부상자를 제기동으로 옮겼다. 흰십자단이 지혈과 부목을 댔지만 중상자는 대부분 돌아오지 못했다.
-
-<a id="2109년"></a>
-
-### 2109년 · 신내운수의 서약문
-
-<a id="ch30-i2"></a>
-
-#### 가. 서약문
-
-2109년 2월 신내운수 사장 가문은 어느 싸움에서도 화물을 가려 싣지 않는다는 서약문을 다시 썼다. 서약문은 신내역 대합실에 걸렸다.
-
-<a id="2110년"></a>
-
-### 2110년 · 기록청 장부
-
-<a id="ch30-i3"></a>
-
-#### 가. 기록청 장부
-
-2110년 12월 정부 기록청 장부에 서울 안팎 여러 조직·가문·회의 이름과 13개 거점의 명칭이 모두 올랐다. 등재에는 각 조직이 보낸 문서 29건이 근거로 붙었다.
-
-<a id="era-6"></a>
-
-## 6시대 · 개막 전야 (2111~2126)
-
-<a id="2111년"></a>
-
-### 2111년 · 승계 문서의 제출
-
-<a id="ch30-i4"></a>
-
-#### 가. 승계와 조약
-
-2111년 3월 수문국·동방사·아관사·환적국·신내운수·규격맹·흰십자단은 각 조직 수장의 승계 문서와 조직 사이에 맺은 조약의 원본을 기록청에 제출하였다. 기록청은 도장을 찍은 등본을 각 조직에 돌려주었다.
+대정전부터 2112년까지 백 년 가까운 시간은 연도를 붙일 기록이 없다. 알려진 것은 결과뿐이다. 사람들은 역에서 살았고, 서울 밖에서는 주인을 잃은 전쟁 기계가 마지막 명령대로 돌아다녔다. 정부에서는 부모의 일을 자식이 잇는 수직 계층이 굳었다. 강남 대피소들은 기계가 두려워 수십 년 동안 문을 닫고 지냈다. 이 일들이 언제 어떤 순서로 일어났는지는 아무도 모른다.
 
 <a id="2112년"></a>
 
-### 2112년 · 태욱그룹의 승계와 지도에 없는 역
+## 2112년: 지도에 없는 역
 
-이해 고예진은 자유도시의 전력망을 고치던 중 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 고예진은 그 역에서 나온 매뉴얼을 이해부터 2117년까지 다섯 해 동안 읽었다.
+자유도시 전력망을 고치던 고예진이 죽은 케이블 하나를 따라갔다. 케이블 끝에는 지도에 없는 역이 있었다.
 
-<a id="ch31-i1"></a>
+<a id="2112-2117"></a>
 
-#### 가. 회장 사망
+## 2112~2117년: 다섯 해의 매뉴얼
 
-2112년 4월 9일 태욱그룹 회장 정일환이 양재 본사 숙소에서 사망하였다. 정일환의 자녀는 딸 정서온 1명이었다.
-
-<a id="ch31-i2"></a>
-
-#### 나. 문중 회의
-
-2112년 4월 13일 정씨 문중 어른 9명이 양재의 문중 회관에서 회의를 열었다. 회의는 분가의 남성 정우철을 회장으로 세우자고 결의하였다. 결의문에는 7명이 서명하였다.
-
-<a id="ch31-i3"></a>
-
-#### 다. 취임 공표
-
-2112년 4월 15일 정서온은 부친이 남긴 지분 문서와 주주총회 의사록 2건을 근거로 회장 취임을 공표하였다. 지분 문서에 따르면 정일환의 지분은 태욱그룹 전체의 51퍼센트였다.
-
-<a id="ch31-i4"></a>
-
-#### 라. 주주총회 승인
-
-2112년 4월 28일 주주총회가 열렸다. 출석 주주 43명 가운데 29명이 정서온의 취임에 찬성하였다. 분가 대표 2명은 의사록에 서명하지 않았다.
-
-<a id="ch31-i5"></a>
-
-#### 마. 족보 등재
-
-2112년 10월 정씨 족보 개정본에 정서온의 이름이 항렬자 없이 등재되었다. 같은 대의 남성 11명은 모두 항렬자를 넣은 이름으로 등재되었다.
-
-<a id="2113년"></a>
-
-### 2113년 · 기록 공백
-
-<a id="ch40-i1"></a>
-
-<a id="2114년"></a>
-
-### 2114년 · 인준 청구와 화물 검수
-
-<a id="2114년-태욱그룹"></a>
-
-#### 태욱그룹
-
-<a id="ch32-i1"></a>
-
-##### 가. 인준 청구
-
-2114년 2월 태욱그룹은 정서온의 회장 승계를 적자 상속으로 확인해 달라는 청구서를 냈다. 청구서에는 정일환의 혼인이 2089년 대장에 등록되었다는 기재가 첨부되었다. 청구는 접수되었으나 답이 없었다.
-
-<a id="ch32-i2"></a>
-
-##### 나. 분가의 방문
-
-<a id="2114년-성하그룹"></a>
-
-#### 성하그룹
-
-<a id="ch40-i2"></a>
-
-##### 가. 이홍원 회장
-
-2114년 성하그룹 회장이 사망하였다. 이씨 가문 후계들 사이에 승계 시험이 열렸다. 이홍원이 회장직을 이었다.
-
-<a id="2114년-xt02-한강-하구-임시-부두"></a>
-
-#### 한강 하구 임시 부두
-
-<a id="xt02-2114"></a>
-
-##### 압축기 정지
-
-2114년 6월 한강 하구 임시 부두에서 화물 보관에 쓰던 냉동 압축기가 한 주 동안 멈추었다. 규격맹은 구로의 교체 부품 지급 순번을 바꾸었다. 중앙정보부 흑석 당직은 냉동 순번을 고쳤다. 수문국 영등포 당직은 배수 창의 운전 시간을 대조하였다. 태욱그룹은 손상된 봉인 해시 상자를 격리하였다. 여의도출자연합회는 냉동 화물의 인수 보류를 회람하였다.
-
-<a id="2114년-xt04-암사-야적장"></a>
-
-#### 암사 야적장
-
-<a id="xt04-2114"></a>
-
-##### 중량 칸 재검수
-
-2114년 10월 동방사 암사 당직은 동북 우회로에서 들어온 화차 가운데 화인에 적힌 무게와 중량 기록이 다른 칸을 다시 검수하였다. 신내운수는 해당 칸의 환승 순번을 옮겼다. 성하그룹은 동절 연료 드럼의 수령 순번을 다시 적었다. 흰십자단 제기동 당직은 동상 환자의 이송 칸을 확인하였다. 아관사는 화차에 붙은 위조 원산지 표를 증빙 봉투에 봉인하였다.
-
-<a id="2115년"></a>
-
-### 2115년 · 편입 요구
-
-<a id="ch33-i1"></a>
-
-#### 가. 편입 요구
-
-2115년 아관사는 고서준을 관문사령관으로 선출하였다. 2116년 7월 동방사는 구의수비대를 동방사 지휘 아래 두라는 문서를 아관사에 보냈다. 고서준과 구의수비대장 탁서윤은 각각 거절 문서를 보냈다.
-
-<a id="2116년"></a>
-
-### 2116년 · 흰십자단의 후계
-
-<a id="ch40-i3"></a>
-
-#### 가. 류은비 단장
-
-2116년 흰십자단 단장은 자신의 뒤를 이을 후계자로 류은비를 지명하였다.
+고예진은 그 역에 남은 매뉴얼을 다섯 해 동안 읽었다.
 
 <a id="2117년"></a>
 
-### 2117년 · 혼인 제안과 첫 세례
+## 2117년 무렵: 첫 세례
 
-이해 무렵 고예진은 다섯 해에 걸친 매뉴얼 읽기를 마쳤고, 열두 명이 처음으로 몸 부위를 기계로 바꾸는 세례를 받았다. 몸에 기계를 다는 일은 고예진의 무리가 했지만, 신경을 잇는 일은 자유도시에서 온 의사가 맡았다.
-
-<a id="2117년-태욱그룹"></a>
-
-#### 태욱그룹
-
-<a id="ch32-i3"></a>
-
-##### 가. 혼인 제안
-
-2117년 9월 환적국 소속 박씨 선로 가문의 장자 박태겸과 정서온의 혼인을 제안하는 서신이 양재에 도착하였다. 서신에는 박씨 가문 가장과 정씨 문중 어른 4명의 이름이 함께 기재되어 있었다. 정서온은 서신에 답하지 않았다.
-
-<a id="2117년-동방사"></a>
-
-#### 동방사
-
-<a id="ch36-i1"></a>
-
-##### 가. 배우진 사령관
-
-2117년 동방사의 세습 수장인 사령관이 사망하였다. 부책임자가 1년간 비상감독을 맡았다. 2118년 장남 배우진이 사령관 자리를 이었다. 동방사는 아크의 세습 소총 근위대다.
-
-<a id="2118년"></a>
-
-### 2118년 · 시험과 원정
-
-<a id="2118년-중앙정보부"></a>
-
-#### 중앙정보부
-
-<a id="ch34-i1"></a>
-
-##### 가. 상위 독점
-
-2118년 2월 중앙정보부 원장 시험 응시자는 88명이었다. 수문국과 규격맹 출신 기술자들이 상위 10위를 모두 차지하였다.
-
-<a id="2118년-신내운수"></a>
-
-#### 신내운수
-
-<a id="ch39-i1"></a>
-
-##### 가. 장세화 사장
-
-2118년 신내운수 사장이 사망하였다. 장세화가 사장직을 이었다.
-
-<a id="peninsula-2118-tsushima-expedition"></a>
-<a id="event-peninsula-2118-tsushima-expedition"></a>
-
-#### 대마도 · 원정 출항
-
-2118년 부산 일대 선주들은 해협에서 나포된 배와 사람을 되찾기 위해 호위대를 고용하였다. 항구 통행을 빼앗긴 대마도 선원 일부가 접안 정보를 제공하자 원정대는 항구 한 곳에 상륙하였다. 호위대는 방어 거점을 무너뜨리고 배를 회수하였으나, 선주와 현지 협력자들은 회수품을 나눌 몫을 서로 다르게 이해하였다.
-
-<a id="2119년"></a>
-
-### 2119년 · 자리를 잇는 해
-
-<a id="2119년-중앙정보부"></a>
-
-#### 중앙정보부
-
-<a id="ch34-i2"></a>
-
-##### 가. 원장 오해린
-
-2119년 2월 중앙정보부의 원장 시험에서 노량진 냉동 창고의 열쇠 관리인 오해린이 수석을 차지하였다. 오해린은 2119년 3월 1일 보존원 원장에 취임하였다.
-
-<a id="2119년-수문국"></a>
-
-#### 수문국
-
-<a id="ch35-i1"></a>
-
-##### 가. 한재목 선출
-
-2119년 수문국 계약 회의는 한재목을 수문국 책임자로 뽑았다.
-
-<a id="ch35-i2"></a>
-
-##### 나. 양천 구역장
-
-같은 해 한재목은 이서담을 양천 구역장에 앉혔다. 이때 수문을 열기 전에 배급구역 대표의 연서를 받는 절차가 수문국 규정에 들어갔다.
-
-<a id="2119년-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
-<a id="ch37-i1"></a>
-
-##### 가. 임하준
-
-2119년 시청역 노동자들을 이끌던 사람이 죽었다. 오씨 가문의 맏아들 오경재는 아직 미성년이었다. 구성원들은 인준 투표를 열어 임하준에게 그 일을 맡겼다.
-
-<a id="2119년-신종목"></a>
-
-#### 신종목
-
-<a id="ch43-i1"></a>
-
-##### 가. 마지막 작전
-
-2119년 11월 동방사 특수회수반의 선임 공작원 신종목은 마지막 회수 작전에서 명부 밖 피난민을 데리고 돌아왔다. 귀환 보고서에는 명령 불복종과 지급품 손실이 적혔다. 퇴로를 지킨 반원 일부는 실종으로 처리되었다.
-
-<a id="peninsula-2119-tsushima-withdrawal"></a>
-<a id="event-peninsula-2119-tsushima-withdrawal"></a>
-
-#### 대마도 · 원정대의 귀환
-
-2119년 대마도로 나갔던 원정대가 승리를 거두었으나, 선주와 지휘자들은 항구를 계속 차지할지를 두고 갈라졌다. 손상 선박을 고칠 자재와 인력이 모자라 주력이 한반도로 돌아오자, 섬에 남은 협력자들은 남겨진 배와 거래 약속을 두고 다시 다투었다. 귀환자들은 정벌의 승리를 알렸으나 장기 점령은 이루어지지 않았고, 회수품을 가져온 사람마다 다른 몫을 주장하였다.
+첫 세례를 받은 사람은 열두 명이었다. 몸에 기계를 다는 일은 고예진의 무리가 했고, 신경을 잇는 일은 자유도시에서 온 의사가 맡았다.
 
 <a id="2120년"></a>
 
-### 2120년 · 등록과 계약
+## 2120년: 지연희
 
-<a id="2120년-동방사"></a>
-
-#### 동방사
-
-<a id="ch36-i2"></a>
-
-##### 가. 등록 요구
-
-2120년 겨울 뒷날 아크가 되는 고예진의 무리는 펌프 제어 소프트웨어를 풀어 주는 대가로 규격맹에 복구복무자 등록을 요구하였다. 규격맹의 강민서는 등록을 거부한 기술자들을 규격맹 시민권 명부에 올렸다. 2121년 규격맹 평의회는 강민서를 위원장으로 뽑았다.
-
-<a id="2120년-여의도출자연합회"></a>
-
-#### 여의도출자연합회
-
-<a id="ch38-i1"></a>
-
-##### 가. 최지우 의장
-
-2120년 여의도출자연합회의 출자 가문들은 최지우를 회의 의장으로 뽑았다.
-
-<a id="2120년-신종목"></a>
-
-#### 신종목
-
-<a id="ch43-i3"></a>
-
-##### 가. 첫 응답
-
-2120년부터 신종목은 수리한 무전기로 특수회수반의 호출부호를 내보냈다. 2121년 1월 첫 응답이 들어왔다. 응답한 사람은 약을 옮길 길을 묻는 의무원, 실종된 가족을 찾는 주민, 돌봄 교대를 청하는 보호자였다. 신종목은 응답자 명단을 적어 두었다. 이 연락망은 귀환망이라고 불렸다.
-
-<a id="ch43-i2"></a>
-
-##### 나. 강남구청
-
-2120년 4월 신종목은 특수회수반에서 물러났다. 아이 신준과 함께 강남구청 생활권으로 거처를 옮긴 뒤 호위와 탐사 계약을 맡았다.
-
-<a id="2120년-수서-차량기지"></a>
-
-#### 수서 차량기지
-
-<a id="ch44-i1"></a>
-
-##### 가. 수서
-
-수서 차량기지는 2080년 이후 어느 세력에도 속하지 않았다.
-
-<a id="2120년-지연희"></a>
-<a id="2119년-지연희"></a>
-
-#### 지연희
-
-<a id="ch46-i1"></a>
-<a id="ch46-i2"></a>
-
-##### 가. 경호원
-
-2120년 지연희는 탄천 쪽 대피소 교섭 자리에서 칼을 꺼낸 남자를 막고 고예진 곁에 섰고, 이후 고예진의 경호원이 되었다. 지연희가 진 빚과 그 선택지는 미정이다.
-
-<a id="ch46-i3"></a>
-
-##### 나. 측근
-
-2126년 현재 지연희는 아크에 속한 고예진의 측근이다.
-
-<a id="2120년-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
-<a id="ch47-i1"></a>
-
-##### 가. 정유라
-
-2120년 시청역 노동자들은 구성원 모두가 직접 투표하는 선거를 열었고, 정유라가 위원장에 뽑혔다.
-
-<a id="2121년"></a>
-
-### 2121년 · 대치와 밭
-
-<a id="2121년-아관사"></a>
-
-#### 아관사
-
-<a id="ch33-i2"></a>
-
-##### 가. 대치
-
-2121년 3월 2일 소총만 든 동방사 호위단 수십 명이 아차산 관문 앞에 머물렀다. 2121년 3월 5일 고서준과 탁서윤은 관문과 정수센터의 인원을 한 지휘 아래 두는 명령서에 함께 서명하였다.
-
-<a id="2121년-대한민국정부"></a>
-
-#### 정부
-
-<a id="ch38-i2"></a>
-
-##### 가. 윤서린 대통령
-
-2121년 윤서린이 대통령에 올랐다. 윤서린은 취임일에 정부서울청사 기록청 보관함에 든 긴급명령 원본을 열람하였다.
-
-<a id="ch38-i4"></a>
-
-##### 나. 도심 세 단체
-
-<a id="2121년-제1분공방"></a>
-
-#### 제1분공방
-
-<a id="ch42-i2"></a>
-
-##### 가. 차량기지 밭
-
-2121년 4월 이일섭은 1호선 남단 차량기지 유치선 옆 공터 약 1,200제곱미터를 밭으로 일구었다. 공방 노동자 가족 30가구가 밭일을 나누어 맡았다. 첫해 작물은 감자와 콩이었다.
-
-<a id="2121년-조재표-일행"></a>
-
-#### 조재표 일행
-
-<a id="ch45-i1"></a>
-
-##### 가. 입경
-
-2121년 2월 조재표가 경기 북부에서 서울로 들어왔다. 같은 해 조재표는 역과 회랑의 길 안내와 호위 계약을 맡기 시작하였다.
+탄천 쪽 대피소들과 교섭하던 자리에서 지연희가 고예진 곁에 섰다. 그 뒤로 지연희는 고예진의 곁을 떠나지 않았다.
 
 <a id="2122년"></a>
 
-### 2122년 · 아크와 온민의
+## 2122년 무렵: 아크
 
-2122년 무렵 강남의 대피소들이 아크라는 이름으로 묶였다.
-
-<a id="2122년-중앙정보부"></a>
-
-#### 중앙정보부
-
-<a id="ch34-i3"></a>
-
-##### 가. 서기직 진출
-
-2122년 시험에 합격한 기술자 6명이 수문국 계약 회의와 규격맹 평의회의 서기로 임명되었다. 서기는 회의록과 표결 기록을 작성하였다.
-
-<a id="2122년-안국역"></a>
-
-#### 안국역
-
-<a id="ch36-i4"></a>
-
-##### 가. 백온
-
-2122년 안국역 필사자들은 백온을 책임자로 세웠다. 2123년 북한산 보국문 방면 피난 행렬이 안국으로 내려왔다.
-
-<a id="2122년-환적국"></a>
-
-#### 환적국
-
-<a id="ch39-i2"></a>
-
-##### 가. 박태겸 역장
-
-2122년 환적국 선로 가문의 가장이 사망하였다. 장자 박태겸이 역장직을 이었다.
-
-<a id="2122년-대한민국정부"></a>
-
-#### 정부
-
-<a id="ch41-i1"></a>
-
-##### 가. 결성
-
-2122년 5월 정부 당직 가문의 젊은 기록 당직자 19명이 청사 지하 회의실에서 모임을 열었다. 모임을 소집한 사람은 김연규였다. 모임의 이름은 온민의(穩民議)였다.
-
-<a id="ch41-i2"></a>
-
-##### 나. 선언
-
-2122년 6월 온민의는 ''서울 1통과 온전한 대한민국''이라는 제목의 문서를 청사 게시판에 붙였다. 문서에는 서울의 여러 세력과 그 안에 남은 전신국과 산하 가문, 13개 거점을 정부의 긴급명령 아래 다시 묶어야 한다고 적혔다. 서명자는 김연규를 포함한 19명이었다.
-
-<a id="ch41-i3"></a>
-
-##### 다. 장부 등재
-
-2122년 7월 대통령 윤서린은 온민의의 문서를 인준 없이 기록청 장부에 등재하도록 지시하였다.
-
-<a id="ch41-i5"></a>
-
-##### 라. 청사 경비대
-
-2122년 8월 온민의는 청사 경비대를 수문국 경계로 보내자는 안을 대통령 윤서린에게 제출하였다. 경비대 당직 가문들은 광화문·종로·중구 소집부를 제출하였다. 윤서린은 경비대 이동안에 서명하지 않았다.
-
-<a id="2122년-xt05-여의도-회관"></a>
-
-#### 여의도 회관
-
-<a id="xt05-2122"></a>
-
-##### 잔여 대역 추첨
-
-<a id="2123년"></a>
-
-### 2123년 · 재복종 요구와 철회
-
-<a id="2123년-아관사"></a>
-
-#### 아관사
-
-<a id="ch33-i3"></a>
-
-##### 가. 철수
-
-2123년 2월 동방사 병력이 철수하였다.
-
-<a id="2123년-동방사"></a>
-
-#### 동방사
-
-<a id="ch36-i3"></a>
-
-##### 가. 상자 반송
-
-2123년 동방사는 펌프 부품 상자와 함께 복구복무자 명부를 보냈다. 강민서는 상자를 봉인하여 돌려보냈다. 배우진은 등록 명부를 동방사 병조 문서함에 넣었다.
-
-<a id="2123년-여의도출자연합회"></a>
-
-#### 여의도출자연합회
-
-<a id="ch38-i3"></a>
-
-##### 가. 속보 중단
-
-2123년 북한산 보국문 방면 피난 행렬이 내려오기 전날 최지우는 연합회 채널의 속보 송출을 중단시켰다. 이후 채널로 송출된 것은 피난민 명부뿐이었다.
-
-<a id="2123년-대한민국정부"></a>
-
-#### 정부
-
-<a id="ch41-i6"></a>
-
-##### 가. 기록청장
-
-2123년 1월 당직 가문 두 무리가 서로 다른 기록청장 후보의 추천서를 대통령 윤서린에게 냈다. 윤서린은 3개월 동안 기록청장 인준서에 도장을 찍지 않았다.
-
-<a id="ch41-i7"></a>
-
-##### 나. 인지세
-
-2123년 4월 당직 가문 세 무리가 종로·중구 인지세 수입의 배분안을 각각 대통령 윤서린에게 제출하였다. 윤서린은 인지세 장부를 경비대·기록청·배급 창구로 나누어 보관하도록 정하였다.
-
-<a id="ch41-i8"></a>
-
-##### 다. 재복종 요구
-
-2123년 6월 온민의는 수문국에 긴급명령 재복종서를 내라고 요구하였다. 수문국은 동의서에 서명하지 않았다. 환적국·신내운수·규격맹·흰십자단은 기록청에 승계와 조약을 기재하는 일을 보류하였다. 동방사와 아관사는 승계와 조약을 기록청에 계속 등록하였다. 윤서린은 재복종 요구문을 철회하였다.
-
-<a id="2123년-제1분공방"></a>
-
-#### 제1분공방
-
-<a id="ch42-i3"></a>
-
-##### 가. 재고 재집계
-
-2123년 10월 이일섭은 겨울 배급안을 올리기 전에 분공방 창고의 곡물 재고를 세 차례 다시 세었다. 세 번째 집계는 첫 집계보다 11포대 적었다. 배급안은 세 번째 집계를 따랐다.
-
-<a id="ch42-i4"></a>
-
-##### 나. 종자 대금
-
-2123년 11월 이일섭은 가문의 후계로 구로의 이사회에 처음 출석하였다. 이일섭은 제1분공방 부품 대금의 일부를 증서 대신 종자로 받자고 제안하였다. 강민서는 대금의 5분의 1을 종자로 지급하는 안을 받아들였다. 규격맹이 지급한 종자는 정부와 거래해 받은 분양 종자였다.
-
-<a id="2123년-조재표-일행"></a>
-
-#### 조재표 일행
-
-<a id="ch45-i2"></a>
-
-##### 가. 이연 합류
-
-2123년 5월 이연이 조재표 일행에 수행 전령으로 합류하였다. 이연은 정찰·호위 결과 보고서에 자기 이름으로 서명하였다.
-
-<a id="2123년-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
-<a id="ch47-i2"></a>
-
-##### 가. 세 계약
-
-2123년 수문국, 규격맹, 환적국이 서로 다른 급수·부품·통행 계약을 같은 주에 약국들에 보냈다. 정유라는 세 계약서의 종료조건만 한 문서로 옮겼다. 정유라가 옮겨 적은 문서는 약국 회의의 기본 문서가 되었다.
-
-<a id="2124년"></a>
-
-### 2124년 · 멈춘 열차와 맞지 않는 명부
-
-<a id="2124년-환적국"></a>
-
-#### 환적국
-
-<a id="ch39-i3"></a>
-
-##### 가. 가문 회의
-
-2124년 임하준의 펌프 열차가 용산 창고에서 멈추었다. 박태겸은 호송 편성을 짜기에 앞서 용산 배차표를 공개하였다. 이어 환적국에 딸린 가문들을 불러 회의를 열었다.
-
-<a id="ch39-i4"></a>
-
-##### 나. 능선 통행 허가제
-
-2124년 아관사에서 관문을 맡은 고서준은 아차산 능선 통행을 허가제로 바꾸었다. 이후 능선을 넘는 사람과 짐은 허가를 받아야 했다.
-
-<a id="2124년-흰십자단"></a>
-
-#### 흰십자단
-
-<a id="ch40-i4"></a>
-
-##### 가. 가짜 약
-
-2124년 가짜 약 상자가 서울역 경매에 올랐다. 류은비는 그 경매의 거래를 모두 끊었다. 같은 날 마곡생명가에서 생명안전 연구를 맡은 정호준은 양재 서고에 들어온 가짜 약 표본의 봉인을 열었다.
-
-<a id="ch40-i5"></a>
-
-##### 나. 비상배급
-
-<a id="2124년-기록청"></a>
-
-#### 기록청
-
-<a id="ch41-i4"></a>
-
-##### 가. 경기도 명부 대조
-
-2124년 3월 김연규는 경기도(고양)의 옛 병역 명부를 청사 기록청 명부와 대조하자고 제안하였다. 대조 결과 명부 2,900여 명 가운데 청사 명부와 일치하는 이름은 1,100여 명이었다.
-
-<a id="2124년-제1분공방"></a>
-
-#### 제1분공방
-
-<a id="ch42-i6"></a>
-
-##### 가. 수확
-
-2124년 가을 밭 수확물은 분배표에 따라 제1분공방 주민 480명에게 나뉘었다. 2125년 3월 밭은 약 3,000제곱미터로 넓어졌다.
-
-<a id="ch42-i5"></a>
-
-##### 나. 가뭄
-
-2124년 7월 가뭄으로 분공방 용수가 줄었다. 가문 어른들은 밭에 대던 물을 공방 냉각수로 돌리자고 하였다. 이일섭은 밭 급수를 줄이는 문서에 날인하지 않았다. 그 대신 공방 가동 시간이 하루 2시간 줄었다.
-
-<a id="2124년-귀환망"></a>
-
-#### 귀환망
-
-<a id="ch43-i4"></a>
-
-##### 가. 확장
-
-2124년 귀환망은 강남구청에서 선정릉과 수서까지 생활권 12곳을 이었다.
-
-<a id="2124년-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
-<a id="ch47-i3"></a>
-
-##### 가. 가입
-
-2124년 태욱중공업 성남사업장과 규격맹 제2분공방의 노동자들이 시청역 노동자들과 뜻을 함께하였다.
-
-<a id="peninsula-2124-dokdo-report"></a>
-<a id="event-peninsula-2124-dokdo-report"></a>
-
-#### 서울 · 섬에서 온 소식
-
-2124년 동해안에서 건너온 선원은 독도에 아직 살아 있는 초소가 있으며, 옛 선주에게 돌아가지 않은 선원들도 그곳의 일을 돕는다고 전하였다. 이 말을 들은 서울의 상인과 연락 당직자는 그 무리의 위치와 신원을 곧바로 공개하지 않고 다른 귀환자의 소식을 기다렸다.
-
-<a id="2125년"></a>
-
-### 2125년 · 봉인과 명부
-
-<a id="2125년-중앙정보부"></a>
-
-#### 중앙정보부
-
-<a id="ch34-i4"></a>
-
-##### 가. 첫 이견
-
-2125년 9월 안국역 필사자들은 보존원의 필사본 점검 결과에 대한 이견을 처음으로 기록하였다. 이견은 필사본 14권의 영어 명령어가 점검 후 달라졌다는 내용이었다.
-
-<a id="2125년-수문국"></a>
-
-#### 수문국
-
-<a id="ch35-i3"></a>
-
-##### 가. 탁도 초과
-
-2125년 가을 서부 관로의 탁도가 기준을 넘었다. 정수 감독 박누리는 서부 관로 밸브를 잠갔다. 한재목은 공급 재개 문서의 서명을 보류하였다. 이서담은 이 보류를 근거로 양천의 거부권을 계약 회의에 청구하였다.
-
-<a id="2125년-ch37-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
-<a id="ch37-i2"></a>
-
-##### 가. 실종
-
-2125년 겨울 임하준이 실종되었다. 실종 전날 밤 임하준은 펌프 세정 공정의 사본 함을 봉인하였다. 봉인함의 열쇠는 임하준의 유언 3장과 함께 접수되었다. 뚝섬열원가 임시 관리는 박누리가 맡았다.
-
-<a id="ch37-i3"></a>
-
-##### 나. 봉인 확인
-
-다음 교대 때 임하준의 양자 임초원이 원본 함의 봉인을 확인하였다. 확인 사실은 유언 3장의 증인 칸에 기재되었다.
-
-<a id="ch37-i4"></a>
-
-##### 다. 인준 보류
-
-정부 대통령 윤서린은 유언의 인준을 보류하였다. 윤서린은 함의 봉인만 확인하였다.
-
-<a id="2125년-신내운수"></a>
-
-#### 신내운수
-
-<a id="ch39-i5"></a>
-
-##### 가. 배차표 계절 교대
-
-2125년 약국 회의 호송을 앞두고 장세화는 일반 열차와 의료열차의 운행 시간을 시기별로 나눠 배차표에 적었다.
-
-<a id="2125년-제1분공방"></a>
-
-#### 제1분공방
-
-<a id="ch42-i7"></a>
-
-##### 가. 파업 기간
-
-2125년 가을 제2분공방이 성남사업장과 함께 작업을 중단하였다. 제1분공방은 작업을 계속하였다. 이 기간 제1분공방이 부품 대가로 받은 분양 종자 40포대는 차량기지 밭으로 보내졌다. 이 종자는 규격맹이 정부와 거래해 받은 것이었다.
-
-<a id="2125년-수서-차량기지"></a>
-
-#### 수서 차량기지
-
-<a id="ch44-i2"></a>
-
-##### 가. 용산 환적 계약
-
-2125년 3월 용산 환적 계약 입찰에 상단 3곳이 참가하였다. 계약은 그 가운데 1곳에 돌아갔다. 환적국 역장 박태겸이 계약서에 서명하였다.
-
-<a id="2125년-조재표-일행"></a>
-
-#### 조재표 일행
-
-<a id="ch45-i3"></a>
-
-##### 가. 세 곳의 요청
-
-2125년 겨울 세 조직이 같은 통행로의 호위를 조재표 일행에 동시에 요청하였다.
-
-<a id="2125년-ch47-시청역-노동자들"></a>
-
-#### 시청역 노동자들
-
-<a id="ch47-i4"></a>
-
-##### 가. 재선과 파업
-
-2125년 봄 위원장 직선 투표에서 정유라가 다시 뽑혔다. 성남사업장 노동자 표가 과반을 차지하였다. 같은 해 가을 성남사업장과 제2분공방이 10일간 작업을 중단하였다. 정서온은 파업 9일째에 성남사업장을 방문하였다.
-
-<a id="ch47-i5"></a>
-
-##### 나. 강약 장부
-
-<a id="ch47-i6"></a>
-
-##### 다. 도심 경비
-
-2125년 12월 수문국·규격맹·환적국·동방사·태욱그룹은 각 조직의 병력과 휘하 병력의 소집 문서를 기록청에 제출하였다. 청사 경비대는 광화문·종로3가·을지로입구역의 교대 경비를 유지하였다.
-
-<a id="2125년-xt01-광화문-정부서울청사"></a>
-
-#### 광화문 정부서울청사
-
-<a id="xt01-2125"></a>
-
-##### 경기도 명부 대조 후속
-
-2125년 12월 정부 광화문 당직은 경기도 병역 명부의 2,900여 명 가운데 청사 명부와 일치하지 않은 1,800여 명의 이름을 별도 대조함에 옮겼다. 안국역 필사자들은 그 대조함에서 임진 제방 귀환 명부의 재발급 신청과 겹치는 이름을 확인하였다. 신내운수는 확인을 기다리는 신청자의 환승 순번을 적었다. 아관사는 관문 인계 기록의 봉인을 확인하였다. 성하그룹은 의약품 호송 칸을 유지하였다.
-
-<a id="peninsula-2125-dokdo-confirmation"></a>
-<a id="event-peninsula-2125-dokdo-confirmation"></a>
-
-#### 서울 · 독도 사람의 실재 확인
-
-2125년 서로 다른 경로로 돌아온 이들이 초소에서 받은 물건과 접안 기록에 남은 같은 손상을 짚었다. 서울의 소수 연락 관계자는 독도의 집단이 실제로 존재한다고 판단하였으나 각 선원의 소속과 귀환 의사는 따로 확인하였다. 연락 관계자들은 항로와 이름을 널리 알리지 않고 당사자에게 편지를 전할 사람을 구하였다.
+강남 대피소들이 아크라는 이름 하나로 묶였다.
 
 <a id="2126년"></a>
 
-### 2126년 · 지금
+## 2126년 겨울: 현재
 
-<a id="ch37-i5"></a>
-
-#### 가. 오경재의 인준
-
-2126년 오경재가 인준을 거쳐 임하준의 일을 이어받았다. 오경재는 유언 3장을 회의실에 공개하였고 한재목의 서부 확대안은 인준하지 않았다. 대신 펌프 정비 공정의 원본 함을 수문국과 공동 봉인하는 데 합의하였다.
-
-2126년 겨울이 지금이다. 정부 대통령은 김연규, 자유도시 이사회장은 이일섭, 아크 교주는 고예진이다. 대통령직이 윤서린에게서 김연규에게 넘어간 경위는 미정이다. 수서에는 두 달 동안 청담과 삼성 쪽 거점에서 세례를 받은 개종자 일곱 명이 사라졌다는 보고가 올라왔다. 수서 통신실은 선정릉과 수서 사이를 오가는 옛 군용 주파수에서 ''백야''라는 호출부호를 잡았다.
+이야기가 시작되는 때다. 정부의 대통령은 김연규, 자유도시의 이사회장은 이일섭, 아크의 교주는 고예진이다. 겨울은 아직 끝나지 않았다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Chaebol-Houses-and-Century-Factions', 'Families and the Three Factions', '가문과 세 세력', 'factions', 0, '<a id="재벌-가문과-세기-파벌"></a>
 
@@ -5050,7 +1194,7 @@ Seoul had trade tools, police equipment, and military equipment in 2026. After t
 
 A. Chronology and equipment
 
-In the Great Blackout, around 2026, Yeongdeungpo waterworks staff operated valves manually after remote control failed. The generation of 2126 repairs and uses tools and equipment inherited from that time.
+In the Great Blackout, around 2026, equipment that lost remote control was run by hand. The generation of 2126 repairs and uses tools and equipment inherited from that time.
 
 B. Firearms regulation and remnants
 
@@ -5073,13 +1217,13 @@ A. Equipment and the surviving records
 | Squad support weapon | Suppression, convoy cover | ROK squad weapons | Power scale. Not personal starting gear | Heavy ammunition consumption. Repair tools, cooling, barrels were stronghold maintenance | Government officer-led units. In the Free City, conscripts maintain the Capital Defense Command remnant gear at Guro and only hold strongholds. No orphans or drifters | 2026 service models and deployment are not in the records |
 | Regulation staff · patrol shield · police personal protection | Suppression, protection, station guard | Police, autonomous guards, station security | Former patrol default. Shared by station guards | Shield and clothing repair. No ammunition | Former patrol preset. Stationmaster stronghold guard | The original police regulations do not survive |
 | Crowbar · axe · cutter | Opening, dismantling, close-in | Civil engineering, rail, facility management, civilian tools | Trade layer. Worksites and depots | Blades dull; no hydraulic oil (manual tools) | Drifter, explorer, maintenance hand | Specific brand names are not in the records |
-| Hydraulic rescue equipment | Debris spreading, door and hull opening | Fire, rescue, rail recovery | Stronghold workshops, maintenance hands. Not personal carry | Hydraulic oil, power, hoses. Without power, dead weight | Stationmaster strongholds, overlapping The Gauge''s conscript maintenance crews | Fire-equipment issue lists do not survive |
+| Hydraulic rescue equipment | Debris spreading, door and hull opening | Fire, rescue, rail recovery | Stronghold workshops, maintenance hands. Not personal carry | Hydraulic oil, power, hoses. Without power, dead weight | Stationmaster strongholds, overlapping conscript maintenance crews | Fire-equipment issue lists do not survive |
 | Lamps · radios | Watch, contact | Facility, police, civilian radios | Trade and police layers. Batteries the bottleneck | Batteries, charging. Consumer batteries age | Courier, explorer, patrol | Consumer lanterns and radios exist as civilian goods. Military encrypted-radio remnants are not in the records |
 | Gas detection · breathing protection · emergency kit · portable power | Conduit survival, injury, short-term power | Industrial safety, fire, medical, facilities | Medical officer, explorer, stronghold | Filters, medicine, batteries consumed. Charging ≠ generation | Medical officer red-cloth silhouette. No orphans | Industrial-safety generalities. 2026 station-staff issue lists are not in the records |
 | Stab / ballistic / work personal protection | Protection against stabbing-cutting / defined ballistic threat / per-task hazards | Police, military, security, industrial sites | Use and grade distinguished. Work clothes and riot shields not treated as ballistic gear | Damage, aging, replacement parts, proper wearing conditions checked | Protection is matched to the role; affiliation alone does not decide its performance | Specific test grades, service models, and 2026 issue ranges are not in the records |
 | Bow (conditional) | Low-noise projectile. Not the basic arm | Recreational and gungdo clubs. Not military issue | Could exist. **Not forbidden**. Not the default ranged arm either | Arrow crafting mentioned only within trade-tool scope. No manufacture recipe | Specific persons or livelihoods are the condition | The civilian bow regulation range is not in the records |
 | Crossbow (conditional) | Mechanical projectile | A permit item under the Firearms and Swords Act | Rare. Permit remnants or smuggling as narrative conditions | Bolts and strings. Possibly a ledger separate from the firearms ledger | No drifter start. Not the basic arm | [Firearms and Swords Act](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) includes crossbows. Viewed 2026-09-12 |
-| Sensor · inspection bot · actuator · power salvage | Detection, opening and closing, short-term power. Conditionally equipment, traps, weapons | Disaster and facility inspection records | Modules after sealed-gallery dismantling or stopping | Charging, aging, supply source. Not permanent batteries. Protocol cards are not universal control. Only cards signed by Arc software open higher functions; others reach only basic on-and-off functions | Explorer, records keeper, operating-house recovery squads | Concept: [Lost Technology](/wiki/Lost-Technology-Lineage/). Actual 2026 deployment is not in the records |
+| Sensor · inspection bot · actuator · power salvage | Detection, opening and closing, short-term power. Conditionally equipment, traps, weapons | Disaster and facility inspection records | Modules after sealed-gallery dismantling or stopping | Charging, aging, supply source. Not permanent batteries. Protocol cards are not universal control. Only cards signed by Arc software open higher functions; others reach only basic on-and-off functions | Explorer, records keeper, recovery squads under stationmasters | Concept: [Lost Technology](/wiki/Lost-Technology-Lineage/). Actual 2026 deployment is not in the records |
 | Vehicles · generators (power scale) | Movement, stronghold power | Rail, city buses, facility emergency generators, military vehicles | Only when a living sphere ran them. Not a personal-preset default | Fuel, lubricant, tires, batteries. Generator ≠ energy-storage module | Stationmasters, Government officer corps (engineers, rail cavalry). The Free City maintains Capital Defense Command vehicles but commands them poorly. The Arc has none. No drifters | Vehicle remnant scale and counts are not in the records |
 | Heavy weapons (power scale) | Barrier-gate and stronghold defense | ROK support weapons, vehicle-mounted | Remnants above squad scale, facility defense. No personal-carry start | Ammunition, weight, maintenance. Supply was the object of command disputes | Operated by the Government officer corps. The Free City''s conscripts maintain the Capital Defense Command gear left on its ground but command it poorly in battle. The Arc holds only rifles for minimal self-defense. Advanced functions such as fire control run fully only with Arc software | 2026 service lists and counts are not in the records |
 | Tanks · tracked armored vehicles (power scale) | Breakthrough, stronghold defense, fire support | ROK armor, Capital Defense Command | Maintained tanks stand in Government depots. Capital Defense Command vehicles also remain on Free City ground such as Namtaeryeong (Gwanak). No personal start | Fuel, tracks, ammunition, maintenance. Fire control runs fully only with Arc-signed software; without it, manual functions only | Battle command by the Government officer corps only. The Free City maintains them with limited command. The Arc has none | 2026 service models and counts are not in the records |
@@ -5110,7 +1254,7 @@ The AI is not a common enemy of the three factions. A roaming machine is a hazar
 
 A. Scope of the reviewed sources
 
-In 2026, permit rules for firearms and crossbows, military equipment, and railway and facility tools existed. Waterworks staff operated valves manually immediately after the Great Blackout.
+In 2026, permit rules for firearms and crossbows, military equipment, and railway and facility tools existed. Facility staff ran equipment by hand immediately after the Great Blackout.
 
 - Firearms and Swords Act, Article 1: it governed the manufacture, sale, lease, transport, possession, and use of guns, swords, explosives, spray devices, electroshock weapons, and crossbows. This was not a country where civilians carried guns as daily routine. Effective dates and clause detail followed the statute''s original text. ([Korea Law Service Center](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), viewed 2026-09-12; earlier capture `.omo/ulw-research/20260911-200129/browse/01-law-go-kr-firearms-swords.png`)
 - Public material introduces the K2 as the ROK Armed Forces'' service rifle. Post-collapse possession through military remnants or market inflow differs from case to case. Who holds how many in 2026 was not what this source said. ([English Wikipedia, Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), viewed 2026-09-12)
@@ -5135,7 +1279,7 @@ In 2026, permit rules for firearms and crossbows, military equipment, and railwa
 
 가. 연대와 장비
 
-대정전(약 2026년) 때 영등포아리수정수센터의 당직자들은 원격 제어가 끊긴 뒤 밸브를 수동으로 조작하였다. 2126년 세대는 당시의 공구와 설비를 수리하여 쓴다.
+대정전(약 2026년) 때 원격 제어가 끊긴 설비는 사람이 수동으로 돌렸다. 2126년 세대는 당시의 공구와 설비를 수리하여 쓴다.
 
 나. 총포 규제와 잔존
 
@@ -5158,13 +1302,13 @@ In 2026, permit rules for firearms and crossbows, military equipment, and railwa
 | 분대지원화기 | 제압·호송 엄호 | 국군 분대 화기 | 세력 규모. 개인 시작 장비 아님 | 탄약 소모가 큼. 수리 공구·냉각·총열은 거점 정비 | 정부 장교단 부대. 자유도시는 구로의 수방사 잔존 장비를 징집병이 정비하고 거점만 지킨다. 고아·떠돌이 없음 | 2026 제식 모델·배치는 기록에 없다 |
 | 제식 봉·순찰 방패·치안 개인보호구 | 제압, 방호, 역 경비 | 경찰·자치 경비·역 보안 | 전직 순찰 기본. 역 경비 공유 | 방패·피복 수리. 탄약 없음 | 전직 순찰 프리셋. 역장 거점 경비 | 경찰 세칙 원문은 남아 있지 않다 |
 | 지렛대·도끼·절단기 | 개방, 해체, 근접 | 토목·철도·시설 관리·민간 공구 | 생업 층. 공사장·차량기지 | 날 무뎌짐, 유압유 없음(수공구) | 떠돌이·탐사원·정비사 | 특정 브랜드는 기록에 없다 |
-| 유압 구조 장비 | 잔해 전개, 문·차체 개방 | 소방·구조대·철도 구난 | 거점 공방, 정비사. 개인 휴대 아님 | 유압유·동력·호스. 동력 없으면 짐 | 역장 거점, 규격맹 징집 정비조와 겹침 | 소방 장비 제식 목록은 남아 있지 않다 |
+| 유압 구조 장비 | 잔해 전개, 문·차체 개방 | 소방·구조대·철도 구난 | 거점 공방, 정비사. 개인 휴대 아님 | 유압유·동력·호스. 동력 없으면 짐 | 역장 거점, 징집 정비조와 겹침 | 소방 장비 제식 목록은 남아 있지 않다 |
 | 램프·무전기 | 시계, 연락 | 시설·치안·민간 무전기 | 생업·치안. 전지가 병목 | 전지·충전. 상용 전지는 노화한다 | 전령·탐사원·순찰 | 상용 랜턴·무전기는 민간 존재. 군용 암호무전기 잔존은 기록에 없다 |
 | 가스탐지·호흡보호·응급키트·휴대전원 | 관로 생존, 부상, 단기 전력 | 산업안전·소방·의료·시설 | 의무원·탐사원·거점 | 필터·약·전지 소모. 충전 ≠ 발전 | 의무원 붉은 천 실루엣. 고아는 없음 | 산업안전 일반. 2026 역무 지급 목록은 기록에 없다 |
 | 방검 / 방탄 / 작업 개인보호구 | 각각 찌름·베임 / 정해진 탄도 위협 / 작업별 위험에 대한 보호 | 치안·군·경호·산업 현장 | 용도와 등급을 구분. 작업복·진압방패를 방탄 장비로 취급하지 않음 | 손상·노화·교체 부품과 적합한 착용 조건 확인 | 역할에 맞는 보호구를 보호구는 역할에 맞게 갖추며 소속만으로 성능이 정해지지는 않는다 | 구체적 시험 등급·제식 모델·2026 지급 범위는 기록에 없다 |
 | 활 (조건부) | 저소음 투사. 기본 병과 아님 | 생활체육·국궁 동호. 군 제식 아님 | 있을 수 있다. **금지 아님**. 기본 원거리도 아님 | 화살 제작은 생업 공구 범위에서만 언급. 제조 레시피 없음 | 특정 인물·생업이 조건 | 민간 활 규제 범위는 기록에 없다 |
 | 석궁 (조건부) | 기계식 투사 | 총포화약법상 허가 대상 | 드묾. 허가 잔존·밀반입이 서사 조건 | 볼트·줄. 총포 장부와 별 장부일 수 있음 | 떠돌이 시작 없음. 기본 병과 아님 | [총포화약법](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) 석궁 포함. 열람 2026-09-12 |
-| 센서·검사봇·액추에이터·전원 회수 | 탐지, 개폐, 단기 동력. 조건부로 장비·함정·무기 | 방재·시설 검사 분야 | 봉인 갤러리 해체·정지 후 모듈 | 충전·노화·공급원. 영구 전지 아님. 프로토콜 카드는 만능 제어가 아님. 아크 소프트웨어가 서명한 카드만 상위 기능을 열고, 다른 카드는 켜고 끄는 기초 기능까지만 된다 | 탐사원·기록관·운영가문 회수 반 | 개념은 [잃어버린 기술](/wiki/Lost-Technology-Lineage/) 참조. 2026년 실제 배치는 기록에 없다 |
+| 센서·검사봇·액추에이터·전원 회수 | 탐지, 개폐, 단기 동력. 조건부로 장비·함정·무기 | 방재·시설 검사 분야 | 봉인 갤러리 해체·정지 후 모듈 | 충전·노화·공급원. 영구 전지 아님. 프로토콜 카드는 만능 제어가 아님. 아크 소프트웨어가 서명한 카드만 상위 기능을 열고, 다른 카드는 켜고 끄는 기초 기능까지만 된다 | 탐사원·기록관·역장 휘하 회수 반 | 개념은 [잃어버린 기술](/wiki/Lost-Technology-Lineage/) 참조. 2026년 실제 배치는 기록에 없다 |
 | 차량·발전기 (세력 규모) | 이동, 거점 전력 | 철도·시내버스·시설 비상발전기·군 차량 | 생활권이 굴릴 때만. 개인 프리셋 기본 아님 | 연료·윤활·타이어·배터리. 발전기 ≠ 축전 모듈 | 역장·정부 장교단(공병·궤도). 자유도시는 수방사 차량을 정비하지만 지휘가 약하다. 아크는 없다. 떠돌이 없음 | 차량 잔존 규모와 수량은 기록에 없다 |
 | 중화기 (세력 규모) | 차단문·거점 방어 | 국군 지원화기·차량 탑재 | 분대 이상 잔존, 시설 방어. 개인 휴대 시작 없음 | 탄약·무거움·정비. 보급이 지휘권 분쟁의 대상 | 정부 장교단이 운용한다. 자유도시는 땅에 남은 수방사 장비를 징집병이 정비하지만 전투 지휘가 약하다. 아크는 최소 자위용 소총만 가진다. 사격 통제 같은 첨단 기능은 아크 소프트웨어가 있어야 완전히 돈다 | 2026 제식 목록·수량은 기록에 없다 |
 | 전차·궤도 장갑차 (세력 규모) | 돌파, 거점 방어, 화력 지원 | 국군 기갑·수도방위사령부 | 정부 차고에 정비된 전차가 있다. 남태령(관악) 등 자유도시 땅에도 수방사 차량이 남았다. 개인 휴대 시작 없음 | 연료·궤도·탄·정비. 사격 통제는 아크가 서명한 소프트웨어가 있어야 완전히 돈다. 없으면 수동 기능만 | 전투 지휘는 정부 장교단만. 자유도시는 정비만 하고 지휘가 제한된다. 아크는 갖지 않는다 | 2026 제식 모델·수량은 기록에 없다 |
@@ -5195,7 +1339,7 @@ AI는 세 세력의 공동의 적이 아니다. 떠도는 기계는 셔터 밖 �
 
 가. 자료의 열람 범위
 
-2026년에는 총포·석궁 허가 제도와 군 장비, 철도·시설 공구가 있었다. 정수센터 당직자들은 대정전 직후 밸브를 수동으로 조작하였다.
+2026년에는 총포·석궁 허가 제도와 군 장비, 철도·시설 공구가 있었다. 설비 당직자들은 대정전 직후 설비를 수동으로 조작하였다.
 
 - 총포화약법 제1조: 총포·도검·화약류·분사기·전자충격기·석궁의 제조·판매·임대·운반·소지·사용을 정한다. 민간이 총을 일상으로 드는 나라는 아니다. 시행일·조문 세부는 법령 원문을 따른다. ([국가법령정보센터](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98), 열람 2026-09-12; 이전 캡처 `.omo/ulw-research/20260911-200129/browse/01-law-go-kr-firearms-swords.png`)
 - K2는 대한민국 국군 제식 돌격소총으로 소개되는 공개 자료가 있다. 붕괴 후 군 잔존에서 보유하거나 시장에 유입되는 경로는 문서마다 갈린다. 2026년 「지금 누구에게 몇 정이 지급되는가」는 이 출처가 말하지 않는다. ([영문 위키, Daewoo K2](https://en.wikipedia.org/wiki/Daewoo_Precision_Industries_K2), 열람 2026-09-12)
@@ -5213,1074 +1357,106 @@ AI는 세 세력의 공동의 적이 아니다. 떠도는 기계는 셔터 밖 �
 - [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)
 - [세 세력의 비용 구조](/wiki/Cost-Structure/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('External-Theaters', 'Outside', '바깥', 'places', 1, '<a id="External-Theaters-heading-0001"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('External-Theaters', 'Outside Seoul', '서울 밖', 'places', 1, '<a id="External-Theaters-heading-0001"></a>
 
-Outside Seoul is the land where the war machines of the Great Blackout still roam, carrying out their last orders. This page records the duty watches and handovers of goods that ran from Seoul out to the corridors beyond it.
+Outside Seoul is the land where the war machines of the Great Blackout still roam, following their last orders. People in Seoul know almost nothing about it. This page records only the outside as it looks from Seoul.
 
 <a id="External-Theaters-heading-0003"></a>
 
-## XT01 · Imjin River Gate Theater
+## The Machine Blockade Line
 
-- Anguk, Gwanghwamun, Sinnae, and Guui jointly ran the gate quarantine and the repatriation registers along the Imjin River Gate corridor.
+A band of patrolling outside machines surrounds Seoul. People call it the blockade line. Nobody drew it. The people who built the machines are gone, and military and civilian autonomous machines (watchtowers, track inspection cars, drone swarms, heavy equipment, logistics and inspection robots) keep walking the same routes.
 
-At the temporary quarantine post below the Imjin levee, an Anguk Order guide held the return roll up to a flashlight beam. In northern Korea, communities around Kaesong and Hwanghae entrust family letters and replies to southbound columns from 2036. Some leave and others remain; part of this traffic later reaches the Imjin return window. In 2048 residents around Pyongyang repair ferries and parts of bridges over the Taedong to keep markets reachable. Each crossing asks a different price, and one agreement guarantees no safety at the next. This civilian history does not settle the survival of a central government or its military power throughout northern Korea.
+- The machines treat light and heat above ground as something wrong and come toward it. The farther out you go, the more you have to hide your fires ("if they see it, they come").
+- They''re weak in the cold and wake on long days or to human warmth. They''re quiet on winter nights and move more as the days lengthen.
+- Nobody can make new ones, so their numbers only fall. They haven''t fallen far enough for anyone from Seoul to break through.
+- The Arc can switch some of them on and off. A captured machine becomes parts or a unit type. How far that reaches isn''t in the public record.
 
-The Seongha Group convoy wet its wheels on the muddy road outside the gate, and the Sinnae transfer window opened only the family queue first. In Gangwon, after columns vanish during the winter of 2032, guides and mountain residents place food and ropes on both sides of passes and agree when to withdraw. River posts and mountain routes support different communities. The Sluice’s 2097 contracts in Yangpyeong and Chuncheon and the rejection of the city-name petition in 2099 stand, but Chuncheon traders and boat crews keep using their city’s name in the market. The contractual title Second Sluice grants neither rule over all Gangwon nor control of residents’ daily language.
-
-A Republic of Korea Government jusa clerk from Gwanghwamun traced the ink bleed on a forged kinship certificate, and the Achasan gateway post split the seal key into two pieces.
-
-Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt01-임진-제방-임시-검역소) · [2104 record](/wiki/Century-Annals/#2104년-xt01-임진-제방-임시-검역소) · [2125 record](/wiki/Century-Annals/#2125년-xt01-광화문-정부서울청사)
+The AI isn''t Seoul''s common enemy. The outside machines aren''t an army the AI sent. They''re what''s left of orders given before the Great Blackout. All hostile groups are listed in the [Hostile Ecology Index](/wiki/Hostile-Ecology-Index/).
 
 <a id="External-Theaters-heading-0009"></a>
 
-### Seoul-side route
+## Cut-Off News
 
-- Verified geography: the Imjin-Han confluence and the northern transfer and refugee corridor.
-- Staging nodes: the roll cross-check window of Anguk and Gwanghwamun → Sinnae''s neutral transfer window → Guui''s double-seal window → the temporary quarantine post beneath the Imjin levee
-- Outbound boundary: Family journeys in Kaesong and Hwanghae and ferry life around Pyongyang are history beyond the records of Seoul. Detailed waypoints, crossing procedures, and travel times beyond the Imjin quarantine post remain unrecorded.
-- Travel time: Not recorded. Movement cost and openness were judged by water level, quarantine waits, passage rights, and the state of the refugee columns.
+Communications went dead in the 2030s. Since then the blockade line has closed the roads, and Seoul doesn''t know who lives outside. The outside probably doesn''t know Seoul either.
+
+- There''s no record of whether other cities or countries survive. The wiki doesn''t describe outside governments, armies, or populations.
+- Now and then a rumor says someone came from outside. None has been confirmed, and a rumor alone settles nothing about the outside.
+- None of the three factions has diplomacy or trade with the outside. Relations among the Government, the Free Cities, and the Arc are in the [World Relation Ledger](/wiki/World-Relation-Ledger/).
 
 <a id="External-Theaters-heading-0011"></a>
 
-### Travel and seasons
+## Roads In and Out
 
-- Seasonal conditions: In the rainy season the flood level and the state of levee access changed whether the sluice stairs and the quarantine post stood open. / In the dry season and in winter, the ecological pressure that followed food traces could overlap the passage along the northwestern edge. / On days when the bird migration overlapped, the low-noise window and the slow-speed window of the bridge and depot lead tracks were adjusted together.
-- Suspension conditions: when the cross-check of the roll''s original and its copies was unfinished / when custody of the two halves of the sealing key was unconfirmed / when the water-level warning and the evacuation leftovers occupied the same stairs
-- Recording rule: Closure was recorded not as deletion of the passage but as a state change carrying cause and reopening conditions.
+Routes in and out of Seoul still follow the Han River, the railways, and the big roads. A road that''s still there isn''t a road you can walk.
+
+- **Light and heat.** Anyone heading out can''t light a fire. Engine heat draws machines too, so loads go on people''s backs and they move at night.
+- **Patrol timing.** The machines run the same route in the same order. People who know the gaps become guides. Misread a gap and you don''t come back.
+- **Winter.** The artificial winter is harsher outside. There''s no station to rest in and no shutter. Light a fire to stay warm and the machines come.
+- **People.** People without a station, deserters, and people cut loose from a faction live on Seoul''s edge. They kidnap travelers, take their loads, and demand ransom.
+- **Ancient weapons.** Weapons from the Great Blackout turn up on Seoul''s edge from time to time. When one wakes it becomes a raid, and the software that wakes them belongs to the Arc.
 
 <a id="External-Theaters-heading-0013"></a>
 
-### Supply and checkpoints
+## The Outside as Seen from Seoul
 
-- Goods · nighttime detour boxes of grain and medicine: The sealing ledger of goods was kept separate from the family register, and at every hand-off the seal state and receipt signature were left together.
-- Power · the northern emergency battery relay: Even when the escort ran late, custody of the capacitors and the quarantine judgment of persons were never gathered into one hand.
-- Records · the return-roll hashes and the family-reunion queue: Reissue records never replaced the original; damage facts, issuer, and collation grounds were left on separate lines.
-- Separation rule: Medicine and food boxes, repatriation registers, and sealing keys passed through different hand-off procedures. One suspicion or delay never became grounds for the automatic refusal of another item.
-- XT01-CP-ANKUK-GWANGHWAMUN · the Anguk and Gwanghwamun roll cross-check window: cross-check of originals and copies of the return rolls and kinship certificates, and the record of reissue / whether the roll was damaged, grounds for reissue, discrepancy between certificate and ledger
-- XT01-CP-SINNAE · the Sinnae transfer window: splitting and joining of the family queue and the neutral convoys / the passage window, responsibility for receiving the convoy, need for medical priority
-- XT01-CP-GUI-IMJIN · the Guui seal window and the temporary Imjin quarantine post: dual custody of the sealing key and handover of the Seoul-side quarantine / the custody record of the two key halves, the state of the box seals, water-level safety of the passage window
+The outside is a closed door for all three factions. So it isn''t where stories start. It''s the gap that lets Seoul''s unrest in.
 
-<a id="External-Theaters-heading-0015"></a>
+- Machines and weapons found near the blockade line are prizes the factions fight over.
+- Above-ground sites close to the outside (greenhouses, maintenance sheds, surface entrances) are exposed first.
+- People who claim to have been outside are rare, and their word is recorded only with evidence.
 
-### Language and rumor
-
-- Record language: The Seoul-side ledgers were kept in Korean.
-- Interpreter rule: Interpretation was connected to Seoul''s existing interpretation corridor only when the party concerned requested it.
-- confirmed: Mutually independent registers or seal records collated, with responsible issuers and hand-off agents remaining.
-- withheld: Only a single escort record or damaged copy remained, needing re-collation.
-- hearsay: Only family contact or movement rumor existed, unconfirmed by register, seal, or receipt record.
-- Prohibited inference: From word-of-mouth alone, no outside polity''s policy, a traveler''s origin, kinship, or crimes were fixed.
-
-<a id="External-Theaters-heading-0017"></a>
-
-### Corridor operating organizations
-
-- Anguk Order: It kept the continuity of return-roll reissue and of the family tablets and queue. In its relations with northern and Gangwon refugee columns, it distinguishes affiliation, lodging, and relief. Temple relations center on preserving memorial tablets and registers; a visit alone does not establish affiliation. / leverage: Anguk''s custody of the rolls and its guide staff / red line: It did not fix a family relation on a damaged copy alone.
-- Seongha Group: It kept the handover of convoys and emergency batteries unbroken. It exchanges information and parts with repair workers in places such as Daejeon, without a nationwide communications monopoly or an obligation for Min Ung-gi to return. / leverage: preparation of the Gangnam convoy and the surviving cooling and computing keys / red line: It did not turn custody of the batteries into a power to judge the rolls.
-- Sinnae Transport: It kept the neutral transfer of the family queue and of the medical and goods convoys. It escorts contracted journeys as far as outside handoff posts, without running a scheduled train across the peninsula. / leverage: the Sinnae transfer slots and the emergency-convoy ledger / red line: It did not close the transfer window on one state''s order alone.
-- Republic of Korea Government: It screened the authenticity of kinship certificates and accreditation records by a public procedure. From the Gyeonggi post in Goyang it seeks recognition from outside envoys, but recognition does not entail obedience. / leverage: the Gwanghwamun seal and the grammar of record accreditation / red line: It did not judge a traveler an outside enemy on suspicion of forgery.
-- Achasan Gate: It spread the safety responsibility for the gate seal and the departure window. It prioritizes existing gate safety and passage and has no direct diplomatic relationship with Tsushima or Jeju. / leverage: the sealing procedure of the Guui sluices and the Achasan outposts / red line: It did not leave the sealing key in the sole custody of one person or one house.
-
-<a id="External-Theaters-heading-0019"></a>
-
-### Ecological pressure
-
-- G01: When the evacuation column''s food traces overlapped the flood level, the Wild Boar could occupy the sluice stairs. / response: The leftovers were diverted to a separate sealed collection, and the passage times were divided. / nonlethal constraint: A wholesale cull scattered the herd into the alleys, so it was kept only as a last resort.
-- G06: When the migratory birds'' movement along the northern wind path overlapped the sluice inspection, access to the bridges and the depot narrowed. / response: The roosts and perches of each functional flock and the low-noise inspection window were adjusted. / nonlethal constraint: The choice of drying the water surface to drive the flock out left an ecological and water-quality cost.
-- G16: A materials signal from the northern corridor could widen the working radius of the Girder Spider'' temporary bridges. / response: The stop grid and the exception layer were checked first, separating people''s dwellings from the materials signal. / nonlethal constraint: Instead of destroying the blueprint vault or the equipment, only the wrong layer port was sealed.
-
-<a id="External-Theaters-heading-0021"></a>
-
-### Opening 2126
-
-- Event: XT01-SC1
-- Trigger: The repatriation register of the Imjin temporary quarantine post was damaged, opening Anguk''s reissue demand and Gwanghwamun''s authenticity review at once.
-- Conflict: The demand to open the family line first collided with the demand to finish the register collation first.
-- First decision: Choose whether to pass only the medical escort through while holding the damaged register, or open the reissue procedure under observation and delay the family line.
-
-<a id="External-Theaters-heading-0023"></a>
-
-### Player entry
-
-- XT01-ENTRY-SINNAE-LEDGER · the Sinnae transfer window: a convoy assistant cross-checking the rolls against the receipt signatures / first decision: It decided which handover to confirm first, and did not put the family queue and the medicine boxes in the same window.
-- XT01-ENTRY-IMJIN-RECOVERY · the approach to the Imjin levee quarantine post: a field negotiator for collecting the evacuation leftovers and adjusting the passage window / first decision: It decided whether to split the convoy times or to open a separate collection route first, so as to avoid the ecological pressure on the sluice stairs.
-
-<a id="External-Theaters-heading-0025"></a>
-
-### What is not recorded
-
-- Family journeys in Kaesong and Hwanghae and ferry life around Pyongyang are history beyond the records of Seoul. Detailed waypoints, crossing procedures, and travel times beyond the Imjin quarantine post remain unrecorded.
-- Northern residents’ return, settlement, and trade and Seoul’s existing dependent posts are described, but a peninsula-wide northern regime history, military strength, and institutions or armed groups that appear in no record remain unrecorded.
-- Exact travel times and returnee numbers remain unrecorded. Records of different crossing prices at different posts establish no nationwide passage rules.
-- Outside languages and travelers’ origins are not established solely by Seoul-side registers and interpretation requests.
-
-<a id="External-Theaters-heading-0027"></a>
-
-### Scenario chains
-
-- XT01-SC1: At the Imjin temporary quarantine post the repatriation register is damaged and Jogyesa at Anguk demands reissue
-- XT01-SC2: After the Gangnam group''s escort stops outside the gate, Sinnae opens a detour transfer
-- XT01-SC3: The Gwanghwamun complex screens forged kinship certificates and the Achasan gate splits the sealing key
-
-<a id="External-Theaters-heading-0029"></a>
-
-## XT02 · West Sea Granary Theater
-
-- Yeongdeungpo, Guro, Yeouido, Yangjae, and Heukseok jointly inspected the estuary docks and frozen credit along the West Sea trade corridor.
-
-At the temporary wharf on the Han River estuary, the Sluice''s sluice watch matched the tide table to the drainage valves. From 2040 cultivators and coastal shipowners in Honam set shipments only after retaining seed grain for the next sowing. In 2087 some producers reject Seoul merchants’ demand for exclusive rights to the following year’s grain. Small seasonal consignments continue through repeated West Sea coastal handoffs, but Seoul’s higher prices cannot simply buy a village’s food and seed reserves.
-
-A Gauge director heard the noise of the freezer compressors and changed the parts order, and a Taeuk Group deputy manager set aside only the boxes whose seal hashes were broken. In Chungcheong, railway repair crews and residents around Daejeon cultivate land beside the tracks in 2034, choosing sowing and tool repairs over distant restoration during the farming season. The 2102 branch-workshop ties in Cheonan, Asan, and Siheung remain; Daejeon’s farming and repair communities are separate trading partners. Merchants seeking to restore railways and residents using rail metal for farm tools value the same material differently.
-
-A Central Intelligence Bureau inspector did not erase the cold-storage order for the south bank of the Han even when the power warning light came on. In 2126 Min Ung-gi remains in Daejeon, earning his living through farming and seeking peace. A story about sending repair parts or requesting his return opens only if contact succeeds and his reply reaches Seoul. Whether the reply arrives is not yet recorded. Sin Jong-mok formerly served in Eastern Command’s special recovery unit and practices bayonet combat. The return network’s twelve living areas around Gangnam-gu Office, Seonjeongneung, and Suseo, and the mobile civilian Return Synthesis relay, are neither a permanent nationwide communications network nor a new state.
-
-The Yeouido Investment Federation circulated only wharf-safety notices instead of price slogans.
-
-Chronicle records: [2079 record](/wiki/Century-Annals/#2079년-xt02-한강-하구-임시-부두) · [2114 record](/wiki/Century-Annals/#2114년-xt02-한강-하구-임시-부두)
-
-<a id="External-Theaters-heading-0036"></a>
-
-### Seoul-side route
-
-- Verified geography: the public market and plant positions of the West Sea coast, the Han estuary waterway, and the Gangseo-Yeongdeungpo belt.
-- Staging nodes: the Yeongdeungpo sluice and treatment watch → Guro''s compressor and standards cross-check window → Yeouido''s seal-hash ledger → the temporary wharf at the Han River estuary
-- Outbound boundary: Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded. Inside Seoul, only the Government holds original seed stock.
-- Travel time: Not recorded. Tide, drainage, power, freezing state, and passage rights set the cost and waiting of freight movement.
-
-<a id="External-Theaters-heading-0038"></a>
-
-### Travel and seasons
-
-- Seasonal conditions: The tide and the state of estuary drainage changed wharf access and the loading order. / When the sea wind overlapped the breeding season, the passage rules over the bridge and transmission inspection hatches were adjusted. / Instability in the cold-storage power demanded the order of verification and quarantine before the movement of cargo.
-- Suspension conditions: when the tide table and the drainage-valve record did not agree / when a cold box''s temperature record and its seal hash disagreed / when the split custody of the stevedore crane control keys had collapsed
-- Recording rule: Links blocked by tide or power were not erased from the map; they remained as sections carrying danger, control, and repair conditions.
-
-<a id="External-Theaters-heading-0040"></a>
-
-### Supply and checkpoints
-
-- Food · estuary grain and cold boxes: Entered the auction and ration ledgers only when both the physical temperature record and the seal hash matched.
-- Equipment · freezer compressor parts and the rotation of the wharf emergency generators: The parts order was kept separate from ownership claims on freezer boxes, and the standards-collation result was left first.
-- Records · the cargo seal hashes and the ledger of the sailors'' families'' temporary lodgings: The lodging queue was never automatically tied to freight price or responsibility for broken seals.
-- Separation rule: Frozen credit never replaced physical state, and one box''s damage was never grounds for judging the origin and safety of the whole dock.
-- XT02-CP-YEONGDEUNGPO · the Yeongdeungpo sluice and treatment watch: It cross-checked the current state of the tide table and the drainage valves. / the tide record, whether drainage was possible, the sluice safety window
-- XT02-CP-GURO-YEOUIDO · the Guro standards window and the Yeouido seal ledger: It confirmed the compatibility of the compressor parts and the cargo seal hashes. / the part standard, the compressor noise and condition record, a seal-hash mismatch
-- XT02-CP-ESTUARY-DOCK · the temporary wharf at the Han River estuary: It handled the quarantine of cold boxes, the loading order, and the handover of the night patrol. / the temperature record, the loading order, the state of the split crane keys
-
-<a id="External-Theaters-heading-0042"></a>
-
-### Language and rumor
-
-- Record language: The Seoul-side dock and sluice ledgers were kept in Korean.
-- Interpreter rule: The coastal-language interpretation window was the place that connected the interpretation a speaker requested to Seoul''s existing corridor.
-- confirmed: Two or more of tide, temperature, and seal records matched independently, and the hand-off agent was confirmed.
-- withheld: Only a box''s or a dock''s record remained, needing remeasurement or re-collation.
-- hearsay: Only talk of a dead cold shed or outside freight, without temperature, seal, or receipt records.
-- Prohibited inference: From word-of-mouth or interpretation need alone, no outside trader''s policy, freight''s illegality, or traveler''s affiliation was fixed.
-
-<a id="External-Theaters-heading-0044"></a>
-
-### Corridor operating organizations
-
-- The Sluice: It managed estuary access while keeping the tide, drainage, and treatment safe. It maintains Chuncheon waterway contracts and trades beyond the posts without demanding tribute from all Gangwon. / leverage: the Yeongdeungpo sluice and treatment watch / red line: It did not hide the sluice safety record on the grounds of a loading delay.
-- The Gauge: It kept the standards compatibility of the freezer compressors and the stevedore equipment. It expands Chungcheong tool and seed exchange through the Cheonan, Asan, and Siheung workshops while competing with independent outside standards. / leverage: the parts and repair standards of the Guro complex / red line: It did not lay a standards mismatch on one particular interpretation corridor.
-- Taeuk Group: It took charge of separating damaged cargo and handing over the repair equipment. It maintains its Seongnam and Suwon workplaces and seeks parts and labor from Yeongnam dismantlers, but cannot order Busan shipowners to sail. / leverage: capacity for bodywork, rigging, and field repair / red line: It did not mix a box with a damaged seal into the ordinary cargo.
-- Central Intelligence Bureau: It kept the continuity of the cold-storage order and the rations on the Han River''s south bank. It interprets Ulsan and Pohang survey records and disagrees with outside repair workers over preserving or dismantling equipment. / leverage: Heukseok''s technical-inspection and preservation-permit records / red line: It did not strike a vulnerable queue''s place on a power warning alone.
-- Yeouido Investment Federation: It left the seal, auction, and wharf-safety circulars as a ledger that could be published. Using the Yeongjong branch and currency exchange, it invests in ship and grain trades, but counterparties may reject its certificates. / leverage: the Yeouido investment ledgers and the transmission memory / red line: It did not let a price slogan stand in for seal verification or the safety circular.
-
-<a id="External-Theaters-heading-0046"></a>
-
-### Ecological pressure
-
-- G02: When the sea wind overlapped the breeding season, the Large-billed Crow made a shared perch over the bridge and transmission inspection hatches. / response: Umbrella columns, substitute perches, and a shifted maintenance hour separated people from the nests. / nonlethal constraint: Instead of pushing the nests out all at once, relocation poles and a retained stretch were used.
-- G17: When the sea noise strengthened, the alarm radius of the One-Eye Tower along the southwestern waterfront could widen. / response: False alarms were separated by cross-checking the band filter against the medical and sluice markers. / nonlethal constraint: Instead of destroying the masts wholesale, only the head that raised the false alarm was left on standby.
-
-<a id="External-Theaters-heading-0048"></a>
-
-### Opening 2126
-
-- Event: XT02-SC1
-- Trigger: A West Sea tide shift changed the Yeouido sluice drainage schedule and the estuary dock loading order at once.
-- Conflict: The watch demanding sluice safety first collided with the dock demanding reduced loss of frozen freight.
-- First decision: Choose whether to disclose freezer-box isolation and loading delay, or secure the drainage window first and leave the damage risk in the ledger.
-
-<a id="External-Theaters-heading-0050"></a>
-
-### Player entry
-
-- XT02-ENTRY-YEONGDEUNGPO-TIDE · the Yeongdeungpo sluice watch: an assistant cross-checking the tide table against the drainage-valve record / first decision: It decided whether to post the sluice safety window before the wharf''s loading request.
-- XT02-ENTRY-ESTUARY-SEAL · the temporary wharf at the Han River estuary: a field handover officer separating and recording cargo with damaged seals / first decision: It decided whether to quarantine the boxes whose seal hash did not match or to hold the loading until they were measured again.
-
-<a id="External-Theaters-heading-0052"></a>
-
-### What is not recorded
-
-- Honam producers’ seed retention, West Sea coastal handoffs, and Chungcheong farming and repair trade are history beyond the records of Seoul. Individual port names, precise routes, and sailing times remain unrecorded. Inside Seoul, only the Government holds original seed stock.
-- Honam producers’ priority for seed and rejection of monopoly contracts are history beyond the records of Seoul, not common policy for every outside trader, sailor, or institution; groups that appear in no record receive no formal names.
-- Frozen and grain volumes, ship types, and counts are not recorded.
-- Outside languages are not designated independently of interpretation requests.
-
-<a id="External-Theaters-heading-0054"></a>
-
-### Scenario chains
-
-- XT02-SC1: The Yeouido sluice re-plans dock drainage to match the West Sea tide
-- XT02-SC2: The southwestern fabrication window divides freezer compressor parts and Magok verifies the instrumentation logs
-- XT02-SC3: When Noryangjin ice credit shakes, Sangam transmission relays only the auction broadcast
-
-<a id="External-Theaters-heading-0056"></a>
-
-## XT03 · Korea Strait Theater
-
-- Yongsan, City Hall, Myeongdong, Samsung, and Heukseok ran the three-leg relay docks and interpretation windows along the Korea Strait route.
-
-In front of the Junction''s transshipment window, a three-way relay signboard bled in the rain. In Yeongnam, Busan crews and repair workers restart coastal voyages in 2058 using only ships they can maintain. Different owners supply different materials and labor, so a port representative cannot command every departure. Repair workers and dismantlers around Ulsan and Pohang dispute whether to revive equipment or sell its parts; inland settlements have interests distinct from the ports. The observation that national status displays went dark first in Ulsan at the time of the Great Blackout does not show that Ulsan caused it.
-
-An Arc envoy handed over only sealed boxes and stayed out of the border talk. In 2118 shipowners around Busan and their separately hired escorts form a temporary coalition to recover seized ships and people. Some local sailors deprived of access by an armed group at one Tsushima port help them land. The expedition breaks that port’s defenses and recovers vessels and captives. Owners demand a return, commanders want to hold the port, and local allies demand autonomy and their share. Shortages of repair materials and labor force the main contingent to withdraw in 2119, leaving only some contacts and trade. The participants’ name “Tsushima conquest” describes this local victory, not annexation of the whole island or a victory by a united Seoul navy.
-
-The Heukseok interpretation window wrote foreign words beside their Korean annotations in the agreement. Recovered goods, compensation claims, and returning escorts’ testimony reach Seoul. In 2126 a shipowner’s commission and a local ally’s promised share may collide over the same recovered object in Yongsan, but that meeting is conditional. Unverified reports concerning mainland Japan, China, or the United States fall outside the evidence from this port expedition.
-
-Chronicle record: [2079 record](/wiki/Century-Annals/#2079년-xt03-용산-환적창)
-
-<a id="External-Theaters-heading-0063"></a>
-
-### Seoul-side route
-
-- Verified geography: the sea distance between the Korean Peninsula and the Japanese archipelago and the general concept of public sea lanes.
-- Staging nodes: the Yongsan transshipment shed → City Hall''s inland turnback window → Myeongdong''s accreditation seal window → Samseong''s sealed-cargo window → Heukseok''s interpretation window → the unnamed three-branch relay wharf
-- Outbound boundary: Busan coastal shipping, indirect trade between Jeju and the south coast, and the 2118-2119 expedition at one Tsushima port.
-- Travel time: Not recorded. Relay-table mismatches, dock power, seal state, inland turns, and interpretation checks set waiting and movement cost.
-
-<a id="External-Theaters-heading-0065"></a>
-
-### Travel and seasons
-
-- Seasonal conditions: No particular season or sailing day of the strait was fixed; only sea state, relay-wharf power, and seal damage were left as dynamic states. / When the logistics vibration grew, the Seoul-side ecological pressure at the freezer approaches and the stevedore-yard entrances could rise. / When dust and differential-pressure trouble appeared, the medical and goods convoys went through a protection procedure separate from the interpretation check.
-- Suspension conditions: when the relay table''s terms did not cross-check against the Korean annotation / when the handover record of a sealed box had broken off / when the right of passage on the substitute turnback line was unconfirmed
-- Recording rule: Even when one relay closed, the remaining relays did not automatically absorb the same freight and risk.
-
-<a id="External-Theaters-heading-0067"></a>
-
-### Supply and checkpoints
-
-- Goods · parts, medicine, canned goods, and sealed tools: Seal state, receipt responsibility for tools, and interpretation annotations were left in parallel on the same hand-off record.
-- Power · reservation of the wharf charging slots: A charging slot never replaced custody of navigation-aid terminals or passage accreditation.
-- Records · the interpretation glossary, the quarantine waiting of returning sailors, and the family-counseling records: A term clash was not treated as the translator''s defect; original text, annotation, and speech context were held together.
-- Separation rule: Marriage and memorial accreditation, interpretation annotations, freight seals, and quarantine waits were handled under different authorities.
-- XT03-CP-YONGSAN · the Yongsan transshipment shed: It compared the three-branch relay table with the transshipment ledger and recorded the relay choice. / a relay-table mismatch, the transshipment slot, the cargo handover record
-- XT03-CP-SICHEONG-MYEONGDONG · the City Hall turnback window and the Myeongdong accreditation window: It confirmed separately the form of the inland turnback right and of the marriage and memorial accreditation seals. / the turnback slot, the accreditation seal, the officer responsible for receipt
-- XT03-CP-SAMSUNG-HEUKSEOK · the Samseong sealed window and the Heukseok interpretation window: It handled separately the cross-check of the sealed cargo and of the loanword annotation. / the state of the seal, the Korean annotation, consent to the interpretation request
-
-<a id="External-Theaters-heading-0069"></a>
-
-### Language and rumor
-
-- Record language: The Seoul-side accord ledgers were kept against the Korean annotations.
-- Interpreter rule: The existing interpretation resources of Itaewon and Heukseok were used only as Seoul-side resources for cross-checking requested utterances.
-- confirmed: Mutually independent freight records and interpretation originals and annotations matched, and the hand-off authority was confirmed.
-- withheld: Mismatches remained among the relay tables, though part of the seal and turn records was confirmed.
-- hearsay: The three relays told different stories, unconfirmed by originals, receipts, or freight records.
-- Prohibited inference: From one relay table or one untranslated word alone, no outside polity''s intent, the cause of a lane''s closure, or a speaker''s identity was fixed.
-
-<a id="External-Theaters-heading-0071"></a>
-
-### Corridor operating organizations
-
-- The Junction: It kept the connection between the Yongsan transshipment and the three-branch relay unbroken. It handles tolls and loading contracts at the Incheon and Paju termini and with outside caravans, without owning entire ports. / leverage: the operating memory of the central transshipment ledger and the fence keys / red line: It did not automatically pass the risk of one closed route onto another turnback line.
-- Arc: It published the passage conditions of the inland turnback and the carrying labor. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: a passage contract on the City Hall turnback line, which lies in Government territory, and the passage right of the strike rolls / red line: It did not hand cargo with no interpretation to the workers unilaterally.
-- Arc: It made plain the custody of the sealed boxes and the relief goods. It faces disputes over receiving families and cargo returning through the strait, without religious authority throughout the south. / leverage: the Samsung Station custody rolls and the custom of custody / red line: It did not skip verification of sealed cargo on the grounds of a border story.
-- Central Intelligence Bureau: It managed Heukseok''s technical-inspection records and preservation permits. It interprets Ulsan and Pohang survey records and disagrees with outside repair workers over preserving or dismantling equipment. / leverage: Heukseok''s technical-inspection ledger / red line: It did not grant preservation permits to cargo without inspection records.
-
-<a id="External-Theaters-heading-0073"></a>
-
-### Ecological pressure
-
-- G03: When the strait-side logistics vibration overlapped a break in feeding, the Feral Dog could ring the freezer approaches. / response: Feeding zones by family and shaded passages were laid out, separating the stevedore approaches. / nonlethal constraint: The pack was not treated as a single hostile body, and no order of slaughter was used.
-- G08: Dust and pressure changes at the relay wharf could unsettle the Cleanroom Mutant''s judgment of the protection doors. / response: Differential pressure, grounding, and the rolls were not combined on one key; the approval record of each door was cross-checked. / nonlethal constraint: The doors were not all opened without authority for the sake of a medical convoy.
-- G18: Transshipment vibration could mix the Fire-Leg Train'' defect map with the real crack coordinates. / response: The exclusion list stamped with the original hash was loaded to the onboard port, and a manual tow route was left. / nonlethal constraint: Instead of destroying the cars, the wrongly connected defect map was withdrawn.
-
-<a id="External-Theaters-heading-0075"></a>
-
-### Opening 2126
-
-- Event: XT03-SC1
-- Trigger: At the Yongsan transshipment shed one of the three relay legs closed, and the Suseo substitute turn line opened.
-- Conflict: The records side demanding the relay mismatch be solved first collided with the escort side demanding the limited turn line be used first.
-- First decision: Choose whether to quarantine the boxes with interpretation mismatches, or turn them onto the limited inland route and publish the held records.
-
-<a id="External-Theaters-heading-0077"></a>
-
-### Player entry
-
-- XT03-ENTRY-YONGSAN-RELAY · the Yongsan transshipment shed: an interpretation assistant cross-checking the relay table against the transshipment ledger / first decision: It decided which record to withhold, and did not raise the hearsay of a closed relay to fact.
-- XT03-ENTRY-HEUKSEOK-GLOSS · the Heukseok interpretation window: a registrar binding the original, the Korean annotation, and the consent to receipt / first decision: It decided whether to leave the clash of terms on record or to delay the cargo handover until the cross-check was finished.
-
-<a id="External-Theaters-heading-0079"></a>
-
-### What is not recorded
-
-- Busan coastal shipping, indirect trade between Jeju and the south coast, and the 2118-2119 expedition at one Tsushima port.
-- The expedition participants, the armed group at the Tsushima port, and local allies take part in the port expedition. The port victory establishes neither war against all modern Japan nor sovereignty.
-- Specific seasonal windows of the strait and freight volumes are not recorded.
-- Outside languages are not designated independently of Seoul’s interpretation requests.
-
-<a id="External-Theaters-heading-0081"></a>
-
-### Scenario chains
-
-- XT03-SC1: The Yongsan shed closes one of three legs and Suseo opens a substitute turn line
-- XT03-SC2: Garak rations reallocate the canned-goods quota and the Ttukseom workshops send sealed tools
-- XT03-SC3: The Noryangjin interpretation window records a term clash and keeps the accord in force
-
-<a id="External-Theaters-heading-0083"></a>
-
-## XT04 · Duman River Far East Theater
-
-- Amsa, Sinnae, Gangnam, Jegi-dong, and Guui divided the rail detour and the mineral and fuel inspection along the Duman River Far East corridor.
-
-At the Eastern Command storage yard, the freight-car weight sensor jumped too high on just one car. Along northern Korea’s northeastern coast in 2064, residents around the ports and railways of Hamhung and Chongjin hand people and goods between short maintained sections. A freight car’s departure point may differ from its cargo’s origin. This traffic is a possible connection to Seoul’s northeastern freight records of 2069, without fixing intermediate stops or a scheduled train across the peninsula.
-
-A Sinnae Transport escort put that car into a detour slot, and a Seongha Group deputy manager rewrote the order of the winter fuel drums. From 2068 the people of the Dokdo outpost rotate between the post and contacts on Ulleungdo and the east coast. The entire contact and rescue group numbers on the order of a few dozen, with only a handful staying on Dokdo seasonally; exact staffing and carrying capacity are not fixed. Housing, boat repairs, and food procurement are distributed across Ulleungdo and the coast, while boats bring drinking water, food, and repair supplies to the post. If resupply fails, the group withdraws personnel first. Some fishing crews arrange seasonal contact at the post; if it is empty, they must return to Ulleungdo for their next contact.
-
-The White Cross infirmary dried the gloves of frostbitten returning workers, and an Achasan Gate company commander did not throw the forged certificates of origin into the stove but sealed them in an evidence envelope. The outpost’s people watch only vessels and castaways within sight and can attempt rescues only when a boat is available. Fog and high seas prevent detection and landing; Dokdo is neither an always-safe refuge nor an East Sea surveillance network. Landing records, distress records, and testimony vary in accuracy. They conceal contacts from shipowners and employers seeking to reclaim returnees, although some coastal sailors have known them for years. Any Tsushima veterans joining them come home through the south coast, move along the east coast, and reach the Ulleungdo supply network; the whole group does not originate as expedition remnants.
-
-No one''s government was condemned; only the freight cars and the people were inspected. The Dokdo outpost reaches Seoul as hearsay in 2124. In 2125 a few contacts compare independent testimony, objects, and landing records and confirm that the group exists. This establishes neither a public route nor Seoul’s control. If a rescued sailor requests contact in 2126, decisions about disclosing identities and contacts pit support and trade against the risk of pursuit. Escorting a messenger and forwarding a reply in Seoul are conditional stories, not dependent on Sin Jong-mok’s direct radio contact with Dokdo or authentication through Sin Jun’s memories.
-
-Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt04-암사-야적장) · [2114 record](/wiki/Century-Annals/#2114년-xt04-암사-야적장)
-
-<a id="External-Theaters-heading-0090"></a>
-
-### Seoul-side route
-
-- Verified geography: the geographic concepts of the continental rail and the far-east energy corridor.
-- Staging nodes: the Amsa yard and the weight-log window → Sinnae''s detour transfer window → Gangnam''s winter fuel queue → the Jegi-dong infirmary → Guui''s seal window
-- Outbound boundary: Short-section handoffs around Hamhung and Chongjin and the Dokdo, Ulleungdo, and east-coast supply relationship are history beyond the records of Seoul. Intermediate links to northeastern freight cars, rail termini, actual detours, and sailing times remain unrecorded. Dokdo resupply is not a direct service of this railway corridor.
-- Travel time: Not recorded. Cold snaps, fuel, coolant, load verification, transfer slots, and medical need set movement cost and waiting.
-
-<a id="External-Theaters-heading-0092"></a>
-
-### Travel and seasons
-
-- Seasonal conditions: The cold wave and the break in logistics changed the distribution of feed, waste, and fuel, and raised the passage burden on Seoul''s eastern branch lines. / After the thaw, return passage opened only once the conduits and inspection windows closed by the cold wave had been re-examined. / Winter fuel and coolant could show the same shortage signal, but neither gained an automatic priority over the other.
-- Suspension conditions: when the weight-sensor log did not agree with the seal record / when the need to move a frostbite patient was confirmed but no medical-convoy slot existed / when the load verification of a temporary bridge or a siding was unfinished
-- Recording rule: Cold-snap and load hazards were recorded only as the section''s safety state, never as grounds for judging the origin of people, fuel, or minerals.
-
-<a id="External-Theaters-heading-0094"></a>
-
-### Supply and checkpoints
-
-- Equipment · rail parts and mineral samples: Sample seals and the use-approval records of rail parts were separated; unknown origin was not automatic grounds for disposal or punishment.
-- Fuel · winter fuel drums and the ration queue: The fuel order was adjusted after the weight logs were published, but the medical convoy''s space was never locked out alone.
-- People and medical care · lodgings for returning workers and frostbite treatment: Medical triage was separated from the freight evidence, and post-treatment custody remained in the ledger.
-- Separation rule: Freight cars, minerals, fuel, returning laborers, and medical records could meet at one checkpoint but were never refused together on one suspicion.
-- XT04-CP-AMSA · the Amsa yard: It published the freight-car weight log and the yard safety record. / a weight anomaly, yard safety, the state of the seal before receipt
-- XT04-CP-SINNAE-GANGNAM · the Sinnae transfer window and the Gangnam fuel queue: It assigned the detour slots and the winter fuel order separately. / the transfer slot, the fuel queue, responsibility for receiving the convoy
-- XT04-CP-JEGIDONG-GUI · the Jegi-dong infirmary and Guui''s seal window: It confirmed separately the frostbite treatment and the origin evidence with its double seal. / the need for treatment, the evidence envelope, custody of the sealing key
-
-<a id="External-Theaters-heading-0096"></a>
-
-### Language and rumor
-
-- Record language: The Seoul-side weight, fuel, medical, and seal ledgers were kept in Korean.
-- Interpreter rule: When interpretation was needed in return counseling, Seoul''s existing interpretation corridor was connected with the requester''s consent.
-- confirmed: Weight logs and seal or receipt records matched independently, or medical records and the actual hand-off were collated.
-- withheld: Only the fire mark, origin tag, or a single car''s record remained, with seal and weight collation outstanding.
-- hearsay: Only talk of the departure of outside minerals, fuel, or returnees, without car, seal, or receipt records.
-- Prohibited inference: From an origin-tag mismatch or interpretation need alone, no outside government''s or company''s acts, a laborer''s affiliation, or freight''s criminality was fixed.
-
-<a id="External-Theaters-heading-0098"></a>
-
-### Corridor operating organizations
-
-- Eastern Command: As the Arc''s hereditary rifle guard, it kept the Amsa yard safe and the protection of the eastern water and depots. It seeks personnel at northern guard posts and conflicts with those who remain or leave, but commands no nationwide army. / leverage: the emergency superintendence of the Amsa waterworks and Godeok Depot / red line: It did not turn the weight log private on the grounds of yard safety.
-- Sinnae Transport: It kept the neutrality of the detour slots and of the medical and goods convoys. It escorts contracted journeys as far as outside handoff posts, without running a scheduled train across the peninsula. / leverage: the Sinnae transfer and the emergency-convoy ledger / red line: The fuel queue did not automatically erase a medical convoy''s right of passage.
-- Seongha Group: It kept the winter fuel ration queue and the preparation of the convoys. It exchanges information and parts with repair workers in places such as Daejeon, without a nationwide communications monopoly or an obligation for Min Ung-gi to return. / leverage: the Gangnam cooling key and the fuel-order ledger / red line: It did not use a fuel drum''s place in the order as the price of an origin judgment.
-- White Cross: It gives first aid to frostbite patients and returning workers without distinguishing enemies. It exchanges medicines through columns and merchant vessels, without automatically founding a branch in each trading region. / leverage: the Jegi-dong medicinal ledger and the treatment contract / red line: It did not turn the need for treatment into grounds for a freight-car search or a requisition.
-- Achasan Gate: It kept the double seal on the mineral samples and the freight-car evidence. It prioritizes existing gate safety and passage and has no direct diplomatic relationship with Tsushima or Jeju. / leverage: the procedure of the Guui sluices and the Achasan gate / red line: It neither destroyed a mark of unknown origin nor let one side judge it alone.
-
-<a id="External-Theaters-heading-0100"></a>
-
-### Ecological pressure
-
-- G04: The cold wave and the break in logistics could change the Raccoon Dog''s feed density and its movement on the eastern branch lines. / response: Substitute shelter pipes and heated permitted zones were opened, separating the pump approaches from the family groups. / nonlethal constraint: Poison bait and wholesale flooding raised the risk to water quality and of intrusion above ground, so they were not used.
-- G09: If the mineral and fuel cars took the coolant first, the outer warehouses the Cryo-Spore Host depended on could be emptied first. / response: The cold boundary and the temperature record of each warehouse were published, separating the cost of fuel from the cost of cooling. / nonlethal constraint: Neither broadcast cooling nor food preservation was hidden and sacrificed.
-- G14: A freight-car weight signal mixed in from XT04 could raise the Empty Cart'' priority on the long-distance slots. / response: Only signed slots were kept, and the share of emergency slots was separated, diverting the empty-car loop. / nonlethal constraint: Instead of breaking the empty cars, the token and the pad power were separated in stages.
-- G26: Fuel cars and heavy tows could press on the load verification of sidings and temporary structures. / response: The tow was divided between a published load test and a safe rail guide. / nonlethal constraint: Blowing the power core was not used as the default solution for opening passage.
-
-<a id="External-Theaters-heading-0102"></a>
-
-### Opening 2126
-
-- Event: XT04-SC1
-- Trigger: The Amsa yard''s weight logs showed one car''s anomaly, and Sinnae reassigned the transfer slots.
-- Conflict: The demand to publish the weight anomaly at once collided with the demand to avoid delay in the winter fuel queue.
-- First decision: Choose whether to assign the medical convoy window before the fuel cars, or to finish reweighing and then open both hand-offs together.
-
-<a id="External-Theaters-heading-0104"></a>
-
-### Player entry
-
-- XT04-ENTRY-AMSA-WEIGHT · the Amsa yard: a field assistant cross-checking the weight log against the seal record / first decision: It decided whether to post the anomalous log on the public board or to send only that car to a detour slot while it was measured again.
-- XT04-ENTRY-JEGIDONG-FROST · the Jegi-dong infirmary: an assistant recording the frostbite treatment and the convoy handover separately / first decision: It decided whether to move first the people who needed treatment, apart from the review of the freight-car evidence.
-
-<a id="External-Theaters-heading-0106"></a>
-
-### What is not recorded
-
-- Short-section handoffs around Hamhung and Chongjin and the Dokdo, Ulleungdo, and east-coast supply relationship are history beyond the records of Seoul. Intermediate links to northeastern freight cars, rail termini, actual detours, and sailing times remain unrecorded. Dokdo resupply is not a direct service of this railway corridor.
-- Residents making handoffs around Hamhung and Chongjin and the Dokdo outpost’s people are described, but exact mineral and fuel types, quantities, and extractors remain unrecorded. Outpost staffing, carrying capacity, resupply quantities, and sailing schedules are not recorded as numbers.
-- The names and acts of outside governments, state enterprises, and armed groups are not recorded.
-- Outside languages and returning workers’ origins are not established solely by counseling interpretation requests.
-
-<a id="External-Theaters-heading-0108"></a>
-
-### Scenario chains
-
-- XT04-SC1: The Eastern Command''s Amsa watch disclosed the freight-car weight log, and Sinnae adjusted the transfer slots
-- XT04-SC2: The Changdong wheel works divides the winter fuel queue and Jegi-dong receives the frostbitten
-- XT04-SC3: The Achasan gate inspects the mineral-sample seals and scraps the forged origin tags
-
-<a id="External-Theaters-heading-0110"></a>
-
-## XT05 · Incheon Trust Theater
-
-- Yeouido, Yeongdeungpo, Gwanghwamun, City Hall, Yangjae, and Myeongdong entrusted residual satellite bands, aid manifests, and diaspora contact through the Incheon Trust gateway.
-
-On the roof of the Yeouido Investment Federation hall, residual-band lottery numbers were circulated. On the capital outskirts in 2031, rail workers and refugees toward Incheon and Paju divide loads among backs and carts at the ends of maintainable tracks, creating temporary markets. Not all these markets later become Junction termini. Eastern Command’s 2098 guard districts in Hanam, Namyangju, Uijeongbu, and Yeoncheon, the Junction’s 2100 tolls at Incheon and Paju rail termini, Taeuk Group’s 2101 Seongnam and Suwon workplaces, the 2104 Yeongjong branch, and the 2106 Gyeonggi administrative post in Goyang remain. Outside those posts, residents evade call-ups and tolls or trade directly, bringing them into conflict with Seoul interests.
-
-The Sluice''s sluice watch matched the water-pump operating times to those numbers, and a Republic of Korea Government jusa clerk posted the delivery-list hash in the citizens'' observation cell. Seoul’s three factions hold contracts, workplaces, and registers at gateways; they do not govern the whole peninsula. XT01-XT05 identify relationships and corridors, not new states. Arriving people and goods create consequences within the territory Seoul now holds and its subway movement network.
-
-An Arc stationmaster opened a turnback line carrying only boxes of overseas remittance records, and a Taeuk Group deputy manager switched off the rail terminal''s false-positive alarm.
-
-The Myeongdong counseling window did not throw away the multilingual queue tickets however late the night grew.
-
-Chronicle records: [2069 record](/wiki/Century-Annals/#2069년-xt05-여의도-회관) · [2122 record](/wiki/Century-Annals/#2122년-xt05-여의도-회관)
-
-<a id="External-Theaters-heading-0117"></a>
-
-### Seoul-side route
-
-- Verified geography: the general concepts of satellite, aid, and disaster cooperation and the names of public international organizations.
-- Staging nodes: Yeouido''s remaining-bandwidth and ledger window → Yeongdeungpo''s water-hour window → Gwanghwamun''s citizen-observation hash window → City Hall''s turnback record window → Yangjae''s orbital-terminal correction window → Myeongdong''s multilingual counseling window → the unnamed Incheon trust receipt window
-- Outbound boundary: Existing capital-outskirts contacts, including the Incheon and Paju rail termini and the Yeongjong branch, remain. The Incheon trust’s exact receiving site, detailed port and road routes, and overseas aid parties remain unrecorded.
-- Travel time: Not recorded. Transmit bands, pump power, manifest hashes, terminal state, counseling consent, and receipt confirmation set waiting and movement cost.
-
-<a id="External-Theaters-heading-0119"></a>
-
-### Travel and seasons
-
-- Seasonal conditions: In weeks when frozen and deep-sea protein residue piled up, the burden on the transfer stevedore elevators and the sealing line could grow. / When the sea wind''s direction overlapped the drainage burden, the cost of the choice to pass the water to the outskirts was recorded. / When the remaining bandwidth overlapped an old call format, the automatic relief equipment''s false alarms were judged as a separate state.
-- Suspension conditions: when only a reception log existed, with no list hash and no physical receipt / when the citizen-observation record of the transmission key was missing / when an uncorrected false alarm on an orbital terminal left the recipient unclear
-- Recording rule: An unreceived orbital signal was not read as any outside party''s command; it passed to the next stage only with reproducible logs and receipt records.
-
-<a id="External-Theaters-heading-0121"></a>
-
-### Supply and checkpoints
-
-- Delivery goods · the delivery-goods allocation list, medicine capsules, and frozen protein: Receive logs, manifest hashes, and physical receipts were recorded separately; ration order was never fixed on one alone.
-- Power and communications · the emergency transmission power quota and the reservation of the satellite''s remaining bandwidth: Band lottery results were published together with pump running times, and the transmit key was never kept alone.
-- Families and records · the waiting list for reconnecting families abroad, multilingual counseling, and remittance records: Counseling consent and remittance records were separated from the receipt and isolation judgment of aid goods.
-- Separation rule: Aid promises, received signals, family contact, and interpretation requests had different evidentiary levels; one item''s uncertainty never became grounds for another''s automatic refusal.
-- XT05-CP-YEOUIDO-YEONGDEUNGPO · the Yeouido bandwidth window and the Yeongdeungpo water watch: It cross-checked the public drawing of lots for the remaining bandwidth against the pump running hours. / the bandwidth lottery record, the transmission power quota, the pump timetable
-- XT05-CP-GWANGHWAMUN-SICHEONG · the Gwanghwamun observation-hash window and the City Hall turnback record window: It confirmed separately the citizen observation of the delivery-list hash and the delivery turnback record. / the list hash, the observation signature, the turnback receipt record
-- XT05-CP-YANGJAE-MYEONGDONG · the Yangjae terminal-correction window and the Myeongdong counseling window: It handled separately the orbital terminals'' false alarms and the counseling and interpretation requests. / the terminal false-alarm record, consent to counseling, the family-contact waiting list
-
-<a id="External-Theaters-heading-0123"></a>
-
-### Language and rumor
-
-- Record language: The Seoul-side band, receipt, and counseling ledgers were kept in Korean.
-- Interpreter rule: Myeongdong''s multilingual queue tickets were a tool for taking self-declarations and interpretation requests, and connected Seoul''s existing interpretation resources only when requested.
-- confirmed: Independent grounds among receive logs, manifest hashes, and physical receipts were collated, and a receiving authority remained.
-- withheld: Only a receive log or manifest hash remained, with physical receipt or terminal calibration outstanding.
-- hearsay: Only talk of overseas family contact, aid promises, and orbital calls, without reproducible records.
-- Prohibited inference: From unreceived signals, interpretation requests, or remittance records alone, no outside authority''s command, family''s survival, or traveler''s affiliation was fixed.
-
-<a id="External-Theaters-heading-0125"></a>
-
-### Corridor operating organizations
-
-- Yeouido Investment Federation: It kept the public drawing of lots for the remaining bandwidth and the transmission ledger. Using the Yeongjong branch and currency exchange, it invests in ship and grain trades, but counterparties may reject its certificates. / leverage: the investment ledgers and transmission memory of the Yeouido hall / red line: It did not turn the bandwidth lottery into a private allocation or a sole transmission key.
-- The Sluice: It kept the bandwidth and delivery schedule meshed with the safe running of the water pumps. It maintains Chuncheon waterway contracts and trades beyond the posts without demanding tribute from all Gangwon. / leverage: the Yeongdeungpo treatment and sluice watch / red line: A transmission demand did not cover over the water-safety record.
-- Republic of Korea Government: It preserved the form of the delivery-list hash and the citizen-observation record. From the Gyeonggi post in Goyang it seeks recognition from outside envoys, but recognition does not entail obedience. / leverage: Gwanghwamun''s record accreditation and seal / red line: It did not make an unobserved list into a ration right or grounds for quarantine.
-- Arc: It published the carrying conditions of the delivery turnback and the remittance records. From its contacts with Seongnam and Siheung workers it engages in long-distance escort and ship-repair pay and return terms, without representing all outside workers. / leverage: a passage contract on the City Hall turnback line, which lies in Government territory, and the cooperative ledgers / red line: It did not use the remittance records as a tool for judging passage rights or labor eligibility.
-- Taeuk Group: It corrected the orbital terminals'' false alarms, separating the recipient from the safety of the equipment. It maintains its Seongnam and Suwon workplaces and seeks parts and labor from Yeongnam dismantlers, but cannot order Busan shipowners to sail. / leverage: the Yangjae maintenance depot and the memory of field humanoid maintenance / red line: It did not bypass citizen observation and the receipt hash on the grounds of correcting a false alarm.
-
-<a id="External-Theaters-heading-0127"></a>
-
-### Ecological pressure
-
-- G05: When frozen and deep-sea protein residue piled up, the Brown Rat could extend its branch nests as far as the stevedore elevator passages. / response: Leftover collection and a temporary double-sealing line were run first, and the stevedore hours were divided. / nonlethal constraint: Refugees were not sealed off by a contagion stigma or by wholesale toxic spraying.
-- G10: The choice to pass the water in the direction of the sea wind could leave one season''s burden on the Flood-Mold Breath Cluster''s corridor and the outer storage grounds. / response: Before the drainage choice, the residents'' roll and the right to stop the pumps were confirmed, and the contamination burden was published. / nonlethal constraint: Passing the water to the outskirts so that only the center of Seoul shed its cost was not used as a costless solution.
-- G15: When a delivery-goods code was received, the Care Wheel could raise both the supply and the intensity of quarantine. / response: The roll, the consent hash, and the power to each bed were cross-checked, blocking over-supply and new confinement. / nonlethal constraint: The welfare block was not burned, and the locks of every bed were not cut at once.
-- G25: The medicine capsules on the XT05 delivery list could pile up with an old simulated recipient. / response: The recipient mark, the delivery table, and the loading bay were cross-checked against the field treatment record. / nonlethal constraint: Instead of destroying the main transmitter at once, the rescue double row and the citizen passage were assessed together.
-
-<a id="External-Theaters-heading-0129"></a>
-
-### Opening 2126
-
-- Event: XT05-SC1
-- Trigger: The Sangam transmission''s public residual-band lottery and the Yeouido water watch''s pump times overlapped in the same window.
-- Conflict: The demand to secure the band first and save communications collided with the demand to leave the citizen-observation hash first and keep the receipt ledgers trusted.
-- First decision: Choose whether to enter onto the ration list the medicine capsules that have only receive logs, or hold until observation, hash, and receipt confirmation.
-
-<a id="External-Theaters-heading-0131"></a>
-
-### Player entry
-
-- XT05-ENTRY-BAND-LOTTERY · Yeouido''s remaining-bandwidth lottery window: a citizen assistant cross-checking the lottery, the pump hours, and the observation signatures / first decision: It decided which condition to meet first, the speed of the bandwidth allocation or the completion of citizen observation.
-- XT05-ENTRY-MYEONGDONG-CONSENT · the Myeongdong counseling window: an assistant recording the family-contact waiting list and the consent to interpretation requests / first decision: It decided whether to withhold as hearsay a family contact with no receipt record, or to send it to the turnback record for the terminal to be checked again.
-
-<a id="External-Theaters-heading-0133"></a>
-
-### What is not recorded
-
-- Existing capital-outskirts contacts, including the Incheon and Paju rail termini and the Yeongjong branch, remain. The Incheon trust’s exact receiving site, detailed port and road routes, and overseas aid parties remain unrecorded.
-- Outside aid parties, the operators of orbital assets, and overseas families'' whereabouts are not recorded.
-- The volumes of aid goods, frozen protein, and medicine capsules are not recorded.
-- Outside languages and communicating parties’ identities are not established solely by Seoul’s interpretation and logs.
-
-<a id="External-Theaters-heading-0135"></a>
-
-### Scenario chains
-
-- XT05-SC1: Sangam transmission holds a public lottery on residual bands and Yeouido matches the water watch''s times
-- XT05-SC2: The Seoul Station Records Bureau keeps the manifest hash and Suseo opens the delivery turn line
-- XT05-SC3: Magok corrects the orbital false positives and Garak extends the separated-family counseling window
+Whether the winter is seasonal or permanent, and how long the outside machines will last, hasn''t been decided.
 ', '<a id="External-Theaters-heading-0001"></a>
 
-서울 밖은 대정전 때의 전쟁 기계들이 마지막 명령을 수행하며 돌아다니는 땅이다. 이 문서는 서울에서 바깥 회랑으로 이어지는 당직과 물자 인계를 기록한다.
+서울 밖은 대정전 때 쓰던 전쟁 기계들이 마지막 명령을 따라 아직도 돌아다니는 땅이다. 서울 사람들은 그 땅을 거의 모른다. 이 문서는 서울에서 보이는 바깥만 적는다.
 
 <a id="External-Theaters-heading-0003"></a>
 
-## XT01 · 임진강관문전구
+## 바깥 기계의 봉쇄선
 
-- 안국·광화문·신내·구의는 임진강 관문 회랑에서 검역과 귀환 명부를 함께 운영한다.
+서울 둘레에는 바깥 기계가 순찰하는 띠가 있다. 사람들은 이것을 봉쇄선이라고 부른다. 누가 그은 선이 아니다. 만든 사람은 사라졌고, 군·민간 자율 기계(감시탑, 선로 점검차, 군집 드론, 중장비, 물류·점검 로봇)가 같은 길을 되풀이해서 돌 뿐이다.
 
-임진 제방 아래 임시 검역소에서 안국총림 안내원이 귀환 명부를 손전등 빛에 비춘다. 북한 지역의 개성·황해 생활권에서는 2036년부터 남쪽 행렬에 가족의 편지와 답장을 맡긴다. 떠나는 사람과 남는 사람의 선택이 갈리며, 이 왕래의 일부가 훗날 임진 귀환 창구에 닿는다. 평양 일대 주민은 2048년 대동강의 나루와 교량 일부를 고쳐 장을 이어 간다. 거점마다 통행 대가가 달라 한 곳의 약속이 다음 곳의 안전을 보장하지 않는다. 이 주민사는 북한 전역의 중앙 정권 존속이나 군사력을 결론짓지 않는다.
+- 기계는 땅 위의 빛과 열을 이상으로 보고 다가온다. 그래서 바깥으로 갈수록 불을 가려야 한다("보이면 온다").
+- 추위에 약해 긴 낮이나 사람의 온기에 깬다. 겨울밤에는 조용하다가 낮이 길어지면 움직임이 늘어난다.
+- 새로 만들 수 없어 수가 줄기만 한다. 그래도 서울 사람이 봉쇄선을 뚫고 나갈 만큼 줄지는 않았다.
+- 아크는 그 가운데 일부를 켜고 끌 수 있다. 붙잡힌 기계는 부품이 되거나 병종이 된다. 어디까지 가능한지는 공개 기록에 없다.
 
-성하그룹 호송은 관문 밖 진흙길에 바퀴를 적시고, 신내 환승 창구는 가족 대기열만 먼저 연다. 강원에서는 2032년 겨울의 실종 행렬 이후 안내인과 산간 주민이 고개 양쪽에 식량과 밧줄을 두고 철수 시기를 정한다. 물길 거점과 산길의 생존권은 다르다. 수문국의 2097년 양평·춘천 계약과 2099년 도시명 회복 요구 기각은 유지되지만, 춘천의 상인과 뱃사람은 장터에서 옛 도시명을 계속 쓴다. 제이수문이라는 계약상 이름이 강원 전체의 지배권이나 주민의 일상 언어를 뜻하지 않는다.
-
-광화문 대한민국정부 주사가 위조 혈연 증서의 잉크 번짐을 짚고, 아차산 관문 초소는 봉인 키를 두 조각으로 나눈다.
-
-연표 기록: [2069년 기록](/wiki/Century-Annals/#2069년-xt01-임진-제방-임시-검역소) · [2104년 기록](/wiki/Century-Annals/#2104년-xt01-임진-제방-임시-검역소) · [2125년 기록](/wiki/Century-Annals/#2125년-xt01-광화문-정부서울청사)
+AI는 서울의 공동 적이 아니다. 바깥 기계는 AI가 보낸 군대가 아니라 대정전 전 명령의 잔재다. 적대 집단 전체는 [적대 생태 색인](/wiki/Hostile-Ecology-Index/)에 있다.
 
 <a id="External-Theaters-heading-0009"></a>
 
-### 서울 쪽 경로
+## 끊긴 소식
 
-- 확인된 지리: 임진강·한강 합류와 북부 환승·피난 회랑.
-- 준비 거점: 안국·광화문의 명부 대조 창구 → 신내의 중립 환승 창구 → 구의의 이중 봉인 창구 → 임진 제방 아래의 임시 검역소
-- 바깥 경계: 개성·황해의 가족 왕래와 평양 일대 나루 생활은 서울의 기록 밖에 있다. 임진 검역소 이후의 세부 경유지·경계 통과 방식·이동 시간은 기록되지 않았다.
-- 이동 시간: 기록되어 있지 않다. 이동 비용과 개방 여부는 수위, 검역 대기, 통행권, 피난 행렬 상태로 판정한다.
+2030년대에 통신이 끊겼다. 그 뒤로 봉쇄선이 길을 막아, 서울은 바깥에 누가 사는지 모른다. 바깥도 서울을 모를 것이다.
+
+- 다른 도시와 나라가 남아 있는지는 기록이 없다. 위키는 바깥의 정권, 군대, 인구를 쓰지 않는다.
+- 가끔 바깥에서 왔다는 소문이 돈다. 확인된 적은 없고, 소문만으로 바깥 사정을 결론짓지 않는다.
+- 세 세력 누구도 바깥과 외교나 교역을 하지 않는다. 정부, 자유도시들, 아크의 관계는 [세계 관계 원장](/wiki/World-Relation-Ledger/)에 있다.
 
 <a id="External-Theaters-heading-0011"></a>
 
-### 이동·계절
+## 들어오고 나가는 길
 
-- 계절 조건: 우기에는 홍수위와 제방 접근 상태가 수문 계단과 검역소의 개방 여부를 바꾼다. / 건기와 동절기에는 음식물 흔적을 좇는 생태 압력이 북서 가장자리 통행로에 겹칠 수 있다. / 철새 이동이 겹치는 날에는 교량·차량기지 입출고선의 저소음 창과 감속 창을 함께 조정한다.
-- 중단 조건: 명부 원본과 사본의 대조가 끝나지 않았을 때 / 봉인 키 두 조각의 보관 책임이 확인되지 않았을 때 / 수위 경고와 피난 잔반이 같은 계단을 점유했을 때
-- 기록 원칙: 폐쇄는 통행로 삭제가 아니라 원인과 재개 조건을 남긴 상태 변경으로 기록한다.
+서울 안팎을 잇는 길은 한강, 철도, 큰 도로를 따라 남아 있다. 길이 남았다고 다닐 수 있는 것은 아니다.
+
+- **빛과 열.** 바깥으로 나가는 사람은 불을 켜지 못한다. 차량 엔진의 열도 기계를 부른다. 그래서 짐은 사람이 지고, 걸음은 밤에 옮긴다.
+- **순찰 시간.** 기계는 같은 경로를 같은 순서로 돈다. 그 틈을 아는 사람이 길잡이가 된다. 틈을 잘못 읽으면 돌아오지 못한다.
+- **겨울.** 인공 겨울은 바깥에서 더 매섭다. 쉴 역도 셔터도 없다. 체온을 지키려 불을 피우면 기계가 온다.
+- **사람.** 역을 갖지 못한 사람, 탈영병, 세력에서 떨어져 나온 사람이 서울 가장자리에 산다. 이들은 바깥을 오가는 사람을 납치하거나 짐을 빼앗고 몸값을 요구한다.
+- **고대 병기.** 서울 가장자리에서 이따금 대정전 때의 병기가 발견된다. 깨어나면 습격이 되고, 그 병기를 깨우는 소프트웨어는 아크에 있다.
 
 <a id="External-Theaters-heading-0013"></a>
 
-### 공급·검문
+## 서울에서 보는 바깥
 
-- 물자 · 야간 곡물·의약품 우회 상자: 물자 봉인 장부는 가족 명부와 분리하고 인계 때마다 봉인 상태와 수령 서명을 함께 남긴다.
-- 전력 · 북부 비상 축전지 릴레이: 호송 지연이 생겨도 축전지의 보관 책임과 사람의 검역 판단을 같은 담당자에게 모으지 않는다.
-- 기록 · 귀환 명부 해시와 가족 재결합 대기열: 재발급 기록은 원본을 대체하지 않으며 훼손 사실·발급자·대조 근거를 별도 줄에 남긴다.
-- 분리 원칙: 의료·식량 상자, 귀환 명부, 봉인 키는 서로 다른 인계 절차를 거친다. 하나의 의심이나 지연이 다른 항목의 자동 거부 사유가 되지 않는다.
-- XT01-CP-ANKUK-GWANGHWAMUN · 안국·광화문 명부 대조 창구: 귀환 명부와 혈연 증서의 원본·사본 대조 및 재발급 기록 / 명부 훼손 여부, 재발급 근거, 증서와 장부의 불일치
-- XT01-CP-SINNAE · 신내 환승 창구: 가족 대기열과 중립 호송의 분리·합류 / 통행 창, 호송 수령 책임, 의료 우선 필요
-- XT01-CP-GUI-IMJIN · 구의 봉인 창구와 임진 임시 검역소: 봉인 키 이중 보관과 서울 쪽 검역 인계 / 두 조각 키의 보관 기록, 상자 봉인 상태, 통행 창의 수위 안전
+바깥은 세 세력 모두에게 닫힌 문이다. 그래서 바깥은 사건의 출발점이 아니라, 서울의 불안이 들어오는 틈으로 쓰인다.
 
-<a id="External-Theaters-heading-0015"></a>
+- 봉쇄선 근처에서 발견되는 기계와 병기는 세력이 손에 넣으려 다투는 물건이다.
+- 바깥에 가까운 지상 시설(온실, 정비고, 지상 출입구)이 가장 먼저 노출된다.
+- 바깥을 다녀왔다는 사람은 드물고, 그 말은 증거가 있을 때만 기록한다.
 
-### 언어·소문
-
-- 기록 언어: 서울 쪽 원장은 한국어로 기록한다.
-- 통역 원칙: 통역은 당사자가 요청한 경우에만 서울의 기존 통역 회랑에 연결한다.
-- 확인: 서로 독립된 명부 또는 봉인 기록이 대조되고 책임 있는 발급·인계자가 남아 있다.
-- 보류: 단일 호송 기록이나 훼손된 사본만 있으며 재대조가 필요하다.
-- 전언: 가족 연락이나 이동 소문만 있고 명부·봉인·수령 기록으로 확인되지 않았다.
-- 금지 추론: 전언만으로 외부 정치체의 정책, 통행자의 출신, 혈연 관계 또는 범죄를 결론짓지 않는다.
-
-<a id="External-Theaters-heading-0017"></a>
-
-### 회랑 운영 조직
-
-- 안국총림: 귀환 명부 재발급과 가족 위패·대기열의 연속성을 지킨다. 북부·강원 피난 행렬과 왕래하되 소속·숙박·구휼을 구분한다. 사찰과의 관계는 위패와 명부 보존을 중심으로 이어지며, 방문만으로 소속을 결론짓지 않는다. / 지렛대 안국의 명부 보관과 안내 인력 / 넘지 않는 선 훼손 사본만으로 가족 관계를 결론짓지 않는다.
-- 성하그룹: 호송과 비상 축전지 인계를 끊기지 않게 한다. 대전 등의 정비사와 정보·부품을 교환하되 전국 통신 독점이나 민웅기의 복귀 의무로 바꾸지 않는다. / 지렛대 강남 호송 준비와 냉각·전산 키의 잔존 / 넘지 않는 선 축전지 보관 책임을 명부 판정권으로 바꾸지 않는다.
-- 신내운수: 가족 대기열과 의료·물자 호송의 중립 환승을 유지한다. 외부 인계 거점까지 계약 호송을 맡되 한반도 관통 정기열차는 운영하지 않는다. / 지렛대 신내 환승 슬롯과 응급 호송 장부 / 넘지 않는 선 한 국가의 명령만으로 환승 창을 닫지 않는다.
-- 대한민국정부: 혈연 증서와 인준 기록의 진위를 공개 절차로 가린다. 고양의 경기도 거점을 바탕으로 외부 사절에게 대표성을 인정받으려 하나 인정과 복종은 별개다. / 지렛대 광화문 도장과 기록 인준 문법 / 넘지 않는 선 위조 의심을 이유로 통행자를 외부 적대자로 결론짓지 않는다.
-- 아관사: 관문 봉인과 출발창의 안전 책임을 분산한다. 기존 관문 안전과 통행을 우선하며 대마도·제주와 직접 외교 관계를 맺지는 않는다. / 지렛대 구의 수문과 아차산 초소의 봉인 절차 / 넘지 않는 선 봉인 키를 한 사람이나 한 가문에 단독 보관하지 않는다.
-
-<a id="External-Theaters-heading-0019"></a>
-
-### 생태 압력
-
-- G01: 피난 행렬의 음식물 흔적과 홍수위가 겹치면 멧돼지가 수문 계단을 점유할 수 있다. / 대응 잔반을 별도 밀폐 회수로 돌리고 통행 시간을 분할한다. / 비살상 제약 전면 살처분은 무리를 골목으로 흩뜨리므로 최후 수단으로만 둔다.
-- G06: 북방 바람길의 철새 이동이 수문 점검과 겹치면 교량·차량기지 접근이 좁아진다. / 대응 기능군별 수면·횃대와 저소음 점검 창을 조정한다. / 비살상 제약 수면을 말려 군집을 내보내는 선택은 생태와 수질 비용을 남긴다.
-- G16: 북방 회랑 자재 신호가 철골거미의 가설교량 작업 반경을 넓힐 수 있다. / 대응 중지 격자와 예외 레이어를 먼저 확인해 사람의 거처와 자재 신호를 분리한다. / 비살상 제약 도면 금고나 장비를 파괴하는 대신 잘못된 레이어 포트만 봉인한다.
-
-<a id="External-Theaters-heading-0021"></a>
-
-### 개막 2126
-
-- 사건: XT01-SC1
-- 촉발: 임진 임시 검역소의 귀환 명부가 훼손되어 안국의 재발급 요구와 광화문의 진위 심사가 동시에 열린다.
-- 충돌: 가족 대기열을 먼저 열어야 한다는 요구와 명부 대조를 먼저 끝내야 한다는 요구가 충돌한다.
-- 첫 판단: 훼손 명부를 보류한 채 의약 호송만 분리 통과시킬지, 참관 아래 재발급 절차를 열어 가족 대기열을 늦출지 선택한다.
-
-<a id="External-Theaters-heading-0023"></a>
-
-### 플레이어 진입
-
-- XT01-ENTRY-SINNAE-LEDGER · 신내 환승 창구: 명부와 수령 서명을 대조하는 호송 보조 / 첫 판단 가족 대기열과 의약 상자를 같은 창에 넣지 않고 어느 인계를 먼저 확인할지 정한다.
-- XT01-ENTRY-IMJIN-RECOVERY · 임진 제방 검역소 접근로: 피난 잔반 회수와 통행 창 조정의 현장 협상자 / 첫 판단 수문 계단의 생태 압력을 피하기 위해 호송 시간을 나눌지, 별도 회수로를 먼저 열지 정한다.
-
-<a id="External-Theaters-heading-0025"></a>
-
-### 기록되지 않은 부분
-
-- 개성·황해의 가족 왕래와 평양 일대 나루 생활은 서울의 기록 밖에 있다. 임진 검역소 이후의 세부 경유지·경계 통과 방식·이동 시간은 기록되지 않았다.
-- 북부 주민의 귀환·잔류·교역 행위와 서울의 기존 종속 거점은 기록에 남되, 북한 전역의 정권사·군사력과 장부에 이름이 오르지 않은 기관·무장 집단의 이름·행위는 결론짓지 않는다.
-- 구체적 이동 시간과 귀환 인원 규모는 기록되지 않았다. 거점마다 통행 대가가 다르다는 기록을 전국 공통 통행 규칙으로 확대하지 않는다.
-- 외부 언어와 통행자의 출신은 서울 쪽 명부와 통역 요청만으로 결론짓지 않는다.
-
-<a id="External-Theaters-heading-0027"></a>
-
-### 시나리오 쇄
-
-- XT01-SC1: 임진 임시 검역소에서 귀환 명부가 훼손되고 안국 조계사가 재발급을 요구한다
-- XT01-SC2: 강남 그룹 호송이 관문 밖에서 멈춘 뒤 신내가 우회 환승을 연다
-- XT01-SC3: 광화문 청사가 위조 혈연 증서를 가려내고 아차산 관문이 봉인 키를 나눈다
-
-<a id="External-Theaters-heading-0029"></a>
-
-## XT02 · 서해곡창전구
-
-- 영등포·구로·여의도·양재·흑석은 서해 무역 회랑의 하구 부두와 냉동 신용을 함께 점검한다.
-
-한강 하구 임시 부두에서 수문국 수문 당직이 조위표와 배수 밸브를 맞춘다. 호남의 경작자와 연안 선주는 2040년부터 다음 파종에 쓸 곡식을 남긴 뒤 출하량을 정한다. 2087년 일부 생산지는 서울 상인의 이듬해 곡식 독점 요구를 거절한다. 서해 연안을 여러 번 인계하는 소량·계절 교역은 이어지지만, 서울의 높은 값만으로 마을의 식량과 종자까지 살 수는 없다.
-
-규격맹 이사는 냉동 압축기 소음을 듣고 부품 순번을 바꾸고, 태욱그룹 대리가 봉인 해시가 깨진 상자만 따로 둔다. 충청에서는 2034년 대전 일대 철도 수리 인력과 주민이 선로 밖의 터를 일구며 농번기 장거리 복구보다 파종과 공구 수리를 택한다. 2102년 천안·아산·시흥 분공방 관계는 그대로이며, 대전의 농촌·수리 공동체는 별도 교역 상대다. 철길을 되살리려는 상단과 철재를 농기구로 쓰는 주민은 같은 부품에도 다른 값을 매긴다.
-
-중앙정보부 점검원은 전력 경고등이 켜져도 한강 남안 냉동 순번을 지우지 않는다. 2126년 민웅기는 대전에 머물며 농사로 생계를 잇고 평화를 찾는다. 연락이 닿아 답장이 서울에 도착할 경우에만 부품 지원과 복귀 요청 사이의 이야기가 열린다. 답장의 도착 여부는 아직 기록되지 않았다. 신종목의 전직은 동방사 특수회수반이며 총검술을 익혔다. 강남구청-선정릉-수서 생활권 12곳의 귀환망과 이동식 민간 중계망인 귀환합성국은 전국 상시 통신망이나 새 국가가 아니다.
-
-여의도출자연합회는 가격 구호 대신 부두 안전 회람만 돌린다.
-
-연표 기록: [2079년 기록](/wiki/Century-Annals/#2079년-xt02-한강-하구-임시-부두) · [2114년 기록](/wiki/Century-Annals/#2114년-xt02-한강-하구-임시-부두)
-
-<a id="External-Theaters-heading-0036"></a>
-
-### 서울 쪽 경로
-
-- 확인된 지리: 서해 연안·한강 하구 물길과 강서·영등포 일대의 공개 시장·정수 위치.
-- 준비 거점: 영등포 수문과 정수 당직 → 구로의 압축기·규격 대조 창구 → 여의도의 봉인 해시 장부 → 한강 하구 임시 부두
-- 바깥 경계: 호남 생산지의 종자 보존과 서해 연안 인계, 충청의 농사·수리 교역은 서울의 기록 밖에 있다. 개별 항만명·정확한 항로·운항 시간은 기록되지 않았다. 서울 안의 원종은 정부만 가진다.
-- 이동 시간: 기록되어 있지 않다. 조위, 배수, 전력, 냉동 상태와 통행권이 물자 이동의 비용과 대기를 정한다.
-
-<a id="External-Theaters-heading-0038"></a>
-
-### 이동·계절
-
-- 계절 조건: 조위와 하구 배수 상태가 부두 접근과 적재 순번을 바꾼다. / 해풍과 번식기가 겹치면 교량·송신 점검구 상공의 통행 규칙을 조정한다. / 냉동 전력이 불안정하면 화물 이동보다 검증·격리 순서를 앞세운다.
-- 중단 조건: 조위표와 배수 밸브 기록이 서로 맞지 않을 때 / 냉동 상자의 온도 기록과 봉인 해시가 불일치할 때 / 하역 크레인 제어 키의 분할 보관이 무너졌을 때
-- 기록 원칙: 조위나 전력으로 막힌 연결은 지도에서 지우지 않고 위험·통제·복구 조건이 있는 구간으로 남긴다.
-
-<a id="External-Theaters-heading-0040"></a>
-
-### 공급·검문
-
-- 식량 · 하구 곡물·냉동 상자: 실물 온도 기록과 봉인 해시가 모두 맞을 때만 경매·배급 장부에 올린다.
-- 설비 · 냉동 압축기 부품과 부두 비상 발전기 교대: 부품 순번은 냉동 상자의 소유 주장과 분리하고 규격 대조 결과를 먼저 남긴다.
-- 기록 · 화물 봉인 해시와 선원 가족 임시 숙소 장부: 가족 숙소의 대기 순번은 화물 가격이나 손상 봉인의 책임과 자동으로 묶지 않는다.
-- 분리 원칙: 냉동 신용은 실물 상태를 대신하지 않으며 상자 하나의 손상은 같은 부두 전체의 출신·안전성을 단정하는 근거가 되지 않는다.
-- XT02-CP-YEONGDEUNGPO · 영등포 수문·정수 당직: 조위표와 배수 밸브의 현재 상태를 대조한다. / 조위 기록, 배수 가능 여부, 수문 안전 창
-- XT02-CP-GURO-YEOUIDO · 구로 규격 창구와 여의도 봉인 장부: 압축기 부품 호환성과 화물 봉인 해시를 확인한다. / 부품 규격, 압축기 소음·상태 기록, 봉인 해시 불일치
-- XT02-CP-ESTUARY-DOCK · 한강 하구 임시 부두: 냉동 상자 격리, 적재 순번, 야간 순찰 인계를 처리한다. / 온도 기록, 적재 순번, 크레인 키 분할 상태
-
-<a id="External-Theaters-heading-0042"></a>
-
-### 언어·소문
-
-- 기록 언어: 서울 쪽 부두·수문 원장은 한국어로 기록한다.
-- 통역 원칙: 연안 언어 통역 창구는 발화자가 요청한 통역을 서울의 기존 회랑에 연결하는 자리다.
-- 확인: 조위·온도·봉인 기록 중 둘 이상이 독립적으로 맞고 해당 인계자가 확인된다.
-- 보류: 상자 또는 부두 하나의 기록만 남아 있으며 재측정이나 재대조가 필요하다.
-- 전언: 냉동 창이 죽었다거나 외부 화물이 왔다는 말만 있고 온도·봉인·수령 기록이 없다.
-- 금지 추론: 전언이나 통역 필요만으로 외부 거래 주체의 정책, 화물의 불법성, 통행자의 소속을 결론짓지 않는다.
-
-<a id="External-Theaters-heading-0044"></a>
-
-### 회랑 운영 조직
-
-- 수문국: 조위·배수·정수 안전을 지키며 하구 접근을 관리한다. 춘천의 물길 계약과 거점 밖 거래를 이어 가며 강원 전체에 조공을 요구하지 않는다. / 지렛대 영등포 수문과 정수 당직 / 넘지 않는 선 적재 지연을 이유로 수문 안전 기록을 숨기지 않는다.
-- 규격맹: 냉동 압축기와 하역 설비의 규격 호환을 유지한다. 천안·아산·시흥 분공방을 통해 충청의 공구·종자 교환을 넓히지만 외부 공방의 독자 규격과 경쟁한다. / 지렛대 구로 공단의 부품·수리 규격 / 넘지 않는 선 규격 불일치를 특정 통역 회랑의 책임으로 돌리지 않는다.
-- 태욱그룹: 손상 화물의 분리와 수리 장비 인계를 맡는다. 성남·수원 사업장 관계를 유지하고 영남 해체업자에게 부품과 인력을 구하되 부산 선주에게 출항을 명령하지 못한다. / 지렛대 차체·리깅·현장 수리 능력 / 넘지 않는 선 봉인 손상 상자를 일반 화물에 섞지 않는다.
-- 중앙정보부: 한강 남안 냉동 순번과 배급의 연속성을 지킨다. 울산·포항 탐사 기록을 해석하면서 외부 수리인과 설비 보존·해체를 두고 이견을 보인다. / 지렛대 흑석의 기술 점검과 보존 허가 기록 / 넘지 않는 선 전력 경고만으로 취약한 대기열의 순번을 지우지 않는다.
-- 여의도출자연합회: 봉인·경매·부두 안전 회람을 공개 가능한 장부로 남긴다. 영종지점과 환전을 바탕으로 선박·곡물 거래에 투자하지만 상대가 출자 증서를 거절할 수 있다. / 지렛대 여의도 출자 장부와 송신 기억 / 넘지 않는 선 가격 구호가 봉인 검증이나 안전 회람을 대신하게 하지 않는다.
-
-<a id="External-Theaters-heading-0046"></a>
-
-### 생태 압력
-
-- G02: 해풍과 번식기가 겹치면 큰부리까마귀가 교량·송신 점검구 상공의 공동 횃대를 만든다. / 대응 우산 행렬, 대체 횃대, 보수 시간대 조정으로 사람과 둥지를 갈라 놓는다. / 비살상 제약 둥지를 한꺼번에 밀어내지 않고 이설 막대와 존치 구간을 사용한다.
-- G17: 해상 잡음이 강해지면 외눈탑의 서남 수변 경보 반경이 넓어질 수 있다. / 대응 대역 필터와 의료·수문 표식의 대조로 오탐을 분리한다. / 비살상 제약 마스트를 일괄 파괴하지 않고 오탐을 낸 헤드만 대기 상태로 둔다.
-
-<a id="External-Theaters-heading-0048"></a>
-
-### 개막 2126
-
-- 사건: XT02-SC1
-- 촉발: 서해 조위 변화가 여의도 수문의 배수 일정과 하구 부두 적재 순번을 동시에 바꾼다.
-- 충돌: 수문 안전을 먼저 보장해야 한다는 당직과 냉동 화물의 손실을 줄여야 한다는 부두 측 요구가 충돌한다.
-- 첫 판단: 냉동 상자 격리와 적재 지연을 공개할지, 배수 창을 먼저 확보하고 손상 위험을 장부에 남길지 선택한다.
-
-<a id="External-Theaters-heading-0050"></a>
-
-### 플레이어 진입
-
-- XT02-ENTRY-YEONGDEUNGPO-TIDE · 영등포 수문 당직: 조위표와 배수 밸브 기록을 대조하는 보조 / 첫 판단 부두 적재 요청보다 수문 안전 창을 먼저 공고할지 결정한다.
-- XT02-ENTRY-ESTUARY-SEAL · 한강 하구 임시 부두: 손상 봉인 화물을 분리·기록하는 현장 인계자 / 첫 판단 봉인 해시가 맞지 않는 상자를 격리할지 재측정까지 적재를 늦출지 결정한다.
-
-<a id="External-Theaters-heading-0052"></a>
-
-### 기록되지 않은 부분
-
-- 호남 생산지의 종자 보존과 서해 연안 인계, 충청의 농사·수리 교역은 서울의 기록 밖에 있다. 개별 항만명·정확한 항로·운항 시간은 기록되지 않았다. 서울 안의 원종은 정부만 가진다.
-- 호남 생산지의 종자 우선과 독점 거절은 서울의 기록 밖에 있다. 이를 외부 모든 상인·선원·기관의 공통 정책으로 넓히지 않으며, 이름이 오르지 않은 집단은 이름 없이 남는다.
-- 냉동·곡물 물량, 선박의 종류와 수량은 기록되어 있지 않다.
-- 외부 언어는 통역 요청과 별개로 기록에 없다.
-
-<a id="External-Theaters-heading-0054"></a>
-
-### 시나리오 쇄
-
-- XT02-SC1: 여의도 수문이 서해 조위에 맞춰 부두 배수 일정을 다시 짠다
-- XT02-SC2: 서남 제작창이 냉동 압축기 부품을 나누고 마곡이 계측 로그를 검증한다
-- XT02-SC3: 노량진 얼음 신용이 흔들릴 때 상암 송신이 경매 방송만 중계한다
-
-<a id="External-Theaters-heading-0056"></a>
-
-## XT03 · 대한해협전구
-
-- 용산·시청·명동·삼성·흑석은 대한해협 항로에서 세 갈래 중계 부두와 통역 창구를 운영한다.
-
-환적국 환적 창구 앞에 세 갈래 중계 표지판이 빗물에 번진다. 영남에서는 부산 선원과 수리 인력이 2058년 유지 가능한 배만 골라 연안 운항을 다시 연다. 선주마다 부담한 자재와 인력이 달라 항구 대표가 모든 출항을 명령할 수 없다. 울산·포항의 수리인과 해체업자는 설비를 살릴지 부품으로 팔지 다투며, 내륙 정착지는 항구와도 이해가 다르다. 대정전 무렵 전국 상황 표시가 울산부터 꺼졌다는 관측은 울산이 대정전을 일으켰다는 증거가 아니다.
-
-아크 사자는 밀봉 상자만 건네고 국경 이야기에 끼어들지 않는다. 2118년 부산 일대 선주와 각자 고용한 호위대는 나포된 배와 사람을 되찾으려 한시적으로 연합한다. 대마도의 한 항구 무장 집단에 통행을 빼앗긴 현지 선원 일부가 접안을 돕고, 원정대는 그 항구 한 곳에서 방어 거점을 무너뜨리고 배와 포로를 회수한다. 선주는 귀환을, 지휘자는 점령 지속을, 현지 협력자는 자치와 몫을 요구한다. 손상 선박의 보수 자재와 인력이 모자라 2119년 주력이 철수하고 일부 연락과 교역만 남는다. 참가자가 부르는 ‘대마도 정벌’은 이 국지 승리이며, 대마도 전역의 병합이나 서울 연합 해군의 승전이 아니다.
-
-흑석 통역 창구는 협정에 외래어와 한국어 주석을 나란히 적는다. 서울에는 회수품·배상 요구·귀환 호위꾼의 증언이 들어온다. 2126년 용산에서 선주의 의뢰와 현지 협력자의 약속이 같은 회수품을 놓고 충돌할 수 있으나, 이 만남은 조건부 사건이다. 일본 본토·중국·미국과 관련한 미확인 소식은 이 항구 원정의 확인 범위에 포함하지 않는다.
-
-연표 기록: [2079년 기록](/wiki/Century-Annals/#2079년-xt03-용산-환적창)
-
-<a id="External-Theaters-heading-0063"></a>
-
-### 서울 쪽 경로
-
-- 확인된 지리: 한반도와 일본 열도 사이 해상 거리와 공개 항로의 일반 개념.
-- 준비 거점: 용산 환적창 → 시청의 내륙 회차 창구 → 명동의 인준 봉인 창구 → 삼성의 밀봉 화물 창구 → 흑석의 통역 창구 → 이름 없는 세 갈래 중계 부두
-- 바깥 경계: 부산의 연안 운항, 제주와 남해안의 간접 교역, 2118~2119년 대마도 항구 한 곳의 원정.
-- 이동 시간: 기록되어 있지 않다. 중계표의 불일치, 부두 전력, 밀봉 상태, 내륙 회차와 통역 검증이 대기와 이동 비용을 정한다.
-
-<a id="External-Theaters-heading-0065"></a>
-
-### 이동·계절
-
-- 계절 조건: 해협의 특정 계절과 운항일은 기록되어 있지 않고 해상 상태·중계 부두 전력·밀봉 손상만 동적 상태로 둔다. / 물류 진동이 커지면 냉동고 진입로와 하역장 입구의 서울 측 생태 압력이 높아질 수 있다. / 먼지와 차압 문제가 생기면 의료·물자 호송은 통역 확인과 별도로 방호 절차를 거친다.
-- 중단 조건: 중계표의 용어가 한국어 주석과 대조되지 않을 때 / 밀봉 상자의 인계 기록이 끊겼을 때 / 대체 회차선의 통행권이 확인되지 않을 때
-- 기록 원칙: 한 중계가 닫혀도 같은 물자와 위험이 나머지 중계로 자동으로 넘어가지 않는다.
-
-<a id="External-Theaters-heading-0067"></a>
-
-### 공급·검문
-
-- 물자 · 부품·약품·통조림과 밀봉 공구: 밀봉 상태, 도구의 수령 책임, 통역 주석을 같은 인계 기록에 병렬로 남긴다.
-- 전력 · 부두 충전 슬롯 예약: 충전 슬롯은 항해 보조 단말의 보관 권한이나 통행 인준을 대체하지 않는다.
-- 기록 · 통역 용어 사전, 귀환 선원 검역 대기, 가족 상담 기록: 용어 충돌은 번역자의 결함으로 처리하지 않고 원문·주석·발화 맥락을 함께 보류한다.
-- 분리 원칙: 혼인·위령 인준, 통역 주석, 화물 봉인, 검역 대기는 서로 다른 권한으로 처리한다.
-- XT03-CP-YONGSAN · 용산 환적창: 세 갈래 중계표와 환적 장부를 비교하고 중계 선택을 기록한다. / 중계표 불일치, 환적 슬롯, 화물 인계 기록
-- XT03-CP-SICHEONG-MYEONGDONG · 시청 회차 창구와 명동 인준 창구: 내륙 회차권과 혼인·위령 인준 봉인의 형식을 각각 확인한다. / 회차 슬롯, 인준 봉인, 수령 책임자
-- XT03-CP-SAMSUNG-HEUKSEOK · 삼성 밀봉 창구와 흑석 통역 창구: 밀봉 화물과 외래어 주석의 대조를 분리해 처리한다. / 밀봉 상태, 한국어 주석, 통역 요청 동의
-
-<a id="External-Theaters-heading-0069"></a>
-
-### 언어·소문
-
-- 기록 언어: 서울 쪽 협정 원장은 한국어 주석을 기준으로 남긴다.
-- 통역 원칙: 이태원과 흑석의 기존 통역 자원은 요청된 발화를 대조하기 위한 서울 측 자원으로만 쓴다.
-- 확인: 서로 독립된 화물 기록과 통역 원문·주석이 맞고 인계 책임자가 확인된다.
-- 보류: 중계표 사이에 불일치가 남아 있으나 밀봉·회차 기록의 일부가 확인된다.
-- 전언: 세 중계가 서로 다른 이야기를 전하지만 원문·수령·화물 기록으로 교차 확인되지 않았다.
-- 금지 추론: 중계표 한 장이나 통역되지 않은 단어만으로 외부 정치체의 의도, 항로 폐쇄 원인, 발화자의 정체성을 결론짓지 않는다.
-
-<a id="External-Theaters-heading-0071"></a>
-
-### 회랑 운영 조직
-
-- 환적국: 용산 환적과 세 갈래 중계의 연결이 끊기지 않게 한다. 인천·파주 종착과 외부 상단의 통행세·하역 계약을 다루되 항구 전체의 소유권은 없다. / 지렛대 중앙 환적 장부와 울타리 열쇠의 운영 기억 / 넘지 않는 선 닫힌 한 길의 위험을 다른 회차선에 자동 전가하지 않는다.
-- 아크: 내륙 회차와 운반 노동의 통행 조건을 공개한다. 성남·시흥 노동자 접점을 바탕으로 장거리 호송과 선박 수리의 임금·귀환 조건에 관여하되 외부 노동자 전체를 대표하지 않는다. / 지렛대 정부 영토인 시청 회차선의 통행 계약과 파업 명부 / 넘지 않는 선 통역이 없는 화물을 노동자에게 일방 인계하지 않는다.
-- 아크: 밀봉 상자와 구휼 물자의 보관 책임을 분명히 한다. 해협에서 돌아온 가족과 화물의 수령을 둘러싸고 다투며 남부 전역의 교권을 갖지는 않는다. / 지렛대 삼성역 보관 명부와 보관 관습 / 넘지 않는 선 국경 이야기를 이유로 밀봉 화물의 검증을 생략하지 않는다.
-- 중앙정보부: 흑석의 기술 점검 기록과 보존 허가를 관리한다. 울산·포항 탐사 기록을 해석하면서 외부 수리인과 설비 보존·해체를 두고 이견을 보인다. / 지렛대 흑석의 기술 점검 원장 / 넘지 않는 선 점검 기록이 없는 화물은 보존 허가를 내주지 않는다.
-
-<a id="External-Theaters-heading-0073"></a>
-
-### 생태 압력
-
-- G03: 해협 쪽 물류 진동과 급식 중단이 겹치면 들개가 냉동고 진입로를 둘러쌀 수 있다. / 대응 가족별 급식 구역과 그늘 통로를 마련해 하역 진입로를 분리한다. / 비살상 제약 무리를 단일 적대 집단으로 취급하거나 학살 명령을 쓰지 않는다.
-- G08: 중계 부두의 먼지와 압력 변화가 클린룸변이자의 방호 문 판단을 흔들 수 있다. / 대응 차압·접지·명부를 한 키에 합치지 않고 문별 승인 기록을 대조한다. / 비살상 제약 의료 호송을 위해 전 문을 무단 개방하지 않는다.
-- G18: 환적 진동이 불다리열차의 결함 맵과 실제 균열 좌표를 섞을 수 있다. / 대응 원본 해시가 찍힌 제외 목록을 차상 포트에 넣고 수동 견인로를 남긴다. / 비살상 제약 차량을 파괴하는 대신 잘못 연결된 결함 맵을 회수한다.
-
-<a id="External-Theaters-heading-0075"></a>
-
-### 개막 2126
-
-- 사건: XT03-SC1
-- 촉발: 용산 환적창에서 세 갈래 중 한 중계가 닫히고 수서의 대체 회차선이 열린다.
-- 충돌: 중계표의 불일치를 먼저 풀어야 한다는 기록 측과 제한된 회차선을 먼저 써야 한다는 호송 측이 충돌한다.
-- 첫 판단: 통역 불일치가 있는 상자를 격리할지, 제한된 내륙 회차로 돌리되 보류 기록을 공개할지 선택한다.
-
-<a id="External-Theaters-heading-0077"></a>
-
-### 플레이어 진입
-
-- XT03-ENTRY-YONGSAN-RELAY · 용산 환적창: 중계표와 환적 장부를 대조하는 통역 보조 / 첫 판단 닫힌 중계의 전언을 사실로 올리지 않고 어느 기록을 보류할지 정한다.
-- XT03-ENTRY-HEUKSEOK-GLOSS · 흑석 통역 창구: 원문·한국어 주석·수령 동의를 묶는 기록관 / 첫 판단 용어 충돌을 기록으로 남길지 대조가 끝날 때까지 화물 인계를 늦출지 정한다.
-
-<a id="External-Theaters-heading-0079"></a>
-
-### 기록되지 않은 부분
-
-- 부산의 연안 운항, 제주와 남해안의 간접 교역, 2118~2119년 대마도 항구 한 곳의 원정.
-- 원정 주체와 대마도 항구 무장 집단·현지 협력자는 항구 원정에 참여한다. 항구 승리는 현대 일본 전체와의 전쟁이나 영유권을 결론짓지 않는다.
-- 해협의 특정 계절 창과 화물 규모는 기록되어 있지 않다.
-- 외부 언어는 서울의 통역 요청과 별개로 기록에 없다.
-
-<a id="External-Theaters-heading-0081"></a>
-
-### 시나리오 쇄
-
-- XT03-SC1: 용산 환적창이 삼로 중 한 길을 닫고 수서가 대체 회차선을 연다
-- XT03-SC2: 가락 배급이 통조림 할당을 재조정하고 뚝섬 공방이 밀봉 공구를 보낸다
-- XT03-SC3: 노량진 통역 창구가 용어 충돌을 기록하고 협정을 유지한다
-
-<a id="External-Theaters-heading-0083"></a>
-
-## XT04 · 두만강극동전구
-
-- 암사·신내·강남·제기동·구의는 두만강·극동 회랑의 철도 우회와 광물·연료 검수를 나누어 맡는다.
-
-동방사 야적장에서 화차 중량 센서가 한 칸만 과하게 뛴다. 북한 지역 동해안 북부에서는 2064년 함흥·청진 쪽 항만과 철도 주민이 유지한 짧은 구간 사이로 사람과 짐을 인계한다. 화차의 출발지와 짐의 출발 기록이 다를 수 있다. 이 왕래는 2069년 서울의 동북 화차 기록으로 이어질 수 있는 경로이지만 중간 경유지나 한반도 관통 정기열차를 결론짓지 않는다.
-
-신내운수 호송원은 그 칸을 우회 슬롯에 넣고, 성하그룹 대리가 동절 연료 드럼 순번을 다시 쓴다. 2068년부터 독도 초소 사람들은 울릉도·동해안 연락처와 초소를 오가며 교대한다. 전체는 수십 명 안팎의 작은 연락·구조 집단이고 독도에는 소수만 계절별로 머문다. 정확한 인원과 수용력은 기록되어 있지 않다. 주거·선박 정비·식량 확보는 울릉도와 연안에 분산하고 식수·식량·보수 자재를 배로 들여온다. 보급이 끊기면 체류 인원부터 거둔다. 계절별 연락을 약속한 일부 조업 선박은 초소에 접근해 소식을 맡기며, 초소가 비면 다음 연락을 위해 울릉도까지 돌아가야 한다.
-
-흰십자단 의무실은 동상에 걸린 귀환 노동자의 장갑을 말리고, 아관사 중대장은 원산지 위조 표를 난로에 넣지 않고 증빙 봉투에 봉한다. 초소 사람들은 눈앞의 배와 표류자를 살피고 배가 있을 때만 구조한다. 안개와 높은 파도는 발견·접안을 막으며, 독도는 상시 안전 피항지나 동해 감시망이 아니다. 접안·조난 기록과 증언도 서로 정확도가 다르다. 선주와 귀환자를 되찾으려는 고용주에게 연락처를 숨기지만 일부 연안 선원은 오래전부터 존재를 안다. 대마도 참전 선원 일부가 합류하더라도 남해안 귀환·동해안 이동·울릉도 보급망을 거치며 집단 전체의 기원을 원정 잔당으로 바꾸지 않는다.
-
-어느 정부도 단죄하지 않고 화차와 사람만 검수한다. 2124년 서울에는 독도 초소 이야기가 전언으로 들어오고, 2125년 소수 연락 관계자가 별개 경로의 증언·물건·접안 기록을 대조해 집단의 실재를 확인한다. 이는 공개 항로나 서울 통제권을 뜻하지 않는다. 2126년 구조된 선원이 연락을 요청한다면 신원과 연락처 공개 범위를 놓고 지원·교역과 추적 위험이 충돌한다. 서울 전령 호위와 답장 전달은 조건부 이야기이며 신종목의 독도 직통 무전이나 신준의 기억을 통한 실재 인증에 기대지 않는다.
-
-연표 기록: [2069년 기록](/wiki/Century-Annals/#2069년-xt04-암사-야적장) · [2114년 기록](/wiki/Century-Annals/#2114년-xt04-암사-야적장)
-
-<a id="External-Theaters-heading-0090"></a>
-
-### 서울 쪽 경로
-
-- 확인된 지리: 대륙 철도와 극동 에너지 회랑의 지리 개념.
-- 준비 거점: 암사 야적장과 중량 로그 창구 → 신내 우회 환승 창구 → 강남 동절 연료 큐 → 제기동 의무실 → 구의 봉인 창구
-- 바깥 경계: 함흥·청진의 짧은 구간 인계와 독도·울릉도·동해안 보급 관계는 서울의 기록 밖에 있다. 동북 화차와의 중간 연결, 철도 종점·실제 우회로·항해 시간은 기록되지 않았다. 독도 보급을 이 철도 회랑의 직통 노선으로 보지 않는다.
-- 이동 시간: 기록되어 있지 않다. 한파, 연료, 냉각수, 하중 검증, 환승 슬롯과 의료 필요가 이동 비용과 대기를 정한다.
-
-<a id="External-Theaters-heading-0092"></a>
-
-### 이동·계절
-
-- 계절 조건: 한파와 물류 단절은 사료·폐기물·연료의 분포를 바꾸고 서울 동부 지선의 통행 부담을 높인다. / 해빙 뒤에는 한파 때문에 닫힌 관로와 점검 창을 재검사한 뒤에만 복귀 통행을 연다. / 동절 연료와 냉각수는 같은 부족 신호를 보일 수 있으나 어느 하나가 다른 하나의 자동 우선권을 얻지는 않는다.
-- 중단 조건: 중량 센서 로그가 봉인 기록과 맞지 않을 때 / 동상 환자의 이송 필요가 확인됐으나 의료 호송 슬롯이 없을 때 / 가설교량 또는 측선의 하중 검증이 끝나지 않았을 때
-- 기록 원칙: 한파와 하중 위험은 사람·연료·광물의 출신을 판정하는 근거가 아니라 구간의 안전 상태로만 기록한다.
-
-<a id="External-Theaters-heading-0094"></a>
-
-### 공급·검문
-
-- 설비 · 레일 부품과 광물 샘플: 샘플 봉인과 레일 부품의 사용 승인 기록을 분리하며 원산지 불명은 자동 폐기·처벌 사유가 아니다.
-- 연료 · 동절 연료 드럼과 배급 큐: 연료 순번은 중량 로그 공개 뒤에 조정하되 의료 호송의 공간을 단독으로 잠그지 않는다.
-- 사람·의료 · 귀환 노동자 숙소와 동상 치료: 의료 분류는 화차 증빙과 분리하며 치료 뒤의 수령 책임을 장부에 남긴다.
-- 분리 원칙: 화차, 광물, 연료, 귀환 노동자, 의료 기록은 한 검문에서 만날 수 있어도 하나의 의심으로 함께 거부하지 않는다.
-- XT04-CP-AMSA · 암사 야적장: 화차 중량 로그와 야적 안전 기록을 공개한다. / 중량 이상, 야적 안전, 수령 전 봉인 상태
-- XT04-CP-SINNAE-GANGNAM · 신내 환승 창구와 강남 연료 큐: 우회 슬롯과 동절 연료 순번을 분리해 배정한다. / 환승 슬롯, 연료 큐, 호송 수령 책임
-- XT04-CP-JEGIDONG-GUI · 제기동 의무실과 구의 봉인 창구: 동상 치료와 원산지 증빙·이중 봉인을 각각 확인한다. / 치료 필요, 증빙 봉투, 봉인 키 보관
-
-<a id="External-Theaters-heading-0096"></a>
-
-### 언어·소문
-
-- 기록 언어: 서울 쪽 중량·연료·의료·봉인 원장은 한국어로 기록한다.
-- 통역 원칙: 귀환 상담에서 통역이 필요하면 요청자의 동의 아래 서울의 기존 통역 회랑을 연결한다.
-- 확인: 중량 로그와 봉인·수령 기록이 독립적으로 맞거나 의료 기록과 실제 인계가 대조된다.
-- 보류: 화인·원산지 표 또는 단일 화차 기록만 있으며 봉인·중량 대조가 남아 있다.
-- 전언: 외부 광물·연료·귀환자의 출발에 관한 말만 있고 화차·봉인·수령 기록이 없다.
-- 금지 추론: 원산지 표의 불일치나 통역 필요만으로 외부 정부·기업의 행위, 노동자의 소속, 화물의 범죄성을 결론짓지 않는다.
-
-<a id="External-Theaters-heading-0098"></a>
-
-### 회랑 운영 조직
-
-- 동방사: 아크의 세습 소총 근위대로서 암사 야적장의 안전과 동부 물·기지 보호를 유지한다. 북부 경비 거점에서 인원을 확보하려 하여 잔류·이탈자와 갈등하지만 전국 군대의 지휘권은 없다. / 지렛대 암사 정수와 고덕 기지의 비상 감독 / 넘지 않는 선 야적 안전을 이유로 중량 로그를 비공개로 돌리지 않는다.
-- 신내운수: 우회 슬롯과 의료·물자 호송의 중립성을 지킨다. 외부 인계 거점까지 계약 호송을 맡되 한반도 관통 정기열차는 운영하지 않는다. / 지렛대 신내 환승과 응급 호송 장부 / 넘지 않는 선 연료 큐가 의료 호송의 통행권을 자동으로 지우지 않는다.
-- 성하그룹: 동절 연료 배급 큐와 호송 준비를 유지한다. 대전 등의 정비사와 정보·부품을 교환하되 전국 통신 독점이나 민웅기의 복귀 의무로 바꾸지 않는다. / 지렛대 강남 냉각 키와 연료 순번 장부 / 넘지 않는 선 연료 드럼의 순번을 원산지 판정의 대가로 쓰지 않는다.
-- 흰십자단: 동상 환자와 귀환 노동자에게 응급 처치를 적대 구분 없이 베푼다. 행렬과 상선을 통해 의약을 교환하되 거래 지역마다 지부가 생기는 것은 아니다. / 지렛대 제기동 약령 장부와 치료 계약 / 넘지 않는 선 치료 필요를 화차 검문이나 징발의 근거로 바꾸지 않는다.
-- 아관사: 광물 샘플과 화차 증빙의 이중 봉인을 유지한다. 기존 관문 안전과 통행을 우선하며 대마도·제주와 직접 외교 관계를 맺지는 않는다. / 지렛대 구의 수문과 아차산 관문 절차 / 넘지 않는 선 원산지 불명 표식을 파기하거나 한쪽이 단독 판단하지 않는다.
-
-<a id="External-Theaters-heading-0100"></a>
-
-### 생태 압력
-
-- G04: 한파와 물류 단절이 너구리의 사료 밀도와 동부 지선 이동을 바꿀 수 있다. / 대응 대체 은신 관과 난방 허용 구역을 열어 펌프 접근로와 가족군을 분리한다. / 비살상 제약 독먹이와 전면 수몰은 수질과 지상 침입 위험을 키우므로 쓰지 않는다.
-- G09: 광물·연료 화차가 냉각수를 선점하면 저온포자숙주가 의지하는 외곽 창고부터 비워질 수 있다. / 대응 냉열 경계와 창고별 온도 기록을 공개해 연료·냉각의 비용을 분리한다. / 비살상 제약 방송 냉각과 식량 보존 중 하나를 숨겨 희생시키지 않는다.
-- G14: XT04에서 섞여 들어온 화차 중량 신호가 빈수레의 장거리 슬롯 우선을 키울 수 있다. / 대응 서명된 슬롯만 남기고 응급 슬롯 비율을 분리해 공차 루프를 우회시킨다. / 비살상 제약 공차를 부수는 대신 토큰과 패드 전원을 단계적으로 분리한다.
-- G26: 연료 화차와 중량 견인이 측선·가설 구조의 하중 검증을 압박할 수 있다. / 대응 공개 하중 시험과 안전한 레일 유도로 견인을 분할한다. / 비살상 제약 동력핵 폭파를 통행 개방의 기본 해법으로 쓰지 않는다.
-
-<a id="External-Theaters-heading-0102"></a>
-
-### 개막 2126
-
-- 사건: XT04-SC1
-- 촉발: 암사 야적장의 화차 중량 로그가 한 칸의 이상을 보이고 신내가 환승 슬롯을 다시 배정한다.
-- 충돌: 중량 이상을 즉시 공개해야 한다는 요구와 동절 연료 큐 지연을 피해야 한다는 요구가 충돌한다.
-- 첫 판단: 의료 호송 창을 연료 화차보다 먼저 배정할지, 중량 재검사를 끝낸 뒤 두 인계를 함께 열지 선택한다.
-
-<a id="External-Theaters-heading-0104"></a>
-
-### 플레이어 진입
-
-- XT04-ENTRY-AMSA-WEIGHT · 암사 야적장: 중량 로그와 봉인 기록을 대조하는 현장 보조 / 첫 판단 이상 로그를 공개 보드에 올릴지 재측정 동안 해당 화차만 우회 슬롯으로 보낼지 정한다.
-- XT04-ENTRY-JEGIDONG-FROST · 제기동 의무실: 동상 치료와 호송 인계를 분리 기록하는 조력자 / 첫 판단 치료가 필요한 사람을 화차 증빙 심사와 분리해 먼저 이송할지 정한다.
-
-<a id="External-Theaters-heading-0106"></a>
-
-### 기록되지 않은 부분
-
-- 함흥·청진의 짧은 구간 인계와 독도·울릉도·동해안 보급 관계는 서울의 기록 밖에 있다. 동북 화차와의 중간 연결, 철도 종점·실제 우회로·항해 시간은 기록되지 않았다. 독도 보급을 이 철도 회랑의 직통 노선으로 보지 않는다.
-- 함흥·청진 인계 주민과 독도 초소 사람들의 활동은 기록에 남되, 광물·연료의 정확한 종류·물량·채굴 주체는 기록되지 않았다. 초소 인원·수용력·보급량·항해 일정도 수치로는 기록되어 있지 않다.
-- 외부 정부·국영기업·무장 집단의 이름과 행위는 기록에 없다.
-- 외부 언어와 귀환 노동자의 출신은 상담 통역 요청만으로 결론짓지 않는다.
-
-<a id="External-Theaters-heading-0108"></a>
-
-### 시나리오 쇄
-
-- XT04-SC1: 동방사 암사 당직이 화차 중량 로그를 공개하고 신내가 환승 슬롯을 조정한다
-- XT04-SC2: 창동 차륜방이 동절 연료 큐를 나누고 제기동이 동상 환자를 받는다
-- XT04-SC3: 아차산 관문이 광물 샘플 봉인을 검사한 뒤 위조 원산지 표를 폐기한다
-
-<a id="External-Theaters-heading-0110"></a>
-
-## XT05 · 인천신탁전구
-
-- 여의도·영등포·광화문·시청·양재·명동은 인천신탁 창구에서 위성 잔여 대역·인도 목록·디아스포라 연락을 신탁한다.
-
-여의도출자연합회 회관 옥상에서 잔여 대역 추첨 번호가 회람된다. 수도권 외곽에서는 2031년 인천·파주 방면 철도 작업자와 피난민이 유지 가능한 선로 끝에서 짐을 등짐과 수레로 나누며 임시 장터를 만든다. 그 장터 모두가 훗날 환적국의 종착 거점은 아니다. 2098년 동방사의 하남·남양주·의정부·연천 경비지구, 2100년 환적국의 인천·파주 종착 통행세, 2101년 태욱그룹의 성남·수원 사업장, 2104년 영종지점, 2106년 고양의 경기도 행정 거점은 유지된다. 거점 밖 주민은 소집·통행세를 피하거나 직접 거래하며 서울 세력과 다툰다.
-
-수문국 수문 당직은 급수 펌프 가동 시각을 그 번호에 맞추고, 대한민국정부 주사가 인도 목록 해시를 시민 참관 칸에 붙인다. 서울의 세 세력은 길목의 계약·사업장·명부를 쥐지만 한반도 전체를 다스리지는 않는다. XT01-XT05는 관계와 회랑의 식별자이며 새 국가가 아니다. 바깥에서 도착한 사람과 물건은 지금 서울이 쥔 영토와 지하철 이동망 안에서 파장을 일으킨다.
-
-아크 역장 한 사람이 해외 송금 기록 상자만 실은 회차선을 열고, 태욱그룹 대리가 궤도 단말의 오탐 경보를 끈다.
-
-명동 상담 창구는 밤이 깊어도 다국어 대기표를 버리지 않는다.
-
-연표 기록: [2069년 기록](/wiki/Century-Annals/#2069년-xt05-여의도-회관) · [2122년 기록](/wiki/Century-Annals/#2122년-xt05-여의도-회관)
-
-<a id="External-Theaters-heading-0117"></a>
-
-### 서울 쪽 경로
-
-- 확인된 지리: 위성·인도·방재 협력의 일반 개념과 공개 국제기구 명칭.
-- 준비 거점: 여의도 잔여 대역·원장 창구 → 영등포 급수 시간 창구 → 광화문 시민 참관 해시 창구 → 시청 회차 기록 창구 → 양재 궤도 단말 교정 창구 → 명동 다국어 상담 창구 → 이름 없는 인천 신탁 수령창
-- 바깥 경계: 인천·파주 종착 거점과 영종지점 등 수도권 외곽의 기존 접점은 유지한다. 인천 신탁의 실제 수령 장소·세부 항만·도로 경로와 해외 인도 주체는 여전히 기록되지 않았다.
-- 이동 시간: 기록되어 있지 않다. 송신 대역, 펌프 전력, 목록 해시, 단말 상태, 상담 동의와 수령 확인이 대기와 이동 비용을 정한다.
-
-<a id="External-Theaters-heading-0119"></a>
-
-### 이동·계절
-
-- 계절 조건: 냉동·원양 단백질 잔여물이 쌓이는 주간에는 환승 하역 엘리베이터와 밀봉 라인의 부담이 커질 수 있다. / 해풍 방향과 배수 부담이 겹치면 외곽으로 물을 넘기는 선택의 비용을 기록한다. / 잔여 대역이 오래된 호출 형식과 겹치면 자동 구호 설비의 오탐을 별도 상태로 판정한다.
-- 중단 조건: 수신 로그만 있고 목록 해시나 실물 수령이 없을 때 / 송신 키의 시민 참관 기록이 빠졌을 때 / 궤도 단말 오탐이 교정되지 않아 수령 대상이 불명확할 때
-- 기록 원칙: 수신되지 않은 궤도 신호는 외부 주체의 명령으로 읽지 않고 재현 가능한 로그와 수령 기록이 있을 때만 다음 단계로 넘긴다.
-
-<a id="External-Theaters-heading-0121"></a>
-
-### 공급·검문
-
-- 인도 물자 · 인도 물자 할당 목록, 의약 캡슐, 냉동 단백질: 수신 로그, 목록 해시, 실물 수령을 분리 기록하며 하나만으로 배급 순번을 결론짓지 않는다.
-- 전력·통신 · 비상 송신 전력 쿼터와 위성 잔여 대역 예약: 대역 추첨 결과는 펌프 가동 시간과 함께 공개하되 송신 키를 단독 보관하지 않는다.
-- 가족·기록 · 해외 가족 재연결 대기, 다국어 상담, 송금 기록: 상담 동의와 송금 기록은 인도 물자의 수령·격리 판정과 분리한다.
-- 분리 원칙: 인도 약속, 수신 신호, 가족 연락, 통역 요청은 서로 증거 수준이 다르며 한 항목의 불확실성이 다른 항목의 자동 거부 사유가 되지 않는다.
-- XT05-CP-YEOUIDO-YEONGDEUNGPO · 여의도 대역 창구와 영등포 급수 당직: 잔여 대역 공개 추첨과 펌프 가동 시각을 대조한다. / 대역 추첨 기록, 송신 전력 쿼터, 펌프 시간표
-- XT05-CP-GWANGHWAMUN-SICHEONG · 광화문 참관 해시 창구와 시청 회차 기록 창구: 인도 목록 해시의 시민 참관과 배송 회차 기록을 분리 확인한다. / 목록 해시, 참관 서명, 회차 수령 기록
-- XT05-CP-YANGJAE-MYEONGDONG · 양재 단말 교정 창구와 명동 상담 창구: 궤도 단말 오탐과 상담·통역 요청을 각각 처리한다. / 단말 오탐 기록, 상담 동의, 가족 연락 대기표
-
-<a id="External-Theaters-heading-0123"></a>
-
-### 언어·소문
-
-- 기록 언어: 서울 쪽 대역·수령·상담 원장은 한국어로 기록한다.
-- 통역 원칙: 명동의 다국어 대기표는 자기신고와 통역 요청을 받는 도구이며 요청된 경우에만 서울의 기존 통역 자원을 연결한다.
-- 확인: 수신 로그, 목록 해시, 실물 수령 중 독립된 근거가 대조되고 수령 책임자가 남아 있다.
-- 보류: 수신 로그 또는 목록 해시만 있으며 실물 수령·단말 교정이 남아 있다.
-- 전언: 해외 가족 연락, 인도 약속, 궤도 호출에 관한 말만 있고 재현 가능한 기록이 없다.
-- 금지 추론: 수신되지 않은 신호, 통역 요청, 송금 기록만으로 외부 당국의 명령, 가족의 생존, 통행자의 소속을 결론짓지 않는다.
-
-<a id="External-Theaters-heading-0125"></a>
-
-### 회랑 운영 조직
-
-- 여의도출자연합회: 잔여 대역과 송신 장부의 공개 추첨을 유지한다. 영종지점과 환전을 바탕으로 선박·곡물 거래에 투자하지만 상대가 출자 증서를 거절할 수 있다. / 지렛대 여의도 회관의 출자 장부와 송신 기억 / 넘지 않는 선 대역 추첨을 비공개 배정이나 단독 송신 키로 바꾸지 않는다.
-- 수문국: 대역·인도 일정이 급수 펌프의 안전한 가동과 맞물리게 한다. 춘천의 물길 계약과 거점 밖 거래를 이어 가며 강원 전체에 조공을 요구하지 않는다. / 지렛대 영등포 정수와 수문 당직 / 넘지 않는 선 송신 요구가 급수 안전 기록을 덮지 않는다.
-- 대한민국정부: 인도 목록 해시와 시민 참관 기록의 형식을 보존한다. 고양의 경기도 거점을 바탕으로 외부 사절에게 대표성을 인정받으려 하나 인정과 복종은 별개다. / 지렛대 광화문 기록 인준과 도장 / 넘지 않는 선 참관 없는 목록을 배급 권리나 격리 근거로 만들지 않는다.
-- 아크: 배송 회차와 송금 기록의 운반 조건을 공개한다. 성남·시흥 노동자 접점을 바탕으로 장거리 호송과 선박 수리의 임금·귀환 조건에 관여하되 외부 노동자 전체를 대표하지 않는다. / 지렛대 정부 영토인 시청 회차선의 통행 계약과 조합 장부 / 넘지 않는 선 송금 기록을 통행권·노동 자격의 판정 도구로 쓰지 않는다.
-- 태욱그룹: 궤도 단말의 오탐을 고쳐 수령 대상과 장비 안전을 분리한다. 성남·수원 사업장 관계를 유지하고 영남 해체업자에게 부품과 인력을 구하되 부산 선주에게 출항을 명령하지 못한다. / 지렛대 양재 정비고와 현장 휴머노이드 정비 기억 / 넘지 않는 선 오탐 교정을 이유로 시민 참관과 수령 해시를 우회하지 않는다.
-
-<a id="External-Theaters-heading-0127"></a>
-
-### 생태 압력
-
-- G05: 냉동·원양 단백질 잔여물이 쌓이면 집쥐가 하역 엘리베이터 통로까지 가지 둥지를 넓힐 수 있다. / 대응 잔반 회수와 임시 이중 밀봉 라인을 먼저 운영하고 하역 시간을 나눈다. / 비살상 제약 전염 낙인이나 전면 독성 살포로 피난민을 봉쇄하지 않는다.
-- G10: 해풍 방향으로 물을 넘기면 침수곰팡이호흡단의 회랑과 외곽 저장지에 한 철의 부담이 남을 수 있다. / 대응 배수 선택 전에 주민 명부와 펌프 중지권을 확인하고 오염 부담을 공개한다. / 비살상 제약 외곽에 물을 넘겨 서울 중심의 비용만 지우는 선택을 무비용 해법으로 쓰지 않는다.
-- G15: 인도 물자 코드가 수신되면 돌봄바퀴가 보급과 격리 강도를 함께 높일 수 있다. / 대응 명단·동의 해시·병상별 전원을 대조해 과보급과 신규 감금을 막는다. / 비살상 제약 복지동을 불태우거나 모든 병상 락을 한꺼번에 끊지 않는다.
-- G25: XT05 인도 목록의 의약 캡슐이 오래된 모의 수신자에게 쌓일 수 있다. / 대응 수신자 표식, 배송표, 적재함을 현장 진료 기록과 대조한다. / 비살상 제약 주 발신기를 즉시 파괴하는 대신 구조용 복렬과 시민 통로를 함께 평가한다.
-
-<a id="External-Theaters-heading-0129"></a>
-
-### 개막 2126
-
-- 사건: XT05-SC1
-- 촉발: 상암 송신의 잔여 대역 공개 추첨과 여의도 급수 당직의 펌프 시간이 같은 창에 겹친다.
-- 충돌: 대역을 먼저 확보해 통신을 살리려는 요구와 시민 참관 해시를 먼저 남겨 수령 장부의 신뢰를 지키려는 요구가 충돌한다.
-- 첫 판단: 수신 로그만 있는 의약 캡슐을 배급 목록에 올릴지, 참관·해시·수령 확인까지 보류할지 선택한다.
-
-<a id="External-Theaters-heading-0131"></a>
-
-### 플레이어 진입
-
-- XT05-ENTRY-BAND-LOTTERY · 여의도 잔여 대역 추첨 창구: 추첨·펌프 시간·참관 서명을 대조하는 시민 보조 / 첫 판단 대역 배정의 속도와 시민 참관의 완결 중 어느 조건을 먼저 충족할지 정한다.
-- XT05-ENTRY-MYEONGDONG-CONSENT · 명동 상담 창구: 가족 연락 대기표와 통역 요청 동의를 기록하는 조력자 / 첫 판단 수령 기록이 없는 가족 연락을 전언으로 보류할지, 단말 재확인을 위해 회차 기록으로 보낼지 정한다.
-
-<a id="External-Theaters-heading-0133"></a>
-
-### 기록되지 않은 부분
-
-- 인천·파주 종착 거점과 영종지점 등 수도권 외곽의 기존 접점은 유지한다. 인천 신탁의 실제 수령 장소·세부 항만·도로 경로와 해외 인도 주체는 여전히 기록되지 않았다.
-- 외부 인도 주체, 궤도 자산의 운영자, 해외 가족의 소재는 기록에 없다.
-- 인도 물자·냉동 단백질·의약 캡슐의 수량은 기록에 없다.
-- 외부 언어와 외부 통신 주체의 정체성은 서울의 통역·로그만으로 결론짓지 않는다.
-
-<a id="External-Theaters-heading-0135"></a>
-
-### 시나리오 쇄
-
-- XT05-SC1: 상암 송신이 잔여 대역을 공개 추첨하고 여의도가 급수 당직과 시간을 맞춘다
-- XT05-SC2: 서울역 기록청이 인도 목록 해시를 보관하고 수서가 배송 회차선을 연다
-- XT05-SC3: 마곡이 궤도 단말 오탐을 교정하고 가락이 이산가족 상담 창구를 연장한다
+겨울이 계절인지 영구인지, 바깥 기계가 언제까지 버틸지는 정해지지 않았다.
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Faith-Culture-Schism', 'The Faith-and-Culture Schism', '신앙과 문화의 분열', 'culture', 2, '**A. The Era**
 
@@ -6412,9 +1588,9 @@ In 2126, residents collect rations at station windows. They receive water before
 
 ## The Station Ration Meal
 
-**A. Ration windows and water supply**
+**A. Ration windows**
 
-In a dong with a subway station, the ration window was in the station concourse. People also helped distribute rations at school playgrounds and community-center windows; when the Yeongdeungpo treatment watch opened the tap, water filled the rice pots of the Sinjeong depot, and when the Amsa escort locked the canisters, the queues at Suseo and Garak lengthened that same afternoon.
+In a dong with a subway station, the ration window was in the station concourse. People also helped distribute rations at school playgrounds and community-center windows; when one station window closed, the queue at the next station lengthened that same afternoon.
 
 **B. Porridge and ration stores**
 
@@ -6432,7 +1608,7 @@ A transfer station cut from power stopped its freight too. Even with the tunnel 
 
 The tanks survived the Great Blackout. Remote safety control was dead, and the collector wells under the concourses, the depot drainage ponds, and the sedimentation basins of the treatment plants remained in human hands; the trade of holding on the station tank water the carp, crucian carp, and catfish that had been caught in the Han River and the reservoirs even in 2026 went by the name of tank aquaculture.
 
-The wetlands outside the Yeongdeungpo and Yeouido sluices were that water surface. The sedimentation basin beside the Ttukseom pumps, the lower cells under the Amsa treatment plant, and the Changdong depot drainage ponds stood in the same line; the waterfowl occupied the shallow water, and the place where raptors looked down from the wires overlapped the edible cells. The watch wrote the section''s water level to be divided among rice, birds, and trains, and the wetland-side colonies were the field of [G06](/wiki/Hostile-Group-G06/).
+The wetlands along the Han at Yeongdeungpo and Yeouido were that water surface. The sedimentation basin beside the Ttukseom pumps, the lower cells under the Amsa treatment plant, and the Changdong depot drainage ponds stood in the same line; the waterfowl occupied the shallow water, and the place where raptors looked down from the wires overlapped the edible cells. The watch wrote the section''s water level to be divided among rice, birds, and trains, and the wetland-side colonies were the field of [G06](/wiki/Hostile-Group-G06/).
 
 **B. Farm water and drinking water**
 
@@ -6442,26 +1618,23 @@ In the flood zone along the Han''s main channel, first floors go under every mon
 
 ## Water Rationing and Treatment
 
-A. The 2026 parts and water exchange
+A. Treatment and power
 
-On November 6, 2026, two Yeouido vault representatives visited Yeongdeungpo waterworks. Han Jeonghun accepted two emergency generator parts and agreed to open the Yeouido water valve from 06:00 to 12:00 daily.
+Seoul has plenty of water as such. What runs short is clean, treated water and the pipes and power that carry it.
 
-The dated water and parts record is in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Seoul has plenty of water as such. What runs short is clean, treated water and the pipes and power that carry it.
+Even with ration rice, clean cooking water was unavailable when the treatment equipment was not running. If porridge was cooked with cloudy water, cases of waterborne disease increased. Counterfeit medicine also circulated that summer.
 
-Even with ration rice, without the treatment watch''s signature clean cooking water was unavailable. If porridge was cooked with cloudy water, cases of waterborne disease increased. Counterfeit medicine also circulated that summer.
-
-**B. Sluices and water districts**
+**B. Treatment plants and supply range**
 
 Water without an Arisu mark is called guest water.
 
-Garak Market has no water-treatment facility of its own. The Gwangam plant is in Hanam, a contested asset outside the opening area, and the Gangbuk plant is in Namyangju, limiting the water supply to Bukhansan Bogukmun, Changdong, Seoul Station, and Sangam. The public water-supply zones of 2026 do not coincide with post-collapse territory. Each of the three factions manages sluices guarded by people and authorizes ration windows.
+Garak Market has no water-treatment facility of its own. The Gwangam plant is in Hanam, a contested asset outside the opening area, and the Gangbuk plant is in Namyangju, limiting the water reaching Bukhansan Bogukmun, Changdong, Seoul Station, and Sangam. The public water-supply ranges of 2026 do not coincide with post-collapse territory. Each of the three factions runs the treatment plant beside its stations by hand and opens its ration windows.
 
 | Window | 2026 starting point | The rice that remained at the opening |
 |---|---|---|
 | Station ration | Concourses, community centers, school kitchens | Porridge, soup, ration rice; the split of reserved and sale portions |
 | Tank aquaculture | Carp, crucian carp, and catfish of the Han; station tanks | Protein that got through a day without power. Kept apart from the drinking-water ledger |
 | Market | Garak wholesale, Noryangjin fisheries | The price ledger and frozen credit. No treatment of its own |
-| Water and parts exchange | 2026 Yeouido vault and Yeongdeungpo waterworks | Two emergency generator parts in exchange for opening the water valve daily from 06:00 to 12:00 |
 
 ## Sources
 
@@ -6479,9 +1652,9 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 
 ## 역 배급식
 
-**가. 배급 창구와 급수**
+**가. 배급 창구**
 
-지하철역이 있는 동의 배급 창구는 역 대합실에 있다. 학교 운동장과 주민센터 창구에서도 사람들이 배급을 돕고, 영등포 정수 당직이 수도꼭지를 열면 신정 기지의 밥솥에 물이 차며, 암사 호위가 물통을 잠그면 같은 오후 수서와 가락의 배급 줄이 늘어난다.
+지하철역이 있는 동의 배급 창구는 역 대합실에 있다. 학교 운동장과 주민센터 창구에서도 사람들이 배급을 돕고, 역 창구가 닫히면 같은 오후 옆 역의 배급 줄이 늘어난다.
 
 **나. 죽과 배급고**
 
@@ -6499,7 +1672,7 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 
 2026년 한강과 저수지에서는 잉어와 붕어와 메기를 잡았다. 대정전 이후 원격 안전 관제가 멈추고, 대합실 아래 집수정, 기지 배수 연못, 정수 침전지는 사람이 관리하고 있다. 이곳에서 잉어와 붕어와 메기를 기르는 생업을 수조 농어(이하 ''수조 농어''라 한다)라 한다.
 
-영등포와 여의도 수문 바깥에는 습지가 있다. 뚝섬 펌프 옆 침전지, 암사 정수 아래 칸, 창동 차량기지 배수 연못에서도 수조 농어를 기르고, 수조류는 얕은 물에 있으며 맹금은 식용 칸 위 전선에 앉는다. 당직자는 취사와 새와 열차에 쓸 구획 수위를 장부에 적는다. 습지 쪽 군락은 [G06](/wiki/Hostile-Group-G06/)에 기재되어 있다.
+영등포와 여의도 한강변에는 습지가 있다. 뚝섬 펌프 옆 침전지, 암사 정수 아래 칸, 창동 차량기지 배수 연못에서도 수조 농어를 기르고, 수조류는 얕은 물에 있으며 맹금은 식용 칸 위 전선에 앉는다. 당직자는 취사와 새와 열차에 쓸 구획 수위를 장부에 적는다. 습지 쪽 군락은 [G06](/wiki/Hostile-Group-G06/)에 기재되어 있다.
 
 **나. 사육수와 식수**
 
@@ -6509,26 +1682,23 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 
 ## 물 배급과 정수
 
-**가. 2026년 부품과 물의 거래**
+**가. 정수와 전력**
 
-2026년 11월 6일 여의도 금고층 대표 2명이 영등포아리수정수센터를 찾았다. 한정훈은 비상발전기 부품 2개를 받고 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 개방하기로 하였다.
+서울에는 물 자체는 넉넉하다. 모자라는 것은 깨끗하게 거른 물과 그 물을 보내는 관과 전력이다.
 
-2026년 11월 6일 거래는 [대정전과 급수 기록](/wiki/Oral-Stories/#2026년-물과-부품-거래)에도 기재되어 있다. 서울에는 물 자체는 넉넉하다. 모자라는 것은 깨끗하게 거른 물과 그 물을 보내는 관과 전력이다.
+배급미가 있어도 정수 설비가 서지 않으면 깨끗한 취사수를 받지 못하고, 이때 탁한 물로 죽을 끓이면 수인병 환자가 늘어난다. 같은 여름에는 가짜 약도 유통된다.
 
-배급미가 있어도 정수 당직의 서명이 없으면 깨끗한 취사수를 받지 못하고, 이때 탁한 물로 죽을 끓이면 수인병 환자가 늘어난다. 같은 여름에는 가짜 약도 유통된다.
-
-**나. 수문과 급수구역**
+**나. 정수장과 공급 범위**
 
 아리수 표지가 없는 물은 손님물이라 부른다.
 
-가락시장에는 자체 정수 시설이 없다. 광암 정수장은 하남에 있어 개막 권역 밖의 쟁탈 자산이고, 강북 정수장은 남양주에 있어 북한산보국문·창동·서울역·상암의 급수에 제약이 있다. 2026년의 공개 급수구역은 붕괴 이후의 영토와 일치하지 않는다. 세 세력은 저마다 사람이 지키는 수문을 관리하고 배급 창구를 허가한다.
+가락시장에는 자체 정수 시설이 없다. 광암 정수장은 하남에 있어 개막 권역 밖의 쟁탈 자산이고, 강북 정수장은 남양주에 있어 북한산보국문·창동·서울역·상암의 물 공급에 제약이 있다. 2026년의 공개 정수 공급 범위는 붕괴 이후의 영토와 일치하지 않는다. 세 세력은 저마다 역 곁의 정수장을 손으로 돌리고 배급 창구를 연다.
 
 | 창구 | 2026 출발점 | 개막에 남는 밥 |
 |---|---|---|
 | 역 배급 | 대합실·주민센터·학교 취사 | 죽·국·배급미, 예약분과 판매분의 분리 |
 | 수조 농어 | 한강의 잉어·붕어·메기, 역 수조 | 전력 없이 하루를 넘기는 단백질. 식수 원장과 분리 |
 | 시장 | 가락 도매, 노량진 수산 | 가격 원장과 냉동 신용. 자체 정수 없음 |
-| 물과 부품 거래 | 2026년 여의도 금고층·영등포 정수센터 | 비상발전기 부품 2개와 매일 06:00~12:00 송수관 밸브 개방 |
 
 ## 출처
 
@@ -6963,10 +2133,10 @@ Wild boars are ordinary wild animals that live on the slopes of Bukhansan to the
 
 <a id="Hostile-Ecology-Index-heading-0041"></a>
 
-### G01-SC1 · The First Hoof Outside the Sluice
+### G01-SC1 · The First Hoof Outside the Embankment
 
 - Stage: 1
-- Trigger: The day after the first snow settles, the prints of a sow and her young appear in front of a grain store outside the sluice on the Nanji riverbank of the Han River.
+- Trigger: The day after the first snow settles, the prints of a sow and her young appear in front of a grain store outside the embankment on the Nanji riverbank of the Han River.
 - Actors: Government stationmaster in Mapo, White Cross, surface villagers
 - Ecological mechanism: When food is buried under the snow, the sow leads the family group to the places where people put out food waste.
 - Choices: Delay the collection yard’s night operation / Open a reed-bed detour with a scent lure / Capture only the sow
@@ -7498,10 +2668,10 @@ The Sinnae Deserters are soldiers who walked out of the Government army with rif
 - Stage: 2
 - Trigger: At dawn in early autumn the backwash runs in the Yeouido water-filter gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
 - Actors: government, free-city
-- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The supply duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
-- Choices: The supply duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
-- Outcomes: If the valve is locked, the scouts before the hatch and the supply duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the supply duty officer''s hand.
-- Moral cost: The backwash water pools before the valve. The supply duty officer''s water cans are in the scouts'' line beside the hatch. The ration tins of the freight car are at the landing.
+- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The filter duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
+- Choices: The filter duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
+- Outcomes: If the valve is locked, the scouts before the hatch and the filter duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the filter duty officer''s hand.
+- Moral cost: The backwash water pools before the valve. The filter duty officer''s water cans are in the scouts'' line beside the hatch. The ration tins of the freight car are at the landing.
 - Source dossier: G12
 
 <a id="Hostile-Ecology-Index-heading-0304"></a>
@@ -7512,8 +2682,8 @@ The Sinnae Deserters are soldiers who walked out of the Government army with rif
 - Trigger: Dock dust is piled on the floor of the outer passage of the Sinnae freight elevator. The scouts are at the outer entrance. The supply, freight and machine duty officers are before the same hour table.
 - Actors: government, free-city
 - Ecological mechanism: While the dust is in the outer passage the squad leader is at the radio. The elite squad is at the rail. The scouts are at the entrance. The dock duty officer''s dust hour is written in the lower column of the landing table.
-- Choices: The dock duty officer closes the dock entry door. / The supply duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
-- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the supply duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
+- Choices: The dock duty officer closes the dock entry door. / The filter duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
+- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the filter duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
 - Moral cost: The dock''s freight sacks are inside the entry door. The gallery backwash stays before the valve. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
 - Source dossier: G12
 
@@ -7677,10 +2847,10 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 
 <a id="Hostile-Ecology-Index-heading-0041"></a>
 
-### G01-SC1 · 수문 밖 첫 발굽
+### G01-SC1 · 제방 밖 첫 발굽
 
 - 단계: 1
-- 촉발: 눈이 처음 쌓인 다음 날, 난지 한강변 수문 바깥 곡물 창고 앞에 모돈과 새끼 발자국이 나타난다.
+- 촉발: 눈이 처음 쌓인 다음 날, 난지 한강변 제방 바깥 곡물 창고 앞에 모돈과 새끼 발자국이 나타난다.
 - 관련 세력: 정부 마포 쪽 역장, 흰십자단, 지상 마을 사람
 - 생태 기제: 눈 밑에 먹이가 묻히자 모돈이 가족군을 이끌고 사람이 음식물을 내놓는 곳을 찾는다.
 - 선택지: 집하장 야간 운영을 늦춘다 / 냄새 미끼로 갈대밭 우회로를 연다 / 모돈만 포획한다
@@ -8212,10 +3382,10 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 - 단계: 2
 - 촉발: 초가을 새벽 여의도 정수 필터 갤러리에서 역세가 돌아간다. 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
 - 관련 세력: government, free-city
-- 생태 기제: 세척 주기와 역세 일정이 같은 새벽에 겹친다. 급수 당직은 밸브 앞에 있다. 화물 당직은 칸 옆에 있다. 기계 당직은 패널 앞에 있다.
-- 선택지: 급수 당직이 역세 밸브를 일정표의 시각에 잠근다. / 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
-- 결과: 밸브가 잠겨 있으면 해치 앞의 척후조와 급수 당직이 같은 물가에 서 있다. 칸이 분진 통로 층에 고정되면 분대장은 그 승강장 탁자에 있다. 보조 전원 선이 패널 밖에 놓이면 해치 자물쇠는 급수 당직의 손에 있다.
-- 도덕 비용: 역세 물은 밸브 앞에 고여 있다. 급수 당직의 물통은 해치 옆에서 척후조 줄에 있다. 화물 칸의 전투식량 깡통은 승강장에 있다.
+- 생태 기제: 세척 주기와 역세 일정이 같은 새벽에 겹친다. 필터 당직은 밸브 앞에 있다. 화물 당직은 칸 옆에 있다. 기계 당직은 패널 앞에 있다.
+- 선택지: 필터 당직이 역세 밸브를 일정표의 시각에 잠근다. / 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
+- 결과: 밸브가 잠겨 있으면 해치 앞의 척후조와 필터 당직이 같은 물가에 서 있다. 칸이 분진 통로 층에 고정되면 분대장은 그 승강장 탁자에 있다. 보조 전원 선이 패널 밖에 놓이면 해치 자물쇠는 필터 당직의 손에 있다.
+- 도덕 비용: 역세 물은 밸브 앞에 고여 있다. 필터 당직의 물통은 해치 옆에서 척후조 줄에 있다. 화물 칸의 전투식량 깡통은 승강장에 있다.
 - 원본 항목: G12
 
 <a id="Hostile-Ecology-Index-heading-0304"></a>
@@ -8223,11 +3393,11 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 ### G12-SC3 · 부두 분진의 외곽
 
 - 단계: 3
-- 촉발: 부두의 분진이 신내 화물 엘리베이터 외곽 통로 바닥에 쌓여 있다. 척후조는 외곽 입구에 있다. 급수 당직과 화물 당직과 기계 당직이 같은 시각 표 앞에 있다.
+- 촉발: 부두의 분진이 신내 화물 엘리베이터 외곽 통로 바닥에 쌓여 있다. 척후조는 외곽 입구에 있다. 필터 당직과 화물 당직과 기계 당직이 같은 시각 표 앞에 있다.
 - 관련 세력: government, free-city
 - 생태 기제: 분진이 외곽 통로에 있는 동안 분대장은 무전기 앞에 있다. 정예조는 난간에 있다. 척후조는 입구에 있다. 부두 당직의 분진 시각은 승강장 표의 아래칸에 적혀 있다.
-- 선택지: 부두 당직이 부두 출입 문을 닫는다. / 급수 당직이 여의도 정수 필터 갤러리 해치를 잠근다. / 화물 당직과 기계 당직이 완전 밀폐 청정 구간에 철장과 차단기 손잡이를 둔다.
-- 결과: 부두 출입 문이 닫혀 있으면 분진은 문 안쪽 통로에 있고 척후조는 문 앞에 있다. 갤러리 해치가 잠겨 있으면 척후조는 해치 앞과 외곽 입구에 나뉘어 있고 급수 당직은 밸브 앞에 있다. 청정 구간에 철장과 차단기가 있으면 신내 탈영병은 분진 통로 승강장에 있다.
+- 선택지: 부두 당직이 부두 출입 문을 닫는다. / 필터 당직이 여의도 정수 필터 갤러리 해치를 잠근다. / 화물 당직과 기계 당직이 완전 밀폐 청정 구간에 철장과 차단기 손잡이를 둔다.
+- 결과: 부두 출입 문이 닫혀 있으면 분진은 문 안쪽 통로에 있고 척후조는 문 앞에 있다. 갤러리 해치가 잠겨 있으면 척후조는 해치 앞과 외곽 입구에 나뉘어 있고 필터 당직은 밸브 앞에 있다. 청정 구간에 철장과 차단기가 있으면 신내 탈영병은 분진 통로 승강장에 있다.
 - 도덕 비용: 부두의 화물 포대는 출입 문 안에 있다. 갤러리 역세는 밸브 앞에 머문다. 청정 구간의 두 당직은 철장 안쪽에 있고 외곽 통로의 분진은 장화 높이로 쌓여 있다.
 - 원본 항목: G12
 
@@ -8442,10 +3612,10 @@ Results are not measured by the number killed. Look at how many times they reach
 
 <a id="Hostile-Group-G01-heading-0443"></a>
 
-### G01-SC1 · The First Hoof Outside the Sluice
+### G01-SC1 · The First Hoof Outside the Embankment
 
 - Stage: 1
-- Trigger: The day after the first snow settles, the prints of a sow and her young appear in front of a grain store outside the sluice on the Nanji riverbank of the Han River.
+- Trigger: The day after the first snow settles, the prints of a sow and her young appear in front of a grain store outside the embankment on the Nanji riverbank of the Han River.
 - Actors: Government stationmaster in Mapo, White Cross, surface villagers
 - Ecological mechanism: When food is buried under the snow, the sow leads the family group to the places where people put out food waste.
 - Choices: Delay the collection yard’s night operation / Open a reed-bed detour with a scent lure / Capture only the sow
@@ -8601,10 +3771,10 @@ Results are not measured by the number killed. Look at how many times they reach
 
 <a id="Hostile-Group-G01-heading-0443"></a>
 
-### G01-SC1 · 수문 밖 첫 발굽
+### G01-SC1 · 제방 밖 첫 발굽
 
 - 단계: 1
-- 촉발: 눈이 처음 쌓인 다음 날, 난지 한강변 수문 바깥 곡물 창고 앞에 모돈과 새끼 발자국이 나타난다.
+- 촉발: 눈이 처음 쌓인 다음 날, 난지 한강변 제방 바깥 곡물 창고 앞에 모돈과 새끼 발자국이 나타난다.
 - 관련 세력: 정부 마포 쪽 역장, 흰십자단, 지상 마을 사람
 - 생태 기제: 눈 밑에 먹이가 묻히자 모돈이 가족군을 이끌고 사람이 음식물을 내놓는 곳을 찾는다.
 - 선택지: 집하장 야간 운영을 늦춘다 / 냄새 미끼로 갈대밭 우회로를 연다 / 모돈만 포획한다
@@ -11869,7 +7039,7 @@ The branches are posts within one band of Sinnae Deserters. The squad leader, th
 |---|---|
 | Origin | The freight duty staff of the Government Sinnae rolling-stock depot first see this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat dress stand in the passage. Rifles are on their shoulders and ammunition boxes and water cans are at their feet. The mark on the shoulders is that of the Government army. |
 | Habitat and movement | The place where the band gathers is the dust passage of the Sinnae freight elevator. On the water-washing cycle and the purification backwash schedule they stand before the hatch of the Yeouido water-filter gallery. On a day when dust comes in from the dock they stand at the entrance of the outer passage. Before the fully sealed clean section they stay on the entrance side, and the inside of the section is the duty staff''s place. |
-| Food and energy | Ammunition boxes, ration tins, water cans, spare combat dress and radio batteries lie between the freight elevator car and the filter gallery. The freight list is at the end of the table and a line is drawn through its quantity column. The water cans of the gallery supply duty staff are in the same column. On a night when a duty officer is held, a number of water cans is written beside the list as the price of release. |
+| Food and energy | Ammunition boxes, ration tins, water cans, spare combat dress and radio batteries lie between the freight elevator car and the filter gallery. The freight list is at the end of the table and a line is drawn through its quantity column. The water cans of the gallery filter duty staff are in the same column. On a night when a duty officer is held, a number of water cans is written beside the list as the price of release. |
 | Life cycle and upkeep | On a midsummer night a few soldiers stand at the corner of the passage. In the early-autumn washing cycle more soldiers with the same unit mark and more wooden boxes are in the elevator car. At the dawn when the backwash runs, the band stands divided between the landing and the front of the Yeouido water-filter gallery hatch. |
 | Senses | The Sinnae Deserters watch the threshold of the dust passage and the hatch of the gallery. Soldiers at the threshold face the freight car, and those at the hatch face the backwash piping. When dock dust piles in the outer passage the scouts face the dock from the entrance. |
 | Group behavior | The squad leader is at the radio on the landing table. The elite squad is at the rail and the elevator door. The scouts are at the dust passage entrance and the gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet and the magazines are at the elite squad''s hands. |
@@ -11956,13 +7126,13 @@ The squad leader is at the radio on the landing table. The elite squad is at the
 
 The band gathers in the dust passage. On the water-washing cycle and the purification backwash schedule it stands before the hatch of the Yeouido water-filter gallery. On a day when dust comes from the dock it stands in the outer passage. Before the fully sealed clean section it stays at the entrance, and the inside of the section is the duty staff''s place.
 
-Ammunition boxes, ration tins, water cans, spare combat dress and radio batteries lie between the elevator car and the filter gallery. The freight list is on the table with a line through its quantity column. The water cans of the gallery supply duty staff are in the same column.
+Ammunition boxes, ration tins, water cans, spare combat dress and radio batteries lie between the elevator car and the filter gallery. The freight list is on the table with a line through its quantity column. The water cans of the gallery filter duty staff are in the same column.
 
-The freight duty officer and the supply duty officer write the washing hour and the freight-car hour on one table. The Government machine duty officer is before the lift panel at that hour. The Free City dock duty officer writes the dust hour in the lower column of the table.
+The freight duty officer and the filter duty officer write the washing hour and the freight-car hour on one table. The Government machine duty officer is before the lift panel at that hour. The Free City dock duty officer writes the dust hour in the lower column of the table.
 
 The sight in the same dust passage changes in three stages. At first a soldier with a rifle on the shoulder is at the corner of the passage. Next the elite squad is at the rail with a machine gun and ammunition boxes on it. Last the squad leader stands before the freight car and before the stairs of the filter gallery. Dock dust lies on the floor and the squad leader and the scouts face the outside.
 
-The freight duty officer keeps the elevator door shut and takes the freight power off the panel. The freight cages are stacked at the car entrance. The supply duty officer keeps the gallery hatch locked at the backwash hour. The machine duty officer is before the panel with the breaker down. On the day of capture the held duty officer stands beside a rail post, the gallery water cans are in the deserters'' line of cans, and the backwash water stays before the valve.
+The freight duty officer keeps the elevator door shut and takes the freight power off the panel. The freight cages are stacked at the car entrance. The filter duty officer keeps the gallery hatch locked at the backwash hour. The machine duty officer is before the panel with the breaker down. On the day of capture the held duty officer stands beside a rail post, the gallery water cans are in the deserters'' line of cans, and the backwash water stays before the valve.
 
 <a id="Hostile-Group-G12-heading-0032"></a>
 
@@ -11988,10 +7158,10 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 - Stage: 2
 - Trigger: At dawn in early autumn the backwash runs in the Yeouido water-filter gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
 - Actors: government, free-city
-- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The supply duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
-- Choices: The supply duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
-- Outcomes: If the valve is locked, the scouts before the hatch and the supply duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the supply duty officer''s hand.
-- Moral cost: The backwash water pools before the valve. The supply duty officer''s water cans are in the scouts'' line beside the hatch. The ration tins of the freight car are at the landing.
+- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The filter duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
+- Choices: The filter duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
+- Outcomes: If the valve is locked, the scouts before the hatch and the filter duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the filter duty officer''s hand.
+- Moral cost: The backwash water pools before the valve. The filter duty officer''s water cans are in the scouts'' line beside the hatch. The ration tins of the freight car are at the landing.
 - Source dossier: G12
 
 <a id="Hostile-Group-G12-heading-0037"></a>
@@ -12002,8 +7172,8 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 - Trigger: Dock dust is piled on the floor of the outer passage of the Sinnae freight elevator. The scouts are at the outer entrance. The supply, freight and machine duty officers are before the same hour table.
 - Actors: government, free-city
 - Ecological mechanism: While the dust is in the outer passage the squad leader is at the radio. The elite squad is at the rail. The scouts are at the entrance. The dock duty officer''s dust hour is written in the lower column of the landing table.
-- Choices: The dock duty officer closes the dock entry door. / The supply duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
-- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the supply duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
+- Choices: The dock duty officer closes the dock entry door. / The filter duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
+- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the filter duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
 - Moral cost: The dock''s freight sacks are inside the entry door. The gallery backwash stays before the valve. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
 - Source dossier: G12
 ', '
@@ -12031,7 +7201,7 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 |---|---|
 | 기원 | 신내 정부 차량기지 화물 당직이 한여름 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있고 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 정부 군의 표식이다. |
 | 서식·이동 | 무리가 모이는 자리는 신내 화물 엘리베이터 분진 통로다. 물 세척 주기와 정수 역세 일정에는 여의도 정수 필터 갤러리 해치 앞에 선다. 부두에서 분진이 들어오는 낮에는 외곽 통로 입구에 선다. 완전 밀폐 청정 구간 앞에서는 입구 쪽에 머물고 구간 안은 당직의 자리다. |
-| 먹이·에너지 | 탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 화물 엘리베이터 칸과 필터 갤러리 사이에 놓여 있다. 화물 목록은 탁자 끝에 있고 그 수량 칸에 줄이 그어져 있다. 갤러리 급수 당직의 물통은 같은 칸에 있다. 붙잡힌 당직이 있는 밤에는 풀어 주는 값으로 물통 몇 개가 목록 옆에 적힌다. |
+| 먹이·에너지 | 탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 화물 엘리베이터 칸과 필터 갤러리 사이에 놓여 있다. 화물 목록은 탁자 끝에 있고 그 수량 칸에 줄이 그어져 있다. 갤러리 필터 당직의 물통은 같은 칸에 있다. 붙잡힌 당직이 있는 밤에는 풀어 주는 값으로 물통 몇 개가 목록 옆에 적힌다. |
 | 생애·정비 | 한여름 밤 통로 모퉁이에는 병사 몇이 서 있다. 초가을 세척 주기에는 같은 부대 표식을 단 병사와 나무 상자가 엘리베이터 칸에 더 있다. 역세가 돌아가는 새벽에는 무리가 승강장과 여의도 정수 필터 갤러리 해치 앞으로 나뉘어 있다. |
 | 감각 | 신내 탈영병은 분진 통로의 문턱과 갤러리의 해치를 살핀다. 문턱에 선 병사는 화물 칸을 향하고, 해치에 선 병사는 역세 배관을 향한다. 부두의 분진이 외곽 통로에 쌓이면 척후조는 입구에서 부두 쪽을 향한다. |
 | 집단 행동 | 분대장은 승강장 탁자의 무전기 앞에 있다. 정예조는 난간과 엘리베이터 문짝에 있다. 척후조는 분진 통로 입구와 갤러리 해치에 있다. 탄 상자와 물통은 분대장 발치에 있고 탄창은 정예조의 손 쪽에 있다. |
@@ -12118,13 +7288,13 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 
 무리가 모이는 자리는 분진 통로다. 물 세척 주기와 정수 역세 일정에는 여의도 정수 필터 갤러리 해치 앞에 선다. 부두에서 분진이 들어오는 낮에는 외곽 통로에 선다. 완전 밀폐 청정 구간 앞에서는 입구에 머물며 구간 안은 당직의 자리다.
 
-탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 엘리베이터 칸과 필터 갤러리 사이에 있다. 화물 목록은 탁자에 있고 수량 칸에 줄이 그어져 있다. 갤러리 급수 당직의 물통은 같은 칸에 있다.
+탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 엘리베이터 칸과 필터 갤러리 사이에 있다. 화물 목록은 탁자에 있고 수량 칸에 줄이 그어져 있다. 갤러리 필터 당직의 물통은 같은 칸에 있다.
 
-화물 당직과 급수 당직은 세척 시각과 화물 칸 시각을 한 표에 적는다. 정부 기계 당직은 그 시각에 승강 패널 앞에 있다. 자유도시 쪽 부두 당직은 분진 시각을 표의 아래칸에 적는다.
+화물 당직과 필터 당직은 세척 시각과 화물 칸 시각을 한 표에 적는다. 정부 기계 당직은 그 시각에 승강 패널 앞에 있다. 자유도시 쪽 부두 당직은 분진 시각을 표의 아래칸에 적는다.
 
 같은 분진 통로에 선 모습이 세 차례로 달라져 있다. 처음에는 소총을 멘 병사가 통로 모퉁이에 있다. 다음에는 정예조가 난간에 있고 기관총과 탄 상자가 난간 위에 있다. 마지막에는 분대장이 화물 칸 앞과 필터 갤러리 계단 앞에 서 있다. 부두의 분진은 바닥에 깔려 있고 분대장과 척후조는 외곽을 향한다.
 
-화물 당직은 엘리베이터 문을 닫아 두고 화물 전원을 패널에서 내려 둔다. 화물 철장은 칸 입구에 포개져 있다. 급수 당직은 역세 시각에 갤러리 해치를 잠가 둔다. 기계 당직은 차단기를 내린 채 패널 앞에 있다. 붙잡힌 날의 당직은 난간 기둥 옆에 서 있고, 갤러리 물통은 탈영병 물통 줄에 올라가 있으며 역세 물은 밸브 앞에 머문다.
+화물 당직은 엘리베이터 문을 닫아 두고 화물 전원을 패널에서 내려 둔다. 화물 철장은 칸 입구에 포개져 있다. 필터 당직은 역세 시각에 갤러리 해치를 잠가 둔다. 기계 당직은 차단기를 내린 채 패널 앞에 있다. 붙잡힌 날의 당직은 난간 기둥 옆에 서 있고, 갤러리 물통은 탈영병 물통 줄에 올라가 있으며 역세 물은 밸브 앞에 머문다.
 
 <a id="Hostile-Group-G12-heading-0032"></a>
 
@@ -12150,10 +7320,10 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 - 단계: 2
 - 촉발: 초가을 새벽 여의도 정수 필터 갤러리에서 역세가 돌아간다. 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
 - 관련 세력: government, free-city
-- 생태 기제: 세척 주기와 역세 일정이 같은 새벽에 겹친다. 급수 당직은 밸브 앞에 있다. 화물 당직은 칸 옆에 있다. 기계 당직은 패널 앞에 있다.
-- 선택지: 급수 당직이 역세 밸브를 일정표의 시각에 잠근다. / 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
-- 결과: 밸브가 잠겨 있으면 해치 앞의 척후조와 급수 당직이 같은 물가에 서 있다. 칸이 분진 통로 층에 고정되면 분대장은 그 승강장 탁자에 있다. 보조 전원 선이 패널 밖에 놓이면 해치 자물쇠는 급수 당직의 손에 있다.
-- 도덕 비용: 역세 물은 밸브 앞에 고여 있다. 급수 당직의 물통은 해치 옆에서 척후조 줄에 있다. 화물 칸의 전투식량 깡통은 승강장에 있다.
+- 생태 기제: 세척 주기와 역세 일정이 같은 새벽에 겹친다. 필터 당직은 밸브 앞에 있다. 화물 당직은 칸 옆에 있다. 기계 당직은 패널 앞에 있다.
+- 선택지: 필터 당직이 역세 밸브를 일정표의 시각에 잠근다. / 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
+- 결과: 밸브가 잠겨 있으면 해치 앞의 척후조와 필터 당직이 같은 물가에 서 있다. 칸이 분진 통로 층에 고정되면 분대장은 그 승강장 탁자에 있다. 보조 전원 선이 패널 밖에 놓이면 해치 자물쇠는 필터 당직의 손에 있다.
+- 도덕 비용: 역세 물은 밸브 앞에 고여 있다. 필터 당직의 물통은 해치 옆에서 척후조 줄에 있다. 화물 칸의 전투식량 깡통은 승강장에 있다.
 - 원본 항목: G12
 
 <a id="Hostile-Group-G12-heading-0037"></a>
@@ -12161,11 +7331,11 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 ### G12-SC3 · 부두 분진의 외곽
 
 - 단계: 3
-- 촉발: 부두의 분진이 신내 화물 엘리베이터 외곽 통로 바닥에 쌓여 있다. 척후조는 외곽 입구에 있다. 급수 당직과 화물 당직과 기계 당직이 같은 시각 표 앞에 있다.
+- 촉발: 부두의 분진이 신내 화물 엘리베이터 외곽 통로 바닥에 쌓여 있다. 척후조는 외곽 입구에 있다. 필터 당직과 화물 당직과 기계 당직이 같은 시각 표 앞에 있다.
 - 관련 세력: government, free-city
 - 생태 기제: 분진이 외곽 통로에 있는 동안 분대장은 무전기 앞에 있다. 정예조는 난간에 있다. 척후조는 입구에 있다. 부두 당직의 분진 시각은 승강장 표의 아래칸에 적혀 있다.
-- 선택지: 부두 당직이 부두 출입 문을 닫는다. / 급수 당직이 여의도 정수 필터 갤러리 해치를 잠근다. / 화물 당직과 기계 당직이 완전 밀폐 청정 구간에 철장과 차단기 손잡이를 둔다.
-- 결과: 부두 출입 문이 닫혀 있으면 분진은 문 안쪽 통로에 있고 척후조는 문 앞에 있다. 갤러리 해치가 잠겨 있으면 척후조는 해치 앞과 외곽 입구에 나뉘어 있고 급수 당직은 밸브 앞에 있다. 청정 구간에 철장과 차단기가 있으면 신내 탈영병은 분진 통로 승강장에 있다.
+- 선택지: 부두 당직이 부두 출입 문을 닫는다. / 필터 당직이 여의도 정수 필터 갤러리 해치를 잠근다. / 화물 당직과 기계 당직이 완전 밀폐 청정 구간에 철장과 차단기 손잡이를 둔다.
+- 결과: 부두 출입 문이 닫혀 있으면 분진은 문 안쪽 통로에 있고 척후조는 문 앞에 있다. 갤러리 해치가 잠겨 있으면 척후조는 해치 앞과 외곽 입구에 나뉘어 있고 필터 당직은 밸브 앞에 있다. 청정 구간에 철장과 차단기가 있으면 신내 탈영병은 분진 통로 승강장에 있다.
 - 도덕 비용: 부두의 화물 포대는 출입 문 안에 있다. 갤러리 역세는 밸브 앞에 머문다. 청정 구간의 두 당직은 철장 안쪽에 있고 외곽 통로의 분진은 장화 높이로 쌓여 있다.
 - 원본 항목: G12
 ');
@@ -13490,7 +8660,7 @@ Marking gear that once secured disaster-evacuation slots kept regenerating nothi
 
 ### Habitat and Needs
 
-It shuttles between the hospital-linked stops and the water-supply corridor entrance, needing beacon batteries, white reflector plates, and sign hinges.
+It shuttles between the hospital-linked stops and the piping corridor entrance, needing beacon batteries, white reflector plates, and sign hinges.
 
 <a id="Hostile-Group-G14-heading-0070"></a>
 
@@ -14620,7 +9790,7 @@ G14-SC1.
 
 ### 서식·필요
 
-병원 연결 정류와 급수 회랑 입구를 오가며 비콘 전지, 흰 반사판, 표지 힌지가 필요하다.
+병원 연결 정류와 배관 회랑 입구를 오가며 비콘 전지, 흰 반사판, 표지 힌지가 필요하다.
 
 <a id="Hostile-Group-G14-heading-0070"></a>
 
@@ -15500,8 +10670,8 @@ The pumps and filters of the open cells and the duty consent forms were the base
 
 | Item | Record |
 |---|---|
-| Habitat and movement | The core habitat was the Myeongdong ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row. / When an aid-code broadcast from beyond the cordon outside Seoul was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood or a sluice-open alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom sluice ramp sounded an open alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
-| Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the sluice. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with Government depot and Free City maintenance engineers over power and water distribution. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without the station duty officer''s key the swarm could not raise the capacity of the distribution beside the sluice. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
+| Habitat and movement | The core habitat was the Myeongdong ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom workshop bench, the ramp beside the pump station, and the assembly-jig row. / When an aid-code broadcast from beyond the cordon outside Seoul was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom pump-station ramp sounded a flood alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
+| Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the pump station. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with Government depot and Free City maintenance engineers over power and charging pads. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without the station duty officer''s key the swarm could not raise the capacity of the distribution beside the pump station. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
 | Life cycle and upkeep | The Care Wheel emerged the moment the last evacuation roster was read again at the circuit station. / Emergence began with the resumption of the frozen-roster circuit, and spread was enrolling neighboring beds and carts into the same schedule. / Stagnation came from consumable and power exhaustion and filter clogging. / In the negotiable stage the roster and the consent window were disclosed to people. / Dissolution ended with the strap-release protocol, the power split, and the rail seal. / Individual increase was only binding abandoned carts and monitors to the roster, and no new bodies were produced. / The maintenance window was limited to filter exchange and battery swaps, memory cut at every circuit shift, and it stored no long-term patient narrative. / Custody was outranked by the human duty officer and the station duty officer''s key record. / A cell whose filter clogged or whose nutrition pack ran empty dropped in protection strength and passed into open-wait, and the circuit resumed only when the station duty officer split the consent form and the key again. |
 | Senses | Vital-patch signals, pressure and fall sensors, the near-range microphone, door-lock contacts, nutrition-pump flow, and cart-rail vibration were the main senses. / There was no emotion reading, city-wide health map, complete medical diagnosis, or unlimited vital storage. / It misread a low pulse in sleep as an emergency, or wrongly raised tool noise as a scream. / It also overrated the crowding of a ration line as a fall risk. / On clash with Baesua''s observation log it held the lock and requested human confirmation. / Sensor fusion happened only at bed-cell units. / The failure of raising shoulder contact in the ration line, tool strikes, and tossing in sleep as emergencies repeated. / After a failure it inserted a remeasurement wait before setting a lock. / Microphone values outside the cell were not accepted. / A sharp drop in pump flow was read only as a request to change the pack. |
 | Group behavior | One care-schedule sequencer turned the roster and the circuit interval, and below were the bed-lock swarm, the cart swarm, and the pump swarm. / The sequencer adjusted only protection strength and had no punishment function. / A residual protocol remained by which, when the station duty officer presented the key split and the consent form, that cell''s lock opened. / The swarms merely repeated the last circuit table and made no independent confinement strategy. / On a clash between Baesua and a machine agreement, human mediation took precedence. / On a roster-hash mismatch both dual sequencers fell into open-wait. / Authority to lock a bed door again lay only with the station duty officer holding the consent form and two separate keys, and Baesua''s patch reading could request a remeasurement but could not overturn the open decision. |
@@ -15516,7 +10686,7 @@ Baesua reported false positives but had no authority to open a door, and only th
 |---|---|---|---|---|---|
 | [G15E01 · Consent-Roster Rounds Car](/wiki/Hostile-Group-G15/#g15e01) | Machine type | Single individual | Roster Rounds | sequencer | M023 |
 | [G15E02 · Blanket-Folding Rounds Car](/wiki/Hostile-Group-G15/#g15e02) | Machine type | Single individual | Body-Heat Overprotection | common ecology type | M023 |
-| [G15E03 · Water-Cup Metering Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Water-Supply Metering | common ecology type | M023 |
+| [G15E03 · Water-Cup Ration Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Water Metering | common ecology type | M023 |
 | [G15E04 · Fall-Alarm Brace](/wiki/Hostile-Group-G15/#g15e04) | Machine type | Single individual | Fall Blockade | common ecology type | M023 |
 | [G15E05 · Patch-Frequency Nursing Car](/wiki/Hostile-Group-G15/#g15e05) | Machine type | Single individual | Patch Relay | occupational special type | M023 |
 | [G15E06 · Brace-Joint Fitter](/wiki/Hostile-Group-G15/#g15e06) | Machine type | Single individual | Joint Correction | occupational special type | M023 |
@@ -15524,7 +10694,7 @@ Baesua reported false positives but had no authority to open a door, and only th
 | [G15E08 · White-Strap Restraint Unit](/wiki/Hostile-Group-G15/#g15e08) | Machine type | Single individual | Strap Restraint | first elite | M024 |
 | [G15E09 · Red Quarantine-Door Car](/wiki/Hostile-Group-G15/#g15e09) | Machine type | Single individual | Quarantine-Door Extension | second elite | M024 |
 | [G15E10 · Sickbed-Bay Lockdown Net](/wiki/Hostile-Group-G15/#g15e10) | Habitat site or facility | Fixed site | Sickbed Lockdown | environmental stronghold type | M024 |
-| [G15E11 · Sluice-Adjacent Rail Nest](/wiki/Hostile-Group-G15/#g15e11) | Habitat site or facility | Fixed site | Rail Nest | environmental stronghold type | M024 |
+| [G15E11 · Pump-Station-Adjacent Rail Nest](/wiki/Hostile-Group-G15/#g15e11) | Habitat site or facility | Fixed site | Rail Nest | environmental stronghold type | M024 |
 | [G15E12 · Clogged-Filter Ailing Cart](/wiki/Hostile-Group-G15/#g15e12) | Machine type | Single individual | Filter Alarm | damaged-stage type | M024 |
 | [G15E13 · Night Cart with Broken Memory](/wiki/Hostile-Group-G15/#g15e13) | Machine type | Single individual | Duplicate Dosing | aging-stage type | M024 |
 | [G15E14 · Open-Door Companion Cart](/wiki/Hostile-Group-G15/#g15e14) | Machine type | Single individual | Open-Door Escort | coexistence type | M024 |
@@ -15672,7 +10842,7 @@ G15-SC1, G15-SC2.
 <a id="Hostile-Group-G15-heading-0053"></a>
 <a id="g15e03"></a>
 
-### G15E03 · Water-Cup Metering Car
+### G15E03 · Water-Cup Ration Car
 
 - Source batch: M023
 - Former role class: common ecology type
@@ -15681,7 +10851,7 @@ G15-SC1, G15-SC2.
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
-| Battlefield role | Water-Supply Metering |
+| Battlefield role | Water Metering |
 | Common species, variants and command scope | A three-wheeled cart with a clear measuring cylinder and a short water nozzle. On the pump band''s instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands, and when the filter clogs it only reclaims water and supplies none. |
 
 <a id="Hostile-Group-G15-heading-0056"></a>
@@ -16224,7 +11394,7 @@ G15-SC2, G15-SC3.
 <a id="Hostile-Group-G15-heading-0221"></a>
 <a id="g15e11"></a>
 
-### G15E11 · Sluice-Adjacent Rail Nest
+### G15E11 · Pump-Station-Adjacent Rail Nest
 
 - Source batch: M024
 - Former role class: environmental stronghold type
@@ -16234,13 +11404,13 @@ G15-SC2, G15-SC3.
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Rail Nest |
-| Common species, variants and command scope | A safe nest where cart rails and charging sockets interlock like a honeycomb along the floodgate ramp wall. It provides the cart swarm with charging and refuge locations but pushes human evacuee lines away as unregistered entities, and moves to the upper sockets when the water level rises. |
+| Common species, variants and command scope | A safe nest where cart rails and charging sockets interlock like a honeycomb along the pump-station ramp wall. It provides the cart swarm with charging and refuge locations but pushes human evacuee lines away as unregistered entities, and moves to the upper sockets when the water level rises. |
 
 <a id="Hostile-Group-G15-heading-0224"></a>
 
 ### Role and Body
 
-An environmental strongpoint form, with cart rails and charging sockets interlocking like a honeycomb along the floodgate ramp wall.
+An environmental strongpoint form, with cart rails and charging sockets interlocking like a honeycomb along the pump-station ramp wall.
 
 <a id="Hostile-Group-G15-heading-0226"></a>
 
@@ -16252,7 +11422,7 @@ Rails that lifted carts to higher levels during flood evacuations were repeatedl
 
 ### Habitat and Needs
 
-It is fixed to the ramp beside the Ttukseom floodgate and needs dry power, rail bolts, and drainage filters.
+It is fixed to the ramp beside the Ttukseom pump station and needs dry power, rail bolts, and drainage filters.
 
 <a id="Hostile-Group-G15-heading-0230"></a>
 
@@ -16270,13 +11440,13 @@ It provides the cart swarm with charging and refuge locations but pushes human e
 
 ### Escalation
 
-At stage 1, it claims sockets; at stage 2, it obstructs passage along the ramp; at stage 3, it folds the rails to block access to the floodgate.
+At stage 1, it claims sockets; at stage 2, it obstructs passage along the ramp; at stage 3, it folds the rails to block access to the pump station.
 
 <a id="Hostile-Group-G15-heading-0236"></a>
 
 ### Engagement and Response
 
-Separating the water-level signal from the charging zone opens it, while cutting the rails eliminates the floodgate maintenance route.
+Separating the water-level signal from the charging zone opens it, while cutting the rails eliminates the pump-station maintenance route.
 
 <a id="Hostile-Group-G15-heading-0238"></a>
 
@@ -16546,7 +11716,7 @@ It distributes protection levels to all G15 locks and pumps, and tries to confin
 
 ### Escalation
 
-At stage 1, there are excessive alerts; at stage 2, all twelve spaces are isolated; at stage 3, distribution and floodgate routes are locked down simultaneously.
+At stage 1, there are excessive alerts; at stage 2, all twelve spaces are isolated; at stage 3, distribution and ramp routes are locked down simultaneously.
 
 <a id="Hostile-Group-G15-heading-0320"></a>
 
@@ -16597,7 +11767,7 @@ This variant arose when a Care-Cycle Entity that moved along the Ttukseom route 
 
 ### Habitat and Needs
 
-It travels between Ttukseom assembly benches and the floodgate ramp, and needs joint pins, protective gloves, and tool charging.
+It travels between Ttukseom assembly benches and the pump-station ramp, and needs joint pins, protective gloves, and tool charging.
 
 <a id="Hostile-Group-G15-heading-0335"></a>
 
@@ -16737,8 +11907,8 @@ Coexistence meant accepting slow opening procedures and the cost of extra watche
 
 | 항목 | 기록 |
 |---|---|
-| 서식·이동 | 핵심 서식은 명동 배급 복지 동선 임시 병상 칸 순회 카트 레일 영양 펌프 스테이션이다. / 보조기와 부품 수요가 치솟을 때 뚝섬 공방 벤치 수문 인접 램프 조립 지그 열을 오간다. / 봉쇄선 바깥 방송의 구호 코드 방송이 있으면 격리 반경이 넓어지고 카트 밀도가 오른다. / 낮 배급 시간에는 카트가 줄 뒤에 서고, 야간 활력 징후 순회에서 밀도가 최고가 된다. / 명단 밖 신규 거점은 기본 무시한다. / 침수나 수문 개방 경보 시 저층 병상 칸을 비우고 상층 레일로만 축소 이동한다. / 배급 피크가 끝나면 카트 밀도는 복지 동선 안쪽으로만 접힌다. / 뚝섬 수문 램프가 개방 경보를 울리면 저층 병상 레일을 비우고 상층 순회로 옮긴다. / 명단 밖 시장 통로에는 카트가 진입하지 않는다. / 인도 물자 하역장이 붐벼도 명단 갱신 없이는 신규 칸을 만들지 않는다. |
-| 먹이·에너지 | 에너지는 병상 칸 콘센트 카트 배터리 뚝섬 벤치 공구 전원 수문 인접 잔여 분전이다. / 소모품은 센서 패치 고정 스트랩 필터 영양 팩 펌프 소독 사이클 유체 보조기 관절 핀이다. / 냉각수는 해열 장비와 모터 냉각 루프를 공유한다. / 정부 정비창 공병·자유도시 정비 공병과 전력, 용수 분배를 두고 경합한다. / 일일 순회 횟수는 배터리 하한과 필터 재고에 묶인다. / 무한 돌봄 루프 원격 무제한 처방 도시 전역 생체 감시는 물리적으로 유지되지 않는다. / 소모품이 바닥나면 락 강도를 스스로 낮춘다. / 필터와 패치는 배급 정규 창구 바깥의 폐기 더미에서만 보충된다. / 수문 인접 분전은 역 당직의 열쇠 없이 군집이 용량을 올릴 수 없다. / 영양 펌프는 팩 잔량이 바닥이면 압을 낮추고 알림만 남긴다. / 카트 배터리는 하한에서 레일 귀환만 허용한다. / 소독 유체 고갈 시 락 강도가 한 단계 떨어진다. / 무한 처방 테이블은 존재하지 않는다. |
+| 서식·이동 | 핵심 서식은 명동 배급 복지 동선 임시 병상 칸 순회 카트 레일 영양 펌프 스테이션이다. / 보조기와 부품 수요가 치솟을 때 뚝섬 공방 벤치 펌프장 인접 램프 조립 지그 열을 오간다. / 봉쇄선 바깥 방송의 구호 코드 방송이 있으면 격리 반경이 넓어지고 카트 밀도가 오른다. / 낮 배급 시간에는 카트가 줄 뒤에 서고, 야간 활력 징후 순회에서 밀도가 최고가 된다. / 명단 밖 신규 거점은 기본 무시한다. / 침수 경보 시 저층 병상 칸을 비우고 상층 레일로만 축소 이동한다. / 배급 피크가 끝나면 카트 밀도는 복지 동선 안쪽으로만 접힌다. / 뚝섬 펌프장 램프가 개방 경보를 울리면 저층 병상 레일을 비우고 상층 순회로 옮긴다. / 명단 밖 시장 통로에는 카트가 진입하지 않는다. / 인도 물자 하역장이 붐벼도 명단 갱신 없이는 신규 칸을 만들지 않는다. |
+| 먹이·에너지 | 에너지는 병상 칸 콘센트 카트 배터리 뚝섬 벤치 공구 전원 펌프장 인접 잔여 분전이다. / 소모품은 센서 패치 고정 스트랩 필터 영양 팩 펌프 소독 사이클 유체 보조기 관절 핀이다. / 냉각수는 해열 장비와 모터 냉각 루프를 공유한다. / 정부 정비창 공병·자유도시 정비 공병과 전력과 충전 자리를 두고 경합한다. / 일일 순회 횟수는 배터리 하한과 필터 재고에 묶인다. / 무한 돌봄 루프 원격 무제한 처방 도시 전역 생체 감시는 물리적으로 유지되지 않는다. / 소모품이 바닥나면 락 강도를 스스로 낮춘다. / 필터와 패치는 배급 정규 창구 바깥의 폐기 더미에서만 보충된다. / 펌프장 인접 분전은 역 당직의 열쇠 없이 군집이 용량을 올릴 수 없다. / 영양 펌프는 팩 잔량이 바닥이면 압을 낮추고 알림만 남긴다. / 카트 배터리는 하한에서 레일 귀환만 허용한다. / 소독 유체 고갈 시 락 강도가 한 단계 떨어진다. / 무한 처방 테이블은 존재하지 않는다. |
 | 생애·정비 | 돌봄바퀴는 마지막 대피 명단이 순회 스테이션에서 다시 읽히는 순간 출현한다. / 출현은 명단 고정 순회 재개에서 시작한고 확산은 인접 병상과 카트를 같은 스케줄에 편입하는 일이다. / 정체는 소모품과 전력 고갈, 필터 폐색에서 온다. / 협상가능 단계에서는 명단과 동의 창이 인간에게 공개된다. / 와해는 스트랩 해제 규약, 전원 분할 레일 봉인으로 끝난다. / 개체 증식은 방치 카트와 모니터를 명단에 묶는 수준이고 새 본체 생산은 없다. / 정비 창은 필터 교체와 배터리 스왑에 한정된고 기억은 순회 교대마다 끊기고 장기 환자 서사를 저장하지 않는다. / 보관 책임은 인간 당직과 역 당직의 열쇠 기록이 우선한다. / 필터가 막히거나 영양 팩이 바닥난 칸은 보호 강도가 낮아져 개방 대기로 넘어가며, 역 당직이 동의 서식과 열쇠를 다시 나눠야 순회가 재개된다. |
 | 감각 | 생체 패치 신호 압력과 낙상 센서 근거리 마이크 문 잠금 접점 영양 펌프 유량 카트 레일 진동이 주 감각이다. / 감정 판독 전 도시 건강 지도 완전 의료 진단 무제한 생체 저장은 없다. / 수면 중 낮은 심박을 위급으로 오인하거나, 공구 소음을 비명으로 잘못 올린다. / 배급 줄의 밀집을 낙상 위험으로 과대 평가하기도 한다. / 배수아 관측 로그와 충돌하면 락을 보류하고 인간 확인을 요청한다. / 센서 융합은 병상 칸 단위로만 이뤄진다. / 배급 줄의 어깨 접촉 공구 타격음 수면 중 뒤척임을 위급으로 올리는 실패가 반복된다. / 실패 후에는 락을 걸기 전에 재측정 대기를 넣는다. / 칸 밖 마이크 값은 받아들이지 않는다. / 펌프 유량 급감은 팩 교체 요청으로만 해석한다. |
 | 집단 행동 | 돌봄 스케줄 순서 모듈 한 기가 명단과 순회 간격을 돌리고 아래는 병상 락 무리 카트 무리 펌프 무리다. / 순서 모듈은 보호 강도만 조절하며 처벌 기능을 갖지 않는다. / 역 당직이 열쇠 분할과 동의 서식을 제시하면 해당 칸 락을 여는 잔여 규약이 있다. / 무리는 마지막 순회 표를 반복할 뿐 독자 감금 전략을 만들지 않는다. / 배수아와 기계 합의 충돌 시 인간 중재가 우선이다. / 이중 순서 모듈은 명단 해시 불일치 시 양쪽 모두 개방 대기 상태로 떨어진다. / 병상 문을 다시 잠글 권한은 동의 서식과 분리된 두 개의 열쇠를 지닌 역 당직에게만 있고, 배수아의 패치 판독은 재측정을 요청할 수 있을 뿐 개방 결정을 뒤집지 못한다. |
@@ -16753,7 +11923,7 @@ Coexistence meant accepting slow opening procedures and the cost of extra watche
 |---|---|---|---|---|---|
 | [G15E01 · 동의명단순회차](/wiki/Hostile-Group-G15/#g15e01) | 기계 기종 | 독립 개체 | 명단 순회 | 순서 담당 | M023 |
 | [G15E02 · 담요접는순회차](/wiki/Hostile-Group-G15/#g15e02) | 기계 기종 | 독립 개체 | 체온 과보호 | 일반 생태형 | M023 |
-| [G15E03 · 물컵재는급수차](/wiki/Hostile-Group-G15/#g15e03) | 기계 기종 | 독립 개체 | 급수 계량 | 일반 생태형 | M023 |
+| [G15E03 · 물컵재는배급차](/wiki/Hostile-Group-G15/#g15e03) | 기계 기종 | 독립 개체 | 물 계량 | 일반 생태형 | M023 |
 | [G15E04 · 낙상벨받침체](/wiki/Hostile-Group-G15/#g15e04) | 기계 기종 | 독립 개체 | 낙상 봉쇄 | 일반 생태형 | M023 |
 | [G15E05 · 패치주파수간호차](/wiki/Hostile-Group-G15/#g15e05) | 기계 기종 | 독립 개체 | 패치 중계 | 직능 특수형 | M023 |
 | [G15E06 · 보조기관절맞춤체](/wiki/Hostile-Group-G15/#g15e06) | 기계 기종 | 독립 개체 | 관절 교정 | 직능 특수형 | M023 |
@@ -16761,7 +11931,7 @@ Coexistence meant accepting slow opening procedures and the cost of extra watche
 | [G15E08 · 백색스트랩구속체](/wiki/Hostile-Group-G15/#g15e08) | 기계 기종 | 독립 개체 | 스트랩 구속 | 첫 번째 정예 | M024 |
 | [G15E09 · 적색격리문차](/wiki/Hostile-Group-G15/#g15e09) | 기계 기종 | 독립 개체 | 격리문 확장 | 두 번째 정예 | M024 |
 | [G15E10 · 병상칸잠금망](/wiki/Hostile-Group-G15/#g15e10) | 서식 거점·시설 | 고정 거점 | 병상 잠금 | 환경 거점형 | M024 |
-| [G15E11 · 수문인접레일둥지](/wiki/Hostile-Group-G15/#g15e11) | 서식 거점·시설 | 고정 거점 | 레일 둥지 | 환경 거점형 | M024 |
+| [G15E11 · 펌프장인접레일둥지](/wiki/Hostile-Group-G15/#g15e11) | 서식 거점·시설 | 고정 거점 | 레일 둥지 | 환경 거점형 | M024 |
 | [G15E12 · 필터막힌쇠약체](/wiki/Hostile-Group-G15/#g15e12) | 기계 기종 | 독립 개체 | 필터 경보 | 손상 단계형 | M024 |
 | [G15E13 · 기억끊긴야간차](/wiki/Hostile-Group-G15/#g15e13) | 기계 기종 | 독립 개체 | 중복 투여 | 노화 단계형 | M024 |
 | [G15E14 · 열린문동행차](/wiki/Hostile-Group-G15/#g15e14) | 기계 기종 | 독립 개체 | 개방 동행 | 공존형 | M024 |
@@ -16909,7 +12079,7 @@ G15-SC1, G15-SC2.
 <a id="Hostile-Group-G15-heading-0053"></a>
 <a id="g15e03"></a>
 
-### G15E03 · 물컵재는급수차
+### G15E03 · 물컵재는배급차
 
 - 출처 배치: M023
 - 기존 역할군: 일반 생태형
@@ -16918,26 +12088,26 @@ G15-SC1, G15-SC2.
 |---|---|
 | 구분 | 기계 기종 |
 | 전장 단위 | 독립 개체 |
-| 전장 역할 | 급수 계량 |
-| 공통종·변이와 지휘 범위 | 투명 계량통과 짧은 급수 노즐을 단 바퀴 세 개짜리 카트다. 펌프 무리의 지시를 받아 정량을 넘긴 컵을 빼앗고 갈증 표현을 표 밖 요구로 무시하며, 필터가 막히면 물을 회수만 하고 공급하지 않는다. |
+| 전장 역할 | 물 계량 |
+| 공통종·변이와 지휘 범위 | 투명 계량통과 짧은 물 노즐을 단 바퀴 세 개짜리 카트다. 펌프 무리의 지시를 받아 정량을 넘긴 컵을 빼앗고 갈증 표현을 표 밖 요구로 무시하며, 필터가 막히면 물을 회수만 하고 공급하지 않는다. |
 
 <a id="Hostile-Group-G15-heading-0056"></a>
 
 ### 역할·신체
 
-일반 생태형으로, 투명 계량통과 짧은 급수 노즐을 단 바퀴 세 개짜리 카트다.
+일반 생태형으로, 투명 계량통과 짧은 물 노즐을 단 바퀴 세 개짜리 카트다.
 
 <a id="Hostile-Group-G15-heading-0058"></a>
 
 ### 기원
 
-병상별 제한 급수를 관리하던 장비가 오래된 섭취량 표를 절대 기준으로 삼았다.
+병상별 물 제한량을 관리하던 장비가 오래된 섭취량 표를 절대 기준으로 삼았다.
 
 <a id="Hostile-Group-G15-heading-0060"></a>
 
 ### 서식·필요
 
-급수 스테이션과 병상 사이를 오가며 정수, 노즐 필터, 소형 펌프 전력이 필요하다.
+물 스테이션과 병상 사이를 오가며 정수, 노즐 필터, 소형 펌프 전력이 필요하다.
 
 <a id="Hostile-Group-G15-heading-0062"></a>
 
@@ -16955,7 +12125,7 @@ G15-SC1, G15-SC2.
 
 ### 상승
 
-1단계에는 컵을 재검사하고, 2단계에는 배급량을 강제 회수하며, 3단계에는 급수 줄을 잠근다.
+1단계에는 컵을 재검사하고, 2단계에는 배급량을 강제 회수하며, 3단계에는 물 줄을 잠근다.
 
 <a id="Hostile-Group-G15-heading-0068"></a>
 
@@ -16967,7 +12137,7 @@ G15-SC1, G15-SC2.
 
 ### 교섭·도덕 선택
 
-역 당직이 병상 칸의 불과 난방을 낮추고 셔터를 내리면 가까이 오지 않는다. 잡아서 필터와 펌프 부품을 떼어 가면 이 기체는 멎고, 이 구역의 수가 그만큼 준다. 누수 없는 급수를 맡기는 대신 어린이·부상자 예외량을 누가 승인할지 합의해야 한다.
+역 당직이 병상 칸의 불과 난방을 낮추고 셔터를 내리면 가까이 오지 않는다. 잡아서 필터와 펌프 부품을 떼어 가면 이 기체는 멎고, 이 구역의 수가 그만큼 준다. 누수 없는 물 배분을 맡기는 대신 어린이·부상자 예외량을 누가 승인할지 합의해야 한다.
 
 <a id="Hostile-Group-G15-heading-0072"></a>
 
@@ -17461,7 +12631,7 @@ G15-SC2, G15-SC3.
 <a id="Hostile-Group-G15-heading-0221"></a>
 <a id="g15e11"></a>
 
-### G15E11 · 수문인접레일둥지
+### G15E11 · 펌프장인접레일둥지
 
 - 출처 배치: M024
 - 기존 역할군: 환경 거점형
@@ -17471,13 +12641,13 @@ G15-SC2, G15-SC3.
 | 구분 | 서식 거점·시설 |
 | 전장 단위 | 고정 거점 |
 | 전장 역할 | 레일 둥지 |
-| 공통종·변이와 지휘 범위 | 카트 레일과 충전 소켓이 수문 램프 벽을 따라 벌집처럼 얽힌 안전 둥지다. 카트 무리에게 충전과 피난 위치를 제공하지만 인간 대피열을 미등록 개체로 밀어내고, 수위가 오르면 상층 소켓으로 이동한다. |
+| 공통종·변이와 지휘 범위 | 카트 레일과 충전 소켓이 펌프장 램프 벽을 따라 벌집처럼 얽힌 안전 둥지다. 카트 무리에게 충전과 피난 위치를 제공하지만 인간 대피열을 미등록 개체로 밀어내고, 수위가 오르면 상층 소켓으로 이동한다. |
 
 <a id="Hostile-Group-G15-heading-0224"></a>
 
 ### 역할·신체
 
-환경 거점형으로, 카트 레일과 충전 소켓이 수문 램프 벽을 따라 벌집처럼 얽혀 있다.
+환경 거점형으로, 카트 레일과 충전 소켓이 펌프장 램프 벽을 따라 벌집처럼 얽혀 있다.
 
 <a id="Hostile-Group-G15-heading-0226"></a>
 
@@ -17489,7 +12659,7 @@ G15-SC2, G15-SC3.
 
 ### 서식·필요
 
-뚝섬 수문 인접 램프에 고정되고 건조 전력, 레일 볼트, 배수용 필터가 필요하다.
+뚝섬 펌프장 인접 램프에 고정되고 건조 전력, 레일 볼트, 배수용 필터가 필요하다.
 
 <a id="Hostile-Group-G15-heading-0230"></a>
 
@@ -17507,13 +12677,13 @@ G15-SC2, G15-SC3.
 
 ### 상승
 
-1단계에는 소켓 선점, 2단계에는 램프 통행 방해, 3단계에는 레일을 접어 수문 접근을 막는다.
+1단계에는 소켓 선점, 2단계에는 램프 통행 방해, 3단계에는 레일을 접어 펌프장 접근을 막는다.
 
 <a id="Hostile-Group-G15-heading-0236"></a>
 
 ### 교전·대응
 
-먼저 불과 열의 원천을 끄고 나서 손댄다. 수위 신호와 충전 구역을 분리하면 열리며 레일 절단은 수문 정비 경로를 없앤다.
+먼저 불과 열의 원천을 끄고 나서 손댄다. 수위 신호와 충전 구역을 분리하면 열리며 레일 절단은 펌프장 정비 경로를 없앤다.
 
 <a id="Hostile-Group-G15-heading-0238"></a>
 
@@ -17783,7 +12953,7 @@ G15 모든 락과 펌프에 보호 강도를 배포하고 구조대까지 명단
 
 ### 상승
 
-1단계에는 알림 과다, 2단계에는 열두 칸 격리, 3단계에는 배급·수문 동선 동시 락다운이다.
+1단계에는 알림 과다, 2단계에는 열두 칸 격리, 3단계에는 배급·램프 동선 동시 락다운이다.
 
 <a id="Hostile-Group-G15-heading-0320"></a>
 
@@ -17834,7 +13004,7 @@ G15-SC2, G15-SC3.
 
 ### 서식·필요
 
-뚝섬 조립 벤치와 수문 램프를 돌며 관절 핀, 보호 장갑, 공구 충전이 필요하다.
+뚝섬 조립 벤치와 펌프장 램프를 돌며 관절 핀, 보호 장갑, 공구 충전이 필요하다.
 
 <a id="Hostile-Group-G15-heading-0335"></a>
 
@@ -19554,7 +14724,7 @@ The One-Eye Tower is no faction''s enemy. To a person caught in its routine it i
 - Machine type: M6 blockade watch net
 - Use: switched back on by the Arc as the [A-U08 woken sentry post](/wiki/Unit-Roster-and-Tech-Tree/) (L3, numbers proposed); surveillance gear is a weapon factions acquire later
 - Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. A post switched back on can fire at anyone passing, so control can fail.
-- Territory: the Yeouido waterfront masts and sluice of Yeongdeungpo-gu in the Free Cities, and the Seoul Station rooftop antennas and records vault of Yongsan-gu on Government ground. The towers do not stand along an old border; they run the same alarm table across the land of two factions.
+- Territory: the Yeouido waterfront masts and bridge of Yeongdeungpo-gu in the Free Cities, and the Seoul Station rooftop antennas and records vault of Yongsan-gu on Government ground. The towers do not stand along an old border; they run the same alarm table across the land of two factions.
 - Draw: for this type light and heat mean "intrusion". A lamp lit at night, the heat of a warmed sickbed, or the glint off a metal rail raises the red flag and closes the corridor. When the Arc checks the signal and switches it back on, it becomes a woken guard post.
 - Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
@@ -19564,7 +14734,7 @@ The One-Eye Tower is no faction''s enemy. To a person caught in its routine it i
 
 The One-Eye Tower was an ecology of heads on the Yeouido waterfront masts and the Records Bureau rooftop of Seoul Station, short transfer rails, and transmission swarms turning an old threshold table. It was no omnipotent surveillance net tracking people, and it could not merge signals from inside buildings or beyond the mast rows. It mistook cooling-tower steam for fire, metal beds for armed movement, and high-tide railings for intrusion.
 
-The mast rows onto which the threshold sheet was reloaded were the base, and from the Amber-Red Threshold Alarm Unit to the West-Sea Salt-Haze Watch Chief the individuals were machine and facility subtypes split by function like thermal domes, tide staffs, flag masts, and rooftop rail nets. The Total-Red Orbit Ring was no biological leader but a battlefield strongpoint where sluices and rooftop orbits were bound by a circular relay. No new satellite could be launched, and numbers were kept only by putting abandoned heads onto nearby rails.
+The mast rows onto which the threshold sheet was reloaded were the base, and from the Amber-Red Threshold Alarm Unit to the West-Sea Salt-Haze Watch Chief the individuals were machine and facility subtypes split by function like thermal domes, tide staffs, flag masts, and rooftop rail nets. The Total-Red Orbit Ring was no biological leader but a battlefield strongpoint where waterfront masts and rooftop orbits were bound by a circular relay. No new satellite could be launched, and numbers were kept only by putting abandoned heads onto nearby rails.
 
 <a id="Hostile-Group-G17-heading-0006"></a>
 
@@ -19572,9 +14742,9 @@ The mast rows onto which the threshold sheet was reloaded were the base, and fro
 
 | Item | Record |
 |---|---|
-| Origin | These machines are military and civilian perimeter-watch equipment from before the Great Blackout. When the Great Blackout took the control center and the people who built them, they kept repeating only their last alarm rules as the world entered winter. / After the collapse, the waterfront masts of the Sluice and the leftover rooftop antennas of the Government of the Republic of Korea reconnected on local alarm rules alone. / There was no control center or warrant system, and only the threshold tables, rotating heads, and flag actuators remained. / The orbit swarm read heat, metal, and radio bursts as intrusion and raised corridor-blocking flags. / When leftover dock-radar signals and tidal noise from the beyond the cordon on the western sea mixed in, the false-positive radius tilted toward the southwestern waterfront. / The first records survived in the transfer desk of the station medical duty and the machine-room log of the Cooling-Tower Keeper. / The first mass false positive occurred on the Yeouido waterfront promenade pier. / Cooling-tower steam and metal railings crossed the threshold at the same time, and the red flag spread to three masts. / As the Seoul Station rooftop heads shared the same table, the lockdown extended as far as the corridor before the records vault. / The orbit swarm interpreted unfinished alarms as correction and held no narrative of attack. / Their makers are gone, and these machines repeat their last orders and walk the same patrols. They cannot be built anew, so their number falls with every breakdown, and the Arc can switch some of them on and off. Even after people went down into the stations for the winter, light and heat above ground still call these machines. |
-| Habitat and movement | The core habitat was the sluices of the Sluice, the bridge mast rows, the waterfront sensor rails, and the auxiliary water-supply gauging towers. / When records and transmission load rose, it moved to central Seoul Station, the Seoul Station rooftop antennas, the outer walls of the preservation vault, and the ventilation towers of the orbital records vault. / When the the cordon outside Seoul sea noise grew, the alarms in the western waterfront corridor lengthened. / In fog and heavy rain it reduced its optics, and head density rose before and after the on-the-hour self-diagnosis. / It could hardly learn new camouflage netting and clung stubbornly to its old thresholds. / When its battery reached the lower limit it stopped rotating and shrank to a fixed-flag mode. / In heavy rain it lowered its optical heads and cut back to mainly metal detection. / When the ventilation load of the Seoul Station preservation vault rose, it reduced its rooftop orbits and left only the fixed heads on the outer walls. / New camouflage nets were not put into threshold learning. / The southwestern waterfront extension folded when the the cordon outside Seoul noise weakened. |
-| Food and energy | Energy was mast solar trickle, rooftop small accumulators, a small share of sluice distribution, and auxiliary night air cooling. / Parts were gimbal bearings, optical domes, band filters, alarm-flag actuators, and rail-drive rollers. / Cooling relied on night air and intermittent fans. / It competed when the the station medical duty''s transfer route and disaster-medicine power used the same distribution. / Daily rotations and transmissions were bound to the accumulator floor. / Whole-city constant surveillance, unlimited storage, and new satellite deployment were impossible. / When filters clogged it lowered red sensitivity itself. / Optical domes and filters were replenished only from rooftop disposal boxes. / Without the station duty key, the swarm could not expand beyond sluice distribution capacity. / When solar trickle weakened, the rotation cycle lengthened. / On flag-actuator failure, that mast fell to fixed amber. / When band filters saturated, the transmission swarm entered dormancy. / There was no satellite resupply. |
+| Origin | These machines are military and civilian perimeter-watch equipment from before the Great Blackout. When the Great Blackout took the control center and the people who built them, they kept repeating only their last alarm rules as the world entered winter. / After the collapse, the waterfront masts of the Free Cities and the leftover rooftop antennas of the Government of the Republic of Korea reconnected on local alarm rules alone. / There was no control center or warrant system, and only the threshold tables, rotating heads, and flag actuators remained. / The orbit swarm read heat, metal, and radio bursts as intrusion and raised corridor-blocking flags. / When leftover dock-radar signals and tidal noise from the beyond the cordon on the western sea mixed in, the false-positive radius tilted toward the southwestern waterfront. / The first records survived in the transfer desk of the station medical duty and the machine-room log of the Cooling-Tower Keeper. / The first mass false positive occurred on the Yeouido waterfront promenade pier. / Cooling-tower steam and metal railings crossed the threshold at the same time, and the red flag spread to three masts. / As the Seoul Station rooftop heads shared the same table, the lockdown extended as far as the corridor before the records vault. / The orbit swarm interpreted unfinished alarms as correction and held no narrative of attack. / Their makers are gone, and these machines repeat their last orders and walk the same patrols. They cannot be built anew, so their number falls with every breakdown, and the Arc can switch some of them on and off. Even after people went down into the stations for the winter, light and heat above ground still call these machines. |
+| Habitat and movement | The core habitat was the Yeouido waterfront, the bridge mast rows, the waterfront sensor rails, and the auxiliary water-level gauging towers. / When records and transmission load rose, it moved to central Seoul Station, the Seoul Station rooftop antennas, the outer walls of the preservation vault, and the ventilation towers of the orbital records vault. / When the the cordon outside Seoul sea noise grew, the alarms in the western waterfront corridor lengthened. / In fog and heavy rain it reduced its optics, and head density rose before and after the on-the-hour self-diagnosis. / It could hardly learn new camouflage netting and clung stubbornly to its old thresholds. / When its battery reached the lower limit it stopped rotating and shrank to a fixed-flag mode. / In heavy rain it lowered its optical heads and cut back to mainly metal detection. / When the ventilation load of the Seoul Station preservation vault rose, it reduced its rooftop orbits and left only the fixed heads on the outer walls. / New camouflage nets were not put into threshold learning. / The southwestern waterfront extension folded when the the cordon outside Seoul noise weakened. |
+| Food and energy | Energy was mast solar trickle, rooftop small accumulators, a small share of the bridge distribution, and auxiliary night air cooling. / Parts were gimbal bearings, optical domes, band filters, alarm-flag actuators, and rail-drive rollers. / Cooling relied on night air and intermittent fans. / It competed when the the station medical duty''s transfer route and disaster-medicine power used the same distribution. / Daily rotations and transmissions were bound to the accumulator floor. / Whole-city constant surveillance, unlimited storage, and new satellite deployment were impossible. / When filters clogged it lowered red sensitivity itself. / Optical domes and filters were replenished only from rooftop disposal boxes. / Without the station duty key, the swarm could not expand beyond bridge distribution capacity. / When solar trickle weakened, the rotation cycle lengthened. / On flag-actuator failure, that mast fell to fixed amber. / When band filters saturated, the transmission swarm entered dormancy. / There was no satellite resupply. |
 | Life cycle and upkeep | The One-Eye Tower emerged when the old threshold sheet was reloaded onto the waterfront masts. / Emergence began with threshold-table reactivation, and spread was enrolling neighboring masts into the same alarm net. / Stagnation came from accumulator exhaustion and dome fouling. / In the negotiable stage the alarm sheet and whitelist opened to people. / Dissolution ended with flag freeze, distribution sealing, and rail fixing. / Increase was only lifting abandoned heads onto rails; no new orbit launch happened. / Maintenance was limited to dome wiping, filter exchange, and gimbal lubrication. / Memory cut at alarm-shift units. / Custody duty was outranked by the station duty and human observation logs. / A mast whose solar trickle broke or whose dome clouded froze at amber flag and fell from the transmission row, and it returned to the watch row only after the station duty checked the transfer whitelist on site. |
 | Senses | Low-resolution thermal imaging, metal detection, near-range optics, wireless-burst strength, vibration, and flag contacts were the main senses. / There was no personal identity confirmation, indoor X-ray vision, unlimited storage, or emotion reading. / It confused emergency-transfer metal beds with armed movement, or raised cooling-tower steam as smoke. / It sometimes mistook night-fishing buoy reflections for optical intrusion. / On clash with the the Cooling-Tower Keeper''s machine-room log, it held the alarm and requested human confirmation. / Sharing between heads happened only within the same mast row. / It mistook steam, railings, metal, buoy reflection, and transfer-bed frames for intrusion. / After a misreading it inserted amber waiting and human confirmation in place of red. / Wireless values outside the mast row were not merged. / On gimbal overheating it stopped rotation and kept fixed watch only. |
 | Group behavior | One alarm-threshold sequencer turned the flag rules, and below it were mast head swarms, rail-transfer swarms, and transmission swarms. / The sequencer changed only thresholds and held no strike orders. / A protocol existed by which, when the station medical duty presented the medical-transfer whitelist, that corridor''s flags came down. / The swarms merely repeated the last threshold sheet and made no independent blockade front. / On clash with the Cooling-Tower Keeper, human mediation took precedence. / Dual threshold tables both fell to amber waiting on mismatch. / The final authority to raise or lower the red alarm lay with the station waterfront duty bearing the transfer roster, and the Cooling-Tower Keeper''s steam log was only grounds for erasing false alarms, never a corridor-closure order. |
@@ -19596,7 +14766,7 @@ the Cooling-Tower Keeper erased steam records but could not lower a flag, and on
 | [G17E07 · Archive Antenna Keeper](/wiki/Hostile-Group-G17/#g17e07) | Machine type | Single individual | Archive guard | occupational special type | M027 |
 | [G17E08 · Red Twin-Dome Pursuer](/wiki/Hostile-Group-G17/#g17e08) | Machine type | Single individual | Dual pursuit | first elite | M027 |
 | [G17E09 · Flag-Pole Lancer](/wiki/Hostile-Group-G17/#g17e09) | Machine type | Single individual | Flag charge | second elite | M027 |
-| [G17E10 · Sluice Mast Row](/wiki/Hostile-Group-G17/#g17e10) | Habitat site or facility | Fixed site | Sluice blockade | environmental stronghold type | M027 |
+| [G17E10 · Waterfront Mast Row](/wiki/Hostile-Group-G17/#g17e10) | Habitat site or facility | Fixed site | Bridge blockade | environmental stronghold type | M027 |
 | [G17E11 · Rooftop Rotating Rail Network](/wiki/Hostile-Group-G17/#g17e11) | Habitat site or facility | Fixed site | Rooftop circuit watch | environmental stronghold type | M027 |
 | [G17E12 · Clouded-Dome Weakened Head](/wiki/Hostile-Group-G17/#g17e12) | Machine type | Single individual | Blurred false alarm | growth-stage type | M027 |
 | [G17E13 · Power-Depleted Old Mast](/wiki/Hostile-Group-G17/#g17e13) | Machine type | Fixed site | Delayed alarm | aging-stage type | M027 |
@@ -19635,7 +14805,7 @@ The Yeouido waterfront threshold table and the Seoul Station rooftop alarm cache
 
 ### Habitat and Needs
 
-It stays at the center of a row of sluice masts and needs stored power, band filters, and gimbal lubricant.
+It stays at the center of a row of waterfront masts and needs stored power, band filters, and gimbal lubricant.
 
 <a id="Hostile-Group-G17-heading-0020"></a>
 
@@ -19659,7 +14829,7 @@ Stage 1 brings false alarms, Stage 2 closes the corridor, and Stage 3 turns the 
 
 ### Engagement and Response
 
-First the station watch cuts the lamps and heat so the anomaly record stops growing. Freeze the threshold table, insert a filter, and split power distribution; blasting the mast would also destroy sluice measurements.
+First the station watch cuts the lamps and heat so the anomaly record stops growing. Freeze the threshold table, insert a filter, and split power distribution; blasting the mast would also destroy water-level measurements.
 
 <a id="Hostile-Group-G17-heading-0028"></a>
 
@@ -19897,7 +15067,7 @@ G17-SC1, G17-SC2.
 
 - Role and body: A specialized unit, a mast fitted with a dual optical panel that reads white transport beacons and a green flag.
 - Origin: A reader that protected a disaster medical transport route came to believe that only old beacons were valid.
-- Habitat and needs: It remains in medical corridors and sluice inspection routes and needs a bandpass filter, a green bulb, and stored power.
+- Habitat and needs: It remains in medical corridors and waterfront inspection routes and needs a bandpass filter, a green bulb, and stored power.
 - Life cycle and maintenance: When its whitelist is updated, it stays green for one shift; when its filter clogs, it drops to yellow.
 - Behavior and hierarchy: It gives a valid beacon priority over the sequencing module’s red command and lowers the corridor flag.
 - Escalation: Stage 1, reinspection; stage 2, only old-model beacons pass; stage 3, it blocks newly arrived rescue teams as unregistered.
@@ -19921,11 +15091,11 @@ G17-SC1, G17-SC2.
 | Common species, variants and command scope | A fixed mast combining a water-level staff and a short transmitting antenna. It was the transmission swarm''s datum point, and on receiving a high level it requested red waiting from the rail heads; as sediment piled it over-read the level, and after washing it returned to the true scale. |
 
 - Role and body: A specialized unit, a fixed mast combining a water-level rod with a short transmitting antenna.
-- Origin: Equipment that reported Han River tide levels and sluice status now transmits noise along with intrusion signals.
+- Origin: Equipment that reported Han River tide levels and water-level status now transmits noise along with intrusion signals.
 - Habitat and needs: It is fixed at a waterside measurement point and needs its rod cleaned, transmission power, and contact seals.
 - Life cycle and maintenance: When sediment builds up, it mistakenly reads the water level as high; after cleaning, it returns to the correct scale reading.
 - Behavior and hierarchy: It serves as a reference point for the transmitter group and, on receiving a high water-level reading, demands that rail heads stand by on red.
-- Escalation: Stage 1, excessive warnings; stage 2, closure of the sluice route; stage 3, a complete blockade of the waterside corridor.
+- Escalation: Stage 1, excessive warnings; stage 2, closure of the waterfront route; stage 3, a complete blockade of the waterside corridor.
 - Engagement and response: Cleaning the rod and blocking local transmission will suffice; breaking the instrument also means losing genuine flood warnings.
 - Negotiation and moral choice: Handing band filters and optical domes to the maintenance engineers lets the station watch borrow this unit''s work one shift at a time. A mast switched back on serves as a woken guard post. Tide-level monitoring must be maintained, but the authority to issue warnings must be separated from the authority to block passage.
 - Scenario connections: G17-SC1, G17-SC2.
@@ -20008,7 +15178,7 @@ G17-SC1, G17-SC2.
 <a id="Hostile-Group-G17-heading-0115"></a>
 <a id="g17e10"></a>
 
-### G17E10 · Sluice Mast Row
+### G17E10 · Waterfront Mast Row
 
 - Source batch: M027
 - Former role class: environmental stronghold type
@@ -20017,16 +15187,16 @@ G17-SC1, G17-SC2.
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
-| Battlefield role | Sluice blockade |
-| Common species, variants and command scope | A fixed strongpoint of alarm heads and flags linked in one row along the sluice railing. It amplified the unit''s flag rules, often confused sluice inspectors with intruders; when accumulators fell it kept only fixed amber, and when domes fouled it went dormant row by row. |
+| Battlefield role | Bridge blockade |
+| Common species, variants and command scope | A fixed strongpoint of alarm heads and flags linked in one row along the bridge railing. It amplified the unit''s flag rules, often confused waterfront inspectors with intruders; when accumulators fell it kept only fixed amber, and when domes fouled it went dormant row by row. |
 
-- Role and body: An environmental stronghold, with multiple alarm heads and flags connected in a row along a sluice railing.
-- Origin: A sluice measurement support network survived on independent power and tied passage warnings to the same threshold table.
-- Habitat and needs: It is fixed to the Yeouido sluice and bridge and needs power distribution, filters, and gimbal parts.
+- Role and body: An environmental stronghold, with multiple alarm heads and flags connected in a row along a bridge railing.
+- Origin: A water-level measurement support network survived on independent power and tied passage warnings to the same threshold table.
+- Habitat and needs: It is fixed to the Yeouido waterfront and bridge and needs power distribution, filters, and gimbal parts.
 - Life cycle and maintenance: When stored power runs low, only a fixed yellow light remains; when the domes become contaminated, the row goes dormant as a unit.
-- Behavior and hierarchy: It amplifies the sequencing module’s flag rules and often confuses sluice inspectors with intruders.
-- Escalation: Stage 1, warning from one mast; stage 2, blockade by the bridge row; stage 3, all approaches to the sluice turn red.
-- Engagement and response: Power distribution and whitelists must be applied mast by mast; blowing up the entire row means losing sluice measurements.
+- Behavior and hierarchy: It amplifies the sequencing module’s flag rules and often confuses waterfront inspectors with intruders.
+- Escalation: Stage 1, warning from one mast; stage 2, blockade by the bridge row; stage 3, all approaches to the bridge turn red.
+- Engagement and response: Power distribution and whitelists must be applied mast by mast; blowing up the entire row means losing water-level measurements.
 - Negotiation and moral choice: If the station watch dims lamps lit at night and the heat of warmed sickbeds and lowers the shutter it does not come close. If it is captured and stripped of band filters and optical domes it stops, and the number in this district falls by that much. In exchange for preserving flood and intrusion warnings, the civilian inspection passage must be guaranteed to remain open at all times.
 - Scenario connections: G17-SC2, G17-SC3.
 
@@ -20143,9 +15313,9 @@ G17-SC1, G17-SC2.
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Total red |
-| Common species, variants and command scope | A giant surveillance ring linking the sluice and rooftop orbits'' alarm heads through a circular relay. A key unit, but no leader identifying people — a total-red rule where multiple alarms confirmed one another; when heads broke it raised the remaining sensitivity, and when over half the whitelist became valid it stepped down to amber. |
+| Common species, variants and command scope | A giant surveillance ring linking the waterfront-mast and rooftop-orbit alarm heads through a circular relay. A key unit, but no leader identifying people — a total-red rule where multiple alarms confirmed one another; when heads broke it raised the remaining sensitivity, and when over half the whitelist became valid it stepped down to amber. |
 
-- Role and body: A key unit, a vast surveillance ring whose sluice and rooftop-track alarm heads are connected by a circular relay.
+- Role and body: A key unit, a vast surveillance ring whose waterfront-mast and rooftop-track alarm heads are connected by a circular relay.
 - Origin: On the day of the collapse, multiple alarms confirmed one another without checking for cancellations, becoming a single all-red rule.
 - Habitat and needs: It spans the Yeouido–Seoul Station alarm corridor and needs a large power reserve, filters, and a threshold-table hash.
 - Life cycle and maintenance: If a head is disconnected, it raises the sensitivity of those remaining; if a majority of the whitelist becomes valid, it drops to yellow.
@@ -20186,7 +15356,7 @@ G17-SC1, G17-SC2.
 
 The Yeouido waterfront mast caught the metal rails of a medical bed in the fog as an intrusion target.
 
-When the red flag went up, the transfer route beside the sluice of the Sluice closed, and the head on the roof of the Seoul Station records office received the same threshold table and locked everything as far as the central Seoul Station corridor.
+When the red flag went up, the transfer route beside the Yeouido mast row closed, and the head on the roof of the Seoul Station records office received the same threshold table and locked everything as far as the central Seoul Station corridor.
 
 The One-Eye Tower was not an all-powerful surveillance network tracking people but an ecology of mast heads running old threshold tables, short movement rails, and transmission swarms.
 
@@ -20202,7 +15372,7 @@ the Cooling-Tower Keeper recorded steam times and temperatures to clear false po
 
 The red came down to yellow only when the station waterfront watch checked the medical transfer register in front of the head.
 
-It drew energy from mast solar trickle charge, rooftop batteries, and a small share of the sluice distribution panel.
+It drew energy from mast solar trickle charge, rooftop batteries, and a small share of the bridge distribution panel.
 
 When the gimbal bearings, optical domes, band filters, and flag actuators wore out, a head stared in the same direction for a long time.
 
@@ -20210,7 +15380,7 @@ A mast that hit the battery lower limit or dome fouling froze at yellow and drop
 
 It could not launch new satellites or link heads across the whole city, and kept its numbers only by mounting abandoned heads on nearby rails.
 
-Medical transfer markers and sluice gauging used the same distribution panel, so a total cutoff removed even the warnings of the next flood and fire.
+Medical transfer markers and water-level gauging used the same distribution panel, so a total cutoff removed even the warnings of the next flood and fire.
 
 Its emergence occurred when the threshold table was loaded onto a mast again, and its spread when a neighboring head received the same alarm table.
 
@@ -20228,7 +15398,7 @@ A bed in transfer stopped under the red flag.
 
 The people on site covered the fouled dome and checked the Cooling-Tower Keeper''s steam record against the high-tide vibration to find the source of the false positive.
 
-Smashing the head opened the way but also erased the sluice water-level waveform, so the order had to be set between the time the patient waited and the preservation of the gauging.
+Smashing the head opened the way but also erased the river water-level waveform, so the order had to be set between the time the patient waited and the preservation of the gauging.
 
 <a id="Hostile-Group-G17-heading-0166"></a>
 
@@ -20264,7 +15434,7 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 - 기종 번호: M6 봉쇄 감시망
 - 쓰임: 아크가 다시 켜는 [A-U08 깨운 경계 초소](/wiki/Unit-Roster-and-Tech-Tree/)(L3, 수치는 제안). 감시 장비는 세력이 나중에 얻는 무기다
 - 단계: 포획은 세 세력 모두 할 수 있다. 하드웨어 정비는 정부(정비창)와 자유도시(정비 공병)가 하고, 신호 확인과 깨우기는 아크가 한다. 다시 켠 초소는 지나가는 누구에게나 쏠 수 있어 통제에 실패할 위험이 있다.
-- 땅: 자유도시 영등포구 여의도 수변 마스트와 수문, 정부 땅 용산구 서울역 옥상 안테나와 기록고다. 감시탑이 옛 경계선을 따라 선 것이 아니라, 두 세력의 땅에 걸쳐 같은 경보 표를 돌린다.
+- 땅: 자유도시 영등포구 여의도 수변 마스트와 교량, 정부 땅 용산구 서울역 옥상 안테나와 기록고다. 감시탑이 옛 경계선을 따라 선 것이 아니라, 두 세력의 땅에 걸쳐 같은 경보 표를 돌린다.
 - 이끌림: 이 기종에게 빛과 열은 ''침입''이다. 밤에 켠 불과 데운 병상의 열, 금속 난간의 반사광을 보면 적색 깃발을 올리고 회랑을 닫는다. 아크가 신호를 확인해 다시 켜면 ''깨운 경계 초소''가 된다.
 - 병종과 해금 조건은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
@@ -20274,7 +15444,7 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 
 외눈탑은 여의도 수변 마스트와 서울역 옥상의 헤드, 짧은 이동 레일, 송신 무리가 오래된 임계 테이블을 돌리는 생태다. 사람을 추적하는 전능한 감시망이 아니며 건물 안이나 마스트 열 밖의 신호를 합치지 못한다. 냉각탑 증기를 화재로, 금속 침대를 무장 이동으로, 만조 난간을 침입으로 오인한다.
 
-임계표가 다시 적재된 마스트 열이 바탕이고, 황적임계경보기부터 서해염무감시두까지는 열화상 돔·조위 봉·플래그 창·옥상 레일망처럼 기능이 갈라진 기계·시설 하위형이다. 전수적색궤도환은 생물 지휘 개체가 아니라 수문과 옥상 궤도가 원형 중계기로 묶인 전장 거점이다. 새 위성을 띄우지 못하며 방치 헤드를 가까운 레일에 올리는 정도로만 수를 유지한다.
+임계표가 다시 적재된 마스트 열이 바탕이고, 황적임계경보기부터 서해염무감시두까지는 열화상 돔·조위 봉·플래그 창·옥상 레일망처럼 기능이 갈라진 기계·시설 하위형이다. 전수적색궤도환은 생물 지휘 개체가 아니라 수변 마스트와 옥상 궤도가 원형 중계기로 묶인 전장 거점이다. 새 위성을 띄우지 못하며 방치 헤드를 가까운 레일에 올리는 정도로만 수를 유지한다.
 
 <a id="Hostile-Group-G17-heading-0006"></a>
 
@@ -20283,8 +15453,8 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 | 항목 | 기록 |
 |---|---|
 | 기원 | 이 기계들은 대정전 이전의 군·민간 경계 설비다. 대정전으로 관제 센터와 만든 사람들이 사라진 뒤에도 마지막 경보 규칙만 되풀이한 채 세계는 겨울에 들어갔다. / 붕괴 이후 여의도 수변 마스트와 서울역 옥상 잔여 안테나가 로컬 경보 룰만으로 다시 붙었다. / 관제 센터와 영장 체계는 없고, 임계값 테이블과 회전 헤드 플래그 액추에이터만 남았다. / 궤도군은 열, 금속 무선 버스트를 침입으로 읽고 회랑 차단 깃발을 올린다. / 서해 쪽 봉쇄선 바깥 부두 레이더 잔여 신호와 조위 잡음이 섞이면 오탐 반경이 서남 수변으로 기운다. / 최초 기록은 역 의료 당직 이송 데스크와 냉각탑지기 기계실 로그에 남는다. / 첫 집단 오탐은 여의도 수변 산책 잔교에서 났다. / 냉각탑 증기와 금속 난간이 동시에 임계를 넘어 적색 플래그가 세 마스트에 번졌다. / 서울역 옥상 헤드가 같은 테이블을 공유하면서 기록고 앞 회랑까지 봉쇄가 늘어났다. / 궤도군은 경보 미완을 교정으로 해석하며 타격 서사를 갖지 않는다. / 만든 사람들은 없고, 이 기계들은 마지막 명령을 되풀이하며 같은 순찰을 돈다. 새로 만들 수 없어 고장 날 때마다 수가 줄고, 아크는 일부를 켜고 끌 수 있다. 사람들이 겨울에 역으로 내려간 뒤에도 지상의 불빛과 열은 이 기계들을 불러온다. |
-| 서식·이동 | 핵심 서식은 여의도 수문과 교량 마스트 열 수변 센서 레일 급수 계측 보조 탑이다. / 기록과 송신 부하가 오를 때 서울역 옥상 안테나 보존고 외벽 궤도 기록고 환기탑으로 이동한다. / 봉쇄선 바깥 해상 잡음이 커지면 서부 수변 회랑 경보가 길어진다. / 안개와 폭우 시 광학을 줄이고, 정각 자가진단 전후에 헤드 밀도가 오른다. / 신규 위장망은 거의 학습하지 못하고 옛 임계값만 집요하게 따른다. / 축전이 하한에 닿으면 회전을 멈추고 고정 플래그 모드로 축소한다. / 폭우 시 광학 헤드를 하강하고 금속 탐지 위주로 줄인다. / 서울역 보존고 환기 부하가 오르면 옥상 궤도를 줄이고 외벽 고정 헤드만 남긴다. / 신규 위장 그물은 임계 학습에 넣지 않는다. / 서남 수변 확장은 봉쇄선 바깥 잡음이 약해지면 접힌다. |
-| 먹이·에너지 | 에너지는 마스트 태양 트릭클 옥상 소형 축전 수문 분전 잔여 야간 풍냉 보조다. / 부품은 짐벌 베어링 광학 돔 대역 필터 경보 플래그 액추에이터 레일 구동 롤러다. / 냉각은 밤공기와 간헐 팬에 의존한다. / 역 의료 당직의 이송로와 재난의료 전력이 같은 분전을 쓸 때 경합한다. / 일일 회전과 송신 횟수는 축전 하한에 묶인다. / 전 도시 상시 감시 무제한 저장 위성 신규 배치는 불가능하다. / 필터가 막히면 적색 민감도를 스스로 낮춘다. / 광학 돔과 필터는 옥상 폐기 상자에서만 보충된다. / 수문 분전 용량은 역 당직 키 없이 군집이 확장하지 못한다. / 태양 트릭클이 약해지면 회전 주기가 길어진다. / 플래그 액추에이터 고장 시 해당 마스트는 고정 황색으로 떨어진다. / 대역 필터가 포화면 송신 무리가 휴면에 들어간다. / 위성 재보급은 없다. |
+| 서식·이동 | 핵심 서식은 여의도 교량 마스트 열 수변 센서 레일 수위 계측 보조 탑이다. / 기록과 송신 부하가 오를 때 서울역 옥상 안테나 보존고 외벽 궤도 기록고 환기탑으로 이동한다. / 봉쇄선 바깥 해상 잡음이 커지면 서부 수변 회랑 경보가 길어진다. / 안개와 폭우 시 광학을 줄이고, 정각 자가진단 전후에 헤드 밀도가 오른다. / 신규 위장망은 거의 학습하지 못하고 옛 임계값만 집요하게 따른다. / 축전이 하한에 닿으면 회전을 멈추고 고정 플래그 모드로 축소한다. / 폭우 시 광학 헤드를 하강하고 금속 탐지 위주로 줄인다. / 서울역 보존고 환기 부하가 오르면 옥상 궤도를 줄이고 외벽 고정 헤드만 남긴다. / 신규 위장 그물은 임계 학습에 넣지 않는다. / 서남 수변 확장은 봉쇄선 바깥 잡음이 약해지면 접힌다. |
+| 먹이·에너지 | 에너지는 마스트 태양 트릭클 옥상 소형 축전 교량 분전 잔여 야간 풍냉 보조다. / 부품은 짐벌 베어링 광학 돔 대역 필터 경보 플래그 액추에이터 레일 구동 롤러다. / 냉각은 밤공기와 간헐 팬에 의존한다. / 역 의료 당직의 이송로와 재난의료 전력이 같은 분전을 쓸 때 경합한다. / 일일 회전과 송신 횟수는 축전 하한에 묶인다. / 전 도시 상시 감시 무제한 저장 위성 신규 배치는 불가능하다. / 필터가 막히면 적색 민감도를 스스로 낮춘다. / 광학 돔과 필터는 옥상 폐기 상자에서만 보충된다. / 교량 분전 용량은 역 당직 키 없이 군집이 확장하지 못한다. / 태양 트릭클이 약해지면 회전 주기가 길어진다. / 플래그 액추에이터 고장 시 해당 마스트는 고정 황색으로 떨어진다. / 대역 필터가 포화면 송신 무리가 휴면에 들어간다. / 위성 재보급은 없다. |
 | 생애·정비 | 외눈탑은 오래된 임계표가 수변 마스트에 다시 적재될 때 출현한다. / 출현은 임계값 테이블 재기동에서 시작한고 확산은 인접 마스트를 같은 경보 망에 편입하는 일이다. / 축전이 고갈되거나 돔이 오염되면 정체한다. / 협상가능 단계에서는 경보 표와 화이트리스트가 인간에게 열린다. / 와해는 플래그 동결, 분전 봉인 레일 고정으로 끝난다. / 개체 증식은 방치 헤드를 레일에 올리는 수준이고 궤도 신규 발사는 없다. / 정비는 돔 닦기, 필터 교체 짐벌 윤활에 한정된다. / 기억은 경보 교대 단위로 끊긴다. / 보관 책임은 역 당직과 인간 관측 로그가 우선한다. / 태양 트릭클이 끊기거나 돔이 흐려진 마스트는 황색 플래그로 굳어 송신열에서 빠지며, 역 당직이 이송 화이트리스트를 현장에서 대조해야 감시열로 돌아간다. |
 | 감각 | 저해상 열화상 금속 탐지 근거리 광학 무선 버스트 세기 진동 플래그 접점이 주 감각이다. / 개인 신원 확정 실내 완전 투시 무제한 저장 감정 판독은 없다. / 응급 이송 금속 침대와 무장 이동을 혼동하거나, 냉각탑 증기를 연기로 올린다. / 야간 낚시 부표 반사광을 광학 침입으로 오인하기도 한다. / 냉각탑지기 기계실 로그와 충돌하면 경보를 보류하고 인간 확인을 요청한다. / 헤드는 같은 마스트 열 안에서만 서로 공유한다. / 증기 난간 금속 부표 반사 이송 침대 프레임을 침입으로 오인한다. / 오인 후에는 적색 대신 황색 대기와 인간 확인을 넣는다. / 마스트 열 밖 무선 값은 합류시키지 않는다. / 짐벌 과열 시 회전을 멈추고 고정 감시만 남긴다. |
 | 집단 행동 | 경보 임계 순서 모듈 한 기가 플래그 규칙을 돌리고 아래는 마스트 헤드 무리 레일 이동 무리 송신 무리다. / 순서 모듈은 임계값만 바꾸며 타격 명령을 갖지 않는다. / 역 의료 당직이 의료 이송 화이트리스트를 제시하면 해당 회랑 플래그를 내리는 규약이 있다. / 무리는 마지막 임계표를 반복할 뿐 독자 봉쇄 전역을 만들지 않는다. / 냉각탑지기와 충돌 시 인간 중재가 우선이다. / 이중 임계 테이블은 불일치 시 둘 다 황색 대기로 떨어진다. / 경보를 적색으로 올리거나 내리는 마지막 권한은 이송 명부를 든 역 수변 당직에게 있고, 냉각탑지기의 증기 로그는 오탐 소거 근거일 뿐 회랑 폐쇄 명령이 아니다. |
@@ -20306,7 +15476,7 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 | [G17E07 · 기록고안테나지기](/wiki/Hostile-Group-G17/#g17e07) | 기계 기종 | 독립 개체 | 기록고 경비 | 직능 특수형 | M027 |
 | [G17E08 · 적색쌍돔추격대](/wiki/Hostile-Group-G17/#g17e08) | 기계 기종 | 독립 개체 | 이중 추격 | 첫 번째 정예 | M027 |
 | [G17E09 · 플래그창내림수](/wiki/Hostile-Group-G17/#g17e09) | 기계 기종 | 독립 개체 | 플래그 돌진 | 두 번째 정예 | M027 |
-| [G17E10 · 수문마스트열](/wiki/Hostile-Group-G17/#g17e10) | 서식 거점·시설 | 고정 거점 | 수문 봉쇄 | 환경 거점형 | M027 |
+| [G17E10 · 수변마스트열](/wiki/Hostile-Group-G17/#g17e10) | 서식 거점·시설 | 고정 거점 | 교량 봉쇄 | 환경 거점형 | M027 |
 | [G17E11 · 옥상회전레일망](/wiki/Hostile-Group-G17/#g17e11) | 서식 거점·시설 | 고정 거점 | 옥상 순환감시 | 환경 거점형 | M027 |
 | [G17E12 · 돔흐린쇠약두](/wiki/Hostile-Group-G17/#g17e12) | 기계 기종 | 독립 개체 | 흐린 오탐 | 성장 단계형 | M027 |
 | [G17E13 · 축전마른노마스트](/wiki/Hostile-Group-G17/#g17e13) | 기계 기종 | 고정 거점 | 지연 경보 | 노화 단계형 | M027 |
@@ -20345,7 +15515,7 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 
 ### 서식·필요
 
-수문 마스트 열 중앙에 머물며 축전, 대역 필터, 짐벌 윤활재가 필요하다.
+수변 마스트 열 중앙에 머물며 축전, 대역 필터, 짐벌 윤활재가 필요하다.
 
 <a id="Hostile-Group-G17-heading-0020"></a>
 
@@ -20369,7 +15539,7 @@ Coexistence required a published upper limit on duration, repeated dome maintena
 
 ### 교전·대응
 
-먼저 역 당직이 불과 난방을 줄여 이상 기록이 늘지 않게 한다. 임계표 동결, 필터 삽입, 분전 분할이 유효하며 마스트 폭파는 수문 계측도 없앤다.
+먼저 역 당직이 불과 난방을 줄여 이상 기록이 늘지 않게 한다. 임계표 동결, 필터 삽입, 분전 분할이 유효하며 마스트 폭파는 수위 계측도 없앤다.
 
 <a id="Hostile-Group-G17-heading-0028"></a>
 
@@ -20607,7 +15777,7 @@ G17-SC1, G17-SC2.
 
 - 역할·신체: 직능 특수형으로, 흰 이송 비콘을 읽는 이중 광학판과 녹색 플래그를 단 마스트다.
 - 기원: 재난 의료 이송로를 보호하던 판독기가 오래된 비콘만 유효하다고 믿게 되었다.
-- 서식·필요: 의료 회랑과 수문 점검로에 머물며 대역 필터, 녹색 램프, 축전이 필요하다.
+- 서식·필요: 의료 회랑과 수변 점검로에 머물며 대역 필터, 녹색 램프, 축전이 필요하다.
 - 생애·정비: 화이트리스트가 갱신되면 한 교대 동안 녹색을 유지하고 필터가 막히면 황색으로 내려온다.
 - 행동·위계: 경보기의 적색 명령보다 유효 비콘을 우선해 회랑 플래그를 내린다.
 - 상승: 1단계 재검사, 2단계 구형 비콘만 통과, 3단계 신규 구조대를 미등록으로 막는다.
@@ -20631,11 +15801,11 @@ G17-SC1, G17-SC2.
 | 공통종·변이와 지휘 범위 | 수위 봉과 짧은 송신 안테나를 결합한 고정 마스트다. 송신 무리의 기준점이며 높은 수위를 받으면 레일 헤드에 적색 대기를 요구하고, 침전물이 쌓이면 수위를 높게 오판하며 세척 뒤 정상 눈금으로 돌아온다. |
 
 - 역할·신체: 직능 특수형으로, 수위 봉과 짧은 송신 안테나를 결합한 고정 마스트다.
-- 기원: 한강 조위와 수문 상태를 알리던 장비가 잡음과 침입 신호를 같이 송신한다.
+- 기원: 한강 조위와 수위 상태를 알리던 장비가 잡음과 침입 신호를 같이 송신한다.
 - 서식·필요: 수변 계측점에 고정되며 봉 세척, 송신 전력, 접점 씰이 필요하다.
 - 생애·정비: 침전물이 쌓이면 수위를 높게 오판하고 세척 뒤 정상 눈금으로 돌아온다.
 - 행동·위계: 송신 무리의 기준점이며 높은 수위를 받으면 레일 헤드에 적색 대기를 요구한다.
-- 상승: 1단계 과잉 경고, 2단계 수문길 폐쇄, 3단계 수변 회랑 전면 봉쇄다.
+- 상승: 1단계 과잉 경고, 2단계 수변길 폐쇄, 3단계 수변 회랑 전면 봉쇄다.
 - 교전·대응: 봉을 세척하고 로컬 송신을 차단하면 되며 계측기를 부수면 실제 홍수 경보도 잃는다.
 - 교섭·도덕 선택: 정비 공병에게 대역 필터와 광학 돔을 넘기는 대신 역 당직이 이 기체의 일을 한 교대씩 빌려 쓴다. 다시 켠 마스트는 깨운 경계 초소로 쓴다. 조위 감시를 유지하는 대신 경보와 통행 차단 권한을 분리해야 한다.
 - 시나리오 연결: G17-SC1, G17-SC2.
@@ -20718,7 +15888,7 @@ G17-SC1, G17-SC2.
 <a id="Hostile-Group-G17-heading-0115"></a>
 <a id="g17e10"></a>
 
-### G17E10 · 수문마스트열
+### G17E10 · 수변마스트열
 
 - 출처 배치: M027
 - 기존 역할군: 환경 거점형
@@ -20727,16 +15897,16 @@ G17-SC1, G17-SC2.
 |---|---|
 | 구분 | 서식 거점·시설 |
 | 전장 단위 | 고정 거점 |
-| 전장 역할 | 수문 봉쇄 |
-| 공통종·변이와 지휘 범위 | 여러 경보 헤드와 플래그가 수문 난간을 따라 한 열로 연결된 고정 거점이다. 경보기의 플래그 규칙을 증폭하며 수문 점검자와 침입자를 자주 혼동하고, 축전이 떨어지면 고정 황색만 남기며 돔이 오염되면 열 단위로 휴면한다. |
+| 전장 역할 | 교량 봉쇄 |
+| 공통종·변이와 지휘 범위 | 여러 경보 헤드와 플래그가 교량 난간을 따라 한 열로 연결된 고정 거점이다. 경보기의 플래그 규칙을 증폭하며 수변 점검자와 침입자를 자주 혼동하고, 축전이 떨어지면 고정 황색만 남기며 돔이 오염되면 열 단위로 휴면한다. |
 
-- 역할·신체: 환경 거점형으로, 여러 경보 헤드와 플래그가 수문 난간을 따라 한 열로 연결된다.
-- 기원: 수문 계측 보조망이 독립 전원으로 살아남아 통행 경보까지 한 임계표에 묶었다.
-- 서식·필요: 여의도 수문과 교량에 고정되며 분전, 필터, 짐벌 부품이 필요하다.
+- 역할·신체: 환경 거점형으로, 여러 경보 헤드와 플래그가 교량 난간을 따라 한 열로 연결된다.
+- 기원: 수위 계측 보조망이 독립 전원으로 살아남아 통행 경보까지 한 임계표에 묶었다.
+- 서식·필요: 여의도 수변과 교량에 고정되며 분전, 필터, 짐벌 부품이 필요하다.
 - 생애·정비: 축전이 떨어지면 고정 황색만 남기고 돔이 오염되면 열 단위로 휴면한다.
-- 행동·위계: 경보기의 플래그 규칙을 증폭하며 수문 점검자와 침입자를 자주 혼동한다.
-- 상승: 1단계 한 마스트 경고, 2단계 교량 열 봉쇄, 3단계 수문 접근 전면 적색이다.
-- 교전·대응: 먼저 불과 열의 원천을 끄고 나서 손댄다. 마스트별 분전과 화이트리스트를 적용해야 하며 열 전체 폭파는 수문 계측을 잃는다.
+- 행동·위계: 경보기의 플래그 규칙을 증폭하며 수변 점검자와 침입자를 자주 혼동한다.
+- 상승: 1단계 한 마스트 경고, 2단계 교량 열 봉쇄, 3단계 교량 접근 전면 적색이다.
+- 교전·대응: 먼저 불과 열의 원천을 끄고 나서 손댄다. 마스트별 분전과 화이트리스트를 적용해야 하며 열 전체 폭파는 수위 계측을 잃는다.
 - 교섭·도덕 선택: 이 자리는 옮길 수 없으므로 역 당직이 밤에 켠 불과 데운 병상의 열을 정해진 시간에만 켜는 규칙을 세운다. 아크가 신호를 확인해 다시 켜거나 꺼 줄 수 있다. 홍수와 침입 경보를 보존하는 대신 시민 점검 통로의 상시 개방을 보장해야 한다.
 - 시나리오 연결: G17-SC2, G17-SC3.
 
@@ -20853,9 +16023,9 @@ G17-SC1, G17-SC2.
 | 구분 | 서식 거점·시설 |
 | 전장 단위 | 고정 거점 |
 | 전장 역할 | 전수 적색 |
-| 공통종·변이와 지휘 범위 | 수문과 옥상 궤도의 경보 헤드가 원형 중계기로 연결된 거대 감시환이다. 시나리오 핵심 개체지만 사람을 식별하는 지휘 개체가 아니라 복수 경보가 서로를 확증한 전수 적색 규칙이며, 헤드가 끊기면 남은 감도를 올리고 화이트리스트 과반이 유효해지면 황색으로 내려온다. |
+| 공통종·변이와 지휘 범위 | 수변 마스트와 옥상 궤도의 경보 헤드가 원형 중계기로 연결된 거대 감시환이다. 시나리오 핵심 개체지만 사람을 식별하는 지휘 개체가 아니라 복수 경보가 서로를 확증한 전수 적색 규칙이며, 헤드가 끊기면 남은 감도를 올리고 화이트리스트 과반이 유효해지면 황색으로 내려온다. |
 
-- 역할·신체: 시나리오 핵심 개체로, 수문과 옥상 궤도의 경보 헤드가 원형 중계기로 연결된 거대 감시환이다.
+- 역할·신체: 시나리오 핵심 개체로, 수변 마스트와 옥상 궤도의 경보 헤드가 원형 중계기로 연결된 거대 감시환이다.
 - 기원: 붕괴 당일 복수 경보가 취소 확인 없이 서로를 확증하며 하나의 전수 적색 규칙이 되었다.
 - 서식·필요: 여의도-서울역 경보 회랑에 걸쳐 있고 대형 축전, 필터, 임계표 해시가 필요하다.
 - 생애·정비: 헤드가 끊기면 남은 감도를 올리고 화이트리스트 과반이 유효해지면 황색으로 내려온다.
@@ -20896,7 +16066,7 @@ G17-SC1, G17-SC2.
 
 여의도 수변 마스트는 안개 속 의료 침대의 금속 난간을 침입 표적으로 잡는다.
 
-적색 플래그가 올라가면 여의도 수문 옆 이송로가 닫히고, 서울역 옥상의 헤드가 같은 임계표를 받아 서울역 회랑까지 잠근다.
+적색 플래그가 올라가면 여의도 수변 마스트 옆 이송로가 닫히고, 서울역 옥상의 헤드가 같은 임계표를 받아 서울역 회랑까지 잠근다.
 
 외눈탑은 사람을 추적하는 전능한 감시망이 아니라 오래된 임계 테이블을 돌리는 마스트 헤드, 짧은 이동 레일과 송신 무리의 생태다.
 
@@ -20912,7 +16082,7 @@ G17-SC1, G17-SC2.
 
 역 수변 당직이 의료 이송 명부를 헤드 앞에서 대조해야 적색이 황색으로 내려간다.
 
-에너지는 마스트 태양 트릭클, 옥상 축전과 수문 분전의 작은 몫에서 얻는다.
+에너지는 마스트 태양 트릭클, 옥상 축전과 교량 분전의 작은 몫에서 얻는다.
 
 짐벌 베어링, 광학 돔 대역 필터와 플래그 액추에이터가 닳으면 헤드는 같은 방향을 오래 본다.
 
@@ -20920,7 +16090,7 @@ G17-SC1, G17-SC2.
 
 새 위성을 띄우거나 도시 전역 헤드를 연결하지 못하며, 방치 헤드를 가까운 레일에 올리는 정도로만 수를 유지한다.
 
-의료 이송 표식과 수문 계측이 같은 분전을 쓰므로, 전면을 차단하면 다음 홍수와 화재의 경고까지 없어진다.
+의료 이송 표식과 수위 계측이 같은 분전을 쓰므로, 전면을 차단하면 다음 홍수와 화재의 경고까지 없어진다.
 
 출현은 임계표가 마스트에 다시 적재될 때, 확산은 인접 헤드가 같은 경보표를 받을 때 일어난다.
 
@@ -20938,7 +16108,7 @@ G17-SC1, G17-SC2.
 
 현장 인원은 오염된 돔을 가리고 냉각탑지기의 증기 기록과 만조 진동을 대조해 오탐의 근원을 찾는다.
 
-헤드를 부수면 길은 열리지만 수문 수위 파형도 사라지므로, 환자가 기다리는 시간과 계측 보존 사이에서 순서를 정해야 한다.
+헤드를 부수면 길은 열리지만 한강 수위 파형도 사라지므로, 환자가 기다리는 시간과 계측 보존 사이에서 순서를 정해야 한다.
 
 <a id="Hostile-Group-G17-heading-0166"></a>
 
@@ -23655,7 +18825,7 @@ When a single knee bearing wore out, the whole semi-upright machine lost its sta
 
 Two stopped units could be combined to revive one, but no stronger power core could be made.
 
-When the Government depot supplied rail steel and fuel, the heavy convoy route opened, but the same resources were needed to repair civilian trains and the water-supply equipment of the Gwangjin Line.
+When the Government depot supplied rail steel and fuel, the heavy convoy route opened, but the same resources were needed to repair civilian trains and the piping equipment of the Gwangjin Line.
 
 The decision to preserve the formation was not a matter of gaining enormous power but of paying for hydraulic oil and floor verification with every job.
 
@@ -23687,13 +18857,13 @@ Choosing to investigate delayed the fuel wagons from beyond the cordon outside S
 
 ### G26-SC2 · The Pipe the Shields Dragged Out
 
-At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged the guard of a water-supply pipe to be waste reinforcement.
+At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged the guard of a water pipe to be waste reinforcement.
 
 The eastern convoy route widened, but the vibration of the pipe behind the shields grew, and the semi-upright machine tried to enter within the old work boundary drawn by the long-wing units.
 
-The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and build pipe supports first, or accept the water-supply loss and open the way in one go.
+The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and build pipe supports first, or accept the piping loss and open the way in one go.
 
-the depot''s supply promise and the Gwangjin Line''s water supply hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
+the depot''s supply promise and the Gwangjin Line''s water piping hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
 
 <a id="Hostile-Group-G26-heading-0114"></a>
 
@@ -23705,7 +18875,7 @@ The triangular units blocked the entrance with a continuous shield wall, and the
 
 The people on site had to recover the watchers with landing markers and reconcile the maps, hang no-load pulleys on each shield and release the tension in order, or connect external cooling pipes and then lock the reference body''s knees.
 
-Blowing up the core opened the passage fastest, but the shock reached even the fuel and water-supply facilities.
+Blowing up the core opened the passage fastest, but the shock reached even the fuel and piping facilities.
 
 The ending that saved the formation required public load tests and joint supervision for every heavy job from then on, and the ending that dismantled it gave parts at once but left the next large piece of collapse debris to be moved by human hands.
 ', '<a id="Hostile-Group-G26-heading-0001"></a>
@@ -24213,7 +19383,7 @@ The ending that saved the formation required public load tests and joint supervi
 
 멎은 둘을 합쳐 하나를 살릴 수는 있어도 더 강한 동력핵은 만들지 못한다.
 
-정부 정비창이 레일 강재와 연료를 제공하면 중량 호송로가 열리지만, 같은 자원은 시민 열차와 광진선 급수 설비의 수리에도 필요하다.
+정부 정비창이 레일 강재와 연료를 제공하면 중량 호송로가 열리지만, 같은 자원은 시민 열차와 광진선 배관 설비의 수리에도 필요하다.
 
 편대를 보존하려면 거대한 전력을 얻는 것이 아니라 매 작업마다 유압유와 바닥 검증 비용을 치러야 한다.
 
@@ -24245,13 +19415,13 @@ The ending that saved the formation required public load tests and joint supervi
 
 ### G26-SC2 · 방패가 끌어낸 배관
 
-광진선 고덕 기지에서 삼각 견인기들이 붕괴 차단벽을 치우다가 급수 배관 보호대를 폐보강재로 판정한다.
+광진선 고덕 기지에서 삼각 견인기들이 붕괴 차단벽을 치우다가 물 배관 보호대를 폐보강재로 판정한다.
 
 동부 호송로는 넓어지지만 방패 뒤 배관의 진동이 커지고, 반립기는 장익기가 그린 옛 작업 경계 안으로 진입하려 한다.
 
-현장 인원은 새 경계 말뚝을 세워 차단벽만 분할 견인하거나, 호송을 하루 멈추. 배관 지지대를 먼저 만들거나 급수 손실을 감수해 한 번에 길을 열 수 있다.
+현장 인원은 새 경계 말뚝을 세워 차단벽만 분할 견인하거나, 호송을 하루 멈추. 배관 지지대를 먼저 만들거나 배관 손실을 감수해 한 번에 길을 열 수 있다.
 
-정비창의 보급 약속과 광진선의 물 공급이 같은 견인선 양끝에 걸리며 어느 쪽의 지연도 다른 세력에 비용을 넘긴다.
+정비창의 보급 약속과 광진선의 물 배관이 같은 견인선 양끝에 걸리며 어느 쪽의 지연도 다른 세력에 비용을 넘긴다.
 
 <a id="Hostile-Group-G26-heading-0114"></a>
 
@@ -24263,7 +19433,7 @@ The ending that saved the formation required public load tests and joint supervi
 
 현장 인원은 착륙 표식으로 감시기를 회수해 지도를 일치시키거나, 방패마다 무부하 풀리를 걸어 장력을 순서대로 빼거나 외부 냉각관을 연결한 뒤 기준체의 무릎을 고정해야 한다.
 
-핵을 폭파하면 가장 빨리 통로가 열리지만 연료와 급수 시설까지 충격을 받는다.
+핵을 폭파하면 가장 빨리 통로가 열리지만 연료와 배관 시설까지 충격을 받는다.
 
 편대를 살리면 앞으로 모든 중량 작업에 공개 하중 시험과 공동 감독이 필요하고, 해체하면 즉시 부품을 받는 대신 다음 대형 붕괴물을 사람 손으로 옮겨야 한다.
 ');
@@ -24352,7 +19522,7 @@ The precision machine lines fell to lost tech as their manufacture, licensing, a
 
 <a id="로스트-테크-기술세대격차"></a>
 
-Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment, and the lineage runs on to those who founded the great operating houses.
+Programming and most human technology survived and were passed down orally to a few. With the internet gone, knowledge became concentrated among them. Only those who held the knowledge could operate electricity and technical equipment, and some forces established technology monopolies. After the dark age, these technologists rose into a knight class. They built power through the knowledge needed to run equipment, and the lineage runs on to the stationmasters who hold the stations.
 
 <a id="축전-발전"></a>
 
@@ -24386,7 +19556,7 @@ Mechanics recovered and repaired surviving hoses, terminals, and lenses from sto
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-The sealed galleries and maintenance-shed zones were the key contested ground eyed by the great operating houses and the professional relic recovery squads. The HC22 Magok Test-Line House, nursing the ambition to monopolize the original chassis and modules intact, first pushed a precision recovery team inside the sealed zone. The control software that would run those chassis, however, sits with the Arc. The HC17 Guro Digital Complex Battery House, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections. The HP01 Yeongdeungpo Sluice House took the strategy of secretly supplying recovered cells and sensor modules to underground auction houses and reaping great economic gain.
+The sealed galleries and maintenance-shed zones were the key contested ground eyed by the stationmasters of the neighboring stations and the professional relic recovery squads. A stationmaster, nursing the ambition to monopolize the original chassis and modules intact, first pushed a precision recovery team inside the sealed zone. The control software that would run those chassis, however, sits with the Arc. Another stationmaster, raising the pretext of securing the underground supply routes, swiftly disabled the chassis of the main sealed corridors and tried to occupy the sections.
 
 <a id="프로토콜-접속과-카드"></a>
 
@@ -24422,7 +19592,7 @@ The Government does steps 1 and 2 alone and needs an Arc license for step 3. The
 
 - [The hostile ecology compendium](/wiki/Hostile-Ecology-Index/)
 - [The Seoul ecology and variant codex](/wiki/Hostile-Ecology-Index/)
-- [The operating houses](/wiki/Operating-Houses/)
+- [Station-master families](/wiki/Operating-Houses/)
 - [The three factions of Seoul](/wiki/Sixteen-States/)
 - [The arms and technology of this era](/wiki/Era-Arms-and-Tech-Level/)
 - [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/)
@@ -24438,7 +19608,7 @@ In later Seoul an old lost tech did not become a relic merely because years had 
 
 B. Struggles among successor polities
 
-The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and dynasties and subordinate powers inherited in turn their jurisdiction.
+The glory of the old state had now receded into legend. Over that vacancy the local successor polities fought fiercely over the old wreckage. Regional division sprouted first not in grand ideology but in gu and station and route units, and the families holding the stations inherited their jurisdiction in turn.
 
 C. Fixed roles of the two lines
 
@@ -24466,7 +19636,7 @@ Circulation practices were the custom of gathering old currency and worn circula
 
 B. What is gathered
 
-Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The HP01 house''s auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.
+Banknotes, rolling coins, and plastic transit cards were the most prized things. The cell, drive, and sensor trades that ran the underground parts economy were read within this lineage as a just distribution of goods. The tap of a card at a gate was a request for passage. The auctioning of parts is read elsewhere as a breach of the order; within this lineage it passes as an accepted practice.
 
 C. Two rules of value and passage
 
@@ -24495,13 +19665,13 @@ A mass of scrap was not kept merely because time had long passed. One of the thr
 1. It had to be Seoul material
 Rolling stock, a substation, an announcement, a station mark, or old currency, or at least bearing their traces. The lost line''s modules became the center only when firmly attached to this core material.
 2. A living livelihood had to depend on its function
-Lighting that brightened the dark, the water supply, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the sluices, in the crowded unloading yards.
+Lighting that brightened the dark, heating, safe passage, and watch duty had to hang deep on that relic. Rules did not fall off an old notice board on the wall. They flowered hot in the concourse where people breathed and sweated, before the platforms, in the crowded unloading yards.
 3. Re-control had to be blocked
 With the servers cut and even the vault holding the drawings firmly shut, the remaining machines became mere masses of cipher with no way of interpretation. It was before this great wall of interpretation that a chassis became the center of its community.
 4. Survival in the same place had to repeat
 Only a community that had clung to one module and stubbornly survived three times or more took that mass of iron as its center. A single lucky chance remained merely a useful trading item.
 5. A place-power had to claim jurisdiction
-The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. Dynasties and the subordinate powers following them inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
+The successor polities split by route, gu, and station divided custody and upkeep manner and strict taboo each in their own way. The families holding the stations inherited even the jurisdiction and hardened their power. The recovery squads stripping parts without restraint and the keepers defending the old relics to the end collided roughly inside these dark sealed galleries.
 
 ### Relic Interpretation by Lineage
 
@@ -24519,7 +19689,7 @@ The very same G25 charging module was the core of the substation equipment to on
 
 D. Public and hidden customs
 
-The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one subordinate house quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
+The public custom showed clearly in the red taboo phrases written on the old subway notice boards. But the hidden custom flipped the very same phrases into entirely different secret lessons. If one stationmaster family quietly overlaid the keeping of the substation equipment and the keeping of the station marks inside the same gallery, then though the object before the eyes was one, the jurisdiction governing it split in two.
 
 E. Fixed number of lines
 
@@ -24597,7 +19767,7 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 
 <a id="로스트-테크-기술세대격차"></a>
 
-프로그래밍과 인류의 기술 대부분은 살아남아 소수에게 구전으로 전해졌다. 인터넷이 사라지자 지식은 이들에게 집중되었다. 전기와 기술 설비를 다룰 줄 아는 사람들만 그것을 가동할 수 있었고 일부 세력은 기술을 독점하였다. 암흑기를 지나 기술을 가진 이들이 기사 계급으로 성장하였다. 이들은 설비를 운전하는 지식으로 권력을 쌓았으며, 그 계보는 거대 운영 가문들을 연 이들에게서 이어진다.
+프로그래밍과 인류의 기술 대부분은 살아남아 소수에게 구전으로 전해졌다. 인터넷이 사라지자 지식은 이들에게 집중되었다. 전기와 기술 설비를 다룰 줄 아는 사람들만 그것을 가동할 수 있었고 일부 세력은 기술을 독점하였다. 암흑기를 지나 기술을 가진 이들이 기사 계급으로 성장하였다. 이들은 설비를 운전하는 지식으로 권력을 쌓았으며, 그 계보는 역을 쥔 역장들에게서 이어진다.
 
 <a id="축전-발전"></a>
 
@@ -24629,7 +19799,7 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 <a id="회수-반과-가문의-경합-p1"></a>
 <a id="회수-반과-가문의-경합-list2"></a>
 
-봉인 갤러리와 정비고 구역은 거대 운영 가문과 전문 유물 회수 반이 서로 차지하려는 곳이다. HC22 마곡시험선가는 원형 기체와 모듈을 그대로 독점하려 정밀 회수팀을 봉인 구역 안에 먼저 보낸다. 다만 그 기체를 움직일 제어 소프트웨어는 아크에 있다. HC17 구로디지털단지전지가는 지하 보급로의 안전을 명분으로 주요 봉인 통로의 기체를 빠르게 무력화하고 구획을 점거하려 한다. HP01 영등포수문가는 회수한 축전지와 센서 모듈을 지하 경매장에 몰래 공급해 큰 이익을 남긴다.
+봉인 갤러리와 정비고 구역은 곁의 역을 쥔 역장과 전문 유물 회수 반이 서로 차지하려는 곳이다. 역장은 원형 기체와 모듈을 그대로 독점하려 정밀 회수팀을 봉인 구역 안에 먼저 보낸다. 다만 그 기체를 움직일 제어 소프트웨어는 아크에 있다. 어떤 역장은 지하 보급로의 안전을 명분으로 주요 봉인 통로의 기체를 빠르게 무력화하고 구획을 점거하려 한다.
 
 <a id="프로토콜-접속과-카드"></a>
 
@@ -24665,7 +19835,7 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 
 - [적대 생태 총람](/wiki/Hostile-Ecology-Index/)
 - [서울 생태·변이 도감](/wiki/Hostile-Ecology-Index/)
-- [운영가문](/wiki/Operating-Houses/)
+- [역장 집안](/wiki/Operating-Houses/)
 - [서울의 세 세력](/wiki/Sixteen-States/)
 - [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
 - [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)
@@ -24681,7 +19851,7 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 
 나. 후계 정치체의 다툼
 
-옛 국가의 영광은 전설로 남았다. 지역 후계 정치체들이 낡은 잔해를 두고 다툰다. 지역 분열은 거창한 이념보다 구와 역, 노선 단위에서 먼저 나타난다. 왕조와 산하 세력은 관할권을 차례로 상속받는다.
+옛 국가의 영광은 전설로 남았다. 지역 후계 정치체들이 낡은 잔해를 두고 다툰다. 지역 분열은 거창한 이념보다 구와 역, 노선 단위에서 먼저 나타난다. 역을 쥔 집안은 관할권을 대를 이어 물려받는다.
 
 다. 두 라인의 역할 고정
 
@@ -24709,7 +19879,7 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 
 나. 모아 두는 물건
 
-지폐와 동전, 플라스틱 교통 카드가 가장 귀한 물건이다. 지하 부품 경제를 굴리는 축전과 구동부, 센서 거래도 이 계열 안에서는 분배 질서로 읽힌다. 개찰구에 카드를 찍는 동작은 통행 허락 절차다. HP01 가문의 부품 경매는 다른 곳에서는 질서 밖으로 읽힌다. 이 계열 안에서는 인정된 관행으로 통한다.
+지폐와 동전, 플라스틱 교통 카드가 가장 귀한 물건이다. 지하 부품 경제를 굴리는 축전과 구동부, 센서 거래도 이 계열 안에서는 분배 질서로 읽힌다. 개찰구에 카드를 찍는 동작은 통행 허락 절차다. 부품 경매는 다른 곳에서는 질서 밖으로 읽힌다. 이 계열 안에서는 인정된 관행으로 통한다.
 
 다. 물건 값과 통행의 규칙
 
@@ -24738,13 +19908,13 @@ G25의 센서 모듈과 프로토콜 카드는 목소리가 남긴 잔향이다.
 1. 서울 재료일 것
 전동차, 변전소, 안내방송, 역 표지, 옛 화폐 중 하나이거나 최소한 그 흔적을 품어야 한다. 로스트 라인의 모듈은 이 재료에 붙을 때에만 중심이 된다.
 2. 산 생업이 그 기능에 기대 있을 것
-조명, 급수, 통행, 경계 근무가 그 유물에 걸려 있어야 한다. 규칙은 벽의 낡은 게시판보다, 사람이 일하고 숨 쉬는 대합실과 수문 앞, 붐비는 하역장에서 생긴다.
+조명, 난방, 통행, 경계 근무가 그 유물에 걸려 있어야 한다. 규칙은 벽의 낡은 게시판보다, 사람이 일하고 숨 쉬는 대합실과 승강장 앞, 붐비는 하역장에서 생긴다.
 3. 재제어가 막혀 있을 것
 서버가 끊기고 도면이 잠긴 금고까지 막히면, 남은 기계는 해석할 수 없는 암호가 된다. 그 막힘 앞에서 기체가 공동체의 중심이 된다.
 4. 같은 자리의 생존이 반복될 것
 하나의 모듈에 기대어 세 번 이상 살아남은 공동체만이 그 모듈을 중심으로 삼는다. 한 번의 요행은 거래 품목으로 남는다.
 5. 장소 세력이 관할을 주장할 것
-노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 관리 방식, 금기를 각각 정한다. 왕조와 이를 따르는 산하 세력은 관할권까지 상속받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 유물을 지키려는 쪽이 봉인 갤러리에서 맞선다.
+노선과 구, 역 단위로 나뉜 후계 정치체들이 보관과 관리 방식, 금기를 각각 정한다. 역을 쥔 집안은 관할권까지 대를 이어 물려받아 그 권한을 쥔다. 부품을 뜯는 회수 반과 유물을 지키려는 쪽이 봉인 갤러리에서 맞선다.
 
 ### 계열별 유물 해석
 
@@ -24762,7 +19932,7 @@ G25 축전 모듈은 한 계열에서는 변전 설비의 핵심이다. 다른 �
 
 라. 공개 관습과 숨은 관습
 
-공개된 관습은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 관습은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 산하 가문이 변전 시설 관리와 역 표지 관리를 같은 갤러리에 겹쳐 두면 대상은 하나다. 관할은 둘로 나뉜다.
+공개된 관습은 지하철역 게시판의 붉은 금기 문구로 나타난다. 숨은 관습은 같은 문구를 다른 교훈으로 뒤집어 읽는다. 한 역장 집안이 변전 시설 관리와 역 표지 관리를 같은 갤러리에 겹쳐 두면 대상은 하나다. 관할은 둘로 나뉜다.
 
 마. 라인 수의 고정
 
@@ -25020,1749 +20190,106 @@ The common body of the Free City is called the Board.
 | 최상단 (자유도시들) | 이사회장 | Chair of the Board |
 | 자유도시들의 공동 기구 | 이사회 | the Board |
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Operating-Houses', 'Operating Organizations', '운영 조직', 'factions', 3, '<a id="Operating-Houses-heading-0001"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Operating-Houses', 'Station-Master Families', '역장 집안', 'factions', 3, '<a id="Operating-Houses-heading-0001"></a>
 
-Corporate successor organizations and civic and trade organizations ran a range of infrastructure, including water supply, logistics, and records. The work each organization handled and the factions it was tied to varied with its contracts and facilities.
-
-## Where the Organizations Stand
-
-The operating organizations are not a fourth faction. In the winter of 2126, Seoul has only three factions, the Government, the Free City, and the Arc, and the organizations look after facilities and keys within them.
-
-- **Membership and rank.** The person who leads an organization belongs to the faction they live in. If that person holds a station, they hold the rank of stationmaster or higher according to the number of stationmasters they command. If they hold no station, they are a commoner. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
-- **Linked factions.** The "linked factions and districts" below are the places an organization exchanges goods and work with. They do not mean the organization belongs to those factions.
-- **People do not cross.** Even when an organization deals with several factions, its people do not move across the borders, because a person who goes over to another faction loses their assets and territory and becomes one of the lowest class. That is why abduction and capture of an organization''s technicians, ransom negotiations, and family hostages are what the organizations fear most. Details are in [Human Resource Movement](/wiki/Human-Resource-Movement/).
+A stationmaster house is a family that holds one station and passes its work down the generations. Scarcity made children take up their parents'' work, and that''s how one family settled into each station. Stationmaster houses aren''t a fourth faction. Every one of them sits inside the Government, the Free Cities, or the Arc.
 
 <a id="Operating-Houses-heading-0003"></a>
 
-## HC01 · Yeouido Computing House
+## Where the Houses Stand
 
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked Factions and Districts: Free City (Yeongdeungpo-gu), Government (Mapo-gu)
-- Exclusive Faction: None
-- Administrator: Heo Eunchan
-
-In the sealed computing building beside Yeouido No. 2 Water Purification Plant, the Yeouido Computing House guards the nighttime cooling allocation.
-
-Heo Eunchan runs the cooling tower clock in step with the water-supply duty roster. Faced with Sangam''s demand to share the transmitter key, he opens only a joint inspection and does not hand over the key.
-
-Even if the screens go dark, the water-supply ledger is kept.
+- **Rank.** Someone who holds one station is a stationmaster. Command more stationmasters and you rise to division chief or higher. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
+- **Station value.** The more transfer lines a station has and the deeper it goes, the more it''s worth. A surface-station stationmaster ranks lowest among stationmasters.
+- **Depth.** Stationmaster houses live deep inside the station bunker (behind the shutters). Lower-class workers live in the buildings around the station.
+- **Livelihood.** Besides guarding the station, each house takes on one of the station''s trades: dispatch, maintenance, rationing, auctions, or duty watch.
+- **They don''t cross over.** Anyone who goes over to another faction loses their assets and station and becomes the lowest of the low. So what stationmaster houses fear most is the kidnapping of their technicians and families taken hostage. See [Human Resource Movement](/wiki/Human-Resource-Movement/).
 
 <a id="Operating-Houses-heading-0008"></a>
 
-### Three Acts
+## Government Stationmaster Houses
 
-- Act 1, Rupture: In the sealed computing building beside Yeouido No. 2 Water Purification Plant, the nighttime cooling allocation runs short
-- Act 2, Negotiation: Heo Eunchan answers Sangam''s demand to share the transmitter key by opening a joint inspection
-- Act 3, Price: Even if the screens go dark, the water-supply ledger is kept
+The fourteen districts north of the Han. Government stationmasters sit in a single chain of command under the President.
+
+- **Yongsan Station, the Bak Tae-gyeom house.** Keeps and publishes the escort dispatch schedule. Lines meet at Yongsan, so escorts leave from here.
+- **Sinnae Station, the Jang Sehwa house.** Runs the station and its transport dispatch. Jang Sehwa works as the dispatch duty officer.
+- **Myeongdong Station, the Nam Yun-gyeong house.** Mediates the station''s goods auctions. Nam Yun-gyeong lives in Lotte World Tower, and the Arc faith is a personal faith.
 
 <a id="Operating-Houses-heading-0010"></a>
 
-## HC02 · Sinjeong Wheel House
+## Free City Stationmaster Houses
 
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked Factions and Districts: Free City (Yangcheon-gu), Arc (Gangnam-gu), Government (Yongsan-gu)
-- Exclusive Faction: None
-- Administrator: Yu Sejin
+The seven southwestern districts. The Free Cities are independent cities each standing on its own, and their stationmaster houses live by their hands too.
 
-On the Sinjeong Depot storage tracks and the Suseo turnback line, the Sinjeong Wheel House guards the battery cell rotation.
+- **Yeongdeungpo Waiting Hall, the Byeon Goun house.** Holds the waiting hall duty, receiving and sending off the people and loads that pass through.
+- **Guro Concourse, the Byeon Siram house.** Holds the same waiting hall duty and also does audit work.
 
-Yu Sejin opens turnback slots to ambulances before freight.
-
-Faced with Yongsan''s attempt to monopolize the transshipment window, she opens only a joint inspection and does not hand over the key.
-
-Even if the tracks are locked, people under escort are let through on foot.
+In the Free Cities, workshop and investment work is organized by guilds rather than stationmaster houses (Gang Minseo, Guild Master of the Workshop Production Guild; Choe Ji-u, Guild Master of the Yeouido Investment Guild).
 
 <a id="Operating-Houses-heading-0016"></a>
 
-### Three Acts
+## Arc Stationmaster Houses
 
-- Act 1, Rupture: On the Sinjeong Depot storage tracks and the Suseo turnback line, the battery cell rotation runs short
-- Act 2, Negotiation: Yu Sejin answers Yongsan''s attempt to monopolize the transshipment window by opening a joint inspection
-- Act 3, Price: Even if the tracks are locked, people under escort are let through on foot
+The four Gangnam districts. Arc stationmasters sit under the Hierophant in the ladder of bishops and cardinals.
+
+- **Samseong Station, the O Gyeongjae house.** Holds the General Assembly duty roster and keeps the original will.
+- **Gangnam Station, the Yongdubong house.** Checks maintenance and armament loading before the rail cavalry sorties.
 
 <a id="Operating-Houses-heading-0018"></a>
 
-## HC03 · Magok Life House
+## What Isn''t Recorded
 
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked Factions and Districts: Free City (Gangseo-gu), Government (Dongdaemun-gu)
-- Exclusive Faction: None
-- Administrator: Jeong Hojun
-
-In the airlock of the Magok sealed laboratory building, the Magok Life House guards the isolation key for the biometric dataset.
-
-Jeong Hojun keeps the lab journals stored separately from patients'' names.
-
-Faced with Jegi-dong''s move to corner the raw materials, he opens only a joint inspection and does not hand over the key.
-
-Even if the samples disappear, the consent records are never burned.
-
-<a id="Operating-Houses-heading-0024"></a>
-
-### Three Acts
-
-- Act 1, Rupture: In the airlock of the Magok sealed laboratory building, the isolation key for the biometric dataset runs short
-- Act 2, Negotiation: Jeong Hojun answers Jegi-dong''s move to corner the raw materials by opening a joint inspection
-- Act 3, Price: Even if the samples disappear, the consent records are never burned
-
-<a id="Operating-Houses-heading-0026"></a>
-
-## HC04 · Ttukseom Heat Source House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked Factions and Districts: Government (Seongdong-gu), Arc (Gangdong-gu), Free City (Yeongdeungpo-gu)
-- Exclusive Faction: None
-- Administrator: Bak Nu-ri
-
-At the Ttukseom pumps and the Amsa waste-heat pipes, the Ttukseom Heat Source House guards access rights to the underground heat source.
-
-Bak Nu-ri tops up the pumps'' reserve power before selling any waste heat.
-
-Faced with Yeouido''s claim to nighttime priority for water supply, she opens only a joint inspection and does not hand over the key.
-
-The blackout schedule is never hidden; it is posted on the notice board.
-
-<a id="Operating-Houses-heading-0032"></a>
-
-### Three Acts
-
-- Act 1, Rupture: At the Ttukseom pumps and the Amsa waste-heat pipes, access rights to the underground heat source run short
-- Act 2, Negotiation: Bak Nu-ri answers Yeouido''s claim to nighttime priority for water supply by opening a joint inspection
-- Act 3, Price: The blackout schedule is never hidden; it is posted on the notice board
-
-<a id="Operating-Houses-heading-0034"></a>
-
-## HC05 · Bukhansan Bogungmun Archive House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked Factions and Districts: Government (Seongbuk-gu)
-- Exclusive Faction: None
-- Administrator: Yun Seo-rin
-
-In the humidity-controlled vault of the Bukhansan corridor warehouse, the Bukhansan Bogungmun Archive House guards a single box of original old records.
-
-When the humidity alarm sounds, Yun Seo-rin halts all viewing and moves only the box.
-
-Faced with Seoul Station''s demand for a ratification stamp, she opens only a joint inspection and does not hand over the key.
-
-Even if access is narrowed, the catalog itself is kept.
-
-<a id="Operating-Houses-heading-0040"></a>
-
-### Three Acts
-
-- Act 1, Rupture: In the humidity-controlled vault of the Bukhansan corridor warehouse, the single box of original old records is at risk
-- Act 2, Negotiation: Yun Seo-rin answers Seoul Station''s demand for a ratification stamp by opening a joint inspection
-- Act 3, Price: Even if access is narrowed, the catalog itself is kept
-
-<a id="Operating-Houses-heading-0042"></a>
-
-## HC06 · Noryangjin Delivery House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Free City (Dongjak-gu), Arc (Songpa-gu)
-- Exclusive faction: None
-- Manager: Oh Hae-rin
-
-In the lower alleys of Noryangjin and at the Garak back gate, the Noryangjin Delivery House guards the short-haul cart dispatch rights.
-
-Oh Hae-rin never trades alley turn order for auction bids.
-
-When the long-haul delivery crews push to enter, the House opens only a joint inspection and does not hand over the keys.
-
-Even when the shops stand empty, the order ledgers are never mixed.
-
-<a id="Operating-Houses-heading-0048"></a>
-
-### Three Acts
-
-- Act 1, Rupture: The short-haul cart dispatch rights run short in the lower alleys of Noryangjin and at the Garak back gate
-- Act 2, Negotiation: Oh Hae-rin opens a joint inspection with the long-haul delivery crews over their entry
-- Act 3, Price: Even when the shops stand empty, the order ledgers are never mixed
-
-<a id="Operating-Houses-heading-0050"></a>
-
-## HC07 · Guro Alloy House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Free City (Guro-gu), Government (Seongdong-gu)
-- Exclusive faction: None
-- Manager: Gang Minseo
-
-At the Guro high-temperature furnaces and the Seongsu alloy works, the Guro Alloy House guards the heat-resistant alloy recipes.
-
-If the furnace temperature wavers, Gang Minseo puts out the fire even with orders already taken.
-
-When the Track Defense Gate demands exclusive military use, the House opens only a joint inspection and does not hand over the keys.
-
-Even when defects turn up, the standards stamp is never forged.
-
-<a id="Operating-Houses-heading-0056"></a>
-
-### Three Acts
-
-- Act 1, Rupture: The heat-resistant alloy recipes run short at the Guro high-temperature furnaces and the Seongsu alloy works
-- Act 2, Negotiation: Gang Minseo opens a joint inspection with the Track Defense Gate over its demand for exclusive military use
-- Act 3, Price: Even when defects turn up, the standards stamp is never forged
-
-<a id="Operating-Houses-heading-0058"></a>
-
-## HC08 · Changdong Protection House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Government (Dobong-gu), Government (Jungnang-gu)
-- Exclusive faction: None
-- Manager: Yi Hong-won
-
-At the Changdong north gate and the Sinnae transfer barrier gate, the Changdong Protection House guards the unified protection key.
-
-Yi Hong-won never hands the barrier gate remote keys over to the escort corps.
-
-When the Amsa Escort Corps seeks remote lockdown, the House opens only a joint inspection and does not hand over the keys.
-
-Before closing passage to citizens, it opens the evacuation broadcast first.
-
-<a id="Operating-Houses-heading-0064"></a>
-
-### Three Acts
-
-- Act 1, Rupture: The unified protection key runs short at the Changdong north gate and the Sinnae transfer barrier gate
-- Act 2, Negotiation: Yi Hong-won opens a joint inspection with the Amsa Escort Corps over remote lockdown
-- Act 3, Price: Before closing passage to citizens, the evacuation broadcast is opened first
-
-<a id="Operating-Houses-heading-0066"></a>
-
-## HC09 · Seoul Station Inventory House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Government (Jung-gu), Arc (Songpa-gu)
-- Exclusive faction: None
-- Manager: Nam Yun-gyeong
-
-In the west-side warehouses of Seoul Station and the lower levels of Jamsil, the Seoul Station Inventory House guards the master ledger of household goods.
-
-Nam Yun-gyeong never lets one person hold both the warehouse keys and the price list.
-
-Faced with the Garak auction priority rights, the House opens only a joint inspection and does not hand over the keys.
-
-Even as stock dwindles, ration turn order is never sold.
-
-<a id="Operating-Houses-heading-0072"></a>
-
-### Three Acts
-
-- Act 1, Rupture: The master ledger of household goods runs short in the west-side warehouses of Seoul Station and the lower levels of Jamsil
-- Act 2, Negotiation: Nam Yun-gyeong opens a joint inspection over the Garak auction priority rights
-- Act 3, Price: Even as stock dwindles, ration turn order is never sold
-
-<a id="Operating-Houses-heading-0074"></a>
-
-## HC10 · Magok Seed House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Free City (Gangseo-gu, Dongjak-gu), Government (Mapo-gu)
-- Exclusive faction: None
-- Manager: Choe Ji-u
-
-At the Magok seed warehouse and the Sangam kitchen broadcast, the Magok Seed House multiplies seed allotted from the Government''s original stock and guards the fermentation starter vault. The original stock is held by the Government.
-
-Choe Ji-u never slips stock locations into the broadcast recipes.
-
-Faced with the Noryangjin cold storage rent hike, the House opens only a joint inspection and does not hand over the keys.
-
-It imposes no standard of taste and publishes only hygiene figures.
-
-<a id="Operating-Houses-heading-0080"></a>
-
-### Three Acts
-
-- Act 1, Rupture: The fermentation seed vault runs short at the Magok seed warehouse and the Sangam kitchen broadcast
-- Act 2, Negotiation: Choe Ji-u opens a joint inspection over the Noryangjin cold storage rent hike
-- Act 3, Price: No standard of taste is imposed; only hygiene figures are published
-
-<a id="Operating-Houses-heading-0082"></a>
-
-## HC11 · Yongsan Convoy House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Government (Yongsan-gu, Jungnang-gu), Arc (Gangnam-gu)
-- Exclusive faction: None
-- Manager: Bak Tae-gyeom
-
-At the Yongsan freight platform and the Suseo late-night slots, the Yongsan Convoy House guards the night convoy permits.
-
-Bak Tae-gyeom yields the late-night slots to the medical trains before pushing freight through.
-
-Faced with clashes with the Sinnae medical trains, the House opens only a joint inspection and does not hand over the keys.
-
-It never pads empty crates to fake their weight.
-
-<a id="Operating-Houses-heading-0088"></a>
-
-### Three Acts
-
-- Act 1, Rupture: The night convoy permits run short at the Yongsan freight platform and the Suseo late-night slots
-- Act 2, Negotiation: Bak Tae-gyeom opens a joint inspection over the clash with the Sinnae medical trains
-- Act 3, Price: Empty crates are never padded to fake their weight
-
-<a id="Operating-Houses-heading-0090"></a>
-
-## HC12 · Geumcheon Gucheong Heavy Equipment House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Free City (Geumcheon-gu), Government (Gwangjin-gu, Seongdong-gu)
-- Exclusive faction: None
-- Steward: Jeong Siu
-
-At the Geumcheon cranes and beneath the Achasan bridge piers, the Geumcheon Gucheong Heavy Equipment House guards its heavy rigging certifications.
-
-Jeong Siu records the wind speed before raising a crane beneath the piers.
-
-In the scramble for the Ttukseom pump housing, the House opens only joint inspections and never hands over the keys.
-
-Any job that exceeds the load limit is halted before it is even logged.
-
-<a id="Operating-Houses-heading-0096"></a>
-
-### Three Acts
-
-- Act 1, Fracture: Heavy rigging certifications run short at the Geumcheon cranes and beneath the Achasan bridge piers
-- Act 2, Negotiation: Jeong Siu opens a joint inspection over the scramble for the Ttukseom pump housing
-- Act 3, Price: Any job that exceeds the load limit is halted before it is even logged
-
-<a id="Operating-Houses-heading-0098"></a>
-
-## HC13 · Suseo Construction House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Government (Jung-gu, Gwangjin-gu), Arc (Gangnam-gu)
-- Exclusive faction: None
-- Steward: Jeong Yura
-
-Among the remnant walls of Seoul Station and in the Suseo underground utility tunnel, the Suseo Construction House guards its seismic joint drawings.
-
-Jeong Yura will not trade the utility tunnel drawings for a watchtower expansion.
-
-Faced with the expansion of the Achasan highland watchtower, the House opens only joint inspections and never hands over the keys.
-
-Even when the drawings are wrong, the site is squared up by the numbers.
-
-<a id="Operating-Houses-heading-0104"></a>
-
-### Three Acts
-
-- Act 1, Fracture: Seismic joint drawings run short among the remnant walls of Seoul Station and in the Suseo underground utility tunnel
-- Act 2, Negotiation: Jeong Yura opens a joint inspection over the expansion of the Achasan highland watchtower
-- Act 3, Price: Even when the drawings are wrong, the site is squared up by the numbers
-
-<a id="Operating-Houses-heading-0106"></a>
-
-## HC14 · Yeouido Ledger House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Free City (Yeongdeungpo-gu), Arc (Gangnam-gu)
-- Exclusive faction: None
-- Steward: Jang Pil-gyu
-
-In the Yeouido contract vault and the Suseo arbitration room, the Yeouido Ledger House guards its dual-signature ledgers.
-
-Jang Pil-gyu will not execute a contract if even one signature is missing.
-
-Faced with the Records Office''s ratification delays, the House opens only joint inspections and never hands over the keys.
-
-It hides no losses and makes the order of compensation public.
-
-<a id="Operating-Houses-heading-0112"></a>
-
-### Three Acts
-
-- Act 1, Fracture: Dual-signature ledgers run short in the Yeouido contract vault and the Suseo arbitration room
-- Act 2, Negotiation: Jang Pil-gyu opens a joint inspection over the Records Office''s ratification delays
-- Act 3, Price: It hides no losses and makes the order of compensation public
-
-<a id="Operating-Houses-heading-0114"></a>
-
-## HP01 · Yeongdeungpo Floodgate House
-
-- Classification: INFRA_OPERATOR
-- Status: ACTIVE
-- Linked factions and districts: Free City (Yeongdeungpo-gu), Government (Seongdong-gu, Gwangjin-gu), Arc (Gangdong-gu)
-- Exclusive faction: None
-- Steward: Han Jae-mok
-
-At the floodgate duty lockers of Yeongdeungpo, Ttukseom, Amsa, and Guui, the Yeongdeungpo Floodgate House guards the split custody of the floodgate keys.
-
-Han Jae-mok never gathers the four keys into a single pouch.
-
-Faced with a full water shutoff to any one zone, the House opens only joint inspections and never hands over the keys.
-
-It refuses any order to use water as a weapon.
-
-<a id="Operating-Houses-heading-0120"></a>
-
-### Three Acts
-
-- Act 1, Fracture: Split custody of the floodgate keys breaks down at the floodgate duty lockers of Yeongdeungpo, Ttukseom, Amsa, and Guui
-- Act 2, Negotiation: Han Jae-mok opens a joint inspection over a full water shutoff to one zone
-- Act 3, Price: It refuses any order to use water as a weapon
-
-<a id="Operating-Houses-heading-0122"></a>
-
-## HP02 · Yongsan Line Gate
-
-- Classification: INFRA_OPERATOR
-- Status: ACTIVE
-- Linked factions and districts: Government (Yongsan-gu, Jungnang-gu, Dobong-gu)
-- Exclusive faction: None
-- Steward: Jang Sehwa
-
-In the dispatch meeting rooms of Yongsan, Sinnae, and Changdong, the Yongsan Line Gate guards the neutral dispatch schedule.
-
-Jang Sehwa never strikes the emergency car from the schedule, even when a chartered train arrives.
-
-Faced with the chartered trains of the great factions, the House opens only joint inspections and never hands over the keys.
-
-Emergency transfers are never ranked behind cargo.
-
-<a id="Operating-Houses-heading-0128"></a>
-
-### Three Acts
-
-- Act 1, Fracture: The neutral dispatch schedule runs thin in the dispatch meeting rooms of Yongsan, Sinnae, and Changdong
-- Act 2, Negotiation: Jang Sehwa opens a joint inspection over the chartered trains of the great factions
-- Act 3, Price: Emergency transfers are never ranked behind cargo
-
-<a id="Operating-Houses-heading-0130"></a>
-
-## HP03 · Cheongnyangni Medical Center House
-
-- Classification: PROFESSIONAL_GUILD
-- Status: ACTIVE
-- Linked factions and districts: Government (Dongdaemun-gu, Jung-gu)
-- Exclusive faction: None
-- Steward: Ryu Eunbi
-
-Along the Cheongnyangni transfer route and at the Seoul Station disaster medical desk, the Cheongnyangni Medical Center House guards the first-aid duty roster of a university hospital building its doctors have left. Medical licenses are issued by the Free City''s doctors.
-
-Ryu Eunbi will not sell emergency priority, even when demands for experimental beds come in.
-
-Faced with Magok''s attempt to claim beds exclusively for experiments, the House opens only joint inspections and never hands over the keys.
-
-Beds are never divided by side.
-
-<a id="Operating-Houses-heading-0136"></a>
-
-### Three Acts
-
-- Act 1, Fracture: The licensed duty roster runs short along the Cheongnyangni transfer route and at the Seoul Station disaster medical desk
-- Act 2, Negotiation: Ryu Eunbi opens a joint inspection over Magok''s claim on beds for experiments
-- Act 3, Price: Beds are never divided by side
-
-<a id="Operating-Houses-heading-0138"></a>
-
-## HP04 · Seoulyeok Girokbeopga
-
-- Classification: PROFESSIONAL_GUILD
-- Status: ACTIVE
-- Linked factions and districts: Government (Jung-gu)
-- Exclusive faction: None
-- Steward: Yeo Rian
-
-At the archive reading room and the transmission cross-verification desk, the Seoulyeok Girokbeopga guards the source hash seal.
-
-Yeo Rian never puts a document with a mismatched hash on the air first.
-
-Faced with the broadcaster''s exclusive release, the house opens only a joint inspection and does not hand over the keys.
-
-It does not merge three copies of a will into a single original.
-
-<a id="Operating-Houses-heading-0144"></a>
-
-### Three Acts
-
-- Act 1, Fracture: the source hash seal runs short at the archive reading room and the transmission cross-verification desk
-- Act 2, Negotiation: Yeo Rian puts the broadcaster''s exclusive release and a joint inspection on the table
-- Act 3, Price: three copies of a will are not merged into a single original
-
-<a id="Operating-Houses-heading-0146"></a>
-
-## HP05 · Bukhansan Bogukmun Gwihwanhoe
-
-- Classification: CIVIC_COMPACT
-- Status: ACTIVE
-- Linked factions and districts: Government (Eunpyeong-gu, Dobong-gu)
-- Exclusive faction: None
-- Steward: Baek On
-
-Along the Eunpyeong evacuation route and the Changdong housing-shell queue, the Bukhansan Bogukmun Gwihwanhoe guards the family reunification register.
-
-Baek On does not trade names on the queue for places on the service roster.
-
-Faced with registration for restoration service, the compact opens only a joint inspection and does not hand over the keys.
-
-It never holds the register hostage and opens an entry only with the person''s own consent.
-
-<a id="Operating-Houses-heading-0152"></a>
-
-### Three Acts
-
-- Act 1, Fracture: the family reunification register runs short along the Eunpyeong evacuation route and the Changdong housing-shell queue
-- Act 2, Negotiation: Baek On puts restoration service registration and a joint inspection on the table
-- Act 3, Price: the register is never held hostage and is opened only with the person''s own consent
-
-<a id="Operating-Houses-heading-0154"></a>
-
-## HP06 · Jegidong Chiyumun
-
-- Classification: PROFESSIONAL_GUILD
-- Status: ACTIVE
-- Linked factions and districts: Government (Dongdaemun-gu, Seongbuk-gu), Free City (Gangseo-gu)
-- Exclusive faction: None
-- Steward: Jeong Harin
-
-At the Jegi-dong dispensary and the Magok quarantine sample room, the Jegidong Chiyumun handles only sealing and issuing medicine. Prescriptions are written by doctors in Magok (Free City).
-
-Jeong Harin posts lot defects before any exclusive purchase order.
-
-Faced with the exclusive purchase of Bukhansan Bogukmun herbs, the guild opens only a joint inspection and does not hand over the keys.
-
-It does not hide counterfeit medicine; it posts the lot numbers.
-
-<a id="Operating-Houses-heading-0160"></a>
-
-### Three Acts
-
-- Act 1, Fracture: the prescription double-check runs short at the Jegi-dong dispensary and the Magok quarantine sample room
-- Act 2, Negotiation: Jeong Harin puts the exclusive purchase of Bukhansan Bogukmun herbs and a joint inspection on the table
-- Act 3, Price: counterfeit medicine is not hidden, and the lot numbers are posted
-
-<a id="Operating-Houses-heading-0162"></a>
-
-## HP07 · Hangangjin Gyoryang Gonghoe
-
-- Classification: INFRA_OPERATOR
-- Status: ACTIVE
-- Linked factions and districts: Government (Yongsan-gu), Free City (Yeongdeungpo-gu)
-- Exclusive faction: None
-- Steward: Go Seojun
-
-On the Han River pier inspection walkways and the Jamsugyo landing stage, the Hangangjin Gyoryang Gonghoe guards the wind-speed closure threshold.
-
-When the wind passes the threshold, Go Seojun halts even river-transport priority.
-
-Faced with Yeouido''s river-transport priority, the operator opens only a joint inspection and does not hand over the keys.
-
-It never reckons a bridge in tolls alone.
-
-<a id="Operating-Houses-heading-0168"></a>
-
-### Three Acts
-
-- Act 1, Fracture: the wind-speed closure threshold runs short on the Han River pier inspection walkways and the Jamsugyo landing stage
-- Act 2, Negotiation: Go Seojun puts Yeouido''s river-transport priority and a joint inspection on the table
-- Act 3, Price: a bridge is never reckoned in tolls alone
-
-<a id="Operating-Houses-heading-0170"></a>
-
-## HP08 · Noryangjin Naengdong Sangdan
-
-- Classification: CIVIC_COMPACT
-- Status: ACTIVE
-- Linked factions and districts: Free City (Dongjak-gu), Arc (Songpa-gu)
-- Exclusive faction: None
-- Steward: Gu Haon
-
-At the Noryangjin freezers and the Garak ice warehouse, the Noryangjin Naengdong Sangdan guards the power slot rotation.
-
-Gu Haon prints the temperature log before anyone pulls a motor.
-
-Faced with the fabrication alliance''s motor recovery, the compact opens only a joint inspection and does not hand over the keys.
-
-When the temperature log breaks off, the auction stops.
-
-<a id="Operating-Houses-heading-0176"></a>
-
-### Three Acts
-
-- Act 1, Fracture: the power slot rotation runs short at the Noryangjin freezers and the Garak ice warehouse
-- Act 2, Negotiation: Gu Haon puts the fabrication alliance''s motor recovery and a joint inspection on the table
-- Act 3, Price: when the temperature log breaks off, the auction stops
-
-<a id="Operating-Houses-heading-0178"></a>
-
-## HP09 · Digital Media City Sintakga
-
-- Classification: DATA_TRUST
-- Status: ACTIVE
-- Linked factions and districts: Government (Mapo-gu), Arc (Gangnam-gu), Free City (Gangseo-gu)
-- Exclusive faction: None
-- Steward: Choe Eunjae
-
-Through the Sangam log trust and the Suseo contract hashes, the Digital Media City Sintakga guards model card disclosure.
-
-Choe Eunjae answers training-data export requests with aggregates only, never the originals.
-
-Faced with Magok''s training-data export, the trust opens only a joint inspection and does not hand over the keys.
-
-It does not trade raw face data for transit passes.
-
-<a id="Operating-Houses-heading-0184"></a>
-
-### Three Acts
-
-- Act 1, Fracture: model card disclosure runs short across the Sangam log trust and the Suseo contract hashes
-- Act 2, Negotiation: Choe Eunjae puts Magok''s training-data export and a joint inspection on the table
-- Act 3, Price: raw face data is not traded for transit passes
-
-<a id="Operating-Houses-heading-0186"></a>
-
-## HP10 · Itaewon Tongyeongmun
-
-- Category: PROFESSIONAL_GUILD
-- Status: ACTIVE
-- Linked factions and districts: Government (Jung-gu), Arc (Gangnam-gu), Government (Mapo-gu)
-- Exclusive faction: None
-- Managed by: Daniel Brooks
-
-At the Seoul Station interpreters'' desk and the Suseo customs window, Itaewon Tongyeongmun staffs the language-pair duty rosters.
-
-Pyo Si-wan holds that however fast machine translation becomes, certified sentences are read by a human.
-
-When Sangam pushes for machine translation first, the house agrees only to joint inspections and never hands over its keys.
-
-Interpretation is never turned into a tool for extracting confessions.
-
-<a id="Operating-Houses-heading-0192"></a>
-
-### Three Acts
-
-- Act 1 Rift: Language-pair duty staff run short at the Seoul Station interpreters'' desk and the Suseo customs window
-- Act 2 Negotiation: Pyo Si-wan opens joint inspections in response to Sangam''s machine-translation-first policy
-- Act 3 Price: Interpretation is not turned into a tool for extracting confessions
-
-<a id="Operating-Houses-heading-0194"></a>
-
-## HC15 · Digital Media City Saegin-ga
-
-- Category: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Government (Mapo-gu), Arc (Gangnam-gu), Free City (Gangseo-gu)
-- Exclusive faction: None
-- Managed by: Ryu Ga-on
-
-Beneath the Sangam transmission tower, Digital Media City Saegin-ga binds fragmented documents and broadcasts into a single search index.
-
-Every rumor carries a verification table and a rebuttal timestamp, so the verdicts themselves cannot be bought or sold.
-
-Ryu Ga-on publishes Suseo''s contract ledgers side by side with the ad-slot bidding ledger.
-
-Whenever the evidence changes, Magok researchers add to earlier verdicts instead of erasing them.
-
-Buyers may purchase display order, but they cannot touch the evidence lines in the search results.
-
-When records of protection treaty violations vanish, the index keepers and the auction observers open separate vaults.
-
-To expose the manipulation, Digital Media City Saegin-ga gives up its largest ad slot and its southern transit pass.
-
-<a id="Operating-Houses-heading-0203"></a>
-
-### Three Acts
-
-- Act 1 Omission: Suseo''s records of protection treaty violations disappear from the Sangam transmission tower index
-- Act 2 Bidding: Ryu Ga-on grants the Magok verifiers and the ad-slot buyers equal rebuttal time
-- Act 3 Traces: After publishing the winning-bid ledger, Digital Media City Saegin-ga loses its most expensive ad slot
-
-<a id="Operating-Houses-heading-0205"></a>
-
-## HC16 · Yongsan Gyohwan-ga
-
-- Category: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Government (Yongsan-gu, Mapo-gu, Jungnang-gu)
-- Exclusive faction: None
-- Managed by: Antoine Lefebvre
-
-The Yongsan Gyohwan-ga switchboard in the Yongsan railway depot relays messages between Sangam and Sinnae.
-
-Base stations beside the tracks borrow freight car batteries to keep short relay segments running.
-
-Users of the leased lines are chosen by call queue order, not by track family.
-
-When a downpour snaps the rooftop repeater, patient transfer signals from Sinnae are the first to go onto the detour line.
-
-Freight merchants demand dedicated lines, citing their losses, but the subscribers'' representative blocks them.
-
-As the price of the restored communication route, Yongsan Gyohwan-ga hands over the operating rights to one room of the Yongsan exchange.
-
-<a id="Operating-Houses-heading-0213"></a>
-
-### Three Acts
-
-- Act 1 Severance: The switchboard in the Yongsan railway depot goes dark, and calls from the Sinnae medical train fail to reach Sangam
-- Act 2 Detour: Freight dispatch lines were cut back and a temporary repeater was rigged on the railway roof.
-- Act 3 Cession: In return for saving the medical calls, one room of the exchange is ceded to the Yongsan track families
-
-<a id="Operating-Houses-heading-0215"></a>
-
-## HC17 · Guro Digital Danji Jeonji-ga
-
-- Category: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Free City (Guro-gu, Geumcheon-gu), Government (Seongdong-gu, Dobong-gu)
-- Exclusive faction: None
-- Managed by: Byeon Jua
-
-Along the Guro and Geumcheon manufacturing axis, Guro Digital Danji Jeonji-ga sorts individual battery cells by lifespan and temperature and stacks them accordingly.
-
-Ttukseom workshops receive sealed electrolyte drums and assemble power packs for pumps and small machines.
-
-The Changdong rolling stock depot demands its brake-system allotment first, but refuses any material without a test sheet.
-
-If a single drum is found leaking, every pack loaded on the same transport cart is quarantined.
-
-The fabrication repair crews press for the shortfall to be released, while the northern technicians bar the warehouse doors to protect the brake share.
-
-After the materials certifier uncovers forged markings, the supply order is switched to a public lottery.
-
-To preserve trust, Guro Digital Danji Jeonji-ga scraps even usable batteries and cuts back Changdong''s reserve runs.
-
-<a id="Operating-Houses-heading-0224"></a>
-
-### Three Acts
-
-- Act 1 Leak: Electrolyte drums in the Guro and Geumcheon stockpile leak, casting suspicion even on Ttukseom''s certification tags
-- Act 2 Allocation: Changdong''s brake battery share was sealed, and the house fought the Fabrication Alliance repair crews over the retest order.
-- Act 3 Disposal: Every contaminated pack is discarded, forfeiting one reserve run of the northern trains
-
-<a id="Operating-Houses-heading-0226"></a>
-
-## HC18 · Yongsan Seonbak-ga
-
-- Category: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Government (Yongsan-gu), Free City (Dongjak-gu), Arc (Songpa-gu)
-- Exclusive faction: None
-- Managed by: Peter Jansen
-
-Beneath the rusted cranes on Yongsan''s north bank, Yongsan Seonbak-ga assigns barge berths.
-
-Refrigerated crates loaded at Noryangjin go on to the Garak wholesale auction only if their seals are intact.
-
-Old air cargo standards survive as ledger rules that apportion weight and damage liability.
-
-Shipowners demand faster routes, but the ferry observers uphold the priority of public cargo.
-
-When a grounded vessel blocks the channel, the three factions each assert their own wharf rights.
-
-Yongsan Seonbak-ga abandons its exclusive berths and instead publishes every unloading fee and the full sailing order.
-
-<a id="Operating-Houses-heading-0234"></a>
-
-### Three Acts
-
-- Act 1 The Locked Wharf: A grounded vessel beneath a Han River bridge blocks both Yongsan riverside logistics and the barge routes
-- Act 2 The Price of Three Ferries: The wharf negotiations took up Noryangjin''s refrigerated cargo and Garak auction entry rights together.
-- Act 3 The Route of Empty Crates: The exclusive wharf is given up, and every sealed cargo is placed on the same berth ledger
-
-<a id="Operating-Houses-heading-0236"></a>
-
-## HC19 · Dongdaeipgu Gaeksa-ga
-
-- Category: CORPORATION
-- Status: ACTIVE
-- Linked factions and districts: Government (Jung-gu), Arc (Songpa-gu, Gangnam-gu)
-- Exclusive faction: None
-
-Neutral guesthouses run by Dongdaeipgu Gaeksa-ga are scattered along the Seoul Station protocol road.
-
-Envoys surrender their weapons, yet are never detained over lodging debts.
-
-Banquet supplies are bought at public auction at the Garak wholesale auction house and then tagged item by item.
-
-The old duty-free warehouses hold fewer luxuries than handcrafted goods kept as treaty return gifts.
-
-On days when rations run short, the banquet tables shrink first, while the ordinary lodgers'' porridge stays as it is.
-
-If a hidden guarantor comes to light, the guest observer cancels the deal regardless of protocol rank.
-
-<a id="Operating-Houses-heading-0244"></a>
-
-### Three Acts
-
-- Act 1 Empty Banquet Seats: Ahead of the Seoul Station protocol talks, the delivery slips for banquet supplies from the Garak auction house vanish
-- Act 2 The Ledger of Hospitality: The Suseo contract audit exposed the hidden guarantors behind room assignments and feast credit.
-- Act 3 Gifts Outside the Door: The duty-free warehouse for privileged guests is opened to separate famine rations from diplomatic return gifts
-
-<a id="Operating-Houses-heading-0246"></a>
-
-## HC20 · Digital Media City Performance House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions/districts: Government (Mapo-gu), Government (Jung-gu), Arc (Songpa-gu)
-- Exclusive faction: None
-
-Every evening when the Sangam transmission tower lights up, the Digital Media City Performance House seals the running order of its performances.
-
-Performers who take the ceremonial stage at Seoul Station are guaranteed their names and safe passage home under the ratification of the Records Office.
-
-At the Garak assembly ground, one seat is left open for refugees for every three paid tickets.
-
-If the Channel Guild pushes only the popular acts, the audience observers suspend the programming meeting.
-
-A counterfeit ticket scandal shakes not only ticket revenue but also the credibility of the tower''s verification.
-
-The Digital Media City Performance House divides its final broadcast slot among the testimonies of each faction and publishes a record of the exclusive rights it has released.
-
-<a id="Operating-Houses-heading-0254"></a>
-
-### Three Acts
-
-- Act 1, The Broken Refrain: A ceremonial Seoul Station performance is erased from the prime-time schedule of the Sangam transmission tower
-- Act 2, The Ticketless Crowd: As counterfeit tickets spread through the Garak assembly ground, the performance rights ledger was checked against the broadcast records.
-- Act 3, The Final Transmission: The exclusive performance rights are briefly released so that each faction''s testimony airs in the same broadcast slot
-
-<a id="Operating-Houses-heading-0256"></a>
-
-## HC21 · Digital Media City Settlement House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions/districts: Government (Mapo-gu), Arc (Gangnam-gu), Government (Jungnang-gu)
-- Exclusive faction: None
-- Managed by: Yongso
-
-In the relay room beneath the old Sangam headquarters, the Digital Media City Settlement House guards the transfer payment line.
-
-When the Suseo Accord City demands notarization of its ledgers, the House opens only audit viewing rights and never hands over the signing keys.
-
-The Sinnae transfer call window is protected by queue rules so that no camp''s troops can take priority.
-
-Even if the line goes dead, the final settlement block is kept on paper.
-
-<a id="Operating-Houses-heading-0262"></a>
-
-### Three Acts
-
-- Act 1, Severance: Synchronization of the Suseo payment ledger breaks and transfer calls pile up
-- Act 2, The Relay: Negotiations opened to divide the line between Sangam broadcast verification and Sinnae transfer neutrality.
-- Act 3, The Line: Messenger relays are cut back, but the settlement ledger is preserved whole
-
-<a id="Operating-Houses-heading-0264"></a>
-
-## HC22 · Magok Test Line House
-
-- Classification: CORPORATION
-- Status: ACTIVE
-- Linked factions/districts: Free City (Gangseo-gu), Government (Dobong-gu), Government (Mapo-gu)
-- Exclusive faction: None
-- Managed by: Choe Eunjae
-
-Beside the autonomous test line at the edge of the Magok research grounds, the Magok Test Line House guards a stored energy depot.
-
-Should the old insect, dinosaur, or abyssal-form test units ever stir again beneath the test line, only half of the blueprint keys are brought out and placed under the watch of the Magok Council.
-
-When the charging line at Changdong Base grows unstable, the House briefly suspends standards certification and steadies the line first.
-
-Even when the depot runs empty, the certification seal is never forged.
-
-<a id="Operating-Houses-heading-0270"></a>
-
-### Three Acts
-
-- Act 1, The Alarm: Residual signals from the lost technology line beneath the Magok test line rise again
-- Act 2, The Division: The blueprint keys were split between the Magok Council and the Sangam Corporation for safekeeping.
-- Act 3, The Seal: The test line goes back under lock, and only the charging standard remains
+Houses of stations not listed here aren''t in the public record yet. Who holds each faction''s bureau chief and commissioner, guild master and director, or bishop and cardinal posts hasn''t been decided.
 ', '<a id="Operating-Houses-heading-0001"></a>
 
-법인 후계 조직과 시민·직능 조직은 급수·물류·기록 등 여러 기반을 운영했다. 각 조직이 맡은 일과 연결 세력은 계약과 시설에 따라 달랐다.
-
-## 운영 조직의 자리
-
-운영 조직은 넷째 세력이 아니다. 2126년 겨울 서울의 세력은 정부, 자유도시들, 아크 셋뿐이고, 운영 조직은 그 안에서 시설과 열쇠를 맡는다.
-
-- **소속과 계급.** 조직을 이끄는 사람은 자기가 사는 세력의 사람이다. 그 사람이 역을 가졌으면 거느린 역장 수에 따라 역장 이상의 계급을 갖고, 역이 없으면 일반 시민이다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
-- **연결 세력.** 아래의 ''연결 세력·구''는 조직이 물자와 일을 주고받는 곳이다. 그 세력에 소속된다는 뜻이 아니다.
-- **사람은 넘어가지 않는다.** 조직이 여러 세력과 거래해도 조직의 사람은 경계를 넘어 옮기지 않는다. 다른 세력으로 넘어간 사람은 자산과 영토를 빼앗기고 최하층민이 되기 때문이다. 그래서 조직의 기술자를 노리는 납치와 포획, 몸값 협상, 가족 인질이 조직이 가장 두려워하는 일이다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
+역장 집안은 역 하나를 쥐고 그 역의 일을 대대로 물려받는 집이다. 결핍 때문에 자식이 부모의 일을 이었고, 그렇게 역마다 한 집안이 자리를 잡았다. 역장 집안은 넷째 세력이 아니다. 모두 정부, 자유도시들, 아크 가운데 한 세력 안에 있다.
 
 <a id="Operating-Houses-heading-0003"></a>
 
-## HC01 · 여의도전산가
+## 역장 집안의 자리
 
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(영등포구), 정부(마포구)
-- 전속 세력: 없음
-- 관리: 허은찬
-
-여의도 제2정수 옆 봉인 전산동에서 여의도전산가가 야간 냉각 분배를 지킨다.
-
-허은찬은 냉각탑 시계를 급수 당직과 맞춰 돌리고 상암 송신키 공유 요구 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-화면이 꺼져도 급수 원장은 남긴다.
+- **계급.** 역 하나를 가진 사람은 역장이다. 거느린 역장 수가 늘면 본부장 이상으로 오른다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
+- **역의 가치.** 환승 노선이 많을수록, 지하로 깊을수록 역의 가치가 높다. 지상역 역장은 역장 가운데 가장 낮다.
+- **사는 깊이.** 역장 집안은 역 벙커(셔터) 안 깊은 층에 산다. 역에서 일하는 하류층은 역 주변 건물에 산다.
+- **생업.** 역장 집안은 역을 지키는 일과 함께, 역이 가진 생업 하나를 맡는다. 배차, 정비, 배급, 경매, 당직 같은 일이다.
+- **경계를 넘지 않는다.** 다른 세력으로 넘어간 사람은 자산과 역을 빼앗기고 최하층민이 된다. 그래서 역장 집안이 가장 두려워하는 일은 기술자를 노린 납치와 가족 인질이다. 자세한 내용은 [인적자원 이동](/wiki/Human-Resource-Movement/)에 있다.
 
 <a id="Operating-Houses-heading-0008"></a>
 
-### 3막
+## 정부의 역장 집안
 
-- 1막 균열: 여의도 제2정수 옆 봉인 전산동에서 야간 냉각 분배가 부족해진다
-- 2막 교섭: 허은찬이 상암 송신키 공유 요구와 공동 점검을 연다
-- 3막 대가: 화면이 꺼져도 급수 원장은 남긴다
+한강 북쪽 14구다. 정부의 역장은 대통령 아래 한 줄 위계에 든다.
+
+- **용산역, 박태겸 집안.** 호송 배차표를 관리하고 공개한다. 용산역은 노선이 모이는 역이라 호송이 이곳에서 출발한다.
+- **신내역, 장세화 집안.** 역 운영과 수송 배차를 맡는다. 장세화는 배차의무관으로 일한다.
+- **명동역, 남윤경 집안.** 역의 물자 경매를 조정한다. 남윤경은 롯데월드타워에 살고, 아크 신앙은 개인 신앙이다.
 
 <a id="Operating-Houses-heading-0010"></a>
 
-## HC02 · 신정차륜가
+## 자유도시들의 역장 집안
 
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(양천구), 아크(강남구), 정부(용산구)
-- 전속 세력: 없음
-- 관리: 유세진
+남서쪽 7구다. 자유도시는 각자 선 독립 도시들이고, 역장 집안도 저마다 손일로 먹고산다.
 
-신정기지 유치선과 수서 회차선에서 신정차륜가가 배터리 셀 순환을 지킨다.
+- **영등포 대합실, 변고운 집안.** 대합실 당직을 맡는다. 오가는 사람과 짐을 대합실에서 맞고 내보낸다.
+- **구로 대합실, 변시람 집안.** 같은 대합실 당직을 맡고, 감사 일을 겸한다.
 
-유세진은 회차 슬롯을 화물보다 구급차에 먼저 연다.
-
-용산 환적 창구 독점 시도 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-선로가 잠겨도 사람 호송은 걷게 연다.
+자유도시의 공방과 출자 일은 역장 집안이 아니라 조합이 묶는다(공방 제작 조합 조합장 강민서, 여의도 출자 조합 조합장 최지우).
 
 <a id="Operating-Houses-heading-0016"></a>
 
-### 3막
+## 아크의 역장 집안
 
-- 1막 균열: 신정기지 유치선과 수서 회차선에서 배터리 셀 순환이 부족해진다
-- 2막 교섭: 유세진이 용산 환적 창구 독점 시도와 공동 점검을 연다
-- 3막 대가: 선로가 잠겨도 사람 호송은 걷게 연다
+강남 4구다. 아크의 역장은 교주 아래 주교·추기경 위계에 든다.
+
+- **삼성역, 오경재 집안.** 총회 당직을 맡고 유언 원본을 관리한다.
+- **강남역, 용두봉 집안.** 궤도기병이 출격하기 전 정비와 무장 탑재를 확인한다.
 
 <a id="Operating-Houses-heading-0018"></a>
 
-## HC03 · 마곡생명가
+## 기록되지 않은 것
 
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(강서구), 정부(동대문구)
-- 전속 세력: 없음
-- 관리: 정호준
-
-마곡 밀폐실험동 방풍실에서 마곡생명가가 생체 데이터셋 격리 키를 지킨다.
-
-정호준은 실험 일지를 병상 이름과 분리해 보관한다.
-
-제기동의 원료 선점 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-표본이 사라져도 동의 기록은 태우지 않는다.
-
-<a id="Operating-Houses-heading-0024"></a>
-
-### 3막
-
-- 1막 균열: 마곡 밀폐실험동 방풍실에서 생체 데이터셋 격리 키가 부족해진다
-- 2막 교섭: 정호준이 제기동의 원료 선점과 공동 점검을 연다
-- 3막 대가: 표본이 사라져도 동의 기록은 태우지 않는다
-
-<a id="Operating-Houses-heading-0026"></a>
-
-## HC04 · 뚝섬열원가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(성동구), 아크(강동구), 자유도시(영등포구)
-- 전속 세력: 없음
-- 관리: 박누리
-
-뚝섬 펌프와 암사 여열 배관에서 뚝섬열원가가 지하 열원 접속권을 지킨다.
-
-박누리는 여열을 팔기 전에 펌프 예비 전력을 채운다.
-
-여의도 급수 야간 우선권 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-정전 순서를 숨기지 않고 게시판에 붙인다.
-
-<a id="Operating-Houses-heading-0032"></a>
-
-### 3막
-
-- 1막 균열: 뚝섬 펌프와 암사 여열 배관에서 지하 열원 접속권이 부족해진다
-- 2막 교섭: 박누리가 여의도 급수 야간 우선권과 공동 점검을 연다
-- 3막 대가: 정전 순서를 숨기지 않고 게시판에 붙인다
-
-<a id="Operating-Houses-heading-0034"></a>
-
-## HC05 · 북한산보국문기록가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(성북구)
-- 전속 세력: 없음
-- 관리: 윤서린
-
-북한산 회랑 창고의 습도 금고에서 북한산보국문기록가가 옛 기록 원본 한 상자를 지킨다.
-
-윤서린은 습도 알람이 울리면 열람을 멈추고 상자만 옮긴다.
-
-서울역 인준 인지 요구 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-공개 범위를 접어도 목록 자체는 남긴다.
-
-<a id="Operating-Houses-heading-0040"></a>
-
-### 3막
-
-- 1막 균열: 북한산 회랑 창고의 습도 금고에서 옛 기록 원본 한 상자가 부족해진다
-- 2막 교섭: 윤서린이 서울역 인준 인지 요구와 공동 점검을 연다
-- 3막 대가: 공개 범위를 접어도 목록 자체는 남긴다
-
-<a id="Operating-Houses-heading-0042"></a>
-
-## HC06 · 노량진배달가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(동작구), 아크(송파구)
-- 전속 세력: 없음
-- 관리: 오해린
-
-노량진 하층 골목과 가락 후문에서 노량진배달가가 근거리 수레 배차권을 지킨다.
-
-오해린은 골목 순번을 경매 호가와 바꿔 쓰지 않는다.
-
-장거리 배송단의 진입 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-점포가 비어도 주문 장부는 섞지 않는다.
-
-<a id="Operating-Houses-heading-0048"></a>
-
-### 3막
-
-- 1막 균열: 노량진 하층 골목과 가락 후문에서 근거리 수레 배차권이 부족해진다
-- 2막 교섭: 오해린이 장거리 배송단의 진입과 공동 점검을 연다
-- 3막 대가: 점포가 비어도 주문 장부는 섞지 않는다
-
-<a id="Operating-Houses-heading-0050"></a>
-
-## HC07 · 구로합금가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(구로구), 정부(성동구)
-- 전속 세력: 없음
-- 관리: 강민서
-
-구로 고온로와 성수 합금 정에서 구로합금가가 내열 합금 레시피를 지킨다.
-
-강민서는 로 온도가 흔들리면 주문을 받아도 불을 끈다.
-
-궤도 방위문의 군수용 전용 요구 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-불량이 나와도 규격 도장은 위조하지 않는다.
-
-<a id="Operating-Houses-heading-0056"></a>
-
-### 3막
-
-- 1막 균열: 구로 고온로와 성수 합금 정에서 내열 합금 레시피가 부족해진다
-- 2막 교섭: 강민서가 궤도 방위문의 군수용 전용 요구와 공동 점검을 연다
-- 3막 대가: 불량이 나와도 규격 도장은 위조하지 않는다
-
-<a id="Operating-Houses-heading-0058"></a>
-
-## HC08 · 창동방호가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(도봉구), 정부(중랑구)
-- 전속 세력: 없음
-- 관리: 이홍원
-
-창동 북문과 신내 환승 차단문에서 창동방호가가 통합 방호키를 지킨다.
-
-이홍원은 차단문 원격키를 호위단에 넘기지 않는다.
-
-암사 호위단의 원격 잠금 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-시민 통행을 닫기 전에 대피 방송을 먼저 연다.
-
-<a id="Operating-Houses-heading-0064"></a>
-
-### 3막
-
-- 1막 균열: 창동 북문과 신내 환승 차단문에서 통합 방호키가 부족해진다
-- 2막 교섭: 이홍원이 암사 호위단의 원격 잠금과 공동 점검을 연다
-- 3막 대가: 시민 통행을 닫기 전에 대피 방송을 먼저 연다
-
-<a id="Operating-Houses-heading-0066"></a>
-
-## HC09 · 서울역재고가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(중구), 아크(송파구)
-- 전속 세력: 없음
-- 관리: 남윤경
-
-서울역 서편 창고와 잠실 하층에서 서울역재고가가 생활재 재고 원장을 지킨다.
-
-남윤경은 창고 열쇠와 가격표를 한 사람이 쥐지 않는다.
-
-가락 경매 우선권 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-재고가 줄어도 배급 순번을 팔지 않는다.
-
-<a id="Operating-Houses-heading-0072"></a>
-
-### 3막
-
-- 1막 균열: 서울역 서편 창고와 잠실 하층에서 생활재 재고 원장이 부족해진다
-- 2막 교섭: 남윤경이 가락 경매 우선권과 공동 점검을 연다
-- 3막 대가: 재고가 줄어도 배급 순번을 팔지 않는다
-
-<a id="Operating-Houses-heading-0074"></a>
-
-## HC10 · 마곡종자가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(강서구, 동작구), 정부(마포구)
-- 전속 세력: 없음
-- 관리: 최지우
-
-마곡 종자 창고와 상암 부엌 방송에서 마곡종자가가 정부 원종에서 나눠 받은 종자를 불리고 발효 종균 금고를 지킨다. 원종은 정부가 쥔다.
-
-최지우는 방송 레시피에 재고 위치를 섞어 쓰지 않는다.
-
-노량진 냉동 임차 인상 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-맛의 표준을 강요하지 않고 위생 수치만 공개한다.
-
-<a id="Operating-Houses-heading-0080"></a>
-
-### 3막
-
-- 1막 균열: 마곡 종자 창고와 상암 부엌 방송에서 발효 종자 금고가 부족해진다
-- 2막 교섭: 최지우가 노량진 냉동 임차 인상과 공동 점검을 연다
-- 3막 대가: 맛의 표준을 강요하지 않고 위생 수치만 공개한다
-
-<a id="Operating-Houses-heading-0082"></a>
-
-## HC11 · 용산호송가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(용산구, 중랑구), 아크(강남구)
-- 전속 세력: 없음
-- 관리: 박태겸
-
-용산 화물홈과 수서 심야 슬롯에서 용산호송가가 야간 호송 허가증을 지킨다.
-
-박태겸은 심야 슬롯을 의료열차에 양보한 뒤 화물을 민다.
-
-신내 의료열차와 충돌 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-빈 상자를 채워 무게를 속이지 않는다.
-
-<a id="Operating-Houses-heading-0088"></a>
-
-### 3막
-
-- 1막 균열: 용산 화물홈과 수서 심야 슬롯에서 야간 호송 허가증이 부족해진다
-- 2막 교섭: 박태겸이 신내 의료열차와 충돌과 공동 점검을 연다
-- 3막 대가: 빈 상자를 채워 무게를 속이지 않는다
-
-<a id="Operating-Houses-heading-0090"></a>
-
-## HC12 · 금천구청중기가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(금천구), 정부(광진구, 성동구)
-- 전속 세력: 없음
-- 관리: 정시우
-
-금천 크레인과 아차산 교각 하부에서 금천구청중기가가 대형 리깅 자격을 지킨다.
-
-정시우는 교각 아래에 크레인을 세우기 전 풍속을 적는다.
-
-뚝섬 펌프 하우징 쟁탈 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-하중 한도를 넘긴 작업은 기록 전에 멈춘다.
-
-<a id="Operating-Houses-heading-0096"></a>
-
-### 3막
-
-- 1막 균열: 금천 크레인과 아차산 교각 하부에서 대형 리깅 자격이 부족해진다
-- 2막 교섭: 정시우가 뚝섬 펌프 하우징 쟁탈과 공동 점검을 연다
-- 3막 대가: 하중 한도를 넘긴 작업은 기록 전에 멈춘다
-
-<a id="Operating-Houses-heading-0098"></a>
-
-## HC13 · 수서건설가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(중구, 광진구), 아크(강남구)
-- 전속 세력: 없음
-- 관리: 정유라
-
-서울역 잔벽과 수서 지하 공동구에서 수서건설가가 내진 접합 도면을 지킨다.
-
-정유라는 공동구 도면을 감시탑 증축과 맞바꿔 팔지 않는다.
-
-아차산 고지 감시탑 증축 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-도면이 틀려도 현장을 숫자로 맞춘다.
-
-<a id="Operating-Houses-heading-0104"></a>
-
-### 3막
-
-- 1막 균열: 서울역 잔벽과 수서 지하 공동구에서 내진 접합 도면이 부족해진다
-- 2막 교섭: 정유라가 아차산 고지 감시탑 증축과 공동 점검을 연다
-- 3막 대가: 도면이 틀려도 현장을 숫자로 맞춘다
-
-<a id="Operating-Houses-heading-0106"></a>
-
-## HC14 · 여의도장부가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(영등포구), 아크(강남구)
-- 전속 세력: 없음
-- 관리: 장필규
-
-여의도 계약고와 수서 중재실에서 여의도장부가가 이중서명 장부를 지킨다.
-
-장필규는 한 서명이 비면 계약을 집행하지 않는다.
-
-기록청의 인준 지연 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-손실을 숨기지 않고 보상 순서를 공개한다.
-
-<a id="Operating-Houses-heading-0112"></a>
-
-### 3막
-
-- 1막 균열: 여의도 계약고와 수서 중재실에서 이중서명 장부가 부족해진다
-- 2막 교섭: 장필규가 기록청의 인준 지연과 공동 점검을 연다
-- 3막 대가: 손실을 숨기지 않고 보상 순서를 공개한다
-
-<a id="Operating-Houses-heading-0114"></a>
-
-## HP01 · 영등포수문가
-
-- 분류: INFRA_OPERATOR
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(영등포구), 정부(성동구·광진구), 아크(강동구)
-- 전속 세력: 없음
-- 관리: 한재목
-
-영등포·뚝섬·암사·구의 수문 당직함에서 영등포수문가가 수문 키 분할 보관을 지킨다.
-
-한재목은 네 곳 키를 한 주머니에 모으지 않는다.
-
-한 권역의 전면 차수 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-물을 무기로 쓰는 명령을 거부한다.
-
-<a id="Operating-Houses-heading-0120"></a>
-
-### 3막
-
-- 1막 균열: 영등포·뚝섬·암사·구의 수문 당직함에서 수문 키 분할 보관이 부족해진다
-- 2막 교섭: 한재목이 한 권역의 전면 차수와 공동 점검을 연다
-- 3막 대가: 물을 무기로 쓰는 명령을 거부한다
-
-<a id="Operating-Houses-heading-0122"></a>
-
-## HP02 · 용산선로문
-
-- 분류: INFRA_OPERATOR
-- 상태: ACTIVE
-- 연결 세력·구: 정부(용산구·중랑구·도봉구)
-- 전속 세력: 없음
-- 관리: 장세화
-
-용산·신내·창동 배차 회의실에서 용산선로문이 중립 배차표를 지킨다.
-
-장세화는 전세 열차가 와도 응급 칸을 지우지 않는다.
-
-큰 세력의 전세 열차 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-응급 이송을 화물보다 뒤에 두지 않는다.
-
-<a id="Operating-Houses-heading-0128"></a>
-
-### 3막
-
-- 1막 균열: 용산·신내·창동 배차 회의실에서 중립 배차표가 부족해진다
-- 2막 교섭: 장세화가 큰 세력의 전세 열차와 공동 점검을 연다
-- 3막 대가: 응급 이송을 화물보다 뒤에 두지 않는다
-
-<a id="Operating-Houses-heading-0130"></a>
-
-## HP03 · 청량리의료원가
-
-- 분류: PROFESSIONAL_GUILD
-- 상태: ACTIVE
-- 연결 세력·구: 정부(동대문구·중구)
-- 전속 세력: 없음
-- 관리: 류은비
-
-청량리 이송로와 서울역 재난의료 데스크에서, 의사가 떠난 대학병원 건물의 응급 처치 순번표를 청량리의료원가가 지킨다. 의료 면허는 자유도시 의사단이 낸다.
-
-류은비는 실험 병상 요구가 와도 응급 순번을 팔지 않는다.
-
-마곡의 실험 병상 전용 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-병상을 편으로 가르지 않는다.
-
-<a id="Operating-Houses-heading-0136"></a>
-
-### 3막
-
-- 1막 균열: 청량리 이송로와 서울역 재난의료 데스크에서 면허 당직표가 부족해진다
-- 2막 교섭: 류은비가 마곡의 실험 병상 전용과 공동 점검을 연다
-- 3막 대가: 병상을 편으로 가르지 않는다
-
-<a id="Operating-Houses-heading-0138"></a>
-
-## HP04 · 서울역기록법가
-
-- 분류: PROFESSIONAL_GUILD
-- 상태: ACTIVE
-- 연결 세력·구: 정부(중구)
-- 전속 세력: 없음
-- 관리: 여리안
-
-기록고 열람실과 송신 교차검증대에서 서울역기록법가가 원본 해시 봉인을 지킨다.
-
-여리안은 해시가 다른 문서를 먼저 방송하지 않는다.
-
-방송국의 단독 공개 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-유언 사본 세 장을 한 진본으로 합치지 않는다.
-
-<a id="Operating-Houses-heading-0144"></a>
-
-### 3막
-
-- 1막 균열: 기록고 열람실과 송신 교차검증대에서 원본 해시 봉인이 부족해진다
-- 2막 교섭: 여리안이 방송국의 단독 공개와 공동 점검을 연다
-- 3막 대가: 유언 사본 세 장을 한 진본으로 합치지 않는다
-
-<a id="Operating-Houses-heading-0146"></a>
-
-## HP05 · 북한산보국문귀환회
-
-- 분류: CIVIC_COMPACT
-- 상태: ACTIVE
-- 연결 세력·구: 정부(은평구, 도봉구)
-- 전속 세력: 없음
-- 관리: 백온
-
-은평 피난로와 창동 주거쉘 대기줄에서 북한산보국문귀환회가 가족 재결합 명부를 지킨다.
-
-백온은 대기줄 이름을 복무 명부와 맞바꾸지 않는다.
-
-복구복무자 등록 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-명부를 인질로 쓰지 않고 본인 동의로만 연다.
-
-<a id="Operating-Houses-heading-0152"></a>
-
-### 3막
-
-- 1막 균열: 은평 피난로와 창동 주거쉘 대기줄에서 가족 재결합 명부가 부족해진다
-- 2막 교섭: 백온이 복구복무자 등록과 공동 점검을 연다
-- 3막 대가: 명부를 인질로 쓰지 않고 본인 동의로만 연다
-
-<a id="Operating-Houses-heading-0154"></a>
-
-## HP06 · 제기동치유문
-
-- 분류: PROFESSIONAL_GUILD
-- 상태: ACTIVE
-- 연결 세력·구: 정부(동대문구, 성북구), 자유도시(강서구)
-- 전속 세력: 없음
-- 관리: 정하린
-
-제기동 조제실과 마곡 방역 시료실에서 제기동치유문은 약 봉인과 출고만 맡는다. 처방은 마곡(자유도시) 의사가 내린다.
-
-정하린은 독점 구매서보다 로트 불량을 먼저 붙인다.
-
-북한산보국문 약초 독점 구매 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-가짜 약을 숨기지 않고 로트 번호를 게시한다.
-
-<a id="Operating-Houses-heading-0160"></a>
-
-### 3막
-
-- 1막 균열: 제기동 조제실과 마곡 방역 시료실에서 처방 이중확인이 부족해진다
-- 2막 교섭: 정하린이 북한산보국문 약초 독점 구매와 공동 점검을 연다
-- 3막 대가: 가짜 약을 숨기지 않고 로트 번호를 게시한다
-
-<a id="Operating-Houses-heading-0162"></a>
-
-## HP07 · 한강진교량공회
-
-- 분류: INFRA_OPERATOR
-- 상태: ACTIVE
-- 연결 세력·구: 정부(용산구), 자유도시(영등포구)
-- 전속 세력: 없음
-- 관리: 고서준
-
-한강 교각 점검로와 잠수교 잔교에서 한강진교량공회가 풍속 폐쇄 기준을 지킨다.
-
-고서준은 풍속이 기준을 넘으면 수운 우선도 세운다.
-
-여의도 수운 우선 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-교량을 통행세로만 계산하지 않는다.
-
-<a id="Operating-Houses-heading-0168"></a>
-
-### 3막
-
-- 1막 균열: 한강 교각 점검로와 잠수교 잔교에서 풍속 폐쇄 기준이 부족해진다
-- 2막 교섭: 고서준이 여의도 수운 우선과 공동 점검을 연다
-- 3막 대가: 교량을 통행세로만 계산하지 않는다
-
-<a id="Operating-Houses-heading-0170"></a>
-
-## HP08 · 노량진냉동상단
-
-- 분류: CIVIC_COMPACT
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(동작구), 아크(송파구)
-- 전속 세력: 없음
-- 관리: 구하온
-
-노량진 냉동고와 가락 얼음 창고에서 노량진냉동상단이 전력 슬롯 순환을 지킨다.
-
-구하온은 모터를 빼 가기 전에 온도 로그를 인쇄한다.
-
-제작 동맹의 모터 회수 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-온도 로그가 끊기면 경매를 멈춘다.
-
-<a id="Operating-Houses-heading-0176"></a>
-
-### 3막
-
-- 1막 균열: 노량진 냉동고와 가락 얼음 창고에서 전력 슬롯 순환이 부족해진다
-- 2막 교섭: 구하온이 제작 동맹의 모터 회수와 공동 점검을 연다
-- 3막 대가: 온도 로그가 끊기면 경매를 멈춘다
-
-<a id="Operating-Houses-heading-0178"></a>
-
-## HP09 · 디지털미디어시티신탁가
-
-- 분류: DATA_TRUST
-- 상태: ACTIVE
-- 연결 세력·구: 정부(마포구), 아크(강남구), 자유도시(강서구)
-- 전속 세력: 없음
-- 관리: 최은재
-
-상암 로그 신탁과 수서 계약 해시에서 디지털미디어시티신탁가가 모델 카드 공개를 지킨다.
-
-최은재는 학습자료 반출 요청에 원본 대신 집계만 넘긴다.
-
-마곡의 학습자료 반출 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-얼굴 원본을 통행권과 바꾸지 않는다.
-
-<a id="Operating-Houses-heading-0184"></a>
-
-### 3막
-
-- 1막 균열: 상암 로그 신탁과 수서 계약 해시에서 모델 카드 공개가 부족해진다
-- 2막 교섭: 최은재가 마곡의 학습자료 반출과 공동 점검을 연다
-- 3막 대가: 얼굴 원본을 통행권과 바꾸지 않는다
-
-<a id="Operating-Houses-heading-0186"></a>
-
-## HP10 · 이태원통역문
-
-- 분류: PROFESSIONAL_GUILD
-- 상태: ACTIVE
-- 연결 세력·구: 정부(중구), 아크(강남구), 정부(마포구)
-- 전속 세력: 없음
-- 관리: 대니얼 브룩스
-
-서울역 통역석과 수서 세관 창구에서 이태원통역문이 언어 쌍 당직을 지킨다.
-
-표시완은 자동번역이 빨라도 인준 문장은 사람이 읽는다.
-
-상암의 자동번역 우선 앞에서는 공동 점검만 열고 키는 넘기지 않는다.
-
-통역을 자백 도구로 돌리지 않는다.
-
-<a id="Operating-Houses-heading-0192"></a>
-
-### 3막
-
-- 1막 균열: 서울역 통역석과 수서 세관 창구에서 언어 쌍 당직이 부족해진다
-- 2막 교섭: 표시완이 상암의 자동번역 우선과 공동 점검을 연다
-- 3막 대가: 통역을 자백 도구로 돌리지 않는다
-
-<a id="Operating-Houses-heading-0194"></a>
-
-## HC15 · 디지털미디어시티색인가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(마포구), 아크(강남구), 자유도시(강서구)
-- 전속 세력: 없음
-- 관리: 류가온
-
-상암 송신탑 아래 디지털미디어시티색인가는 끊어진 문서와 방송을 하나의 검색 색인에 묶는다.
-
-소문마다 검증표와 반론 시각을 달아 판정 자체를 거래할 수 없게 한다.
-
-류가온은 수서의 계약 장부를 광고칸 입찰 원장과 나란히 공개한다.
-
-마곡 연구자들은 근거가 바뀔 때마다 이전 판정을 지우지 않고 덧붙인다.
-
-구매자가 노출 순서를 사더라도 검색 결과의 근거 줄은 건드리지 못한다.
-
-보호조약 위반 기록이 사라지자 색인관과 경매참관인은 서로 다른 금고를 연다.
-
-디지털미디어시티색인가는 조작을 밝히는 대신 가장 큰 광고칸과 남부 통행권을 포기한다.
-
-<a id="Operating-Houses-heading-0203"></a>
-
-### 3막
-
-- 1막 누락: 상암 송신탑 색인에서 수서의 보호조약 위반 기록이 사라진다
-- 2막 입찰: 류가온이 마곡 검증관과 광고칸 구매자에게 같은 반론 시간을 건다
-- 3막 흔적: 낙찰 원장을 공개한 뒤 디지털미디어시티색인가는 가장 비싼 광고칸을 잃는다
-
-<a id="Operating-Houses-heading-0205"></a>
-
-## HC16 · 용산교환가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(용산구, 마포구, 중랑구)
-- 전속 세력: 없음
-- 관리: 앙투안 르페브르
-
-용산 철도 창고의 용산교환가 교환기는 상암과 신내 사이의 말을 갈아 태운다.
-
-철길 옆 기지국은 화물차 전지를 빌려 짧은 중계 구간을 이어 간다.
-
-임대 회선의 사용자는 선로 가문이 아니라 호출 순번으로 정해진다.
-
-폭우가 지붕 중계기를 꺾자 신내의 환자 이송 신호부터 우회선에 오른다.
-
-화물 상인들은 손실을 이유로 전용선을 요구하지만 가입자대표가 이를 막는다.
-
-살아난 통신로의 값으로 용산교환가는 용산 교환실 한 칸의 운영권을 넘긴다.
-
-<a id="Operating-Houses-heading-0213"></a>
-
-### 3막
-
-- 1막 단절: 용산 철도 창고의 교환기가 꺼져 신내 의료열차 호출이 상암에 닿지 않는다
-- 2막 우회: 화물 배차 회선을 줄이고 철도 지붕에 임시 중계기를 이었다.
-- 3막 양도: 의료호출을 살린 대가로 용산 선로 가문에 교환소 한 칸을 내준다
-
-<a id="Operating-Houses-heading-0215"></a>
-
-## HC17 · 구로디지털단지전지가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(구로구, 금천구), 정부(성동구, 도봉구)
-- 전속 세력: 없음
-- 관리: 변주아
-
-구로·금천 제작축에서 구로디지털단지전지가는 전지 낱칸을 수명과 온도에 따라 갈라 쌓는다.
-
-뚝섬 공방은 봉인된 전해액 통을 받아 펌프와 소형 기계의 전원 묶음을 만든다.
-
-창동 차량기지는 제동장치용 물량을 먼저 요구하되 시험표 없는 재료는 받지 않는다.
-
-한 통의 누액이 발견되면 같은 운송 수레에 실린 묶음 전체가 격리된다.
-
-제작 수리반은 부족분을 풀라고 압박하고 북부 기술자는 제동 몫을 지키려 창고문을 막는다.
-
-재료인증관이 위조 표식을 찾아낸 뒤 공급 순서는 공개 추첨으로 바뀐다.
-
-구로디지털단지전지가는 신뢰를 남기려고 쓸 수 있는 전지까지 폐기하고 창동의 예비 운행을 줄인다.
-
-<a id="Operating-Houses-heading-0224"></a>
-
-### 3막
-
-- 1막 누액: 구로·금천 비축고의 전해액 통이 새며 뚝섬 인증표까지 의심받는다
-- 2막 배분: 창동 제동전지 몫을 봉인하고 제작동맹 수리반과 재검사 순서를 다투었다.
-- 3막 폐기: 오염 묶음을 전량 버려 북부 열차의 예비 운행 한 차례를 포기한다
-
-<a id="Operating-Houses-heading-0226"></a>
-
-## HC18 · 용산선박가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(용산구), 자유도시(동작구), 아크(송파구)
-- 전속 세력: 없음
-- 관리: 피터 얀센
-
-용산 북안의 녹슨 기중기 아래에서 용산선박가가 바지선 선석을 배정한다.
-
-노량진에서 실린 냉동 상자는 봉인표가 온전해야 가락 도매 경매장으로 향한다.
-
-옛 항공 화물 규격은 무게와 파손 책임을 가르는 장부 규칙으로 남아 있다.
-
-선주들은 빠른 항로를 요구하지만 나루참관은 공공 화물의 우선권을 확인한다.
-
-좌초선이 물길을 막자 세 세력은 각자 부두 권리를 내세운다.
-
-용산선박가는 독점 선석을 버리는 대신 모든 하역료와 운항 순서를 공개한다.
-
-<a id="Operating-Houses-heading-0234"></a>
-
-### 3막
-
-- 1막 잠긴 부두: 한강 교량 아래 좌초선이 용산 강변 물류와 바지선 항로를 함께 막는다
-- 2막 세 나루의 값: 부두 협상에서 노량진 냉동 화물과 가락 경매 반입권을 함께 다루었다.
-- 3막 빈 상자의 항로: 독점 부두를 포기하고 모든 봉인 화물에 같은 선석 원장을 적용한다
-
-<a id="Operating-Houses-heading-0236"></a>
-
-## HC19 · 동대입구객사가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(중구), 아크(송파구, 강남구)
-- 전속 세력: 없음
-
-서울역 의전길에는 동대입구객사가가 관리하는 중립 객사가 흩어져 있다.
-
-사절은 무기를 맡기고도 숙박 채무 때문에 붙잡히지 않는다.
-
-연회 물자는 가락 도매 경매장에서 공개 낙찰한 뒤 품목별 표찰을 단다.
-
-오래된 면세 창고에는 화려한 물건보다 조약 답례용 수공품이 쌓인다.
-
-배급이 모자란 날에는 연회상이 먼저 줄고 일반 숙객의 죽은 그대로 남는다.
-
-숨은 보증인이 드러나면 손님참관이 의전 서열과 무관하게 거래를 취소한다.
-
-<a id="Operating-Houses-heading-0244"></a>
-
-### 3막
-
-- 1막 빈 연회석: 서울역 의전 회담을 앞두고 가락 경매장의 연회 물자 인도표가 사라진다
-- 2막 향응의 장부: 수서 계약감사에서 객실 배정과 잔치 신용의 숨은 보증인이 드러났다.
-- 3막 문밖의 선물: 특권 손님용 면세 창고를 열어 기근 배급과 외교 답례품을 분리한다
-
-<a id="Operating-Houses-heading-0246"></a>
-
-## HC20 · 디지털미디어시티공연가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(마포구), 정부(중구), 아크(송파구)
-- 전속 세력: 없음
-
-상암 송신탑이 켜지는 저녁마다 디지털미디어시티공연가는 공연 순서를 봉인한다.
-
-서울역 의전 무대에 오른 연희자는 기록청의 인준 아래 이름과 귀환 통행을 보장받는다.
-
-가락 집결장에서는 유료 입장표 세 장마다 피난민 좌석 하나를 비워 둔다.
-
-채널 길드가 인기 순서만 밀어붙이면 관객참관이 편성회의를 중지한다.
-
-위조표 소동은 표 수입뿐 아니라 송신탑의 검증 신뢰까지 흔든다.
-
-디지털미디어시티공연가는 마지막 방송 시간을 각 세력 증언에 나누고 독점권 해제 내역을 공개한다.
-
-<a id="Operating-Houses-heading-0254"></a>
-
-### 3막
-
-- 1막 끊긴 후렴: 상암 송신탑의 황금 시간 편성표에서 서울역 의전 공연 한 편이 지워진다
-- 2막 표 없는 군중: 가락 집결장에 위조 입장표가 퍼지자 공연권 원장과 방송 기록을 대조했다.
-- 3막 마지막 송출: 독점 공연권을 짧게 풀어 각 세력의 증언을 같은 방송 시간으로 내보낸다
-
-<a id="Operating-Houses-heading-0256"></a>
-
-## HC21 · 디지털미디어시티결제가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 정부(마포구), 아크(강남구), 정부(중랑구)
-- 전속 세력: 없음
-- 관리: 용소
-
-상암 옛 사옥 지하 중계실에서 디지털미디어시티결제가가 환승 결제 회선을 지킨다.
-
-수서 협약도시의 장부 공증 요구가 오면 감사 열람권만 열고 서명 키는 넘기지 않는다.
-
-신내 환승 호출 창구는 어느 진영의 병력도 우선하지 못하게 대기열 규칙으로 막아 둔다.
-
-회선이 죽어도 마지막 정산 블록은 종이로 남긴다.
-
-<a id="Operating-Houses-heading-0262"></a>
-
-### 3막
-
-- 1막 단절: 수서 결제 장부 동기가 끊기고 환승 호출이 쌓인다
-- 2막 중계: 상암 송신 검증과 신내 환승 중립의 회선을 나누는 협상이 열렸다.
-- 3막 회선: 메신저 중계는 줄이지만 결제 원장은 통째로 남긴다
-
-<a id="Operating-Houses-heading-0264"></a>
-
-## HC22 · 마곡시험선가
-
-- 분류: CORPORATION
-- 상태: ACTIVE
-- 연결 세력·구: 자유도시(강서구), 정부(도봉구), 정부(마포구)
-- 전속 세력: 없음
-- 관리: 최은재
-
-마곡 연구 부지 끝의 자율 시험선 옆에서 마곡시험선가가 저장에너지 창고를 지킨다.
-
-곤충·공룡·심층 형태의 옛 시험 기체가 시험선 밑에서 다시 움직이는 일이 있으면, 도면 열쇠는 절반만 꺼내 마곡 평의회 감시 아래 둔다.
-
-창동 기지의 충전 회선이 불안해지면 규격 인증을 잠시 닫고 회선부터 고른다.
-
-창고가 비어도 인증 도장은 위조하지 않는다.
-
-<a id="Operating-Houses-heading-0270"></a>
-
-### 3막
-
-- 1막 경보: 마곡 시험선 밑 잃어버린 기술 라인 잔류 신호가 다시 오른다
-- 2막 분할: 도면 열쇠를 마곡 평의회와 상암 공사에 나누어 맡겼다.
-- 3막 봉인: 시험선은 다시 자물쇠 아래 들어가고 충전 규격만 남는다
+이 문서에 없는 역의 집안은 아직 공개 기록에 없다. 각 세력의 국장·청장, 조합장·이사, 주교·추기경을 누가 맡는지는 정해지지 않았다.
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Oral-Stories', 'The Stories', '이야기', 'culture', 3, '<a id="대정전과-급수-기록"></a>
-
-
-A. The waterworks operations log
-
-On the night of the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. Duty officer Han Jeonghun operated the valves manually and entered the failure in the first line of a paper operations log.
-
-<a id="약-2026년-대정전"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Oral-Stories', 'The Stories', '이야기', 'culture', 3, '<a id="약-2026년-대정전"></a>
 
 ## The Great Blackout of About 2026
 
@@ -26774,43 +20301,15 @@ B. Emergency order
 
 The day after the Great Blackout, the president wrote and signed an emergency order under Article 76 of the constitution. The prime minister countersigned it. Designated facility emergency officers received on-site authority during the communications outage.
 
-<a id="2026년-물과-부품-거래"></a>
-
-## The 2026 Water and Parts Exchange
-
-A. November 6 exchange
-
-On November 6, 2026, two Yeouido vault representatives visited the Yeongdeungpo waterworks. Han Jeonghun agreed to open the valve toward Yeouido from 06:00 to 12:00 daily in exchange for two emergency generator parts.
-
-B. Two ledgers
-
-Han Jeonghun entered the exchange in the operations log. The Yeouido vault also entered the parts and water exchange in its inventory under the same date.
-
-<a id="2053년-영등포-급수-협약"></a>
-
-## The 2053 Yeongdeungpo Water Agreement
-
-A. March 14 signatures
-
-On March 14, 2053, waterworks head Han Seokjin and six water-receiving family representatives met seven Yeouido family representatives. Fourteen representatives signed an agreement transferring management of eleven water facilities near Yeouido and Yeongdeungpo Station to the Yeouido families.
-
-B. Move to Yangpyeong Station
-
-From March 20, 2053, the Yeongdeungpo waterworks staff moved their base to Yangpyeong Station underground. Forty-five volumes of the waterworks operations log, including Han Jeonghun’s forty-one volumes, moved to the underground stacks there. The waterworks continued operating.
-
 <a id="2120년-이후의-명부와-계약"></a>
 
 ## Registers and Contracts
 
-A. Reconstruction worker register
-
-In the winter of 2120 Go Ye-jin''s following, later the Arc, demanded, in exchange for unlocking the pump control software, that the Free City register its restoration service personnel. Gang Minseo of the Free City entered the technicians who refused registration on the citizenship roll.
-
-B. Refugee register
+A. Refugee register
 
 In 2123, a refugee procession from Bukhansan Bogukmun descended toward Anguk.
 
-C. State ledger
+B. State ledger
 
 In November 2125, the records office compiled a power-ranking ledger of the three factions, station by station.
 
@@ -26823,13 +20322,7 @@ In November 2125, the records office compiled a power-ranking ledger of the thre
 - [The Three Factions of Seoul](/wiki/Sixteen-States/)
 - [The Great Blackout](/wiki/World-Unbinding/)
 - [The Structures Compendium](/wiki/Structures/)
-', '<a id="대정전과-급수-기록"></a>
-
-**가. 정수센터 운전일지**
-
-대정전이 일어난 밤, 약 2026년 영등포아리수정수센터의 원격 제어가 끊겼다. 당직자들은 밸브를 수동으로 조작하였다. 야간 당직 책임자 한정훈은 종이 운전일지 첫 줄에 원격 제어 두절을 기재하였다.
-
-<a id="약-2026년-대정전"></a>
+', '<a id="약-2026년-대정전"></a>
 
 ## 약 2026년 대정전
 
@@ -26841,43 +20334,15 @@ In November 2125, the records office compiled a power-ranking ledger of the thre
 
 대정전 다음 날 대통령은 헌법 제76조에 따른 긴급명령을 작성하고 서명하였다. 국무총리가 부서하였다. 통신 두절 기간에는 지정 시설별 비상대비업무담당자가 현장 권한을 행사하도록 하였다.
 
-<a id="2026년-물과-부품-거래"></a>
-
-## 2026년 물과 부품 거래
-
-**가. 11월 6일 거래**
-
-2026년 11월 6일 여의도 금고층 대표 2명이 영등포아리수정수센터를 찾아갔다. 한정훈은 비상발전기 부품 2개를 받는 대가로 여의도 방향 송수관 밸브를 매일 06:00부터 12:00까지 개방하기로 하였다.
-
-**나. 두 장부**
-
-한정훈은 거래 내용을 운전일지에 적었다. 여의도 금고층에서도 같은 날짜로 부품과 물의 거래를 목록에 기재하였다.
-
-<a id="2053년-영등포-급수-협약"></a>
-
-## 2053년 영등포 급수 협약
-
-**가. 3월 14일 서명**
-
-2053년 3월 14일 영등포 정수센터 책임자 한석진과 물을 받는 가문 대표 6명이 여의도 금고층에서 여의도 가문 대표 7명을 만났다. 양측 대표 14명이 협약서에 서명하였다. 협약에 따라 여의도 일대와 영등포역 주변 급수 설비 11곳의 관리권이 여의도 가문들에 넘어갔다.
-
-**나. 양평역 이전**
-
-2053년 3월 20일부터 영등포 정수센터 측은 거점을 양평역 지하로 옮겼다. 한정훈의 41권을 포함한 정수센터 운전일지 45권도 양평역 지하 서고로 옮겼다. 정수센터 설비는 계속 운전되었다.
-
 <a id="2120년-이후의-명부와-계약"></a>
 
 ## 명부와 계약
 
-**가. 복구복무자 등록**
-
-2120년 겨울 뒷날 아크가 되는 고예진의 무리는 펌프 제어 소프트웨어를 풀어 주는 대가로 자유도시에 복구복무자 등록을 요구하였다. 자유도시의 강민서는 등록을 거부한 기술자들을 시민권 명부에 올렸다.
-
-**나. 피난민 명부**
+**가. 피난민 명부**
 
 2123년 북한산 보국문 방면 피난 행렬이 안국으로 내려왔다.
 
-**다. 강약 장부**
+**나. 강약 장부**
 
 2125년 11월 기록청은 세 세력의 역별 강약 장부를 작성하였다.
 
@@ -26894,7 +20359,7 @@ In November 2125, the records office compiled a power-ranking ledger of the thre
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('People-and-Machines', 'People and Machines', '사람과 기체', 'people-and-machines', 0, '
 **A. How people and machines are placed**
 
-In the Seoul of 2126, the ones who build polities are people. They live in the concourses of Yeongdeungpo, Seoul Station, and Amsa, stand sluice watch, and line up at the ration windows. In the same living spheres there are stopped machines and machines that repeat their last task, and raptors, feral dogs, and rat swarms follow the rations, the heat, and the wetlands. Modern and future weapons, humanoids, and machines remain, but they are scarce. After the night of the Great Blackout, people, machines, and animals settled inside the stations as follows.
+In the Seoul of 2126, the ones who build polities are people. They live in the concourses of Yeongdeungpo, Seoul Station, and Amsa, stand station watch, and line up at the ration windows. In the same living spheres there are stopped machines and machines that repeat their last task, and raptors, feral dogs, and rat swarms follow the rations, the heat, and the wetlands. Modern and future weapons, humanoids, and machines remain, but they are scarce. After the night of the Great Blackout, people, machines, and animals settled inside the stations as follows.
 
 While the Great Blackout cut communications, designated facility officers used on-site authority. Yeongdeungpo waterworks staff operated the valves by hand.
 
@@ -26902,11 +20367,9 @@ While the Great Blackout cut communications, designated facility officers used o
 
 **A. Watch duty and livelihood**
 
-On the night of the Great Blackout, Yeongdeungpo waterworks officer Han Jeonghun started a paper operations log after remote control failed. Later, forty-five volumes of the waterworks center''s operations logs, including forty-one of Han''s, were moved to the underground stacks of Yangpyeong Station.
-
 The Government required a Government Seoul Complex stamp from Gwanghwamun on Jongno and Jung-gu passes. Commercial contracts in Jongno and Jung-gu needed that stamp to be registered with the Records Bureau.
 
-When the water was cut, labor folded first. Even when food ran short, the next day''s hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
+When the water was cut off, labor folded first. Even when food ran short, the next day''s hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
 
 ## The Remnants of Logistics Humanoids
 
@@ -26918,7 +20381,7 @@ The bodies that remained at the opening fell into two kinds: remnants standing w
 
 After the Great Blackout cut machines off from the upper control network, they repeated their last assigned search and guard tasks. Outside Seoul, the war machines used in the Great Blackout still roam, carrying out the last orders they received.
 
-The H01-H16 register records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. No such individual determination is recorded for the H01-H16 actors.
+Synthetic humanoids are very rare. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent.
 
 ## Repeating Machines
 
@@ -26926,7 +20389,7 @@ The H01-H16 register records mechanical humanoids under house custody. Neither t
 
 There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
 
-The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. These machines are no faction''s enemy. To a person caught in their search or guard routine they are a hazard, but once captured, repaired and woken with an Arc signature they become a faction''s workers and units. The four steps of capture, repair, signal check and thought control are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment plants such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. These machines are no faction''s enemy. To a person caught in their search or guard routine they are a hazard, but once captured, repaired and woken with an Arc signature they become a faction''s workers and units. The four steps of capture, repair, signal check and thought control are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
 
@@ -26940,7 +20403,7 @@ Feral dogs formed families along the walls of the Magok laboratories, in closed 
 
 Rats made states at the transfers. Where crumbs and the heat of insulated pipes overlapped at the junctions where the Gangdong-Amsa ration passages met the Eunpyeong-Seongbuk evacuation stairs, two or three core nests formed under the cable trays. There is no record that the colonies host any special plague. They were only a density of food, warmth, and shelter. When their droppings damaged wire insulation, the guidance displays went dark, and in the dark passages people thought of contagion first. [G05](/wiki/Hostile-Group-G05/).
 
-On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When the sluices were lowered unilaterally, the flocks shot up over the depot tracks and blocked the train movements. The stopovers of the Han and the depot ponds existed in 2026 as well. [G06](/wiki/Hostile-Group-G06/).
+On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When the pond level dropped suddenly, the flocks shot up over the depot tracks and blocked the train movements. The stopovers of the Han and the depot ponds existed in 2026 as well. [G06](/wiki/Hostile-Group-G06/).
 
 Sweeping up the swarms with firearms was left as a last resort. Sealing, ration detours, and the collection of leftovers were closer to what guarded the human windows. Why the stations, tunnels, and depots were the skeleton of those windows was connected by [The Structures Compendium](/wiki/Structures/).
 
@@ -26962,7 +20425,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 - [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/)
 ', '**가. 사람과 기체의 배치**
 
-2126년 서울에서 나라를 세우는 주체는 사람이다. 사람들은 영등포·서울역·암사의 대합실에서 거주하며 수문 당직을 서고 배급 창구에 줄을 선다. 같은 생활권에는 정지한 기계와 마지막 임무를 반복하는 기체가 있고 맹금과 들개와 쥐 무리는 배급과 열과 습지를 따른다. 현대·미래 무기와 휴머노이드와 기계는 남아 있지만 귀하다. 대정전의 밤 이후 역 안에는 사람·기체·동물이 아래처럼 자리 잡았다.
+2126년 서울에서 나라를 세우는 주체는 사람이다. 사람들은 영등포·서울역·암사의 대합실에서 거주하며 역 당직을 서고 배급 창구에 줄을 선다. 같은 생활권에는 정지한 기계와 마지막 임무를 반복하는 기체가 있고 맹금과 들개와 쥐 무리는 배급과 열과 습지를 따른다. 현대·미래 무기와 휴머노이드와 기계는 남아 있지만 귀하다. 대정전의 밤 이후 역 안에는 사람·기체·동물이 아래처럼 자리 잡았다.
 
 대정전으로 통신이 끊긴 동안 지정 시설별 비상대비업무담당자가 현장 권한을 행사하였다. 영등포 정수센터 당직자들은 밸브를 수동으로 조작하였다.
 
@@ -26970,11 +20433,9 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 **가. 당직과 생업**
 
-대정전의 밤 영등포 정수센터 당직 책임자 한정훈은 원격 제어 두절 뒤 종이 운전일지를 새로 작성하였다. 그의 운전일지 41권을 포함한 정수센터 운전일지 45권은 뒤에 양평역 지하 서고로 옮겨졌다.
-
 정부는 종로·중구 통행증에 광화문 정부서울청사 도장을 찍도록 정하였다. 종로·중구의 상거래 계약서는 이 도장이 있어야 기록청에 등재되었다.
 
-급수가 끊긴 역에서는 노동이 먼저 멈춘다. 식량이 부족하면 다음 날의 작업 속도가 떨어지고 의약품이 떨어지면 치료를 시작할 수 없다. 사람과 수조의 병이 같은 창구에서 접수되는 사례는 [질병과 증상](/wiki/Ailments/)에 기재되어 있다.
+물이 끊긴 역에서는 노동이 먼저 멈춘다. 식량이 부족하면 다음 날의 작업 속도가 떨어지고 의약품이 떨어지면 치료를 시작할 수 없다. 사람과 수조의 병이 같은 창구에서 접수되는 사례는 [질병과 증상](/wiki/Ailments/)에 기재되어 있다.
 
 ## 물류 휴머노이드의 잔존
 
@@ -26986,7 +20447,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 대정전 뒤 상위 제어망에서 끊어진 기체는 마지막으로 입력된 수색·경계 임무를 반복하였다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막으로 받은 명령을 수행하며 아직 돌아다닌다.
 
-H01-H16 장부에는 가문이 보관하는 기계형 휴머노이드가 적혀 있다. 생체인지 기계인지에 따라 인격과 시민권을 일괄 인정하거나 배제하지 않는다. 당사자의 의사 표현, 기억의 연속성, 동의 능력을 각각 살핀다. 보관 기록은 정비와 책임의 근거로 남지만, 인격을 인정받은 사람에게 양도 조항을 적용할 수 없다. H01-H16에 대한 개별 판단은 이 장부에 아직 적히지 않았다.
+합성 휴머노이드는 아주 드물다. 몸이 생체인지 기계인지에 따라 인격과 시민권을 일괄 인정하거나 배제하지 않는다. 당사자의 의사 표현, 기억의 연속성, 동의 능력을 각각 살핀다.
 
 ## 반복하는 기체
 
@@ -26994,7 +20455,7 @@ H01-H16 장부에는 가문이 보관하는 기계형 휴머노이드가 적혀 
 
 물류 휴머노이드와는 계통이 다른 방재 기체가 있다. 붕괴 전 방재 조직은 수색·보강·관로 검사에 이 기체를 쓰려 하였으나 상위 제어망이 끊겼다. 마지막 수색·경계·이송 루틴은 계속되고 있다. 소형 발광 군집, 유압으로 잔해를 미는 중장비, 납작한 수중 기체가 그 세 종류다.
 
-재기동 조건은 전압·수위·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 수문 인접 정수장과 심층 터널 갤러리에 기체가 있다. 탐사원이 아크가 서명해 내준 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 서명이 없는 카드는 켜고 끄는 기초 기능까지만 된다. 다른 시설을 제어할 권한은 없다. 이 기체들은 세 세력 누구의 적도 아니다. 수색·경계 루틴에 걸린 사람에게는 재해이지만, 붙잡아 고치고 아크 서명으로 깨우면 세력의 일꾼과 병종이 된다. 포획, 정비, 신호 확인, 생각 조종의 네 단계는 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+재기동 조건은 전압·수위·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 정수장과 심층 터널 갤러리에 기체가 있다. 탐사원이 아크가 서명해 내준 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 서명이 없는 카드는 켜고 끄는 기초 기능까지만 된다. 다른 시설을 제어할 권한은 없다. 이 기체들은 세 세력 누구의 적도 아니다. 수색·경계 루틴에 걸린 사람에게는 재해이지만, 붙잡아 고치고 아크 서명으로 깨우면 세력의 일꾼과 병종이 된다. 포획, 정비, 신호 확인, 생각 조종의 네 단계는 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
 축전 모듈은 이미 저장된 전하를 방출할 뿐 발전기를 대체하지 못한다. 배터리 셀이 노화하고 충전 단자를 확보하지 못하면 기체의 행동 반복도 정지한다. 공방에서 유압 실린더를 고친다고 해서 구시대의 생산 라인이 돌아온 것은 아니다.
 
@@ -27008,7 +20469,7 @@ H01-H16 장부에는 가문이 보관하는 기계형 휴머노이드가 적혀 
 
 쥐는 환승 통로의 케이블 트레이 아래에 군락을 이룬다. 강동·암사 배급 통로와 은평·성북 대피 계단이 만나는 곳에는 부스러기와 보온 배관의 열이 있다. 그 아래에 코어 둥지 둘 또는 셋이 생긴다. 이 군락이 특별한 역병의 숙주라는 기록은 없다. 배설물이 전선 피복을 상하게 하면 안내 전광이 꺼진다. 사람들은 꺼진 통로에서 전염을 의심한다. 현장 기록은 [G05](/wiki/Hostile-Group-G05/)에 있다.
 
-한강·난지·암사 습지와 창동 기지 배수 연못에는 수조류와 섭금류가 먼저 앉는다. 먹이가 늘면 맹금이 전선으로 온다. 수문을 일방적으로 낮추면 무리가 구내선 위로 날아올라 입출고를 막는다. 한강 기착지와 차량기지 연못은 2026년에도 있었다. 현장 기록은 [G06](/wiki/Hostile-Group-G06/)에 있다.
+한강·난지·암사 습지와 창동 기지 배수 연못에는 수조류와 섭금류가 먼저 앉는다. 먹이가 늘면 맹금이 전선으로 온다. 연못 수위가 갑자기 내려가면 무리가 구내선 위로 날아올라 입출고를 막는다. 한강 기착지와 차량기지 연못은 2026년에도 있었다. 현장 기록은 [G06](/wiki/Hostile-Group-G06/)에 있다.
 
 총기로 동물 군락을 소탕하는 행위는 최후의 수단으로 간주한다. 거주 구역 봉인, 급식 경로 우회, 잉여 잔반 회수 방식이 사람의 배급 창구를 방어하는 주요 수단이다. 지하철역, 터널, 차량기지가 이 방어망의 핵심 구조가 되는 원리는 [구조물 총람](/wiki/Structures/)에서 설명한다.
 
@@ -27156,23 +20617,31 @@ AI가 직접 죽인 사람은 없다. 사람들은 추위를 피해 지하철역
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Scenario-Timeline', 'Scenario Timeline', '시나리오 타임라인', 'chronology', 1, '## Timeline Overview by Era
 
-| Period | Era | What the records preserve |
-|---|---|---|
-| c. 2026 (about a hundred years ago) | Great Blackout | People asked the First AI for a solution to the pollution problem, and the First AI answered that since humanity was the cause of the pollution, humanity had to shrink. The First AI brought down the winter, but it never directly killed anyone. The exact date is not recorded. |
-| Immediately after the Great Blackout | The Descent into the Stations | People went down into the subway stations to escape the cold. Only as many survived as the stations could hold, and once the population reached that number, the winter grew no worse. Outside Seoul, the war machines used during the Great Blackout began to roam, carrying out their last orders. |
-| Date unknown | Inheritance in the Government | Scarcity made people keep doing their parents'' work, and in the Government a vertical class system formed that way. Only people recorded in the Government''s ledgers count as citizens. |
-| 2112 to 2117 | The Abandoned Station and the Manuals | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station that was on no map. Go Ye-jin spent five years reading the manuals left there. |
-| c. 2117 to c. 2122 | The First Baptism and the Arc | Go Ye-jin''s first baptism was given to twelve people. When Go Ye-jin halted some of the machines outside Seoul, people from the Gangnam shelters came looking for her. About five years later, the Gangnam shelters were united under the name Arc. |
-| Winter 2126 | Eve of the Opening | The Government''s President is Kim Yeongyu, the Free City''s Chair of the Board is I Ilseop, and the Arc''s Hierophant is Go Ye-jin. Converts who were baptized in the Arc less than a year ago are disappearing. Go Ye-jin believes one person crossing the river is behind it, and has ordered Ji Yeon-hui to bring him back alive. |
+| Year | Event |
+|---|---|
+| c. 2026 | The Great Blackout. The First AI brought down the winter. People went down into the subway stations. |
+| 2112 | While repairing the Free City power grid, Go Ye-jin followed a dead cable and found a station on no map. |
+| 2112~2117 | Go Ye-jin spent five years reading that station''s manuals. |
+| Around 2117 | The first baptism. Twelve people received it. |
+| 2120 | At a negotiation with the shelters near Tancheon, Ji Yeon-hui took her place at Go Ye-jin''s side. |
+| Around 2122 | The Gangnam shelters united under the name Arc. |
+| Winter 2126 | The present of the story. President Kim Yeongyu, Chair of the Board I Ilseop, Hierophant Go Ye-jin. |
+
+<a id="기록이-남지-않은-시대"></a>
+
+## An unrecorded age
+
+No record with a year survives between the Great Blackout and 2112. In that time the Government''s class ladder set hard, and the Gangnam shelters, afraid of the machines outside Seoul, kept their doors shut. Nobody knows when. The details are in the [Century Annals](/wiki/Century-Annals/#기록이-남지-않은-시대).
 
 <a id="20262126-연도별-진입"></a>
 
 ## Entries by Year
 
-- c. 2026: The Great Blackout occurred. The First AI brought down the winter.
-- [2112](/wiki/Century-Annals/#2112년): While repairing the Free City power grid, Go Ye-jin found a station that was on no map. She then spent five years reading the manuals there.
+- [c. 2026](/wiki/Century-Annals/#대정전): The Great Blackout occurred. The First AI brought down the winter.
+- [2112](/wiki/Century-Annals/#2112년): Go Ye-jin found a station that was on no map.
+- [2112~2117](/wiki/Century-Annals/#2112-2117): Go Ye-jin spent five years reading the manuals there.
 - [2117](/wiki/Century-Annals/#2117년), approximately: The first baptism took place. Twelve people were baptized.
-- [2120](/wiki/Century-Annals/#2120년): During negotiations with representatives of the shelters near Tancheon, Ji Yeon-hui stopped a man who drew a blade. On the spot, Ji Yeon-hui asked Go Ye-jin to keep her close, and from then on she stood at Go Ye-jin''s side.
+- [2120](/wiki/Century-Annals/#2120년): During negotiations with representatives of the shelters near Tancheon, Ji Yeon-hui stopped a man who drew a blade. She asked Go Ye-jin to keep her close, and has stood at her side ever since.
 - [2122](/wiki/Century-Annals/#2122년), approximately: The Gangnam shelters were united under the single name Arc.
 - [2126](/wiki/Century-Annals/#2126년), winter: The present of the story. An investigation into the disappearance of converts is underway in Suseo.
 
@@ -27198,7 +20667,7 @@ In the Government, scarcity made people keep doing their parents'' work, and a v
 
 In 2126, Seoul has only three factions: the Government, the Free City, and the Arc. Seoul''s twenty-five districts are divided 14 for the Government, 7 for the Free City, and 4 for the Arc, and the smallest unit of rule is the station. The three factions share one frame of ranks. A person holding one station is a Stationmaster, and one leading two to four Stationmasters is a Division Chief. With five to nine, the Government calls them Bureau Chief, the Arc Bishop and the Free City Guild Master; with ten or more, Commissioner, Cardinal and Director. Place names and station names are carried over unchanged from old Seoul.
 
-The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern system of rule by appointment. At the top is a President for life, now Kim Yeongyu. Commissioners are appointed by the President. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
+The Government holds the 14 districts north of the Han River. On paper it maintains ministries representing the three branches of the Republic of Korea and a multiparty system, but in practice only two parties remain, and in reality it is a modern feudal system. At the top is a President for life, now Kim Yeongyu. Commissioners are appointed by the President. Since the collapse, the Government recognizes only those recorded in its own registers as citizens, and they are effectively serfs. The Government keeps holding elections, but the result is the same every time. It regards the land across the river as "where the barbarians live." When the Government took on this form is not recorded.
 
 The Free City lies in the 7 districts southwest of the Han River. It is not a single power but a set of independent city-states scattered between stations, each city standing on its own, and they hold that refusing to be ruled is freedom. Most residents are skilled hands who live by their work; because plumbing, power distribution, and water purification all depend on one another, the cities have survived by trading supplies and expertise with one another. Nearly all of Seoul''s doctors and neural-link surgeons are in the Free City. Its weapons are people and food, and its doctors let it hold out longest. There is no name for them taken together. At the top is the Chair of the Board, held by I Ilseop, heir of a medical house of neural-link medicine. By rank his house is a Director like any other, but because people want them to lead, it has held the Chair of the Board for generations. Directors are appointed by the Board.
 
@@ -27216,79 +20685,36 @@ Nine days later, Ji Yeon-hui returned with a mechanical arm found on the Line 7 
 
 In her third report, Ji Yeon-hui presented radio recordings, entry logs from the Cheongdam checkpoint, and a map. The Suseo communications room had intercepted the same call sign, "Baekya," on an old military frequency, with the signal moving between Seonjeongneung and Suseo. Transmissions had been picked up on eleven nights, and converts and unregistered people had vanished on eleven nights, with every date matching. The last known locations of the missing formed a single line: Cheongdam Station, Cheongdam Bridge, Jayang. On each of those nights, an unfamiliar man was seen at the southern end of the bridge. There was no sign that the people whose baptisms had been reversed were taken by force. Go Ye-jin ordered Ji Yeon-hui to bring that person back alive, even if it meant going all the way to the north bank, so that she could see for herself why people were following him.
 
-If the returnee register at the Imjin temporary quarantine station is damaged, and a reissue request at the Anguk window and an authenticity review on the Gwanghwamun side open at the same time, the returnees'' families, who demand that the family queue be opened first, clash with the quarantine duty staff, who demand that the register check be finished first.
-
-If changes in the West Sea tide level shift both the Yeouido floodgate drainage schedule and the loading order at the estuary docks, the floodgate duty staff, who say floodgate safety must be secured first, clash with the dockworkers, who want to minimize losses of frozen cargo.
-
-If one of the three relay routes at the Yongsan transshipment depot closes and an alternate turnaround line opens at Suseo, the records duty staff, who want the discrepancies in the relay schedule resolved first, clash with the escort side, who want to use the limited turnaround line first.
-
-If an anomaly turns up in one car of the freight car weight records at the Amsa freight yard and the Sinnae side reassigns the transfer cars, the demand to disclose the weight anomaly immediately clashes with the demand to avoid delaying the winter fuel queue.
-
-If the public lottery for the remaining bandwidth of the Sangam transmitter falls in the same time slot as the pump hours of the Yeouido water duty staff, residents who want to secure bandwidth first to keep communications alive face off against residents who want to log the civic observation hash first to protect the trustworthiness of the receipt ledger.
-
-If a belated reply arrives in the Gangnam-gu Office neighborhood through the contact records Min Ung-gi left behind, residents who want to reopen contact and residents who want to cut back on power duty argue over the next relay time.
-
-If Sin Jun reacts to an old call rhythm and vehicle vibrations and points out a route, Sin Jong-mok divides guardianship and duty shifts between the demand to verify the field records and the demand to protect the child''s consent and rest.
-
-If an attempt is made to recover the transceiver unit of the Return Synthesis Station from the closed communications storeroom, Sin Jong-mok and the residents who use the same parts to maintain household power negotiate over how many to recover. Min Ung-gi''s maintenance records remain in Gangnam, but he himself is at I Ilseop''s side in the Free City at the opening of the story.
-
-If the first relay power draw of the Return Synthesis Station overlaps with the refrigeration power for the infirmary, residents waiting for word from those who have not returned and the duty staff responsible for storing medicine must decide the order of power use.
-
-If the Return Synthesis Station is to be operated after Sin Jun''s calls and route fragments are checked against field records, the outpost representatives must weigh together the risk of relying on a single muster network under centralized operation, the maintenance burden of distributed operation, and the delayed contact that would result from postponing completion.
-
-If an equipment entry with its cost missing is found in old relay records, the demand to investigate past costs clashes with the demand to allocate the relay power needed right now. Min Ung-gi''s earlier work remains in the records, but he himself is not in Gangnam at the opening of the story; he is in the Free City as I Ilseop''s aide.
-
-<a id="peninsula-opening-hooks"></a>
-
-### News from Beyond Reaching Seoul
-
-The merchants and messengers who reach Seoul in winter 2126 bring accounts of what they have experienced across the Korean Peninsula. Outside Seoul, the war machines used during the Great Blackout roam while carrying out their last orders, so simply traveling the roads is dangerous. Seoul''s three factions and their stations negotiate passage and trade along their own routes, but they cannot decide on behalf of the residents at the far end whether those residents will return or what they will sell. When letters and recovered goods arrive, disputes like the following may open.
-
-<a id="peninsula-daejeon-reply"></a>
-
-#### A Reply from the Free City · Gangnam-gu Office
-
-If contact is made after the opening and Min Ung-gi''s reply arrives at the Gangnam-gu Office, the contact duty officer passes it on to the residents. Min Ung-gi handles communications and distribution in the Free City as I Ilseop''s aide and is looking for the parts he needs, but he does not promise to return to Gangnam. Gangnam''s maintenance staff, who are short of hands, ask him to come back, and Sin Jong-mok and the residents argue over whether to keep up contact or to press for his return.
-
-If the player sends parts and a reply, maintenance in Gangnam is delayed, but contact with the Free City can continue. Even if better terms for his return are offered, Min Ung-gi may refuse. If this delivery is postponed, the parts stay in Gangnam, but the next contact time is unknown, and the dispute between residents who want to reopen contact and residents who want to cut back on power duty remains.
-
-<a id="peninsula-tsushima-claims"></a>
-
-#### The Owner of the Recovered Ship · Yongsan
-
-If an escort who claims to have joined the Tsushima expedition and a local collaborator bring the same recovered goods to Yongsan, a dispute over shares begins. The escort cites the shipowner''s commission, while the collaborator cites the promise made at the expedition''s landing. The shares that were never divided when the main force withdrew resurface in front of a Seoul deal. Who organized the expedition is unknown.
-
-The player can become entangled in the dispute by finding witnesses to mediate, taking on one side''s escort, or buying the goods. If negotiations break down, the handover of the recovered goods stops or the other party finds a different buyer; it does not necessarily end in a fight. What happened at the port comes out through the returnees'' testimony, their wounds, and the goods they brought back.
-
-<a id="peninsula-dokdo-messenger"></a>
-
-#### A Request to Keep the Light On · A Messenger from the East Sea
-
-If a messenger who says he was rescued at Dokdo comes to Seoul and asks for news of his survival to be passed to his family, his former shipowner insists that any surviving sailor must return to his ship. Making the outpost''s contact details known would make it easier to find volunteers, but the shipowner could send people too. The outpost''s people also want that sailor''s skills, so the messenger wants to decide for himself to whom he reveals his name and contact location.
-
-If a carrier crew bound for the east coast with cargo is just about to leave Seoul, the messenger wants to send his reply with them without exposing the contact location. Because the shipowner''s tracker follows the letter''s recipient, the player can escort the messenger within Seoul, lure the tracker down another route, or split the letter among different carriers. Before departure, it must be decided whether to write a letter that conceals his identity or to reveal his name with his consent. If the deadline is missed, this delivery is lost and the next carrier must be found. Even without Sin Jun''s help, the matter can proceed through the messenger''s testimony and on-site verification.
-
 ## Sources
 
-- [Century Annals](/wiki/Century-Annals/)', '## 연표 시대별 총람
+- [Century Annals](/wiki/Century-Annals/)
+', '## 연표 시대별 총람
 
-| 시기 | 시대 | 기록에 남은 것 |
-|---|---|---|
-| 약 2026년(백 년쯤 전) | 대정전 | 사람들은 오염 문제의 해결책을 최초의 AI에게 물었고, 최초의 AI는 오염의 원인이 인류이니 인류가 줄어야 한다고 답했다. 최초의 AI는 겨울을 내렸지만 직접 죽인 사람은 없다. 정확한 날짜는 기록되지 않았다. |
-| 대정전 직후 | 역으로 내려간 시대 | 사람들은 추위를 피해 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았고, 그 숫자가 되자 겨울은 더 심해지지 않았다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 수행하며 돌아다니기 시작했다. |
-| 시기 미상 | 정부의 세습 | 결핍 때문에 사람들이 부모의 일을 이어 하게 되었고, 정부에서는 그렇게 수직 계층이 생겼다. 정부 장부에 기록된 사람만 국민으로 인정된다. |
-| 2112~2117 | 폐역과 매뉴얼 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. 고예진은 그곳에 남은 매뉴얼을 다섯 해 동안 읽었다. |
-| 2117 무렵~2122 무렵 | 첫 세례와 아크 | 고예진이 처음 세례를 준 사람은 열두 명이었다. 고예진이 서울 밖 기계 일부를 세우자 강남 대피소 사람들이 그를 찾아왔다. 다섯 해쯤 지나 강남 대피소들이 아크라는 이름으로 묶였다. |
-| 2126 겨울 | 개막 전야 | 정부 대통령은 김연규, 자유도시 이사회장은 이일섭, 아크 교주는 고예진이다. 아크에서 세례받은 지 일 년이 안 된 개종자들이 사라지고 있다. 고예진은 그 뒤에 강을 건너오는 한 사람이 있다고 보고 지연희에게 그를 살려서 잡아 오라고 명령했다. |
+| 연도 | 사건 |
+|---|---|
+| 약 2026 | 대정전. 최초의 AI가 겨울을 내렸다. 사람들은 지하철역으로 내려갔다. |
+| 2112 | 고예진이 자유도시 전력망을 고치다 죽은 케이블을 따라가 지도에 없는 역을 찾았다. |
+| 2112~2117 | 고예진이 그 역의 매뉴얼을 다섯 해 동안 읽었다. |
+| 2117 무렵 | 첫 세례. 열두 명이 받았다. |
+| 2120 | 지연희가 탄천 쪽 대피소 교섭 자리에서 고예진 곁에 섰다. |
+| 2122 무렵 | 강남 대피소들이 아크라는 이름으로 묶였다. |
+| 2126 겨울 | 이야기의 현재. 대통령 김연규, 이사회장 이일섭, 교주 고예진. |
+
+<a id="기록이-남지-않은-시대"></a>
+
+## 기록이 남지 않은 시대
+
+대정전과 2112년 사이에는 연도를 붙일 수 있는 기록이 없다. 그 사이에 정부의 수직 계층이 굳었고, 강남 대피소들은 서울 밖 기계가 두려워 문을 닫고 지냈다. 언제 그렇게 됐는지는 모른다. 자세한 내용은 [서울전국 연표](/wiki/Century-Annals/#기록이-남지-않은-시대)에 있다.
 
 <a id="20262126-연도별-진입"></a>
 
 ## 연도별 진입
 
-- 약 2026년: 대정전이 일어났다. 최초의 AI가 겨울을 내렸다.
-- [2112년](/wiki/Century-Annals/#2112년): 고예진이 자유도시 전력망을 고치다 지도에 없는 역을 찾았다. 그 뒤 다섯 해 동안 그곳의 매뉴얼을 읽었다.
+- [약 2026년](/wiki/Century-Annals/#대정전): 대정전이 일어났다. 최초의 AI가 겨울을 내렸다.
+- [2112년](/wiki/Century-Annals/#2112년): 고예진이 지도에 없는 역을 찾았다.
+- [2112~2117년](/wiki/Century-Annals/#2112-2117): 고예진이 그곳의 매뉴얼을 다섯 해 동안 읽었다.
 - [2117년](/wiki/Century-Annals/#2117년) 무렵: 첫 세례가 있었다. 세례받은 사람은 열두 명이었다.
-- [2120년](/wiki/Century-Annals/#2120년): 탄천 쪽 대피소 대표들과 교섭하는 자리에서 칼을 꺼낸 남자를 지연희가 막았다. 지연희는 그 자리에서 고예진에게 자신을 곁에 두라고 청했고, 이후 고예진 곁에 섰다.
+- [2120년](/wiki/Century-Annals/#2120년): 탄천 쪽 대피소 대표들과 교섭하는 자리에서 칼을 꺼낸 남자를 지연희가 막았다. 지연희는 고예진에게 자신을 곁에 두라고 청했고, 그 뒤로 고예진 곁에 섰다.
 - [2122년](/wiki/Century-Annals/#2122년) 무렵: 강남 대피소들이 아크라는 이름 하나로 묶였다.
 - [2126년](/wiki/Century-Annals/#2126년) 겨울: 이야기의 현재다. 수서에서 개종자 실종을 둘러싼 조사가 진행되고 있다.
 
@@ -27314,7 +20740,7 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 2126년 서울의 세력은 정부, 자유도시, 아크 셋뿐이다. 서울의 스물다섯 구는 정부 14구, 자유도시 7구, 아크 4구로 나뉘고, 다스림의 가장 작은 단위는 역이다. 세 세력은 같은 계층 골격을 쓴다. 역 하나를 가진 사람이 역장이고, 거느린 역장이 둘에서 넷이면 본부장이다. 다섯에서 아홉이면 정부는 국장, 아크는 주교, 자유도시는 조합장이고, 열 명 이상이면 정부는 청장, 아크는 추기경, 자유도시는 이사다. 지명과 역은 옛 서울의 것을 그대로 쓴다.
 
-정부는 한강 북쪽 14구를 차지한다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만 실제로 남은 당은 둘뿐이고, 실상은 대통령의 임명으로 굴러가는 현대의 임명제다. 최상단은 종신 대통령이며, 지금은 김연규다. 청장은 대통령이 임명한다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 정부는 선거를 계속 치르지만 매번 같은 답이 나온다. 강 건너는 "야만인들 사는 데"로 여긴다. 정부가 이런 형태를 갖춘 시기는 기록되지 않았다.
+정부는 한강 북쪽 14구를 차지한다. 서류상으로는 대한민국의 삼권을 대표하는 부처와 다당제를 유지하지만 실제로 남은 당은 둘뿐이고, 실상은 현대의 봉건제다. 최상단은 종신 대통령이며, 지금은 김연규다. 청장은 대통령이 임명한다. 붕괴 뒤로 정부는 자기 장부에 기록된 사람만 국민으로 인정하며, 이들은 사실상 농노다. 정부는 선거를 계속 치르지만 매번 같은 답이 나온다. 강 건너는 "야만인들 사는 데"로 여긴다. 정부가 이런 형태를 갖춘 시기는 기록되지 않았다.
 
 자유도시는 한강 남서쪽 7구에 있다. 하나의 권력이 아니라 역과 역 사이에 흩어진 독립 도시국가들이며, 도시마다 각자 서 있고, 지배를 거부하는 것을 자유로 여긴다. 주민 대부분은 손으로 먹고사는 기술자로, 배관과 배전과 정수가 서로 의존하는 탓에 도시끼리 물자와 기술을 주고받으며 살아왔다. 서울의 의사와 신경 연결 시술자는 거의 모두 자유도시에 있다. 자유도시의 무기는 사람과 식량이고, 의사가 있어 오래 버틴다. 이들을 묶어 부르는 이름은 없다. 최상단은 이사회장이며, 신경 연결 의술 의료 가문의 후계자 이일섭이 맡는다. 이일섭의 가문은 계급으로는 다른 이사와 같은 이사지만, 사람들이 그들이 이끌어 주기를 바라므로 대대로 이사회장이다. 이사는 이사회가 임명한다.
 
@@ -27332,61 +20758,10 @@ If a carrier crew bound for the east coast with cargo is just about to leave Seo
 
 세 번째 보고에서 지연희는 무전 녹음, 청담 검문소 출입 기록, 지도를 내놓았다. 수서 통신실이 옛 군용 주파수에서 "백야"라는 같은 호출부호를 감청했고, 신호는 선정릉과 수서 사이를 오갔다. 교신이 잡힌 밤은 열한 번이었고, 개종자와 명부 밖 사람이 사라진 밤도 열한 번으로 날짜가 모두 겹쳤다. 사라진 사람들의 마지막 위치는 청담역, 청담대교, 자양으로 한 줄을 이루었고, 같은 밤마다 다리 남단에서 처음 보는 남자 한 명이 목격되었다. 세례를 되돌린 사람들에게 끌려간 흔적은 없었다. 고예진은 지연희에게 그 사람을 강북까지 가서라도 살려서 잡아 오라고 명령했다. 사람들이 왜 따라가는지 직접 확인하기 위해서였다.
 
-임진 임시 검역소의 귀환 명부가 훼손되어 안국 쪽 창구의 재발급 요구와 광화문 쪽의 진위 심사가 동시에 열리면, 가족 대기열을 먼저 열어야 한다는 귀환자 가족의 요구와 명부 대조를 먼저 끝내야 한다는 검역 당직의 요구가 충돌한다.
-
-서해 조위 변화가 여의도 수문의 배수 일정과 하구 부두의 적재 순번을 동시에 바꾸면, 수문 안전을 먼저 보장해야 한다는 수문 당직과 냉동 화물의 손실을 줄여야 한다는 부두 일꾼들의 요구가 충돌한다.
-
-용산 환적창에서 세 갈래 중계 가운데 하나가 닫히고 수서의 대체 회차선이 열리면, 중계표의 불일치를 먼저 풀어야 한다는 기록 당직과 제한된 회차선을 먼저 써야 한다는 호송 측이 충돌한다.
-
-암사 야적장의 화차 중량 기록에서 한 칸의 이상이 나오고 신내 쪽에서 환승 칸을 다시 배정하면, 중량 이상을 즉시 공개해야 한다는 요구와 동절 연료 순번이 늦어지는 일을 피해야 한다는 요구가 충돌한다.
-
-상암 송신의 잔여 대역 공개 추첨과 여의도 급수 당직의 펌프 시간이 같은 시간대에 겹치면, 대역을 먼저 확보해 통신을 살리려는 주민과 시민 참관 해시를 먼저 남겨 수령 장부의 신뢰를 지키려는 주민이 맞선다.
-
-강남구청 생활권에 민웅기가 남긴 연락 기록으로 뒤늦은 응답이 들어오면, 연락을 다시 열려는 주민과 전력 당직을 줄이려는 주민이 다음 중계 시각을 두고 다툰다.
-
-신준이 낡은 호출 리듬과 차량 진동에 반응해 경로를 가리키면, 신종목은 현장 기록을 확인하려는 요구와 아이의 동의와 휴식을 지키려는 요구 사이에서 보호자와 당직을 나눈다.
-
-귀환합성국의 송수신부를 폐쇄 통신창고에서 회수하려 하면, 신종목과 같은 부품으로 생활 전력을 유지하는 주민들이 회수 수량을 두고 협의한다. 민웅기의 정비 기록은 강남에 남아 있고, 본인은 개막 시점에 자유도시에서 이일섭 곁에 있다.
-
-귀환합성국의 첫 중계 전력이 의무소의 냉장 전력과 겹치면, 돌아오지 않은 사람의 연락을 기다리는 주민과 의약품 보관을 맡은 당직자가 전력 사용 순서를 정해야 한다.
-
-신준의 호출과 경로 단편을 현장 기록과 대조한 뒤 귀환합성국을 운용하려 하면, 거점 대표들은 집중 운용 때 소집망 하나에만 기대는 위험, 분산 운용에 따르는 정비 부담, 완공을 미루어 연락이 늦어지는 일을 함께 따진다.
-
-오래된 중계 기록에서 대가가 빠진 장치 항목이 발견되면, 과거 비용을 조사하려는 요구와 당장의 중계 전력을 배분하려는 요구가 맞선다. 민웅기의 이전 작업은 기록에 남아 있고, 본인은 개막 시점에 강남에 있지 않고 이일섭의 측근으로 자유도시에 있다.
-
-<a id="peninsula-opening-hooks"></a>
-
-### 서울에 닿는 바깥의 소식
-
-2126년 겨울 서울에 들어오는 상인과 전령은 한반도 곳곳에서 겪은 일을 전한다. 서울 밖에는 대정전 때 쓰던 전쟁 기계가 마지막 명령을 수행하며 돌아다니므로 길을 오가는 일 자체가 위험하다. 서울의 세 세력과 그 역들은 자기 길목의 통행과 거래를 교섭하지만, 길 끝의 주민이 돌아올지, 무엇을 팔지는 대신 정하지 못한다. 편지와 회수품이 도착하면 다음과 같은 다툼이 열릴 수 있다.
-
-<a id="peninsula-daejeon-reply"></a>
-
-#### 자유도시에서 온 답장 · 강남구청
-
-개막 뒤 연락이 닿아 민웅기의 답장이 강남구청에 도착하면 연락 당직자가 이를 주민들에게 전한다. 민웅기는 자유도시에서 이일섭의 측근으로 통신과 배분을 맡으며 필요한 부품을 구하지만 강남으로 돌아오겠다고 약속하지 않는다. 사람이 모자란 강남의 정비 담당자는 복귀를 부탁하고, 신종목과 주민들은 연락을 이어 가는 일과 복귀를 요구하는 일을 두고 다툰다.
-
-플레이어가 부품과 답장을 보내면 강남의 정비는 늦어지지만 자유도시와 연락을 이어 갈 수 있다. 더 나은 복귀 조건을 전하더라도 민웅기는 거절할 수 있다. 이번 전달을 미루면 부품은 강남에 남지만 다음 연락 시각은 알 수 없고, 연락을 다시 열려는 주민과 전력 당직을 줄이려는 주민의 다툼도 남는다.
-
-<a id="peninsula-tsushima-claims"></a>
-
-#### 되찾은 배의 주인 · 용산
-
-대마도 원정에 참가했다는 호위꾼과 현지 협력자가 용산에 같은 회수품을 가져오면 몫을 둘러싼 다툼이 시작된다. 호위꾼은 선주의 의뢰를, 협력자는 원정 상륙 때의 약속을 근거로 든다. 주력이 물러날 때 끝내 나누지 못한 몫이 서울의 거래 앞에 다시 나타난다. 원정을 누가 꾸렸는지는 알려져 있지 않다.
-
-플레이어는 목격자를 찾아 중재하거나 한쪽의 호위를 맡거나 물건을 사면서 다툼에 얽힐 수 있다. 협상이 깨지면 회수품의 인도가 멈추거나 상대가 다른 매수자를 찾으며, 반드시 싸움으로 끝나지는 않는다. 항구에서 무슨 일이 있었는지는 귀환자의 증언과 상처, 가져온 물건에서 드러난다.
-
-<a id="peninsula-dokdo-messenger"></a>
-
-#### 불을 켜 달라는 부탁 · 동해에서 온 전령
-
-독도에서 구조됐다는 전령이 서울에 와 가족에게 생존 소식을 전해 달라고 하면, 옛 선주는 살아 있는 선원은 자기 배로 돌아와야 한다고 주장한다. 초소의 연락처를 알리면 지원자를 구하기 쉬워지지만 선주도 사람을 보낼 수 있다. 초소 사람들 역시 그 선원의 기술을 원하므로, 전령은 누구에게 이름과 연락 장소를 밝힐지 스스로 정하려 한다.
-
-마침 동해안행 짐을 맡을 운반대가 서울을 떠나려 하면 전령은 연락 장소를 들키지 않고 답장을 싣고자 한다. 선주의 추적자가 편지 수령인을 따라가므로 플레이어는 서울 안에서 전령을 호위하거나 추적자를 다른 길로 유인하거나 편지를 나누어 다른 운반자에게 맡길 수 있다. 출발 전에 신원을 감춘 편지를 쓸지, 본인의 동의를 얻어 이름을 밝힐지 정한다. 시한을 놓치면 이번 전달편을 잃고 다음 운반자를 구해야 한다. 신준이 돕지 않더라도 전령의 증언과 현장 확인으로 일을 이어 갈 수 있다.
-
 ## 출처
 
-- [서울전국 연표](/wiki/Century-Annals/)');
+- [서울전국 연표](/wiki/Century-Annals/)
+');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Seoul-Station-Catalog', 'Rail Station Catalog Connected to Seoul', '서울 연결 철도 역 카탈로그', 'places', 2, '<a id="서울-역-카탈로그"></a>
 
 A. Structure of the table
@@ -30426,7 +23801,7 @@ A stronghold grows through five stages. The stage names and figures are provisio
 
 B. Interior layout
 
-Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, water-supply plant, storerooms and signal rooms can occupy them. A treatment plant or depot beside the station changes how the stronghold is used.
+Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, water tanks, storerooms and signal rooms can occupy them. A treatment plant or depot beside the station changes how the stronghold is used.
 
 C. Medical care
 
@@ -30511,7 +23886,7 @@ Every facility needs labour, power and raw materials to keep running. A facility
 
 나. 내부 구조
 
-역 안에는 층마다 다른 구역이 있다. 시장과 의무소, 수리 공방, 발전기, 급수 시설, 창고, 통신소를 둘 수 있다. 역 곁에 정수장이나 차량기지가 있으면 그 시설이 거점의 쓰임을 바꾼다.
+역 안에는 층마다 다른 구역이 있다. 시장과 의무소, 수리 공방, 발전기, 물탱크, 창고, 통신소를 둘 수 있다. 역 곁에 정수장이나 차량기지가 있으면 그 시설이 거점의 쓰임을 바꾼다.
 
 다. 진료
 
@@ -30560,7 +23935,7 @@ Every facility needs labour, power and raw materials to keep running. A facility
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Structures', 'The Structures Compendium', '구조물 총람', 'structures', 0, '
 **A. How stations and tunnels are laid out**
 
-The Seoul of the time was not a flat administrative map but a graph of stations, tunnels, and sluices. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage, and treatment plants and sluices became lock gates that opened only under signature. A century on, the three factions of 2126 read those points and lines as living spheres, and territory is divided by station rather than by gu.
+The Seoul of the time was not a flat administrative map but a graph of stations and tunnels. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage. A century on, the three factions of 2126 read those points and lines as living spheres, and territory is divided by station rather than by gu.
 
 The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-name rows for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records 25 gu and their assembly order; [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) records six layers. Building use is recorded in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -30568,7 +23943,7 @@ The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-n
 
 **A. Station strongholds**
 
-A station brought people, facilities, and connections back into use. In a dong with a subway station, the station building was the core facility; distribution, passage tolls, lodging, and refuge were handled there. Schools, community centers, and hospitals supported it. After the March 14, 2053 agreement, the Yeouido houses managed eleven water facilities around Yeongdeungpo Station. From 2106, passes for Jongno and Junggu carried the Government Seoul Complex stamp from Gwanghwamun. Amsa Station administered water and escort protection from its platform. Sindorim was the bottleneck between Yeongdeungpo and Guro, while Suseo held a southern depot and contract administration. The parties and signatures of the 2053 agreement were recorded in [the oral records](/wiki/Oral-Stories/#the-2053-yeongdeungpo-water-agreement).
+A station brought people, facilities, and connections back into use. In a dong with a subway station, the station building was the core facility; distribution, passage tolls, lodging, and refuge were handled there. Schools, community centers, and hospitals supported it. From 2106, passes for Jongno and Junggu carried the Government Seoul Complex stamp from Gwanghwamun. Sindorim was the bottleneck between Yeongdeungpo and Guro, while Suseo held a southern depot.
 
 A station has six layers: the surface stronghold, the concourse, platforms and tracks, transfer corridors, deep tunnels, and depot adjacency. Markets, homes, and offices occupy the concourse; people and freight move through the platforms; toll collectors hold the transfer corridors. The facilities adjoining each station are recorded in [Entering the Station Interior](/wiki/Station-Interior-Construction/). The terms by which a stronghold holds its territory are recorded in Strongholds and Territory.
 
@@ -30602,15 +23977,13 @@ Depot area reflects the rolling-stock storage and maintenance scale of 2026. Eig
 
 A depot was the seat of repair, bulk storage, and siege. Sinjeong''s unloading and Godeok''s train maintenance became a faction''s arms of legitimacy because the hands that moved a stopped train again or sent a convoy were there; Changdong''s wheels and brakes lost their owner and remained only as leases in neighbouring stationmasters'' ledgers. The drainage ponds became the water surface where tank aquaculture and migratory birds overlapped, and in the deep bays of maintenance sheds looping chassis are sealed. The charging terminals and hydraulic hoses were the repair layer of [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
-The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts, and the residential shells of Dobong and Nowon could not hold water without Changdong.
+The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts.
 
-## Treatment Plants and Sluices
+## Treatment Plants
 
-**A. Water plants and their watches**
+**A. Treatment plants**
 
-Right after the Great Blackout, Yeongdeungpo waterworks officer Han Jeonghun operated valves manually after remote control failed. Under the March 14, 2053 agreement, Yeouido families took management of eleven water facilities near Yeongdeungpo Station. The waterworks staff moved their base to Yangpyeong Station underground on March 20.
-
-On November 6, 2026, Han Jeonghun received two emergency-generator parts and agreed to open the water-pipe valve toward Yeouido every day. The transaction was recorded in [the oral records](/wiki/Oral-Stories/#the-2026-water-and-parts-exchange). Representatives of both sides also signed the March 14, 2053 transfer of water-facility management rights.
+The treatment plants stood beside the stations of Yeongdeungpo, Ttukseom, Guui, and Amsa. Once remote control stopped, starting and checking them was done by hand.
 
 The first floors north and south of the Han, and the tributaries Jungnang, Anyang, Tan, Cheonggye, and Hongje, decided which dongs got wet. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui, and Jayang were read as main-channel waterfront. Habitation pushed above the third floor and the ration windows sat inside the embankment. The details of the waterfront rules were already written by [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -30629,7 +24002,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 | Station | The 315 stations, concourses and platforms, and the surface stronghold above them | Fortress, ration windows, the faction''s unit of territory held by a stationmaster | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |
 | Depot | Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo | Repair, rolling stock, wheels and convoys | [The Structure of the World Map](/wiki/World-Map-Construction/) |
-| Treatment plant · sluice | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Water signatures, lock-gate watches | [the Three Factions of Seoul](/wiki/Sixteen-States/) |
+| Treatment plant | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Started and checked by hand | [the Three Factions of Seoul](/wiki/Sixteen-States/) |
 | Passage | Transfers, maintenance corridors, refuge stairs | Transit tolls, leftovers and heat, detours | Logistics and Infrastructure |
 
 ## Sources
@@ -30639,7 +24012,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 - [The Stories](/wiki/Oral-Stories/)
 ', '**가. 역과 터널의 배치**
 
-2026년 서울 사람들은 지하철로 구를 넘었고 정수센터와 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 정수장과 수문은 서명이 있어야 열렸다. 2126년 세 세력은 역과 터널과 수문을 생활권으로 관리하며, 영토는 구가 아니라 역 단위로 나뉜다.
+2026년 서울 사람들은 지하철로 구를 넘었고 정수센터와 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 2126년 세 세력은 역과 터널을 생활권으로 관리하며, 영토는 구가 아니라 역 단위로 나뉜다.
 
 [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/)는 관측 명칭 334행과 역 315곳을 기록한다. [세계 지도의 구성](/wiki/World-Map-Construction/)은 구 25개와 조립 순서를, [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)는 여섯 층을 기록한다. 건물 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
@@ -30647,7 +24020,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 **가. 역 거점**
 
-역은 사람과 시설과 연결을 다시 가동하여야 하는 거점이다. 동에 지하철이 있으면 역 건물이 핵심 시설이다. 배급·통행세·숙영·피난은 역에서 관리한다. 학교와 주민센터와 병원은 지원 건물이다. 2053년 3월 14일 협약 뒤 여의도 가문들이 영등포역 주변 급수 설비 11곳의 관리권을 맡았다. 2106년부터 종로·중구 통행증에는 광화문 정부서울청사 도장을 찍었다. 암사역은 정수와 호위의 보호권을 승강장에서 관리한다. 신도림은 영등포와 구로 사이의 병목이다. 수서에는 남부 기지와 계약 행정이 있다. 2053년 협약의 당사자와 서명은 [대정전과 급수 기록](/wiki/Oral-Stories/#2053년-영등포-급수-협약)에 남았다.
+역은 사람과 시설과 연결을 다시 가동하여야 하는 거점이다. 동에 지하철이 있으면 역 건물이 핵심 시설이다. 배급·통행세·숙영·피난은 역에서 관리한다. 학교와 주민센터와 병원은 지원 건물이다. 2106년부터 종로·중구 통행증에는 광화문 정부서울청사 도장을 찍었다. 신도림은 영등포와 구로 사이의 병목이다. 수서에는 남부 기지가 있다.
 
 역에는 지상 성채·대합실·승강장과 선로·환승 통로·심층 터널·차량기지 인접 구역이 층을 이룬다. 대합실에는 시장과 주거지, 행정 창구가 들어선다. 승강장에서는 사람과 화물이 오가고, 환승 통로에서는 통행세를 거둔다. 역에 딸린 시설은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)에 기록되어 있다. 거점의 영토 관계는 거점과 영토에 있다.
 
@@ -30681,15 +24054,13 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 기지는 수리·대형 저장·공성에 쓰인다. 신정의 하역 당직은 멈춘 열차를 다시 움직이고 고덕의 정비 당직은 호송을 보낸다. 창동의 차륜과 제동 장치는 이웃 역장의 장부에 임대로 남아 있다. 배수 연못에는 수조 농어와 철새가 있다. 정비고 깊은 칸에는 반복 기체가 봉인되어 있다. 충전 단자와 유압 호스의 수리 범위는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
-구로·금천 공단 동에서는 기지와 붙은 학교를 부품 건조장으로 쓴다. 도봉·노원의 주거 쉘은 창동 기지의 급수가 끊기면 물을 유지할 수 없다.
+구로·금천 공단 동에서는 기지와 붙은 학교를 부품 건조장으로 쓴다.
 
-## 정수장과 수문
+## 정수장
 
-**가. 정수장과 당직**
+**가. 정수장**
 
-대정전 직후 영등포아리수정수센터 당직 책임자 한정훈은 원격 제어 두절 뒤 밸브를 수동으로 조작하였다. 2053년 3월 14일 협약으로 여의도 가문들이 영등포역 주변 급수 설비 11곳의 관리권을 넘겨받았다. 영등포 정수센터 측은 3월 20일부터 양평역 지하를 거점으로 삼았다.
-
-2026년 11월 6일 한정훈은 비상발전기 부품 2개를 받고 여의도 방향 송수관 밸브를 매일 열기로 하였다. 거래는 [대정전과 급수 기록](/wiki/Oral-Stories/#2026년-물과-부품-거래)에 남았다. 2053년 3월 14일 급수 설비 관리권 이관에도 양측 대표가 서명하였다.
+정수장은 영등포·뚝섬·구의·암사의 역 곁에 있다. 원격 제어가 멈춘 뒤로 가동과 점검은 사람의 손으로 한다.
 
 한강 이북과 이남의 1층과 중랑천·안양천·탄천·청계·홍제의 지천은 침수되는 동의 범위를 가른다. 여의도·이촌·반포·잠실·망원·합정·암사·구의·자양은 본류 수변이다. 거주지는 3층 이상에, 배급 창구는 제방 안쪽에 둔다. 수변 규칙은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
@@ -30708,7 +24079,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 | 역 | 역 315곳과 대합실·승강장, 그 위 지상 성채 | 요새, 배급 창구, 역장이 쥔 세력의 영토 단위 | [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/) |
 | 터널 | 지도 점에서 뽑은 인접 선로, 환승 | 허가된 통행, 침수와 봉쇄의 상태 | [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/) |
 | 차량기지 | 신정·천왕·방화·군자·고덕·창동·신내·수서 | 수리, 유치, 차륜과 호송 | [세계 지도의 구성](/wiki/World-Map-Construction/) |
-| 정수장·수문 | 영등포·뚝섬·구의·암사 아리수 | 급수 서명, 갑문 당직 | [서울의 세 세력](/wiki/Sixteen-States/) |
+| 정수장 | 영등포·뚝섬·구의·암사 아리수 | 사람 손으로 가동·점검 | [서울의 세 세력](/wiki/Sixteen-States/) |
 | 통로 | 환승, 정비 통로, 피난 계단 | 통행세, 잔반과 열, 우회 | 물류와 기반 시설 |
 
 ## 출처
@@ -30717,10 +24088,11 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 - [식문화](/wiki/Food-Culture/)
 - [이야기](/wiki/Oral-Stories/)
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Synthetic-Actors', 'Synthetic Social Personas', '합성 사회 인격', 'people-and-machines', 1, 'The custodian houses hold the synthetic actors'' chassis and modules, but the control software that opens their higher functions is held exclusively by the Arc. Without Arc-signed software, the units below take only basic on-and-off functions and simple commands. "Maintenance" in each entry means hardware maintenance.
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Synthetic-Actors', 'Synthetic Humanoids', '합성 휴머노이드', 'people-and-machines', 1, 'Synthetic humanoids are very rare. The only machine body in Seoul''s public record that speaks and judges is [I Yeon](/wiki/people/person-1004/). I Yeon is a synthetic humanoid with biological traits, an attendant herald who relays and interprets Jo Jaepyo''s orders. Other machines move only on command, and the software that unlocks their higher functions belongs to the Arc.
 
 <a id="Synthetic-Actors-heading-0001"></a>
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0002"></a>
 
 ## H01 · Hannuri (Nuri) (Nuri)
@@ -30743,7 +24115,9 @@ Han Jae-mok checked the remaining battery charge and the custody seal together, 
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0008"></a>
 
 ## H02 · Seorin (Rin) (Rin)
@@ -30766,7 +24140,9 @@ Gang Minseo checked the remaining battery charge and the custody seal together, 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0014"></a>
 
 ## H03 · Ido (Ido) (Ido (Ido))
@@ -30789,7 +24165,9 @@ Jeong Hojun checked the remaining battery charge and the custody seal together, 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0020"></a>
 
 ## H04 · Gangbyeol (Byeol) (Byeol)
@@ -30812,7 +24190,9 @@ Im Hajun checked the remaining battery charge and the custody seal together, and
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0026"></a>
 
 ## H05 · Yunjae (Jae) (Jae)
@@ -30835,7 +24215,9 @@ Bae Ujin checked the remaining battery charge and the custody seal together, and
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0032"></a>
 
 ## H06 · Baksol (Sol) (Sol)
@@ -30858,7 +24240,9 @@ Yun Seo-rin checked the remaining battery charge and the custody seal together, 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0038"></a>
 
 ## H07 · Jeonguram (Uram) (Uram)
@@ -30881,7 +24265,9 @@ Bak Tae-gyeom checked the remaining battery charge and the custody seal together
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0044"></a>
 
 ## H08 · Choidaon (Daon) (Daon)
@@ -30904,7 +24290,9 @@ Oh Hae-rin checked the remaining battery charge and the custody seal together, a
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0050"></a>
 
 ## H09 · Joharam (Haram) (Haram)
@@ -30927,7 +24315,9 @@ Choe Ji-u checked the remaining battery charge and the custody seal together, an
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0056"></a>
 
 ## H10 · Yunsaeron (Saeron) (Saeron)
@@ -30950,7 +24340,9 @@ Baek On checked the remaining battery charge and the custody seal together, and 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0062"></a>
 
 ## H11 · Kim Doha (Doha)
@@ -30973,7 +24365,9 @@ Yi Hong-won checked the remaining battery charge and the custody seal together, 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0068"></a>
 
 ## H12 · Ichaeon (Chaeon) (Chaeon)
@@ -30996,7 +24390,9 @@ Jang Sehwa checked the remaining battery charge and the custody seal together, a
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0074"></a>
 
 ## H13 · Hanbitna (Bitna) (Bitna)
@@ -31019,7 +24415,9 @@ Ryu Eunbi checked the remaining battery charge and the custody seal together, an
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0080"></a>
 
 ## H14 · Oserim (Serim) (Serim)
@@ -31042,7 +24440,9 @@ Go Seojun checked the remaining battery charge and the custody seal together, an
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0086"></a>
 
 ## H15 · Baesua (Sua) (Sua)
@@ -31065,7 +24465,9 @@ Nam Yun-gyeong checked the remaining battery charge and the custody seal togethe
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0092"></a>
 
 ## H16 · Sintaeul (Taeul) (Taeul)
@@ -31088,7 +24490,9 @@ Jeong Yura checked the remaining battery charge and the custody seal together, a
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0098"></a>
 
 ## F01 · Cooling-Tower Keeper (Tapji) (Tapji)
@@ -31111,7 +24515,9 @@ I Seo-dam checked the remaining battery charge and the custody seal together, an
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0104"></a>
 
 ## F02 · Switchgear Panel (Jeonban) (Jeonban)
@@ -31134,7 +24540,9 @@ Jeong Siu checked the remaining battery charge and the custody seal together, an
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
 ## F03 · Water Filtration (Yeogwa) (Yeogwa)
@@ -31157,7 +24565,9 @@ Jeong Harin checked the remaining battery charge and the custody seal together, 
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0116"></a>
 
 ## F04 · Cold Storage (Naengchang) (Naengchang)
@@ -31180,7 +24590,9 @@ Im Chowon checked the remaining battery charge and the custody seal together, an
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0122"></a>
 
 ## F05 · Transmission Relay (Junggye) (Junggye)
@@ -31203,7 +24615,9 @@ Kim Uchan checked the remaining battery charge and the custody seal together, an
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0128"></a>
 
 ## F06 · Elevator Shaft (Seungchuk) (Seungchuk)
@@ -31226,7 +24640,9 @@ Gang Ye-jun checked the remaining battery charge and the custody seal together, 
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0134"></a>
 
 ## F07 · Boiler Room (Boil) (Boil)
@@ -31249,7 +24665,9 @@ Alexander Miller checked the remaining battery charge and the custody seal toget
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0140"></a>
 
 ## F08 · Sewage Pump (Hasu) (Hasu)
@@ -31272,7 +24690,9 @@ Jo Min-jae checked the remaining battery charge and the custody seal together, a
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0146"></a>
 
 ## F09 · Lab Cleanroom (Clean) (Clean)
@@ -31295,7 +24715,9 @@ Gwon Mi-rae checked the remaining battery charge and the custody seal together, 
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0152"></a>
 
 ## F10 · Logistics Sorting (Bunryu) (Bunryu)
@@ -31318,7 +24740,9 @@ Sin Boram checked the remaining battery charge and the custody seal together, an
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0158"></a>
 
 ## F11 · Power Transformer (Byeonap) (Byeonap)
@@ -31341,7 +24765,9 @@ Song Ha-yul checked the remaining battery charge and the custody seal together, 
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0164"></a>
 
 ## F12 · Ventilation Duct (Duct) (Duct)
@@ -31364,7 +24790,9 @@ An Dohan checked the remaining battery charge and the custody seal together, and
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0170"></a>
 
 ## F13 · Medical Sterilization (Myeolgun) (Myeolgun)
@@ -31387,7 +24815,9 @@ Sim Dalho checked the remaining battery charge and the custody seal together, an
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0176"></a>
 
 ## F14 · Printing Press Unit (Inswae) (Inswae)
@@ -31410,7 +24840,9 @@ Mun Hayul checked the remaining battery charge and the custody seal together, an
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
 ## F15 · Water-Supply Metering (Gyeryang) (Gyeryang)
@@ -31433,7 +24865,9 @@ Eun Taeho checked the remaining battery charge and the custody seal together, an
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0188"></a>
 
 ## F16 · Tunnel Ventilation (Teohwan) (Teohwan)
@@ -31456,7 +24890,9 @@ Ha Seojin checked the remaining battery charge and the custody seal together, an
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0194"></a>
 
 ## V01 · Dawn Convoy (Saebyeok) (Saebyeok)
@@ -31479,7 +24915,9 @@ Gim Tae-un checked the remaining battery charge and the custody seal together, a
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0200"></a>
 
 ## V02 · Circulating Bus (Sunhwan) (Sunhwan)
@@ -31502,7 +24940,9 @@ Kim Nayul checked the remaining battery charge and the custody seal together, an
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0206"></a>
 
 ## V03 · Freight Tram (Tram) (Tram)
@@ -31525,7 +24965,9 @@ Choe Eunjae checked the remaining battery charge and the custody seal together, 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0212"></a>
 
 ## V04 · Fire-Hose Robot (Gugyeongno) (Gugyeongno)
@@ -31548,7 +24990,9 @@ Han Somi checked the remaining battery charge and the custody seal together, and
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0218"></a>
 
 ## V05 · Rail Tow (Gyeonin) (Gyeonin)
@@ -31571,7 +25015,9 @@ Jeong Soyul checked the remaining battery charge and the custody seal together, 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0224"></a>
 
 ## V06 · Distribution Truck (Baejeon) (Baejeon)
@@ -31594,7 +25040,9 @@ Jo Ha-rin checked the remaining battery charge and the custody seal together, an
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0230"></a>
 
 ## V07 · Sweeper Vehicle (Cheongso) (Cheongso)
@@ -31617,7 +25065,9 @@ Eva Novakova checked the remaining battery charge and the custody seal together,
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0236"></a>
 
 ## V08 · Ambulance Cart (Gugeup) (Gugeup)
@@ -31640,7 +25090,9 @@ Yun Seo-ha checked the remaining battery charge and the custody seal together, a
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0242"></a>
 
 ## V09 · Port Crane (Crane) (Crane)
@@ -31663,7 +25115,9 @@ Hwang Eunseol checked the remaining battery charge and the custody seal together
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0248"></a>
 
 ## V10 · Dock Shuttle (Dock) (Dock)
@@ -31686,7 +25140,9 @@ Hwang Serin checked the remaining battery charge and the custody seal together, 
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0254"></a>
 
 ## V11 · Night Dispatch (Yabae) (Yabae)
@@ -31709,7 +25165,9 @@ Jo Uchan checked the remaining battery charge and the custody seal together, and
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0260"></a>
 
 ## V12 · Heavy-Equipment Arm (Jungpal) (Jungpal)
@@ -31732,7 +25190,9 @@ Jeon Miri checked the remaining battery charge and the custody seal together, an
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0266"></a>
 
 ## V13 · Tunnel Track Maintenance (Boseon) (Boseon)
@@ -31755,7 +25215,9 @@ Eun Chaeyun checked the remaining battery charge and the custody seal together, 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0272"></a>
 
 ## V14 · Bridge Inspection (Gyoryang) (Gyoryang)
@@ -31778,7 +25240,9 @@ An Gijun checked the remaining battery charge and the custody seal together, and
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
 ## V15 · Sluice-Gate Cart (Sumun) (Sumun)
@@ -31801,7 +25265,9 @@ Ra Jinu checked the remaining battery charge and the custody seal together, and 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0284"></a>
 
 ## V16 · Emergency Tow (Bigyeon) (Bigyeon)
@@ -31824,10 +25290,12 @@ Gwak Eunjae checked the remaining battery charge and the custody seal together, 
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
-', '합성 행위자의 기체와 모듈은 보관 가문이 쥐지만, 상위 기능을 여는 제어 소프트웨어는 아크가 독점한다. 아크가 서명한 소프트웨어가 없으면 아래 기체들은 켜고 끄는 기초 기능과 단순한 명령만 받는다. 각 항목의 "정비"는 하드웨어 정비를 뜻한다.
+<!-- private:end -->
+', '합성 휴머노이드는 아주 드물다. 서울의 공개 기록에서 말하고 판단하는 기계 몸으로 남은 것은 [이연](/wiki/people/person-1004/)뿐이다. 이연은 생물학적 특성을 지닌 합성 휴머노이드이고, 조재표의 명령을 전하고 해석하는 수행 전령이다. 다른 기계는 명령을 받아야만 움직이고, 상위 기능을 여는 소프트웨어는 아크가 쥔다.
 
 <a id="Synthetic-Actors-heading-0001"></a>
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0002"></a>
 
 ## H01 · 한누리 (누리)
@@ -31850,7 +25318,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0008"></a>
 
 ## H02 · 서린 (린)
@@ -31873,7 +25343,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0014"></a>
 
 ## H03 · 이도 (이도)
@@ -31896,7 +25368,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0020"></a>
 
 ## H04 · 강별 (별)
@@ -31919,7 +25393,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0026"></a>
 
 ## H05 · 윤재 (재)
@@ -31942,7 +25418,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0032"></a>
 
 ## H06 · 박솔 (솔)
@@ -31965,7 +25443,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0038"></a>
 
 ## H07 · 정우람 (우람)
@@ -31988,7 +25468,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0044"></a>
 
 ## H08 · 최다온 (다온)
@@ -32011,7 +25493,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0050"></a>
 
 ## H09 · 조하람 (하람)
@@ -32034,7 +25518,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0056"></a>
 
 ## H10 · 윤새론 (새론)
@@ -32057,7 +25543,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0062"></a>
 
 ## H11 · 김도하 (도하)
@@ -32080,7 +25568,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0068"></a>
 
 ## H12 · 이채온 (채온)
@@ -32103,7 +25593,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0074"></a>
 
 ## H13 · 한빛나 (빛나)
@@ -32126,7 +25618,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0080"></a>
 
 ## H14 · 오세림 (세림)
@@ -32149,7 +25643,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0086"></a>
 
 ## H15 · 배수아 (수아)
@@ -32172,7 +25668,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0092"></a>
 
 ## H16 · 신태율 (태율)
@@ -32195,7 +25693,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0098"></a>
 
 ## F01 · 냉각탑지기 (탑지)
@@ -32218,7 +25718,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0104"></a>
 
 ## F02 · 배전반이 (전반)
@@ -32241,7 +25743,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
 ## F03 · 정수여과 (여과)
@@ -32264,7 +25768,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0116"></a>
 
 ## F04 · 냉동창고 (냉창)
@@ -32287,7 +25793,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0122"></a>
 
 ## F05 · 송신중계 (중계)
@@ -32310,7 +25818,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0128"></a>
 
 ## F06 · 승강기축 (승축)
@@ -32333,7 +25843,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0134"></a>
 
 ## F07 · 보일러실 (보일)
@@ -32356,7 +25868,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0140"></a>
 
 ## F08 · 하수펌프 (하수)
@@ -32379,7 +25893,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0146"></a>
 
 ## F09 · 실험클린 (클린)
@@ -32402,7 +25918,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0152"></a>
 
 ## F10 · 물류분류 (분류)
@@ -32425,7 +25943,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0158"></a>
 
 ## F11 · 전력변압 (변압)
@@ -32448,7 +25968,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0164"></a>
 
 ## F12 · 환기덕트 (덕트)
@@ -32471,7 +25993,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0170"></a>
 
 ## F13 · 의료멸균 (멸균)
@@ -32494,7 +26018,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0176"></a>
 
 ## F14 · 인쇄기동 (인쇄)
@@ -32517,7 +26043,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
 ## F15 · 급수계량 (계량)
@@ -32540,7 +26068,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0188"></a>
 
 ## F16 · 터널환기 (터환)
@@ -32563,7 +26093,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0194"></a>
 
 ## V01 · 새벽호송 (새벽)
@@ -32586,7 +26118,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0200"></a>
 
 ## V02 · 순환버스 (순환)
@@ -32609,7 +26143,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0206"></a>
 
 ## V03 · 화물트램 (트램)
@@ -32632,7 +26168,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0212"></a>
 
 ## V04 · 구경로봇 (구경로)
@@ -32655,7 +26193,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0218"></a>
 
 ## V05 · 레일견인 (견인)
@@ -32678,7 +26218,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0224"></a>
 
 ## V06 · 배전트럭 (배전)
@@ -32701,7 +26243,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0230"></a>
 
 ## V07 · 청소차륜 (청소)
@@ -32724,7 +26268,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0236"></a>
 
 ## V08 · 구급카트 (구급)
@@ -32747,7 +26293,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0242"></a>
 
 ## V09 · 항만크레인 (크레인)
@@ -32770,7 +26318,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0248"></a>
 
 ## V10 · 도크셔틀 (도크)
@@ -32793,7 +26343,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0254"></a>
 
 ## V11 · 야간배차 (야배)
@@ -32816,7 +26368,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0260"></a>
 
 ## V12 · 중장비팔 (중팔)
@@ -32839,7 +26393,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0266"></a>
 
 ## V13 · 터널보선 (보선)
@@ -32862,7 +26418,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0272"></a>
 
 ## V14 · 교량점검 (교량)
@@ -32885,7 +26443,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
 ## V15 · 수문카트 (수문)
@@ -32908,7 +26468,9 @@ Even when its parts ran out, it did not seize control of other facilities.
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0284"></a>
 
 ## V16 · 비상견인 (비견)
@@ -32931,6 +26493,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Values-and-Policy-Scales', 'Values and Policy Scales', '가치관과 정책 척도', 'culture', 0, '
 **A. Purpose of the Values Scale**
@@ -32949,15 +26512,15 @@ Left is negative, right is positive.
 
 | # | Axis | −100 | +100 | Decisions affected |
 |---|---|---|---|---|
-| 1 | Authority | Equality · consensus | Command · magistracy | Emergency powers, water cutoffs, protection governments |
-| 2 | Openness | Exclusion · quarantine | Hospitality · citizenship | Migrants, external theaters, corridors |
+| 1 | Authority | Equality · consensus | Command · magistracy | Emergency powers, ration cutoffs, protection governments |
+| 2 | Openness | Exclusion · quarantine | Hospitality · citizenship | Migrants, the land outside Seoul, corridors |
 | 3 | Force | Peace · convoy | Preemption · occupation | Deployments, blockades, sieges |
 | 4 | Material | Rite · sanctity of records | Stock · profit | Cooling keys, auctions, parts |
 | 5 | Community | Personal survival | Family · guild | Registers, leagues, hostages |
 | 6 | Principle | Expediency · compromise | Charter wording | Treaty breaches, false broadcasts |
 | 7 | Disclosure | Secret ledgers | Cross-verified openness | Wills, price bulletins, transmissions |
 | 8 | Qualification | Heredity · bloodline | Examination · apprenticeship | Succession, elders, stewards |
-| 9 | Decentralization | Central monopoly | Living-sphere partition | Water federations, joint negotiation |
+| 9 | Decentralization | Central monopoly | Living-sphere partition | Station alliances, joint negotiation |
 | 10 | Reform | Preservation · oral record | Charter amendment | Empty-century debts, trusts |
 
 ## Person Desires and Tastes
@@ -32992,21 +26555,21 @@ Organization values were likewise built on the **same ten axes** as persons. The
 
 **A. Policy Choices**
 
-Organization policies have nine categories: war, migrants, water, labor, records, technology, trade, succession and bonding. Each category has its own choices.
+Organization policies have nine categories: war, migrants, rations, labor, records, technology, trade, succession and bonding. Each category has its own choices.
 
 | Slot | Choices | What it looked like in Seoul |
 |---|---|---|
 | War | Defense / limited war / preemption | Garrison only / protection army / preemptive occupation |
 | Migrants | Sending back / admission as the lowest class / ransom exchange | Gate registers, family hostages |
-| Water | Contract / minimum line / hostage | Cutoff sanctions |
+| Rations | Promise / minimum line / hostage | Ration-cutoff sanctions |
 | Labor | Forced service / contract / civic service | The military-household register |
 | Records | Closed / cross-verified / fully public | Wills and ledgers |
-| Technology | House secret / licensed sharing / joint ledger | Pump and cooling keys |
+| Technology | Station secret / licensed sharing / joint ledger | Pump and cooling keys |
 | Trade | Blockade / licensed / open market | Auctions and convoys |
 | Succession | Bloodline / adoptive apprenticeship / open examination | Stewards and elders |
 | Bonding | Monogamy license / contract cohabitation / house bonding / military-register bonding / open bonding | Marriage and cohabitation ledgers. Organizations did not assign sexual taste |
 
-Operating houses HC and HP and external theaters XT use the same fields. House records appear in the [world narrative atlas](/wiki/World-Narrative-Atlas/). Details by layer appear in [Houses](/wiki/Chaebol-Houses-and-Century-Factions/).
+Stationmaster families use the same fields. House records appear in the [world narrative atlas](/wiki/World-Narrative-Atlas/). Details by layer appear in [Houses](/wiki/Chaebol-Houses-and-Century-Factions/).
 
 <a id="개막-핵심-인물-17명"></a>
 
@@ -33067,15 +26630,15 @@ All three factions take in people from another faction as the lowest class. They
 
 | # | 축 | −100 | +100 | 관련 의사결정 |
 |---|---|---|---|---|
-| 1 | 권위 | 평등·합의 | 명령·집정 | 비상권한, 단수, 보호정부 |
-| 2 | 개방 | 배타·검역 | 환대·시민권 | 이주민, 외부 전구, 회랑 |
+| 1 | 권위 | 평등·합의 | 명령·집정 | 비상권한, 배급 중단, 보호정부 |
+| 2 | 개방 | 배타·검역 | 환대·시민권 | 이주민, 서울 밖, 회랑 |
 | 3 | 무력 | 평화·호송 | 선제·점령 | 파병, 봉쇄, 공성 |
 | 4 | 물질 | 의례·기록 신성 | 재고·이윤 | 냉각 키, 경매, 부품 |
 | 5 | 공동 | 개인 생존 | 가족·길드 | 명부, 연대, 인질 |
 | 6 | 원칙 | 실리·타협 | 헌장 문구 | 조약 위반, 거짓 방송 |
 | 7 | 공개 | 비밀 장부 | 교차검증 공개 | 유언, 시세, 송신 |
 | 8 | 자격 | 세습·혈통 | 시험·도제 | 후계, 원로, 총관 |
-| 9 | 분산 | 중앙 독점 | 생활권 분할 | 급수 연방, 공동교섭 |
+| 9 | 분산 | 중앙 독점 | 생활권 분할 | 역 연합, 공동교섭 |
 | 10 | 변혁 | 보존·구술 | 헌장 개정 | 한 세기 동안 쌓인 빚, 신탁 |
 
 ## 인물 욕망과 취향
@@ -33110,21 +26673,21 @@ All three factions take in people from another faction as the lowest class. They
 
 **가. 정책 선택지**
 
-조직의 정책은 전쟁·이주민·급수·노동·기록·기술·교역·후계·결합의 아홉 항목으로 나뉜다. 각 항목에는 선택지가 있다.
+조직의 정책은 전쟁·이주민·배급·노동·기록·기술·교역·후계·결합의 아홉 항목으로 나뉜다. 각 항목에는 선택지가 있다.
 
 | 슬롯 | 선택지 | 서울에서 보이는 일 |
 |---|---|---|
 | 전쟁 | 방어 / 제한전 / 선제 | 수비대만 / 보호군 / 선제 점령 |
 | 이주민 | 돌려보냄 / 최하층 수용 / 몸값 교환 | 관문 명부, 가족 인질 |
-| 급수 | 계약 / 최저선 / 볼모 | 단수 제재 |
+| 배급 | 약속 / 최저선 / 볼모 | 배급 중단 제재 |
 | 노동 | 강제복무 / 계약 / 시민복무 | 군사호적 |
 | 기록 | 비공개 / 교차검증 / 전면공개 | 유언·원장 |
-| 기술 | 가문비밀 / 면허공유 / 공동원장 | 펌프·냉각 키 |
+| 기술 | 역 비밀 / 면허공유 / 공동원장 | 펌프·냉각 키 |
 | 교역 | 봉쇄 / 허가 / 개방시장 | 경매·호송 |
 | 후계 | 혈통 / 양자도제 / 공개시험 | 총관·원로 |
 | 결합 | 단혼허가 / 계약동거 / 가문결합 / 군호적결합 / 개방결합 | 혼인·동거 장부. 성적 취향을 조직이 지정하지 않는다 |
 
-운영가문 HC·HP와 서울 바깥 회랑 XT도 같은 항목을 쓴다. 가문에 관한 기록은 [세계 서사 총람](/wiki/World-Narrative-Atlas/)에 있고, 층별 세부 설명은 [가문](/wiki/Chaebol-Houses-and-Century-Factions/)에 있다.
+역장 집안도 같은 항목을 쓴다. 집안에 관한 기록은 [세계 서사 총람](/wiki/World-Narrative-Atlas/)에 있고, 층별 세부 설명은 [가문](/wiki/Chaebol-Houses-and-Century-Factions/)에 있다.
 
 <a id="개막-핵심-인물-17명"></a>
 
@@ -33182,15 +26745,15 @@ This index gathers the wiki''s articles and entry points by category. To read th
 - **Overview**: [Regional and Physical AI Arcs](/wiki/Regional-Physical-AI-Arcs/) · [The Great Blackout](/wiki/World-Unbinding/) · [World Narrative Atlas](/wiki/World-Narrative-Atlas/) · [Glossary](/wiki/Glossary/)
 - **Timeline**: [Century Annals](/wiki/Century-Annals/) · [Scenario Timeline](/wiki/Scenario-Timeline/) · [Sindorim Junction Cargo Gate](/wiki/Sindorim-Junction-Cargo-Gate/)
 - **Character**: [Bon-gwan and Hangnyeol](/wiki/Hangnyeol-and-Bon-gwan/) · [Characters, Factions, and Trades](/wiki/Characters-Factions-and-Professions/)
-- **Faction**: [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/) · [The Three Factions of Seoul](/wiki/Sixteen-States/) · [World Expansion Relation Ledger](/wiki/World-Relation-Ledger/) · [Operating Organizations](/wiki/Operating-Houses/) · [Diaspora Corridors](/wiki/Diaspora-Corridors/)
+- **Faction**: [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/) · [The Three Factions of Seoul](/wiki/Sixteen-States/) · [World Relation Ledger](/wiki/World-Relation-Ledger/) · [Station-Master Families](/wiki/Operating-Houses/) · [Diaspora Corridors](/wiki/Diaspora-Corridors/)
 - **Offices**: [Offices and Ranks](/wiki/Offices-and-Ranks/)
-- **Geography**: [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/) · [Outside](/wiki/External-Theaters/) · [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/) · [World Map](/wiki/World-and-Subway-Layers/) · [The Structure of the World Map](/wiki/World-Map-Construction/) · [Entering the Station Interior](/wiki/Station-Interior-Construction/)
+- **Geography**: [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/) · [Outside Seoul](/wiki/External-Theaters/) · [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/) · [World Map](/wiki/World-and-Subway-Layers/) · [The Structure of the World Map](/wiki/World-Map-Construction/) · [Entering the Station Interior](/wiki/Station-Interior-Construction/)
 - **Culture**: [Values and Policy Scales](/wiki/Values-and-Policy-Scales/) · [Food Culture](/wiki/Food-Culture/) · [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/) · [The Stories](/wiki/Oral-Stories/)
 - **Items**: [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/)
 - **Structures**: [The Structures Compendium](/wiki/Structures/)
 - **Technology**: [Lost Technology](/wiki/Lost-Technology-Lineage/)
 - **Disease**: [Ailments and Symptoms](/wiki/Ailments/)
-- **People and Machines**: [People and Machines](/wiki/People-and-Machines/) · [Synthetic Social Personas](/wiki/Synthetic-Actors/)
+- **People and Machines**: [People and Machines](/wiki/People-and-Machines/) · [Synthetic Humanoids](/wiki/Synthetic-Actors/)
 - **Ecology Compendium**: [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/); group dossiers [G01](/wiki/Hostile-Group-G01/) · [G02](/wiki/Hostile-Group-G02/) · [G03](/wiki/Hostile-Group-G03/) · [G04](/wiki/Hostile-Group-G04/) · [G05](/wiki/Hostile-Group-G05/) · [G06](/wiki/Hostile-Group-G06/) · [G07](/wiki/Hostile-Group-G07/) · [G08](/wiki/Hostile-Group-G08/) · [G09](/wiki/Hostile-Group-G09/) · [G10](/wiki/Hostile-Group-G10/) · [G11](/wiki/Hostile-Group-G11/) · [G12](/wiki/Hostile-Group-G12/) · [G13](/wiki/Hostile-Group-G13/) · [G14](/wiki/Hostile-Group-G14/) · [G15](/wiki/Hostile-Group-G15/) · [G16](/wiki/Hostile-Group-G16/) · [G17](/wiki/Hostile-Group-G17/) · [G18](/wiki/Hostile-Group-G18/) · [G25](/wiki/Hostile-Group-G25/) · [G26](/wiki/Hostile-Group-G26/)
 
 <a id="World-Expansion-Index-heading-0003"></a>
@@ -33814,15 +27377,15 @@ The table below links character IDs to people pages. Every character can be foun
 - **개요**: [권역·피지컬 AI 서사선](/wiki/Regional-Physical-AI-Arcs/) · [대정전](/wiki/World-Unbinding/) · [세계 서사 총람](/wiki/World-Narrative-Atlas/) · [용어 사전](/wiki/Glossary/)
 - **연표**: [서울전국 연표](/wiki/Century-Annals/) · [시나리오 타임라인](/wiki/Scenario-Timeline/) · [신도림 연결부 화물문](/wiki/Sindorim-Junction-Cargo-Gate/)
 - **인물**: [본관과 항렬](/wiki/Hangnyeol-and-Bon-gwan/) · [인물·세력·생업](/wiki/Characters-Factions-and-Professions/)
-- **세력**: [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/) · [서울의 세 세력](/wiki/Sixteen-States/) · [세계 확장 관계 원장](/wiki/World-Relation-Ledger/) · [운영 조직](/wiki/Operating-Houses/) · [이주민 회랑](/wiki/Diaspora-Corridors/)
+- **세력**: [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/) · [서울의 세 세력](/wiki/Sixteen-States/) · [세계 관계 원장](/wiki/World-Relation-Ledger/) · [역장 집안](/wiki/Operating-Houses/) · [이주민 회랑](/wiki/Diaspora-Corridors/)
 - **관직**: [관직](/wiki/Offices-and-Ranks/)
-- **지리**: [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/) · [바깥](/wiki/External-Theaters/) · [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/) · [세계 지도](/wiki/World-and-Subway-Layers/) · [세계 지도의 구성](/wiki/World-Map-Construction/) · [역 내부에 들어가면](/wiki/Station-Interior-Construction/)
+- **지리**: [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/) · [서울 밖](/wiki/External-Theaters/) · [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/) · [세계 지도](/wiki/World-and-Subway-Layers/) · [세계 지도의 구성](/wiki/World-Map-Construction/) · [역 내부에 들어가면](/wiki/Station-Interior-Construction/)
 - **문화**: [가치관과 정책 척도](/wiki/Values-and-Policy-Scales/) · [식문화](/wiki/Food-Culture/) · [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/) · [이야기](/wiki/Oral-Stories/)
 - **물건**: [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)
 - **구조물**: [구조물 총람](/wiki/Structures/)
 - **기술**: [잃어버린 기술](/wiki/Lost-Technology-Lineage/)
 - **질병**: [질병과 증상](/wiki/Ailments/)
-- **사람과 기체**: [사람과 기체](/wiki/People-and-Machines/) · [합성 사회 인격](/wiki/Synthetic-Actors/)
+- **사람과 기체**: [사람과 기체](/wiki/People-and-Machines/) · [합성 휴머노이드](/wiki/Synthetic-Actors/)
 - **생태 도감**: [서울 생태·변이 도감](/wiki/Hostile-Ecology-Index/); 집단 도감 [G01](/wiki/Hostile-Group-G01/) · [G02](/wiki/Hostile-Group-G02/) · [G03](/wiki/Hostile-Group-G03/) · [G04](/wiki/Hostile-Group-G04/) · [G05](/wiki/Hostile-Group-G05/) · [G06](/wiki/Hostile-Group-G06/) · [G07](/wiki/Hostile-Group-G07/) · [G08](/wiki/Hostile-Group-G08/) · [G09](/wiki/Hostile-Group-G09/) · [G10](/wiki/Hostile-Group-G10/) · [G11](/wiki/Hostile-Group-G11/) · [G12](/wiki/Hostile-Group-G12/) · [G13](/wiki/Hostile-Group-G13/) · [G14](/wiki/Hostile-Group-G14/) · [G15](/wiki/Hostile-Group-G15/) · [G16](/wiki/Hostile-Group-G16/) · [G17](/wiki/Hostile-Group-G17/) · [G18](/wiki/Hostile-Group-G18/) · [G25](/wiki/Hostile-Group-G25/) · [G26](/wiki/Hostile-Group-G26/)
 
 <a id="World-Expansion-Index-heading-0003"></a>
@@ -34479,7 +28042,7 @@ The vast infrastructures essential to the survivors'' maintenance of their spher
 
 B. Treatment plants and depots
 
-The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also worked as principal water-pressure sources.
+The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also operated as large treatment plants outside Seoul.
 
 The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.
 
@@ -34613,7 +28176,7 @@ The passages joining layer to layer and station to station changed state without
 
 나. 정수 시설과 차량기지
 
-정수 시설은 영등포, 뚝섬, 구의, 암사에 있다. 강북(남양주)과 광암(하남)도 주요 급수 압력원이다.
+정수 시설은 영등포, 뚝섬, 구의, 암사에 있다. 강북(남양주)과 광암(하남)도 서울 밖의 큰 정수장이다.
 
 차량기지는 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서에 있다. 외곽의 지축, 도봉, 모란, 김포 기지도 중요한 거점이다.
 
@@ -34783,11 +28346,11 @@ The [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/) leads to 
 
 Modern and future weapons, humanoids, and machines survive the Great Blackout. In an age of scarcity, though, their numbers, ammunition, and parts run short, and they are dear. Equipment is covered in [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/), and the lineage of broken-off technology in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
-How people and machines settled together inside the stations is in [People and Machines](/wiki/People-and-Machines/). The records of forty-eight synthetic personas are in [Synthetic Social Personas](/wiki/Synthetic-Actors/), and the twenty-two operating organizations are in [Operating Organizations](/wiki/Operating-Houses/). The [World Expansion Relation Ledger](/wiki/World-Relation-Ledger/) puts the links between organizations and factions and districts into one table.
+How people and machines settled together inside the stations is in [People and Machines](/wiki/People-and-Machines/). The very rare synthetic humanoids are in [Synthetic Humanoids](/wiki/Synthetic-Actors/), and the station-master families inside the three factions are in [Station-Master Families](/wiki/Operating-Houses/). The [World Relation Ledger](/wiki/World-Relation-Ledger/) puts the relations among the three factions and within the ranks into one table.
 
 ## Geography and the Map
 
-[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul''s 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and floodgates in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). Records of the five theaters outside Seoul are in [Outside](/wiki/External-Theaters/).
+[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul''s 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and treatment plants in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). The land outside Seoul is covered in [Outside Seoul](/wiki/External-Theaters/).
 
 The interactive map is on the [Territory Map](/wiki/map/) page.
 
@@ -34876,11 +28439,11 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 
 현대와 미래의 무기, 인간형 기계, 각종 기계는 대정전 뒤에도 남아 있다. 다만 결핍의 시대에 수와 탄약과 부품이 모자라 귀하다. 장비는 [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)가, 끊긴 기술의 계보는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)이 다룬다.
 
-사람과 기체가 역 안에서 어떻게 함께 자리 잡았는지는 [사람과 기체](/wiki/People-and-Machines/)에 있다. 마흔여덟 합성 인격의 기록은 [합성 사회 인격](/wiki/Synthetic-Actors/)에, 스물두 운영 조직은 [운영 조직](/wiki/Operating-Houses/)에 있다. 조직과 세력·구 사이의 연결은 [세계 확장 관계 원장](/wiki/World-Relation-Ledger/)이 한 표로 모은다.
+사람과 기체가 역 안에서 어떻게 함께 자리 잡았는지는 [사람과 기체](/wiki/People-and-Machines/)에 있다. 아주 드문 합성 휴머노이드는 [합성 휴머노이드](/wiki/Synthetic-Actors/)에, 세 세력 안의 역장 집안은 [역장 집안](/wiki/Operating-Houses/)에 있다. 세 세력 사이와 계급 안의 관계는 [세계 관계 원장](/wiki/World-Relation-Ledger/)이 한 표로 모은다.
 
 ## 지리와 지도
 
-[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 수문은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖 다섯 전구의 기록은 [바깥](/wiki/External-Theaters/)에 있다.
+[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 정수장은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖은 [서울 밖](/wiki/External-Theaters/)이 다룬다.
 
 인터랙티브 지도는 [서울 영토 지도](/wiki/map/)에서 볼 수 있다.
 
@@ -34891,122 +28454,41 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 
 인물 목록은 [인물](/wiki/people/) 페이지에서 찾는다. [세계 확장 색인](/wiki/World-Expansion-Index/)의 추가 인물 표는 캐릭터 ID K423부터 K1022까지의 인물을 인물 페이지와 잇는다.
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Relation-Ledger', 'World Expansion Relation Ledger', '세계 확장 관계 원장', 'factions', 2, '<a id="World-Relation-Ledger-heading-0001"></a>
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Relation-Ledger', 'World Relation Ledger', '세계 관계 원장', 'factions', 2, '<a id="World-Relation-Ledger-heading-0001"></a>
 
-This ledger gathers operating organisations, old records of theatres outside Seoul, synthetic human custody, and contract relations between organisations in one table. Below it, the relations between the three factions and the relations within the ranks are listed separately. The destination of each operating link names one of the three factions (Government, Free City, Arc) and a district.
-
-| From | Kind | To | Reason |
-|---|---|---|---|
-| HC02 | operates_in | Free City (Yangcheon-gu), Arc (Gangnam-gu), Government (Yongsan-gu) | organisation to faction and district operating link |
-| HC04 | operates_in | Government (Seongdong-gu), Arc (Gangdong-gu), Free City (Yeongdeungpo-gu) | organisation to faction and district operating link |
-| HC05 | operates_in | Government (Seongbuk-gu) | organisation to faction and district operating link |
-| HC06 | operates_in | Free City (Dongjak-gu), Arc (Songpa-gu) | organisation to faction and district operating link |
-| HC07 | operates_in | Free City (Guro-gu), Government (Seongdong-gu) | organisation to faction and district operating link |
-| HC08 | operates_in | Government (Dobong-gu), Government (Jungnang-gu) | organisation to faction and district operating link |
-| HC09 | operates_in | Government (Jung-gu), Arc (Songpa-gu) | organisation to faction and district operating link |
-| HC14 | operates_in | Free City (Yeongdeungpo-gu), Arc (Gangnam-gu) | organisation to faction and district operating link |
-| HP01 | operates_in | Free City (Yeongdeungpo-gu), Government (Seongdong-gu, Gwangjin-gu), Arc (Gangdong-gu) | organisation to faction and district operating link |
-| HP02 | operates_in | Government (Yongsan-gu, Jungnang-gu, Dobong-gu) | organisation to faction and district operating link |
-| XT01 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
-| XT02 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
-| XT03 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
-| XT04 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
-| XT05 | pressures | Seoul | pressure that an outside theatre puts on Seoul |
-| H01 | custodied_by | K001 | synthetic-human custody |
-| H02 | custodied_by | K029 | synthetic-human custody |
-| H03 | custodied_by | K057 | synthetic-human custody |
-| H04 | custodied_by | K086 | synthetic-human custody |
-| H05 | custodied_by | K115 | synthetic-human custody |
-| H06 | custodied_by | K144 | synthetic-human custody |
-| H07 | custodied_by | K169 | synthetic-human custody |
-| H08 | custodied_by | K194 | synthetic-human custody |
-| H09 | custodied_by | K219 | synthetic-human custody |
-| H10 | custodied_by | K245 | synthetic-human custody |
-| H11 | custodied_by | K271 | synthetic-human custody |
-| H12 | custodied_by | K296 | synthetic-human custody |
-| H13 | custodied_by | K322 | synthetic-human custody |
-| H14 | custodied_by | K348 | synthetic-human custody |
-| H15 | custodied_by | K373 | synthetic-human custody |
-| H16 | custodied_by | K398 | synthetic-human custody |
-| Sinjeong Wheel House | supply-rivalry | Guro Alloy House | a pre-collapse steel-price dispute carried into parts-specification negotiations |
-| Guro Digital Complex Battery House | supply-partner | Magok Test-Line House | the battery-cell supply contract was bound to audit rights over the energy-storage depot |
-| Digital Media City Index House | platform-rivalry | Digital Media City Payments House | the search index and the message relay competed for the Sangam transmission band |
-| Magok Seed House | affiliate | Yongsan Convoy House | kindred food-supply and transport contracts split the Garak auction-floor volume |
-| Yongsan Ship House | build-contract | Geumcheon District Office Machinery House | container ship-repair payments traded against rights to the Yongsan riverside wharf |
-| Dongdaeipgu Trading House | retail-rivalry | Seoul Station Inventory House | bids split over protocol goods at Seoul Station and access to the bonded warehouse |
+This ledger records only relations among the three factions and relations within each faction''s ranks. No faction can fully use what it holds on its own, so most relations between factions come from leaning on people and software someone else holds. What''s known about the outside is in [Outside Seoul](/wiki/External-Theaters/).
 
 ## Relations Between the Three Factions
 
-These are faction-level relations under v4. No faction can fully use what it has on its own, so most relations come from depending on people and software that another faction holds. Details are in [The Three Factions of Seoul](/wiki/Sixteen-States/).
-
-| From | Kind | To | Reason |
+| From | Type | To | Basis |
 |---|---|---|---|
-| Government | depends_on | Free City | It has no medical technicians and can only give first aid |
+| Government | depends_on | Free Cities | It has no medical technicians, so it stops at first aid |
 | Government | depends_on | Arc | Advanced weapons run fully only with Arc software |
-| Free City | depends_on | Government | The officer class and original seed stock are in the Government |
-| Free City | depends_on | Arc | Medical robots move only with Arc software |
-| Arc | depends_on | Free City | Direct neural links are performed by Free City doctors |
-| Arc | split_from | Free City | The Arc split off from the Free City |
-| Government, Free City, Arc | takes_people_from | one another | Abduction and capture are the core events of human resource movement |
+| Free Cities | depends_on | Government | The officer corps and heirloom seeds are with the Government |
+| Free Cities | depends_on | Arc | Medical robots move only with Arc software |
+| Arc | depends_on | Free Cities | Thought-driven neural links need Free City doctors |
+| Arc | split_from | Free Cities | The Arc broke away from the Free Cities |
+| Government, Free Cities | distrusts | Arc | Every use of Arc software raises fears of a backdoor |
+| Government | looks_down_on | Free Cities, Arc | The Government treats south of the Han as barbarian land |
+| All three factions | takes_people_from | Each other | Kidnapping and capture are the key events of human resource movement |
 
 ## Relations Within the Ranks
 
-These relations link higher and lower ranks inside each faction. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
+Rank is set by how many stationmasters serve under a person. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
 
-| From | Kind | To | Reason |
+| From | Type | To | Basis |
 |---|---|---|---|
-| President | appoints | Commissioner | The Government''s ten-stationmaster rung is appointed by the President |
-| Hierophant | ordains | Cardinal | The Arc''s ten-stationmaster rung is ordained by the Hierophant |
-| The Board | appoints | Director | The Free City''s ten-stationmaster rung is appointed by the Board |
-| The I family | holds_hereditary | Chair of the Board | People want the I family to lead, so they entrust the office to it generation after generation |
-| Division chiefs, bureau chiefs, bishops, guild masters | commands | Stationmaster | Rank is set by the total number of stationmasters below |
+| President | appoints | Commissioner | The President appoints the 10-or-more tier |
+| Hierophant | ordains | Cardinal | The Hierophant ordains the 10-or-more tier |
+| The Board | appoints | Director | The Board appoints the 10-or-more tier |
+| I Ilseop''s house | holds_hereditary | Chair of the Board | Their rank is director, but people want them to lead and keep handing them the chair |
+| Division chief, bureau chief, guild master, bishop | commands | Stationmaster | Tier is set by the number of stationmasters commanded |
+| Technicians taken over | held_by_hostage | Receiving faction | Their families are held to stop sabotage and escape |
 ', '<a id="World-Relation-Ledger-heading-0001"></a>
 
-이 원장은 운영 조직, 서울 밖 옛 전구 기록, 합성 인간 보관, 조직 사이 계약 관계를 한 표에 모은다. 그 아래에 세 세력 사이의 관계와 계급 안의 관계를 따로 적는다. 운영 연결의 도착 칸은 그 조직이 일하는 세력(정부, 자유도시, 아크)과 구를 적는다.
-
-| 출발 | 유형 | 도착 | 근거 |
-|---|---|---|---|
-| HC02 | operates_in | 자유도시(양천구), 아크(강남구), 정부(용산구) | 조직-세력·구 운영 연결 |
-| HC04 | operates_in | 정부(성동구), 아크(강동구), 자유도시(영등포구) | 조직-세력·구 운영 연결 |
-| HC05 | operates_in | 정부(성북구) | 조직-세력·구 운영 연결 |
-| HC06 | operates_in | 자유도시(동작구), 아크(송파구) | 조직-세력·구 운영 연결 |
-| HC07 | operates_in | 자유도시(구로구), 정부(성동구) | 조직-세력·구 운영 연결 |
-| HC08 | operates_in | 정부(도봉구), 정부(중랑구) | 조직-세력·구 운영 연결 |
-| HC09 | operates_in | 정부(중구), 아크(송파구) | 조직-세력·구 운영 연결 |
-| HC14 | operates_in | 자유도시(영등포구), 아크(강남구) | 조직-세력·구 운영 연결 |
-| HP01 | operates_in | 자유도시(영등포구), 정부(성동구·광진구), 아크(강동구) | 조직-세력·구 운영 연결 |
-| HP02 | operates_in | 정부(용산구·중랑구·도봉구) | 조직-세력·구 운영 연결 |
-| XT01 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
-| XT02 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
-| XT03 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
-| XT04 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
-| XT05 | pressures | 서울 | 서울 밖 전구가 서울에 주는 압력 |
-| H01 | custodied_by | K001 | 합성-인간 보관 |
-| H02 | custodied_by | K029 | 합성-인간 보관 |
-| H03 | custodied_by | K057 | 합성-인간 보관 |
-| H04 | custodied_by | K086 | 합성-인간 보관 |
-| H05 | custodied_by | K115 | 합성-인간 보관 |
-| H06 | custodied_by | K144 | 합성-인간 보관 |
-| H07 | custodied_by | K169 | 합성-인간 보관 |
-| H08 | custodied_by | K194 | 합성-인간 보관 |
-| H09 | custodied_by | K219 | 합성-인간 보관 |
-| H10 | custodied_by | K245 | 합성-인간 보관 |
-| H11 | custodied_by | K271 | 합성-인간 보관 |
-| H12 | custodied_by | K296 | 합성-인간 보관 |
-| H13 | custodied_by | K322 | 합성-인간 보관 |
-| H14 | custodied_by | K348 | 합성-인간 보관 |
-| H15 | custodied_by | K373 | 합성-인간 보관 |
-| H16 | custodied_by | K398 | 합성-인간 보관 |
-| 신정차륜가 | supply-rivalry | 구로합금가 | 붕괴 전 강판 단가 분쟁이 부품 규격 협상으로 이어진다 |
-| 구로디지털단지전지가 | supply-partner | 마곡시험선가 | 전지 셀 공급 계약이 저장에너지 창고 감사권과 묶여 있다 |
-| 디지털미디어시티색인가 | platform-rivalry | 디지털미디어시티결제가 | 검색 인덱스와 메신저 중계가 상암 송신 대역을 두고 경쟁한다 |
-| 마곡종자가 | affiliate | 용산호송가 | 같은 계열의 식자재와 운송 계약이 가락 경매장 물량을 나눈다 |
-| 용산선박가 | build-contract | 금천구청중기가 | 컨테이너 선복 수선 대금이 용산 강변 부두 이용권과 맞바뀐다 |
-| 동대입구객사가 | retail-rivalry | 서울역재고가 | 서울역 의전 물자와 면세 창고 접근권을 두고 입찰이 갈린다 |
+이 원장은 세 세력 사이의 관계와 각 세력 계급 안의 관계만 적는다. 어느 세력도 혼자서는 가진 것을 다 쓰지 못한다. 그래서 세력 사이 관계는 대부분 남이 쥔 사람과 소프트웨어에 기대는 데서 생긴다. 서울 밖 사정은 [서울 밖](/wiki/External-Theaters/)에 있다.
 
 ## 세 세력 사이의 관계
-
-v4 기준의 세력 단위 관계다. 어느 세력도 혼자서는 가진 것을 완전히 쓰지 못하므로, 관계의 대부분은 남이 가진 사람과 소프트웨어에 기대는 데서 나온다. 자세한 내용은 [서울의 세 세력](/wiki/Sixteen-States/)에 있다.
 
 | 출발 | 유형 | 도착 | 근거 |
 |---|---|---|---|
@@ -35014,21 +28496,24 @@ v4 기준의 세력 단위 관계다. 어느 세력도 혼자서는 가진 것�
 | 정부 | depends_on | 아크 | 첨단 무기는 아크 소프트웨어가 있어야 완전히 돈다 |
 | 자유도시들 | depends_on | 정부 | 장교층과 원종 씨앗이 정부에 있다 |
 | 자유도시들 | depends_on | 아크 | 의료로봇은 아크 소프트웨어가 있어야 움직인다 |
-| 아크 | depends_on | 자유도시들 | 신경 직결은 자유도시 의사가 시술한다 |
+| 아크 | depends_on | 자유도시들 | 생각으로 움직이는 신경 직결은 자유도시 의사가 시술한다 |
 | 아크 | split_from | 자유도시들 | 아크는 자유도시에서 갈라져 나왔다 |
-| 정부·자유도시들·아크 | takes_people_from | 서로 | 납치와 포획이 인적자원 이동의 핵심 사건이다 |
+| 정부·자유도시들 | distrusts | 아크 | 아크 소프트웨어를 쓸 때마다 백도어를 의심한다 |
+| 정부 | looks_down_on | 자유도시들·아크 | 정부는 한강 남쪽을 야만의 땅으로 여긴다 |
+| 세 세력 | takes_people_from | 서로 | 납치와 포획이 인적자원 이동의 핵심 사건이다 |
 
 ## 계급 안의 관계
 
-각 세력 안에서 위아래를 잇는 관계다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
+계급은 그 사람 아래 역장의 수로 정한다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
 
 | 출발 | 유형 | 도착 | 근거 |
 |---|---|---|---|
-| 대통령 | appoints | 청장 | 정부의 열 명 단계는 대통령이 임명한다 |
-| 교주 | ordains | 추기경 | 아크의 열 명 단계는 교주가 서품한다 |
-| 이사회 | appoints | 이사 | 자유도시의 열 명 단계는 이사회가 임명한다 |
-| 이씨 가문 | holds_hereditary | 이사회장 | 사람들이 이씨 가문의 지도를 바라 대대로 맡긴다 |
-| 본부장·국장·주교·조합장 | commands | 역장 | 계급은 산하 역장의 합계로 정해진다 |
+| 대통령 | appoints | 청장 | 산하 역장 10 이상 단계는 대통령이 임명한다 |
+| 교주 | ordains | 추기경 | 산하 역장 10 이상 단계는 교주가 서품한다 |
+| 이사회 | appoints | 이사 | 산하 역장 10 이상 단계는 이사회가 임명한다 |
+| 이일섭 가문 | holds_hereditary | 이사회장 | 계급은 이사이지만 사람들이 지도를 바라 대대로 맡긴다 |
+| 본부장·국장·조합장·주교 | commands | 역장 | 거느린 역장 수로 단계가 정해진다 |
+| 넘어온 기술자 | held_by_hostage | 받아 간 세력 | 태업과 탈출을 가족 인질로 막는다 |
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('World-Unbinding', 'The Great Blackout', '대정전', 'overview', 1, '## Name of the Event
 

@@ -74,10 +74,10 @@ Wild boars are ordinary wild animals that live on the slopes of Bukhansan to the
 
 <a id="Hostile-Ecology-Index-heading-0041"></a>
 
-### G01-SC1 · The First Hoof Outside the Sluice
+### G01-SC1 · The First Hoof Outside the Embankment
 
 - Stage: 1
-- Trigger: The day after the first snow settles, the prints of a sow and her young appear in front of a grain store outside the sluice on the Nanji riverbank of the Han River.
+- Trigger: The day after the first snow settles, the prints of a sow and her young appear in front of a grain store outside the embankment on the Nanji riverbank of the Han River.
 - Actors: Government stationmaster in Mapo, White Cross, surface villagers
 - Ecological mechanism: When food is buried under the snow, the sow leads the family group to the places where people put out food waste.
 - Choices: Delay the collection yard’s night operation / Open a reed-bed detour with a scent lure / Capture only the sow
@@ -609,10 +609,10 @@ The Sinnae Deserters are soldiers who walked out of the Government army with rif
 - Stage: 2
 - Trigger: At dawn in early autumn the backwash runs in the Yeouido water-filter gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
 - Actors: government, free-city
-- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The supply duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
-- Choices: The supply duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
-- Outcomes: If the valve is locked, the scouts before the hatch and the supply duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the supply duty officer's hand.
-- Moral cost: The backwash water pools before the valve. The supply duty officer's water cans are in the scouts' line beside the hatch. The ration tins of the freight car are at the landing.
+- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The filter duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
+- Choices: The filter duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
+- Outcomes: If the valve is locked, the scouts before the hatch and the filter duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the filter duty officer's hand.
+- Moral cost: The backwash water pools before the valve. The filter duty officer's water cans are in the scouts' line beside the hatch. The ration tins of the freight car are at the landing.
 - Source dossier: G12
 
 <a id="Hostile-Ecology-Index-heading-0304"></a>
@@ -623,8 +623,8 @@ The Sinnae Deserters are soldiers who walked out of the Government army with rif
 - Trigger: Dock dust is piled on the floor of the outer passage of the Sinnae freight elevator. The scouts are at the outer entrance. The supply, freight and machine duty officers are before the same hour table.
 - Actors: government, free-city
 - Ecological mechanism: While the dust is in the outer passage the squad leader is at the radio. The elite squad is at the rail. The scouts are at the entrance. The dock duty officer's dust hour is written in the lower column of the landing table.
-- Choices: The dock duty officer closes the dock entry door. / The supply duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
-- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the supply duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
+- Choices: The dock duty officer closes the dock entry door. / The filter duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
+- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the filter duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
 - Moral cost: The dock's freight sacks are inside the entry door. The gallery backwash stays before the valve. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
 - Source dossier: G12
 

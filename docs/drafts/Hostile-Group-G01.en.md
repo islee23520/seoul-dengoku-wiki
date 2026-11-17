@@ -124,10 +124,10 @@ Results are not measured by the number killed. Look at how many times they reach
 
 <a id="Hostile-Group-G01-heading-0443"></a>
 
-### G01-SC1 · The First Hoof Outside the Sluice
+### G01-SC1 · The First Hoof Outside the Embankment
 
 - Stage: 1
-- Trigger: The day after the first snow settles, the prints of a sow and her young appear in front of a grain store outside the sluice on the Nanji riverbank of the Han River.
+- Trigger: The day after the first snow settles, the prints of a sow and her young appear in front of a grain store outside the embankment on the Nanji riverbank of the Han River.
 - Actors: Government stationmaster in Mapo, White Cross, surface villagers
 - Ecological mechanism: When food is buried under the snow, the sow leads the family group to the places where people put out food waste.
 - Choices: Delay the collection yard’s night operation / Open a reed-bed detour with a scent lure / Capture only the sow
