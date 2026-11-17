@@ -1,0 +1,6435 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0003",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-1",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0005",
+   "col": "json",
+   "from": "Title: Armored Repair Train Chief at Sinjeong Base",
+   "to": "Title: Sinjeong Base Armored Repair Train Chief",
+   "id": "v5-2",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-3",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0009",
+   "col": "json_ko",
+   "from": "직함은 신정3동 기지 배차 담당",
+   "to": "직함은 신정기지 철도통행 배차관",
+   "id": "v5-4",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0009",
+   "col": "json",
+   "from": "Title: Dispatcher at the Sinjeong 3-dong Depot",
+   "to": "Title: Sinjeong Base Rail Passage Dispatcher",
+   "id": "v5-5",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0010",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-6",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0011",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-7",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0012",
+   "col": "json",
+   "from": "Title: Doctor at the Yeongdeungpo Clinic",
+   "to": "Title: Yeongdeungpo Clinic Doctor",
+   "id": "v5-8",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0012",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-9",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0017",
+   "col": "json_ko",
+   "from": "직함은 영등포 대합실 당직",
+   "to": "직함은 영등포 대합실 역장",
+   "id": "v5-10",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0017",
+   "col": "json",
+   "from": "Title: Yeongdeungpo Waiting Hall Duty",
+   "to": "Title: Yeongdeungpo Waiting Hall Stationmaster",
+   "id": "v5-11",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0017",
+   "col": "json",
+   "from": "Rank: Watch Chief",
+   "to": "Rank: Duty Chief",
+   "id": "v5-12",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0018",
+   "col": "json_ko",
+   "from": "직함은 신정기지 유치선 전력 당직",
+   "to": "직함은 신정기지 유치선 전력감독",
+   "id": "v5-13",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0018",
+   "col": "json",
+   "from": "Title: Power Duty at the Sinjeong Depot Stabling Line",
+   "to": "Title: Sinjeong Base Siding Power Supervisor",
+   "id": "v5-14",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0018",
+   "col": "json",
+   "from": "Rank: Watch Chief",
+   "to": "Rank: Duty Chief",
+   "id": "v5-15",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0018",
+   "col": "json",
+   "from": "Title: Power Supervisor of the Sinjeong Depot Stabling Line",
+   "to": "Title: Sinjeong Base Siding Power Supervisor",
+   "id": "v5-16",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0021",
+   "col": "json_ko",
+   "from": "직함은 신정기지 비상발전 운전 당직",
+   "to": "직함은 신정기지 비상발전 운전장",
+   "id": "v5-17",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0021",
+   "col": "json",
+   "from": "Title: Emergency Generation Operations Duty, Sinjeong Depot",
+   "to": "Title: Sinjeong Base Emergency Generator Chief Operator",
+   "id": "v5-18",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0024",
+   "col": "json_ko",
+   "from": "직함은 인계 입회 증인",
+   "to": "직함은 유언 사본 입회 증인",
+   "id": "v5-19",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0024",
+   "col": "json",
+   "from": "Title: Witness at Handovers",
+   "to": "Title: Witness to the Will Copy",
+   "id": "v5-20",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0024",
+   "col": "json",
+   "from": "Rank: Senior Clerk",
+   "to": "Rank: Clerk",
+   "id": "v5-21",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0024",
+   "col": "json",
+   "from": "Title: Witness to the Will Copy Attendance",
+   "to": "Title: Witness to the Will Copy",
+   "id": "v5-22",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0025",
+   "col": "json",
+   "from": "Rank: District Head",
+   "to": "Rank: District Chief",
+   "id": "v5-23",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0026",
+   "col": "json_ko",
+   "from": "직함은 공동 장부 보관 서기",
+   "to": "직함은 첫 협약 원본 보관 서기",
+   "id": "v5-24",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0026",
+   "col": "json",
+   "from": "Rank: Clerk (Jusa)",
+   "to": "Rank: Clerk",
+   "id": "v5-25",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0026",
+   "col": "json",
+   "from": "Title: Shared Ledger Keeping Clerk",
+   "to": "Title: First Accord Original Custodian Clerk",
+   "id": "v5-26",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0026",
+   "col": "json",
+   "from": "Title: First Compact Original Keeping Clerk",
+   "to": "Title: First Accord Original Custodian Clerk",
+   "id": "v5-27",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0027",
+   "col": "json",
+   "from": "Rank: Clerk (Jusa)",
+   "to": "Rank: Clerk",
+   "id": "v5-28",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0027",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-29",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0028",
+   "col": "json",
+   "from": "Rank: Clerk (Jusa)",
+   "to": "Rank: Clerk",
+   "id": "v5-30",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0028",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-31",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0030",
+   "col": "json",
+   "from": "Title: Cheonwang Base Fabrication Elder",
+   "to": "Title: Cheonwang Base Production Elder",
+   "id": "v5-32",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0031",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-33",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0033",
+   "col": "json_ko",
+   "from": "품계 이사",
+   "to": "품계 조합장",
+   "id": "v5-34",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0033",
+   "col": "json_ko",
+   "from": "품계: 이사",
+   "to": "품계: 조합장",
+   "id": "v5-35",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0033",
+   "col": "json",
+   "from": "Rank: Director",
+   "to": "Rank: Guild Master",
+   "id": "v5-36",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0034",
+   "col": "json",
+   "from": "Title: Engineer Crew Chief",
+   "to": "Title: Engineer Work Crew Foreman",
+   "id": "v5-37",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0036",
+   "col": "json_ko",
+   "from": "품계 이사",
+   "to": "품계 조합장",
+   "id": "v5-38",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0036",
+   "col": "json_ko",
+   "from": "품계: 이사",
+   "to": "품계: 조합장",
+   "id": "v5-39",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0036",
+   "col": "json",
+   "from": "Rank: Director",
+   "to": "Rank: Guild Master",
+   "id": "v5-40",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0036",
+   "col": "json",
+   "from": "Title: Protective Suit Guild Representative",
+   "to": "Title: Protective Suit Trade Representative",
+   "id": "v5-41",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0037",
+   "col": "json_ko",
+   "from": "품계: 이사",
+   "to": "품계: 조합장",
+   "id": "v5-42",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0037",
+   "col": "json",
+   "from": "Title: In Charge of Food Sharing, Geumcheon",
+   "to": "Title: Geumcheon Food Distribution Officer",
+   "id": "v5-43",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0037",
+   "col": "json",
+   "from": "Rank: Director",
+   "to": "Rank: Guild Master",
+   "id": "v5-44",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0038",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-45",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0038",
+   "col": "json",
+   "from": "Title: Wheel Mechanic at Cheonwang Base",
+   "to": "Title: Cheonwang Base Wheel Mechanic",
+   "id": "v5-46",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0039",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-47",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0039",
+   "col": "json",
+   "from": "Title: Logistics Merchant of the Guro Tool Market",
+   "to": "Title: Guro Tool Market Logistics Merchant",
+   "id": "v5-48",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0040",
+   "col": "json_ko",
+   "from": "직함은 금천 공방의무원",
+   "to": "직함은 금천 공방 신경외과의",
+   "id": "v5-49",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0040",
+   "col": "json",
+   "from": "Rank: union member",
+   "to": "Rank: Guild Member",
+   "id": "v5-50",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0040",
+   "col": "json",
+   "from": "Title: Geumcheon Workshop Medic",
+   "to": "Title: Geumcheon Workshop Neurosurgeon",
+   "id": "v5-51",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0041",
+   "col": "json",
+   "from": "Rank: union member",
+   "to": "Rank: Guild Member",
+   "id": "v5-52",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0042",
+   "col": "json",
+   "from": "Title: Manufacturing Standards Courier",
+   "to": "Title: Production Standards Courier",
+   "id": "v5-53",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0043",
+   "col": "json",
+   "from": "Title: Southwest Outer Track Surveyor",
+   "to": "Title: Southwest Outer Line Scout",
+   "id": "v5-54",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0044",
+   "col": "json",
+   "from": "Title: Skill-Point Ledger Archivist",
+   "to": "Title: Skill Point Ledger Recorder",
+   "id": "v5-55",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0045",
+   "col": "json",
+   "from": "Rank: Auditor",
+   "to": "Rank: Audit",
+   "id": "v5-56",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0046",
+   "col": "json",
+   "from": "Rank: Auditor",
+   "to": "Rank: Audit",
+   "id": "v5-57",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0046",
+   "col": "json",
+   "from": "Title: Cheonwang Base Holding-Track Dispatch Chief",
+   "to": "Title: Cheonwang Base Siding Dispatch Officer",
+   "id": "v5-58",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0047",
+   "col": "json",
+   "from": "Title: Geumcheon Ration-Pot Market Broker",
+   "to": "Title: Geumcheon Ration Pot Market Broker",
+   "id": "v5-59",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0048",
+   "col": "json_ko",
+   "from": "직함은 구로 분진진료소 의무장",
+   "to": "직함은 구로 분진진료소 외과의",
+   "id": "v5-60",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0048",
+   "col": "json",
+   "from": "Title: Chief Medical Officer of the Guro Dust Clinic",
+   "to": "Title: Guro Dust Clinic Surgeon",
+   "id": "v5-61",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0049",
+   "col": "json",
+   "from": "Rank: Auditor",
+   "to": "Rank: Audit",
+   "id": "v5-62",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0049",
+   "col": "json",
+   "from": "Title: Guro Power Trunk Generation Operations Chief",
+   "to": "Title: Guro Power Trunk Line Generation Operations Chief",
+   "id": "v5-63",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0050",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-64",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0050",
+   "col": "json",
+   "from": "Title: Representative of Counterfeit Pump Part Victims",
+   "to": "Title: Counterfeit Pump Parts Victims' Representative",
+   "id": "v5-65",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0051",
+   "col": "json",
+   "from": "Rank: union member",
+   "to": "Rank: Guild Member",
+   "id": "v5-66",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0051",
+   "col": "json",
+   "from": "Title: Recovery Service Refusal Testimony Clerk",
+   "to": "Title: Restoration Service Refusal Testimony Clerk",
+   "id": "v5-67",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0052",
+   "col": "json",
+   "from": "Rank: union member",
+   "to": "Rank: Guild Member",
+   "id": "v5-68",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0052",
+   "col": "json",
+   "from": "Title: Meritorious Service Reward Ledger Clerk",
+   "to": "Title: Merit Reward Ledger Clerk",
+   "id": "v5-69",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0053",
+   "col": "json",
+   "from": "Title: Refugee Intake Courier",
+   "to": "Title: Refugee Reception Messenger",
+   "id": "v5-70",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0054",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-71",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0055",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-72",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0055",
+   "col": "json",
+   "from": "Title: Fabrication Charter Herald",
+   "to": "Title: Crafting Charter Messenger",
+   "id": "v5-73",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0056",
+   "col": "json",
+   "from": "Title: Fabrication Logistics Officer",
+   "to": "Title: Fabrication Logistics",
+   "id": "v5-74",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "Title: Life Safety Research Lead of the Arc",
+   "to": "Title: Arc Life Safety Research Director",
+   "id": "v5-75",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json",
+   "from": "Title: Life Safety Reviewer",
+   "to": "Title: Life Safety Examiner",
+   "id": "v5-76",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "Title: Technology Certification Councilor",
+   "to": "Title: Technical Certification Councilor",
+   "id": "v5-77",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0060",
+   "col": "json",
+   "from": "Title: Disaster Prevention Captain",
+   "to": "Title: Disaster Prevention Chief",
+   "id": "v5-78",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "Title: Stabling and Dispatch Chief of Godeok Base",
+   "to": "Title: Godeok Base Stabling and Dispatch Chief",
+   "id": "v5-79",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0063",
+   "col": "json_ko",
+   "from": "직함은 종자보존고 책임자",
+   "to": "직함은 원종 보존고 온습도 전산 책임자",
+   "id": "v5-80",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0063",
+   "col": "json",
+   "from": "Title: Seed Vault Director",
+   "to": "Title: Original Seed Vault Climate Software Chief",
+   "id": "v5-81",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0065",
+   "col": "json",
+   "from": "Title: Auditor of Research Records and the Communications Archive",
+   "to": "Title: Research Records and Communications Archive Auditor",
+   "id": "v5-82",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "Title: Research Vehicle Mechanic at Godeok Depot",
+   "to": "Title: Godeok Base Research Vehicle Mechanic",
+   "id": "v5-83",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0068",
+   "col": "json",
+   "from": "Title: Laboratory Wing Safety Medical Officer",
+   "to": "Title: Laboratory Wing Safety Medic",
+   "id": "v5-84",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0072",
+   "col": "json",
+   "from": "Title: Technical Certification Copy Recorder",
+   "to": "Title: Technology Certification Copy Archivist",
+   "id": "v5-85",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0073",
+   "col": "json_ko",
+   "from": "직함은 대치 대합실 당직 담당",
+   "to": "직함은 대치 대합실 역장",
+   "id": "v5-86",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0074",
+   "col": "json",
+   "from": "Title: Godeok Depot Holding Track Supervisor",
+   "to": "Title: Godeok Base Stabling Operations Chief",
+   "id": "v5-87",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0078",
+   "col": "json",
+   "from": "Title: Audio Record Original Escort",
+   "to": "Title: Original Audio Recording Escort",
+   "id": "v5-88",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "Title: Representative of Victims of Fake Drug Samples",
+   "to": "Title: Counterfeit Medicine Sample Victims' Representative",
+   "id": "v5-89",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "from": "Title: Negotiation Technology-Sharing Clerk",
+   "to": "Title: Council Technology Sharing Clerk",
+   "id": "v5-90",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0084",
+   "col": "json",
+   "from": "Title: Non-Military Joint Investigation Courier",
+   "to": "Title: Non-Military Joint Survey Courier",
+   "id": "v5-91",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0087",
+   "col": "json_ko",
+   "from": "직함 없음",
+   "to": "직함 펌프기술자, 임하준의 양자",
+   "id": "v5-92",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0088",
+   "col": "json_ko",
+   "from": "품계 주요",
+   "to": "품계 역장",
+   "id": "v5-93",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0088",
+   "col": "json_ko",
+   "from": "품계: 주요",
+   "to": "품계: 역장",
+   "id": "v5-94",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0088",
+   "col": "json",
+   "from": "Rank: Key",
+   "to": "Rank: Stationmaster",
+   "id": "v5-95",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0089",
+   "col": "json_ko",
+   "from": "품계 없음",
+   "to": "품계 일반 시민",
+   "id": "v5-96",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0090",
+   "col": "json",
+   "from": "Title: Pump Engineering Clan Proxy",
+   "to": "Title: Acting Head of the Pump Engineer Family",
+   "id": "v5-97",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0091",
+   "col": "json",
+   "from": "Title: Amsa Pump Guard Captain",
+   "to": "Title: Commander of the Amsa Pump Guard",
+   "id": "v5-98",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0095",
+   "col": "json_ko",
+   "from": "품계 없음",
+   "to": "품계 일반 시민",
+   "id": "v5-99",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0095",
+   "col": "json",
+   "from": "Title: Cheonho-Gil-dong Alley Check-Notice Duty",
+   "to": "Title: Cheonho–Gil-dong Alley Check-Notice Duty",
+   "id": "v5-100",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "Title: Cheonho Alley Pump Mechanic",
+   "to": "Title: Cheonho Alley Pump Technician",
+   "id": "v5-101",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0098",
+   "col": "json",
+   "from": "Title: Cheonho Packing Transport Logistics Agent",
+   "to": "Title: Cheonho Packed-Freight Logistics Merchant",
+   "id": "v5-102",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json_ko",
+   "from": "품계 없음",
+   "to": "품계 일반 시민",
+   "id": "v5-103",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json_ko",
+   "from": "직함은 천호 대합실 식량 창구 당직",
+   "to": "직함은 천호 대합실 역장",
+   "id": "v5-104",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json",
+   "from": "Title: Cheonho Waiting Hall Food Window Duty",
+   "to": "Title: Cheonho Concourse Stationmaster",
+   "id": "v5-105",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json",
+   "from": "Title: Cheonho Waiting Hall Stationmaster",
+   "to": "Title: Cheonho Concourse Stationmaster",
+   "id": "v5-106",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json_ko",
+   "from": "직함은 길동 골목 돌봄 당번",
+   "to": "직함은 길동 골목의무소 응급처치원",
+   "id": "v5-107",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json",
+   "from": "Title: Gil-dong Alley Care Duty",
+   "to": "Title: Gil-dong Alley Infirmary First-Aid Officer",
+   "id": "v5-108",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json",
+   "from": "Title: Director of the Gil-dong Alley Clinic",
+   "to": "Title: Gil-dong Alley Infirmary First-Aid Officer",
+   "id": "v5-109",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json",
+   "from": "Title: Head of Power Operations, Amsa Pump Room",
+   "to": "Title: Amsa Pump Room Power Plant Chief Operator",
+   "id": "v5-110",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0110",
+   "col": "json",
+   "from": "Title: Clerk of the Three Wills Workshop",
+   "to": "Title: Scribe of the Three Wills Workshop",
+   "id": "v5-111",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Title: Counterfeit Shutter Motor Parts Victim Artisan",
+   "to": "Title: Artisan Victim of Counterfeit Shutter Motor Parts",
+   "id": "v5-112",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "from": "Title: Will Evidence Convoy Messenger",
+   "to": "Title: Will Evidence Escort Herald",
+   "id": "v5-113",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0115",
+   "col": "json",
+   "from": "Title: Militia Chief Refusing Protectorate Dispatch",
+   "to": "Title: Militia Squad Leader Who Refused Protectorate Deployment",
+   "id": "v5-114",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0116",
+   "col": "json",
+   "from": "Title: Commander of the Eastern Rifle Guard",
+   "to": "Title: Commander of the Eastern Command, the Arc's hereditary rifle guard",
+   "id": "v5-115",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0116",
+   "col": "json",
+   "from": "Title: Eastern Command Commander",
+   "to": "Title: Commander of the Eastern Command, the Arc's hereditary rifle guard",
+   "id": "v5-116",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0117",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-117",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0117",
+   "col": "json_ko",
+   "from": "직함은 Arc 참모장",
+   "to": "직함은 Arc 경비 부책임자",
+   "id": "v5-118",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0117",
+   "col": "json",
+   "from": "Rank: Sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-119",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0117",
+   "col": "json",
+   "from": "Title: Arc Chief of Staff",
+   "to": "Title: Arc Deputy Guard Chief",
+   "id": "v5-120",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0118",
+   "col": "json_ko",
+   "from": "품계: 경비 책임자",
+   "to": "품계: 본부장",
+   "id": "v5-121",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0118",
+   "col": "json",
+   "from": "Rank: Guard Chief",
+   "to": "Rank: Division Chief",
+   "id": "v5-122",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0119",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-123",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0119",
+   "col": "json_ko",
+   "from": "직함은 고덕 장교단 교관",
+   "to": "직함은 고덕 소총 경비대 교관",
+   "id": "v5-124",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0119",
+   "col": "json",
+   "from": "Rank: Sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-125",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0119",
+   "col": "json",
+   "from": "Title: Godeok Officer Corps Instructor",
+   "to": "Title: Godeok Rifle Guard Instructor",
+   "id": "v5-126",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0119",
+   "col": "json",
+   "from": "Rank: sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-127",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0119",
+   "col": "json",
+   "from": "Title: Godeok officer corps instructor",
+   "to": "Title: Godeok Rifle Guard Instructor",
+   "id": "v5-128",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-129",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "Rank: Sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-130",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "Rank: sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-131",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "Title: eastern bridge blockade chief",
+   "to": "Title: Eastern Bridge Blockade Commander",
+   "id": "v5-132",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json_ko",
+   "from": "직함은 고덕 기지 기체 정비",
+   "to": "직함은 고덕기지 열차정비장",
+   "id": "v5-133",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "Title: Godeok Base Machine-Body Maintenance",
+   "to": "Title: Godeok Base Train Maintenance Chief",
+   "id": "v5-134",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "Title: Godeok base machine-body maintenance",
+   "to": "Title: Godeok Base Train Maintenance Chief",
+   "id": "v5-135",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "Title: Godeok Depot Train Maintenance Chief",
+   "to": "Title: Godeok Base Train Maintenance Chief",
+   "id": "v5-136",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-137",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json",
+   "from": "Rank: Sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-138",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json",
+   "from": "Title: Eastern Gate Toll and Protection Contract Auditor",
+   "to": "Title: Eastern Gate Tax and Protection Contract Auditor",
+   "id": "v5-139",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json",
+   "from": "Rank: sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-140",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json",
+   "from": "Title: eastern gate toll and protection contract auditor",
+   "to": "Title: Eastern Gate Tax and Protection Contract Auditor",
+   "id": "v5-141",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-142",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "Rank: Sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-143",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "Rank: sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-144",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "Title: eastern patrol train master",
+   "to": "Title: Eastern Patrol Train Chief",
+   "id": "v5-145",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0129",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-146",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0129",
+   "col": "json",
+   "from": "Rank: Sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-147",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0129",
+   "col": "json",
+   "from": "Title: Arc Herald",
+   "to": "Title: Arc Messenger",
+   "id": "v5-148",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-149",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "Rank: Sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-150",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "Rank: sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-151",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0132",
+   "col": "json_ko",
+   "from": "직함은 암사역 대합실 담당",
+   "to": "직함은 암사역 대합실 역장",
+   "id": "v5-152",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0132",
+   "col": "json",
+   "from": "Title: Amsa Station Concourse Keeper",
+   "to": "Title: Amsa Station Concourse Stationmaster",
+   "id": "v5-153",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0132",
+   "col": "json",
+   "from": "Title: Amsa Station concourse keeper",
+   "to": "Title: Amsa Station Concourse Stationmaster",
+   "id": "v5-154",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0132",
+   "col": "json",
+   "from": "Title: Stationmaster of the Amsa Station Concourse",
+   "to": "Title: Amsa Station Concourse Stationmaster",
+   "id": "v5-155",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0132",
+   "col": "json",
+   "from": "Affiliation: Eastern Directorate",
+   "to": "Affiliation: Arc",
+   "id": "v5-156",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0133",
+   "col": "json_ko",
+   "from": "직함은 고덕 기지 충전 점검",
+   "to": "직함은 고덕기지 유치선 감독",
+   "id": "v5-157",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0133",
+   "col": "json",
+   "from": "Title: Godeok Base Charging Inspector",
+   "to": "Title: Godeok Base Siding Supervisor",
+   "id": "v5-158",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0133",
+   "col": "json",
+   "from": "Title: Godeok base charging inspector",
+   "to": "Title: Godeok Base Siding Supervisor",
+   "id": "v5-159",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0133",
+   "col": "json",
+   "from": "Title: Godeok Base Stabling Track Supervisor",
+   "to": "Title: Godeok Base Siding Supervisor",
+   "id": "v5-160",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0133",
+   "col": "json",
+   "from": "Affiliation: Eastern Directorate",
+   "to": "Affiliation: Arc",
+   "id": "v5-161",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-162",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Rank Sergeant",
+   "to": "Rank Guard",
+   "id": "v5-163",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Title: Foreman of the Eastern Mobile Medical Car",
+   "to": "Title: Eastern Mobile Medical Vehicle Squad Leader",
+   "id": "v5-164",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Rank: sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-165",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Title: eastern mobile clinic van chief",
+   "to": "Title: Eastern Mobile Medical Vehicle Squad Leader",
+   "id": "v5-166",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Affiliation: Eastern Office",
+   "to": "Affiliation: Arc",
+   "id": "v5-167",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0136",
+   "col": "json_ko",
+   "from": "품계 중대장",
+   "to": "품계 경비조장",
+   "id": "v5-168",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0136",
+   "col": "json",
+   "from": "Rank: Company Commander",
+   "to": "Rank: Guard Squad Leader",
+   "id": "v5-169",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0136",
+   "col": "json",
+   "from": "Title: Godeok Base Emergency Generation Operator",
+   "to": "Title: Godeok Base Emergency Power Operator",
+   "id": "v5-170",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0136",
+   "col": "json",
+   "from": "Rank: company commander",
+   "to": "Rank: Guard Squad Leader",
+   "id": "v5-171",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0136",
+   "col": "json",
+   "from": "Title: Godeok depot emergency generator operator",
+   "to": "Title: Godeok Base Emergency Power Operator",
+   "id": "v5-172",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json_ko",
+   "from": "품계 병장",
+   "to": "품계 경비대원",
+   "id": "v5-173",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json",
+   "from": "Rank: Sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-174",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json",
+   "from": "Title: Protectorate Force Dispatch Escort Officer",
+   "to": "Title: Protection Force Deployment Escort Officer",
+   "id": "v5-175",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json",
+   "from": "Rank: sergeant",
+   "to": "Rank: Guard",
+   "id": "v5-176",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json",
+   "from": "Title: protection force dispatch convoy master",
+   "to": "Title: Protection Force Deployment Escort Officer",
+   "id": "v5-177",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json",
+   "from": "Affiliation: Eastern Defense Command",
+   "to": "Affiliation: Arc",
+   "id": "v5-178",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0144",
+   "col": "json",
+   "from": "Title: Amsa Bridge Night Passage Checker",
+   "to": "Title: Amsa Bridge Night Passage Check",
+   "id": "v5-179",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0144",
+   "col": "json",
+   "from": "Title: Amsa bridge night passage checker",
+   "to": "Title: Amsa Bridge Night Passage Check",
+   "id": "v5-180",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0146",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-181",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0146",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-182",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0147",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-183",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0147",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-184",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0147",
+   "col": "json",
+   "from": "Affiliation: Seoul Metropolitan Government local civil service",
+   "to": "Affiliation: Seoul Metropolitan Government Local Civil Service Organization",
+   "id": "v5-185",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0148",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-186",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0148",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-187",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0148",
+   "col": "json",
+   "from": "Title: medical-transfer registrar",
+   "to": "Title: Medical Transport Recorder",
+   "id": "v5-188",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0149",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-189",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0149",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-190",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0149",
+   "col": "json",
+   "from": "Rank: A grade among Local Administrative Officer (Grade 5), Senior Clerk (Grade 6), Assistant Senior Clerk (Grade 7), Clerk (Grade 8), and Assistant Clerk (Grade 9), whichever fits the post at a Seoul Metropolitan Government headquarters or field office",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-191",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0150",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-192",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0150",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-193",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0150",
+   "col": "json",
+   "from": "Title: map-restoration librarian",
+   "to": "Title: Map Restoration Librarian",
+   "id": "v5-194",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0151",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-195",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0151",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-196",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0151",
+   "col": "json",
+   "from": "Title: Seoul Station archive dehumidification mechanic",
+   "to": "Title: Seoul Station Archive Dehumidification Technician",
+   "id": "v5-197",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0152",
+   "col": "json_ko",
+   "from": "품계는 주사",
+   "to": "품계는 일반 시민",
+   "id": "v5-198",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0152",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-199",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0152",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-200",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0152",
+   "col": "json",
+   "from": "Title: Seoul Station notarized-copy logistics merchant",
+   "to": "Title: Seoul Station Notarized Copy Logistics Merchant",
+   "id": "v5-201",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0153",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-202",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0153",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-203",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0154",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-204",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0154",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-205",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0154",
+   "col": "json",
+   "from": "Affiliation: Seoul Special City local civil service organization",
+   "to": "Affiliation: Seoul Metropolitan Government Local Civil Service Organization",
+   "id": "v5-206",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0155",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-207",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0155",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-208",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0155",
+   "col": "json",
+   "from": "Title: ratification examination courier",
+   "to": "Title: Ratification Review Herald",
+   "id": "v5-209",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0157",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-210",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0157",
+   "col": "json",
+   "from": "Rank suited to a headquarters or office post in the Seoul Metropolitan Government, among Local Administrative Official (Grade 5), Local Administrative Officer (Grade 6), Assistant Local Administrative Officer (Grade 7), Local Administrative Clerk (Grade 8), or Assistant Local Administrative Clerk (Grade 9)",
+   "to": "Rank Ordinary Citizen",
+   "id": "v5-211",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0157",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-212",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0157",
+   "col": "json",
+   "from": "Title: testament handwriting registrar",
+   "to": "Title: Will Handwriting Recorder",
+   "id": "v5-213",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0158",
+   "col": "json_ko",
+   "from": "품계 국장",
+   "to": "품계 역장",
+   "id": "v5-214",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0158",
+   "col": "json",
+   "from": "Rank: bureau director",
+   "to": "Rank: Stationmaster",
+   "id": "v5-215",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0159",
+   "col": "json_ko",
+   "from": "품계 국장",
+   "to": "품계 역장",
+   "id": "v5-216",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0159",
+   "col": "json",
+   "from": "Rank: bureau director",
+   "to": "Rank: Stationmaster",
+   "id": "v5-217",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0159",
+   "col": "json",
+   "from": "Title: Seoul Station archive-depot supervisor",
+   "to": "Title: Seoul Station Stacks Base Supervisor",
+   "id": "v5-218",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-219",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-220",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json",
+   "from": "Title: Jongno notarized-copy market auctioneer",
+   "to": "Title: Jongno Notarized Copy Market Auctioneer",
+   "id": "v5-221",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-222",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-223",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "Title: central disaster-medical coordination duty officer",
+   "to": "Title: Central Disaster Medicine Coordination Officer",
+   "id": "v5-224",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0162",
+   "col": "json_ko",
+   "from": "품계 국장",
+   "to": "품계 역장",
+   "id": "v5-225",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0162",
+   "col": "json",
+   "from": "Rank: bureau director",
+   "to": "Rank: Stationmaster",
+   "id": "v5-226",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0162",
+   "col": "json",
+   "from": "Title: archive emergency generator operator",
+   "to": "Title: Archive Emergency Power Chief Operator",
+   "id": "v5-227",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0163",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-228",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0163",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-229",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0163",
+   "col": "json",
+   "from": "Title: testament verification clerk",
+   "to": "Title: Will Verification Clerk",
+   "id": "v5-230",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0165",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-231",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0165",
+   "col": "json_ko",
+   "from": "직함은 각국 인준 보관인",
+   "to": "직함은 인준 보관인",
+   "id": "v5-232",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0165",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-233",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0165",
+   "col": "json",
+   "from": "Title: states ratification custodian",
+   "to": "Title: Ratification Custodian",
+   "id": "v5-234",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0165",
+   "col": "json",
+   "from": "Affiliation: Seoul Metropolitan Local Civil Service Organization",
+   "to": "Affiliation: Seoul Metropolitan Government Local Civil Service Organization",
+   "id": "v5-235",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0166",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-236",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0166",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-237",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0166",
+   "col": "json",
+   "from": "Title: merit-compensation roster party",
+   "to": "Title: Meritorious Subject Reward Roster Party",
+   "id": "v5-238",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0167",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-239",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0167",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-240",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0167",
+   "col": "json",
+   "from": "Title: lesser-states council record courier",
+   "to": "Title: Government of the Republic of Korea Council Records Courier",
+   "id": "v5-241",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0167",
+   "col": "json",
+   "from": "Affiliation: Seoul Metropolitan Government local civil service",
+   "to": "Affiliation: Seoul Metropolitan Government Local Civil Service Organization",
+   "id": "v5-242",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-243",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-244",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json",
+   "from": "Title: emergency power return witness",
+   "to": "Title: Emergency Powers Return Witness",
+   "id": "v5-245",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0169",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-246",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0169",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-247",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0169",
+   "col": "json",
+   "from": "Title: record notarization auditor",
+   "to": "Title: Records Notarization Auditor",
+   "id": "v5-248",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0172",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-249",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0173",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-250",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0173",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-251",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0174",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-252",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0174",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-253",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-254",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-255",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0176",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-256",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0176",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-257",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0176",
+   "col": "json",
+   "from": "Title: Yongsan warehouse brake mechanic",
+   "to": "Title: Yongsan Depot Brake Mechanic",
+   "id": "v5-258",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0177",
+   "col": "json_ko",
+   "from": "품계 주사",
+   "to": "품계 일반 시민",
+   "id": "v5-259",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0177",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-260",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0177",
+   "col": "json",
+   "from": "Title: transshipment warehouse logistics merchant",
+   "to": "Title: Transshipment Warehouse Merchant",
+   "id": "v5-261",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "Rank: Jusa (Clerk)",
+   "to": "Rank: Clerk",
+   "id": "v5-262",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "Title: Yongsan Depot Medical Officer",
+   "to": "Title: Yongsan Depot Medic",
+   "id": "v5-263",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-264",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "Title: Yongsan warehouse medic",
+   "to": "Title: Yongsan Depot Medic",
+   "id": "v5-265",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Rank Jusa",
+   "to": "Rank Clerk",
+   "id": "v5-266",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-267",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Title: Han River north bank dead line surveyor",
+   "to": "Title: North Bank Han River Abandoned Line Surveyor",
+   "id": "v5-268",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0184",
+   "col": "json",
+   "from": "Title: Yongsan Depot Siding Overseer",
+   "to": "Title: Yongsan Depot Siding Supervisor",
+   "id": "v5-269",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0184",
+   "col": "json",
+   "from": "Title: Yongsan warehouse siding supervisor",
+   "to": "Title: Yongsan Depot Siding Supervisor",
+   "id": "v5-270",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0186",
+   "col": "json",
+   "from": "Rank: Registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-271",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0186",
+   "col": "json",
+   "from": "Title: Yongsan Depot Mobile Medical Car Chief",
+   "to": "Title: Yongsan Depot Mobile Medical Car Foreman",
+   "id": "v5-272",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0186",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-273",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0186",
+   "col": "json",
+   "from": "Title: Yongsan warehouse mobile clinic van chief",
+   "to": "Title: Yongsan Depot Mobile Medical Car Foreman",
+   "id": "v5-274",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0187",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-275",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0187",
+   "col": "json",
+   "from": "Title: Chief of Emergency Generator Operations at the Transfer Warehouse",
+   "to": "Title: Transshipment Warehouse Emergency Generator Operator",
+   "id": "v5-276",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0187",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-277",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0188",
+   "col": "json",
+   "from": "Rank Jusa",
+   "to": "Rank Clerk",
+   "id": "v5-278",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0188",
+   "col": "json",
+   "from": "Title: Dispatch Record Access Requester",
+   "to": "Title: Dispatch Record Access Petitioner",
+   "id": "v5-279",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0188",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-280",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0188",
+   "col": "json",
+   "from": "Title: dispatch record inspection claimant",
+   "to": "Title: Dispatch Record Access Petitioner",
+   "id": "v5-281",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0188",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-282",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "Rank Jusa",
+   "to": "Rank Clerk",
+   "id": "v5-283",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "Title: Medical Train Weapons Witness",
+   "to": "Title: Medical Train Weapon Witness",
+   "id": "v5-284",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-285",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "Title: medical train weapons witness",
+   "to": "Title: Medical Train Weapon Witness",
+   "id": "v5-286",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0191",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-287",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0192",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-288",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0192",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-289",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0192",
+   "col": "json",
+   "from": "Title: lesser-states council train guide",
+   "to": "Title: The Government Conference Train Guide",
+   "id": "v5-290",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0193",
+   "col": "json",
+   "from": "Title: Succession Trial Parts Complaint Aide",
+   "to": "Title: Succession Trial Parts Accusation Assistant",
+   "id": "v5-291",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0193",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-292",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-293",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json",
+   "from": "Title: Track Dispatch Arbitrator",
+   "to": "Title: Track Dispatch Arbitration Station",
+   "id": "v5-294",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-295",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json",
+   "from": "Title: rail dispatch arbitrator",
+   "to": "Title: Track Dispatch Arbitration Station",
+   "id": "v5-296",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0196",
+   "col": "json",
+   "from": "Title: Frozen Merchant",
+   "to": "Title: Frozen Goods Merchant",
+   "id": "v5-297",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0196",
+   "col": "json",
+   "from": "Title: cold-storage merchant",
+   "to": "Title: Frozen Goods Merchant",
+   "id": "v5-298",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "Title: Convoy Foreman",
+   "to": "Title: Escort Foreman",
+   "id": "v5-299",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "Title: convoy squad leader",
+   "to": "Title: Escort Foreman",
+   "id": "v5-300",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0200",
+   "col": "json",
+   "from": "Rank Chief Technician",
+   "to": "Rank Chief Engineer",
+   "id": "v5-301",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0200",
+   "col": "json",
+   "from": "Title: Transport Shipowners' Councilor",
+   "to": "Title: Transport Shipowners' Council",
+   "id": "v5-302",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0200",
+   "col": "json",
+   "from": "Rank: senior engineer",
+   "to": "Rank: Chief Engineer",
+   "id": "v5-303",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0200",
+   "col": "json",
+   "from": "Title: shipping owners' council",
+   "to": "Title: Transport Shipowners' Council",
+   "id": "v5-304",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0200",
+   "col": "json",
+   "from": "Rank: Chief Technician",
+   "to": "Rank: Chief Engineer",
+   "id": "v5-305",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json",
+   "from": "Title: Cheongnyangni Ice Maker Technician",
+   "to": "Title: Cheongnyangni Ice Machine Technician",
+   "id": "v5-306",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json",
+   "from": "Title: Cheongnyangni ice-machine mechanic",
+   "to": "Title: Cheongnyangni Ice Machine Technician",
+   "id": "v5-307",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json",
+   "from": "Title: Cheongnyangni Station Waiting Hall Stationmaster",
+   "to": "Title: Cheongnyangni Station Concourse Stationmaster",
+   "id": "v5-308",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0209",
+   "col": "json",
+   "from": "Title: Cheongnyangni cold-storage depot supervisor",
+   "to": "Title: Cheongnyangni Refrigeration Base Supervisor",
+   "id": "v5-309",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json",
+   "from": "Title: Chief of the Southern Medical Access Mobile Ambulance",
+   "to": "Title: Southern Medical Access Mobile First-Aid Post Chief",
+   "id": "v5-310",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json",
+   "from": "Title: southern medical-access mobile clinic van chief",
+   "to": "Title: Southern Medical Access Mobile First-Aid Post Chief",
+   "id": "v5-311",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0212",
+   "col": "json",
+   "from": "Title: Cheongnyangni Ice-Making Emergency Generation Operations Chief",
+   "to": "Title: Cheongnyangni Ice-Making Emergency Generator Operator",
+   "id": "v5-312",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json",
+   "from": "Title: Fake Medicine Auction Victim",
+   "to": "Title: Counterfeit Medicine Auction Victim",
+   "id": "v5-313",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json",
+   "from": "Title: counterfeit drug auction victim",
+   "to": "Title: Counterfeit Medicine Auction Victim",
+   "id": "v5-314",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0217",
+   "col": "json",
+   "from": "Rank: corrections",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-315",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json",
+   "from": "Title: Holding Cell Attendant of the Cheongnyangni Station",
+   "to": "Title: Cheongnyangni Station Holding Cell Attendant",
+   "id": "v5-316",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0221",
+   "col": "json",
+   "from": "Rank: Councilor",
+   "to": "Rank: Council Member",
+   "id": "v5-317",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0221",
+   "col": "json",
+   "from": "Title: Vault Knight",
+   "to": "Title: Vault Engineer",
+   "id": "v5-318",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0222",
+   "col": "json",
+   "from": "Rank: Councilor",
+   "to": "Rank: Council Member",
+   "id": "v5-319",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0223",
+   "col": "json",
+   "from": "Rank: Councillor",
+   "to": "Rank: Council Member",
+   "id": "v5-320",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0224",
+   "col": "json",
+   "from": "Rank: Councillor",
+   "to": "Rank: Council Member",
+   "id": "v5-321",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0225",
+   "col": "json",
+   "from": "Title: Counterfeit Currency Tracing Team Leader",
+   "to": "Title: Counterfeit Currency Tracking Team Leader",
+   "id": "v5-322",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0226",
+   "col": "json",
+   "from": "Title: Vault Mechanic and Gwon Mirae's operations lead",
+   "to": "Title: Vault Mechanic, Gwon Mirae's Deputy",
+   "id": "v5-323",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0227",
+   "col": "json",
+   "from": "Title: Certified Parts Logistics Officer",
+   "to": "Title: Certified Parts Merchant",
+   "id": "v5-324",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0228",
+   "col": "json",
+   "from": "Title: Vault Night-Duty Medic",
+   "to": "Title: Vault On-Duty Medic",
+   "id": "v5-325",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0230",
+   "col": "json",
+   "from": "Title: Investment Courier and Oh Haneul's working-level aide",
+   "to": "Title: Investment Messenger, Oh Haneul's Deputy",
+   "id": "v5-326",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0232",
+   "col": "json",
+   "from": "Title: Currency Appraisal Archivist and Hwang Eunseol's working-level aide",
+   "to": "Title: Currency Appraisal Archivist, Hwang Eunseol's Deputy",
+   "id": "v5-327",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0233",
+   "col": "json",
+   "from": "Title: Yeouido Vault Watch Chief",
+   "to": "Title: Yeouido Vault Duty Chief",
+   "id": "v5-328",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0234",
+   "col": "json",
+   "from": "Title: Yeouido Vault Keykeeper and Song Jae-min's working-level officer",
+   "to": "Title: Yeouido Vault Keykeeper, Song Jaemin's Deputy",
+   "id": "v5-329",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0235",
+   "col": "json_ko",
+   "from": "직함은 신촌역 역장",
+   "to": "직함은 환전 기록 담당 서기",
+   "id": "v5-330",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0235",
+   "col": "json",
+   "from": "Title: Stationmaster of Sinchon Station",
+   "to": "Title: Exchange Records Clerk",
+   "id": "v5-331",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0236",
+   "col": "json",
+   "from": "Title: Investment Council Clerk's Office Base Duty Officer, O Haneul's Duty Officer",
+   "to": "Title: Outpost Officer of the Channel Guild Formation Office, Aide to Oh Haneul",
+   "id": "v5-332",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0238",
+   "col": "json",
+   "from": "Title: Counterfeit Currency Internal Informant",
+   "to": "Title: Counterfeit Currency Inside Informant",
+   "id": "v5-333",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0239",
+   "col": "json",
+   "from": "Title: Original Ledger Recovery Messenger",
+   "to": "Title: Original Ledger Recovery Courier",
+   "id": "v5-334",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0240",
+   "col": "json",
+   "from": "Title: Pre-Disappearance Ledger Record Witness",
+   "to": "Title: Witness to Pre-Disappearance Ledger Records",
+   "id": "v5-335",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0242",
+   "col": "json",
+   "from": "Title: Bukhansanbogukmun Procession Exchange Witness",
+   "to": "Title: Bukhansan Bogungmun Procession Currency Exchange Witness",
+   "id": "v5-336",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0244",
+   "col": "json",
+   "from": "Title: Investment Council Relay Recorder",
+   "to": "Title: Eleven-Seat Meeting Relay Recorder",
+   "id": "v5-337",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0245",
+   "col": "json",
+   "from": "Title: Price-Rumor Verification Writer",
+   "to": "Title: Market Price Rumor Verification Writer",
+   "id": "v5-338",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "Title: Corridor Patrol Clerk, Gang Taesan's working-level officer",
+   "to": "Title: Corridor Patrol Clerk, Gang Tae-san's Deputy",
+   "id": "v5-339",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "Title: Courier Clerk, Sin Boram's working-level officer",
+   "to": "Title: Courier Clerk, Sin Bo-ram's Deputy",
+   "id": "v5-340",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0258",
+   "col": "json",
+   "from": "Title: Refugee Ledger Clerk, Yun Choa's Working-Level Officer",
+   "to": "Title: Refugee Ledger Clerk, Yun Cho-a's Deputy",
+   "id": "v5-341",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0261",
+   "col": "json",
+   "from": "Rank: Chief Seat",
+   "to": "Rank: Duty Chief",
+   "id": "v5-342",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0261",
+   "col": "json",
+   "from": "Title: Herb-Drying Yard Chief Seat",
+   "to": "Title: Herb Drying Yard Duty Chief",
+   "id": "v5-343",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0262",
+   "col": "json",
+   "from": "Rank: Chief Seat",
+   "to": "Rank: Duty Chief",
+   "id": "v5-344",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0262",
+   "col": "json",
+   "from": "Title: Highland Watch Chief Seat",
+   "to": "Title: Highland Duty Chief",
+   "id": "v5-345",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "Title: Duty Chief of the Fuel Depot, Oh Han-gyeol's working-level officer",
+   "to": "Title: Fuel Depot Duty Chief, O Han-gyeol's Deputy",
+   "id": "v5-346",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0264",
+   "col": "json",
+   "from": "Title: Registry Incident Handler",
+   "to": "Title: Roster Incident Handler",
+   "id": "v5-347",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0265",
+   "col": "json_ko",
+   "from": "직함은 용산역 인원 확인 담당",
+   "to": "직함은 복무 서명 거부자",
+   "id": "v5-348",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0265",
+   "col": "json",
+   "from": "Title: Headcount Checker of Yongsan Station",
+   "to": "Title: Service Signature Refuser",
+   "id": "v5-349",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0268",
+   "col": "json",
+   "from": "Title: Negotiation Attendant",
+   "to": "Title: Consultation Attendant",
+   "id": "v5-350",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0269",
+   "col": "json",
+   "from": "Title: Forced-Registration Defector",
+   "to": "Title: Forced Registration Deserter",
+   "id": "v5-351",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0274",
+   "col": "json",
+   "from": "Title: work squad leader",
+   "to": "Title: Arc Work Foreman",
+   "id": "v5-352",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0275",
+   "col": "json",
+   "from": "Title: Seocho 2-dong Fuel and Food Counter",
+   "to": "Title: Gangnam Station Company Housing Auditor",
+   "id": "v5-353",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json",
+   "from": "Title: Arc Steel Recovery Crew Chief",
+   "to": "Title: Arc Scrap Iron Recovery Crew Foreman",
+   "id": "v5-354",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json",
+   "from": "Title: steel salvage work squad leader",
+   "to": "Title: Arc Scrap Iron Recovery Crew Foreman",
+   "id": "v5-355",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0278",
+   "col": "json",
+   "from": "Title: Arc Wheel Mechanic, Song Hayul's Practical Aide",
+   "to": "Title: Arc Wheel Mechanic, Song Ha-yul's Practical Aide",
+   "id": "v5-356",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0278",
+   "col": "json",
+   "from": "Title: wheel mechanic, duty officer of Song Hayul",
+   "to": "Title: Arc Wheel Mechanic, Song Ha-yul's Practical Aide",
+   "id": "v5-357",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0279",
+   "col": "json",
+   "from": "Title: Arc Wheel and Steel Logistics Merchant",
+   "to": "Title: Arc Wheel and Scrap Iron Logistics Merchant",
+   "id": "v5-358",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0279",
+   "col": "json",
+   "from": "Title: wheel and steel logistics merchant",
+   "to": "Title: Arc Wheel and Scrap Iron Logistics Merchant",
+   "id": "v5-359",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0280",
+   "col": "json",
+   "from": "Title: Gangnam Station Quarters medic",
+   "to": "Title: Gangnam Station Residence Medical Officer",
+   "id": "v5-360",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0280",
+   "col": "json",
+   "from": "Title: base medic",
+   "to": "Title: Gangnam Station Residence Medical Officer",
+   "id": "v5-361",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0281",
+   "col": "json",
+   "from": "Title: Gangnam Station North Gate Patrol, practical aide to Gwon Doha",
+   "to": "Title: Gangnam Station Northern Gate Patrol, Operations Aide to Gwon Doha",
+   "id": "v5-362",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0281",
+   "col": "json",
+   "from": "Title: north gate patrol, duty officer of Gwon Doha",
+   "to": "Title: Gangnam Station Northern Gate Patrol, Operations Aide to Gwon Doha",
+   "id": "v5-363",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0282",
+   "col": "json",
+   "from": "Title: Hierophant's Office Courier and Jo Uchan's working-level aide",
+   "to": "Title: Hierophant's Office Courier, Operations Aide to Jo Uchan",
+   "id": "v5-364",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0282",
+   "col": "json",
+   "from": "Title: seniority council courier, duty officer of Jo Woochan",
+   "to": "Title: Hierophant's Office Courier, Operations Aide to Jo Uchan",
+   "id": "v5-365",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0283",
+   "col": "json",
+   "from": "Title: northern line surveyor",
+   "to": "Title: Outer Workshop Track Scout",
+   "id": "v5-366",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0284",
+   "col": "json",
+   "from": "Title: Arc Work Accident Recorder, Jo Uchan's working-level deputy",
+   "to": "Title: Arc Work Accident Recorder, Operations Aide to Jo Uchan",
+   "id": "v5-367",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0284",
+   "col": "json",
+   "from": "Title: work accident registrar, duty officer of Jo Woochan",
+   "to": "Title: Arc Work Accident Recorder, Operations Aide to Jo Uchan",
+   "id": "v5-368",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0286",
+   "col": "json",
+   "from": "Title: Seoul Station north gate convoy outpost chief",
+   "to": "Title: Seoul Station Northern Gate Escort Outpost Chief",
+   "id": "v5-369",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0287",
+   "col": "json",
+   "from": "Title: Stationmaster of Seocho 1-, 3- and 4-dong in charge of shutters and fuel",
+   "to": "Title: Stationmaster of Seocho 1-, 3- and 4-dong, in charge of shutters and fuel",
+   "id": "v5-370",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "Title: Hub Chief of the Arc Steel Recovery Yard, Hwang Noeul's Working-Level Aide",
+   "to": "Title: Arc Steel Salvage Yard Outpost Chief, Operations Aide to Hwang Noeul",
+   "id": "v5-371",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "Rank: section chief",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-372",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "Title: steel salvage yard outpost chief, duty officer of Hwang Noeul",
+   "to": "Title: Arc Steel Salvage Yard Outpost Chief, Operations Aide to Hwang Noeul",
+   "id": "v5-373",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0291",
+   "col": "json",
+   "from": "Title: trial wheel defect witness",
+   "to": "Title: Arc Test Wheel Defect Witness",
+   "id": "v5-374",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0292",
+   "col": "json",
+   "from": "Title: Gangnam Station Medical Train North Gate Mechanic",
+   "to": "Title: Gangnam Station Medical Train Northern Gate Mechanic",
+   "id": "v5-375",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0292",
+   "col": "json",
+   "from": "Title: medical train north gate mechanic",
+   "to": "Title: Gangnam Station Medical Train Northern Gate Mechanic",
+   "id": "v5-376",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0293",
+   "col": "json",
+   "from": "Title: Gangnam Station North Gate Evacuation Guide",
+   "to": "Title: Gangnam Station Northern Gate Evacuation Guide",
+   "id": "v5-377",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0293",
+   "col": "json",
+   "from": "Title: Bukhansan Bogukmun column north gate guide",
+   "to": "Title: Gangnam Station Northern Gate Evacuation Guide",
+   "id": "v5-378",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0294",
+   "col": "json",
+   "from": "Title: Seocho 2-dong Heating Recorder",
+   "to": "Title: Seocho 2-dong Heating Records",
+   "id": "v5-379",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0295",
+   "col": "json",
+   "from": "Title: lesser-states council northern envoy technician",
+   "to": "Title: Arc Outer Workshop Envoy Technician",
+   "id": "v5-380",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0298",
+   "col": "json",
+   "from": "Title: Transfer Dispatch Team Leader",
+   "to": "Title: Transfer Dispatch Crew Chief",
+   "id": "v5-381",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0298",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-382",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0298",
+   "col": "json",
+   "from": "Title: transfer dispatch crew leader",
+   "to": "Title: Transfer Dispatch Crew Chief",
+   "id": "v5-383",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "Title: Medical Team Member",
+   "to": "Title: Medical Crew Member",
+   "id": "v5-384",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-385",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "Title: medical assistant",
+   "to": "Title: Medical Crew Member",
+   "id": "v5-386",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-387",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "Title: passage examiner",
+   "to": "Title: Passage Inspector",
+   "id": "v5-388",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "Title: Light Escort Captain",
+   "to": "Title: Light Escort Commander",
+   "id": "v5-389",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-390",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "Title: light convoy leader",
+   "to": "Title: Light Escort Commander",
+   "id": "v5-391",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json",
+   "from": "Title: Medical Train Guard Captain",
+   "to": "Title: Medical Train Defense Commander",
+   "id": "v5-392",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-393",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json",
+   "from": "Title: medical train defense chief",
+   "to": "Title: Medical Train Defense Commander",
+   "id": "v5-394",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0303",
+   "col": "json",
+   "from": "Title: Siding Mechanic and An Dohan's working-level aide",
+   "to": "Title: Siding Mechanic, An Dohan's Deputy",
+   "id": "v5-395",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0303",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-396",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0303",
+   "col": "json",
+   "from": "Title: siding mechanic, duty officer of An Dohan",
+   "to": "Title: Siding Mechanic, An Dohan's Deputy",
+   "id": "v5-397",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "Title: Transfer Relay Logistics Merchant",
+   "to": "Title: Transfer Relay Merchant",
+   "id": "v5-398",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-399",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "Title: transfer relay logistics merchant",
+   "to": "Title: Transfer Relay Merchant",
+   "id": "v5-400",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": "Rank: Escort Officer",
+   "to": "Rank: Escort",
+   "id": "v5-401",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": "Title: Transfer Duty Medical Officer, Working-Level Aide to Jeon Miri",
+   "to": "Title: Transfer Duty Medical Officer, Jeon Miri's Deputy",
+   "id": "v5-402",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-403",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": "Title: transfer duty medic, duty officer of Jeon Miri",
+   "to": "Title: Transfer Duty Medical Officer, Jeon Miri's Deputy",
+   "id": "v5-404",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "Rank: Escort Officer",
+   "to": "Rank: Escort",
+   "id": "v5-405",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "Title: Northeast Outer Road Patrol, Working-Level Aide to Ha Seon",
+   "to": "Title: Northeast Outer Road Patrol, Ha Seon's Deputy",
+   "id": "v5-406",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-407",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "Title: northeast outer-road patrol, duty officer of Ha Seon",
+   "to": "Title: Northeast Outer Road Patrol, Ha Seon's Deputy",
+   "id": "v5-408",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0307",
+   "col": "json",
+   "from": "Title: Seasonal Shift Courier, Jeon Miri's Working-Level Aide",
+   "to": "Title: Seasonal Rotation Messenger, Jeon Miri's Deputy",
+   "id": "v5-409",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0307",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-410",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0307",
+   "col": "json",
+   "from": "Title: seasonal rotation courier, duty officer of Jeon Miri",
+   "to": "Title: Seasonal Rotation Messenger, Jeon Miri's Deputy",
+   "id": "v5-411",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-412",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "Title: northeast outer-road surveyor",
+   "to": "Title: Northeast Outer Road Surveyor",
+   "id": "v5-413",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "Title: Transit Inspection Recorder and Mun Sion's Working-Level Deputy",
+   "to": "Title: Passage Inspection Recorder, Mun Sion's Deputy",
+   "id": "v5-414",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-415",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "Title: passage examination registrar, duty officer of Mun Sion",
+   "to": "Title: Passage Inspection Recorder, Mun Sion's Deputy",
+   "id": "v5-416",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json",
+   "from": "Title: Mangu transfer platform outpost chief",
+   "to": "Title: Mangu Transfer Platform Hub Chief",
+   "id": "v5-417",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0311",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-418",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0311",
+   "col": "json",
+   "from": "Title: Sinnae rolling-stock depot duty chief",
+   "to": "Title: Sinnae Depot Duty Chief",
+   "id": "v5-419",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "Title: Northeast Neutral Market Base Chief",
+   "to": "Title: Northeast Neutral Market Hub Chief",
+   "id": "v5-420",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "Title: northeast neutral market outpost chief",
+   "to": "Title: Northeast Neutral Market Hub Chief",
+   "id": "v5-421",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0313",
+   "col": "json",
+   "from": "Title: Medical Train Guard Depot Post Chief, Gwak Taesan's Working-Level Officer",
+   "to": "Title: Gwak Taesan's practical aide, Chief of the Medical Train Defense Depot Outpost",
+   "id": "v5-422",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0313",
+   "col": "json",
+   "from": "Title: medical train defense shop outpost chief, duty officer of Gwak Taesan",
+   "to": "Title: Gwak Taesan's practical aide, Chief of the Medical Train Defense Depot Outpost",
+   "id": "v5-423",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0314",
+   "col": "json",
+   "from": "Title: Medical Unit Duty Room Post Chief",
+   "to": "Title: Chief of the Medical Team Duty Room Outpost",
+   "id": "v5-424",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0314",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-425",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0314",
+   "col": "json",
+   "from": "Title: medical crew duty room outpost chief",
+   "to": "Title: Chief of the Medical Team Duty Room Outpost",
+   "id": "v5-426",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0315",
+   "col": "json",
+   "from": "Title: Transfer Passage Accident Party",
+   "to": "Title: Party involved in the transfer passage accident",
+   "id": "v5-427",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0315",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-428",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0315",
+   "col": "json",
+   "from": "Title: transfer passage accident party",
+   "to": "Title: Party involved in the transfer passage accident",
+   "id": "v5-429",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0316",
+   "col": "json",
+   "from": "Title: Northeast Outer Gate Passage Witness",
+   "to": "Title: Passage witness at the northeastern outer gate",
+   "id": "v5-430",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0316",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-431",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0316",
+   "col": "json",
+   "from": "Title: northeast outer gate passage witness",
+   "to": "Title: Passage witness at the northeastern outer gate",
+   "id": "v5-432",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0317",
+   "col": "json",
+   "from": "Title: Representative of Victims of Contaminated Medicine Transport",
+   "to": "Title: Representative of victims of the contaminated medicine transport",
+   "id": "v5-433",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0317",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-434",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0317",
+   "col": "json",
+   "from": "Title: herb contamination transfer victims' representative",
+   "to": "Title: Representative of victims of the contaminated medicine transport",
+   "id": "v5-435",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0318",
+   "col": "json",
+   "from": "Title: Neutral Escort Pact Signing Clerk",
+   "to": "Title: Signing clerk of the Neutral Escort Agreement",
+   "id": "v5-436",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0318",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-437",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0318",
+   "col": "json",
+   "from": "Title: joint convoy treaty signing clerk",
+   "to": "Title: Signing clerk of the Neutral Escort Agreement",
+   "id": "v5-438",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0318",
+   "col": "json",
+   "from": "Title: Joint Escort Treaty Signing Clerk",
+   "to": "Title: Signing clerk of the Neutral Escort Agreement",
+   "id": "v5-439",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0319",
+   "col": "json_ko",
+   "from": "직함: 패권전 개막 징발 인파 대표",
+   "to": "직함: 징발 인파 대표",
+   "id": "v5-440",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0319",
+   "col": "json",
+   "from": "Title: Requisition Crowd Representative",
+   "to": "Title: Conscripted Crowd Representative",
+   "id": "v5-441",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0319",
+   "col": "json",
+   "from": "Title:  reconstruction-era requisition crowd representative",
+   "to": "Title:  Conscripted Crowd Representative",
+   "id": "v5-442",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0320",
+   "col": "json",
+   "from": "Title: Neutral Market Auction Failed-Bid Official",
+   "to": "Title: Party involved in the failed auction at the Neutral Market",
+   "id": "v5-443",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0320",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-444",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0320",
+   "col": "json",
+   "from": "Title: neutral market auction failed-bid party",
+   "to": "Title: Party involved in the failed auction at the Neutral Market",
+   "id": "v5-445",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0322",
+   "col": "json",
+   "from": "Title: Medical Transfer Duty Officer",
+   "to": "Title: Medical Transport Duty Officer",
+   "id": "v5-446",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0322",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-447",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0322",
+   "col": "json",
+   "from": "Title: medical transfer duty officer",
+   "to": "Title: Medical Transport Duty Officer",
+   "id": "v5-448",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0323",
+   "col": "json_ko",
+   "from": "품계: 단장",
+   "to": "품계: 국장",
+   "id": "v5-449",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0323",
+   "col": "json",
+   "from": "Rank: Commander",
+   "to": "Rank: Bureau Chief",
+   "id": "v5-450",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0323",
+   "col": "json",
+   "from": "Title: Commander of the White Cross Order",
+   "to": "Title: Leader of the Government Relief Corps (White Cross)",
+   "id": "v5-451",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0324",
+   "col": "json",
+   "from": "Title: Herbalist Merchant",
+   "to": "Title: Medicine Identification Relief Worker",
+   "id": "v5-452",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0326",
+   "col": "json_ko",
+   "from": "직함은 용산역 응급처치원",
+   "to": "직함은 방역 응급처치원",
+   "id": "v5-453",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0326",
+   "col": "json",
+   "from": "Title: First-Aid Officer of Yongsan Station",
+   "to": "Title: Epidemic Prevention First-Aid Officer",
+   "id": "v5-454",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0330",
+   "col": "json",
+   "from": "Title: Herb transport logistics merchant",
+   "to": "Title: Medicinal Herb Transport Relief Worker",
+   "id": "v5-455",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0331",
+   "col": "json",
+   "from": "Title: Triage Medical Officer, Eun Chaeyun's Working-Level Aide",
+   "to": "Title: Triage First-Aid Post Relief Worker",
+   "id": "v5-456",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0332",
+   "col": "json_ko",
+   "from": "직함은 제기동역 구호원",
+   "to": "직함은 제기동 방역 구호원",
+   "id": "v5-457",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0332",
+   "col": "json",
+   "from": "Title: Relief Worker of Jegi-dong Station",
+   "to": "Title: Jegi-dong Quarantine Relief Worker",
+   "id": "v5-458",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0333",
+   "col": "json",
+   "from": "Title: Council Vote Messenger, Jeon Sol's operations aide",
+   "to": "Title: Medical Directive Messenger Relief Worker",
+   "id": "v5-459",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0335",
+   "col": "json",
+   "from": "Title: Deliberative Council Bed Recorder, Jeon Sol's working-level aide",
+   "to": "Title: Sickbed Record Relief Worker",
+   "id": "v5-460",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0336",
+   "col": "json",
+   "from": "Title: Cheongnyangni Station Waiting Hall Chief",
+   "to": "Title: Cheongnyangni Concourse First-Aid Officer",
+   "id": "v5-461",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0338",
+   "col": "json",
+   "from": "Title: Jegi-dong Market Scale Station Chief",
+   "to": "Title: Jegi-dong Medicinal Herb Inspection First-Aid Officer",
+   "id": "v5-462",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0339",
+   "col": "json",
+   "from": "Title: Cheongnyangni Clinic Site Chief, Eun Chaeyun's working-level officer",
+   "to": "Title: Cheongnyangni First-Aid Officer",
+   "id": "v5-463",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0341",
+   "col": "json",
+   "from": "Title: Representative of Herb-Contamination Victims",
+   "to": "Title: Medicinal Herb Contamination First Aid Relief Worker",
+   "id": "v5-464",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0343",
+   "col": "json",
+   "from": "Title: Medical Escort Incident Party",
+   "to": "Title: Medical Escort Relief Worker",
+   "id": "v5-465",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0344",
+   "col": "json",
+   "from": "Title: Medical Charter Accord Signature Clerk",
+   "to": "Title: Medical Charter Clerk Relief Worker",
+   "id": "v5-466",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0345",
+   "col": "json",
+   "from": "Title: Southbound Refugee Patient Representative",
+   "to": "Title: Evacuee Patient Care Relief Worker",
+   "id": "v5-467",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0346",
+   "col": "json",
+   "from": "Title: Military Register Treatment Refusal Witness",
+   "to": "Title: First Aid Refusal Record Relief Worker",
+   "id": "v5-468",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0347",
+   "col": "json_ko",
+   "from": "직함: 패권전 개막 징발 인파 대표",
+   "to": "직함: 방역·의무동원 응급처치원",
+   "id": "v5-469",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0347",
+   "col": "json",
+   "from": "Title: Hegemony War Opening Requisition Crowd Representative",
+   "to": "Title: Epidemic Control and Medical Conscription First-Aid Officer",
+   "id": "v5-470",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0349",
+   "col": "json_ko",
+   "from": "직함은 구의역 방어 본부장",
+   "to": "직함은 정부 능선수비대 본부장",
+   "id": "v5-471",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0349",
+   "col": "json",
+   "from": "Title: Defense Division Chief of Guui Station",
+   "to": "Title: Division Chief of the Government Ridge Garrison",
+   "id": "v5-472",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0350",
+   "col": "json_ko",
+   "from": "직함은 구의역 출입구 초병",
+   "to": "직함은 정부 능선 초병",
+   "id": "v5-473",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0351",
+   "col": "json_ko",
+   "from": "직함은 구의역 방벽 점검 중대장",
+   "to": "직함은 정부 교량 감독",
+   "id": "v5-474",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0351",
+   "col": "json",
+   "from": "Title: The Government Bridge Overseer",
+   "to": "Title: The Government Bridge Supervisor",
+   "id": "v5-475",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0352",
+   "col": "json_ko",
+   "from": "직함은 구의역 반입 물자 장부 실무원",
+   "to": "직함은 관문 세리",
+   "id": "v5-476",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0352",
+   "col": "json_ko",
+   "from": "직함: 양군 관문 세리",
+   "to": "직함: 관문 세리",
+   "id": "v5-477",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0352",
+   "col": "json",
+   "from": "Title: Intake Goods Ledger Staff Officer of Guui Station",
+   "to": "Title: Gate Tax Collector",
+   "id": "v5-478",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0352",
+   "col": "json",
+   "from": "Rank: Joint Working Officer",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-479",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0352",
+   "col": "json",
+   "from": "Title: Two-Army Gate Tax Collector",
+   "to": "Title: Gate Tax Collector",
+   "id": "v5-480",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0353",
+   "col": "json",
+   "from": "Title: Garrison Commander of Guui Station",
+   "to": "Title: Garrison Commander for Shutter and Fuel Checks, Guui Station",
+   "id": "v5-481",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0355",
+   "col": "json_ko",
+   "from": "직함은 구의역 셔터 정비 수비대원",
+   "to": "직함은 구의수비대 구의 펌프실 정비사, 곽민재의 실무 담당자",
+   "id": "v5-482",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0355",
+   "col": "json",
+   "from": "Rank: Garrison Member",
+   "to": "Rank: Garrison Soldier",
+   "id": "v5-483",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0355",
+   "col": "json",
+   "from": "Title: Guui Garrison's Guui Pump Room Mechanic and Gwak Minjae's Working-Level Aide",
+   "to": "Title: Guui Garrison Guui Pump Room Mechanic, Gwak Minjae's Aide",
+   "id": "v5-484",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0356",
+   "col": "json_ko",
+   "from": "품계 공동실무원",
+   "to": "품계 일반 시민",
+   "id": "v5-485",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0356",
+   "col": "json_ko",
+   "from": "직함은 양군 교량 통과 물류상",
+   "to": "직함은 교량 통과 물류상",
+   "id": "v5-486",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0356",
+   "col": "json_ko",
+   "from": "품계: 공동실무원",
+   "to": "품계: 일반 시민",
+   "id": "v5-487",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0356",
+   "col": "json_ko",
+   "from": "직함: 양군 교량 통과 물류상",
+   "to": "직함: 교량 통과 물류상",
+   "id": "v5-488",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0356",
+   "col": "json",
+   "from": "Rank: Joint Working Member",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-489",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0356",
+   "col": "json",
+   "from": "Title: Two-Army Bridge Transit Logistics Officer",
+   "to": "Title: Bridge Crossing Logistics Merchant",
+   "id": "v5-490",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0356",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Operations",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-491",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0357",
+   "col": "json_ko",
+   "from": "직함은 구의역 응급 들것 담당",
+   "to": "직함은 구의수비대 능선·교량 당직 의무원",
+   "id": "v5-492",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0357",
+   "col": "json",
+   "from": "Title: Guui Station emergency stretcher duty",
+   "to": "Title: Guui Garrison Ridge and Bridge Duty Medic",
+   "id": "v5-493",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0358",
+   "col": "json_ko",
+   "from": "직함은 아차산역 터널 순찰 담당",
+   "to": "직함은 정부 아차산 능선 순찰대, 문하율의 실무 담당자",
+   "id": "v5-494",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0358",
+   "col": "json",
+   "from": "Title: The Government Achasan Ridge Patrol, Mun Hayul's working-level aide",
+   "to": "Title: The Government Achasan Ridge Patrol, Mun Hayul's Aide",
+   "id": "v5-495",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0358",
+   "col": "json",
+   "from": "Title: Achasan Station tunnel patrol duty",
+   "to": "Title: The Government Achasan Ridge Patrol, Mun Hayul's Aide",
+   "id": "v5-496",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json_ko",
+   "from": "직함은 양군 승인 전령, 하윤목의 실무 담당자",
+   "to": "직함은 승인 전령, 하윤목의 실무 담당자",
+   "id": "v5-497",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json_ko",
+   "from": "직함은 구의역 사무소 전령",
+   "to": "직함은 승인 전령, 하윤목의 실무 담당자",
+   "id": "v5-498",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json_ko",
+   "from": "직함: 양군 승인 전령, 하윤목의 실무 담당자",
+   "to": "직함: 승인 전령, 하윤목의 실무 담당자",
+   "id": "v5-499",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json",
+   "from": "Rank: Joint Working Officer",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-500",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json",
+   "from": "Title: Two-Army Approved Herald, Ha Yunmok's Working Aide",
+   "to": "Title: Approval Messenger, Ha Yunmok's Aide",
+   "id": "v5-501",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json",
+   "from": "Title: Guui Station office courier",
+   "to": "Title: Approval Messenger, Ha Yunmok's Aide",
+   "id": "v5-502",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Operations",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-503",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0360",
+   "col": "json",
+   "from": "Title: The Government Under-Bridge Surveyor, Sim Gaeun's Working Aide",
+   "to": "Title: Practical Aide to Sim Ga-eun, Under-Bridge Surveyor of The Government",
+   "id": "v5-504",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json_ko",
+   "from": "직함은 양군 관문 통과 기록관, 하윤목의 실무 담당자",
+   "to": "직함은 관문 통과 기록관, 하윤목의 실무 담당자",
+   "id": "v5-505",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json_ko",
+   "from": "직함은 광나루역 입출고 기록 담당",
+   "to": "직함은 관문 통과 기록관, 하윤목의 실무 담당자",
+   "id": "v5-506",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json_ko",
+   "from": "직함: 양군 관문 통과 기록관, 하윤목의 실무 담당자",
+   "to": "직함: 관문 통과 기록관, 하윤목의 실무 담당자",
+   "id": "v5-507",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json",
+   "from": "Rank: Joint Working Staff Member",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-508",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json",
+   "from": "Title: Two-Army Gate Passage Recorder, Ha Yunmok's Working-Level Officer",
+   "to": "Title: Gate Passage Recorder, Practical Aide to Ha Yun-mok",
+   "id": "v5-509",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json",
+   "from": "Title: Gwangnaru Station stock-movement records",
+   "to": "Title: Gate Passage Recorder, Practical Aide to Ha Yun-mok",
+   "id": "v5-510",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Working Staff",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-511",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0362",
+   "col": "json_ko",
+   "from": "직함은 구의역 대합실 담당",
+   "to": "직함은 구의수비대 구의역 대합실 거점장",
+   "id": "v5-512",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0362",
+   "col": "json",
+   "from": "Title: Guui Station concourse duty",
+   "to": "Title: Guui Station Concourse Outpost Chief of the Guui Garrison",
+   "id": "v5-513",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0362",
+   "col": "json",
+   "from": "Rank: Field Supervisor",
+   "to": "Rank: Site Supervisor",
+   "id": "v5-514",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0362",
+   "col": "json",
+   "from": "Title: Concourse Post Chief of Guui Station, Guui Garrison",
+   "to": "Title: Guui Station Concourse Outpost Chief of the Guui Garrison",
+   "id": "v5-515",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0363",
+   "col": "json",
+   "from": "Title: The Government Ridge Outpost Base Duty Chief, Mun Hayul's operations aide",
+   "to": "Title: Practical Aide to Mun Ha-yul, Ridge Guardpost Base Duty Officer of The Government",
+   "id": "v5-516",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json_ko",
+   "from": "품계 공동실무원",
+   "to": "품계 역장",
+   "id": "v5-517",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json_ko",
+   "from": "직함은 양군 관문 통과 시장 거점장",
+   "to": "직함은 관문 통과 시장 거점장",
+   "id": "v5-518",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json_ko",
+   "from": "품계: 공동실무원",
+   "to": "품계: 역장",
+   "id": "v5-519",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json_ko",
+   "from": "직함: 양군 관문 통과 시장 거점장",
+   "to": "직함: 관문 통과 시장 거점장",
+   "id": "v5-520",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json",
+   "from": "Rank: Joint Operative",
+   "to": "Rank: Stationmaster",
+   "id": "v5-521",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json",
+   "from": "Title: Market Base Chief of the Two-Army Gate Transit Market",
+   "to": "Title: Gate Passage Market Outpost Chief",
+   "id": "v5-522",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Working Group",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-523",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0365",
+   "col": "json_ko",
+   "from": "직함은 구의역 응급 대기소 담당",
+   "to": "직함은 구의수비대 교량 의무소 거점장",
+   "id": "v5-524",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0365",
+   "col": "json",
+   "from": "Title: Guui Station emergency waiting post duty",
+   "to": "Title: Bridge Infirmary Outpost Chief of the Guui Garrison",
+   "id": "v5-525",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0365",
+   "col": "json",
+   "from": "Rank: Field Supervisor",
+   "to": "Rank: Site Supervisor",
+   "id": "v5-526",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0365",
+   "col": "json",
+   "from": "Title: Bridge Aid Station Post Chief of the Guui Garrison",
+   "to": "Title: Bridge Infirmary Outpost Chief of the Guui Garrison",
+   "id": "v5-527",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0366",
+   "col": "json",
+   "from": "Rank: Field Supervisor",
+   "to": "Rank: Site Supervisor",
+   "id": "v5-528",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0366",
+   "col": "json",
+   "from": "Title: Emergency Generator Chief of the Guui Pump Room, Guui Garrison",
+   "to": "Title: Guui Pump Room Emergency Generator Operator of the Guui Garrison",
+   "id": "v5-529",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0367",
+   "col": "json_ko",
+   "from": "직함은 양군 관문 통행 증인",
+   "to": "직함은 관문 통행 증인",
+   "id": "v5-530",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0367",
+   "col": "json_ko",
+   "from": "직함: 양군 관문 통행 증인",
+   "to": "직함: 관문 통행 증인",
+   "id": "v5-531",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0367",
+   "col": "json",
+   "from": "Rank: Joint Working Member",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-532",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0367",
+   "col": "json",
+   "from": "Title: Two-Army Gate Passage Witness",
+   "to": "Title: Gate Passage Witness",
+   "id": "v5-533",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0367",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Working Office",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-534",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0368",
+   "col": "json_ko",
+   "from": "직함은 양군 교량 통행 사고 당사자",
+   "to": "직함은 교량 통행 사고 당사자",
+   "id": "v5-535",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0368",
+   "col": "json_ko",
+   "from": "직함: 양군 교량 통행 사고 당사자",
+   "to": "직함: 교량 통행 사고 당사자",
+   "id": "v5-536",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0368",
+   "col": "json",
+   "from": "Rank: Joint Working Member",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-537",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0368",
+   "col": "json",
+   "from": "Title: Two-Army Bridge Passage Accident Party",
+   "to": "Title: Party to the Bridge Passage Accident",
+   "id": "v5-538",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0369",
+   "col": "json",
+   "from": "Rank: Joint Working Member",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-539",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0369",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Working Group",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-540",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0370",
+   "col": "json_ko",
+   "from": "직함은 양군 외부 징발 피난 인파 대표",
+   "to": "직함은 외부 징발 피난 인파 대표",
+   "id": "v5-541",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0370",
+   "col": "json_ko",
+   "from": "직함은 천호역 대피 주민 명단 담당",
+   "to": "직함은 외부 징발 피난 인파 대표",
+   "id": "v5-542",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0370",
+   "col": "json_ko",
+   "from": "직함: 양군 외부 징발 피난 인파 대표",
+   "to": "직함: 외부 징발 피난 인파 대표",
+   "id": "v5-543",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0370",
+   "col": "json",
+   "from": "Rank: Joint Working Official",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-544",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0370",
+   "col": "json",
+   "from": "Title: Two-Army External Requisition Refugee Crowd Representative",
+   "to": "Title: Representative of Externally Requisitioned Refugees",
+   "id": "v5-545",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0370",
+   "col": "json",
+   "from": "Title: Cheonho Station displaced-resident roster duty",
+   "to": "Title: Representative of Externally Requisitioned Refugees",
+   "id": "v5-546",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0370",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Working",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-547",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0371",
+   "col": "json_ko",
+   "from": "직함은 양군 협의 관문 증인",
+   "to": "직함은 협의 관문 증인",
+   "id": "v5-548",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0371",
+   "col": "json_ko",
+   "from": "직함: 양군 협의 관문 증인",
+   "to": "직함: 협의 관문 증인",
+   "id": "v5-549",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0371",
+   "col": "json",
+   "from": "Rank: Joint Working Official",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-550",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0371",
+   "col": "json",
+   "from": "Title: Two-Army Consultation Gate Witness",
+   "to": "Title: Gate Witness of the Consultation",
+   "id": "v5-551",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0372",
+   "col": "json_ko",
+   "from": "직함은 양군 각국 관문 인준 관계자",
+   "to": "직함은 관문 인준 관계자",
+   "id": "v5-552",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0372",
+   "col": "json_ko",
+   "from": "직함: 양군 각국 관문 인준 관계자",
+   "to": "직함: 관문 인준 관계자",
+   "id": "v5-553",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0372",
+   "col": "json",
+   "from": "Rank: Joint Working Official",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-554",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0372",
+   "col": "json",
+   "from": "Title: Two-Army Member-State Gate Ratification Officer",
+   "to": "Title: Gate Ratification Official",
+   "id": "v5-555",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0372",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Working Staff",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-556",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0373",
+   "col": "json_ko",
+   "from": "직함은 양군 공동호송 서명 보조",
+   "to": "직함은 공동호송 서명 보조",
+   "id": "v5-557",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0373",
+   "col": "json_ko",
+   "from": "직함: 양군 공동호송 서명 보조",
+   "to": "직함: 공동호송 서명 보조",
+   "id": "v5-558",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0373",
+   "col": "json",
+   "from": "Rank: Joint Working Official",
+   "to": "Rank: Joint Staff Officer",
+   "id": "v5-559",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0373",
+   "col": "json",
+   "from": "Title: Assistant for Two-Army Joint Escort Signatures",
+   "to": "Title: Joint Escort Signature Assistant",
+   "id": "v5-560",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0373",
+   "col": "json",
+   "from": "Affiliation: The Government Two-Army Joint Operations",
+   "to": "Affiliation: The Government Joint Two-Army Working Group",
+   "id": "v5-561",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "공동체 역할: 계약 감사관",
+   "to": "공동체 역할: 추기경(잠정)",
+   "id": "v5-562",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "Community Role: Contract Auditor",
+   "to": "Community Role: Cardinal (provisional)",
+   "id": "v5-563",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0400",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 식량 출납 서기이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-564",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 감사 보조이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-565",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 협약 중재인이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-566",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 정비 숙련 기록 서기이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-567",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0404",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 순찰 교대 명부 서기이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-568",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 수서역 조합 차량정비소 정비사",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-569",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "공동체 역할은 일반 시민이며 생활 화물을 나르는 일은 이웃 사이의 품앗이이다",
+   "to": "공동체 역할은 일반 시민",
+   "id": "v5-570",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json_ko",
+   "from": "공동체 역할은 일반 시민이며 의사 방문일 순서 정리는 이웃 사이의 도움이다",
+   "to": "공동체 역할은 일반 시민",
+   "id": "v5-571",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json",
+   "from": "Community Role: Guild Member",
+   "to": "Community Role: Ordinary Citizen",
+   "id": "v5-572",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 외곽 터널 순찰이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-573",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0409",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 순찰 교대 전령이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-574",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 외곽 탐사원이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-575",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 분실·손실 물품 기록이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-576",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 기계몸 정비 당직이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-577",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0416",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 기계몸 부품 입출 장부 기록이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-578",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0417",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 보급 기록 보조이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-579",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 열 신호 차단 점검이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-580",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0419",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 수리 인수 확인이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-581",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0420",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 출입구 차광막 점검이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-582",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 피난민 인원·잠자리 점검이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-583",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 터널 이동 기록 확인이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-584",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 식량·연료 장부 점검이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-585",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0424",
+   "col": "json_ko",
+   "from": "직함은 재고 기록 담당이다",
+   "to": "직함은 신정2동 재고 기록 담당",
+   "id": "v5-586",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0424",
+   "col": "json",
+   "from": "Title: Stock Records Keeper",
+   "to": "Title: Stock Records Keeper, Sinjeong 2-dong",
+   "id": "v5-587",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0424",
+   "col": "json",
+   "from": "Rank: Junior Clerk",
+   "to": "Rank: Clerk",
+   "id": "v5-588",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0425",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-589",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0441",
+   "col": "json",
+   "from": "Title: Power Unit Patrol",
+   "to": "Title: Power Device Patrol",
+   "id": "v5-590",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0443",
+   "col": "json",
+   "from": "Title: Workshop Courier",
+   "to": "Title: Workshop Herald",
+   "id": "v5-591",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0446",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-592",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0446",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-593",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0457",
+   "col": "json",
+   "from": "Title: Restoration Service Records Officer",
+   "to": "Title: Restoration Service Registrar",
+   "id": "v5-594",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0472",
+   "col": "json_ko",
+   "from": "직함은 셔터 점검 담당이다",
+   "to": "직함은 신정2동 셔터 점검 담당",
+   "id": "v5-595",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0472",
+   "col": "json",
+   "from": "Title: Shutter Checker",
+   "to": "Title: Shutter Checker, Sinjeong 2-dong",
+   "id": "v5-596",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0473",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-597",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0473",
+   "col": "json",
+   "from": "Title: Work Crew Messenger",
+   "to": "Title: Work Crew Courier",
+   "id": "v5-598",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0499",
+   "col": "json",
+   "from": "Title: Medical Escort Records Officer",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-599",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0499",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-600",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0499",
+   "col": "json",
+   "from": "Title: medical convoy registrar",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-601",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0505",
+   "col": "json_ko",
+   "from": "직함은 봉인 기록 담당",
+   "to": "직함은 복구복무 기록관",
+   "id": "v5-602",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0505",
+   "col": "json",
+   "from": "Title: Sealed-Crate Records Keeper",
+   "to": "Title: Restoration Service Recorder",
+   "id": "v5-603",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0507",
+   "col": "json",
+   "from": "Title: Parts Logistics Officer",
+   "to": "Title: Parts Logistics Merchant",
+   "id": "v5-604",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0520",
+   "col": "json_ko",
+   "from": "직함은 식량 출납 담당이다",
+   "to": "직함은 신정2동 식량 출납 담당",
+   "id": "v5-605",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0520",
+   "col": "json",
+   "from": "Title: Food Storeroom Keeper",
+   "to": "Title: Food Storeroom Keeper, Sinjeong 2-dong",
+   "id": "v5-606",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0544",
+   "col": "json",
+   "from": "Title: Vault Watch",
+   "to": "Title: Vault Duty",
+   "id": "v5-607",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0547",
+   "col": "json",
+   "from": "Rank: Escort Member",
+   "to": "Rank: Escort",
+   "id": "v5-608",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0547",
+   "col": "json",
+   "from": "Title: Medical Escort Recordkeeper",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-609",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0547",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-610",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0547",
+   "col": "json",
+   "from": "Title: medical convoy registrar",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-611",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0568",
+   "col": "json_ko",
+   "from": "직함은 연료 계수 담당이다",
+   "to": "직함은 신정2동 연료 계수 담당",
+   "id": "v5-612",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0568",
+   "col": "json",
+   "from": "Title: Fuel Counter",
+   "to": "Title: Fuel Counter, Sinjeong 2-dong",
+   "id": "v5-613",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0570",
+   "col": "json",
+   "from": "Title: Seed Records Officer",
+   "to": "Title: Attendant Recorder",
+   "id": "v5-614",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 직무는 감사 기록관이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-615",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0600",
+   "col": "json_ko",
+   "from": "직함은 터널 순찰 담당이다",
+   "to": "직함은 영등포본동 터널 순찰 담당",
+   "id": "v5-616",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0600",
+   "col": "json",
+   "from": "Title: Tunnel Patrol Keeper",
+   "to": "Title: Tunnel Patrol Keeper, Yeongdeungpo-bondong",
+   "id": "v5-617",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0603",
+   "col": "json",
+   "from": "Title: Parts Logistics Officer",
+   "to": "Title: Parts Logistics Merchant",
+   "id": "v5-618",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0606",
+   "col": "json",
+   "from": "Rank: Senior Clerk",
+   "to": "Rank: Clerk",
+   "id": "v5-619",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0606",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-620",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0606",
+   "col": "json",
+   "from": "Title: convoy courier",
+   "to": "Title: Escort Courier",
+   "id": "v5-621",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0616",
+   "col": "json_ko",
+   "from": "직함은 차광 점검 담당이다",
+   "to": "직함은 신정2동 차광 점검 담당",
+   "id": "v5-622",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0616",
+   "col": "json",
+   "from": "Title: Light-Shield Checker",
+   "to": "Title: Light-Shield Checker, Sinjeong 2-dong",
+   "id": "v5-623",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0649",
+   "col": "json",
+   "from": "Title: Restoration Service Records Officer",
+   "to": "Title: Restoration Service Recorder",
+   "id": "v5-624",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0651",
+   "col": "json",
+   "from": "Title: Parts Logistics Chief",
+   "to": "Title: Parts Logistics Merchant",
+   "id": "v5-625",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0691",
+   "col": "json",
+   "from": "Title: Medical Escort Records Officer",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-626",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0691",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-627",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0691",
+   "col": "json",
+   "from": "Title: medical convoy registrar",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-628",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0728",
+   "col": "json",
+   "from": "Title: Bridge Crossing Herald",
+   "to": "Title: Bridge Passage Herald",
+   "id": "v5-629",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0739",
+   "col": "json",
+   "from": "Title: Medical Escort Records Officer",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-630",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0739",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-631",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0739",
+   "col": "json",
+   "from": "Title: medical convoy registrar",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-632",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0740",
+   "col": "json_ko",
+   "from": "직함은 숙련을 추가하지 않는다",
+   "to": "직함은 방역 구호원",
+   "id": "v5-633",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0749",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-634",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0762",
+   "col": "json",
+   "from": "Title: Seed Records Officer",
+   "to": "Title: Attendant Recorder",
+   "id": "v5-635",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0763",
+   "col": "json",
+   "from": "Title: Stabling-Line Patrol",
+   "to": "Title: Holding Track Patrol",
+   "id": "v5-636",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원이며 맡은 일은 기계몸 정비 기록 보관이다",
+   "to": "공동체 역할은 조합원",
+   "id": "v5-637",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0795",
+   "col": "json",
+   "from": "Title: Parts Logistics Steward",
+   "to": "Title: Parts Logistics Merchant",
+   "id": "v5-638",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0797",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-639",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0810",
+   "col": "json",
+   "from": "Title: Seed Records Officer",
+   "to": "Title: Attendant Recorder",
+   "id": "v5-640",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0841",
+   "col": "json",
+   "from": "Rank: Union Member",
+   "to": "Rank: Guild Member",
+   "id": "v5-641",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0841",
+   "col": "json",
+   "from": "Title: Restoration Service Records Officer",
+   "to": "Title: Restoration Service Recorder",
+   "id": "v5-642",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0846",
+   "col": "json",
+   "from": "Rank: Senior Clerk",
+   "to": "Rank: Clerk",
+   "id": "v5-643",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0846",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-644",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0846",
+   "col": "json",
+   "from": "Title: convoy courier",
+   "to": "Title: Escort Courier",
+   "id": "v5-645",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0848",
+   "col": "json",
+   "from": "Rank: Junior Clerk",
+   "to": "Rank: Clerk",
+   "id": "v5-646",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0848",
+   "col": "json",
+   "from": "Title: Vault Mechanic",
+   "to": "Title: Vault Technician",
+   "id": "v5-647",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0859",
+   "col": "json",
+   "from": "Title: Stabling Track Patrol",
+   "to": "Title: Holding Track Patrol",
+   "id": "v5-648",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0883",
+   "col": "json",
+   "from": "Title: Medical Escort Records Officer",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-649",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0883",
+   "col": "json",
+   "from": "Rank: convoy hand",
+   "to": "Rank: Escort",
+   "id": "v5-650",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0883",
+   "col": "json",
+   "from": "Title: medical convoy registrar",
+   "to": "Title: Medical Escort Recorder",
+   "id": "v5-651",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0889",
+   "col": "json",
+   "from": "Title: Restoration Service Records Officer",
+   "to": "Title: Restoration Service Recorder",
+   "id": "v5-652",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0906",
+   "col": "json",
+   "from": "Title: Seed Records Officer",
+   "to": "Title: Attendant Recorder",
+   "id": "v5-653",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0920",
+   "col": "json",
+   "from": "Title: Bridge Crossing Courier",
+   "to": "Title: Bridge Passage Herald",
+   "id": "v5-654",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0926",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-655",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0926",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-656",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0942",
+   "col": "json",
+   "from": "Rank: Senior Clerk",
+   "to": "Rank: Clerk",
+   "id": "v5-657",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0942",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-658",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0942",
+   "col": "json",
+   "from": "Title: convoy courier",
+   "to": "Title: Escort Courier",
+   "id": "v5-659",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0955",
+   "col": "json",
+   "from": "Title: Siding Patrol",
+   "to": "Title: Holding Track Patrol",
+   "id": "v5-660",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0958",
+   "col": "json",
+   "from": "Rank: Junior Official",
+   "to": "Rank: Clerk",
+   "id": "v5-661",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0958",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-662",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0974",
+   "col": "json",
+   "from": "Rank: Jusa",
+   "to": "Rank: Clerk",
+   "id": "v5-663",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0974",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-664",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0989",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-665",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0990",
+   "col": "json",
+   "from": "Rank: Senior Clerk",
+   "to": "Rank: Clerk",
+   "id": "v5-666",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0990",
+   "col": "json",
+   "from": "Rank: registrar",
+   "to": "Rank: Clerk",
+   "id": "v5-667",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0990",
+   "col": "json",
+   "from": "Title: convoy courier",
+   "to": "Title: Escort Courier",
+   "id": "v5-668",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1001",
+   "col": "json",
+   "from": "Rank: Clerk (Jusa)",
+   "to": "Rank: Clerk",
+   "id": "v5-669",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-1003",
+   "col": "json_ko",
+   "from": "품계: 없음",
+   "to": "품계: 미등록",
+   "id": "v5-670",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1003",
+   "col": "json_ko",
+   "from": "품계는 미등록이며 대한민국 정부 관직·공무원 계급이 아니다",
+   "to": "품계는 미등록",
+   "id": "v5-671",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-1003",
+   "col": "json_ko",
+   "from": "품계는 없다",
+   "to": "품계는 미등록",
+   "id": "v5-672",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-1003",
+   "col": "json",
+   "from": "Rank: None",
+   "to": "Rank: Unregistered",
+   "id": "v5-673",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1003",
+   "col": "json",
+   "from": "Rank is unregistered; not a Republic of Korea government post or civil service grade",
+   "to": "Rank Unregistered",
+   "id": "v5-674",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-1004",
+   "col": "json_ko",
+   "from": "품계는 없으며",
+   "to": "품계는 미등록",
+   "id": "v5-675",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-1004",
+   "col": "json_ko",
+   "from": "품계: 없음",
+   "to": "품계: 미등록",
+   "id": "v5-676",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1004",
+   "col": "json",
+   "from": "Rank: None",
+   "to": "Rank: Unregistered",
+   "id": "v5-677",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1006",
+   "col": "json_ko",
+   "from": "직함은 정부 구의역 수비대장",
+   "to": "직함은 정부 구의수비대장",
+   "id": "v5-678",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-1006",
+   "col": "json",
+   "from": "Title: Guui Station Garrison Commander of The Government",
+   "to": "Title: Commander of the Guui Garrison of The Government",
+   "id": "v5-679",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-1011",
+   "col": "json_ko",
+   "from": "품계: 없음",
+   "to": "품계: 일반 시민",
+   "id": "v5-680",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1011",
+   "col": "json",
+   "from": "Rank: None",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-681",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1012",
+   "col": "json_ko",
+   "from": "품계: 없음",
+   "to": "품계: 일반 시민",
+   "id": "v5-682",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1012",
+   "col": "json",
+   "from": "Rank: None",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-683",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1012",
+   "col": "json",
+   "from": "Affiliation: Free City. Surviving dormitory shift ledger. Listed by name as a subcontractor to the Southwest Engineer Corps",
+   "to": "Affiliation: Free City. Remnant dormitory shift ledger. His name appears as a subcontractor to the Southwest Engineer Corps",
+   "id": "v5-684",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1015",
+   "col": "json",
+   "from": "Affiliation: The Government. Runs a Goryeoin boardinghouse in Jayang-dong. Reconciles the winter food and heating fuel ledgers together with the lodgers.",
+   "to": "Affiliation: The Government. Runs a Koryo-saram boardinghouse in Jayang-dong. Reconciles the winter food and heating fuel ledgers together with the lodgers.",
+   "id": "v5-685",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1016",
+   "col": "json",
+   "from": "Rank: Local Administrative Clerk (Grade 8)",
+   "to": "Rank: Ordinary Citizen",
+   "id": "v5-686",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1016",
+   "col": "json",
+   "from": "Affiliation: Seoul Metropolitan Government local civil service organization. Mobilization Remnant clerk for the Guro-Geumcheon axis. Listed in the Free City ledger as \"External Armed Force\"",
+   "to": "Affiliation: Seoul Metropolitan Government local civil service organization. Clerk of the Guro–Geumcheon axis Mobilization Remnant. Listed in the Free City ledger as \"External Armed\"",
+   "id": "v5-687",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1018",
+   "col": "json",
+   "from": "Rank: Hierophant, the top of the Arc",
+   "to": "Rank: Hierophant",
+   "id": "v5-688",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1019",
+   "col": "json_ko",
+   "from": "소속: 대한민국정부. 독립 기록인이다. 역 게시판에 붙은 겨울 공지와 주민 증언을 손으로 베껴 여러 곳에 나누어 보관한다.",
+   "to": "소속: 정부. 독립 기록인이다. 역 게시판에 붙은 겨울 공지와 주민 증언을 손으로 베껴 여러 곳에 나누어 보관한다.",
+   "id": "v5-689",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1019",
+   "col": "json",
+   "from": "Affiliation: The Government. An independent recordkeeper. Copies by hand the winter notices posted on station bulletin boards and residents' testimonies, and keeps the copies in several places.",
+   "to": "Affiliation: The Government. An independent recorder. He copies by hand the winter notices posted on station bulletin boards and residents' testimonies, and keeps the copies in several places.",
+   "id": "v5-690",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1020",
+   "col": "json_ko",
+   "from": "품계: 없음",
+   "to": "품계: 미등록",
+   "id": "v5-691",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1020",
+   "col": "json",
+   "from": "Rank: None",
+   "to": "Rank: Unregistered",
+   "id": "v5-692",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1021",
+   "col": "json_ko",
+   "from": "품계: 없음",
+   "to": "품계: 미등록",
+   "id": "v5-693",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1021",
+   "col": "json",
+   "from": "Rank: None",
+   "to": "Rank: Unregistered",
+   "id": "v5-694",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1021",
+   "col": "json",
+   "from": "Affiliation: Unaffiliated private negotiator",
+   "to": "Affiliation: Unaffiliated civilian negotiator",
+   "id": "v5-695",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1022",
+   "col": "json_ko",
+   "from": "품계: 없음",
+   "to": "품계: 미등록",
+   "id": "v5-696",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1022",
+   "col": "json",
+   "from": "Rank: None",
+   "to": "Rank: Unregistered",
+   "id": "v5-697",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-1022",
+   "col": "json",
+   "from": "Affiliation: The Government. Independent merchant house",
+   "to": "Affiliation: The Government. Independent Trading House",
+   "id": "v5-698",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "\n\n\n**Office.**",
+   "to": "\n\n- Affiliation: Arc\n- Livelihood: Bridge Underside Crack and Vibration Survey\n- Rank: Guard\n- Title: Eastern Bridge Underside Surveyor\nLife. Ma Gilsang was born in the 4th generation. Ma Gilsang grew up at the Amsa guard post. Ma Gilsang's post of Eastern Bridge Underside Surveyor opened up after a night-time unauthorized river crossing was caught.\n- In work connected with Amsa 2-dong, Ma Gilsang manages the ledger of cracks and vibrations under the bridge, and obtains signatures from both the administration and the Blockade Corps for any damage.\n\n**Office.**",
+   "id": "v5-699",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0134",
+   "col": "json",
+   "from": "\n\n\n**Office.**",
+   "to": "\n\n- Affiliation: Arc\n- Livelihood: Checking and Recording Condition of Exchange Parts\n- Rank: Guard\n- Title: Godeok Parts Exchange Checker\nLife. Ju Dana was born in 2077. Ju Dana grew up on charging duty at Godeok base. Ju Dana's post as Godeok Parts Exchange Checker opened after she filtered out badly conditioned parts on a winter night.\n- In work connected with Godeok 1-dong, Ju Dana handles the condition sheets of exchange parts and holds back the release of parts that fall short of standard.\n\n**Office.**",
+   "id": "v5-700",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0136",
+   "col": "json",
+   "from": "\n\n\n**Office.**",
+   "to": "\n\n- Affiliation: Arc\n- Livelihood: Emergency Generator Fuel and Output Operation\n- Rank: Guard Squad Leader\n- Title: Godeok Base Emergency Power Operator\nLife. Seol Bomi was born in the 3rd generation. Seol Bomi grew up at the Sinjeong depot. Seol Bomi's post as Godeok Base Emergency Power Operator opened through a defect report made just before a derailment.\n- In work connected with Godeok 2-dong, Seol Bomi manages the emergency generation fuel and output seals and cuts military power distribution if output falls short of the minimum.\n\n**Office.**",
+   "id": "v5-701",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0144",
+   "col": "json",
+   "from": "\n\n\n**Office.**",
+   "to": "\n\n- Affiliation: Arc\n- Livelihood: Bridge Passage Checks and Light-Out Records\n- Rank: Guard\n- Title: Amsa Bridge Night Passage Check\nLife. Nam Hwigang was born in 2082. Nam Hwigang grew up at the Amsa guard post. Nam Hwigang's post as Amsa Bridge Night Passage Check opened after stopping a person crossing the bridge with a light lit on a winter night.\n- In work connected with Amsa 2-dong, Nam Hwigang checks the passage bar and the light-out confirmations of two duty hands, and rejects any single-slip request. The passage key cannot be gathered into one person's hands by the commander's verbal instruction alone.\n\n**Office.**",
+   "id": "v5-702",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json",
+   "from": "Reads unauthorized unloading from the sound of freight straps and measures",
+   "to": "Matches how often and when the warehouse door opened against the pillar ledger to pick out stock slipped out unseen, and measures",
+   "id": "v5-703",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "split manhole access with Seol Minu's blockade patrol",
+   "to": "split manhole access with Marcus Wilson's blockade patrol",
+   "id": "v5-704",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "gave the detained train's passengers care first",
+   "to": "gave Im Chowon's detained-train passengers care first",
+   "id": "v5-705",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0027",
+   "col": "json",
+   "from": "Daniel Brooks's charter courier route",
+   "to": "Pyo Siwan's charter courier route",
+   "id": "v5-706",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "Competes with Yi Juntaek over",
+   "to": "Competes over",
+   "id": "v5-707",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0240",
+   "col": "json",
+   "from": "passes gap locations to Choi Jiwoo’s original search.",
+   "to": "passes gap locations to Choi Jiwoo’s original search, and testifies to the break in the ledger Im Hajun left last.",
+   "id": "v5-708",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0360",
+   "col": "json",
+   "from": "before Go Seojun's direct report",
+   "to": "before both armies' confirmation",
+   "id": "v5-709",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0363",
+   "col": "json",
+   "from": "without Go Seojun's escort",
+   "to": "without the joint approval of both armies",
+   "id": "v5-710",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0368",
+   "col": "json",
+   "from": "unless Go Seojun stood by",
+   "to": "without the joint approval of both armies",
+   "id": "v5-711",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0223",
+   "col": "json",
+   "exact": true,
+   "from": "Fears military escorts seizing keys.",
+   "to": "That the vault keys pass to a military escort and the Yeouido Vault becomes Bae Ujin's secret storehouse.",
+   "id": "v5-712",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0237",
+   "col": "json",
+   "exact": true,
+   "from": "Fears booth keys reaching military hands.",
+   "to": "That the booth keys pass to the military side and the Yeouido Vault becomes Bae Ujin's secret storehouse.",
+   "id": "v5-713",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0413",
+   "col": "json",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.stress$",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That someone inside the defense squad hides a forged fair copy and Jeong Yura's standard format breaks from within.",
+   "id": "v5-714",
+   "expect": 1
+  }
+ ]
+}
