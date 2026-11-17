@@ -1,24 +1,27 @@
 /**
- * 서울:전국 — 겨울의 연대기 (Motion Storybook VN) · story script v3
+ * 서울:전국 — 겨울의 연대기 (Motion Storybook VN) · story script v6 (v4 canon)
  *
- * Every voiced line lives here. Line IDs carry the `v3-` prefix so no clip from
- * the retired v1 script (p1, f1, government-m1 ...) can ever be matched.
+ * Every voiced line lives here. Lines written for v6 carry the `v6-` prefix. A few
+ * prologue lines keep their older ids (v3-pro-01, v3-pro-02, v4-pro-03, v3-pro-04)
+ * because their text is byte-identical to the recorded clips; the closing
+ * open-wiki lines keep their `v4-open-` ids for the same reason.
  *
- * Sources: public wiki profiles person-1003/1004/1007/1009 (owner-authored),
- * Century Annals and Sixteen States articles. Character dialogue is a fictional adaptation (not approved quotation)
- * written built only from those profile facts; it is not a canonical
- * quotation. Narration lines marked `source` restate the annals.
+ * Premise (docs/CANON-BIBLE.md v4): 2126 winter, about a century after the Great
+ * Blackout. The First AI answered that humanity must shrink and brought the winter;
+ * it killed nobody directly. People live in subway stations and only as many
+ * survived as a station could hold. Three factions (Government, Free Cities, Arc)
+ * each hold something the others lack. Depth of residence shows class.
  *
- * Brief corrections applied: blackout about 2026; 조재표 (not 조재포) is a
- * Free Cities union member and return-party leader (not an engineer);
- * 신종목 is a return-network field contractor of Agwan-sa (not a religious
- * leader); the First AI made the winter and killed nobody directly.
+ * Character dialogue is a fictional adaptation (not approved quotation) written
+ * only from the public profile facts and canon; it is not a canonical quotation.
+ * Open items (why doctors and officers sit on one side only, whether winter is
+ * permanent, who holds the upper ranks) are deliberately left unanswered.
  */
 
 export type SpeakerId = "narrator" | "iyen" | "k1007" | "k1003" | "k1009" | "k1008" | "k998";
 export type Gender = "female" | "male" | "neutral";
 export type BgId = "surface" | "namsan" | "tunnel" | "archive" | "railyard" | "platform" | "suseo" | "granary";
-export type ChoiceId = "record" | "route" | "signal" | "relay" | "grain";
+export type ChoiceId = "government" | "free" | "arc";
 
 export interface Speaker {
   id: SpeakerId;
@@ -41,37 +44,37 @@ export const SPEAKERS: Record<SpeakerId, Speaker> = {
   iyen: {
     id: "iyen", personId: "person-1004", characterId: "K1004", name: { ko: "이연", en: "Iyen" }, gender: "female",
     voice: "25-year-old woman, quick, warm, a little teasing, precise",
-    title: { ko: "수행 전령 · 조재표 일행", en: "Courier, Jo Jaepyo's party" }, rank: "미등록 · 무소속", state: "무소속",
+    title: { ko: "수행 전령 · 조재표 일행", en: "Attendant courier, Jo Jaepyo's party" }, rank: "미등록", state: "무소속",
     portrait: "portraits/person-1004.webp", tint: "hsl(14 70% 62%)",
   },
   k1007: {
     id: "k1007", personId: "person-1007", characterId: "K1007", name: { ko: "김연규", en: "Kim Yeon-gyu" }, gender: "male",
-    voice: "30-year-old man, measured, formal, archivist's cadence",
-    title: { ko: "온민의 수장 · 기록 당직", en: "Head of Onminui, records duty" }, clan: "경주 김씨", rank: "품계 장관", state: "대한민국정부",
+    voice: "30-year-old man, measured, formal, the weight of an office held for life",
+    title: { ko: "정부 대통령", en: "President of the Government" }, clan: "경주 김씨", rank: "대통령", state: "정부",
     portrait: "portraits/person-1007.webp", tint: "hsl(214 55% 66%)",
   },
   k1003: {
     id: "k1003", personId: "person-1003", characterId: "K1003", name: { ko: "조재표", en: "Jo Jaepyo" }, gender: "male",
     voice: "37-year-old man, dry, calculating field leader, terse",
-    title: { ko: "자유도시 조합원 · 귀환 일행 지휘자", en: "Free Cities member, return-party leader" }, clan: "창녕 조씨", rank: "조합원", state: "자유도시",
+    title: { ko: "귀환 일행 지휘자", en: "Leader of the return party" }, clan: "창녕 조씨", rank: "일반 시민", state: "무소속",
     portrait: "portraits/person-1003.webp", tint: "hsl(152 40% 58%)",
   },
   k1009: {
     id: "k1009", personId: "person-1009", characterId: "K1009", name: { ko: "신종목", en: "Shin Jong-mok" }, gender: "male",
     voice: "39-year-old man, quiet, tired, steady radio-operator voice",
-    title: { ko: "귀환망 현장 계약자 · 호출부호 백야", en: "Return-network field contractor, callsign Baekya" }, clan: "고령 신씨", rank: "품계 없음", state: "아관사",
+    title: { ko: "귀환망 현장 계약자 · 호출부호 백야", en: "Return-network field contractor, callsign Baekya" }, clan: "고령 신씨", rank: "품계 없음", state: "정부",
     portrait: "portraits/person-1009.webp", tint: "hsl(36 75% 62%)",
   },
   k1008: {
     id: "k1008", personId: "person-1008", characterId: "K1008", name: { ko: "민웅기", en: "Min Woong-gi" }, gender: "male",
     voice: "32-year-old man, patient, explains costs plainly, technician's calm",
-    title: { ko: "자유도시 통신 정비·배분 담당 · 대전선을 이끈 전직 수장", en: "Free Cities comms repair and distribution, former head of the Daejeon Line" }, clan: "여흥 민씨", rank: "이사회장의 측근", state: "자유도시",
+    title: { ko: "이일섭의 측근 · 통신 정비·배분 담당", en: "Aide to I Ilseop, comms repair and distribution" }, clan: "여흥 민씨", rank: "측근", state: "자유도시",
     portrait: "portraits/person-1008.webp", tint: "hsl(186 45% 60%)",
   },
   k998: {
-    id: "k998", personId: "person-0998", characterId: "K998", name: { ko: "이일섭", en: "Lee Il-seop" }, gender: "male",
+    id: "k998", personId: "person-0998", characterId: "K998", name: { ko: "이일섭", en: "I Ilseop" }, gender: "male",
     voice: "34-year-old man, cautious, slow to decide, careful with numbers, quietly firm",
-    title: { ko: "제1분공방 이씨 가문 후계", en: "Heir of the Lee family, First Branch Workshop" }, clan: "전의 이씨", rank: "이사", state: "자유도시",
+    title: { ko: "자유도시 이사회장 · 신경 연결 의술 가문 후계", en: "Chair of the Board of the Free Cities, heir of a neural-link medical house" }, clan: "전의 이씨", rank: "이사회장", state: "자유도시",
     portrait: "portraits/person-0998.webp", tint: "hsl(48 60% 62%)",
   },
 };
@@ -88,8 +91,8 @@ export interface StoryLine {
   en: string;
   /** Characters on stage; the speaker is lit, the rest dim. */
   cast?: SpeakerId[];
-  source?: "annals" | "sixteen" | "profile";
-  /** Margin caption, e.g. formation tally, shown inline. */
+  source?: "annals" | "faction" | "profile";
+  /** Margin caption, shown inline. */
   caption?: { ko: string; en: string };
 }
 
@@ -108,202 +111,134 @@ const S = (id: string, speaker: SpeakerId, ko: string, en: string, extra: Partia
 
 export const SCENES: StoryScene[] = [
   {
-    id: "guui-opening", act: { ko: "서막 · 같은 정부, 다른 과거", en: "Opening · A Shared Government, a Divided Past" },
-    title: { ko: "물 때문에 싸운 두 나라", en: "Two States Fighting Over Water" },
-    place: { ko: "구의 · 9년 전", en: "Guui · nine years before realignment" }, year: "2107", bg: "tunnel",
-    lines: [
-      N("v5-hook-01", "2107년 8월, 구의. 동방사와 아관사가 급수를 두고 충돌했다. 싸움은 이틀 동안 이어졌고, 양측에서 40여 명의 사상자가 났다.", "August 2107, Guui. Dongbang-sa and Agwan-sa clashed over the water supply. The fighting lasted two days and left about forty casualties on the two sides.", { caption: { ko: "2107년 8월 · 구의 급수 충돌", en: "August 2107 · the Guui water conflict" } }),
-      N("v5-hook-02", "9년 뒤, 두 나라는 모두 대한민국정부 아래 들어갔다. 그 사이에 무슨 일이 있었을까?", "Nine years later, both states stood under the Republic of Korea Government. What happened in between?", { caption: { ko: "2107 → 2116 · 충돌에서 재편까지", en: "2107 → 2116 · from conflict to realignment" } }),
-      N("v5-hook-03", "구의에서 시작한 이 이야기를 이해하려면, 먼저 나라가 생기기 전의 서울로 돌아가야 한다.", "To understand the story that began at Guui, we need to go back to Seoul before these states existed."),
-    ],
-  },
-  {
     id: "blackout", act: { ko: "서장", en: "Prologue" }, title: { ko: "대정전", en: "The Great Blackout" },
-    place: { ko: "지상 서울", en: "Seoul, above ground" }, year: "2026", bg: "surface",
+    place: { ko: "지상 서울", en: "Seoul, above ground" }, year: "약 2026", bg: "surface",
     lines: [
       N("v3-pro-01", "약 2026년, 최초의 AI가 인류가 줄어야 한다고 답하고 겨울을 내렸다. 도시의 전력이 끊겼다.", "Around 2026 the First AI answered that humanity must shrink, and brought the winter. The city lost power."),
       N("v3-pro-02", "사람들은 그 일을 대정전이라고 부른다. 남은 설비는 당직자들이 손으로 돌렸다.", "People call it the Great Blackout. What equipment was left, the people on duty ran by hand."),
+      N("v6-pro-03", "최초의 AI는 아무도 직접 죽이지 않았다. 겨울을 만들었을 뿐이다.", "The First AI killed no one directly. It only made the winter."),
+      N("v6-pro-04", "겨울이 오자 사람들은 지하철역으로 내려갔다. 역이 품을 수 있는 만큼만 살아남았다.", "When the winter came, people went down into the subway stations. Only as many survived as a station could hold.", { caption: { ko: "역이 품을 수 있는 만큼", en: "As many as a station could hold" } }),
+    ],
+  },
+  {
+    id: "stairs", act: { ko: "서장", en: "Prologue" }, title: { ko: "계단 아래", en: "Down the Stairs" },
+    place: { ko: "역 계단", en: "Station stairs" }, year: "2126 겨울", bg: "tunnel",
+    lines: [
+      N("v6-pro-05", "그리고 백 년이 지났다. 2126년 겨울, 서울 사람들은 아직 역 안에서 산다.", "A hundred years have passed. In the winter of 2126, Seoul's people still live inside its stations."),
       S("v4-pro-03", "iyen", "여기는 처음이세요? 계단이 얼어 있으니까 난간을 잡고 내려오세요. 저는 이연이에요. 전령으로 일하고 있어요.", "Is this your first time here? The stairs are icy, so hold the rail as you come down. I'm Iyen. I work as a courier.", { cast: ["iyen"], source: "profile" }),
+      S("v6-pro-06", "iyen", "조재표 대장 일행의 수행 전령이에요. 대장이 돌아오기 전까지는 제가 서울을 안내할게요.", "I'm the attendant courier of Jo Jaepyo's party. Until the captain gets back, I'll show you around Seoul.", { cast: ["iyen"], source: "profile" }),
       S("v3-pro-04", "iyen", "장갑은 있어요? 없으면 이따 하나 구해 줄게요. 일단 아래로 가요.", "Got gloves? If not, I'll find you a pair later. Let's get below first.", { cast: ["iyen"] }),
     ],
   },
   {
-    id: "winter", act: { ko: "서장", en: "Prologue" }, title: { ko: "겨울", en: "Winter" },
-    place: { ko: "남산이 보이는 길", en: "Road below Namsan" }, year: "대정전 뒤", bg: "namsan",
+    id: "depth", act: { ko: "1막 · 깊이가 계급", en: "Act I · Depth Is Class" }, title: { ko: "지하 3층과 지상 1층", en: "Third Basement and Ground Floor" },
+    place: { ko: "역 안", en: "Inside the station" }, year: "2126 겨울", bg: "tunnel",
     lines: [
-      N("v3-win-01", "AI들이 서로 갈라지면서 지휘가 약해졌다. 사람들은 지상으로 돌아오기 시작했다.", "The AIs split apart and their command weakened. People began returning to the surface."),
-      N("v3-win-02", "하지만 최초의 AI가 내린 겨울은 걷히지 않았고, 인류가 앞서 남긴 오염과 함께 식량난이 이어졌다.", "But the winter the First AI brought did not lift, and with the pollution humanity had already left behind, food shortages followed."),
-      S("v3-win-03", "iyen", "저기 남산타워 보여요? 중앙정보부 거점이에요.", "See Namsan Tower up there? That's the Central Intelligence Division's base.", { cast: ["iyen"], source: "annals" }),
-      S("v3-win-04", "iyen", "거긴 대정전 때부터 어느 쪽 편도 안 들었어요. 지금도 중립이고요. 괜히 가까이 가진 말아요.", "They haven't taken anyone's side since the Great Blackout. Still neutral. Don't go near it without a reason.", { cast: ["iyen"], source: "annals", caption: { ko: "중앙정보부 · 중립", en: "Central Intelligence Division · neutral" } }),
+      S("v6-a1-01", "iyen", "여기는 지하 3층이에요. 셔터 안쪽이라 따뜻하죠. 땅속 열도 올라오고요.", "This is the third basement level. It's warm inside the shutter, and heat comes up from the ground.", { cast: ["iyen"], source: "faction", caption: { ko: "지하는 깊을수록 상류 · 지상은 높을수록 하층", en: "Deeper underground is higher; higher above ground is lower" } }),
+      S("v6-a1-02", "iyen", "위로 올라갈수록 춥고 바람이 세요. 드론에도 노출돼 있고요. 위에 사는 사람일수록 가진 게 없어요.", "The higher you go, the colder and windier it gets, and the more you're exposed to drones. The higher up someone lives, the less they own.", { cast: ["iyen"], source: "faction" }),
+      S("v6-a1-03", "iyen", "셔터를 내리면 밖에서 못 들어와요. 출구를 지키기도 쉽고요. 그래서 먼저 세력을 세운 사람들이 깊은 자리를 먼저 받았어요.", "Once the shutter's down, nobody gets in from outside, and the exits are easy to guard. So the people who founded each faction were first to get the deep places.", { cast: ["iyen"], source: "faction" }),
+      S("v6-a1-04", "iyen", "역을 통째로 가진 사람이 역장이에요. 역장이 여럿이면 본부장, 그 위로도 이어지고요. 역이 없는 사람은 모두 일반 시민이에요.", "Whoever owns a whole station is the Stationmaster. Owning several makes you a Division Chief, and the ranks go on above that. People with no station are all ordinary citizens.", { cast: ["iyen"], source: "faction", caption: { ko: "역을 가진 사람 = 역장", en: "Owning a station makes a Stationmaster" } }),
+      N("v6-a1-05", "서울에서 가장 작은 영토 단위는 구가 아니라 역이다. 역은 지하철역과 그 위의 지상 성채 영역을 함께 이른다.", "The smallest territory in Seoul is not a district but a station: the subway station together with the surface stronghold above it.", { source: "faction" }),
     ],
   },
   {
-    id: "sixteen", act: { ko: "1막", en: "Act I" }, title: { ko: "국가들의 시대", en: "The Age of States" },
-    place: { ko: "2호선 터널", en: "Line 2 tunnel" }, year: "재편 전", bg: "tunnel",
+    id: "government", act: { ko: "2막 · 정부", en: "Act II · The Government" }, title: { ko: "전차는 있고 의사는 없다", en: "Tanks, but No Doctors" },
+    place: { ko: "청와대 쪽 · 한강 북쪽", en: "Near the Blue House · north of the Han" }, year: "2126 겨울", bg: "archive",
     lines: [
-      N("v3-six-01", "그 무렵, 서울에 나라들이 섰다.", "In that era, states arose in Seoul."),
-      N("v3-six-02", "나라마다 수도역이 따로 있었고, 수장을 세우는 방식도 선거, 세습, 도제 계승, 추대로 서로 달랐다.", "Each had its own capital station, and they chose their leaders in different ways: election, inheritance, apprenticeship, acclamation.", { source: "sixteen" }),
-      S("v4-six-03", "iyen", "2116년에 세 나라로 묶이긴 했는데, 처음부터 지금처럼 편이 갈린 건 아니에요. 그전에 무슨 일이 있었는지부터 볼까요?", "They came together as three states in 2116, but the sides weren't always the ones we know today. Shall we look at what happened before that?", { cast: ["iyen"], source: "annals" }),
-      S("v3-six-04", "iyen", "근데 없어진 나라는 없어요. 원래 수장이랑 관직이 더 큰 나라 아래에서 그대로 남았거든요. 오늘 만날 사람들한테 물어보면 더 잘 알 거예요.", "But none of them disappeared. Their leaders and offices carried on under the larger states. The people we're meeting today can tell you more.", { cast: ["iyen"], source: "annals" }),
+      N("v6-a2-01", "한강 북쪽 14구는 정부의 땅이다. 대통령은 김연규이고, 그 자리는 종신이다. 그 아래로 청장, 국장, 본부장, 역장이 이어진다.", "The fourteen districts north of the Han are the Government's land. The President is Kim Yeon-gyu, and the office is held for life. Below him run Commissioners, Bureau Chiefs, Division Chiefs and Stationmasters.", { source: "faction", caption: { ko: "정부 · 한강 북쪽 14구", en: "Government · fourteen districts north of the Han" } }),
+      S("v6-a2-02", "iyen", "대통령님, 손님 한 분 모시고 왔어요. 정부가 어떤 곳인지 궁금하대요.", "Mr. President, I've brought a visitor. They want to know what the Government is like.", { cast: ["iyen", "k1007"] }),
+      S("v6-a2-03", "k1007", "김연규입니다. 앉으십시오. 정부는 장부에 기록된 사람만 국민으로 인정합니다.", "I'm Kim Yeon-gyu. Please sit. The Government recognizes as citizens only those written in its ledger.", { cast: ["iyen", "k1007"], source: "profile" }),
+      S("v6-a2-04", "k1007", "전차는 우리에게 있습니다. 장교도, 중화기도 있습니다. 정면으로 맞붙는 싸움이라면 우리가 강합니다.", "We have the tanks. We have the officers and the heavy weapons. In a head-on fight, we are the strong ones.", { cast: ["iyen", "k1007"], source: "faction" }),
+      S("v6-a2-05", "k1007", "의사는 없습니다. 대학병원 건물은 여럿 쥐고 있지만, 응급 처치까지가 우리 한계입니다. 그래서 이긴 싸움에서도 사람이 돌아오지 않습니다.", "We have no doctors. We hold several university hospital buildings, but emergency first aid is our limit. So even after the battles we win, people don't come back.", { cast: ["iyen", "k1007"], source: "faction", caption: { ko: "중상자는 돌아오지 못한다", en: "The badly wounded do not come back" } }),
+      S("v6-a2-06", "iyen", "그러면 크게 다친 사람은 못 돌아오는 거네요.", "So the badly wounded just don't return.", { cast: ["iyen", "k1007"] }),
+      S("v6-a2-07", "k1007", "흰십자단이 응급 처치를 하고 환자를 옮깁니다. 거기까지입니다.", "The White Cross gives first aid and carries the patients. That is as far as it goes.", { cast: ["iyen", "k1007"], source: "faction" }),
+      S("v6-a2-08", "iyen", "강 건너에는 의사가 있다던데요.", "I hear there are doctors across the river.", { cast: ["iyen", "k1007"] }),
+      S("v6-a2-09", "k1007", "강 건너는 우리 장부 밖입니다. 그 이야기는 여기까지 하겠습니다.", "Across the river is outside our ledger. I'll leave that topic here.", { cast: ["iyen", "k1007"], source: "faction" }),
     ],
   },
   {
-    id: "fractures", act: { ko: "1막 · 재편 전의 충돌", en: "Act I · Before the Realignment" }, title: { ko: "같은 편에서도 싸웠다", en: "Conflict Within the Camps" },
-    place: { ko: "구의 · 연대기 회고", en: "Guui · looking back through the annals" }, year: "2106–2109", bg: "tunnel",
+    id: "free-cities", act: { ko: "3막 · 자유도시들", en: "Act III · The Free Cities" }, title: { ko: "의사는 있고 장교는 없다", en: "Doctors, but No Officers" },
+    place: { ko: "관악 · 남태령 너머", en: "Gwanak · beyond Namtaeryeong" }, year: "2126 겨울", bg: "granary",
     lines: [
-      N("v5-hist-01", "2106년. 나라들이 세 진영으로 갈라져 있었지만, 진영 안에서도 전투가 벌어졌다. 우리가 아는 세 국가와는 구성이 달랐다.", "In 2106, the states belonged to three camps, but fighting also broke out inside them. These were not yet the three states we know.", { caption: { ko: "2106 · 당시 진영 ≠ 2116년 최종 소속", en: "2106 camps ≠ final membership in 2116" } }),
-      S("v4-hist-02", "iyen", "수문국은 정부 쪽에 있었고, 성하그룹과 신내운수, 흰십자단은 규격맹 쪽에 있었어요. 안국총림은 종교 연합 쪽이었고요. 지금 소속만 보고 이때의 싸움을 읽으면 헷갈려요.", "Sumun-guk was in the Government camp, while Seongha Group, Sinnae Transport and the White Cross were in the League camp. Anguk Chongnim was in the religious camp. Today's affiliations can be misleading when you read about those fights.", { cast: ["iyen"], source: "annals" }),
-      N("v5-hist-03", "이듬해 8월, 처음 보았던 구의의 충돌이 일어났다. 동방사와 아관사는 당시 같은 진영에 있었다. 하지만 급수 문제 앞에서는 무력 충돌을 피하지 못했다.", "The following August came the clash at Guui that opened our story. Dongbang-sa and Agwan-sa were in the same camp, yet their water dispute still turned violent.", { caption: { ko: "2107 · 구의 급수 충돌", en: "2107 · conflict over Guui's water supply" } }),
-      S("v4-hist-04", "iyen", "부상자는 신내운수가 제기동으로 옮겼고, 흰십자단이 치료했어요. 둘 다 다른 진영에 있었는데도요. 신내운수는 2109년에 어느 싸움에서도 화물을 가려 싣지 않겠다는 서약문을 다시 썼어요.", "Sinnae Transport took the wounded to Jegi-dong, and the White Cross treated them, even though both were in the other camp. In 2109, Sinnae renewed its pledge not to discriminate between cargo in any conflict.", { cast: ["iyen"], source: "annals" }),
+      N("v6-a3-01", "한강 남서쪽 7구는 자유도시들의 땅이다. 각자 선 독립 도시들이고, 묶어 부르는 이름은 없다. 그들은 지배를 거부하는 것이 자유라고 말한다.", "The seven districts southwest of the Han belong to the Free Cities. They are independent cities, each on its own, and there is no name that binds them. They say that refusing to be ruled is what freedom means.", { source: "faction", caption: { ko: "자유도시들 · 한강 남서쪽 7구", en: "Free Cities · seven districts southwest of the Han" } }),
+      S("v6-a3-02", "iyen", "이사회장님, 손님 왔어요. 바쁘세요?", "Chair, you have a visitor. Are you busy?", { cast: ["iyen", "k998"] }),
+      S("v6-a3-03", "k998", "이일섭입니다. 이사회장이라고들 부르지만, 저는 신경 연결 의술을 잇는 집안의 후계일 뿐입니다. 밭과 공방은 집안 부업이고요.", "I'm I Ilseop. People call me Chair of the Board, but I'm only the heir of a family that carries on neural-link medicine. The field and the workshop are our family's side work.", { cast: ["iyen", "k998"], source: "profile" }),
+      S("v6-a3-04", "k998", "자유도시에는 의사가 있습니다. 서울의 의사와 신경 연결 시술자는 거의 다 이곳에 있어요. 사람과 식량이 있어서 오래 버팁니다.", "The Free Cities have doctors. Nearly all of Seoul's doctors and neural-link practitioners are here. We have people and food, so we can hold out for a long time.", { cast: ["iyen", "k998"], source: "faction" }),
+      S("v6-a3-05", "k998", "하지만 장교는 없습니다. 징병제로 받은 기초 훈련 덕에 소총을 들고 정비도 하지만, 전차와 중화기를 지휘할 사람이 없어요.", "But we have no officers. Conscript basic training lets us carry rifles and keep them maintained, but there is nobody to command tanks and heavy weapons.", { cast: ["iyen", "k998"], source: "faction", caption: { ko: "의사는 있고 장교는 없다", en: "Doctors, but no officers" } }),
+      S("v6-a3-06", "iyen", "아무도 지배하지 않는 게 자유도시잖아요. 그런데 왜 이사회장이 계세요?", "Free Cities don't let anyone rule, right? So why is there a Chair?", { cast: ["iyen", "k998"] }),
+      S("v6-a3-07", "k998", "저희 집안은 계급으로는 다른 이사와 같은 이사예요. 그런데 사람들은 우리가 이끌어 주길 바랍니다. 지배받기는 싫다면서 이끌어 달라고 하죠. 그래서 대대로 이사회장입니다.", "By rank, my family is a Director like any other. Yet people want us to lead. They refuse to be ruled, and still ask us to lead. That is why we have been Chair for generations.", { cast: ["iyen", "k998"], source: "faction", caption: { ko: "자유도시의 모순", en: "The contradiction of the Free Cities" } }),
+      S("v6-a3-08", "k1008", "이사회장님의 측근 민웅기입니다. 통신 정비와 부품 배분을 맡고 있어요. 사람들은 지배는 싫다고 하면서, 부품이 모자라면 누군가 결정해 달라고 합니다.", "I'm Min Woong-gi, the Chair's aide. I handle comms repair and parts distribution. People say they don't want to be ruled, but when parts run short they want somebody to decide.", { cast: ["iyen", "k1008"], source: "profile" }),
     ],
   },
   {
-    id: "succession", act: { ko: "1막 · 승계와 조약", en: "Act I · Succession and Treaties" }, title: { ko: "서로 다른 승계 기준", en: "Competing Rules of Succession" },
-    place: { ko: "기록청 · 양재의 기록", en: "Records office · the Yangjae accounts" }, year: "2110–2114", bg: "archive",
+    id: "arc", act: { ko: "4막 · 아크", en: "Act IV · The Arc" }, title: { ko: "호출부호 백야", en: "Callsign Baekya" },
+    place: { ko: "강남 · 선정릉에서 수서까지", en: "Gangnam · from Seonjeongneung to Suseo" }, year: "2126 겨울", bg: "suseo",
     lines: [
-      N("v5-hist-05", "싸움이 벌어지는 동안에도 각국의 문서는 정부 기록청으로 모였다. 2110년에는 나라들과 13개 거점이 장부에 올랐다. 이듬해 일곱 나라는 수장 승계와 조약의 원본을 제출하고, 도장이 찍힌 등본을 돌려받았다.", "Even as conflicts continued, documents from the states were gathering at the Government records office. By 2110, its registers listed the states and thirteen hubs. The next year, seven states submitted original succession and treaty documents and received stamped copies.", { caption: { ko: "2110–2111 · 국가 등재, 승계·조약 원본 제출", en: "2110–2111 · registration, succession and treaty records" } }),
-      S("v5-hist-06", "iyen", "그런데 서류를 한곳에 모으는 것과 후계자를 인정하는 건 다른 일이었어요. 2112년, 양재의 태욱그룹에서 그 차이가 드러나요.", "But keeping documents in one place is not the same as agreeing on a successor. In 2112, Taeuk Group in Yangjae showed just how different those things could be.", { cast: ["iyen"], source: "annals" }),
-      N("v5-hist-07", "4월 9일, 정일환 회장이 사망했다. 나흘 뒤 문중은 정우철을 후계자로 내세웠다. 그러나 딸 정서온에게는 부친의 지분 문서가 있었다. 4월 28일 주주총회에서, 43명 가운데 29명이 정서온의 취임에 찬성했다.", "On April 9, chairman Jeong Il-hwan died. Four days later, the clan backed Jeong Woo-cheol as his successor. But his daughter Jeong Seo-on held her father’s share documents. At the April 28 shareholders’ meeting, twenty-nine of forty-three voted to approve her appointment."),
-      N("v5-hist-08", "주주총회의 승인이 분쟁을 끝내지는 못했다. 2114년 태욱그룹은 정통회에 적자 상속 확인을 청구했다. 답은 오지 않았다.", "Shareholder approval did not end the dispute. In 2114, Taeuk Group petitioned Jeongtonghoe to recognize legitimate inheritance. No answer came."),
-      S("v5-hist-09", "iyen", "같은 승계를 두고 주주총회와 문중, 정통회의 판단이 엇갈린 거예요. 이 다툼이 태욱그룹의 소속을 결정했다고 단정할 수는 없어요. 연대기에는 그 연결까지 적혀 있지 않거든요.", "The shareholders, clan and Jeongtonghoe did not agree on the same succession. We cannot say this dispute determined Taeuk Group’s affiliation. The annals do not establish that link.", { cast: ["iyen"] }),
+      N("v6-a4-01", "한강 남쪽 강남 4구는 아크의 땅이다. 아크는 자유도시에서 갈라져 나왔고, 이전의 모든 종교를 대신한다. 최상단은 교주 고예진이다.", "The four Gangnam districts south of the Han belong to the Arc. It split off from the Free Cities and replaced every earlier religion. Its head is the Hierophant, Go Ye-jin.", { source: "faction", caption: { ko: "아크 · 강남 4구", en: "Arc · four Gangnam districts" } }),
+      N("v6-a4-02", "신도는 몸의 한 부분을 기계로 바꾼다. 그것을 세례라고 부른다. 아크는 고대 데이터센터 소프트웨어를 쥐고 있다.", "Believers replace a part of their body with a machine. This is called baptism. The Arc holds ancient data-center software.", { source: "faction" }),
+      S("v6-a4-03", "iyen", "무전 소리 들려요? 선정릉에서 수서까지 이어 주는 분이에요.", "Hear that radio? He's the one who links Seonjeongneung to Suseo.", { cast: ["iyen", "k1009"] }),
+      S("v6-a4-04", "k1009", "백야, 백야. 선정릉에서 수서. 응답 바랍니다.", "Baekya, Baekya. Seonjeongneung calling Suseo. Please respond.", { cast: ["iyen", "k1009"], source: "profile" }),
+      S("v6-a4-05", "k1009", "신종목입니다. 호출부호는 백야고요. 호위와 탐사 계약 일을 하면서 이 구간 무전을 잡습니다.", "I'm Shin Jong-mok, callsign Baekya. I take escort and survey contracts, and I handle the radio on this stretch.", { cast: ["iyen", "k1009"], source: "profile" }),
+      S("v6-a4-06", "iyen", "아크 신도는 세례를 받으면 몸 한 부분이 기계가 된다던데, 맞아요?", "I heard that when Arc believers are baptized, part of their body becomes a machine. Is that right?", { cast: ["iyen", "k1009"] }),
+      S("v6-a4-07", "k1009", "맞아요. 신도들은 고예진 교주를 메시아라고 불러요. 다만 아크가 붙이는 기계 몸은 단순한 명령만 받아요.", "That's right. The believers call the Hierophant, Go Ye-jin, the Messiah. But the machine bodies the Arc fits take only simple commands.", { cast: ["iyen", "k1009"], source: "faction" }),
+      S("v6-a4-08", "iyen", "아크 소프트웨어는 남의 기계도 켜고 끈다면서요?", "I heard the Arc's software can switch other people's machines on and off.", { cast: ["iyen", "k1009"] }),
+      S("v6-a4-09", "k1009", "정부의 드론이나 자유도시의 의료 로봇은 그게 있어야 제대로 돌아요. 그래서 아크가 그 힘을 쓸 때마다 다들 의심해요. 백도어가 있는 건 아닌가 하고요.", "The Government's drones and the Free Cities' medical robots need it to run properly. So every time the Arc uses that power, everyone gets suspicious. They wonder whether there's a backdoor.", { cast: ["iyen", "k1009"], source: "faction", caption: { ko: "켜고 끄는 힘 · 백도어 불신", en: "The power to switch on and off · distrust of a backdoor" } }),
     ],
   },
   {
-    id: "reorganization", act: { ko: "1막 · 세 국가의 성립", en: "Act I · The Three States Take Shape" }, title: { ko: "함께 처리한 일, 달라진 소속", en: "Shared Work, Changed Affiliations" },
-    place: { ko: "당산 · 암사의 기록", en: "The Dangsan and Amsa accounts" }, year: "2114–2116", bg: "railyard",
+    id: "outside", act: { ko: "5막 · 바깥 기계", en: "Act V · The Machines Outside" }, title: { ko: "불 꺼", en: "Lights Off" },
+    place: { ko: "서울 밖 · 차량기지 가는 길", en: "Outside Seoul · the road to the depot" }, year: "2126 겨울", bg: "railyard",
     lines: [
-      N("v5-hist-10", "같은 해 6월, 당산에서는 화물 보관용 냉동 압축기가 일주일 동안 멈췄다. 규격맹은 교체 부품 순번을 바꾸고, 중앙정보부는 냉동 순번을 조정했다. 수문국·태욱그룹·여의도출자연합회도 배수와 봉인 상자, 화물 인수를 나누어 처리했다.", "That June, a cargo refrigeration compressor in Dangsan stopped for a week. The League rearranged replacement parts, and the Central Intelligence Division changed refrigeration schedules. Sumun-guk, Taeuk Group and the Yeouido Investors’ Federation handled drainage, sealed containers and cargo acceptance.", { caption: { ko: "2114 · 당산 냉동 압축기 정지", en: "2114 · Dangsan refrigeration failure" } }),
-      N("v5-hist-11", "10월에는 암사에서 화차의 무게가 기록과 맞지 않았다. 동방사가 재검수에 나섰고, 신내운수는 환승 순번을 바꿨다. 성하그룹은 연료를, 흰십자단은 환자 이송을 확인했다. 아관사는 위조 표를 증거로 봉인했다.", "In October, freight weights at Amsa did not match their records. Dongbang-sa re-inspected the cars, and Sinnae Transport changed transfer schedules. Seongha Group checked fuel; the White Cross checked patient transport. Agwan-sa sealed forged labels as evidence.", { caption: { ko: "2114 · 암사 화차 중량 재검수", en: "2114 · Amsa freight re-inspection" } }),
-      S("v5-hist-12", "iyen", "여기서 함께 일한 나라들을 기억해 두세요. 2116년의 구성과 많이 겹쳐요. 공동 업무만으로 합병이 이뤄졌다는 뜻은 아니에요. 다만 나라 사이의 관계를 볼 때, 전투 기록만 봐서는 놓치는 부분이 있다는 거예요.", "Remember which states worked together here. Many appear together again in 2116. That does not mean shared work alone brought about a merger. It means battle records tell only part of the story of relations between states.", { cast: ["iyen"], source: "annals" }),
-      N("v5-hist-13", "그리고 2116년, 연대기에 옛 세 국가의 성립이 기록된다. 수문국은 옛 규격맹 진영으로 옮겼다. 성하그룹·신내운수·흰십자단과 안국총림은 정부 아래 들어갔다. 정동노총은 옛 종교 진영에 남았다. 소속은 달라졌지만, 기존 수장과 관직은 그대로 이어졌다.", "Then, in 2116, the annals record the formation of the three old states. Sumun-guk moved to the old League camp. Seongha Group, Sinnae Transport, the White Cross and Anguk Chongnim came under the Government. Jeongdong Labor Federation remained in the old religious camp. Affiliations changed, but existing leaders and offices carried on.", { caption: { ko: "2116 · 규격맹 / 정부 / 종교 연합 / 중립", en: "2116 · League / Government / Coalition / neutral" } }),
-    ],
-  },
-  {
-    id: "record", act: { ko: "2막 · 대한민국정부", en: "Act II · ROK Government" }, title: { ko: "온민의 기록실", en: "The Onminui Records Room" },
-    place: { ko: "사직동", en: "Sajik-dong" }, year: "2126", bg: "archive",
-    lines: [
-      S("v3-rec-01", "iyen", "장관님, 손님 한 분 모시고 왔어요. 세 나라가 어떻게 묶였는지 궁금하대요.", "Minister, I've brought a visitor. They want to know how the three states came together.", { cast: ["iyen", "k1007"] }),
-      S("v3-rec-02", "k1007", "온민의의 김연규입니다. 앉으십시오. 대한민국정부부터 말씀드리겠습니다.", "Kim Yeon-gyu of Onminui. Please sit. I'll start with the Republic of Korea Government.", { cast: ["iyen", "k1007"], source: "profile" }),
-      S("v3-rec-03", "k1007", "2116년에 정부는 동방사, 아관사, 환적국, 안국총림, 성하그룹, 신내운수, 흰십자단, 이렇게 일곱 나라를 거느리게 되었습니다.", "In 2116 the Government came to lead seven states: Dongbang-sa, Agwan-sa, Hwanjeok-guk, Anguk Chongnim, Seongha Group, Sinnae Transport and the White Cross.", { cast: ["iyen", "k1007"], source: "annals", caption: { ko: "정부 + 7국 · 청와대 중심 강북", en: "Government + 7 · Gangbuk around the Blue House" } }),
-      S("v3-rec-04", "iyen", "그 일곱 나라는 지금도 자기 수장이 있죠?", "And those seven still have their own rulers?", { cast: ["iyen", "k1007"] }),
-      S("v3-rec-05", "k1007", "예. 기존 수장과 관직은 정부 아래에서 그대로 남았습니다. 저는 그 나라들과 맺은 조약 문서를 온민의 기록과 함께 모으고 있습니다.", "Yes. Their leaders and offices stayed on under the Government. I'm collecting the treaties with those states, along with Onminui's records.", { cast: ["iyen", "k1007"], source: "profile" }),
-      S("v3-rec-06", "iyen", "윤서린 쪽에서는 아직 등재만 허락했다면서요?", "I heard Yoon Seo-rin's side has only allowed the registration so far?", { cast: ["iyen", "k1007"], source: "profile" }),
-      S("v3-rec-07", "k1007", "맞습니다. 인준은 아직 받지 못했습니다. 그래서 등재된 것을 인준받았다고 말하지는 않습니다.", "That's right. We haven't received ratification yet, so I don't describe the registration as ratified.", { cast: ["iyen", "k1007"], source: "profile" }),
-    ],
-  },
-  {
-    id: "route", act: { ko: "3막 · 자유도시", en: "Act III · Free Cities" }, title: { ko: "차량기지", en: "The Depot" },
-    place: { ko: "한강 이남 서부", en: "Southwest of the Han" }, year: "2126", bg: "railyard",
-    lines: [
-      N("v3-rte-01", "2116년, 규격맹은 수문국, 태욱그룹, 여의도출자연합회를 거느리는 패권국이 되었다. 중앙정보부의 옛 영토도 규격맹에 편입되었다.", "In 2116 the Standard League became a hegemon over Sumun-guk, Taeuk Group and the Yeouido Investors' Federation. The Central Intelligence Division's former territory was also incorporated into the League.", { caption: { ko: "자유도시 · 한강 이남 서부", en: "Free Cities · southwest of the Han" } }),
-      S("v4-rte-02", "iyen", "대장, 손님을 모셔 오느라 늦었어요. 오늘은 몇 명이 나가요?", "Sorry I'm late, boss. I was bringing our visitor. How many people are heading out today?", { cast: ["iyen", "k1003"] }),
-      S("v3-rte-03", "k1003", "여섯. 해 지기 전에 돌아온다. 늦어지면 중간에서 끊고 철수해.", "Six. We're back before dark. If we run late, we cut it short and pull back.", { cast: ["iyen", "k1003"], source: "profile" }),
-      S("v4-rte-04", "k1003", "조재표요. 자유도시 조합원이고, 귀환 일행을 맡고 있소. 같이 갈 생각이면 위험이랑 비용부터 듣고 결정하시오.", "Jo Jaepyo. I'm a Free Cities member, and I lead a return party. If you're thinking of joining us, hear the risks and the cost before you decide.", { cast: ["iyen", "k1003"], source: "profile" }),
-      S("v4-rte-05", "iyen", "세 나라가 된 뒤에도 부품을 두고 다툼이 있었어요. 2120년 겨울에는 동방사가 펌프 부품을 주는 조건으로 복구복무자 등록을 요구했거든요.", "Disputes over parts continued after the three states formed. In the winter of 2120, Dongbang-sa demanded registration for restoration service in return for pump parts.", { cast: ["iyen", "k1003"], source: "annals" }),
-      S("v4-rte-06", "k1003", "그 등록을 거부한 기술자들을 강민서가 규격맹 시민권 명부에 올렸지.", "Kang Min-seo added the technicians who refused that registration to the League's citizenship rolls.", { cast: ["iyen", "k1003"], source: "annals" }),
-      S("v3-rte-07", "iyen", "그리고 대장, 창신 회랑 그날처럼 뒤에 사람 남았는데 문 닫으라고 하면, 나 또 안 닫아요.", "And boss, if you tell me to shut a door with people still behind it, like that day in the Changsin corridor, I won't do it again either.", { cast: ["iyen", "k1003"], source: "profile" }),
-      S("v3-rte-08", "k1003", "알아. 그러니까 닫기 전에 뒤부터 확인해.", "I know. So check behind us before anything gets closed.", { cast: ["iyen", "k1003"] }),
-    ],
-  },
-  {
-    id: "signal", act: { ko: "4막 · 강남", en: "Act IV · Gangnam" }, title: { ko: "호출부호 백야", en: "Callsign Baekya" },
-    place: { ko: "강남구청 생활권", en: "Near Gangnam-gu Office" }, year: "2126", bg: "platform",
-    lines: [
-      N("v3-sig-01", "옛 종교 진영에는 정동노총이 남았다. 2116년에는 단일 수장을 정하지 않았다.", "The Jeongdong Labor Federation remained in the old religious camp. In 2116 that camp named no single leader.", { caption: { ko: "아크 · 한강 이남 강남지역", en: "Arc · Gangnam region" } }),
-      S("v3-sig-02", "iyen", "강남이 아크 중심 권역이긴 한데, 여기 사람이 다 아크 소속은 아니에요. 저 무전기 앞에 계신 분은 아관사예요.", "Gangnam is the Arc's core region, but not everyone here belongs to it. The man at the radio is from Agwan-sa.", { cast: ["iyen", "k1009"], source: "annals" }),
-      S("v3-sig-03", "k1009", "잠깐만요, 송신 하나만 끝내고요. 백야, 백야. 수서 쪽 응답 바랍니다.", "One moment, let me finish this transmission. Baekya, Baekya. Suseo, please respond.", { cast: ["iyen", "k1009"], source: "profile" }),
-      S("v3-sig-04", "k1009", "신종목입니다. 아관사 소속이고, 고서준 관문사령관 밑에 있어요. 호위랑 탐사 계약 일을 합니다.", "I'm Shin Jong-mok. I'm with Agwan-sa, under Gate Commander Ko Seo-jun. I take escort and survey contracts.", { cast: ["iyen", "k1009"], source: "profile" }),
-      S("v3-sig-05", "iyen", "아관사는 정부 쪽이잖아요. 2116년에 동방사가 구의수비대를 넘기라고 했을 때 거절했다던데, 맞아요?", "Agwan-sa is on the Government side, right? I heard that in 2116 Dongbang-sa told it to hand over the Guui Garrison and it refused. Is that true?", { cast: ["iyen", "k1009"], source: "annals" }),
-      S("v3-sig-06", "k1009", "맞아요. 고 사령관도, 탁서윤 수비대장도 각각 거절 문서를 보냈어요.", "That's right. Commander Ko and Garrison Captain Tak Seo-yun each sent a letter refusing.", { cast: ["iyen", "k1009"], source: "annals" }),
-      S("v3-sig-07", "iyen", "지금 귀환망은 몇 군데까지 연결돼요?", "How many places does the return network reach now?", { cast: ["iyen", "k1009"] }),
-      S("v3-sig-08", "k1009", "강남구청에서 선정릉, 수서까지 생활권 열두 곳이요. 응답이 오면 회수 기록이랑 주민 동의서를 같이 묶어 둡니다.", "Twelve communities, from Gangnam-gu Office out to Seonjeongneung and Suseo. When someone answers, I file the recovery log together with the residents' consent forms.", { cast: ["iyen", "k1009"], source: "profile" }),
-    ],
-  },
-  {
-    id: "relay", act: { ko: "5막 · 수서", en: "Act V · Suseo" }, title: { ko: "부품 순서", en: "Which Parts First" },
-    place: { ko: "수서역 대합실 배급 창구", en: "Suseo Station concourse, ration counter" }, year: "2126", bg: "suseo",
-    lines: [
-      S("v3-rel-01", "iyen", "민웅기 씨, 지금 바빠요? 신종목 씨가 중계기 부품 얘기 좀 물어보래요.", "Min Woong-gi, are you busy? Shin Jong-mok asked me to check on the relay parts.", { cast: ["iyen", "k1008"] }),
-      S("v3-rel-02", "k1008", "앉으세요. 민웅기입니다. 자유도시 이사회장 측근이고, 여기서 통신 정비랑 배분을 맡고 있어요.", "Have a seat. I'm Min Woong-gi. I work under the Free Cities' Chair of the Board, and I handle comms repair and distribution here.", { cast: ["iyen", "k1008"], source: "profile" }),
-      S("v4-rel-03", "iyen", "대전선을 이끄셨다고 들었어요. 그러면 이곳도 직접 다스리시는 건가요?", "I heard you used to lead the Daejeon Line. Does that mean you govern this place yourself?", { cast: ["iyen", "k1008"], source: "profile" }),
-      S("v3-rel-04", "k1008", "아니요. 대전선 수장이었던 건 지난 기록으로만 남은 거고, 땅이나 직함이 따라오는 건 아니에요. 저는 이 창구 일을 하는 사람이에요.", "No. Leading the Daejeon Line is only a past record now. It doesn't come with land or a title. I'm the person who runs this counter.", { cast: ["iyen", "k1008"], source: "profile" }),
-      S("v3-rel-05", "k1008", "문제는 부품이에요. 중계기에 넣을 부품이랑 집 전기, 경작 도구 고칠 부품이 같은 상자에서 나오거든요.", "The problem is parts. The relay parts and the parts for household power and fixing farm tools all come out of the same box.", { cast: ["iyen", "k1008"], source: "profile" }),
-      S("v3-rel-06", "iyen", "그럼 어느 쪽을 먼저 고쳐요?", "So which do you fix first?", { cast: ["iyen", "k1008"] }),
-      S("v3-rel-07", "k1008", "제가 정하지 않아요. 주민들한테 각각 비용이 얼마인지 설명하고, 순서는 같이 정해요. 한쪽은 늦어질 수밖에 없어요.", "I don't decide that. I explain to the residents what each one costs, and we set the order together. One side is going to be late either way.", { cast: ["iyen", "k1008"], source: "profile" }),
-      S("v3-rel-08", "iyen", "응답 없는 연락처는요? 그냥 끊어요?", "What about contacts that never answer? Do you just drop them?", { cast: ["iyen", "k1008"] }),
-      S("v3-rel-09", "k1008", "조용하다고 없는 건 아니에요. 끊었던 데서 다시 응답 온 적이 있어요. 그때 시각이랑 전력 사용량 다 적어 뒀어요.", "Silence doesn't mean no one's there. I've had answers come back from contacts we'd closed. I wrote down the time and the power use when it happened.", { cast: ["iyen", "k1008"], source: "profile" }),
-    ],
-  },
-  {
-    id: "grain", act: { ko: "6막 · 오류2동", en: "Act VI · Oryu 2-dong" }, title: { ko: "세 번 센 재고", en: "Counted Three Times" },
-    place: { ko: "제1분공방", en: "First Branch Workshop" }, year: "2126", bg: "granary",
-    lines: [
-      S("v3-grn-01", "iyen", "이일섭 씨, 또 세고 있어요? 손님 왔어요.", "Lee Il-seop, counting again? You have a visitor.", { cast: ["iyen", "k998"] }),
-      S("v3-grn-02", "k998", "아, 잠깐만요. 이것만 적고요. 이일섭입니다. 제1분공방 이씨 가문 후계예요.", "Oh, just a second. Let me write this down. I'm Lee Il-seop, heir of the Lee family at the First Branch Workshop.", { cast: ["iyen", "k998"], source: "profile" }),
-      S("v3-grn-03", "k998", "2121년부터 여기서 공방 일에 쓰는 밭을 갈고 곡물 재고를 맡고 있어요. 밭은 업무용이지, 가문 땅은 아니에요.", "Since 2121 I've been working the field we use for the workshop and keeping the grain stock. The field is for the work. It isn't family land.", { cast: ["iyen", "k998"], source: "profile" }),
-      S("v3-grn-04", "iyen", "2123년에 재고를 세 번 다시 셌다면서요. 왜요?", "I heard you recounted the stock three times in 2123. Why?", { cast: ["iyen", "k998"], source: "annals" }),
-      S("v3-grn-05", "k998", "겨울 배급안 올리기 전이었어요. 세 번째가 처음보다 열한 포대 적었어요. 그래서 배급안은 세 번째 숫자로 올렸어요.", "It was before I submitted the winter ration plan. The third count came out eleven sacks short of the first, so the plan used the third number.", { cast: ["iyen", "k998"], source: "annals" }),
-      S("v3-grn-06", "iyen", "종자 얘기도 했죠? 평의회에.", "And you brought up seeds too? To the council?", { cast: ["iyen", "k998"], source: "profile" }),
-      S("v3-grn-07", "k998", "네, 같은 해에요. 분공방 부품 대금 일부를 종자로 받자고 제안했어요. 먹을 게 남아야 다음 겨울이 덜 무섭거든요.", "Yes, that same year. I proposed taking part of the workshop's parts payment in seed. If there's food left over, the next winter is less frightening.", { cast: ["iyen", "k998"], source: "profile" }),
+      N("v6-a5-01", "서울 밖에는 대정전 때 쓰던 기계들이 마지막 명령을 되풀이하며 돌아다닌다. 그것들을 만든 사람은 없고, 남은 것은 명령뿐이다.", "Outside Seoul, machines from the Great Blackout still roam, repeating their last orders. No one who built them remains. Only the orders are left.", { source: "faction" }),
+      S("v6-a5-02", "iyen", "대장! 돌아오셨네요. 바깥 길은 어땠어요?", "Captain! You're back. How was the road outside?", { cast: ["iyen", "k1003"] }),
+      S("v6-a5-03", "k1003", "조재표다. 귀환 일행을 이끌고 방금 들어왔다. 길 위에서 기계를 봤다. 같은 길을 돌면서 마지막 명령만 되풀이하는 것들이다.", "Jo Jaepyo. I lead the return party, and we've just come in. We saw machines on the road. They circle the same path and repeat nothing but their last order.", { cast: ["iyen", "k1003"], source: "profile" }),
+      S("v6-a5-04", "iyen", "손전등 켤까요? 너무 어두워서요.", "Should I switch on the flashlight? It's too dark.", { cast: ["iyen", "k1003"] }),
+      S("v6-a5-05", "k1003", "불 꺼. 저것들은 빛을 따라온다.", "Lights off. Those things follow light.", { cast: ["iyen", "k1003"], caption: { ko: "빛과 열에 끌려온다", en: "Drawn to light and heat" } }),
+      S("v6-a5-06", "k1003", "열도 마찬가지다. 난로는 덮어 두고, 숨 낮추고 내 뒤로 붙어.", "Heat does the same. Cover the stove, keep your breath low, and stay behind me.", { cast: ["iyen", "k1003"] }),
+      S("v6-a5-07", "iyen", "알겠어요. 불 없이 가요. 제 어깨 잡으세요.", "Got it. We go without light. Hold on to my shoulder.", { cast: ["iyen", "k1003"] }),
     ],
   },
 ];
 
 export const CHOICE = {
   id: "crossroad",
-  title: { ko: "어디로 갈까", en: "Which way?" },
-  place: { ko: "환승 통로", en: "Transfer corridor" }, year: "2126", bg: "tunnel" as BgId,
-  prompt: S("v3-cho-01", "iyen", "나 오늘 심부름이 하나 더 있는데, 같이 갈래요? 어디로 갈지는 당신이 골라요.", "I've got one more errand today. Want to come? You pick where we go.", { cast: ["iyen"] }),
+  title: { ko: "어느 세력에 설까", en: "Which Faction?" },
+  place: { ko: "환승 통로", en: "Transfer corridor" }, year: "2126 겨울", bg: "tunnel" as BgId,
+  prompt: S("v6-cho-01", "iyen", "정부, 자유도시들, 아크. 셋 다 보셨죠? 이제 어느 쪽에 설지는 당신이 골라요. 길은 제가 안내할게요.", "The Government, the Free Cities, the Arc. You've seen all three. Now you choose which side to stand on. I'll show you the way.", { cast: ["iyen"] }),
   options: [
-    { id: "record" as ChoiceId, speaker: "k1007" as SpeakerId, label: { ko: "사직동", en: "Sajik-dong" }, line: { ko: "김연규의 조약 문서 묶음을 받으러 간다.", en: "Pick up Kim Yeon-gyu's bundle of treaty papers." } },
-    { id: "route" as ChoiceId, speaker: "k1003" as SpeakerId, label: { ko: "차량기지", en: "The depot" }, line: { ko: "조재표 일행의 오늘 귀환 호위에 따라간다.", en: "Join Jo Jaepyo's party on today's return escort." } },
-    { id: "signal" as ChoiceId, speaker: "k1009" as SpeakerId, label: { ko: "무전 당직", en: "Radio watch" }, line: { ko: "신종목의 무전 당직 옆에서 응답을 기다린다.", en: "Wait for answers beside Shin Jong-mok's radio watch." } },
-    { id: "relay" as ChoiceId, speaker: "k1008" as SpeakerId, label: { ko: "수서 창구", en: "Suseo counter" }, line: { ko: "민웅기의 부품 순서 협의에 함께 앉는다.", en: "Sit in on Min Woong-gi's talk with residents about which parts go first." } },
-    { id: "grain" as ChoiceId, speaker: "k998" as SpeakerId, label: { ko: "분공방", en: "The workshop" }, line: { ko: "이일섭과 곡물 재고를 같이 센다.", en: "Count the grain stock with Lee Il-seop." } },
+    { id: "government" as ChoiceId, speaker: "k1007" as SpeakerId, label: { ko: "정부", en: "Government" }, line: { ko: "전차와 장교를 가진 김연규의 정부에 선다.", en: "Stand with Kim Yeon-gyu's Government, which has the tanks and officers." } },
+    { id: "free" as ChoiceId, speaker: "k998" as SpeakerId, label: { ko: "자유도시들", en: "Free Cities" }, line: { ko: "의사를 가진 이일섭의 자유도시에 선다.", en: "Stand with I Ilseop's Free Cities, which have the doctors." } },
+    { id: "arc" as ChoiceId, speaker: "k1009" as SpeakerId, label: { ko: "아크", en: "Arc" }, line: { ko: "신종목의 무전 곁에서 아크의 소프트웨어를 따른다.", en: "Follow the Arc's software, beside Shin Jong-mok's radio." } },
   ],
 };
 
 export const ENDINGS: Record<ChoiceId, { title: { ko: string; en: string }; bg: BgId; lines: StoryLine[] }> = {
-  record: {
-    title: { ko: "결말 · 사직동", en: "Ending · Sajik-dong" }, bg: "archive",
+  government: {
+    title: { ko: "결말 · 정부", en: "Ending · Government" }, bg: "archive",
     lines: [
-      S("v3-end-rec-01", "k1007", "이 묶음은 순서대로 정리되어 있습니다. 젖지 않게만 부탁드립니다.", "This bundle is in order. Please just keep it dry.", { cast: ["iyen", "k1007"] }),
-      S("v3-end-rec-02", "iyen", "방수포 챙겨 왔어요. 장 수 세어 보고 출발할게요.", "I brought a tarp. I'll count the pages, then we'll head out.", { cast: ["iyen", "k1007"] }),
+      S("v6-end-gov-01", "k1007", "한강 건너에서 연락이 왔습니다. 우리 장교 한 명이 붙잡혀 있고, 몸값을 협상하자고 합니다. 협상 자리에 동행해 주십시오.", "A message came from across the Han. One of our officers is being held, and they want to negotiate a ransom. Please come with us to the table.", { cast: ["iyen", "k1007"] }),
+      S("v6-end-gov-02", "iyen", "몸값 협상은 서두르면 지는 거예요. 값이 얼마인지부터 들어 봐요.", "You lose a ransom talk by rushing. Let's hear the price first.", { cast: ["iyen", "k1007"] }),
     ],
   },
-  route: {
-    title: { ko: "결말 · 차량기지", en: "Ending · The Depot" }, bg: "railyard",
+  free: {
+    title: { ko: "결말 · 자유도시들", en: "Ending · Free Cities" }, bg: "granary",
     lines: [
-      S("v3-end-rte-01", "k1003", "인원 일곱. 해 지기 전 복귀. 이상 있으면 바로 말해.", "Seven people. Back before dark. If anything's off, say so right away.", { cast: ["iyen", "k1003"] }),
-      S("v3-end-rte-02", "iyen", "네. 당신은 내 뒤에 붙어 와요. 손전등은 아래로 비추고요.", "Got it. You stay right behind me. Keep your flashlight pointed down.", { cast: ["iyen", "k1003"] }),
+      S("v6-end-free-01", "k998", "의사 한 사람이 어제 돌아오지 않았습니다. 납치일 수 있습니다. 어느 쪽 짓인지는 아직 모릅니다.", "One of our doctors didn't come back yesterday. It may be an abduction. We don't yet know whose doing it is.", { cast: ["iyen", "k998"] }),
+      S("v6-end-free-02", "iyen", "그러면 찾으러 가요. 지휘하는 사람은 없어도, 같이 걸어 줄 사람은 있잖아요.", "Then let's go find them. We may have no one to command us, but we have people who'll walk with us.", { cast: ["iyen", "k998"] }),
     ],
   },
-  signal: {
-    title: { ko: "결말 · 무전 당직", en: "Ending · Radio Watch" }, bg: "platform",
+  arc: {
+    title: { ko: "결말 · 아크", en: "Ending · Arc" }, bg: "platform",
     lines: [
-      S("v3-end-sig-01", "k1009", "주파수 건드리지 말고, 응답 오면 시간이랑 이름만 적어 주세요.", "Don't touch the frequency. If anyone answers, just write down the time and the name.", { cast: ["iyen", "k1009"] }),
-      S("v3-end-sig-02", "iyen", "연필 두 자루 있어요. 차 끓여 올 테니까 먼저 앉아 있어요.", "I've got two pencils. I'll make some tea, you sit down first.", { cast: ["iyen", "k1009"] }),
-    ],
-  },
-  relay: {
-    title: { ko: "결말 · 수서 창구", en: "Ending · Suseo Counter" }, bg: "suseo",
-    lines: [
-      S("v3-end-rel-01", "k1008", "주민 회의는 저녁 배급 끝나고 해요. 부품 목록 읽어 줄 사람이 필요해요.", "The residents' meeting is after the evening ration. I need someone to read out the parts list.", { cast: ["iyen", "k1008"] }),
-      S("v3-end-rel-02", "iyen", "내가 읽을게요. 당신은 사람들 질문 적어 줘요.", "I'll read it. You write down people's questions.", { cast: ["iyen", "k1008"] }),
-    ],
-  },
-  grain: {
-    title: { ko: "결말 · 분공방", en: "Ending · The Workshop" }, bg: "granary",
-    lines: [
-      S("v3-end-grn-01", "k998", "포대 번호 부르면 표시만 해 주세요. 한 번 더 셀 거예요.", "When I call out a sack number, just tick it off. I'm going to count once more.", { cast: ["iyen", "k998"] }),
-      S("v3-end-grn-02", "iyen", "알았어요. 이번엔 두 사람이 세니까 금방 끝날 거예요.", "Okay. With two of us counting this time, it'll go quickly.", { cast: ["iyen", "k998"] }),
+      S("v6-end-arc-01", "k1009", "백야, 백야. 수서에서 응답이 왔어요. 자유도시에서 넘어온 시술자의 손이 느려졌답니다. 태업일 수 있어요. 가족이 자유도시에 남아 있다고 하고요.", "Baekya, Baekya. An answer came in from Suseo. The practitioner who crossed over from the Free Cities has slowed down. It could be a work slowdown. They say his family is still in the Free Cities.", { cast: ["iyen", "k1009"] }),
+      S("v6-end-arc-02", "iyen", "다그치지 말고 사정부터 들어 봐요. 사람 손이 느려진 데는 이유가 있어요.", "Don't push him. Hear him out first. A person's hands don't slow down for no reason.", { cast: ["iyen", "k1009"] }),
     ],
   },
 };
 
 export const CODA: StoryLine[] = [
-  N("v5-coda-01", "처음의 질문으로 돌아가 보자. 구의에서 싸웠던 동방사와 아관사는 2116년 같은 정부 아래 들어갔다. 그렇다고 서로의 지휘권까지 넘긴 것은 아니었다. 그해 구의수비대 편입 요구가 거절된 기록이 남아 있다.", "Return to our opening question. Dongbang-sa and Agwan-sa, which fought at Guui, came under the same Government in 2116. But that did not give either command over the other. Records from that year show the demand to take over the Guui Garrison being refused.", { caption: { ko: "세 국가 · 중립 중앙정보부", en: "Three states · the neutral Central Intelligence Division" } }),
-  N("v5-coda-02", "나라들이 흔적 없이 사라져 셋이 된 것은 아니다. 옛 규격맹 진영의 나라들, 정부의 나라들, 옛 종교 진영의 나라들, 그리고 중립의 중앙정보부. 충돌과 승계 분쟁, 함께 처리한 업무를 거치며, 서로 다른 나라들이 이 구조 안에 남았다.", "The states did not vanish without a trace to become three. Some belonged to the old League camp, some to the Government, some to the old religious camp, while the Central Intelligence Division stayed neutral. Through conflicts, succession disputes and shared work, distinct states remained within this new structure."),
+  N("v6-coda-01", "세 세력은 가진 것이 서로 다르다. 정부에는 장교와 전차가 있고, 자유도시에는 의사가 있고, 아크에는 남의 기계를 켜고 끄는 소프트웨어가 있다.", "The three factions hold different things. The Government has officers and tanks, the Free Cities have doctors, and the Arc has software that switches other people's machines on and off.", { source: "faction", caption: { ko: "세 세력 · 서로 다른 것을 쥔다", en: "Three factions, each holding something different" } }),
+  N("v6-coda-02", "어느 쪽도 혼자서는 가진 것을 다 쓰지 못한다. 그래서 사람이 붙잡히고, 몸값이 오가고, 되찾아진다. 2126년 서울의 겨울은 그렇게 흘러간다.", "None of them can use what it holds on its own. So people are taken, ransoms are traded, and some are won back. That is how the winter of 2126 passes in Seoul.", { source: "faction" }),
   S("v4-open-01", "narrator", "서울 지하철 왕조(서울:전국)는 누구나 참여할 수 있는 오픈 위키입니다. 세계관을 읽는 데서 그치지 않고, 새로운 설정을 제안하거나 인물을 소개하며 함께 내용을 보완할 수 있습니다.", "Seoul Metro Dynasties is an open wiki that anyone can participate in. You can go beyond reading: propose additions to the setting, introduce characters and help develop its content."),
   S("v4-open-02", "narrator", "이 세계관으로 여러분의 게임을 만들어도 좋습니다. 프로젝트 소유 콘텐츠는 출처와 이용 조건, 변경 사항을 표시하면 각색과 상업적 이용도 가능합니다. 외부 자료와 실존 인물의 이름·초상에는 별도 조건이 적용됩니다.", "You can also make your own games in this setting. Project-owned content permits adaptation and commercial use with attribution, a link to its terms and disclosure of changes. External materials and real people's names and likenesses have separate requirements."),
   S("v4-open-03", "narrator", "위키에서 세계관과 인물을 살펴보고, 여러분의 이야기로 참여해 주세요. 새로운 기여는 제출과 검토를 거쳐 공식 위키에 반영됩니다.", "Explore the setting and characters in the wiki, and contribute your own stories. New contributions enter the official wiki through submission and review."),

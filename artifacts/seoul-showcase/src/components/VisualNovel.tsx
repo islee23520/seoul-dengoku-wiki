@@ -55,9 +55,9 @@ export default function VisualNovel() {
     const s: Step[] = [...BASE_STEPS, { kind: "choice", line: CHOICE.prompt, frame: CHOICE_FRAME }];
     if (choice) {
       const e = ENDINGS[choice];
-      const ef: Frame = { key: `end-${choice}`, act: "결말", actEn: "Ending", title: e.title.ko, titleEn: e.title.en, place: CHOICE.place.ko, placeEn: CHOICE.place.en, year: "2126", bg: e.bg };
+      const ef: Frame = { key: `end-${choice}`, act: "결말", actEn: "Ending", title: e.title.ko, titleEn: e.title.en, place: CHOICE.place.ko, placeEn: CHOICE.place.en, year: "2126 겨울", bg: e.bg };
       e.lines.forEach((line) => s.push({ kind: "line", line, frame: ef }));
-      const cf: Frame = { key: "coda", act: "종장", actEn: "Coda", title: "남은 나라들", titleEn: "The States That Remained", place: "남산", placeEn: "Namsan", year: "2116 → 2126", bg: "namsan" };
+      const cf: Frame = { key: "coda", act: "종장", actEn: "Coda", title: "세 세력, 한 겨울", titleEn: "Three Factions, One Winter", place: "남산", placeEn: "Namsan", year: "2126 겨울", bg: "namsan" };
       CODA.forEach((line) => s.push({ kind: "line", line, frame: cf }));
     }
     return s;
@@ -403,7 +403,7 @@ function Finale({ subs: sb, onRestart, onReselect }: { subs: boolean; onRestart:
       {sb && <p className="mt-1 max-w-2xl font-en text-xs text-[hsl(var(--frost))]">Project-owned content allows adaptation and commercial use with attribution, a link to its terms, and disclosure of changes. External materials and real people's names and likenesses require separate checks.</p>}
       <div className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-2 font-ui text-xs underline underline-offset-4 text-[hsl(var(--parchment))]">
         <a href="https://github.com/islee23520/seoul-dengoku-wiki/blob/main/LICENSE" target="_blank" rel="noreferrer">콘텐츠 이용 조건 {sb && "· Terms"}</a>
-        <a href={`${WIKI_URL}/world/Century-Annals`} target="_blank" rel="noreferrer">주요 사건 원문: 백년 연대기 {sb && "· Historical source"}</a>
+        <a href={`${WIKI_URL}/world/Cost-Structure`} target="_blank" rel="noreferrer">세 세력의 비용 구조 {sb && "· Cost structure"}</a>
         <a href={`${WIKI_URL}/world/Sixteen-States`} target="_blank" rel="noreferrer">세 세력 원문 {sb && "· The Three Factions"}</a>
       </div>
       <div className="mt-4 flex flex-wrap justify-center gap-2 font-ui text-xs">
@@ -486,9 +486,9 @@ function Title({ onBegin, subs: sb }: { onBegin: () => void; subs: boolean }) {
       <p className="rise mt-3 font-display text-2xl text-[hsl(var(--parchment)/0.9)] md:text-4xl" style={{ animationDelay: "350ms" }}>겨울의 연대기</p>
       {sb && <p className="rise font-en text-lg italic text-[hsl(var(--frost))] md:text-2xl" style={{ animationDelay: "420ms" }}>A Chronicle of the Winter</p>}
       <p className="rise mt-6 max-w-md text-base leading-relaxed text-[hsl(var(--parchment)/0.85)]" style={{ animationDelay: "550ms" }}>
-        전령 이연이 얼어붙은 서울로 당신을 안내한다. 기록실, 차량기지, 무전 당직, 수서 창구, 분공방에서 다섯 사람을 만나며 나라들이 세 국가로 묶인 과정을 듣는다.
+        전령 이연이 얼어붙은 서울로 당신을 안내한다. 정부, 자유도시들, 아크, 그리고 서울 밖의 기계를 차례로 만나며 깊이가 계급이 되는 겨울의 서울을 듣고, 마지막에 한 세력을 고른다.
       </p>
-      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen takes you through frozen Seoul to meet five people, at a records room, a depot, a radio watch, a ration counter and a workshop, and hear how the states became three.</p>}
+      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen takes you through frozen Seoul past the Government, the Free Cities, the Arc and the machines outside, to hear how depth becomes class in a winter Seoul, and at the end to choose one faction.</p>}
       <button type="button" onClick={onBegin} autoFocus className="rise group mt-8 flex w-fit max-w-full flex-wrap items-center gap-x-4 gap-y-1 border-b border-[hsl(var(--parchment)/0.5)] pb-2 text-[hsl(var(--parchment))]" style={{ animationDelay: "750ms" }}>
         <span className="font-display text-2xl font-extrabold">이야기 시작</span>
         <span className="font-en italic opacity-70">Begin the story</span>
