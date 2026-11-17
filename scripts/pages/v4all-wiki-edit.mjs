@@ -12,6 +12,7 @@
 //   col    — 열 이름(문자열 또는 배열). 없으면 그 파일의 편집 열 전체.
 //   key    — 행 키(slug·person_id·clan_id). 없으면 모든 행.
 //   pathRe — JSON 잎 경로 정규식(배열 첨자는 []로 접는다, 예: ^\.sections\.Life$). JSON 열에만 쓴다.
+//   rawPathRe — 접지 않은 JSON 잎 경로 정규식(첨자 포함, 예: ^\.confirmedHoldings\.0\.adminRefs\.17\.name$). 같은 값이 여러 첨자에 있을 때 하나만 바꾼다.
 //   re     — true면 from을 전역 정규식으로, 아니면 정확한 부분 문자열로 찾는다.
 //   exact  — true면 값(JSON 잎 또는 열 값) 전체가 from과 같을 때만 바꾼다(직함·품계 같은 표시 값).
 //   expect — 이 규칙이 바꾼 횟수. 실제와 다르면 실패한다(재현 가능한 적중 수).
@@ -80,22 +81,23 @@ function locate(spec, text, rows) {
     return [starts[n], starts[n] + s.length];
   });
 }
-function walkLeaves(node, p, fn) {
-  if (Array.isArray(node)) node.forEach((v, i) => { if (typeof v === 'string') node[i] = fn(p + '[]', v, `${p}.${i}`); else walkLeaves(v, p + '[]', fn); });
-  else if (node && typeof node === 'object') for (const k of Object.keys(node)) { const v = node[k]; if (typeof v === 'string') node[k] = fn(p + '.' + k, v, p + '.' + k); else walkLeaves(v, p + '.' + k, fn); }
+// p는 첨자를 접은 경로, raw는 첨자를 모두 담은 경로(rawPathRe와 privateFields 대조용)다.
+function walkLeaves(node, p, fn, raw = '') {
+  if (Array.isArray(node)) node.forEach((v, i) => { if (typeof v === 'string') node[i] = fn(p + '[]', v, `${raw}.${i}`); else walkLeaves(v, p + '[]', fn, `${raw}.${i}`); });
+  else if (node && typeof node === 'object') for (const k of Object.keys(node)) { const v = node[k]; if (typeof v === 'string') node[k] = fn(p + '.' + k, v, `${raw}.${k}`); else walkLeaves(v, p + '.' + k, fn, `${raw}.${k}`); }
 }
 const countOf = (s, re) => (s.match(new RegExp(re.source, re.flags)) ?? []).length;
 
 const args = parseArgs(process.argv.slice(2));
 const R = JSON.parse(fs.readFileSync(path.resolve(REPO, args.rules), 'utf8'));
 const hold = new Set(R.hold ?? []);
-const rules = R.rules.map((r) => ({ ...r, cols: r.col ? [].concat(r.col) : null, pathRx: r.pathRe ? new RegExp(r.pathRe) : null, rx: r.re ? new RegExp(r.from, 'g') : null }));
+const rules = R.rules.map((r) => ({ ...r, cols: r.col ? [].concat(r.col) : null, pathRx: r.pathRe ? new RegExp(r.pathRe) : null, rawRx: r.rawPathRe ? new RegExp(r.rawPathRe) : null, rx: r.re ? new RegExp(r.from, 'g') : null }));
 if (new Set(rules.map((r) => r.id)).size !== rules.length) fail(EXIT.RULE, 'E_RULE: id 중복');
 for (const r of rules) {
   if (!FILES[r.file]) fail(EXIT.RULE, 'E_RULE_FILE: ' + r.id);
   if (r.key && hold.has(r.key)) fail(EXIT.RULE, 'E_RULE_HOLD: 보류 인물 규칙 ' + r.id);
   if (r.from === r.to) fail(EXIT.RULE, 'E_RULE_NOOP: ' + r.id);
-  if (r.pathRe && !FILES[r.file].json) fail(EXIT.RULE, 'E_RULE_PATH: 문자열 열에 pathRe ' + r.id);
+  if ((r.pathRe || r.rawPathRe) && !FILES[r.file].json) fail(EXIT.RULE, 'E_RULE_PATH: 문자열 열에 pathRe ' + r.id);
   if (r.exact && r.re) fail(EXIT.RULE, 'E_RULE_MODE: exact와 re를 함께 쓸 수 없다 ' + r.id);
   if (!Number.isInteger(r.expect)) fail(EXIT.RULE, 'E_RULE_EXPECT: ' + r.id);
 }
@@ -104,10 +106,10 @@ const report = { applied_at: new Date().toISOString(), rules_file: args.rules, r
 const changes = [];
 const used = [...new Set(rules.map((r) => r.file))];
 
-function applyRules(file, key, col, p, v) {
+function applyRules(file, key, col, p, v, raw) {
   let s = v;
   for (const r of rules) {
-    if (r.file !== file || (r.key && r.key !== key) || (r.cols && !r.cols.includes(col)) || (r.pathRx && !r.pathRx.test(p))) continue;
+    if (r.file !== file || (r.key && r.key !== key) || (r.cols && !r.cols.includes(col)) || (r.pathRx && !r.pathRx.test(p)) || (r.rawRx && !r.rawRx.test(raw))) continue;
     const n = r.exact ? (s === r.from ? 1 : 0) : r.rx ? countOf(s, r.rx) : s.split(r.from).length - 1;
     if (!n) continue;
     s = r.exact ? r.to : r.rx ? s.replace(r.rx, r.to) : s.split(r.from).join(r.to);
@@ -134,7 +136,7 @@ for (const file of used) {
       if (JSON.stringify(JSON.parse(row[col])) !== row[col]) fail(EXIT.ROUNDTRIP, 'E_JSON_ROUNDTRIP: ' + spec.file + ' ' + key + ' ' + col);
       const j = JSON.parse(row[col]);
       const priv = new Set((Array.isArray(j.privateFields) ? j.privateFields : []).map((x) => '.' + x));
-      walkLeaves(j, '', (p, v, exact) => (isKeyPath(p) || priv.has(exact) || [...priv].some((x) => exact.startsWith(x + '.')) ? v : applyRules(file, key, col, p, v)));
+      walkLeaves(j, '', (p, v, exact) => (isKeyPath(p) || priv.has(exact) || [...priv].some((x) => exact.startsWith(x + '.')) ? v : applyRules(file, key, col, p, v, exact)));
       const s = JSON.stringify(j);
       if (s !== row[col]) e[col] = s;
     }
