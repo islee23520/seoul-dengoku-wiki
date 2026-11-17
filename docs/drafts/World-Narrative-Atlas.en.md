@@ -62,7 +62,7 @@ The strands of the story are in [Regional and Physical AI Arcs](/wiki/Regional-P
 
 According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
-Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking water first and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
+Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking porridge first to warm oneself and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
 
 ## Ecology Compendium
 
@@ -84,7 +84,7 @@ How people and machines settled together inside the stations is in [People and M
 
 ## Geography and the Map
 
-[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul's 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and treatment plants in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). The land outside Seoul is covered in [Outside Seoul](/wiki/External-Theaters/).
+[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul's 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and the waterfront in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). The land outside Seoul is covered in [Outside Seoul](/wiki/External-Theaters/).
 
 The interactive map is on the [Territory Map](/wiki/map/) page.
 

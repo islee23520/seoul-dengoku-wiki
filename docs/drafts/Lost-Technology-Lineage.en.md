@@ -5,7 +5,7 @@ model: cpa/glm-5.3; 0 completion calls; ko replacement sentences and the full En
 
 ## Stopped Orders, Remaining Chassis
 
-The city's disaster-response organizations matched chassis forms to missions. Insect-form chassis took search, reptile-form chassis took reinforcement, and arthropod-form chassis took conduit inspection. When a disaster struck, the machines that searched for survivors, the machines that shored up structures, and the machines that inspected deep conduits divided the work among themselves.
+The city's disaster-response organizations matched chassis forms to missions. Insect-form chassis took search, reptile-form chassis took reinforcement, and arthropod-form chassis took tunnel inspection. When a disaster struck, the machines that searched for survivors, the machines that shored up structures, and the machines that inspected deep tunnels divided the work among themselves.
 
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
@@ -131,7 +131,7 @@ Machine control boards have wired and wireless protocol connection standards, an
 <a id="m040-몬스터-배치의-현장-적용-list2"></a>
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
-These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules. The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed conduit. G25 Lantern Ant chassis spread a broad front along the corridor's forward side, minutely detecting intruder responses. G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
+These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules. The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed passage. G25 Lantern Ant chassis spread a broad front along the corridor's forward side, minutely detecting intruder responses. G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
 
 ### From Capture to Unit
 

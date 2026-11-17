@@ -44,17 +44,17 @@ The waterfront rules were read from the layers first. The first floor of the mai
 
 A. Origins of building roles
 
-The three factions divide their territory by station, and their station strongholds draw on the district's facilities. A district's building trades came out of the district's own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
+The three factions divide their territory by station, and their station strongholds draw on the district's facilities. A district's building trades came out of the district's own facilities. The Yeongdeungpo unloading floor and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
 
 | District | River side | Buildings taken first |
 |---|---|---|
-| Yeongdeungpo | South, Han and Anyang | Treatment plant and station unloading floor. The market as a reserved-ration window. |
+| Yeongdeungpo | South, Han and Anyang | Station unloading floor. The market as a reserved-ration window. |
 | Yangcheon, Guro, Geumcheon | South, Anyang | Depots and industrial blocks. Schools for drying parts. |
 | Gangseo | South, Han | Banghwa depot and research blocks. The airport memory went to storage. |
 | Yongsan, Mapo | North, Han | Rail warehouses and berths. Broadcast blocks as record relay. |
 | Jongno, Jung-gu | North, Cheonggye | Administrative blocks and universities. Ledgers and sealed stacks. |
 | Seongdong, Gwangjin | North, Han | Workshops and bridge approaches. Schools as repair practice. |
-| Gangdong | South, Han | Treatment plant and eastern bridges. Hospitals as turbid-water isolation. |
+| Gangdong | South, Han | Eastern bridges. Hospitals as isolation for cough patients. |
 | Songpa, Gangnam, Seocho | South, Tancheon and Han | Ration towers and the Jamsil and Suseo windows. Apartment lower floors sealed. |
 | Dongjak, Gwanak | South | Noryangjin cold storage, southern-slope evacuation. |
 | Eunpyeong, Gangbuk, Seongbuk | North, Bukhansan | Evacuation halls, highland warehouses. |
@@ -71,7 +71,7 @@ Militia sleep in schools, and ration windows occupy community centers. Each buil
 |---|---|
 | School | Dong militia quarters. The playground for freight marshaling. Special rooms sealed. |
 | Community center | The dong's ledgers and the ration window. |
-| Hospital · clinic | Field medicine. Near the treatment plants, turbid-water isolation. |
+| Hospital · clinic | Field medicine. Cough patients are isolated. |
 | University | Record-copying workshops. Laboratory blocks sealed or stripped for parts. |
 | Market | Licensed market. Splitting reserved portions from sale portions. |
 | Station | Hand-off of living freight and the refuge floors. The tracks carried the state's transit toll. |

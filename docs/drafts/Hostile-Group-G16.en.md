@@ -367,7 +367,7 @@ At stage 1, its arms move; at stage 2, it blocks storage-yard routes; at stage 3
 
 ### Engagement and Response
 
-Its arms must be folded by separating rail sections and hydraulics; explosives damage water-supply facilities.
+Its arms must be folded by separating rail sections and hydraulics; explosives damage the adjacent power distribution equipment.
 
 <a id="Hostile-Group-G16-heading-0068"></a>
 

@@ -3,7 +3,7 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 ---
 **가. 역과 터널의 배치**
 
-2026년 서울 사람들은 지하철로 구를 넘었고 정수센터와 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 2126년 세 세력은 역과 터널을 생활권으로 관리하며, 영토는 구가 아니라 역 단위로 나뉜다.
+2026년 서울 사람들은 지하철로 구를 넘었고 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 2126년 세 세력은 역과 터널을 생활권으로 관리하며, 영토는 구가 아니라 역 단위로 나뉜다.
 
 [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/)는 관측 명칭 334행과 역 315곳을 기록한다. [세계 지도의 구성](/wiki/World-Map-Construction/)은 구 25개와 조립 순서를, [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)는 여섯 층을 기록한다. 건물 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
@@ -47,11 +47,9 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 구로·금천 공단 동에서는 기지와 붙은 학교를 부품 건조장으로 쓴다.
 
-## 정수장
+## 수변과 침수
 
-**가. 정수장**
-
-정수장은 영등포·뚝섬·구의·암사의 역 곁에 있다. 원격 제어가 멈춘 뒤로 가동과 점검은 사람의 손으로 한다.
+**가. 수변**
 
 한강 이북과 이남의 1층과 중랑천·안양천·탄천·청계·홍제의 지천은 침수되는 동의 범위를 가른다. 여의도·이촌·반포·잠실·망원·합정·암사·구의·자양은 본류 수변이다. 거주지는 3층 이상에, 배급 창구는 제방 안쪽에 둔다. 수변 규칙은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
@@ -70,7 +68,7 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 | 역 | 역 315곳과 대합실·승강장, 그 위 지상 성채 | 요새, 배급 창구, 역장이 쥔 세력의 영토 단위 | [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/) |
 | 터널 | 지도 점에서 뽑은 인접 선로, 환승 | 허가된 통행, 침수와 봉쇄의 상태 | [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/) |
 | 차량기지 | 신정·천왕·방화·군자·고덕·창동·신내·수서 | 수리, 유치, 차륜과 호송 | [세계 지도의 구성](/wiki/World-Map-Construction/) |
-| 정수장 | 영등포·뚝섬·구의·암사 아리수 | 사람 손으로 가동·점검 | [서울의 세 세력](/wiki/Sixteen-States/) |
+| 수변 | 한강 본류와 지천에 맞닿은 침수 동 | 3층 이상에 거주하고 제방 안쪽에 배급 창구를 둔다 | [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/) |
 | 통로 | 환승, 정비 통로, 피난 계단 | 통행세, 잔반과 열, 우회 | 물류와 기반 시설 |
 
 ## 출처

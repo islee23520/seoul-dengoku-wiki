@@ -14,7 +14,7 @@ The Yongsan Raiders are a band of people who hold no station, gathered on Govern
 
 ## Common species and variants
 
-The Yongsan Raiders are people, and they stand at the leak pallets of the lower level of the Yongsan stabling siding and of the Itaewon passage alley. In the rainy season and the thaw they move along the ladders and car doors of the Yongsan–Itaewon transfer freight elevator shaft, and in the dry season they gather toward the wall of the same lower level. In their hands are food sacks, sealed boxes and water cans, and when they hold a captured ration worker the elite squad keeps that person standing against the shaft wall.
+The Yongsan Raiders are people, and they stand at the leak pallets of the lower level of the Yongsan stabling siding and of the Itaewon passage alley. In the rainy season and the thaw they move along the ladders and car doors of the Yongsan–Itaewon transfer freight elevator shaft, and in the dry season they gather toward the wall of the same lower level. In their hands are food sacks, sealed boxes and pry bars, and when they hold a captured ration worker the elite squad keeps that person standing against the shaft wall.
 
 The raider chief, the raider elite squad and the raider scouts are three places in one alley. The chief at the inner pallets sets the box count and the ransom in food, the elite squad handles the doors, the sacks and the captive, and the scouts watch for the arrival of cars from the entrance.
 
@@ -26,7 +26,7 @@ The raider chief, the raider elite squad and the raider scouts are three places 
 |---|---|
 | Origin | The first place where the station duty staff of the Government saw this group is the lower level of the Yongsan stabling siding on a rainy-season night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. The lid of the box in front of them is open, and the inventory board shows that box number in the slot of the same night. They are ordinary citizens who never got inside a shutter. |
 | Habitat and movement | The group gathers at the rows of leak pallets in the lower level of the Yongsan stabling siding and the Itaewon passage alley. In the rainy season and the thaw they stand along the Yongsan–Itaewon transfer freight elevator shaft. In the dry season their footholds lie within three rows of pallets, and the inventory board records the rows where people stood in the rainy season, the thaw and the dry season. |
-| Food and energy | The raiders carry food sacks and sealed boxes out of the Government refrigerated cars and lower ration slots through the Itaewon passage alley. The duty staff correct the remaining slots of the inventory board by the number that went into the raiders' sacks. Sacks received as ransom are written on the same board in a separate column. Beside the shaft door the duty staff count the water cans and write the number on the board. |
+| Food and energy | The raiders carry food sacks and sealed boxes out of the Government refrigerated cars and lower ration slots through the Itaewon passage alley. The duty staff correct the remaining slots of the inventory board by the number that went into the raiders' sacks. Sacks received as ransom are written on the same board in a separate column. Beside the shaft door the duty staff count the boxes marked by pry bars and write the number on the board. |
 | Life cycle and upkeep | In the rainy season people stand at every row of leak pallets and sacks hang across every slot. In the thaw the elite squad is up in the freight elevator shaft and empty sacks hang on every rung of the ladder. In the dry season the same people gather toward the wall of the lower level and the scouts at the alley entrance stand in a single line. |
 | Senses | From where the duty staff watch, the raiders look at the box count on the pallets and the state of the elevator doors. The scouts look toward the alley entrance and the chief stands in the inner row of the pallets. The Government sealing bands and the refrigeration slips lie inside the same line of sight. |
 | Group behavior | The chief stands at the inner pallets and sets the box count and the ransom in food. The elite squad handles the elevator door, the ladder, the sacks and the captive. The scouts stand at the entrance of the Itaewon passage alley and watch for the arrival of cars. On the inventory board the slots with broken seals lie before the station duty staff. |
@@ -56,7 +56,7 @@ The chief's range is the box count at the leak pallets, the row where sacks are 
 | Type | Person |
 | Battlefield unit | Single individual |
 | Battlefield role | From the inner side of the leak pallets, sets the box count and the ransom in food and shows by place the row where sacks are put. The elite squad and the scouts stand at that row and at the entrance. |
-| Common species, variants and command scope | The range is the boxes, sacks and water cans of the lower level of the Yongsan stabling siding and the Itaewon passage alley. The price for returning a captured ration worker is set by the chief. |
+| Common species, variants and command scope | The range is the boxes and sacks of the lower level of the Yongsan stabling siding and the Itaewon passage alley. The price for returning a captured ration worker is set by the chief. |
 
 - Stands in the inner row of the leak pallets of the Itaewon passage alley.
 - Before the chief is an open food box with half of the sacks still in it.
@@ -132,7 +132,7 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 - Ecological mechanism: The duty staff count the boxes at the shaft door. The chief is at the inner pallets and the elite squad holds the box hooks.
 - Choices: Leave the elevator car in the lower level, lock the shaft door and set the boxes against the wall. / Pass the boxes out of the alley in the order of the inventory board. / Empty the duty post and leave the boxes where the raiders stand.
 - Outcomes: If the first is chosen the boxes are in the lower level and the raiders stand before the locked shaft door. If the second, the boxes are out of the alley with their sealing bands still on. If the third, the boxes are on the pallets and the mouths of the elite squad's sacks are open.
-- Moral cost: After the door is locked, that day's water-can count on the board is lower by the number of boxes. After the boxes are passed on in order, the raiders remain in the alley empty-handed. After the post is left empty, the same number is written in the raiders' sack column.
+- Moral cost: After the door is locked, that day's sack count on the board is lower by the number of boxes. After the boxes are passed on in order, the raiders remain in the alley empty-handed. After the post is left empty, the same number is written in the raiders' sack column.
 - Source dossier: G07
 
 <a id="Hostile-Group-G07-heading-0035"></a>
@@ -158,5 +158,5 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 - Ecological mechanism: A salt stain runs from the floor of the refrigerated car to the leak pallets. Sealed boxes and food sacks lie in the same row. The chief counts the sacks, the elite squad props the door, and the scouts stand at the alley entrance.
 - Choices: Leave the car in the lower level and let the duty staff keep only the sack count on the inventory board. / Pass the sealed boxes out of the alley first and release the sacks in order. / Leave the car door open and set the food sacks on the side where the raiders stand.
 - Outcomes: If the first is chosen the car is in the lower level and the sack count is written in the next column of the board. If the second, the sealed boxes are out of the alley and the sack count agrees on one board. If the third, the sacks are before the car door and the mouths of the elite squad's sacks are open.
-- Moral cost: After only the count is kept, the food sacks are in the lower level and that day's water-can column is written next to that number. After the sealed boxes are passed first, the scouts at the entrance stand in a single line. After the door is left open, the same sack numbers are written in the raiders' column.
+- Moral cost: After only the count is kept, the food sacks are in the lower level and that day's ransom column is written next to that number. After the sealed boxes are passed first, the scouts at the entrance stand in a single line. After the door is left open, the same sack numbers are written in the raiders' column.
 - Source dossier: G07

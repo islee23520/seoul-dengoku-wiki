@@ -14,9 +14,9 @@ The Bogukmun group moves between Government ground (the Bukhansan Bogukmun shelt
 
 ## Common species and variants
 
-The Bogukmun group gathers in the poorly drained stretch of the Bukhansan Bogukmun shelter corridor. In the rainy season and on ration cycles they stand at the lower ration depots and vents of Garak and Jamsil. They are people, with grain sacks, water cans and wooden staves in their hands.
+The Bogukmun group gathers in the poorly drained stretch of the Bukhansan Bogukmun shelter corridor. In the rainy season and on ration cycles they stand at the lower ration depots and vents of Garak and Jamsil. They are people, with grain sacks, bundles of firewood and wooden staves in their hands. Firewood is the first thing to run out in a shelter corridor whose heating is cut.
 
-The group leader, the elite squad and the scouts are three places in one band, and the attendants carry sacks and water cans behind the leader. The leader sets direction at the threshold of the corridor junction, the elite squad blocks the drain and the depot doors, and the scouts stand at the vents and the outer stair.
+The group leader, the elite squad and the scouts are three places in one band, and the attendants carry sacks and firewood bundles behind the leader. The leader sets direction at the threshold of the corridor junction, the elite squad blocks the drain and the depot doors, and the scouts stand at the vents and the outer stair.
 
 <a id="Hostile-Group-G10-heading-0006"></a>
 
@@ -29,7 +29,7 @@ The group leader, the elite squad and the scouts are three places in one band, a
 | Food and energy | Grain sacks and tins of dried side dishes are handed over toward the group at the lower ration depot of Jamsil. The flashlights and raincoats at the Garak vent are on the elite squad's side. After the Government seed store stops issuing, the bags of distributed seed on the upper shelf stay tied and only the lower-floor sacks are at the door. If a ration worker has been seized, the number of seed bags is written as the ransom. |
 | Life cycle and upkeep | On ration days the people from the Bogukmun corridor side attach themselves to the lower levels of Garak and Jamsil. When the sea wind enters the corridor, the number on the outer stair grows and the attendants stay at the inner threshold. When the corridor dries, the elite squad stands before the depot door and only marker cloths are left tied to the drain handles. |
 | Senses | The group leader looks toward the junction and the attendants look at the leader's back. The elite squad stands in a single line at the drain joints, and the scouts watch from the vent walkway for the moment the ration line breaks. |
-| Group behavior | The group leader stands at the threshold of the corridor junction. The elite squad handles the drain and the depot doors. The scouts stand at the vent and the ration route facing the leader. The attendants hold sacks and water cans on the dry footing behind the leader. |
+| Group behavior | The group leader stands at the threshold of the corridor junction. The elite squad handles the drain and the depot doors. The scouts stand at the vent and the ration route facing the leader. The attendants hold sacks and firewood bundles on the dry footing behind the leader. |
 
 <a id="Hostile-Group-G10-heading-0008"></a>
 
@@ -60,7 +60,7 @@ The group leader's place is the junction of the Bukhansan Bogukmun shelter corri
 
 - A marker cloth
 - The key to the corridor iron door
-- A water can
+- A bundle of firewood
 - A flashlight
 - A wooden staff
 - A raincoat
@@ -105,7 +105,7 @@ The group leader's place is the junction of the Bukhansan Bogukmun shelter corri
 - A ration sack
 - A ration list
 - A flashlight
-- A water can
+- A bundle of firewood
 - A raincoat
 - A marker cloth
 
@@ -158,7 +158,7 @@ On a day when the corridor is dry, the floor of the drain shows and the marker c
 ### G10-SC3 · The Outer Stair the Sea Wind Reaches
 
 - Stage: 3
-- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with water cans. The group leader is at the threshold.
+- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with firewood bundles. The group leader is at the threshold.
 - Actors: arc, government
 - Ecological mechanism: The scouts stand facing the leader. The ration worker stands before the door until the seed store hands over the issue list.
 - Choices: The corridor duty staff leave only the lamp of the outer stair lit and lock the inner iron door. / The seed store keeps seed bags on a different shelf from the ration sacks and stops lower-level issue. / The ration worker opens the morning door only after receiving the list and brings out the listed bags.

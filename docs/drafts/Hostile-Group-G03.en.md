@@ -22,7 +22,7 @@ The danger comes in three forms: raiding food stores, food-waste yards, and live
 | Item | Record |
 |---|---|
 | Winter movement | When the cold comes, they gather where they can shelter from the wind: under elevated roads, in the car parks of surface buildings, and in closed guard passages. They move in search of food around the market alleys near Yongsan and Noryangjin Fish Market, and by day hide in drains and under elevated roads. |
-| Food | They eat fish offal, food scraps, small animals, and carcasses. They depend on food people throw away, on grain, and on soup-kitchen waste. When water freezes they eat snow and gather near drains where drinking water does not freeze. |
+| Food | They eat fish offal, food scraps, small animals, and carcasses. They depend on food people throw away, on grain, and on soup-kitchen waste. When water freezes they eat snow and gather near drains where the water does not freeze. |
 | Breeding and life cycle | Females give birth in spring and autumn. In winter, with less food, puppies find it hard to survive. A lone wandering dog sometimes joins a family, and when people take some away the rest gather again at the same place. |
 | Senses | Smell is sharpest. They tell human scent, disinfectant, and thawing meat apart. By hearing they recognize cart sounds and engines idling, and they remember when the feeding cart comes. The jingle of collars and tags against each other is a marker that tells individuals apart. |
 | Pack behavior | The dog that has lived longest decides a move first, but some dogs do not follow. A family with puppies guards its own. When a few bark, nearby dogs rush in and in an instant look like a large pack, but they soon scatter by family. |

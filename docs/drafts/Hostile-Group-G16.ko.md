@@ -367,7 +367,7 @@ model: omo deep-low worker (v4 rewrite, agent-authored)
 
 ### 교전·대응
 
-먼저 불과 열의 원천을 끄고 나서 손댄다. 레일 구획과 유압을 분리해 암을 접어야 하며 폭파는 상수 시설을 손상시킨다.
+먼저 불과 열의 원천을 끄고 나서 손댄다. 레일 구획과 유압을 분리해 암을 접어야 하며 폭파는 인접한 배전 설비를 손상시킨다.
 
 <a id="Hostile-Group-G16-heading-0068"></a>
 

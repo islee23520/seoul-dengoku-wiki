@@ -62,7 +62,7 @@ model: cpa/claude-opus-5-5
 
 [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)에 따르면 2126년 서울에서 조직된 종교는 아크 하나다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸고, 이것을 세례(baptism)라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
-생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 물을 먼저 받고 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
+생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 죽을 먼저 받아 몸을 데운 뒤 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
 
 ## 생태 도감
 
@@ -84,7 +84,7 @@ model: cpa/claude-opus-5-5
 
 ## 지리와 지도
 
-[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 정수장은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖은 [서울 밖](/wiki/External-Theaters/)이 다룬다.
+[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 수변은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖은 [서울 밖](/wiki/External-Theaters/)이 다룬다.
 
 인터랙티브 지도는 [서울 영토 지도](/wiki/map/)에서 볼 수 있다.
 

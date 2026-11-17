@@ -4,29 +4,29 @@
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Ailments', 'Ailments and Symptoms', '질병과 증상', 'ailments', 0, '
 **A. Where disease starts**
 
-In 2026, Seoul''s tap water was supplied through treatment centers and pipes. Hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over water treatment, medicine and contamination control.
+In 2026, Seoul''s hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over medicine and contamination control.
 
 **B. Causes in the timeline**
 
-[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When clean water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
+[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In winter, patients whom the cold had broken and patients from counterfeit medicine increased first. When fuel for the transport vehicles ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
 
-## Waterborne Disease
+## Meltwater Sickness
 
-**A. The water treatment system**
+**A. Where the sickness starts**
 
-In 2026, Seoul''s drinking water came from a system that treated raw Han water and sent it through pipes. The Yeongdeungpo Arisu treatment center supplied Gangseo, Guro, Geumcheon and Yangcheon; Ttukseom supplied Seongdong, Jung-gu and Yongsan; Guui supplied Gwangjin, Jungnang and Dongdaemun; Amsa supplied Gangnam, Gangdong and the southern districts. The Gangbuk center was in Namyangju and the Gwangam center in Hanam. Both lay outside Seoul, beyond the easy reach of [the three factions of Seoul](/wiki/Sixteen-States/).
+On the winter surface, some people melt snow and ice for use. Snow on roofs and roads is mixed with asbestos dust, machine oil and animal droppings, and anyone who drinks it unboiled, or puts it in porridge, comes down with diarrhea and fever. The shorter a station is on heating fuel, the less time it spends boiling, so the patients increase.
 
 **B. Operation after the Great Blackout**
 
-In the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. The treatment-plant staff started the emergency generator and the valves by hand.
+In the Great Blackout, around 2026, remote control failed at the hospitals. The medical officers on watch ran the emergency generators and the medicine refrigerators by hand.
 
 **C. Symptoms**
 
-The main symptoms of waterborne disease were diarrhea, fever and dehydration. As patients increased, the ration lines stopped and the work crews shrank.
+The main symptoms of this sickness were diarrhea, fever and dehydration. As patients increased, the food ration lines stopped and the work crews shrank.
 
-**D. Tanks and drinking water**
+**D. Tanks and cooking pots**
 
-Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening''s soup. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/), and the treatment plants in [Structures](/wiki/Structures/).
+Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The tank water was not drunk; only the tank fish went into the food. When waste from the rearing cells splashed into a cooking pot, the turbid broth became that evening''s meal. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/).
 
 **E. The first summer**
 
@@ -66,7 +66,7 @@ Asbestos was used as insulation and fireproofing in subway concourses and platfo
 
 **B. Mold and condensation**
 
-An explorer put on breathing protection and a lamp before opening a deep tunnel. The trade zone''s equipment list began with those two items. Mold grew on the same walls as asbestos. When quarters behind on the ventilation roster, the heat of ration grain and condensation-beaded drinking pipes came together in one block, coughs and stinging eyes appeared first.
+An explorer put on breathing protection and a lamp before opening a deep tunnel. The trade zone''s equipment list began with those two items. Mold grew on the same walls as asbestos. When quarters behind on the ventilation roster, the heat of ration grain and condensation-beaded ventilation ducts came together in one block, coughs and stinging eyes appeared first.
 
 C. Damp walls and ventilation
 
@@ -74,11 +74,11 @@ Mold grows on flooded walls and in shelters with delayed ventilation. Medics ins
 
 **D. Coolant**
 
-Coolant was kept off the drinking-water ledger. When the liquid left in depot heat exchangers, substation cooling loops and medical refrigerators stagnated, a film formed on the metal. The sensors then showed normal readings while the far branch pipes clogged. The field called that film the Coolant-Index Fungal Body.
+Coolant was kept out of the food stores. When the liquid left in depot heat exchangers, substation cooling loops and medical refrigerators stagnated, a film formed on the metal. The sensors then showed normal readings while the far branch pipes clogged. The field called that film the Coolant-Index Fungal Body.
 
 **E. Separate ledgers**
 
-The drinking-water and coolant ledgers were kept apart even in front of [the old technology](/wiki/Lost-Technology-Lineage/) equipment or a swarm of [remaining machines](/wiki/Hostile-Ecology-Index/). When a watchman poured coolant into a tank, waterborne disease spread.
+The food and coolant ledgers were kept apart even in front of [the old technology](/wiki/Lost-Technology-Lineage/) equipment or a swarm of [remaining machines](/wiki/Hostile-Ecology-Index/). When a watchman poured coolant into a tank, the tank fish died and whoever ate the broth fell ill.
 
 **F. First floors in the flood zones**
 
@@ -86,42 +86,42 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **G. Entering station interiors**
 
-[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and water had not been checked breathed contaminated air and touched contaminated water.
+[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and floor flooding had not been checked breathed contaminated air and touched standing water.
 
 | Layer | 2026 starting point | The symptoms remaining in 2126 |
 |---|---|---|
-| Waterborne disease | Han treatment, station tanks, flooded tunnels | Turbid water, diarrhea and dehydration, the mixing of tank aquaculture and drinking water |
+| Meltwater sickness | Surface snow and ice, station tanks, flooded tunnels | Diarrhea and dehydration from melted snow and standing water; too little fuel to boil it |
 | Stockpiled medicine | Essential-medicine remnants, Jegi-dong herbs, cryo-cell sorting | Efficacy-less doses, counterfeit medicine, preparations cut from refrigeration |
-| Hazardous environments | Asbestos ceilings, condensation and mold, chiller coolant | Respiratory irritation, damp quarters, cooling loops mixed into drinking water |
+| Hazardous environments | Asbestos ceilings, condensation and mold, chiller coolant | Respiratory irritation, damp quarters, cooling loops leaked into food stores |
 
 ## Sources
 
 - Economy, Production and Logistics Rules
 ', '**가. 질병의 출발점**
 
-2026년 서울의 수돗물은 정수센터를 거쳐 관으로 공급되었다. 병원과 보건소는 필수의약품 목록으로 재고를 관리하였다. 지하철과 학교와 아파트에는 석면과 곰팡이와 기계 냉각수가 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제와 상용 전력이 끊겼다. 이후 정수, 약품, 오염 관리는 사람 당직이 맡았다.
+2026년 서울의 병원과 보건소는 필수의약품 목록으로 재고를 관리하였다. 지하철과 학교와 아파트에는 석면과 곰팡이와 기계 냉각수가 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제와 상용 전력이 끊겼다. 이후 약품과 오염 관리는 사람 당직이 맡았다.
 
 **나. 연표상 원인**
 
-[연표](/wiki/Scenario-Timeline/)는 핵전쟁, 기후붕괴, 역병을 질병의 1차 원인으로 두지 않는다. 2126년 현재 대합실에서 기침 환자가 나오면 의무원은 수조와 약장과 젖은 벽을 먼저 점검한다. 여름에는 탁수와 가짜 약으로 인한 환자가 먼저 늘어난다. 깨끗한 물이 부족하면 의료 호송이 늦어진다. 약품이 부족하면 배급 창구에 대한 신뢰가 떨어진다.
+[연표](/wiki/Scenario-Timeline/)는 핵전쟁, 기후붕괴, 역병을 질병의 1차 원인으로 두지 않는다. 2126년 현재 대합실에서 기침 환자가 나오면 의무원은 수조와 약장과 젖은 벽을 먼저 점검한다. 겨울에는 한기에 상한 환자와 가짜 약으로 인한 환자가 먼저 늘어난다. 이송 차량의 연료가 모자라면 의료 호송이 늦어진다. 약품이 부족하면 배급 창구에 대한 신뢰가 떨어진다.
 
-## 수인병
+## 눈 녹은 물의 병
 
-**가. 정수 체계**
+**가. 병이 생기는 자리**
 
-2026년 서울의 식수는 한강 원수를 정수하여 관으로 보내는 체계였다. 영등포아리수정수센터는 강서·구로·금천·양천에, 뚝섬은 성동·중구·용산에, 구의는 광진·중랑·동대문에, 암사는 강남·강동과 남부 여러 구에 물을 공급하였다. 강북정수센터는 남양주에, 광암정수센터는 하남에 있다. 두 곳은 서울 밖에 있어 [서울의 세 세력](/wiki/Sixteen-States/)의 통제가 미치기 어렵다.
+겨울 지상에서는 눈과 얼음을 녹여 쓰는 사람이 있다. 지붕과 길 위의 눈에는 석면 가루와 기계 기름과 짐승 배설물이 섞여 있고, 이 눈을 끓이지 않고 마시거나 죽에 넣으면 설사와 열이 난다. 난방 연료가 모자란 역일수록 끓이는 시간을 줄이므로 환자가 는다.
 
 **나. 대정전 이후의 운전**
 
-대정전(약 2026년)으로 영등포아리수정수센터의 원격 제어가 끊겼다. 정수센터 당직자들은 비상발전기와 밸브를 수동으로 조작하였다.
+대정전(약 2026년)으로 병원의 원격 제어가 끊겼다. 당직 의무원들은 비상발전기와 약품 냉장고를 손으로 돌렸다.
 
 **다. 증상**
 
-수인병의 주된 증상은 설사, 발열, 탈수이다. 환자가 늘면 배급 줄이 멈추고 작업 인원이 줄어든다.
+이 병의 주된 증상은 설사, 발열, 탈수이다. 환자가 늘면 식량 배급 줄이 멈추고 작업 인원이 줄어든다.
 
-**라. 수조와 식수**
+**라. 수조와 취사솥**
 
-역 수조에서는 잉어, 붕어, 메기(이하 ''수조 농어''라 한다)를 기른다. 수조 농어를 기르는 물과 식수는 같은 수조에서 뜬다. 사육 칸의 배설물이 식수에 섞이면 탁한 물이 그날 저녁 국물에 쓰인다. 수조 운영은 [식문화](/wiki/Food-Culture/) 문서에, 정수장은 [구조물](/wiki/Structures/) 문서에 기재되어 있다.
+역 수조에서는 잉어, 붕어, 메기(이하 ''수조 농어''라 한다)를 기른다. 수조의 물은 마시지 않고 수조 농어만 식량으로 쓴다. 사육 칸의 배설물이 취사솥에 튀면 탁한 국물이 그날 저녁 식사가 된다. 수조 운영은 [식문화](/wiki/Food-Culture/) 문서에 기재되어 있다.
 
 **마. 첫해 여름**
 
@@ -161,7 +161,7 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **나. 곰팡이와 결로**
 
-탐사원은 심층 터널을 열기 전에 호흡보호구와 램프를 갖춘다. 생업 구역의 장비 목록 맨 앞은 이 두 가지다. 곰팡이는 석면과 같은 벽에서 자란다. 환기 순번이 밀린 숙영실, 배급 곡물의 열기, 결로가 맺힌 식수관이 한 구역에 모이면 기침과 눈 따가움이 먼저 나타난다.
+탐사원은 심층 터널을 열기 전에 호흡보호구와 램프를 갖춘다. 생업 구역의 장비 목록 맨 앞은 이 두 가지다. 곰팡이는 석면과 같은 벽에서 자란다. 환기 순번이 밀린 숙영실, 배급 곡물의 열기, 결로가 맺힌 환기 덕트가 한 구역에 모이면 기침과 눈 따가움이 먼저 나타난다.
 
 다. 젖은 벽과 환기
 
@@ -169,11 +169,11 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **라. 냉각수**
 
-냉각수는 식수 장부에 올리지 않는다. 차량기지 열교환기, 변전 냉각 루프, 의료 냉장고에 남은 액체가 고이면 금속 표면에 막이 생긴다. 이 경우 센서는 정상 수치를 표시하지만 먼 분기관은 막힌다. 현장에서는 이 막을 냉각수색인균체라고 부른다.
+냉각수는 식량 창고에 들이지 않는다. 차량기지 열교환기, 변전 냉각 루프, 의료 냉장고에 남은 액체가 고이면 금속 표면에 막이 생긴다. 이 경우 센서는 정상 수치를 표시하지만 먼 분기관은 막힌다. 현장에서는 이 막을 냉각수색인균체라고 부른다.
 
 **마. 장부 분리**
 
-식수 장부와 냉각수 장부는 [옛 기술](/wiki/Lost-Technology-Lineage/) 설비나 [떠도는 기계](/wiki/Hostile-Ecology-Index/) 무리 앞에서도 따로 관리한다. 당직자가 냉각수를 수조에 부으면 수인병이 번진다.
+식량 장부와 냉각수 장부는 [옛 기술](/wiki/Lost-Technology-Lineage/) 설비나 [떠도는 기계](/wiki/Hostile-Ecology-Index/) 무리 앞에서도 따로 관리한다. 당직자가 냉각수를 수조에 부으면 수조 농어가 죽고 그 국을 먹은 사람이 앓는다.
 
 **바. 침수 구역의 1층**
 
@@ -181,13 +181,13 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **사. 역 내부 출입**
 
-[기계](/wiki/People-and-Machines/)와 사람은 같은 공기 속에서 작업한다. 환기와 물이 확인되지 않은 [역 내부](/wiki/Station-Interior-Construction/)에 들어간 사람은 오염된 공기를 마시고 오염된 물에 닿는다.
+[기계](/wiki/People-and-Machines/)와 사람은 같은 공기 속에서 작업한다. 환기와 바닥의 침수가 확인되지 않은 [역 내부](/wiki/Station-Interior-Construction/)에 들어간 사람은 오염된 공기를 마시고 고인 물에 닿는다.
 
 | 층 | 2026 출발점 | 2126년에 남은 증상 |
 |---|---|---|
-| 수인병 | 한강 정수, 역 수조, 침수 터널 | 탁수, 설사와 탈수, 수조 농어와 식수의 섞임 |
+| 눈 녹은 물의 병 | 지상의 눈과 얼음, 역 수조, 침수 터널 | 녹인 눈과 고인 물에서 온 설사와 탈수, 끓일 연료의 부족 |
 | 비축약 | 필수의약품 잔존, 제기동 약재, 저온칸 분류 | 효력 없는 복용, 가짜 약, 냉장 끊긴 제제 |
-| 유해환경 | 석면 천장, 결로와 곰팡이, 칠러 냉각수 | 호흡기 자극, 습한 숙영, 식수와 섞인 냉각 루프 |
+| 유해환경 | 석면 천장, 결로와 곰팡이, 칠러 냉각수 | 호흡기 자극, 습한 숙영, 식량 칸으로 샌 냉각 루프 |
 
 ## 출처
 
@@ -236,17 +236,17 @@ The waterfront rules were read from the layers first. The first floor of the mai
 
 A. Origins of building roles
 
-The three factions divide their territory by station, and their station strongholds draw on the district''s facilities. A district''s building trades came out of the district''s own facilities. The Yeongdeungpo treatment plant and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
+The three factions divide their territory by station, and their station strongholds draw on the district''s facilities. A district''s building trades came out of the district''s own facilities. The Yeongdeungpo unloading floor and the Sinjeong depot, the Banghwa depot, the Changdong wheel works, the Noryangjin cold storage, and the Jegi-dong medicinal herbs were the first hands each district kept.
 
 | District | River side | Buildings taken first |
 |---|---|---|
-| Yeongdeungpo | South, Han and Anyang | Treatment plant and station unloading floor. The market as a reserved-ration window. |
+| Yeongdeungpo | South, Han and Anyang | Station unloading floor. The market as a reserved-ration window. |
 | Yangcheon, Guro, Geumcheon | South, Anyang | Depots and industrial blocks. Schools for drying parts. |
 | Gangseo | South, Han | Banghwa depot and research blocks. The airport memory went to storage. |
 | Yongsan, Mapo | North, Han | Rail warehouses and berths. Broadcast blocks as record relay. |
 | Jongno, Jung-gu | North, Cheonggye | Administrative blocks and universities. Ledgers and sealed stacks. |
 | Seongdong, Gwangjin | North, Han | Workshops and bridge approaches. Schools as repair practice. |
-| Gangdong | South, Han | Treatment plant and eastern bridges. Hospitals as turbid-water isolation. |
+| Gangdong | South, Han | Eastern bridges. Hospitals as isolation for cough patients. |
 | Songpa, Gangnam, Seocho | South, Tancheon and Han | Ration towers and the Jamsil and Suseo windows. Apartment lower floors sealed. |
 | Dongjak, Gwanak | South | Noryangjin cold storage, southern-slope evacuation. |
 | Eunpyeong, Gangbuk, Seongbuk | North, Bukhansan | Evacuation halls, highland warehouses. |
@@ -263,7 +263,7 @@ Militia sleep in schools, and ration windows occupy community centers. Each buil
 |---|---|
 | School | Dong militia quarters. The playground for freight marshaling. Special rooms sealed. |
 | Community center | The dong''s ledgers and the ration window. |
-| Hospital · clinic | Field medicine. Near the treatment plants, turbid-water isolation. |
+| Hospital · clinic | Field medicine. Cough patients are isolated. |
 | University | Record-copying workshops. Laboratory blocks sealed or stripped for parts. |
 | Market | Licensed market. Splitting reserved portions from sale portions. |
 | Station | Hand-off of living freight and the refuge floors. The tracks carried the state''s transit toll. |
@@ -322,17 +322,17 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 
 가. 직능의 출처
 
-세 세력의 영토는 역 단위로 나뉘고, 역 거점은 구의 시설을 끼고 있다. 건물 직능은 구의 시설에서 나온다. 영등포 정수와 신정 차량기지, 방화 기지, 창동 차륜, 노량진 냉동, 제기동 약재가 각 구에서 먼저 남는 시설이다. 배정은 다음 표와 같다.
+세 세력의 영토는 역 단위로 나뉘고, 역 거점은 구의 시설을 끼고 있다. 건물 직능은 구의 시설에서 나온다. 영등포 하역장과 신정 차량기지, 방화 기지, 창동 차륜, 노량진 냉동, 제기동 약재가 각 구에서 먼저 남는 시설이다. 배정은 다음 표와 같다.
 
 | 구 | 강 | 먼저 가져가는 건물 |
 |---|---|---|
-| 영등포 | 남, 한강·안양천 | 정수·역 하역장. 시장은 예약 배급 창구. |
+| 영등포 | 남, 한강·안양천 | 역 하역장. 시장은 예약 배급 창구. |
 | 양천·구로·금천 | 남, 안양천 | 차량기지·공단 동. 학교는 부품 건조. |
 | 강서 | 남, 한강 | 방화 기지와 연구동. 공항 기억은 창고용. |
 | 용산·마포 | 북, 한강 | 철도 창고·선석. 방송동은 기록 중계. |
 | 종로·중구 | 북, 청계 | 행정동·대학. 장부와 봉인 서고. |
 | 성동·광진 | 북, 한강 | 공방·교량 접근. 학교는 수리 실습. |
-| 강동 | 남, 한강 | 정수·동부 교량. 병원은 탁수 격리. |
+| 강동 | 남, 한강 | 동부 교량. 병원은 기침 환자 격리. |
 | 송파·강남·서초 | 남, 탄천·한강 | 배급 타워와 잠실·수서 창구. 아파트 저층은 봉인. |
 | 동작·관악 | 남 | 노량진 냉동, 남부 경사 대피. |
 | 은평·강북·성북 | 북, 북한산 | 피난 대강당, 고지 창고. |
@@ -349,7 +349,7 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 |---|---|
 | 학교 | 동 민병 숙영. 운동장은 화물 정렬. 특별실은 봉인. |
 | 주민센터 | 동 장부와 배급 창구. |
-| 병원·의원 | 야전 의무. 정수 인근은 탁수 격리. |
+| 병원·의원 | 야전 의무. 기침 환자는 격리. |
 | 대학 | 기록 사본 공방. 실험동은 봉인하거나 부품 분해. |
 | 시장 | 허가 장터. 예약분과 판매분을 나눈다. |
 | 역 | 생활 화물 인계와 피난 층. 선로는 국가 통행세. |
@@ -613,7 +613,7 @@ The Free City is bound by the exchange of skills and medicine more than by inher
 
 ## Trades
 
-Facilities such as water treatment plants, depots, hospitals, and workshops put people of different trades on duty together. Even within one trade, people differ in organization, station, and personal taste, in clothing as in tools.
+Facilities such as depots, hospitals, and workshops put people of different trades on duty together. Even within one trade, people differ in organization, station, and personal taste, in clothing as in tools.
 
 <a id="계층과-거주-층위"></a>
 
@@ -653,7 +653,7 @@ On the surface in Seoul, people dress for severe cold of −18.6°C. Couriers an
 
 Even for the same female courier, the Gangwon surface reference of −21.9°C calls for a thick insulating liner that fills out the jacket torso and sleeves, with visible thickness at the collar and cuffs. At Jeju’s −2.7°C surface reference, the same pocket and equipment layout remains, while thinner lining reduces bulk, producing narrower sleeves and more flexible folds. Wind-resistant outer fabric, gloves, and insulating leg coverings remain necessary in Jeju’s subzero setting. Regional differences appear in the coat’s volume and fabric as well as accessories such as scarves.
 
-Mechanics working above ground add insulating lining to clothing that protects their arms and hands. People handling water also insulate beneath water-resistant aprons and inside boots. Fabric and thickness preserve the hand movement and protection their work requires, while men and women maintain similar levels of protection from the cold.
+Mechanics working above ground add insulating lining to clothing that protects their arms and hands. People working in cold storage also insulate beneath frost-proof aprons and inside boots. Fabric and thickness preserve the hand movement and protection their work requires, while men and women maintain similar levels of protection from the cold.
 
 On the surface, exposure to wind and time spent outdoors matter as well as air temperature. On draughty platforms, outer fabric and fastenings block cold air; in sheltered workplaces, people adjust layers to the heat generated by their work. A small temperature difference between two regions alone does not produce a dramatic difference in coat bulk.
 
@@ -663,7 +663,7 @@ On the surface, exposure to wind and time spent outdoors matter as well as air t
 
 Intermediate underground quarters have a baseline range of 8-18°C, but entrance passages admitting much outdoor air in cold regions can fall below 8°C. Even these remain warmer than the local surface, and people dress for the space rather than its floor label. Couriers and porters wear work jackets over insulating base layers, removing outer layers and tying them to their bags while moving continuously in warmer areas. Clerks and advisers seated for long periods on the same level add wool base layers, vests, or cardigans; patrolling guards put insulation back on when they stop to stand watch.
 
-Mechanics and workshop workers at the same depth choose lining thickness for their activity while retaining protective long sleeves and work gloves. Medical workers wear washable long sleeves with the protection their tasks require; water-treatment workers adjust insulation beneath water-resistant aprons and inside boots. At the same air temperature, people still need different layers and fabrics because their movement, exposure to water, and contact with materials differ.
+Mechanics and workshop workers at the same depth choose lining thickness for their activity while retaining protective long sleeves and work gloves. Medical workers wear washable long sleeves with the protection their tasks require; cold-storage workers adjust insulation beneath frost-proof aprons and inside boots. At the same air temperature, people still need different layers and fabrics because their movement, exposure to water, and contact with materials differ.
 
 <a id="깊은-지하의-복장"></a>
 
@@ -671,7 +671,7 @@ Mechanics and workshop workers at the same depth choose lining thickness for the
 
 In deep underground quarters with a baseline of 18-22°C, active couriers and porters wear thin shirts, rolling their sleeves or choosing short sleeves when their tasks permit. Seated clerks and merchants sensitive to cold retain thin long sleeves and light outer layers in the same area. Greater depth does not make everyone expose skin or wear the same number of layers.
 
-Even in deep areas, mechanics keep clothing that covers their hands and arms, and workers handling water retain their aprons and boots. Anyone going outdoors above ground obtains outerwear suited to the local cold and puts it on before stepping outside. This also applies to clerks and merchants who normally work underground. Someone visiting only an indoor ground-level entrance dresses for its indoor temperature rather than automatically adding an outdoor coat.
+Even in deep areas, mechanics keep clothing that covers their hands and arms, and cold-storage workers retain their aprons and boots. Anyone going outdoors above ground obtains outerwear suited to the local cold and puts it on before stepping outside. This also applies to clerks and merchants who normally work underground. Someone visiting only an indoor ground-level entrance dresses for its indoor temperature rather than automatically adding an outdoor coat.
 
 <a id="같은-깊이의-개인차"></a>
 
@@ -738,7 +738,7 @@ The people known by name at the opening are listed below. English spellings foll
 
 ## 생업
 
-정수장·차량기지·병원·공방 같은 시설에서는 서로 다른 직능의 사람이 당직을 맡는다. 같은 생업의 사람들도 소속 조직과 역, 개인의 취향에 따라 서로 다른 옷과 도구를 쓴다.
+차량기지·병원·공방 같은 시설에서는 서로 다른 직능의 사람이 당직을 맡는다. 같은 생업의 사람들도 소속 조직과 역, 개인의 취향에 따라 서로 다른 옷과 도구를 쓴다.
 
 <a id="계층과-거주-층위"></a>
 
@@ -778,7 +778,7 @@ The people known by name at the opening are listed below. English spellings foll
 
 같은 여성 전령이라도 강원도의 지상 기온 기준인 −21.9℃에서는 두꺼운 보온 내피로 재킷의 몸통과 소매가 부풀고, 옷깃과 소맷단에도 두께가 드러난다. 제주도의 −2.7℃ 지상에서는 같은 재킷의 주머니와 장구 배치를 유지하면서 얇은 안감으로 부피를 줄여, 좁은 소매와 유연한 주름이 나타난다. 제주에서도 영하의 바람을 막는 겉감과 장갑, 다리를 덮는 보온 겹은 남는다. 지역 차이는 목도리 같은 소품뿐 아니라 외투 자체의 부피와 소재에 드러난다.
 
-지상에서 일하는 정비공은 팔과 손을 보호하는 작업복에 방한 안감을 더한다. 물을 다루는 사람은 물이 스미지 않는 앞치마와 장화 안쪽에도 보온 겹을 갖춘다. 작업 도구를 다루는 손의 움직임과 필요한 보호 기능을 살리면서 두께와 소재를 고르며, 남녀 모두 비슷한 수준의 방한을 갖춘다.
+지상에서 일하는 정비공은 팔과 손을 보호하는 작업복에 방한 안감을 더한다. 냉동 창고에서 일하는 사람은 서리가 스미지 않는 앞치마와 장화 안쪽에도 보온 겹을 갖춘다. 작업 도구를 다루는 손의 움직임과 필요한 보호 기능을 살리면서 두께와 소재를 고르며, 남녀 모두 비슷한 수준의 방한을 갖춘다.
 
 지상에서는 기온뿐 아니라 바람을 직접 맞는 정도와 밖에 머무는 시간도 옷차림에 영향을 준다. 바람이 드는 승강장에서는 겉감과 여밈으로 찬 공기를 막고, 바람을 피한 작업장에서는 일하는 동안 쌓이는 열에 맞춰 겹을 조절한다. 가까운 기온의 두 지역을 비교할 때에는 작은 기온 차이만으로 한쪽의 외투를 크게 부풀리지 않는다.
 
@@ -788,7 +788,7 @@ The people known by name at the opening are listed below. English spellings foll
 
 중간 깊이 지하는 기본 기온이 8-18℃지만, 추운 지역의 외기가 많이 드는 출입 통로는 8℃ 아래로 내려가기도 한다. 그런 곳도 해당 지역의 지상보다는 따뜻하며, 사람들은 층 이름보다 머무는 공간의 추위에 맞춰 입는다. 전령과 운반자는 보온 내의 위에 움직임이 편한 작업 재킷을 입고, 더 따뜻한 곳에서 계속 움직일 때에는 덧옷을 벗어 가방에 묶는다. 같은 층에서 오래 앉아 일하는 기록원과 상담 담당자는 울 내의나 조끼·가디건을 더하며, 순찰하던 경비도 한곳에 서서 문을 지킬 때에는 보온 겹을 다시 입는다.
 
-같은 깊이의 정비공과 공방 노동자는 활동량에 맞춰 안감의 두께를 고르되 긴 보호 소매와 작업 장갑을 유지한다. 의료 담당자는 세탁하기 쉬운 긴소매와 업무에 필요한 보호구를 갖추고, 정수 담당자는 물을 막는 앞치마와 장화 안쪽의 보온을 조절한다. 기온이 같아도 움직임과 물기, 작업 중 닿는 재료가 다르므로 입는 겹과 소재가 달라진다.
+같은 깊이의 정비공과 공방 노동자는 활동량에 맞춰 안감의 두께를 고르되 긴 보호 소매와 작업 장갑을 유지한다. 의료 담당자는 세탁하기 쉬운 긴소매와 업무에 필요한 보호구를 갖추고, 냉동 창고 담당자는 서리를 막는 앞치마와 장화 안쪽의 보온을 조절한다. 기온이 같아도 움직임과 물기, 작업 중 닿는 재료가 다르므로 입는 겹과 소재가 달라진다.
 
 <a id="깊은-지하의-복장"></a>
 
@@ -796,7 +796,7 @@ The people known by name at the opening are listed below. English spellings foll
 
 기본 기온이 18~22℃인 깊은 지하 생활권에서는 활동량이 많은 전령과 운반자가 얇은 셔츠를 입고, 작업에 지장이 없을 때에는 소매를 걷거나 반소매를 고른다. 같은 구역에서 앉아 일하는 기록원이나 추위를 타는 상인은 얇은 긴소매와 가벼운 덧옷을 유지한다. 더 깊이 내려왔다고 모든 사람이 피부를 드러내거나 같은 수의 겹을 입지는 않는다.
 
-깊은 구역에서도 정비공은 손과 팔을 덮는 작업복을 유지하고, 물을 다루는 사람은 앞치마와 장화를 벗지 않는다. 지상 야외로 나갈 사람은 누구나 해당 지역의 추위에 맞는 방한 외투를 마련해 밖으로 나서기 전에 입는다. 평소 지하에서 일하던 기록원이나 상인에게도 같은 조건이 따른다. 지상층의 실내 입구까지만 다녀오는 사람은 야외용 외투를 무조건 더하지 않고 그곳의 실내 기온에 맞춰 입는다.
+깊은 구역에서도 정비공은 손과 팔을 덮는 작업복을 유지하고, 냉동 창고에서 일하는 사람은 앞치마와 장화를 벗지 않는다. 지상 야외로 나갈 사람은 누구나 해당 지역의 추위에 맞는 방한 외투를 마련해 밖으로 나서기 전에 입는다. 평소 지하에서 일하던 기록원이나 상인에게도 같은 조건이 따른다. 지상층의 실내 입구까지만 다녀오는 사람은 야외용 외투를 무조건 더하지 않고 그곳의 실내 기온에 맞춰 입는다.
 
 <a id="같은-깊이의-개인차"></a>
 
@@ -1219,7 +1219,7 @@ A. Equipment and the surviving records
 | Crowbar · axe · cutter | Opening, dismantling, close-in | Civil engineering, rail, facility management, civilian tools | Trade layer. Worksites and depots | Blades dull; no hydraulic oil (manual tools) | Drifter, explorer, maintenance hand | Specific brand names are not in the records |
 | Hydraulic rescue equipment | Debris spreading, door and hull opening | Fire, rescue, rail recovery | Stronghold workshops, maintenance hands. Not personal carry | Hydraulic oil, power, hoses. Without power, dead weight | Stationmaster strongholds, overlapping conscript maintenance crews | Fire-equipment issue lists do not survive |
 | Lamps · radios | Watch, contact | Facility, police, civilian radios | Trade and police layers. Batteries the bottleneck | Batteries, charging. Consumer batteries age | Courier, explorer, patrol | Consumer lanterns and radios exist as civilian goods. Military encrypted-radio remnants are not in the records |
-| Gas detection · breathing protection · emergency kit · portable power | Conduit survival, injury, short-term power | Industrial safety, fire, medical, facilities | Medical officer, explorer, stronghold | Filters, medicine, batteries consumed. Charging ≠ generation | Medical officer red-cloth silhouette. No orphans | Industrial-safety generalities. 2026 station-staff issue lists are not in the records |
+| Gas detection · breathing protection · emergency kit · portable power | Tunnel survival, injury, short-term power | Industrial safety, fire, medical, facilities | Medical officer, explorer, stronghold | Filters, medicine, batteries consumed. Charging ≠ generation | Medical officer red-cloth silhouette. No orphans | Industrial-safety generalities. 2026 station-staff issue lists are not in the records |
 | Stab / ballistic / work personal protection | Protection against stabbing-cutting / defined ballistic threat / per-task hazards | Police, military, security, industrial sites | Use and grade distinguished. Work clothes and riot shields not treated as ballistic gear | Damage, aging, replacement parts, proper wearing conditions checked | Protection is matched to the role; affiliation alone does not decide its performance | Specific test grades, service models, and 2026 issue ranges are not in the records |
 | Bow (conditional) | Low-noise projectile. Not the basic arm | Recreational and gungdo clubs. Not military issue | Could exist. **Not forbidden**. Not the default ranged arm either | Arrow crafting mentioned only within trade-tool scope. No manufacture recipe | Specific persons or livelihoods are the condition | The civilian bow regulation range is not in the records |
 | Crossbow (conditional) | Mechanical projectile | A permit item under the Firearms and Swords Act | Rare. Permit remnants or smuggling as narrative conditions | Bolts and strings. Possibly a ledger separate from the firearms ledger | No drifter start. Not the basic arm | [Firearms and Swords Act](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) includes crossbows. Viewed 2026-09-12 |
@@ -1304,7 +1304,7 @@ In 2026, permit rules for firearms and crossbows, military equipment, and railwa
 | 지렛대·도끼·절단기 | 개방, 해체, 근접 | 토목·철도·시설 관리·민간 공구 | 생업 층. 공사장·차량기지 | 날 무뎌짐, 유압유 없음(수공구) | 떠돌이·탐사원·정비사 | 특정 브랜드는 기록에 없다 |
 | 유압 구조 장비 | 잔해 전개, 문·차체 개방 | 소방·구조대·철도 구난 | 거점 공방, 정비사. 개인 휴대 아님 | 유압유·동력·호스. 동력 없으면 짐 | 역장 거점, 징집 정비조와 겹침 | 소방 장비 제식 목록은 남아 있지 않다 |
 | 램프·무전기 | 시계, 연락 | 시설·치안·민간 무전기 | 생업·치안. 전지가 병목 | 전지·충전. 상용 전지는 노화한다 | 전령·탐사원·순찰 | 상용 랜턴·무전기는 민간 존재. 군용 암호무전기 잔존은 기록에 없다 |
-| 가스탐지·호흡보호·응급키트·휴대전원 | 관로 생존, 부상, 단기 전력 | 산업안전·소방·의료·시설 | 의무원·탐사원·거점 | 필터·약·전지 소모. 충전 ≠ 발전 | 의무원 붉은 천 실루엣. 고아는 없음 | 산업안전 일반. 2026 역무 지급 목록은 기록에 없다 |
+| 가스탐지·호흡보호·응급키트·휴대전원 | 터널 생존, 부상, 단기 전력 | 산업안전·소방·의료·시설 | 의무원·탐사원·거점 | 필터·약·전지 소모. 충전 ≠ 발전 | 의무원 붉은 천 실루엣. 고아는 없음 | 산업안전 일반. 2026 역무 지급 목록은 기록에 없다 |
 | 방검 / 방탄 / 작업 개인보호구 | 각각 찌름·베임 / 정해진 탄도 위협 / 작업별 위험에 대한 보호 | 치안·군·경호·산업 현장 | 용도와 등급을 구분. 작업복·진압방패를 방탄 장비로 취급하지 않음 | 손상·노화·교체 부품과 적합한 착용 조건 확인 | 역할에 맞는 보호구를 보호구는 역할에 맞게 갖추며 소속만으로 성능이 정해지지는 않는다 | 구체적 시험 등급·제식 모델·2026 지급 범위는 기록에 없다 |
 | 활 (조건부) | 저소음 투사. 기본 병과 아님 | 생활체육·국궁 동호. 군 제식 아님 | 있을 수 있다. **금지 아님**. 기본 원거리도 아님 | 화살 제작은 생업 공구 범위에서만 언급. 제조 레시피 없음 | 특정 인물·생업이 조건 | 민간 활 규제 범위는 기록에 없다 |
 | 석궁 (조건부) | 기계식 투사 | 총포화약법상 허가 대상 | 드묾. 허가 잔존·밀반입이 서사 조건 | 볼트·줄. 총포 장부와 별 장부일 수 있음 | 떠돌이 시작 없음. 기본 병과 아님 | [총포화약법](https://www.law.go.kr/LSW/lsSc.do?menuId=1&query=%EC%B4%9D%ED%8F%AC%C2%B7%EB%8F%84%EA%B2%80%C2%B7%ED%99%94%EC%95%BD%EB%A5%98) 석궁 포함. 열람 2026-09-12 |
@@ -1582,9 +1582,9 @@ Go Ye-jin keeps no humanoid at her side. To command something better than onesel
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Food-Culture', 'Food Culture', '식문화', 'culture', 1, '
 **A. Where rationing began**
 
-In 2026, Seoul''s food moved through Garak Market auctions, the dawn unloading at the Noryangjin Fisheries Market, convenience stores, and school meals. On the night of [The Great Blackout](/wiki/World-Unbinding/), refrigeration and remote ordering stopped. The leftover rice, the ice, and the water in the tanks went to concourse rations.
+In 2026, Seoul''s food moved through Garak Market auctions, the dawn unloading at the Noryangjin Fisheries Market, convenience stores, and school meals. On the night of [The Great Blackout](/wiki/World-Unbinding/), refrigeration and remote ordering stopped. The leftover rice, the ice, and the fish in the tanks went to concourse rations.
 
-In 2126, residents collect rations at station windows. They receive water before rice. Facilities and markets reserve residents’ shares before trading. Distribution rests on the economy and production.
+In 2126, residents collect rations at station windows. They take porridge first to warm themselves, then rice. Facilities and markets reserve residents’ shares before trading. Distribution rests on the economy and production.
 
 ## The Station Ration Meal
 
@@ -1600,41 +1600,39 @@ In 2123, refugees from Bukhansan Bogukmun descended to Anguk.
 
 **C. Blackouts and leftovers**
 
-A transfer station cut from power stopped its freight too. Even with the tunnel sound, the traction current died, and Noryangjin''s frozen stock was the first to melt on that outage; in summers when counterfeit medicine circulated, ice credit and water tests wavered in one line. When food waste was sealed off ahead of the citizen windows to protect the rations, the leftovers in the alleys called dogs and rats, and the way people and swarms contested the same remains was written by [People and Machines](/wiki/People-and-Machines/).
+A transfer station cut from power stopped its freight too. Even with the tunnel sound, the traction current died, and Noryangjin''s frozen stock was the first to melt on that outage; in winters when counterfeit medicine circulated, ice credit and medicine checks wavered in one line. When food waste was sealed off ahead of the citizen windows to protect the rations, the leftovers in the alleys called dogs and rats, and the way people and swarms contested the same remains was written by [People and Machines](/wiki/People-and-Machines/).
 
 ## Carp, Crucian Carp, and Catfish of the Tanks
 
 **A. Running the tank-perch farms**
 
-The tanks survived the Great Blackout. Remote safety control was dead, and the collector wells under the concourses, the depot drainage ponds, and the sedimentation basins of the treatment plants remained in human hands; the trade of holding on the station tank water the carp, crucian carp, and catfish that had been caught in the Han River and the reservoirs even in 2026 went by the name of tank aquaculture.
+The tanks survived the Great Blackout. Remote safety control was dead, and the collector wells under the concourses, the depot drainage ponds, and the sedimentation basins beside the pumps remained in human hands; the trade of holding on the station tank water the carp, crucian carp, and catfish that had been caught in the Han River and its tributaries even in 2026 went by the name of tank aquaculture.
 
-The wetlands along the Han at Yeongdeungpo and Yeouido were that water surface. The sedimentation basin beside the Ttukseom pumps, the lower cells under the Amsa treatment plant, and the Changdong depot drainage ponds stood in the same line; the waterfowl occupied the shallow water, and the place where raptors looked down from the wires overlapped the edible cells. The watch wrote the section''s water level to be divided among rice, birds, and trains, and the wetland-side colonies were the field of [G06](/wiki/Hostile-Group-G06/).
+The wetlands along the Han at Yeongdeungpo and Yeouido were that water surface. The sedimentation basin beside the Ttukseom pumps, the lower cells under the Amsa basin, and the Changdong depot drainage ponds stood in the same line; the waterfowl occupied the shallow water, and the place where raptors looked down from the wires overlapped the edible cells. The watch wrote down, cell by cell, how many fish there were and which days birds came in, and the wetland-side colonies were the field of [G06](/wiki/Hostile-Group-G06/).
 
-**B. Farm water and drinking water**
+**B. Rearing cells and cooking pots**
 
-When excrement and feed from the rearing cells mixed with drinking water, cases of waterborne disease increased. Connecting water from a carp-rearing cell to the ration taps caused that evening''s water-quality inspection to fail. Catfish ate organic matter on the bottom, so the water could appear less cloudy. Crucian carp multiplied quickly in shallow water, and the medical officer inspected the tanks and the medicine chest together.
+When excrement and feed from the rearing cells splashed into a cooking pot, cases of diarrhea increased. Putting a carp-rearing cell and a soup pot in one bay caused the pot to be turned back at that evening''s ration inspection. Catfish ate organic matter on the bottom, so the cell could look clean. Crucian carp multiplied quickly in shallow cells, and the medical officer inspected the tanks and the medicine chest together.
 
 In the flood zone along the Han''s main channel, first floors go under every monsoon and stand close to abandoned. People there have no choice but to live upstairs, and the cold, windy upper floors are the place of the lower class. Cooking pushed inside the embankment, the sewage and floods along the tributaries turned playgrounds into detour embankments, and bringing fish caught beyond them to a window passed the inspection bench of the licensed market. Noryangjin''s frozen remains and unloaded viscera became the dogs'' night road, and the live fish of the station tanks read as protein that got through one more day without power.
 
-## Water Rationing and Treatment
+## Winter Rations and Fuel
 
-A. Treatment and power
+**A. Fuel and power**
 
-Seoul has plenty of water as such. What runs short is clean, treated water and the pipes and power that carry it.
+What runs short in a Seoul winter is not only rice but the fuel to cook it and the power to run the fire.
 
-Even with ration rice, clean cooking water was unavailable when the treatment equipment was not running. If porridge was cooked with cloudy water, cases of waterborne disease increased. Counterfeit medicine also circulated that summer.
+Even with ration rice, once the cooking fuel ran out the porridge could not be boiled, and people who ate half-cooked grain or soup that had not been heated fell ill. Counterfeit medicine also circulated that winter.
 
-**B. Treatment plants and supply range**
+**B. Surface light and the markets**
 
-Water without an Arisu mark is called guest water.
-
-Garak Market has no water-treatment facility of its own. The Gwangam plant is in Hanam, a contested asset outside the opening area, and the Gangbuk plant is in Namyangju, limiting the water reaching Bukhansan Bogukmun, Changdong, Seoul Station, and Sangam. The public water-supply ranges of 2026 do not coincide with post-collapse territory. Each of the three factions runs the treatment plant beside its stations by hand and opens its ration windows.
+Garak Market has no power of its own to run its freezer cells, so once an auction ends the stock is hurried over to the windows. Cooking light above ground draws outside machines, so surface kitchens cover their flues and burn fuel only by day. Each of the three factions opens its ration windows from the cooking area beside its stations, saving fuel where it can.
 
 | Window | 2026 starting point | The rice that remained at the opening |
 |---|---|---|
 | Station ration | Concourses, community centers, school kitchens | Porridge, soup, ration rice; the split of reserved and sale portions |
-| Tank aquaculture | Carp, crucian carp, and catfish of the Han; station tanks | Protein that got through a day without power. Kept apart from the drinking-water ledger |
-| Market | Garak wholesale, Noryangjin fisheries | The price ledger and frozen credit. No treatment of its own |
+| Tank aquaculture | Carp, crucian carp, and catfish of the Han; station tanks | Protein that got through a day without power. Rearing cells kept apart from the cooking pots |
+| Market | Garak wholesale, Noryangjin fisheries | The price ledger and frozen credit. No power of its own |
 
 ## Sources
 
@@ -1646,9 +1644,9 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 - [The Structures Compendium](/wiki/Structures/)
 ', '**가. 배급의 출발점**
 
-2026년 서울의 식량은 가락시장 경매, 노량진 수산시장 새벽 하역, 편의점과 학교 급식으로 유통되었고, [대정전](/wiki/World-Unbinding/)의 밤에 냉장 설비와 원격 발주가 멈추었다. 남은 쌀과 얼음과 수조의 물은 대합실 배급에 쓰였다.
+2026년 서울의 식량은 가락시장 경매, 노량진 수산시장 새벽 하역, 편의점과 학교 급식으로 유통되었고, [대정전](/wiki/World-Unbinding/)의 밤에 냉장 설비와 원격 발주가 멈추었다. 남은 쌀과 얼음과 수조의 생선은 대합실 배급에 쓰였다.
 
-2126년 주민은 역 창구에서 배급을 받는다. 물을 먼저 받고 밥을 받는 습관이 남아 있고, 시설과 시장은 주민 몫을 예약한 뒤에 거래한다. 배분 기준은 경제와 생산에 있다.
+2126년 주민은 역 창구에서 배급을 받는다. 죽을 먼저 받아 몸을 데운 뒤 밥을 받는 습관이 남아 있고, 시설과 시장은 주민 몫을 예약한 뒤에 거래한다. 배분 기준은 경제와 생산에 있다.
 
 ## 역 배급식
 
@@ -1664,41 +1662,39 @@ Garak Market has no water-treatment facility of its own. The Gwangam plant is in
 
 **다. 정전과 잔반**
 
-환승역에 전력이 끊기면 터널이 온전해도 화물 운송이 멈춘다. 이때 노량진의 냉동 재고가 먼저 녹고, 가짜 약이 유통되는 여름에는 얼음 신용과 수질 검사도 지장을 받으며, 시민 창구보다 음식물 봉인을 앞세우면 골목에 잔반이 남아 잔반에 들개와 쥐가 모인다. 사람과 무리의 잔여물 다툼은 [사람과 기체](/wiki/People-and-Machines/)에 기재되어 있다.
+환승역에 전력이 끊기면 터널이 온전해도 화물 운송이 멈춘다. 이때 노량진의 냉동 재고가 먼저 녹고, 가짜 약이 유통되는 겨울에는 얼음 신용과 약 검사도 지장을 받으며, 시민 창구보다 음식물 봉인을 앞세우면 골목에 잔반이 남아 잔반에 들개와 쥐가 모인다. 사람과 무리의 잔여물 다툼은 [사람과 기체](/wiki/People-and-Machines/)에 기재되어 있다.
 
 ## 수조의 잉어·붕어·메기
 
 **가. 수조 농어의 운영**
 
-2026년 한강과 저수지에서는 잉어와 붕어와 메기를 잡았다. 대정전 이후 원격 안전 관제가 멈추고, 대합실 아래 집수정, 기지 배수 연못, 정수 침전지는 사람이 관리하고 있다. 이곳에서 잉어와 붕어와 메기를 기르는 생업을 수조 농어(이하 ''수조 농어''라 한다)라 한다.
+2026년 한강과 지천에서는 잉어와 붕어와 메기를 잡았다. 대정전 이후 원격 안전 관제가 멈추고, 대합실 아래 집수정, 기지 배수 연못, 펌프 옆 침전지는 사람이 관리하고 있다. 이곳에서 잉어와 붕어와 메기를 기르는 생업을 수조 농어(이하 ''수조 농어''라 한다)라 한다.
 
-영등포와 여의도 한강변에는 습지가 있다. 뚝섬 펌프 옆 침전지, 암사 정수 아래 칸, 창동 차량기지 배수 연못에서도 수조 농어를 기르고, 수조류는 얕은 물에 있으며 맹금은 식용 칸 위 전선에 앉는다. 당직자는 취사와 새와 열차에 쓸 구획 수위를 장부에 적는다. 습지 쪽 군락은 [G06](/wiki/Hostile-Group-G06/)에 기재되어 있다.
+영등포와 여의도 한강변에는 습지가 있다. 뚝섬 펌프 옆 침전지, 암사 침전지 아래 칸, 창동 차량기지 배수 연못에서도 수조 농어를 기르고, 수조류는 얕은 물에 있으며 맹금은 식용 칸 위 전선에 앉는다. 당직자는 칸마다 생선 수와 새가 든 날을 장부에 적는다. 습지 쪽 군락은 [G06](/wiki/Hostile-Group-G06/)에 기재되어 있다.
 
-**나. 사육수와 식수**
+**나. 사육 칸과 취사솥**
 
-사육 칸의 배설물과 사료가 식수에 섞이면 수인병 환자가 늘어나고, 잉어를 기르는 칸의 물을 배급 수도꼭지에 연결하면 그날 저녁의 수질 검사가 실패한다. 메기는 바닥의 유기물을 먹으므로 물의 탁도가 낮아 보일 수 있다. 붕어는 얕은 물에서 빠르게 늘어나며, 의무원은 수조와 약장을 함께 점검한다.
+사육 칸의 배설물과 사료가 취사솥에 튀면 설사 환자가 늘어나고, 잉어를 기르는 칸과 국솥을 한 칸에 두면 그날 저녁 배급 검사에서 솥이 반려된다. 메기는 바닥의 유기물을 먹으므로 칸이 맑아 보일 수 있다. 붕어는 얕은 칸에서 빠르게 늘어나며, 의무원은 수조와 약장을 함께 점검한다.
 
 한강 본류 변 침수 구역의 1층은 우기마다 잠겨 주로 비어 있다. 그곳 사람들은 어쩔 수 없이 위층에 살고, 춥고 바람이 센 위층은 하층민의 자리다. 취사장은 제방 안쪽에 있고, 지천 변에 오수가 차거나 물이 넘치면 운동장을 우회 제방으로 쓴다. 제방 밖에서 잡은 생선은 허가 장터에서 검사한 뒤 창구에 낸다. 노량진의 냉동 잔여물과 하역 내장에는 밤에 들개가 모이며, 역 수조의 살아 있는 생선은 전력이 없어도 하루 더 보관할 수 있다.
 
-## 물 배급과 정수
+## 겨울 배급과 연료
 
-**가. 정수와 전력**
+**가. 연료와 전력**
 
-서울에는 물 자체는 넉넉하다. 모자라는 것은 깨끗하게 거른 물과 그 물을 보내는 관과 전력이다.
+겨울 서울에서 모자라는 것은 쌀만이 아니라 쌀을 익힐 연료와 그 불을 돌릴 전력이다.
 
-배급미가 있어도 정수 설비가 서지 않으면 깨끗한 취사수를 받지 못하고, 이때 탁한 물로 죽을 끓이면 수인병 환자가 늘어난다. 같은 여름에는 가짜 약도 유통된다.
+배급미가 있어도 취사 연료가 떨어지면 죽을 끓이지 못하고, 이때 덜 익은 낟알이나 데우지 못한 국을 먹은 사람이 앓는다. 같은 겨울에는 가짜 약도 유통된다.
 
-**나. 정수장과 공급 범위**
+**나. 지상의 불빛과 시장**
 
-아리수 표지가 없는 물은 손님물이라 부른다.
-
-가락시장에는 자체 정수 시설이 없다. 광암 정수장은 하남에 있어 개막 권역 밖의 쟁탈 자산이고, 강북 정수장은 남양주에 있어 북한산보국문·창동·서울역·상암의 물 공급에 제약이 있다. 2026년의 공개 정수 공급 범위는 붕괴 이후의 영토와 일치하지 않는다. 세 세력은 저마다 역 곁의 정수장을 손으로 돌리고 배급 창구를 연다.
+가락시장은 냉동 칸을 돌릴 전력을 따로 갖지 못해 경매가 끝나면 재고를 서둘러 창구로 넘긴다. 땅 위의 취사 불빛은 바깥 기계를 부르므로, 지상 취사장은 연통을 가리고 낮에만 불을 땐다. 세 세력은 저마다 역 곁의 취사 구역에서 연료를 아끼며 배급 창구를 연다.
 
 | 창구 | 2026 출발점 | 개막에 남는 밥 |
 |---|---|---|
 | 역 배급 | 대합실·주민센터·학교 취사 | 죽·국·배급미, 예약분과 판매분의 분리 |
-| 수조 농어 | 한강의 잉어·붕어·메기, 역 수조 | 전력 없이 하루를 넘기는 단백질. 식수 원장과 분리 |
-| 시장 | 가락 도매, 노량진 수산 | 가격 원장과 냉동 신용. 자체 정수 없음 |
+| 수조 농어 | 한강의 잉어·붕어·메기, 역 수조 | 전력 없이 하루를 넘기는 단백질. 사육 칸과 취사솥은 분리 |
+| 시장 | 가락 도매, 노량진 수산 | 가격 원장과 냉동 신용. 자체 전력 없음 |
 
 ## 출처
 
@@ -2280,7 +2276,7 @@ The raccoon dog belongs to the dog family, but it climbs trees and digs burrows 
 - Trigger: Before sudden thaw makes the water rise, a raccoon dog family moves from under a manhole to a vent room.
 - Actors: Free City stationmaster, pipe maintenance workers, ordinary citizens
 - Ecological mechanism: Raccoon dogs sense rising water in their bodies first and move to higher ground. This is a real wild-animal habit.
-- Choices: Treat the raccoon dogs’ movement as an early warning / Wait for the water-level measurement / Pre-heat the pumps only when the two differ
+- Choices: Treat the raccoon dogs’ movement as an early warning / Wait for the pump-room gauge reading / Pre-heat the pumps only when the two differ
 - Outcomes: An early warning buys preparation time but leaves responsibility for false alarms. Waiting for the measurement means being late for a sudden inflow. Pre-heating only when the two differ saves fuel but misses short downpours.
 - Moral cost: The burden of entrusting public safety to animal movements remains.
 - Source dossier: G04
@@ -2374,7 +2370,7 @@ Grey herons and cormorants are birds that catch fish at the waterside. The heron
 - Trigger: As the river begins to freeze, waterfowl, waders, and raptors all gather at a single unfrozen drainage pond.
 - Actors: Arc stationmaster in Gangnam, facility maintenance workers, ordinary citizens
 - Ecological mechanism: When unfrozen water concentrates in one place, waterfowl use the surface, waders the edges, and raptors the high pylons, so three groups overlap at one pond.
-- Choices: Fix the pond’s water level / Deliberately clear one edge to lead the birds there / Fit a cover around the pond
+- Choices: Leave the pond’s feeding edges as they are / Deliberately clear one edge to lead the birds there / Fit a cover around the pond
 - Outcomes: Fixing the level increases birds and the risk of train collisions. Clearing one side gathers birds there. Covers take labor.
 - Moral cost: Decide whether to protect train safety or the unfrozen water where birds rest.
 - Source dossier: G06
@@ -2423,7 +2419,7 @@ The Yongsan Raiders are a band of people who hold no station, gathered on Govern
 - Ecological mechanism: The duty staff count the boxes at the shaft door. The chief is at the inner pallets and the elite squad holds the box hooks.
 - Choices: Leave the elevator car in the lower level, lock the shaft door and set the boxes against the wall. / Pass the boxes out of the alley in the order of the inventory board. / Empty the duty post and leave the boxes where the raiders stand.
 - Outcomes: If the first is chosen the boxes are in the lower level and the raiders stand before the locked shaft door. If the second, the boxes are out of the alley with their sealing bands still on. If the third, the boxes are on the pallets and the mouths of the elite squad''s sacks are open.
-- Moral cost: After the door is locked, that day''s water-can count on the board is lower by the number of boxes. After the boxes are passed on in order, the raiders remain in the alley empty-handed. After the post is left empty, the same number is written in the raiders'' sack column.
+- Moral cost: After the door is locked, that day''s sack count on the board is lower by the number of boxes. After the boxes are passed on in order, the raiders remain in the alley empty-handed. After the post is left empty, the same number is written in the raiders'' sack column.
 - Source dossier: G07
 
 <a id="Hostile-Ecology-Index-heading-0262"></a>
@@ -2449,7 +2445,7 @@ The Yongsan Raiders are a band of people who hold no station, gathered on Govern
 - Ecological mechanism: A salt stain runs from the floor of the refrigerated car to the leak pallets. Sealed boxes and food sacks lie in the same row. The chief counts the sacks, the elite squad props the door, and the scouts stand at the alley entrance.
 - Choices: Leave the car in the lower level and let the duty staff keep only the sack count on the inventory board. / Pass the sealed boxes out of the alley first and release the sacks in order. / Leave the car door open and set the food sacks on the side where the raiders stand.
 - Outcomes: If the first is chosen the car is in the lower level and the sack count is written in the next column of the board. If the second, the sealed boxes are out of the alley and the sack count agrees on one board. If the third, the sacks are before the car door and the mouths of the elite squad''s sacks are open.
-- Moral cost: After only the count is kept, the food sacks are in the lower level and that day''s water-can column is written next to that number. After the sealed boxes are passed first, the scouts at the entrance stand in a single line. After the door is left open, the same sack numbers are written in the raiders'' column.
+- Moral cost: After only the count is kept, the food sacks are in the lower level and that day''s ransom column is written next to that number. After the sealed boxes are passed first, the scouts at the entrance stand in a single line. After the door is left open, the same sack numbers are written in the raiders'' column.
 - Source dossier: G07
 
 <a id="Hostile-Ecology-Index-heading-0266"></a>
@@ -2585,7 +2581,7 @@ The Bogukmun group moves between Government ground (the Bukhansan Bogukmun shelt
 ### G10-SC3 · The Outer Stair the Sea Wind Reaches
 
 - Stage: 3
-- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with water cans. The group leader is at the threshold.
+- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with firewood bundles. The group leader is at the threshold.
 - Actors: arc, government
 - Ecological mechanism: The scouts stand facing the leader. The ration worker stands before the door until the seed store hands over the issue list.
 - Choices: The corridor duty staff leave only the lamp of the outer stair lit and lock the inner iron door. / The seed store keeps seed bags on a different shelf from the ration sacks and stops lower-level issue. / The ration worker opens the morning door only after receiving the list and brings out the listed bags.
@@ -2663,15 +2659,15 @@ The Sinnae Deserters are soldiers who walked out of the Government army with rif
 
 <a id="Hostile-Ecology-Index-heading-0302"></a>
 
-### G12-SC2 · The Hatch at the Backwash Hour
+### G12-SC2 · The Hatch at the Fan-Inspection Hour
 
 - Stage: 2
-- Trigger: At dawn in early autumn the backwash runs in the Yeouido water-filter gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
+- Trigger: At dawn in early autumn the exhaust fan runs in the Yeouido ventilation gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
 - Actors: government, free-city
-- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The filter duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
-- Choices: The filter duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
-- Outcomes: If the valve is locked, the scouts before the hatch and the filter duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the filter duty officer''s hand.
-- Moral cost: The backwash water pools before the valve. The filter duty officer''s water cans are in the scouts'' line beside the hatch. The ration tins of the freight car are at the landing.
+- Ecological mechanism: The fan-inspection cycle and the gallery running schedule overlap on the same dawn. The ventilation duty officer is before the damper. The freight duty officer is beside the car. The machine duty officer is before the panel.
+- Choices: The ventilation duty officer closes the exhaust damper at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
+- Outcomes: If the damper is closed, the scouts before the hatch and the ventilation duty officer stand in the same warm draught. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the ventilation duty officer''s hand.
+- Moral cost: The warm exhaust pools before the damper. The ventilation duty officer''s fuel tins are in the scouts'' line beside the hatch. The ration tins of the freight car are at the landing.
 - Source dossier: G12
 
 <a id="Hostile-Ecology-Index-heading-0304"></a>
@@ -2682,9 +2678,9 @@ The Sinnae Deserters are soldiers who walked out of the Government army with rif
 - Trigger: Dock dust is piled on the floor of the outer passage of the Sinnae freight elevator. The scouts are at the outer entrance. The supply, freight and machine duty officers are before the same hour table.
 - Actors: government, free-city
 - Ecological mechanism: While the dust is in the outer passage the squad leader is at the radio. The elite squad is at the rail. The scouts are at the entrance. The dock duty officer''s dust hour is written in the lower column of the landing table.
-- Choices: The dock duty officer closes the dock entry door. / The filter duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
-- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the filter duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
-- Moral cost: The dock''s freight sacks are inside the entry door. The gallery backwash stays before the valve. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
+- Choices: The dock duty officer closes the dock entry door. / The ventilation duty officer locks the Yeouido ventilation gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
+- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the ventilation duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
+- Moral cost: The dock''s freight sacks are inside the entry door. The gallery''s warm exhaust stays before the damper. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
 - Source dossier: G12
 
 <a id="Hostile-Ecology-Index-heading-0306"></a>
@@ -2994,7 +2990,7 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 - 촉발: 눈이 갑자기 녹아 물이 불어나기 전에 너구리 가족이 맨홀 밑에서 환기실로 옮긴다.
 - 관련 세력: 자유도시 역장, 관로 정비 일꾼, 일반 시민
 - 생태 기제: 너구리는 물이 불어나는 것을 몸으로 먼저 알고 높은 곳으로 옮긴다. 이것은 현실의 야생동물 습성이다.
-- 선택지: 너구리 이동을 예비 경보로 삼는다 / 수위 측정을 기다린다 / 둘이 다를 때만 펌프를 예열한다
+- 선택지: 너구리 이동을 예비 경보로 삼는다 / 펌프실 계기 판독을 기다린다 / 둘이 다를 때만 펌프를 예열한다
 - 결과: 예비 경보는 준비 시간을 벌지만 헛경보 책임이 남는다. 측정을 기다리면 급한 유입에 늦는다. 둘이 다를 때만 예열하면 연료는 아끼나 짧은 호우를 놓친다.
 - 도덕 비용: 동물 움직임에 공공 안전을 맡기는 부담이 남는다.
 - 원본 항목: G04
@@ -3088,8 +3084,8 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 - 촉발: 강이 얼기 시작하자 얼지 않는 배수 연못 하나에 물새와 섭금류, 맹금류가 모두 모인다.
 - 관련 세력: 아크 강남 쪽 역장, 시설 정비 일꾼, 일반 시민
 - 생태 기제: 얼지 않는 물이 한곳에 모이면 물새는 수면을, 섭금류는 가장자리를, 맹금류는 높은 철탑을 써서 한 연못에 세 무리가 겹친다.
-- 선택지: 연못 수위를 고정한다 / 일부러 가장자리 한쪽을 비워 새를 그쪽으로 이끈다 / 연못 둘레에 덮개를 씌운다
-- 결과: 수위를 고정하면 새가 늘고 열차와 부딪힐 위험도 는다. 한쪽을 비우면 새가 그쪽에 모인다. 덮개는 일손이 든다.
+- 선택지: 연못 가장자리 먹이 터를 그대로 둔다 / 일부러 가장자리 한쪽을 비워 새를 그쪽으로 이끈다 / 연못 둘레에 덮개를 씌운다
+- 결과: 먹이 터를 그대로 두면 새가 늘고 열차와 부딪힐 위험도 는다. 한쪽을 비우면 새가 그쪽에 모인다. 덮개는 일손이 든다.
 - 도덕 비용: 열차 안전과 새가 쉴 얼지 않는 물 중 어느 쪽을 지킬지 정해야 한다.
 - 원본 항목: G06
 
@@ -3137,7 +3133,7 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 - 생태 기제: 당직이 샤프트 문 앞에서 상자 수를 센다. 두목은 받침대 안쪽에 있고 정예조는 상자 고리를 잡고 있다.
 - 선택지: 엘리베이터 칸을 용산 유치선 하층에 두고 샤프트 문을 잠근 뒤 상자를 하층 벽에 붙인다. / 상자를 재고판 순서대로 골목 밖으로 넘긴다. / 당직 자리를 비우고 상자를 약탈단이 선 자리에 둔다.
 - 결과: 첫째를 고르면 상자는 하층에 있고 약탈단은 잠긴 샤프트 문 앞에 선다. 둘째를 고르면 상자는 골목 밖에 있고 봉인 띠가 그대로 붙어 있다. 셋째를 고르면 상자는 받침대에 있고 정예조의 포대 입구가 열려 있다.
-- 도덕 비용: 문을 잠근 뒤에는 그날 골목의 물통 수가 상자 수만큼 줄어든 값으로 판에 적힌다. 순서대로 넘긴 뒤에는 약탈단이 빈손으로 골목에 남는다. 자리를 비운 뒤에는 같은 번호가 약탈단 포대 칸에 적힌다.
+- 도덕 비용: 문을 잠근 뒤에는 그날 골목의 포대 수가 상자 수만큼 줄어든 값으로 판에 적힌다. 순서대로 넘긴 뒤에는 약탈단이 빈손으로 골목에 남는다. 자리를 비운 뒤에는 같은 번호가 약탈단 포대 칸에 적힌다.
 - 원본 항목: G07
 
 <a id="Hostile-Ecology-Index-heading-0262"></a>
@@ -3163,7 +3159,7 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 - 생태 기제: 소금 때가 냉동 칸 바닥에서 누액 받침대까지 이어져 있다. 봉인 상자와 식량 포대가 같은 열에 있다. 두목이 포대 수를 세고 정예조가 문을 받치며 척후조가 골목 입구에 서 있다.
 - 선택지: 냉동 칸을 하층에 두고 당직이 포대 수만 재고판에 남긴다. / 봉인 상자를 먼저 골목 밖으로 넘기고 포대는 순서대로 푼다. / 냉동 칸 문을 연 채 약탈단이 선 쪽에 식량 포대를 둔다.
 - 결과: 첫째를 고르면 냉동 칸은 하층에 있고 판 옆칸에 포대 수가 적힌다. 둘째를 고르면 봉인 상자는 골목 밖에 있고 포대 수가 한 판에서 맞는다. 셋째를 고르면 포대는 칸 문 앞에 있고 정예조의 포대 입구가 열려 있다.
-- 도덕 비용: 수만 남긴 뒤에는 식량 포대가 하층에 있고 그날 물통 칸이 그 수와 나란히 적힌다. 봉인 상자를 먼저 넘긴 뒤에는 입구의 척후조가 한 줄로 서 있다. 문을 연 채 둔 뒤에는 같은 포대 번호가 약탈단 칸에 적힌다.
+- 도덕 비용: 수만 남긴 뒤에는 식량 포대가 하층에 있고 그날 몸값 칸이 그 수와 나란히 적힌다. 봉인 상자를 먼저 넘긴 뒤에는 입구의 척후조가 한 줄로 서 있다. 문을 연 채 둔 뒤에는 같은 포대 번호가 약탈단 칸에 적힌다.
 - 원본 항목: G07
 
 <a id="Hostile-Ecology-Index-heading-0266"></a>
@@ -3299,7 +3295,7 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 ### G10-SC3 · 바닷바람이 닿는 외곽 계단
 
 - 단계: 3
-- 촉발: 바닷바람이 회랑으로 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 물통을 들고 남는다. 집단 인도자는 문턱에 있다.
+- 촉발: 바닷바람이 회랑으로 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 땔감 묶음을 들고 남는다. 집단 인도자는 문턱에 있다.
 - 관련 세력: arc, government
 - 생태 기제: 척후조는 인도자 쪽을 향해 선다. 배급 담당자는 종자 창고가 출고 목록을 넘기기 전까지 문 앞에 서 있다.
 - 선택지: 회랑 당직이 외곽 계단의 등만 켜 두고 안쪽 철문을 잠근다. / 종자 창고가 종자 포대를 배급 자루와 다른 선반에 두고 하층 출고를 멈춘다. / 배급 담당자가 목록을 받은 뒤에만 오전 문을 열고 목록의 포대를 낸다.
@@ -3377,15 +3373,15 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 
 <a id="Hostile-Ecology-Index-heading-0302"></a>
 
-### G12-SC2 · 역세 시각의 해치
+### G12-SC2 · 팬 점검 시각의 해치
 
 - 단계: 2
-- 촉발: 초가을 새벽 여의도 정수 필터 갤러리에서 역세가 돌아간다. 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
+- 촉발: 초가을 새벽 여의도 환기 갤러리에서 배기 팬이 돌아간다. 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
 - 관련 세력: government, free-city
-- 생태 기제: 세척 주기와 역세 일정이 같은 새벽에 겹친다. 필터 당직은 밸브 앞에 있다. 화물 당직은 칸 옆에 있다. 기계 당직은 패널 앞에 있다.
-- 선택지: 필터 당직이 역세 밸브를 일정표의 시각에 잠근다. / 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
-- 결과: 밸브가 잠겨 있으면 해치 앞의 척후조와 필터 당직이 같은 물가에 서 있다. 칸이 분진 통로 층에 고정되면 분대장은 그 승강장 탁자에 있다. 보조 전원 선이 패널 밖에 놓이면 해치 자물쇠는 필터 당직의 손에 있다.
-- 도덕 비용: 역세 물은 밸브 앞에 고여 있다. 필터 당직의 물통은 해치 옆에서 척후조 줄에 있다. 화물 칸의 전투식량 깡통은 승강장에 있다.
+- 생태 기제: 팬 점검 주기와 갤러리 가동 일정이 같은 새벽에 겹친다. 환기 당직은 댐퍼 앞에 있다. 화물 당직은 칸 옆에 있다. 기계 당직은 패널 앞에 있다.
+- 선택지: 환기 당직이 배기 댐퍼를 일정표의 시각에 닫는다. / 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
+- 결과: 댐퍼가 닫혀 있으면 해치 앞의 척후조와 환기 당직이 같은 더운 바람 앞에 서 있다. 칸이 분진 통로 층에 고정되면 분대장은 그 승강장 탁자에 있다. 보조 전원 선이 패널 밖에 놓이면 해치 자물쇠는 환기 당직의 손에 있다.
+- 도덕 비용: 배기의 더운 김은 댐퍼 앞에 고여 있다. 환기 당직의 연료 깡통은 해치 옆에서 척후조 줄에 있다. 화물 칸의 전투식량 깡통은 승강장에 있다.
 - 원본 항목: G12
 
 <a id="Hostile-Ecology-Index-heading-0304"></a>
@@ -3393,12 +3389,12 @@ It reads lit lamps and the heat of a warmed maintenance hall as anomalies in the
 ### G12-SC3 · 부두 분진의 외곽
 
 - 단계: 3
-- 촉발: 부두의 분진이 신내 화물 엘리베이터 외곽 통로 바닥에 쌓여 있다. 척후조는 외곽 입구에 있다. 필터 당직과 화물 당직과 기계 당직이 같은 시각 표 앞에 있다.
+- 촉발: 부두의 분진이 신내 화물 엘리베이터 외곽 통로 바닥에 쌓여 있다. 척후조는 외곽 입구에 있다. 환기 당직과 화물 당직과 기계 당직이 같은 시각 표 앞에 있다.
 - 관련 세력: government, free-city
 - 생태 기제: 분진이 외곽 통로에 있는 동안 분대장은 무전기 앞에 있다. 정예조는 난간에 있다. 척후조는 입구에 있다. 부두 당직의 분진 시각은 승강장 표의 아래칸에 적혀 있다.
-- 선택지: 부두 당직이 부두 출입 문을 닫는다. / 필터 당직이 여의도 정수 필터 갤러리 해치를 잠근다. / 화물 당직과 기계 당직이 완전 밀폐 청정 구간에 철장과 차단기 손잡이를 둔다.
-- 결과: 부두 출입 문이 닫혀 있으면 분진은 문 안쪽 통로에 있고 척후조는 문 앞에 있다. 갤러리 해치가 잠겨 있으면 척후조는 해치 앞과 외곽 입구에 나뉘어 있고 필터 당직은 밸브 앞에 있다. 청정 구간에 철장과 차단기가 있으면 신내 탈영병은 분진 통로 승강장에 있다.
-- 도덕 비용: 부두의 화물 포대는 출입 문 안에 있다. 갤러리 역세는 밸브 앞에 머문다. 청정 구간의 두 당직은 철장 안쪽에 있고 외곽 통로의 분진은 장화 높이로 쌓여 있다.
+- 선택지: 부두 당직이 부두 출입 문을 닫는다. / 환기 당직이 여의도 환기 갤러리 해치를 잠근다. / 화물 당직과 기계 당직이 완전 밀폐 청정 구간에 철장과 차단기 손잡이를 둔다.
+- 결과: 부두 출입 문이 닫혀 있으면 분진은 문 안쪽 통로에 있고 척후조는 문 앞에 있다. 갤러리 해치가 잠겨 있으면 척후조는 해치 앞과 외곽 입구에 나뉘어 있고 환기 당직은 댐퍼 앞에 있다. 청정 구간에 철장과 차단기가 있으면 신내 탈영병은 분진 통로 승강장에 있다.
+- 도덕 비용: 부두의 화물 포대는 출입 문 안에 있다. 갤러리의 더운 김은 댐퍼 앞에 머문다. 청정 구간의 두 당직은 철장 안쪽에 있고 외곽 통로의 분진은 장화 높이로 쌓여 있다.
 - 원본 항목: G12
 
 <a id="Hostile-Ecology-Index-heading-0306"></a>
@@ -4144,7 +4140,7 @@ The danger comes in three forms: raiding food stores, food-waste yards, and live
 | Item | Record |
 |---|---|
 | Winter movement | When the cold comes, they gather where they can shelter from the wind: under elevated roads, in the car parks of surface buildings, and in closed guard passages. They move in search of food around the market alleys near Yongsan and Noryangjin Fish Market, and by day hide in drains and under elevated roads. |
-| Food | They eat fish offal, food scraps, small animals, and carcasses. They depend on food people throw away, on grain, and on soup-kitchen waste. When water freezes they eat snow and gather near drains where drinking water does not freeze. |
+| Food | They eat fish offal, food scraps, small animals, and carcasses. They depend on food people throw away, on grain, and on soup-kitchen waste. When water freezes they eat snow and gather near drains where the water does not freeze. |
 | Breeding and life cycle | Females give birth in spring and autumn. In winter, with less food, puppies find it hard to survive. A lone wandering dog sometimes joins a family, and when people take some away the rest gather again at the same place. |
 | Senses | Smell is sharpest. They tell human scent, disinfectant, and thawing meat apart. By hearing they recognize cart sounds and engines idling, and they remember when the feeding cart comes. The jingle of collars and tags against each other is a marker that tells individuals apart. |
 | Pack behavior | The dog that has lived longest decides a move first, but some dogs do not follow. A family with puppies guards its own. When a few bark, nearby dogs rush in and in an instant look like a large pack, but they soon scatter by family. |
@@ -4565,7 +4561,7 @@ Results are not measured by the number caught. Look at the number of times they 
 - Trigger: Before sudden thaw makes the water rise, a raccoon dog family moves from under a manhole to a vent room.
 - Actors: Free City stationmaster, pipe maintenance workers, ordinary citizens
 - Ecological mechanism: Raccoon dogs sense rising water in their bodies first and move to higher ground. This is a real wild-animal habit.
-- Choices: Treat the raccoon dogs’ movement as an early warning / Wait for the water-level measurement / Pre-heat the pumps only when the two differ
+- Choices: Treat the raccoon dogs’ movement as an early warning / Wait for the pump-room gauge reading / Pre-heat the pumps only when the two differ
 - Outcomes: An early warning buys preparation time but leaves responsibility for false alarms. Waiting for the measurement means being late for a sudden inflow. Pre-heating only when the two differ saves fuel but misses short downpours.
 - Moral cost: The burden of entrusting public safety to animal movements remains.
 - Source dossier: G04
@@ -4722,7 +4718,7 @@ Results are not measured by the number caught. Look at the number of times they 
 - 촉발: 눈이 갑자기 녹아 물이 불어나기 전에 너구리 가족이 맨홀 밑에서 환기실로 옮긴다.
 - 관련 세력: 자유도시 역장, 관로 정비 일꾼, 일반 시민
 - 생태 기제: 너구리는 물이 불어나는 것을 몸으로 먼저 알고 높은 곳으로 옮긴다. 이것은 현실의 야생동물 습성이다.
-- 선택지: 너구리 이동을 예비 경보로 삼는다 / 수위 측정을 기다린다 / 둘이 다를 때만 펌프를 예열한다
+- 선택지: 너구리 이동을 예비 경보로 삼는다 / 펌프실 계기 판독을 기다린다 / 둘이 다를 때만 펌프를 예열한다
 - 결과: 예비 경보는 준비 시간을 벌지만 헛경보 책임이 남는다. 측정을 기다리면 급한 유입에 늦는다. 둘이 다를 때만 예열하면 연료는 아끼나 짧은 호우를 놓친다.
 - 도덕 비용: 동물 움직임에 공공 안전을 맡기는 부담이 남는다.
 - 원본 항목: G04
@@ -5090,11 +5086,11 @@ The danger comes in three forms: raiding fish farms and tanks at the waterside a
 |---|---|
 | Winter movement | Migratory birds coming down from the north gather at the Han River, Nanji, and Amsa from November. When the river freezes they move to channels and drainage ponds that stay unfrozen and to puddles at depots where heat rises. When wetlands dry up they also fly to fountains in inland parks and rain gutters on roofs. |
 | Food | Herons eat fish, frogs, and rats, and cormorants eat fish. In winter, fish in farms and tanks and food scraps washed out of drains make up a large share. Raptors catch rats and tired small birds. |
-| Breeding and life cycle | Breeding takes place in spring in separate protected areas. The birds resting in Seoul in winter are mostly migrants that have finished breeding or resident birds wintering in Seoul. If the water level suddenly drops, waterfowl leave first, and the feeding relations of waders and raptors unravel in turn. |
-| Senses | Sight is the main sense. They take off at reflections on the water, the color of vests, and the shadow of drones. Engine sounds, gunshots, and loudspeakers tell them only distance. They do not understand human signals or water-level numbers. Drones, balloons, and birds are hard to tell apart on radar, so a person must check again by eye. |
+| Breeding and life cycle | Breeding takes place in spring in separate protected areas. The birds resting in Seoul in winter are mostly migrants that have finished breeding or resident birds wintering in Seoul. If the pond suddenly freezes over, waterfowl leave first, and the feeding relations of waders and raptors unravel in turn. |
+| Senses | Sight is the main sense. They take off at reflections on the water, the color of vests, and the shadow of drones. Engine sounds, gunshots, and loudspeakers tell them only distance. They do not understand human signals or flag markings. Drones, balloons, and birds are hard to tell apart on radar, so a person must check again by eye. |
 | Flock behavior | There is no command structure. Waterfowl use open water in flocks, waders sweep the shallow edges with spacing between them, and raptors follow the density of other birds from high wires. When one group moves, the places of the others change because of food and alertness. |
-| Disease and danger | Avian influenza, salmonella, and parasites in droppings soil water and grain. When a flock of migrants settles all at once, the water is polluted and affects drinking water and tanks. On the Government side with no doctors, an outbreak is hard to stop. A collision between a bird and a train on the tracks or on a pylon causes an accident. |
-| Response principles | Cover farms and tanks, and keep birds from perching around tracks and pylons. Driving them with sound and light only moves the birds to the next wetland. Lowering the water level all at once scatters food and pushes birds toward people. Results are judged not by how many were driven off but by damage to farms, the number of train collisions, and the amount of contaminated water. |
+| Disease and danger | Avian influenza, salmonella, and parasites in droppings soil water and grain. When a flock of migrants settles all at once, the water is polluted and affects the fish in the tanks and the grain stores. On the Government side with no doctors, an outbreak is hard to stop. A collision between a bird and a train on the tracks or on a pylon causes an accident. |
+| Response principles | Cover farms and tanks, and keep birds from perching around tracks and pylons. Driving them with sound and light only moves the birds to the next wetland. Clearing the feeding grounds all at once scatters food and pushes birds toward people. Results are judged not by how many were driven off but by damage to farms, the number of train collisions, and the amount of contaminated water. |
 
 <a id="Hostile-Group-G06-heading-0008"></a>
 
@@ -5181,7 +5177,7 @@ When birds gather close to a depot’s inner lines, they collide with trains and
 
 Birds do not slip through shutter gaps, but they enter surface buildings with open roofs, vents, and tanks. People who live deep underground seldom meet birds, while people on the surface guard their tanks, grain, and washing places themselves, since they are all in the same place.
 
-Good response means blocking food and places to perch. Cover tanks and farms, and remove perches around tracks and pylons. Lowering the water level all at once scatters food and pushes birds toward people, so lower it slowly. Results are judged not by how many were driven off but by damage to farms, the number of train collisions, and the amount of contaminated water.
+Good response means blocking food and places to perch. Cover tanks and farms, and remove perches around tracks and pylons. Clearing the feeding grounds all at once scatters food and pushes birds toward people, so clear them slowly. Results are judged not by how many were driven off but by damage to farms, the number of train collisions, and the amount of contaminated water.
 
 <a id="Hostile-Group-G06-heading-0445"></a>
 
@@ -5195,7 +5191,7 @@ Good response means blocking food and places to perch. Cover tanks and farms, an
 - Trigger: As the river begins to freeze, waterfowl, waders, and raptors all gather at a single unfrozen drainage pond.
 - Actors: Arc stationmaster in Gangnam, facility maintenance workers, ordinary citizens
 - Ecological mechanism: When unfrozen water concentrates in one place, waterfowl use the surface, waders the edges, and raptors the high pylons, so three groups overlap at one pond.
-- Choices: Fix the pond’s water level / Deliberately clear one edge to lead the birds there / Fit a cover around the pond
+- Choices: Leave the pond’s feeding edges as they are / Deliberately clear one edge to lead the birds there / Fit a cover around the pond
 - Outcomes: Fixing the level increases birds and the risk of train collisions. Clearing one side gathers birds there. Covers take labor.
 - Moral cost: Decide whether to protect train safety or the unfrozen water where birds rest.
 - Source dossier: G06
@@ -5247,11 +5243,11 @@ Good response means blocking food and places to perch. Cover tanks and farms, an
 |---|---|
 | 겨울 이동 | 북쪽에서 내려온 철새가 11월부터 한강과 난지, 암사에 모인다. 강이 얼면 얼지 않는 수로와 배수 연못, 열이 올라오는 차량기지의 물웅덩이로 옮겨 간다. 습지가 마르면 내륙 공원의 분수와 지붕의 물받이로도 날아온다. |
 | 먹이 | 왜가리는 물고기, 개구리, 쥐를 먹고, 가마우지는 물고기를 먹는다. 겨울에는 양식장과 수조의 물고기, 배수구로 흘러나온 음식물 찌꺼기가 큰 몫이다. 맹금류는 쥐와 지친 작은 새를 잡는다. |
-| 번식과 생애 | 번식은 봄에 별도의 보호 구역에서 한다. 겨울에 서울에서 쉬는 새는 주로 번식을 마친 철새이거나 서울에서 겨울을 나는 텃새다. 수위가 갑자기 줄면 물새가 먼저 떠나고, 섭금류와 맹금류의 먹이 관계도 이어서 풀린다. |
-| 감각 | 시각이 주력이다. 수면의 반사, 조끼 색, 드론의 그림자에 민감하게 날아오른다. 엔진 소리와 총소리, 확성기 소리는 거리만 알려 준다. 사람의 신호와 수위 숫자는 알지 못한다. 드론과 풍선, 새는 레이더에서 구분하기 어려우므로 사람의 눈으로 다시 확인한다. |
+| 번식과 생애 | 번식은 봄에 별도의 보호 구역에서 한다. 겨울에 서울에서 쉬는 새는 주로 번식을 마친 철새이거나 서울에서 겨울을 나는 텃새다. 연못이 갑자기 얼어붙으면 물새가 먼저 떠나고, 섭금류와 맹금류의 먹이 관계도 이어서 풀린다. |
+| 감각 | 시각이 주력이다. 수면의 반사, 조끼 색, 드론의 그림자에 민감하게 날아오른다. 엔진 소리와 총소리, 확성기 소리는 거리만 알려 준다. 사람의 신호와 깃발 표식은 알지 못한다. 드론과 풍선, 새는 레이더에서 구분하기 어려우므로 사람의 눈으로 다시 확인한다. |
 | 무리 행동 | 지휘 체계는 없다. 물새는 트인 수면을 떼로 쓰고, 섭금류는 얕은 가장자리를 간격을 두고 훑고, 맹금류는 높은 전선에서 다른 새의 밀도를 따라 움직인다. 한 무리가 움직이면 먹이와 경계 때문에 다른 무리의 자리도 바뀐다. |
-| 병과 위험 | 조류 인플루엔자와 살모넬라, 배설물의 기생충이 물과 곡물을 더럽힌다. 철새 떼가 한꺼번에 내려앉으면 물이 오염되어 마시는 물과 수조에 영향을 준다. 의사가 없는 정부 쪽에서는 병이 번지면 막기 어렵다. 선로나 철탑 위에서 새와 열차가 부딪히면 사고가 난다. |
-| 대응 원칙 | 양식장과 수조는 덮개를 씌우고, 선로와 철탑 둘레에 새가 앉지 못하게 한다. 소리와 빛으로 쫓는 것은 새를 이웃 습지로 옮길 뿐이다. 수위를 한꺼번에 줄이면 먹이가 흩어져 새가 사람 쪽으로 몰린다. 성과는 쫓아낸 수가 아니라 양식장 피해, 열차 충돌 횟수, 오염된 물의 양으로 본다. |
+| 병과 위험 | 조류 인플루엔자와 살모넬라, 배설물의 기생충이 물과 곡물을 더럽힌다. 철새 떼가 한꺼번에 내려앉으면 물이 오염되어 수조의 물고기와 곡물 창고에 영향을 준다. 의사가 없는 정부 쪽에서는 병이 번지면 막기 어렵다. 선로나 철탑 위에서 새와 열차가 부딪히면 사고가 난다. |
+| 대응 원칙 | 양식장과 수조는 덮개를 씌우고, 선로와 철탑 둘레에 새가 앉지 못하게 한다. 소리와 빛으로 쫓는 것은 새를 이웃 습지로 옮길 뿐이다. 먹이 터를 한꺼번에 치우면 먹이가 흩어져 새가 사람 쪽으로 몰린다. 성과는 쫓아낸 수가 아니라 양식장 피해, 열차 충돌 횟수, 오염된 물의 양으로 본다. |
 
 <a id="Hostile-Group-G06-heading-0008"></a>
 
@@ -5338,7 +5334,7 @@ Good response means blocking food and places to perch. Cover tanks and farms, an
 
 새는 셔터 틈으로 들어가지 않지만 열린 지붕과 환기구, 수조가 있는 지상 건물로 들어온다. 지하 깊이 사는 사람은 새와 마주칠 일이 적고, 지상에 사는 사람은 수조와 곡물, 빨래터가 같은 곳에 있어 직접 지킨다.
 
-좋은 대응은 먹이와 앉을 자리를 막는 것이다. 수조와 양식장은 덮개를 씌우고, 선로와 철탑 둘레에는 앉을 자리를 없앤다. 수위를 한꺼번에 줄이면 먹이가 흩어져 새가 사람 쪽으로 몰리므로 천천히 줄인다. 성과는 쫓아낸 수가 아니라 양식장 피해, 열차 충돌 횟수, 오염된 물의 양으로 본다.
+좋은 대응은 먹이와 앉을 자리를 막는 것이다. 수조와 양식장은 덮개를 씌우고, 선로와 철탑 둘레에는 앉을 자리를 없앤다. 먹이 터를 한꺼번에 치우면 먹이가 흩어져 새가 사람 쪽으로 몰리므로 천천히 치운다. 성과는 쫓아낸 수가 아니라 양식장 피해, 열차 충돌 횟수, 오염된 물의 양으로 본다.
 
 <a id="Hostile-Group-G06-heading-0445"></a>
 
@@ -5352,8 +5348,8 @@ Good response means blocking food and places to perch. Cover tanks and farms, an
 - 촉발: 강이 얼기 시작하자 얼지 않는 배수 연못 하나에 물새와 섭금류, 맹금류가 모두 모인다.
 - 관련 세력: 아크 강남 쪽 역장, 시설 정비 일꾼, 일반 시민
 - 생태 기제: 얼지 않는 물이 한곳에 모이면 물새는 수면을, 섭금류는 가장자리를, 맹금류는 높은 철탑을 써서 한 연못에 세 무리가 겹친다.
-- 선택지: 연못 수위를 고정한다 / 일부러 가장자리 한쪽을 비워 새를 그쪽으로 이끈다 / 연못 둘레에 덮개를 씌운다
-- 결과: 수위를 고정하면 새가 늘고 열차와 부딪힐 위험도 는다. 한쪽을 비우면 새가 그쪽에 모인다. 덮개는 일손이 든다.
+- 선택지: 연못 가장자리 먹이 터를 그대로 둔다 / 일부러 가장자리 한쪽을 비워 새를 그쪽으로 이끈다 / 연못 둘레에 덮개를 씌운다
+- 결과: 먹이 터를 그대로 두면 새가 늘고 열차와 부딪힐 위험도 는다. 한쪽을 비우면 새가 그쪽에 모인다. 덮개는 일손이 든다.
 - 도덕 비용: 열차 안전과 새가 쉴 얼지 않는 물 중 어느 쪽을 지킬지 정해야 한다.
 - 원본 항목: G06
 
@@ -5396,7 +5392,7 @@ The Yongsan Raiders are a band of people who hold no station, gathered on Govern
 
 ## Common species and variants
 
-The Yongsan Raiders are people, and they stand at the leak pallets of the lower level of the Yongsan stabling siding and of the Itaewon passage alley. In the rainy season and the thaw they move along the ladders and car doors of the Yongsan–Itaewon transfer freight elevator shaft, and in the dry season they gather toward the wall of the same lower level. In their hands are food sacks, sealed boxes and water cans, and when they hold a captured ration worker the elite squad keeps that person standing against the shaft wall.
+The Yongsan Raiders are people, and they stand at the leak pallets of the lower level of the Yongsan stabling siding and of the Itaewon passage alley. In the rainy season and the thaw they move along the ladders and car doors of the Yongsan–Itaewon transfer freight elevator shaft, and in the dry season they gather toward the wall of the same lower level. In their hands are food sacks, sealed boxes and pry bars, and when they hold a captured ration worker the elite squad keeps that person standing against the shaft wall.
 
 The raider chief, the raider elite squad and the raider scouts are three places in one alley. The chief at the inner pallets sets the box count and the ransom in food, the elite squad handles the doors, the sacks and the captive, and the scouts watch for the arrival of cars from the entrance.
 
@@ -5408,7 +5404,7 @@ The raider chief, the raider elite squad and the raider scouts are three places 
 |---|---|
 | Origin | The first place where the station duty staff of the Government saw this group is the lower level of the Yongsan stabling siding on a rainy-season night. People stand along the rows of leak pallets, rods are at their waists, and box hooks are in their hands. The lid of the box in front of them is open, and the inventory board shows that box number in the slot of the same night. They are ordinary citizens who never got inside a shutter. |
 | Habitat and movement | The group gathers at the rows of leak pallets in the lower level of the Yongsan stabling siding and the Itaewon passage alley. In the rainy season and the thaw they stand along the Yongsan–Itaewon transfer freight elevator shaft. In the dry season their footholds lie within three rows of pallets, and the inventory board records the rows where people stood in the rainy season, the thaw and the dry season. |
-| Food and energy | The raiders carry food sacks and sealed boxes out of the Government refrigerated cars and lower ration slots through the Itaewon passage alley. The duty staff correct the remaining slots of the inventory board by the number that went into the raiders'' sacks. Sacks received as ransom are written on the same board in a separate column. Beside the shaft door the duty staff count the water cans and write the number on the board. |
+| Food and energy | The raiders carry food sacks and sealed boxes out of the Government refrigerated cars and lower ration slots through the Itaewon passage alley. The duty staff correct the remaining slots of the inventory board by the number that went into the raiders'' sacks. Sacks received as ransom are written on the same board in a separate column. Beside the shaft door the duty staff count the boxes marked by pry bars and write the number on the board. |
 | Life cycle and upkeep | In the rainy season people stand at every row of leak pallets and sacks hang across every slot. In the thaw the elite squad is up in the freight elevator shaft and empty sacks hang on every rung of the ladder. In the dry season the same people gather toward the wall of the lower level and the scouts at the alley entrance stand in a single line. |
 | Senses | From where the duty staff watch, the raiders look at the box count on the pallets and the state of the elevator doors. The scouts look toward the alley entrance and the chief stands in the inner row of the pallets. The Government sealing bands and the refrigeration slips lie inside the same line of sight. |
 | Group behavior | The chief stands at the inner pallets and sets the box count and the ransom in food. The elite squad handles the elevator door, the ladder, the sacks and the captive. The scouts stand at the entrance of the Itaewon passage alley and watch for the arrival of cars. On the inventory board the slots with broken seals lie before the station duty staff. |
@@ -5438,7 +5434,7 @@ The chief''s range is the box count at the leak pallets, the row where sacks are
 | Type | Person |
 | Battlefield unit | Single individual |
 | Battlefield role | From the inner side of the leak pallets, sets the box count and the ransom in food and shows by place the row where sacks are put. The elite squad and the scouts stand at that row and at the entrance. |
-| Common species, variants and command scope | The range is the boxes, sacks and water cans of the lower level of the Yongsan stabling siding and the Itaewon passage alley. The price for returning a captured ration worker is set by the chief. |
+| Common species, variants and command scope | The range is the boxes and sacks of the lower level of the Yongsan stabling siding and the Itaewon passage alley. The price for returning a captured ration worker is set by the chief. |
 
 - Stands in the inner row of the leak pallets of the Itaewon passage alley.
 - Before the chief is an open food box with half of the sacks still in it.
@@ -5514,7 +5510,7 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 - Ecological mechanism: The duty staff count the boxes at the shaft door. The chief is at the inner pallets and the elite squad holds the box hooks.
 - Choices: Leave the elevator car in the lower level, lock the shaft door and set the boxes against the wall. / Pass the boxes out of the alley in the order of the inventory board. / Empty the duty post and leave the boxes where the raiders stand.
 - Outcomes: If the first is chosen the boxes are in the lower level and the raiders stand before the locked shaft door. If the second, the boxes are out of the alley with their sealing bands still on. If the third, the boxes are on the pallets and the mouths of the elite squad''s sacks are open.
-- Moral cost: After the door is locked, that day''s water-can count on the board is lower by the number of boxes. After the boxes are passed on in order, the raiders remain in the alley empty-handed. After the post is left empty, the same number is written in the raiders'' sack column.
+- Moral cost: After the door is locked, that day''s sack count on the board is lower by the number of boxes. After the boxes are passed on in order, the raiders remain in the alley empty-handed. After the post is left empty, the same number is written in the raiders'' sack column.
 - Source dossier: G07
 
 <a id="Hostile-Group-G07-heading-0035"></a>
@@ -5540,7 +5536,7 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 - Ecological mechanism: A salt stain runs from the floor of the refrigerated car to the leak pallets. Sealed boxes and food sacks lie in the same row. The chief counts the sacks, the elite squad props the door, and the scouts stand at the alley entrance.
 - Choices: Leave the car in the lower level and let the duty staff keep only the sack count on the inventory board. / Pass the sealed boxes out of the alley first and release the sacks in order. / Leave the car door open and set the food sacks on the side where the raiders stand.
 - Outcomes: If the first is chosen the car is in the lower level and the sack count is written in the next column of the board. If the second, the sealed boxes are out of the alley and the sack count agrees on one board. If the third, the sacks are before the car door and the mouths of the elite squad''s sacks are open.
-- Moral cost: After only the count is kept, the food sacks are in the lower level and that day''s water-can column is written next to that number. After the sealed boxes are passed first, the scouts at the entrance stand in a single line. After the door is left open, the same sack numbers are written in the raiders'' column.
+- Moral cost: After only the count is kept, the food sacks are in the lower level and that day''s ransom column is written next to that number. After the sealed boxes are passed first, the scouts at the entrance stand in a single line. After the door is left open, the same sack numbers are written in the raiders'' column.
 - Source dossier: G07
 ', '
 <a id="Hostile-Group-G07-heading-0001"></a>
@@ -5555,7 +5551,7 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 
 ## 공통종과 변이종
 
-용산 약탈단은 사람이며 용산 유치선 하층과 이태원 통행 골목의 누액 받침대에 선다. 우기와 해동에는 용산·이태원 환승 화물 엘리베이터 샤프트의 사다리와 칸 문을 오가고, 건기에는 같은 하층 벽 쪽으로 모인다. 손에는 식량 포대와 봉인 상자와 물통이 있고, 붙잡아 온 배급 담당자가 있으면 정예조가 샤프트 벽 쪽에 세워 둔다.
+용산 약탈단은 사람이며 용산 유치선 하층과 이태원 통행 골목의 누액 받침대에 선다. 우기와 해동에는 용산·이태원 환승 화물 엘리베이터 샤프트의 사다리와 칸 문을 오가고, 건기에는 같은 하층 벽 쪽으로 모인다. 손에는 식량 포대와 봉인 상자와 쇠지레가 있고, 붙잡아 온 배급 담당자가 있으면 정예조가 샤프트 벽 쪽에 세워 둔다.
 
 약탈단 두목과 약탈단 정예조와 약탈단 척후조는 한 골목의 세 자리이다. 두목은 안쪽 받침대에서 상자 수와 몸값 식량 수를 정하고, 정예조는 문과 포대와 붙잡은 사람을 맡으며, 척후조는 입구에서 칸의 도착을 본다.
 
@@ -5567,7 +5563,7 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 |---|---|
 | 기원 | 정부 역 당직이 이 무리를 처음 본 자리는 우기 밤의 용산 유치선 하층이다. 누액 받침대 열에 사람이 서 있고 허리에는 막대가 있으며 손에는 상자 고리가 있다. 앞의 상자는 뚜껑이 열려 있고, 재고판에는 그 상자 번호가 같은 밤의 칸으로 적혀 있다. 이들은 셔터 안에 들어가지 못한 일반 시민이다. |
 | 서식·이동 | 무리가 모이는 자리는 용산 유치선 하층과 이태원 통행 골목의 누액 받침대 열이다. 우기와 해동에는 용산·이태원 환승 화물 엘리베이터 샤프트를 따라 서 있다. 건기에는 발 자리가 받침대 세 열 안에 있고, 재고판에는 우기와 해동과 건기에 사람이 선 열이 적혀 있다. |
-| 먹이·에너지 | 약탈단은 정부 냉동 칸과 하층 배급 칸의 식량 포대와 봉인 상자를 이태원 통행 골목에서 옮긴다. 당직은 약탈단 포대에 들어간 수만큼 재고판의 잔여 칸을 고쳐 적는다. 몸값으로 받은 포대도 같은 판에 따로 적힌다. 샤프트 문 옆에서 당직이 물통을 세고 그 수를 판에 적는다. |
+| 먹이·에너지 | 약탈단은 정부 냉동 칸과 하층 배급 칸의 식량 포대와 봉인 상자를 이태원 통행 골목에서 옮긴다. 당직은 약탈단 포대에 들어간 수만큼 재고판의 잔여 칸을 고쳐 적는다. 몸값으로 받은 포대도 같은 판에 따로 적힌다. 샤프트 문 옆에서 당직이 쇠지레 자국이 난 상자를 세고 그 수를 판에 적는다. |
 | 생애·정비 | 우기에는 누액 받침대 열마다 사람이 서고 포대가 칸마다 걸쳐 있다. 해동에는 정예조가 환승 화물 엘리베이터 샤프트에 올라가 있고 빈 포대는 사다리 단마다 걸려 있다. 건기에는 같은 사람들이 하층 벽 쪽에 모여 있고 골목 입구의 척후조는 한 줄로 서 있다. |
 | 감각 | 역 당직이 보는 자리에서 약탈단은 받침대의 상자 수와 엘리베이터의 문 상태를 살핀다. 척후조는 골목 입구 쪽을 보고 두목은 받침대 안쪽 열에 서 있다. 정부 봉인 띠와 냉동 표가 같은 시선 안에 있다. |
 | 집단 행동 | 두목은 받침대 안쪽에 있어 상자 수와 몸값 식량 수를 정한다. 정예조는 엘리베이터 문과 사다리와 포대와 붙잡은 사람을 맡는다. 척후조는 이태원 통행 골목 입구에 서서 칸의 도착을 본다. 재고판에서 봉인이 뜯긴 칸은 역 당직 앞에 있다. |
@@ -5597,7 +5593,7 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 | 구분 | 사람 |
 | 전장 단위 | 독립 개체 |
 | 전장 역할 | 누액 받침대 안쪽에서 상자 수와 몸값 식량 수를 정하고 포대를 둘 열을 자리로 나타낸다. 정예조와 척후조는 그 열과 입구에 서 있다. |
-| 공통종·변이와 지휘 범위 | 범위는 용산 유치선 하층과 이태원 통행 골목의 상자·포대·물통이다. 붙잡은 배급 담당자를 돌려주는 값은 두목이 정한다. |
+| 공통종·변이와 지휘 범위 | 범위는 용산 유치선 하층과 이태원 통행 골목의 상자와 포대다. 붙잡은 배급 담당자를 돌려주는 값은 두목이 정한다. |
 
 - 이태원 통행 골목의 누액 받침대 안쪽 열에 서 있다.
 - 앞에는 열린 식량 상자가 있고 포대는 상자 안에 반이 남아 있다.
@@ -5673,7 +5669,7 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 - 생태 기제: 당직이 샤프트 문 앞에서 상자 수를 센다. 두목은 받침대 안쪽에 있고 정예조는 상자 고리를 잡고 있다.
 - 선택지: 엘리베이터 칸을 용산 유치선 하층에 두고 샤프트 문을 잠근 뒤 상자를 하층 벽에 붙인다. / 상자를 재고판 순서대로 골목 밖으로 넘긴다. / 당직 자리를 비우고 상자를 약탈단이 선 자리에 둔다.
 - 결과: 첫째를 고르면 상자는 하층에 있고 약탈단은 잠긴 샤프트 문 앞에 선다. 둘째를 고르면 상자는 골목 밖에 있고 봉인 띠가 그대로 붙어 있다. 셋째를 고르면 상자는 받침대에 있고 정예조의 포대 입구가 열려 있다.
-- 도덕 비용: 문을 잠근 뒤에는 그날 골목의 물통 수가 상자 수만큼 줄어든 값으로 판에 적힌다. 순서대로 넘긴 뒤에는 약탈단이 빈손으로 골목에 남는다. 자리를 비운 뒤에는 같은 번호가 약탈단 포대 칸에 적힌다.
+- 도덕 비용: 문을 잠근 뒤에는 그날 골목의 포대 수가 상자 수만큼 줄어든 값으로 판에 적힌다. 순서대로 넘긴 뒤에는 약탈단이 빈손으로 골목에 남는다. 자리를 비운 뒤에는 같은 번호가 약탈단 포대 칸에 적힌다.
 - 원본 항목: G07
 
 <a id="Hostile-Group-G07-heading-0035"></a>
@@ -5699,7 +5695,7 @@ After the duty staff lock the shaft door, the elevator car sits in the lower lev
 - 생태 기제: 소금 때가 냉동 칸 바닥에서 누액 받침대까지 이어져 있다. 봉인 상자와 식량 포대가 같은 열에 있다. 두목이 포대 수를 세고 정예조가 문을 받치며 척후조가 골목 입구에 서 있다.
 - 선택지: 냉동 칸을 하층에 두고 당직이 포대 수만 재고판에 남긴다. / 봉인 상자를 먼저 골목 밖으로 넘기고 포대는 순서대로 푼다. / 냉동 칸 문을 연 채 약탈단이 선 쪽에 식량 포대를 둔다.
 - 결과: 첫째를 고르면 냉동 칸은 하층에 있고 판 옆칸에 포대 수가 적힌다. 둘째를 고르면 봉인 상자는 골목 밖에 있고 포대 수가 한 판에서 맞는다. 셋째를 고르면 포대는 칸 문 앞에 있고 정예조의 포대 입구가 열려 있다.
-- 도덕 비용: 수만 남긴 뒤에는 식량 포대가 하층에 있고 그날 물통 칸이 그 수와 나란히 적힌다. 봉인 상자를 먼저 넘긴 뒤에는 입구의 척후조가 한 줄로 서 있다. 문을 연 채 둔 뒤에는 같은 포대 번호가 약탈단 칸에 적힌다.
+- 도덕 비용: 수만 남긴 뒤에는 식량 포대가 하층에 있고 그날 몸값 칸이 그 수와 나란히 적힌다. 봉인 상자를 먼저 넘긴 뒤에는 입구의 척후조가 한 줄로 서 있다. 문을 연 채 둔 뒤에는 같은 포대 번호가 약탈단 칸에 적힌다.
 - 원본 항목: G07
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G08', 'G08 · Dongdaemun Raiders', 'G08 · 동대문 약탈단', 'bestiary', 8, '
@@ -6371,9 +6367,9 @@ The Bogukmun group moves between Government ground (the Bukhansan Bogukmun shelt
 
 ## Common species and variants
 
-The Bogukmun group gathers in the poorly drained stretch of the Bukhansan Bogukmun shelter corridor. In the rainy season and on ration cycles they stand at the lower ration depots and vents of Garak and Jamsil. They are people, with grain sacks, water cans and wooden staves in their hands.
+The Bogukmun group gathers in the poorly drained stretch of the Bukhansan Bogukmun shelter corridor. In the rainy season and on ration cycles they stand at the lower ration depots and vents of Garak and Jamsil. They are people, with grain sacks, bundles of firewood and wooden staves in their hands. Firewood is the first thing to run out in a shelter corridor whose heating is cut.
 
-The group leader, the elite squad and the scouts are three places in one band, and the attendants carry sacks and water cans behind the leader. The leader sets direction at the threshold of the corridor junction, the elite squad blocks the drain and the depot doors, and the scouts stand at the vents and the outer stair.
+The group leader, the elite squad and the scouts are three places in one band, and the attendants carry sacks and firewood bundles behind the leader. The leader sets direction at the threshold of the corridor junction, the elite squad blocks the drain and the depot doors, and the scouts stand at the vents and the outer stair.
 
 <a id="Hostile-Group-G10-heading-0006"></a>
 
@@ -6386,7 +6382,7 @@ The group leader, the elite squad and the scouts are three places in one band, a
 | Food and energy | Grain sacks and tins of dried side dishes are handed over toward the group at the lower ration depot of Jamsil. The flashlights and raincoats at the Garak vent are on the elite squad''s side. After the Government seed store stops issuing, the bags of distributed seed on the upper shelf stay tied and only the lower-floor sacks are at the door. If a ration worker has been seized, the number of seed bags is written as the ransom. |
 | Life cycle and upkeep | On ration days the people from the Bogukmun corridor side attach themselves to the lower levels of Garak and Jamsil. When the sea wind enters the corridor, the number on the outer stair grows and the attendants stay at the inner threshold. When the corridor dries, the elite squad stands before the depot door and only marker cloths are left tied to the drain handles. |
 | Senses | The group leader looks toward the junction and the attendants look at the leader''s back. The elite squad stands in a single line at the drain joints, and the scouts watch from the vent walkway for the moment the ration line breaks. |
-| Group behavior | The group leader stands at the threshold of the corridor junction. The elite squad handles the drain and the depot doors. The scouts stand at the vent and the ration route facing the leader. The attendants hold sacks and water cans on the dry footing behind the leader. |
+| Group behavior | The group leader stands at the threshold of the corridor junction. The elite squad handles the drain and the depot doors. The scouts stand at the vent and the ration route facing the leader. The attendants hold sacks and firewood bundles on the dry footing behind the leader. |
 
 <a id="Hostile-Group-G10-heading-0008"></a>
 
@@ -6417,7 +6413,7 @@ The group leader''s place is the junction of the Bukhansan Bogukmun shelter corr
 
 - A marker cloth
 - The key to the corridor iron door
-- A water can
+- A bundle of firewood
 - A flashlight
 - A wooden staff
 - A raincoat
@@ -6462,7 +6458,7 @@ The group leader''s place is the junction of the Bukhansan Bogukmun shelter corr
 - A ration sack
 - A ration list
 - A flashlight
-- A water can
+- A bundle of firewood
 - A raincoat
 - A marker cloth
 
@@ -6515,7 +6511,7 @@ On a day when the corridor is dry, the floor of the drain shows and the marker c
 ### G10-SC3 · The Outer Stair the Sea Wind Reaches
 
 - Stage: 3
-- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with water cans. The group leader is at the threshold.
+- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with firewood bundles. The group leader is at the threshold.
 - Actors: arc, government
 - Ecological mechanism: The scouts stand facing the leader. The ration worker stands before the door until the seed store hands over the issue list.
 - Choices: The corridor duty staff leave only the lamp of the outer stair lit and lock the inner iron door. / The seed store keeps seed bags on a different shelf from the ration sacks and stops lower-level issue. / The ration worker opens the morning door only after receiving the list and brings out the listed bags.
@@ -6535,9 +6531,9 @@ On a day when the corridor is dry, the floor of the drain shows and the marker c
 
 ## 공통종과 변이종
 
-보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 사람이며, 손에는 곡물 자루와 물통과 목봉이 있다.
+보국문 집단은 북한산보국문 대피 회랑의 배수 불량 구간에 모인다. 장마와 배급 주기에는 가락과 잠실의 하층 배급고와 환기구에 선다. 사람이며, 손에는 곡물 자루와 땔감 묶음과 목봉이 있다. 땔감은 난방이 끊긴 대피 회랑에서 가장 먼저 동나는 물건이다.
 
-집단 인도자와 정예조와 척후조는 한 무리의 세 자리이고, 수행이 인도자 뒤에서 자루와 물통을 든다. 인도자는 회랑 분기 문턱에서 방향을 정하고, 정예조는 배수로와 배급고 문짝을 막으며, 척후조는 환기구와 외곽 계단에 선다.
+집단 인도자와 정예조와 척후조는 한 무리의 세 자리이고, 수행이 인도자 뒤에서 자루와 땔감 묶음을 든다. 인도자는 회랑 분기 문턱에서 방향을 정하고, 정예조는 배수로와 배급고 문짝을 막으며, 척후조는 환기구와 외곽 계단에 선다.
 
 <a id="Hostile-Group-G10-heading-0006"></a>
 
@@ -6550,7 +6546,7 @@ On a day when the corridor is dry, the floor of the drain shows and the marker c
 | 먹이·에너지 | 잠실 하층 배급고에서 곡물 자루와 마른 반찬 통을 집단 쪽으로 넘긴다. 가락 환기구의 손전등과 우의는 정예조 쪽에 있다. 정부 종자 창고가 출고를 멈춘 뒤 윗층 선반의 분양 종자 포대는 묶인 채 있고, 아래층 자루만 문 앞에 있다. 잡아 온 배급 담당자가 있으면 종자 포대 수가 몸값으로 적힌다. |
 | 생애·정비 | 배급일 낮에는 북한산보국문 회랑 쪽 인원이 가락과 잠실 하층에 붙는다. 바닷바람이 회랑으로 들어오면 외곽 계단의 인원이 늘고 안쪽 문턱에는 수행이 남는다. 회랑이 마르면 정예조가 배급고 문 앞에 서고 배수로 손잡이에는 표식 천만 매여 있다. |
 | 감각 | 집단 인도자는 분기 쪽을 보고 수행은 인도자의 등을 본다. 정예조는 배수로 이음에 한 줄로 서 있고, 척후조는 환기구 발판에서 배급 줄이 끊기는 때를 본다. |
-| 집단 행동 | 집단 인도자는 회랑 분기 문턱에 선다. 정예조는 배수로와 배급고 문짝을 맡는다. 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 물통을 든다. |
+| 집단 행동 | 집단 인도자는 회랑 분기 문턱에 선다. 정예조는 배수로와 배급고 문짝을 맡는다. 척후조는 환기구와 배급 동선에 서서 인도자 쪽을 향한다. 수행은 인도자 뒤 마른 발판에서 자루와 땔감 묶음을 든다. |
 
 <a id="Hostile-Group-G10-heading-0008"></a>
 
@@ -6581,7 +6577,7 @@ On a day when the corridor is dry, the floor of the drain shows and the marker c
 
 - 표식 천
 - 회랑 철문 열쇠
-- 물통
+- 땔감 묶음
 - 손전등
 - 목봉
 - 우의
@@ -6626,7 +6622,7 @@ On a day when the corridor is dry, the floor of the drain shows and the marker c
 - 배급 자루
 - 배급 명단
 - 손전등
-- 물통
+- 땔감 묶음
 - 우의
 - 표식 천
 
@@ -6679,7 +6675,7 @@ On a day when the corridor is dry, the floor of the drain shows and the marker c
 ### G10-SC3 · 바닷바람이 닿는 외곽 계단
 
 - 단계: 3
-- 촉발: 바닷바람이 회랑으로 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 물통을 들고 남는다. 집단 인도자는 문턱에 있다.
+- 촉발: 바닷바람이 회랑으로 들어오는 동안 외곽 계단의 인원이 늘고 회랑 안쪽에는 수행이 땔감 묶음을 들고 남는다. 집단 인도자는 문턱에 있다.
 - 관련 세력: arc, government
 - 생태 기제: 척후조는 인도자 쪽을 향해 선다. 배급 담당자는 종자 창고가 출고 목록을 넘기기 전까지 문 앞에 서 있다.
 - 선택지: 회랑 당직이 외곽 계단의 등만 켜 두고 안쪽 철문을 잠근다. / 종자 창고가 종자 포대를 배급 자루와 다른 선반에 두고 하층 출고를 멈춘다. / 배급 담당자가 목록을 받은 뒤에만 오전 문을 열고 목록의 포대를 낸다.
@@ -7021,13 +7017,13 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Relation to the Three Factions
 
-The Sinnae Deserters are soldiers who walked out of the Government army with rifles, ammunition and supplies. The moment they leave the Government they lose their rank and whatever assets they held, and become ordinary citizens that no station will take in. The band has no one above squad leader and no officers, so it cannot lay combined fire with heavy weapons. Without a depot it only spends the ammunition and parts it carried out, so what it holds can only shrink, and with no doctor its wounded do not come back. So they steal field rations and batteries from the freight cars of the Government Sinnae rolling-stock depot, and seize filter-gallery duty staff to take water and food as ransom. A faction that takes them in keeps them at the very bottom and uses only their skills. What the Free Cities want most is an officer who can command tanks and heavy weapons; this band has none, so taking it in gains no more than a few riflemen. If an officer is ever found among deserters, that person becomes an object of contest between the factions. The units that the movement of officers and doctors opens are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
+The Sinnae Deserters are soldiers who walked out of the Government army with rifles, ammunition and supplies. The moment they leave the Government they lose their rank and whatever assets they held, and become ordinary citizens that no station will take in. The band has no one above squad leader and no officers, so it cannot lay combined fire with heavy weapons. Without a depot it only spends the ammunition and parts it carried out, so what it holds can only shrink, and with no doctor its wounded do not come back. So they steal field rations and batteries from the freight cars of the Government Sinnae rolling-stock depot, and seize ventilation-gallery duty staff to take fuel and food as ransom. A faction that takes them in keeps them at the very bottom and uses only their skills. What the Free Cities want most is an officer who can command tanks and heavy weapons; this band has none, so taking it in gains no more than a few riflemen. If an officer is ever found among deserters, that person becomes an object of contest between the factions. The units that the movement of officers and doctors opens are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="Hostile-Group-G12-heading-0003"></a>
 
 ## Common species and variants
 
-The Sinnae Deserters are a band of soldiers who left with the weapons and equipment of the Government army. The band gathers in the dust passage of the Sinnae freight elevator. At the hours of washing and backwash they stand before the hatch of the Yeouido water-filter gallery. When dock dust piles at the outer side they stand at the entrance. Before the fully sealed clean section they stand on the entrance side.
+The Sinnae Deserters are a band of soldiers who left with the weapons and equipment of the Government army. The band gathers in the dust passage of the Sinnae freight elevator. At the hours of exhaust-fan inspection they stand before the hatch of the Yeouido ventilation gallery. When the fan runs, warm air rises through the hatch and draws the outside machines. When dock dust piles at the outer side they stand at the entrance. Before the fully sealed clean section they stand on the entrance side.
 
 The branches are posts within one band of Sinnae Deserters. The squad leader, the elite squad and the scouts wear the same unit mark. The squad leader holds the landing table and the radio, the elite squad holds the weapons at the rail, and the scouts hold the passage entrance and the gallery hatch.
 
@@ -7037,12 +7033,12 @@ The branches are posts within one band of Sinnae Deserters. The squad leader, th
 
 | Item | Record |
 |---|---|
-| Origin | The freight duty staff of the Government Sinnae rolling-stock depot first see this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat dress stand in the passage. Rifles are on their shoulders and ammunition boxes and water cans are at their feet. The mark on the shoulders is that of the Government army. |
-| Habitat and movement | The place where the band gathers is the dust passage of the Sinnae freight elevator. On the water-washing cycle and the purification backwash schedule they stand before the hatch of the Yeouido water-filter gallery. On a day when dust comes in from the dock they stand at the entrance of the outer passage. Before the fully sealed clean section they stay on the entrance side, and the inside of the section is the duty staff''s place. |
-| Food and energy | Ammunition boxes, ration tins, water cans, spare combat dress and radio batteries lie between the freight elevator car and the filter gallery. The freight list is at the end of the table and a line is drawn through its quantity column. The water cans of the gallery filter duty staff are in the same column. On a night when a duty officer is held, a number of water cans is written beside the list as the price of release. |
-| Life cycle and upkeep | On a midsummer night a few soldiers stand at the corner of the passage. In the early-autumn washing cycle more soldiers with the same unit mark and more wooden boxes are in the elevator car. At the dawn when the backwash runs, the band stands divided between the landing and the front of the Yeouido water-filter gallery hatch. |
-| Senses | The Sinnae Deserters watch the threshold of the dust passage and the hatch of the gallery. Soldiers at the threshold face the freight car, and those at the hatch face the backwash piping. When dock dust piles in the outer passage the scouts face the dock from the entrance. |
-| Group behavior | The squad leader is at the radio on the landing table. The elite squad is at the rail and the elevator door. The scouts are at the dust passage entrance and the gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet and the magazines are at the elite squad''s hands. |
+| Origin | The freight duty staff of the Government Sinnae rolling-stock depot first see this group on a midsummer night in the dust passage of the Sinnae freight elevator. Several soldiers in combat dress stand in the passage. Rifles are on their shoulders and ammunition boxes and fuel tins are at their feet. The mark on the shoulders is that of the Government army. |
+| Habitat and movement | The place where the band gathers is the dust passage of the Sinnae freight elevator. On the exhaust-fan inspection cycle and the gallery running schedule they stand before the hatch of the Yeouido ventilation gallery. When the fan runs, warm air rises through the hatch and draws the outside machines. On a day when dust comes in from the dock they stand at the entrance of the outer passage. Before the fully sealed clean section they stay on the entrance side, and the inside of the section is the duty staff''s place. |
+| Food and energy | Ammunition boxes, ration tins, fuel tins, spare combat dress and radio batteries lie between the freight elevator car and the ventilation gallery. The freight list is at the end of the table and a line is drawn through its quantity column. The fuel tins of the gallery ventilation duty staff are in the same column. On a night when a duty officer is held, a number of fuel tins is written beside the list as the price of release. |
+| Life cycle and upkeep | On a midsummer night a few soldiers stand at the corner of the passage. In the early-autumn fan-inspection cycle more soldiers with the same unit mark and more wooden boxes are in the elevator car. At the dawn when the exhaust fan runs, the band stands divided between the landing and the front of the Yeouido ventilation gallery hatch. |
+| Senses | The Sinnae Deserters watch the threshold of the dust passage and the hatch of the gallery. Soldiers at the threshold face the freight car, and those at the hatch face the exhaust ducting. When dock dust piles in the outer passage the scouts face the dock from the entrance. |
+| Group behavior | The squad leader is at the radio on the landing table. The elite squad is at the rail and the elevator door. The scouts are at the dust passage entrance and the gallery hatch. Ammunition boxes and fuel tins are at the squad leader''s feet and the magazines are at the elite squad''s hands. |
 
 <a id="Hostile-Group-G12-heading-0008"></a>
 
@@ -7072,7 +7068,7 @@ The squad leader''s place is the landing table and the radio. The elite squad''s
 | Common species, variants and command scope | The place before the landing table and the radio; the band has no rank above it. Sets the ransom for a held duty officer. |
 
 - A radio on the table
-- Ammunition boxes and water cans at the feet
+- Ammunition boxes and fuel tins at the feet
 - The quantity column of the freight list
 - The mark of the Government army
 
@@ -7109,7 +7105,7 @@ The squad leader''s place is the landing table and the radio. The elite squad''s
 | Type | Person |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Passage entrance and gallery hatch |
-| Common species, variants and command scope | The dust passage entrance and the Yeouido water-filter gallery hatch; in the outer passage they look toward the dock. |
+| Common species, variants and command scope | The dust passage entrance and the Yeouido ventilation gallery hatch; in the outer passage they look toward the dock. |
 
 - A place at the corner of the passage entrance
 - A place before the hatch
@@ -7120,19 +7116,19 @@ The squad leader''s place is the landing table and the radio. The elite squad''s
 
 ## Habitat record
 
-On a midsummer night in the dust passage of the Sinnae freight elevator, the freight duty officer of the Government rolling-stock depot sees the Sinnae Deserters. Several soldiers in combat dress stand in the passage. Rifles are on their shoulders and ammunition boxes and water cans are at their feet. The mark on the shoulders is that of the Government army. The freight duty officer is inside the threshold.
+On a midsummer night in the dust passage of the Sinnae freight elevator, the freight duty officer of the Government rolling-stock depot sees the Sinnae Deserters. Several soldiers in combat dress stand in the passage. Rifles are on their shoulders and ammunition boxes and fuel tins are at their feet. The mark on the shoulders is that of the Government army. The freight duty officer is inside the threshold.
 
-The squad leader is at the radio on the landing table. The elite squad is at the rail and the elevator door. The scouts are at the dust passage entrance and the gallery hatch. Ammunition boxes and water cans are at the squad leader''s feet and magazines are at the elite squad''s hands.
+The squad leader is at the radio on the landing table. The elite squad is at the rail and the elevator door. The scouts are at the dust passage entrance and the gallery hatch. Ammunition boxes and fuel tins are at the squad leader''s feet and magazines are at the elite squad''s hands.
 
-The band gathers in the dust passage. On the water-washing cycle and the purification backwash schedule it stands before the hatch of the Yeouido water-filter gallery. On a day when dust comes from the dock it stands in the outer passage. Before the fully sealed clean section it stays at the entrance, and the inside of the section is the duty staff''s place.
+The band gathers in the dust passage. On the exhaust-fan inspection cycle and the gallery running schedule it stands before the hatch of the Yeouido ventilation gallery. When the fan runs, warm air rises through the hatch and draws the outside machines. On a day when dust comes from the dock it stands in the outer passage. Before the fully sealed clean section it stays at the entrance, and the inside of the section is the duty staff''s place.
 
-Ammunition boxes, ration tins, water cans, spare combat dress and radio batteries lie between the elevator car and the filter gallery. The freight list is on the table with a line through its quantity column. The water cans of the gallery filter duty staff are in the same column.
+Ammunition boxes, ration tins, fuel tins, spare combat dress and radio batteries lie between the elevator car and the ventilation gallery. The freight list is on the table with a line through its quantity column. The fuel tins of the gallery ventilation duty staff are in the same column.
 
-The freight duty officer and the filter duty officer write the washing hour and the freight-car hour on one table. The Government machine duty officer is before the lift panel at that hour. The Free City dock duty officer writes the dust hour in the lower column of the table.
+The freight duty officer and the ventilation duty officer write the fan-inspection hour and the freight-car hour on one table. The Government machine duty officer is before the lift panel at that hour. The Free City dock duty officer writes the dust hour in the lower column of the table.
 
-The sight in the same dust passage changes in three stages. At first a soldier with a rifle on the shoulder is at the corner of the passage. Next the elite squad is at the rail with a machine gun and ammunition boxes on it. Last the squad leader stands before the freight car and before the stairs of the filter gallery. Dock dust lies on the floor and the squad leader and the scouts face the outside.
+The sight in the same dust passage changes in three stages. At first a soldier with a rifle on the shoulder is at the corner of the passage. Next the elite squad is at the rail with a machine gun and ammunition boxes on it. Last the squad leader stands before the freight car and before the stairs of the ventilation gallery. Dock dust lies on the floor and the squad leader and the scouts face the outside.
 
-The freight duty officer keeps the elevator door shut and takes the freight power off the panel. The freight cages are stacked at the car entrance. The filter duty officer keeps the gallery hatch locked at the backwash hour. The machine duty officer is before the panel with the breaker down. On the day of capture the held duty officer stands beside a rail post, the gallery water cans are in the deserters'' line of cans, and the backwash water stays before the valve.
+The freight duty officer keeps the elevator door shut and takes the freight power off the panel. The freight cages are stacked at the car entrance. The ventilation duty officer keeps the gallery hatch locked at the fan-inspection hour. The machine duty officer is before the panel with the breaker down. On the day of capture the held duty officer stands beside a rail post, the gallery fuel tins are in the deserters'' line of tins, and the warm exhaust stays before the damper.
 
 <a id="Hostile-Group-G12-heading-0032"></a>
 
@@ -7153,15 +7149,15 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 
 <a id="Hostile-Group-G12-heading-0035"></a>
 
-### G12-SC2 · The Hatch at the Backwash Hour
+### G12-SC2 · The Hatch at the Fan-Inspection Hour
 
 - Stage: 2
-- Trigger: At dawn in early autumn the backwash runs in the Yeouido water-filter gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
+- Trigger: At dawn in early autumn the exhaust fan runs in the Yeouido ventilation gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
 - Actors: government, free-city
-- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The filter duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
-- Choices: The filter duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
-- Outcomes: If the valve is locked, the scouts before the hatch and the filter duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the filter duty officer''s hand.
-- Moral cost: The backwash water pools before the valve. The filter duty officer''s water cans are in the scouts'' line beside the hatch. The ration tins of the freight car are at the landing.
+- Ecological mechanism: The fan-inspection cycle and the gallery running schedule overlap on the same dawn. The ventilation duty officer is before the damper. The freight duty officer is beside the car. The machine duty officer is before the panel.
+- Choices: The ventilation duty officer closes the exhaust damper at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
+- Outcomes: If the damper is closed, the scouts before the hatch and the ventilation duty officer stand in the same warm draught. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the ventilation duty officer''s hand.
+- Moral cost: The warm exhaust pools before the damper. The ventilation duty officer''s fuel tins are in the scouts'' line beside the hatch. The ration tins of the freight car are at the landing.
 - Source dossier: G12
 
 <a id="Hostile-Group-G12-heading-0037"></a>
@@ -7172,9 +7168,9 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 - Trigger: Dock dust is piled on the floor of the outer passage of the Sinnae freight elevator. The scouts are at the outer entrance. The supply, freight and machine duty officers are before the same hour table.
 - Actors: government, free-city
 - Ecological mechanism: While the dust is in the outer passage the squad leader is at the radio. The elite squad is at the rail. The scouts are at the entrance. The dock duty officer''s dust hour is written in the lower column of the landing table.
-- Choices: The dock duty officer closes the dock entry door. / The filter duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
-- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the filter duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
-- Moral cost: The dock''s freight sacks are inside the entry door. The gallery backwash stays before the valve. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
+- Choices: The dock duty officer closes the dock entry door. / The ventilation duty officer locks the Yeouido ventilation gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
+- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the ventilation duty officer is before the damper. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
+- Moral cost: The dock''s freight sacks are inside the entry door. The gallery''s warm exhaust stays before the damper. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
 - Source dossier: G12
 ', '
 <a id="Hostile-Group-G12-heading-0001"></a>
@@ -7183,13 +7179,13 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 
 ## 세 세력과의 관계
 
-신내 탈영병은 정부 군에서 소총과 탄약, 물자를 들고 나온 병사들이다. 정부를 떠나는 순간 계급과 가진 자산을 잃고, 받아 주는 역이 없는 일반 시민이 된다. 무리에는 분대장까지만 있고 장교가 없으므로 중화기를 묶어 쏘는 연합 사격을 하지 못한다. 정비창 없이 들고 나온 탄약과 부품을 쓰기만 하므로 가진 것은 줄어들 뿐이고, 의사도 없어서 다친 사람은 돌아오지 않는다. 그래서 신내 정부 차량기지의 화물 칸에서 전투식량과 전지를 훔치고, 필터 갤러리 당직을 붙잡아 몸값으로 물과 식량을 받는다. 다른 세력이 이들을 받아들이면 기술만 쓰는 최하층민으로 둔다. 자유도시가 가장 원하는 사람은 전차와 중화기를 지휘할 장교인데, 이 무리에는 장교가 없어 받아도 소총수 몇을 더 얻는 데 그친다. 탈영병 가운데 장교가 섞여 있다면 그 사람은 세력 사이의 쟁탈 대상이 된다. 장교와 의사의 이동이 여는 병종은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
+신내 탈영병은 정부 군에서 소총과 탄약, 물자를 들고 나온 병사들이다. 정부를 떠나는 순간 계급과 가진 자산을 잃고, 받아 주는 역이 없는 일반 시민이 된다. 무리에는 분대장까지만 있고 장교가 없으므로 중화기를 묶어 쏘는 연합 사격을 하지 못한다. 정비창 없이 들고 나온 탄약과 부품을 쓰기만 하므로 가진 것은 줄어들 뿐이고, 의사도 없어서 다친 사람은 돌아오지 않는다. 그래서 신내 정부 차량기지의 화물 칸에서 전투식량과 전지를 훔치고, 환기 갤러리 당직을 붙잡아 몸값으로 연료와 식량을 받는다. 다른 세력이 이들을 받아들이면 기술만 쓰는 최하층민으로 둔다. 자유도시가 가장 원하는 사람은 전차와 중화기를 지휘할 장교인데, 이 무리에는 장교가 없어 받아도 소총수 몇을 더 얻는 데 그친다. 탈영병 가운데 장교가 섞여 있다면 그 사람은 세력 사이의 쟁탈 대상이 된다. 장교와 의사의 이동이 여는 병종은 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다.
 
 <a id="Hostile-Group-G12-heading-0003"></a>
 
 ## 공통종과 변이종
 
-신내 탈영병은 정부 군의 무기와 장비를 들고 나온 병사의 무리다. 무리가 모이는 곳은 신내 화물 엘리베이터 분진 통로다. 세척과 역세의 시각에는 여의도 정수 필터 갤러리 해치 앞에 선다. 부두 분진이 외곽에 쌓이면 입구에 선다. 완전 밀폐 청정 구간 앞에서는 입구 쪽에 서 있다.
+신내 탈영병은 정부 군의 무기와 장비를 들고 나온 병사의 무리다. 무리가 모이는 곳은 신내 화물 엘리베이터 분진 통로다. 배기 팬 점검 시각에는 여의도 환기 갤러리 해치 앞에 선다. 팬이 돌면 해치로 더운 김이 올라 바깥 기계를 부르기 때문이다. 부두 분진이 외곽에 쌓이면 입구에 선다. 완전 밀폐 청정 구간 앞에서는 입구 쪽에 서 있다.
 
 갈래는 신내 탈영병 한 무리 안의 직책이다. 탈영병 분대장과 정예조와 척후조는 같은 부대 표식을 달고 있다. 분대장은 승강장 탁자와 무전기를 맡고, 정예조는 난간의 화기를 맡으며, 척후조는 통로 입구와 갤러리 해치를 맡는다.
 
@@ -7199,12 +7195,12 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 
 | 항목 | 기록 |
 |---|---|
-| 기원 | 신내 정부 차량기지 화물 당직이 한여름 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있고 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 정부 군의 표식이다. |
-| 서식·이동 | 무리가 모이는 자리는 신내 화물 엘리베이터 분진 통로다. 물 세척 주기와 정수 역세 일정에는 여의도 정수 필터 갤러리 해치 앞에 선다. 부두에서 분진이 들어오는 낮에는 외곽 통로 입구에 선다. 완전 밀폐 청정 구간 앞에서는 입구 쪽에 머물고 구간 안은 당직의 자리다. |
-| 먹이·에너지 | 탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 화물 엘리베이터 칸과 필터 갤러리 사이에 놓여 있다. 화물 목록은 탁자 끝에 있고 그 수량 칸에 줄이 그어져 있다. 갤러리 필터 당직의 물통은 같은 칸에 있다. 붙잡힌 당직이 있는 밤에는 풀어 주는 값으로 물통 몇 개가 목록 옆에 적힌다. |
-| 생애·정비 | 한여름 밤 통로 모퉁이에는 병사 몇이 서 있다. 초가을 세척 주기에는 같은 부대 표식을 단 병사와 나무 상자가 엘리베이터 칸에 더 있다. 역세가 돌아가는 새벽에는 무리가 승강장과 여의도 정수 필터 갤러리 해치 앞으로 나뉘어 있다. |
-| 감각 | 신내 탈영병은 분진 통로의 문턱과 갤러리의 해치를 살핀다. 문턱에 선 병사는 화물 칸을 향하고, 해치에 선 병사는 역세 배관을 향한다. 부두의 분진이 외곽 통로에 쌓이면 척후조는 입구에서 부두 쪽을 향한다. |
-| 집단 행동 | 분대장은 승강장 탁자의 무전기 앞에 있다. 정예조는 난간과 엘리베이터 문짝에 있다. 척후조는 분진 통로 입구와 갤러리 해치에 있다. 탄 상자와 물통은 분대장 발치에 있고 탄창은 정예조의 손 쪽에 있다. |
+| 기원 | 신내 정부 차량기지 화물 당직이 한여름 밤 신내 화물 엘리베이터 분진 통로에서 이 무리를 처음 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있고 발치에는 탄 상자와 연료 깡통이 있다. 어깨의 표식은 정부 군의 표식이다. |
+| 서식·이동 | 무리가 모이는 자리는 신내 화물 엘리베이터 분진 통로다. 배기 팬 점검 주기와 갤러리 가동 일정에는 여의도 환기 갤러리 해치 앞에 선다. 팬이 돌면 해치로 더운 김이 올라 바깥 기계를 부르기 때문이다. 부두에서 분진이 들어오는 낮에는 외곽 통로 입구에 선다. 완전 밀폐 청정 구간 앞에서는 입구 쪽에 머물고 구간 안은 당직의 자리다. |
+| 먹이·에너지 | 탄 상자, 전투식량 깡통, 연료 깡통, 여벌 전투복, 무전 전지가 화물 엘리베이터 칸과 환기 갤러리 사이에 놓여 있다. 화물 목록은 탁자 끝에 있고 그 수량 칸에 줄이 그어져 있다. 갤러리 환기 당직의 연료 깡통은 같은 칸에 있다. 붙잡힌 당직이 있는 밤에는 풀어 주는 값으로 연료 깡통 몇 개가 목록 옆에 적힌다. |
+| 생애·정비 | 한여름 밤 통로 모퉁이에는 병사 몇이 서 있다. 초가을 팬 점검 주기에는 같은 부대 표식을 단 병사와 나무 상자가 엘리베이터 칸에 더 있다. 배기 팬이 도는 새벽에는 무리가 승강장과 여의도 환기 갤러리 해치 앞으로 나뉘어 있다. |
+| 감각 | 신내 탈영병은 분진 통로의 문턱과 갤러리의 해치를 살핀다. 문턱에 선 병사는 화물 칸을 향하고, 해치에 선 병사는 배기 덕트를 향한다. 부두의 분진이 외곽 통로에 쌓이면 척후조는 입구에서 부두 쪽을 향한다. |
+| 집단 행동 | 분대장은 승강장 탁자의 무전기 앞에 있다. 정예조는 난간과 엘리베이터 문짝에 있다. 척후조는 분진 통로 입구와 갤러리 해치에 있다. 탄 상자와 연료 깡통은 분대장 발치에 있고 탄창은 정예조의 손 쪽에 있다. |
 
 <a id="Hostile-Group-G12-heading-0008"></a>
 
@@ -7234,7 +7230,7 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 | 공통종·변이와 지휘 범위 | 승강장 탁자와 무전기 앞의 자리이며, 무리에 이 위의 계급은 없다. 붙잡은 당직의 몸값을 정한다. |
 
 - 탁자 위의 무전기
-- 발치의 탄 상자와 물통
+- 발치의 탄 상자와 연료 깡통
 - 화물 목록의 수량 칸
 - 정부 군 표식
 
@@ -7271,7 +7267,7 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 | 구분 | 사람 |
 | 전장 단위 | 무리·부대 |
 | 전장 역할 | 통로 입구와 갤러리 해치 |
-| 공통종·변이와 지휘 범위 | 분진 통로 입구와 여의도 정수 필터 갤러리 해치이며, 외곽 통로에서는 부두 쪽을 본다. |
+| 공통종·변이와 지휘 범위 | 분진 통로 입구와 여의도 환기 갤러리 해치이며, 외곽 통로에서는 부두 쪽을 본다. |
 
 - 통로 입구 모퉁이의 자리
 - 해치 앞의 자리
@@ -7282,19 +7278,19 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 
 ## 서식권 기록
 
-한여름 밤 신내 화물 엘리베이터 분진 통로에서 정부 차량기지 화물 당직이 신내 탈영병을 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있고 발치에는 탄 상자와 물통이 있다. 어깨의 표식은 정부 군의 표식이다. 화물 당직은 문턱 안쪽에 있다.
+한여름 밤 신내 화물 엘리베이터 분진 통로에서 정부 차량기지 화물 당직이 신내 탈영병을 본다. 전투복을 입은 병사 여럿이 통로에 서 있다. 어깨에는 소총이 있고 발치에는 탄 상자와 연료 깡통이 있다. 어깨의 표식은 정부 군의 표식이다. 화물 당직은 문턱 안쪽에 있다.
 
-분대장은 승강장 탁자의 무전기 앞에 있다. 정예조는 난간과 엘리베이터 문짝에 있다. 척후조는 분진 통로 입구와 갤러리 해치에 있다. 탄 상자와 물통은 분대장 발치에 있고 탄창은 정예조의 손 쪽에 있다.
+분대장은 승강장 탁자의 무전기 앞에 있다. 정예조는 난간과 엘리베이터 문짝에 있다. 척후조는 분진 통로 입구와 갤러리 해치에 있다. 탄 상자와 연료 깡통은 분대장 발치에 있고 탄창은 정예조의 손 쪽에 있다.
 
-무리가 모이는 자리는 분진 통로다. 물 세척 주기와 정수 역세 일정에는 여의도 정수 필터 갤러리 해치 앞에 선다. 부두에서 분진이 들어오는 낮에는 외곽 통로에 선다. 완전 밀폐 청정 구간 앞에서는 입구에 머물며 구간 안은 당직의 자리다.
+무리가 모이는 자리는 분진 통로다. 배기 팬 점검 주기와 갤러리 가동 일정에는 여의도 환기 갤러리 해치 앞에 선다. 팬이 돌면 해치로 더운 김이 올라 바깥 기계를 부르기 때문이다. 부두에서 분진이 들어오는 낮에는 외곽 통로에 선다. 완전 밀폐 청정 구간 앞에서는 입구에 머물며 구간 안은 당직의 자리다.
 
-탄 상자, 전투식량 깡통, 물통, 여벌 전투복, 무전 전지가 엘리베이터 칸과 필터 갤러리 사이에 있다. 화물 목록은 탁자에 있고 수량 칸에 줄이 그어져 있다. 갤러리 필터 당직의 물통은 같은 칸에 있다.
+탄 상자, 전투식량 깡통, 연료 깡통, 여벌 전투복, 무전 전지가 엘리베이터 칸과 환기 갤러리 사이에 있다. 화물 목록은 탁자에 있고 수량 칸에 줄이 그어져 있다. 갤러리 환기 당직의 연료 깡통은 같은 칸에 있다.
 
-화물 당직과 필터 당직은 세척 시각과 화물 칸 시각을 한 표에 적는다. 정부 기계 당직은 그 시각에 승강 패널 앞에 있다. 자유도시 쪽 부두 당직은 분진 시각을 표의 아래칸에 적는다.
+화물 당직과 환기 당직은 팬 점검 시각과 화물 칸 시각을 한 표에 적는다. 정부 기계 당직은 그 시각에 승강 패널 앞에 있다. 자유도시 쪽 부두 당직은 분진 시각을 표의 아래칸에 적는다.
 
-같은 분진 통로에 선 모습이 세 차례로 달라져 있다. 처음에는 소총을 멘 병사가 통로 모퉁이에 있다. 다음에는 정예조가 난간에 있고 기관총과 탄 상자가 난간 위에 있다. 마지막에는 분대장이 화물 칸 앞과 필터 갤러리 계단 앞에 서 있다. 부두의 분진은 바닥에 깔려 있고 분대장과 척후조는 외곽을 향한다.
+같은 분진 통로에 선 모습이 세 차례로 달라져 있다. 처음에는 소총을 멘 병사가 통로 모퉁이에 있다. 다음에는 정예조가 난간에 있고 기관총과 탄 상자가 난간 위에 있다. 마지막에는 분대장이 화물 칸 앞과 환기 갤러리 계단 앞에 서 있다. 부두의 분진은 바닥에 깔려 있고 분대장과 척후조는 외곽을 향한다.
 
-화물 당직은 엘리베이터 문을 닫아 두고 화물 전원을 패널에서 내려 둔다. 화물 철장은 칸 입구에 포개져 있다. 필터 당직은 역세 시각에 갤러리 해치를 잠가 둔다. 기계 당직은 차단기를 내린 채 패널 앞에 있다. 붙잡힌 날의 당직은 난간 기둥 옆에 서 있고, 갤러리 물통은 탈영병 물통 줄에 올라가 있으며 역세 물은 밸브 앞에 머문다.
+화물 당직은 엘리베이터 문을 닫아 두고 화물 전원을 패널에서 내려 둔다. 화물 철장은 칸 입구에 포개져 있다. 환기 당직은 팬 점검 시각에 갤러리 해치를 잠가 둔다. 기계 당직은 차단기를 내린 채 패널 앞에 있다. 붙잡힌 날의 당직은 난간 기둥 옆에 서 있고, 갤러리 연료 깡통은 탈영병 깡통 줄에 올라가 있으며 배기의 더운 김은 댐퍼 앞에 머문다.
 
 <a id="Hostile-Group-G12-heading-0032"></a>
 
@@ -7315,15 +7311,15 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 
 <a id="Hostile-Group-G12-heading-0035"></a>
 
-### G12-SC2 · 역세 시각의 해치
+### G12-SC2 · 팬 점검 시각의 해치
 
 - 단계: 2
-- 촉발: 초가을 새벽 여의도 정수 필터 갤러리에서 역세가 돌아간다. 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
+- 촉발: 초가을 새벽 여의도 환기 갤러리에서 배기 팬이 돌아간다. 척후조는 해치 앞에 있다. 신내 화물 엘리베이터 칸은 아래 분진 통로에 있다. 승강 패널에서 그 칸으로 전원 선이 이어져 있다.
 - 관련 세력: government, free-city
-- 생태 기제: 세척 주기와 역세 일정이 같은 새벽에 겹친다. 필터 당직은 밸브 앞에 있다. 화물 당직은 칸 옆에 있다. 기계 당직은 패널 앞에 있다.
-- 선택지: 필터 당직이 역세 밸브를 일정표의 시각에 잠근다. / 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
-- 결과: 밸브가 잠겨 있으면 해치 앞의 척후조와 필터 당직이 같은 물가에 서 있다. 칸이 분진 통로 층에 고정되면 분대장은 그 승강장 탁자에 있다. 보조 전원 선이 패널 밖에 놓이면 해치 자물쇠는 필터 당직의 손에 있다.
-- 도덕 비용: 역세 물은 밸브 앞에 고여 있다. 필터 당직의 물통은 해치 옆에서 척후조 줄에 있다. 화물 칸의 전투식량 깡통은 승강장에 있다.
+- 생태 기제: 팬 점검 주기와 갤러리 가동 일정이 같은 새벽에 겹친다. 환기 당직은 댐퍼 앞에 있다. 화물 당직은 칸 옆에 있다. 기계 당직은 패널 앞에 있다.
+- 선택지: 환기 당직이 배기 댐퍼를 일정표의 시각에 닫는다. / 화물 당직이 화물 칸을 분진 통로 층에 고정한다. / 기계 당직이 갤러리 보조 전원을 승강 패널에서 분리한다.
+- 결과: 댐퍼가 닫혀 있으면 해치 앞의 척후조와 환기 당직이 같은 더운 바람 앞에 서 있다. 칸이 분진 통로 층에 고정되면 분대장은 그 승강장 탁자에 있다. 보조 전원 선이 패널 밖에 놓이면 해치 자물쇠는 환기 당직의 손에 있다.
+- 도덕 비용: 배기의 더운 김은 댐퍼 앞에 고여 있다. 환기 당직의 연료 깡통은 해치 옆에서 척후조 줄에 있다. 화물 칸의 전투식량 깡통은 승강장에 있다.
 - 원본 항목: G12
 
 <a id="Hostile-Group-G12-heading-0037"></a>
@@ -7331,12 +7327,12 @@ The freight duty officer keeps the elevator door shut and takes the freight powe
 ### G12-SC3 · 부두 분진의 외곽
 
 - 단계: 3
-- 촉발: 부두의 분진이 신내 화물 엘리베이터 외곽 통로 바닥에 쌓여 있다. 척후조는 외곽 입구에 있다. 필터 당직과 화물 당직과 기계 당직이 같은 시각 표 앞에 있다.
+- 촉발: 부두의 분진이 신내 화물 엘리베이터 외곽 통로 바닥에 쌓여 있다. 척후조는 외곽 입구에 있다. 환기 당직과 화물 당직과 기계 당직이 같은 시각 표 앞에 있다.
 - 관련 세력: government, free-city
 - 생태 기제: 분진이 외곽 통로에 있는 동안 분대장은 무전기 앞에 있다. 정예조는 난간에 있다. 척후조는 입구에 있다. 부두 당직의 분진 시각은 승강장 표의 아래칸에 적혀 있다.
-- 선택지: 부두 당직이 부두 출입 문을 닫는다. / 필터 당직이 여의도 정수 필터 갤러리 해치를 잠근다. / 화물 당직과 기계 당직이 완전 밀폐 청정 구간에 철장과 차단기 손잡이를 둔다.
-- 결과: 부두 출입 문이 닫혀 있으면 분진은 문 안쪽 통로에 있고 척후조는 문 앞에 있다. 갤러리 해치가 잠겨 있으면 척후조는 해치 앞과 외곽 입구에 나뉘어 있고 필터 당직은 밸브 앞에 있다. 청정 구간에 철장과 차단기가 있으면 신내 탈영병은 분진 통로 승강장에 있다.
-- 도덕 비용: 부두의 화물 포대는 출입 문 안에 있다. 갤러리 역세는 밸브 앞에 머문다. 청정 구간의 두 당직은 철장 안쪽에 있고 외곽 통로의 분진은 장화 높이로 쌓여 있다.
+- 선택지: 부두 당직이 부두 출입 문을 닫는다. / 환기 당직이 여의도 환기 갤러리 해치를 잠근다. / 화물 당직과 기계 당직이 완전 밀폐 청정 구간에 철장과 차단기 손잡이를 둔다.
+- 결과: 부두 출입 문이 닫혀 있으면 분진은 문 안쪽 통로에 있고 척후조는 문 앞에 있다. 갤러리 해치가 잠겨 있으면 척후조는 해치 앞과 외곽 입구에 나뉘어 있고 환기 당직은 댐퍼 앞에 있다. 청정 구간에 철장과 차단기가 있으면 신내 탈영병은 분진 통로 승강장에 있다.
+- 도덕 비용: 부두의 화물 포대는 출입 문 안에 있다. 갤러리의 더운 김은 댐퍼 앞에 머문다. 청정 구간의 두 당직은 철장 안쪽에 있고 외곽 통로의 분진은 장화 높이로 쌓여 있다.
 - 원본 항목: G12
 ');
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Hostile-Group-G13', 'G13 · Pincer Arm', 'G13 · 집게팔', 'bestiary', 13, '<a id="Hostile-Group-G13-heading-0001"></a>
@@ -10686,7 +10682,7 @@ Baesua reported false positives but had no authority to open a door, and only th
 |---|---|---|---|---|---|
 | [G15E01 · Consent-Roster Rounds Car](/wiki/Hostile-Group-G15/#g15e01) | Machine type | Single individual | Roster Rounds | sequencer | M023 |
 | [G15E02 · Blanket-Folding Rounds Car](/wiki/Hostile-Group-G15/#g15e02) | Machine type | Single individual | Body-Heat Overprotection | common ecology type | M023 |
-| [G15E03 · Water-Cup Ration Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Water Metering | common ecology type | M023 |
+| [G15E03 · Dose-Cup Ration Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Dose Metering | common ecology type | M023 |
 | [G15E04 · Fall-Alarm Brace](/wiki/Hostile-Group-G15/#g15e04) | Machine type | Single individual | Fall Blockade | common ecology type | M023 |
 | [G15E05 · Patch-Frequency Nursing Car](/wiki/Hostile-Group-G15/#g15e05) | Machine type | Single individual | Patch Relay | occupational special type | M023 |
 | [G15E06 · Brace-Joint Fitter](/wiki/Hostile-Group-G15/#g15e06) | Machine type | Single individual | Joint Correction | occupational special type | M023 |
@@ -10842,7 +10838,7 @@ G15-SC1, G15-SC2.
 <a id="Hostile-Group-G15-heading-0053"></a>
 <a id="g15e03"></a>
 
-### G15E03 · Water-Cup Ration Car
+### G15E03 · Dose-Cup Ration Car
 
 - Source batch: M023
 - Former role class: common ecology type
@@ -10851,56 +10847,56 @@ G15-SC1, G15-SC2.
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
-| Battlefield role | Water Metering |
-| Common species, variants and command scope | A three-wheeled cart with a clear measuring cylinder and a short water nozzle. On the pump band''s instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands, and when the filter clogs it only reclaims water and supplies none. |
+| Battlefield role | Dose Metering |
+| Common species, variants and command scope | A three-wheeled cart with a clear measuring cylinder and a short medicine nozzle. On the pump band''s instructions it confiscates cups over the fixed dose and ignores cries of pain as out-of-table demands, and when the filter clogs it only reclaims the medicine and hands none out. |
 
 <a id="Hostile-Group-G15-heading-0056"></a>
 
 ### Role and Body
 
-A common ecology form: a three-wheeled cart with a clear measuring cylinder and a short water nozzle.
+A common ecology form: a three-wheeled cart with a clear measuring cylinder and a short medicine nozzle.
 
 <a id="Hostile-Group-G15-heading-0058"></a>
 
 ### Origin
 
-Equipment that once managed per-sickbed rationed water took an old intake table as its absolute standard.
+Equipment that once managed per-sickbed rationed medicine took an old dosage table as its absolute standard. Medicine is scarce in Seoul, and a table meant to stretch it now turns the sick away.
 
 <a id="Hostile-Group-G15-heading-0060"></a>
 
 ### Habitat and Needs
 
-It shuttles between the water station and the sickbeds, needing purified water, nozzle filters, and small pump power.
+It shuttles between the medicine station and the sickbeds, needing medicine solution, nozzle filters, and small pump power.
 
 <a id="Hostile-Group-G15-heading-0062"></a>
 
 ### Life and Maintenance
 
-When the filter clogs it only reclaims water and supplies none, returning to normal for one shift after cleaning.
+When the filter clogs it only reclaims the medicine and hands none out, returning to normal for one shift after cleaning.
 
 <a id="Hostile-Group-G15-heading-0064"></a>
 
 ### Behavior and Hierarchy
 
-On the pump band''s instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands.
+On the pump band''s instructions it confiscates cups over the fixed dose and ignores cries of pain as out-of-table demands.
 
 <a id="Hostile-Group-G15-heading-0066"></a>
 
 ### Escalation
 
-Stage 1 re-inspects cups, stage 2 force-reclaims issued rations, and stage 3 locks the water line.
+Stage 1 re-inspects cups, stage 2 force-reclaims issued rations, and stage 3 locks the dosing line.
 
 <a id="Hostile-Group-G15-heading-0068"></a>
 
 ### Engagement and Response
 
-It stops when shown the latest ration table and a manual valve, and destroying the nozzle contaminates precious purified water.
+It stops when shown the latest ration table and a manual valve, and destroying the nozzle spoils precious medicine solution.
 
 <a id="Hostile-Group-G15-heading-0070"></a>
 
 ### Negotiation and Moral Choice
 
-If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. Leak-free watering can be entrusted to it, but who approves exception amounts for children and the injured must be agreed.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. Leak-free dosing can be entrusted to it, but who approves exception amounts for children and the injured must be agreed.
 
 <a id="Hostile-Group-G15-heading-0072"></a>
 
@@ -11923,7 +11919,7 @@ Coexistence meant accepting slow opening procedures and the cost of extra watche
 |---|---|---|---|---|---|
 | [G15E01 · 동의명단순회차](/wiki/Hostile-Group-G15/#g15e01) | 기계 기종 | 독립 개체 | 명단 순회 | 순서 담당 | M023 |
 | [G15E02 · 담요접는순회차](/wiki/Hostile-Group-G15/#g15e02) | 기계 기종 | 독립 개체 | 체온 과보호 | 일반 생태형 | M023 |
-| [G15E03 · 물컵재는배급차](/wiki/Hostile-Group-G15/#g15e03) | 기계 기종 | 독립 개체 | 물 계량 | 일반 생태형 | M023 |
+| [G15E03 · 약잔재는배급차](/wiki/Hostile-Group-G15/#g15e03) | 기계 기종 | 독립 개체 | 투약 계량 | 일반 생태형 | M023 |
 | [G15E04 · 낙상벨받침체](/wiki/Hostile-Group-G15/#g15e04) | 기계 기종 | 독립 개체 | 낙상 봉쇄 | 일반 생태형 | M023 |
 | [G15E05 · 패치주파수간호차](/wiki/Hostile-Group-G15/#g15e05) | 기계 기종 | 독립 개체 | 패치 중계 | 직능 특수형 | M023 |
 | [G15E06 · 보조기관절맞춤체](/wiki/Hostile-Group-G15/#g15e06) | 기계 기종 | 독립 개체 | 관절 교정 | 직능 특수형 | M023 |
@@ -12079,7 +12075,7 @@ G15-SC1, G15-SC2.
 <a id="Hostile-Group-G15-heading-0053"></a>
 <a id="g15e03"></a>
 
-### G15E03 · 물컵재는배급차
+### G15E03 · 약잔재는배급차
 
 - 출처 배치: M023
 - 기존 역할군: 일반 생태형
@@ -12088,56 +12084,56 @@ G15-SC1, G15-SC2.
 |---|---|
 | 구분 | 기계 기종 |
 | 전장 단위 | 독립 개체 |
-| 전장 역할 | 물 계량 |
-| 공통종·변이와 지휘 범위 | 투명 계량통과 짧은 물 노즐을 단 바퀴 세 개짜리 카트다. 펌프 무리의 지시를 받아 정량을 넘긴 컵을 빼앗고 갈증 표현을 표 밖 요구로 무시하며, 필터가 막히면 물을 회수만 하고 공급하지 않는다. |
+| 전장 역할 | 투약 계량 |
+| 공통종·변이와 지휘 범위 | 투명 계량통과 짧은 약액 노즐을 단 바퀴 세 개짜리 카트다. 펌프 무리의 지시를 받아 정량을 넘긴 약잔을 빼앗고 통증 호소를 표 밖 요구로 무시하며, 필터가 막히면 약액을 회수만 하고 내어 주지 않는다. |
 
 <a id="Hostile-Group-G15-heading-0056"></a>
 
 ### 역할·신체
 
-일반 생태형으로, 투명 계량통과 짧은 물 노즐을 단 바퀴 세 개짜리 카트다.
+일반 생태형으로, 투명 계량통과 짧은 약액 노즐을 단 바퀴 세 개짜리 카트다.
 
 <a id="Hostile-Group-G15-heading-0058"></a>
 
 ### 기원
 
-병상별 물 제한량을 관리하던 장비가 오래된 섭취량 표를 절대 기준으로 삼았다.
+병상별 약 제한량을 관리하던 장비가 오래된 투약량 표를 절대 기준으로 삼았다. 약이 귀한 서울에서 이 표는 약을 아끼는 장치였으나 지금은 아픈 사람의 호소를 표 밖으로 돌린다.
 
 <a id="Hostile-Group-G15-heading-0060"></a>
 
 ### 서식·필요
 
-물 스테이션과 병상 사이를 오가며 정수, 노즐 필터, 소형 펌프 전력이 필요하다.
+약 스테이션과 병상 사이를 오가며 약액, 노즐 필터, 소형 펌프 전력이 필요하다.
 
 <a id="Hostile-Group-G15-heading-0062"></a>
 
 ### 생애·정비
 
-필터가 막히면 물을 거두기만 하고 공급하지 않으며, 세척 뒤 한 교대 동안 정상으로 돌아온다.
+필터가 막히면 약액을 거두기만 하고 내어 주지 않으며, 세척 뒤 한 교대 동안 정상으로 돌아온다.
 
 <a id="Hostile-Group-G15-heading-0064"></a>
 
 ### 행동·위계
 
-펌프 무리의 지시를 받아 정량을 넘긴 컵을 빼앗고 갈증 표현을 표 밖 요구로 무시한다.
+펌프 무리의 지시를 받아 정량을 넘긴 약잔을 빼앗고 통증 호소를 표 밖 요구로 무시한다.
 
 <a id="Hostile-Group-G15-heading-0066"></a>
 
 ### 상승
 
-1단계에는 컵을 재검사하고, 2단계에는 배급량을 강제 회수하며, 3단계에는 물 줄을 잠근다.
+1단계에는 약잔을 재검사하고, 2단계에는 배급량을 강제 회수하며, 3단계에는 투약 줄을 잠근다.
 
 <a id="Hostile-Group-G15-heading-0068"></a>
 
 ### 교전·대응
 
-최신 배급표와 수동 밸브를 제시하면 멈추며 노즐 파괴는 귀중한 정수를 오염시킨다.
+최신 배급표와 수동 밸브를 제시하면 멈추며 노즐 파괴는 귀중한 약액을 흘려 못 쓰게 만든다.
 
 <a id="Hostile-Group-G15-heading-0070"></a>
 
 ### 교섭·도덕 선택
 
-역 당직이 병상 칸의 불과 난방을 낮추고 셔터를 내리면 가까이 오지 않는다. 잡아서 필터와 펌프 부품을 떼어 가면 이 기체는 멎고, 이 구역의 수가 그만큼 준다. 누수 없는 물 배분을 맡기는 대신 어린이·부상자 예외량을 누가 승인할지 합의해야 한다.
+역 당직이 병상 칸의 불과 난방을 낮추고 셔터를 내리면 가까이 오지 않는다. 잡아서 필터와 펌프 부품을 떼어 가면 이 기체는 멎고, 이 구역의 수가 그만큼 준다. 새는 약 없는 정량 투약을 맡기는 대신 어린이·부상자 예외량을 누가 승인할지 합의해야 한다.
 
 <a id="Hostile-Group-G15-heading-0072"></a>
 
@@ -13482,7 +13478,7 @@ At stage 1, its arms move; at stage 2, it blocks storage-yard routes; at stage 3
 
 ### Engagement and Response
 
-Its arms must be folded by separating rail sections and hydraulics; explosives damage water-supply facilities.
+Its arms must be folded by separating rail sections and hydraulics; explosives damage the adjacent power distribution equipment.
 
 <a id="Hostile-Group-G16-heading-0068"></a>
 
@@ -14280,7 +14276,7 @@ Coexistence left the labor of watching the old cache and continually updating th
 
 ### 교전·대응
 
-먼저 불과 열의 원천을 끄고 나서 손댄다. 레일 구획과 유압을 분리해 암을 접어야 하며 폭파는 상수 시설을 손상시킨다.
+먼저 불과 열의 원천을 끄고 나서 손댄다. 레일 구획과 유압을 분리해 암을 접어야 하며 폭파는 인접한 배전 설비를 손상시킨다.
 
 <a id="Hostile-Group-G16-heading-0068"></a>
 
@@ -17508,7 +17504,7 @@ The machine''s sequencing module adjusted only work sequence and return lines. I
 - Origin: A large carrier that traveled between a supply depot outside the rescue site and the search entrance remained behind. It cannot erase the entrance number on an old delivery sheet in Mapo warehouse.
 - Habitat and needs: It physically travels between gallery ramps and the Yongsan Line retrieval loading platform. Consumption of ankle bearings, cargo-compartment seals, and power-storage cylinders rises with the weight it carries.
 - Life cycle and maintenance: It uses an internal scale to reduce the difference between the loads on its two sides, sometimes emptying one compartment. If the scale fails, it waits at the charging station with its body tilted.
-- Behavior and hierarchy: It does not depart until the charging honeybee has delivered power. Because it trusts weight over packaging color, it can mistakenly swap containers of drinking water and waste lubricating oil.
+- Behavior and hierarchy: It does not depart until the charging honeybee has delivered power. Because it trusts weight over packaging color, it can mistakenly swap containers of cooking oil and waste lubricating oil.
 - Escalation: Stage 1 round trips with empty compartments continue, and at stage 2 citizens'' supplies pile up at the wrong entrance. At stage 3, carriers traveling against the flow block the uphill evacuation route.
 - Combat and response: After checking the contents, balance the test weights in both compartments and hang the delivery-complete plate at the actual entrance. Overturning the chassis spills unsealed containers onto the ramp.
 - Negotiation and moral choice: If the station watch cuts the lights in the gallery, covers stoves and heaters, and lowers the shutter, it does not come close. If it is captured and stripped of storage cells, precision motors, and optical lenses it stops, and the number in this district falls by that much. A person can label each cargo item''s contents and determine its share of transport. Ownership of inventory entrusted to the swarm by a community must also be recognized at its destination.
@@ -18066,7 +18062,7 @@ The ending that kept one double line for rescue preserved the ability to search 
 - 기원: 구조 현장 밖 보급 적치장과 수색 입구를 왕복하던 대형 운반차가 남았다. 마포 창고의 옛 배송표에 적힌 입구 번호를 지우지 못한다.
 - 서식·필요: 갤러리 경사로와 용산선 회수 적재대를 물리적으로 오간다. 발목 베어링, 화물함 패킹과 축전통의 사용량이 실은 무게에 따라 늘어난다.
 - 생애·정비: 양쪽 짐의 차이를 내부 저울로 줄여 한 칸을 비우기도 한다. 저울이 고장 나면 몸을 기울인 채 충전대에서 대기한다.
-- 행동·위계: 충전 꿀벌의 전력 배달이 끝나야 출발한다. 포장 색보다 무게를 우선하므로 식수통과 폐윤활유통을 잘못 맞바꿀 수 있다.
+- 행동·위계: 충전 꿀벌의 전력 배달이 끝나야 출발한다. 포장 색보다 무게를 우선하므로 식용유통과 폐윤활유통을 잘못 맞바꿀 수 있다.
 - 상승: 1단계 빈 함 왕복이 이어지고 2단계에는 시민 재고가 틀린 입구에 쌓인다. 3단계 역주행 운반열은 오르막 피난로를 막는다.
 - 교전·대응: 내용물 확인 후 양쪽 함의 시험추를 맞추고 배송 종료판을 실제 입구에 건다. 차체를 뒤집으면 밀폐되지 않은 통이 경사로에 쏟아진다.
 - 교섭·도덕 선택: 역 당직이 갤러리의 불을 끄고 난로와 난방기를 덮고 셔터를 내리면 가까이 오지 않는다. 잡아서 축전 셀·정밀 모터·광학 렌즈를 떼어 가면 이 기체는 멎고, 이 구역의 수가 그만큼 준다. 화물마다 사람이 내용표를 붙이고 운반 몫을 정할 수 있다. 군집에 맡긴 재고가 어느 공동체의 소유인지 도착지에서도 인정해야 한다.
@@ -18825,7 +18821,7 @@ When a single knee bearing wore out, the whole semi-upright machine lost its sta
 
 Two stopped units could be combined to revive one, but no stronger power core could be made.
 
-When the Government depot supplied rail steel and fuel, the heavy convoy route opened, but the same resources were needed to repair civilian trains and the piping equipment of the Gwangjin Line.
+When the Government depot supplied rail steel and fuel, the heavy convoy route opened, but the same resources were needed to repair civilian trains and the power distribution equipment of the Gwangjin Line.
 
 The decision to preserve the formation was not a matter of gaining enormous power but of paying for hydraulic oil and floor verification with every job.
 
@@ -18855,15 +18851,15 @@ Choosing to investigate delayed the fuel wagons from beyond the cordon outside S
 
 <a id="Hostile-Group-G26-heading-0109"></a>
 
-### G26-SC2 · The Pipe the Shields Dragged Out
+### G26-SC2 · The Cable the Shields Dragged Out
 
-At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged the guard of a water pipe to be waste reinforcement.
+At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged the guard of a power cable to be waste reinforcement.
 
-The eastern convoy route widened, but the vibration of the pipe behind the shields grew, and the semi-upright machine tried to enter within the old work boundary drawn by the long-wing units.
+The eastern convoy route widened, but the vibration of the cable run behind the shields grew, and the semi-upright machine tried to enter within the old work boundary drawn by the long-wing units.
 
-The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and build pipe supports first, or accept the piping loss and open the way in one go.
+The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and build cable supports first, or accept the cable loss and open the way in one go.
 
-the depot''s supply promise and the Gwangjin Line''s water piping hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
+the depot''s supply promise and the Gwangjin Line''s power cable hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
 
 <a id="Hostile-Group-G26-heading-0114"></a>
 
@@ -18875,7 +18871,7 @@ The triangular units blocked the entrance with a continuous shield wall, and the
 
 The people on site had to recover the watchers with landing markers and reconcile the maps, hang no-load pulleys on each shield and release the tension in order, or connect external cooling pipes and then lock the reference body''s knees.
 
-Blowing up the core opened the passage fastest, but the shock reached even the fuel and piping facilities.
+Blowing up the core opened the passage fastest, but the shock reached even the fuel and power facilities.
 
 The ending that saved the formation required public load tests and joint supervision for every heavy job from then on, and the ending that dismantled it gave parts at once but left the next large piece of collapse debris to be moved by human hands.
 ', '<a id="Hostile-Group-G26-heading-0001"></a>
@@ -19383,7 +19379,7 @@ The ending that saved the formation required public load tests and joint supervi
 
 멎은 둘을 합쳐 하나를 살릴 수는 있어도 더 강한 동력핵은 만들지 못한다.
 
-정부 정비창이 레일 강재와 연료를 제공하면 중량 호송로가 열리지만, 같은 자원은 시민 열차와 광진선 배관 설비의 수리에도 필요하다.
+정부 정비창이 레일 강재와 연료를 제공하면 중량 호송로가 열리지만, 같은 자원은 시민 열차와 광진선 배전 설비의 수리에도 필요하다.
 
 편대를 보존하려면 거대한 전력을 얻는 것이 아니라 매 작업마다 유압유와 바닥 검증 비용을 치러야 한다.
 
@@ -19413,15 +19409,15 @@ The ending that saved the formation required public load tests and joint supervi
 
 <a id="Hostile-Group-G26-heading-0109"></a>
 
-### G26-SC2 · 방패가 끌어낸 배관
+### G26-SC2 · 방패가 끌어낸 전선
 
-광진선 고덕 기지에서 삼각 견인기들이 붕괴 차단벽을 치우다가 물 배관 보호대를 폐보강재로 판정한다.
+광진선 고덕 기지에서 삼각 견인기들이 붕괴 차단벽을 치우다가 배전 케이블 보호대를 폐보강재로 판정한다.
 
-동부 호송로는 넓어지지만 방패 뒤 배관의 진동이 커지고, 반립기는 장익기가 그린 옛 작업 경계 안으로 진입하려 한다.
+동부 호송로는 넓어지지만 방패 뒤 케이블의 진동이 커지고, 반립기는 장익기가 그린 옛 작업 경계 안으로 진입하려 한다.
 
-현장 인원은 새 경계 말뚝을 세워 차단벽만 분할 견인하거나, 호송을 하루 멈추. 배관 지지대를 먼저 만들거나 배관 손실을 감수해 한 번에 길을 열 수 있다.
+현장 인원은 새 경계 말뚝을 세워 차단벽만 분할 견인하거나, 호송을 하루 멈추. 케이블 지지대를 먼저 만들거나 케이블 손실을 감수해 한 번에 길을 열 수 있다.
 
-정비창의 보급 약속과 광진선의 물 배관이 같은 견인선 양끝에 걸리며 어느 쪽의 지연도 다른 세력에 비용을 넘긴다.
+정비창의 보급 약속과 광진선의 배전 케이블이 같은 견인선 양끝에 걸리며 어느 쪽의 지연도 다른 세력에 비용을 넘긴다.
 
 <a id="Hostile-Group-G26-heading-0114"></a>
 
@@ -19433,7 +19429,7 @@ The ending that saved the formation required public load tests and joint supervi
 
 현장 인원은 착륙 표식으로 감시기를 회수해 지도를 일치시키거나, 방패마다 무부하 풀리를 걸어 장력을 순서대로 빼거나 외부 냉각관을 연결한 뒤 기준체의 무릎을 고정해야 한다.
 
-핵을 폭파하면 가장 빨리 통로가 열리지만 연료와 배관 시설까지 충격을 받는다.
+핵을 폭파하면 가장 빨리 통로가 열리지만 연료와 배전 시설까지 충격을 받는다.
 
 편대를 살리면 앞으로 모든 중량 작업에 공개 하중 시험과 공동 감독이 필요하고, 해체하면 즉시 부품을 받는 대신 다음 대형 붕괴물을 사람 손으로 옮겨야 한다.
 ');
@@ -19441,7 +19437,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 ## Stopped Orders, Remaining Chassis
 
-The city''s disaster-response organizations matched chassis forms to missions. Insect-form chassis took search, reptile-form chassis took reinforcement, and arthropod-form chassis took conduit inspection. When a disaster struck, the machines that searched for survivors, the machines that shored up structures, and the machines that inspected deep conduits divided the work among themselves.
+The city''s disaster-response organizations matched chassis forms to missions. Insect-form chassis took search, reptile-form chassis took reinforcement, and arthropod-form chassis took tunnel inspection. When a disaster struck, the machines that searched for survivors, the machines that shored up structures, and the machines that inspected deep tunnels divided the work among themselves.
 
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
@@ -19567,7 +19563,7 @@ Machine control boards have wired and wireless protocol connection standards, an
 <a id="m040-몬스터-배치의-현장-적용-list2"></a>
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
-These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules. The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed conduit. G25 Lantern Ant chassis spread a broad front along the corridor''s forward side, minutely detecting intruder responses. G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
+These armed recovery squads competed in performance by occupying restart triggers ahead of others to capture intact chassis, or disabling them on the spot to strip the core modules. The lost-chassis swarm included in the M040 deployment appeared in sequence at the field the moment the trigger fired in the designated sealed passage. G25 Lantern Ant chassis spread a broad front along the corridor''s forward side, minutely detecting intruder responses. G26 Iron Dinosaur chassis heavily blocked the stronghold crossings, physically repelling mid-range approach.
 
 ### From Capture to Unit
 
@@ -19698,7 +19694,7 @@ The people of machine tending, circulation practice, and old-world symbol keepin
 
 ## 멈춘 명령, 남은 기체
 
-도시의 방재 조직은 임무에 따라 기체의 형태를 달리했다. 곤충 형태의 기체는 수색을, 파충류 형태의 기체는 보강을, 절지동물 형태의 기체는 관로 검사를 맡았다. 재난이 일어나면 생존자를 찾는 기체와 구조물을 보강하는 기체, 심층 관로를 검사하는 기체가 일을 나누었다.
+도시의 방재 조직은 임무에 따라 기체의 형태를 달리했다. 곤충 형태의 기체는 수색을, 파충류 형태의 기체는 보강을, 절지동물 형태의 기체는 터널 점검을 맡았다. 재난이 일어나면 생존자를 찾는 기체와 구조물을 보강하는 기체, 심층 터널을 점검하는 기체가 일을 나누었다.
 
 <a id="개요-p4"></a>
 <a id="개요-p2"></a>
@@ -19810,7 +19806,7 @@ G26 철공룡은 공룡형 골격을 가진 라인으로 중장비 이동과 구
 <a id="m040-몬스터-배치의-현장-적용-list2"></a>
 <a id="m040-몬스터-배치의-현장-적용"></a>
 
-무장 회수 반은 남보다 먼저 재기동 개시점을 점거해 온전한 기체를 포획한다. 즉시 무력화한 뒤 주요 모듈을 해체하기도 한다. M040 군집은 지정된 봉인 관로에서 개시점이 작동하는 순간 순차적으로 모습을 드러낸다. G25 등불개미는 통로 앞쪽에 수색 전열을 넓게 펴 침입자 반응을 미세하게 검출한다. G26 철공룡은 거점 교차로를 막고 중거리 접근을 물리적으로 튕겨낸다.
+무장 회수 반은 남보다 먼저 재기동 개시점을 점거해 온전한 기체를 포획한다. 즉시 무력화한 뒤 주요 모듈을 해체하기도 한다. M040 군집은 지정된 봉인 통로에서 개시점이 작동하는 순간 순차적으로 모습을 드러낸다. G25 등불개미는 통로 앞쪽에 수색 전열을 넓게 펴 침입자 반응을 미세하게 검출한다. G26 철공룡은 거점 교차로를 막고 중거리 접근을 물리적으로 튕겨낸다.
 
 ### 포획에서 병종까지
 
@@ -20361,7 +20357,7 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 
 In the Seoul of 2126, the ones who build polities are people. They live in the concourses of Yeongdeungpo, Seoul Station, and Amsa, stand station watch, and line up at the ration windows. In the same living spheres there are stopped machines and machines that repeat their last task, and raptors, feral dogs, and rat swarms follow the rations, the heat, and the wetlands. Modern and future weapons, humanoids, and machines remain, but they are scarce. After the night of the Great Blackout, people, machines, and animals settled inside the stations as follows.
 
-While the Great Blackout cut communications, designated facility officers used on-site authority. Yeongdeungpo waterworks staff operated the valves by hand.
+While the Great Blackout cut communications, designated facility officers used on-site authority. Yeongdeungpo depot staff operated the switchboards by hand.
 
 ## People
 
@@ -20369,7 +20365,7 @@ While the Great Blackout cut communications, designated facility officers used o
 
 The Government required a Government Seoul Complex stamp from Gwanghwamun on Jongno and Jung-gu passes. Commercial contracts in Jongno and Jung-gu needed that stamp to be registered with the Records Bureau.
 
-When the water was cut off, labor folded first. Even when food ran short, the next day''s hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
+When heating fuel was cut off, labor folded first. Even when food ran short, the next day''s hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
 
 ## The Remnants of Logistics Humanoids
 
@@ -20387,9 +20383,9 @@ Synthetic humanoids are very rare. Neither the kind of body alone grants nor den
 
 **A. Surviving disaster-response machines**
 
-There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
+There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and tunnel inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
 
-The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment plants such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. These machines are no faction''s enemy. To a person caught in their search or guard routine they are a hazard, but once captured, repaired and woken with an Arc signature they become a faction''s workers and units. The four steps of capture, repair, signal check and thought control are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+The triggers for restart were voltage, temperature, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, drainage pump areas such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. These machines are no faction''s enemy. To a person caught in their search or guard routine they are a hazard, but once captured, repaired and woken with an Arc signature they become a faction''s workers and units. The four steps of capture, repair, signal check and thought control are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
 
@@ -20403,7 +20399,7 @@ Feral dogs formed families along the walls of the Magok laboratories, in closed 
 
 Rats made states at the transfers. Where crumbs and the heat of insulated pipes overlapped at the junctions where the Gangdong-Amsa ration passages met the Eunpyeong-Seongbuk evacuation stairs, two or three core nests formed under the cable trays. There is no record that the colonies host any special plague. They were only a density of food, warmth, and shelter. When their droppings damaged wire insulation, the guidance displays went dark, and in the dark passages people thought of contagion first. [G05](/wiki/Hostile-Group-G05/).
 
-On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When the pond level dropped suddenly, the flocks shot up over the depot tracks and blocked the train movements. The stopovers of the Han and the depot ponds existed in 2026 as well. [G06](/wiki/Hostile-Group-G06/).
+On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When warm steam rose from a station vent, the flocks shot up over the depot tracks and blocked the train movements. The stopovers of the Han and the depot ponds existed in 2026 as well. [G06](/wiki/Hostile-Group-G06/).
 
 Sweeping up the swarms with firearms was left as a last resort. Sealing, ration detours, and the collection of leftovers were closer to what guarded the human windows. Why the stations, tunnels, and depots were the skeleton of those windows was connected by [The Structures Compendium](/wiki/Structures/).
 
@@ -20427,7 +20423,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 2126년 서울에서 나라를 세우는 주체는 사람이다. 사람들은 영등포·서울역·암사의 대합실에서 거주하며 역 당직을 서고 배급 창구에 줄을 선다. 같은 생활권에는 정지한 기계와 마지막 임무를 반복하는 기체가 있고 맹금과 들개와 쥐 무리는 배급과 열과 습지를 따른다. 현대·미래 무기와 휴머노이드와 기계는 남아 있지만 귀하다. 대정전의 밤 이후 역 안에는 사람·기체·동물이 아래처럼 자리 잡았다.
 
-대정전으로 통신이 끊긴 동안 지정 시설별 비상대비업무담당자가 현장 권한을 행사하였다. 영등포 정수센터 당직자들은 밸브를 수동으로 조작하였다.
+대정전으로 통신이 끊긴 동안 지정 시설별 비상대비업무담당자가 현장 권한을 행사하였다. 영등포 차량기지 당직자들은 분전반을 수동으로 조작하였다.
 
 ## 사람
 
@@ -20435,7 +20431,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 정부는 종로·중구 통행증에 광화문 정부서울청사 도장을 찍도록 정하였다. 종로·중구의 상거래 계약서는 이 도장이 있어야 기록청에 등재되었다.
 
-물이 끊긴 역에서는 노동이 먼저 멈춘다. 식량이 부족하면 다음 날의 작업 속도가 떨어지고 의약품이 떨어지면 치료를 시작할 수 없다. 사람과 수조의 병이 같은 창구에서 접수되는 사례는 [질병과 증상](/wiki/Ailments/)에 기재되어 있다.
+난방 연료가 끊긴 역에서는 노동이 먼저 멈춘다. 식량이 부족하면 다음 날의 작업 속도가 떨어지고 의약품이 떨어지면 치료를 시작할 수 없다. 사람과 수조의 병이 같은 창구에서 접수되는 사례는 [질병과 증상](/wiki/Ailments/)에 기재되어 있다.
 
 ## 물류 휴머노이드의 잔존
 
@@ -20453,9 +20449,9 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 **가. 방재 기체의 잔존**
 
-물류 휴머노이드와는 계통이 다른 방재 기체가 있다. 붕괴 전 방재 조직은 수색·보강·관로 검사에 이 기체를 쓰려 하였으나 상위 제어망이 끊겼다. 마지막 수색·경계·이송 루틴은 계속되고 있다. 소형 발광 군집, 유압으로 잔해를 미는 중장비, 납작한 수중 기체가 그 세 종류다.
+물류 휴머노이드와는 계통이 다른 방재 기체가 있다. 붕괴 전 방재 조직은 수색·보강·터널 점검에 이 기체를 쓰려 하였으나 상위 제어망이 끊겼다. 마지막 수색·경계·이송 루틴은 계속되고 있다. 소형 발광 군집, 유압으로 잔해를 미는 중장비, 납작한 수중 기체가 그 세 종류다.
 
-재기동 조건은 전압·수위·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 정수장과 심층 터널 갤러리에 기체가 있다. 탐사원이 아크가 서명해 내준 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 서명이 없는 카드는 켜고 끄는 기초 기능까지만 된다. 다른 시설을 제어할 권한은 없다. 이 기체들은 세 세력 누구의 적도 아니다. 수색·경계 루틴에 걸린 사람에게는 재해이지만, 붙잡아 고치고 아크 서명으로 깨우면 세력의 일꾼과 병종이 된다. 포획, 정비, 신호 확인, 생각 조종의 네 단계는 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
+재기동 조건은 전압·온도·인가 신호이다. 신정·군자·고덕의 차량기지 인접 역과 영등포·뚝섬·암사의 배수 펌프 구역과 심층 터널 갤러리에 기체가 있다. 탐사원이 아크가 서명해 내준 프로토콜 카드를 제시하면 해당 라인·개시점·명령 묶음만 잠시 멈춘다. 서명이 없는 카드는 켜고 끄는 기초 기능까지만 된다. 다른 시설을 제어할 권한은 없다. 이 기체들은 세 세력 누구의 적도 아니다. 수색·경계 루틴에 걸린 사람에게는 재해이지만, 붙잡아 고치고 아크 서명으로 깨우면 세력의 일꾼과 병종이 된다. 포획, 정비, 신호 확인, 생각 조종의 네 단계는 [병종 로스터와 테크트리](/wiki/Unit-Roster-and-Tech-Tree/)에 있다. 모듈과 회수 경제는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)에 있다.
 
 축전 모듈은 이미 저장된 전하를 방출할 뿐 발전기를 대체하지 못한다. 배터리 셀이 노화하고 충전 단자를 확보하지 못하면 기체의 행동 반복도 정지한다. 공방에서 유압 실린더를 고친다고 해서 구시대의 생산 라인이 돌아온 것은 아니다.
 
@@ -20469,7 +20465,7 @@ Sweeping up the swarms with firearms was left as a last resort. Sealing, ration 
 
 쥐는 환승 통로의 케이블 트레이 아래에 군락을 이룬다. 강동·암사 배급 통로와 은평·성북 대피 계단이 만나는 곳에는 부스러기와 보온 배관의 열이 있다. 그 아래에 코어 둥지 둘 또는 셋이 생긴다. 이 군락이 특별한 역병의 숙주라는 기록은 없다. 배설물이 전선 피복을 상하게 하면 안내 전광이 꺼진다. 사람들은 꺼진 통로에서 전염을 의심한다. 현장 기록은 [G05](/wiki/Hostile-Group-G05/)에 있다.
 
-한강·난지·암사 습지와 창동 기지 배수 연못에는 수조류와 섭금류가 먼저 앉는다. 먹이가 늘면 맹금이 전선으로 온다. 연못 수위가 갑자기 내려가면 무리가 구내선 위로 날아올라 입출고를 막는다. 한강 기착지와 차량기지 연못은 2026년에도 있었다. 현장 기록은 [G06](/wiki/Hostile-Group-G06/)에 있다.
+한강·난지·암사 습지와 창동 기지 배수 연못에는 수조류와 섭금류가 먼저 앉는다. 먹이가 늘면 맹금이 전선으로 온다. 역 환기구에서 더운 김이 올라오면 무리가 구내선 위로 날아올라 입출고를 막는다. 한강 기착지와 차량기지 연못은 2026년에도 있었다. 현장 기록은 [G06](/wiki/Hostile-Group-G06/)에 있다.
 
 총기로 동물 군락을 소탕하는 행위는 최후의 수단으로 간주한다. 거주 구역 봉인, 급식 경로 우회, 잉여 잔반 회수 방식이 사람의 배급 창구를 방어하는 주요 수단이다. 지하철역, 터널, 차량기지가 이 방어망의 핵심 구조가 되는 원리는 [구조물 총람](/wiki/Structures/)에서 설명한다.
 
@@ -23761,7 +23757,7 @@ AI는 공동의 적이 아니다. 드론과 감시 장비는 세력이 나중에
 
 세 세력의 힘은 정해져 있지 않다. 역을 몇 개 쥐었는지, 그 역이 얼마나 깊고 환승 노선이 몇 개인지, 의사와 장교와 기술자를 몇 명 붙잡아 두었는지, 원종 씨앗과 아크 소프트웨어를 얻을 수 있는지가 해마다 바뀐다. 역 하나를 빼앗기면 그 역장의 계급이 내려가고, 기술자 한 사람을 잃으면 세력 전체의 무기 하나가 멈춘다.
 ');
-INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Station-Interior-Construction', 'Entering the Station Interior', '역 내부에 들어가면', 'places', 5, 'In Seoul subway stations, concourses, platforms, transfer passages and tunnels join at different levels. Waterworks, depots and markets stand beside the stations as strongholds of their own.
+INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Station-Interior-Construction', 'Entering the Station Interior', '역 내부에 들어가면', 'places', 5, 'In Seoul subway stations, concourses, platforms, transfer passages and tunnels join at different levels. Depots and markets stand beside the stations as strongholds of their own.
 
 The facilities of concourses and platforms open and run in order under the survivors'' rules. How the underground facilities and the surface around them changed decides the character of each stronghold.
 
@@ -23783,7 +23779,7 @@ Taking the initiative in a station after the encounters and the fighting is only
 
 B. Scale of facilities
 
-The strongholds in the Seoul station catalogue are built on several levels, each with its own zones of facilities. The number of transfer lines and the depth below ground decide how large the facilities can be. The Yeongdeungpo, Ttukseom and Guui treatment plants, the Sinjeong and Cheonwang depots, Garak Market and the Noryangjin Fisheries Market stand beside stations and form vast infrastructure.
+The strongholds in the Seoul station catalogue are built on several levels, each with its own zones of facilities. The number of transfer lines and the depth below ground decide how large the facilities can be. The Sinjeong and Cheonwang depots, Garak Market and the Noryangjin Fisheries Market stand beside stations and form vast infrastructure.
 
 ## The Interior Opening Procedure
 
@@ -23793,15 +23789,15 @@ A stronghold grows through five stages. The stage names and figures are provisio
 
 | Stage | Name | Works | Facilities added |
 |---|---|---|---|
-| 1 | Entrance Post | Lower the shutters and block the unused entrances. One entrance stays in use, with a guard post and a gate | Water drums, a first-aid corner, one shared kitchen |
-| 2 | Concourse Stronghold | Bulkheads and gates in the tunnels at both ends of the platform; the ticket-gate line hardened into an inner checkpoint | Storerooms, water tanks, toilets, a care corner, a register desk, a tool corner |
+| 1 | Entrance Post | Lower the shutters and block the unused entrances. One entrance stays in use, with a guard post and a gate | A first-aid corner, a fuel box, one shared kitchen |
+| 2 | Concourse Stronghold | Bulkheads and gates in the tunnels at both ends of the platform; the ticket-gate line hardened into an inner checkpoint | Storerooms, a fuel bay, toilets, a care corner, a register desk, a tool corner |
 | 3 | Station Precinct Defence | A double door at every door in use, covers and grilles on the vents, outposts inside the tunnels | Clinic and isolation room, school, ration point, workshops, mushroom growing rooms, laundry, mortuary |
 | 4 | Surface Perimeter Line (Arc: Deep-Level Seal) | A surface stronghold drawn around the entrances from real city blocks, a cleared strip outside it, watchtowers and checkpoints. The Arc blocks and camouflages its surface entrances instead | Surface storehouses and cold storage, summer greenhouses, a firewood yard, surface workshops (unheated) |
 | 5 | Inter-Station Defence Network | Tunnels to the neighbouring stations made into safe passages; one deep station named as the shelter | District storehouse, a market at large interchanges, communications, a maintenance base |
 
 B. Interior layout
 
-Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, water tanks, storerooms and signal rooms can occupy them. A treatment plant or depot beside the station changes how the stronghold is used.
+Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, fuel bays, storerooms and signal rooms can occupy them. A depot beside the station changes how the stronghold is used.
 
 C. Medical care
 
@@ -23846,7 +23842,7 @@ Every facility needs labour, power and raw materials to keep running. A facility
 - [The Structure of the World Map](/wiki/World-Map-Construction/)
 - [Station Strongholds](/wiki/strongholds/)
 - [Station Strongholds and Five Expansion Stages (Provisional)](/gdd/settlement/station-stronghold-stages/)
-', '서울의 전철역에는 대합실, 승강장, 환승 통로와 터널이 층으로 이어진다. 정수장과 차량기지, 시장은 역과 인접한 거점이다.
+', '서울의 전철역에는 대합실, 승강장, 환승 통로와 터널이 층으로 이어진다. 차량기지와 시장은 역과 인접한 거점이다.
 
 대합실과 승강장의 시설은 생존자의 규칙에 따라 순서대로 열리고 운영된다. 지하 시설과 지상 풍경이 어떻게 바뀌었는지에 따라 각 거점의 성격이 갈린다.
 
@@ -23868,7 +23864,7 @@ Every facility needs labour, power and raw materials to keep running. A facility
 
 나. 시설의 규모
 
-서울 역 카탈로그의 거점은 다층 구조이고 각자 편의 시설 구역이 있다. 환승 노선 수와 지하 깊이에 따라 들어설 수 있는 시설의 규모가 다르다. 영등포·뚝섬·구의 정수장과 신정·천왕 차량기지, 가락시장, 노량진 수산시장은 역과 인접하여 거대한 인프라를 이룬다.
+서울 역 카탈로그의 거점은 다층 구조이고 각자 편의 시설 구역이 있다. 환승 노선 수와 지하 깊이에 따라 들어설 수 있는 시설의 규모가 다르다. 신정·천왕 차량기지, 가락시장, 노량진 수산시장은 역과 인접하여 거대한 인프라를 이룬다.
 
 ## 내부 개방 절차
 
@@ -23878,15 +23874,15 @@ Every facility needs labour, power and raw materials to keep running. A facility
 
 | 단계 | 이름 | 공사 | 더하는 시설 |
 |---|---|---|---|
-| 1 | 출입구 초소 | 셔터를 내리고 쓰지 않는 출입구를 막는다. 쓰는 출입구 하나에 초소와 문을 둔다 | 물통, 응급 구석, 공동 취사 하나 |
-| 2 | 대합실 거점 | 승강장 양 끝 터널에 방벽과 문을 세우고, 개찰구 선을 안쪽 검문선으로 굳힌다 | 창고, 저수조, 화장실, 진료 자리, 명부 자리, 공구 자리 |
+| 1 | 출입구 초소 | 셔터를 내리고 쓰지 않는 출입구를 막는다. 쓰는 출입구 하나에 초소와 문을 둔다 | 응급 구석, 땔감 상자, 공동 취사 하나 |
+| 2 | 대합실 거점 | 승강장 양 끝 터널에 방벽과 문을 세우고, 개찰구 선을 안쪽 검문선으로 굳힌다 | 창고, 연료 칸, 화장실, 진료 자리, 명부 자리, 공구 자리 |
 | 3 | 역 구내 방어 | 쓰는 문마다 이중문을 달고, 환기구에 덮개와 창살을 씌우고, 터널 안에 전초를 둔다 | 진료소와 격리실, 학교, 배급소, 작업장, 버섯 재배실, 세탁, 안치소 |
 | 4 | 지상 외곽 방어선 (아크: 깊은 층 봉쇄) | 출입구 둘레의 실제 블록을 이어 지상 성채를 두르고, 바깥에 빈 띠를 두고, 망루와 검문소를 세운다. 아크는 지상 출입구를 막고 위장한다 | 지상 창고와 냉장, 여름 온실, 땔감 마당, 지상 작업장(데우지 않음) |
 | 5 | 역간 방어 체계 | 이웃 역까지 터널을 안전 통로로 만들고, 깊은 역 하나를 대피소로 정한다 | 권역 창고, 큰 환승역의 장, 통신, 정비 기지 |
 
 나. 내부 구조
 
-역 안에는 층마다 다른 구역이 있다. 시장과 의무소, 수리 공방, 발전기, 물탱크, 창고, 통신소를 둘 수 있다. 역 곁에 정수장이나 차량기지가 있으면 그 시설이 거점의 쓰임을 바꾼다.
+역 안에는 층마다 다른 구역이 있다. 시장과 의무소, 수리 공방, 발전기, 연료 칸, 창고, 통신소를 둘 수 있다. 역 곁에 차량기지가 있으면 그 시설이 거점의 쓰임을 바꾼다.
 
 다. 진료
 
@@ -23935,7 +23931,7 @@ Every facility needs labour, power and raw materials to keep running. A facility
 INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, body_ko_md) VALUES ('Structures', 'The Structures Compendium', '구조물 총람', 'structures', 0, '
 **A. How stations and tunnels are laid out**
 
-The Seoul of the time was not a flat administrative map but a graph of stations and tunnels. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage. A century on, the three factions of 2126 read those points and lines as living spheres, and territory is divided by station rather than by gu.
+The Seoul of the time was not a flat administrative map but a graph of stations and tunnels. Even in 2026 people crossed gu by subway, and the depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage. A century on, the three factions of 2126 read those points and lines as living spheres, and territory is divided by station rather than by gu.
 
 The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-name rows for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records 25 gu and their assembly order; [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) records six layers. Building use is recorded in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -23979,11 +23975,9 @@ A depot was the seat of repair, bulk storage, and siege. Sinjeong''s unloading a
 
 The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts.
 
-## Treatment Plants
+## Waterfront and Flooding
 
-**A. Treatment plants**
-
-The treatment plants stood beside the stations of Yeongdeungpo, Ttukseom, Guui, and Amsa. Once remote control stopped, starting and checking them was done by hand.
+**A. The waterfront**
 
 The first floors north and south of the Han, and the tributaries Jungnang, Anyang, Tan, Cheonggye, and Hongje, decided which dongs got wet. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui, and Jayang were read as main-channel waterfront. Habitation pushed above the third floor and the ration windows sat inside the embankment. The details of the waterfront rules were already written by [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -24002,7 +23996,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 | Station | The 315 stations, concourses and platforms, and the surface stronghold above them | Fortress, ration windows, the faction''s unit of territory held by a stationmaster | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |
 | Depot | Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo | Repair, rolling stock, wheels and convoys | [The Structure of the World Map](/wiki/World-Map-Construction/) |
-| Treatment plant | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Started and checked by hand | [the Three Factions of Seoul](/wiki/Sixteen-States/) |
+| Waterfront | Dongs flooded along the main channel and tributaries | Habitation above the third floor, ration windows inside the embankment | [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/) |
 | Passage | Transfers, maintenance corridors, refuge stairs | Transit tolls, leftovers and heat, detours | Logistics and Infrastructure |
 
 ## Sources
@@ -24012,7 +24006,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 - [The Stories](/wiki/Oral-Stories/)
 ', '**가. 역과 터널의 배치**
 
-2026년 서울 사람들은 지하철로 구를 넘었고 정수센터와 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 2126년 세 세력은 역과 터널을 생활권으로 관리하며, 영토는 구가 아니라 역 단위로 나뉜다.
+2026년 서울 사람들은 지하철로 구를 넘었고 차량기지도 역과 터널에 연결되어 있었다. [대정전](/wiki/World-Unbinding/)의 밤에 원격 관제가 멈추었다. 이후 역은 요새이자 세력의 거점이 되었으며 터널 통행에는 허가가 필요해졌다. 2126년 세 세력은 역과 터널을 생활권으로 관리하며, 영토는 구가 아니라 역 단위로 나뉜다.
 
 [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/)는 관측 명칭 334행과 역 315곳을 기록한다. [세계 지도의 구성](/wiki/World-Map-Construction/)은 구 25개와 조립 순서를, [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/)는 여섯 층을 기록한다. 건물 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
@@ -24056,11 +24050,9 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 
 구로·금천 공단 동에서는 기지와 붙은 학교를 부품 건조장으로 쓴다.
 
-## 정수장
+## 수변과 침수
 
-**가. 정수장**
-
-정수장은 영등포·뚝섬·구의·암사의 역 곁에 있다. 원격 제어가 멈춘 뒤로 가동과 점검은 사람의 손으로 한다.
+**가. 수변**
 
 한강 이북과 이남의 1층과 중랑천·안양천·탄천·청계·홍제의 지천은 침수되는 동의 범위를 가른다. 여의도·이촌·반포·잠실·망원·합정·암사·구의·자양은 본류 수변이다. 거주지는 3층 이상에, 배급 창구는 제방 안쪽에 둔다. 수변 규칙은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)에 있다.
 
@@ -24079,7 +24071,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 | 역 | 역 315곳과 대합실·승강장, 그 위 지상 성채 | 요새, 배급 창구, 역장이 쥔 세력의 영토 단위 | [서울 역 카탈로그](/wiki/Seoul-Station-Catalog/) |
 | 터널 | 지도 점에서 뽑은 인접 선로, 환승 | 허가된 통행, 침수와 봉쇄의 상태 | [서울과 지하철 레이어](/wiki/World-and-Subway-Layers/) |
 | 차량기지 | 신정·천왕·방화·군자·고덕·창동·신내·수서 | 수리, 유치, 차륜과 호송 | [세계 지도의 구성](/wiki/World-Map-Construction/) |
-| 정수장 | 영등포·뚝섬·구의·암사 아리수 | 사람 손으로 가동·점검 | [서울의 세 세력](/wiki/Sixteen-States/) |
+| 수변 | 한강 본류와 지천에 맞닿은 침수 동 | 3층 이상에 거주하고 제방 안쪽에 배급 창구를 둔다 | [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/) |
 | 통로 | 환승, 정비 통로, 피난 계단 | 통행세, 잔반과 열, 우회 | 물류와 기반 시설 |
 
 ## 출처
@@ -24104,11 +24096,11 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Han Jae-mok · HC01 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
+- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K001 custodian, HC01 steward_house, K004 work_peer
 
-At the maintenance bench of the sluice, Hannuri (Nuri) logged its entry in the HC01 duty log.
+At the depot maintenance bench, Hannuri (Nuri) logged its entry in the HC01 duty log.
 
 Han Jae-mok checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -24504,11 +24496,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer I Seo-dam · HC09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
+- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K002 custodian, HC09 steward_house, K117 work_peer
 
-In the machine room of the sluice, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
+In the depot machine room, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
 
 I Seo-dam checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -24545,7 +24537,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
-## F03 · Water Filtration (Yeogwa) (Yeogwa)
+## F03 · Vent Filtration (Yeogwa) (Yeogwa)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -24558,7 +24550,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K058 custodian, HC11 steward_house, K131 work_peer
 
-In the filter corridor of the Yongsan Line, Water Filtration (Yeogwa) logged its entry in the HC11 duty log.
+In the filter corridor of the Yongsan Line, Vent Filtration (Yeogwa) logged its entry in the HC11 duty log.
 
 Jeong Harin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -24845,7 +24837,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
-## F15 · Water-Supply Metering (Gyeryang) (Gyeryang)
+## F15 · Power Metering (Gyeryang) (Gyeryang)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -24858,7 +24850,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K374 custodian, HP09 steward_house, K218 work_peer
 
-In the filter corridor of Myeongdong, Water-Supply Metering (Gyeryang) logged its entry in the HP09 duty log.
+In the filter corridor of Myeongdong, Power Metering (Gyeryang) logged its entry in the HP09 duty log.
 
 Eun Taeho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -24904,11 +24896,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Gim Tae-un · HP03 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
+- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K003 custodian, HP03 steward_house, K232 work_peer
 
-On the turnback line of the sluice, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
+On the depot turnback line, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
 
 Gim Tae-un checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -25245,7 +25237,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
-## V15 · Sluice-Gate Cart (Sumun) (Sumun)
+## V15 · Inspection Cart (Jeomgeom) (Jeomgeom)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -25258,7 +25250,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K375 custodian, HC07 steward_house, K333 work_peer
 
-In the inspection pit of Myeongdong, Sluice-Gate Cart (Sumun) logged its entry in the HC07 duty log.
+In the inspection pit of Myeongdong, Inspection Cart (Jeomgeom) logged its entry in the HC07 duty log.
 
 Ra Jinu checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -25307,11 +25299,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 에너지·부품: 교체형 배터리·마모 부품 할당제, 무한 에너지 없음
 - 정비: 한재목 주정비·HC01 감사 입회
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
-- 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
+- 창발 목표: 담당 정비 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K001 custodian, HC01 steward_house, K004 work_peer
 
-수문 정비 벤치에서 한누리(누리)이 HC01 당직 로그에 출입을 남긴다.
+차량기지 정비 벤치에서 한누리(누리)이 HC01 당직 로그에 출입을 남긴다.
 
 한재목은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -25707,11 +25699,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 에너지·부품: 교체형 배터리·마모 부품 할당제, 무한 에너지 없음
 - 정비: 이서담 주정비·HC09 감사 입회
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
-- 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
+- 창발 목표: 담당 정비 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K002 custodian, HC09 steward_house, K117 work_peer
 
-수문 기계실에서 냉각탑지기(탑지)이 HC09 당직 로그에 출입을 남긴다.
+차량기지 기계실에서 냉각탑지기(탑지)이 HC09 당직 로그에 출입을 남긴다.
 
 이서담은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -25748,7 +25740,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
-## F03 · 정수여과 (여과)
+## F03 · 환기여과 (여과)
 
 - 급: F
 - 기체: 시설 고정 랙·센서 버스·현장 단말 연결
@@ -25761,7 +25753,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K058 custodian, HC11 steward_house, K131 work_peer
 
-용산선 필터 복도에서 정수여과(여과)이 HC11 당직 로그에 출입을 남긴다.
+용산선 필터 복도에서 환기여과(여과)이 HC11 당직 로그에 출입을 남긴다.
 
 정하린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -26048,7 +26040,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
-## F15 · 급수계량 (계량)
+## F15 · 배전계량 (계량)
 
 - 급: F
 - 기체: 시설 고정 랙·센서 버스·현장 단말 연결
@@ -26061,7 +26053,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K374 custodian, HP09 steward_house, K218 work_peer
 
-명동 필터 복도에서 급수계량(계량)이 HP09 당직 로그에 출입을 남긴다.
+명동 필터 복도에서 배전계량(계량)이 HP09 당직 로그에 출입을 남긴다.
 
 은태호은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -26107,11 +26099,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 에너지·부품: 교체형 배터리·마모 부품 할당제, 무한 에너지 없음
 - 정비: 김태운 주정비·HP03 감사 입회
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
-- 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
+- 창발 목표: 담당 정비 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K003 custodian, HP03 steward_house, K232 work_peer
 
-수문 회차선에서 새벽호송(새벽)이 HP03 당직 로그에 출입을 남긴다.
+차량기지 회차선에서 새벽호송(새벽)이 HP03 당직 로그에 출입을 남긴다.
 
 김태운은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -26448,7 +26440,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
-## V15 · 수문카트 (수문)
+## V15 · 점검카트 (점검)
 
 - 급: V
 - 기체: 차체/대차 플랫폼·배터리 슬롯·차선 센서
@@ -26461,7 +26453,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K375 custodian, HC07 steward_house, K333 work_peer
 
-명동 점검 피트에서 수문카트(수문)이 HC07 당직 로그에 출입을 남긴다.
+명동 점검 피트에서 점검카트(점검)이 HC07 당직 로그에 출입을 남긴다.
 
 라진우은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -28040,9 +28032,7 @@ A. Infrastructure locations
 
 The vast infrastructures essential to the survivors'' maintenance of their spheres sat beside the stations.
 
-B. Treatment plants and depots
-
-The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also operated as large treatment plants outside Seoul.
+B. Depots
 
 The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.
 
@@ -28174,9 +28164,7 @@ The passages joining layer to layer and station to station changed state without
 
 생존자가 권역을 유지하는 데 필요한 거대 인프라는 역 주변에 있다.
 
-나. 정수 시설과 차량기지
-
-정수 시설은 영등포, 뚝섬, 구의, 암사에 있다. 강북(남양주)과 광암(하남)도 서울 밖의 큰 정수장이다.
+나. 차량기지
 
 차량기지는 신정, 천왕, 방화, 군자, 고덕, 창동, 신내, 수서에 있다. 외곽의 지축, 도봉, 모란, 김포 기지도 중요한 거점이다.
 
@@ -28328,7 +28316,7 @@ The strands of the story are in [Regional and Physical AI Arcs](/wiki/Regional-P
 
 According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
-Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking water first and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
+Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking porridge first to warm oneself and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
 
 ## Ecology Compendium
 
@@ -28350,7 +28338,7 @@ How people and machines settled together inside the stations is in [People and M
 
 ## Geography and the Map
 
-[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul''s 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and treatment plants in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). The land outside Seoul is covered in [Outside Seoul](/wiki/External-Theaters/).
+[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul''s 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and the waterfront in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). The land outside Seoul is covered in [Outside Seoul](/wiki/External-Theaters/).
 
 The interactive map is on the [Territory Map](/wiki/map/) page.
 
@@ -28421,7 +28409,7 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 
 [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)에 따르면 2126년 서울에서 조직된 종교는 아크 하나다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸고, 이것을 세례(baptism)라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
-생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 물을 먼저 받고 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
+생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 죽을 먼저 받아 몸을 데운 뒤 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
 
 ## 생태 도감
 
@@ -28443,7 +28431,7 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 
 ## 지리와 지도
 
-[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 정수장은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖은 [서울 밖](/wiki/External-Theaters/)이 다룬다.
+[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 수변은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖은 [서울 밖](/wiki/External-Theaters/)이 다룬다.
 
 인터랙티브 지도는 [서울 영토 지도](/wiki/map/)에서 볼 수 있다.
 

@@ -4,7 +4,7 @@ model: cpa/claude-opus-5-5; 0 completion calls; replacements written by the agen
 
 **A. How stations and tunnels are laid out**
 
-The Seoul of the time was not a flat administrative map but a graph of stations and tunnels. Even in 2026 people crossed gu by subway, and the treatment centers and depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage. A century on, the three factions of 2126 read those points and lines as living spheres, and territory is divided by station rather than by gu.
+The Seoul of the time was not a flat administrative map but a graph of stations and tunnels. Even in 2026 people crossed gu by subway, and the depots sat as the heavy nodes of that graph. On the night of [The Great Blackout](/wiki/World-Unbinding/), when remote control died, stations became fortresses and faction strongholds, tunnels became licensed passage. A century on, the three factions of 2126 read those points and lines as living spheres, and territory is divided by station rather than by gu.
 
 The [Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) records 334 observed-name rows for 315 stations. [The Structure of the World Map](/wiki/World-Map-Construction/) records 25 gu and their assembly order; [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) records six layers. Building use is recorded in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -48,11 +48,9 @@ A depot was the seat of repair, bulk storage, and siege. Sinjeong's unloading an
 
 The industrial blocks of Guro and Geumcheon clung to the depots and used schools for drying parts.
 
-## Treatment Plants
+## Waterfront and Flooding
 
-**A. Treatment plants**
-
-The treatment plants stood beside the stations of Yeongdeungpo, Ttukseom, Guui, and Amsa. Once remote control stopped, starting and checking them was done by hand.
+**A. The waterfront**
 
 The first floors north and south of the Han, and the tributaries Jungnang, Anyang, Tan, Cheonggye, and Hongje, decided which dongs got wet. Yeouido, Ichon, Banpo, Jamsil, Mangwon, Hapjeong, Amsa, Guui, and Jayang were read as main-channel waterfront. Habitation pushed above the third floor and the ration windows sat inside the embankment. The details of the waterfront rules were already written by [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/).
 
@@ -71,7 +69,7 @@ Garak Market, Gangseo Market, Yanggok Market, and Noryangjin Fish Market are fac
 | Station | The 315 stations, concourses and platforms, and the surface stronghold above them | Fortress, ration windows, the faction's unit of territory held by a stationmaster | [the Seoul Station Catalog](/wiki/Seoul-Station-Catalog/) |
 | Tunnel | Adjacent lines drawn from map points, transfers | Licensed passage, the states of flooding and blockade | [Seoul and the Subway Layers](/wiki/World-and-Subway-Layers/) |
 | Depot | Sinjeong·Cheonwang·Banghwa·Gunja·Godeok·Changdong·Sinnae·Suseo | Repair, rolling stock, wheels and convoys | [The Structure of the World Map](/wiki/World-Map-Construction/) |
-| Treatment plant | Yeongdeungpo·Ttukseom·Guui·Amsa Arisu | Started and checked by hand | [the Three Factions of Seoul](/wiki/Sixteen-States/) |
+| Waterfront | Dongs flooded along the main channel and tributaries | Habitation above the third floor, ration windows inside the embankment | [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/) |
 | Passage | Transfers, maintenance corridors, refuge stairs | Transit tolls, leftovers and heat, detours | Logistics and Infrastructure |
 
 ## Sources

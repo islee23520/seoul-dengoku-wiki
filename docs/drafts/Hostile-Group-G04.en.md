@@ -128,7 +128,7 @@ Results are not measured by the number caught. Look at the number of times they 
 - Trigger: Before sudden thaw makes the water rise, a raccoon dog family moves from under a manhole to a vent room.
 - Actors: Free City stationmaster, pipe maintenance workers, ordinary citizens
 - Ecological mechanism: Raccoon dogs sense rising water in their bodies first and move to higher ground. This is a real wild-animal habit.
-- Choices: Treat the raccoon dogs’ movement as an early warning / Wait for the water-level measurement / Pre-heat the pumps only when the two differ
+- Choices: Treat the raccoon dogs’ movement as an early warning / Wait for the pump-room gauge reading / Pre-heat the pumps only when the two differ
 - Outcomes: An early warning buys preparation time but leaves responsibility for false alarms. Waiting for the measurement means being late for a sudden inflow. Pre-heating only when the two differ saves fuel but misses short downpours.
 - Moral cost: The burden of entrusting public safety to animal movements remains.
 - Source dossier: G04

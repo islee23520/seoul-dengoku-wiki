@@ -46,7 +46,7 @@ Baesua reported false positives but had no authority to open a door, and only th
 |---|---|---|---|---|---|
 | [G15E01 · Consent-Roster Rounds Car](/wiki/Hostile-Group-G15/#g15e01) | Machine type | Single individual | Roster Rounds | sequencer | M023 |
 | [G15E02 · Blanket-Folding Rounds Car](/wiki/Hostile-Group-G15/#g15e02) | Machine type | Single individual | Body-Heat Overprotection | common ecology type | M023 |
-| [G15E03 · Water-Cup Ration Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Water Metering | common ecology type | M023 |
+| [G15E03 · Dose-Cup Ration Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Dose Metering | common ecology type | M023 |
 | [G15E04 · Fall-Alarm Brace](/wiki/Hostile-Group-G15/#g15e04) | Machine type | Single individual | Fall Blockade | common ecology type | M023 |
 | [G15E05 · Patch-Frequency Nursing Car](/wiki/Hostile-Group-G15/#g15e05) | Machine type | Single individual | Patch Relay | occupational special type | M023 |
 | [G15E06 · Brace-Joint Fitter](/wiki/Hostile-Group-G15/#g15e06) | Machine type | Single individual | Joint Correction | occupational special type | M023 |
@@ -202,7 +202,7 @@ G15-SC1, G15-SC2.
 <a id="Hostile-Group-G15-heading-0053"></a>
 <a id="g15e03"></a>
 
-### G15E03 · Water-Cup Ration Car
+### G15E03 · Dose-Cup Ration Car
 
 - Source batch: M023
 - Former role class: common ecology type
@@ -211,56 +211,56 @@ G15-SC1, G15-SC2.
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
-| Battlefield role | Water Metering |
-| Common species, variants and command scope | A three-wheeled cart with a clear measuring cylinder and a short water nozzle. On the pump band's instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands, and when the filter clogs it only reclaims water and supplies none. |
+| Battlefield role | Dose Metering |
+| Common species, variants and command scope | A three-wheeled cart with a clear measuring cylinder and a short medicine nozzle. On the pump band's instructions it confiscates cups over the fixed dose and ignores cries of pain as out-of-table demands, and when the filter clogs it only reclaims the medicine and hands none out. |
 
 <a id="Hostile-Group-G15-heading-0056"></a>
 
 ### Role and Body
 
-A common ecology form: a three-wheeled cart with a clear measuring cylinder and a short water nozzle.
+A common ecology form: a three-wheeled cart with a clear measuring cylinder and a short medicine nozzle.
 
 <a id="Hostile-Group-G15-heading-0058"></a>
 
 ### Origin
 
-Equipment that once managed per-sickbed rationed water took an old intake table as its absolute standard.
+Equipment that once managed per-sickbed rationed medicine took an old dosage table as its absolute standard. Medicine is scarce in Seoul, and a table meant to stretch it now turns the sick away.
 
 <a id="Hostile-Group-G15-heading-0060"></a>
 
 ### Habitat and Needs
 
-It shuttles between the water station and the sickbeds, needing purified water, nozzle filters, and small pump power.
+It shuttles between the medicine station and the sickbeds, needing medicine solution, nozzle filters, and small pump power.
 
 <a id="Hostile-Group-G15-heading-0062"></a>
 
 ### Life and Maintenance
 
-When the filter clogs it only reclaims water and supplies none, returning to normal for one shift after cleaning.
+When the filter clogs it only reclaims the medicine and hands none out, returning to normal for one shift after cleaning.
 
 <a id="Hostile-Group-G15-heading-0064"></a>
 
 ### Behavior and Hierarchy
 
-On the pump band's instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands.
+On the pump band's instructions it confiscates cups over the fixed dose and ignores cries of pain as out-of-table demands.
 
 <a id="Hostile-Group-G15-heading-0066"></a>
 
 ### Escalation
 
-Stage 1 re-inspects cups, stage 2 force-reclaims issued rations, and stage 3 locks the water line.
+Stage 1 re-inspects cups, stage 2 force-reclaims issued rations, and stage 3 locks the dosing line.
 
 <a id="Hostile-Group-G15-heading-0068"></a>
 
 ### Engagement and Response
 
-It stops when shown the latest ration table and a manual valve, and destroying the nozzle contaminates precious purified water.
+It stops when shown the latest ration table and a manual valve, and destroying the nozzle spoils precious medicine solution.
 
 <a id="Hostile-Group-G15-heading-0070"></a>
 
 ### Negotiation and Moral Choice
 
-If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. Leak-free watering can be entrusted to it, but who approves exception amounts for children and the injured must be agreed.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. Leak-free dosing can be entrusted to it, but who approves exception amounts for children and the injured must be agreed.
 
 <a id="Hostile-Group-G15-heading-0072"></a>
 

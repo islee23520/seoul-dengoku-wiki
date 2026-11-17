@@ -221,7 +221,7 @@ The raccoon dog belongs to the dog family, but it climbs trees and digs burrows 
 - Trigger: Before sudden thaw makes the water rise, a raccoon dog family moves from under a manhole to a vent room.
 - Actors: Free City stationmaster, pipe maintenance workers, ordinary citizens
 - Ecological mechanism: Raccoon dogs sense rising water in their bodies first and move to higher ground. This is a real wild-animal habit.
-- Choices: Treat the raccoon dogs’ movement as an early warning / Wait for the water-level measurement / Pre-heat the pumps only when the two differ
+- Choices: Treat the raccoon dogs’ movement as an early warning / Wait for the pump-room gauge reading / Pre-heat the pumps only when the two differ
 - Outcomes: An early warning buys preparation time but leaves responsibility for false alarms. Waiting for the measurement means being late for a sudden inflow. Pre-heating only when the two differ saves fuel but misses short downpours.
 - Moral cost: The burden of entrusting public safety to animal movements remains.
 - Source dossier: G04
@@ -315,7 +315,7 @@ Grey herons and cormorants are birds that catch fish at the waterside. The heron
 - Trigger: As the river begins to freeze, waterfowl, waders, and raptors all gather at a single unfrozen drainage pond.
 - Actors: Arc stationmaster in Gangnam, facility maintenance workers, ordinary citizens
 - Ecological mechanism: When unfrozen water concentrates in one place, waterfowl use the surface, waders the edges, and raptors the high pylons, so three groups overlap at one pond.
-- Choices: Fix the pond’s water level / Deliberately clear one edge to lead the birds there / Fit a cover around the pond
+- Choices: Leave the pond’s feeding edges as they are / Deliberately clear one edge to lead the birds there / Fit a cover around the pond
 - Outcomes: Fixing the level increases birds and the risk of train collisions. Clearing one side gathers birds there. Covers take labor.
 - Moral cost: Decide whether to protect train safety or the unfrozen water where birds rest.
 - Source dossier: G06
@@ -364,7 +364,7 @@ The Yongsan Raiders are a band of people who hold no station, gathered on Govern
 - Ecological mechanism: The duty staff count the boxes at the shaft door. The chief is at the inner pallets and the elite squad holds the box hooks.
 - Choices: Leave the elevator car in the lower level, lock the shaft door and set the boxes against the wall. / Pass the boxes out of the alley in the order of the inventory board. / Empty the duty post and leave the boxes where the raiders stand.
 - Outcomes: If the first is chosen the boxes are in the lower level and the raiders stand before the locked shaft door. If the second, the boxes are out of the alley with their sealing bands still on. If the third, the boxes are on the pallets and the mouths of the elite squad's sacks are open.
-- Moral cost: After the door is locked, that day's water-can count on the board is lower by the number of boxes. After the boxes are passed on in order, the raiders remain in the alley empty-handed. After the post is left empty, the same number is written in the raiders' sack column.
+- Moral cost: After the door is locked, that day's sack count on the board is lower by the number of boxes. After the boxes are passed on in order, the raiders remain in the alley empty-handed. After the post is left empty, the same number is written in the raiders' sack column.
 - Source dossier: G07
 
 <a id="Hostile-Ecology-Index-heading-0262"></a>
@@ -390,7 +390,7 @@ The Yongsan Raiders are a band of people who hold no station, gathered on Govern
 - Ecological mechanism: A salt stain runs from the floor of the refrigerated car to the leak pallets. Sealed boxes and food sacks lie in the same row. The chief counts the sacks, the elite squad props the door, and the scouts stand at the alley entrance.
 - Choices: Leave the car in the lower level and let the duty staff keep only the sack count on the inventory board. / Pass the sealed boxes out of the alley first and release the sacks in order. / Leave the car door open and set the food sacks on the side where the raiders stand.
 - Outcomes: If the first is chosen the car is in the lower level and the sack count is written in the next column of the board. If the second, the sealed boxes are out of the alley and the sack count agrees on one board. If the third, the sacks are before the car door and the mouths of the elite squad's sacks are open.
-- Moral cost: After only the count is kept, the food sacks are in the lower level and that day's water-can column is written next to that number. After the sealed boxes are passed first, the scouts at the entrance stand in a single line. After the door is left open, the same sack numbers are written in the raiders' column.
+- Moral cost: After only the count is kept, the food sacks are in the lower level and that day's ransom column is written next to that number. After the sealed boxes are passed first, the scouts at the entrance stand in a single line. After the door is left open, the same sack numbers are written in the raiders' column.
 - Source dossier: G07
 
 <a id="Hostile-Ecology-Index-heading-0266"></a>
@@ -526,7 +526,7 @@ The Bogukmun group moves between Government ground (the Bukhansan Bogukmun shelt
 ### G10-SC3 · The Outer Stair the Sea Wind Reaches
 
 - Stage: 3
-- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with water cans. The group leader is at the threshold.
+- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with firewood bundles. The group leader is at the threshold.
 - Actors: arc, government
 - Ecological mechanism: The scouts stand facing the leader. The ration worker stands before the door until the seed store hands over the issue list.
 - Choices: The corridor duty staff leave only the lamp of the outer stair lit and lock the inner iron door. / The seed store keeps seed bags on a different shelf from the ration sacks and stops lower-level issue. / The ration worker opens the morning door only after receiving the list and brings out the listed bags.
@@ -604,15 +604,15 @@ The Sinnae Deserters are soldiers who walked out of the Government army with rif
 
 <a id="Hostile-Ecology-Index-heading-0302"></a>
 
-### G12-SC2 · The Hatch at the Backwash Hour
+### G12-SC2 · The Hatch at the Fan-Inspection Hour
 
 - Stage: 2
-- Trigger: At dawn in early autumn the backwash runs in the Yeouido water-filter gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
+- Trigger: At dawn in early autumn the exhaust fan runs in the Yeouido ventilation gallery. The scouts are before the hatch. The Sinnae freight elevator car is below, in the dust passage. A power line runs from the lift panel to that car.
 - Actors: government, free-city
-- Ecological mechanism: The washing cycle and the backwash schedule overlap on the same dawn. The filter duty officer is before the valve. The freight duty officer is beside the car. The machine duty officer is before the panel.
-- Choices: The filter duty officer locks the backwash valve at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
-- Outcomes: If the valve is locked, the scouts before the hatch and the filter duty officer stand at the same waterside. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the filter duty officer's hand.
-- Moral cost: The backwash water pools before the valve. The filter duty officer's water cans are in the scouts' line beside the hatch. The ration tins of the freight car are at the landing.
+- Ecological mechanism: The fan-inspection cycle and the gallery running schedule overlap on the same dawn. The ventilation duty officer is before the damper. The freight duty officer is beside the car. The machine duty officer is before the panel.
+- Choices: The ventilation duty officer closes the exhaust damper at the hour of the schedule. / The freight duty officer fixes the freight car at the dust passage floor. / The machine duty officer disconnects the gallery auxiliary power from the lift panel.
+- Outcomes: If the damper is closed, the scouts before the hatch and the ventilation duty officer stand in the same warm draught. If the car is fixed at the dust passage floor, the squad leader is at that landing table. If the auxiliary power line lies outside the panel, the hatch lock is in the ventilation duty officer's hand.
+- Moral cost: The warm exhaust pools before the damper. The ventilation duty officer's fuel tins are in the scouts' line beside the hatch. The ration tins of the freight car are at the landing.
 - Source dossier: G12
 
 <a id="Hostile-Ecology-Index-heading-0304"></a>
@@ -623,9 +623,9 @@ The Sinnae Deserters are soldiers who walked out of the Government army with rif
 - Trigger: Dock dust is piled on the floor of the outer passage of the Sinnae freight elevator. The scouts are at the outer entrance. The supply, freight and machine duty officers are before the same hour table.
 - Actors: government, free-city
 - Ecological mechanism: While the dust is in the outer passage the squad leader is at the radio. The elite squad is at the rail. The scouts are at the entrance. The dock duty officer's dust hour is written in the lower column of the landing table.
-- Choices: The dock duty officer closes the dock entry door. / The filter duty officer locks the Yeouido water-filter gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
-- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the filter duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
-- Moral cost: The dock's freight sacks are inside the entry door. The gallery backwash stays before the valve. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
+- Choices: The dock duty officer closes the dock entry door. / The ventilation duty officer locks the Yeouido ventilation gallery hatch. / The freight and machine duty officers place the cages and the breaker handle in the fully sealed clean section.
+- Outcomes: If the dock entry door is closed, the dust is in the passage inside the door and the scouts are before the door. If the gallery hatch is locked, the scouts are divided between the front of the hatch and the outer entrance and the ventilation duty officer is before the valve. If the cages and breaker are in the clean section, the Sinnae Deserters are at the dust passage landing.
+- Moral cost: The dock's freight sacks are inside the entry door. The gallery's warm exhaust stays before the damper. The two duty officers in the clean section are inside the cages and the dust in the outer passage lies boot-high.
 - Source dossier: G12
 
 <a id="Hostile-Ecology-Index-heading-0306"></a>

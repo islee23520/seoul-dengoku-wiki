@@ -23,11 +23,11 @@ The danger comes in three forms: raiding fish farms and tanks at the waterside a
 |---|---|
 | Winter movement | Migratory birds coming down from the north gather at the Han River, Nanji, and Amsa from November. When the river freezes they move to channels and drainage ponds that stay unfrozen and to puddles at depots where heat rises. When wetlands dry up they also fly to fountains in inland parks and rain gutters on roofs. |
 | Food | Herons eat fish, frogs, and rats, and cormorants eat fish. In winter, fish in farms and tanks and food scraps washed out of drains make up a large share. Raptors catch rats and tired small birds. |
-| Breeding and life cycle | Breeding takes place in spring in separate protected areas. The birds resting in Seoul in winter are mostly migrants that have finished breeding or resident birds wintering in Seoul. If the water level suddenly drops, waterfowl leave first, and the feeding relations of waders and raptors unravel in turn. |
-| Senses | Sight is the main sense. They take off at reflections on the water, the color of vests, and the shadow of drones. Engine sounds, gunshots, and loudspeakers tell them only distance. They do not understand human signals or water-level numbers. Drones, balloons, and birds are hard to tell apart on radar, so a person must check again by eye. |
+| Breeding and life cycle | Breeding takes place in spring in separate protected areas. The birds resting in Seoul in winter are mostly migrants that have finished breeding or resident birds wintering in Seoul. If the pond suddenly freezes over, waterfowl leave first, and the feeding relations of waders and raptors unravel in turn. |
+| Senses | Sight is the main sense. They take off at reflections on the water, the color of vests, and the shadow of drones. Engine sounds, gunshots, and loudspeakers tell them only distance. They do not understand human signals or flag markings. Drones, balloons, and birds are hard to tell apart on radar, so a person must check again by eye. |
 | Flock behavior | There is no command structure. Waterfowl use open water in flocks, waders sweep the shallow edges with spacing between them, and raptors follow the density of other birds from high wires. When one group moves, the places of the others change because of food and alertness. |
-| Disease and danger | Avian influenza, salmonella, and parasites in droppings soil water and grain. When a flock of migrants settles all at once, the water is polluted and affects drinking water and tanks. On the Government side with no doctors, an outbreak is hard to stop. A collision between a bird and a train on the tracks or on a pylon causes an accident. |
-| Response principles | Cover farms and tanks, and keep birds from perching around tracks and pylons. Driving them with sound and light only moves the birds to the next wetland. Lowering the water level all at once scatters food and pushes birds toward people. Results are judged not by how many were driven off but by damage to farms, the number of train collisions, and the amount of contaminated water. |
+| Disease and danger | Avian influenza, salmonella, and parasites in droppings soil water and grain. When a flock of migrants settles all at once, the water is polluted and affects the fish in the tanks and the grain stores. On the Government side with no doctors, an outbreak is hard to stop. A collision between a bird and a train on the tracks or on a pylon causes an accident. |
+| Response principles | Cover farms and tanks, and keep birds from perching around tracks and pylons. Driving them with sound and light only moves the birds to the next wetland. Clearing the feeding grounds all at once scatters food and pushes birds toward people. Results are judged not by how many were driven off but by damage to farms, the number of train collisions, and the amount of contaminated water. |
 
 <a id="Hostile-Group-G06-heading-0008"></a>
 
@@ -114,7 +114,7 @@ When birds gather close to a depot’s inner lines, they collide with trains and
 
 Birds do not slip through shutter gaps, but they enter surface buildings with open roofs, vents, and tanks. People who live deep underground seldom meet birds, while people on the surface guard their tanks, grain, and washing places themselves, since they are all in the same place.
 
-Good response means blocking food and places to perch. Cover tanks and farms, and remove perches around tracks and pylons. Lowering the water level all at once scatters food and pushes birds toward people, so lower it slowly. Results are judged not by how many were driven off but by damage to farms, the number of train collisions, and the amount of contaminated water.
+Good response means blocking food and places to perch. Cover tanks and farms, and remove perches around tracks and pylons. Clearing the feeding grounds all at once scatters food and pushes birds toward people, so clear them slowly. Results are judged not by how many were driven off but by damage to farms, the number of train collisions, and the amount of contaminated water.
 
 <a id="Hostile-Group-G06-heading-0445"></a>
 
@@ -128,7 +128,7 @@ Good response means blocking food and places to perch. Cover tanks and farms, an
 - Trigger: As the river begins to freeze, waterfowl, waders, and raptors all gather at a single unfrozen drainage pond.
 - Actors: Arc stationmaster in Gangnam, facility maintenance workers, ordinary citizens
 - Ecological mechanism: When unfrozen water concentrates in one place, waterfowl use the surface, waders the edges, and raptors the high pylons, so three groups overlap at one pond.
-- Choices: Fix the pond’s water level / Deliberately clear one edge to lead the birds there / Fit a cover around the pond
+- Choices: Leave the pond’s feeding edges as they are / Deliberately clear one edge to lead the birds there / Fit a cover around the pond
 - Outcomes: Fixing the level increases birds and the risk of train collisions. Clearing one side gathers birds there. Covers take labor.
 - Moral cost: Decide whether to protect train safety or the unfrozen water where birds rest.
 - Source dossier: G06

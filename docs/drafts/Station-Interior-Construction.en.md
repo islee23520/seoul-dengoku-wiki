@@ -4,7 +4,7 @@ title_ko: 역 내부에 들어가면
 model: cpa/claude-opus-5-5; 0 completion calls; v4 places overhaul written by hand by the agent from the data/sql/030 body
 section_checkpoint: v4 places overhaul 2026-11-16; ko/en headings matched
 ---
-In Seoul subway stations, concourses, platforms, transfer passages and tunnels join at different levels. Waterworks, depots and markets stand beside the stations as strongholds of their own.
+In Seoul subway stations, concourses, platforms, transfer passages and tunnels join at different levels. Depots and markets stand beside the stations as strongholds of their own.
 
 The facilities of concourses and platforms open and run in order under the survivors' rules. How the underground facilities and the surface around them changed decides the character of each stronghold.
 
@@ -26,7 +26,7 @@ Taking the initiative in a station after the encounters and the fighting is only
 
 B. Scale of facilities
 
-The strongholds in the Seoul station catalogue are built on several levels, each with its own zones of facilities. The number of transfer lines and the depth below ground decide how large the facilities can be. The Yeongdeungpo, Ttukseom and Guui treatment plants, the Sinjeong and Cheonwang depots, Garak Market and the Noryangjin Fisheries Market stand beside stations and form vast infrastructure.
+The strongholds in the Seoul station catalogue are built on several levels, each with its own zones of facilities. The number of transfer lines and the depth below ground decide how large the facilities can be. The Sinjeong and Cheonwang depots, Garak Market and the Noryangjin Fisheries Market stand beside stations and form vast infrastructure.
 
 ## The Interior Opening Procedure
 
@@ -36,15 +36,15 @@ A stronghold grows through five stages. The stage names and figures are provisio
 
 | Stage | Name | Works | Facilities added |
 |---|---|---|---|
-| 1 | Entrance Post | Lower the shutters and block the unused entrances. One entrance stays in use, with a guard post and a gate | Water drums, a first-aid corner, one shared kitchen |
-| 2 | Concourse Stronghold | Bulkheads and gates in the tunnels at both ends of the platform; the ticket-gate line hardened into an inner checkpoint | Storerooms, water tanks, toilets, a care corner, a register desk, a tool corner |
+| 1 | Entrance Post | Lower the shutters and block the unused entrances. One entrance stays in use, with a guard post and a gate | A first-aid corner, a fuel box, one shared kitchen |
+| 2 | Concourse Stronghold | Bulkheads and gates in the tunnels at both ends of the platform; the ticket-gate line hardened into an inner checkpoint | Storerooms, a fuel bay, toilets, a care corner, a register desk, a tool corner |
 | 3 | Station Precinct Defence | A double door at every door in use, covers and grilles on the vents, outposts inside the tunnels | Clinic and isolation room, school, ration point, workshops, mushroom growing rooms, laundry, mortuary |
 | 4 | Surface Perimeter Line (Arc: Deep-Level Seal) | A surface stronghold drawn around the entrances from real city blocks, a cleared strip outside it, watchtowers and checkpoints. The Arc blocks and camouflages its surface entrances instead | Surface storehouses and cold storage, summer greenhouses, a firewood yard, surface workshops (unheated) |
 | 5 | Inter-Station Defence Network | Tunnels to the neighbouring stations made into safe passages; one deep station named as the shelter | District storehouse, a market at large interchanges, communications, a maintenance base |
 
 B. Interior layout
 
-Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, water tanks, storerooms and signal rooms can occupy them. A treatment plant or depot beside the station changes how the stronghold is used.
+Each level of a station holds different zones. Markets, aid posts, repair workshops, generators, fuel bays, storerooms and signal rooms can occupy them. A depot beside the station changes how the stronghold is used.
 
 C. Medical care
 
