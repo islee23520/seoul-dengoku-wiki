@@ -1,0 +1,7910 @@
+{
+ "hold": [
+  "person-0374"
+ ],
+ "rules": [
+  {
+   "id": "v4rw-people-0001",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "호송보다 먼저 용산선로협의회를 소집했다. 운송의 이해관계를 회의로 묶으려 하지만",
+   "to": "호송보다 먼저 용산역 출입을 잠갔다. 운송의 이해관계를 용산역 배차판 하나로 묶으려 하지만",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0002",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "펌프 열차가 멈추자 배차표를 공개하고",
+   "to": "펌프 열차가 멈추자 용산역 배차판에 배차표를 공개하고",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0003",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "박태겸은 그 순서를 용산선로협의회에 남기려 용산호송가의 배차표를 지켰다.",
+   "to": "박태겸은 그 순서를 용산역 배차판에 남기려 용산호송가의 배차표를 지켰다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0004",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "두 손이 계절마다 자리를 바꾸면 나라가 둘로 보인다. 이태원 통역은 이 나라 안의 호다. 그래서 용산선로협의회를 연다.",
+   "to": "두 손이 계절마다 자리를 바꾸면 배차판이 둘로 보인다. 이태원 통역은 용산역 안에서 거처를 나눠 쓴다. 그래서 출입을 잠그기 전에 배차판부터 공개한다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0005",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "비상 호송이 열리면 선로가 나라보다 먼저 움직인다.",
+   "to": "비상 호송이 열리면 선로가 정부보다 먼저 움직인다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0006",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "박태겸은 배차표를 공개하고 용산선로협의회를 소집했다. 소집이 호송보다 먼저였다.",
+   "to": "박태겸은 용산역 배차판에 배차표를 공개하고 역 출입을 잠갔다. 잠금이 호송보다 먼저였다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0007",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "호송보다 회의",
+   "to": "호송보다 출입 잠금",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0008",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "운송 정체에 공동 회의를 먼저 연다.",
+   "to": "운송 정체에 역 출입을 먼저 잠그고 배차판을 공개한다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0009",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "열차가 멈춰도 소집을 호송보다 앞세운다.",
+   "to": "열차가 멈춰도 출입 잠금과 배차표 공개를 호송보다 앞세운다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0010",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "정부 역장",
+   "to": "용산역 역장",
+   "expect": 10
+  },
+  {
+   "id": "v4rw-people-0011",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json_ko",
+   "from": "철도조정관 박태겸을 둘러싼 선로 가문 원로와 배차원·도제다.",
+   "to": "철도조정관 박태겸을 둘러싼 본부장과 배차원·도제다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0012",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Station Master of the Transshipment Bureau",
+   "to": "Stationmaster of Yongsan Station",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0013",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Stationmaster of the Government",
+   "to": "Stationmaster of Yongsan Station",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0014",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Station Master of the Government",
+   "to": "Stationmaster of Yongsan Station",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0015",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "to leave that order in the Yongsan Rail Council.",
+   "to": "to leave that order on the Yongsan Station dispatch board.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0016",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "If the two hands swapped places every season, the state would look like two. The Itaewon interpreters are a household within this state. That is why the Yongsan Rail Council is held.",
+   "to": "If the two hands swapped places every season, the dispatch board would look like two. The Itaewon interpreters share living space inside Yongsan Station. That is why the dispatch board goes up before the gates lock.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0017",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "the tracks move before the state does",
+   "to": "the tracks move before the government does",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0018",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Bak Taegyeom made the dispatch schedule public and convened the Yongsan Rail Council. The convening came before the convoy.",
+   "to": "Bak Taegyeom posted the dispatch schedule on the Yongsan Station dispatch board and locked access to the station. The lock came before the convoy.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0019",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "he disclosed its schedule and called the council before escorting it. He seeks to coordinate transport interests through the council without absorbing",
+   "to": "he posted its schedule on the Yongsan Station dispatch board and locked station access before escorting it. He runs the Yongsan Station dispatch but does not absorb",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0020",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Council before escort",
+   "to": "Lock before escort",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0021",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Calls a shared council first when transport stalls.",
+   "to": "Locks station access and posts the dispatch board first when transport stalls.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0022",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Keeps council convening ahead of escorting a stopped train.",
+   "to": "Keeps the access lock and board posting ahead of escorting a stopped train.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0023",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "The rail-clan elders, dispatchers, and apprentices surrounding",
+   "to": "The Division Chief, dispatchers, and apprentices surrounding",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0024",
+   "file": "090",
+   "col": "json_ko",
+   "from": "선로 가문 후계를 역장과 겨룸",
+   "to": "임명을 두고 역장과 겨룸",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0025",
+   "file": "090",
+   "col": "json_ko",
+   "from": "가문 배차 지휘를 받음",
+   "to": "본부 배차 지휘를 받음",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0026",
+   "file": "090",
+   "col": "json_ko",
+   "from": "차륜 공급 조건을 선로 가문과 거래",
+   "to": "차륜 공급 조건을 철도 본부와 거래",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0027",
+   "file": "090",
+   "col": "json",
+   "from": "Contests the rail-clan succession with the Station Master",
+   "to": "Contests the appointment with the Station Master",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0028",
+   "file": "090",
+   "col": "json",
+   "from": "Receives clan dispatch orders",
+   "to": "Receives division dispatch orders",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0029",
+   "file": "090",
+   "col": "json",
+   "from": "Trades wheel-supply terms with the Rail Clan",
+   "to": "Trades wheel-supply terms with the Railway Division",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0030",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "선로 가문 원로",
+   "to": "정부 철도 본부장",
+   "expect": 11
+  },
+  {
+   "id": "v4rw-people-0031",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "혈통 거부권",
+   "to": "임명받지 못한 자격",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0032",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "가문의 궤도를 혈통으로 보고 양자를 손님으로 대한다. 겉으로는 예의를 지키지만 배차 거부권만은 절대 놓지 않는다.",
+   "to": "선로 일을 집안 내력으로 보고 양자 출신을 손님으로 대한다. 겉으로는 예의를 지키지만 자격을 갖추고도 임명받지 못한 일만은 절대 잊지 않는다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0033",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "가문 회의에서만 선로 봉쇄를 승인하고",
+   "to": "본부장 결재로만 선로 봉쇄를 승인하고",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0034",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "가문 창고의 환적 독점까지 빼앗기는 것",
+   "to": "본부 창고의 환적 몫까지 빼앗기는 것",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0035",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "클라라 베넷을 가문 측 배차로 부리고",
+   "to": "클라라 베넷을 본부 측 배차로 부리고",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0036",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "선로 전환기를 잠그고 용산선로협의회를 소집했다.",
+   "to": "선로 전환기를 잠그고 용산역 배차판에 봉쇄 통지를 붙였다.",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0037",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "전환기를 잠그고 회의를 소집했다. 후계 경쟁에서",
+   "to": "전환기를 잠그고 봉쇄 통지를 붙였다. 임명 경쟁에서",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0038",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "박태겸과 후계를 놓고 경쟁하며",
+   "to": "박태겸과 임명을 놓고 경쟁하며",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0039",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "박태겸의 도제 승계를 무효로 돌리고 선로 가문이 용산선로협의회의 최종 거부권을 세습하게 한다.",
+   "to": "박태겸의 도제 승계를 무효로 돌리고, 자격을 갖추고도 임명받지 못한 자신의 몫을 되찾는다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0040",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "가문회의에서 양자 승계를 공개 지지할 수 있다.",
+   "to": "용산역 배차판 앞에서 양자 승계를 공개 지지할 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0041",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Rail Clan Elder",
+   "to": "Government Railway Division Chief",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0042",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Rail Clan elder",
+   "to": "Government Railway Division Chief",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0043",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "track house elder",
+   "to": "government railway division chief",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0044",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Hereditary veto",
+   "to": "Qualified but unappointed",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0045",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "He saw the house's rails as bloodline and treated the adopted child as a guest. Outwardly he kept his manners, but he never let go of the dispatch veto.",
+   "to": "He saw railway work as his family craft and treated the adopted child as a guest. Outwardly he kept his manners, but he never let go of having been qualified yet not appointed.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0046",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "He allowed track blockades only in the house council and pressed",
+   "to": "He allowed track blockades only on his own sign-off and pressed",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0047",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "He approves track blockades only in clan council, and pressures",
+   "to": "He approves track blockades only on his own sign-off, and pressures",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0048",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "strip even the house warehouse's transshipment monopoly",
+   "to": "strip even the division warehouse’s transshipment share",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0049",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "strip away the transshipment monopoly of the clan warehouse",
+   "to": "strip away the transshipment share of the division warehouse",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0050",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Used Clara Bennett as the house-side dispatcher",
+   "to": "Used Clara Bennett as the division-side dispatcher",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0052",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Uses Clara Bennett as the clan's dispatcher",
+   "to": "Uses Clara Bennett as the division’s dispatcher",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0053",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "locked the track switch and convened the Post-State Council.",
+   "to": "locked the track switch and posted a blockade notice on the Yongsan Station dispatch board.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0054",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "locked the switches and convened the Yongsan Rail Council.",
+   "to": "locked the switches and posted a blockade notice on the Yongsan Station dispatch board.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0055",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "He locked the switch and summoned the council. He uses rations and parts in the succession dispute",
+   "to": "He locked the switch and posted a blockade notice. He uses rations and parts in the appointment dispute",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0056",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Contested the succession with Park Taegyeom",
+   "to": "Contested the appointment with Park Taegyeom",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0057",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Competes with Bak Taegyeom over the succession",
+   "to": "Competes with Bak Taegyeom over the appointment",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0058",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "To nullify Bak Taegyeom's apprentice succession and make the Rail Clan hereditary holder of the Yongsan Rail Council's final veto.",
+   "to": "To nullify Bak Taegyeom's apprentice succession and win back the post he is qualified for but has never been appointed to.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0059",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "publicly endorse an adopted-heir succession at the clan council.",
+   "to": "publicly endorse an adopted-heir succession at the Yongsan Station dispatch board.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0060",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "선로 가문 배차원",
+   "to": "용산역 배차원",
+   "expect": 11
+  },
+  {
+   "id": "v4rw-people-0061",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "가문의 이름을 방패로 쓰면서도",
+   "to": "본부장의 이름을 방패로 쓰면서도",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0062",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "가문 칸과 공공 칸의 배차를",
+   "to": "본부 칸과 공공 칸의 배차를",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0063",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "가문 금고와 조정관실에",
+   "to": "본부 금고와 조정관실에",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0064",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "가문 지휘 아래서",
+   "to": "본부장 지휘 아래서",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0065",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "박태겸에게 가문 동향을 팔아",
+   "to": "박태겸에게 본부 동향을 팔아",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0066",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "가문 거부권과 박태겸의 도제 승계를 동시에 거래해 자신이 용산선로협의회의 실제 배차 키를 쥔다.",
+   "to": "본부 쪽 압박과 박태겸의 도제 승계를 동시에 거래해 자신이 용산역 배차판의 실제 배차 키를 쥔다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0067",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "양다리 배차 장부를 용산선로협의회에 펼칠 수 있다.",
+   "to": "양다리 배차 장부를 용산역 배차판에 펼칠 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0068",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json_ko",
+   "from": "가문·공공 화차 배차와 전환기 운영",
+   "to": "본부·공공 화차 배차와 전환기 운영",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0069",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "Rail Clan Dispatcher",
+   "to": "Yongsan Station Dispatcher",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0070",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "Track Clan Dispatcher",
+   "to": "Yongsan Station Dispatcher",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0071",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "track house dispatcher",
+   "to": "Yongsan Station dispatcher",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0072",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "She used the house's name as a shield",
+   "to": "She used the Division Chief’s name as a shield",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0073",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "She uses her clan's name as a shield",
+   "to": "She uses the Division Chief’s name as a shield",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0075",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "dispatches of the house columns and the public columns",
+   "to": "dispatches of the division columns and the public columns",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0076",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "dispatching of clan compartments and public compartments",
+   "to": "dispatching of division compartments and public compartments",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0078",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "one key of the detained train's switch lay in the house vault",
+   "to": "one key of the detained train's switch lay in the division vault",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0079",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "split, one in the clan vault and one",
+   "to": "split, one in the division vault and one",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0080",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "She sells house information to the coordinator",
+   "to": "She sells division information to the coordinator",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0081",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "sold the house's movements to Park Taegyeom",
+   "to": "sold the division’s movements to Park Taegyeom",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0082",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "selling him clan movements",
+   "to": "selling him division movements",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0083",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "By trading the clan veto and Bak Taegyeom's apprenticeship succession at the same time, she aims to hold the Yongsan Rail Council's real dispatch key herself.",
+   "to": "By trading the division’s pressure and Bak Taegyeom's apprenticeship succession at the same time, she aims to hold the real dispatch key of the Yongsan Station dispatch board herself.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0084",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "lay out the double-dealing dispatch ledger before the Yongsan Rail Council.",
+   "to": "lay out the double-dealing dispatch ledger on the Yongsan Station dispatch board.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0085",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "Clan and Public Freight Cars",
+   "to": "Division and Public Freight Cars",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0086",
+   "file": "090",
+   "key": "person-0175",
+   "col": "json",
+   "from": "Clan and public freight car dispatch",
+   "to": "Division and public freight car dispatch",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0088",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json_ko",
+   "from": "가문 칸 환자는 공공 칸과 분리해 받는다",
+   "to": "본부 칸 환자는 공공 칸과 분리해 받는다",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0089",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json_ko",
+   "from": "의무실이 가문 감옥이 되는 것",
+   "to": "의무실이 본부의 감옥이 되는 것",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0090",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json_ko",
+   "from": "선로 가문과 도제 노동자의 방역 주기를 용산선로협의회 부칙으로 올려",
+   "to": "철도 본부와 도제 노동자의 방역 주기를 용산역 진료 규칙으로 올려",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0091",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json_ko",
+   "from": "인질 명단을 가문에 넘겨",
+   "to": "인질 명단을 본부에 넘겨",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0092",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "took house-column patients separately from the public columns",
+   "to": "took division-column patients separately from the public columns",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0093",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "receives patients from clan bays separately from the public bay",
+   "to": "receives patients from division bays separately from the public bay",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0094",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "the infirmary would become a house prison",
+   "to": "the infirmary would become a division prison",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0095",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "turning the infirmary into a clan prison",
+   "to": "turning the infirmary into a division prison",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0096",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "Raise the quarantine cycles of the track clans and apprentice workers into a bylaw of the Yongsan Rail Council,",
+   "to": "Raise the quarantine cycles of the railway division and apprentice workers into a Yongsan Station clinic rule,",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0097",
+   "file": "090",
+   "key": "person-0178",
+   "col": "json",
+   "from": "hand the hostage list over to the clans",
+   "to": "hand the hostage list over to the railway division",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0098",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json_ko",
+   "from": "용산선로협의회 전갈·억류 통지 전달",
+   "to": "용산역 전갈·억류 통지 전달",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0099",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json_ko",
+   "from": "용산선로협의회 전령",
+   "to": "용산역 전령",
+   "expect": 14
+  },
+  {
+   "id": "v4rw-people-0100",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json_ko",
+   "from": "전갈을 조정관실과 가문 회의에 동시에",
+   "to": "전갈을 조정관실과 철도 본부에 동시에",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0101",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json_ko",
+   "from": "구두 배차 거부를 원장에 올리지 않는 원로를",
+   "to": "구두 배차 거부를 원장에 올리지 않는 본부 간부를",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0102",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json_ko",
+   "from": "위조 회의 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 가문 나팔이 되는 것",
+   "to": "위조 전갈 한 장이 양자 승계를 무효로 돌려 전령망이 본부의 나팔이 되는 것",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0103",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json_ko",
+   "from": "가방 속 보류 문서를 가문회의에 펼칠 수 있다.",
+   "to": "가방 속 보류 문서를 용산역 배차판에 펼칠 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0104",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Delivering Yongsan Rail Council Messages and Detention Notices",
+   "to": "Delivering Yongsan Station Messages and Detention Notices",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0105",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Yongsan Rail Council Courier",
+   "to": "Yongsan Station Courier",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0106",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Post-State Council courier post",
+   "to": "Yongsan Station courier post",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0107",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Post-State Council courier",
+   "to": "Yongsan Station courier",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0108",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Marquisate Council Herald",
+   "to": "Yongsan Station Courier",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0109",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Herald of the Marquisate Council",
+   "to": "Yongsan Station Courier",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0110",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Marquisate Council messages",
+   "to": "Yongsan Station messages",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0111",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "to the Coordinator's office and the house council at once",
+   "to": "to the Coordinator's office and the railway division at once",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0112",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "to the Coordinator's Office and the Clan Council;",
+   "to": "to the Coordinator's Office and the Railway Division;",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0113",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "called any elder who kept verbal dispatch refusals off the ledger a violator",
+   "to": "called any division official who kept verbal dispatch refusals off the ledger a violator",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0114",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "That one forged council dispatch would void the adopted-child succession and the courier network would become the house's horn.",
+   "to": "That one forged dispatch would void the adopted-child succession and the courier network would become the division’s horn.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0116",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "That a single forged council message will void an adoptive succession and turn the herald network into a clan's trumpet.",
+   "to": "That a single forged message will void an adoptive succession and turn the courier network into the division’s trumpet.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0117",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "lay out the held documents in the bag before the Clan Council.",
+   "to": "lay out the held documents in the bag on the Yongsan Station dispatch board.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0118",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Doge succession",
+   "to": "apprentice succession",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0119",
+   "file": "090",
+   "key": "person-0186",
+   "col": "json_ko",
+   "from": "양자 승계의 의료 최저선을 용산선로협의회에 못 박는다",
+   "to": "양자 승계의 의료 최저선을 용산역 진료 규칙에 못 박는다",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0120",
+   "file": "090",
+   "key": "person-0186",
+   "col": "json_ko",
+   "from": "효율을 이유로 가문 칸만 건너뛰라는",
+   "to": "효율을 이유로 본부 칸만 건너뛰라는",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0121",
+   "file": "090",
+   "key": "person-0186",
+   "col": "json",
+   "from": "onto the Yongsan Rail Council.",
+   "to": "onto the Yongsan Station clinic rules.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0122",
+   "file": "090",
+   "key": "person-0186",
+   "col": "json",
+   "from": "in the Yongsan Rail Council.",
+   "to": "in the Yongsan Station clinic rules.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0123",
+   "file": "090",
+   "key": "person-0186",
+   "col": "json",
+   "from": "skip the house columns for efficiency",
+   "to": "skip the division columns for efficiency",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0124",
+   "file": "090",
+   "key": "person-0188",
+   "col": "json_ko",
+   "from": "거절된 열람 사본을 용산선로협의회에 펼치거나",
+   "to": "거절된 열람 사본을 용산역 배차판에 펼치거나",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0125",
+   "file": "090",
+   "key": "person-0188",
+   "col": "json_ko",
+   "from": "열람을 거절하는 원로에게는",
+   "to": "열람을 거절하는 본부 간부에게는",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0126",
+   "file": "090",
+   "key": "person-0188",
+   "col": "json",
+   "from": "lay the refused access copy before the Domain Council,",
+   "to": "lay the refused access copy on the Yongsan Station dispatch board,",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0127",
+   "file": "090",
+   "key": "person-0188",
+   "col": "json",
+   "from": "any elder who refused inspection",
+   "to": "any division official who refused inspection",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0128",
+   "file": "090",
+   "key": "person-0189",
+   "col": "json_ko",
+   "from": "칸 문을 잠그고 용산선로협의회가 열릴 때까지 나가지 않았다.",
+   "to": "칸 문을 잠그고 용산역 역장이 올 때까지 나가지 않았다.",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0129",
+   "file": "090",
+   "key": "person-0189",
+   "col": "json_ko",
+   "from": "무기를 발견한 칸을 잠그고 회의까지 남았다.",
+   "to": "무기를 발견한 칸을 잠그고 역장이 올 때까지 남았다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0130",
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "did not step out until the Post-State Council opened.",
+   "to": "did not step out until the Stationmaster of Yongsan Station arrived.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0131",
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "did not leave until the Domain Council convened.",
+   "to": "did not leave until the Stationmaster of Yongsan Station arrived.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0132",
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "did not come out until the Yongsan Rail Council convened.",
+   "to": "did not come out until the Stationmaster of Yongsan Station arrived.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0133",
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "and stayed until the council.",
+   "to": "and stayed until the Stationmaster arrived.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0134",
+   "file": "090",
+   "key": "person-0174",
+   "col": "json_ko",
+   "from": "용산 선로권의 중계 신용",
+   "to": "용산역 환적 창고의 중계 신용",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0135",
+   "file": "090",
+   "key": "person-0174",
+   "col": "json_ko",
+   "from": "해당 가문 칸을 봉쇄한다",
+   "to": "해당 본부 칸을 봉쇄한다",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0136",
+   "file": "090",
+   "key": "person-0174",
+   "col": "json",
+   "from": "Yongsan rail zone's relay credit",
+   "to": "Yongsan Station’s relay credit",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0137",
+   "file": "090",
+   "key": "person-0174",
+   "col": "json",
+   "from": "sealed any house column caught with false inventory",
+   "to": "sealed any division column caught with false inventory",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0138",
+   "file": "090",
+   "key": "person-0174",
+   "col": "json",
+   "from": "seals the compartment of the clan responsible",
+   "to": "seals the compartment of the division responsible",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0139",
+   "file": "090",
+   "key": "person-0183",
+   "col": "json_ko",
+   "from": "용산 선로권의 대면 창구가 된다",
+   "to": "용산역의 대면 창구가 된다",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0140",
+   "file": "090",
+   "key": "person-0183",
+   "col": "json_ko",
+   "from": "가문 화차 뒤로 미루라는",
+   "to": "본부 화차 뒤로 미루라는",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0141",
+   "file": "090",
+   "key": "person-0183",
+   "col": "json",
+   "from": "the face-to-face window of the Yongsan rail zone",
+   "to": "the face-to-face window of Yongsan Station",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0142",
+   "file": "090",
+   "key": "person-0183",
+   "col": "json",
+   "from": "behind the house freight cars",
+   "to": "behind the division freight cars",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0143",
+   "file": "090",
+   "key": "person-0194",
+   "col": "json_ko",
+   "from": "용산 선로권 단독 시간표",
+   "to": "용산역 단독 시간표",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0144",
+   "file": "090",
+   "key": "person-0194",
+   "col": "json",
+   "from": "a single timetable of the Yongsan rail zone",
+   "to": "a single timetable of Yongsan Station",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0145",
+   "file": "090",
+   "key": "person-0173",
+   "col": "json_ko",
+   "from": "혈연 선로가문의 거부권을 배차표에서 지운다",
+   "to": "본부 간부의 압박을 배차표에서 지운다",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0146",
+   "file": "090",
+   "key": "person-0173",
+   "col": "json_ko",
+   "from": "손대지 말라는 가문 명령이",
+   "to": "손대지 말라는 본부 명령이",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0147",
+   "file": "090",
+   "key": "person-0173",
+   "col": "json_ko",
+   "from": "가문 회의를 흔들 수 있다",
+   "to": "본부 결재를 흔들 수 있다",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0148",
+   "file": "090",
+   "key": "person-0173",
+   "col": "json",
+   "from": "erase the blood-kin track clans' veto from the dispatch schedule",
+   "to": "erase the division’s pressure from the dispatch schedule",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0149",
+   "file": "090",
+   "key": "person-0173",
+   "col": "json",
+   "from": "and the house command not to touch it",
+   "to": "and the division order not to touch it",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0150",
+   "file": "090",
+   "key": "person-0173",
+   "col": "json",
+   "from": "and a clan order not to touch it",
+   "to": "and a division order not to touch it",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0151",
+   "file": "090",
+   "key": "person-0173",
+   "col": "json",
+   "from": "shake up the clan council",
+   "to": "shake up the division’s sign-off",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0152",
+   "file": "090",
+   "key": "person-1014",
+   "col": "json_ko",
+   "from": "용산 선로권 장부 박조엘",
+   "to": "용산역 장부 박조엘",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0153",
+   "file": "090",
+   "key": "person-1014",
+   "col": "json_ko",
+   "from": "창고 기억을 용산선로협의회 정식 열람으로 올려",
+   "to": "창고 기억을 용산역 정식 열람으로 올려",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0154",
+   "file": "090",
+   "key": "person-1014",
+   "col": "json",
+   "from": "Yongsan rail zone Ledger: Bak Joel",
+   "to": "Yongsan Station Ledger: Bak Joel",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0155",
+   "file": "090",
+   "key": "person-1014",
+   "col": "json",
+   "from": "to a formal access of the Yongsan Rail Council",
+   "to": "to a formal access of Yongsan Station",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0156",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json_ko",
+   "from": "박태겸은 그 순서를 용산선로협의회에 남기려 용산호송가의 배차표를 지켰다.",
+   "to": "박태겸은 그 순서를 용산역 배차판에 남기려 용산호송가의 배차표를 지켰다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0157",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json_ko",
+   "from": "두 손이 계절마다 자리를 바꾸면 나라가 둘로 보인다. 이태원 통역은 이 나라 안의 호다. 그래서 용산선로협의회를 연다.",
+   "to": "두 손이 계절마다 자리를 바꾸면 배차판이 둘로 보인다. 이태원 통역은 용산역 안에서 거처를 나눠 쓴다. 그래서 출입을 잠그기 전에 배차판부터 공개한다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0158",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json_ko",
+   "from": "비상 호송이 열리면 선로가 나라보다 먼저 움직인다.",
+   "to": "비상 호송이 열리면 선로가 정부보다 먼저 움직인다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0159",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json_ko",
+   "from": "용산 선로권 장부 박조엘",
+   "to": "용산역 장부 박조엘",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0160",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json",
+   "from": "so as to leave that order to the Yongsan Rail Council. The siding duty at the Yongsan Trackgate belongs to Jang Sehwa. If the two hands swapped places every season, the state would look like two. Itaewon interpretation is a household within this state. That is why the Yongsan Rail Council is convened.",
+   "to": "so as to leave that order on the Yongsan Station dispatch board. The siding duty at the Yongsan Trackgate belongs to Jang Sehwa. If the two hands swapped places every season, the dispatch board would look like two. Itaewon interpretation shares living space inside Yongsan Station. That is why the dispatch board goes up before the gates lock.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0161",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json",
+   "from": "the tracks move before the state does",
+   "to": "the tracks move before the government does",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0162",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json",
+   "from": "Marquisate ledger: Bak Joel",
+   "to": "Yongsan Station ledger: Bak Joel",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0163",
+   "file": "050",
+   "key": "person-0170",
+   "col": "position",
+   "from": "Stationmaster of the Government",
+   "to": "Stationmaster of Yongsan Station",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0164",
+   "file": "050",
+   "key": "person-0170",
+   "col": "position_ko",
+   "from": "정부 역장",
+   "to": "용산역 역장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0165",
+   "file": "050",
+   "key": "person-0171",
+   "col": "title",
+   "from": "Rail Clan Elder",
+   "to": "Government Railway Division Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0166",
+   "file": "050",
+   "key": "person-0171",
+   "col": "position",
+   "from": "Rail Clan Elder",
+   "to": "Government Railway Division Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0167",
+   "file": "050",
+   "key": "person-0171",
+   "col": "title_ko",
+   "from": "선로 가문 원로",
+   "to": "정부 철도 본부장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0168",
+   "file": "050",
+   "key": "person-0171",
+   "col": "position_ko",
+   "from": "선로 가문 원로",
+   "to": "정부 철도 본부장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0169",
+   "file": "050",
+   "key": "person-0175",
+   "col": "title",
+   "from": "Rail Clan Dispatcher",
+   "to": "Yongsan Station Dispatcher",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0170",
+   "file": "050",
+   "key": "person-0175",
+   "col": "position",
+   "from": "Rail Clan Dispatcher",
+   "to": "Yongsan Station Dispatcher",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0171",
+   "file": "050",
+   "key": "person-0175",
+   "col": "title_ko",
+   "from": "선로 가문 배차원",
+   "to": "용산역 배차원",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0172",
+   "file": "050",
+   "key": "person-0175",
+   "col": "position_ko",
+   "from": "선로 가문 배차원",
+   "to": "용산역 배차원",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0173",
+   "file": "050",
+   "key": "person-0175",
+   "col": "occupation",
+   "from": "Dispatching Clan and Public Freight Cars and Operating Switches",
+   "to": "Dispatching Division and Public Freight Cars and Operating Switches",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0174",
+   "file": "050",
+   "key": "person-0175",
+   "col": "occupation_ko",
+   "from": "가문·공공 화차 배차와 전환기 운영",
+   "to": "본부·공공 화차 배차와 전환기 운영",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0175",
+   "file": "050",
+   "key": "person-0180",
+   "col": "title",
+   "from": "Yongsan Rail Council Courier",
+   "to": "Yongsan Station Courier",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0176",
+   "file": "050",
+   "key": "person-0180",
+   "col": "position",
+   "from": "Yongsan Rail Council Courier",
+   "to": "Yongsan Station Courier",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0177",
+   "file": "050",
+   "key": "person-0180",
+   "col": "title_ko",
+   "from": "용산선로협의회 전령",
+   "to": "용산역 전령",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0178",
+   "file": "050",
+   "key": "person-0180",
+   "col": "position_ko",
+   "from": "용산선로협의회 전령",
+   "to": "용산역 전령",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0179",
+   "file": "050",
+   "key": "person-0180",
+   "col": "occupation",
+   "from": "Delivering Yongsan Rail Council Messages and Detention Notices",
+   "to": "Delivering Yongsan Station Messages and Detention Notices",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0180",
+   "file": "050",
+   "key": "person-0180",
+   "col": "occupation_ko",
+   "from": "용산선로협의회 전갈·억류 통지 전달",
+   "to": "용산역 전갈·억류 통지 전달",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0181",
+   "file": "050",
+   "key": "person-0272",
+   "col": "position",
+   "from": "Chairman of Seongha Group, Hereditary Position of the Yi Family",
+   "to": "Head of the Yi Family of the Arc",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0182",
+   "file": "050",
+   "key": "person-0272",
+   "col": "position_ko",
+   "from": "성하그룹 회장, 이씨 가문 세습",
+   "to": "아크 이씨 가문 수장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0183",
+   "file": "050",
+   "key": "person-1005",
+   "col": "position",
+   "from": "Chairman of the Taeuk Group",
+   "to": "Head of the Jeong Family of the Arc",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0184",
+   "file": "050",
+   "key": "person-1005",
+   "col": "position_ko",
+   "from": "태욱그룹 회장",
+   "to": "아크 정씨 가문 수장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0185",
+   "file": "050",
+   "key": "person-1005",
+   "col": "occupation",
+   "from": "Chairman's Duties · Verification Approval",
+   "to": "Family Head's Duties · Verification Approval",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0186",
+   "file": "050",
+   "key": "person-1005",
+   "col": "occupation_ko",
+   "from": "회장 직무·검증 인준",
+   "to": "가문 수장 직무·검증 인준",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0187",
+   "file": "050",
+   "key": "person-0399",
+   "col": "position",
+   "from": "Arc Chairperson",
+   "to": "Arc Contract Auditor",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0188",
+   "file": "050",
+   "key": "person-0399",
+   "col": "position_ko",
+   "from": "Arc 위원장",
+   "to": "Arc 계약 감사관",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0189",
+   "file": "050",
+   "key": "person-0029",
+   "col": "position",
+   "from": "Chair of the Standards League",
+   "to": "Guild Master of the Workshop Production Guild",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0190",
+   "file": "050",
+   "key": "person-0029",
+   "col": "position_ko",
+   "from": "규격맹 위원장",
+   "to": "공방 제작 조합 조합장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0191",
+   "file": "050",
+   "key": "person-0220",
+   "col": "position",
+   "from": "Yeouido Investment Federation Chairperson",
+   "to": "Guild Master of the Yeouido Investment Guild",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0192",
+   "file": "050",
+   "key": "person-0220",
+   "col": "position_ko",
+   "from": "여의도출자연합회 의장",
+   "to": "여의도 출자 조합 조합장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0193",
+   "file": "050",
+   "key": "person-0349",
+   "col": "position",
+   "from": "Agwansa Commander",
+   "to": "Division Chief of the Government Ridge Garrison",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0194",
+   "file": "050",
+   "key": "person-0349",
+   "col": "position_ko",
+   "from": "아관사 사령관",
+   "to": "정부 능선수비대 본부장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0195",
+   "file": "050",
+   "key": "person-0246",
+   "col": "position",
+   "from": "Abbot of Anguk Grand Monastery",
+   "to": "Bureau Chief of Government Roster Transcription",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0196",
+   "file": "050",
+   "key": "person-0246",
+   "col": "position_ko",
+   "from": "안국총림 방장",
+   "to": "정부 명부 필사 국장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0197",
+   "file": "050",
+   "key": "person-0297",
+   "col": "title",
+   "from": "President",
+   "to": "Stationmaster",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0198",
+   "file": "050",
+   "key": "person-0297",
+   "col": "title_ko",
+   "from": "사장",
+   "to": "역장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0199",
+   "file": "050",
+   "key": "person-0297",
+   "col": "position",
+   "from": "Sinnae Transport President",
+   "to": "Stationmaster of Sinnae Station",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0200",
+   "file": "050",
+   "key": "person-0297",
+   "col": "position_ko",
+   "from": "신내운수 사장",
+   "to": "신내역 역장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0201",
+   "file": "050",
+   "key": "person-0297",
+   "col": "rank",
+   "from": "President",
+   "to": "Stationmaster",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0202",
+   "file": "050",
+   "key": "person-0297",
+   "col": "rank_ko",
+   "from": "사장",
+   "to": "역장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0203",
+   "file": "050",
+   "key": "person-0070",
+   "col": "position",
+   "from": "Arc Chairman's Envoy",
+   "to": "Hierophant's Office Courier",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0204",
+   "file": "050",
+   "key": "person-0070",
+   "col": "position_ko",
+   "from": "Arc 회장 전령",
+   "to": "교주실 전령",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0205",
+   "file": "050",
+   "key": "person-0282",
+   "col": "position",
+   "from": "Chairman's Office Courier, Operations Aide to Jo Uchan",
+   "to": "Hierophant's Office Courier, Operations Aide to Jo Uchan",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0206",
+   "file": "050",
+   "key": "person-0282",
+   "col": "position_ko",
+   "from": "회장실 전령, 조우찬의 실무 담당자",
+   "to": "교주실 전령, 조우찬의 실무 담당자",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0207",
+   "file": "050",
+   "key": "person-0030",
+   "col": "rank",
+   "from": "Executive Director",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0208",
+   "file": "050",
+   "key": "person-0030",
+   "col": "rank_ko",
+   "from": "상임이사",
+   "to": "일반 시민",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0209",
+   "file": "050",
+   "key": "person-0057",
+   "col": "rank",
+   "from": "Executive Director",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0210",
+   "file": "050",
+   "key": "person-0057",
+   "col": "rank_ko",
+   "from": "전무",
+   "to": "일반 시민",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0211",
+   "file": "050",
+   "key": "person-0061",
+   "col": "rank",
+   "from": "Executive Director",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0212",
+   "file": "050",
+   "key": "person-0061",
+   "col": "rank_ko",
+   "from": "전무",
+   "to": "일반 시민",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0213",
+   "file": "050",
+   "key": "person-0288",
+   "col": "rank",
+   "from": "Sangmu",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0214",
+   "file": "050",
+   "key": "person-0288",
+   "col": "rank_ko",
+   "from": "상무",
+   "to": "일반 시민",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0215",
+   "file": "050",
+   "key": "person-0289",
+   "col": "position",
+   "from": "Gangnam Station Rail Cavalry Maintenance Yard Outpost Chief",
+   "to": "Stationmaster of Gangnam Station",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0216",
+   "file": "050",
+   "key": "person-0289",
+   "col": "position_ko",
+   "from": "강남역 궤도기병 정비창 거점장",
+   "to": "강남역 역장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0217",
+   "file": "050",
+   "key": "person-0289",
+   "col": "rank",
+   "from": "Sangmu",
+   "to": "Stationmaster",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0218",
+   "file": "050",
+   "key": "person-0289",
+   "col": "rank_ko",
+   "from": "상무",
+   "to": "역장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0219",
+   "file": "050",
+   "key": "person-0247",
+   "col": "position",
+   "from": "Congregation Roster Head Monk",
+   "to": "Refugee Roster Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0220",
+   "file": "050",
+   "key": "person-0247",
+   "col": "position_ko",
+   "from": "신도 명부 주지",
+   "to": "피난 명부 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0221",
+   "file": "050",
+   "key": "person-0247",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0222",
+   "file": "050",
+   "key": "person-0247",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0223",
+   "file": "050",
+   "key": "person-0248",
+   "col": "position",
+   "from": "Ration Scale Head Monk",
+   "to": "Ration Scale Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0224",
+   "file": "050",
+   "key": "person-0248",
+   "col": "position_ko",
+   "from": "배급 저울 주지",
+   "to": "배급 저울 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0225",
+   "file": "050",
+   "key": "person-0248",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0226",
+   "file": "050",
+   "key": "person-0248",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0227",
+   "file": "050",
+   "key": "person-0249",
+   "col": "position",
+   "from": "Corridor Scouting Head Monk",
+   "to": "Corridor Scouting Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0228",
+   "file": "050",
+   "key": "person-0249",
+   "col": "position_ko",
+   "from": "회랑 정찰 주지",
+   "to": "회랑 정찰 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0229",
+   "file": "050",
+   "key": "person-0249",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0230",
+   "file": "050",
+   "key": "person-0249",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0231",
+   "file": "050",
+   "key": "person-0250",
+   "col": "position",
+   "from": "Abbot of Sutra Transcription",
+   "to": "Roster Copying Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0232",
+   "file": "050",
+   "key": "person-0250",
+   "col": "position_ko",
+   "from": "장경 필사 주지",
+   "to": "명부 필사 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0233",
+   "file": "050",
+   "key": "person-0250",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0234",
+   "file": "050",
+   "key": "person-0250",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0235",
+   "file": "050",
+   "key": "person-0251",
+   "col": "position",
+   "from": "Ration Duty Abbot",
+   "to": "Ration Duty Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0236",
+   "file": "050",
+   "key": "person-0251",
+   "col": "position_ko",
+   "from": "배급 당직 주지",
+   "to": "배급 당직 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0237",
+   "file": "050",
+   "key": "person-0251",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0238",
+   "file": "050",
+   "key": "person-0251",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0239",
+   "file": "050",
+   "key": "person-0252",
+   "col": "position",
+   "from": "Stove Maintenance Abbot",
+   "to": "Stove Maintenance Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0240",
+   "file": "050",
+   "key": "person-0252",
+   "col": "position_ko",
+   "from": "난로 정비 주지",
+   "to": "난로 정비 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0241",
+   "file": "050",
+   "key": "person-0252",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0242",
+   "file": "050",
+   "key": "person-0252",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0243",
+   "file": "050",
+   "key": "person-0253",
+   "col": "position",
+   "from": "Cargo Ledger Abbot",
+   "to": "Cargo Ledger Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0244",
+   "file": "050",
+   "key": "person-0253",
+   "col": "position_ko",
+   "from": "짐 장부 주지",
+   "to": "짐 장부 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0245",
+   "file": "050",
+   "key": "person-0253",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0246",
+   "file": "050",
+   "key": "person-0253",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0247",
+   "file": "050",
+   "key": "person-0254",
+   "col": "position",
+   "from": "Herbal Medicine Abbot",
+   "to": "Herbal Medical Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0248",
+   "file": "050",
+   "key": "person-0254",
+   "col": "position_ko",
+   "from": "약초 의무 주지",
+   "to": "약초 의무 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0249",
+   "file": "050",
+   "key": "person-0254",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0250",
+   "file": "050",
+   "key": "person-0254",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0251",
+   "file": "050",
+   "key": "person-0255",
+   "col": "position",
+   "from": "Corridor Patrol Abbot, Gang Tae-san's Deputy",
+   "to": "Corridor Patrol Clerk, Gang Tae-san's Deputy",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0252",
+   "file": "050",
+   "key": "person-0255",
+   "col": "position_ko",
+   "from": "회랑 순찰 주지, 강태산의 실무 담당자",
+   "to": "회랑 순찰 주사, 강태산의 실무 담당자",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0253",
+   "file": "050",
+   "key": "person-0255",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0254",
+   "file": "050",
+   "key": "person-0255",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0255",
+   "file": "050",
+   "key": "person-0256",
+   "col": "position",
+   "from": "General Assembly Herald Abbot, Sin Bo-ram's Deputy",
+   "to": "Courier Clerk, Sin Bo-ram's Deputy",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0256",
+   "file": "050",
+   "key": "person-0256",
+   "col": "position_ko",
+   "from": "총회 전령 주지, 신보람의 실무 담당자",
+   "to": "전령 주사, 신보람의 실무 담당자",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0257",
+   "file": "050",
+   "key": "person-0256",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0258",
+   "file": "050",
+   "key": "person-0256",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0259",
+   "file": "050",
+   "key": "person-0257",
+   "col": "position",
+   "from": "Detour Survey Abbot",
+   "to": "Detour Survey Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0260",
+   "file": "050",
+   "key": "person-0257",
+   "col": "position_ko",
+   "from": "우회로 실측 주지",
+   "to": "우회로 실측 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0261",
+   "file": "050",
+   "key": "person-0257",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0262",
+   "file": "050",
+   "key": "person-0257",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0263",
+   "file": "050",
+   "key": "person-0258",
+   "col": "position",
+   "from": "Lay Follower Ledger Abbot, Yun Cho-a's Deputy",
+   "to": "Refugee Ledger Clerk, Yun Cho-a's Deputy",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0264",
+   "file": "050",
+   "key": "person-0258",
+   "col": "position_ko",
+   "from": "신도 원장 주지, 윤초아의 실무 담당자",
+   "to": "피난 원장 주사, 윤초아의 실무 담당자",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0265",
+   "file": "050",
+   "key": "person-0258",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0266",
+   "file": "050",
+   "key": "person-0258",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0267",
+   "file": "050",
+   "key": "person-0259",
+   "col": "position",
+   "from": "Encampment Duty Abbot",
+   "to": "Encampment Duty Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0268",
+   "file": "050",
+   "key": "person-0259",
+   "col": "position_ko",
+   "from": "숙영 당직 주지",
+   "to": "숙영 당직 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0269",
+   "file": "050",
+   "key": "person-0259",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0270",
+   "file": "050",
+   "key": "person-0259",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0271",
+   "file": "050",
+   "key": "person-0271",
+   "col": "position",
+   "from": "Evacuation Route Guide Abbot",
+   "to": "Evacuation Route Guide Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0272",
+   "file": "050",
+   "key": "person-0271",
+   "col": "position_ko",
+   "from": "피난로 안내 주지",
+   "to": "피난로 안내 주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0273",
+   "file": "050",
+   "key": "person-0271",
+   "col": "rank",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0274",
+   "file": "050",
+   "key": "person-0271",
+   "col": "rank_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0275",
+   "file": "050",
+   "key": "person-0260",
+   "col": "position",
+   "from": "Passage Ledger Senior Monk",
+   "to": "Passage Ledger Duty Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0276",
+   "file": "050",
+   "key": "person-0260",
+   "col": "position_ko",
+   "from": "통행 장부 수좌",
+   "to": "통행 장부 당직장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0277",
+   "file": "050",
+   "key": "person-0260",
+   "col": "rank",
+   "from": "Senior Monk",
+   "to": "Duty Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0278",
+   "file": "050",
+   "key": "person-0260",
+   "col": "rank_ko",
+   "from": "수좌",
+   "to": "당직장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0279",
+   "file": "050",
+   "key": "person-0261",
+   "col": "position",
+   "from": "Herb Drying Yard Senior Monk",
+   "to": "Herb Drying Yard Duty Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0280",
+   "file": "050",
+   "key": "person-0261",
+   "col": "position_ko",
+   "from": "약초 건조장 수좌",
+   "to": "약초 건조장 당직장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0281",
+   "file": "050",
+   "key": "person-0261",
+   "col": "rank",
+   "from": "Senior Monk",
+   "to": "Duty Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0282",
+   "file": "050",
+   "key": "person-0261",
+   "col": "rank_ko",
+   "from": "수좌",
+   "to": "당직장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0283",
+   "file": "050",
+   "key": "person-0262",
+   "col": "position",
+   "from": "Highland Duty Senior Monk",
+   "to": "Highland Duty Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0284",
+   "file": "050",
+   "key": "person-0262",
+   "col": "position_ko",
+   "from": "고지 당직 수좌",
+   "to": "고지 당직장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0285",
+   "file": "050",
+   "key": "person-0262",
+   "col": "rank",
+   "from": "Senior Monk",
+   "to": "Duty Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0286",
+   "file": "050",
+   "key": "person-0262",
+   "col": "rank_ko",
+   "from": "수좌",
+   "to": "당직장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0287",
+   "file": "050",
+   "key": "person-0263",
+   "col": "position",
+   "from": "Fuel Depot Senior Monk, O Han-gyeol's Deputy",
+   "to": "Fuel Depot Duty Chief, O Han-gyeol's Deputy",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0288",
+   "file": "050",
+   "key": "person-0263",
+   "col": "position_ko",
+   "from": "연료고 수좌, 오한결의 실무 담당자",
+   "to": "연료고 당직장, 오한결의 실무 담당자",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0289",
+   "file": "050",
+   "key": "person-0263",
+   "col": "rank",
+   "from": "Senior Monk",
+   "to": "Duty Chief",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0290",
+   "file": "050",
+   "key": "person-0263",
+   "col": "rank_ko",
+   "from": "수좌",
+   "to": "당직장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0291",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "성하그룹 회장, 이씨 가문 세습",
+   "to": "아크 이씨 가문 수장",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0292",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "이홍원이 회장이 된 것은",
+   "to": "이홍원이 이씨 가문 수장이 된 것은",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0293",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "성하그룹의 수도는 강남역이고 회장직은 이씨 가문이 세습한다.",
+   "to": "이씨 가문의 근거지는 강남역이고, 가문 수장 자리는 이씨 가문이 잇는다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0294",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "품계 회장.",
+   "to": "품계 추기경(잠정).",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0295",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "- 품계: 회장",
+   "to": "- 품계: 추기경(잠정)",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0296",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "Chairman of Seongha Group, Hereditary Position of the Yi Family",
+   "to": "Head of the Yi Family of the Arc",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0297",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "Chairman of Seongha Group, hereditary in the Yi clan",
+   "to": "Head of the Yi Family of the Arc",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0298",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "Yi Hongwon became chairman after",
+   "to": "Yi Hongwon became head of the Yi family after",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0299",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "The capital of Seongha Group is Gangnam Station, and the chairmanship is hereditary in the Yi clan.",
+   "to": "The Yi family’s base is Gangnam Station, and the post of family head passes within the Yi clan.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0300",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "Rank: Chairman.",
+   "to": "Rank: Cardinal (provisional).",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0301",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "- Rank: Chairman",
+   "to": "- Rank: Cardinal (provisional)",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0302",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "the chairman's office bulletin board",
+   "to": "the family head's office bulletin board",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0303",
+   "file": "090",
+   "col": "json_ko",
+   "from": "강남역 본사·회장실 게시판",
+   "to": "강남역 본사·가문 수장실 게시판",
+   "expect": 22
+  },
+  {
+   "id": "v4rw-people-0304",
+   "file": "090",
+   "col": "json_ko",
+   "from": "회장실 인준 전 출고",
+   "to": "가문 수장실 인준 전 출고",
+   "expect": 16
+  },
+  {
+   "id": "v4rw-people-0305",
+   "file": "090",
+   "col": "json",
+   "from": "Gangnam Station headquarters and Chairman's Office bulletin boards",
+   "to": "Gangnam Station headquarters and family head's office bulletin boards",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0306",
+   "file": "090",
+   "col": "json",
+   "from": "Gangnam Station headquarters and Chairman's Office notice board",
+   "to": "Gangnam Station headquarters and family head's office notice board",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0307",
+   "file": "090",
+   "col": "json",
+   "from": "before Chairman's Office approval",
+   "to": "before approval by the family head's office",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0308",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "태욱그룹 회장",
+   "to": "아크 정씨 가문 수장",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0309",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "회장 직무·검증 인준",
+   "to": "가문 수장 직무·검증 인준",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0310",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "인준 무응답과 회장 취임이 함께 남아 있다.",
+   "to": "인준 무응답과 가문 수장 취임이 함께 남아 있다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0311",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "정통회의 무응답 속에서 회장 자리에 앉았다.",
+   "to": "정통회의 무응답 속에서 가문 수장 자리에 앉았다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0312",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "회장 직무와 정호준의 연구 책임은 구분된다.",
+   "to": "가문 수장 직무와 정호준의 연구 책임은 구분된다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0313",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "품계 회장.",
+   "to": "품계 추기경(잠정).",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0314",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "회장 인준이 열렸을 때",
+   "to": "가문 수장 인준이 열렸을 때",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0315",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "정서온은 회장 자리에 앉았다.",
+   "to": "정서온은 가문 수장 자리에 앉았다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0316",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json_ko",
+   "from": "정씨 회장가.",
+   "to": "정씨 수장 가문.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0317",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "Chairman of the Taeuk Group",
+   "to": "Head of the Jeong Family of the Arc",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0318",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "Chairman's Duties · Verification Approval",
+   "to": "Family Head's Duties · Verification Approval",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0319",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "Chairwoman's Duties and Confirmation Approval",
+   "to": "Family Head's Duties and Confirmation Approval",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0320",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "Council silence and taking the chair coexist.",
+   "to": "Council silence and taking the family head’s seat coexist.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0321",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "She took the chair amid a male-heir challenge",
+   "to": "She took the family head’s seat amid a male-heir challenge",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0322",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "Her chairmanship remains distinct from Jeong Hojun",
+   "to": "Her post as family head remains distinct from Jeong Hojun",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0323",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "Rank: Chairwoman.",
+   "to": "Rank: Cardinal (provisional).",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0324",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "Title: Chairwoman of Taeuk Group.",
+   "to": "Title: Head of the Jeong Family of the Arc.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0325",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "When the chairwoman's confirmation was held",
+   "to": "When the family head's confirmation was held",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0326",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "Jeong Seoon took the chair.",
+   "to": "Jeong Seoon took the family head’s seat.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0327",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "The Jeong chairwoman's house.",
+   "to": "The Jeong family head's house.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0328",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "정서온의 회장 권한과",
+   "to": "정서온의 가문 수장 권한과",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0329",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "정서온의 회장직과 별개로",
+   "to": "정서온의 가문 수장직과 별개로",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0330",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "정씨 회장 가문은 회장직을 세습하며, 개막의 회장은 정서온이다.",
+   "to": "정씨 수장 가문은 가문 수장 자리를 잇고, 개막의 가문 수장은 정서온이다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0331",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "회장 자리는 그 삭제가 아니라 가문 세습으로 열렸다.",
+   "to": "가문 수장 자리는 그 삭제가 아니라 가문 내력으로 열렸다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0332",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "품계 전무.",
+   "to": "품계 일반 시민.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0333",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "- 품계: 전무",
+   "to": "- 품계: 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0334",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "Arc 회장이 생명안전 연구책임을 분리해 둠",
+   "to": "아크 가문 수장이 생명안전 연구책임을 분리해 둠",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0335",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "Distinguishes Jeong Seoon’s chairmanship from his research responsibility.",
+   "to": "Distinguishes Jeong Seoon’s post as family head from his research responsibility.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0336",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "His research remit is separate from Jeong Seoon’s chairmanship",
+   "to": "His research remit is separate from Jeong Seoon’s post as family head",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0337",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "The Jeong chairman family inherits the chairmanship, and the chairman at the opening is Jeong Seoon.",
+   "to": "The Jeong family passes on the post of family head, and the family head at the opening is Jeong Seoon.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0338",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "The chairmanship opened not through that deletion but through family succession.",
+   "to": "The family head’s seat opened not through that deletion but through the family’s own line.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0339",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "Rank: Executive Director.",
+   "to": "Rank: Ordinary Citizen.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0340",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "- Rank: Executive Director",
+   "to": "- Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0341",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "The Taeuk Group chairman has separated out the life safety research responsibility",
+   "to": "The family head of the Arc has separated out the life safety research responsibility",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0342",
+   "file": "090",
+   "key": "person-0030",
+   "col": "json_ko",
+   "from": "품계 상임이사.",
+   "to": "품계 일반 시민.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0343",
+   "file": "090",
+   "key": "person-0030",
+   "col": "json_ko",
+   "from": "- 품계: 상임이사",
+   "to": "- 품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0344",
+   "file": "090",
+   "key": "person-0030",
+   "col": "json",
+   "from": "Rank: Standing Director.",
+   "to": "Rank: Ordinary Citizen.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0345",
+   "file": "090",
+   "key": "person-0030",
+   "col": "json",
+   "from": "- Rank: Standing Director",
+   "to": "- Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0346",
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "품계 전무.",
+   "to": "품계 일반 시민.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0347",
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "- 품계: 전무",
+   "to": "- 품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0350",
+   "file": "090",
+   "key": "person-0288",
+   "col": "json_ko",
+   "from": "품계 상무.",
+   "to": "품계 일반 시민.",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0351",
+   "file": "090",
+   "key": "person-0288",
+   "col": "json_ko",
+   "from": "- 품계: 상무",
+   "to": "- 품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0352",
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "Rank: Managing Director.",
+   "to": "Rank: Ordinary Citizen.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0353",
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "- Rank: Managing Director",
+   "to": "- Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0354",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json_ko",
+   "from": "강남역 궤도기병 정비창 거점장",
+   "to": "강남역 역장",
+   "expect": 8
+  },
+  {
+   "id": "v4rw-people-0355",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json_ko",
+   "from": "무장 탑재는 상무와 감사의 공동 날인만 허용한다.",
+   "to": "무장 탑재는 역장과 감사의 공동 날인만 허용한다.",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0356",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json_ko",
+   "from": "품계 상무.",
+   "to": "품계 역장.",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0357",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json_ko",
+   "from": "- 품계: 상무",
+   "to": "- 품계: 역장",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0358",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json",
+   "from": "Gangnam Station Rail Cavalry Maintenance Yard Outpost Chief",
+   "to": "Stationmaster of Gangnam Station",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0359",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json",
+   "from": "Gangnam Station Rail Cavalry Maintenance Depot Post Chief",
+   "to": "Stationmaster of Gangnam Station",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0360",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json",
+   "from": "joint seal of the Managing Director and the auditor",
+   "to": "joint seal of the Stationmaster and the auditor",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0361",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json",
+   "from": "Rank: Managing Director.",
+   "to": "Rank: Stationmaster.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0362",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json",
+   "from": "- Rank: Managing Director",
+   "to": "- Rank: Stationmaster",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0363",
+   "file": "110",
+   "key": "c6a9-d64d-cc9c",
+   "col": "json_ko",
+   "from": "강남역 궤도기병 정비창 거점장",
+   "to": "강남역 역장",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0366",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "조합원의 직접선거로 맡은 위원장직은 파벌 갈등을 없애지 않는다.",
+   "to": "계약 감사관 직은 아크 안의 파벌 갈등을 없애지 않는다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0367",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "Arc 위원장 업무를",
+   "to": "Arc 계약 감사관 업무를",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0368",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "조합원 직접선거와 공개 표결 기록을 확인하며",
+   "to": "조합원 공개 표결 기록과 계약 문서를 확인하며",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0369",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "위원장은 전 조합원 직선으로 뽑고, 파벌 간 표결 갈등이 일상 업무에도 번진다.",
+   "to": "계약 감사관은 조합원 표결 기록을 확인하고, 파벌 간 표결 갈등이 일상 업무에도 번진다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0370",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "- 공동체 역할: 위원장",
+   "to": "- 공동체 역할: 계약 감사관",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0371",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "- 직무: Arc 위원장",
+   "to": "- 직무: Arc 계약 감사관",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0372",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "위원장",
+   "to": "계약 감사관",
+   "exact": true,
+   "pathRe": "^\\.(position|fields\\.공동체 역할)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0373",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "Arc 위원장",
+   "to": "Arc 계약 감사관",
+   "exact": true,
+   "pathRe": "^\\.fields\\.직무$",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0374",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "serves as chairwoman of the Jeongdong General Labor Federation",
+   "to": "serves as Arc Contract Auditor",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0375",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "work records of the Jeongdong General Labor Federation chairwoman against",
+   "to": "work records of the Arc contract auditor against",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0376",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "The chairwoman is elected by direct vote of all members, and voting conflicts",
+   "to": "The contract auditor checks the members’ voting records, and voting conflicts",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0377",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "- Affiliation: Jeongdong General Labor Federation",
+   "to": "- Affiliation: Arc",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0378",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "- Community Role: Chairwoman",
+   "to": "- Community Role: Contract Auditor",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0379",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "- Duty: Chairwoman of the Jeongdong General Labor Federation",
+   "to": "- Duty: Arc Contract Auditor",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0380",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "Chairperson",
+   "to": "Arc Contract Auditor",
+   "exact": true,
+   "pathRe": "^\\.position$",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0381",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "Chairperson",
+   "to": "Contract Auditor",
+   "exact": true,
+   "pathRe": "^\\.fields\\.Community Role$",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0382",
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "Jeongdong Labor Federation Chairperson",
+   "to": "Arc Contract Auditor",
+   "exact": true,
+   "pathRe": "^\\.fields\\.Duty$",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0383",
+   "file": "110",
+   "key": "c815-c9c4-c591-912d",
+   "col": "json_ko",
+   "from": "정유라가 위원장이 된 것은",
+   "to": "정유라가 계약 감사관이 된 것은",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0384",
+   "file": "110",
+   "key": "c815-c9c4-c8fc-912d",
+   "col": "json_ko",
+   "from": "정유라가 위원장이 된 것은",
+   "to": "정유라가 계약 감사관이 된 것은",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0385",
+   "file": "110",
+   "key": "c815-c9c4-c591-912d",
+   "col": "json",
+   "from": "Jeong Yura became chairwoman only after",
+   "to": "Jeong Yura became contract auditor only after",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0386",
+   "file": "110",
+   "key": "c815-c9c4-c8fc-912d",
+   "col": "json",
+   "from": "Jeong Yura became chairwoman only after",
+   "to": "Jeong Yura became contract auditor only after",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0387",
+   "file": "090",
+   "col": "json_ko",
+   "from": "규격맹 위원장",
+   "to": "공방 제작 조합 조합장",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0388",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json_ko",
+   "from": "품계 위원장.",
+   "to": "품계 조합장.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0389",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json_ko",
+   "from": "- 품계: 위원장",
+   "to": "- 품계: 조합장",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0390",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json_ko",
+   "from": "그 줄을 위원장 자리의 근거로 삼았다.",
+   "to": "그 줄을 조합장 자리의 근거로 삼았다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0391",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json_ko",
+   "from": "경비대가 공방을 제압하면 규격맹은 군수 공장이 된다. 대림 기숙은 이 나라 안의 호다.",
+   "to": "경비대가 공방을 제압하면 공방 제작 조합은 군수 공장이 된다. 대림 기숙은 이 조합 안의 숙소다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0392",
+   "file": "110",
+   "key": "ac15-c9c4-c8fc",
+   "col": "json_ko",
+   "from": "그 줄을 위원장 자리의 근거로 삼았다.",
+   "to": "그 줄을 조합장 자리의 근거로 삼았다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0393",
+   "file": "110",
+   "key": "ac15-c9c4-c8fc",
+   "col": "json_ko",
+   "from": "대림 기숙은 이 나라 안의 호다.",
+   "to": "대림 기숙은 이 조합 안의 숙소다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0394",
+   "file": "110",
+   "key": "ac15-c9c4-c8fc",
+   "col": "json_ko",
+   "from": "경비대가 공방을 제압하면 자유도시는 군수 공장이 된다.",
+   "to": "경비대가 공방을 제압하면 공방 제작 조합은 군수 공장이 된다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0395",
+   "file": "110",
+   "key": "ac15-c9c4-c8fc",
+   "col": "json",
+   "from": "as grounds for the chairmanship.",
+   "to": "as grounds for the guild master’s seat.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0397",
+   "file": "090",
+   "col": "json",
+   "from": "Chair of the Standards League",
+   "to": "Guild Master of the Workshop Production Guild",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0398",
+   "file": "090",
+   "col": "json",
+   "from": "Chairman of the Standards League",
+   "to": "Guild Master of the Workshop Production Guild",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0399",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json",
+   "from": "Rank: Chairman.",
+   "to": "Rank: Guild Master.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0400",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json",
+   "from": "- Rank: Chairman",
+   "to": "- Rank: Guild Master",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0401",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json",
+   "from": "the basis for the chairmanship at the Guro Station Guild Council",
+   "to": "the basis for the guild master’s seat at the Guro Station Guild Council",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0402",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json",
+   "from": "the Standards League becomes a munitions factory",
+   "to": "the Workshop Production Guild becomes a munitions factory",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0403",
+   "file": "090",
+   "key": "person-0029",
+   "col": "json",
+   "from": "Daerim Lodging is a household within this realm.",
+   "to": "Daerim Lodging is a lodging within this guild.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0404",
+   "file": "090",
+   "col": "json_ko",
+   "from": "여의도출자연합회 의장",
+   "to": "여의도 출자 조합 조합장",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0405",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json_ko",
+   "from": "품계 의장.",
+   "to": "품계 조합장.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0406",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json_ko",
+   "from": "최지우가 의장이 된 것은",
+   "to": "최지우가 조합장이 된 것은",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0407",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json_ko",
+   "from": "생업은 출자 가문 평의회가 뽑은 의장.",
+   "to": "생업은 출자 가문 평의회가 뽑은 조합장.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0408",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json",
+   "from": "Yeouido Investment Federation Chairperson",
+   "to": "Guild Master of the Yeouido Investment Guild",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0409",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json",
+   "from": "Chair of the Yeouido Investment Federation",
+   "to": "Guild Master of the Yeouido Investment Guild",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0410",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json",
+   "from": "She chairs the Yeouido investment council through its contributing houses.",
+   "to": "She leads the Yeouido investment guild through its contributing houses.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0411",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json",
+   "from": "Choe Jiu became chair after",
+   "to": "Choe Jiu became guild master after",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0412",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json",
+   "from": "Rank: Chair.",
+   "to": "Rank: Guild Master.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0413",
+   "file": "090",
+   "key": "person-0220",
+   "col": "json",
+   "from": "Livelihood: chair elected by the council of investment houses.",
+   "to": "Livelihood: guild master elected by the council of investment houses.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0414",
+   "file": "090",
+   "col": "json_ko",
+   "from": "아관사 사령관",
+   "to": "정부 능선수비대 본부장",
+   "expect": 8
+  },
+  {
+   "id": "v4rw-people-0415",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json_ko",
+   "from": "아관사는 아관사와 구의수비대가 각자 자기 병력에서 지휘관을 뽑는 약국이다.",
+   "to": "능선수비대는 능선수비대와 구의수비대가 각자 자기 병력에서 지휘관을 뽑는 정부 부대다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0416",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json_ko",
+   "from": "아관사와 구의수비대는 각자의 병력에서 지휘관을 뽑고 지휘권을 나눈다.",
+   "to": "능선수비대와 구의수비대는 각자의 병력에서 지휘관을 뽑고 지휘권을 나눈다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0417",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json_ko",
+   "from": "품계 사령관.",
+   "to": "품계 본부장.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0418",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json_ko",
+   "from": "- 품계: 사령관",
+   "to": "- 품계: 본부장",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0419",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json",
+   "from": "Agwansa is a weak state in which Agwansa and the Guui Garrison each choose their commanders from their own troops.",
+   "to": "The Ridge Garrison is a government unit in which the Ridge Garrison and the Guui Garrison each choose their commanders from their own troops.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0420",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json",
+   "from": "Agwansa and the Guui Garrison each choose commanders from their own troops and divide command authority.",
+   "to": "The Ridge Garrison and the Guui Garrison each choose commanders from their own troops and divide command authority.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0421",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json",
+   "from": "Go Seojun was elected Agwansa commander after protecting",
+   "to": "Go Seojun became Division Chief of the Government Ridge Garrison after protecting",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0422",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json",
+   "from": "Agwansa Commander",
+   "to": "Division Chief of the Government Ridge Garrison",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0423",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json",
+   "from": "Rank: Commander.",
+   "to": "Rank: Division Chief.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0424",
+   "file": "090",
+   "key": "person-0349",
+   "col": "json",
+   "from": "- Rank: Commander",
+   "to": "- Rank: Division Chief",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0425",
+   "file": "090",
+   "col": "json_ko",
+   "from": "안국총림 방장",
+   "to": "정부 명부 필사 국장",
+   "expect": 13
+  },
+  {
+   "id": "v4rw-people-0426",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json_ko",
+   "from": "안국총림은 장경종(이하 '장경종'이라 한다)의 본산이고 수도는 안국역이다.",
+   "to": "안국역은 정부 명부 필사 일의 근거지다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0427",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json_ko",
+   "from": "백온이 방장이 된 것은 산중총회가 그를 추대한 뒤였다. 추대의 근거는 북한산보국문귀환회의 명부함을 끊기지 않게 지킨 일이었다.",
+   "to": "백온이 국장 자리에 오른 것은 북한산보국문귀환회의 명부함을 끊기지 않게 지킨 뒤였다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0428",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json_ko",
+   "from": "문중은 스승 계보별 파벌이고, 문중들의 표 대결이 산중총회의 정치다. 안국총림은 산하 세력이 없고 독자 병력이 없다.",
+   "to": "명부 필사 일에는 산하 세력이 없고 독자 병력이 없다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0429",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json_ko",
+   "from": "품계 방장.",
+   "to": "품계 국장.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0430",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json_ko",
+   "from": "- 품계: 방장",
+   "to": "- 품계: 국장",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0431",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json_ko",
+   "from": "명부 필사 백온을 둘러싼 주지와 배급·회랑 당직이다. 장경종은 경전과 장부를 함께 필사하고 보존한다.",
+   "to": "명부 필사 백온을 둘러싼 주사와 배급·회랑 당직이다. 필사한 경전과 장부는 함께 보존한다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0432",
+   "file": "110",
+   "key": "bc31-c218-c6d0",
+   "col": "json_ko",
+   "from": "정부는 장경종(이하 '장경종'이라 한다)의 본산이고 수도는 안국역이다.",
+   "to": "안국역은 정부 명부 필사 일의 근거지다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0433",
+   "file": "110",
+   "key": "bc31-c218-c6d0",
+   "col": "json_ko",
+   "from": "백온이 방장이 된 것은 산중총회가 그를 추대한 뒤였다. 추대의 근거는 북한산보국문귀환회의 명부함을 끊기지 않게 지킨 일이었다.",
+   "to": "백온이 국장 자리에 오른 것은 북한산보국문귀환회의 명부함을 끊기지 않게 지킨 뒤였다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0434",
+   "file": "110",
+   "key": "bc31-c218-c6d0",
+   "col": "json_ko",
+   "from": "문중은 스승 계보별 파벌이고, 문중들의 표 대결이 산중총회의 정치다. 정부는 산하 세력이 없고 독자 병력이 없다.",
+   "to": "명부 필사 일에는 산하 세력이 없고 독자 병력이 없다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0435",
+   "file": "090",
+   "col": "json",
+   "from": "Abbot of Anguk Grand Monastery",
+   "to": "Bureau Chief of Government Roster Transcription",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0436",
+   "file": "090",
+   "col": "json",
+   "from": "Abbot of Anguk Great Monastery",
+   "to": "Bureau Chief of Government Roster Transcription",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0437",
+   "file": "090",
+   "col": "json",
+   "from": "abbot of the Anguk Great Monastery",
+   "to": "Bureau Chief of Government Roster Transcription",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0438",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json",
+   "from": "Anguk Great Monastery is the head temple of the Janggyeong Order (hereafter 'Janggyeong'), and its capital is Anguk Station.",
+   "to": "Anguk Station is the base of the Government roster-transcription work.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0440",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json",
+   "from": "Baek On became abbot after the Mountain Assembly acclaimed him. The basis of the acclaim was that he kept the register chest of the Bukhansan Bogungmun Returnees' Association unbroken.",
+   "to": "Baek On rose to Bureau Chief after he kept the register chest of the Bukhansan Bogungmun Returnees’ Association unbroken.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0442",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json",
+   "from": "A lineage is a faction by master's line, and the vote contests among the lineages are the politics of the Mountain Assembly. Anguk Great Monastery has no subordinate bodies and no army of its own.",
+   "to": "The roster-transcription work has no subordinate bodies and no army of its own.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0443",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Bureau Chief.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0444",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Bureau Chief",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0445",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json",
+   "from": "- Affiliation: Anguk Great Monastery",
+   "to": "- Affiliation: The Government",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0446",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json",
+   "from": "These are the head-monk duties and the ration and corridor watches surrounding Baek On, the register copyist. Janggyeong copies and preserves scriptures and ledgers together.",
+   "to": "These are the clerk duties and the ration and corridor watches surrounding Baek On, the register copyist. Copied scriptures and ledgers are preserved together.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0447",
+   "file": "110",
+   "key": "bc31-c218-c6d0",
+   "col": "json",
+   "from": "Anguk Great Monastery is the head temple of the Janggyeong Order (hereafter 'Janggyeong'), and its capital is Anguk Station.",
+   "to": "Anguk Station is the base of the Government roster-transcription work.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0448",
+   "file": "110",
+   "key": "bc31-c218-c6d0",
+   "col": "json",
+   "from": "Baek On became abbot after the Mountain Assembly acclaimed him. The basis of the acclaim was that he kept the register chest of the Bukhansan Bogungmun Returnees' Association unbroken.",
+   "to": "Baek On rose to Bureau Chief after he kept the register chest of the Bukhansan Bogungmun Returnees’ Association unbroken.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0449",
+   "file": "110",
+   "key": "bc31-c218-c6d0",
+   "col": "json",
+   "from": "A lineage is a faction by master's line, and the vote contests among the lineages are the politics of the Mountain Assembly. Anguk Great Monastery has no subordinate bodies and no army of its own.",
+   "to": "The roster-transcription work has no subordinate bodies and no army of its own.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0450",
+   "file": "090",
+   "col": "json_ko",
+   "from": "신내운수 사장",
+   "to": "신내역 역장",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0451",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "품계 사장.",
+   "to": "품계 역장.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0452",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "- 품계: 사장",
+   "to": "- 품계: 역장",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0453",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "사장",
+   "to": "역장",
+   "exact": true,
+   "pathRe": "^\\.(title|rank|fields\\.품계)$",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0454",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "President",
+   "to": "Stationmaster",
+   "exact": true,
+   "pathRe": "^\\.(title|rank|fields\\.Rank)$",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0455",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "Sinnae Transport President",
+   "to": "Stationmaster of Sinnae Station",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0456",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "President of Sinnae Transit",
+   "to": "Stationmaster of Sinnae Station",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0457",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "Rank: President.",
+   "to": "Rank: Stationmaster.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0458",
+   "file": "090",
+   "key": "person-0070",
+   "col": "json_ko",
+   "from": "Arc 회장 전령",
+   "to": "교주실 전령",
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0459",
+   "file": "090",
+   "key": "person-0070",
+   "col": "json_ko",
+   "from": "표지안은 회장 전령의",
+   "to": "표지안은 교주실 전령의",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0460",
+   "file": "090",
+   "key": "person-0070",
+   "col": "json",
+   "from": "Arc Chairman's Envoy",
+   "to": "Hierophant's Office Courier",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0461",
+   "file": "090",
+   "key": "person-0070",
+   "col": "json",
+   "from": "Arc Chairman's Courier",
+   "to": "Hierophant's Office Courier",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0462",
+   "file": "090",
+   "key": "person-0070",
+   "col": "json",
+   "from": "the chairman courier's sealed pouch",
+   "to": "the Hierophant's office courier's sealed pouch",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0463",
+   "file": "110",
+   "key": "d45c-c2e0-cc3d",
+   "col": "json_ko",
+   "from": "Arc 회장 전령",
+   "to": "교주실 전령",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0464",
+   "file": "110",
+   "key": "d45c-c2e0-cc3d",
+   "col": "json",
+   "from": "Arc Chairman's Courier",
+   "to": "Hierophant's Office Courier",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0465",
+   "file": "090",
+   "key": "person-0282",
+   "col": "json_ko",
+   "from": "회장실 전령, 조우찬의 실무 담당자",
+   "to": "교주실 전령, 조우찬의 실무 담당자",
+   "expect": 8
+  },
+  {
+   "id": "v4rw-people-0466",
+   "file": "090",
+   "key": "person-0282",
+   "col": "json_ko",
+   "from": "기술자 회장실가",
+   "to": "기술자 가문 수장실이",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0467",
+   "file": "090",
+   "key": "person-0282",
+   "col": "json",
+   "from": "Chairman's Office Courier and Jo Uchan's working-level aide",
+   "to": "Hierophant's Office Courier and Jo Uchan's working-level aide",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0468",
+   "file": "090",
+   "key": "person-0282",
+   "col": "json",
+   "from": "Chairman's Office Courier, Operations Aide to Jo Uchan",
+   "to": "Hierophant's Office Courier, Operations Aide to Jo Uchan",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0469",
+   "file": "090",
+   "key": "person-0282",
+   "col": "json",
+   "from": "Chairman's Office courier, practical aide to Jo Uchan",
+   "to": "Hierophant's office courier, practical aide to Jo Uchan",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0470",
+   "file": "090",
+   "key": "person-0282",
+   "col": "json",
+   "from": "technician Chairman's Office faction",
+   "to": "technician family head's office",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0471",
+   "file": "110",
+   "key": "c18c-c9c4-c8fc",
+   "col": "json_ko",
+   "from": "회장실 전령, 조우찬의 실무 담당자",
+   "to": "교주실 전령, 조우찬의 실무 담당자",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0472",
+   "file": "090",
+   "key": "person-0030",
+   "col": "json",
+   "from": "Executive Director",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0473",
+   "file": "090",
+   "key": "person-0030",
+   "col": "json_ko",
+   "from": "상임이사",
+   "to": "일반 시민",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0474",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "Executive Director",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0475",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "전무",
+   "to": "일반 시민",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0476",
+   "file": "090",
+   "key": "person-0061",
+   "col": "json",
+   "from": "Executive Director",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0477",
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "전무",
+   "to": "일반 시민",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0478",
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "Sangmu",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0479",
+   "file": "090",
+   "key": "person-0288",
+   "col": "json_ko",
+   "from": "상무",
+   "to": "일반 시민",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0480",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json",
+   "from": "Sangmu",
+   "to": "Stationmaster",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0481",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json_ko",
+   "from": "상무",
+   "to": "역장",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0482",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json_ko",
+   "from": "신도 명부 주지",
+   "to": "피난 명부 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0483",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0484",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0485",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0486",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "Congregation Roster Head Monk",
+   "to": "Refugee Roster Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0487",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "Follower Register Abbot",
+   "to": "Refugee Roster Clerk",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0489",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0491",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0492",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json_ko",
+   "from": "배급 저울 주지",
+   "to": "배급 저울 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0493",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0494",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0495",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0496",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "Ration Scale Head Monk",
+   "to": "Ration Scale Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0497",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "Ration Scale Abbot",
+   "to": "Ration Scale Clerk",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0498",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0500",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0501",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json_ko",
+   "from": "회랑 정찰 주지",
+   "to": "회랑 정찰 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0502",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0503",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0504",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0505",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json",
+   "from": "Corridor Scouting Head Monk",
+   "to": "Corridor Scouting Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0506",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json",
+   "from": "Corridor Scout Abbot",
+   "to": "Corridor Scouting Clerk",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0507",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0509",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0510",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "장경 필사 주지",
+   "to": "명부 필사 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0511",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0512",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0513",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0514",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json",
+   "from": "Abbot of Sutra Transcription",
+   "to": "Roster Copying Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0515",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json",
+   "from": "Sutra Library Scribe Abbot",
+   "to": "Roster Copying Clerk",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0516",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0518",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0519",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "배급 당직 주지",
+   "to": "배급 당직 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0520",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0521",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0522",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0523",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "Ration Duty Abbot",
+   "to": "Ration Duty Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0524",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "Ration Watch Abbot",
+   "to": "Ration Duty Clerk",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0525",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0527",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0528",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "난로 정비 주지",
+   "to": "난로 정비 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0529",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0530",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0531",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0532",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json",
+   "from": "Stove Maintenance Abbot",
+   "to": "Stove Maintenance Clerk",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0533",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0535",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0536",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json_ko",
+   "from": "짐 장부 주지",
+   "to": "짐 장부 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0537",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0538",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0539",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0540",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json",
+   "from": "Cargo Ledger Abbot",
+   "to": "Cargo Ledger Clerk",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0541",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0543",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0544",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json_ko",
+   "from": "약초 의무 주지",
+   "to": "약초 의무 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0545",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0546",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0547",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0548",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json",
+   "from": "Herbal Medicine Abbot",
+   "to": "Herbal Medical Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0549",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json",
+   "from": "The Herbal Medical Abbot",
+   "to": "Herbal Medical Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0550",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json",
+   "from": "Herbal Medical Abbot",
+   "to": "Herbal Medical Clerk",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0551",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0553",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0554",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "회랑 순찰 주지",
+   "to": "회랑 순찰 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0555",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0556",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0557",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0558",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "Corridor Patrol Abbot",
+   "to": "Corridor Patrol Clerk",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0560",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0562",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0563",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "총회 전령 주지",
+   "to": "전령 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0564",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0565",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0566",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0567",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "General Assembly Herald Abbot",
+   "to": "Courier Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0568",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "The Assembly Courier Abbot",
+   "to": "Courier Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0569",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "Assembly Courier Abbot",
+   "to": "Courier Clerk",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0570",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0572",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0573",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json_ko",
+   "from": "우회로 실측 주지",
+   "to": "우회로 실측 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0574",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0575",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0576",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0577",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json",
+   "from": "Detour Survey Abbot",
+   "to": "Detour Survey Clerk",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0578",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0580",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0581",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json_ko",
+   "from": "신도 원장 주지",
+   "to": "피난 원장 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0582",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0583",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0584",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0585",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json",
+   "from": "Lay Follower Ledger Abbot",
+   "to": "Refugee Ledger Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0586",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json",
+   "from": "Adherent Ledger Abbot",
+   "to": "Refugee Ledger Clerk",
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0587",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0589",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0590",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json_ko",
+   "from": "숙영 당직 주지",
+   "to": "숙영 당직 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0591",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0592",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0593",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0594",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json",
+   "from": "Encampment Duty Abbot",
+   "to": "Encampment Duty Clerk",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0595",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0597",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0598",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json_ko",
+   "from": "피난로 안내 주지",
+   "to": "피난로 안내 주사",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0599",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json_ko",
+   "from": "품계 주지",
+   "to": "품계 주사",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0600",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json_ko",
+   "from": "- 품계: 주지",
+   "to": "- 품계: 주사",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0601",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json_ko",
+   "from": "주지",
+   "to": "주사",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0602",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json",
+   "from": "Evacuation Route Guide Abbot",
+   "to": "Evacuation Route Guide Clerk",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0604",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json",
+   "from": "Rank: Abbot.",
+   "to": "Rank: Clerk.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0606",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json",
+   "from": "Head Monk",
+   "to": "Clerk",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0607",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json_ko",
+   "from": "통행 장부 수좌",
+   "to": "통행 장부 당직장",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0608",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json_ko",
+   "from": "품계 수좌",
+   "to": "품계 당직장",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0609",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json_ko",
+   "from": "- 품계: 수좌",
+   "to": "- 품계: 당직장",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0610",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json_ko",
+   "from": "수좌",
+   "to": "당직장",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0611",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "Passage Ledger Senior Monk",
+   "to": "Passage Ledger Duty Chief",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0612",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "Rank: Senior Monk.",
+   "to": "Rank: Duty Chief.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0614",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "Senior Monk",
+   "to": "Duty Chief",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0615",
+   "file": "090",
+   "key": "person-0261",
+   "col": "json_ko",
+   "from": "약초 건조장 수좌",
+   "to": "약초 건조장 당직장",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0616",
+   "file": "090",
+   "key": "person-0261",
+   "col": "json_ko",
+   "from": "품계 수좌",
+   "to": "품계 당직장",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0617",
+   "file": "090",
+   "key": "person-0261",
+   "col": "json_ko",
+   "from": "- 품계: 수좌",
+   "to": "- 품계: 당직장",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0618",
+   "file": "090",
+   "key": "person-0261",
+   "col": "json_ko",
+   "from": "수좌",
+   "to": "당직장",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0619",
+   "file": "090",
+   "key": "person-0261",
+   "col": "json",
+   "from": "Herb Drying Yard Senior Monk",
+   "to": "Herb Drying Yard Duty Chief",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0622",
+   "file": "090",
+   "key": "person-0261",
+   "col": "json",
+   "from": "Senior Monk",
+   "to": "Duty Chief",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0623",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json_ko",
+   "from": "고지 당직 수좌",
+   "to": "고지 당직장",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0624",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json_ko",
+   "from": "품계 수좌",
+   "to": "품계 당직장",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0625",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json_ko",
+   "from": "- 품계: 수좌",
+   "to": "- 품계: 당직장",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0626",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json_ko",
+   "from": "수좌",
+   "to": "당직장",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0627",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json",
+   "from": "Highland Duty Senior Monk",
+   "to": "Highland Duty Chief",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0630",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json",
+   "from": "Senior Monk",
+   "to": "Duty Chief",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0631",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json_ko",
+   "from": "연료고 수좌",
+   "to": "연료고 당직장",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-0632",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json_ko",
+   "from": "품계 수좌",
+   "to": "품계 당직장",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0633",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json_ko",
+   "from": "- 품계: 수좌",
+   "to": "- 품계: 당직장",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0634",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json_ko",
+   "from": "수좌",
+   "to": "당직장",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.품계)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0635",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "Fuel Depot Senior Monk",
+   "to": "Fuel Depot Duty Chief",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0637",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "Rank: Senior Monk.",
+   "to": "Rank: Duty Chief.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0639",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "Senior Monk",
+   "to": "Duty Chief",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.Rank)$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0640",
+   "file": "090",
+   "col": "json_ko",
+   "from": "신도 명부 주지 동의 없이",
+   "to": "피난 명부 주사 동의 없이",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0641",
+   "file": "090",
+   "col": "json",
+   "from": "Believer Register Abbot",
+   "to": "Refugee Roster Clerk",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0642",
+   "file": "090",
+   "col": "json",
+   "from": "Adherent Register Abbot",
+   "to": "Refugee Roster Clerk",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0643",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "연통 사고에 주지와 정비 당직의 공동 서명을",
+   "to": "연통 사고에 난로 정비 주사와 정비 당직의 공동 서명을",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0644",
+   "file": "110",
+   "col": "json_ko",
+   "from": "숙영 당직 주지 자리",
+   "to": "숙영 당직 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0645",
+   "file": "110",
+   "col": "json_ko",
+   "from": "회랑 정찰 주지 자리",
+   "to": "회랑 정찰 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0646",
+   "file": "110",
+   "col": "json_ko",
+   "from": "신도 원장 주지 자리",
+   "to": "피난 원장 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0647",
+   "file": "110",
+   "col": "json_ko",
+   "from": "난로 정비 주지 자리",
+   "to": "난로 정비 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0648",
+   "file": "110",
+   "col": "json_ko",
+   "from": "통행 장부 수좌 자리",
+   "to": "통행 장부 당직장 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0649",
+   "file": "110",
+   "col": "json_ko",
+   "from": "짐 장부 주지 자리",
+   "to": "짐 장부 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0650",
+   "file": "110",
+   "col": "json_ko",
+   "from": "약초 건조장 수좌 자리",
+   "to": "약초 건조장 당직장 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0651",
+   "file": "110",
+   "col": "json_ko",
+   "from": "약초 의무 주지 자리",
+   "to": "약초 의무 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0652",
+   "file": "110",
+   "col": "json_ko",
+   "from": "고지 당직 수좌 자리",
+   "to": "고지 당직장 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0653",
+   "file": "110",
+   "col": "json_ko",
+   "from": "총회 전령 주지 자리",
+   "to": "전령 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0654",
+   "file": "110",
+   "col": "json_ko",
+   "from": "신도 명부 주지 자리",
+   "to": "피난 명부 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0655",
+   "file": "110",
+   "col": "json_ko",
+   "from": "배급 당직 주지 자리",
+   "to": "배급 당직 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0656",
+   "file": "110",
+   "col": "json_ko",
+   "from": "회랑 순찰 주지 자리",
+   "to": "회랑 순찰 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0657",
+   "file": "110",
+   "col": "json_ko",
+   "from": "연료고 수좌 자리",
+   "to": "연료고 당직장 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0658",
+   "file": "110",
+   "col": "json_ko",
+   "from": "장경 필사 주지 자리",
+   "to": "명부 필사 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0659",
+   "file": "110",
+   "col": "json_ko",
+   "from": "피난로 안내 주지 자리",
+   "to": "피난로 안내 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0660",
+   "file": "110",
+   "col": "json_ko",
+   "from": "우회로 실측 주지 자리",
+   "to": "우회로 실측 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0661",
+   "file": "110",
+   "col": "json_ko",
+   "from": "배급 저울 주지 자리",
+   "to": "배급 저울 주사 자리",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0662",
+   "file": "110",
+   "col": "json",
+   "from": "The Encampment Duty Abbot post",
+   "to": "The Encampment Duty Clerk post",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0663",
+   "file": "110",
+   "col": "json",
+   "from": "The Corridor Scout Abbot post",
+   "to": "The Corridor Scouting Clerk post",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0664",
+   "file": "110",
+   "col": "json",
+   "from": "The Adherent Ledger Abbot post",
+   "to": "The Refugee Ledger Clerk post",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0665",
+   "file": "110",
+   "col": "json",
+   "from": "The post of Stove Maintenance Abbot",
+   "to": "The post of Stove Maintenance Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0666",
+   "file": "110",
+   "col": "json",
+   "from": "The Passage Ledger Senior Monk seat",
+   "to": "The Passage Ledger Duty Chief seat",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0667",
+   "file": "110",
+   "col": "json",
+   "from": "The seat of Cargo Ledger Abbot",
+   "to": "The seat of Cargo Ledger Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0668",
+   "file": "110",
+   "col": "json",
+   "from": "The Herb Drying Yard Senior Monk seat",
+   "to": "The Herb Drying Yard Duty Chief seat",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0669",
+   "file": "110",
+   "col": "json",
+   "from": "The Herbal Medical Abbot post",
+   "to": "The Herbal Medical Clerk post",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0670",
+   "file": "110",
+   "col": "json",
+   "from": "The post of Assembly Courier Abbot",
+   "to": "The post of Courier Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0671",
+   "file": "110",
+   "col": "json",
+   "from": "The post of Follower Register Abbot",
+   "to": "The post of Refugee Roster Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0672",
+   "file": "110",
+   "col": "json",
+   "from": "The post of Ration Watch Abbot",
+   "to": "The post of Ration Duty Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0673",
+   "file": "110",
+   "col": "json",
+   "from": "The Corridor Patrol Abbot post",
+   "to": "The Corridor Patrol Clerk post",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0674",
+   "file": "110",
+   "col": "json",
+   "from": "The post of Ration Scale Abbot",
+   "to": "The post of Ration Scale Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0676",
+   "file": "110",
+   "col": "json",
+   "from": "The Sutra Archive Scribe Abbot post",
+   "to": "The Roster Copying Clerk post",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0677",
+   "file": "110",
+   "col": "json",
+   "from": "The Refuge-Route Guide Abbot post",
+   "to": "The Evacuation Route Guide Clerk post",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0678",
+   "file": "121",
+   "key": "region:1117052000",
+   "col": "opening_state_ko",
+   "from": "주민센터 통행 원장은 용산선로협의회 영향권이지 울타리 독점 소유가 아니다. 전환기 잠금은 한강로 소문으로만 붙어 있다.",
+   "to": "주민센터 통행 원장은 용산역 역장의 배차판에 올라 있을 뿐 울타리를 소유한다는 뜻은 아니다. 전환기 잠금은 한강로 소문으로만 붙어 있다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0679",
+   "file": "121",
+   "key": "region:1117052000",
+   "col": "opening_state",
+   "from": "The community center passage ledger falls within the Yongsan Rail Council's sphere of influence; it is not exclusive ownership of the fence. The switch lock is attached only as a Hangang-ro rumor.",
+   "to": "The community center passage ledger is posted on the Yongsan Station Stationmaster's dispatch board; it does not mean ownership of the fence. The switch lock is attached only as a Hangang-ro rumor.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0680",
+   "file": "121",
+   "key": "region:1117053000",
+   "col": "opening_state_ko",
+   "from": "남영 개찰은 서울역 통과를 우선 받되 용산 배차를 거절한 상태는 아니다. 용산선로협의회는 한강로에서 열린다.",
+   "to": "남영 개찰은 서울역 통과를 우선 받되 용산 배차를 거절한 상태는 아니다. 용산역 배차판은 한강로에 붙는다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0681",
+   "file": "121",
+   "key": "region:1117053000",
+   "col": "opening_state",
+   "from": "The Namyeong gate gives priority to passage through Seoul Station, but it is not in a state of refusing Yongsan dispatch. The Yongsan Rail Council is held at Hangang-ro.",
+   "to": "The Namyeong gate gives priority to passage through Seoul Station, but it is not in a state of refusing Yongsan dispatch. The Yongsan Station dispatch board is posted at Hangang-ro.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0682",
+   "file": "121",
+   "key": "region:1117056000",
+   "col": "opening_state_ko",
+   "from": "상가 열쇠는 용산선로협의회 임대 협의이지 가문 독점이 확인된 상태가 아니다.",
+   "to": "상가 열쇠는 용산역 임대 협의이지 어느 한 쪽의 독점이 확인된 상태가 아니다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0683",
+   "file": "121",
+   "key": "region:1117056000",
+   "col": "opening_state",
+   "from": "The shop keys are a Yongsan Rail Council lease arrangement; exclusive clan possession has not been confirmed.",
+   "to": "The shop keys are a lease arrangement with Yongsan Station; exclusive possession by any one party has not been confirmed.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0684",
+   "file": "121",
+   "key": "region:1117057000",
+   "col": "opening_state_ko",
+   "from": "청년주택 공터는 임시 숙영 협의이지 용산선로협의회 소유 확인이 아니다.",
+   "to": "청년주택 공터는 임시 숙영 협의이지 용산역 소유 확인이 아니다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0685",
+   "file": "121",
+   "key": "region:1117057000",
+   "col": "opening_state",
+   "from": "The youth housing lot is a temporary encampment arrangement, not a confirmed Yongsan Rail Council property.",
+   "to": "The youth housing lot is a temporary encampment arrangement, not confirmed property of Yongsan Station.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0686",
+   "file": "121",
+   "key": "region:1117062500",
+   "col": "opening_state_ko",
+   "from": "용산선로협의회는 열려 있으나 알렉산더 밀러가 전환기를 잠갔다는 쪽지가 배차판에 붙어 있을 뿐, 개막 확정 사실이 아니다. 새 계약 개입이 시작된다.",
+   "to": "용산역 배차판은 열려 있으나 알렉산더 밀러가 전환기를 잠갔다는 쪽지가 배차판에 붙어 있을 뿐, 개막 확정 사실이 아니다. 새 계약 개입이 시작된다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0687",
+   "file": "121",
+   "key": "region:1117062500",
+   "col": "opening_state",
+   "from": "The Yongsan Rail Council is open, but a note saying that Alexander Miller has locked the switch is merely pinned to the dispatch board and is not a confirmed opening fact. Intervention in a new contract begins.",
+   "to": "The Yongsan Station dispatch board is open, but a note saying that Alexander Miller has locked the switch is merely pinned to the dispatch board and is not a confirmed opening fact. Intervention in a new contract begins.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0688",
+   "file": "121",
+   "key": "region:1117063000",
+   "col": "opening_state_ko",
+   "from": "한가람 지하는 환적 임차 협의이지 가문 독점이 확인되지 않았다. 용산선로협의회는 한강로에서 열린다.",
+   "to": "한가람 지하는 환적 임차 협의이지 어느 한 쪽의 독점이 확인되지 않았다. 용산역 배차판은 한강로에 붙는다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0689",
+   "file": "121",
+   "key": "region:1117063000",
+   "col": "opening_state",
+   "from": "The Hangaram basement is a transfer lease arrangement; clan exclusivity has not been confirmed. The Yongsan Rail Council is held at Hangang-ro.",
+   "to": "The Hangaram basement is a transfer lease arrangement; exclusive possession by any one party has not been confirmed. The Yongsan Station dispatch board is posted at Hangang-ro.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0690",
+   "file": "121",
+   "key": "region:1117064000",
+   "col": "opening_state_ko",
+   "from": "용산경부분기는 용산선로협의회 영향권의 선로 기구이지 가문 단독 소유가 확인되지 않았다. 전환기 잠금은 소문이다.",
+   "to": "용산경부분기는 용산역 관할의 선로 기구이지 특정 집단의 단독 소유가 확인되지 않았다. 전환기 잠금은 소문이다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0691",
+   "file": "121",
+   "key": "region:1117064000",
+   "col": "opening_state",
+   "from": "The Yongsan-Gyeongbu Branch is a railway body within the Yongsan Rail Council's sphere of influence; sole clan ownership has not been confirmed. The switch lock is a rumor.",
+   "to": "The Yongsan-Gyeongbu Branch is a railway body under Yongsan Station; sole ownership by any one party has not been confirmed. The switch lock is a rumor.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0692",
+   "file": "121",
+   "key": "region:1117065000",
+   "col": "opening_state_ko",
+   "from": "이태원 개찰은 용산선로협의회 야간 감시 협의이지 골목 독점 소유가 아니다. 녹사평 울타리 통행증이 여기 장부에 섞이려 한다.",
+   "to": "이태원 개찰은 용산역 야간 감시 협의이지 골목 독점 소유가 아니다. 녹사평 울타리 통행증이 여기 장부에 섞이려 한다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0693",
+   "file": "121",
+   "key": "region:1117065000",
+   "col": "opening_state",
+   "from": "The Itaewon gate is a Yongsan Rail Council night-watch arrangement, not exclusive ownership of the alleys. Nokssapyeong fence passes try to get mixed into the ledger here.",
+   "to": "The Itaewon gate is a Yongsan Station night-watch arrangement, not exclusive ownership of the alleys. Nokssapyeong fence passes try to get mixed into the ledger here.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0694",
+   "file": "121",
+   "key": "region:1117066000",
+   "col": "opening_state_ko",
+   "from": "약수 봉인은 주민센터 협의이지 용산선로협의회 독점 소유가 아니다. 원수가 줄자 부적합 샘을 열려는 쪽지가 붙는다.",
+   "to": "약수 봉인은 주민센터 협의이지 용산역 독점 소유가 아니다. 원수가 줄자 부적합 샘을 열려는 쪽지가 붙는다.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0695",
+   "file": "121",
+   "key": "region:1117066000",
+   "col": "opening_state",
+   "from": "The Yaksu seal is a community center arrangement, not exclusive Yongsan Rail Council ownership. As raw water runs low, notes appear calling for the unfit spring to be opened.",
+   "to": "The Yaksu seal is a community center arrangement, not exclusive ownership by Yongsan Station. As raw water runs low, notes appear calling for the unfit spring to be opened.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0696",
+   "file": "120",
+   "key": "fki-hall",
+   "col": "detail_ko",
+   "from": "국회의사당을 핵심 거점으로 둔 출자연합회의 회의와 장부를 보조한다",
+   "to": "국회의사당을 핵심 거점으로 둔 여의도 출자 조합의 회의와 장부를 보조한다",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0697",
+   "file": "120",
+   "key": "fki-hall",
+   "col": "detail",
+   "from": "Supports the meetings and ledgers of the Investment Federation, which holds the National Assembly Building as its core stronghold.",
+   "to": "Supports the meetings and ledgers of the Yeouido Investment Guild, which holds the National Assembly Building as its core stronghold.",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0698",
+   "file": "120",
+   "key": "national-assembly",
+   "col": "detail_ko",
+   "from": "의장 최지우(K219)가 거주하는",
+   "to": "조합장 최지우(K219)가 거주하는",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0699",
+   "file": "120",
+   "key": "national-assembly",
+   "col": "detail_ko",
+   "from": "출자국 대표 회의장",
+   "to": "출자 조합 대표 회의장",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0700",
+   "file": "120",
+   "key": "national-assembly",
+   "col": "detail",
+   "from": "Speaker Choe Ji-u (K219)",
+   "to": "Guild Master Choe Ji-u (K219)",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0701",
+   "file": "120",
+   "key": "national-assembly",
+   "col": "detail",
+   "from": "representatives of the Investor States",
+   "to": "representatives of the Investment Guild",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0702",
+   "file": "090",
+   "col": "json_ko",
+   "from": "가족 회의에서 방장 맹세를 대변",
+   "to": "가족 회의에서 백온의 맹세를 대변",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0703",
+   "file": "090",
+   "col": "json_ko",
+   "from": "회랑 정찰을 방장 지휘로 지킴",
+   "to": "회랑 정찰을 국장 지휘로 지킴",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0704",
+   "file": "090",
+   "col": "json_ko",
+   "from": "차량 정비 도제로 회장 밑에서 수련",
+   "to": "차량 정비 도제로 가문 수장 밑에서 수련",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0705",
+   "file": "090",
+   "col": "json_ko",
+   "from": "차륜 공정을 회장 지휘로 나눔",
+   "to": "차륜 공정을 가문 수장 지휘로 나눔",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0706",
+   "file": "090",
+   "col": "json_ko",
+   "from": "철재 재고를 회장에게 보고",
+   "to": "철재 재고를 가문 수장에게 보고",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0707",
+   "file": "090",
+   "col": "json_ko",
+   "from": "아관사 관문사령관 고서준의 산하",
+   "to": "정부 능선수비대 본부장 고서준의 산하",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0708",
+   "file": "090",
+   "col": "json_ko",
+   "from": "구의수비대장과 관문사령관의 이원 합의",
+   "to": "구의수비대장과 능선수비대 본부장의 이원 합의",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0709",
+   "file": "090",
+   "col": "json_ko",
+   "from": "강민서의 규격맹 평의회 선언을",
+   "to": "강민서의 공방 제작 조합 평의회 선언을",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0710",
+   "file": "090",
+   "col": "json_ko",
+   "from": "신도 명부 주지의 표가 있어야",
+   "to": "피난 명부 주사의 표가 있어야",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0711",
+   "file": "090",
+   "col": "json_ko",
+   "from": "신도 명부 주지의 동의 없이",
+   "to": "피난 명부 주사의 동의 없이",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0712",
+   "file": "090",
+   "col": "json_ko",
+   "from": "연통 사고는 주지와 정비 당직의",
+   "to": "연통 사고는 난로 정비 주사와 정비 당직의",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0713",
+   "file": "090",
+   "col": "json_ko",
+   "from": "Arc 위원장 업무 기록과",
+   "to": "Arc 계약 감사관 업무 기록과",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0714",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정씨 회장가의 외동딸",
+   "to": "정씨 수장 가문의 외동딸",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0715",
+   "file": "090",
+   "col": "json_ko",
+   "from": "도곡1동에서 회장 직무를 보며",
+   "to": "도곡1동에서 가문 수장 직무를 보며",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0716",
+   "file": "090",
+   "key": "person-0030",
+   "col": "json_ko",
+   "from": "서울 전역 차륜·펌프 나사의 호환표를 천왕 원장 하나로 고정해 규격맹의 뼈대를 만든다.",
+   "to": "서울 전역 차륜·펌프 나사의 호환표를 천왕 원장 하나로 고정해 공방 제작 조합의 뼈대를 만든다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0717",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "신도 명부 원장을 서울역 인준과 규격맹의 복구복무 명부와",
+   "to": "피난 명부 원장을 서울역 인준과 공방 제작 조합의 복구복무 명부와",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0718",
+   "file": "090",
+   "col": "json",
+   "from": "Speaks for the abbot's oath at the family council",
+   "to": "Speaks for Baek On's oath at the family council",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0719",
+   "file": "090",
+   "col": "json",
+   "from": "Keeps corridor scouting under the abbot's command",
+   "to": "Keeps corridor scouting under the Bureau Chief's command",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0720",
+   "file": "090",
+   "col": "json",
+   "from": "Trains under the chairman as a vehicle maintenance apprentice",
+   "to": "Trains under the family head as a vehicle maintenance apprentice",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0721",
+   "file": "090",
+   "col": "json",
+   "from": "wheelset processes under the chairman's command",
+   "to": "wheelset processes under the family head's command",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0722",
+   "file": "090",
+   "col": "json",
+   "from": "Reports steel stock to the chairman",
+   "to": "Reports steel stock to the family head",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0723",
+   "file": "090",
+   "col": "json",
+   "from": "Under Agwansa Gate Commander Go Seojun",
+   "to": "Under Ridge Garrison Division Chief Go Seojun",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0724",
+   "file": "090",
+   "col": "json",
+   "from": "Gang Minseo's Standards League council declaration",
+   "to": "Gang Minseo's Workshop Production Guild council declaration",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0725",
+   "file": "090",
+   "col": "json",
+   "from": "Chairwoman of Taeuk Group.",
+   "to": "Head of the Jeong Family of the Arc.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0726",
+   "file": "090",
+   "col": "json",
+   "from": "Only daughter of the Jeong chairwoman's house.",
+   "to": "Only daughter of the Jeong family head's house.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0727",
+   "file": "090",
+   "col": "json",
+   "from": "performs the chairwoman's duties in Dogok 1-dong",
+   "to": "performs the family head's duties in Dogok 1-dong",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0728",
+   "file": "090",
+   "col": "json",
+   "from": "joint signature of the abbot and the maintenance duty officer",
+   "to": "joint signature of the clerk and the maintenance duty officer",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0729",
+   "file": "090",
+   "col": "json",
+   "from": "backbone of the Standards League",
+   "to": "backbone of the Workshop Production Guild",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0730",
+   "file": "090",
+   "col": "json",
+   "from": "the Standards League's recovery-service roster",
+   "to": "the Workshop Production Guild's recovery-service roster",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0731",
+   "file": "090",
+   "col": "json",
+   "from": "Senior Monk of the Fuel Depot",
+   "to": "Duty Chief of the Fuel Depot",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0732",
+   "file": "090",
+   "col": "json",
+   "from": "- Affiliation: Anguk Great Monastery",
+   "to": "- Affiliation: The Government",
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0733",
+   "file": "090",
+   "col": "json",
+   "from": "- Affiliation: Anguk Monastery Complex",
+   "to": "- Affiliation: The Government",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0734",
+   "file": "090",
+   "col": "json",
+   "from": "Chairman's Office Courier, Jo Uchan's working-level aide",
+   "to": "Hierophant's Office Courier, Jo Uchan's working-level aide",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0735",
+   "file": "090",
+   "col": "json",
+   "from": "Chairman's Office bulletin board",
+   "to": "family head's office bulletin board",
+   "expect": 11
+  },
+  {
+   "id": "v4rw-people-0736",
+   "file": "090",
+   "col": "json",
+   "from": "but never lets go of the dispatch veto.",
+   "to": "but never lets go of having been qualified yet not appointed.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0737",
+   "file": "090",
+   "col": "json",
+   "from": "the clan elders' verbal instructions",
+   "to": "the division officials' verbal instructions",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0738",
+   "file": "090",
+   "col": "json",
+   "from": "work dispatching clan and public freight cars",
+   "to": "work dispatching division and public freight cars",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0739",
+   "file": "090",
+   "col": "json",
+   "from": "behind the clan freight cars",
+   "to": "behind the division freight cars",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0740",
+   "file": "090",
+   "col": "json",
+   "from": "skip the clan wards for the sake of efficiency",
+   "to": "skip the division wards for the sake of efficiency",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0741",
+   "file": "090",
+   "col": "json",
+   "from": "of the council message so that",
+   "to": "of the dispatch message so that",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0743",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0744",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0745",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0746",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0747",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0748",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0749",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0750",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0751",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0752",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0753",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0754",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0755",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0756",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json",
+   "from": "- Rank: Abbot",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0757",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "- Rank: Senior Monk",
+   "to": "- Rank: Duty Chief",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0760",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "- Rank: Senior Monk",
+   "to": "- Rank: Duty Chief",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0761",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정부 관문사령관 고서준의 산하",
+   "to": "정부 능선수비대 본부장 고서준의 산하",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0762",
+   "file": "090",
+   "col": "json_ko",
+   "from": "산하 지휘관은 정부 관문사령관 고서준이다.",
+   "to": "산하 지휘관은 정부 능선수비대 본부장 고서준이다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0763",
+   "file": "090",
+   "col": "json_ko",
+   "from": "생명안전 거부권을 현장에서 집행",
+   "to": "생명안전 점검권을 현장에서 집행",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0764",
+   "file": "090",
+   "col": "json",
+   "from": "his commanding officer is The Government Gateway Commander Go Seojun",
+   "to": "his commanding officer is Division Chief of the Government Ridge Garrison Go Seojun",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0765",
+   "file": "090",
+   "col": "json",
+   "from": "Dual Accord Between the Guui Garrison Captain and the Gate Commander",
+   "to": "Dual Accord Between the Guui Garrison Captain and the Ridge Garrison Division Chief",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0766",
+   "file": "090",
+   "col": "json",
+   "from": "Enforces the life safety veto on site",
+   "to": "Enforces the life safety check on site",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0767",
+   "file": "110",
+   "key": "ace0-d55c-c591",
+   "col": "json_ko",
+   "from": "고서준이 정부 사령관으로 선출된 것은",
+   "to": "고서준이 정부 능선수비대 본부장이 된 것은",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0768",
+   "file": "110",
+   "key": "ace0-d55c-c591",
+   "col": "json",
+   "from": "Go Seojun was elected The Government commander after",
+   "to": "Go Seojun became Division Chief of the Government Ridge Garrison after",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0769",
+   "file": "110",
+   "key": "d0c1-ad11-c0b0",
+   "col": "json_ko",
+   "from": "관문사령관과 따로 뽑힌다.",
+   "to": "능선수비대 본부장과 따로 뽑힌다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0770",
+   "file": "110",
+   "key": "d0c1-ad11-c0b0",
+   "col": "json",
+   "from": "She is selected separately from the Gate Commander.",
+   "to": "She is selected separately from the Ridge Garrison Division Chief.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0771",
+   "file": "110",
+   "key": "c774-acbd-c8fc-674e",
+   "col": "json_ko",
+   "from": "이홍원이 회장이 된 것은",
+   "to": "이홍원이 이씨 가문 수장이 된 것은",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0772",
+   "file": "110",
+   "key": "c774-acbd-c8fc-674e",
+   "col": "json_ko",
+   "from": "Arc의 수도는 강남역이고 회장직은 이씨 가문이 세습한다.",
+   "to": "이씨 가문의 근거지는 강남역이고, 가문 수장 자리는 이씨 가문이 잇는다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0773",
+   "file": "110",
+   "key": "c774-acbd-c8fc-674e",
+   "col": "json",
+   "from": "Yi Hongwon became chairman after",
+   "to": "Yi Hongwon became head of the Yi family after",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0774",
+   "file": "110",
+   "key": "c774-acbd-c8fc-674e",
+   "col": "json",
+   "from": "The capital of Arc is Gangnam Station, and the chairmanship is hereditary in the Yi clan.",
+   "to": "The Yi family’s base is Gangnam Station, and the post of family head passes within the Yi clan.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0775",
+   "file": "110",
+   "key": "c815-c9c4-c8fc-912d",
+   "col": "json_ko",
+   "from": "정씨 회장 가문은 회장직을 세습하며, 개막의 회장은 정서온이다.",
+   "to": "정씨 수장 가문은 가문 수장 자리를 잇고, 개막의 가문 수장은 정서온이다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0776",
+   "file": "110",
+   "key": "c815-c9c4-c8fc-912d",
+   "col": "json_ko",
+   "from": "회장 자리는 그 삭제가 아니라 가문 세습으로 열렸다.",
+   "to": "가문 수장 자리는 그 삭제가 아니라 가문 내력으로 열렸다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0777",
+   "file": "110",
+   "key": "c815-c9c4-c8fc-912d",
+   "col": "json",
+   "from": "The Jeong chairman family inherits the chairmanship, and the chairman at the opening is Jeong Seoon.",
+   "to": "The Jeong family passes on the post of family head, and the family head at the opening is Jeong Seoon.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0778",
+   "file": "110",
+   "key": "c815-c9c4-c8fc-912d",
+   "col": "json",
+   "from": "The chairmanship opened not through that deletion but through family succession.",
+   "to": "The family head’s seat opened not through that deletion but through the family’s own line.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0779",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "가문 회의에 올랐을 때",
+   "to": "가문 수장실에 올랐을 때",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0780",
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "before the family council, Jeong Hojun",
+   "to": "before the family head, Jeong Hojun",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0781",
+   "file": "090",
+   "key": "person-1005",
+   "col": "json",
+   "from": "The Taeuk Group chairman has separated out the life safety research responsibility",
+   "to": "The family head of the Arc has separated out the life safety research responsibility",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0782",
+   "file": "110",
+   "key": "c18c-c9c4-c8fc",
+   "col": "json",
+   "from": "Chairman's Office courier, practical aide to Jo Uchan",
+   "to": "Hierophant's office courier, practical aide to Jo Uchan",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0787",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0791",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json_ko",
+   "from": "신도 명부",
+   "to": "피난 명부",
+   "re": true,
+   "expect": 12
+  },
+  {
+   "id": "v4rw-people-0793",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json_ko",
+   "from": "신도를",
+   "to": "피난민을",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0796",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json_ko",
+   "from": "문중 표",
+   "to": "가문 표",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0802",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0810",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "\\bfollower[- ]register",
+   "to": "refugee roster",
+   "re": true,
+   "expect": 8
+  },
+  {
+   "id": "v4rw-people-0811",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "\\bfollowers\\b",
+   "to": "refugees",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0812",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "clan (?:vote|ballot|ticket)",
+   "to": "household vote",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0815",
+   "file": "090",
+   "key": "person-0247",
+   "col": "json",
+   "from": "Follower",
+   "to": "Refugee",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0818",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json_ko",
+   "from": "당직 승려",
+   "to": "당직자",
+   "re": true,
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0822",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json_ko",
+   "from": "총림",
+   "to": "피난 공동체",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0831",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "\\b(?:on-)?duty monks'",
+   "to": "duty staff's",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0832",
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "\\bduty monks\\b",
+   "to": "duty staff",
+   "re": true,
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0853",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0856",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json_ko",
+   "from": "신도 표",
+   "to": "통행 표",
+   "re": true,
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0868",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0886",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0887",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "총림이",
+   "to": "피난 공동체가",
+   "re": true,
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-0890",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "신도 명부",
+   "to": "피난 명부",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0894",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "신도",
+   "to": "피난민",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0895",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "문중 표",
+   "to": "가문 표",
+   "re": true,
+   "expect": 8
+  },
+  {
+   "id": "v4rw-people-0896",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "문중별",
+   "to": "가문별",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0901",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0904",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json",
+   "from": "\\bbelievers'",
+   "to": "refugees'",
+   "re": true,
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0911",
+   "file": "090",
+   "key": "person-0250",
+   "col": "json",
+   "from": "clan (?:vote|ballot|ticket)",
+   "to": "household vote",
+   "re": true,
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-0916",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "장경 필사 당직",
+   "to": "명부 필사 당직",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0917",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "당직 승려",
+   "to": "당직자",
+   "re": true,
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0918",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "승려",
+   "to": "당직자",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0919",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0920",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "총림이",
+   "to": "피난 공동체가",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0921",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "총림",
+   "to": "피난 공동체",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0931",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "\\bduty monks\\b",
+   "to": "duty staff",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0932",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "\\bmonks\\b",
+   "to": "staff",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0933",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "\\bmonk\\b",
+   "to": "staffer",
+   "re": true,
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0934",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0936",
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "Sutra Library trans",
+   "to": "Roster Library trans",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0950",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "당직 승려",
+   "to": "당직자",
+   "re": true,
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-0952",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0954",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "총림",
+   "to": "피난 공동체",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0959",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json_ko",
+   "from": "신도가",
+   "to": "피난민이",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0964",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json",
+   "from": "\\bduty monks\\b",
+   "to": "duty staff",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0965",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json",
+   "from": "\\bmonks\\b",
+   "to": "staff",
+   "re": true,
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-0967",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0971",
+   "file": "090",
+   "key": "person-0252",
+   "col": "json",
+   "from": "\\b[Bb]elievers\\b",
+   "to": "refugees",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0985",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-0988",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json_ko",
+   "from": "신도 표",
+   "to": "통행 표",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-0990",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json_ko",
+   "from": "신도 단위",
+   "to": "가구 단위",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1000",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1005",
+   "file": "090",
+   "key": "person-0253",
+   "col": "json",
+   "from": "\\bbelievers?-",
+   "to": "household-",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1014",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json_ko",
+   "from": "약초 장부는 장경종의 필사본이다",
+   "to": "약초 장부는 필사본이다",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1015",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json_ko",
+   "from": "장경 필사 당직",
+   "to": "명부 필사 당직",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1051",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1053",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "총림",
+   "to": "피난 공동체",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1054",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "신도 표",
+   "to": "통행 표",
+   "re": true,
+   "expect": 10
+  },
+  {
+   "id": "v4rw-people-1066",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1067",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "the Grand Monastery",
+   "to": "the refugee community",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1072",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "congregant pass",
+   "to": "passage pass",
+   "re": true,
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-1078",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "Lay Follower",
+   "to": "Refugee",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1084",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1088",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "신도 명부",
+   "to": "피난 명부",
+   "re": true,
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-1091",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "신도가",
+   "to": "피난민이",
+   "re": true,
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-1093",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "문중 표",
+   "to": "가문 표",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1099",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1106",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "the faithful",
+   "to": "refugees",
+   "re": true,
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-1109",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "clan (?:vote|ballot|ticket)",
+   "to": "household vote",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1117",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1121",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json_ko",
+   "from": "신도 명부",
+   "to": "피난 명부",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1132",
+   "file": "090",
+   "key": "person-0257",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1152",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json_ko",
+   "from": "총림",
+   "to": "피난 공동체",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1154",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json_ko",
+   "from": "신도 명부",
+   "to": "피난 명부",
+   "re": true,
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-1158",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json_ko",
+   "from": "신도",
+   "to": "피난민",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-1159",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json_ko",
+   "from": "문중 표",
+   "to": "가문 표",
+   "re": true,
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-1175",
+   "file": "090",
+   "key": "person-0258",
+   "col": "json",
+   "from": "clan (?:vote|ballot|ticket)",
+   "to": "household vote",
+   "re": true,
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-1181",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json_ko",
+   "from": "당직 승려",
+   "to": "당직자",
+   "re": true,
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-1187",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json_ko",
+   "from": "신도 명부",
+   "to": "피난 명부",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1192",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json_ko",
+   "from": "문중 표",
+   "to": "가문 표",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1195",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json",
+   "from": "\\bduty monks\\b",
+   "to": "duty staff",
+   "re": true,
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-1196",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json",
+   "from": "\\bmonks\\b",
+   "to": "staff",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-1208",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json",
+   "from": "clan (?:vote|ballot|ticket)",
+   "to": "household vote",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1209",
+   "file": "090",
+   "key": "person-0259",
+   "col": "json",
+   "from": "\\b[Bb]eliever\\b",
+   "to": "refugee",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1213",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json_ko",
+   "from": "장경 필사 당직",
+   "to": "명부 필사 당직",
+   "re": true,
+   "expect": 6
+  },
+  {
+   "id": "v4rw-people-1224",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json_ko",
+   "from": "신도",
+   "to": "피난민",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1242",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json",
+   "from": "\\b[Bb]eliever\\b",
+   "to": "refugee",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1249",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1251",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json_ko",
+   "from": "총림",
+   "to": "피난 공동체",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1252",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json_ko",
+   "from": "신도 표",
+   "to": "통행 표",
+   "re": true,
+   "expect": 8
+  },
+  {
+   "id": "v4rw-people-1264",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1269",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "\\bbelievers?-",
+   "to": "household-",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1275",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "\\b[Bb]eliever\\b",
+   "to": "refugee",
+   "re": true,
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-1276",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "Lay Follower",
+   "to": "Refugee",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1279",
+   "file": "090",
+   "key": "person-0261",
+   "col": "json_ko",
+   "from": "장경 필사 당직",
+   "to": "명부 필사 당직",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1284",
+   "file": "090",
+   "key": "person-0261",
+   "col": "json_ko",
+   "from": "총림",
+   "to": "피난 공동체",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1315",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1318",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json_ko",
+   "from": "신도 표",
+   "to": "통행 표",
+   "re": true,
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-1330",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1333",
+   "file": "090",
+   "key": "person-0262",
+   "col": "json",
+   "from": "\\bbelievers'",
+   "to": "refugees'",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1345",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json_ko",
+   "from": "장경 필사 당직",
+   "to": "명부 필사 당직",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1346",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json_ko",
+   "from": "당직 승려",
+   "to": "당직자",
+   "re": true,
+   "expect": 5
+  },
+  {
+   "id": "v4rw-people-1347",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json_ko",
+   "from": "승려",
+   "to": "당직자",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1348",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json_ko",
+   "from": "산중총회",
+   "to": "피난 총회",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1361",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "\\bmonks\\b",
+   "to": "staff",
+   "re": true,
+   "expect": 4
+  },
+  {
+   "id": "v4rw-people-1362",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "\\bmonk\\b",
+   "to": "staffer",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1363",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "Mountain (?:Monastery General Assembly|General Assembly|Convocation|Monastic Council|Assembly)",
+   "to": "Refugee Assembly",
+   "re": true,
+   "expect": 2
+  },
+  {
+   "id": "v4rw-people-1377",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Rank: Bureau Chief",
+   "to": "Rank: Division Chief",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-people-1378",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Station Master",
+   "to": "Stationmaster",
+   "expect": 7
+  },
+  {
+   "id": "v4rw-people-1379",
+   "file": "090",
+   "col": "json",
+   "from": "with the Station Master",
+   "to": "with the Stationmaster",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-1380",
+   "file": "090",
+   "col": "json",
+   "from": "under the Station Master",
+   "to": "under the Stationmaster",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-people-1381",
+   "file": "090",
+   "col": "json",
+   "from": "to the Station Master",
+   "to": "to the Stationmaster",
+   "expect": 1
+  }
+ ]
+}
