@@ -1,0 +1,2058 @@
+{
+ "rules": [
+  {
+   "id": "kk-1",
+   "file": "090",
+   "col": "json_ko",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )회의의 공동교섭 문안을 자신이 날인하는 전령 원장에만 유효하게 해 분할 복속의 쪽지를 늦게 퍼뜨린다\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-17",
+   "file": "090",
+   "col": "json_ko",
+   "from": "회의의 공동교섭 문안을 자신이 날인하는 전령 원장에만 유효하게 해 분할 복속의 쪽지를 늦게 퍼뜨린다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-20",
+   "file": "090",
+   "col": "json_ko",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )협의에서 신도 명부를 공동교섭의 조항으로 올려 분할 복속이 신도 명부를 갈라놓지 못하게 한다\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-36",
+   "file": "090",
+   "col": "json_ko",
+   "from": "협의에서 신도 명부를 공동교섭의 조항으로 올려 분할 복속이 신도 명부를 갈라놓지 못하게 한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-39",
+   "file": "090",
+   "col": "json_ko",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )암사가 보호 발표 시간을 두 배로 사려 하자 서기 일부가 수수료를 받고 발언 순번을 팔았다\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-55",
+   "file": "090",
+   "col": "json_ko",
+   "from": "암사가 보호 발표 시간을 두 배로 사려 하자 서기 일부가 수수료를 받고 발언 순번을 팔았다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-58",
+   "file": "090",
+   "col": "json_ko",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )암사가 보호 발표 시간을 사려 하자 부품 대금이 수수료 장부에 섞여 들어왔다\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-74",
+   "file": "090",
+   "col": "json_ko",
+   "from": "암사가 보호 발표 시간을 사려 하자 부품 대금이 수수료 장부에 섞여 들어왔다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-77",
+   "file": "090",
+   "col": "json_ko",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )암사가 보호 발표 시간을 두 배로 사려 하자 칠판 한 칸이 수수료 숫자로 덮였다\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-93",
+   "file": "090",
+   "col": "json_ko",
+   "from": "암사가 보호 발표 시간을 두 배로 사려 하자 칠판 한 칸이 수수료 숫자로 덮였다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-98",
+   "file": "090",
+   "col": "json_ko",
+   "from": "\\n\\n\\*\\*[^*\\n]+\\.\\*\\* 임하준이 마지막으로 남긴 금고 기록의 끊긴 칸을 보호 발표 시간으로 메우자는 제안이 여의도 금고 당직실에 돈다\\.",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-109",
+   "file": "090",
+   "col": "json_ko",
+   "from": "임하준이 마지막으로 남긴 금고 기록의 끊긴 칸을 보호 발표 시간으로 메우자는 제안이 여의도 금고 당직실에 돈다. ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-119",
+   "file": "090",
+   "col": "json_ko",
+   "from": "배우진의 보호 징발을 원한으로 돌려보낸다.\n\n",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-125",
+   "file": "090",
+   "col": "json_ko",
+   "from": " 배우진의 보호 징발을 원한으로 돌려보낸다.",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kk-138",
+   "file": "090",
+   "col": "json_ko",
+   "from": "배우진의 상시 보호 징발을 원한으로 돌려보낸다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-144",
+   "file": "090",
+   "col": "json_ko",
+   "from": " 배우진의 상시 보호 징발을 원한으로 돌려보낸다.",
+   "to": "",
+   "expect": 3
+  },
+  {
+   "id": "kk-157",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 서식만 받친다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-163",
+   "file": "090",
+   "col": "json_ko",
+   "from": " 정유라의 공동교섭 서식만 받친다.",
+   "to": "",
+   "expect": 3
+  },
+  {
+   "id": "kk-176",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭에 청과 조항을 넣으려 한다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-182",
+   "file": "090",
+   "col": "json_ko",
+   "from": " 정유라의 공동교섭에 청과 조항을 넣으려 한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-195",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭을 칠판 맨 위에 붙인다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-201",
+   "file": "090",
+   "col": "json_ko",
+   "from": " 정유라의 공동교섭을 칠판 맨 위에 붙인다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-212",
+   "file": "090",
+   "col": "json_ko",
+   "from": "\\n\\n\\*\\*[^*\\n]+\\.\\*\\* 김우찬의 작전표에 기간 칸이 빈 보호 조항이 붙어 관문으로 내려온다\\.",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-216",
+   "file": "090",
+   "col": "json_ko",
+   "from": "김우찬의 작전표에 기간 칸이 빈 보호 조항이 붙어 관문으로 내려온다.",
+   "to": "기한 만료 전표는 감사 날인 없이 통행을 닫는다.",
+   "expect": 3
+  },
+  {
+   "id": "kk-221",
+   "file": "090",
+   "col": "json_ko",
+   "from": "\\n\\n\\*\\*[^*\\n]+\\.\\*\\* 정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다\\.",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-227",
+   "file": "090",
+   "col": "json_ko",
+   "from": "종료 조건 문구를 공동교섭과 다툼",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-230",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 초안을 호송하며, ",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kk-233",
+   "file": "090",
+   "col": "json_ko",
+   "from": "심사를 멈췄지만 공동교섭 청구는 고의로 늦춘다.",
+   "to": "심사를 멈춘다.",
+   "expect": 1
+  },
+  {
+   "id": "kk-236",
+   "file": "090",
+   "col": "json_ko",
+   "from": "약속했고, 정유라의 공동교섭 인준 청구는 고의로 늦춘다.",
+   "to": "약속했다.",
+   "expect": 4
+  },
+  {
+   "id": "kk-239",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동교섭 인준 청구를 고의로 늦춤",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-242",
+   "file": "090",
+   "col": "json_ko",
+   "from": "맞추며, 정유라의 공동교섭 인준은 날짜를 속이지 않는 한에서만 꺼낸다.",
+   "to": "맞춘다.",
+   "expect": 4
+  },
+  {
+   "id": "kk-245",
+   "file": "090",
+   "col": "json_ko",
+   "from": "다른 세력의 보호 문장으로 ",
+   "to": "",
+   "expect": 6
+  },
+  {
+   "id": "kk-248",
+   "file": "090",
+   "col": "json_ko",
+   "from": "다른 세력의 보호를 받는 제조망",
+   "to": "제조망",
+   "expect": 4
+  },
+  {
+   "id": "kk-251",
+   "file": "090",
+   "col": "json_ko",
+   "from": "서울 내부 후원 세력 보호를 받는 제조자가",
+   "to": "제조자가",
+   "expect": 2
+  },
+  {
+   "id": "kk-254",
+   "file": "090",
+   "col": "json_ko",
+   "from": "두고, 정유라의 공동교섭 통지를 봉인째 기록청과 회의장에 동시에 보낸 뒤 장세화의 상호호송 초안을 개회 전에 펼친다.",
+   "to": "둔다.",
+   "expect": 4
+  },
+  {
+   "id": "kk-257",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 통지를 봉인 상태로 나르고, 양해온의 인준 전갈과 순번을 나누며, 장세화의 상호호송 초안을 회의 전에만 펼친다.",
+   "to": "양해온의 인준 전갈과 순번을 나눈다.",
+   "expect": 4
+  },
+  {
+   "id": "kk-260",
+   "file": "090",
+   "col": "json_ko",
+   "from": "받치고, 정유라의 공동교섭 사절을 먼저 태우며, 장세화의 상호호송 초안을 승강장 칠판에 옮긴다.",
+   "to": "받친다.",
+   "expect": 5
+  },
+  {
+   "id": "kk-263",
+   "file": "090",
+   "col": "json_ko",
+   "from": "거르고, 정유라의 공동교섭 사절에 식량 칸을 붙인다.",
+   "to": "거른다.",
+   "expect": 5
+  },
+  {
+   "id": "kk-266",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동교섭의 발언을",
+   "to": "발언을",
+   "expect": 2
+  },
+  {
+   "id": "kk-269",
+   "file": "090",
+   "col": "json_ko",
+   "from": "받치고, 정유라의 공동교섭 좌석에 시민권 문안을 올리며, ",
+   "to": "받치고, ",
+   "expect": 4
+  },
+  {
+   "id": "kk-272",
+   "file": "090",
+   "col": "json_ko",
+   "from": "게시한 뒤 정유라의 공동교섭 좌석에 시민권 문안을 올린다.",
+   "to": "게시한다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-275",
+   "file": "090",
+   "col": "json_ko",
+   "from": "되고 회의가 분할 복속으로 끝나는 것.",
+   "to": "되는 것.",
+   "expect": 4
+  },
+  {
+   "id": "kk-278",
+   "file": "090",
+   "col": "json_ko",
+   "from": "나가 자신이 분할 복속의 들러리가 되는 것.",
+   "to": "나가는 것.",
+   "expect": 1
+  },
+  {
+   "id": "kk-281",
+   "file": "090",
+   "col": "json_ko",
+   "from": "사회하되 배우진의 보호안은 분리한다.",
+   "to": "사회한다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-284",
+   "file": "090",
+   "col": "json_ko",
+   "from": "올리며, 배우진의 보호안을 별도 안건으로 격리한다.",
+   "to": "올린다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-287",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정해 공동교섭이 다른 세력별 분할 복속으로 갈라지지 않게 한다.",
+   "to": "정한다.",
+   "expect": 1
+  },
+  {
+   "id": "kk-290",
+   "file": "090",
+   "col": "json_ko",
+   "from": "참고하며, 정유라의 공동교섭을 시민 날인으로 뒷받침한다.",
+   "to": "참고한다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-293",
+   "file": "090",
+   "col": "json_ko",
+   "from": "현장 진료를 공동교섭의 최저선으로 남겨 다른 세력별 분할 복속이 병상을 사지 못하게 한다.",
+   "to": "현장 진료를 남긴다.",
+   "expect": 1
+  },
+  {
+   "id": "kk-296",
+   "file": "090",
+   "col": "json_ko",
+   "from": "마주쳐 교전 한 방으로 공동교섭이 전쟁으로 바뀌는 것.",
+   "to": "마주치는 것.",
+   "expect": 1
+  },
+  {
+   "id": "kk-299",
+   "file": "090",
+   "col": "json_ko",
+   "from": "연결되어 공동교섭이 빈 문구가 되는 것.",
+   "to": "연결되는 것.",
+   "expect": 1
+  },
+  {
+   "id": "kk-302",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동교섭 원장이",
+   "to": "원장이",
+   "expect": 1
+  },
+  {
+   "id": "kk-305",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 문안을 정서하고, ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-308",
+   "file": "090",
+   "col": "json_ko",
+   "from": "열고, 윤서린의 기록 문안과 정유라의 공동교섭 문안을 나란히 둔다.",
+   "to": "연다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-311",
+   "file": "090",
+   "col": "json_ko",
+   "from": "윤서린의 기록 문안과 정유라의 공동교섭 문안을 벽에 나란히 붙인 뒤 ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-314",
+   "file": "090",
+   "col": "json_ko",
+   "from": "윤서린의 기록 문안과 정유라의 공동교섭 문안을 나란히 둔다.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-317",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동교섭 문안을 수서역 서기 원장에만 유효하게 남겨 다른 세력이 서로 다른 대외 초안으로 도장을 쪼개지 못하게 한다.",
+   "to": "문안을 수서역 서기 원장에만 유효하게 남긴다.",
+   "expect": 1
+  },
+  {
+   "id": "kk-320",
+   "file": "090",
+   "col": "json_ko",
+   "from": "맞추고 공동교섭 선언까지 인파를 모아 뒀다.",
+   "to": "맞춰 뒀다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-323",
+   "file": "090",
+   "col": "json_ko",
+   "from": "맞추고, 공동교섭 선언을 정유라가 내놓을 때까지 인파를 대합실에 모아 둔다.",
+   "to": "맞춘다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-326",
+   "file": "090",
+   "col": "json_ko",
+   "from": "방마빛과 줄을 나누고 배우진의 보호 징발을 거부한다.",
+   "to": "방마빛과 줄을 나눈다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-329",
+   "file": "090",
+   "col": "json_ko",
+   "from": "부르고, 배우진의 보호 징발 문서가 방마빛의 창구에 붙는다.",
+   "to": "부른다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-332",
+   "file": "090",
+   "col": "json_ko",
+   "from": "수서역 공동교섭의 감사 서명을",
+   "to": "감사 서명을",
+   "expect": 1
+  },
+  {
+   "id": "kk-335",
+   "file": "090",
+   "col": "json_ko",
+   "from": "전락해 공동교섭에서 제외되는 것.",
+   "to": "전락하는 것.",
+   "expect": 2
+  },
+  {
+   "id": "kk-338",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공개하거나, 원장 한 줄을 지워 세리를 보호 징수원으로 몰 수 있다.",
+   "to": "공개할 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-341",
+   "file": "090",
+   "col": "json_ko",
+   "from": "세고, 구두로 보호 연장을 증언하자는 사신을 증인석에서 내려보낸다.",
+   "to": "센다.",
+   "expect": 1
+  },
+  {
+   "id": "kk-344",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 호송을 관문에서 증언하고, ",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kk-347",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 호송이 관문에 닿기 전에, ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-350",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭에 청과 조항을 넣으려 하며, ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-353",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭에 청과 조항을 정서하고, ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-356",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭에 들어갈 청과 조항 정서와 ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-359",
+   "file": "090",
+   "col": "json_ko",
+   "from": "군량 협상물이나 보호비가 아닌",
+   "to": "군량 협상물이 아닌",
+   "expect": 1
+  },
+  {
+   "id": "kk-362",
+   "file": "090",
+   "col": "json_ko",
+   "from": "냉온고 정지로 종자가 보호비로 흩어질 위험이 있다면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-365",
+   "file": "090",
+   "col": "json_ko",
+   "from": "바뀌고 종자가 보호비로 흩어지는 것.",
+   "to": "바뀌는 것.",
+   "expect": 2
+  },
+  {
+   "id": "kk-368",
+   "file": "090",
+   "col": "json_ko",
+   "from": "평의회가 보호비에 팔릴 것을 두려워한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-371",
+   "file": "090",
+   "col": "json_ko",
+   "from": "광고와 보호비에",
+   "to": "광고에",
+   "expect": 3
+  },
+  {
+   "id": "kk-374",
+   "file": "090",
+   "col": "json_ko",
+   "from": "평의회가 보호비에 팔려 ",
+   "to": "",
+   "expect": 3
+  },
+  {
+   "id": "kk-377",
+   "file": "090",
+   "col": "json_ko",
+   "from": "광고와 보호비 쪽지로",
+   "to": "광고 쪽지로",
+   "expect": 3
+  },
+  {
+   "id": "kk-380",
+   "file": "090",
+   "col": "json_ko",
+   "from": "고정해, 금고 키 중계와 환전로 갱신이 다른 세력의 보호비에 묶이지 않게 한다.",
+   "to": "고정한다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-383",
+   "file": "090",
+   "col": "json_ko",
+   "from": "강제해 서울 구호 창구가 보호비로 바뀌지 않게 한다.",
+   "to": "강제한다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-386",
+   "file": "090",
+   "col": "json_ko",
+   "from": "묶어, 서울 구호 창구가 보호비로 바뀌지 않게 한다.",
+   "to": "묶는다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-389",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호비와 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-392",
+   "file": "090",
+   "col": "json_ko",
+   "from": "게시하며 안내를 보호비로 바꾸는 사람을 길에서 내려보낸다.",
+   "to": "게시한다.",
+   "expect": 1
+  },
+  {
+   "id": "kk-395",
+   "file": "090",
+   "col": "json_ko",
+   "from": "기록 공백을 보호 발표로 메우는 대신 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-398",
+   "file": "090",
+   "col": "json_ko",
+   "from": "회수하거나, 빈 칸을 보호 발표 시간으로 메우려는 거래를 막을 수 있다.",
+   "to": "회수할 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-401",
+   "file": "090",
+   "col": "json_ko",
+   "from": "고덕 호각이 보호 방송에 종속될 우려가 커지면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-404",
+   "file": "090",
+   "col": "json_ko",
+   "from": "바뀌면 고덕 호각이 보호 방송 아래로 내려가는 상황을",
+   "to": "바뀌는 상황을",
+   "expect": 2
+  },
+  {
+   "id": "kk-407",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정소율에게 명부를 맡기는 보호체류에 가깝고, ",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kk-410",
+   "file": "090",
+   "col": "json_ko",
+   "from": "관문세와 보호 조항을 행정·동방사에 동시에 보내되, ",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kk-413",
+   "file": "090",
+   "col": "json_ko",
+   "from": "기간 없는 보호를 계약이 아니라 점령으로 부른다.",
+   "to": "기한 만료 전표는 감사 날인 없이 통행을 닫는다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-416",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호조항의 군사 개입",
+   "to": "군사 개입",
+   "expect": 4
+  },
+  {
+   "id": "kk-419",
+   "file": "090",
+   "col": "json_ko",
+   "from": "지키거나, 보호조항만 남긴 인용을 폭로할 수 있다.",
+   "to": "지킬 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "kk-422",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호조항 병참 서기",
+   "to": "병참 서기",
+   "expect": 2
+  },
+  {
+   "id": "kk-424",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "보호조항 병참 서기",
+   "to": "병참 서기",
+   "expect": 2
+  },
+  {
+   "id": "kk-425",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호물자 병참 출고·기한 확인",
+   "to": "병참 출고·기한 확인",
+   "expect": 1
+  },
+  {
+   "id": "kk-427",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "보호물자 병참 출고·기한 확인",
+   "to": "병참 출고·기한 확인",
+   "expect": 1
+  },
+  {
+   "id": "kk-428",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호창고",
+   "to": "창고",
+   "expect": 26
+  },
+  {
+   "id": "kk-431",
+   "file": "090",
+   "col": "json_ko",
+   "from": "되어 진료소가 보호 창구로 찍히는 것.",
+   "to": "되는 것.",
+   "expect": 2
+  },
+  {
+   "id": "kk-434",
+   "file": "090",
+   "col": "json_ko",
+   "from": "되어 진료소가 보호 창구로 찍히는 일을",
+   "to": "되는 일을",
+   "expect": 2
+  },
+  {
+   "id": "kk-437",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동교섭 서명·투표 출석 기록",
+   "to": "서명·투표 출석 기록",
+   "expect": 3
+  },
+  {
+   "id": "kk-438",
+   "file": "110",
+   "col": "json_ko",
+   "from": "공동교섭 서명·투표 출석 기록",
+   "to": "서명·투표 출석 기록",
+   "expect": 2
+  },
+  {
+   "id": "kk-439",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "공동교섭 서명·투표 출석 기록",
+   "to": "서명·투표 출석 기록",
+   "expect": 1
+  },
+  {
+   "id": "kk-440",
+   "file": "090",
+   "col": "json_ko",
+   "from": "Arc 공동교섭 서명 서기",
+   "to": "Arc 서명 서기",
+   "expect": 3
+  },
+  {
+   "id": "kk-441",
+   "file": "110",
+   "col": "json_ko",
+   "from": "Arc 공동교섭 서명 서기",
+   "to": "Arc 서명 서기",
+   "expect": 1
+  },
+  {
+   "id": "kk-442",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "Arc 공동교섭 서명 서기",
+   "to": "Arc 서명 서기",
+   "expect": 1
+  },
+  {
+   "id": "kk-443",
+   "file": "090",
+   "col": "json_ko",
+   "from": "·공동교섭 확인",
+   "to": "",
+   "expect": 3
+  },
+  {
+   "id": "kk-444",
+   "file": "110",
+   "col": "json_ko",
+   "from": "·공동교섭 확인",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-445",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "·공동교섭 확인",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-446",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 통지를 봉인 상태로 나르고",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-448",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 사절을 먼저 태우며",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-450",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 사절에 식량 칸을 붙이며",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-452",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 좌석에 시민권 문안을 올리며",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-454",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 호송을 관문에서 증언하고",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-456",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭에 청과 조항을 정서하고",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-458",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라의 공동교섭 문안을 정서하고",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-460",
+   "file": "090",
+   "col": "json_ko",
+   "from": "시민 명부를 행정청에 맡기는 보호체류",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-462",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호체류",
+   "to": "명부 위탁",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.type$"
+  },
+  {
+   "id": "kk-464",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호 조항 감사",
+   "to": "관문세 전표 감사",
+   "expect": 1,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$"
+  },
+  {
+   "id": "kk-466",
+   "file": "090",
+   "col": "json_ko",
+   "from": "무기한 보호 거부",
+   "to": "관문세 전표 감사",
+   "expect": 1,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$"
+  },
+  {
+   "id": "kk-468",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호비 안내 거부",
+   "to": "통행 시각·통행 표 게시",
+   "expect": 1,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$"
+  },
+  {
+   "id": "kk-470",
+   "file": "090",
+   "col": "json",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )To make the council's joint negotiation text valid only in the courier ledger that they themselves seal, and thereby delay the spread of notes of divided subjugation\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-486",
+   "file": "090",
+   "col": "json",
+   "from": "To make the council's joint negotiation text valid only in the courier ledger that they themselves seal, and thereby delay the spread of notes of divided subjugation.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-489",
+   "file": "090",
+   "col": "json",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )In the negotiations, raises the follower roster as a clause of the joint negotiation so that partitioned subjugation cannot split the follower roster apart\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-505",
+   "file": "090",
+   "col": "json",
+   "from": "In the negotiations, raises the follower roster as a clause of the joint negotiation so that partitioned subjugation cannot split the follower roster apart.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-508",
+   "file": "090",
+   "col": "json",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )When Amsa tried to buy double the protection announcement time, some clerks took fees and sold speaking turns\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-524",
+   "file": "090",
+   "col": "json",
+   "from": "When Amsa tried to buy double the protection announcement time, some clerks took fees and sold speaking turns.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-527",
+   "file": "090",
+   "col": "json",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )When Amsa tried to buy time for its protection announcement, payment for parts got mixed into the fee ledger\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-543",
+   "file": "090",
+   "col": "json",
+   "from": "When Amsa tried to buy time for its protection announcement, payment for parts got mixed into the fee ledger.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-546",
+   "file": "090",
+   "col": "json",
+   "from": "(?:\\*\\*[^*\\n]+\\.\\*\\* )When Amsa tried to buy double the protected presentation time, one square of the chalkboard was covered over with fee figures\\.\\n\\n",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-562",
+   "file": "090",
+   "col": "json",
+   "from": "When Amsa tried to buy double the protected presentation time, one square of the chalkboard was covered over with fee figures.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-567",
+   "file": "090",
+   "col": "json",
+   "from": "\\n\\n\\*\\*[^*\\n]+\\.\\*\\* A proposal to fill the broken entries in the vault record that Im Hajun left last with a protective announcement time circulates in the Yeouido vault duty room\\.",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-578",
+   "file": "090",
+   "col": "json",
+   "from": "A proposal to fill the broken entries in the vault record that Im Hajun left last with a protective announcement time circulates in the Yeouido vault duty room. ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-594",
+   "file": "090",
+   "col": "json",
+   "from": " Sent Bae Woojin's protection requisition back as a grudge.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-607",
+   "file": "090",
+   "col": "json",
+   "from": "Turn Bae Ujin's protective requisition away as a grievance.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-613",
+   "file": "090",
+   "col": "json",
+   "from": " Turn Bae Ujin's protective requisition away as a grievance.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-632",
+   "file": "090",
+   "col": "json",
+   "from": " Sent Bae Woojin's standing-protection requisition back as a grudge.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-645",
+   "file": "090",
+   "col": "json",
+   "from": "Sends Bae U-jin's Standing Protection requisition back as a grievance.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-651",
+   "file": "090",
+   "col": "json",
+   "from": " Sends Bae U-jin's Standing Protection requisition back as a grievance.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-664",
+   "file": "090",
+   "col": "json",
+   "from": "They return Bae Ujin's protective requisition as a grievance.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-670",
+   "file": "090",
+   "col": "json",
+   "from": " They return Bae Ujin's protective requisition as a grievance.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-689",
+   "file": "090",
+   "col": "json",
+   "from": " Backed only Jeong Yura's joint negotiation forms.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-702",
+   "file": "090",
+   "col": "json",
+   "from": "Supports only Jeong Yura's joint negotiation form.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-708",
+   "file": "090",
+   "col": "json",
+   "from": " Supports only Jeong Yura's joint negotiation form.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-721",
+   "file": "090",
+   "col": "json",
+   "from": "Intends to put a produce clause into Jeong Yura's joint negotiation.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-727",
+   "file": "090",
+   "col": "json",
+   "from": " Intends to put a produce clause into Jeong Yura's joint negotiation.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-740",
+   "file": "090",
+   "col": "json",
+   "from": "Posts Jeong Yu-ra's joint negotiation at the very top of the blackboard.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-746",
+   "file": "090",
+   "col": "json",
+   "from": " Posts Jeong Yu-ra's joint negotiation at the very top of the blackboard.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-757",
+   "file": "090",
+   "col": "json",
+   "from": "\\n\\n\\*\\*[^*\\n]+\\.\\*\\* A claim arrives from Jeong Yura's side asking for a late-arriving joint-negotiation ratification to be applied retroactively\\.",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-768",
+   "file": "090",
+   "col": "json",
+   "from": "A claim arrives from Jeong Yura's side asking for a late-arriving joint-negotiation ratification to be applied retroactively. ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-790",
+   "file": "090",
+   "col": "json",
+   "from": "Places Yun Seorin’s records draft beside Jeong Yura’s joint-negotiation draft.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-795",
+   "file": "090",
+   "col": "json",
+   "from": "\\n\\n\\*\\*[^*\\n]+\\.\\*\\* A protection clause with a blank term field is attached to Kim Uchan's operations sheet and sent down to the gate\\.",
+   "to": "",
+   "expect": 1,
+   "re": true,
+   "pathRe": "^\\.biography$"
+  },
+  {
+   "id": "kk-799",
+   "file": "090",
+   "col": "json",
+   "from": "A protection clause with an empty term box comes down to the gate attached to Kim Woochan's operations sheet.",
+   "to": "Closes passage for expired slips without an audit seal.",
+   "expect": 2
+  },
+  {
+   "id": "kk-802",
+   "file": "090",
+   "col": "json",
+   "from": "He called protection without a deadline occupation, not a contract.",
+   "to": "Closes passage for expired slips without an audit seal.",
+   "expect": 1
+  },
+  {
+   "id": "kk-805",
+   "file": "090",
+   "col": "json",
+   "from": ", and deliberately delayed Jeong Yura's joint-negotiation ratification claim",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-808",
+   "file": "090",
+   "col": "json",
+   "from": ", yet deliberately delays a joint negotiation claim",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-811",
+   "file": "090",
+   "col": "json",
+   "from": ", and deliberately delays Jeong Yura's petition for ratification of joint negotiation",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-814",
+   "file": "090",
+   "col": "json",
+   "from": ", and drew out Jeong Yura's joint-negotiation ratification only so long as it did not cheat the dates",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-817",
+   "file": "090",
+   "col": "json",
+   "from": ", and brings out Jeong Yura's joint-negotiation ratification only so long as the date is not falsified",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-820",
+   "file": "090",
+   "col": "json",
+   "from": "escorting Jeong Yura's joint-negotiation draft, and carrying",
+   "to": "carrying",
+   "expect": 2
+  },
+  {
+   "id": "kk-823",
+   "file": "090",
+   "col": "json",
+   "from": "escorts Jeong Yura's joint-negotiation draft, and carries",
+   "to": "carries",
+   "expect": 2
+  },
+  {
+   "id": "kk-826",
+   "file": "090",
+   "col": "json",
+   "from": " with another faction's protection clause",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kk-829",
+   "file": "090",
+   "col": "json",
+   "from": " with another faction's protective crest",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-832",
+   "file": "090",
+   "col": "json",
+   "from": " under other-faction protection",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kk-835",
+   "file": "090",
+   "col": "json",
+   "from": " under the protection of a Seoul internal patron faction",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-838",
+   "file": "090",
+   "col": "json",
+   "from": ", sends Jeong Yura's joint-bargaining notice still sealed to the records office and the council hall at once, and opens Jang Sehwa's mutual-escort draft before the session begins",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-841",
+   "file": "090",
+   "col": "json",
+   "from": "Carried Jeong Yura's joint-negotiation notice under seal, split order with Yang Haeon's ratification dispatches, and unfolded Jang Sehwa's mutual convoy draft only before the council.",
+   "to": "Split order with Yang Haeon's ratification dispatches.",
+   "expect": 2
+  },
+  {
+   "id": "kk-844",
+   "file": "090",
+   "col": "json",
+   "from": "Carries Jeong Yura's joint negotiation notice under seal, shares turns with Yang Haeon's ratification messages, and unfolds Jang Sehwa's mutual escort draft only before the council.",
+   "to": "Shares turns with Yang Haeon's ratification messages.",
+   "expect": 2
+  },
+  {
+   "id": "kk-847",
+   "file": "090",
+   "col": "json",
+   "from": ", seated Jeong Yura's joint-negotiation envoys first, and moved Jang Sehwa's mutual convoy draft onto the platform chalkboard",
+   "to": "",
+   "expect": 3
+  },
+  {
+   "id": "kk-850",
+   "file": "090",
+   "col": "json",
+   "from": ", boards Jeong Yura's joint-negotiation envoys first, and copies Jang Sehwa's mutual-escort draft onto the platform board",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-853",
+   "file": "090",
+   "col": "json",
+   "from": " and coupled a food car onto Jeong Yura's joint-negotiation envoys",
+   "to": "",
+   "expect": 3
+  },
+  {
+   "id": "kk-856",
+   "file": "090",
+   "col": "json",
+   "from": "matches statements in the joint negotiations with",
+   "to": "matches statements with",
+   "expect": 2
+  },
+  {
+   "id": "kk-859",
+   "file": "090",
+   "col": "json",
+   "from": ", submits a citizenship text to Jeong Yura's joint-negotiation seat",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-862",
+   "file": "090",
+   "col": "json",
+   "from": ", and then places a citizenship text on Jeong Yura's joint-negotiation seat",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-865",
+   "file": "090",
+   "col": "json",
+   "from": ", and raised the northern technical clause onto Jeong Yura's joint-negotiation seat",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-868",
+   "file": "090",
+   "col": "json",
+   "from": ", and the council would end in partition",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-871",
+   "file": "090",
+   "col": "json",
+   "from": ", and the council ending in divided subjugation",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-874",
+   "file": "090",
+   "col": "json",
+   "from": " and he would become the procession of partition",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-877",
+   "file": "090",
+   "col": "json",
+   "from": " and the clerk becomes a bridesmaid to partition and subjugation",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-880",
+   "file": "090",
+   "col": "json",
+   "from": " but separates Bae Ujin’s protection proposal",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-883",
+   "file": "090",
+   "col": "json",
+   "from": ", and isolates Bae Ujin's protection proposal as a separate item",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-886",
+   "file": "090",
+   "col": "json",
+   "from": ", from the mediator's seat, so that joint bargaining does not split into per-power partition and subjugation",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-889",
+   "file": "090",
+   "col": "json",
+   "from": " as the floor of joint bargaining, so that per-power partition and subjugation cannot buy the sickbeds",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-895",
+   "file": "090",
+   "col": "json",
+   "from": ", and places Yun Seorin's records text and Jeong Yura's joint-negotiation text side by side",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-898",
+   "file": "090",
+   "col": "json",
+   "from": ", pastes Yun Seorin's records text and Jeong Yura's joint-negotiation text side by side on the wall, and rewrites",
+   "to": ", and rewrites",
+   "expect": 2
+  },
+  {
+   "id": "kk-901",
+   "file": "090",
+   "col": "json",
+   "from": " and be excluded from the joint negotiation",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-904",
+   "file": "090",
+   "col": "json",
+   "from": ", or erase one line of the ledger to brand the tax collector a protection-racket collector",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-907",
+   "file": "090",
+   "col": "json",
+   "from": " and sent down from the witness stand any envoy who proposed testifying to a verbal protection extension",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-910",
+   "file": "090",
+   "col": "json",
+   "from": " and heard any broadcast that called the defense squad a protection vanguard an insult",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-913",
+   "file": "090",
+   "col": "json",
+   "from": "Testified to Jeong Yura's joint-negotiation convoy at the gate and matched",
+   "to": "Matched",
+   "expect": 2
+  },
+  {
+   "id": "kk-916",
+   "file": "090",
+   "col": "json",
+   "from": "Testifies at the gate to Jeong Yu-ra's joint-negotiation escort, and matches",
+   "to": "Matches",
+   "expect": 2
+  },
+  {
+   "id": "kk-919",
+   "file": "090",
+   "col": "json",
+   "from": "Before Jeong Yu-ra's joint-negotiation escort reaches the gate, an envoy",
+   "to": "An envoy",
+   "expect": 2
+  },
+  {
+   "id": "kk-922",
+   "file": "090",
+   "col": "json",
+   "from": " Unfolded Jang Sehwa's mutual convoy draft only before the council.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-925",
+   "file": "090",
+   "col": "json",
+   "from": " Opens Jang Se-hwa's mutual-escort draft only before the council.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-928",
+   "file": "090",
+   "col": "json",
+   "from": ", tries to put a produce clause into Jeong Yura's joint negotiation",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-931",
+   "file": "090",
+   "col": "json",
+   "from": "fair-copies the petition and clauses for Jeong Yura's joint negotiation and matches",
+   "to": "matches",
+   "expect": 2
+  },
+  {
+   "id": "kk-934",
+   "file": "090",
+   "col": "json",
+   "from": "both the fair-copying of the petition and clauses to go into Jeong Yura's joint negotiation and the clerk's duties",
+   "to": "the clerk's duties",
+   "expect": 2
+  },
+  {
+   "id": "kk-937",
+   "file": "090",
+   "col": "json",
+   "from": "rather than military bargaining stock or protection payments",
+   "to": "rather than military bargaining stock",
+   "expect": 1
+  },
+  {
+   "id": "kk-940",
+   "file": "090",
+   "col": "json",
+   "from": "If storage failure risks dispersing seeds as protection payments, she may",
+   "to": "She may",
+   "expect": 1
+  },
+  {
+   "id": "kk-943",
+   "file": "090",
+   "col": "json",
+   "from": " and the seeds will be scattered as protection fees",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-946",
+   "file": "090",
+   "col": "json",
+   "from": "Fears the council being sold for protection fees.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-949",
+   "file": "090",
+   "col": "json",
+   "from": "to advertising and protection fees",
+   "to": "to advertising",
+   "expect": 2
+  },
+  {
+   "id": "kk-952",
+   "file": "090",
+   "col": "json",
+   "from": "the council will be sold to protection fees and the disclosure queue turned",
+   "to": "the disclosure queue will be turned",
+   "expect": 2
+  },
+  {
+   "id": "kk-955",
+   "file": "090",
+   "col": "json",
+   "from": "swapped for advertisements and protection-fee notes",
+   "to": "swapped for advertisement notes",
+   "expect": 2
+  },
+  {
+   "id": "kk-958",
+   "file": "090",
+   "col": "json",
+   "from": ", so that vault key relays and exchange route upgrades are not tied to the other factions' protection fees",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-961",
+   "file": "090",
+   "col": "json",
+   "from": ", so that Seoul's relief windows do not turn into protection-fee counters",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-964",
+   "file": "090",
+   "col": "json",
+   "from": " so that Seoul's relief windows do not turn into protection fees",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-967",
+   "file": "090",
+   "col": "json",
+   "from": "resisting protection fees and military census use",
+   "to": "resisting military census use",
+   "expect": 1
+  },
+  {
+   "id": "kk-970",
+   "file": "090",
+   "col": "json",
+   "from": " and removes people who turn guidance into protection fees",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-973",
+   "file": "090",
+   "col": "json",
+   "from": " instead of filling missing records with protection announcements",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kk-976",
+   "file": "090",
+   "col": "json",
+   "from": ", or block a deal that would fill the blanks with a protective announcement time",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-979",
+   "file": "090",
+   "col": "json",
+   "from": "If Godeok's whistle risks being subordinated to protection broadcasts, Pyo may",
+   "to": "Pyo may",
+   "expect": 1
+  },
+  {
+   "id": "kk-982",
+   "file": "090",
+   "col": "json",
+   "from": "fears that if empty stabling bays turn into encampment tents, the Godeok whistle will fall beneath the protection broadcast",
+   "to": "fears that empty stabling bays will turn into encampment tents",
+   "expect": 2
+  },
+  {
+   "id": "kk-985",
+   "file": "090",
+   "col": "json",
+   "from": "Closer to a protective stay in which he entrusts the roster to Jeong Soyul; an ally",
+   "to": "An ally",
+   "expect": 2
+  },
+  {
+   "id": "kk-988",
+   "file": "090",
+   "col": "json",
+   "from": "Near protective custody in entrusting his roster to Jeong Soyul, allied",
+   "to": "Allied",
+   "expect": 2
+  },
+  {
+   "id": "kk-991",
+   "file": "090",
+   "col": "json",
+   "from": "He sent the gate tolls and protection clauses to the administration and Eastern Command at once, and closed",
+   "to": "He closed",
+   "expect": 2
+  },
+  {
+   "id": "kk-994",
+   "file": "090",
+   "col": "json",
+   "from": "Sends gate-toll and protection clauses simultaneously to the administration and Eastern Command, but closes",
+   "to": "Closes",
+   "expect": 2
+  },
+  {
+   "id": "kk-997",
+   "file": "090",
+   "col": "json",
+   "from": "the protection clause's military intervention",
+   "to": "military intervention",
+   "expect": 2
+  },
+  {
+   "id": "kk-1000",
+   "file": "090",
+   "col": "json",
+   "from": " under the protection clause",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-1003",
+   "file": "090",
+   "col": "json",
+   "from": ", or expose a citation that preserves only the protection clause",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-1006",
+   "file": "090",
+   "col": "json",
+   "from": "Protection Clause Logistics Clerk",
+   "to": "Logistics Clerk",
+   "expect": 2
+  },
+  {
+   "id": "kk-1008",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Protection Clause Logistics Clerk",
+   "to": "Logistics Clerk",
+   "expect": 2
+  },
+  {
+   "id": "kk-1009",
+   "file": "090",
+   "col": "json",
+   "from": "Protected Supplies Logistics Dispatch and Deadline Check",
+   "to": "Logistics Dispatch and Deadline Check",
+   "expect": 1
+  },
+  {
+   "id": "kk-1011",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Protected Supplies Logistics Dispatch and Deadline Check",
+   "to": "Logistics Dispatch and Deadline Check",
+   "expect": 1
+  },
+  {
+   "id": "kk-1012",
+   "file": "090",
+   "col": "json",
+   "from": "Protection Depot",
+   "to": "Depot",
+   "expect": 6
+  },
+  {
+   "id": "kk-1015",
+   "file": "090",
+   "col": "json",
+   "from": "protection-warehouse",
+   "to": "warehouse",
+   "expect": 4
+  },
+  {
+   "id": "kk-1018",
+   "file": "090",
+   "col": "json",
+   "from": "protection warehouse",
+   "to": "warehouse",
+   "expect": 8
+  },
+  {
+   "id": "kk-1021",
+   "file": "090",
+   "col": "json",
+   "from": "Protective Warehouse",
+   "to": "Warehouse",
+   "expect": 6
+  },
+  {
+   "id": "kk-1024",
+   "file": "090",
+   "col": "json",
+   "from": " and the clinic would be stamped a protection window",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-1027",
+   "file": "090",
+   "col": "json",
+   "from": ", and the clinic will be marked as a protection desk",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kk-1031",
+   "file": "110",
+   "col": "json",
+   "from": "recording joint negotiation signatures and voting attendance",
+   "to": "recording signatures and voting attendance",
+   "expect": 2
+  },
+  {
+   "id": "kk-1033",
+   "file": "090",
+   "col": "json",
+   "from": "Recording joint negotiation signatures and voting attendance",
+   "to": "Recording signatures and voting attendance",
+   "expect": 3
+  },
+  {
+   "id": "kk-1035",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Recording joint negotiation signatures and voting attendance",
+   "to": "Recording signatures and voting attendance",
+   "expect": 1
+  },
+  {
+   "id": "kk-1037",
+   "file": "110",
+   "col": "json",
+   "from": "requisition slips, attendance headcount cross-check, and joint negotiation confirmation",
+   "to": "requisition slips and attendance headcount cross-check",
+   "expect": 2
+  },
+  {
+   "id": "kk-1039",
+   "file": "090",
+   "col": "json",
+   "from": "Carries Jeong Yura's joint negotiation notice under seal",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-1041",
+   "file": "090",
+   "col": "json",
+   "from": "boarding Jeong Yu-ra's joint negotiation envoys first",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-1043",
+   "file": "090",
+   "col": "json",
+   "from": "by placing a citizenship text on Jeong Yura's joint-negotiation seat",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-1045",
+   "file": "090",
+   "col": "json",
+   "from": "Testifies at the gate to Jeong Yura's joint-negotiation escort",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-1047",
+   "file": "090",
+   "col": "json",
+   "from": "He fair-copies the petition and clauses for Jeong Yura's joint negotiation",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-1049",
+   "file": "090",
+   "col": "json",
+   "from": "Fair-copies Jeong Yura's joint negotiation text, and",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-1051",
+   "file": "090",
+   "col": "json",
+   "from": "Deliberately delays the joint negotiation ratification petition",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-1055",
+   "file": "090",
+   "col": "json",
+   "from": "Protective Residence, entrusting the citizen roster to the Administration",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "kk-1057",
+   "file": "090",
+   "col": "json",
+   "from": "Protective Residence",
+   "to": "Roster entrustment",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.type$"
+  },
+  {
+   "id": "kk-1059",
+   "file": "090",
+   "col": "json",
+   "from": "Protection clause audit",
+   "to": "Gate tax voucher audit",
+   "expect": 1,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$"
+  },
+  {
+   "id": "kk-1061",
+   "file": "090",
+   "col": "json",
+   "from": "Rejects indefinite protection",
+   "to": "Gate Tax Voucher Audit",
+   "expect": 1,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$"
+  }
+ ]
+}

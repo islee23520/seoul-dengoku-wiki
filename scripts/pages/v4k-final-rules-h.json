@@ -1,0 +1,143 @@
+{
+ "rules": [
+  {
+   "id": "kl-1",
+   "file": "090",
+   "col": "json_ko",
+   "from": " 정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kl-3",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정유라 쪽에서 늦게 도착한 공동교섭 인준을 소급해 달라는 청구가 들어온다. ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kl-5",
+   "file": "090",
+   "col": "json",
+   "from": " A request comes from Jeong Yura's joint-bargaining side to backdate a late ratification.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kl-11",
+   "file": "090",
+   "col": "json",
+   "from": "A protection clause with a blank term field is attached to Kim Uchan's operations sheet and sent down to the gate. ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kl-13",
+   "file": "090",
+   "col": "json_ko",
+   "from": " 장세화의 상호호송 초안을 회의 전에만 펼친다.",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kl-18",
+   "file": "110",
+   "col": "json",
+   "from": "joint-bargaining signature clerk",
+   "to": "signature clerk",
+   "expect": 1
+  },
+  {
+   "id": "kl-19",
+   "file": "090",
+   "col": "json",
+   "from": ", sends Jeong Yura's joint negotiation notice, still sealed, to the Records Office and the council hall at the same time, and unfolds Jang Sehwa's mutual escort draft before the session \\w+",
+   "to": "",
+   "expect": 2,
+   "re": true
+  },
+  {
+   "id": "kl-21",
+   "file": "090",
+   "col": "json",
+   "from": ", and backs Jeong Yura's joint negotiation[^.]*\\.",
+   "to": ".",
+   "expect": 2,
+   "re": true
+  },
+  {
+   "id": "kl-23",
+   "file": "090",
+   "col": "json",
+   "from": " and a single exchange of fire turns joint bargaining into war",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kl-25",
+   "file": "090",
+   "col": "json",
+   "from": " and joint bargaining becomes an empty phrase",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kl-27",
+   "file": "090",
+   "col": "json",
+   "from": "the joint bargaining ledger",
+   "to": "the ledger",
+   "expect": 1
+  },
+  {
+   "id": "kl-29",
+   "file": "090",
+   "col": "json",
+   "from": "Makes the joint bargaining text valid only in the Suseo Station clerk ledger, so that the powers cannot split the seal across different outward drafts",
+   "to": "Makes the text valid only in the Suseo Station clerk ledger",
+   "expect": 1
+  },
+  {
+   "id": "kl-31",
+   "file": "090",
+   "col": "json",
+   "from": "makes fair copies of Jeong Yura's joint-bargaining text, and gathers",
+   "to": "gathers",
+   "expect": 2
+  },
+  {
+   "id": "kl-33",
+   "file": "090",
+   "col": "json",
+   "from": " and rejects Bae Ujin’s protective requisition",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kl-35",
+   "file": "090",
+   "col": "json",
+   "from": ", and Bae Ujin's protective requisition document is posted at Bang Mabit's window",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kl-37",
+   "file": "090",
+   "col": "json",
+   "from": ", and keeps the crowd gathered in the waiting hall until Jeong Yura issues the joint-bargaining \\w+",
+   "to": "",
+   "expect": 2,
+   "re": true
+  },
+  {
+   "id": "kl-39",
+   "file": "090",
+   "col": "json",
+   "from": "the audit signature of the Suseo Station joint bargaining",
+   "to": "the audit signature",
+   "expect": 1
+  }
+ ]
+}
