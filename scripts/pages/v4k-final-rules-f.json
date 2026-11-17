@@ -1,0 +1,20 @@
+{
+ "rules": [
+  {
+   "id": "kj-1",
+   "file": "090",
+   "col": "json",
+   "from": "a protection force's timetable",
+   "to": "an outside escort's timetable",
+   "expect": 2
+  },
+  {
+   "id": "kj-2",
+   "file": "090",
+   "col": "json_ko",
+   "from": "일방의 무장 진입의 발판으로 찍혀 ",
+   "to": "",
+   "expect": 2
+  }
+ ]
+}

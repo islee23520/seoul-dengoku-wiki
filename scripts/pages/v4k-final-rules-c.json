@@ -1,0 +1,1318 @@
+{
+ "rules": [
+  {
+   "id": "kg-1",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0091",
+   "pathRe": "^\\.sections\\.공포$",
+   "exact": true,
+   "from": "김보람은 암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 상황을 두려워한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-2",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0091",
+   "pathRe": "^\\.biography$",
+   "from": "**공포.** 김보람은 암사 보호군이 점검 공백을 구원으로 위장해 펌프실에 주둔하는 상황을 두려워한다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-4",
+   "file": "090",
+   "col": "json",
+   "key": "person-0091",
+   "pathRe": "^\\.sections\\.Fear$",
+   "exact": true,
+   "from": "Kim Boram fears a situation in which the Amsa Protectorate Force disguises the inspection gap as a rescue and takes up station in the pump room.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-5",
+   "file": "090",
+   "col": "json",
+   "key": "person-0091",
+   "pathRe": "^\\.biography$",
+   "from": "**Fear.** Kim Boram fears a situation in which the Amsa Protectorate Force disguises the inspection gap as a rescue and takes up station in the pump room.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-7",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0100",
+   "pathRe": "^\\.sections\\.공포$",
+   "exact": true,
+   "from": "채구름은 암사 보호군이 점검 공백을 구원으로 위장해 교량에 주둔하는 상황을 두려워한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-8",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0100",
+   "pathRe": "^\\.biography$",
+   "from": "**공포.** 채구름은 암사 보호군이 점검 공백을 구원으로 위장해 교량에 주둔하는 상황을 두려워한다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-10",
+   "file": "090",
+   "col": "json",
+   "key": "person-0100",
+   "pathRe": "^\\.sections\\.Fear$",
+   "exact": true,
+   "from": "Chae Gureum fears a situation in which the Amsa Protectorate disguises an inspection gap as a rescue and garrisons the bridge.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-11",
+   "file": "090",
+   "col": "json",
+   "key": "person-0100",
+   "pathRe": "^\\.biography$",
+   "from": "**Fear.** Chae Gureum fears a situation in which the Amsa Protectorate disguises an inspection gap as a rescue and garrisons the bridge.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-13",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0141",
+   "pathRe": "^\\.sections\\.야망$",
+   "from": "보호군 파견을 기간 한정 호송으로만 남겨, 동부 장교가 뚝섬 펌프실에 눌러앉지 않게 한다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-14",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0141",
+   "pathRe": "^\\.biography$",
+   "from": "**야망.** 보호군 파견을 기간 한정 호송으로만 남겨, 동부 장교가 뚝섬 펌프실에 눌러앉지 않게 한다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-16",
+   "file": "090",
+   "col": "json",
+   "key": "person-0141",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "from": "Keeps the Protectorate Force dispatch only as a time-limited escort, so that eastern officers do not settle in at the Ttukseom pump room.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-17",
+   "file": "090",
+   "col": "json",
+   "key": "person-0141",
+   "pathRe": "^\\.biography$",
+   "from": "**Ambition.** Keeps the Protectorate Force dispatch only as a time-limited escort, so that eastern officers do not settle in at the Ttukseom pump room.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-19",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0192",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "회의 사절 열차를 공동호송 시각표로만 붙여 용산이 분할 복속의 승강장이 되지 않게 한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-20",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0192",
+   "pathRe": "^\\.biography$",
+   "from": "**야망.** 회의 사절 열차를 공동호송 시각표로만 붙여 용산이 분할 복속의 승강장이 되지 않게 한다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-22",
+   "file": "090",
+   "col": "json",
+   "key": "person-0192",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "To post the conference envoy trains only on a joint-escort timetable, so that Yongsan does not become a platform of partitioned subjugation.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-23",
+   "file": "090",
+   "col": "json",
+   "key": "person-0192",
+   "pathRe": "^\\.biography$",
+   "from": "**Ambition.** To post the conference envoy trains only on a joint-escort timetable, so that Yongsan does not become a platform of partitioned subjugation.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-25",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0123",
+   "pathRe": "^\\.sections\\.야망$",
+   "from": "동부 보호계약에 감사권·기한·인질 대체 보증을 넣어, 상시 보호권이 쿠데타의 다른 이름이 되지 않게 한다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-26",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0123",
+   "pathRe": "^\\.biography$",
+   "from": "**야망.** 동부 보호계약에 감사권·기한·인질 대체 보증을 넣어, 상시 보호권이 쿠데타의 다른 이름이 되지 않게 한다.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-28",
+   "file": "090",
+   "col": "json",
+   "key": "person-0123",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "from": "He wants audit powers, term limits, and hostage-substitute guarantees written into the eastern protection contracts, so that perpetual protection rights do not become another name for a coup.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-29",
+   "file": "090",
+   "col": "json",
+   "key": "person-0123",
+   "pathRe": "^\\.biography$",
+   "from": "**Ambition.** He wants audit powers, term limits, and hostage-substitute guarantees written into the eastern protection contracts, so that perpetual protection rights do not become another name for a coup.\n\n",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-31",
+   "file": "090",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "손실보상 문장을 동부 보호계약에 끌어들임",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-32",
+   "file": "090",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한재목의 보호권 확대안을 봉인 상태로만 나르며",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-33",
+   "file": "090",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Drawing the loss-compensation clause into the eastern protection contract",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-34",
+   "file": "090",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "While carrying Han Jaemok's proposal to expand protection rights only in sealed form",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-35",
+   "file": "121",
+   "col": [
+    "summary_ko",
+    "opening_state_ko"
+   ],
+   "from": " 개막일 배차조 단독 승인안과 공동호송안이 같은 칠판에 붙었을 뿐, 어느 쪽도 골목을 점유하지 않았다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-36",
+   "file": "121",
+   "col": [
+    "summary",
+    "opening_state"
+   ],
+   "from": "On Opening Day, the dispatch team's solo approval plan and the joint escort plan were merely posted on the same blackboard, and neither has occupied the alley.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-37",
+   "file": "121",
+   "col": [
+    "summary_ko",
+    "opening_state_ko"
+   ],
+   "from": " 공동호송 시각표는 제안, 단독 승인안도 날인 전이다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-38",
+   "file": "121",
+   "col": [
+    "summary",
+    "opening_state"
+   ],
+   "from": " The joint escort timetable is a proposal, and the single-approval plan is also not yet sealed.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-39",
+   "file": "121",
+   "col": [
+    "summary_ko",
+    "opening_state_ko"
+   ],
+   "from": "확인하며 민간 통행과 외부 보호권 요구를 분리하려 한다.",
+   "to": "확인하려 한다.",
+   "expect": 1
+  },
+  {
+   "id": "kg-40",
+   "file": "121",
+   "col": [
+    "summary",
+    "opening_state"
+   ],
+   "from": ", and try to separate civilian passage from claims of external protection.",
+   "to": ".",
+   "expect": 1
+  },
+  {
+   "id": "kg-41",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호군 파견 거부 민병 조장",
+   "to": "민병 조장",
+   "expect": 12
+  },
+  {
+   "id": "kg-42",
+   "file": "110",
+   "col": "json_ko",
+   "from": "보호군 파견 거부 민병 조장",
+   "to": "민병 조장",
+   "expect": 1
+  },
+  {
+   "id": "kg-43",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "보호군 파견 거부 민병 조장",
+   "to": "민병 조장",
+   "expect": 2
+  },
+  {
+   "id": "kg-45",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호군 파견 호송책",
+   "to": "호송책",
+   "expect": 11
+  },
+  {
+   "id": "kg-46",
+   "file": "110",
+   "col": "json_ko",
+   "from": "보호군 파견 호송책",
+   "to": "호송책",
+   "expect": 1
+  },
+  {
+   "id": "kg-47",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "보호군 파견 호송책",
+   "to": "호송책",
+   "expect": 2
+  },
+  {
+   "id": "kg-49",
+   "file": "090",
+   "col": "json_ko",
+   "from": "배우진의 보호군 파견안을 교량에서 거절하며, ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-53",
+   "file": "090",
+   "col": "json_ko",
+   "from": "점검 공백이 보호군 주둔 명분이 될 우려가 커지면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-57",
+   "file": "090",
+   "col": "json_ko",
+   "from": "암사 보호군이 점검 공백을 구원으로 포장하면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-61",
+   "file": "090",
+   "col": "json_ko",
+   "from": "점검 공백이 보호군 주둔으로 이어질 우려가 커지면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-65",
+   "file": "090",
+   "col": "json_ko",
+   "from": "암사 보호군이 점검 공백을 구원으로 내세우면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-69",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호군 명목으로 ",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kg-73",
+   "file": "090",
+   "col": "json_ko",
+   "from": "연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 보호권이 메우는 것.",
+   "to": "연료가 바닥난 밤에 함이 수동으로만 열리는 것.",
+   "expect": 4
+  },
+  {
+   "id": "kg-77",
+   "file": "090",
+   "col": "json_ko",
+   "from": "전력 없는 밤에 함이 열리고, 그 공백을 보호권이 점령 보관으로 쓰는 것.",
+   "to": "전력 없는 밤에 함이 열리는 것.",
+   "expect": 4
+  },
+  {
+   "id": "kg-81",
+   "file": "090",
+   "col": "json_ko",
+   "from": "회의 병참이 끊겨 대표들이 빈속으로 서명하고, 그 서명이 서부 보호권의 자발 동의가 되는 것.",
+   "to": "회의 병참이 끊겨 대표들이 빈속으로 서명하는 것.",
+   "expect": 4
+  },
+  {
+   "id": "kg-85",
+   "file": "090",
+   "col": "json_ko",
+   "from": "필터 원단이 동부 보호계약에 묶여 ",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kg-89",
+   "file": "090",
+   "col": "json_ko",
+   "from": "활주로 터가 숙영 깃발로 덮이면 유치 분필이 보호권 매표 창구의 번호가 되는 것.",
+   "to": "활주로 터가 숙영 깃발로 덮이는 것.",
+   "expect": 2
+  },
+  {
+   "id": "kg-93",
+   "file": "090",
+   "col": "json_ko",
+   "from": "유치선이 군사 보호권의 창구로 변할 우려가 있다면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-97",
+   "file": "090",
+   "col": "json_ko",
+   "from": "유치 분필이 보호권 매표 번호로 바뀔 위험이 있다면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-101",
+   "file": "090",
+   "col": "json_ko",
+   "from": "검사망 정지가 군사 보호권의 개입으로 이어질 우려가 있다면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-105",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동조사가 군사 호위나 보호권의 증거 수집으로 바뀌는",
+   "to": "공동조사가 군사 호위로 바뀌는",
+   "expect": 1
+  },
+  {
+   "id": "kg-109",
+   "file": "090",
+   "col": "json_ko",
+   "from": "표본이 압수되고, 공동조사가 동부 보호권의 증거 수집으로 둔갑하는 것.",
+   "to": "표본이 압수되는 것.",
+   "expect": 2
+  },
+  {
+   "id": "kg-113",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공개 경로를 남겨, 가짜 약과 정전 사고가 한 교섭자의 보호 사건으로 흡수되지 않게 한다.",
+   "to": "공개 경로를 남긴다.",
+   "expect": 2
+  },
+  {
+   "id": "kg-117",
+   "file": "090",
+   "col": "json_ko",
+   "from": "동부 보호계약이 천호 원단을 군화 우선으로 묶고 ",
+   "to": "",
+   "expect": 4
+  },
+  {
+   "id": "kg-121",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호계약이 원단을 군수용으로 묶을 우려가 커지면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-125",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호계약이 원단을 군화에 묶으려 하면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-129",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호권의 침투로로",
+   "to": "침투로로",
+   "expect": 4
+  },
+  {
+   "id": "kg-133",
+   "file": "090",
+   "col": "json_ko",
+   "from": "동부 관문세·보호계약 감사관",
+   "to": "관문세 감사관",
+   "expect": 9
+  },
+  {
+   "id": "kg-134",
+   "file": "110",
+   "col": "json_ko",
+   "from": "동부 관문세·보호계약 감사관",
+   "to": "관문세 감사관",
+   "expect": 1
+  },
+  {
+   "id": "kg-135",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "동부 관문세·보호계약 감사관",
+   "to": "관문세 감사관",
+   "expect": 2
+  },
+  {
+   "id": "kg-137",
+   "file": "090",
+   "col": "json_ko",
+   "from": "관문세·보호계약 전표 감사",
+   "to": "관문세 전표 감사",
+   "expect": 3
+  },
+  {
+   "id": "kg-138",
+   "file": "110",
+   "col": "json_ko",
+   "from": "관문세·보호계약 전표 감사",
+   "to": "관문세 전표 감사",
+   "expect": 2
+  },
+  {
+   "id": "kg-139",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "관문세·보호계약 전표 감사",
+   "to": "관문세 전표 감사",
+   "expect": 1
+  },
+  {
+   "id": "kg-141",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호권 징발 피난 인파 대표",
+   "to": "징발 피난 인파 대표",
+   "expect": 1
+  },
+  {
+   "id": "kg-143",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "보호권 징발 피난 인파 대표",
+   "to": "징발 피난 인파 대표",
+   "expect": 1
+  },
+  {
+   "id": "kg-145",
+   "file": "090",
+   "col": "json_ko",
+   "from": "지키거나, 인장 원판을 빼내 보호국 쪽 조작으로 몰 수 있다.",
+   "to": "지킬 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "kg-149",
+   "file": "090",
+   "col": "json_ko",
+   "from": "각국 인준",
+   "to": "인준",
+   "expect": 19
+  },
+  {
+   "id": "kg-150",
+   "file": "110",
+   "col": "json_ko",
+   "from": "각국 인준",
+   "to": "인준",
+   "expect": 4
+  },
+  {
+   "id": "kg-151",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "각국 인준",
+   "to": "인준",
+   "expect": 1
+  },
+  {
+   "id": "kg-153",
+   "file": "090",
+   "col": "json_ko",
+   "from": "각국의 인준 원본",
+   "to": "인준 원본",
+   "expect": 2
+  },
+  {
+   "id": "kg-157",
+   "file": "090",
+   "col": "json_ko",
+   "from": "깃발별 인준일",
+   "to": "인준일",
+   "expect": 5
+  },
+  {
+   "id": "kg-161",
+   "file": "090",
+   "col": "json_ko",
+   "from": "깃발 인준일",
+   "to": "인준일",
+   "expect": 16
+  },
+  {
+   "id": "kg-162",
+   "file": "110",
+   "col": "json_ko",
+   "from": "깃발 인준일",
+   "to": "인준일",
+   "expect": 2
+  },
+  {
+   "id": "kg-163",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "깃발 인준일",
+   "to": "인준일",
+   "expect": 1
+  },
+  {
+   "id": "kg-165",
+   "file": "090",
+   "col": "json_ko",
+   "from": "각국의 법통",
+   "to": "법통",
+   "expect": 2
+  },
+  {
+   "id": "kg-169",
+   "file": "090",
+   "col": "json_ko",
+   "from": "한 깃발의 인준일이",
+   "to": "인준일이",
+   "expect": 2
+  },
+  {
+   "id": "kg-173",
+   "file": "090",
+   "col": "json_ko",
+   "from": "증명하거나, 교량 열쇠를 공동 승인 없이는 넘기지 않는다.",
+   "to": "증명할 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "kg-177",
+   "file": "090",
+   "col": "json_ko",
+   "from": "·공동 승인 확인",
+   "to": "",
+   "expect": 13
+  },
+  {
+   "id": "kg-178",
+   "file": "110",
+   "col": "json_ko",
+   "from": "·공동 승인 확인",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-179",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "·공동 승인 확인",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-181",
+   "file": "090",
+   "col": "json_ko",
+   "from": "대조하고 공동 승인까지 인파 줄을 남겼다.",
+   "to": "대조하고 인파 줄을 남겼다.",
+   "expect": 2
+  },
+  {
+   "id": "kg-185",
+   "file": "090",
+   "col": "json_ko",
+   "from": "해산 전 공동 승인을 기다린다",
+   "to": "징발 쪽지·통행 인원 대조",
+   "expect": 1
+  },
+  {
+   "id": "kg-189",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동 승인 준수 문장",
+   "to": "승인 준수 문장",
+   "expect": 2
+  },
+  {
+   "id": "kg-193",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동승인 ",
+   "to": "승인 ",
+   "expect": 23
+  },
+  {
+   "id": "kg-194",
+   "file": "110",
+   "col": "json_ko",
+   "from": "공동승인 ",
+   "to": "승인 ",
+   "expect": 2
+  },
+  {
+   "id": "kg-195",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "공동승인 ",
+   "to": "승인 ",
+   "expect": 2
+  },
+  {
+   "id": "kg-197",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동호송안",
+   "to": "호송안",
+   "expect": 7
+  },
+  {
+   "id": "kg-201",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동호송 ",
+   "to": "호송 ",
+   "expect": 32
+  },
+  {
+   "id": "kg-202",
+   "file": "110",
+   "col": "json_ko",
+   "from": "공동호송 ",
+   "to": "호송 ",
+   "expect": 3
+  },
+  {
+   "id": "kg-203",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "공동호송 ",
+   "to": "호송 ",
+   "expect": 3
+  },
+  {
+   "id": "kg-205",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정부 공동실무",
+   "to": "정부",
+   "expect": 9
+  },
+  {
+   "id": "kg-209",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동실무원",
+   "to": "실무원",
+   "expect": 70
+  },
+  {
+   "id": "kg-211",
+   "file": "050",
+   "col": [
+    "title_ko",
+    "position_ko",
+    "rank_ko",
+    "occupation_ko"
+   ],
+   "from": "공동실무원",
+   "to": "실무원",
+   "expect": 10
+  },
+  {
+   "id": "kg-213",
+   "file": "090",
+   "col": "json",
+   "from": "Militia Squad Leader Who Refused Protectorate Deployment",
+   "to": "Militia Squad Leader",
+   "expect": 6
+  },
+  {
+   "id": "kg-215",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Militia Squad Leader Who Refused Protectorate Deployment",
+   "to": "Militia Squad Leader",
+   "expect": 2
+  },
+  {
+   "id": "kg-217",
+   "file": "090",
+   "col": "json",
+   "from": "Militia Chief Refusing Protectorate Dispatch",
+   "to": "Militia Chief",
+   "expect": 6
+  },
+  {
+   "id": "kg-221",
+   "file": "090",
+   "col": "json",
+   "from": "Protectorate Force Dispatch Escort Officer",
+   "to": "Escort Officer",
+   "expect": 1
+  },
+  {
+   "id": "kg-222",
+   "file": "110",
+   "col": "json",
+   "from": "Protectorate Force Dispatch Escort Officer",
+   "to": "Escort Officer",
+   "expect": 1
+  },
+  {
+   "id": "kg-225",
+   "file": "090",
+   "col": "json",
+   "from": "militia shifts, rejects Bae Ujin's Protectorate dispatch proposal at the bridge, and turns back",
+   "to": "militia shifts and turns back",
+   "expect": 2
+  },
+  {
+   "id": "kg-229",
+   "file": "090",
+   "col": "json",
+   "from": " and the Eastern Protectorate fills that void",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-233",
+   "file": "090",
+   "col": "json",
+   "from": ", and the protectorate will use that gap as occupation storage",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-237",
+   "file": "090",
+   "col": "json",
+   "from": ", and that signature becoming voluntary consent to the Western protectorate",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-241",
+   "file": "090",
+   "col": "json",
+   "from": "That filter fabric would be bound to the eastern protection contract, and the Guro",
+   "to": "That the Guro",
+   "expect": 2
+  },
+  {
+   "id": "kg-245",
+   "file": "090",
+   "col": "json",
+   "from": "the eastern protection contract will bind Cheonho fabric to military boots first and that civilian",
+   "to": "civilian",
+   "expect": 2
+  },
+  {
+   "id": "kg-249",
+   "file": "090",
+   "col": "json",
+   "from": "If a protection contract threatens to bind fabric to military use, Yu may demand",
+   "to": "Yu may demand",
+   "expect": 1
+  },
+  {
+   "id": "kg-253",
+   "file": "090",
+   "col": "json",
+   "from": "If a protection contract reserves fabric for military boots, they may scrutinize",
+   "to": "They may scrutinize",
+   "expect": 1
+  },
+  {
+   "id": "kg-257",
+   "file": "090",
+   "col": "json",
+   "from": " as an infiltration route for the Protectorate",
+   "to": " as an infiltration route",
+   "expect": 2
+  },
+  {
+   "id": "kg-261",
+   "file": "090",
+   "col": "json",
+   "from": " or evidence collection for a protection regime",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kg-265",
+   "file": "090",
+   "col": "json",
+   "from": ", and the joint investigation is disguised as evidence gathering for the eastern protection claim",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-269",
+   "file": "090",
+   "col": "json",
+   "from": ", so that counterfeit medicine and blackout accidents are not absorbed into the protection case of a single negotiator",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kg-273",
+   "file": "090",
+   "col": "json",
+   "from": ", or pull out the seal's master plate and frame it as manipulation by the Protectorate side.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "kg-277",
+   "file": "090",
+   "col": "json",
+   "from": "each state's ratification dates",
+   "to": "ratification dates",
+   "expect": 2
+  },
+  {
+   "id": "kg-278",
+   "file": "110",
+   "col": "json",
+   "from": "each state's ratification dates",
+   "to": "ratification dates",
+   "expect": 2
+  },
+  {
+   "id": "kg-279",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "each state's ratification dates",
+   "to": "ratification dates",
+   "expect": 1
+  },
+  {
+   "id": "kg-281",
+   "file": "090",
+   "col": "json",
+   "from": "Flag Ratification Dates",
+   "to": "Ratification Dates",
+   "expect": 3
+  },
+  {
+   "id": "kg-283",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Flag Ratification Dates",
+   "to": "Ratification Dates",
+   "expect": 1
+  },
+  {
+   "id": "kg-285",
+   "file": "090",
+   "col": "json",
+   "from": "per-flag ratification dates",
+   "to": "ratification dates",
+   "expect": 1
+  },
+  {
+   "id": "kg-289",
+   "file": "090",
+   "col": "json",
+   "from": "flag ratification date",
+   "to": "ratification date",
+   "expect": 11
+  },
+  {
+   "id": "kg-290",
+   "file": "110",
+   "col": "json",
+   "from": "flag ratification date",
+   "to": "ratification date",
+   "expect": 2
+  },
+  {
+   "id": "kg-293",
+   "file": "090",
+   "col": "json",
+   "from": "the nations' disputes over orthodox",
+   "to": "disputes over orthodox",
+   "expect": 2
+  },
+  {
+   "id": "kg-297",
+   "file": "090",
+   "col": "json",
+   "from": "each nation's original ratifications",
+   "to": "original ratifications",
+   "expect": 2
+  },
+  {
+   "id": "kg-301",
+   "file": "090",
+   "col": "json",
+   "from": "the ratification date of one flag is written",
+   "to": "the ratification date is written",
+   "expect": 2
+  },
+  {
+   "id": "kg-305",
+   "file": "090",
+   "col": "json",
+   "from": ", or refuse to hand over the bridge keys without the joint approval.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "kg-309",
+   "file": "090",
+   "col": "json",
+   "from": "requisition slips, headcount reconciliation, and joint approval confirmation",
+   "to": "requisition slips and headcount reconciliation",
+   "expect": 8
+  },
+  {
+   "id": "kg-314",
+   "file": "110",
+   "col": "json",
+   "from": "requisition notes, cross-checking passing headcounts, and confirming joint approval",
+   "to": "requisition notes and cross-checking passing headcounts",
+   "expect": 2
+  },
+  {
+   "id": "kg-317",
+   "file": "090",
+   "col": "json",
+   "from": "Verifying Requisition Slips, Cross-Checking Passage Headcounts, and Confirming Joint Approval",
+   "to": "Verifying Requisition Slips and Cross-Checking Passage Headcounts",
+   "expect": 2
+  },
+  {
+   "id": "kg-319",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Verifying Requisition Slips, Cross-Checking Passage Headcounts, and Confirming Joint Approval",
+   "to": "Verifying Requisition Slips and Cross-Checking Passage Headcounts",
+   "expect": 1
+  },
+  {
+   "id": "kg-321",
+   "file": "090",
+   "col": "json",
+   "from": ", and crowd lines remained pending joint approval",
+   "to": ", and crowd lines remained",
+   "expect": 2
+  },
+  {
+   "id": "kg-325",
+   "file": "090",
+   "col": "json",
+   "from": "Waits for joint approval before dispersal",
+   "to": "Verifying Requisition Slips and Cross-Checking Passage Headcounts",
+   "expect": 1
+  },
+  {
+   "id": "kg-329",
+   "file": "090",
+   "col": "json",
+   "from": "a note requiring joint approval papers",
+   "to": "a note requiring approval papers",
+   "expect": 2
+  },
+  {
+   "id": "kg-334",
+   "file": "110",
+   "col": "json",
+   "from": "joint approval document",
+   "to": "approval document",
+   "expect": 2
+  },
+  {
+   "id": "kg-337",
+   "file": "090",
+   "col": "json",
+   "from": "Joint Approval Messenger",
+   "to": "Approval Messenger",
+   "expect": 1
+  },
+  {
+   "id": "kg-339",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Joint Approval Messenger",
+   "to": "Approval Messenger",
+   "expect": 1
+  },
+  {
+   "id": "kg-342",
+   "file": "110",
+   "col": "json",
+   "from": "for joint escorts",
+   "to": "for escorts",
+   "expect": 2
+  },
+  {
+   "id": "kg-345",
+   "file": "090",
+   "col": "json",
+   "from": "Joint Escort ",
+   "to": "Escort ",
+   "expect": 16
+  },
+  {
+   "id": "kg-346",
+   "file": "110",
+   "col": "json",
+   "from": "Joint Escort ",
+   "to": "Escort ",
+   "expect": 1
+  },
+  {
+   "id": "kg-347",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Joint Escort ",
+   "to": "Escort ",
+   "expect": 3
+  },
+  {
+   "id": "kg-349",
+   "file": "090",
+   "col": "json",
+   "from": "joint escort ",
+   "to": "escort ",
+   "expect": 10
+  },
+  {
+   "id": "kg-353",
+   "file": "090",
+   "col": "json",
+   "from": "joint-escort ",
+   "to": "escort ",
+   "expect": 11
+  },
+  {
+   "id": "kg-357",
+   "file": "090",
+   "col": "json",
+   "from": "Joint-escort ",
+   "to": "Escort ",
+   "expect": 1
+  },
+  {
+   "id": "kg-361",
+   "file": "090",
+   "col": "json",
+   "from": "The Government Joint Working Group",
+   "to": "The Government",
+   "expect": 6
+  },
+  {
+   "id": "kg-365",
+   "file": "090",
+   "col": "json",
+   "from": "Joint Staff Officer",
+   "to": "Staff Officer",
+   "expect": 70
+  },
+  {
+   "id": "kg-367",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Joint Staff Officer",
+   "to": "Staff Officer",
+   "expect": 10
+  },
+  {
+   "id": "kg-369",
+   "file": "090",
+   "col": "json",
+   "from": "the Government Joint Operations, practiced",
+   "to": "the Government, practiced",
+   "expect": 1
+  }
+ ]
+}
