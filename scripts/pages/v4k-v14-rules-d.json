@@ -1,0 +1,44 @@
+{
+ "rules": [
+  {
+   "id": "ky-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0254",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "봉인으 일이",
+   "to": "봉인 일이"
+  },
+  {
+   "id": "ky-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0254",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "봉인으 일이",
+   "to": "봉인 일이"
+  },
+  {
+   "id": "ky-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0261",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "봉인으 일이",
+   "to": "봉인 일이"
+  },
+  {
+   "id": "ky-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0261",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "봉인으 일이",
+   "to": "봉인 일이"
+  }
+ ]
+}
