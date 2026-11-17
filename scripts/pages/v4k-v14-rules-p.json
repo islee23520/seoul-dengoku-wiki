@@ -1,0 +1,206 @@
+{
+ "rules": [
+  {
+   "id": "lp-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0308",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": ", or discard the forged bypass in front of the dispatch team",
+   "to": ""
+  },
+  {
+   "id": "lp-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0308",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", or discard the forged bypass in front of the dispatch team",
+   "to": ""
+  },
+  {
+   "id": "lp-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0308",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "복원하거나, 위조 우회로를 배차조 앞에서 폐기할 수",
+   "to": "복원할 수"
+  },
+  {
+   "id": "lp-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0308",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "복원하거나, 위조 우회로를 배차조 앞에서 폐기할 수",
+   "to": "복원할 수"
+  },
+  {
+   "id": "lp-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0373",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "Can pull out the slip under the box and expose it, or escort the assistant witness to protect the bridge clause. ",
+   "to": ""
+  },
+  {
+   "id": "lp-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0373",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Can pull out the slip under the box and expose it, or escort the assistant witness to protect the bridge clause. ",
+   "to": ""
+  },
+  {
+   "id": "lp-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0373",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "함 아래 쪽지를 꺼내 폭로하거나, 보조 증인을 호송해 교량 조항을 지킬 수 있다. ",
+   "to": ""
+  },
+  {
+   "id": "lp-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0373",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "함 아래 쪽지를 꺼내 폭로하거나, 보조 증인을 호송해 교량 조항을 지킬 수 있다. ",
+   "to": ""
+  },
+  {
+   "id": "lp-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": ", or lay out the held documents in the bag on the Yongsan Station dispatch board",
+   "to": ""
+  },
+  {
+   "id": "lp-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", or lay out the held documents in the bag on the Yongsan Station dispatch board",
+   "to": ""
+  },
+  {
+   "id": "lp-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "지키거나, 가방 속 보류 문서를 용산역 배차판에 펼칠 수",
+   "to": "지킬 수"
+  },
+  {
+   "id": "lp-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "지키거나, 가방 속 보류 문서를 용산역 배차판에 펼칠 수",
+   "to": "지킬 수"
+  },
+  {
+   "id": "lp-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0359",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Anecdote$",
+   "from": "When three officers pushed differing fuel-priority notes on him in the same week, Cheon Choyun locked the notes in his bag and demanded a check against the station office originals. The record left that day became the handover basis for the next duty shift to cross-check.",
+   "to": ""
+  },
+  {
+   "id": "lp-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0359",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Anecdote.** When three officers pushed differing fuel-priority notes on him in the same week, Cheon Choyun locked the notes in his bag and demanded a check against the station office originals. The record left that day became the handover basis for the next duty shift to cross-check.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lp-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0359",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "한 주에 장교 세 명이 서로 다른 연료 우선 사용 쪽지를 내밀자 천초윤은 쪽지를 가방에 잠그고 사무소 원본과의 대조를 요구했다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.",
+   "to": ""
+  },
+  {
+   "id": "lp-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0359",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 한 주에 장교 세 명이 서로 다른 연료 우선 사용 쪽지를 내밀자 천초윤은 쪽지를 가방에 잠그고 사무소 원본과의 대조를 요구했다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lp-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0370",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "Can bring the refusal ledger to the consultation. ",
+   "to": ""
+  },
+  {
+   "id": "lp-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0370",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Can bring the refusal ledger to the consultation. ",
+   "to": ""
+  },
+  {
+   "id": "lp-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0370",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "거부 원장을 협의에 올릴 수 있다. ",
+   "to": ""
+  },
+  {
+   "id": "lp-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0370",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "거부 원장을 협의에 올릴 수 있다. ",
+   "to": ""
+  }
+ ]
+}
