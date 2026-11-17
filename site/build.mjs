@@ -143,9 +143,19 @@ const localize = (md, L) => (L.prefix ? md.replace(/\]\(\/(wiki|gdd)\//g, (m, s)
 // Render-hidden source text: a line '<!-- private:start -->' through '<!-- private:end -->' stays in data/sql but is never rendered.
 // An unpaired marker fails the build instead of silently swallowing the rest of the page.
 const stripPrivate = (md) => {
-  const starts = md.match(/^<!-- private:start -->$/gm)?.length ?? 0, ends = md.match(/^<!-- private:end -->$/gm)?.length ?? 0;
-  if (starts !== ends) throw new Error(`E_PRIVATE_MARKERS: ${starts} private:start vs ${ends} private:end`);
-  return md.replace(/^<!-- private:start -->$[\s\S]*?^<!-- private:end -->$\n?/gm, '');
+  const out = [];
+  let open = false;
+  for (const line of md.split('\n')) {
+    if (line === '<!-- private:start -->') {
+      if (open) throw new Error('E_PRIVATE_MARKERS: nested private:start');
+      open = true;
+    } else if (line === '<!-- private:end -->') {
+      if (!open) throw new Error('E_PRIVATE_MARKERS: private:end without private:start');
+      open = false;
+    } else if (!open) out.push(line);
+  }
+  if (open) throw new Error('E_PRIVATE_MARKERS: private:start without private:end');
+  return out.join('\n');
 };
 const body = (md, L) => `::: v-pre\n${escapeProse(localize(slashLinks(relabelHangulUrlText(labelBareUrls(encodeUrls(stripPrivate(md))))), L))}\n:::\n`;
 const cell = (s) => String(s).replaceAll('|', '\\|').replaceAll('\n', ' ');
