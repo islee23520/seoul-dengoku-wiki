@@ -1,0 +1,40 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v3d-1",
+   "file": "090",
+   "col": "json",
+   "from": "Surgical procedure",
+   "to": "Emergency bleeding control",
+   "expect": 4
+  },
+  {
+   "id": "v3d-2",
+   "file": "090",
+   "key": "person-0328",
+   "col": "json",
+   "from": "Defender of clinical judgment",
+   "to": "First-aid officer defending the right to care",
+   "expect": 1
+  },
+  {
+   "id": "v3d-3",
+   "file": "090",
+   "key": "person-0331",
+   "col": "json",
+   "from": "the supervising clinician",
+   "to": "the attending first-aid officer",
+   "expect": 2
+  },
+  {
+   "id": "v3d-4",
+   "file": "090",
+   "key": "person-0564",
+   "col": "json",
+   "from": "A surgical procedure continued with phone lighting after power",
+   "to": "Emergency bleeding control continued with phone lighting after power",
+   "expect": 2
+  }
+ ]
+}
