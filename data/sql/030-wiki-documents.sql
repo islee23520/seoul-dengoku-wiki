@@ -18851,15 +18851,15 @@ Choosing to investigate delayed the fuel wagons from beyond the cordon outside S
 
 <a id="Hostile-Group-G26-heading-0109"></a>
 
-### G26-SC2 · The Cable the Shields Dragged Out
+### G26-SC2 · The Food Bay the Shields Dragged Out
 
-At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged the guard of a power cable to be waste reinforcement.
+At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged a food bay that refugee families had hidden inside the wall to be discarded cargo and dragged the whole thing out.
 
-The eastern convoy route widened, but the vibration of the cable run behind the shields grew, and the semi-upright machine tried to enter within the old work boundary drawn by the long-wing units.
+The eastern convoy route widened, but spilled grain sacks covered the rails and stopped the convoy train, and the semi-upright machine tried to enter within the old work boundary drawn by the long-wing units.
 
-The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and build cable supports first, or accept the cable loss and open the way in one go.
+The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and open the food bay together with the residents'' representatives, tagging each sack with its owner, or abandon part of the food and open the way in one go.
 
-the depot''s supply promise and the Gwangjin Line''s power cable hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
+The depot''s supply promise and the Gwangjin Line''s fuel convoy hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
 
 <a id="Hostile-Group-G26-heading-0114"></a>
 
@@ -19409,15 +19409,15 @@ The ending that saved the formation required public load tests and joint supervi
 
 <a id="Hostile-Group-G26-heading-0109"></a>
 
-### G26-SC2 · 방패가 끌어낸 전선
+### G26-SC2 · 방패가 끌어낸 식량 칸
 
-광진선 고덕 기지에서 삼각 견인기들이 붕괴 차단벽을 치우다가 배전 케이블 보호대를 폐보강재로 판정한다.
+광진선 고덕 기지에서 삼각 견인기들이 붕괴 차단벽을 치우다가 피난 가족이 벽 안쪽에 숨겨 둔 식량 칸을 폐적재물로 판정해 통째로 끌어낸다.
 
-동부 호송로는 넓어지지만 방패 뒤 케이블의 진동이 커지고, 반립기는 장익기가 그린 옛 작업 경계 안으로 진입하려 한다.
+동부 호송로는 넓어지지만 쏟아진 곡식 자루가 레일을 덮어 호송 열차가 멈추고, 반립기는 장익기가 그린 옛 작업 경계 안으로 진입하려 한다.
 
-현장 인원은 새 경계 말뚝을 세워 차단벽만 분할 견인하거나, 호송을 하루 멈추. 케이블 지지대를 먼저 만들거나 케이블 손실을 감수해 한 번에 길을 열 수 있다.
+현장 인원은 새 경계 말뚝을 세워 차단벽만 분할 견인하거나, 호송을 하루 멈추고 주민 대표와 함께 식량 칸을 열어 자루마다 주인 표식을 붙이거나, 식량 일부를 버리고 한 번에 길을 열 수 있다.
 
-정비창의 보급 약속과 광진선의 배전 케이블이 같은 견인선 양끝에 걸리며 어느 쪽의 지연도 다른 세력에 비용을 넘긴다.
+정비창의 보급 약속과 광진선의 연료 호송이 같은 견인선 양끝에 걸리며 어느 쪽의 지연도 다른 세력에 비용을 넘긴다.
 
 <a id="Hostile-Group-G26-heading-0114"></a>
 

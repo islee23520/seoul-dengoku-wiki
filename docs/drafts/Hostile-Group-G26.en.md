@@ -536,15 +536,15 @@ Choosing to investigate delayed the fuel wagons from beyond the cordon outside S
 
 <a id="Hostile-Group-G26-heading-0109"></a>
 
-### G26-SC2 · The Cable the Shields Dragged Out
+### G26-SC2 · The Food Bay the Shields Dragged Out
 
-At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged the guard of a power cable to be waste reinforcement.
+At the Godeok base of the Gwangjin Line, triangular tow machines clearing a collapsed barrier wall judged a food bay that refugee families had hidden inside the wall to be discarded cargo and dragged the whole thing out.
 
-The eastern convoy route widened, but the vibration of the cable run behind the shields grew, and the semi-upright machine tried to enter within the old work boundary drawn by the long-wing units.
+The eastern convoy route widened, but spilled grain sacks covered the rails and stopped the convoy train, and the semi-upright machine tried to enter within the old work boundary drawn by the long-wing units.
 
-The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and build cable supports first, or accept the cable loss and open the way in one go.
+The people on site could set new boundary stakes and tow only the barrier wall in sections, halt the convoy for a day and open the food bay together with the residents' representatives, tagging each sack with its owner, or abandon part of the food and open the way in one go.
 
-the depot's supply promise and the Gwangjin Line's power cable hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
+The depot's supply promise and the Gwangjin Line's fuel convoy hung on the two ends of the same tow line, and a delay on either side passed its cost to another faction.
 
 <a id="Hostile-Group-G26-heading-0114"></a>
 
