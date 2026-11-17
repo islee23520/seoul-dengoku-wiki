@@ -1,0 +1,23 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v9-1",
+   "file": "090",
+   "key": "person-0012",
+   "col": "json",
+   "from": "and asks a nearby workshop guild for substitute vials when medicine runs short.",
+   "to": "and the neighbors who walk the night patrol guard the clinic door.",
+   "expect": 2
+  },
+  {
+   "id": "v9-2",
+   "file": "090",
+   "key": "person-0325",
+   "col": "json",
+   "from": "contribution labor written side by side and raised a great power's officer's priority care request to the guild council.",
+   "to": "clinical findings written side by side and reported a great power's officer's priority care request to the unit chief, declining it under the triage principle.",
+   "expect": 2
+  }
+ ]
+}
