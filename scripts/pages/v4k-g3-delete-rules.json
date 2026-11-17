@@ -1,0 +1,2071 @@
+{
+ "rules": [
+  {
+   "id": "k3d-beh-en-0452",
+   "file": "090",
+   "col": "json",
+   "key": "person-0452",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0452",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0452",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0452",
+   "file": "090",
+   "col": "json",
+   "key": "person-0452",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0452",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0452",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0452",
+   "file": "090",
+   "col": "json",
+   "key": "person-0452",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0452",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0452",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0468",
+   "file": "090",
+   "col": "json",
+   "key": "person-0468",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0468",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0468",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0468",
+   "file": "090",
+   "col": "json",
+   "key": "person-0468",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0468",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0468",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0468",
+   "file": "090",
+   "col": "json",
+   "key": "person-0468",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0468",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0468",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0484",
+   "file": "090",
+   "col": "json",
+   "key": "person-0484",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0484",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0484",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0484",
+   "file": "090",
+   "col": "json",
+   "key": "person-0484",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0484",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0484",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0484",
+   "file": "090",
+   "col": "json",
+   "key": "person-0484",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0484",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0484",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0500",
+   "file": "090",
+   "col": "json",
+   "key": "person-0500",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0500",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0500",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0500",
+   "file": "090",
+   "col": "json",
+   "key": "person-0500",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0500",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0500",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0500",
+   "file": "090",
+   "col": "json",
+   "key": "person-0500",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0500",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0500",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0516",
+   "file": "090",
+   "col": "json",
+   "key": "person-0516",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0516",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0516",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0516",
+   "file": "090",
+   "col": "json",
+   "key": "person-0516",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0516",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0516",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0516",
+   "file": "090",
+   "col": "json",
+   "key": "person-0516",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0516",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0516",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0532",
+   "file": "090",
+   "col": "json",
+   "key": "person-0532",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0532",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0532",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0532",
+   "file": "090",
+   "col": "json",
+   "key": "person-0532",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0532",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0532",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0532",
+   "file": "090",
+   "col": "json",
+   "key": "person-0532",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0532",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0532",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0548",
+   "file": "090",
+   "col": "json",
+   "key": "person-0548",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0548",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0548",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0548",
+   "file": "090",
+   "col": "json",
+   "key": "person-0548",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0548",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0548",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0548",
+   "file": "090",
+   "col": "json",
+   "key": "person-0548",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0548",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0548",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0564",
+   "file": "090",
+   "col": "json",
+   "key": "person-0564",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0564",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0564",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0564",
+   "file": "090",
+   "col": "json",
+   "key": "person-0564",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0564",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0564",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0564",
+   "file": "090",
+   "col": "json",
+   "key": "person-0564",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0564",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0564",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0580",
+   "file": "090",
+   "col": "json",
+   "key": "person-0580",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0580",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0580",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0580",
+   "file": "090",
+   "col": "json",
+   "key": "person-0580",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0580",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0580",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0580",
+   "file": "090",
+   "col": "json",
+   "key": "person-0580",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0580",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0580",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0596",
+   "file": "090",
+   "col": "json",
+   "key": "person-0596",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0596",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0596",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0596",
+   "file": "090",
+   "col": "json",
+   "key": "person-0596",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0596",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0596",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0596",
+   "file": "090",
+   "col": "json",
+   "key": "person-0596",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0596",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0596",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0612",
+   "file": "090",
+   "col": "json",
+   "key": "person-0612",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0612",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0612",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0612",
+   "file": "090",
+   "col": "json",
+   "key": "person-0612",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0612",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0612",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0612",
+   "file": "090",
+   "col": "json",
+   "key": "person-0612",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0612",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0612",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0628",
+   "file": "090",
+   "col": "json",
+   "key": "person-0628",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0628",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0628",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0628",
+   "file": "090",
+   "col": "json",
+   "key": "person-0628",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0628",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0628",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0628",
+   "file": "090",
+   "col": "json",
+   "key": "person-0628",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0628",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0628",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0644",
+   "file": "090",
+   "col": "json",
+   "key": "person-0644",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0644",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0644",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0644",
+   "file": "090",
+   "col": "json",
+   "key": "person-0644",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0644",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0644",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0644",
+   "file": "090",
+   "col": "json",
+   "key": "person-0644",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0644",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0644",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0660",
+   "file": "090",
+   "col": "json",
+   "key": "person-0660",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0660",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0660",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0660",
+   "file": "090",
+   "col": "json",
+   "key": "person-0660",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0660",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0660",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0660",
+   "file": "090",
+   "col": "json",
+   "key": "person-0660",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0660",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0660",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0676",
+   "file": "090",
+   "col": "json",
+   "key": "person-0676",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0676",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0676",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0676",
+   "file": "090",
+   "col": "json",
+   "key": "person-0676",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0676",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0676",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0676",
+   "file": "090",
+   "col": "json",
+   "key": "person-0676",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0676",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0676",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0692",
+   "file": "090",
+   "col": "json",
+   "key": "person-0692",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0692",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0692",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0692",
+   "file": "090",
+   "col": "json",
+   "key": "person-0692",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0692",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0692",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0692",
+   "file": "090",
+   "col": "json",
+   "key": "person-0692",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0692",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0692",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0708",
+   "file": "090",
+   "col": "json",
+   "key": "person-0708",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0708",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0708",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0708",
+   "file": "090",
+   "col": "json",
+   "key": "person-0708",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0708",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0708",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0708",
+   "file": "090",
+   "col": "json",
+   "key": "person-0708",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0708",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0708",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0724",
+   "file": "090",
+   "col": "json",
+   "key": "person-0724",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0724",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0724",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0724",
+   "file": "090",
+   "col": "json",
+   "key": "person-0724",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0724",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0724",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0724",
+   "file": "090",
+   "col": "json",
+   "key": "person-0724",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0724",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0724",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0740",
+   "file": "090",
+   "col": "json",
+   "key": "person-0740",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0740",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0740",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0740",
+   "file": "090",
+   "col": "json",
+   "key": "person-0740",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0740",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0740",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0740",
+   "file": "090",
+   "col": "json",
+   "key": "person-0740",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0740",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0740",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0756",
+   "file": "090",
+   "col": "json",
+   "key": "person-0756",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0756",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0756",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0756",
+   "file": "090",
+   "col": "json",
+   "key": "person-0756",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0756",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0756",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0756",
+   "file": "090",
+   "col": "json",
+   "key": "person-0756",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0756",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0756",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0772",
+   "file": "090",
+   "col": "json",
+   "key": "person-0772",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0772",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0772",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0772",
+   "file": "090",
+   "col": "json",
+   "key": "person-0772",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0772",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0772",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0772",
+   "file": "090",
+   "col": "json",
+   "key": "person-0772",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0772",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0772",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0788",
+   "file": "090",
+   "col": "json",
+   "key": "person-0788",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0788",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0788",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0788",
+   "file": "090",
+   "col": "json",
+   "key": "person-0788",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0788",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0788",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0788",
+   "file": "090",
+   "col": "json",
+   "key": "person-0788",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0788",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0788",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0804",
+   "file": "090",
+   "col": "json",
+   "key": "person-0804",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0804",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0804",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0804",
+   "file": "090",
+   "col": "json",
+   "key": "person-0804",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0804",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0804",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0804",
+   "file": "090",
+   "col": "json",
+   "key": "person-0804",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0804",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0804",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0820",
+   "file": "090",
+   "col": "json",
+   "key": "person-0820",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0820",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0820",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0820",
+   "file": "090",
+   "col": "json",
+   "key": "person-0820",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0820",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0820",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0820",
+   "file": "090",
+   "col": "json",
+   "key": "person-0820",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0820",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0820",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0836",
+   "file": "090",
+   "col": "json",
+   "key": "person-0836",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0836",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0836",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0836",
+   "file": "090",
+   "col": "json",
+   "key": "person-0836",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0836",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0836",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0836",
+   "file": "090",
+   "col": "json",
+   "key": "person-0836",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0836",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0836",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0852",
+   "file": "090",
+   "col": "json",
+   "key": "person-0852",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0852",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0852",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0852",
+   "file": "090",
+   "col": "json",
+   "key": "person-0852",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0852",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0852",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0852",
+   "file": "090",
+   "col": "json",
+   "key": "person-0852",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0852",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0852",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0868",
+   "file": "090",
+   "col": "json",
+   "key": "person-0868",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0868",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0868",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0868",
+   "file": "090",
+   "col": "json",
+   "key": "person-0868",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0868",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0868",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0868",
+   "file": "090",
+   "col": "json",
+   "key": "person-0868",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0868",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0868",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0884",
+   "file": "090",
+   "col": "json",
+   "key": "person-0884",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0884",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0884",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0884",
+   "file": "090",
+   "col": "json",
+   "key": "person-0884",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0884",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0884",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0884",
+   "file": "090",
+   "col": "json",
+   "key": "person-0884",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0884",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0884",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0900",
+   "file": "090",
+   "col": "json",
+   "key": "person-0900",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0900",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0900",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0900",
+   "file": "090",
+   "col": "json",
+   "key": "person-0900",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0900",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0900",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0900",
+   "file": "090",
+   "col": "json",
+   "key": "person-0900",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0900",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0900",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0916",
+   "file": "090",
+   "col": "json",
+   "key": "person-0916",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0916",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0916",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0916",
+   "file": "090",
+   "col": "json",
+   "key": "person-0916",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0916",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0916",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0916",
+   "file": "090",
+   "col": "json",
+   "key": "person-0916",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0916",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0916",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0932",
+   "file": "090",
+   "col": "json",
+   "key": "person-0932",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0932",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0932",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0932",
+   "file": "090",
+   "col": "json",
+   "key": "person-0932",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0932",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0932",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0932",
+   "file": "090",
+   "col": "json",
+   "key": "person-0932",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0932",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0932",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0948",
+   "file": "090",
+   "col": "json",
+   "key": "person-0948",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0948",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0948",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0948",
+   "file": "090",
+   "col": "json",
+   "key": "person-0948",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0948",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0948",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0948",
+   "file": "090",
+   "col": "json",
+   "key": "person-0948",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0948",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0948",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0964",
+   "file": "090",
+   "col": "json",
+   "key": "person-0964",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0964",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0964",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0964",
+   "file": "090",
+   "col": "json",
+   "key": "person-0964",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0964",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0964",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0964",
+   "file": "090",
+   "col": "json",
+   "key": "person-0964",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0964",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0964",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0980",
+   "file": "090",
+   "col": "json",
+   "key": "person-0980",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0980",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0980",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0980",
+   "file": "090",
+   "col": "json",
+   "key": "person-0980",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0980",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0980",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0980",
+   "file": "090",
+   "col": "json",
+   "key": "person-0980",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0980",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0980",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-beh-en-0996",
+   "file": "090",
+   "col": "json",
+   "key": "person-0996",
+   "re": true,
+   "from": " At the Government's White Cross at Jegi-dong, (?:he|she) learns beside a first-aid officer; because the hospital buildings have no doctors and care stops at first aid, (?:he|she) sets the transfer order by severity alone, whatever the patient's faction\\.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-beh-ko-0996",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0996",
+   "from": " 제기동의 정부 흰십자단에서 응급처치원 곁에서 배우며, 병원 건물은 있어도 의사가 없어 처치가 응급까지만이라는 것을 알기에 환자의 소속을 묻지 않고 중증도만으로 이송 순서를 정한다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "k3d-fear-en-0996",
+   "file": "090",
+   "col": "json",
+   "key": "person-0996",
+   "re": true,
+   "from": "that if the ([A-Za-z ]+? Relief Worker(?: duty|'s watch)) falls vacant, the White Cross will have no one to hand its patients to, and another faction holding the transfer route will seize them in the gap and demand ransom\\.",
+   "to": "that the $1 will fall vacant.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-fear-ko-0996",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0996",
+   "re": true,
+   "from": "(구호원 당직이) 비면 흰십자단이 환자를 넘길 사람이 없어지고, 이송 통로를 쥔 다른 세력이 그 틈에 환자를 붙잡아 몸값을 부르는 일을 두려워한다\\.",
+   "to": "$1 비는 일을 두려워한다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-en-0996",
+   "file": "090",
+   "col": "json",
+   "key": "person-0996",
+   "from": " and the White Cross Order's passage would become a hostage of the other factions.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "k3d-str-ko-0996",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0996",
+   "from": "비면 흰십자단의 통행이 다른 세력의 볼모가 되는 것.",
+   "to": "비는 것.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-0691-conv-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-0691",
+   "from": "on the list, and counts the people on the medical train leaving under a Government escort order once more just before departure, so that if another faction seizes a patient at a stop, the count can be checked against the list.",
+   "to": "on the list.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-0691-conv-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0691",
+   "from": "적고, 정부 호송 명령으로 떠나는 의료열차의 인원을 출발 직전에 다시 세어, 중간 정차역에서 다른 세력이 환자를 붙잡아 가도 명단과 맞대어 볼 수 있게 한다.",
+   "to": "적는다.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-0691-mkt-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-0691",
+   "from": ", where anyone may transfer,",
+   "to": ",",
+   "expect": 2
+  },
+  {
+   "id": "k3d-0691-mkt-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0691",
+   "from": "누구든 환승시키는 신내역 시장",
+   "to": "신내역 시장",
+   "expect": 2
+  },
+  {
+   "id": "k3d-1007-skill-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-1007",
+   "from": "Government-document analysis",
+   "to": "Document analysis",
+   "expect": 1
+  },
+  {
+   "id": "k3d-1007-skill-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-1007",
+   "from": "청사 문서 분석",
+   "to": "문서 분석",
+   "expect": 1
+  },
+  {
+   "id": "k3d-1007-trait-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-1007",
+   "from": "Seeks the Government's continuity by cross-checking records scattered between government offices and stations.",
+   "to": "Seeks continuity through separate records.",
+   "expect": 2
+  },
+  {
+   "id": "k3d-1007-trait-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-1007",
+   "from": "청사와 역에 흩어진 기록을 서로 맞대어 보며 정부의 연속성을 남기려 한다.",
+   "to": "분리된 기록으로 국가 연속성을 남기려 한다.",
+   "expect": 2
+  }
+ ]
+}
