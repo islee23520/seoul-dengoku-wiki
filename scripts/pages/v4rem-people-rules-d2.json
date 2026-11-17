@@ -1,0 +1,581 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json_ko",
+   "from": "여름의 탁수와 가짜 약",
+   "to": "겨울 정전과 가짜 약",
+   "expect": 1,
+   "id": "v4rem-people-d-1000"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json_ko",
+   "from": "탁수와 가짜 약",
+   "to": "정전과 가짜 약",
+   "expect": 2,
+   "id": "v4rem-people-d-1001"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json_ko",
+   "from": "탁수로 인한 냉동 사고",
+   "to": "정전으로 인한 냉동 사고",
+   "expect": 2,
+   "id": "v4rem-people-d-1002"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json",
+   "from": "the summer's turbid water and counterfeit drugs",
+   "to": "the winter blackout and counterfeit drugs",
+   "expect": 1,
+   "id": "v4rem-people-d-1003"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json",
+   "from": "When turbid water and fake medicine put",
+   "to": "When a blackout and fake medicine put",
+   "expect": 2,
+   "id": "v4rem-people-d-1004"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json",
+   "from": "caused by turbid water",
+   "to": "caused by the blackout",
+   "expect": 2,
+   "id": "v4rem-people-d-1005"
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json_ko",
+   "from": "여름의 탁수와 가짜 약",
+   "to": "겨울 정전과 가짜 약",
+   "expect": 1,
+   "id": "v4rem-people-d-1006"
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json_ko",
+   "from": "탁수와 가짜 약",
+   "to": "정전과 가짜 약",
+   "expect": 2,
+   "id": "v4rem-people-d-1007"
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json",
+   "from": "the summer's turbid water and counterfeit drugs",
+   "to": "the winter blackout and counterfeit drugs",
+   "expect": 1,
+   "id": "v4rem-people-d-1008"
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json",
+   "from": "When turbid water and fake medicine circulated",
+   "to": "When a blackout and fake medicine circulated",
+   "expect": 2,
+   "id": "v4rem-people-d-1009"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json_ko",
+   "from": "여름의 탁수와 가짜 약",
+   "to": "겨울 정전과 가짜 약",
+   "expect": 1,
+   "id": "v4rem-people-d-1010"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json_ko",
+   "from": "탁수와 가짜 약",
+   "to": "정전과 가짜 약",
+   "expect": 2,
+   "id": "v4rem-people-d-1011"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json_ko",
+   "from": "탁수 직후",
+   "to": "정전 직후",
+   "expect": 2,
+   "id": "v4rem-people-d-1012"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json",
+   "from": "the summer's turbid water and counterfeit drugs",
+   "to": "the winter blackout and counterfeit drugs",
+   "expect": 1,
+   "id": "v4rem-people-d-1013"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json",
+   "from": "the muddy water and the counterfeit medicine",
+   "to": "the blackout and the counterfeit medicine",
+   "expect": 2,
+   "id": "v4rem-people-d-1014"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json",
+   "from": "right after the muddy water",
+   "to": "right after the blackout",
+   "expect": 2,
+   "id": "v4rem-people-d-1015"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json",
+   "from": "Night Transfer Witness of the Muddy-Water Stock",
+   "to": "Night Stock Removal Witness",
+   "expect": 5,
+   "id": "v4rem-people-d-1016"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json",
+   "from": "turbid-water inventory night-transfer witness",
+   "to": "night stock removal witness",
+   "expect": 1,
+   "id": "v4rem-people-d-1017"
+  },
+  {
+   "file": "090",
+   "key": "person-0317",
+   "col": "json_ko",
+   "from": "여름의 탁수와 가짜 약",
+   "to": "겨울 정전과 가짜 약",
+   "expect": 2,
+   "id": "v4rem-people-d-1018"
+  },
+  {
+   "file": "090",
+   "key": "person-0317",
+   "col": "json",
+   "from": "summer's muddy water and fake medicine",
+   "to": "the winter blackout and fake medicine",
+   "expect": 2,
+   "id": "v4rem-people-d-1019"
+  },
+  {
+   "file": "090",
+   "key": "person-0341",
+   "col": "json_ko",
+   "from": "여름의 탁수와 가짜 약",
+   "to": "겨울 정전과 가짜 약",
+   "expect": 2,
+   "id": "v4rem-people-d-1020"
+  },
+  {
+   "file": "090",
+   "key": "person-0341",
+   "col": "json",
+   "from": "the summer's muddy water and fake medicine",
+   "to": "the winter blackout and fake medicine",
+   "expect": 2,
+   "id": "v4rem-people-d-1021"
+  },
+  {
+   "file": "090",
+   "key": "person-0342",
+   "col": "json_ko",
+   "from": "여름의 탁수와 가짜 약",
+   "to": "겨울 정전과 가짜 약",
+   "expect": 2,
+   "id": "v4rem-people-d-1022"
+  },
+  {
+   "file": "090",
+   "key": "person-0342",
+   "col": "json",
+   "from": "the summer's muddy water and fake medicine",
+   "to": "the winter blackout and fake medicine",
+   "expect": 1,
+   "id": "v4rem-people-d-1023"
+  },
+  {
+   "file": "090",
+   "key": "person-0392",
+   "col": "json_ko",
+   "from": "여름의 탁수와 가짜 약",
+   "to": "겨울 정전과 가짜 약",
+   "expect": 2,
+   "id": "v4rem-people-d-1024"
+  },
+  {
+   "file": "090",
+   "key": "person-0392",
+   "col": "json",
+   "from": "the summer's muddy water and fake medicine",
+   "to": "the winter blackout and fake medicine",
+   "expect": 1,
+   "id": "v4rem-people-d-1025"
+  },
+  {
+   "file": "090",
+   "key": "person-0392",
+   "col": "json",
+   "from": "the summer's muddy water and counterfeit medicine",
+   "to": "the winter blackout and counterfeit medicine",
+   "expect": 1,
+   "id": "v4rem-people-d-1026"
+  },
+  {
+   "file": "090",
+   "key": "person-0036",
+   "col": "json_ko",
+   "from": "탁수와 분진 속에",
+   "to": "추위와 분진 속에",
+   "expect": 4,
+   "id": "v4rem-people-d-1027"
+  },
+  {
+   "file": "090",
+   "key": "person-0036",
+   "col": "json",
+   "from": "turbid water and dust",
+   "to": "cold and dust",
+   "expect": 3,
+   "id": "v4rem-people-d-1028"
+  },
+  {
+   "file": "090",
+   "key": "person-0158",
+   "col": "json_ko",
+   "from": "탁수와 복무 소문만으로",
+   "to": "정전과 복무 소문만으로",
+   "expect": 4,
+   "id": "v4rem-people-d-1029"
+  },
+  {
+   "file": "090",
+   "key": "person-0158",
+   "col": "json",
+   "from": "turbid water and service rumor alone",
+   "to": "a blackout and service rumor alone",
+   "expect": 2,
+   "id": "v4rem-people-d-1030"
+  },
+  {
+   "file": "090",
+   "key": "person-0158",
+   "col": "json",
+   "from": "muddy water and duty rumors alone",
+   "to": "a blackout and duty rumors alone",
+   "expect": 2,
+   "id": "v4rem-people-d-1031"
+  },
+  {
+   "file": "090",
+   "key": "person-0084",
+   "col": "json_ko",
+   "from": "가짜 약과 탁수가",
+   "to": "가짜 약과 정전 사고가",
+   "expect": 2,
+   "id": "v4rem-people-d-1032"
+  },
+  {
+   "file": "090",
+   "key": "person-0084",
+   "col": "json",
+   "from": "counterfeit medicine and turbid water are",
+   "to": "counterfeit medicine and blackout accidents are",
+   "expect": 2,
+   "id": "v4rem-people-d-1033"
+  },
+  {
+   "file": "090",
+   "key": "person-0030",
+   "col": "json",
+   "from": "the Water Compact's train master",
+   "to": "the Free City train master",
+   "expect": 2,
+   "id": "v4rem-people-d-1034"
+  },
+  {
+   "file": "090",
+   "key": "person-0106",
+   "col": "json_ko",
+   "from": "경매에 올려 물만 가진 가문과 나사만 가진 평의회가 서로를 인질로 못 삼게 한다.",
+   "to": "경매에 올려, 부품을 쥔 쪽이 겨울 난로 수리를 볼모로 삼지 못하게 한다.",
+   "expect": 2,
+   "id": "v4rem-people-d-1035"
+  },
+  {
+   "file": "090",
+   "key": "person-0106",
+   "col": "json",
+   "from": "so that a clan that holds only water and a council that holds only screws cannot hold each other hostage.",
+   "to": "so that whoever holds the parts cannot hold winter stove repairs hostage.",
+   "expect": 2,
+   "id": "v4rem-people-d-1036"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json_ko",
+   "from": "물·부품 공동규격이",
+   "to": "정비·부품 공동규격이",
+   "expect": 2,
+   "id": "v4rem-people-d-1037"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "joint water-and-parts standard",
+   "to": "joint maintenance-and-parts standard",
+   "expect": 2,
+   "id": "v4rem-people-d-1038"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json_ko",
+   "from": "교량 채수 조사",
+   "to": "교량 균열 조사",
+   "expect": 1,
+   "id": "v4rem-people-d-1039"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "Bridge water sampling",
+   "to": "Bridge crack survey",
+   "expect": 1,
+   "id": "v4rem-people-d-1040"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "Records water samples and vibrations",
+   "to": "Records cracks and vibrations",
+   "expect": 2,
+   "id": "v4rem-people-d-1041"
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json_ko",
+   "from": "수질 표본",
+   "to": "약재 표본",
+   "expect": 4,
+   "id": "v4rem-people-d-1042"
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json",
+   "from": "water samples need verification",
+   "to": "medicine samples need verification",
+   "expect": 1,
+   "id": "v4rem-people-d-1043"
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json",
+   "from": "water-quality samples",
+   "to": "medicine samples",
+   "expect": 2,
+   "id": "v4rem-people-d-1044"
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json",
+   "from": "Exchanges water samples",
+   "to": "Exchanges medicine samples",
+   "expect": 1,
+   "id": "v4rem-people-d-1045"
+  },
+  {
+   "file": "090",
+   "key": "person-0064",
+   "col": "json_ko",
+   "from": "채수 시각과",
+   "to": "표본 채취 시각과",
+   "expect": 2,
+   "id": "v4rem-people-d-1046"
+  },
+  {
+   "file": "090",
+   "key": "person-0064",
+   "col": "json_ko",
+   "from": "채수·시약 기록",
+   "to": "표본·시약 기록",
+   "expect": 1,
+   "id": "v4rem-people-d-1047"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "시약 상자의 끓인 물 표시는",
+   "to": "시약 상자의 냉장 보관 표시는",
+   "expect": 2,
+   "id": "v4rem-people-d-1048"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "the boiled-water marks on the medicine boxes",
+   "to": "the cold-storage marks on the medicine boxes",
+   "expect": 1,
+   "id": "v4rem-people-d-1049"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "끓인 물 표시가 지워진 상자",
+   "to": "냉장 표시가 지워진 상자",
+   "expect": 2,
+   "id": "v4rem-people-d-1050"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "a box whose boiled-water mark has been erased",
+   "to": "a box whose cold-storage mark has been erased",
+   "expect": 2,
+   "id": "v4rem-people-d-1051"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "차 옆 판에 골목 물기를 그리고",
+   "to": "차 옆 판에 골목 결빙 구간을 그리고",
+   "expect": 4,
+   "id": "v4rem-people-d-1052"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "the alleys' water state on the van's side board",
+   "to": "the alleys' frozen stretches on the van's side board",
+   "expect": 2,
+   "id": "v4rem-people-d-1053"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json_ko",
+   "from": "강변 폐선의 수온으로 시간을 읽고",
+   "to": "강변 폐선 레일의 서리 두께로 시간을 읽고",
+   "expect": 2,
+   "id": "v4rem-people-d-1054"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "the riverside dead line's water temperature",
+   "to": "the frost thickness on the riverside dead line's rails",
+   "expect": 1,
+   "id": "v4rem-people-d-1055"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json_ko",
+   "from": "채수",
+   "to": "침목 점검",
+   "expect": 2,
+   "id": "v4rem-people-d-1056"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Water sampling",
+   "to": "Sleeper inspection",
+   "expect": 1,
+   "id": "v4rem-people-d-1057"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Records water samples and rail conditions",
+   "to": "Records sleeper and rail conditions",
+   "expect": 1,
+   "id": "v4rem-people-d-1058"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "rail and water-sampling surveys",
+   "to": "rail and sleeper surveys",
+   "expect": 1,
+   "id": "v4rem-people-d-1059"
+  },
+  {
+   "file": "090",
+   "key": "person-0197",
+   "col": "json_ko",
+   "from": "물·전력·식량 계약",
+   "to": "전력·연료·식량 계약",
+   "expect": 2,
+   "id": "v4rem-people-d-1060"
+  },
+  {
+   "file": "090",
+   "key": "person-0197",
+   "col": "json",
+   "from": "water, power, and food contracts",
+   "to": "power, fuel, and food contracts",
+   "expect": 2,
+   "id": "v4rem-people-d-1061"
+  },
+  {
+   "file": "090",
+   "key": "person-0200",
+   "col": "json",
+   "from": "tolls on water transport",
+   "to": "tolls on river transport",
+   "expect": 2,
+   "id": "v4rem-people-d-1062"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Patrick O'Connor's work surveying water samples and rail conditions on abandoned lines",
+   "to": "Patrick O'Connor's work surveying sleeper and rail conditions on abandoned lines",
+   "expect": 1,
+   "id": "v4rem-people-d-1063"
+  }
+ ]
+}

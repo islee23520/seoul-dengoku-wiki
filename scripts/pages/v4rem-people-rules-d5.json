@@ -1,0 +1,68 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Draws the alley's moisture on the board",
+   "to": "Draws the alley's frozen stretches on the board",
+   "expect": 2,
+   "id": "v4rem-people-d-1000"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "He records samples alongside rail condition",
+   "to": "He records sleeper and rail condition together",
+   "expect": 1,
+   "id": "v4rem-people-d-1001"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "northern piping dotted line",
+   "to": "northern underground passage dotted line",
+   "expect": 2,
+   "id": "v4rem-people-d-1002"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "northern pipe dotted line",
+   "to": "northern underground passage dotted line",
+   "expect": 1,
+   "id": "v4rem-people-d-1003"
+  },
+  {
+   "file": "090",
+   "key": "person-0286",
+   "col": "json",
+   "from": "Title: north gate convoy outpost chief.",
+   "to": "Title: Seoul Station north gate convoy outpost chief.",
+   "expect": 2,
+   "id": "v4rem-people-d-1004"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the audit counts only the powers' losses and omits the blackout and forced-service harm suffered by the guild workshop.",
+   "expect": 1,
+   "id": "v4rem-people-d-1005"
+  },
+  {
+   "file": "090",
+   "key": "person-0417",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the auxiliary stamp affixed becomes the absolution for a collective ransom clause.",
+   "expect": 1,
+   "id": "v4rem-people-d-1006"
+  }
+ ]
+}
