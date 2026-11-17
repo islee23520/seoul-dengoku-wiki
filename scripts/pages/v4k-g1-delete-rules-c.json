@@ -1,0 +1,73 @@
+{
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.relationship$",
+   "exact": true,
+   "from": "",
+   "to": "신분 조각과 화물 봉인을 대조한다.",
+   "id": "k1f-1",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.relationship$",
+   "exact": true,
+   "from": "관계.",
+   "to": "관계. 신분 조각과 화물 봉인을 대조한다.",
+   "id": "k1f-2",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.relationship$",
+   "exact": true,
+   "from": "Relations.",
+   "to": "Relations. Cross-checks identity fragments and cargo seals.",
+   "id": "k1f-3",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "into coordination tables, and had filled Yeon Jiwoo's sickbed shortage with dispatches.",
+   "to": "into coordination tables, having filled Yeon Jiwoo's sickbed shortage with dispatches.",
+   "id": "k1f-4",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "into a coordination table; and has made up for",
+   "to": "into a coordination table and has made up for",
+   "id": "k1f-5",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "Limits route disclosure, checks arrival weight.",
+   "to": "Limits route disclosure and checks arrival weight.",
+   "id": "k1f-6",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "out of the Council convoy, attaches a food compartment",
+   "to": "out of the Council convoy and attaches a food compartment",
+   "id": "k1f-7",
+   "expect": 2
+  }
+ ]
+}
