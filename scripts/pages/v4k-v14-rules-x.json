@@ -1,0 +1,298 @@
+{
+ "rules": [
+  {
+   "id": "lx-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0250",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.3\\.basis$",
+   "from": "Posts Yun Choa's ledger transcription on the camp bulletin board",
+   "to": ""
+  },
+  {
+   "id": "lx-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "Keeps the defensive highland as the watchtower of the refuge ledger, so that Amsa patrols cannot look down on the roofs of the camp.",
+   "to": ""
+  },
+  {
+   "id": "lx-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Ambition.** Keeps the defensive highland as the watchtower of the refuge ledger, so that Amsa patrols cannot look down on the roofs of the camp.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lx-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "Can find an empty watch slot, or switch off the highland signal for a day to hide the camp. The highland watch's tally goes to the Bureau Chief.",
+   "to": ""
+  },
+  {
+   "id": "lx-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Intervention.** Can find an empty watch slot, or switch off the highland signal for a day to hide the camp. The highland watch's tally goes to the Bureau Chief.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lx-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0263",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Fear$",
+   "from": "The fear that three days' worth of fuel will go only to the staff on duty, and the camp stoves will go out.",
+   "to": ""
+  },
+  {
+   "id": "lx-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0263",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Fear.** The fear that three days' worth of fuel will go only to the staff on duty, and the camp stoves will go out.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lx-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0263",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "Fears fuel reserved for duty staff while camp heaters fail.",
+   "to": ""
+  },
+  {
+   "id": "lx-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0263",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "Fears fuel reserved for duty staff while camp heaters fail.",
+   "to": ""
+  },
+  {
+   "id": "lx-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "She means to keep the North Gate as a public guidance post for evacuation processions, so that the Eastern Patrol cannot use the camp entrance as a checkpoint.",
+   "to": ""
+  },
+  {
+   "id": "lx-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Ambition.** She means to keep the North Gate as a public guidance post for evacuation processions, so that the Eastern Patrol cannot use the camp entrance as a checkpoint.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lx-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0250",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.3\\.basis$",
+   "from": "윤초아의 원장 필사를 숙영 게시판에 붙인다",
+   "to": ""
+  },
+  {
+   "id": "lx-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.야망$",
+   "from": "방어 고지를 피난 장부의 감시탑으로 남겨 암사 순찰이 숙영 지붕을 내려다보지 못하게 한다.",
+   "to": ""
+  },
+  {
+   "id": "lx-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**야망.** 방어 고지를 피난 장부의 감시탑으로 남겨 암사 순찰이 숙영 지붕을 내려다보지 못하게 한다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lx-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "빈 당직을 찾거나, 고지 신호를 하루 꺼 숙영을 숨길 수 있다. 고지 당직의 집계는 국장에게 올린다.",
+   "to": ""
+  },
+  {
+   "id": "lx-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**개입.** 빈 당직을 찾거나, 고지 신호를 하루 꺼 숙영을 숨길 수 있다. 고지 당직의 집계는 국장에게 올린다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lx-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0263",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.공포$",
+   "from": "사흘치 연료가 당직자 몫으로만 나가 숙영 난로가 꺼지는 것.",
+   "to": ""
+  },
+  {
+   "id": "lx-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0263",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**공포.** 사흘치 연료가 당직자 몫으로만 나가 숙영 난로가 꺼지는 것.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lx-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0263",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "당직자만 연료를 받아 숙영 난로가 꺼질 것을 두려워한다.",
+   "to": ""
+  },
+  {
+   "id": "lx-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0263",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "사흘치 연료가 당직자 몫으로만 나가 숙영 난로가 꺼지는 것.",
+   "to": ""
+  },
+  {
+   "id": "lx-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.야망$",
+   "from": "북문을 피난 행렬의 공개 안내 거점으로 남겨 동부 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.",
+   "to": ""
+  },
+  {
+   "id": "lx-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**야망.** 북문을 피난 행렬의 공개 안내 거점으로 남겨 동부 순찰이 숙영 입구를 검문소로 쓰지 못하게 한다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lx-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0259",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "encampment roster and entry-check work",
+   "to": "roster and entry-check work"
+  },
+  {
+   "id": "lx-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0259",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "encampment roster and entry-check work",
+   "to": "roster and entry-check work"
+  },
+  {
+   "id": "lx-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "at the encampment and the meeting hall",
+   "to": "at the meeting hall"
+  },
+  {
+   "id": "lx-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "at the encampment and the meeting hall",
+   "to": "at the meeting hall"
+  },
+  {
+   "id": "lx-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "당일 숙영과 회의장에 동시에 붙이고",
+   "to": "당일 회의장에 붙이고"
+  },
+  {
+   "id": "lx-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "당일 숙영과 회의장에 동시에 붙이고",
+   "to": "당일 회의장에 붙이고"
+  }
+ ]
+}
