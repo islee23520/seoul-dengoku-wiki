@@ -1,0 +1,2794 @@
+{
+ "rules": [
+  {
+   "id": "lr-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0057",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "th no grant of ownerless land. Does not fix a residence or exact facility boundaries and grants no new rank, holding, or tenure.",
+   "to": "th no grant of ownerless land."
+  },
+  {
+   "id": "lr-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0057",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "th no grant of ownerless land. Does not fix a residence or exact facility boundaries and grants no new rank, holding, or tenure.",
+   "to": "th no grant of ownerless land."
+  },
+  {
+   "id": "lr-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0057",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "존; 검사 기록 인계 기준점 제안, 무주지 수여 없음. 거주지나 정확한 시설 경계를 확정하지 않으며 새 직위·영지·점유권을 부여하지 않는다.",
+   "to": "존; 검사 기록 인계 기준점 제안, 무주지 수여 없음."
+  },
+  {
+   "id": "lr-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0057",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "존; 검사 기록 인계 기준점 제안, 무주지 수여 없음. 거주지나 정확한 시설 경계를 확정하지 않으며 새 직위·영지·점유권을 부여하지 않는다.",
+   "to": "존; 검사 기록 인계 기준점 제안, 무주지 수여 없음."
+  },
+  {
+   "id": "lr-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "Hojun.\n- Duty: Yangjae 1-dong. Jeong Harin cross-checks safety review records against release-lock logs to present reproducibility evidence to Jeong Hojun.",
+   "to": "Hojun.\n- Duty: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Hojun.\n- Duty: Yangjae 1-dong. Jeong Harin cross-checks safety review records against release-lock logs to present reproducibility evidence to Jeong Hojun.",
+   "to": "Hojun.\n- Duty: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "정호준에게 재현 근거를 제시한다.\n- 업무: 양재1동. 정하린은 안전심사 기록과 반출 잠금 내역을 대조해 정호준에게 재현 근거를 제시한다.",
+   "to": "정호준에게 재현 근거를 제시한다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "정호준에게 재현 근거를 제시한다.\n- 업무: 양재1동. 정하린은 안전심사 기록과 반출 잠금 내역을 대조해 정호준에게 재현 근거를 제시한다.",
+   "to": "정호준에게 재현 근거를 제시한다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0059",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "lause.\n- Duty: Yangjae 1-dong. Choe Eunjae matches the certified copies against the public test records, and holds back any seal that still carries a non-public clause.",
+   "to": "lause.\n- Duty: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0059",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "lause.\n- Duty: Yangjae 1-dong. Choe Eunjae matches the certified copies against the public test records, and holds back any seal that still carries a non-public clause.",
+   "to": "lause.\n- Duty: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0059",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "개 조항이 남은 도장은 보류한다.\n- 업무: 양재1동. 최은재는 인증 사본과 공개 시험 기록을 맞추고 비공개 조항이 남은 도장은 보류한다.",
+   "to": "개 조항이 남은 도장은 보류한다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0059",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "개 조항이 남은 도장은 보류한다.\n- 업무: 양재1동. 최은재는 인증 사본과 공개 시험 기록을 맞추고 비공개 조항이 남은 도장은 보류한다.",
+   "to": "개 조항이 남은 도장은 보류한다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0060",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "passes.\n- Duty: Godeok 1-dong. I Bomgyeol checks gate alarms against Kim Doha's evacuation routes and does not announce the lifting of a lockdown before Jeong Harin's sample passes.",
+   "to": "passes.\n- Duty: Godeok 1-dong."
+  },
+  {
+   "id": "lr-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0060",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "passes.\n- Duty: Godeok 1-dong. I Bomgyeol checks gate alarms against Kim Doha's evacuation routes and does not announce the lifting of a lockdown before Jeong Harin's sample passes.",
+   "to": "passes.\n- Duty: Godeok 1-dong."
+  },
+  {
+   "id": "lr-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0060",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "에는 봉쇄 해제를 알리지 않는다.\n- 업무: 고덕1동. 이봄결은 관문 경보를 김도하의 대피 경로에 대조하고 정하린의 표본 합격 전에는 봉쇄 해제를 알리지 않는다.",
+   "to": "에는 봉쇄 해제를 알리지 않는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0060",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "에는 봉쇄 해제를 알리지 않는다.\n- 업무: 고덕1동. 이봄결은 관문 경보를 김도하의 대피 경로에 대조하고 정하린의 표본 합격 전에는 봉쇄 해제를 알리지 않는다.",
+   "to": "에는 봉쇄 해제를 알리지 않는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0061",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "e left.\n- Duty: Daechi 4-dong. Gim Doha posts shutter-check results and the number of food bins on the platform wall, and before the night patrol asks neighboring families how much fuel they have left.",
+   "to": "e left.\n- Duty: Daechi 4-dong."
+  },
+  {
+   "id": "lr-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0061",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "e left.\n- Duty: Daechi 4-dong. Gim Doha posts shutter-check results and the number of food bins on the platform wall, and before the night patrol asks neighboring families how much fuel they have left.",
+   "to": "e left.\n- Duty: Daechi 4-dong."
+  },
+  {
+   "id": "lr-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0061",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 가족의 연료 남은 양을 묻는다.\n- 업무: 대치4동. 김도하는 승강장 벽에 셔터 점검 결과와 식량 통 수를 게시하고, 야간 순찰 전에 이웃 가족의 연료 남은 양을 묻는다.",
+   "to": " 가족의 연료 남은 양을 묻는다.\n- 업무: 대치4동."
+  },
+  {
+   "id": "lr-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0061",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 가족의 연료 남은 양을 묻는다.\n- 업무: 대치4동. 김도하는 승강장 벽에 셔터 점검 결과와 식량 통 수를 게시하고, 야간 순찰 전에 이웃 가족의 연료 남은 양을 묻는다.",
+   "to": " 가족의 연료 남은 양을 묻는다.\n- 업무: 대치4동."
+  },
+  {
+   "id": "lr-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0062",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "view.\n- Duties: Godeok 1-dong. Yu Minho publishes the order of research, disaster-prevention, and residents' cargo at Godeok Base, and does not couple any suspect wagon that lacks Choe Eunjae's certification and Jeong Harin's review.",
+   "to": "view.\n- Duties: Godeok 1-dong."
+  },
+  {
+   "id": "lr-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0062",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "view.\n- Duties: Godeok 1-dong. Yu Minho publishes the order of research, disaster-prevention, and residents' cargo at Godeok Base, and does not couple any suspect wagon that lacks Choe Eunjae's certification and Jeong Harin's review.",
+   "to": "view.\n- Duties: Godeok 1-dong."
+  },
+  {
+   "id": "lr-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0062",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "빠진 의심 화차는 붙이지 않는다.\n- 업무: 고덕1동. 유민호는 고덕기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.",
+   "to": "빠진 의심 화차는 붙이지 않는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0062",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "빠진 의심 화차는 붙이지 않는다.\n- 업무: 고덕1동. 유민호는 고덕기지에서 연구·방재·주민 화물의 순서를 공개하고 최은재의 인증과 정하린의 심사가 빠진 의심 화차는 붙이지 않는다.",
+   "to": "빠진 의심 화차는 붙이지 않는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0063",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "view.\n- Duties: Daechi 1-dong. Bak Jinsol judges the release of seed boxes only after cross-checking the vault temperature log against the two seals of the residents' representative and the safety review.",
+   "to": "view.\n- Duties: Daechi 1-dong."
+  },
+  {
+   "id": "lr-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0063",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "view.\n- Duties: Daechi 1-dong. Bak Jinsol judges the release of seed boxes only after cross-checking the vault temperature log against the two seals of the residents' representative and the safety review.",
+   "to": "view.\n- Duties: Daechi 1-dong."
+  },
+  {
+   "id": "lr-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0063",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "에야 종자 상자 출고를 판단한다.\n- 업무: 대치1동. 박진솔은 보존고 온도 로그와 주민대표·안전심사의 두 날인을 대조한 뒤에야 종자 상자 출고를 판단한다.",
+   "to": "에야 종자 상자 출고를 판단한다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0063",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "에야 종자 상자 출고를 판단한다.\n- 업무: 대치1동. 박진솔은 보존고 온도 로그와 주민대표·안전심사의 두 날인을 대조한 뒤에야 종자 상자 출고를 판단한다.",
+   "to": "에야 종자 상자 출고를 판단한다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0064",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "utside.\n- Duty: Daechi 1-dong. Jang Yerin checks Daechi residents’ machine-body joint wear and spare-part numbers against the inspection sheets, and recommends that any body exceeding the limit stop going outside.",
+   "to": "utside.\n- Duty: Daechi 1-dong."
+  },
+  {
+   "id": "lr-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0064",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "utside.\n- Duty: Daechi 1-dong. Jang Yerin checks Daechi residents’ machine-body joint wear and spare-part numbers against the inspection sheets, and recommends that any body exceeding the limit stop going outside.",
+   "to": "utside.\n- Duty: Daechi 1-dong."
+  },
+  {
+   "id": "lr-31",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0064",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "넘은 몸은 외출 중단을 권고한다.\n- 업무: 대치1동. 장예린은 대치 거주자의 기계 몸 관절 마모와 예비 부품 번호를 점검표에 맞춰 보고, 기준을 넘은 몸은 외출 중단을 권고한다.",
+   "to": "넘은 몸은 외출 중단을 권고한다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-32",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0064",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "넘은 몸은 외출 중단을 권고한다.\n- 업무: 대치1동. 장예린은 대치 거주자의 기계 몸 관절 마모와 예비 부품 번호를 점검표에 맞춰 보고, 기준을 넘은 몸은 외출 중단을 권고한다.",
+   "to": "넘은 몸은 외출 중단을 권고한다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-33",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0065",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "ument.\n- Post: Yangjae 1-dong. Im Sion matches the archive's loan times against the viewing records of two independent witnesses, and if witnesses are short, she does not open the document.",
+   "to": "ument.\n- Post: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-34",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0065",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ument.\n- Post: Yangjae 1-dong. Im Sion matches the archive's loan times against the viewing records of two independent witnesses, and if witnesses are short, she does not open the document.",
+   "to": "ument.\n- Post: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-35",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0065",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "이 모자라면 문서를 열지 않는다.\n- 업무: 양재1동. 임시온은 서고 대여 시각과 두 독립 증인의 열람 기록을 맞추고 증인이 모자라면 문서를 열지 않는다.",
+   "to": "이 모자라면 문서를 열지 않는다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-36",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0065",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "이 모자라면 문서를 열지 않는다.\n- 업무: 양재1동. 임시온은 서고 대여 시각과 두 독립 증인의 열람 기록을 맞추고 증인이 모자라면 문서를 열지 않는다.",
+   "to": "이 모자라면 문서를 열지 않는다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-37",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0066",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "gether.\n- Post: Godeok 1-dong. Heo Seogyeom re-examines the braking records of vehicles released from Godeok Depot and will not put them on Yu Minho's dispatch sheet until the certification stamp and the review seal have come together.",
+   "to": "gether.\n- Post: Godeok 1-dong."
+  },
+  {
+   "id": "lr-38",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0066",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "gether.\n- Post: Godeok 1-dong. Heo Seogyeom re-examines the braking records of vehicles released from Godeok Depot and will not put them on Yu Minho's dispatch sheet until the certification stamp and the review seal have come together.",
+   "to": "gether.\n- Post: Godeok 1-dong."
+  },
+  {
+   "id": "lr-39",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0066",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "유민호의 배차표에 올리지 않는다.\n- 업무: 고덕1동. 허서겸은 고덕기지 출고 차량의 제동 기록을 다시 보고 인증 도장과 심사 봉인이 모이기 전에는 유민호의 배차표에 올리지 않는다.",
+   "to": "유민호의 배차표에 올리지 않는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-40",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0066",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "유민호의 배차표에 올리지 않는다.\n- 업무: 고덕1동. 허서겸은 고덕기지 출고 차량의 제동 기록을 다시 보고 인증 도장과 심사 봉인이 모이기 전에는 유민호의 배차표에 올리지 않는다.",
+   "to": "유민호의 배차표에 올리지 않는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-41",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0068",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "duced.\n- Duty: Yangjae 2-dong. Jin Chaeon matches the laboratory wing's clinical records against Jeong Harin's safety review materials and halts the release of prescriptions that have not been reproduced.",
+   "to": "duced.\n- Duty: Yangjae 2-dong."
+  },
+  {
+   "id": "lr-42",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0068",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "duced.\n- Duty: Yangjae 2-dong. Jin Chaeon matches the laboratory wing's clinical records against Jeong Harin's safety review materials and halts the release of prescriptions that have not been reproduced.",
+   "to": "duced.\n- Duty: Yangjae 2-dong."
+  },
+  {
+   "id": "lr-43",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0068",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "되지 않은 처방의 반출을 멈춘다.\n- 업무: 양재2동. 진채온은 실험동 진료 기록을 정하린의 안전심사 자료와 맞추고 재현되지 않은 처방의 반출을 멈춘다.",
+   "to": "되지 않은 처방의 반출을 멈춘다.\n- 업무: 양재2동."
+  },
+  {
+   "id": "lr-44",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0068",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "되지 않은 처방의 반출을 멈춘다.\n- 업무: 양재2동. 진채온은 실험동 진료 기록을 정하린의 안전심사 자료와 맞추고 재현되지 않은 처방의 반출을 멈춘다.",
+   "to": "되지 않은 처방의 반출을 멈춘다.\n- 업무: 양재2동."
+  },
+  {
+   "id": "lr-45",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0069",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": " alley.\n- Duty: Godeok 1-dong. Chae Bom re-measures the lamp spacing at the Godeok gate and does not blow the opening whistle until Kim Doha's resident flag has returned from the alley.",
+   "to": " alley.\n- Duty: Godeok 1-dong."
+  },
+  {
+   "id": "lr-46",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0069",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " alley.\n- Duty: Godeok 1-dong. Chae Bom re-measures the lamp spacing at the Godeok gate and does not blow the opening whistle until Kim Doha's resident flag has returned from the alley.",
+   "to": " alley.\n- Duty: Godeok 1-dong."
+  },
+  {
+   "id": "lr-47",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0069",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "전에는 개방 호각을 불지 않는다.\n- 업무: 고덕1동. 채봄은 고덕 관문의 등잔 간격을 다시 재고 김도하의 주민 깃발이 골목에서 돌아오기 전에는 개방 호각을 불지 않는다.",
+   "to": "전에는 개방 호각을 불지 않는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-48",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0069",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "전에는 개방 호각을 불지 않는다.\n- 업무: 고덕1동. 채봄은 고덕 관문의 등잔 간격을 다시 재고 김도하의 주민 깃발이 골목에서 돌아오기 전에는 개방 호각을 불지 않는다.",
+   "to": "전에는 개방 호각을 불지 않는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-49",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0070",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "times.\n- Duty: Yangjae 1-dong. Pyo Jian records the weight of the Hierophant's office courier's sealed pouch and the time of the dispatch bell, and cross-checks them against Im Sion's lending times.",
+   "to": "times.\n- Duty: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-50",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0070",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "times.\n- Duty: Yangjae 1-dong. Pyo Jian records the weight of the Hierophant's office courier's sealed pouch and the time of the dispatch bell, and cross-checks them against Im Sion's lending times.",
+   "to": "times.\n- Duty: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-51",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0070",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 임시온의 대여 시각과 대조한다.\n- 업무: 양재1동. 표지안은 교주실 전령의 봉함 주머니 무게와 발송 종 시각을 남기고 임시온의 대여 시각과 대조한다.",
+   "to": " 임시온의 대여 시각과 대조한다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-52",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0070",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 임시온의 대여 시각과 대조한다.\n- 업무: 양재1동. 표지안은 교주실 전령의 봉함 주머니 무게와 발송 종 시각을 남기고 임시온의 대여 시각과 대조한다.",
+   "to": " 임시온의 대여 시각과 대조한다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-53",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0072",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "sing.\n- Duties: Daechi 1-dong. Jeraon confirms receipt of certified copies by the Daechi Archive and withholds the completion seal if it is missing.",
+   "to": "sing.\n- Duties: Daechi 1-dong."
+  },
+  {
+   "id": "lr-54",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0072",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "sing.\n- Duties: Daechi 1-dong. Jeraon confirms receipt of certified copies by the Daechi Archive and withholds the completion seal if it is missing.",
+   "to": "sing.\n- Duties: Daechi 1-dong."
+  },
+  {
+   "id": "lr-55",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0072",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 빠졌으면 완료 날인을 보류한다.\n- 업무: 대치1동. 제라온은 대치 서고의 인증 사본 수령을 확인하고 빠졌으면 완료 날인을 보류한다.",
+   "to": " 빠졌으면 완료 날인을 보류한다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-56",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0072",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 빠졌으면 완료 날인을 보류한다.\n- 업무: 대치1동. 제라온은 대치 서고의 인증 사본 수령을 확인하고 빠졌으면 완료 날인을 보류한다.",
+   "to": " 빠졌으면 완료 날인을 보류한다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-57",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0073",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "shed.\n- Duties: Daechi 1-dong. Byeon Taeon first posts the number of food bins and the remaining fuel on the Daechi Waiting Hall blackboard, and does not broadcast departures until the shutter check is finished.",
+   "to": "shed.\n- Duties: Daechi 1-dong."
+  },
+  {
+   "id": "lr-58",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0073",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "shed.\n- Duties: Daechi 1-dong. Byeon Taeon first posts the number of food bins and the remaining fuel on the Daechi Waiting Hall blackboard, and does not broadcast departures until the shutter check is finished.",
+   "to": "shed.\n- Duties: Daechi 1-dong."
+  },
+  {
+   "id": "lr-59",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0073",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 전에는 출발을 방송하지 않는다.\n- 업무: 대치1동. 변태온은 대치 대합실 칠판에 식량 통 수와 연료 남은 양을 먼저 쓰고, 셔터 점검이 끝나기 전에는 출발을 방송하지 않는다.",
+   "to": " 전에는 출발을 방송하지 않는다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-60",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0073",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 전에는 출발을 방송하지 않는다.\n- 업무: 대치1동. 변태온은 대치 대합실 칠판에 식량 통 수와 연료 남은 양을 먼저 쓰고, 셔터 점검이 끝나기 전에는 출발을 방송하지 않는다.",
+   "to": " 전에는 출발을 방송하지 않는다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-61",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0074",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "nished.\n- Post: Godeok 1-dong. At the Godeok Depot holding track, Heo Miri leaves chalk marks on suspect freight cars and cuts off the dispatch whistle until Heo Seogyeom's re-inspection is finished.",
+   "to": "nished.\n- Post: Godeok 1-dong."
+  },
+  {
+   "id": "lr-62",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0074",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "nished.\n- Post: Godeok 1-dong. At the Godeok Depot holding track, Heo Miri leaves chalk marks on suspect freight cars and cuts off the dispatch whistle until Heo Seogyeom's re-inspection is finished.",
+   "to": "nished.\n- Post: Godeok 1-dong."
+  },
+  {
+   "id": "lr-63",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0074",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "끝날 때까지 출고 호각을 끊는다.\n- 업무: 고덕1동. 허미리는 고덕기지 유치선에서 의심 화차의 분필 표시를 남기고 허서겸의 재검색이 끝날 때까지 출고 호각을 끊는다.",
+   "to": "끝날 때까지 출고 호각을 끊는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-64",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0074",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "끝날 때까지 출고 호각을 끊는다.\n- 업무: 고덕1동. 허미리는 고덕기지 유치선에서 의심 화차의 분필 표시를 남기고 허서겸의 재검색이 끝날 때까지 출고 호각을 끊는다.",
+   "to": "끝날 때까지 출고 호각을 끊는다.\n- 업무: 고덕1동."
+  },
+  {
+   "id": "lr-65",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0078",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "scort.\n- Duty: Yangjae 1-dong. U Daon checks each of the safety review and transmission verification locks on the original audio reel and does not set out without an accompanying escort.",
+   "to": "scort.\n- Duty: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-66",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0078",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "scort.\n- Duty: Yangjae 1-dong. U Daon checks each of the safety review and transmission verification locks on the original audio reel and does not set out without an accompanying escort.",
+   "to": "scort.\n- Duty: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-67",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0078",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "동행 호송 없이 출발하지 않는다.\n- 업무: 양재1동. 우다온은 음성 원본 릴의 안전심사와 송신 검증 잠금을 각각 확인하고 동행 호송 없이 출발하지 않는다.",
+   "to": "동행 호송 없이 출발하지 않는다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-68",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0078",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "동행 호송 없이 출발하지 않는다.\n- 업무: 양재1동. 우다온은 음성 원본 릴의 안전심사와 송신 검증 잠금을 각각 확인하고 동행 호송 없이 출발하지 않는다.",
+   "to": "동행 호송 없이 출발하지 않는다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-69",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0079",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "signed.\n- Duty: Daechi 1-dong. Go Choyun cross-checks Daechi's shutter-check sheets against the lock markers and does not announce check results before the residents' witness and the inspector have both signed.",
+   "to": "signed.\n- Duty: Daechi 1-dong."
+  },
+  {
+   "id": "lr-70",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0079",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "signed.\n- Duty: Daechi 1-dong. Go Choyun cross-checks Daechi's shutter-check sheets against the lock markers and does not announce check results before the residents' witness and the inspector have both signed.",
+   "to": "signed.\n- Duty: Daechi 1-dong."
+  },
+  {
+   "id": "lr-71",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0079",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "에는 점검 결과를 알리지 않는다.\n- 업무: 대치1동. 고초윤은 대치의 셔터 점검표와 잠금 표식을 맞춰 보고, 주민 쪽 입회인과 점검자가 함께 서명하기 전에는 점검 결과를 알리지 않는다.",
+   "to": "에는 점검 결과를 알리지 않는다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-72",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0079",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "에는 점검 결과를 알리지 않는다.\n- 업무: 대치1동. 고초윤은 대치의 셔터 점검표와 잠금 표식을 맞춰 보고, 주민 쪽 입회인과 점검자가 함께 서명하기 전에는 점검 결과를 알리지 않는다.",
+   "to": "에는 점검 결과를 알리지 않는다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-73",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0080",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "oll.\n- Duties: Yangjae 2-dong. When appraising the leftover samples from the medicine pouches with Jin Chaeon, Bae Seoyul also checks the seal on the victim roll.",
+   "to": "oll.\n- Duties: Yangjae 2-dong."
+  },
+  {
+   "id": "lr-74",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0080",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "oll.\n- Duties: Yangjae 2-dong. When appraising the leftover samples from the medicine pouches with Jin Chaeon, Bae Seoyul also checks the seal on the victim roll.",
+   "to": "oll.\n- Duties: Yangjae 2-dong."
+  },
+  {
+   "id": "lr-75",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0080",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "자 명부의 봉인을 함께 확인한다.\n- 업무: 양재2동. 배서율은 진채온과 약봉지의 잔여 표본을 감정할 때 피해자 명부의 봉인을 함께 확인한다.",
+   "to": "자 명부의 봉인을 함께 확인한다.\n- 업무: 양재2동."
+  },
+  {
+   "id": "lr-76",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0080",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "자 명부의 봉인을 함께 확인한다.\n- 업무: 양재2동. 배서율은 진채온과 약봉지의 잔여 표본을 감정할 때 피해자 명부의 봉인을 함께 확인한다.",
+   "to": "자 명부의 봉인을 함께 확인한다.\n- 업무: 양재2동."
+  },
+  {
+   "id": "lr-77",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0083",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "ine.\n- Duties: Yangjae 1-dong. Before filing a parts-exchange list, Yeo Dasom cross-checks the receiving side's reading order against the wording to make sure no hostage demand is slipped in, and binds a copy of the neighboring settlement's minimum fuel line.",
+   "to": "ine.\n- Duties: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-78",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0083",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ine.\n- Duties: Yangjae 1-dong. Before filing a parts-exchange list, Yeo Dasom cross-checks the receiving side's reading order against the wording to make sure no hostage demand is slipped in, and binds a copy of the neighboring settlement's minimum fuel line.",
+   "to": "ine.\n- Duties: Yangjae 1-dong."
+  },
+  {
+   "id": "lr-79",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0083",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "지의 연료 최저선 사본을 묶는다.\n- 업무: 양재1동. 여다솜은 부품 교환 목록을 철하기 전에 받는 쪽의 열람 순서와 인질 요구가 끼어 있지 않은지 문구를 대조하고, 이웃 거주지의 연료 최저선 사본을 묶는다.",
+   "to": "지의 연료 최저선 사본을 묶는다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-80",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0083",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "지의 연료 최저선 사본을 묶는다.\n- 업무: 양재1동. 여다솜은 부품 교환 목록을 철하기 전에 받는 쪽의 열람 순서와 인질 요구가 끼어 있지 않은지 문구를 대조하고, 이웃 거주지의 연료 최저선 사본을 묶는다.",
+   "to": "지의 연료 최저선 사본을 묶는다.\n- 업무: 양재1동."
+  },
+  {
+   "id": "lr-81",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0084",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "column.\n- Work: Daechi 1-dong. Gi Seojin checks whether the Healing, Safety Review, and Transmission Verification seals have gathered on the Daechi joint investigation note, and turns the route back if there is a military escort column.",
+   "to": "column.\n- Work: Daechi 1-dong."
+  },
+  {
+   "id": "lr-82",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0084",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "column.\n- Work: Daechi 1-dong. Gi Seojin checks whether the Healing, Safety Review, and Transmission Verification seals have gathered on the Daechi joint investigation note, and turns the route back if there is a military escort column.",
+   "to": "column.\n- Work: Daechi 1-dong."
+  },
+  {
+   "id": "lr-83",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0084",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "위 칸이 있으면 경로를 되돌린다.\n- 업무: 대치1동. 기서진은 대치 공동조사 쪽지에 치료·안전심사·송신 검증 날인이 모였는지 확인하고 군사 호위 칸이 있으면 경로를 되돌린다.",
+   "to": "위 칸이 있으면 경로를 되돌린다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-84",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0084",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "위 칸이 있으면 경로를 되돌린다.\n- 업무: 대치1동. 기서진은 대치 공동조사 쪽지에 치료·안전심사·송신 검증 날인이 모였는지 확인하고 군사 호위 칸이 있으면 경로를 되돌린다.",
+   "to": "위 칸이 있으면 경로를 되돌린다.\n- 업무: 대치1동."
+  },
+  {
+   "id": "lr-85",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0156",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "에 인계한다.\n\n**공무원 직위·직급.** 해당 없음. 일반 시민이며 정부 직위·직급이 없다.",
+   "to": "에 인계한다.\n\n**공무원 직위·직급.** 해당 없음."
+  },
+  {
+   "id": "lr-86",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0200",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "e Yongsan north bank district. Grew up at the Noryangjin pier.",
+   "to": "e Yongsan north bank district."
+  },
+  {
+   "id": "lr-87",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0200",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "e Yongsan north bank district. Grew up at the Noryangjin pier.",
+   "to": "e Yongsan north bank district."
+  },
+  {
+   "id": "lr-88",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0220",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ".** Rank: Guild Master. Title: Guild Master of Yeouido.",
+   "to": ".** Rank: Guild Master. Title:"
+  },
+  {
+   "id": "lr-89",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0221",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving −10 | Monopoly 30 | Risk −25 | Display 10 | Endurance 15 | Orientation None | Bonding Contract Cohabitation",
+   "to": "- Desires: Craving −10 | Monopoly 30 | Risk −25 | Display 10 | Endurance 15 | Orientation None | Bonding Contract Cohabitation\n:::"
+  },
+  {
+   "id": "lr-90",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0221",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 −10 | 독점 30 | 위험 −25 | 과시 10 | 지속 15 | 지향 무성향 | 결합 계약동거",
+   "to": "- 욕망: 갈망 −10 | 독점 30 | 위험 −25 | 과시 10 | 지속 15 | 지향 무성향 | 결합 계약동거\n:::"
+  },
+  {
+   "id": "lr-91",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0222",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 40 | Monopoly 0 | Risk −40 | Display −40 | Endurance 15 | Orientation Opposite Sex | Bonding Polyamorous",
+   "to": "- Desires: Craving 40 | Monopoly 0 | Risk −40 | Display −40 | Endurance 15 | Orientation Opposite Sex | Bonding Polyamorous\n:::"
+  },
+  {
+   "id": "lr-92",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0222",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 40 | 독점 0 | 위험 −40 | 과시 −40 | 지속 15 | 지향 이성 | 결합 다자",
+   "to": "- 욕망: 갈망 40 | 독점 0 | 위험 −40 | 과시 −40 | 지속 15 | 지향 이성 | 결합 다자\n:::"
+  },
+  {
+   "id": "lr-93",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0223",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 40 | Monopoly 20 | Risk −15 | Display 0 | Endurance 5 | Orientation Heterosexual | Bonding None",
+   "to": "- Desires: Craving 40 | Monopoly 20 | Risk −15 | Display 0 | Endurance 5 | Orientation Heterosexual | Bonding None\n:::"
+  },
+  {
+   "id": "lr-94",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0223",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 40 | 독점 20 | 위험 −15 | 과시 0 | 지속 5 | 지향 이성 | 결합 없음",
+   "to": "- 욕망: 갈망 40 | 독점 20 | 위험 −15 | 과시 0 | 지속 5 | 지향 이성 | 결합 없음\n:::"
+  },
+  {
+   "id": "lr-95",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0224",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 15 | Monopoly −35 | Risk −5 | Display −10 | Endurance 30 | Orientation Bisexual | Bonding Polyamorous",
+   "to": "- Desires: Craving 15 | Monopoly −35 | Risk −5 | Display −10 | Endurance 30 | Orientation Bisexual | Bonding Polyamorous\n:::"
+  },
+  {
+   "id": "lr-96",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0224",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 15 | 독점 −35 | 위험 −5 | 과시 −10 | 지속 30 | 지향 양성 | 결합 다자",
+   "to": "- 욕망: 갈망 15 | 독점 −35 | 위험 −5 | 과시 −10 | 지속 30 | 지향 양성 | 결합 다자\n:::"
+  },
+  {
+   "id": "lr-97",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0225",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 50 | Exclusivity −25 | Risk −10 | Display −25 | Persistence −10 | Orientation No Preference | Union Contract Cohabitation",
+   "to": "- Desires: Craving 50 | Exclusivity −25 | Risk −10 | Display −25 | Persistence −10 | Orientation No Preference | Union Contract Cohabitation\n:::"
+  },
+  {
+   "id": "lr-98",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0225",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 50 | 독점 −25 | 위험 −10 | 과시 −25 | 지속 −10 | 지향 무성향 | 결합 계약동거",
+   "to": "- 욕망: 갈망 50 | 독점 −25 | 위험 −10 | 과시 −25 | 지속 −10 | 지향 무성향 | 결합 계약동거\n:::"
+  },
+  {
+   "id": "lr-99",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0226",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving −5 | Monopoly 0 | Risk 30 | Display 20 | Persistence −5 | Orientation Fluid | Bonding Non-exclusive",
+   "to": "- Desires: Craving −5 | Monopoly 0 | Risk 30 | Display 20 | Persistence −5 | Orientation Fluid | Bonding Non-exclusive\n:::"
+  },
+  {
+   "id": "lr-100",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0226",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 −5 | 독점 0 | 위험 30 | 과시 20 | 지속 −5 | 지향 유동 | 결합 비독점",
+   "to": "- 욕망: 갈망 −5 | 독점 0 | 위험 30 | 과시 20 | 지속 −5 | 지향 유동 | 결합 비독점\n:::"
+  },
+  {
+   "id": "lr-101",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0227",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving −5 | Monopoly 30 | Risk 15 | Display 30 | Persistence 30 | Orientation Fluid | Bonding Multilateral",
+   "to": "- Desires: Craving −5 | Monopoly 30 | Risk 15 | Display 30 | Persistence 30 | Orientation Fluid | Bonding Multilateral\n:::"
+  },
+  {
+   "id": "lr-102",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0227",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 −5 | 독점 30 | 위험 15 | 과시 30 | 지속 30 | 지향 유동 | 결합 다자",
+   "to": "- 욕망: 갈망 −5 | 독점 30 | 위험 15 | 과시 30 | 지속 30 | 지향 유동 | 결합 다자\n:::"
+  },
+  {
+   "id": "lr-103",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0228",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 50 | Monopoly −10 | Risk −5 | Display 5 | Persistence 30 | Orientation Unaligned | Union None",
+   "to": "- Desires: Craving 50 | Monopoly −10 | Risk −5 | Display 5 | Persistence 30 | Orientation Unaligned | Union None\n:::"
+  },
+  {
+   "id": "lr-104",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0228",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 50 | 독점 −10 | 위험 −5 | 과시 5 | 지속 30 | 지향 무성향 | 결합 없음",
+   "to": "- 욕망: 갈망 50 | 독점 −10 | 위험 −5 | 과시 5 | 지속 30 | 지향 무성향 | 결합 없음\n:::"
+  },
+  {
+   "id": "lr-105",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0230",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 0 | Monopoly 35 | Risk −10 | Display −25 | Persistence 10 | Orientation Bisexual | Union Contract Cohabitation",
+   "to": "- Desires: Craving 0 | Monopoly 35 | Risk −10 | Display −25 | Persistence 10 | Orientation Bisexual | Union Contract Cohabitation\n:::"
+  },
+  {
+   "id": "lr-106",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0230",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 0 | 독점 35 | 위험 −10 | 과시 −25 | 지속 10 | 지향 양성 | 결합 계약동거",
+   "to": "- 욕망: 갈망 0 | 독점 35 | 위험 −10 | 과시 −25 | 지속 10 | 지향 양성 | 결합 계약동거\n:::"
+  },
+  {
+   "id": "lr-107",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0232",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 20 | Monopoly −30 | Risk −30 | Display 0 | Endurance 30 | Orientation None | Bonding Polyamorous",
+   "to": "- Desires: Craving 20 | Monopoly −30 | Risk −30 | Display 0 | Endurance 30 | Orientation None | Bonding Polyamorous\n:::"
+  },
+  {
+   "id": "lr-108",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0232",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 20 | 독점 −30 | 위험 −30 | 과시 0 | 지속 30 | 지향 무성향 | 결합 다자",
+   "to": "- 욕망: 갈망 20 | 독점 −30 | 위험 −30 | 과시 0 | 지속 30 | 지향 무성향 | 결합 다자\n:::"
+  },
+  {
+   "id": "lr-109",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0233",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 30 | Monopoly 40 | Risk −10 | Display −20 | Persistence 25 | Orientation same-sex | Union monogamous",
+   "to": "- Desires: Craving 30 | Monopoly 40 | Risk −10 | Display −20 | Persistence 25 | Orientation same-sex | Union monogamous\n:::"
+  },
+  {
+   "id": "lr-110",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0233",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −20 | 지속 25 | 지향 동성 | 결합 단혼",
+   "to": "- 욕망: 갈망 30 | 독점 40 | 위험 −10 | 과시 −20 | 지속 25 | 지향 동성 | 결합 단혼\n:::"
+  },
+  {
+   "id": "lr-111",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0234",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 35 | Monopoly 35 | Risk −10 | Display 0 | Persistence 5 | Orientation fluid | Union none",
+   "to": "- Desires: Craving 35 | Monopoly 35 | Risk −10 | Display 0 | Persistence 5 | Orientation fluid | Union none\n:::"
+  },
+  {
+   "id": "lr-112",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0234",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 35 | 독점 35 | 위험 −10 | 과시 0 | 지속 5 | 지향 유동 | 결합 없음",
+   "to": "- 욕망: 갈망 35 | 독점 35 | 위험 −10 | 과시 0 | 지속 5 | 지향 유동 | 결합 없음\n:::"
+  },
+  {
+   "id": "lr-113",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0235",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": " living-cargo handover window. Their jurisdiction as Stationmaster and the station dues owed to K029 are separate from this duty.",
+   "to": " living-cargo handover window."
+  },
+  {
+   "id": "lr-114",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0235",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 25 | Monopoly 0 | Risk 5 | Display −20 | Endurance 35 | Orientation Opposite-sex | Bonding Non-monopolistic",
+   "to": "- Desires: Craving 25 | Monopoly 0 | Risk 5 | Display −20 | Endurance 35 | Orientation Opposite-sex | Bonding Non-monopolistic\n:::"
+  },
+  {
+   "id": "lr-115",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0235",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " living-cargo handover window. Their jurisdiction as Stationmaster and the station dues owed to K029 are separate from this duty.",
+   "to": " living-cargo handover window."
+  },
+  {
+   "id": "lr-116",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0235",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "확인하고 후암동 생활 화물 인계 창구의 기록과 맞춘다. 역장으로서의 관할과 K029에게 지는 봉속은 이 업무와 별개다.",
+   "to": "확인하고 후암동 생활 화물 인계 창구의 기록과 맞춘다."
+  },
+  {
+   "id": "lr-117",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0235",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 25 | 독점 0 | 위험 5 | 과시 −20 | 지속 35 | 지향 이성 | 결합 비독점",
+   "to": "- 욕망: 갈망 25 | 독점 0 | 위험 5 | 과시 −20 | 지속 35 | 지향 이성 | 결합 비독점\n:::"
+  },
+  {
+   "id": "lr-118",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0235",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "확인하고 후암동 생활 화물 인계 창구의 기록과 맞춘다. 역장으로서의 관할과 K029에게 지는 봉속은 이 업무와 별개다.",
+   "to": "확인하고 후암동 생활 화물 인계 창구의 기록과 맞춘다."
+  },
+  {
+   "id": "lr-119",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0236",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 25 | Monopoly 20 | Risk 15 | Display −25 | Endurance 35 | Orientation Fluid | Bonding Non-monopolistic",
+   "to": "- Desires: Craving 25 | Monopoly 20 | Risk 15 | Display −25 | Endurance 35 | Orientation Fluid | Bonding Non-monopolistic\n:::"
+  },
+  {
+   "id": "lr-120",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0236",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 25 | 독점 20 | 위험 15 | 과시 −25 | 지속 35 | 지향 유동 | 결합 비독점",
+   "to": "- 욕망: 갈망 25 | 독점 20 | 위험 15 | 과시 −25 | 지속 35 | 지향 유동 | 결합 비독점\n:::"
+  },
+  {
+   "id": "lr-121",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0237",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 10 | Monopoly −15 | Risk −30 | Display 5 | Persistence −20 | Orientation: Opposite sex | Bonding: Non-exclusive",
+   "to": "- Desires: Craving 10 | Monopoly −15 | Risk −30 | Display 5 | Persistence −20 | Orientation: Opposite sex | Bonding: Non-exclusive\n:::"
+  },
+  {
+   "id": "lr-122",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0237",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 10 | 독점 −15 | 위험 −30 | 과시 5 | 지속 −20 | 지향 이성 | 결합 비독점",
+   "to": "- 욕망: 갈망 10 | 독점 −15 | 위험 −30 | 과시 5 | 지속 −20 | 지향 이성 | 결합 비독점\n:::"
+  },
+  {
+   "id": "lr-123",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0238",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving −10 | Monopoly 10 | Risk 10 | Display −25 | Persistence 10 | Orientation: Both sexes | Bonding: None",
+   "to": "- Desires: Craving −10 | Monopoly 10 | Risk 10 | Display −25 | Persistence 10 | Orientation: Both sexes | Bonding: None\n:::"
+  },
+  {
+   "id": "lr-124",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0238",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 −10 | 독점 10 | 위험 10 | 과시 −25 | 지속 10 | 지향 양성 | 결합 없음",
+   "to": "- 욕망: 갈망 −10 | 독점 10 | 위험 10 | 과시 −25 | 지속 10 | 지향 양성 | 결합 없음\n:::"
+  },
+  {
+   "id": "lr-125",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0239",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 15 | Monopoly 5 | Risk 10 | Display −10 | Persistence −15 | Orientation Fluid | Bonding Monogamous",
+   "to": "- Desires: Craving 15 | Monopoly 5 | Risk 10 | Display −10 | Persistence −15 | Orientation Fluid | Bonding Monogamous\n:::"
+  },
+  {
+   "id": "lr-126",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0239",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 15 | 독점 5 | 위험 10 | 과시 −10 | 지속 −15 | 지향 유동 | 결합 단혼",
+   "to": "- 욕망: 갈망 15 | 독점 5 | 위험 10 | 과시 −10 | 지속 −15 | 지향 유동 | 결합 단혼\n:::"
+  },
+  {
+   "id": "lr-127",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0240",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 0 | Monopoly −35 | Risk −35 | Display −40 | Persistence 0 | Orientation Fluid | Bonding Monogamous",
+   "to": "- Desires: Craving 0 | Monopoly −35 | Risk −35 | Display −40 | Persistence 0 | Orientation Fluid | Bonding Monogamous\n:::"
+  },
+  {
+   "id": "lr-128",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0240",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 0 | 독점 −35 | 위험 −35 | 과시 −40 | 지속 0 | 지향 유동 | 결합 단혼",
+   "to": "- 욕망: 갈망 0 | 독점 −35 | 위험 −35 | 과시 −40 | 지속 0 | 지향 유동 | 결합 단혼\n:::"
+  },
+  {
+   "id": "lr-129",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0241",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 40 | Monopoly −25 | Risk −10 | Display 25 | Endurance 35 | Orientation Bisexual | Bonding Monogamous",
+   "to": "- Desires: Craving 40 | Monopoly −25 | Risk −10 | Display 25 | Endurance 35 | Orientation Bisexual | Bonding Monogamous\n:::"
+  },
+  {
+   "id": "lr-130",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0241",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 40 | 독점 −25 | 위험 −10 | 과시 25 | 지속 35 | 지향 양성 | 결합 단혼",
+   "to": "- 욕망: 갈망 40 | 독점 −25 | 위험 −10 | 과시 25 | 지속 35 | 지향 양성 | 결합 단혼\n:::"
+  },
+  {
+   "id": "lr-131",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 45 | Monopoly 15 | Risk 10 | Display 25 | Endurance −10 | Orientation Heterosexual | Bonding Monogamous",
+   "to": "- Desires: Craving 45 | Monopoly 15 | Risk 10 | Display 25 | Endurance −10 | Orientation Heterosexual | Bonding Monogamous\n:::"
+  },
+  {
+   "id": "lr-132",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 45 | 독점 15 | 위험 10 | 과시 25 | 지속 −10 | 지향 이성 | 결합 단혼",
+   "to": "- 욕망: 갈망 45 | 독점 15 | 위험 10 | 과시 25 | 지속 −10 | 지향 이성 | 결합 단혼\n:::"
+  },
+  {
+   "id": "lr-133",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0243",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 40 | Monopoly 5 | Risk −5 | Display −5 | Endurance 25 | Orientation None | Bonding Non-exclusive",
+   "to": "- Desires: Craving 40 | Monopoly 5 | Risk −5 | Display −5 | Endurance 25 | Orientation None | Bonding Non-exclusive\n:::"
+  },
+  {
+   "id": "lr-134",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0243",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 40 | 독점 5 | 위험 −5 | 과시 −5 | 지속 25 | 지향 무성향 | 결합 비독점",
+   "to": "- 욕망: 갈망 40 | 독점 5 | 위험 −5 | 과시 −5 | 지속 25 | 지향 무성향 | 결합 비독점\n:::"
+  },
+  {
+   "id": "lr-135",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0244",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 5 | Monopoly −35 | Risk −40 | Display −35 | Endurance −15 | Orientation Bisexual | Bonding Polyamorous",
+   "to": "- Desires: Craving 5 | Monopoly −35 | Risk −40 | Display −35 | Endurance −15 | Orientation Bisexual | Bonding Polyamorous\n:::"
+  },
+  {
+   "id": "lr-136",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0244",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 5 | 독점 −35 | 위험 −40 | 과시 −35 | 지속 −15 | 지향 양성 | 결합 다자",
+   "to": "- 욕망: 갈망 5 | 독점 −35 | 위험 −40 | 과시 −35 | 지속 −15 | 지향 양성 | 결합 다자\n:::"
+  },
+  {
+   "id": "lr-137",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0245",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 15 | Monopoly 10 | Risk −20 | Display 10 | Persistence 35 | Orientation: same-sex | Bonding: polyamorous",
+   "to": "- Desires: Craving 15 | Monopoly 10 | Risk −20 | Display 10 | Persistence 35 | Orientation: same-sex | Bonding: polyamorous\n:::"
+  },
+  {
+   "id": "lr-138",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0245",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 15 | 독점 10 | 위험 −20 | 과시 10 | 지속 35 | 지향 동성 | 결합 다자",
+   "to": "- 욕망: 갈망 15 | 독점 10 | 위험 −20 | 과시 10 | 지속 35 | 지향 동성 | 결합 다자\n:::"
+  },
+  {
+   "id": "lr-139",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0249",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "ngno 1·2·3·4-ga-dong as the reference point for Gang Taesan's corridor scouting report and passage check work. It does not confirm a current posting, residence, domain or ownership.",
+   "to": "ngno 1·2·3·4-ga-dong as the reference point for Gang Taesan's corridor scouting report and passage check work."
+  },
+  {
+   "id": "lr-140",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0249",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ngno 1·2·3·4-ga-dong as the reference point for Gang Taesan's corridor scouting report and passage check work. It does not confirm a current posting, residence, domain or ownership.",
+   "to": "ngno 1·2·3·4-ga-dong as the reference point for Gang Taesan's corridor scouting report and passage check work."
+  },
+  {
+   "id": "lr-141",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0249",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "확인 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-142",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0249",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "확인 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-143",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0255",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "o 1·2·3·4-ga-dong is proposed. Current duty assignment, residence, holding, or ownership is not confirmed.",
+   "to": "o 1·2·3·4-ga-dong is proposed."
+  },
+  {
+   "id": "lr-144",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0255",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "o 1·2·3·4-ga-dong is proposed. Current duty assignment, residence, holding, or ownership is not confirmed.",
+   "to": "o 1·2·3·4-ga-dong is proposed."
+  },
+  {
+   "id": "lr-145",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0255",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "확인 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-146",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0255",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "확인 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "확인 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-147",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0257",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "o 1·2·3·4-ga-dong as the reference point for Bokmo's detour surveying and highland coordinate management work. It does not confirm current posting, residence, holding, or ownership.",
+   "to": "o 1·2·3·4-ga-dong as the reference point for Bokmo's detour surveying and highland coordinate management work."
+  },
+  {
+   "id": "lr-148",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0257",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "o 1·2·3·4-ga-dong as the reference point for Bokmo's detour surveying and highland coordinate management work. It does not confirm current posting, residence, holding, or ownership.",
+   "to": "o 1·2·3·4-ga-dong as the reference point for Bokmo's detour surveying and highland coordinate management work."
+  },
+  {
+   "id": "lr-149",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0257",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "관리 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "관리 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-150",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0257",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "관리 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "관리 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-151",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "oposes Jongno 1·2·3·4-ga-dong as the reference point for Bongdu's highland torch-shift and access-record work. Does not confirm current duty posting, residence, domain, or ownership.",
+   "to": "oposes Jongno 1·2·3·4-ga-dong as the reference point for Bongdu's highland torch-shift and access-record work."
+  },
+  {
+   "id": "lr-152",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "oposes Jongno 1·2·3·4-ga-dong as the reference point for Bongdu's highland torch-shift and access-record work. Does not confirm current duty posting, residence, domain, or ownership.",
+   "to": "oposes Jongno 1·2·3·4-ga-dong as the reference point for Bongdu's highland torch-shift and access-record work."
+  },
+  {
+   "id": "lr-153",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "기록 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "기록 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-154",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "기록 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "기록 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-155",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0269",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "- Jongno 1·2·3·4-ga-dong is proposed as the work reference point for Sun Jimin's forced-registration defection records and shift-separation testimony. It does not confirm a current posting, residence, holding, or ownership.",
+   "to": "- Jongno 1·2·3·4-ga-dong is proposed as the work reference point for Sun Jimin's forced-registration defection records and shift-separation testimony."
+  },
+  {
+   "id": "lr-156",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0269",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Jongno 1·2·3·4-ga-dong is proposed as the work reference point for Sun Jimin's forced-registration defection records and shift-separation testimony. It does not confirm a current posting, residence, holding, or ownership.",
+   "to": "- Jongno 1·2·3·4-ga-dong is proposed as the work reference point for Sun Jimin's forced-registration defection records and shift-separation testimony."
+  },
+  {
+   "id": "lr-157",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0269",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "증언 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "증언 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-158",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0269",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "증언 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "증언 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-159",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "p.\n- Proposes Jongno 1·2·3·4-ga-dong as the reference point for Yun Sanho's work guiding the evacuation-route signposts and certificate waiting queue. Does not confirm a current posting, residence, holding, or ownership.",
+   "to": "p.\n- Proposes Jongno 1·2·3·4-ga-dong as the reference point for Yun Sanho's work guiding the evacuation-route signposts and certificate waiting queue."
+  },
+  {
+   "id": "lr-160",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "p.\n- Proposes Jongno 1·2·3·4-ga-dong as the reference point for Yun Sanho's work guiding the evacuation-route signposts and certificate waiting queue. Does not confirm a current posting, residence, holding, or ownership.",
+   "to": "p.\n- Proposes Jongno 1·2·3·4-ga-dong as the reference point for Yun Sanho's work guiding the evacuation-route signposts and certificate waiting queue."
+  },
+  {
+   "id": "lr-161",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "안내 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "안내 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-162",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "안내 업무 기준점으로 종로1·2·3·4가동을 제안한다. 현재 근무 배치나 거주·영지·소유를 확정하지 않는다.",
+   "to": "안내 업무 기준점으로 종로1·2·3·4가동을 제안한다."
+  },
+  {
+   "id": "lr-163",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "에서 의도적으로 깎인 베어링이 나왔다.\n\n**관계.** 이홍원의 도제이며 박태겸과의 도제 교환으로 황지호와 제동 부품을 나눈다.",
+   "to": "에서 의도적으로 깎인 베어링이 나왔다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-164",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "에서 의도적으로 깎인 베어링이 나왔다.\n\n**관계.** 강태산과 북문 횃불 신호를 맞춘다",
+   "to": "에서 의도적으로 깎인 베어링이 나왔다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-165",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 반장과 도제의 서명을 함께 요구한다.\n\n**관계.** 이홍원의 지휘로 차륜 공정을 나누고 강민서의 수리 규격을 현장 적용한다.",
+   "to": " 반장과 도제의 서명을 함께 요구한다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-166",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 반장과 도제의 서명을 함께 요구한다.\n\n**관계.** 강다은에게 시험 차륜이 새어 나갔다는 의심을 품는다",
+   "to": " 반장과 도제의 서명을 함께 요구한다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-167",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.** 이홍원의 북문 순찰을 맡고 장세화와 북부 호송을 맞춘다.",
+   "to": "불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-168",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.** 강태산과 회랑 신호를 공유한다",
+   "to": "불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-169",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다",
+   "to": "를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다."
+  },
+  {
+   "id": "lr-170",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 쪽으로 빠졌다는 중량 기록이 나왔다.\n\n**관계.** 황노을의 회수 저울과 출고를 맞추고, 봉국의 회수장에서 로트를 인수한다.",
+   "to": " 쪽으로 빠졌다는 중량 기록이 나왔다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-171",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 쪽으로 빠졌다는 중량 기록이 나왔다.\n\n**관계.** 강민서의 수리 규격 중량표를 송장에 옮긴다",
+   "to": " 쪽으로 빠졌다는 중량 기록이 나왔다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-172",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "rt timing.\n\n**Relationships.** Patrols the North Gate under Gwon Doha's command and syncs corridor torches with Gang Taesan.",
+   "to": "rt timing.\n\n**Relationships.**"
+  },
+  {
+   "id": "lr-173",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.** 권도하의 지휘로 북문을 돌고, 강태산과 회랑 횃불을 맞춘다.",
+   "to": "불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-174",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.** 장세화의 북부 호송 시각을 순찰 칠판에 옮긴다",
+   "to": "불량으로 정차해 호송 시각이 어긋났다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-175",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "구하는 쪽지는 게시판에 그대로 붙인다.\n\n**관계.** 밤 순찰 조의 교대 통지를 나르고, 연료 사용 공지를 같은 벽에 나란히 붙인다",
+   "to": "구하는 쪽지는 게시판에 그대로 붙인다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-176",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0283",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.** 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다.",
+   "to": "선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-177",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0283",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.** 장세화의 강남역 호송 시각과 선로 상태를 맞춘다",
+   "to": "선로도가 한 칸 공백으로 남아 있었다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-178",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "한 구간에서만 어긋나자 원장을 잠갔다.\n\n**관계.** 조우찬의 지휘로 일지를 옮기고, 두모의 정비 표본 번호를 원장에 붙인다.",
+   "to": "한 구간에서만 어긋나자 원장을 잠갔다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-179",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "한 구간에서만 어긋나자 원장을 잠갔다.\n\n**관계.** 이홍원의 공개 승계 시험 기록을 잠그지 않는다",
+   "to": "한 구간에서만 어긋나자 원장을 잠갔다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-180",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "rd went empty.\n\n**Relations.** He receives Gwon Doha's North Gate patrol at the post, and shares Yongmo's shift changes and torches.",
+   "to": "rd went empty.\n\n**Relations.**"
+  },
+  {
+   "id": "lr-181",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "어긋나자 북문 칠판의 한 칸이 비었다.\n\n**관계.** 권도하의 북문 순찰을 거점에서 받고, 용모의 교대와 횃불을 나눈다.",
+   "to": "어긋나자 북문 칠판의 한 칸이 비었다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-182",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "어긋나자 북문 칠판의 한 칸이 비었다.\n\n**관계.** 하세온의 경량 호송과 접속 시각을 맞춘다",
+   "to": "어긋나자 북문 칠판의 한 칸이 비었다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-183",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "졌다는 중량 기록이 회수장에서 나왔다.\n\n**관계.** 황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다.",
+   "to": "졌다는 중량 기록이 회수장에서 나왔다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-184",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "졌다는 중량 기록이 회수장에서 나왔다.\n\n**관계.** 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다",
+   "to": "졌다는 중량 기록이 회수장에서 나왔다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-185",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "e depot queue.\n\n**Relations.** He receives Gwon Doha's sortie roster at the maintenance depot and uses Dumo's wheel samples in the cavalry compartments.",
+   "to": "e depot queue.\n\n**Relations.**"
+  },
+  {
+   "id": "lr-186",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 제동이 정비창 대기열에 남아 있었다.\n\n**관계.** 권도하의 출격 목록을 정비창에서 받고, 두모의 차륜 표본을 기병 칸에 쓴다.",
+   "to": " 제동이 정비창 대기열에 남아 있었다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-187",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 제동이 정비창 대기열에 남아 있었다.\n\n**관계.** 용모의 북문 순찰차만 우선 고친다",
+   "to": " 제동이 정비창 대기열에 남아 있었다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-188",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ss column.\n\n**Relationships.** In Jo Uchan's work crew she testifies to the defect, helps guard Dumo's sealed toolbox, and leaves a mismatched line in Gukdu's accident ledger.",
+   "to": "ss column.\n\n**Relationships.**"
+  },
+  {
+   "id": "lr-189",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "오자 어예린은 증인란에 이름을 올렸다.\n\n**관계.** 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.",
+   "to": "오자 어예린은 증인란에 이름을 올렸다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-190",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "문에서 제동을 잠그고 출고를 거부했다.\n\n**관계.** 권도하의 북문 순찰차에 제동을 맞추고, 순가온의 의료칸 발견 시각에 정차 일지를 겹치며, 장세화의 의료호송이 강남역에 설 때 병상 칸의 제동만 우선 고친다",
+   "to": "문에서 제동을 잠그고 출고를 거부했다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-191",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "가족 표만 확인해 한 줄로 들여보냈다.\n\n**관계.** 두국의 북문 호송 거점에서 행렬을 안내하고, 강태산의 회랑 횃불과 시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다",
+   "to": "가족 표만 확인해 한 줄로 들여보냈다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-192",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0296",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ment mark.\n\n**Relationships.** He overlays the weight logged on Hwang Noeul's salvage scales with the intake weight, points to the same box as Chu Hangyeol's Yongsan handover testimony, and witnesses the dispatch of the parts column Im Hajun guaranteed toward the Arc machine bodies.",
+   "to": "ment mark.\n\n**Relationships.**"
+  },
+  {
+   "id": "lr-193",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0296",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 무게를 확인하고 교체 표시를 남겼다.\n\n**관계.** 황노을의 회수 저울에 기록된 중량을 입고 중량과 겹쳐 보고, 추한결의 용산 인계 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸이 Arc 기체 쪽으로 출고되는 것을 증언한다.",
+   "to": " 무게를 확인하고 교체 표시를 남겼다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-194",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0374",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 중구 수도 mapping으로 거주를 이전하지 않는다. 정확한 시설 경계를 확정하지 않으며 새 직위·영지·점유권을 부여하지 않는다.",
+   "to": " 중구 수도 mapping으로 거주를 이전하지 않는다."
+  },
+  {
+   "id": "lr-195",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0374",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 중구 수도 mapping으로 거주를 이전하지 않는다. 정확한 시설 경계를 확정하지 않으며 새 직위·영지·점유권을 부여하지 않는다.",
+   "to": " 중구 수도 mapping으로 거주를 이전하지 않는다."
+  },
+  {
+   "id": "lr-196",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0399",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "reference point in Suseo-dong. This work reference point does not fix a residence, exact facility boundaries, a rank, a holding, or tenure rights.",
+   "to": "reference point in Suseo-dong."
+  },
+  {
+   "id": "lr-197",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0399",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "reference point in Suseo-dong. This work reference point does not fix a residence, exact facility boundaries, a rank, a holding, or tenure rights.",
+   "to": "reference point in Suseo-dong."
+  },
+  {
+   "id": "lr-198",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0399",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "역 업무 기준점에서 Arc 계약 감사관 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·직위·영지·점유권을 정하지 않는다.",
+   "to": "역 업무 기준점에서 Arc 계약 감사관 업무를 맡는다."
+  },
+  {
+   "id": "lr-199",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0399",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "역 업무 기준점에서 Arc 계약 감사관 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·직위·영지·점유권을 정하지 않는다.",
+   "to": "역 업무 기준점에서 Arc 계약 감사관 업무를 맡는다."
+  },
+  {
+   "id": "lr-200",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0424",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "cords Keeper, Sinjeong 2-dong. At the Sinjeong 2-dong handover, I Minseok hands the next watch the record of food and fuel stock taken at every shift change, together with the watch key.",
+   "to": "cords Keeper, Sinjeong 2-dong."
+  },
+  {
+   "id": "lr-201",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0424",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "직.** 품계 주사. 직함은 신정2동 재고 기록 담당. 이민석은 신정2동 인계에서 식량과 연료 재고를 교대 시각마다",
+   "to": "직.** 품계 주사. 직함은 신정2동 재고 기록 담당."
+  },
+  {
+   "id": "lr-202",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0424",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "직.** 품계 주사. 직함은 신정2동 재고 기록 담당. 적은 기록을 당직 열쇠와 함께 다음 당번에게 넘긴다.",
+   "to": "직.** 품계 주사. 직함은 신정2동 재고 기록 담당."
+  },
+  {
+   "id": "lr-203",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ber. Title: Work Crew Courier. If a message is late in the frozen passage, he does not hide the receipt time but writes it in the next shift ledger and passes it on to his successor.",
+   "to": "ber. Title: Work Crew Courier."
+  },
+  {
+   "id": "lr-204",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": ".\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
+   "to": ".\n\n**관직.** 품계 조합원. 직함은 작업반 전령."
+  },
+  {
+   "id": "lr-205",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0441",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "n. Title: Power Device Patrol. If he finds a power fault in front of the ice-blocked handover door, he writes down the guard cipher tag and the time of occurrence, but leaves grain stock and ration decisions to his successor.",
+   "to": "n. Title: Power Device Patrol."
+  },
+  {
+   "id": "lr-206",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0441",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "*관직.** 품계 일반 시민. 직함은 전력장치 순찰대. 얼음에 막힌 인계 문 앞에서 전력 이상을 발견하면 경비 암호패와 발생 시각을 적되 곡물 재고와 배급 결정은 후계에게 남긴다.",
+   "to": "*관직.** 품계 일반 시민. 직함은 전력장치 순찰대."
+  },
+  {
+   "id": "lr-207",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0446",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 앙투안 르페브르는 결빙을 제거한 송신탑의 상태와 안테나 정비 시각을 아데올라 아데예미에게 전한다.",
+   "to": "계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-208",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0457",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "*관직.** 품계 일반 시민. 직함은 복구복무 기록관. 평의회에 보낼 사본에는 자기 당직의 서명을 달고 김나율의 교대 칠판에서 빠진 이름을 따로 표시한다.",
+   "to": "*관직.** 품계 일반 시민. 직함은 복구복무 기록관."
+  },
+  {
+   "id": "lr-209",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0472",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "tter Checker, Sinjeong 2-dong. On the night of the first cold snap, Im Geonu checks the locks and gaps of the Sinjeong 2-dong entrance shutters all night and hands the check sheet over to the next watch.",
+   "to": "tter Checker, Sinjeong 2-dong."
+  },
+  {
+   "id": "lr-210",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0472",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "직.** 품계 주사. 직함은 신정2동 셔터 점검 담당. 임건우는 첫 한파 밤에 신정2동 출입 셔터의 잠금쇠와 틈을 밤새 점검하고 그 점검표를 인계로 다음 당번에게 넘긴다.",
+   "to": "직.** 품계 주사. 직함은 신정2동 셔터 점검 담당."
+  },
+  {
+   "id": "lr-211",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0473",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ber. Title: Work Crew Courier. As on the watch that stopped the unsigned train, this time too he returns slips missing receipt confirmation and writes the handover time for the next messenger.",
+   "to": "ber. Title: Work Crew Courier."
+  },
+  {
+   "id": "lr-212",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0473",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": ".\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 서명 없는 열차를 막았던 당직대로 이번에도 수령 확인이 빠진 쪽지를 반송하고 다음 전령에게 교대 시각을 적어 준다.",
+   "to": ".\n\n**관직.** 품계 조합원. 직함은 작업반 전령."
+  },
+  {
+   "id": "lr-213",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0505",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Restoration Service Recorder. She keeps the order of receipt on record so that no crate is left without a known owner.",
+   "to": " Restoration Service Recorder."
+  },
+  {
+   "id": "lr-214",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0505",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 상자 주인이 가려지지 않는 일이 없도록 접수 순서를 기록으로 남긴다.",
+   "to": "\n**관직.** 품계 조합원. 직함은 복구복무 기록관."
+  },
+  {
+   "id": "lr-215",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0520",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "eroom Keeper, Sinjeong 2-dong. On the day the first snow piled up, Song Jaehyeon recorded the food remaining in the Sinjeong 2-dong underground storeroom side by side with each family's share and transferred it into the watch handover ledger.",
+   "to": "eroom Keeper, Sinjeong 2-dong."
+  },
+  {
+   "id": "lr-216",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0520",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "직.** 품계 주사. 직함은 신정2동 식량 출납 담당. 송재현은 첫눈이 쌓인 날 신정2동 지하 창고의 남은 식량과 가족별 몫을 맞대어 기록하고 당번 인계 장부에 옮긴다.",
+   "to": "직.** 품계 주사. 직함은 신정2동 식량 출납 담당."
+  },
+  {
+   "id": "lr-217",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0544",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 30 | Possessiveness −10 | Risk 35 | Display −25 | Persistence 35 | Orientation same-sex | Bonding none",
+   "to": "- Desires: Craving 30 | Possessiveness −10 | Risk 35 | Display −25 | Persistence 35 | Orientation same-sex | Bonding none\n:::"
+  },
+  {
+   "id": "lr-218",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0544",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 30 | 독점 −10 | 위험 35 | 과시 −25 | 지속 35 | 지향 동성 | 결합 없음",
+   "to": "- 욕망: 갈망 30 | 독점 −10 | 위험 35 | 과시 −25 | 지속 35 | 지향 동성 | 결합 없음\n:::"
+  },
+  {
+   "id": "lr-219",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0568",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Fuel Counter, Sinjeong 2-dong. On a night the cold snap dragged on, Baek Sanseok cross-checks the number of Sinjeong 2-dong fuel crates against the heating watch's request overnight and hands the ledger to the next watch.",
+   "to": "Fuel Counter, Sinjeong 2-dong."
+  },
+  {
+   "id": "lr-220",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0568",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "직.** 품계 주사. 직함은 신정2동 연료 계수 담당. 백산석은 한파가 이어지던 밤 신정2동 연료 상자 수를 난방 당번의 요청과 밤새 대조하고 원장을 다음 당번에게 넘긴다.",
+   "to": "직.** 품계 주사. 직함은 신정2동 연료 계수 담당."
+  },
+  {
+   "id": "lr-221",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0606",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 시몬 카민스키는 호송에서 지킨 인명 장부를 박태겸의 배차 창구에 전달한다.",
+   "to": "송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-222",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0616",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ield Checker, Sinjeong 2-dong. Seong Dalhyeon marks the alleys where the check sheet and the actual light gaps differ, shows them to the next watch, and enters them in the Sinjeong 2-dong handover.",
+   "to": "ield Checker, Sinjeong 2-dong."
+  },
+  {
+   "id": "lr-223",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0616",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "직.** 품계 주사. 직함은 신정2동 차광 점검 담당. 성달현은 점검표와 실제 빛 새는 틈이 다른 골목을 표시해 다음 당번에게 보여 주고 신정2동 인계에 올린다.",
+   "to": "직.** 품계 주사. 직함은 신정2동 차광 점검 담당."
+  },
+  {
+   "id": "lr-224",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0649",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 번호가 빠진 개조 부품을 따로 묶어 강민서의 봉인 기록 뒤에 적고 다음 서기에게 확인을 요청한다.",
+   "to": "\n**관직.** 품계 조합원. 직함은 복구복무 기록관."
+  },
+  {
+   "id": "lr-225",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0712",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "rk. Title: Food Ledger Keeper. In a winter when the cold dragged on, Han Bugu recounted the stock in the Mullae Station food store through the night and handed it over as a list for the next shift to read.",
+   "to": "rk. Title: Food Ledger Keeper."
+  },
+  {
+   "id": "lr-226",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0712",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관직.** 품계 주사. 직함은 식량 장부 담당이다. 한북우는 한파가 길던 해에 문래역 식량 창고의 재고를 밤새 다시 세고, 다음 교대가 읽을 목록으로 넘긴다.",
+   "to": "**관직.** 품계 주사. 직함은 식량 장부 담당이다."
+  },
+  {
+   "id": "lr-227",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0728",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Title: Bridge Passage Herald. In 2125, Heo Ba-u read ambush traces on the Seoul hill-road patrol out of the Amsa guard post and prevented losses.",
+   "to": " Title: Bridge Passage Herald."
+  },
+  {
+   "id": "lr-228",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0728",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Title: Bridge Passage Herald. Now he shares the trace-reading he learned then, along with the night crossing reports, with Kim Tae-un's bridge watch at Dangsan 2-dong.",
+   "to": " Title: Bridge Passage Herald."
+  },
+  {
+   "id": "lr-229",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0728",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관직.** 품계 주사. 직함은 교량 통행 전령이다. 허바우는 2125년 암사 경비 초소의 서울 언덕길 초계에서 매복 흔적을 읽어 피해를 막았다.",
+   "to": "**관직.** 품계 주사. 직함은 교량 통행 전령이다."
+  },
+  {
+   "id": "lr-230",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0728",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관직.** 품계 주사. 직함은 교량 통행 전령이다. 지금은 그때 배운 흔적 판독을 야간 도하 보고와 나누어 김태운의 당산2동 교량 당직에 전한다.",
+   "to": "**관직.** 품계 주사. 직함은 교량 통행 전령이다."
+  },
+  {
+   "id": "lr-231",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Restoration Service Recorder. She re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo.",
+   "to": " Restoration Service Recorder."
+  },
+  {
+   "id": "lr-232",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 두 명부에 겹친 이름을 김나율의 교대표와 다시 맞추고 결과를 다음 기록관의 인수 메모에 남긴다.",
+   "to": "\n**관직.** 품계 조합원. 직함은 복구복무 기록관."
+  },
+  {
+   "id": "lr-233",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0846",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 제이컵 토머스는 호송에서 지킨 인명 장부를 박태겸의 창구에 넘긴다.",
+   "to": "송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-234",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0848",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Desires: Craving 0 | Monopoly −15 | Risk −40 | Display 20 | Persistence 0 | Orientation Bisexual | Bonding Non-exclusive",
+   "to": "- Desires: Craving 0 | Monopoly −15 | Risk −40 | Display 20 | Persistence 0 | Orientation Bisexual | Bonding Non-exclusive\n:::"
+  },
+  {
+   "id": "lr-235",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0848",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 욕망: 갈망 0 | 독점 −15 | 위험 −40 | 과시 20 | 지속 0 | 지향 양성 | 결합 비독점",
+   "to": "- 욕망: 갈망 0 | 독점 −15 | 위험 −40 | 과시 20 | 지속 0 | 지향 양성 | 결합 비독점\n:::"
+  },
+  {
+   "id": "lr-236",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0889",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n**관직.** 품계 조합원. 직함은 복구복무 기록관. 찾아온 시각과 인원만 등기 기록에 남겨 강민서에게 보내고, 김나율의 시민권 원본은 다음 서기에게 인계한다.",
+   "to": "\n**관직.** 품계 조합원. 직함은 복구복무 기록관."
+  },
+  {
+   "id": "lr-237",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0920",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Title: Bridge Passage Herald. In 2125, Nam Aeun read the ambush traces on the Seoul hillside road leading from the Amsa Guard Post before anyone else and prevented harm.",
+   "to": " Title: Bridge Passage Herald."
+  },
+  {
+   "id": "lr-238",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0920",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Title: Bridge Passage Herald. Now sends night-crossing records separately to Kim Taeun's bridge watch in Dangsan 2-dong.",
+   "to": " Title: Bridge Passage Herald."
+  },
+  {
+   "id": "lr-239",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0920",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관직.** 품계 주사. 직함은 교량 통행 전령이다. 남아은은 2125년 암사 경비 초소에서 이어지는 서울 언덕길의 매복 흔적을 먼저 읽어 피해를 막았다.",
+   "to": "**관직.** 품계 주사. 직함은 교량 통행 전령이다."
+  },
+  {
+   "id": "lr-240",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0920",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관직.** 품계 주사. 직함은 교량 통행 전령이다. 지금은 김태운의 당산2동 교량 당직에 야간 도하 기록을 별도로 보낸다.",
+   "to": "**관직.** 품계 주사. 직함은 교량 통행 전령이다."
+  },
+  {
+   "id": "lr-241",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0926",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 에티엔 모로는 송신에 쓴 예비 전지와 교대 시각을 아데올라 아데예미에게 전한다.",
+   "to": "계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-242",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0942",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 조지 앤더슨은 배차표·출발 서명 누락을 기록 담당자에게 알린다.",
+   "to": "송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-243",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0952",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Store Intake and Issue Keeper. On a winter night with the shutters down, Mun Supmin wrote the Daerim Station food store's stock side by side with the withdrawal requests and handed it to the next shift's ledger.",
+   "to": "Store Intake and Issue Keeper."
+  },
+  {
+   "id": "lr-244",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0952",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "*관직.** 품계 주사. 직함은 저장고 출납 담당이다. 문숲민은 셔터를 내린 겨울밤에 대림역 식량 저장고의 재고와 반출 요청을 맞대어 적고 다음 교대 장부에 넘긴다.",
+   "to": "*관직.** 품계 주사. 직함은 저장고 출납 담당이다."
+  },
+  {
+   "id": "lr-245",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0974",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.** 미겔 토레스는 보존한 거짓 속보와 정정 시각을 소피아 로시에게 전한다.",
+   "to": "계 당직 자리의 서명이 장부에 올랐다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-246",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0990",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 이사벨 가르시아는 서명 없는 열차 출발을 에바 노바코바에게 알린다.",
+   "to": "송 전령 자리의 서명이 장부에 올랐다.\n\n**관계.**"
+  },
+  {
+   "id": "lr-247",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1001",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Title: Resident Roster Keeper. Gwak Gahyeon records residents and outside visitors in two separate columns and places each visitor's length of stay on the first line of the Yeongdeungpo-gu Office Station watch handover.",
+   "to": "Title: Resident Roster Keeper."
+  },
+  {
+   "id": "lr-248",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1001",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관직.** 품계 주사. 직함은 주민 명부 담당이다. 곽가현은 역 주민과 외부 방문자를 두 칸에 나눠 적고 방문자의 체류 기간을 영등포구청역 당직 인계 첫 줄에 올린다.",
+   "to": "**관직.** 품계 주사. 직함은 주민 명부 담당이다."
+  },
+  {
+   "id": "lr-249",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1002",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ber. Title: Work Crew Courier. Informs Byeon Siram of the time the collapse report was received and entrusts confirmation of resumed dispatch to the next courier.",
+   "to": "ber. Title: Work Crew Courier."
+  },
+  {
+   "id": "lr-250",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1002",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": ".\n\n**관직.** 품계 조합원. 직함은 작업반 전령. 붕괴 보고를 받은 시각을 변시람에게 알리고 다음 전령에게 출고 재개 확인을 맡긴다.",
+   "to": ".\n\n**관직.** 품계 조합원. 직함은 작업반 전령."
+  },
+  {
+   "id": "lr-251",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1004",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Jo Jaepyo to shake their bond. The branching point is undetermined.",
+   "to": "Jo Jaepyo to shake their bond."
+  },
+  {
+   "id": "lr-252",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1007",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ice.** Rank: President. Title: President of the Government.",
+   "to": "ice.** Rank: President. Title:"
+  },
+  {
+   "id": "lr-253",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1013",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Affiliation: The Government. Itaewon Passage Alley.",
+   "to": "- Affiliation: The Government."
+  },
+  {
+   "id": "lr-254",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1013",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " and reserved cargo warehouse. This is a location reference and does not confer ownership.",
+   "to": " and reserved cargo warehouse."
+  },
+  {
+   "id": "lr-255",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1013",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "대합실 생활 화물 인계·배급 창구 및 예약 화물 창고. 위치 참조이며 소유권을 부여하지 않는다.",
+   "to": "대합실 생활 화물 인계·배급 창구 및 예약 화물 창고."
+  },
+  {
+   "id": "lr-256",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1014",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "he reserved freight warehouse. It is a location reference and grants no ownership.",
+   "to": "he reserved freight warehouse."
+  },
+  {
+   "id": "lr-257",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1014",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "대합실 생활 화물 인계·배급 창구 및 예약 화물 창고. 위치 참조이며 소유권을 부여하지 않는다.",
+   "to": "대합실 생활 화물 인계·배급 창구 및 예약 화물 창고."
+  },
+  {
+   "id": "lr-258",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "granted.\n- Existing residence: Jayang 4-dong administrative dong area. Preserves the Jayang–Geondae Goryeoin boarding house and the Ttukseom lodging contract within Seoul.",
+   "to": "granted.\n- Existing residence: Jayang 4-dong administrative dong area."
+  },
+  {
+   "id": "lr-259",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "dong administrative dong area. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses.",
+   "to": "dong administrative dong area."
+  },
+  {
+   "id": "lr-260",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "dong administrative dong area. Proposes courier duty at the Anguk register window, cross-checking the Russian line against the Hangul line.",
+   "to": "dong administrative dong area."
+  },
+  {
+   "id": "lr-261",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "dong administrative dong area. Dual registration, refusal to sign Hangul-only registers, no conscription, and no armed access are preserved..",
+   "to": "dong administrative dong area."
+  },
+  {
+   "id": "lr-262",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "dong administrative dong area. Existing Seoul residence is preserved, but exact facility boundaries are not confirmed, and no new rank, domain, or tenure is granted.",
+   "to": "dong administrative dong area."
+  },
+  {
+   "id": "lr-263",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ure.\n- Work location: Jongno 1·2·3·4-ga-dong administrative dong area. Livelihood: Courier; preserves the Jayang–Geondae Goryeoin boarding house and the Ttukseom lodging contract within Seoul.",
+   "to": "ure.\n- Work location: Jongno 1·2·3·4-ga-dong administrative dong area."
+  },
+  {
+   "id": "lr-264",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "urier; preserves the Jayang–Geondae Goryeoin boarding house and the Ttukseom lodging contract within Seoul. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses. Proposes courier duty at the Anguk register window, cross-checking the Russian line against the Hangul line. Dual registration, refusal to sign Hangul-only registers, no conscription, and no armed access are preserved.",
+   "to": "urier; preserves the Jayang–Geondae Goryeoin boarding house and the Ttukseom lodging contract within Seoul. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses. Proposes courier duty at the Anguk register window, cross-checking the Russian line against the Hangul line."
+  },
+  {
+   "id": "lr-265",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "no armed access are preserved. Key relationships: cooperates with Baek On, Bureau Chief of Government Roster Transcription.",
+   "to": "no armed access are preserved."
+  },
+  {
+   "id": "lr-266",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "no armed access are preserved. Lodging contract with the Ttukseom Mobile Maintenance Team.",
+   "to": "no armed access are preserved."
+  },
+  {
+   "id": "lr-267",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "no armed access are preserved. Does not confirm a residence or exact facility boundaries, and grants no new rank, domain, or tenure.",
+   "to": "no armed access are preserved."
+  },
+  {
+   "id": "lr-268",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위. 자양·건대 고려인 하숙과 뚝섬 숙소 계약을 서울 안에서 보존한다.",
+   "to": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위."
+  },
+  {
+   "id": "lr-269",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다.",
+   "to": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위."
+  },
+  {
+   "id": "lr-270",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위. 안국 명부 창구에서 러시아어 줄과 한글 줄을 대조하는 전령 근무를 제안한다.",
+   "to": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위."
+  },
+  {
+   "id": "lr-271",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위. 이중 등록·한글 전용 명부 서명 거부·징집 없음·무장 접근 없음은 보존한다..",
+   "to": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위."
+  },
+  {
+   "id": "lr-272",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위. 기존 서울 거주를 보존하되 정확한 시설 경계를 확정하지 않으며 새 직위·영지·점유권을 부여하지 않는다.",
+   "to": " 않는다.\n- 기존 거주 위치: 자양4동 행정동 범위."
+  },
+  {
+   "id": "lr-273",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": ".\n- 업무 위치: 종로1·2·3·4가동 행정동 범위. 생업: 전령; 자양·건대 고려인 하숙과 뚝섬 숙소 계약을 서울 안에서 보존한다.",
+   "to": ".\n- 업무 위치: 종로1·2·3·4가동 행정동 범위."
+  },
+  {
+   "id": "lr-274",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "행정동 범위. 생업: 전령; 자양·건대 고려인 하숙과 뚝섬 숙소 계약을 서울 안에서 보존한다. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다. 안국 명부 창구에서 러시아어 줄과 한글 줄을 대조하는 전령 근무를 제안한다. 이중 등록·한글 전용 명부 서명 거부·징집 없음·무장 접근 없음은 보존한다.",
+   "to": "행정동 범위. 생업: 전령; 자양·건대 고려인 하숙과 뚝섬 숙소 계약을 서울 안에서 보존한다. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다. 안국 명부 창구에서 러시아어 줄과 한글 줄을 대조하는 전령 근무를 제안한다."
+  },
+  {
+   "id": "lr-275",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "시아어 줄과 한글 줄을 대조하는 전령 근무를 제안한다. 주요 관계: 정부 명부 필사 국장 백온과 협력.",
+   "to": "시아어 줄과 한글 줄을 대조하는 전령 근무를 제안한다."
+  },
+  {
+   "id": "lr-276",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "한다. 주요 관계: 정부 명부 필사 국장 백온과 협력. 뚝섬 기동 정비조와 숙소 계약.",
+   "to": "한다. 주요 관계: 정부 명부 필사 국장 백온과 협력."
+  },
+  {
+   "id": "lr-277",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "한다. 주요 관계: 정부 명부 필사 국장 백온과 협력. 거주지나 정확한 시설 경계를 확정하지 않으며 새 직위·영지·점유권을 부여하지 않는다.",
+   "to": "한다. 주요 관계: 정부 명부 필사 국장 백온과 협력."
+  },
+  {
+   "id": "lr-278",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1016",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ate parcels are not confirmed. Does not fix a residence or exact facility boundaries, and grants no new title, holding, or possession rights.",
+   "to": "ate parcels are not confirmed."
+  },
+  {
+   "id": "lr-279",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1016",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "부 인계 기준점 제안; 탄약고·차단문 필지 확정 아님. 거주지나 정확한 시설 경계를 확정하지 않으며 새 직위·영지·점유권을 부여하지 않는다.",
+   "to": "부 인계 기준점 제안; 탄약고·차단문 필지 확정 아님."
+  }
+ ]
+}

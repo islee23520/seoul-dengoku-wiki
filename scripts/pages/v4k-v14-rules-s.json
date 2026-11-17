@@ -1,0 +1,130 @@
+{
+ "rules": [
+  {
+   "id": "ls-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "Fear. That on a power-less night the cold freight would melt and the Yongsan Station transshipment warehouse's relay credit would fall in one day.",
+   "to": ""
+  },
+  {
+   "id": "ls-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "Fear. That on a power-less night the cold freight would melt and the Yongsan Station transshipment warehouse's relay credit would fall in one day.",
+   "to": ""
+  },
+  {
+   "id": "ls-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Fear$",
+   "from": "That on a night without power the frozen cargo will melt and the Yongsan Station’s relay credit will collapse in a single day.",
+   "to": ""
+  },
+  {
+   "id": "ls-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Fear.** That on a night without power the frozen cargo will melt and the Yongsan Station’s relay credit will collapse in a single day.\n\n",
+   "to": ""
+  },
+  {
+   "id": "ls-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "공포. 전력 없는 밤에 냉동 화물이 녹아 용산역 환적 창고의 중계 신용이 하루 만에 무너지는 것.",
+   "to": ""
+  },
+  {
+   "id": "ls-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "공포. 전력 없는 밤에 냉동 화물이 녹아 용산역 환적 창고의 중계 신용이 하루 만에 무너지는 것.",
+   "to": ""
+  },
+  {
+   "id": "ls-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.공포$",
+   "from": "전력 없는 밤에 냉동 화물이 녹아 용산역 환적 창고의 중계 신용이 하루 만에 무너지는 것.",
+   "to": ""
+  },
+  {
+   "id": "ls-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**공포.** 전력 없는 밤에 냉동 화물이 녹아 용산역 환적 창고의 중계 신용이 하루 만에 무너지는 것.\n\n",
+   "to": ""
+  },
+  {
+   "id": "ls-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Relationships.**\n\n",
+   "to": ""
+  },
+  {
+   "id": "ls-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**\n\n",
+   "to": ""
+  },
+  {
+   "id": "ls-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0296",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Relationships.**\n\n",
+   "to": ""
+  },
+  {
+   "id": "ls-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0296",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**\n\n",
+   "to": ""
+  }
+ ]
+}
