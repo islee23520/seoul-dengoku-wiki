@@ -1,0 +1,24 @@
+{
+ "rules": [
+  {
+   "id": "lad-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "istrative dong area. Dual registration, refusal to sign Hangul-only registers, no conscription, and no armed access are preserved.",
+   "to": "istrative dong area."
+  },
+  {
+   "id": "lad-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 종로1·2·3·4가동 행정동 범위. 이중 등록·한글 전용 명부 서명 거부·징집 없음·무장 접근 없음은 보존한다.",
+   "to": " 종로1·2·3·4가동 행정동 범위."
+  }
+ ]
+}
