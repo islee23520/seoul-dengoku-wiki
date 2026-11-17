@@ -1,0 +1,1246 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0030",
+   "col": "json",
+   "from": "He is close to a standards master-and-disciple relationship with Gang Minseo, a wheel alliance partner of Choe Hangyeol, the Train Chief of the Sluice Bureau, and he does not permit any specification revision without Jang Useok's record seal.",
+   "to": "He is close to a master-and-disciple relationship with Gang Minseo in matters of standards, is in a wheel alliance with Choe Hangyeol, the free city's Train Chief, and permits no revision of standards without Jang Useok's record seal.",
+   "expect": 1,
+   "id": "v4rem-people-b-0001"
+  },
+  {
+   "file": "090",
+   "key": "person-0221",
+   "col": "json",
+   "from": "Yeouido Investors' Federation",
+   "to": "Free City",
+   "expect": 1,
+   "id": "v4rem-people-b-0002"
+  },
+  {
+   "file": "090",
+   "key": "person-0222",
+   "col": "json",
+   "from": "Yeouido Investors' Federation",
+   "to": "Free City",
+   "expect": 1,
+   "id": "v4rem-people-b-0003"
+  },
+  {
+   "file": "090",
+   "key": "person-0223",
+   "col": "json",
+   "from": "Yeouido Investors' Federation",
+   "to": "Free City",
+   "expect": 1,
+   "id": "v4rem-people-b-0004"
+  },
+  {
+   "file": "090",
+   "key": "person-0224",
+   "col": "json",
+   "from": "Yeouido Investors' Federation",
+   "to": "Free City",
+   "expect": 1,
+   "id": "v4rem-people-b-0005"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "강남역 성하전자 전산실. 신정차륜가의 시험 차륜은 유세진의 것이다. 이홍원이 이씨 가문 수장이 된 것은 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 이씨 가문의 근거지는 강남역이고, 가문 수장 자리는 이씨 가문이 잇는다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 이씨 가문은 아크를 믿는 가문이며, 아크가 이전의 모든 종교를 대체했으므로 따로 후원하는 신앙은 없다. 성하전자의 부품·노동·기록 연결은 서초4동 본사와 역삼1동 작업 생활권의 서울 내부 계약·당직 업무로 잇는다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.",
+   "to": "강남역 전산실. 이홍원이 이씨 가문 수장이 된 것은 겨울 동안 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. 이씨 가문의 근거지는 강남역이고, 가문 수장 자리는 이씨 가문이 잇는다. 승계 시험이 열리면 강남역 사택이 표를 던진다. 이씨 가문은 아크를 믿는 가문이며, 아크가 이전의 모든 종교를 대체했으므로 따로 후원하는 신앙은 없다. 아크의 고대 데이터센터 소프트웨어와 기계 몸체 정비 기록은 서초4동 전산실과 역삼1동 작업 생활권의 당직 업무로 잇는다. 배우진의 호위는 이 차단문을 빌리지만 차단문은 이홍원의 것이다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0006"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "Gangnam Station, Seongha Electronics computer room. The test wheelset of Sinjeong Wheelway belongs to Yu Sejin. Yi Hongwon became head of the Yi family after keeping the Gangnam Station barrier gate and the Gangnam Station duty box unbroken. The Yi family’s base is Gangnam Station, and the post of family head passes within the Yi clan. When a succession exam is held, the Gangnam Station company quarters cast ballots. The Yi family is an Arc family of believers; since the Arc replaced every earlier religion, it sponsors no other faith. Seongha Electronics' parts, labor, and records links are connected through Seoul-internal contract and duty work between the Seocho 4-dong headquarters and the Yeoksam 1-dong work district. Bae Ujin's escort borrows this barrier gate, but the gate belongs to Yi Hongwon.",
+   "to": "Gangnam Station, computer room. Yi Hongwon became head of the Yi family after keeping the Gangnam Station barrier gate and the Gangnam Station duty box unbroken through the winter. The Yi family's base is Gangnam Station, and the post of family head passes within the Yi clan. When a succession exam is held, the Gangnam Station company quarters cast ballots. The Yi family is an Arc family of believers; since the Arc replaced every earlier religion, it sponsors no other faith. The Arc's ancient data-center software and the maintenance records for its machine bodies are linked through duty work between the Seocho 4-dong computer room and the Yeoksam 1-dong work district. Bae Ujin's escort borrows this barrier gate, but the gate belongs to Yi Hongwon.",
+   "expect": 2,
+   "id": "v4rem-people-b-0007"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "- 이홍원은 서초4동에서 성하전자 원로 업무를 맡는다. 강남역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다",
+   "to": "이홍원은 서초4동에서 전산실 원로 업무를 맡는다. 강남역 전산실·가문 수장실 게시판과 대합실 생활 물자 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. 북문은 강남역 접근 당직이며 북부 권역 지배·새 요새를 만들지 않는다",
+   "expect": 2,
+   "id": "v4rem-people-b-0008"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "- Yi Hongwon handles Seongha Electronics elder duties in Seocho 4-dong. Connects the Gangnam Station headquarters, the family head's office bulletin board, and the waiting hall's handover, access, and duty for daily-life freight as dong-level work reference points. The North Gate is an access duty for Gangnam Station and does not create northern-region domination or a new fortress",
+   "to": "Yi Hongwon handles Computer Room elder duties in Seocho 4-dong. He connects the Gangnam Station computer room, the family head's office bulletin board, and the waiting hall's handover, access, and duty for daily-life supplies as dong-level work reference points. The North Gate is an access duty for Gangnam Station and does not create northern-region domination or a new fortress",
+   "expect": 2,
+   "id": "v4rem-people-b-0009"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "성하전자 원로 이홍원 곁의 정비 도제와 성하전자 작업 반장들이다.",
+   "to": "전산실 원로 이홍원 곁의 정비 도제와 전산실 작업 반장들이다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0010"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "The maintenance apprentices beside Yi Hongwon, the Seongha Electronics elder, and the Seongha Electronics work foremen.",
+   "to": "The maintenance apprentices beside Yi Hongwon, the Computer Room elder, and the Computer Room work foremen.",
+   "expect": 2,
+   "id": "v4rem-people-b-0011"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "품계 추기경(잠정). 직함은 아크 이씨 가문 수장. 생업 별명은 성하전자 원로.",
+   "to": "품계 추기경(잠정). 직함은 아크 이씨 가문 수장. 생업 별명은 전산실 원로.",
+   "expect": 2,
+   "id": "v4rem-people-b-0012"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "Rank: Cardinal (provisional). Title: Head of the Yi Family of the Arc. Livelihood alias: Seongha Electronics elder.",
+   "to": "Rank: Cardinal (provisional). Title: Head of the Yi Family of the Arc. Livelihood alias: Computer Room elder.",
+   "expect": 2,
+   "id": "v4rem-people-b-0013"
+  },
+  {
+   "file": "050",
+   "key": "person-0272",
+   "col": "occupation_ko",
+   "exact": true,
+   "from": "성하전자 원로",
+   "to": "전산실 원로",
+   "expect": 1,
+   "id": "v4rem-people-b-0014"
+  },
+  {
+   "file": "050",
+   "key": "person-0272",
+   "col": "occupation",
+   "exact": true,
+   "from": "Seongha Electronics Elder",
+   "to": "Computer Room Elder",
+   "expect": 1,
+   "id": "v4rem-people-b-0015"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "성하전자 원로",
+   "to": "전산실 원로",
+   "expect": 4,
+   "id": "v4rem-people-b-0016"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "Seongha Electronics Elder",
+   "to": "Computer Room Elder",
+   "expect": 2,
+   "id": "v4rem-people-b-0017"
+  },
+  {
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "Seongha Electronics elder",
+   "to": "Computer Room elder",
+   "expect": 2,
+   "id": "v4rem-people-b-0018"
+  },
+  {
+   "file": "090",
+   "key": "person-0273",
+   "col": "json_ko",
+   "from": "품계 사원. 직함은 Arc 차량 정비 도제. 정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
+   "to": "품계 사원. 직함은 Arc 차량 정비 도제. 정비 일지를 작업 반장 결재 없이 차량기지 공용 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
+   "expect": 3,
+   "id": "v4rem-people-b-0019"
+  },
+  {
+   "file": "090",
+   "key": "person-0273",
+   "col": "json",
+   "from": "Rank: Staff Member. Title: Arc Vehicle Maintenance Apprentice. Posts maintenance logs directly on the Chairman's Office board rather than going through the Seongha Electronics work foreman, and cuts up defective parts to keep as samples.",
+   "to": "Rank: Employee. Title: Arc Vehicle Maintenance Apprentice. Posts maintenance logs directly on the depot's shared board without going through the squad leader's sign-off, and cuts defective parts open to keep as samples.",
+   "expect": 2,
+   "id": "v4rem-people-b-0020"
+  },
+  {
+   "file": "090",
+   "key": "person-0273",
+   "col": "json_ko",
+   "from": "정비 일지를 성하전자 작업 반장이 아닌 회장실 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
+   "to": "정비 일지를 작업 반장 결재 없이 차량기지 공용 게시판에 직접 붙이고, 불량 부품은 잘라 표본으로 남긴다.",
+   "expect": 1,
+   "id": "v4rem-people-b-0021"
+  },
+  {
+   "file": "090",
+   "key": "person-0273",
+   "col": "json",
+   "from": "Office. Rank: assistant manager. Title: vehicle maintenance apprentice. He pasted the maintenance logs directly on the Elder's board, not the squad leader's, and cut defective parts out as specimens.",
+   "to": "Posts maintenance logs directly on the depot's shared board without going through the squad leader's sign-off, and cuts defective parts open to keep as samples.",
+   "expect": 2,
+   "id": "v4rem-people-b-0022"
+  },
+  {
+   "file": "090",
+   "key": "person-0273",
+   "col": "json_ko",
+   "from": "강남역 차량기지에서 자랐다. 성하전자 차량 정비 도제 자리는 탈선 직전 결함 보고로 열렸다.",
+   "to": "강남역 차량기지에서 자랐다. Arc 차량 정비 도제 자리는 탈선 직전에 올린 결함 보고로 열렸다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0023"
+  },
+  {
+   "file": "090",
+   "key": "person-0273",
+   "col": "json",
+   "from": "Grew up at the Gangnam Station rail depot. The Seongha Electronics vehicle maintenance apprentice post opened up because of a defect report filed just before a derailment.",
+   "to": "Grew up at the Gangnam Station rail depot. The Arc vehicle maintenance apprentice post opened up because of a defect report filed just before a derailment.",
+   "expect": 2,
+   "id": "v4rem-people-b-0024"
+  },
+  {
+   "file": "090",
+   "key": "person-0274",
+   "col": "json_ko",
+   "from": "기술자 회장실가 사택 청원보다 먼저 기지 가동을 승인하게 만들어 성하전자 강남역 거점을 지킨다.",
+   "to": "거주층 청원보다 데이터센터 소프트웨어 재가동이 먼저 승인되게 만들어 Arc의 강남역 거점을 지킨다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0025"
+  },
+  {
+   "file": "090",
+   "key": "person-0274",
+   "col": "json",
+   "from": "Aims to protect Seongha Electronics' Gangnam Station stronghold by getting the engineers' Chairman's Office to approve restarting the depot ahead of the housing petitions.",
+   "to": "Aims to protect the Arc's Gangnam Station stronghold by getting the data-center software restart approved ahead of the residence-layer petitions.",
+   "expect": 2,
+   "id": "v4rem-people-b-0026"
+  },
+  {
+   "file": "090",
+   "key": "person-0274",
+   "col": "json_ko",
+   "from": "대합실 당직에서 자랐다. 성하전자 작업 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+   "to": "대합실 당직에서 자랐다. Arc 작업 반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0027"
+  },
+  {
+   "file": "090",
+   "key": "person-0274",
+   "col": "json",
+   "from": "Grew up on waiting-hall duty. The Seongha Electronics work foreman post opened up as a substitute duty for an unexcused shift absence.",
+   "to": "Grew up on waiting-hall duty. The Arc work foreman post opened up as a substitute duty for an unexcused shift absence.",
+   "expect": 2,
+   "id": "v4rem-people-b-0028"
+  },
+  {
+   "file": "090",
+   "key": "person-0276",
+   "col": "json_ko",
+   "from": "북문 순찰을 강남역 호송의 북문로 묶어 서울 내부 계약과 당직표에 따라 성하전자 열차를 움직인다.",
+   "to": "강남역 호송의 북쪽 구간과 순찰 일정을 묶어, 당직표에 따라 궤도기병의 차륜과 무장 탑재를 점검하고 출동 순서를 맞춘다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0029"
+  },
+  {
+   "file": "090",
+   "key": "person-0276",
+   "col": "json",
+   "from": "Ties the North Gate patrol to the northern route of the Gangnam Station escort, moving Seongha Electronics trains according to Seoul's internal contracts and duty rosters.",
+   "to": "Ties the patrol schedule to the northern leg of the Gangnam Station escort, and per the duty roster checks the rail cavalry's wheels and armament loading and sets the order of sorties.",
+   "expect": 2,
+   "id": "v4rem-people-b-0030"
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json_ko",
+   "from": "- 황노을은 역삼1동에서 철재 회수 중량·출고 검증 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 이홍원에게 재고를 보고하고 신가온에게 차륜 공급 조건을 거래한다. 조우찬의 시험 차륜에 쓸 철재를 우선 떼어 둔다",
+   "to": "황노을은 역삼1동에서 철재 회수 중량·출고 검증 업무를 맡는다. 회수 철재의 표본·중량·묶음 번호·실측·작업 조·사고 서명을 강남역 인접 역삼1동 작업 생활권 안에서 관리한다. 역삼 대합실 화물 인계는 참고일 뿐 공장 설비나 창고 독점을 확정하지 않는다. 이홍원에게 재고를 보고하고 신가온과 기체 부품용 철재 공급 조건을 거래한다. 조우찬의 시험 기체 프레임에 쓸 철재를 우선 떼어 둔다",
+   "expect": 2,
+   "id": "v4rem-people-b-0031"
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json",
+   "from": "- Hwang Noeul handles recovered-steel weight and shipment verification in Yeoksam 1-dong. Seongha Electronics' maintenance sample, weight, lot, measurement, work crew, and accident signature duties are refined to the Yeoksam 1-dong work-and-living area adjacent to Gangnam Station. The Yeoksam waiting-hall cargo handover is a reference only and does not confirm actual factory equipment, warehouse monopolies, or running trains. Reports stock to I Hongwon and trades wheel supply terms with Sin Gaon. Sets aside steel first for Jo Uchan's test wheels",
+   "to": "Hwang No-eul handles recovered scrap iron weight and shipment verification in Yeoksam 1-dong. She manages the samples, weight, lot numbers, measurements, work crews, and accident signatures for recovered iron within the Yeoksam 1-dong work-and-living area next to Gangnam Station. The Yeoksam waiting-hall cargo handover is only a reference and does not confirm any factory equipment or warehouse monopoly. She reports stock to I Hong-won and negotiates iron supply terms for machine-body parts with Sin Ga-on. She sets aside iron first for the test frames of Jo U-chan.",
+   "expect": 2,
+   "id": "v4rem-people-b-0032"
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json_ko",
+   "from": "대합실 당직에서 자랐다. 성하전자 철재 회수 작업반장 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+   "to": "대합실 당직에서 자랐다. Arc 철재 회수 작업반장 자리는 교대 무단 결근의 대체 당직으로 열렸다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0033"
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json",
+   "from": "Grew up on waiting-hall duty. The post of Seongha Electronics Steel Recovery Crew Chief opened up through a substitute duty for an unexcused shift absence.",
+   "to": "Grew up on waiting-hall duty. The post of Arc Scrap Iron Recovery Crew Foreman opened up through a substitute duty for an unexcused shift absence.",
+   "expect": 2,
+   "id": "v4rem-people-b-0034"
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json_ko",
+   "from": "차륜·제동 철재를 성하전자 표준 재고로 묶어 특정 작업 조가 부품을 볼모로 후계를 흔들지 못하게 한다.",
+   "to": "기체 프레임·관절용 철재를 Arc 표준 재고로 묶어 특정 작업 조가 부품을 볼모로 후계를 흔들지 못하게 한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0035"
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json",
+   "from": "Binds wheel and brake steel into Seongha Electronics' standard stock so that no particular work crew can hold parts hostage to shake the succession.",
+   "to": "Binds the iron for machine-body frames and joints into Arc's standard stock so that no particular work crew can hold parts hostage to shake the succession.",
+   "expect": 2,
+   "id": "v4rem-people-b-0036"
+  },
+  {
+   "file": "090",
+   "key": "person-0278",
+   "col": "json_ko",
+   "from": "- 두모는 역삼1동에서 차륜 정비 일지·불량 부품 표본 관리 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 현장에서 받고, 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다",
+   "to": "두모는 역삼1동에서 차륜 정비 일지·불량 부품 표본 관리 업무를 맡는다. 표본·중량·실측·작업 조·사고 서명을 기록하며 강남역 인접 역삼1동 작업 생활권에서 움직인다. Arc에는 공장이 없어 부품은 기계 몸체에서 떼어낸 마모품과 고장품 표본으로 보관한다. 송하율의 도제 일과를 현장에서 받고 조우찬의 작업 조에 순환 배치된다. 이홍원의 시험 차륜만 우선 손본다",
+   "expect": 2,
+   "id": "v4rem-people-b-0037"
+  },
+  {
+   "file": "090",
+   "key": "person-0278",
+   "col": "json",
+   "from": "- Dumo handles wheel maintenance logs and defective-part sample management in Yeoksam 1-dong. Seongha Electronics' maintenance sample, weight, lot, measurement, work crew, and accident signature duties are refined to the Yeoksam 1-dong work-and-living area adjacent to Gangnam Station. The Yeoksam waiting-hall cargo handover is a reference only and does not confirm actual factory equipment, warehouse monopolies, or running trains. Takes over Song Hayul's apprentice routine on site and is rotated into Jo Uchan's work crew. Services only I Hongwon's test wheel first",
+   "to": "Dumo handles wheel maintenance logs and defective-part sample management in Yeoksam 1-dong. Records samples, weights, measurements, work crews, and accident signatures, operating within the work-and-living area of Yeoksam 1-dong next to Gangnam Station. Since the Arc has no factory, parts are kept as samples of worn and broken components pulled from machine bodies. Takes over Song Ha-yul's apprentice routine on site and is rotated into Jo U-chan's work crew. Services only I Hong-won's test wheel first",
+   "expect": 2,
+   "id": "v4rem-people-b-0038"
+  },
+  {
+   "file": "090",
+   "key": "person-0278",
+   "col": "json_ko",
+   "from": "강남역 차량기지에서 자랐다. 성하전자 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
+   "to": "강남역 차량기지에서 자랐다. Arc 차륜 정비사, 송하율의 실무 담당자 자리는 탈선 직전 결함 보고로 열렸다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0039"
+  },
+  {
+   "file": "090",
+   "key": "person-0278",
+   "col": "json",
+   "from": "Grew up at the Gangnam Station rolling-stock depot. The post of Seongha Electronics wheel mechanic and Song Hayul's practical aide opened up through a defect report made just before a derailment.",
+   "to": "Grew up at the Gangnam Station rolling-stock depot. The post of Arc wheel mechanic and Song Ha-yul's practical aide opened up through a defect report made just before a derailment.",
+   "expect": 2,
+   "id": "v4rem-people-b-0040"
+  },
+  {
+   "file": "090",
+   "key": "person-0279",
+   "col": "json_ko",
+   "from": "- 모소는 역삼1동에서 차륜·철재 입고 중량·출고 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 회수 저울과 출고를 맞추고, 봉국의 회수장에서 로트를 인수한다. 강민서의 수리 규격 중량표를 송장에 옮긴다",
+   "to": "모소는 역삼1동에서 차륜·철재 입고 중량·출고 확인 업무를 맡는다. 기계 몸체 정비용 표본·중량·로트·실측·작업 조·사고 서명을 강남역 인접 역삼1동 작업 생활권에서 처리한다. 역삼 대합실 화물 인계는 참고일 뿐 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 회수 저울과 출고를 맞추고, 봉국의 회수장에서 로트를 인수한다. 강민서의 수리 규격 중량표를 송장에 옮긴다",
+   "expect": 2,
+   "id": "v4rem-people-b-0041"
+  },
+  {
+   "file": "090",
+   "key": "person-0279",
+   "col": "json",
+   "from": "- Moso handles wheel and steel receiving weights and dispatch checks in Yeoksam 1-dong. Seongha Electronics' maintenance samples, weights, lots, measurements, work crews, and accident signature duties are refined into the Yeoksam 1-dong work-and-living area adjacent to Gangnam Station. The freight handover at the Yeoksam waiting hall is for reference only and does not confirm actual factory equipment, warehouse monopoly, or running trains. Matches dispatch against Hwang Noeul's recovery scale and takes over lots at Bongguk's recovery yard. Copies Gang Minseo's repair-standard weight table onto the invoice",
+   "to": "Moso handles wheel and steel intake weights and dispatch checks in Yeoksam 1-dong. He processes machine-body maintenance samples, weights, lots, measurements, work crews, and accident signatures within the Yeoksam 1-dong work-and-living area next to Gangnam Station. The freight handover at the Yeoksam waiting hall is for reference only and does not confirm actual factory equipment, warehouse monopoly, or running trains. He matches dispatch against Hwang Noeul's recovery scale and takes over lots at Bongguk's recovery yard. He copies Gang Minseo's repair-standard weight table onto the invoice",
+   "expect": 2,
+   "id": "v4rem-people-b-0042"
+  },
+  {
+   "file": "090",
+   "key": "person-0279",
+   "col": "json_ko",
+   "from": "강남역 차량기지에서 자랐다. 성하전자 차륜·철재 물류상 자리는 탈선 직전 결함 보고로 열렸다.",
+   "to": "강남역 차량기지에서 자랐다. 탈선 직전에 올린 결함 보고가 계기가 되어 Arc의 차륜·철재 물류상 자리를 맡게 되었다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0043"
+  },
+  {
+   "file": "090",
+   "key": "person-0279",
+   "col": "json",
+   "from": "Raised at the Gangnam Station Depot. The post of Seongha Electronics Wheel and Steel Logistics Merchant opened up through a defect report just before a derailment.",
+   "to": "Raised at the Gangnam Station Depot. A defect report filed just before a derailment led to his post as an Arc wheel and scrap iron logistics merchant.",
+   "expect": 2,
+   "id": "v4rem-people-b-0044"
+  },
+  {
+   "file": "090",
+   "key": "person-0279",
+   "col": "json_ko",
+   "from": "차륜과 제동 철재를 성하전자 표준 재고로 묶어 특정 작업 조가 부품을 볼모로 후계를 흔들지 못하게 한다.",
+   "to": "차륜과 제동 철재를 Arc 공용 재고로 묶어 특정 작업 조가 부품을 볼모로 삼아 후계를 흔들지 못하게 한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0045"
+  },
+  {
+   "file": "090",
+   "key": "person-0279",
+   "col": "json",
+   "from": "Bundles wheels and brake steel into Seongha Electronics standard stock so that no particular work crew can shake the succession by holding parts hostage.",
+   "to": "Bundles wheels and brake steel into a shared Arc stock so that no particular work crew can shake the succession by holding parts hostage.",
+   "expect": 2,
+   "id": "v4rem-people-b-0046"
+  },
+  {
+   "file": "090",
+   "key": "person-0281",
+   "col": "json_ko",
+   "from": "북문 순찰을 강남역 호송의 북문로 묶어 서울 내부 계약과 당직표에 따라 성하전자 열차를 움직인다.",
+   "to": "북문 순찰을 강남역 호송의 북문로로 묶어, 당직표에 따라 출격 차륜과 무장 탑재를 점검하고 빛과 열에 끌려온 외부 기계를 북문 앞에서 막는다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0047"
+  },
+  {
+   "file": "090",
+   "key": "person-0281",
+   "col": "json",
+   "from": "Ties the North Gate patrol to the northern route of the Gangnam Station escort, moving Seongha Electronics trains according to Seoul's internal contracts and duty rosters.",
+   "to": "Ties the North Gate patrol to the northern route of the Gangnam Station escort, inspecting sortie wheels and armament loading according to the duty roster so that outside machines drawn by light and heat are stopped before the gate.",
+   "expect": 1,
+   "id": "v4rem-people-b-0048"
+  },
+  {
+   "file": "090",
+   "key": "person-0281",
+   "col": "json",
+   "from": "Tie the North Gate patrol to Gangnam Station's escort as its northern gate route, moving Seongha Electronics trains according to Seoul-internal contracts and duty rosters.",
+   "to": "Tie the North Gate patrol to Gangnam Station's escort as its northern route, inspecting sortie wheels and armament loading according to the duty roster so that outside machines drawn by light and heat are stopped before the gate.",
+   "expect": 1,
+   "id": "v4rem-people-b-0049"
+  },
+  {
+   "file": "090",
+   "key": "person-0283",
+   "col": "json_ko",
+   "from": "- 복두는 역삼1동에서 서울 북부 선로 실측·목격 대조 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다",
+   "to": "복두는 역삼1동에서 서울 북부 선로를 실측하고 목격 기록과 대조하는 일을 맡는다. 겨울 선로의 결빙 상태와 바깥 기계가 불빛과 열에 끌려 접근한 흔적을 기록해, 강남역 인접 역삼1동 작업 생활권의 안전 경로 자료로 정리한다. 권도하에게 북문 우회로를 넘기고, 두국의 북문 거점 칠판에 실측을 옮긴다. 장세화의 강남역 호송 시각과 선로 상태를 맞춘다",
+   "expect": 2,
+   "id": "v4rem-people-b-0050"
+  },
+  {
+   "file": "090",
+   "key": "person-0283",
+   "col": "json",
+   "from": "- Bokdu handles surveying and sighting cross-checks of the northern Seoul tracks in Yeoksam 1-dong. He refines Seongha Electronics maintenance sampling, weight, lot, survey, work-crew and accident-signature work into the Yeoksam 1-dong work-and-living area adjacent to Gangnam Station. The Yeoksam waiting-hall cargo handover is only a reference and does not fix actual factory equipment, warehouse monopolies or running trains. He hands the North Gate detour to Gwon Doha and transfers survey results onto Duguk's North Gate stronghold blackboard. He matches Jang Sehwa's Gangnam Station escort times with track conditions",
+   "to": "Bokdu surveys the northern Seoul tracks from Yeoksam 1-dong and cross-checks them against sighting reports. He records the winter ice on the tracks and traces of outside machines drawn closer by light and heat, and compiles them into safe-route data for the Yeoksam 1-dong work-and-living area next to Gangnam Station. He hands the North Gate detour to Gwon Doha and copies his survey results onto Duguk's North Gate stronghold blackboard. He matches Jang Sehwa's Gangnam Station escort times against track conditions",
+   "expect": 2,
+   "id": "v4rem-people-b-0051"
+  },
+  {
+   "file": "090",
+   "key": "person-0284",
+   "col": "json_ko",
+   "from": "서울역 등기소에서 자랐다. 성하전자 작업 사고 기록관, 조우찬의 실무 담당자 자리는 이중 장부 한 줄 삭제로 열렸다.",
+   "to": "서울역 등기소에서 자랐다. Arc 작업 사고 기록관, 조우찬의 실무 담당자 자리는 이중 장부 한 줄이 지워지면서 열렸다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0052"
+  },
+  {
+   "file": "090",
+   "key": "person-0284",
+   "col": "json",
+   "from": "Grew up at the Seoul Station registry office. The post of Seongha Electronics Work Accident Recorder, Jo Uchan's working-level deputy, opened when a line in the double ledger was deleted.",
+   "to": "Grew up at the Seoul Station registry office. The post of Arc Work Accident Recorder, Jo Uchan's operations aide, opened when a line in the double ledger was deleted.",
+   "expect": 2,
+   "id": "v4rem-people-b-0053"
+  },
+  {
+   "file": "090",
+   "key": "person-0286",
+   "col": "json_ko",
+   "from": "북문을 강남역 호송의 북문 거점으로 남겨 별도 통행세 없이 성하전자 열차가 나가게 한다.",
+   "to": "북문을 강남역 호송의 북문 거점으로 지켜 내고, 호송 인원과 차륜 점검표를 게시한 채 병원 물자 수송대가 지체 없이 나가게 한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0054"
+  },
+  {
+   "file": "090",
+   "key": "person-0286",
+   "col": "json",
+   "from": "He means to keep the North Gate as Gangnam Station's northern escort post, so that Seongha Electronics trains can leave without any separate toll.",
+   "to": "He means to hold the North Gate as Gangnam Station's northern escort post, keeping the escort personnel and wheel inspection sheets posted so that hospital supply convoys can leave without delay.",
+   "expect": 2,
+   "id": "v4rem-people-b-0055"
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json_ko",
+   "from": "- 봉국은 역삼1동에서 철재 회수 중량 공개·출고 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다",
+   "to": "봉국은 역삼1동에서 철재 회수 중량 공개·출고 확인 업무를 맡는다. 강남역 인접 역삼1동 생활권에서 회수 철재의 중량·로트·실측·작업 조·사고 서명을 기록하고, 기계 몸체 수리에 쓸 철재를 내보낸다. 황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. 조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다",
+   "expect": 2,
+   "id": "v4rem-people-b-0056"
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "- Bongguk handles disclosure of recovered-steel weights and shipment confirmation in Yeoksam 1-dong. He refines Seongha Electronics' maintenance sample, weight, lot, field measurement, work crew, and incident signature duties into the Yeoksam 1-dong work-and-living sphere adjacent to Gangnam Station. The Yeoksam waiting-hall cargo handover is for reference only and does not fix actual factory equipment, warehouse monopoly, or running trains. He guards the scale under Hwang Noeul's command and matches Moso's logistics invoices to the lots. He places the steel for Jo Uchan's test wheels in the priority compartment",
+   "to": "Bongguk handles disclosure of recovered-steel weights and dispatch verification in Yeoksam 1-dong. In the Yeoksam 1-dong living sphere next to Gangnam Station, he records the weight, lot, field measurement, work crew, and incident signature for each load of salvaged steel, and sends out the steel used to repair machine bodies. He guards the scale under Hwang Noeul's command and matches Moso's logistics invoices to the lots. He places the steel for Jo Uchan's test wheels in the priority compartment",
+   "expect": 2,
+   "id": "v4rem-people-b-0057"
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json_ko",
+   "from": "대합실 당직에서 자랐다. 성하전자 철재 회수장 거점장, 황노을의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+   "to": "대합실 당직에서 자랐다. Arc 철재 회수장 거점장, 황노을의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0058"
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "Raised at the waiting-hall watch. The post of Hub Chief of the Seongha Electronics Steel Recovery Yard, Hwang Noeul's Working-Level Aide, opened through a substitute watch after an unexcused shift absence.",
+   "to": "Raised at the waiting-hall watch. The post of Outpost Chief of the Arc Steel Salvage Yard and Hwang Noeul's operations aide opened through a substitute watch after an unexcused shift absence.",
+   "expect": 2,
+   "id": "v4rem-people-b-0059"
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json_ko",
+   "from": "회수장을 성하전자 표준 재고의 입구로 남겨 이씨 가문 전용 칸이 시험 철재를 볼모로 잡지 못하게 한다.",
+   "to": "회수장을 Arc 표준 재고의 입구로 남겨, 이씨 가문 전용 칸이 시험 철재를 볼모로 잡지 못하게 한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0060"
+  },
+  {
+   "file": "090",
+   "key": "person-0288",
+   "col": "json",
+   "from": "Keep the recovery yard as the entrance to Seongha Electronics' standard inventory, so that the Lee clan's exclusive compartment cannot hold the test steel hostage.",
+   "to": "Keep the salvage yard as the entrance to Arc's standard stock, so that the Lee clan's exclusive compartment cannot hold the test steel hostage.",
+   "expect": 2,
+   "id": "v4rem-people-b-0061"
+  },
+  {
+   "file": "090",
+   "key": "person-0290",
+   "col": "json_ko",
+   "from": "- 추지훈은 역삼1동에서 차륜 정비 일지·불량 부품 표본 공개 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 환적 로트와 번호를 맞춘다",
+   "to": "추지훈은 역삼1동에서 차륜 정비 일지·불량 부품 표본 공개 업무를 맡는다. 정비 표본·중량·로트·실측·작업 조·사고 서명을 강남역 인접 역삼1동 생활권 기록으로 정리한다. 역삼 대합실의 부품 인계는 참고일 뿐이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 인계 로트와 번호를 맞춘다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0062"
+  },
+  {
+   "file": "090",
+   "key": "person-0290",
+   "col": "json",
+   "from": "- Chu Jihun handles the disclosure of wheel maintenance logs and defective part samples in Yeoksam 1-dong. He refines Seongha Electronics maintenance samples, weights, lots, measurements, work crews, and accident signatures into the work-life zone of Yeoksam 1-dong, adjacent to Gangnam Station. Cargo handover at the Yeoksam concourse is for reference and does not fix actual factory equipment, warehouse monopolies, or running trains. He accepts Song Hayul's apprentice daily routine as grounds for the exposure, does not lock away I Hongwon's public succession exam records, and matches numbers with Ran Hayul's Yongsan transshipment lot",
+   "to": "Chu Jihun handles the disclosure of wheel maintenance logs and defective part samples in Yeoksam 1-dong. He organizes maintenance samples, weights, lots, measurements, work crews, and accident signatures as records of the Yeoksam 1-dong living zone adjacent to Gangnam Station. Parts handover at the Yeoksam concourse is for reference only and does not fix actual factory equipment, warehouse monopolies, or running trains. He accepts Song Hayul's apprentice daily routine as grounds for the exposure, does not lock away I Hongwon's public succession exam records, and matches numbers with Ran Hayul's Yongsan handover lot.",
+   "expect": 2,
+   "id": "v4rem-people-b-0063"
+  },
+  {
+   "file": "090",
+   "key": "person-0290",
+   "col": "json_ko",
+   "from": "강남역 차량기지에서 자랐다. 성하전자 차륜 정비 불량 폭로자 자리는 탈선 직전 결함 보고로 열렸다.",
+   "to": "강남역 차량기지에서 자랐다. 차륜 정비 불량 폭로자 자리는 탈선 직전 결함 보고로 열렸다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0064"
+  },
+  {
+   "file": "090",
+   "key": "person-0290",
+   "col": "json",
+   "from": "He grew up at the Gangnam Station rail depot. The post of Seongha Electronics Wheel Maintenance Defect Whistleblower opened up after a defect report just before a derailment.",
+   "to": "He grew up at the Gangnam Station rail depot. The post of Wheel Maintenance Defect Whistleblower opened up after a defect report just before a derailment.",
+   "expect": 2,
+   "id": "v4rem-people-b-0065"
+  },
+  {
+   "file": "090",
+   "key": "person-0291",
+   "col": "json_ko",
+   "from": "- 어예린은 역삼1동에서 시험 차륜 결함 표본·사고 서명 확인 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다",
+   "to": "어예린은 역삼1동에서 시험 차륜 결함 표본과 사고 서명 확인 업무를 맡는다. Arc 기계 몸체 정비에 쓰이는 표본·중량·실측·작업 조·사고 서명 기록을 강남역 인접 역삼1동 생활권에서 확인한다. 역삼 대합실의 인계는 참고일 뿐, 공장 설비나 병원, 운행 열차를 확정하지 않는다. 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0066"
+  },
+  {
+   "file": "090",
+   "key": "person-0291",
+   "col": "json",
+   "from": "- In Yeoksam 1-dong, Eo Yerin handles the checking of test wheel defect samples and accident signatures. She refines Seongha Electronics' maintenance sample, weight, lot, measurement, work crew, and accident signature duties into a working neighborhood in Yeoksam 1-dong, adjacent to Gangnam Station. The cargo handover at the Yeoksam Concourse is for reference only and does not establish actual factory facilities, warehouse monopolies, or operating trains. In Jo Uchan's work crew she testifies to the defect, helps guard Dumo's sealed toolbox, and leaves a mismatched line in Gukdu's accident ledger",
+   "to": "In Yeoksam 1-dong, Eo Yerin handles the checking of test wheel defect samples and accident signatures. She verifies the sample, weight, measurement, work crew, and accident signature records used in Arc machine-body maintenance within the Yeoksam 1-dong living area next to Gangnam Station. The handover at the Yeoksam Concourse is for reference only and does not establish factory facilities, a hospital, or operating trains. In Jo Uchan's work crew she testifies to the defect, helps guard Dumo's sealed toolbox, and leaves a mismatched line in Gukdu's accident ledger.",
+   "expect": 2,
+   "id": "v4rem-people-b-0067"
+  },
+  {
+   "file": "090",
+   "key": "person-0291",
+   "col": "json_ko",
+   "from": "강남역 차량기지에서 자랐다. 성하전자 시험 차륜 결함 증인 자리는 탈선 직전 결함 보고로 열렸다.",
+   "to": "강남역 차량기지에서 자랐다. Arc 시험 차륜 결함 증인 자리는 탈선 직전에 올린 결함 보고로 열렸다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0068"
+  },
+  {
+   "file": "090",
+   "key": "person-0291",
+   "col": "json",
+   "from": "She grew up at the Gangnam Station rail depot. Her post as Seongha Electronics Test Wheel Defect Witness opened up after a defect report made just before a derailment.",
+   "to": "She grew up at the Gangnam Station rail depot. Her post as Arc Test Wheel Defect Witness opened up after a defect report she filed just before a derailment.",
+   "expect": 2,
+   "id": "v4rem-people-b-0069"
+  },
+  {
+   "file": "090",
+   "key": "person-0292",
+   "col": "json_ko",
+   "from": "의료열차의 북문 제동을 강남역 호송의 북부 날개로 묶어 별도 통행세 없이 성하전자 열차가 나가게 한다.",
+   "to": "의료열차 북문의 제동 장치를 출발 전 점검 기준에 맞춰 손봐, 자유도시 의사들이 탄 열차가 강남역에서 지연 없이 떠나게 한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0070"
+  },
+  {
+   "file": "090",
+   "key": "person-0292",
+   "col": "json",
+   "from": "To bind the medical train's North Gate brakes into the northern wing of the Gangnam Station convoy, so that Seongha Electronics trains can depart without a separate toll.",
+   "to": "To tune the medical train's North Gate brakes to the pre-departure inspection standard, so that the train carrying Free City doctors leaves Gangnam Station without delay.",
+   "expect": 2,
+   "id": "v4rem-people-b-0071"
+  },
+  {
+   "file": "090",
+   "key": "person-0295",
+   "col": "json_ko",
+   "from": "- 단건우는 역삼1동에서 역삼1동 작업 조·사고 원장 기록 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 이홍원의 승계 시험 일정을 회의 사절의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다",
+   "to": "단건우는 역삼1동에서 Arc 바깥 작업장의 작업 조·사고 원장 기록을 맡는다. 기계 몸체 정비 표본·부품 중량·로트·실측과 작업 조별 사고 서명을 강남역 인접 역삼1동 생활권 기준으로 정밀하게 정리한다. 겨울밤 불빛과 열에 끌려 다가온 바깥 기계로 인한 피해도 원장에 따로 적는다. 역삼 대합실의 물자 인계는 참고일 뿐, 그곳에 공장이나 병원 같은 설비가 있다고 확정하지 않는다. 이홍원의 일정을 사절 파견의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 교섭 자리에 기술 조항을 올린다",
+   "expect": 2,
+   "id": "v4rem-people-b-0072"
+  },
+  {
+   "file": "090",
+   "key": "person-0295",
+   "col": "json",
+   "from": "- Dan Geonu handles work-crew and accident ledger recording for Yeoksam 1-dong in Yeoksam 1-dong. He refines Seongha Electronics' maintenance samples, weights, lots, measurements, work crews, and accident signatures to the Yeoksam 1-dong work-living area adjacent to Gangnam Station. The cargo handover at the Yeoksam waiting hall is for reference only and does not confirm actual factory equipment, warehouse monopolies, or running trains. Cite Yi Hongwon's succession exam schedule as the basis for the council envoy, carry Gang Minseo's repair standards into the text, and put the northern technical clause on Jeong Yura's seat at the headquarters negotiations",
+   "to": "Dan Geonu keeps the work-crew and accident ledger for the Arc outer workshop in Yeoksam 1-dong. He organizes machine-body maintenance samples, part weights, lots, measurements, and per-crew accident signatures precisely, based on the Yeoksam 1-dong living area next to Gangnam Station. He also logs separately the damage caused by outside machines drawn close by light and heat on winter nights. The supply handover at the Yeoksam waiting hall is for reference only; it is not confirmed that any factory, hospital, or similar facility stands there. He cites Yi Hongwon's schedule as the basis for sending an envoy, carries Gang Minseo's repair standards into the text, and puts a technical clause on the table at Jeong Yura's negotiations",
+   "expect": 2,
+   "id": "v4rem-people-b-0073"
+  },
+  {
+   "file": "090",
+   "key": "person-0296",
+   "col": "json_ko",
+   "from": "- 순하준은 역삼1동에서 차륜 입고 중량·출고 증언 업무를 맡는다. 성하전자 정비 표본·중량·로트·실측·작업 조·사고 서명 업무를 강남역 인접 역삼1동 작업 생활권으로 정밀화한다. 역삼 대합실 화물 인계는 참고이며 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다",
+   "to": "순하준은 역삼1동에서 차륜 입고 중량·출고 증언 업무를 맡는다. 회수 차륜과 부품의 표본·중량·로트·실측·작업 조·사고 서명을 강남역 인접 역삼1동 작업 생활권 안에서 정리한다. 역삼 대합실 화물 인계는 참고일 뿐 실제 공장 설비·창고 독점·운행 열차를 확정하지 않는다. 황노을의 회수 저울에 기록된 중량을 입고 중량과 겹쳐 보고, 추한결의 용산 인계 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸이 Arc 기체 쪽으로 출고되는 것을 증언한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0074"
+  },
+  {
+   "file": "090",
+   "key": "person-0296",
+   "col": "json",
+   "from": "- Sun Hajun handles wheel intake-weight and dispatch testimony work in Yeoksam 1-dong. He refines Seongha Electronics' maintenance samples, weights, lots, measurements, work crews, and accident signatures to the Yeoksam 1-dong work-living area adjacent to Gangnam Station. The cargo handover at the Yeoksam waiting hall is for reference only and does not confirm actual factory equipment, warehouse monopolies, or running trains. Overlap the agreed weight on Hwang Noeul's recovery scale, point to the same box as Chu Hangyeol's Yongsan transshipment testimony, and testify to the Seongha Electronics-side dispatch of the parts compartment guaranteed by Im Hajun",
+   "to": "Sun Hajun handles wheel intake-weight and dispatch testimony work in Yeoksam 1-dong. He organizes the samples, weights, lots, measurements, work crews, and accident signatures for salvaged wheels and parts within the Yeoksam 1-dong work-living area adjacent to Gangnam Station. The cargo handover at the Yeoksam waiting hall is for reference only and does not confirm actual factory equipment, warehouse monopolies, or running trains. He overlays the weight logged on Hwang Noeul's salvage scales with the intake weight, points to the same box as Chu Hangyeol's Yongsan handover testimony, and witnesses the dispatch of the parts column Im Hajun guaranteed toward the Arc machine bodies.",
+   "expect": 2,
+   "id": "v4rem-people-b-0075"
+  },
+  {
+   "file": "090",
+   "key": "person-0296",
+   "col": "json_ko",
+   "from": "황노을의 회수 저울에 협약 중량을 겹치고, 추한결의 용산 환적 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸의 성하전자 쪽 출고를 증언한다.",
+   "to": "황노을의 회수 저울에 기록된 중량을 입고 중량과 겹쳐 보고, 추한결의 용산 인계 증언과 같은 상자를 가리키며, 임하준이 보증한 부품 칸이 Arc 기체 쪽으로 출고되는 것을 증언한다.",
+   "expect": 4,
+   "id": "v4rem-people-b-0076"
+  },
+  {
+   "file": "090",
+   "key": "person-0296",
+   "col": "json",
+   "from": "Relations. Overlaid the treaty tonnage on Hwang Noeul's salvage scales, pointed to the same box as Choo Hangyeol's Yongsan transshipment testimony, and witnessed the Changdong-side release of the parts column Im Hajun had guaranteed.",
+   "to": "Overlays the weight logged on Hwang Noeul's salvage scales with the intake weight, points to the same box as Chu Hangyeol's Yongsan handover testimony, and witnesses the dispatch of the parts column Im Hajun had guaranteed toward the Arc machine bodies.",
+   "expect": 2,
+   "id": "v4rem-people-b-0077"
+  },
+  {
+   "file": "090",
+   "key": "person-0296",
+   "col": "json",
+   "from": "Overlap the agreed weight on Hwang Noeul's recovery scale, point to the same box as Chu Hangyeol's Yongsan transshipment testimony, and testify to the Seongha Electronics-side dispatch of the parts compartment guaranteed by Im Hajun.",
+   "to": "He overlays the weight logged on Hwang Noeul's salvage scales with the intake weight, points to the same box as Chu Hangyeol's Yongsan handover testimony, and witnesses the dispatch of the parts column Im Hajun guaranteed toward the Arc machine bodies.",
+   "expect": 2,
+   "id": "v4rem-people-b-0078"
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json_ko",
+   "from": "중랑·망우 응급 이송을 제기동 치료계약과 한 장의 호송증으로 묶어, 호송료 없는 의료 호송을 당직실에서 완성하려 한다.",
+   "to": "중랑·망우에서 들어오는 응급 이송을 제기동 병원으로 가는 호송 한 건으로 묶어, 한겨울 밤에도 당직실에서 환자를 끊김 없이 넘기려 한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0079"
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": "He wants to bind the Jungnang and Mangu emergency transfers to the Jegi-dong treatment contract with a single escort permit, completing a medical escort with no escort fee from the duty room.",
+   "to": "He wants to tie the emergency transfers coming in from Jungnang and Mangu into a single escort run to the Jegi-dong hospital, so that patients are handed over without a break from the duty room, even on midwinter nights.",
+   "expect": 2,
+   "id": "v4rem-people-b-0080"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json",
+   "from": "The community role is union member and the duty is audit assistant. This duty is an internal function of the Jeongdong General Labor Federation and is neither a civil-service office of the Government nor a rank.",
+   "to": "The community role is guild member and the duty is audit assistant. This duty is an internal function of Arc and is neither a civil-service post nor a rank of the Government of the Republic of Korea.",
+   "expect": 1,
+   "id": "v4rem-people-b-0081"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json",
+   "from": "Jeongdong General Labor Federation",
+   "to": "Arc",
+   "expect": 1,
+   "id": "v4rem-people-b-0082"
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json",
+   "from": "The community role is union member and the duty is Covenant Mediator. This duty is an internal function of the Jeongdong General Labor Federation and is neither a civil-service office of the Government nor a rank.",
+   "to": "The community role is Guild Member and the duty is Agreement Mediator. This duty is an internal function of the Arc and is neither a civil-service office of the Republic of Korea government nor a rank.",
+   "expect": 2,
+   "id": "v4rem-people-b-0083"
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json",
+   "from": "Jeongdong General Labor Federation",
+   "to": "Arc",
+   "expect": 1,
+   "id": "v4rem-people-b-0084"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "2101-08-31에 태어난 선초별은 겨울의 시청역 조합 작업장에서 정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 업무를 맡는다. 조합원 직접선거와 공개 표결 기록을 확인하며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.",
+   "to": "2101-08-31에 태어난 선초별은 겨울의 논현2동 골목에서 식량과 장작 짐을 나르는 일을 맡는다. 눈길과 얼음길의 운반 경로를 익히며 대한민국 정부가 수여하는 관직과 공동체 직무를 구분한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0085"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Born on 2101-08-31, Seon Chobyeol handles the duties of the Jeongdong Contract Joint Waybill Logistics Dealer, Ha Seojin's Practical Aide, at the Sicheong Station union workshop in the winter. Checking direct union-member elections and open-vote records, Seon distinguishes offices conferred by the Government from community duties.",
+   "to": "Born on 2101-08-31, Seon Chobyeol carries loads of food and firewood through the alleys of Nonhyeon 2-dong in the winter. Seon learns the carrying routes over snow and ice, and distinguishes offices conferred by the Government from communal duties.",
+   "expect": 1,
+   "id": "v4rem-people-b-0086"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Born on 2101-08-31, Seon Chobyeol works at the Sicheong Station Guild workshop in the winter as Working-Level Aide to Ha Seojin, Logistics Merchant of the Jeongdong Contract Joint Waybill. Seon checks the members' direct elections and public vote records, and distinguishes offices conferred by the Government from communal duties.",
+   "to": "Born on 2101-08-31, Seon Chobyeol carries loads of food and firewood through the alleys of Nonhyeon 2-dong in the winter. Seon learns the carrying routes over snow and ice, and distinguishes offices conferred by the Government from communal duties.",
+   "expect": 1,
+   "id": "v4rem-people-b-0087"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "- 선초별은 소공동의 시청역 조합 작업장에서 정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 업무를 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·직위·영지·점유권을 정하지 않는다.",
+   "to": "선초별은 논현2동에서 식량과 장작 짐을 나르는 일을 맡는다. 이 업무 기준점은 거주지·정확한 시설 경계·직위·영지·점유권을 정하지 않는다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0088"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "- Seon Chobyeol handles the duties of the Jeongdong Contract Joint Waybill Logistics Dealer, Ha Seojin's Practical Aide, at the Sicheong Station union workshop in Sogong-dong. This duty reference point does not fix a residence, exact facility boundaries, a rank, a holding, or possession rights.",
+   "to": "Seon Chobyeol carries loads of food and firewood in Nonhyeon 2-dong. This duty reference point does not fix a residence, exact facility boundaries, a rank, a holding, or possession rights.",
+   "expect": 1,
+   "id": "v4rem-people-b-0089"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "- Seon Chobyeol works at the Sicheong Station Guild workshop in Sogong-dong as Working-Level Aide to Ha Seojin, Logistics Merchant of the Jeongdong Contract Joint Waybill. This duty reference point does not fix a residence, exact facility boundaries, rank, holding, or tenure rights.",
+   "to": "Seon Chobyeol carries loads of food and firewood in Nonhyeon 2-dong. This duty reference point does not fix a residence, exact facility boundaries, rank, holding, or tenure rights.",
+   "expect": 1,
+   "id": "v4rem-people-b-0090"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 업무의 서명이나 인계 기록이 바뀌어 선초별의 책임 범위와 조합원 공개 절차가 함께 무너지는 것.",
+   "to": "혹한 속에 식량과 장작 짐이 길에서 끊겨 이웃이 굶거나 얼어붙는 것, 그리고 짐 나르는 불빛과 열에 이끌려 바깥 기계가 다가오는 것.",
+   "expect": 2,
+   "id": "v4rem-people-b-0091"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "That the signature or handover records of the duties of the Jeongdong Contract Joint Waybill Logistics Dealer, Ha Seojin's Practical Aide, will be altered, so that Seon Chobyeol's scope of responsibility and the union members' disclosure procedure collapse together.",
+   "to": "That loads of food and firewood will be cut off on the road in the bitter cold so that neighbors starve or freeze, and that outside machines will be drawn closer by the light and heat of the loads being carried.",
+   "expect": 1,
+   "id": "v4rem-people-b-0092"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "The communal role is guild member, and the duty is Working-Level Aide to Ha Seojin, Logistics Merchant of the Jeongdong Contract Joint Waybill. This duty is an internal function of the Arc and is not an office in the civil service of the Government or a rank.",
+   "to": "The communal role is ordinary citizen, and carrying everyday cargo is mutual help among neighbors. This work is not an office or a rank in the civil service of the Government.",
+   "expect": 1,
+   "id": "v4rem-people-b-0093"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "The signature or handover records of the duty of Working-Level Aide to Ha Seojin, Logistics Merchant of the Jeongdong Contract Joint Waybill, being altered, so that Seon Chobyeol's scope of responsibility and the members' public procedures collapse together.",
+   "to": "That loads of food and firewood are cut off on the road in the bitter cold so that neighbors starve or freeze, and that outside machines are drawn closer by the light and heat of the loads being carried.",
+   "expect": 1,
+   "id": "v4rem-people-b-0094"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "선초별은 정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 업무의 서명·인계·공개 절차를 시청역 조합 장부에서 검증 가능하게 유지하려 한다.",
+   "to": "선초별은 논현2동의 식량과 장작이 겨울 내내 끊기지 않고 이웃 집마다 제때 닿도록 운반 길을 지키려 한다.",
+   "expect": 2,
+   "id": "v4rem-people-b-0095"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Seon Chobyeol seeks to keep the signatures, handovers, and public procedures of the duty of Working-Level Aide to Ha Seojin, Logistics Merchant of the Jeongdong Contract Joint Waybill, verifiable in the Sicheong Station Guild ledger.",
+   "to": "Seon Chobyeol seeks to keep the carrying routes open so that food and firewood reach each neighboring household in Nonhyeon 2-dong on time, without interruption throughout the winter.",
+   "expect": 1,
+   "id": "v4rem-people-b-0096"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Seon Chobyeol intends to keep the signature, handover, and disclosure procedures of the duties of the Jeongdong Contract Joint Waybill Logistics Dealer, Ha Seojin's Practical Aide, verifiable in the Sicheong Station union ledger.",
+   "to": "Seon Chobyeol intends to keep the carrying routes open so that food and firewood reach each neighboring household in Nonhyeon 2-dong on time, without interruption throughout the winter.",
+   "expect": 1,
+   "id": "v4rem-people-b-0097"
+  },
+  {
+   "file": "110",
+   "key": "c120-bcf4-c131",
+   "col": "json_ko",
+   "from": "2126년 세대. 제기동 의무소에서 자랐다. 정동 계약서 공동운송장 물류상, 하서진의 실무 담당자 자리는 가짜 약 봉인으로 열렸다.",
+   "to": "2126년 세대. 제기동에서 자랐다. 논현2동 식량·장작 짐꾼 자리는 얼어붙은 골목에서 이웃의 빈 지게를 대신 멘 일로 열렸다.",
+   "expect": 1,
+   "id": "v4rem-people-b-0098"
+  },
+  {
+   "file": "110",
+   "key": "c120-bcf4-c131",
+   "col": "json",
+   "from": "Born in the 2126 generation. Raised at the Jegi-dong infirmary. The post of Working-Level Aide to Ha Seojin, Logistics Merchant of the Jeongdong Contract Joint Waybill, opened up through a counterfeit-medicine seal.",
+   "to": "Born in the 2126 generation. Raised in Jegi-dong. The post of Nonhyeon 2-dong food and firewood porter opened up when Seon took up a neighbor's empty carrying frame in a frozen alley.",
+   "expect": 1,
+   "id": "v4rem-people-b-0099"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자",
+   "to": "논현2동 식량·장작 운반",
+   "expect": 4,
+   "id": "v4rem-people-b-0100"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Working-Level Aide to Ha Seojin, Logistics Merchant of the Jeongdong Contract Joint Waybill",
+   "to": "Hauling food and firewood around Nonhyeon 2-dong",
+   "expect": 1,
+   "id": "v4rem-people-b-0101"
+  },
+  {
+   "file": "050",
+   "key": "person-0406",
+   "col": "position_ko",
+   "exact": true,
+   "from": "정동 계약서 공동운송장 물류상, 하서진의 실무 담당자",
+   "to": "논현2동 식량·장작 짐꾼",
+   "expect": 1,
+   "id": "v4rem-people-b-0102"
+  },
+  {
+   "file": "050",
+   "key": "person-0406",
+   "col": "position",
+   "exact": true,
+   "from": "Jeongdong Contract Joint Waybill Logistics Chief, Practical Aide to Ha Seojin",
+   "to": "Nonhyeon 2-dong food and firewood porter",
+   "expect": 1,
+   "id": "v4rem-people-b-0103"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Jeongdong Contract Joint Waybill Logistics Chief, Practical Aide to Ha Seojin",
+   "to": "Nonhyeon 2-dong food and firewood porter",
+   "expect": 2,
+   "id": "v4rem-people-b-0104"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Jeongdong Contract Joint Waybill Logistics Dealer, Ha Seojin's Practical Aide",
+   "to": "Nonhyeon 2-dong food and firewood porter",
+   "expect": 1,
+   "id": "v4rem-people-b-0105"
+  },
+  {
+   "file": "090",
+   "key": "person-0417",
+   "col": "json",
+   "from": "Jeongdong General Labor Federation",
+   "to": "Arc",
+   "expect": 1,
+   "id": "v4rem-people-b-0106"
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json",
+   "from": "His community role is union member, and his duty is unification-proposal draft stakeholder. This duty is an internal function of the Jeongdong General Labor Federation and is neither a Republic of Korea government civil service office nor a rank.",
+   "to": "His community role is Guild Member, and his duty is heat-signal blocking inspection. This is a role within the Arc and is neither a government office nor a rank.",
+   "expect": 1,
+   "id": "v4rem-people-b-0107"
+  },
+  {
+   "file": "090",
+   "key": "person-0466",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0108"
+  },
+  {
+   "file": "090",
+   "key": "person-0466",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0109"
+  },
+  {
+   "file": "090",
+   "key": "person-0514",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0110"
+  },
+  {
+   "file": "090",
+   "key": "person-0514",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0111"
+  },
+  {
+   "file": "090",
+   "key": "person-0562",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0112"
+  },
+  {
+   "file": "090",
+   "key": "person-0562",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0113"
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json",
+   "from": "The community role is union member, and the duty is Audit Records Officer. This duty is an internal function of the Jeongdong General Labor Federation, not The Government civil service office or a rank.",
+   "to": "The community role is Guild Member, and the duty is Audit Recorder. This duty is an internal function of the Arc, not a civil service post or rank of the Government of the Republic of Korea.",
+   "expect": 2,
+   "id": "v4rem-people-b-0114"
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json",
+   "from": "Jeongdong General Labor Federation",
+   "to": "Arc",
+   "expect": 1,
+   "id": "v4rem-people-b-0115"
+  },
+  {
+   "file": "090",
+   "key": "person-0610",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0116"
+  },
+  {
+   "file": "090",
+   "key": "person-0610",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0117"
+  },
+  {
+   "file": "090",
+   "key": "person-0658",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0118"
+  },
+  {
+   "file": "090",
+   "key": "person-0658",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0119"
+  },
+  {
+   "file": "090",
+   "key": "person-0706",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0120"
+  },
+  {
+   "file": "090",
+   "key": "person-0706",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0121"
+  },
+  {
+   "file": "090",
+   "key": "person-0754",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0122"
+  },
+  {
+   "file": "090",
+   "key": "person-0754",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0123"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json",
+   "from": "The community role is union member, and the duty is Audit Records Officer. This duty is an internal function of the Jeongdong General Labor Federation, not The Government civil service office or a rank.",
+   "to": "The community role is Guild Member, and the duty is keeping machine-body maintenance records. This is a role within the Arc, not a government office or rank.",
+   "expect": 1,
+   "id": "v4rem-people-b-0124"
+  },
+  {
+   "file": "090",
+   "key": "person-0802",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0125"
+  },
+  {
+   "file": "090",
+   "key": "person-0802",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0126"
+  },
+  {
+   "file": "090",
+   "key": "person-0850",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0127"
+  },
+  {
+   "file": "090",
+   "key": "person-0850",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0128"
+  },
+  {
+   "file": "090",
+   "key": "person-0898",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0129"
+  },
+  {
+   "file": "090",
+   "key": "person-0898",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0130"
+  },
+  {
+   "file": "090",
+   "key": "person-0946",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0131"
+  },
+  {
+   "file": "090",
+   "key": "person-0946",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0132"
+  },
+  {
+   "file": "090",
+   "key": "person-0994",
+   "col": "json_ko",
+   "from": "성하전자 차륜 정비 기록·열쇠 인계",
+   "to": "Arc 차륜 정비 기록·열쇠 인계",
+   "expect": 1,
+   "id": "v4rem-people-b-0133"
+  },
+  {
+   "file": "090",
+   "key": "person-0994",
+   "col": "json",
+   "from": "Seongha Electronics Wheel Maintenance Records & Key Handover",
+   "to": "Arc Wheel Maintenance Records & Key Handover",
+   "expect": 1,
+   "id": "v4rem-people-b-0134"
+  },
+  {
+   "file": "090",
+   "key": "person-1010",
+   "col": "json",
+   "from": "Affiliated with Agwansa and the son of Sin Jongmok. Born on 2114-01-01, he is twelve years old as of the 2126 opening.",
+   "to": "Affiliated with the government and the son of Sin Jongmok. Born on 2114-01-01, he is twelve years old as of the 2126 opening.",
+   "expect": 1,
+   "id": "v4rem-people-b-0135"
+  },
+  {
+   "file": "090",
+   "key": "person-0262",
+   "col": "json",
+   "pathRe": "^\\.(openingTitles\\[\\]\\.(parentTitle\\.)?name|confirmedHoldings\\[\\]\\.name\\.ko|subordinateHoldings\\[\\]\\.name\\.ko)$",
+   "exact": true,
+   "from": "Seodaemun-gu Anguk Monastic Assembly District Demesne",
+   "to": "Seodaemun-gu Anguk Station Area Directly Held Territory",
+   "expect": 1,
+   "id": "v4rem-people-b-0136"
+  },
+  {
+   "file": "090",
+   "key": "person-0262",
+   "col": "json",
+   "pathRe": "^\\.(openingTitles\\[\\]\\.(parentTitle\\.)?name|confirmedHoldings\\[\\]\\.name\\.ko|subordinateHoldings\\[\\]\\.name\\.ko)$",
+   "exact": true,
+   "from": "Seodaemun-gu Anguk Monastic Grove District",
+   "to": "Seodaemun-gu Anguk Station Area",
+   "expect": 1,
+   "id": "v4rem-people-b-0137"
+  }
+ ]
+}

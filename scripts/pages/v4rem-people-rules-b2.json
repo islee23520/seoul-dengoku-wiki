@@ -1,0 +1,247 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "선초별의 기존 관계 기록은 다음과 같다. 하서진의 표준 문장을 사본 운송으로 집행하는 계약이고, 영마온의 비교표와 순번을 나눈다. 하윤목의 관문 원장을 부속 문서로 요구해 온 빚이 있다.",
+   "to": "선초별은 같은 길의 짐 순번을 하서진과 정리해 넘기고, 영마온과 운반 순번을 나눈다. 하윤목에게는 반출 일지를 먼저 보여 준 신세가 있다.",
+   "expect": 2,
+   "id": "v4rem-people-b2-001"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Seon Chobyeol's existing relationship records are as follows. It is a contract that enforces Ha Seojin's standard sentences through copy transport, and Seon shares the comparison table and its order with Yeong Maon. Seon owes a debt for having demanded Ha Yunmok's gate ledger as an annex document.",
+   "to": "Seon Chobyeol sorts out and hands over the order of loads on the same route with Ha Seojin, and shares carrying turns with Yeong Maon. Seon owes Ha Yunmok for having shown the carry log first.",
+   "expect": 1,
+   "id": "v4rem-people-b2-002"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Seon Chobyeol's existing relationship records are as follows. A contract enforcing Ha Seojin's standard sentence through copy transport, and shares the order of turns with Yeong Maon's comparison table. Owes a debt for having demanded Ha Yunmok's gate ledger as an annex document.",
+   "to": "Seon Chobyeol sorts out and hands over the order of loads on the same route with Ha Seojin, and shares carrying turns with Yeong Maon. Seon owes Ha Yunmok for having shown the carry log first.",
+   "expect": 1,
+   "id": "v4rem-people-b2-003"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "서로 다른 값을 부른 짐이 한꺼번에 오자 비교표가 끝날 때까지 짐 반출을 멈췄다. 운임과 면제 조건을 서면으로 확인한다.",
+   "to": "눈이 쌓인 길에서 짐이 한꺼번에 몰리면 무게와 차례를 먼저 맞춘 뒤에 반출한다. 연료와 식량의 몫은 종이에 적어 확인한다.",
+   "expect": 2,
+   "id": "v4rem-people-b2-004"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Stops releasing loads until the comparison is complete when loads arrive under conflicting prices. Checks carriage fees and exemption terms in writing.",
+   "to": "When loads pile up on snowed-in routes, he matches weights and turns first and only then sends them out. He writes down the fuel and food shares to check them.",
+   "expect": 2,
+   "id": "v4rem-people-b2-005"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "강국과의 교섭안의 종료조건·감사권·인질 대체 보증 사본을 공개 운송 원장에만 유효하게 묶어 조합원이 같은 종이로 서명하게 한다.",
+   "to": "운반 순번과 반출 시각을 공개 운송 장부 한 곳에만 적게 해, 이웃이 같은 장부로 짐의 행방을 확인하게 한다.",
+   "expect": 1,
+   "id": "v4rem-people-b2-006"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "서기가 베낀 초안이 강국 한쪽의 대리 문서로 유통되어 공동교섭이 빈 껍데기가 되는 것.",
+   "to": "장부가 바뀌어 짐의 행방이 어긋나고 이웃의 식량과 땔감 몫이 사라지는 것.",
+   "expect": 1,
+   "id": "v4rem-people-b2-007"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "하서진의 문안을 운송으로 집행하며 하윤목에게 부속 원장을 요구한다.",
+   "to": "같은 짐을 나르는 이웃과 순번을 나누고, 역 당직자에게 반출 일지를 보여 준다.",
+   "expect": 2,
+   "id": "v4rem-people-b2-008"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Implements Ha Seojin’s terms through transport and requests supporting ledgers from Ha Yunmok.",
+   "to": "Shares turns with neighbors hauling the same loads and shows the carry log to the station duty staff.",
+   "expect": 2,
+   "id": "v4rem-people-b2-009"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "하서진의 표준 문장을 사본 운송으로 집행하는 계약이고",
+   "to": "같은 길의 짐 순번을 정리해 넘기는 사이이고",
+   "expect": 1,
+   "id": "v4rem-people-b2-010"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "A contract that enforces Ha Seojin's standard sentences through copy transport, and",
+   "to": "Hands over the sorted order of loads on the same route, and",
+   "expect": 1,
+   "id": "v4rem-people-b2-011"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "영마온의 비교표와 순번을 나눈다",
+   "to": "영마온과 운반 순번을 나눈다",
+   "expect": 1,
+   "id": "v4rem-people-b2-012"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Shares the order of turns with Yeong Maon's comparison table",
+   "to": "Shares carrying turns with Yeong Maon",
+   "expect": 1,
+   "id": "v4rem-people-b2-013"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "조약 초안 확인·면제 칸 인장 확인",
+   "to": "논현2동 식량·장작 운반",
+   "expect": 3,
+   "id": "v4rem-people-b2-014"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Checking treaty drafts, verifying exemption-slot seals",
+   "to": "Hauling food and firewood around Nonhyeon 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-b2-015"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Checking treaty drafts, checking exemption-slot seals",
+   "to": "Hauling food and firewood around Nonhyeon 2-dong",
+   "expect": 1,
+   "id": "v4rem-people-b2-016"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "- 공동체 역할: 조합원",
+   "to": "- 공동체 역할: 일반 시민",
+   "expect": 1,
+   "id": "v4rem-people-b2-017"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "- Community role: Union member",
+   "to": "- Community role: Ordinary citizen",
+   "expect": 1,
+   "id": "v4rem-people-b2-018"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "pathRe": "^\\.fields\\.공동체 역할$",
+   "exact": true,
+   "from": "조합원",
+   "to": "일반 시민",
+   "expect": 1,
+   "id": "v4rem-people-b2-019"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "pathRe": "^\\.fields\\.Community Role$",
+   "exact": true,
+   "from": "Guild Member",
+   "to": "Ordinary Citizen",
+   "expect": 1,
+   "id": "v4rem-people-b2-020"
+  },
+  {
+   "file": "050",
+   "key": "person-0406",
+   "col": "title_ko",
+   "exact": true,
+   "from": "강남 계약서 시장 물류상, 하서진의 실무 담당자",
+   "to": "식량·장작 짐꾼",
+   "expect": 1,
+   "id": "v4rem-people-b2-021"
+  },
+  {
+   "file": "050",
+   "key": "person-0406",
+   "col": "title",
+   "exact": true,
+   "from": "Gangnam Contract Market Logistics Chief, Practical Aide to Ha Seojin",
+   "to": "Food and Firewood Porter",
+   "expect": 1,
+   "id": "v4rem-people-b2-022"
+  },
+  {
+   "file": "050",
+   "key": "person-0406",
+   "col": "occupation_ko",
+   "exact": true,
+   "from": "조약 초안 확인·면제 칸 인장 확인",
+   "to": "논현2동 식량·장작 운반",
+   "expect": 1,
+   "id": "v4rem-people-b2-023"
+  },
+  {
+   "file": "050",
+   "key": "person-0406",
+   "col": "occupation",
+   "exact": true,
+   "from": "Checking treaty drafts, verifying exemption-slot seals",
+   "to": "Hauling food and firewood around Nonhyeon 2-dong",
+   "expect": 1,
+   "id": "v4rem-people-b2-024"
+  },
+  {
+   "file": "110",
+   "key": "c120-bcf4-c131",
+   "col": "json_ko",
+   "from": "조약 초안 확인·면제 칸 인장 확인",
+   "to": "식량·장작 운반",
+   "expect": 2,
+   "id": "v4rem-people-b2-025"
+  },
+  {
+   "file": "110",
+   "key": "c120-bcf4-c131",
+   "col": "json",
+   "from": "verifying treaty drafts and checking exemption-column seals",
+   "to": "hauling food and firewood",
+   "expect": 2,
+   "id": "v4rem-people-b2-026"
+  }
+ ]
+}
