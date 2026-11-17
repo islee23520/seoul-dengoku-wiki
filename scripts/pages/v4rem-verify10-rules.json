@@ -1,0 +1,2111 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0319",
+   "col": "json_ko",
+   "from": "패권전 개막 징발 인파 대표",
+   "to": "징발 인파 대표",
+   "id": "v10-1",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0319",
+   "col": "json",
+   "from": "Hegemony War Opening Requisition Crowd Representative",
+   "to": "Conscripted Crowd Representative",
+   "id": "v10-2",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0347",
+   "col": "json_ko",
+   "from": "패권전 개막 징발 인파 대표",
+   "to": "방역·의무동원 응급처치원",
+   "id": "v10-3",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0347",
+   "col": "json",
+   "from": "Hegemony War Opening Requisition Crowd Representative",
+   "to": "Epidemic Control and Medical Conscription First-Aid Officer",
+   "id": "v10-4",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json_ko",
+   "from": "윤서린의 연방안과 정유라의 협약을 나란히 둔다",
+   "to": "윤서린의 기록 문안과 정유라의 공동교섭 문안을 나란히 둔다",
+   "id": "v10-5",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json",
+   "from": "Places Yun Seorin’s federation draft beside Jeong Yura’s agreement.",
+   "to": "Places Yun Seorin’s records draft beside Jeong Yura’s joint-negotiation draft.",
+   "id": "v10-6",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json_ko",
+   "from": "자신이 패권 문서의 손이 되는 것",
+   "to": "자신이 한쪽 문안의 손이 되는 것",
+   "id": "v10-7",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json",
+   "from": "the clerk becomes the hand of a hegemonic document",
+   "to": "the clerk becomes the hand of a one-sided draft",
+   "id": "v10-8",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json_ko",
+   "from": "윤서린의 기록연방 문안과 정유라의 다국가협약을",
+   "to": "윤서린의 기록 문안과 정유라의 공동교섭 문안을",
+   "id": "v10-9",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json",
+   "from": "Yun Seorin's Record Federation text and Jeong Yura's Multinational Accord",
+   "to": "Yun Seorin's records text and Jeong Yura's joint-negotiation text",
+   "id": "v10-10",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0318",
+   "col": "json",
+   "from": "Lesser States Council notice",
+   "to": "meeting notice",
+   "id": "v10-11",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0165",
+   "col": "json_ko",
+   "from": "강국의 보호 문장",
+   "to": "다른 세력의 보호 문장",
+   "id": "v10-12",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0165",
+   "col": "json",
+   "from": "a great power's protection clause and the lesser states' charter",
+   "to": "another faction's protection clause and the Government charter",
+   "id": "v10-13",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0167",
+   "col": "json_ko",
+   "from": "정부를 강국별로 쪼개",
+   "to": "정부를 외부 세력별로 쪼개",
+   "id": "v10-14",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0167",
+   "col": "json",
+   "from": "split the lesser states by great power",
+   "to": "split the Government among outside factions",
+   "id": "v10-15",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json",
+   "from": "the lesser states' joint negotiation",
+   "to": "the joint negotiation",
+   "id": "v10-16",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0371",
+   "col": "json_ko",
+   "from": "약소국을 강국별로 쪼개",
+   "to": "회의를 외부 세력별로 쪼개",
+   "id": "v10-17",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0371",
+   "col": "json",
+   "from": "split the lesser states by great power",
+   "to": "split the council among outside factions",
+   "id": "v10-18",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json_ko",
+   "from": "동부 약소국 보호계약",
+   "to": "동부 보호계약",
+   "id": "v10-19",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json",
+   "from": "the protection contracts of the eastern minor states",
+   "to": "the eastern protection contracts",
+   "id": "v10-20",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json",
+   "from": "pre-expiry slips",
+   "to": "expired slips",
+   "id": "v10-21",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0028",
+   "col": "json",
+   "from": "great-power",
+   "to": "other-faction",
+   "id": "v10-22",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0028",
+   "col": "json_ko",
+   "from": "강국 단독",
+   "to": "특정 세력 단독",
+   "id": "v10-23",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0048",
+   "col": "json",
+   "from": "great-power",
+   "to": "other-faction",
+   "id": "v10-24",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0048",
+   "col": "json_ko",
+   "from": "강국 보호",
+   "to": "다른 세력의 보호",
+   "id": "v10-25",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0072",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-26",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "from": "no great power",
+   "to": "no other faction",
+   "id": "v10-27",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json_ko",
+   "from": "어느 강국도",
+   "to": "어느 세력도",
+   "id": "v10-28",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0146",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-29",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0146",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-30",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0146",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-31",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0148",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-32",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0148",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-33",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0152",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-34",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0152",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-35",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0154",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-36",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0154",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-37",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0155",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-38",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0155",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-39",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0155",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-40",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0159",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-41",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0159",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-42",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-43",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-44",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0165",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-45",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0167",
+   "col": "json",
+   "from": "great-power",
+   "to": "other-faction",
+   "id": "v10-46",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0167",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-47",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json",
+   "from": "great power",
+   "to": "another faction",
+   "id": "v10-48",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-49",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-50",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-51",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0171",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-52",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-53",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-54",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-55",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-56",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0197",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-57",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0197",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-58",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-59",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-60",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0217",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-61",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0217",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-62",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0221",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-63",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0221",
+   "col": "json",
+   "from": "great power",
+   "to": "another faction",
+   "id": "v10-64",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0221",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-65",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0224",
+   "col": "json",
+   "from": "great-power",
+   "to": "other-faction",
+   "id": "v10-66",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0224",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-67",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0226",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-68",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0226",
+   "col": "json",
+   "from": "great power",
+   "to": "another faction",
+   "id": "v10-69",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0226",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-70",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0227",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-71",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0227",
+   "col": "json_ko",
+   "from": "강국 보호",
+   "to": "다른 세력의 보호",
+   "id": "v10-72",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0233",
+   "col": "json",
+   "from": "great-power",
+   "to": "other-faction",
+   "id": "v10-73",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0233",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-74",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0235",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-75",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0235",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-76",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0236",
+   "col": "json",
+   "from": "great-power",
+   "to": "other-faction",
+   "id": "v10-77",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0236",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-78",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0250",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-79",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-80",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "any great power",
+   "to": "any other faction",
+   "id": "v10-81",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "no great power",
+   "to": "no other faction",
+   "id": "v10-82",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-83",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-84",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0317",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-85",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0325",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-86",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0325",
+   "col": "json_ko",
+   "from": "강국 장교",
+   "to": "다른 세력 장교",
+   "id": "v10-87",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0328",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-88",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0328",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-89",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0331",
+   "col": "json",
+   "from": "great-power",
+   "to": "other-faction",
+   "id": "v10-90",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0331",
+   "col": "json_ko",
+   "from": "강국 장교",
+   "to": "다른 세력 장교",
+   "id": "v10-91",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0333",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-92",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0333",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-93",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0335",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-94",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0335",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-95",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-96",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0359",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-97",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json",
+   "from": "great-power",
+   "to": "other-faction",
+   "id": "v10-98",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0364",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-99",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0372",
+   "col": "json",
+   "from": "a great power's",
+   "to": "another faction's",
+   "id": "v10-100",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0372",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-101",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-102",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0400",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-103",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-104",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-105",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-106",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-107",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-108",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-109",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-110",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-111",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0412",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-112",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0413",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-113",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-114",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0416",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-115",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json_ko",
+   "from": "어느 강국도",
+   "to": "어느 세력도",
+   "id": "v10-116",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0436",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-117",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0436",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-118",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0443",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-119",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0443",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-120",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0452",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-121",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0452",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-122",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0459",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-123",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0459",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-124",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0468",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-125",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0468",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-126",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0484",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-127",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0484",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-128",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0500",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-129",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0500",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-130",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0507",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-131",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0507",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-132",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0507",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-133",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0507",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-134",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0516",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-135",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0516",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-136",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0532",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-137",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0532",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-138",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0544",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-139",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0544",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-140",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0548",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-141",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0548",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-142",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0555",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-143",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0555",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-144",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0555",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-145",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0564",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-146",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0564",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-147",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0580",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-148",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0580",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-149",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0596",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-150",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0596",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-151",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-152",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0603",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-153",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0603",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-154",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0612",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-155",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0612",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-156",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0628",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-157",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0628",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-158",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0644",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-159",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0644",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-160",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0651",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-161",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0651",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-162",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0651",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-163",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0660",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-164",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0660",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-165",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0676",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-166",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0676",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-167",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0692",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-168",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0692",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-169",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0699",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-170",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0699",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-171",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0699",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-172",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0708",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-173",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0708",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-174",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-175",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-176",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0724",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-177",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0724",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-178",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0731",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-179",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0731",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-180",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0740",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-181",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0740",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-182",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0747",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-183",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0747",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-184",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0747",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-185",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0756",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-186",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0756",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-187",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0763",
+   "col": "json",
+   "from": "a great power",
+   "to": "another faction",
+   "id": "v10-188",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0763",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-189",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0763",
+   "col": "json_ko",
+   "from": "강국의",
+   "to": "다른 세력의",
+   "id": "v10-190",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0772",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-191",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0772",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-192",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0779",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-193",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0779",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-194",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0788",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-195",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0788",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-196",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-197",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0795",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-198",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0795",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-199",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0804",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-200",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0804",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-201",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0820",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-202",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0820",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-203",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0836",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-204",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0836",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-205",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0848",
+   "col": "json",
+   "from": "great powers",
+   "to": "other factions",
+   "id": "v10-206",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0848",
+   "col": "json_ko",
+   "from": "강국",
+   "to": "다른 세력",
+   "id": "v10-207",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0852",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-208",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0852",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-209",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0859",
+   "col": "json",
+   "from": "the Great Powers",
+   "to": "the other factions",
+   "id": "v10-210",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0859",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-211",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0868",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-212",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0868",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-213",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0884",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-214",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0884",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-215",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0900",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-216",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0900",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-217",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0916",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-218",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0916",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-219",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0932",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-220",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0932",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-221",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0948",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-222",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0948",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-223",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0955",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-224",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0955",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-225",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0964",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-226",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0964",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-227",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0971",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-228",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0971",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-229",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0980",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-230",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0980",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-231",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0996",
+   "col": "json",
+   "from": "the great powers",
+   "to": "the other factions",
+   "id": "v10-232",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0996",
+   "col": "json_ko",
+   "from": "강국 볼모",
+   "to": "다른 세력의 볼모",
+   "id": "v10-233",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json",
+   "from": "the administration and the escort at once",
+   "to": "the administration and Eastern Command at once",
+   "id": "v10-234",
+   "expect": 2
+  }
+ ]
+}
