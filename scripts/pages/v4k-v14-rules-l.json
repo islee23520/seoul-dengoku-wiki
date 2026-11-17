@@ -1,0 +1,89 @@
+{
+ "rules": [
+  {
+   "id": "ll-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0121",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "Fear. That when the parts blockade overlapped, the patrol trains would stand still and only the outer approach roads would be given away. Changes in behavior or state effects are unconfirmed.",
+   "to": ""
+  },
+  {
+   "id": "ll-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0121",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "Fear. That when the parts blockade overlapped, the patrol trains would stand still and only the outer approach roads would be given away. The actual response is not yet recorded.",
+   "to": ""
+  },
+  {
+   "id": "ll-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0162",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "Fear. That on a night when the fuel ran dry the boxes would open by hand alone. Changes in behavior or state effects are unconfirmed.",
+   "to": ""
+  },
+  {
+   "id": "ll-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0162",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "Fear. That on a night when the fuel ran dry the boxes would open by hand alone. The actual response is not yet recorded.",
+   "to": ""
+  },
+  {
+   "id": "ll-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0342",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "Intends to fix the fake-medicine distribution route through public testimony so that the fact that the manufacturing statement matches Seoul's internal Warehouse cannot be erased.",
+   "to": ""
+  },
+  {
+   "id": "ll-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0342",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Ambition.** Intends to fix the fake-medicine distribution route through public testimony so that the fact that the manufacturing statement matches Seoul's internal Warehouse cannot be erased.\n\n",
+   "to": ""
+  },
+  {
+   "id": "ll-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0121",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "\n\nFear. Bak Hayul fears that if parts blockades pile up, the patrol train will sit stopped and only yield the outer approach roads.",
+   "to": ""
+  },
+  {
+   "id": "ll-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0121",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n\nFear. Bak Hayul fears that if parts blockades pile up, the patrol train will sit stopped and only yield the outer approach roads.",
+   "to": ""
+  }
+ ]
+}
