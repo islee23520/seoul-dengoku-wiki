@@ -1,0 +1,284 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0740",
+   "col": "json_ko",
+   "from": "직함은 방역 구호원",
+   "to": "직함은 숙련을 추가하지 않는다",
+   "id": "v7-1",
+   "expect": 6
+  },
+  {
+   "file": "090",
+   "key": "person-1003",
+   "col": "json_ko",
+   "from": "품계는 미등록",
+   "to": "품계는 없다",
+   "id": "v7-2",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-1003",
+   "col": "json",
+   "from": "Rank Unregistered",
+   "to": "Rank is unregistered; not a Republic of Korea government post or civil service grade",
+   "id": "v7-3",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-1004",
+   "col": "json_ko",
+   "from": "품계는 미등록",
+   "to": "품계는 없으며",
+   "id": "v7-4",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "공동체 역할: 추기경(잠정)",
+   "to": "공동체 역할: 계약 감사관",
+   "id": "v7-5",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "Community Role: Cardinal (provisional)",
+   "to": "Community Role: Contract Auditor",
+   "id": "v7-6",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0400",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 식량 출납 서기이다",
+   "id": "v7-7",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 감사 보조이다",
+   "id": "v7-8",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 협약 중재인이다",
+   "id": "v7-9",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 정비 숙련 기록 서기이다",
+   "id": "v7-10",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0404",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 순찰 교대 명부 서기이다",
+   "id": "v7-11",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 수서역 조합 차량정비소 정비사",
+   "id": "v7-12",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json_ko",
+   "from": "공동체 역할은 일반 시민",
+   "to": "공동체 역할은 일반 시민이며 생활 화물을 나르는 일은 이웃 사이의 품앗이이다",
+   "id": "v7-13",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json_ko",
+   "from": "공동체 역할은 일반 시민",
+   "to": "공동체 역할은 일반 시민이며 의사 방문일 순서 정리는 이웃 사이의 도움이다",
+   "id": "v7-14",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json",
+   "from": "Community Role: Ordinary Citizen",
+   "to": "Community Role: Guild Member",
+   "id": "v7-15",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 외곽 터널 순찰이다",
+   "id": "v7-16",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0409",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 순찰 교대 전령이다",
+   "id": "v7-17",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 외곽 탐사원이다",
+   "id": "v7-18",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 분실·손실 물품 기록이다",
+   "id": "v7-19",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 기계몸 정비 당직이다",
+   "id": "v7-20",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0416",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 기계몸 부품 입출 장부 기록이다",
+   "id": "v7-21",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0417",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 보급 기록 보조이다",
+   "id": "v7-22",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 열 신호 차단 점검이다",
+   "id": "v7-23",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0419",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 수리 인수 확인이다",
+   "id": "v7-24",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0420",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 출입구 차광막 점검이다",
+   "id": "v7-25",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 피난민 인원·잠자리 점검이다",
+   "id": "v7-26",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 터널 이동 기록 확인이다",
+   "id": "v7-27",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 식량·연료 장부 점검이다",
+   "id": "v7-28",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 직무는 감사 기록관이다",
+   "id": "v7-29",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json_ko",
+   "from": "공동체 역할은 조합원",
+   "to": "공동체 역할은 조합원이며 맡은 일은 기계몸 정비 기록 보관이다",
+   "id": "v7-30",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0087",
+   "col": "json",
+   "from": "No title.",
+   "to": "Title: Pump Engineer, Adopted Child of Im Hajun.",
+   "id": "v7-31",
+   "expect": 2
+  }
+ ]
+}
