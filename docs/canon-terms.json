@@ -87,6 +87,30 @@
       "lang": "both",
       "allowedContext": [],
       "note": "[정본 바이블 4절] 옛 국가 id S01~S16을 정치체로 쓰는 것. 대체: 세력 id(government, free-city, arc)와 구 이름. 근거: 십육국 폐지. 데이터 컬럼 값과 이관 기록은 이 스캔 대상이 아니다."
+    },
+    {
+      "id": "old-polity-ko",
+      "pattern": "수문국|규격맹|성하그룹|태욱그룹|신내운수|아관사|환적국|안국총림|정동노총|여의도출자연합회|중앙정보부|온민의|정통회|\\bHC\\d\\d\\b|\\bXT\\d\\d\\b",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절, 2.10절] 해체된 옛 조직 13곳과 HC 가문·XT 전구 코드. 대체: 세 세력·역·계급·생업. 근거: 옹예지 1794896873 \"모두 a\"(Q1 A)."
+    },
+    {
+      "id": "old-polity-en",
+      "pattern": "\\b(?:Sumun-guk|Standard League|Seongha Group|Taeuk Group|Sinnae Transport|Agwan-sa|Hwanjeok-guk|Anguk Chongnim|Jeongdong Labor Federation|Yeouido Investors' Federation|Central Intelligence Division|Onminui|Jeongtonghoe|HC\\d\\d|XT\\d\\d)\\b",
+      "flags": "",
+      "lang": "en",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절, 2.10절] dissolved old organizations (English romanizations) and HC/XT codes. 대체: factions, stations, ranks, livelihoods. 근거: same as old-polity-ko."
+    },
+    {
+      "id": "water-politics-ko",
+      "pattern": "수문국|물 계약|급수 계약",
+      "flags": "",
+      "lang": "ko",
+      "allowedContext": [],
+      "note": "[정본 바이블 4절, 2.10절] 물 공급을 권력·생업으로 삼는 설정. 역 배수 시설·한강·하천 같은 물리 지리는 잡지 않는다. 대체: v4 생업(역 운영·정비·배급 등). 근거: 소유자 1794895830."
     }
   ],
   "required": [
