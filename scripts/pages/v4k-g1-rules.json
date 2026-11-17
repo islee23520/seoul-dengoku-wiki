@@ -1,0 +1,1866 @@
+{
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json_ko",
+   "from": "국가 설계 능력",
+   "to": "제도 설계 능력",
+   "id": "k1-001",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json",
+   "from": "state-building mastery",
+   "to": "institution-building mastery",
+   "id": "k1-002",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json_ko",
+   "from": "보호권 확대안",
+   "to": "부품 배분 구역 확대안",
+   "id": "k1-003",
+   "expect": 7
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "from": "Han Jaemok's protection-power expansion proposal",
+   "to": "Han Jaemok's parts-allocation district expansion proposal",
+   "id": "k1-004",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "from": "Carries protection-expansion proposals under seal",
+   "to": "Carries district-expansion proposals under seal",
+   "id": "k1-005",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "from": "Han Jaemok's protection-rights expansion proposal",
+   "to": "Han Jaemok's parts-allocation district expansion proposal",
+   "id": "k1-006",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "from": "Han Jaemok's proposal to expand protection rights only in sealed form",
+   "to": "Han Jaemok's proposal to expand the parts-allocation district only in sealed form",
+   "id": "k1-007",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json_ko",
+   "from": "폐쇄 연구파가 인증을 보호비로 팔 우려가 있다면",
+   "to": "폐쇄 연구파가 인증 도장을 몸값 흥정의 문턱으로 쓸 우려가 있다면",
+   "id": "k1-008",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json_ko",
+   "from": "인증이 보호비 거래로 변할 우려가 있다면",
+   "to": "인증이 몸값 흥정의 문턱으로 변할 우려가 있다면",
+   "id": "k1-009",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json_ko",
+   "from": "인증을 보호비로 파는 폐쇄 연구파가 평의회를 장악해 기술자가 다시 인질 시세표에 오르는 것.",
+   "to": "폐쇄 연구파가 인증 도장을 몸값 흥정의 문턱으로 삼아 평의회를 장악하고, 인증이 필요한 기술자가 다시 인질 시세표에 오르는 것.",
+   "id": "k1-010",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "If a closed research faction might sell certification as protection payments",
+   "to": "If a closed research faction might use the certification seal as the threshold for ransom bargaining",
+   "id": "k1-011",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "If certification risks becoming a protection-payment trade",
+   "to": "If certification risks becoming a threshold for ransom bargaining",
+   "id": "k1-012",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "That a closed research faction that sells certification as protection money will seize the council, putting engineers back on the hostage price list.",
+   "to": "That a closed research faction will seize the council and turn the certification seal into the threshold for ransom bargaining, putting engineers who need certification back on the hostage price list.",
+   "id": "k1-013",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "화물의 중립성을 지킬 수 있다면",
+   "to": "화물의 출처와 순서가 공개로 지켜진다면",
+   "id": "k1-014",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "when it safeguards cargo neutrality",
+   "to": "when cargo origin and queue order stay public",
+   "id": "k1-015",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "기술 인증 화물만 오가는 중립 배차망으로 만들어 공동기술원장의 동맥이 된다.",
+   "to": "기술 인증 화물만 오가는 공개 배차망으로 만들어, 어느 세력의 화물이든 인증 순서대로 서게 하고 공동기술원장의 동맥이 된다.",
+   "id": "k1-016",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "into a neutral dispatch network that only technically certified cargo travels, becoming an artery of the Joint Technical Ledger.",
+   "to": "into a public dispatch network that only technically certified cargo travels, queuing every faction's freight in certification order and becoming an artery of the Joint Technical Ledger.",
+   "id": "k1-017",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "중립 배차망 조항에 서명할 증인을 호송할 수 있다.",
+   "to": "공개 배차망 조항에 서명할 증인을 호송할 수 있다.",
+   "id": "k1-018",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "sign the neutral dispatch network clause",
+   "to": "sign the public dispatch network clause",
+   "id": "k1-019",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "배차망이 군사 보호권의 발판이 될 우려가 있다면",
+   "to": "배차망이 군 병력 집결의 발판이 될 우려가 있다면",
+   "id": "k1-020",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "a foothold for military protection claims",
+   "to": "a foothold for troop assembly",
+   "id": "k1-021",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "기지가 보호권의 발판으로 팔리는 것.",
+   "to": "기지가 무장한 외부인의 주둔 발판으로 팔리는 것.",
+   "id": "k1-022",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "the base will be sold off as a foothold for protection rights.",
+   "to": "the base will be sold off as a garrison foothold for armed outsiders.",
+   "id": "k1-023",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json_ko",
+   "from": "유민호의 중립 배차망을 지킬 수 있다면",
+   "to": "유민호의 공개 배차망을 지킬 수 있다면",
+   "id": "k1-024",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "when it preserves dispatch neutrality",
+   "to": "when it keeps the dispatch network public",
+   "id": "k1-025",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json_ko",
+   "from": "정비창이 군사 보호권의 발판으로 팔릴 우려가 있다면",
+   "to": "정비창이 군 병력 집결의 발판으로 팔릴 우려가 있다면",
+   "id": "k1-026",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "a foothold for military protection claims",
+   "to": "a foothold for troop assembly",
+   "id": "k1-027",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json_ko",
+   "from": "정비창이 보호권의 발판으로 팔리는 것.",
+   "to": "정비창이 무장한 외부인의 주둔 발판으로 팔리는 것.",
+   "id": "k1-028",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "the maintenance yard will be sold off as a foothold for protection.",
+   "to": "the maintenance yard will be sold off as a garrison foothold for armed outsiders.",
+   "id": "k1-029",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "치료 중립과 봉인 보존",
+   "to": "치료 기록과 봉인 보존",
+   "id": "k1-030",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "both treatment neutrality and intact seals",
+   "to": "both treatment records and intact seals",
+   "id": "k1-031",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "류은비의 치료 중립에",
+   "to": "류은비의 치료 기록에",
+   "id": "k1-032",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "Ryu Eunbi's treatment neutrality",
+   "to": "Ryu Eunbi's treatment records",
+   "id": "k1-033",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "효능을 보호비로 부르는 중개인을",
+   "to": "효능을 몸값 흥정의 밑천으로 삼는 중개인을",
+   "id": "k1-034",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "brokers who call efficacy a \"protection fee\" as thieves",
+   "to": "brokers who use efficacy as a ransom bargaining chip as thieves",
+   "id": "k1-035",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "보호국 창고를",
+   "to": "숨겨 둔 약품 창고를",
+   "id": "k1-036",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "the Protection Bureau warehouse",
+   "to": "the hidden medicine warehouse",
+   "id": "k1-037",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "protectorate warehouses",
+   "to": "hidden medicine warehouses",
+   "id": "k1-038",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json_ko",
+   "from": "조약 체결권",
+   "to": "계약 체결권",
+   "id": "k1-039",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "from": "treaty authority",
+   "to": "contract-signing authority",
+   "id": "k1-040",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json_ko",
+   "from": "지식을 보호비 조항 뒤에 숨기는",
+   "to": "지식을 몸값 조항 뒤에 숨기는",
+   "id": "k1-041",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "from": "hides knowledge behind a protection-fee clause",
+   "to": "hides knowledge behind a ransom clause",
+   "id": "k1-042",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json_ko",
+   "from": "분할 복속의 할당표",
+   "to": "세력별 인질 할당표",
+   "id": "k1-043",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "from": "allocation tables for divided subjugation",
+   "to": "faction-by-faction hostage allocation tables",
+   "id": "k1-044",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "from": "the allocation table for a split submission",
+   "to": "a faction-by-faction hostage allocation table",
+   "id": "k1-045",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json_ko",
+   "from": "호송 순서 중립",
+   "to": "호송 순서 균등",
+   "id": "k1-046",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "from": "Neutral Convoy Order",
+   "to": "Even Convoy Order",
+   "id": "k1-047",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json_ko",
+   "from": "장세화의 의료열차 중립을 마지막 예외로",
+   "to": "장세화의 의료열차 우선 통행 지시를 마지막 예외로",
+   "id": "k1-048",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "Jang Sehwa's medical train neutrality as the last exception",
+   "to": "Jang Sehwa's medical-train priority-passage order as the last exception",
+   "id": "k1-049",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "Jang Sehwa's medical-train neutrality as the last exception",
+   "to": "Jang Sehwa's medical-train priority-passage order as the last exception",
+   "id": "k1-050",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json_ko",
+   "from": "의료열차 중립을 마지막 예외로 남긴 빚",
+   "to": "의료열차 우선 통행 지시를 마지막 예외로 남긴 빚",
+   "id": "k1-051",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "leaving medical-train neutrality as the last exception",
+   "to": "leaving the medical-train priority-passage order as the last exception",
+   "id": "k1-052",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json_ko",
+   "from": "보호권의 물리적 열쇠를 쥔다.",
+   "to": "다리 통행을 열고 닫는 물리적 열쇠를 쥔다.",
+   "id": "k1-053",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "holding the physical key to the right of protection.",
+   "to": "holding the physical key to opening and closing bridge passage.",
+   "id": "k1-054",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json_ko",
+   "from": "보호비 창구로 바꾸라는",
+   "to": "통행료 창구로 바꾸라는",
+   "id": "k1-055",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "into a protection-money window",
+   "to": "into a toll window",
+   "id": "k1-056",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "into a protection-fee counter",
+   "to": "into a toll counter",
+   "id": "k1-057",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json_ko",
+   "from": "빈 보호권이 되는",
+   "to": "빈 껍데기 순찰이 되는",
+   "id": "k1-058",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "an empty protection zone",
+   "to": "a hollow patrol",
+   "id": "k1-059",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "an empty right of protection",
+   "to": "a hollow patrol",
+   "id": "k1-060",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json_ko",
+   "from": "중립 위반 배차 거부",
+   "to": "통행 약속 위반 배차 거부",
+   "id": "k1-061",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "Rejects neutrality-breaking dispatch",
+   "to": "Rejects dispatch that breaks the passage promise",
+   "id": "k1-062",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json_ko",
+   "from": "의료중립을 깨고 보호전쟁을 첫 불씨로 지피는",
+   "to": "의료열차 통행 약속을 깨고 세력 사이 보복 납치의 첫 불씨를 지피는",
+   "id": "k1-063",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "break medical neutrality, and strike the first spark of a protection war.",
+   "to": "break the medical-train passage promise, and strike the first spark of retaliatory abductions between factions.",
+   "id": "k1-064",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "breaking medical neutrality and kindling the first spark of the Protection War.",
+   "to": "breaking the medical-train passage promise and kindling the first spark of retaliatory abductions between factions.",
+   "id": "k1-065",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json_ko",
+   "from": "중립 붕괴의 불씨를",
+   "to": "통행 약속 붕괴의 불씨를",
+   "id": "k1-066",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "the spark of a neutrality collapse",
+   "to": "the spark of a collapsed passage promise",
+   "id": "k1-067",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "진료 경로 중립",
+   "to": "진료 경로 공개",
+   "id": "k1-068",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Neutral care routes",
+   "to": "Open care routes",
+   "id": "k1-069",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "장세화의 중립 칸을",
+   "to": "장세화의 의료 우선 칸을",
+   "id": "k1-070",
+   "expect": 5
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Jang Sehwa's neutral cars",
+   "to": "Jang Sehwa's medical-priority cars",
+   "id": "k1-071",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Jang Sehwa's neutral car",
+   "to": "Jang Sehwa's medical-priority car",
+   "id": "k1-072",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json_ko",
+   "from": "조약 사본이",
+   "to": "공증 사본이",
+   "id": "k1-073",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json",
+   "from": "treaty copies would sell",
+   "to": "notarized copies would sell",
+   "id": "k1-074",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json",
+   "from": "treaty copies are sold",
+   "to": "notarized copies are sold",
+   "id": "k1-075",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json_ko",
+   "from": "장세화의 의료호송 중립을",
+   "to": "장세화의 의료호송 우선 지시를",
+   "id": "k1-076",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "Jang Sehwa's medical convoy neutrality",
+   "to": "Jang Sehwa's medical convoy priority order",
+   "id": "k1-077",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json_ko",
+   "from": "서울역이 보호국의 면죄부가 되는 것.",
+   "to": "서울역이 지연을 눈감아 주는 면죄부가 되는 것.",
+   "id": "k1-078",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "Seoul Station would become the protection state's indulgence.",
+   "to": "Seoul Station would become a stamp that excuses the delay.",
+   "id": "k1-079",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "making Seoul Station a protectorate's absolution.",
+   "to": "making Seoul Station a stamp that excuses the delay.",
+   "id": "k1-080",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json_ko",
+   "from": "장세화의 의료호송 중립을",
+   "to": "장세화의 의료호송 우선 지시를",
+   "id": "k1-081",
+   "expect": 6
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "Jang Sehwa's medical convoy neutrality",
+   "to": "Jang Sehwa's medical convoy priority order",
+   "id": "k1-082",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "Jang Sehwa's medical-escort neutrality",
+   "to": "Jang Sehwa's medical-escort priority order",
+   "id": "k1-083",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json_ko",
+   "from": "공동호송의 공개 증거로 남겨 용산이 보호전쟁의 입구가 되지 않게 한다.",
+   "to": "의료열차 호송의 공개 증거로 남겨 용산이 세력 사이 보복 납치의 입구가 되지 않게 한다.",
+   "id": "k1-084",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "public evidence of the joint escort so that Yongsan does not become the entrance to a protective war.",
+   "to": "public evidence of the medical-train escort so that Yongsan does not become the entrance to retaliatory abductions between factions.",
+   "id": "k1-085",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json_ko",
+   "from": "선로 배차 중재를 세 장의 합의서가 아니라 용산역 단독 시간표로 고정한다.",
+   "to": "선로 배차 중재를 노선마다 따로 받는 세 장의 통행 허가서가 아니라 용산역 단독 시간표로 고정해, 다른 세력 열차도 같은 순서로 서게 한다.",
+   "id": "k1-086",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json",
+   "from": "To fix track dispatch arbitration not as a three-great-state agreement but as a single timetable of Yongsan Station.",
+   "to": "To fix track dispatch arbitration not through three separate per-line passage permits but through a single Yongsan Station timetable, so that trains of other factions also queue in the same order.",
+   "id": "k1-087",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "from": "오해린의 중립시장 정통성에 첫해 증언을 보태고",
+   "to": "오해린의 공개 시세 시장에 첫해 증언을 보태고",
+   "id": "k1-088",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "from": "Add first-year testimony to the legitimacy of Oh Haerin's neutral market",
+   "to": "Add first-year testimony to Oh Haerin's public-price market",
+   "id": "k1-089",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json_ko",
+   "from": "오해린의 중립시장 정통성에 첫해 증언을 보태고",
+   "to": "오해린의 공개 시세 시장에 첫해 증언을 보태고",
+   "id": "k1-090",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json",
+   "from": "Add first-year testimony to the legitimacy of Oh Haerin's neutral market",
+   "to": "Add first-year testimony to Oh Haerin's public-price market",
+   "id": "k1-091",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json_ko",
+   "from": "협약 증언 대조",
+   "to": "합의 증언 대조",
+   "id": "k1-092",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json_ko",
+   "from": "협약의 영구 효력",
+   "to": "합의의 영구 효력",
+   "id": "k1-093",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "호송 열차가 군수품을 실어 중립시장 정통성이 하루 만에 무너지는 것.",
+   "to": "호송 열차가 군수품을 실은 것이 드러나 시장 상인들의 신뢰가 하루 만에 무너지는 것.",
+   "id": "k1-094",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "That a convoy train would carry munitions and the neutral market's legitimacy would fall in one day.",
+   "to": "That a convoy train would be exposed carrying munitions and the merchants' trust in the market would collapse in one day.",
+   "id": "k1-095",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "A convoy train carrying military supplies and the neutral market's legitimacy collapsing in a single day.",
+   "to": "A convoy train exposed carrying military supplies and the merchants' trust in the market collapsing in a single day.",
+   "id": "k1-096",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "공동호송의 실무 뼈대로 키워 다른 세력의 보호비를 시장 자경으로 대체한다.",
+   "to": "상인들이 몫을 내어 꾸리는 시장 자체 호송의 실무 뼈대로 키워, 다른 세력 호위병에게 내는 호송료를 시장 자경으로 대체한다.",
+   "id": "k1-097",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "the working backbone of joint convoys, replacing the other factions' protection fees with market self-defense.",
+   "to": "the working backbone of a market-run convoy funded by merchants' shares, replacing the escort fees paid to other factions' guards with market self-defense.",
+   "id": "k1-098",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "호송을 강행해 노량진의 중립을 시험할 수 있다.",
+   "to": "호송을 강행해 노량진 시장의 자체 호송 원칙을 시험할 수 있다.",
+   "id": "k1-099",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "force a convoy through to test Noryangjin's neutrality.",
+   "to": "force a convoy through to test Noryangjin's rule of market-run convoys.",
+   "id": "k1-100",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "장세화의 공동호송 초안",
+   "to": "장세화의 의료 우선 호송 초안",
+   "id": "k1-101",
+   "expect": 5
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "공동호송 초안을",
+   "to": "의료 우선 호송 초안을",
+   "id": "k1-102",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "Jang Sehwa's joint convoy draft",
+   "to": "Jang Sehwa's medical-priority escort draft",
+   "id": "k1-103",
+   "expect": 5
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "the joint convoy draft",
+   "to": "the medical-priority escort draft",
+   "id": "k1-104",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json_ko",
+   "from": "중립시장의 대면 창구가 된다.",
+   "to": "공개 시세 시장의 대면 창구가 된다.",
+   "id": "k1-105",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json",
+   "from": "the face-to-face counter of the neutral market.",
+   "to": "the face-to-face counter of the public-price market.",
+   "id": "k1-106",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json_ko",
+   "from": "중립시장의 의료 최저선을",
+   "to": "시장의 의료 최저선을",
+   "id": "k1-107",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json",
+   "from": "the neutral market's medical minimum",
+   "to": "the market's medical minimum",
+   "id": "k1-108",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json_ko",
+   "from": "상호호송 조약의 실무로 묶어 청량리가 분할 복속의 하역장이 되지 않게 한다.",
+   "to": "상호호송 규정의 실무로 묶어, 청량리가 세력별로 짐을 갈라 가져가는 하역장이 되지 않게 한다.",
+   "id": "k1-109",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "the Mutual Convoy treaty rather than to cargo owner shares, so that Cheongnyangni does not become a yard of partitioned subjugation.",
+   "to": "the Mutual Convoy rules rather than to cargo owner shares, so that Cheongnyangni does not become a yard where factions carve up the freight.",
+   "id": "k1-110",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "중립 환승의 지속 조건을 다루는 운영자이며",
+   "to": "환승이 끊기지 않는 지속 조건을 다루는 운영자이며",
+   "id": "k1-111",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "He manages the conditions for sustained neutral transfers;",
+   "to": "He manages the conditions that keep transfers running without a break;",
+   "id": "k1-112",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "동북권 안 유일한 국가 수도 신내역(노원) 직영지 보유 근거.",
+   "to": "동북권 안 신내역(노원) 직영지 보유 근거.",
+   "id": "k1-113",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "the directly held land of Sinnae Station (Nowon), the only national capital within the Northeast Area.",
+   "to": "the directly held land of Sinnae Station (Nowon) within the Northeast Area.",
+   "id": "k1-114",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "중립을 심사대로 지키려 함",
+   "to": "의료열차 우선 통행을 심사대로 지키려 함",
+   "id": "k1-115",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "keep neutrality as a screening checkpoint",
+   "to": "keep medical-train priority passage as a screening checkpoint",
+   "id": "k1-116",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "의료열차 중립을 마지막 예외로 남긴 빚",
+   "to": "의료열차 우선 통행 지시를 마지막 예외로 남긴 빚",
+   "id": "k1-117",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "A debt from leaving medical-train neutrality as the last exception",
+   "to": "A debt from leaving the medical-train priority-passage order as the last exception",
+   "id": "k1-118",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "장세화의 중립 칸을",
+   "to": "장세화의 의료 우선 칸을",
+   "id": "k1-119",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "Jang Sehwa's neutral car",
+   "to": "Jang Sehwa's medical-priority car",
+   "id": "k1-120",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "장세화의 의료속보 협약을",
+   "to": "장세화의 의료속보 지침을",
+   "id": "k1-121",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "Jang Sehwa's medical-bulletin accord",
+   "to": "Jang Sehwa's medical-bulletin directive",
+   "id": "k1-122",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "장세화의 의료호송 중립을",
+   "to": "장세화의 의료호송 우선 지시를",
+   "id": "k1-123",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "Jang Sehwa's medical-escort neutrality",
+   "to": "Jang Sehwa's medical-escort priority order",
+   "id": "k1-124",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "공동호송안을",
+   "to": "의료 우선 호송안을",
+   "id": "k1-125",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "the joint escort plan",
+   "to": "the medical-priority escort plan",
+   "id": "k1-126",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "공동호송 초안을",
+   "to": "의료 우선 호송 초안을",
+   "id": "k1-127",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "the joint convoy draft",
+   "to": "the medical-priority escort draft",
+   "id": "k1-128",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "Jang Sehwa's joint escort draft",
+   "to": "Jang Sehwa's medical-priority escort draft",
+   "id": "k1-129",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0298",
+   "col": "json_ko",
+   "from": "중립 호송 약정의 실제 시각표를 자신이 쥐려 하려 한다.",
+   "to": "의료 우선 호송 약정의 실제 시각표를 자신이 쥐려 한다.",
+   "id": "k1-130",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0298",
+   "col": "json",
+   "from": "the real timetable of the neutral escort accord",
+   "to": "the real timetable of the medical-priority escort arrangement",
+   "id": "k1-131",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json_ko",
+   "from": "중립 문구보다",
+   "to": "지시문 문구보다",
+   "id": "k1-132",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "over neutral phrasing",
+   "to": "over the wording of orders",
+   "id": "k1-133",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json_ko",
+   "from": "중립 문구보다",
+   "to": "지시문 문구보다",
+   "id": "k1-134",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": "over neutral wording",
+   "to": "over the wording of orders",
+   "id": "k1-135",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "from": "무장이 의료열차에 타 중립 호송이 빈 문구가 되는 것.",
+   "to": "무장이 의료열차에 타, 의료 우선 호송 지시가 빈 문구가 되는 것.",
+   "id": "k1-136",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "and the neutrality declaration would become empty wording.",
+   "to": "and the medical-priority escort order would become empty wording.",
+   "id": "k1-137",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "turning neutral escort into an empty phrase.",
+   "to": "turning the medical-priority escort into an empty phrase.",
+   "id": "k1-138",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "from": "장세화의 중립을 심사대로 지키려 하고, 배우진의 보호 검색을 거부하며, 고서준의 아차산 통행 협약을 교차 확인한다.",
+   "to": "장세화의 의료열차 우선 통행 지시를 심사대로 지키려 하고, 배우진의 동방사 검색을 거부하며, 고서준의 아차산 통행 허가서를 교차 확인한다.",
+   "id": "k1-139",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "Sought to hold Jang Sehwa's neutrality at the examination stand, refused Bae Woojin's protection searches, and cross-checked Go Seojun's Achasan passage treaty.",
+   "to": "Sought to hold Jang Sehwa's medical-train priority-passage order at the examination stand, refused Bae Woojin's Eastern Command searches, and cross-checked Go Seojun's Achasan passage permit.",
+   "id": "k1-140",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "Seeks to protect Jang Sehwa's neutrality through the inspection post, refuses Bae Ujin's protective searches, and cross-checks Go Seojun's Achasan passage agreement.",
+   "to": "Seeks to protect Jang Sehwa's medical-train priority-passage order through the inspection post, refuses Bae Ujin's Eastern Command searches, and cross-checks Go Seojun's Achasan passage permit.",
+   "id": "k1-141",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "from": "중립 호송 약정 조항으로",
+   "to": "의료 우선 호송 약정 조항으로",
+   "id": "k1-142",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json_ko",
+   "from": "중립 호송 약정 조항으로",
+   "to": "의료 우선 호송 약정 조항으로",
+   "id": "k1-143",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "the neutral escort agreement",
+   "to": "the medical-priority escort arrangement",
+   "id": "k1-144",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "the neutral escort covenant",
+   "to": "the medical-priority escort arrangement",
+   "id": "k1-145",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0303",
+   "col": "json_ko",
+   "from": "중립 호송 약정의 실제 시각표를",
+   "to": "의료 우선 호송 약정의 실제 시각표를",
+   "id": "k1-146",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0303",
+   "col": "json",
+   "from": "the actual timetable of the neutral escort agreement",
+   "to": "the actual timetable of the medical-priority escort arrangement",
+   "id": "k1-147",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json_ko",
+   "from": "교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
+   "to": "교전 한 방으로 의료 우선 호송이 세력 간 전투로 번지는 것.",
+   "id": "k1-148",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "one exchange of fire would turn neutrality into war.",
+   "to": "one exchange of fire would turn the medical-priority escort into a battle between factions.",
+   "id": "k1-149",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "a single exchange of fire turns neutrality into war.",
+   "to": "a single exchange of fire turns the medical-priority escort into a battle between factions.",
+   "id": "k1-150",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json_ko",
+   "from": "교전 한 방으로 중립이 전쟁으로 바뀌는 것.",
+   "to": "교전 한 방으로 의료 우선 호송이 세력 간 전투로 번지는 것.",
+   "id": "k1-151",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "one exchange of fire would turn neutrality into war.",
+   "to": "one exchange of fire would turn the medical-priority escort into a battle between factions.",
+   "id": "k1-152",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "a single exchange of fire turns neutrality into war.",
+   "to": "a single exchange of fire turns the medical-priority escort into a battle between factions.",
+   "id": "k1-153",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json_ko",
+   "from": "중립 호송의 선두 칸을",
+   "to": "의료 우선 호송의 선두 칸을",
+   "id": "k1-154",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "the lead car of the neutral escort",
+   "to": "the lead car of the medical-priority escort",
+   "id": "k1-155",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json_ko",
+   "from": "중립 호송의 외곽 순찰을",
+   "to": "의료 우선 호송의 외곽 순찰을",
+   "id": "k1-156",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "the outer patrol of the neutral escort",
+   "to": "the outer patrol of the medical-priority escort",
+   "id": "k1-157",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json_ko",
+   "from": "배우진의 보호 검색을",
+   "to": "배우진의 동방사 검색을",
+   "id": "k1-158",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "Bae Woojin's protection searches",
+   "to": "Bae Woojin's Eastern Command searches",
+   "id": "k1-159",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "Bae Ujin's protective searches",
+   "to": "Bae Ujin's Eastern Command searches",
+   "id": "k1-160",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json_ko",
+   "from": "장세화의 중립이 내부에서 깨지는 것.",
+   "to": "장세화의 의료열차 우선 통행 지시가 내부에서 깨지는 것.",
+   "id": "k1-161",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json",
+   "from": "break Jang Sehwa's neutrality from within",
+   "to": "break Jang Sehwa's medical-train priority-passage order from within",
+   "id": "k1-162",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json",
+   "from": "breaking Jang Sehwa's neutrality from the inside",
+   "to": "breaking Jang Sehwa's medical-train priority-passage order from the inside",
+   "id": "k1-163",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0311",
+   "col": "json_ko",
+   "from": "장세화의 중립이 내부에서 깨지는 것.",
+   "to": "장세화의 의료열차 우선 통행 지시가 내부에서 깨지는 것.",
+   "id": "k1-164",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0311",
+   "col": "json",
+   "from": "breaking Jang Sehwa's neutrality from within",
+   "to": "breaking Jang Sehwa's medical-train priority-passage order from within",
+   "id": "k1-165",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0313",
+   "col": "json_ko",
+   "from": "장세화의 중립이 내부에서 깨지는 것.",
+   "to": "장세화의 의료열차 우선 통행 지시가 내부에서 깨지는 것.",
+   "id": "k1-166",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0313",
+   "col": "json",
+   "from": "break Jang Sehwa's neutrality from within",
+   "to": "break Jang Sehwa's medical-train priority-passage order from within",
+   "id": "k1-167",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0313",
+   "col": "json",
+   "from": "breaking Jang Sehwa's neutrality from within",
+   "to": "breaking Jang Sehwa's medical-train priority-passage order from within",
+   "id": "k1-168",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json_ko",
+   "from": "복용의 중립시장 시세를",
+   "to": "복용의 시장 시세를",
+   "id": "k1-169",
+   "expect": 5
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "Bok Yong's neutral-market prices",
+   "to": "Bok Yong's market prices",
+   "id": "k1-170",
+   "expect": 5
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json_ko",
+   "from": "북동부 중립시장의 환승 중계를 공개 시세로 묶어",
+   "to": "북동부 시장의 환승 중계를 공개 시세로 묶어",
+   "id": "k1-171",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "the northeastern neutral market",
+   "to": "the northeastern market",
+   "id": "k1-172",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json_ko",
+   "from": "중립시장 하역을 의료 우선으로",
+   "to": "시장 하역을 의료 우선으로",
+   "id": "k1-173",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "unloading at the neutral market back to medical priority",
+   "to": "unloading at the market back to medical priority",
+   "id": "k1-174",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json_ko",
+   "from": "의료열차 후문으로 연결되어 중립 호송이 빈 문구가 되는 것.",
+   "to": "의료열차 후문으로 연결되어 의료 우선 호송이 빈 문구가 되는 것.",
+   "id": "k1-175",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "and the neutrality declaration would become empty wording.",
+   "to": "and the medical-priority escort order would become empty wording.",
+   "id": "k1-176",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "turning neutral escort into an empty phrase.",
+   "to": "turning the medical-priority escort into an empty phrase.",
+   "id": "k1-177",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json_ko",
+   "from": "장세화의 중립을 원판 제목으로 남긴다.",
+   "to": "장세화의 의료열차 우선 통행 지시를 원판 제목으로 남긴다.",
+   "id": "k1-178",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "Jang Sehwa's neutrality as the master plate's title.",
+   "to": "Jang Sehwa's medical-train priority-passage order as the master plate's title.",
+   "id": "k1-179",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "Jang Sehwa's neutrality as the master plate title.",
+   "to": "Jang Sehwa's medical-train priority-passage order as the master plate title.",
+   "id": "k1-180",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json_ko",
+   "from": "대체되어 중립이 내부에서 깨지는 것.",
+   "to": "대체되어 의료 우선 심사가 내부에서 깨지는 것.",
+   "id": "k1-181",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "and neutrality would break from within.",
+   "to": "and the medical-priority screening would break from within.",
+   "id": "k1-182",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "breaking neutrality from within.",
+   "to": "breaking the medical-priority screening from within.",
+   "id": "k1-183",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json_ko",
+   "from": "장세화의 중립 호송 지시를",
+   "to": "장세화의 의료 우선 호송 지시를",
+   "id": "k1-184",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json",
+   "from": "Jang Sehwa's neutral escort directive",
+   "to": "Jang Sehwa's medical-priority escort directive",
+   "id": "k1-185",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json",
+   "from": "Jang Sehwa's neutrality declaration",
+   "to": "Jang Sehwa's medical-priority escort order",
+   "id": "k1-186",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json_ko",
+   "from": "중립 환승의 얼굴로",
+   "to": "누구에게나 열린 환승의 얼굴로",
+   "id": "k1-187",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json",
+   "from": "the face of neutral transfer",
+   "to": "the face of open transfer",
+   "id": "k1-188",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "from": "북동부 중립시장 거점장",
+   "to": "북동부 공개 시세 시장 거점장",
+   "id": "k1-189",
+   "expect": 9
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "Northeast Neutral Market Hub Chief",
+   "to": "Northeast Public-Price Market Hub Chief",
+   "id": "k1-190",
+   "expect": 8
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "Northeast Neutral Market Base Chief",
+   "to": "Northeast Public-Price Market Base Chief",
+   "id": "k1-191",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "from": "직위 인수 기록에는 저울 재점검 공개로 열렸다이 남아 있다.",
+   "to": "직위 인수 기록에는 저울 재점검 공개로 열린 내력이 남아 있다.",
+   "id": "k1-192",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "from": "중립시장을 환승 중계의 공개 시세 거점으로",
+   "to": "이 시장을 환승 중계의 공개 시세 거점으로",
+   "id": "k1-193",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "keep the Neutral Market as a public-price base",
+   "to": "keep this market as a public-price base",
+   "id": "k1-194",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "from": "복용의 중립시장 시세",
+   "to": "복용의 시장 시세",
+   "id": "k1-195",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "Bok Yong's neutral-market prices",
+   "to": "Bok Yong's market prices",
+   "id": "k1-196",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "Bok Yong's neutral market prices",
+   "to": "Bok Yong's market prices",
+   "id": "k1-197",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0312",
+   "col": [
+    "title",
+    "position"
+   ],
+   "exact": true,
+   "from": "Northeast Neutral Market Hub Chief",
+   "to": "Northeast Public-Price Market Hub Chief",
+   "id": "k1-198",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0312",
+   "col": [
+    "title_ko",
+    "position_ko"
+   ],
+   "exact": true,
+   "from": "북동부 중립시장 거점장",
+   "to": "북동부 공개 시세 시장 거점장",
+   "id": "k1-199",
+   "expect": 2
+  },
+  {
+   "file": "110",
+   "key": "bcf5-ba74-cc9c",
+   "col": "json_ko",
+   "from": "북동부 중립시장 거점장",
+   "to": "북동부 공개 시세 시장 거점장",
+   "id": "k1-200",
+   "expect": 1
+  },
+  {
+   "file": "110",
+   "key": "bcf5-ba74-cc9c",
+   "col": "json",
+   "from": "Northeast Neutral Market Base Chief",
+   "to": "Northeast Public-Price Market Base Chief",
+   "id": "k1-201",
+   "expect": 1
+  },
+  {
+   "file": "110",
+   "key": "c7a5-baa9-cc9c-5f35",
+   "col": "json_ko",
+   "from": "가훈의 중립 호송이",
+   "to": "가훈의 의료 우선 호송이",
+   "id": "k1-202",
+   "expect": 1
+  },
+  {
+   "file": "110",
+   "key": "c7a5-baa9-cc9c-5f35",
+   "col": "json",
+   "from": "the house motto's neutral escort",
+   "to": "the house motto's medical-priority escort",
+   "id": "k1-203",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0311",
+   "col": "json",
+   "from": "Jang Sehwa's neutrality would break from within",
+   "to": "Jang Sehwa's medical-train priority-passage order would break from within",
+   "id": "k1-204",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "from": "중립을 심사대로 지키려 함",
+   "to": "의료열차 우선 통행을 심사대로 지키려 함",
+   "id": "k1-205",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "keep neutrality as a screening checkpoint",
+   "to": "keep medical-train priority passage as a screening checkpoint",
+   "id": "k1-206",
+   "expect": 1
+  }
+ ]
+}
