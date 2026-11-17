@@ -1,15 +1,13 @@
 import type { ReactNode } from "react";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ChevronLeft, ExternalLink, FastForward, History, Play, Pause, RotateCcw, RotateCw, Subtitles, Volume2, VolumeX, X } from "lucide-react";
+import { ChevronLeft, ExternalLink, FastForward, History, Play, Pause, RotateCcw, Subtitles, Volume2, VolumeX, X } from "lucide-react";
 import {
   CHOICE, CODA, ENDINGS, PORTRAIT_CREDIT, SCENES, SPEAKERS, WIKI_URL,
   type BgId, type ChoiceId, type SpeakerId, type StoryLine,
 } from "@/data/storyScript";
-import { BUNDLED_CLIPS, clipUrl } from "@/data/narration";
 import { sound } from "@/utils/sound";
 import { EXHIBIT_BY_LINE } from "@/data/historyExhibits";
 import { ExhibitPanel, ExhibitDetail } from "@/components/HistoryExhibit";
-import { speak, stopSpeech, useVoices, type VoiceMode } from "@/utils/speech";
 
 const BASE = import.meta.env.BASE_URL;
 const BG: Record<BgId, { src: string; kb: string }> = {
@@ -43,13 +41,8 @@ export default function VisualNovel() {
   const [muted, setMuted] = useState(false);
   const [subs, setSubs] = useState(true);
   const [log, setLog] = useState(false);
-  const [voiceMode, setVoiceMode] = useState<VoiceMode>("off");
-  const [voiceDone, setVoiceDone] = useState(true);
-  const [replay, setReplay] = useState(0);
   const [showEx, setShowEx] = useState(true);
   const [exOpen, setExOpen] = useState(false);
-  const voices = useVoices();
-  const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const steps = useMemo<Step[]>(() => {
     const s: Step[] = [...BASE_STEPS, { kind: "choice", line: CHOICE.prompt, frame: CHOICE_FRAME }];
@@ -90,32 +83,7 @@ export default function VisualNovel() {
     return () => window.clearInterval(id);
   }, [started, line]);
 
-  // Voice
-  const voiceSource: "bundled" | "synth" | "none" =
-    voiceMode === "off" ? "none" : clipUrl(line.id, voiceMode) ? "bundled" : voices[voiceMode] ? "synth" : "none";
-  const stopVoice = useCallback(() => {
-    stopSpeech();
-    if (audioRef.current) { audioRef.current.pause(); audioRef.current.src = ""; audioRef.current = null; }
-    sound.duck(false);
-  }, []);
-  useEffect(() => {
-    stopVoice();
-    if (!started || muted || voiceSource === "none") { setVoiceDone(true); return; }
-    setVoiceDone(false);
-    let alive = true;
-    const finish = () => { if (!alive) return; sound.duck(false); setVoiceDone(true); };
-    sound.duck(true);
-    if (voiceSource === "bundled") {
-      const a = new Audio(clipUrl(line.id, voiceMode as "ko" | "en")!);
-      audioRef.current = a; a.onended = finish; a.onerror = finish; a.play().catch(finish);
-    } else {
-      const v = voices[voiceMode as "ko" | "en"];
-      if (v) speak(voiceMode === "en" ? line.en : line.ko, v, finish); else finish();
-    }
-    return () => { alive = false; stopVoice(); };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [started, muted, voiceMode, voiceSource, line.id, replay]);
-  useEffect(() => () => { stopVoice(); sound.dispose(); }, [stopVoice]);
+  useEffect(() => () => sound.dispose(), []);
   useEffect(() => { sound.setMuted(muted); }, [muted]);
 
   const next = useCallback(() => {
@@ -133,11 +101,11 @@ export default function VisualNovel() {
 
   // Auto
   useEffect(() => {
-    if (!auto || !started || log || exOpen || step.kind !== "line" || !isDone || !voiceDone || pos >= last) return;
-    const wait = voiceSource !== "none" ? 900 : Math.max(2600, line.ko.length * 75 + (subs ? line.en.length * 30 : 0));
+    if (!auto || !started || log || exOpen || step.kind !== "line" || !isDone || pos >= last) return;
+    const wait = Math.max(2600, line.ko.length * 75 + (subs ? line.en.length * 30 : 0));
     const id = window.setTimeout(() => setPos((p) => p + 1), wait);
     return () => window.clearTimeout(id);
-  }, [auto, started, log, exOpen, step, isDone, voiceDone, pos, last, subs, voiceSource, line]);
+  }, [auto, started, log, exOpen, step, isDone, pos, last, subs, line]);
 
   const keys = useRef({ next, back });
   keys.current = { next, back };
@@ -155,8 +123,6 @@ export default function VisualNovel() {
   }, [started, log, exOpen]);
 
   const begin = () => { sound.start(); sound.setMuted(muted); setStarted(true); };
-  const voiceOk = (m: "ko" | "en") => BUNDLED_CLIPS[m].size > 0 || !!voices[m];
-  const voiceLabel = voiceMode === "off" ? null : muted ? "음소거 · Muted" : voiceSource === "bundled" ? "AI 생성 내레이션 · AI narration" : voiceSource === "synth" ? "브라우저 합성 음성 · Browser speech, not a recording" : "음성 없음 · Voice unavailable";
 
   const cast: SpeakerId[] = step.kind === "choice" ? [] : line.cast ?? [];
   const frame = step.frame;
@@ -176,8 +142,7 @@ export default function VisualNovel() {
       </div>
 
       <div className="relative z-10 flex min-h-[720px] flex-col">
-        <TopBar started={started} subs={subs} setSubs={setSubs} muted={muted} setMuted={setMuted} voiceMode={voiceMode}
-          setVoiceMode={(m) => { setVoiceMode(m); if (!started && m !== "off") begin(); }} koOk={voiceOk("ko")} enOk={voiceOk("en")} openLog={() => setLog(true)} />
+        <TopBar started={started} subs={subs} setSubs={setSubs} muted={muted} setMuted={setMuted} openLog={() => setLog(true)} />
 
         {!started ? <Title onBegin={begin} subs={subs} /> : (
           <>
@@ -201,7 +166,7 @@ export default function VisualNovel() {
 
             {showChoice ? <ChoiceRow onChoose={choose} subs={subs} />
               : showFinale ? <Finale subs={subs} onRestart={restart} onReselect={() => { setChoice(null); setPos(CHOICE_INDEX); }} />
-              : <Stage cast={cast} speaker={line.speaker} speaking={!isDone || !voiceDone} />}
+              : <Stage cast={cast} speaker={line.speaker} speaking={!isDone} />}
 
             {!showChoice && !showFinale && (introFor || exhibit) && (
               <div data-layout="info-strip" className="flex shrink-0 flex-col gap-2 px-3 pb-2 md:px-8 lg:flex-row lg:items-end lg:justify-between">
@@ -218,8 +183,8 @@ export default function VisualNovel() {
             )}
 
             <Dialogue line={line} revealed={revealed} subs={subs} isDone={isDone} onNext={next} onBack={back} canBack={pos > 0}
-              auto={auto} toggleAuto={() => setAuto((v) => !v)} onSkip={skip} voiceLabel={voiceLabel}
-              onReplay={() => setReplay((n) => n + 1)} replayOff={voiceSource === "none" || muted} isChoice={step.kind === "choice"}
+              auto={auto} toggleAuto={() => setAuto((v) => !v)} onSkip={skip}
+              isChoice={step.kind === "choice"}
               progress={(pos + 1) / (choice ? steps.length : steps.length + 4)} />
           </>
         )}
@@ -328,7 +293,7 @@ function Intro({ id, subs }: { id: SpeakerId; subs: boolean }) {
 
 function Dialogue(p: {
   line: StoryLine; revealed: number; subs: boolean; isDone: boolean; onNext: () => void; onBack: () => void; canBack: boolean;
-  auto: boolean; toggleAuto: () => void; onSkip: () => void; voiceLabel: string | null; onReplay: () => void; replayOff: boolean; isChoice: boolean; progress: number;
+  auto: boolean; toggleAuto: () => void; onSkip: () => void; isChoice: boolean; progress: number;
 }) {
   const s = SPEAKERS[p.line.speaker];
   const narr = p.line.speaker === "narrator";
@@ -350,8 +315,6 @@ function Dialogue(p: {
           <Btn onClick={p.onBack} disabled={!p.canBack} label="이전 / Back"><ChevronLeft className="h-4 w-4" /></Btn>
           <Btn onClick={p.toggleAuto} pressed={p.auto} label="자동 진행 / Auto">{p.auto ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}<span>자동</span></Btn>
           <Btn onClick={p.onSkip} label="스킵 / Skip"><FastForward className="h-3.5 w-3.5" /><span>스킵</span></Btn>
-          <Btn onClick={p.onReplay} disabled={p.replayOff} label="다시 듣기 / Replay voice"><RotateCw className="h-3.5 w-3.5" /></Btn>
-          {p.voiceLabel && <span className="ml-1 text-[10px] text-[hsl(var(--ember)/0.85)]">{p.voiceLabel}</span>}
           <div className="ml-auto flex items-center gap-2">
             <div className="h-px w-24 bg-[hsl(var(--frost)/0.2)] md:w-40"><div className="h-px bg-[hsl(var(--ember))] transition-[width] duration-700" style={{ width: `${Math.min(100, p.progress * 100)}%` }} /></div>
             {!p.isChoice && <button type="button" onClick={p.onNext} className="rounded-sm px-3 py-1.5 font-ui text-xs font-semibold text-[hsl(var(--parchment))] hover:bg-[hsl(var(--parchment)/0.1)]">다음 {p.subs && <span className="opacity-60">Next</span>}</button>}
@@ -449,18 +412,11 @@ function Backlog({ steps, subs: sb, onClose, onJump }: { steps: Step[]; subs: bo
   );
 }
 
-function TopBar(p: { started: boolean; subs: boolean; setSubs: (f: (v: boolean) => boolean) => void; muted: boolean; setMuted: (f: (v: boolean) => boolean) => void; voiceMode: VoiceMode; setVoiceMode: (m: VoiceMode) => void; koOk: boolean; enOk: boolean; openLog: () => void }) {
-  const opts: { m: VoiceMode; l: string; ok: boolean }[] = [{ m: "off", l: "OFF", ok: true }, { m: "ko", l: "한", ok: p.koOk }, { m: "en", l: "EN", ok: p.enOk }];
+function TopBar(p: { started: boolean; subs: boolean; setSubs: (f: (v: boolean) => boolean) => void; muted: boolean; setMuted: (f: (v: boolean) => boolean) => void; openLog: () => void }) {
   return (
     <header data-layout="topbar" className="sticky top-0 z-[60] flex shrink-0 items-center gap-2 bg-gradient-to-b from-[hsl(214_40%_3%/0.85)] to-transparent px-4 py-3 md:px-8">
       <p className="font-display text-base font-extrabold text-[hsl(var(--parchment))] md:text-lg">서울<span className="text-[hsl(var(--ember))]">:</span>전국</p>
       <div className="ml-auto flex items-center gap-1 font-ui">
-        <div role="radiogroup" aria-label="음성 / Voice" className="mr-1 flex border border-[hsl(var(--parchment)/0.2)] p-0.5">
-          {opts.map((o) => (
-            <button key={o.m} type="button" role="radio" aria-checked={p.voiceMode === o.m} disabled={!o.ok} onClick={() => p.setVoiceMode(o.m)} title={o.ok ? `음성 ${o.l}` : "이 브라우저에서 사용 불가 / Unavailable"}
-              className={`h-7 min-w-8 px-1.5 font-mono text-[10px] font-bold disabled:opacity-30 ${p.voiceMode === o.m ? "bg-[hsl(var(--parchment))] text-[hsl(214_40%_6%)]" : "text-[hsl(var(--frost))]"}`}>{o.l}</button>
-          ))}
-        </div>
         <Btn onClick={() => p.setSubs((v) => !v)} pressed={p.subs} label="영어 자막 / English subtitles"><Subtitles className="h-4 w-4" /></Btn>
         <Btn onClick={() => p.setMuted((v) => !v)} pressed={p.muted} label="음소거 / Mute">{p.muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}</Btn>
         {p.started && <Btn onClick={p.openLog} label="지난 이야기 / Backlog"><History className="h-4 w-4" /></Btn>}
@@ -495,7 +451,7 @@ function Title({ onBegin, subs: sb }: { onBegin: () => void; subs: boolean }) {
         <span className="h-px w-10 bg-[hsl(var(--ember))] transition-transform duration-500 group-hover:scale-x-150" style={{ transformOrigin: "left" }} />
       </button>
       <p className="rise mt-8 max-w-lg font-ui text-[10px] leading-relaxed text-[hsl(var(--frost)/0.55)]" style={{ animationDelay: "900ms" }}>
-        인물 대사는 공개 인물 기록에 근거한 쇼케이스 창작이며 정본 인용이 아닙니다. 음성은 기본 꺼짐.<br />{PORTRAIT_CREDIT.ko}<br />{PORTRAIT_CREDIT.en}
+        인물 대사는 공개 인물 기록에 근거한 쇼케이스 창작이며 정본 인용이 아닙니다.<br />{PORTRAIT_CREDIT.ko}<br />{PORTRAIT_CREDIT.en}
       </p>
     </main>
   );

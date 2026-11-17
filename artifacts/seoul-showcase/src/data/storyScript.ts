@@ -1,10 +1,9 @@
 /**
  * 서울:전국 — 겨울의 연대기 (Motion Storybook VN) · story script v6 (v4 canon)
  *
- * Every voiced line lives here. Lines written for v6 carry the `v6-` prefix. A few
+ * Every story line lives here. Lines written for v6 carry the `v6-` prefix. A few
  * prologue lines keep their older ids (v3-pro-01, v3-pro-02, v4-pro-03, v3-pro-04)
- * because their text is byte-identical to the recorded clips; the closing
- * open-wiki lines keep their `v4-open-` ids for the same reason.
+ * and the closing open-wiki lines keep their `v4-open-` ids.
  *
  * Premise (docs/CANON-BIBLE.md v4): 2126 winter, about a century after the Great
  * Blackout. The First AI answered that humanity must shrink and brought the winter;
@@ -19,7 +18,6 @@
  */
 
 export type SpeakerId = "narrator" | "iyen" | "k1007" | "k1003" | "k1009" | "k1008" | "k998";
-export type Gender = "female" | "male" | "neutral";
 export type BgId = "surface" | "namsan" | "tunnel" | "archive" | "railyard" | "platform" | "suseo" | "granary";
 export type ChoiceId = "government" | "free" | "arc";
 
@@ -28,9 +26,6 @@ export interface Speaker {
   personId: string | null;
   characterId: string | null;
   name: { ko: string; en: string };
-  gender: Gender;
-  /** Voice direction for TTS generation. */
-  voice: string;
   title?: { ko: string; en: string };
   clan?: string;
   rank?: string;
@@ -40,40 +35,34 @@ export interface Speaker {
 }
 
 export const SPEAKERS: Record<SpeakerId, Speaker> = {
-  narrator: { id: "narrator", personId: null, characterId: null, name: { ko: "연대기", en: "Chronicle" }, gender: "neutral", voice: "calm low storyteller, unhurried", tint: "hsl(38 40% 78%)" },
+  narrator: { id: "narrator", personId: null, characterId: null, name: { ko: "연대기", en: "Chronicle" }, tint: "hsl(38 40% 78%)" },
   iyen: {
-    id: "iyen", personId: "person-1004", characterId: "K1004", name: { ko: "이연", en: "Iyen" }, gender: "female",
-    voice: "25-year-old woman, quick, warm, a little teasing, precise",
+    id: "iyen", personId: "person-1004", characterId: "K1004", name: { ko: "이연", en: "Iyen" },
     title: { ko: "수행 전령 · 조재표 일행", en: "Attendant courier, Jo Jaepyo's party" }, rank: "미등록", state: "무소속",
     portrait: "portraits/person-1004.webp", tint: "hsl(14 70% 62%)",
   },
   k1007: {
-    id: "k1007", personId: "person-1007", characterId: "K1007", name: { ko: "김연규", en: "Kim Yeon-gyu" }, gender: "male",
-    voice: "30-year-old man, measured, formal, the weight of an office held for life",
+    id: "k1007", personId: "person-1007", characterId: "K1007", name: { ko: "김연규", en: "Kim Yeon-gyu" },
     title: { ko: "정부 대통령", en: "President of the Government" }, clan: "경주 김씨", rank: "대통령", state: "정부",
     portrait: "portraits/person-1007.webp", tint: "hsl(214 55% 66%)",
   },
   k1003: {
-    id: "k1003", personId: "person-1003", characterId: "K1003", name: { ko: "조재표", en: "Jo Jaepyo" }, gender: "male",
-    voice: "37-year-old man, dry, calculating field leader, terse",
+    id: "k1003", personId: "person-1003", characterId: "K1003", name: { ko: "조재표", en: "Jo Jaepyo" },
     title: { ko: "귀환 일행 지휘자", en: "Leader of the return party" }, clan: "창녕 조씨", rank: "일반 시민", state: "무소속",
     portrait: "portraits/person-1003.webp", tint: "hsl(152 40% 58%)",
   },
   k1009: {
-    id: "k1009", personId: "person-1009", characterId: "K1009", name: { ko: "신종목", en: "Shin Jong-mok" }, gender: "male",
-    voice: "39-year-old man, quiet, tired, steady radio-operator voice",
+    id: "k1009", personId: "person-1009", characterId: "K1009", name: { ko: "신종목", en: "Shin Jong-mok" },
     title: { ko: "귀환망 현장 계약자 · 호출부호 백야", en: "Return-network field contractor, callsign Baekya" }, clan: "고령 신씨", rank: "품계 없음", state: "정부",
     portrait: "portraits/person-1009.webp", tint: "hsl(36 75% 62%)",
   },
   k1008: {
-    id: "k1008", personId: "person-1008", characterId: "K1008", name: { ko: "민웅기", en: "Min Woong-gi" }, gender: "male",
-    voice: "32-year-old man, patient, explains costs plainly, technician's calm",
+    id: "k1008", personId: "person-1008", characterId: "K1008", name: { ko: "민웅기", en: "Min Woong-gi" },
     title: { ko: "이일섭의 측근 · 통신 정비·배분 담당", en: "Aide to I Ilseop, comms repair and distribution" }, clan: "여흥 민씨", rank: "측근", state: "자유도시",
     portrait: "portraits/person-1008.webp", tint: "hsl(186 45% 60%)",
   },
   k998: {
-    id: "k998", personId: "person-0998", characterId: "K998", name: { ko: "이일섭", en: "I Ilseop" }, gender: "male",
-    voice: "34-year-old man, cautious, slow to decide, careful with numbers, quietly firm",
+    id: "k998", personId: "person-0998", characterId: "K998", name: { ko: "이일섭", en: "I Ilseop" },
     title: { ko: "자유도시 이사회장 · 신경 연결 의술 가문 후계", en: "Chair of the Board of the Free Cities, heir of a neural-link medical house" }, clan: "전의 이씨", rank: "이사회장", state: "자유도시",
     portrait: "portraits/person-0998.webp", tint: "hsl(48 60% 62%)",
   },
@@ -246,13 +235,3 @@ export const CODA: StoryLine[] = [
 
 export const WIKI_URL = "https://sss.linalab.io/wiki";
 
-/** Flat export for narration generation: every voiced line with speaker + gender. */
-export function allVoicedLines() {
-  const rows: { id: string; speaker: SpeakerId; gender: Gender; voice: string; ko: string; en: string }[] = [];
-  const push = (l: StoryLine) => rows.push({ id: l.id, speaker: l.speaker, gender: SPEAKERS[l.speaker].gender, voice: SPEAKERS[l.speaker].voice, ko: l.ko, en: l.en });
-  SCENES.forEach((s) => s.lines.forEach(push));
-  push(CHOICE.prompt);
-  Object.values(ENDINGS).forEach((e) => e.lines.forEach(push));
-  CODA.forEach(push);
-  return rows;
-}

@@ -19,7 +19,7 @@ npm run serve
 Production files are written to `dist/public` and are addressed under the Vite
 base path, which defaults to `/wiki/seoul-showcase/`. Serve that directory at
 `/wiki/seoul-showcase/` (the wiki host mounts it there). All bundled runtime
-assets (`scenes/`, `portraits/`, `history/`, `narration/`, `favicon.svg`) resolve
+assets (`scenes/`, `portraits/`, `history/`, `favicon.svg`) resolve
 through `import.meta.env.BASE_URL`, so no asset URL is tied to a fixed prefix.
 
 Environment variables (all optional):
