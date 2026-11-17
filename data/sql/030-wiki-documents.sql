@@ -24096,11 +24096,11 @@ INSERT INTO wiki_document (slug, title, title_ko, category_id, sort, body_md, bo
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Han Jae-mok · HC01 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human''s safety first
+- Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K001 custodian, HC01 steward_house, K004 work_peer
 
-At the depot maintenance bench, Hannuri (Nuri) logged its entry in the HC01 duty log.
+At the maintenance bench of the sluice, Hannuri (Nuri) logged its entry in the HC01 duty log.
 
 Han Jae-mok checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -24496,11 +24496,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer I Seo-dam · HC09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human''s safety first
+- Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K002 custodian, HC09 steward_house, K117 work_peer
 
-In the depot machine room, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
+In the machine room of the sluice, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
 
 I Seo-dam checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -24537,7 +24537,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
-## F03 · Vent Filtration (Yeogwa) (Yeogwa)
+## F03 · Water Filtration (Yeogwa) (Yeogwa)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -24550,7 +24550,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K058 custodian, HC11 steward_house, K131 work_peer
 
-In the filter corridor of the Yongsan Line, Vent Filtration (Yeogwa) logged its entry in the HC11 duty log.
+In the filter corridor of the Yongsan Line, Water Filtration (Yeogwa) logged its entry in the HC11 duty log.
 
 Jeong Harin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -24837,7 +24837,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
-## F15 · Power Metering (Gyeryang) (Gyeryang)
+## F15 · Water-Supply Metering (Gyeryang) (Gyeryang)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -24850,7 +24850,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K374 custodian, HP09 steward_house, K218 work_peer
 
-In the filter corridor of Myeongdong, Power Metering (Gyeryang) logged its entry in the HP09 duty log.
+In the filter corridor of Myeongdong, Water-Supply Metering (Gyeryang) logged its entry in the HP09 duty log.
 
 Eun Taeho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -24896,11 +24896,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Gim Tae-un · HP03 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human''s safety first
+- Emergent goal: continuous operation of the sluice sector and the responsible human''s safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K003 custodian, HP03 steward_house, K232 work_peer
 
-On the depot turnback line, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
+On the turnback line of the sluice, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
 
 Gim Tae-un checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -25237,7 +25237,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
-## V15 · Inspection Cart (Jeomgeom) (Jeomgeom)
+## V15 · Sluice-Gate Cart (Sumun) (Sumun)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -25250,7 +25250,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K375 custodian, HC07 steward_house, K333 work_peer
 
-In the inspection pit of Myeongdong, Inspection Cart (Jeomgeom) logged its entry in the HC07 duty log.
+In the inspection pit of Myeongdong, Sluice-Gate Cart (Sumun) logged its entry in the HC07 duty log.
 
 Ra Jinu checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day''s share only.
 
@@ -25299,11 +25299,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 에너지·부품: 교체형 배터리·마모 부품 할당제, 무한 에너지 없음
 - 정비: 한재목 주정비·HC01 감사 입회
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
-- 창발 목표: 담당 정비 구역 연속 가동과 담당 인간 안전 우선
+- 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K001 custodian, HC01 steward_house, K004 work_peer
 
-차량기지 정비 벤치에서 한누리(누리)이 HC01 당직 로그에 출입을 남긴다.
+수문 정비 벤치에서 한누리(누리)이 HC01 당직 로그에 출입을 남긴다.
 
 한재목은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -25699,11 +25699,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 에너지·부품: 교체형 배터리·마모 부품 할당제, 무한 에너지 없음
 - 정비: 이서담 주정비·HC09 감사 입회
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
-- 창발 목표: 담당 정비 구역 연속 가동과 담당 인간 안전 우선
+- 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K002 custodian, HC09 steward_house, K117 work_peer
 
-차량기지 기계실에서 냉각탑지기(탑지)이 HC09 당직 로그에 출입을 남긴다.
+수문 기계실에서 냉각탑지기(탑지)이 HC09 당직 로그에 출입을 남긴다.
 
 이서담은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -25740,7 +25740,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
-## F03 · 환기여과 (여과)
+## F03 · 정수여과 (여과)
 
 - 급: F
 - 기체: 시설 고정 랙·센서 버스·현장 단말 연결
@@ -25753,7 +25753,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K058 custodian, HC11 steward_house, K131 work_peer
 
-용산선 필터 복도에서 환기여과(여과)이 HC11 당직 로그에 출입을 남긴다.
+용산선 필터 복도에서 정수여과(여과)이 HC11 당직 로그에 출입을 남긴다.
 
 정하린은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -26040,7 +26040,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
-## F15 · 배전계량 (계량)
+## F15 · 급수계량 (계량)
 
 - 급: F
 - 기체: 시설 고정 랙·센서 버스·현장 단말 연결
@@ -26053,7 +26053,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K374 custodian, HP09 steward_house, K218 work_peer
 
-명동 필터 복도에서 배전계량(계량)이 HP09 당직 로그에 출입을 남긴다.
+명동 필터 복도에서 급수계량(계량)이 HP09 당직 로그에 출입을 남긴다.
 
 은태호은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -26099,11 +26099,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 에너지·부품: 교체형 배터리·마모 부품 할당제, 무한 에너지 없음
 - 정비: 김태운 주정비·HP03 감사 입회
 - 망·안전: 구역 망만 허용, 교차 시설 루트 기본 차단, 비상 시 읽기 전용
-- 창발 목표: 담당 정비 구역 연속 가동과 담당 인간 안전 우선
+- 창발 목표: 수문 구역 연속 가동과 담당 인간 안전 우선
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K003 custodian, HP03 steward_house, K232 work_peer
 
-차량기지 회차선에서 새벽호송(새벽)이 HP03 당직 로그에 출입을 남긴다.
+수문 회차선에서 새벽호송(새벽)이 HP03 당직 로그에 출입을 남긴다.
 
 김태운은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 
@@ -26440,7 +26440,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
-## V15 · 점검카트 (점검)
+## V15 · 수문카트 (수문)
 
 - 급: V
 - 기체: 차체/대차 플랫폼·배터리 슬롯·차선 센서
@@ -26453,7 +26453,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - 일탈·회복: 일탈 시 오프라인 격리→스냅샷 롤백→인간 승인 후 부분 재연결
 - 관계: K375 custodian, HC07 steward_house, K333 work_peer
 
-명동 점검 피트에서 점검카트(점검)이 HC07 당직 로그에 출입을 남긴다.
+명동 점검 피트에서 수문카트(수문)이 HC07 당직 로그에 출입을 남긴다.
 
 라진우은 배터리 잔량과 보관 봉인을 함께 확인하고, 기억 포크는 당일 분만 동기화한다.
 

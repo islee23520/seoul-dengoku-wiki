@@ -20,11 +20,11 @@ Synthetic humanoids are very rare. The only machine body in Seoul's public recor
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Han Jae-mok · HC01 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human's safety first
+- Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K001 custodian, HC01 steward_house, K004 work_peer
 
-At the depot maintenance bench, Hannuri (Nuri) logged its entry in the HC01 duty log.
+At the maintenance bench of the sluice, Hannuri (Nuri) logged its entry in the HC01 duty log.
 
 Han Jae-mok checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
@@ -420,11 +420,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer I Seo-dam · HC09 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human's safety first
+- Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K002 custodian, HC09 steward_house, K117 work_peer
 
-In the depot machine room, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
+In the machine room of the sluice, Cooling-Tower Keeper (Tapji) logged its entry in the HC09 duty log.
 
 I Seo-dam checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
@@ -461,7 +461,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
-## F03 · Vent Filtration (Yeogwa) (Yeogwa)
+## F03 · Water Filtration (Yeogwa) (Yeogwa)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -474,7 +474,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K058 custodian, HC11 steward_house, K131 work_peer
 
-In the filter corridor of the Yongsan Line, Vent Filtration (Yeogwa) logged its entry in the HC11 duty log.
+In the filter corridor of the Yongsan Line, Water Filtration (Yeogwa) logged its entry in the HC11 duty log.
 
 Jeong Harin checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
@@ -761,7 +761,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
-## F15 · Power Metering (Gyeryang) (Gyeryang)
+## F15 · Water-Supply Metering (Gyeryang) (Gyeryang)
 
 - Class: F
 - Body platform: facility-fixed rack · sensor bus · field-terminal link
@@ -774,7 +774,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K374 custodian, HP09 steward_house, K218 work_peer
 
-In the filter corridor of Myeongdong, Power Metering (Gyeryang) logged its entry in the HP09 duty log.
+In the filter corridor of Myeongdong, Water-Supply Metering (Gyeryang) logged its entry in the HP09 duty log.
 
 Eun Taeho checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
@@ -820,11 +820,11 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Energy and parts: replaceable batteries · rationed wear parts · no infinite energy
 - Maintenance: chief maintainer Gim Tae-un · HP03 audit in attendance
 - Network and safety: sector network only · cross-facility routes blocked by default · read-only in emergencies
-- Emergent goal: continuous operation of the assigned maintenance sector and the responsible human's safety first
+- Emergent goal: continuous operation of the sluice sector and the responsible human's safety first
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K003 custodian, HP03 steward_house, K232 work_peer
 
-On the depot turnback line, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
+On the turnback line of the sluice, Dawn Convoy (Saebyeok) logged its entry in the HP03 duty log.
 
 Gim Tae-un checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
@@ -1161,7 +1161,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 <!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
-## V15 · Inspection Cart (Jeomgeom) (Jeomgeom)
+## V15 · Sluice-Gate Cart (Sumun) (Sumun)
 
 - Class: V
 - Body platform: chassis/bogie platform · battery slots · lane sensors
@@ -1174,7 +1174,7 @@ Even when its parts ran out, it did not seize control of other facilities.
 - Divergence and recovery: on deviance: offline isolation → snapshot rollback → partial reconnection after human approval
 - Relations: K375 custodian, HC07 steward_house, K333 work_peer
 
-In the inspection pit of Myeongdong, Inspection Cart (Jeomgeom) logged its entry in the HC07 duty log.
+In the inspection pit of Myeongdong, Sluice-Gate Cart (Sumun) logged its entry in the HC07 duty log.
 
 Ra Jinu checked the remaining battery charge and the custody seal together, and the memory fork was synced for that day's share only.
 
