@@ -1,0 +1,2925 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v2-1",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0415",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|stress)$",
+   "from": "서고와 조합원 직접투표 광장 전력을 하나의 공개 배전망으로 묶어 계약 감사의 품질 주권을 지킨다.",
+   "to": "서고와 직접투표 광장의 비상발전 연료·출력 일지를 한 권으로 묶어, 누가 전력을 얼마나 받았는지 공개 기록으로 남긴다.",
+   "expect": 1
+  },
+  {
+   "id": "v2-2",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0415",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|stress)$",
+   "from": "연료가 바닥난 밤에 함이 수동으로만 열리고, 그 공백을 동부 외부 통제이 메우는 것.",
+   "to": "연료가 바닥난 밤에 일지 봉인이 뜯기고 배전 기록이 다시 쓰이는 것.",
+   "expect": 1
+  },
+  {
+   "id": "v2-3",
+   "file": "090",
+   "col": "json",
+   "key": "person-0415",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|stress)$",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Binds the archive's and the direct-vote square's emergency generator fuel and output logs into one book, so the public record shows who received how much power.",
+   "expect": 1
+  },
+  {
+   "id": "v2-4",
+   "file": "090",
+   "col": "json",
+   "key": "person-0415",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|stress)$",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That on a night when the fuel runs out, the log seal is torn open and the distribution record is rewritten.",
+   "expect": 1
+  },
+  {
+   "id": "v2-5",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0419",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|stress)$",
+   "from": "물 공급 최저선과 계약 종료 조건을 공개 증언으로 남겨 조합원 지지와 군사 개입 근거가 한 장에서 섞이지 않게 한다.",
+   "to": "수리 인수 확인서에 적힌 인수 날짜와 종료 조건을 공개 증언으로 남겨, 조합원 지지와 경비 교대 사정이 한 장에서 섞이지 않게 한다.",
+   "expect": 1
+  },
+  {
+   "id": "v2-6",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0419",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|stress)$",
+   "from": "자신의 증언이 배우진의 군사 개입 근거로만 잘리는 것.",
+   "to": "자신의 증언이 경비 교대 근거로만 잘려 쓰이는 것.",
+   "expect": 1
+  },
+  {
+   "id": "v2-7",
+   "file": "090",
+   "col": "json",
+   "key": "person-0419",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|stress)$",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Leaves the handover dates and termination conditions written in the repair handover confirmation as public testimony, so that members' support and guard-shift circumstances are not mixed on a single sheet.",
+   "expect": 1
+  },
+  {
+   "id": "v2-8",
+   "file": "090",
+   "col": "json",
+   "key": "person-0419",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|stress)$",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That their testimony is excerpted and used only as grounds for a guard shift.",
+   "expect": 1
+  },
+  {
+   "id": "v2-9",
+   "file": "090",
+   "col": "json",
+   "key": "person-0401",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.description$",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Elevates the audit of the external-negotiation proposal's implementation to the Bishop's audit authority, cutting off Amsa's and Yeouisin's one-sided interpretation.",
+   "expect": 1
+  },
+  {
+   "id": "v2-10",
+   "file": "090",
+   "col": "json",
+   "key": "person-0577",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.stress$",
+   "from": "That if the copying assistant duty stood empty, copies of the station ledger would break off and food and fuel counts would pass on unverified.",
+   "to": "That the copies and the approved vote totals will fall out of step.",
+   "expect": 2
+  },
+  {
+   "id": "v2-11",
+   "file": "090",
+   "col": "json",
+   "key": "person-0577",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Compared posted and copied vote totals by community and checked personal voting records, handing the comparison over with duty keys.",
+   "to": "After the bureau chief's sign-off, compared posted and copied vote totals by clan and checked personal voting records, handing the comparison over with duty keys.",
+   "expect": 1
+  },
+  {
+   "id": "v2-12",
+   "file": "090",
+   "col": "json",
+   "key": "person-0056",
+   "from": "Rank: Member",
+   "to": "Rank: Guild Member",
+   "expect": 1
+  },
+  {
+   "id": "v2-13",
+   "file": "090",
+   "col": "json",
+   "key": "person-0059",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-14",
+   "file": "090",
+   "col": "json",
+   "key": "person-0060",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-15",
+   "file": "090",
+   "col": "json",
+   "key": "person-0065",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-16",
+   "file": "090",
+   "col": "json",
+   "key": "person-0066",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-17",
+   "file": "090",
+   "col": "json",
+   "key": "person-0080",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-18",
+   "file": "090",
+   "col": "json",
+   "key": "person-0083",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-19",
+   "file": "090",
+   "col": "json",
+   "key": "person-0089",
+   "from": "Rank: Elder",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-20",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0089",
+   "from": "품계: 원로",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-21",
+   "file": "090",
+   "col": "json",
+   "key": "person-0091",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-22",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0091",
+   "from": "품계 교사",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-23",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0091",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-24",
+   "file": "090",
+   "col": "json",
+   "key": "person-0094",
+   "from": "Rank: Elder",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-25",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0094",
+   "from": "품계 원로",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-26",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0094",
+   "from": "품계: 원로",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-27",
+   "file": "090",
+   "col": "json",
+   "key": "person-0095",
+   "from": "Rank: Gwonsa",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-28",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0095",
+   "from": "품계: 신도",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-29",
+   "file": "090",
+   "col": "json",
+   "key": "person-0096",
+   "from": "Rank: Exhorter",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-30",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0096",
+   "from": "품계 신도",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-31",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0096",
+   "from": "품계: 신도",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-32",
+   "file": "090",
+   "col": "json",
+   "key": "person-0098",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-33",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0098",
+   "from": "품계 교사",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-34",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0098",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-35",
+   "file": "090",
+   "col": "json",
+   "key": "person-0100",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-36",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0100",
+   "from": "품계 교사",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-37",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0100",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-38",
+   "file": "090",
+   "col": "json",
+   "key": "person-0104",
+   "from": "Rank: Believer",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-39",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0104",
+   "from": "품계: 관리인",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-40",
+   "file": "090",
+   "col": "json",
+   "key": "person-0105",
+   "from": "Rank: Believer",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-41",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0105",
+   "from": "품계 관리인",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-42",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0105",
+   "from": "품계: 관리인",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-43",
+   "file": "090",
+   "col": "json",
+   "key": "person-0106",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-44",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0106",
+   "from": "품계 교사",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-45",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0106",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-46",
+   "file": "090",
+   "col": "json",
+   "key": "person-0107",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-47",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0107",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-48",
+   "file": "090",
+   "col": "json",
+   "key": "person-0108",
+   "from": "Rank: Believer",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-49",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0108",
+   "from": "품계 관리인",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-50",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0108",
+   "from": "품계: 관리인",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-51",
+   "file": "090",
+   "col": "json",
+   "key": "person-0109",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-52",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0109",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-53",
+   "file": "090",
+   "col": "json",
+   "key": "person-0111",
+   "from": "Rank: Instructor",
+   "to": "Rank: Teacher",
+   "expect": 1
+  },
+  {
+   "id": "v2-54",
+   "file": "090",
+   "col": "json",
+   "key": "person-0112",
+   "from": "Rank: Instructor",
+   "to": "Rank: Teacher",
+   "expect": 1
+  },
+  {
+   "id": "v2-55",
+   "file": "090",
+   "col": "json",
+   "key": "person-0113",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-56",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0113",
+   "from": "품계 교사",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-57",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0113",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-58",
+   "file": "090",
+   "col": "json",
+   "key": "person-0115",
+   "from": "Rank: Instructor",
+   "to": "Rank: Teacher",
+   "expect": 3
+  },
+  {
+   "id": "v2-59",
+   "file": "090",
+   "col": "json",
+   "key": "person-0196",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-60",
+   "file": "090",
+   "col": "json",
+   "key": "person-0196",
+   "from": "Rank Instructor",
+   "to": "Rank Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-61",
+   "file": "090",
+   "col": "json",
+   "key": "person-0196",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-62",
+   "file": "090",
+   "col": "json",
+   "key": "person-0197",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-63",
+   "file": "090",
+   "col": "json",
+   "key": "person-0197",
+   "from": "Rank Gyodo",
+   "to": "Rank Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-64",
+   "file": "090",
+   "col": "json",
+   "key": "person-0197",
+   "from": "Rank: Gyodo",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-65",
+   "file": "090",
+   "col": "json",
+   "key": "person-0198",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-66",
+   "file": "090",
+   "col": "json",
+   "key": "person-0198",
+   "from": "Rank Gyodo",
+   "to": "Rank Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-67",
+   "file": "090",
+   "col": "json",
+   "key": "person-0198",
+   "from": "Rank: Gyodo",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-68",
+   "file": "090",
+   "col": "json",
+   "key": "person-0199",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-69",
+   "file": "090",
+   "col": "json",
+   "key": "person-0199",
+   "from": "Rank Gyodo",
+   "to": "Rank Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-70",
+   "file": "090",
+   "col": "json",
+   "key": "person-0199",
+   "from": "Rank: Gyodo",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-71",
+   "file": "090",
+   "col": "json",
+   "key": "person-0201",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-72",
+   "file": "090",
+   "col": "json",
+   "key": "person-0201",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-73",
+   "file": "090",
+   "col": "json",
+   "key": "person-0208",
+   "from": "Rank: temple student",
+   "to": "Rank: Engineer",
+   "expect": 1
+  },
+  {
+   "id": "v2-74",
+   "file": "090",
+   "col": "json",
+   "key": "person-0208",
+   "from": "Rank: Knight",
+   "to": "Rank: Engineer",
+   "expect": 3
+  },
+  {
+   "id": "v2-75",
+   "file": "090",
+   "col": "json",
+   "key": "person-0209",
+   "from": "Rank: temple student",
+   "to": "Rank: Engineer",
+   "expect": 1
+  },
+  {
+   "id": "v2-76",
+   "file": "090",
+   "col": "json",
+   "key": "person-0209",
+   "from": "Rank: Knight",
+   "to": "Rank: Engineer",
+   "expect": 3
+  },
+  {
+   "id": "v2-77",
+   "file": "090",
+   "col": "json",
+   "key": "person-0211",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-78",
+   "file": "090",
+   "col": "json",
+   "key": "person-0211",
+   "from": "Rank: Preceptor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-79",
+   "file": "090",
+   "col": "json",
+   "key": "person-0212",
+   "from": "Rank: temple student",
+   "to": "Rank: Engineer",
+   "expect": 1
+  },
+  {
+   "id": "v2-80",
+   "file": "090",
+   "col": "json",
+   "key": "person-0212",
+   "from": "Rank: Technician",
+   "to": "Rank: Engineer",
+   "expect": 3
+  },
+  {
+   "id": "v2-81",
+   "file": "090",
+   "col": "json",
+   "key": "person-0213",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-82",
+   "file": "090",
+   "col": "json",
+   "key": "person-0213",
+   "from": "Rank Gyodo",
+   "to": "Rank Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-83",
+   "file": "090",
+   "col": "json",
+   "key": "person-0213",
+   "from": "Rank: Gyodo",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-84",
+   "file": "090",
+   "col": "json",
+   "key": "person-0214",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-85",
+   "file": "090",
+   "col": "json",
+   "key": "person-0214",
+   "from": "Rank Gyodo",
+   "to": "Rank Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-86",
+   "file": "090",
+   "col": "json",
+   "key": "person-0214",
+   "from": "Rank: Gyodo",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-87",
+   "file": "090",
+   "col": "json",
+   "key": "person-0215",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-88",
+   "file": "090",
+   "col": "json",
+   "key": "person-0215",
+   "from": "Rank Gyodo",
+   "to": "Rank Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-89",
+   "file": "090",
+   "col": "json",
+   "key": "person-0215",
+   "from": "Rank: Gyodo",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-90",
+   "file": "090",
+   "col": "json",
+   "key": "person-0217",
+   "from": "Rank Gyodo",
+   "to": "Rank Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-91",
+   "file": "090",
+   "col": "json",
+   "key": "person-0217",
+   "from": "Rank: Gyodo",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-92",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-93",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "Rank: Gyodo",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-94",
+   "file": "090",
+   "col": "json",
+   "key": "person-0219",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-95",
+   "file": "090",
+   "col": "json",
+   "key": "person-0273",
+   "from": "Rank: Staff Member",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-96",
+   "file": "090",
+   "col": "json",
+   "key": "person-0274",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-97",
+   "file": "090",
+   "col": "json",
+   "key": "person-0274",
+   "from": "Rank: Staff Member",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-98",
+   "file": "090",
+   "col": "json",
+   "key": "person-0275",
+   "from": "Rank: Staff Member",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-99",
+   "file": "090",
+   "col": "json",
+   "key": "person-0276",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-100",
+   "file": "090",
+   "col": "json",
+   "key": "person-0276",
+   "from": "Rank: Staff Member",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-101",
+   "file": "090",
+   "col": "json",
+   "key": "person-0277",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-102",
+   "file": "090",
+   "col": "json",
+   "key": "person-0278",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-103",
+   "file": "090",
+   "col": "json",
+   "key": "person-0279",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-104",
+   "file": "090",
+   "col": "json",
+   "key": "person-0279",
+   "from": "Rank: Staff",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-105",
+   "file": "090",
+   "col": "json",
+   "key": "person-0280",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-106",
+   "file": "090",
+   "col": "json",
+   "key": "person-0280",
+   "from": "Rank: Staff",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-107",
+   "file": "090",
+   "col": "json",
+   "key": "person-0281",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-108",
+   "file": "090",
+   "col": "json",
+   "key": "person-0281",
+   "from": "Rank: Staff",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-109",
+   "file": "090",
+   "col": "json",
+   "key": "person-0282",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-110",
+   "file": "090",
+   "col": "json",
+   "key": "person-0283",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-111",
+   "file": "090",
+   "col": "json",
+   "key": "person-0284",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-112",
+   "file": "090",
+   "col": "json",
+   "key": "person-0284",
+   "from": "Rank: Staff",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-113",
+   "file": "090",
+   "col": "json",
+   "key": "person-0286",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Stationmaster",
+   "expect": 2
+  },
+  {
+   "id": "v2-114",
+   "file": "090",
+   "col": "json",
+   "key": "person-0286",
+   "from": "Rank: Staff",
+   "to": "Rank: Stationmaster",
+   "expect": 3
+  },
+  {
+   "id": "v2-115",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0286",
+   "from": "품계 사원",
+   "to": "품계 역장",
+   "expect": 3
+  },
+  {
+   "id": "v2-116",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0286",
+   "from": "품계: 사원",
+   "to": "품계: 역장",
+   "expect": 1
+  },
+  {
+   "id": "v2-117",
+   "file": "090",
+   "col": "json",
+   "key": "person-0287",
+   "from": "Rank: Staff Member",
+   "to": "Rank: Stationmaster",
+   "expect": 1
+  },
+  {
+   "id": "v2-118",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0287",
+   "from": "품계: 사원",
+   "to": "품계: 역장",
+   "expect": 1
+  },
+  {
+   "id": "v2-119",
+   "file": "090",
+   "col": "json",
+   "key": "person-0290",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-120",
+   "file": "090",
+   "col": "json",
+   "key": "person-0290",
+   "from": "Rank: Staff Member",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-121",
+   "file": "090",
+   "col": "json",
+   "key": "person-0291",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-122",
+   "file": "090",
+   "col": "json",
+   "key": "person-0292",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-123",
+   "file": "090",
+   "col": "json",
+   "key": "person-0293",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-124",
+   "file": "090",
+   "col": "json",
+   "key": "person-0293",
+   "from": "Rank: Staff",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-125",
+   "file": "090",
+   "col": "json",
+   "key": "person-0294",
+   "from": "Rank: Staff",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-126",
+   "file": "090",
+   "col": "json",
+   "key": "person-0295",
+   "from": "Rank: assistant manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-127",
+   "file": "090",
+   "col": "json",
+   "key": "person-0398",
+   "from": "Rank: Congregant",
+   "to": "Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v2-128",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0407",
+   "from": "공동체 역할: 조합원",
+   "to": "공동체 역할: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-129",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0412",
+   "from": "공동체 역할: 지부장",
+   "to": "공동체 역할: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-130",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0413",
+   "from": "공동체 역할: 지부장",
+   "to": "공동체 역할: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-131",
+   "file": "090",
+   "col": "json",
+   "key": "person-0415",
+   "from": "Community Role: Branch Chief",
+   "to": "Community Role: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-132",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0415",
+   "from": "공동체 역할: 지부장",
+   "to": "공동체 역할: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-133",
+   "file": "090",
+   "col": "json",
+   "key": "person-0441",
+   "from": "Rank: Member",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-134",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0441",
+   "from": "품계 조합원",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-135",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0441",
+   "from": "품계: 조합원",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-136",
+   "file": "090",
+   "col": "json",
+   "key": "person-0443",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-137",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0443",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-138",
+   "file": "090",
+   "col": "json",
+   "key": "person-0457",
+   "from": "Rank: Guild Member",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-139",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0457",
+   "from": "품계 조합원",
+   "to": "품계 일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-140",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0457",
+   "from": "품계: 조합원",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-141",
+   "file": "090",
+   "col": "json",
+   "key": "person-0459",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-142",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0459",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-143",
+   "file": "090",
+   "col": "json",
+   "key": "person-0507",
+   "from": "Rank: Teacher",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-144",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0507",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-145",
+   "file": "090",
+   "col": "json",
+   "key": "person-0555",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-146",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0555",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-147",
+   "file": "090",
+   "col": "json",
+   "key": "person-0570",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-148",
+   "file": "090",
+   "col": "json",
+   "key": "person-0603",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-149",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0603",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-150",
+   "file": "090",
+   "col": "json",
+   "key": "person-0651",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-151",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0651",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-152",
+   "file": "090",
+   "col": "json",
+   "key": "person-0699",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-153",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0699",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-154",
+   "file": "090",
+   "col": "json",
+   "key": "person-0719",
+   "from": "Rank: lay instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-155",
+   "file": "090",
+   "col": "json",
+   "key": "person-0719",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-156",
+   "file": "090",
+   "col": "json",
+   "key": "person-0731",
+   "from": "Rank: Instructor",
+   "to": "Rank: Teacher",
+   "expect": 1
+  },
+  {
+   "id": "v2-157",
+   "file": "090",
+   "col": "json",
+   "key": "person-0747",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-158",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0747",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-159",
+   "file": "090",
+   "col": "json",
+   "key": "person-0762",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-160",
+   "file": "090",
+   "col": "json",
+   "key": "person-0762",
+   "from": "Rank: Daeri",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-161",
+   "file": "090",
+   "col": "json",
+   "key": "person-0762",
+   "from": "Rank Daeri",
+   "to": "Rank Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-162",
+   "file": "090",
+   "col": "json",
+   "key": "person-0763",
+   "from": "Rank: Instructor",
+   "to": "Rank: Teacher",
+   "expect": 1
+  },
+  {
+   "id": "v2-163",
+   "file": "090",
+   "col": "json",
+   "key": "person-0779",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-164",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0779",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-165",
+   "file": "090",
+   "col": "json",
+   "key": "person-0795",
+   "from": "Rank: Instructor",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-166",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0795",
+   "from": "품계: 교사",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-167",
+   "file": "090",
+   "col": "json",
+   "key": "person-0810",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-168",
+   "file": "090",
+   "col": "json",
+   "key": "person-0906",
+   "from": "Rank: Deputy",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "v2-169",
+   "file": "090",
+   "col": "json",
+   "key": "person-0955",
+   "from": "Rank: Instructor",
+   "to": "Rank: Teacher",
+   "expect": 1
+  },
+  {
+   "id": "v2-170",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0412",
+   "exact": true,
+   "from": "Branch Chief",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-171",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0412",
+   "exact": true,
+   "from": "지부장",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-172",
+   "file": "090",
+   "col": "json",
+   "key": "person-0412",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "Branch Chief",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-173",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0412",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "지부장",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-174",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0413",
+   "exact": true,
+   "from": "Branch Chief",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-175",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0413",
+   "exact": true,
+   "from": "지부장",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-176",
+   "file": "090",
+   "col": "json",
+   "key": "person-0413",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "Branch Chief",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-177",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0413",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "지부장",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-178",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0415",
+   "exact": true,
+   "from": "Branch Chief",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-179",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0415",
+   "exact": true,
+   "from": "지부장",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-180",
+   "file": "090",
+   "col": "json",
+   "key": "person-0415",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "Branch Chief",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-181",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0415",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "지부장",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-182",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0089",
+   "exact": true,
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-183",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0089",
+   "exact": true,
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-184",
+   "file": "090",
+   "col": "json",
+   "key": "person-0089",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-185",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0089",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-186",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0094",
+   "exact": true,
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-187",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0094",
+   "exact": true,
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-188",
+   "file": "090",
+   "col": "json",
+   "key": "person-0094",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-189",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0094",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-190",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0095",
+   "exact": true,
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-191",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0095",
+   "exact": true,
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-192",
+   "file": "090",
+   "col": "json",
+   "key": "person-0095",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-193",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0095",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-194",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0096",
+   "exact": true,
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-195",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0096",
+   "exact": true,
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-196",
+   "file": "090",
+   "col": "json",
+   "key": "person-0096",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-197",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0096",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-198",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0104",
+   "exact": true,
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-199",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0104",
+   "exact": true,
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-200",
+   "file": "090",
+   "col": "json",
+   "key": "person-0104",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-201",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0104",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-202",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0105",
+   "exact": true,
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-203",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0105",
+   "exact": true,
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-204",
+   "file": "090",
+   "col": "json",
+   "key": "person-0105",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-205",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0105",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-206",
+   "file": "050",
+   "col": "rank",
+   "key": "person-0108",
+   "exact": true,
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 1
+  },
+  {
+   "id": "v2-207",
+   "file": "050",
+   "col": "rank_ko",
+   "key": "person-0108",
+   "exact": true,
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "v2-208",
+   "file": "090",
+   "col": "json",
+   "key": "person-0108",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "None",
+   "to": "Ordinary Citizen",
+   "expect": 2
+  },
+  {
+   "id": "v2-209",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0108",
+   "exact": true,
+   "pathRe": "^\\.(rank|fields\\.[^.]+)$",
+   "from": "없음",
+   "to": "일반 시민",
+   "expect": 2
+  },
+  {
+   "id": "v2-210",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.4\\.name$",
+   "from": "대치4동",
+   "to": "화곡1동",
+   "expect": 1
+  },
+  {
+   "id": "v2-211",
+   "file": "090",
+   "col": "json",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.4\\.name$",
+   "from": "Daechi 4-dong",
+   "to": "Hwagok 1-dong",
+   "expect": 1
+  },
+  {
+   "id": "v2-212",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.11\\.name$",
+   "from": "대치1동",
+   "to": "가양1동",
+   "expect": 1
+  },
+  {
+   "id": "v2-213",
+   "file": "090",
+   "col": "json",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.11\\.name$",
+   "from": "Daechi 1-dong",
+   "to": "Gayang 1-dong",
+   "expect": 1
+  },
+  {
+   "id": "v2-214",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.17\\.name$",
+   "from": "고덕1동",
+   "to": "방화1동",
+   "expect": 1
+  },
+  {
+   "id": "v2-215",
+   "file": "090",
+   "col": "json",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.17\\.name$",
+   "from": "Godeok 1-dong",
+   "to": "Banghwa 1-dong",
+   "expect": 1
+  },
+  {
+   "id": "v2-216",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.18\\.name$",
+   "from": "고덕2동",
+   "to": "방화2동",
+   "expect": 1
+  },
+  {
+   "id": "v2-217",
+   "file": "090",
+   "col": "json",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.18\\.name$",
+   "from": "Godeok 2-dong",
+   "to": "Banghwa 2-dong",
+   "expect": 1
+  },
+  {
+   "id": "v2-218",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.19\\.name$",
+   "from": "고덕1동",
+   "to": "방화3동",
+   "expect": 1
+  },
+  {
+   "id": "v2-219",
+   "file": "090",
+   "col": "json",
+   "key": "person-0061",
+   "exact": true,
+   "rawPathRe": "^\\.confirmedHoldings\\.0\\.adminRefs\\.19\\.name$",
+   "from": "Godeok 1-dong",
+   "to": "Banghwa 3-dong",
+   "expect": 1
+  },
+  {
+   "id": "v2-220",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0061",
+   "from": "직함은 염창·등촌·화곡 점검 게시 당번.",
+   "to": "직함은 대치·고덕 주민대표.",
+   "expect": 2
+  },
+  {
+   "id": "v2-221",
+   "file": "090",
+   "col": "json",
+   "key": "person-0061",
+   "from": "Title: Yeomchang-Deungchon-Hwagok Check-Notice Duty.",
+   "to": "Title: Daechi-Godeok Residents' Representative.",
+   "expect": 2
+  },
+  {
+   "id": "v2-222",
+   "file": "110",
+   "col": "json_ko",
+   "key": "ae40-ac15-b989-91d1",
+   "from": "마곡·방화 주민대표",
+   "to": "대치·고덕 주민대표",
+   "expect": 1
+  },
+  {
+   "id": "v2-223",
+   "file": "110",
+   "col": "json",
+   "key": "ae40-ac15-b989-91d1",
+   "from": "Magok-Banghwa residents' representative",
+   "to": "Daechi-Godeok residents' representative",
+   "expect": 1
+  },
+  {
+   "id": "v2-224",
+   "file": "090",
+   "col": "json_ko",
+   "from": "청량리 선창",
+   "to": "청량리역 화물 승강장",
+   "expect": 8
+  },
+  {
+   "id": "v2-225",
+   "file": "090",
+   "col": "json",
+   "from": "Cheongnyangni Wharf",
+   "to": "Cheongnyangni Station freight platform",
+   "expect": 3
+  },
+  {
+   "id": "v2-226",
+   "file": "090",
+   "col": "json",
+   "from": "Cheongnyangni wharf",
+   "to": "Cheongnyangni Station freight platform",
+   "expect": 3
+  },
+  {
+   "id": "v2-227",
+   "file": "090",
+   "col": "json",
+   "from": "Cheongnyangni pier",
+   "to": "Cheongnyangni Station freight platform",
+   "expect": 2
+  },
+  {
+   "id": "v2-228",
+   "file": "110",
+   "col": "json_ko",
+   "from": "청량리 선창",
+   "to": "청량리역 화물 승강장",
+   "expect": 18
+  },
+  {
+   "id": "v2-229",
+   "file": "110",
+   "col": "json",
+   "from": "Cheongnyangni Wharf",
+   "to": "Cheongnyangni Station freight platform",
+   "expect": 2
+  },
+  {
+   "id": "v2-230",
+   "file": "110",
+   "col": "json",
+   "from": "Cheongnyangni wharf",
+   "to": "Cheongnyangni Station freight platform",
+   "expect": 15
+  },
+  {
+   "id": "v2-231",
+   "file": "110",
+   "col": "json",
+   "from": "Cheongnyangni pier",
+   "to": "Cheongnyangni Station freight platform",
+   "expect": 1
+  },
+  {
+   "id": "v2-232",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0208",
+   "from": "부두 밀선",
+   "to": "승강장 뒷골목 밀매 좌판",
+   "expect": 4
+  },
+  {
+   "id": "v2-233",
+   "file": "090",
+   "col": "json",
+   "key": "person-0208",
+   "from": "quay smuggler boats",
+   "to": "back-alley platform stalls",
+   "expect": 2
+  },
+  {
+   "id": "v2-234",
+   "file": "090",
+   "col": "json",
+   "key": "person-0208",
+   "from": "smuggling boats at the pier",
+   "to": "smuggling stalls in the back alleys",
+   "expect": 2
+  },
+  {
+   "id": "v2-235",
+   "file": "090",
+   "col": "json",
+   "key": "person-0208",
+   "from": "publishes sailing order",
+   "to": "publishes departure order",
+   "expect": 1
+  },
+  {
+   "id": "v2-236",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0211",
+   "from": "부두 난로",
+   "to": "승강장 난로",
+   "expect": 2
+  },
+  {
+   "id": "v2-237",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0211",
+   "from": "선주 칸",
+   "to": "화주 칸",
+   "expect": 2
+  },
+  {
+   "id": "v2-238",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0211",
+   "from": "부두 옆 진료",
+   "to": "승강장 옆 진료",
+   "expect": 3
+  },
+  {
+   "id": "v2-239",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0211",
+   "from": "부두 진료",
+   "to": "승강장 진료",
+   "expect": 2
+  },
+  {
+   "id": "v2-240",
+   "file": "090",
+   "col": "json",
+   "key": "person-0211",
+   "from": "quay stoves",
+   "to": "platform stoves",
+   "expect": 1
+  },
+  {
+   "id": "v2-241",
+   "file": "090",
+   "col": "json",
+   "key": "person-0211",
+   "from": "shipowner columns",
+   "to": "cargo-owner columns",
+   "expect": 1
+  },
+  {
+   "id": "v2-242",
+   "file": "090",
+   "col": "json",
+   "key": "person-0211",
+   "from": "care beside the quay",
+   "to": "care beside the platform",
+   "expect": 1
+  },
+  {
+   "id": "v2-243",
+   "file": "090",
+   "col": "json",
+   "key": "person-0211",
+   "from": "a clinic beside the pier",
+   "to": "a clinic beside the platform",
+   "expect": 2
+  },
+  {
+   "id": "v2-244",
+   "file": "090",
+   "col": "json",
+   "key": "person-0211",
+   "from": "keep the pier clinic running",
+   "to": "keep the platform clinic running",
+   "expect": 2
+  },
+  {
+   "id": "v2-245",
+   "file": "090",
+   "col": "json",
+   "key": "person-0211",
+   "from": "When the pier taps run dry, switches the treatment order to family units, and takes the suggestion to skip only the shipowners' bays for efficiency as an insult.",
+   "to": "When the platform stoves go out and the cold spreads, groups the treatment order by family to warm each in one place, and takes the suggestion to skip only the cargo owners' bays for efficiency as an insult.",
+   "expect": 1
+  },
+  {
+   "id": "v2-246",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0215",
+   "from": "부두 밧줄 소리",
+   "to": "승강장 화물 끈 소리",
+   "expect": 2
+  },
+  {
+   "id": "v2-247",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0215",
+   "from": "부두 그늘",
+   "to": "승강장 지붕 그늘",
+   "expect": 3
+  },
+  {
+   "id": "v2-248",
+   "file": "090",
+   "col": "json",
+   "key": "person-0215",
+   "from": "quay rope sounds",
+   "to": "platform cargo-strap sounds",
+   "expect": 1
+  },
+  {
+   "id": "v2-249",
+   "file": "090",
+   "col": "json",
+   "key": "person-0215",
+   "from": "quay shade",
+   "to": "platform roof shade",
+   "expect": 1
+  },
+  {
+   "id": "v2-250",
+   "file": "090",
+   "col": "json",
+   "key": "person-0215",
+   "from": "shade of the pier",
+   "to": "shade of the platform roof",
+   "expect": 2
+  },
+  {
+   "id": "v2-251",
+   "file": "090",
+   "col": "json",
+   "key": "person-0215",
+   "from": "sound of dock ropes",
+   "to": "sound of freight straps",
+   "expect": 1
+  },
+  {
+   "id": "v2-252",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0218",
+   "from": "회의 부두 사용",
+   "to": "회의 승강장 사용",
+   "expect": 3
+  },
+  {
+   "id": "v2-253",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0218",
+   "from": "분할 복속의 부두",
+   "to": "분할 복속의 하역장",
+   "expect": 2
+  },
+  {
+   "id": "v2-254",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0218",
+   "from": "서울 안 한강 하역",
+   "to": "서울 안 철도 하역",
+   "expect": 4
+  },
+  {
+   "id": "v2-255",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0218",
+   "from": "출항 전",
+   "to": "출발 전",
+   "expect": 2
+  },
+  {
+   "id": "v2-256",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0218",
+   "from": "출항 잔량",
+   "to": "출발 잔량",
+   "expect": 9
+  },
+  {
+   "id": "v2-257",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0218",
+   "from": "선단과",
+   "to": "호송열차와",
+   "expect": 4
+  },
+  {
+   "id": "v2-258",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0218",
+   "from": "선주",
+   "to": "화주",
+   "expect": 22
+  },
+  {
+   "id": "v2-259",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "council quay use",
+   "to": "council platform use",
+   "expect": 1
+  },
+  {
+   "id": "v2-260",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "Council dock privileges",
+   "to": "Council platform privileges",
+   "expect": 2
+  },
+  {
+   "id": "v2-261",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "a dock of partitioned subjugation",
+   "to": "a yard of partitioned subjugation",
+   "expect": 2
+  },
+  {
+   "id": "v2-262",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "after unloading and food handovers on the Han River within Seoul",
+   "to": "after unloading and food handovers by rail within Seoul",
+   "expect": 2
+  },
+  {
+   "id": "v2-263",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "Han River unloading",
+   "to": "rail unloading",
+   "expect": 2
+  },
+  {
+   "id": "v2-264",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "destroy the fleet",
+   "to": "destroy the convoy train",
+   "expect": 4
+  },
+  {
+   "id": "v2-265",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "Stopping sailing on hidden reserves",
+   "to": "Stopping departures on hidden reserves",
+   "expect": 1
+  },
+  {
+   "id": "v2-266",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "Shipowner",
+   "to": "Cargo Owner",
+   "expect": 10
+  },
+  {
+   "id": "v2-267",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "shipowners",
+   "to": "cargo owners",
+   "expect": 4
+  },
+  {
+   "id": "v2-268",
+   "file": "090",
+   "col": "json",
+   "key": "person-0218",
+   "from": "shipowner",
+   "to": "cargo owner",
+   "expect": 7
+  },
+  {
+   "id": "v2-269",
+   "file": "050",
+   "col": "title",
+   "key": "person-0218",
+   "exact": true,
+   "from": "Council Food Convoy Shipowner",
+   "to": "Council Food Convoy Cargo Owner",
+   "expect": 1
+  },
+  {
+   "id": "v2-270",
+   "file": "050",
+   "col": "position",
+   "key": "person-0218",
+   "exact": true,
+   "from": "Council Food Convoy Shipowner",
+   "to": "Council Food Convoy Cargo Owner",
+   "expect": 1
+  },
+  {
+   "id": "v2-271",
+   "file": "050",
+   "col": "title_ko",
+   "key": "person-0218",
+   "exact": true,
+   "from": "협의 식량 호송 선주",
+   "to": "협의 식량 호송 화주",
+   "expect": 1
+  },
+  {
+   "id": "v2-272",
+   "file": "050",
+   "col": "position_ko",
+   "key": "person-0218",
+   "exact": true,
+   "from": "협의 식량 호송 선주",
+   "to": "협의 식량 호송 화주",
+   "expect": 1
+  },
+  {
+   "id": "v2-273",
+   "file": "110",
+   "col": "json_ko",
+   "key": "cd94-cd94-acc4",
+   "from": "협의 식량 호송 선주",
+   "to": "협의 식량 호송 화주",
+   "expect": 1
+  },
+  {
+   "id": "v2-274",
+   "file": "110",
+   "col": "json",
+   "key": "cd94-cd94-acc4",
+   "from": "Negotiated Food Convoy Shipowner",
+   "to": "Negotiated Food Convoy Cargo Owner",
+   "expect": 1
+  },
+  {
+   "id": "v2-275",
+   "file": "090",
+   "col": "json",
+   "key": "person-0036",
+   "from": "abandoned amid muddy water and dust",
+   "to": "abandoned in cold and dust",
+   "expect": 1
+  },
+  {
+   "id": "v2-276",
+   "file": "090",
+   "col": "json",
+   "key": "person-0112",
+   "from": "through her valve signature on the Muddy Water Night",
+   "to": "through her maintenance signature on the night a shutter failed to close",
+   "expect": 1
+  },
+  {
+   "id": "v2-277",
+   "file": "090",
+   "col": "json",
+   "key": "person-0130",
+   "from": "Livelihood: Water sampling and vibration surveys under the bridge",
+   "to": "Livelihood: Bridge Underside Crack and Vibration Survey",
+   "expect": 1
+  },
+  {
+   "id": "v2-278",
+   "file": "090",
+   "col": "json",
+   "key": "person-0181",
+   "from": "Livelihood: Abandoned-line water sampling and rail condition surveying",
+   "to": "Livelihood: Abandoned Line Rail and Sleeper Condition Survey",
+   "expect": 1
+  },
+  {
+   "id": "v2-279",
+   "file": "090",
+   "col": "json",
+   "key": "person-0201",
+   "from": "Han River water intake and ice-making power being cut off at the same time, turning the ice ledger into scraps",
+   "to": "Exhaust heat leaking from the ice makers to the surface draws outside machines, forcing a shutdown and turning the ice ledger into scraps",
+   "expect": 1
+  },
+  {
+   "id": "v2-280",
+   "file": "090",
+   "col": "json",
+   "key": "person-0342",
+   "from": "During the summer of muddy water and the week the counterfeit drugs spread",
+   "to": "During the week when the winter blackout and counterfeit drugs spread",
+   "expect": 1
+  },
+  {
+   "id": "v2-281",
+   "file": "090",
+   "col": "json",
+   "key": "person-0342",
+   "from": "Jeong Hojun's public water-quality and medicinal-herb inspection",
+   "to": "Jeong Hojun's public counterfeit-drug appraisal",
+   "expect": 1
+  },
+  {
+   "id": "v2-282",
+   "file": "090",
+   "col": "json",
+   "key": "person-0360",
+   "from": "recorded water-main damage as a hostile act",
+   "to": "recorded the under-bridge vent pipe damage as a hostile act",
+   "expect": 1
+  },
+  {
+   "id": "v2-283",
+   "file": "090",
+   "col": "json",
+   "key": "person-0452",
+   "from": "after the water-quality and efficacy records arrive",
+   "to": "only after the temperature and medicinal-efficacy records arrive",
+   "expect": 1
+  },
+  {
+   "id": "v2-284",
+   "file": "090",
+   "col": "json",
+   "key": "person-0500",
+   "from": "before the water quality and drug efficacy records arrive",
+   "to": "before the temperature and medicinal-efficacy records arrive",
+   "expect": 1
+  },
+  {
+   "id": "v2-285",
+   "file": "090",
+   "col": "json",
+   "key": "person-0548",
+   "from": "the water quality and drug efficacy records to arrive",
+   "to": "the temperature and medicinal-efficacy records to arrive",
+   "expect": 1
+  },
+  {
+   "id": "v2-286",
+   "file": "090",
+   "col": "json",
+   "key": "person-0596",
+   "from": "before the water-quality and drug-efficacy records are in",
+   "to": "before the temperature and efficacy records are in",
+   "expect": 1
+  },
+  {
+   "id": "v2-287",
+   "file": "090",
+   "col": "json_ko",
+   "from": "교주의 명으로 임하준이 오씨 집안의 일을 섭정으로 맡았다.",
+   "to": "임하준이 오씨 집안의 펌프 정비를 도맡았다.",
+   "expect": 2
+  },
+  {
+   "id": "v2-288",
+   "file": "110",
+   "col": "json_ko",
+   "from": "교주의 명으로 임하준이 그 일을 섭정으로 맡았다.",
+   "to": "임하준이 오씨 집안의 펌프 정비를 도맡았다.",
+   "expect": 3
+  },
+  {
+   "id": "v2-289",
+   "file": "090",
+   "col": "json_ko",
+   "from": "오씨 집안의 일을 섭정으로 맡았던 사람이다.",
+   "to": "오씨 집안의 펌프 정비를 도맡았던 사람이다.",
+   "expect": 2
+  },
+  {
+   "id": "v2-290",
+   "file": "090",
+   "col": "json_ko",
+   "from": "섭정으로 오씨 집안의 일을 맡았던 임하준은",
+   "to": "오씨 집안의 펌프 정비를 도맡았던 임하준은",
+   "expect": 1
+  },
+  {
+   "id": "v2-291",
+   "file": "090",
+   "col": "json_ko",
+   "from": "섭정으로 집안 업무를 맡았고 펌프 규격을",
+   "to": "오씨 집안의 펌프 정비를 맡았고 펌프 규격을",
+   "expect": 1
+  },
+  {
+   "id": "v2-292",
+   "file": "090",
+   "col": "json_ko",
+   "from": "임초원에게 기술을 가르쳤으나 섭정 후계권을 주지는 않았다.",
+   "to": "임초원에게 기술을 가르쳤으나 교육을 마치지는 못했다.",
+   "expect": 1
+  },
+  {
+   "id": "v2-293",
+   "file": "090",
+   "col": "json_ko",
+   "from": "2126년 교주의 명으로 임하준의 섭정을 이어 취임",
+   "to": "임하준이 실종된 뒤 삼성역 역장으로 그가 남긴 펌프 정비 기록을 확인",
+   "expect": 2
+  },
+  {
+   "id": "v2-294",
+   "file": "090",
+   "col": "json_ko",
+   "from": "오경재와 기술 동맹을 맺되 섭정 후계를 주장하지 않는다.",
+   "to": "오경재와 기술 동맹을 맺되 오씨 집안의 일에는 나서지 않는다.",
+   "expect": 1
+  },
+  {
+   "id": "v2-295",
+   "file": "090",
+   "col": "json_ko",
+   "from": "양부에게 펌프 정비를 배웠지만 섭정 후계가 되지는 않았다.",
+   "to": "양부에게 펌프 정비를 배웠지만 오씨 집안의 일에는 나서지 않았다.",
+   "expect": 1
+  },
+  {
+   "id": "v2-296",
+   "file": "090",
+   "col": "json_ko",
+   "from": "임하준에게 배운 것은 섭정 후계가 아니라 펌프 정비 기술이었다.",
+   "to": "임하준에게 배운 것은 오씨 집안의 일이 아니라 펌프 정비 기술이었다.",
+   "expect": 2
+  },
+  {
+   "id": "v2-297",
+   "file": "110",
+   "col": "json_ko",
+   "from": "임하준에게 배운 것은 섭정 후계가 아니라 펌프 정비 기술이었다.",
+   "to": "임하준에게 배운 것은 오씨 집안의 일이 아니라 펌프 정비 기술이었다.",
+   "expect": 3
+  },
+  {
+   "id": "v2-298",
+   "file": "090",
+   "col": "json_ko",
+   "from": "2126년 오경재가 교주의 명으로 임하준의 일을 이어받았다.",
+   "to": "2126년 오경재는 삼성역 역장으로 일하며 임하준이 남긴 펌프 정비 기록을 확인했다.",
+   "expect": 2
+  },
+  {
+   "id": "v2-299",
+   "file": "110",
+   "col": "json_ko",
+   "from": "2126년 오경재가 교주의 명으로 임하준의 일을 이어받았다.",
+   "to": "2126년 오경재는 삼성역 역장으로 일하며 임하준이 남긴 펌프 정비 기록을 확인했다.",
+   "expect": 3
+  },
+  {
+   "id": "v2-300",
+   "file": "090",
+   "col": "json_ko",
+   "from": "섭정 후계 청구를 전 대통령 지휘로 심사",
+   "to": "임하준이 남긴 사본 함 인계 기록을 전 대통령 지휘로 심사",
+   "expect": 2
+  },
+  {
+   "id": "v2-301",
+   "file": "090",
+   "col": "json_ko",
+   "from": "섭정 후계 청구를 심사",
+   "to": "사본 함 인계 기록을 심사",
+   "expect": 2
+  },
+  {
+   "id": "v2-302",
+   "file": "090",
+   "col": "json",
+   "from": "By the Hierophant's order, Im Hajun took over the O clan's affairs as regent.",
+   "to": "Im Hajun took charge of the O family's pump maintenance.",
+   "expect": 2
+  },
+  {
+   "id": "v2-303",
+   "file": "110",
+   "col": "json",
+   "from": "By the Hierophant's order, Im Hajun took that work over as regent.",
+   "to": "Im Hajun took charge of the O family's pump maintenance.",
+   "expect": 3
+  },
+  {
+   "id": "v2-304",
+   "file": "090",
+   "col": "json",
+   "from": "He was formerly regent for the O clan's house.",
+   "to": "He formerly took charge of the O family's pump maintenance.",
+   "expect": 2
+  },
+  {
+   "id": "v2-305",
+   "file": "090",
+   "col": "json",
+   "from": "Im Hajun, who sat as regent for the O clan's house, disappeared in winter 2125.",
+   "to": "Im Hajun, who had taken charge of the O family's pump maintenance, disappeared in winter 2125.",
+   "expect": 1
+  },
+  {
+   "id": "v2-306",
+   "file": "090",
+   "col": "json",
+   "from": "He handled the house's affairs as regent and learned pump standards",
+   "to": "He took charge of the O family's pump maintenance and learned pump standards",
+   "expect": 1
+  },
+  {
+   "id": "v2-307",
+   "file": "090",
+   "col": "json",
+   "from": "Taught Im Chowon maintenance without granting succession to the regency.",
+   "to": "Taught Im Chowon maintenance without finishing the instruction.",
+   "expect": 1
+  },
+  {
+   "id": "v2-308",
+   "file": "090",
+   "col": "json",
+   "from": "Took office in 2126 by the Hierophant's order, taking over Im Hajun's regency",
+   "to": "After Im Hajun's disappearance, checks the pump-maintenance records he left, as Stationmaster of Samseong Station",
+   "expect": 2
+  },
+  {
+   "id": "v2-309",
+   "file": "090",
+   "col": "json",
+   "from": "Works with O Gyeongjae technically without claiming his chair.",
+   "to": "Works with O Gyeongjae technically without interfering in the O family's affairs.",
+   "expect": 1
+  },
+  {
+   "id": "v2-310",
+   "file": "090",
+   "col": "json",
+   "from": "He learned pump maintenance from his adoptive father without becoming the regent's successor.",
+   "to": "He learned pump maintenance from his adoptive father but stayed out of the O family's affairs.",
+   "expect": 1
+  },
+  {
+   "id": "v2-311",
+   "file": "090",
+   "col": "json",
+   "from": "What was learned from Im Hajun was not succession to the regency but pump maintenance technology.",
+   "to": "What was learned from Im Hajun was pump maintenance technology, not a share in the O family's affairs.",
+   "expect": 1
+  },
+  {
+   "id": "v2-312",
+   "file": "110",
+   "col": "json",
+   "from": "What was learned from Im Hajun was not succession to the regency but pump maintenance technology.",
+   "to": "What was learned from Im Hajun was pump maintenance technology, not a share in the O family's affairs.",
+   "expect": 3
+  },
+  {
+   "id": "v2-313",
+   "file": "090",
+   "col": "json",
+   "from": "What he learned from Im Hajun was not succession to the regency but pump maintenance skills.",
+   "to": "What he learned from Im Hajun was pump maintenance skills, not a share in the O family's affairs.",
+   "expect": 1
+  },
+  {
+   "id": "v2-314",
+   "file": "090",
+   "col": "json",
+   "from": "In 2126, O Gyeongjae took over Im Hajun's work by the Hierophant's order.",
+   "to": "In 2126, O Gyeongjae, as Stationmaster of Samseong Station, checked the pump-maintenance records Im Hajun left behind.",
+   "expect": 2
+  },
+  {
+   "id": "v2-315",
+   "file": "110",
+   "col": "json",
+   "from": "In 2126, O Gyeongjae took over the work of Im Hajun by the Hierophant's order.",
+   "to": "In 2126, O Gyeongjae, as Stationmaster of Samseong Station, checked the pump-maintenance records Im Hajun left behind.",
+   "expect": 3
+  },
+  {
+   "id": "v2-316",
+   "file": "090",
+   "col": "json",
+   "from": "Reviews the regency succession petition under the Former President's command",
+   "to": "Reviews the handover record of the copy box Im Hajun left, under the Former President's command",
+   "expect": 2
+  },
+  {
+   "id": "v2-317",
+   "file": "090",
+   "col": "json",
+   "from": "Examined the regency succession petition",
+   "to": "Examined the handover record of the copy box",
+   "expect": 2
+  }
+ ]
+}

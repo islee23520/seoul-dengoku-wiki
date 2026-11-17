@@ -1,0 +1,45 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v2c-1",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동체 역할은 지부장이며 직무는",
+   "to": "직무는",
+   "expect": 2
+  },
+  {
+   "id": "v2c-2",
+   "file": "090",
+   "col": "json_ko",
+   "from": "공동체 역할은 지부장이며 맡은 일은",
+   "to": "맡은 일은",
+   "expect": 4
+  },
+  {
+   "id": "v2c-3",
+   "file": "090",
+   "col": "json",
+   "from": "The community role is branch chief, and the duty is",
+   "to": "The duty is",
+   "expect": 3
+  },
+  {
+   "id": "v2c-4",
+   "file": "090",
+   "col": "json",
+   "from": "The community role is Branch Chief, and the work is",
+   "to": "The work is",
+   "expect": 2
+  },
+  {
+   "id": "v2c-5",
+   "file": "090",
+   "col": "json",
+   "from": "Community role: Branch Chief",
+   "to": "Community role: Ordinary Citizen",
+   "expect": 2
+  }
+ ]
+}
