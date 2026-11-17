@@ -20,7 +20,7 @@ The Lantern Ant is no faction's enemy. To a person caught in its routine it is a
 
 ## Common species and variants
 
-A light laid on the floor looked, from far off, like a dotted line announcing the refuge direction. Up close, each dot held six legs and a small loading box, and two files of chassis flowed in opposite directions along the broken cable racks. The Lantern Ant, first woken in the Mapo coalition transmission gallery — did not move to light the dark.
+A light laid on the floor looked, from far off, like a dotted line announcing the refuge direction. Up close, each dot held six legs and a small loading box, and two files of chassis flowed in opposite directions along the broken cable racks. The Lantern Ant, first woken in the Mapo underground transmission gallery — did not move to light the dark.
 
 The Lantern Ant is not a living creature but a work machine built before the Great Blackout. The G25E identifiers marked models and derivatives split from existing chassis forms, and meant neither biological breeding nor natural evolution.
 
