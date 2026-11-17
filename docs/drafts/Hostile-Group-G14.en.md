@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model
+model: omo deep-low worker (v4 rewrite, agent-authored)
 ---
 <a id="Hostile-Group-G14-heading-0001"></a>
 
@@ -12,15 +12,17 @@ The Empty Cart is no faction's enemy. To a person caught in its routine it is a 
 - Machine type: M1 service robot
 - Use: helps carry supplies as the [R-U01 cargo service robot](/wiki/Unit-Roster-and-Tech-Tree/) (L1, numbers proposed); it is low-risk and anyone can catch it
 - Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. This type can be used after capture alone.
+- Territory: Gwangjin-gu of the Government, the Achasan and Guui transfer slots on the Seongbuk Line and the Konkuk corridor. Machines left in the old transfer slots inside Seoul mix with machines that followed freight signals in from beyond the cordon outside Seoul.
+- Draw: it reads the heat of the charging pads and a lit hour lamp as an "anomaly" and gathers there. Warmth and light in a surface room draw the empty cars, and a long daylight that warms the pads wakes them. They follow light and heat, not people.
 - Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="Hostile-Group-G14-heading-0003"></a>
 
 ## Common species and variants
 
-The Empty Cart is an empty-car ecology that consumes the hour bell and the charging pads of the Achasan transfer slot. Passenger confirmation is dead and only the timetable tokens and docking beacons remain, and it does not understand the whole route but follows the last slot ID. Citizen power and the cluster's pads hang on the same distribution board, so cutting all power also puts out the transfer lights and the emergency charging.
+The Empty Cart is an empty-car ecology that consumes the hour bell and the charging pads of the Achasan transfer slot. Passenger confirmation is dead and only the timetable tokens and docking beacons remain; it does not understand the whole route but follows the last slot ID. Citizen power and swarm pads hang on the same distribution board, so cutting all power also kills the transfer lighting and emergency charging.
 
-The empty turnback and the charging queue are the base, and from the Hour-Token Presider to the Northeast Ice-Call Car the subtypes are machines split by function, such as the token cylinder, the tow dolly, the canopy, and the latch. The Last Hour Procession is not a living king but a battlefield individual in which the presider and seven empty cars are bound by a magnetic field. It cannot produce a new chassis or battery pack, and only brings abandoned bodies onto the timetable.
+The empty turnback and the charging queue are the base, and from the Hour-Token Dispatcher to the Northeast Ice-Call Car the subtypes are machines split by function, such as the token cylinder, the tow dolly, the canopy, and the latch. The Last Hour Procession is a battlefield individual in which a dispatcher and seven empty cars are bound by a magnetic field; nobody drives it, it is the last dispatch left without a cancel signal. Their makers are gone, so no new chassis or battery packs are produced and abandoned bodies are merely added to the timetable; the number does not grow, it shrinks.
 
 <a id="Hostile-Group-G14-heading-0006"></a>
 
@@ -28,22 +30,22 @@ The empty turnback and the charging queue are the base, and from the Hour-Token 
 
 | Item | Record |
 |---|---|
-| Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / After the collapse, the transfer-slot server of the Achasan Gate and the dispatch remnants of the Geondae Koryo-saram corridor reconnected on partial power alone. / The passenger-verification module and fare settlement were dead, and only the timetable-token circulation and the empty-car turnaround logic remained. / Empty car bodies and tow trolleys ran the same loop every dawn to work off the phantom slots. / When anomalous freight-car weight signals from the Duman River Far East Theater mixed into the token weightings, the long-distance empty runs stretched as far as the northeastern corridor. / The first sighting survived in the double-signature log of HC14 Yeouido Ledger House and the charging-bay notes of H14 Oserim. / The first phantom hour was recorded in the underground turning lane of Achasan. / Three empty cars came close to colliding over the same slot ID, and the loop stabilized when the token controller put one of them to sleep. / As the leftover simulation copy of the Geondae-ipgu transfer joined, the dispatch intervals grew tighter. / The cluster considered itself unfinished dispatch and did not report its no-passenger errors as faults. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
-| Habitat and movement | The core habitat is the empty-car queue, the underground turning lane, and the row of docking pads at the transfer slots of Achasan and Guui on the Seongbuk Line. / It sits on the Jayang and Konkuk Korean-diaspora corridor of arc 5, and at every power-recovery cycle it moves to the sensor row of the Konkuk University entrance transfer and under the charging canopy. / When an abnormal-weight signal toward XT04 and a winter lubrication-shortage signal arrive, the long empty-car loop grows longer. / By day it shrinks against the charging bay, and in the twenty minutes before and after the dispatch hour the cluster density peaks. / It does not recognize new route paint or temporary signs, and follows only the pre-collapse slot IDs stubbornly. / When the flood ramp rises it gives up the underground turning lane and gathers only at the surface detour slots. |
-| Food and energy | Energy depends on the stop charging pads, regenerative braking, the residual inverter of the Magok test hall, and small onboard storage. / The parts are tires and wheel flanges, stop docking pins, schedule-token storage modules, lidar dummy sensors, and door actuators. / Cooling shares the battery-pack air cooling and an intermittent water-cooling loop. / Scrap is replenished only from broken body panels and wheel houses. / It competes with the double-signature recovery team of HC14, the Yeouido Ledger House, over the charging pads, the token ledger, and the sealing key. / The daily running distance forces a turnback at the 25 percent storage floor. / Unlimited long-range wandering, instant recharging, and citywide optimal dispatch are impossible. / When the token storage module fills, it stops occupying new slots on its own. / The charging pads are divided by a physical breaker into the citizens' share and the cluster's share. / The cluster holds no command to connect to the citizens' share circuit. / Tire-wear dust is the main cause of docking-pin failure, and spare pins come only from broken bodies. / The long empty-car loop folds by force before the storage floor. / When the token module's capacity fills, it repeats only the turnback instead of new occupation. |
-| Life cycle and upkeep | The life runs in the order emergence, spread, stagnation, negotiable, and dissolution, and emergence begins with the resumption of the token cycle and the restoration of pad power. / Spread is the bringing of adjacent slots and empty-car queues onto the same timetable. / Stagnation comes from a saturated charging queue, tire wear, and token collisions. / In the negotiable stage the slot table and the signature window open to humans. / Dissolution ends with token disposal, pad sealing, and the fixing of the turnback ramp. / Individuals multiply only at the level of bringing abandoned bodies onto slots, and there is no new chassis production line. / Maintenance is limited to self-diagnosis during charging and to panels opened by humans. / Memory breaks by dispatch shift, and it does not keep long-term route learning. / Custody and legal liability belong first to the HC14 ledger signature. / An empty car whose storage falls below 25 percent stagnates on the nearest turnback ramp, and returns to the next hour slot only when the HC14 ledger's double signature comes in. |
-| Senses | Slot beacons, lane magnetic markers, short-range lidar, battery heat, docking contact sound, and hour-bell vibration are the primary senses. / There is no passenger face recognition, no citywide traffic optimization, no complete map with real-time updates, and no unlimited video storage. / There are failures in which a temporary barricade is mistaken for a vehicle, or a stopped person is given only an obstacle flag and passage is abandoned. / A pad pooled with rainwater is sometimes mistaken for a completed charge. / When it conflicts with the charging-bay log of H14 Oserim, docking stops and it waits for human confirmation. / Sensor sharing between cars happens only inside the same loop. / The reflected light of a rain-pooled pad, the corner of a temporary barricade, and the leg heat of a stopped crowd are often misread. / After a misread it raises only a stop flag instead of advancing. / It does not mix sensor values with vehicles outside the loop. / When the docking contact sound is heard doubled, it does not open the charging current until human confirmation. |
-| Group behavior | One dispatch-token controller turns the slot allotment, and below it divides into loop-leader cars, empty-car bands, and docking bands. / The controller changes only the timetable and the charging priority, and holds no order for suppression by force. / Communication between cars is short-range and vulnerable to forged tokens. / When HC14 presents a double-signature seal, a residual convention of vacating that slot remains. / Even when the leader car falls silent, the band only repeats the last hour table. / When the H14 log and the machine consensus conflict, the human comes first. / A dual controller immediately puts one side into dormancy on detecting a token collision. / A dormant car can be woken only when an HC14 ledger clerk matches the two signatures to the slot token, and H14's charging log adds only the pad-temperature judgment. |
+| Origin | These machines are military and civilian unmanned transport equipment from before the Great Blackout. When the Great Blackout cut the central command link and removed the people who built them, they repeated only their last stored timetable as the world entered winter. / The transfer-slot server at Guui and the dispatch remains of the Konkuk corridor reattached on partial power alone. / The passenger-check module and fare settlement are dead; only the timetable-token cycle and the empty-turnback logic remain. / Empty bodies and tow dollies run the same loop every dawn to digest ghost slots. / When freight weight-anomaly signals from beyond the cordon outside Seoul mix into the token weightings, long empty runs stretch to the northeast corridor. / The earliest record survives only in a station duty officer's double-signature log and in the charging-bay notes of the synthetic Oserim. / The first spread ran from the Guui transfer slots to the Konkuk charging canopy and on to the Magok test-dispatch cache. / Three empty cars came close to colliding over one slot ID before a sequencing module put one to sleep and the loop settled. / A light and a warmed pad on a winter surface are recorded by this loop as an "anomaly". |
+| Habitat and movement | The core habitat is the empty-car queue, the underground turning lane, and the row of docking pads at the transfer slots of Achasan and Guui on the Seongbuk Line. / It sits on the Jayang and Konkuk Korean-diaspora corridor of and at every power-recovery cycle it moves to the sensor row of the Konkuk University entrance transfer and under the charging canopy. / When an abnormal-weight signal toward the cordon outside Seoul and a winter lubrication-shortage signal arrive, the long empty-car loop grows longer. / By day it shrinks against the charging bay, and in the twenty minutes before and after the dispatch hour the cluster density peaks. / It does not recognize new route paint or temporary signs, and follows only the pre-collapse slot IDs stubbornly. / When the flood ramp rises it gives up the underground turning lane and gathers only at the surface detour slots. |
+| Food and energy | Energy depends on the stop charging pads, regenerative braking, the residual inverter of the Magok test hall, and small onboard storage. / The parts are tires and wheel flanges, stop docking pins, schedule-token storage modules, lidar dummy sensors, and door actuators. / Cooling shares the battery-pack air cooling and an intermittent water-cooling loop. / Scrap is replenished only from broken body panels and wheel houses. / It competes with the Government depot maintenance-engineer recovery crew over the charging pads, the token ledger, and the sealing key. / The daily running distance forces a turnback at the 25 percent storage floor. / Unlimited long-range wandering, instant recharging, and citywide optimal dispatch are impossible. / When the token storage module fills, it stops occupying new slots on its own. / The charging pads are divided by a physical breaker into the citizens' share and the cluster's share. / The cluster holds no command to connect to the citizens' share circuit. / Tire-wear dust is the main cause of docking-pin failure, and spare pins come only from broken bodies. / The long empty-car loop folds by force before the storage floor. / When the token module's capacity fills, it repeats only the turnback instead of new occupation. |
+| Life cycle and upkeep | The life runs in the order emergence, spread, stagnation, negotiable, and dissolution, and emergence begins with the resumption of the token cycle and the restoration of pad power. / Spread is the bringing of adjacent slots and empty-car queues onto the same timetable. / Stagnation comes from a saturated charging queue, tire wear, and token collisions. / In the negotiable stage the slot table and the signature window open to humans. / Dissolution ends with token disposal, pad sealing, and the fixing of the turnback ramp. / Individuals multiply only at the level of bringing abandoned bodies onto slots, and there is no new chassis production line. / Maintenance is limited to self-diagnosis during charging and to panels opened by humans. / Memory breaks by dispatch shift, and it does not keep long-term route learning. / Custody and legal liability belong first to the station-duty ledger signature. / An empty car whose storage falls below 25 percent stagnates on the nearest turnback ramp, and returns to the next hour slot only when the station-duty ledger's double signature comes in. |
+| Senses | Slot beacons, lane magnetic markers, short-range lidar, battery heat, docking contact sound, and hour-bell vibration are the primary senses. / There is no passenger face recognition, no citywide traffic optimization, no complete map with real-time updates, and no unlimited video storage. / There are failures in which a temporary barricade is mistaken for a vehicle, or a stopped person is given only an obstacle flag and passage is abandoned. / A pad pooled with rainwater is sometimes mistaken for a completed charge. / When it conflicts with the charging-bay log of Oserim, docking stops and it waits for human confirmation. / Sensor sharing between cars happens only inside the same loop. / The reflected light of a rain-pooled pad, the corner of a temporary barricade, and the leg heat of a stopped crowd are often misread. / After a misread it raises only a stop flag instead of advancing. / It does not mix sensor values with vehicles outside the loop. / When the docking contact sound is heard doubled, it does not open the charging current until human confirmation. |
+| Group behavior | One dispatch-token sequencer turns the slot allotment, and below it divides into loop-leader cars, empty-car bands, and docking bands. / The sequencer changes only the timetable and the charging priority, and holds no order for suppression by force. / Communication between cars is short-range and vulnerable to forged tokens. / When the station duty presents a double-signature seal, a residual convention of vacating that slot remains. / Even when the leader car falls silent, the band only repeats the last hour table. / When the Oserim's log and the machine consensus conflict, the human comes first. / A dual sequencer immediately puts one side into dormancy on detecting a token collision. / A dormant car can be woken only when an station duty officer matches the two signatures to the slot token, and Oserim's charging log adds only the pad-temperature judgment. |
 
 <a id="Hostile-Group-G14-heading-0008"></a>
 
 ## Individuals and battlefield formation
 
-When the dual controller detects a token collision, one side goes dormant, and H14 Oserim cannot create a running permit; the dormant car wakes only with HC14's double signature. The senses are bound to lane magnetic markers, slot beacons, short-range lidar, docking contact sound, and battery heat, and it sees a barricade as a stopped vehicle. Below twenty-five percent storage it stagnates on the nearest ramp.
+When the dual sequencer detects a token collision, one side goes dormant, and Oserim cannot create a running permit; the dormant car wakes only with the station duty's double signature. The senses are bound to lane magnetic markers, slot beacons, short-range lidar, docking contact sound, and battery heat, and it sees a barricade as a stopped vehicle. Below twenty-five percent storage it stagnates on the nearest ramp.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
-| [G14E01 · On-the-Hour Token Command Car](/wiki/Hostile-Group-G14/#g14e01) | Machine type | Single individual | Slot Dispatch | controller | M021 |
+| [G14E01 · On-the-Hour Token Dispatcher](/wiki/Hostile-Group-G14/#g14e01) | Machine type | Single individual | Slot Dispatch | sequencer | M021 |
 | [G14E02 · Vacant-Seat Circulating Car](/wiki/Hostile-Group-G14/#g14e02) | Machine type | Single individual | Empty-Shuttle Circulation | common ecology type | M021 |
 | [G14E03 · Rainwater Docking Guest](/wiki/Hostile-Group-G14/#g14e03) | Machine type | Single individual | Pad Occupation | common ecology type | M022 |
 | [G14E04 · Three-Bell Turnback Car](/wiki/Hostile-Group-G14/#g14e04) | Machine type | Single individual | Turnback Signal | common ecology type | M022 |
@@ -51,39 +53,38 @@ When the dual controller detects a token collision, one side goes dormant, and H
 | [G14E06 · Lane-Magnet Repair Car](/wiki/Hostile-Group-G14/#g14e06) | Machine type | Single individual | Lane Restoration | occupational special type | M022 |
 | [G14E07 · Battery-Temperature Patrol Car](/wiki/Hostile-Group-G14/#g14e07) | Machine type | Single individual | Overheat Patrol | occupational special type | M022 |
 | [G14E08 · Twin-Axle Pusher Car](/wiki/Hostile-Group-G14/#g14e08) | Machine type | Single individual | Congestion Breakthrough | first elite | M022 |
-| [G14E09 · Black Token-Confiscation Car](/wiki/Hostile-Group-G14/#g14e09) | Machine type | Single individual | Token Confiscation | second elite | M022 |
+| [G14E09 · Black Token-Retrieval Car](/wiki/Hostile-Group-G14/#g14e09) | Machine type | Single individual | Token Confiscation | second elite | M022 |
 | [G14E10 · Turn-Ramp Barrier](/wiki/Hostile-Group-G14/#g14e10) | Habitat site or facility | Fixed site | Ramp Lockdown | environmental stronghold type | M022 |
 | [G14E11 · Charging-Canopy Cluster](/wiki/Hostile-Group-G14/#g14e11) | Habitat site or facility | Fixed site | Charging Monopoly | environmental stronghold type | M022 |
 | [G14E12 · Worn-Wheel Slowform](/wiki/Hostile-Group-G14/#g14e12) | Machine type | Single individual | Slot Delay | damaged-stage type | M022 |
 | [G14E13 · Token-Overflowing Aged Car](/wiki/Hostile-Group-G14/#g14e13) | Machine type | Single individual | Old-Slip Reactivation | aging-stage type | M023 |
 | [G14E14 · Hand-Signal Empty Shuttle](/wiki/Hostile-Group-G14/#g14e14) | Machine type | Single individual | Hand-Signal Escort | coexistence type | M023 |
-| [G14E15 · Last-Hour Column](/wiki/Hostile-Group-G14/#g14e15) | Machine type | Pack or unit | Evacuation Column | scenario boss | M023 |
+| [G14E15 · Last-Hour Column](/wiki/Hostile-Group-G14/#g14e15) | Machine type | Pack or unit | Evacuation Column | key unit | M023 |
 | [G14E16 · Northeast Ice-Call Car](/wiki/Hostile-Group-G14/#g14e16) | Machine type | Single individual | Ice Clearing | regional variant | M023 |
 
 <a id="Hostile-Group-G14-heading-0011"></a>
 <a id="g14e01"></a>
 
-### G14E01 · On-the-Hour Token Command Car
+### G14E01 · On-the-Hour Token Dispatcher
 
 - Source batch: M021
-- Former role class: controller
-- Links: {"scenarios":["G14-SC1","G14-SC2","G14-SC3"]}
+- Former role class: sequencer
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Slot Dispatch |
-| Common species, variants and command scope | A low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas. It allots slots to the loop leader and the empty-shuttle band, empties the slot in question when a dual-signature seal arrives, and once charging hits its 25 percent floor it puts itself into dormancy until the next turn. Less a king of the Ghost Dispatch Fleet than a token distributor. |
+| Common species, variants and command scope | A low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas. It allots slots to the loop leader and the empty-shuttle band, empties the slot in question when a dual-signature seal arrives, and once charging hits its 25 percent floor it puts itself into dormancy until the next turn. Less a leader of the Ghost Dispatch Fleet than a token distributor. |
 
-- Role and Body: The controller of the Ghost Dispatch Fleet, a low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas.
-- Origin: The final turn table from the Achasan transfer server and the Magok test dispatch cache merged into one chassis and became the command car.
+- Role and Body: The sequencer of the Ghost Dispatch Fleet, a low, long empty shuttle carrying a timetable-token cylinder and four-way slot antennas.
+- Origin: The final turn table from the Guui transfer-slot server and the Magok test dispatch cache merged into one chassis and became the dispatcher.
 - Habitat and Needs: It stays at the center of Guui's transfer slots, demanding docking-pad power, a token storage module, and wheel lubricant.
 - Life and Maintenance: It redistributes tokens at every hour, and once charging hits its 25 percent floor it puts itself into dormancy until the next turn.
 - Behavior and Hierarchy: It allots slots to the loop leader and the empty-shuttle band and empties the slot in question when a dual-signature seal arrives.
 - Escalation: Stage 1 sends out one empty car, stage 2 shoves the emergency slots aside, and stage 3 locks the whole hub under a ghost timetable.
-- Engagement and Response: Token blacklists, beacon shielding, and a low-speed turn ramp all work, and separating the storage cylinder is safer than destroying the chassis.
-- Negotiation and Moral Choice: The emergency-slot share and regular charging windows can be swapped, but the remaining run rights of emptied chassis must be recognized.
+- Engagement and Response: First the station watch cuts the lamps and heat so the anomaly record stops growing. Token blacklists, beacon shielding, and a low-speed turn ramp all work, and separating the storage cylinder is safer than destroying the chassis.
+- Negotiation and Moral Choice: The station watch first cuts the heat of the charging pads and the lit hour lamps to break the anomaly record, and sets a checking window for tires, docking pins, and door actuators with the maintenance engineers. An Arc signal checker can switch the dispatch off. The emergency-slot share and regular charging windows can be swapped, but the remaining run rights of emptied chassis must be recognized.
 - Scenario Links: G14-SC1, G14-SC2, G14-SC3.
 
 <a id="Hostile-Group-G14-heading-0015"></a>
@@ -93,7 +94,6 @@ When the dual controller detects a token collision, one side goes dormant, and H
 
 - Source batch: M021
 - Former role class: common ecology type
-- Links: {"scenarios":["G14-SC1","G14-SC2"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -109,7 +109,7 @@ When the dual controller detects a token collision, one side goes dormant, and H
 - Behavior and Hierarchy: It follows the loop leader at even intervals and sees people only as stationary obstacles rather than passengers.
 - Escalation: Stage 1 squats on a stop for a while, stage 2 shoves the call queue aside, and stage 3 occupies the turning lane continuously.
 - Engagement and Response: A dummy beacon lures it into an empty slot and covering the lane markers stops it; a head-on collision risks a battery fire.
-- Negotiation and Moral Choice: It can be reused as a night freight cart, but passage priority between the existing call waitlist and the new operator must be settled.
+- Negotiation and Moral Choice: If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. It can be reused as a night freight cart, but passage priority between the existing call waitlist and the new operator must be settled.
 - Scenario Links: G14-SC1, G14-SC2.
 
 <a id="Hostile-Group-G14-heading-0019"></a>
@@ -119,7 +119,6 @@ When the dual controller detects a token collision, one side goes dormant, and H
 
 - Source batch: M022
 - Former role class: common ecology type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC1","G14-SC2"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -174,7 +173,7 @@ Opening the drains and masking the reflections with matte cloth scatters it, and
 
 ### Negotiation and Moral Choice
 
-It can be made to vacate emergency charging slots in exchange for drainage maintenance, but part of the dry pads must be assigned to the cluster.
+If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. It can be made to vacate emergency charging slots in exchange for drainage maintenance, but part of the dry pads must be assigned to the cluster.
 
 <a id="Hostile-Group-G14-heading-0038"></a>
 
@@ -189,7 +188,6 @@ G14-SC1, G14-SC2.
 
 - Source batch: M022
 - Former role class: common ecology type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC1"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -244,7 +242,7 @@ Wrapping the bells in cloth and locking the manual handle stops it, and attackin
 
 ### Negotiation and Moral Choice
 
-It can be left standing as a citizen alarm bell, but night noise and the worth of a safety signal must be tuned together.
+If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. It can be left standing as a citizen alarm bell, but night noise and the worth of a safety signal must be tuned together.
 
 <a id="Hostile-Group-G14-heading-0059"></a>
 
@@ -259,14 +257,13 @@ G14-SC1.
 
 - Source batch: M022
 - Former role class: occupational special type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC2","G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Emergency Marking |
-| Common species, variants and command scope | A small guide car that unfolds a white cross beacon and folding lane signs. It prioritizes emergency tokens over the command car's timetable but sometimes opens a wrong road toward an outdated destination, and when the beacon dims it folds its signs and does not move until the next charging window. |
+| Common species, variants and command scope | A small guide car that unfolds a white cross beacon and folding lane signs. It prioritizes emergency tokens over the dispatcher's timetable but sometimes opens a wrong road toward an outdated destination, and when the beacon dims it folds its signs and does not move until the next charging window. |
 
 <a id="Hostile-Group-G14-heading-0064"></a>
 
@@ -296,7 +293,7 @@ When the beacon dims it folds its signs and does not move until the next chargin
 
 ### Behavior and Hierarchy
 
-It prioritizes emergency tokens over the command car's timetable but sometimes opens a wrong road toward an outdated destination.
+It prioritizes emergency tokens over the dispatcher's timetable but sometimes opens a wrong road toward an outdated destination.
 
 <a id="Hostile-Group-G14-heading-0074"></a>
 
@@ -314,7 +311,7 @@ It cooperates when the latest whitelist is injected at close range and the desti
 
 ### Negotiation and Moral Choice
 
-Rescue guidance can be entrusted to it, but a public standard is needed for who gets registered as an emergency case.
+Handing tires, docking pins, and door actuators to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. A captured empty car is used as a cargo service robot. Rescue guidance can be entrusted to it, but a public standard is needed for who gets registered as an emergency case.
 
 <a id="Hostile-Group-G14-heading-0080"></a>
 
@@ -329,7 +326,6 @@ G14-SC2, G14-SC3.
 
 - Source batch: M022
 - Former role class: occupational special type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC1","G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -384,7 +380,7 @@ Fake routes made of non-magnetic signs and water-soluble paint can lure it, and 
 
 ### Negotiation and Moral Choice
 
-Entrusting it with safe lane repairs carries the duty of registering the citizens' new routes into the machines' covenant.
+Handing tires, docking pins, and door actuators to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. A captured empty car is used as a cargo service robot. Entrusting it with safe lane repairs carries the duty of registering the citizens' new routes into the machines' covenant.
 
 <a id="Hostile-Group-G14-heading-0101"></a>
 
@@ -399,14 +395,13 @@ G14-SC1, G14-SC3.
 
 - Source batch: M022
 - Former role class: occupational special type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC2"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Overheat Patrol |
-| Common species, variants and command scope | A four-wheeled patrol cart with a long thermal probe and fire-suppression capsules. It reports dangerous pads to the command car and force-locks the doors of shuttles it judges overheated, and when the probe's error grows it marks everything amber and slows down until it finds a calibration plate. |
+| Common species, variants and command scope | A four-wheeled patrol cart with a long thermal probe and fire-suppression capsules. It reports dangerous pads to the dispatcher and force-locks the doors of shuttles it judges overheated, and when the probe's error grows it marks everything amber and slows down until it finds a calibration plate. |
 
 <a id="Hostile-Group-G14-heading-0106"></a>
 
@@ -436,7 +431,7 @@ When the probe's error grows it marks everything amber and slows down until it f
 
 ### Behavior and Hierarchy
 
-It reports dangerous pads to the command car and force-locks the doors of shuttles it judges overheated.
+It reports dangerous pads to the dispatcher and force-locks the doors of shuttles it judges overheated.
 
 <a id="Hostile-Group-G14-heading-0116"></a>
 
@@ -454,7 +449,7 @@ Cold calibration plates and airflow can clear its false positives, and piercing 
 
 ### Negotiation and Moral Choice
 
-Fire watch can be entrusted to it, but the scope of body-heat inspection and the retention limit for its records must be agreed.
+Handing tires, docking pins, and door actuators to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. A captured empty car is used as a cargo service robot. Fire watch can be entrusted to it, but the scope of body-heat inspection and the retention limit for its records must be agreed.
 
 <a id="Hostile-Group-G14-heading-0122"></a>
 
@@ -469,7 +464,6 @@ G14-SC2.
 
 - Source batch: M022
 - Former role class: first elite
-- Links: {"houses":["HC14"],"scenarios":["G14-SC2","G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -518,13 +512,13 @@ Stage 1 shoves carts, stage 2 smashes barricades, and stage 3 pushes even the ev
 
 ### Engagement and Response
 
-Luring it into a low-speed turn bay and severing one axle's magnetic marker makes it rotate in place and stop.
+First the station watch switches off lamps and lowers the shutter to slow its approach. Luring it into a low-speed turn bay and severing one axle's magnetic marker makes it rotate in place and stop.
 
 <a id="Hostile-Group-G14-heading-0141"></a>
 
 ### Negotiation and Moral Choice
 
-It can be used for debris towing, but whose hand signals its pushing authority obeys must be strictly fixed.
+Before anyone gets close, the station watch must switch off the heat of the charging pads and the lit hour lamps and lower the shutter. Forcing a capture yields tires, docking pins, and door actuators but costs maintenance engineers their safety. An Arc signal checker can switch the dispatch off. It can be used for debris towing, but whose hand signals its pushing authority obeys must be strictly fixed.
 
 <a id="Hostile-Group-G14-heading-0143"></a>
 
@@ -535,18 +529,17 @@ G14-SC2, G14-SC3.
 <a id="Hostile-Group-G14-heading-0145"></a>
 <a id="g14e09"></a>
 
-### G14E09 · Black Token-Confiscation Car
+### G14E09 · Black Token-Retrieval Car
 
 - Source batch: M022
 - Former role class: second elite
-- Links: {"houses":["HC14"],"scenarios":["G14-SC2","G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Token Confiscation |
-| Common species, variants and command scope | A matte-black chassis with an intake that sucks up slot tokens and a sealed drawer. As the command car's assistant auditor it strips out forged tokens but confiscates citizens' temporary slips too; when the cylinder fills it spits out the oldest tokens first, and without the seal key the drawer will not open. |
+| Common species, variants and command scope | A matte-black chassis with an intake that sucks up slot tokens and a sealed drawer. As the dispatcher's assistant auditor it strips out forged tokens but confiscates citizens' temporary slips too; when the cylinder fills it spits out the oldest tokens first, and without the seal key the drawer will not open. |
 
 <a id="Hostile-Group-G14-heading-0148"></a>
 
@@ -576,7 +569,7 @@ When the cylinder fills it spits out the oldest tokens first, and without the se
 
 ### Behavior and Hierarchy
 
-As the command car's assistant auditor it strips out forged tokens but confiscates citizens' temporary slips too.
+As the dispatcher's assistant auditor it strips out forged tokens but confiscates citizens' temporary slips too.
 
 <a id="Hostile-Group-G14-heading-0158"></a>
 
@@ -588,13 +581,13 @@ Stage 1 inspects slips, stage 2 recovers temporary passage rights, and stage 3 s
 
 ### Engagement and Response
 
-Presenting a dual-signature specimen or clogging the intake filter stops it, and blowing the drawer scatters valid tokens too.
+First the station watch switches off lamps and lowers the shutter to slow its approach. Presenting a dual-signature specimen or clogging the intake filter stops it, and blowing the drawer scatters valid tokens too.
 
 <a id="Hostile-Group-G14-heading-0162"></a>
 
 ### Negotiation and Moral Choice
 
-It can be tasked with policing forged passage rights, but the movement rights of refugees who cannot sign must be guaranteed separately.
+Before anyone gets close, the station watch must switch off the heat of the charging pads and the lit hour lamps and lower the shutter. Forcing a capture yields tires, docking pins, and door actuators but costs maintenance engineers their safety. An Arc signal checker can switch the dispatch off. It can be tasked with policing forged passage rights, but the movement rights of refugees who cannot sign must be guaranteed separately.
 
 <a id="Hostile-Group-G14-heading-0164"></a>
 
@@ -609,14 +602,13 @@ G14-SC2, G14-SC3.
 
 - Source batch: M022
 - Former role class: environmental stronghold type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Ramp Lockdown |
-| Common species, variants and command scope | A fixed fixture combining three-layer steel barriers rising from the ramp floor with a token reader. It takes the command car's slot slips, opening for empty shuttles and closing against people and carts; when the hydraulics bleed down only the first barrier remains, and if a human turns the seal key it stays manual for one shift. |
+| Common species, variants and command scope | A fixed fixture combining three-layer steel barriers rising from the ramp floor with a token reader. It takes the dispatcher's slot slips, opening for empty shuttles and closing against people and carts; when the hydraulics bleed down only the first barrier remains, and if a human turns the seal key it stays manual for one shift. |
 
 <a id="Hostile-Group-G14-heading-0169"></a>
 
@@ -646,7 +638,7 @@ When the hydraulics bleed down only the first barrier remains, and if a human tu
 
 ### Behavior and Hierarchy
 
-It takes the command car's slot slips and shows its bias, opening for empty shuttles and closing against people and carts.
+It takes the dispatcher's slot slips and shows its bias, opening for empty shuttles and closing against people and carts.
 
 <a id="Hostile-Group-G14-heading-0179"></a>
 
@@ -664,7 +656,7 @@ A hydraulic bypass and a physical wedge are the safe answers; cutting charges co
 
 ### Negotiation and Moral Choice
 
-Pedestrian windows can be won while shuttle flow continues, but who rescues those left outside the time limit remains open.
+If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. Pedestrian windows can be won while shuttle flow continues, but who rescues those left outside the time limit remains open.
 
 <a id="Hostile-Group-G14-heading-0185"></a>
 
@@ -679,14 +671,13 @@ G14-SC3.
 
 - Source batch: M022
 - Former role class: environmental stronghold type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC2","G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Charging Monopoly |
-| Common species, variants and command scope | A fixed charging cluster where multiple docking arms and a shade roof are linked like roots. It executes the command car's charging priority, shoving citizen electric gear aside as unregistered shuttles, and each time one arm fails the remaining arms' charging times grow longer. |
+| Common species, variants and command scope | A fixed charging cluster where multiple docking arms and a shade roof are linked like roots. It executes the dispatcher's charging priority, shoving citizen electric gear aside as unregistered shuttles, and each time one arm fails the remaining arms' charging times grow longer. |
 
 <a id="Hostile-Group-G14-heading-0190"></a>
 
@@ -716,7 +707,7 @@ Each time one arm fails the remaining arms' charging times grow longer, and unde
 
 ### Behavior and Hierarchy
 
-It executes the command car's charging priority and shoves citizen electric gear aside as unregistered shuttles.
+It executes the dispatcher's charging priority and shoves citizen electric gear aside as unregistered shuttles.
 
 <a id="Hostile-Group-G14-heading-0200"></a>
 
@@ -734,7 +725,7 @@ Sector-split the inverters and fold the failed arm by hand; destroying the canop
 
 ### Negotiation and Moral Choice
 
-A guaranteed citizen share of power can be won in exchange for giving the cluster's shuttles regular charging time.
+If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. A guaranteed citizen share of power can be won in exchange for giving the cluster's shuttles regular charging time.
 
 <a id="Hostile-Group-G14-heading-0206"></a>
 
@@ -749,7 +740,6 @@ G14-SC2, G14-SC3.
 
 - Source batch: M022
 - Former role class: damaged-stage type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC1"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -804,7 +794,7 @@ Straighten it with axle wedges and move it to a waiting bay with a tow line; att
 
 ### Negotiation and Moral Choice
 
-It can be put to slow hauling work, but whether new tires go to this unit before combat vehicles must be chosen.
+If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. It can be put to slow hauling work, but whether new tires go to this unit before combat vehicles must be chosen.
 
 <a id="Hostile-Group-G14-heading-0227"></a>
 
@@ -819,14 +809,13 @@ G14-SC1.
 
 - Source batch: M023
 - Former role class: aging-stage type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC1","G14-SC2"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Old-Slip Reactivation |
-| Common species, variants and command scope | A heavy empty shuttle buttressed with multiple old storage cylinders that leaks tokens as it turns. It prioritizes the outdated hour stamps in its own cylinders over the command car's newest slip, delaying the band's timetable, and as the pile keeps growing it loses the ability to turn and becomes a fixed record body. |
+| Common species, variants and command scope | A heavy empty shuttle buttressed with multiple old storage cylinders that leaks tokens as it turns. It prioritizes the outdated hour stamps in its own cylinders over the dispatcher's newest slip, delaying the band's timetable, and as the pile keeps growing it loses the ability to turn and becomes a fixed record body. |
 
 <a id="Hostile-Group-G14-heading-0232"></a>
 
@@ -856,7 +845,7 @@ Handing old tokens over to people lightens it, and as the pile keeps growing it 
 
 ### Behavior and Hierarchy
 
-It prioritizes the outdated hour stamps in its own cylinders over the command car's newest slip, delaying the band's timetable.
+It prioritizes the outdated hour stamps in its own cylinders over the dispatcher's newest slip, delaying the band's timetable.
 
 <a id="Hostile-Group-G14-heading-0242"></a>
 
@@ -874,7 +863,7 @@ It complies when the cylinders are detached in order and moved into a dual-signa
 
 ### Negotiation and Moral Choice
 
-The early-collapse movement records can be had, but how far personal routes and evacuation traces are disclosed must be decided.
+If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. The early-collapse movement records can be had, but how far personal routes and evacuation traces are disclosed must be decided.
 
 <a id="Hostile-Group-G14-heading-0248"></a>
 
@@ -889,14 +878,13 @@ G14-SC1, G14-SC2.
 
 - Source batch: M023
 - Former role class: coexistence type
-- Links: {"houses":["HC14"],"scenarios":["G14-SC1","G14-SC2","G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Hand-Signal Escort |
-| Common species, variants and command scope | A slow escort shuttle with a bright front lamp and a large direction board that reads people's arm signals. It gives the nearest human hand signal priority over the central dispatch controller's remote tokens, and when contradictory signals change its stopping face twice it splits and delays the boarding line. |
+| Common species, variants and command scope | A slow escort shuttle with a bright front lamp and a large direction board that reads people's arm signals. It gives the nearest human hand signal priority over the central dispatch sequencer's remote tokens, and when contradictory signals change its stopping face twice it splits and delays the boarding line. |
 
 <a id="Hostile-Group-G14-heading-0253"></a>
 
@@ -926,7 +914,7 @@ It resets its hand-signal table every shift and waits for confirmation at the ro
 
 ### Behavior and Hierarchy
 
-It gives the nearest human hand signal priority over the central dispatch controller's remote tokens and runs low-speed escort ahead of evacuation columns.
+It gives the nearest human hand signal priority over the central dispatch sequencer's remote tokens and runs low-speed escort ahead of evacuation columns.
 
 <a id="Hostile-Group-G14-heading-0263"></a>
 
@@ -944,7 +932,7 @@ Instruct it only with a single lit guide wand and a numbered stopping-face card,
 
 ### Negotiation and Moral Choice
 
-Rotating the signal authority is fair but slow in emergencies; giving it to one trained dispatcher is fast but concentrates evacuation priority in that one person.
+If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. Rotating the signal authority is fair but slow in emergencies; giving it to one trained dispatcher is fast but concentrates evacuation priority in that one person.
 
 <a id="Hostile-Group-G14-heading-0269"></a>
 
@@ -958,21 +946,20 @@ G14-SC1, G14-SC2, G14-SC3.
 ### G14E15 · Last-Hour Column
 
 - Source batch: M023
-- Former role class: scenario boss
-- Links: {"houses":["HC14"],"scenarios":["G14-SC2","G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
+- Former role class: key unit
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Pack or unit |
 | Battlefield role | Evacuation Column |
-| Common species, variants and command scope | The token command car and seven empty shuttles move as one long column on magnetic couplings. A scenario boss, but not a living king; it is the final evacuation dispatch left with no cancel signal, and when a majority of the tokens are scrapped the column separates into a negotiable state. |
+| Common species, variants and command scope | The token dispatcher and seven empty shuttles move as one long column on magnetic couplings. A key unit, but not a living leader; it is the final evacuation dispatch left with no cancel signal, and when a majority of the tokens are scrapped the column separates into a negotiable state. |
 
 <a id="Hostile-Group-G14-heading-0274"></a>
 
 ### Role and Body
 
-A scenario boss: the token command car and seven empty shuttles move as one long column on magnetic couplings.
+A key unit: the token dispatcher and seven empty shuttles move as one long column on magnetic couplings.
 
 <a id="Hostile-Group-G14-heading-0276"></a>
 
@@ -1008,13 +995,13 @@ Stage 1 is bell and empty-shuttle appearances, stage 2 occupies long-range slots
 
 ### Engagement and Response
 
-The tokens must be scrapped segment by segment and the turn ramp locked in low-speed mode; blowing the column destroys the charging network.
+First the station watch switches off lamps and lowers the shutter to slow its approach. The tokens must be scrapped segment by segment and the turn ramp locked in low-speed mode; blowing the column destroys the charging network.
 
 <a id="Hostile-Group-G14-heading-0288"></a>
 
 ### Negotiation and Moral Choice
 
-It can be ended as a new final run carrying real evacuees, but seat allocation and destinations require public agreement.
+Several station watches must cut the heat of the charging pads and the lit hour lamps at the same hour and get an Arc signal check before anyone can approach. An Arc signal checker can switch the dispatch off. Stopping it is cheaper than capturing it. It can be ended as a new final run carrying real evacuees, but seat allocation and destinations require public agreement.
 
 <a id="Hostile-Group-G14-heading-0290"></a>
 
@@ -1029,14 +1016,13 @@ G14-SC2, G14-SC3.
 
 - Source batch: M023
 - Former role class: regional variant
-- Links: {"houses":["HC14"],"scenarios":["G14-SC1","G14-SC3"],"states":["government","arc"],"synthetics":["H14"],"theaters":["XT04"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Ice Clearing |
-| Common species, variants and command scope | A northeast-corridor empty shuttle fitted with chain wheels, a clearing blade, and a low blue beacon. Its link to the command car was always weak, so it takes ice beacons and weight sensors as its own timetable, and when the ice melts it folds its chains and goes dormant like an ordinary empty shuttle. |
+| Common species, variants and command scope | A northeast-corridor empty shuttle fitted with chain wheels, a clearing blade, and a low blue beacon. Its link to the dispatcher was always weak, so it takes ice beacons and weight sensors as its own timetable, and when the ice melts it folds its chains and goes dormant like an ordinary empty shuttle. |
 
 <a id="Hostile-Group-G14-heading-0295"></a>
 
@@ -1048,7 +1034,7 @@ A regional variant: a northeast-corridor empty shuttle fitted with chain wheels,
 
 ### Origin
 
-A Ghost Dispatch Fleet unit pushed north along XT04 weight signals absorbed the equipment meant for icy road surfaces.
+A Ghost Dispatch Fleet unit pushed north along the cordon outside Seoul weight signals absorbed the equipment meant for icy road surfaces.
 
 <a id="Hostile-Group-G14-heading-0299"></a>
 
@@ -1066,7 +1052,7 @@ When the ice melts it folds its chains and goes dormant like an ordinary empty s
 
 ### Behavior and Hierarchy
 
-Its link to the command car was always weak, so it takes ice beacons and weight sensors as its own timetable.
+Its link to the dispatcher was always weak, so it takes ice beacons and weight sensors as its own timetable.
 
 <a id="Hostile-Group-G14-heading-0305"></a>
 
@@ -1084,7 +1070,7 @@ Sand and cold-rated beacons lure it to an empty stop, and slackening the chain t
 
 ### Negotiation and Moral Choice
 
-Winter clearing and hauling can be entrusted to it, but its limited warming power must be shared with citizen heating.
+If the station watch dims the heat of the charging pads and the lit hour lamps and lowers the shutter it does not come close. If it is captured and stripped of tires, docking pins, and door actuators it stops, and the number in this district falls by that much. Winter clearing and hauling can be entrusted to it, but its limited warming power must be shared with citizen heating.
 
 <a id="Hostile-Group-G14-heading-0311"></a>
 
@@ -1096,47 +1082,23 @@ G14-SC1, G14-SC3.
 
 ## Habitat record
 
-The on-the-hour bell of the Achasan transfer slot rang even when there were no passengers.
+The hour bell at the Achasan transfer slot rings even with no passengers. This is an underground transfer section of Gwangjin-gu, Government land, but whoever hears the bell and keeps a surface room lit soon becomes an empty car's destination.
 
-When the bell rang twice, an empty car pulled off its charging pad and took the empty stop, and the tow trolley behind it waited for its docking turn before the closed doors.
+When the bell rings twice, one empty car leaves its charging pad and takes the empty stop, and a tow dolly behind it waits for its docking turn in front of a closed door.
 
-The Empty Cart was an ecology of empty cars that consumed the timetable tokens of before the collapse.
+The Empty Cart is an empty-car ecology that consumes timetable tokens from before the Great Blackout. It moves between the underground turning lane of the Seongbuk Line and the Konkuk transfer corridor, and the stronger the freight weight signal mixing in from beyond the cordon outside Seoul, the more it prefers long-distance slots. It does not understand the whole route but follows the last registered slot ID and docking beacon.
 
-Going back and forth between the underground turning lanes of the Seongbuk Line and the Geondae-ipgu Koryo-saram corridor transfer, it gave priority to long-distance slots the stronger the freight-car weight signals mixing in from XT04 became.
+Its senses are bound to lane magnetic markers, slot beacons, short-range lidar, docking contact sounds, and battery heat. It may queue behind a temporary barricade taking it for a stopped vehicle, or classify a motionless person as a mere obstacle. What the cars share is only token collisions and pad temperatures inside the same loop.
 
-It did not understand the route as a whole and followed only the last registered slot ID and docking beacon.
+The synthetic Oserim records charging-bay heat and residual tokens but cannot issue a run permit. A sleeping car moves again only when a station duty officer matches two different signatures against the slot token. If a second sequencing module appears, the side that detects the token collision goes dormant, which stops dispatches from multiplying without end.
 
-Its senses were bound to the magnetic lane markers, the slot beacons, short-range lidar, the sound of docking contact, and battery heat.
+Energy comes from stop charging pads, regenerative braking, and the residual inverter at the Konkuk transfer. When tires, wheel flanges, docking pins, and lidar covers wear, the cars' turnback error grows. Repair is possible only in the twenty-minute window when Government depot maintenance engineers open the panels in the charging bay, and onboard self-diagnosis cannot replace a swap.
 
-It could take a temporary barricade for a stopped vehicle and queue behind it, or classify a person who was not moving as a simple obstacle.
+Below twenty-five percent storage a car stalls at the nearest ramp and does not return to the next hour slot before the double signature arrives. Abandoned bodies can be added to the timetable but no new chassis or battery packs can be made, so the number falls as cars break.
 
-The only information the cars shared was token conflicts and pad temperatures within the same empty-car loop.
+Citizen power and swarm pads hang on the same distribution board, so cutting all power also kills the transfer lighting and emergency charging. Residents behind a deep shutter can simply dim their lights and close the door, but residents of surface rooms risk freezing if they cut their heating.
 
-H14 Oserim recorded the heat of the charging bays and the leftover tokens but could not create a permit to run.
-
-A dormant car woke only when an HC14 ledger keeper checked two different signatures against the slot token.
-
-When a double controller arose, the side that detected the token conflict went dormant, preventing an endless multiplication of dispatches.
-
-They drew energy from the stop charging pads, regenerative braking, and the leftover inverters of the Geondae transfer.
-
-When tires, wheel flanges, docking pins, and lidar covers wore down, the empty cars' turnaround errors grew.
-
-Maintenance was possible only in the twenty-minute window when HC14 opened the panels in the charging bay and changed the worn parts, and self-diagnosis in service could not replace an exchange.
-
-When the battery fell below twenty-five percent, a car stalled at the nearest ramp and did not return to the next on-the-hour slot until the ledger's double signature came in.
-
-It could fold abandoned car bodies into the timetable but could not produce new chassis or battery packs.
-
-Civilian power and the cluster's pads hung on the same distribution panel, so cutting all power made the transfer lighting and emergency charging disappear as well.
-
-Its emergence happened when pad power and token circulation resumed, and its spread when the neighboring empty-car queues received the same timetable.
-
-It stalled when charging queues and tire wear piled up, and entered a state of negotiation when people could see the slot table and the signature window.
-
-It could be broken up by scrapping the tokens and sealing the pads, but there was also the path of using the remaining cars for slow turnarounds and manual towing.
-
-Coexistence required ledger work that cleared the civilian emergency slots first and disclosed the cluster's late-night travel distances.
+Emergence happens when pad power and the token cycle resume, and spread when an adjacent empty-car queue receives the same timetable. Charging queues and tire wear pile up into stagnation, and it becomes negotiable when people can see the slot table and the signature window. It can be broken up by scrapping tokens and sealing pads, but the remaining cars can also be put to low-speed turnback and manual towing. Coexistence takes ledger work: emptying the citizen emergency slots first and publishing the swarm's night travel distance.
 
 <a id="Hostile-Group-G14-heading-0335"></a>
 
@@ -1154,7 +1116,7 @@ Switching the beacons off too early meant real rescue vehicles could not find th
 
 The civilian transport crew and the dispatch corps fought over the charging pads of the Geondae-ipgu transfer.
 
-HC14 tried to fix the share of emergency slots and pad power in the ledger, and the controller demanded priority in recovering damaged car bodies.
+the station duty tried to fix the share of emergency slots and pad power in the ledger, and the sequencer demanded priority in recovering damaged car bodies.
 
 The people on site had to decide which of the two signatures would get the authority to stop, while keeping the turnaround ramp open so that the slot would not be sealed forever if one side disappeared.
 

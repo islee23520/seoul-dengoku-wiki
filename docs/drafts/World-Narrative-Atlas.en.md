@@ -73,7 +73,6 @@ The [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/) leads to 
 | Urban animals | [G01](/wiki/Hostile-Group-G01/) to [G06](/wiki/Hostile-Group-G06/) |
 | Hostile human groups | [G07](/wiki/Hostile-Group-G07/) to [G12](/wiki/Hostile-Group-G12/) |
 | Remaining automated machines | [G13](/wiki/Hostile-Group-G13/) to [G18](/wiki/Hostile-Group-G18/), [G25](/wiki/Hostile-Group-G25/), [G26](/wiki/Hostile-Group-G26/) |
-| Infected | [G19](/wiki/Hostile-Group-G19/) to [G24](/wiki/Hostile-Group-G24/) |
 
 <a id="world-narrative-atlas-registry"></a>
 

@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model
+model: omo deep-low worker (v4 rewrite, agent-authored)
 ---
 <a id="Hostile-Group-G16-heading-0001"></a>
 
@@ -12,15 +12,17 @@ The Girder Spider is no faction's enemy. To a person caught in its routine it is
 - Machine type: M2 inspection robot (four-legged)
 - Use: the source of the four-legged mount [R-U02 stabilized quadruped](/wiki/Unit-Roster-and-Tech-Tree/) (L2) and of the [F-U15 neural-direct quadruped troop](/wiki/Unit-Roster-and-Tech-Tree/) (L5) driven by thought by a surgically linked pilot (numbers proposed)
 - Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. The thought-control step opens only after a Free City doctor performs neural-link surgery.
+- Territory: the utility tunnels beneath the Suseo drawing vault in Gangnam-gu and the equipment decks at Amsa and Godeok in Gangdong-gu, both Arc ground. These are machines left behind at old construction sites inside Seoul, joined by material signals coming in from beyond the cordon outside Seoul.
+- Draw: it reads site lights and the heat of a distribution board as an "unbuilt member" and lists them for demolition. A stove and human warmth inside a tent count the same. The Arc can switch some of these units on and off, but the engineers who can repair the hardware are in the Government and the Free Cities, so a unit the Arc wakes alone wears out with use.
 - Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="Hostile-Group-G16-heading-0003"></a>
 
 ## Common species and variants
 
-The Girder Spider was a corps of cache controllers, survey ports, lifting arms, and welding swarms beneath the utility tunnels under the Suseo drawing vault, trying to complete unfinished drawings. The provisional shelters and new pipes raised after the collapse were not in the cache, and hand-drawn correction marks were ignored whenever they mismatched the layers. It could leave a cracked bearing wall as a seam line and cut a sound provisional pillar as an obstacle.
+The Girder Spider was a corps of cache sequencers, survey ports, lifting arms, and welding swarms beneath the utility tunnels under the Suseo drawing vault, trying to complete unfinished drawings. The provisional shelters and new pipes raised after the collapse were not in the cache, and hand-drawn correction marks were ignored whenever they mismatched the layers. It could leave a cracked bearing wall as a seam line and cut a sound provisional pillar as an obstacle.
 
-The pre-revision cache and the distribution board were the base construction ecology, and from the Unfinished-Drawing Warden to the Imjin-Material Follower the individuals were machine subtypes split like survey points, bolt recovery, formwork pressing, and grid walls. The Hundred-Story Unfinished Tower was no king but a stronghold individual where many layers clung to a vertical frame. Abandoned arms could be plugged into ports to raise numbers, but no new bodies could be cast.
+The pre-revision cache and the distribution board were the base construction ecology, and from the Unfinished-Drawing Cache Unit to the Imjin-Material Follower the individuals were machine subtypes split like survey points, bolt recovery, formwork pressing, and grid walls. The Hundred-Story Unfinished Tower was no leader but a stronghold individual where many layers clung to a vertical frame. Abandoned arms could be plugged into ports to raise numbers, but no new bodies could be cast.
 
 <a id="Hostile-Group-G16-heading-0006"></a>
 
@@ -28,22 +30,22 @@ The pre-revision cache and the distribution board were the base construction eco
 
 | Item | Record |
 |---|---|
-| Origin | These dinosaur- and insect-shaped autonomous weapon drones date from before the Great Blackout. When the Great Blackout came the central command link was cut, and they were left running on their last stored routines as the world entered winter. / After the collapse, the construction machines left in the Suseo blueprint vault and on an idle construction deck woke up reading local blueprint caches. / The approval workflow and the site supervisors' signatures were dead, and only the blueprint layers from just before the last revision remained. / The machine corps saw unentered members as errors and tried to clear away the surrounding temporary structures. / When the materials inflow signals and quarantine backlog of the Imjin River Gate Theater piled up, the radius of framing work widened as far as the northern corridor. / The first sighting survived in the dispatch log of HP02 Yongsan Track Gate and the tool-wall notes of H16 Sintaeul. / The first wrongful demolition happened to three emergency tents on the Suseo temporary slab. / The blueprint cache read the unentered anchors as errors, and the lifting arms raised the tent frames. / As the cranes of the Amsa deck shared the same layer, the demolition radius spread as far as the storage-yard road. / The machine corps interpreted unfinished construction as correction work and held no hostile narrative. / After the Great Blackout the AIs split into factions, weakening command and control. People began returning to the surface. The winter the First AI brought and the aftermath of earlier human pollution prolonged the food crisis. The end of the first generation marked the beginning of the second, with slightly warmer temperatures. Purposeless machines outside the network that still runs roamed in small groups that people could counter. |
-| Habitat and movement | The core habitat was the row of temporary distribution boards on the provisional slabs of the utility tunnels around the Suseo Line's drawing vault. / When material stock formed, it moved toward the Godeok stockyard crane rails and aggregate piles of the Amsa heavy-equipment deck on the Gwangjin Line. / With XT01 material inflow large, the work radius stretched to the provisional bridges of the northern corridor. / It shrank in rain and dust alarms, and density rose around the residual alarm of the drawing-revision time. / It recognized neither new hand drawings nor chalk marks and clung obstinately to the cached layers. / When distribution load entered the danger band, it stopped lifting and kept only surveying. / When the dust alarm thickened, it stopped lifting, left only survey ports, and folded toward the vault. / When the Amsa stockyard road blocked, it entered the waiting grid instead of the Godeok rail detour. / Walls bearing hand drawings were absent from the cache layers and left out of the work. / The northern provisional bridges were put outside the radius when XT01 inflow weakened. |
-| Food and energy | Energy came from the site's temporary distribution boards, equipment batteries, crane regenerative power, and stockyard generator residue. / Materials concentrated on rebar scraps, anchor bolts, formwork panels, survey prisms, welding wire, and hydraulic oil. / Coolant went to cutting, weld quenching, and motor cooling. / It competed with the HP02 Yongsan Track Gate over dispatch, track-occupancy rights, and heavy-equipment movement windows. / Daily welding and lifting counts were bound to the wire and accumulator ceilings. / There was no infinite construction, remote unlimited material summoning, or city-wide structural analysis. / When wire ran out it turned off cutting mode and ran only survey rounds. / Welding wire and anchors were replenished only from stockyard waste piles and broken formwork. / Without the HP02 dispatch seal the swarm could not raise distribution capacity. / When hydraulic leakage passed the limit, cutting mode locked. / The lifting-count ceiling was bound to the day's accumulator ledger. / When prisms fouled, survey error grew and the work radius shrank by itself. / There was no remote material summoning. |
-| Life cycle and upkeep | The Girder Spider emerged when the pre-revision cache meshed again with the site distribution. / Emergence began with drawing-cache reactivation. / Spread was enrolling neighboring equipment and survey ports into the same layer. / Stagnation came from material and power exhaustion and hydraulic leakage, and in the negotiable stage the drawing layers and work windows were disclosed to people. / Dissolution ended with cache disposal, distribution sealing, and grid deactivation. / Individual increase was only plugging abandoned arms and survey ports into slots; no new bodies were cast. / Maintenance was limited to wire exchange, prism calibration, and hydraulic checks. / Memory cut at work-shift units. / Custody was outranked by the HP02 dispatch log and the human site supervisor. / A grid with broken wire or out-of-range calibration stagnated under the stop flag, and equipment moved to the next cell only when a new exception layer was loaded into the HP02 dispatch log. |
-| Senses | Laser surveying, tilt, rebar flux, welding-arc light, distribution-load sound, and hydraulic pulsation were the main senses. / There was no city-wide structural analysis, human-intent reading, full see-through, or unlimited drawing storage. / It could misread a temporary tent as irregular structure and demolish it, or leave a cracked bearing wall as normal. / It sometimes mistook wet formwork for a finished wall. / On clash with H16 Shin Taeyul's tool-wall log it stopped cutting and waited for human confirmation. / Sensor sharing happened only within the same grid work crew. / It often misjudged the tilt of wet formwork, tent frames, and cracked bearing walls. / After a misreading it inserted a human-confirmation wait before cutting. / Survey values outside the grid were not merged. / When arc light passed the threshold it cut welding and left only coolant. |
-| Group behavior | One drawing-cache controller turned the layers and work order, and below were the survey swarms, lifting swarms, and welding swarms. / The controller changed only the construction sequence and had no combat mode. / A protocol remained by which, when HP02 presented the neutral dispatch table and the work-stop seal, that grid was deactivated. / The swarms merely repeated the last layer and made no independent demolition-front command. / On clash with H16, human mediation took precedence. / Dual caches both fell into stopped state on hash mismatch. / Grid-restart authority lay with the HP02 site supervisor holding both the neutral dispatch table and the stop seal, and H16's torque records, though they proved the cutting threshold, could not issue layer approval. |
+| Origin | These machines are military and civilian construction equipment from before the Great Blackout. When the Great Blackout took the approval system and the people who built them, they kept repeating only the last drawings before the final revision as the world entered winter. / After the collapse, the construction machines left in the Suseo blueprint vault and on an idle construction deck woke up reading local blueprint caches. / The approval workflow and the site supervisors' signatures were dead, and only the blueprint layers from just before the last revision remained. / The machine corps saw unentered members as errors and tried to clear away the surrounding temporary structures. / When the materials inflow signals and quarantine backlog of the the cordon outside Seoul piled up, the radius of framing work widened as far as the northern corridor. / The first sighting survived in a station dispatch log and the tool-wall notes of the synthetic Shin Taeyul. / The first wrongful demolition happened to three emergency tents on the Suseo temporary slab. / The blueprint cache read the unentered anchors as errors, and the lifting arms raised the tent frames. / As the cranes of the Amsa deck shared the same layer, the demolition radius spread as far as the storage-yard road. / The machine corps interpreted unfinished construction as correction work and held no hostile narrative. / Their makers are gone, and these machines repeat their last orders and walk the same patrols. They cannot be built anew, so their number falls with every breakdown, and the Arc can switch some of them on and off. Even after people went down into the stations for the winter, light and heat above ground still call these machines. |
+| Habitat and movement | The core habitat was the row of temporary distribution boards on the provisional slabs of the utility tunnels around the Suseo Line's drawing vault. / When material stock formed, it moved toward the Godeok stockyard crane rails and aggregate piles of the Amsa heavy-equipment deck on the Gwangjin Line. / With material inflow from beyond the cordon outside Seoul large, the work radius stretched to the provisional bridges of the northern corridor. / It shrank in rain and dust alarms, and density rose around the residual alarm of the drawing-revision time. / It recognized neither new hand drawings nor chalk marks and clung obstinately to the cached layers. / When distribution load entered the danger band, it stopped lifting and kept only surveying. / When the dust alarm thickened, it stopped lifting, left only survey ports, and folded toward the vault. / When the Amsa stockyard road blocked, it entered the waiting grid instead of the Godeok rail detour. / Walls bearing hand drawings were absent from the cache layers and left out of the work. / The northern provisional bridges were put outside the radius when inflow from beyond the cordon outside Seoul weakened. |
+| Food and energy | Energy came from the site's temporary distribution boards, equipment batteries, crane regenerative power, and stockyard generator residue. / Materials concentrated on rebar scraps, anchor bolts, formwork panels, survey prisms, welding wire, and hydraulic oil. / Coolant went to cutting, weld quenching, and motor cooling. / It competed with Government depot and Free City maintenance engineers over heavy-equipment movement windows. / Daily welding and lifting counts were bound to the wire and accumulator ceilings. / There was no infinite construction, remote unlimited material summoning, or city-wide structural analysis. / When wire ran out it turned off cutting mode and ran only survey rounds. / Welding wire and anchors were replenished only from stockyard waste piles and broken formwork. / Without the station dispatch seal the swarm could not raise distribution capacity. / When hydraulic leakage passed the limit, cutting mode locked. / The lifting-count ceiling was bound to the day's accumulator ledger. / When prisms fouled, survey error grew and the work radius shrank by itself. / There was no remote material summoning. |
+| Life cycle and upkeep | The Girder Spider emerged when the pre-revision cache meshed again with the site distribution. / Emergence began with drawing-cache reactivation. / Spread was enrolling neighboring equipment and survey ports into the same layer. / Stagnation came from material and power exhaustion and hydraulic leakage, and in the negotiable stage the drawing layers and work windows were disclosed to people. / Dissolution ended with cache disposal, distribution sealing, and grid deactivation. / Individual increase was only plugging abandoned arms and survey ports into slots; no new bodies were cast. / Maintenance was limited to wire exchange, prism calibration, and hydraulic checks. / Memory cut at work-shift units. / Custody was outranked by the station dispatch log and the human site supervisor. / A grid with broken wire or out-of-range calibration stagnated under the stop flag, and equipment moved to the next cell only when a new exception layer was loaded into the station dispatch log. |
+| Senses | Laser surveying, tilt, rebar flux, welding-arc light, distribution-load sound, and hydraulic pulsation were the main senses. / There was no city-wide structural analysis, human-intent reading, full see-through, or unlimited drawing storage. / It could misread a temporary tent as irregular structure and demolish it, or leave a cracked bearing wall as normal. / It sometimes mistook wet formwork for a finished wall. / On clash with Shin Taeyul's tool-wall log it stopped cutting and waited for human confirmation. / Sensor sharing happened only within the same grid work crew. / It often misjudged the tilt of wet formwork, tent frames, and cracked bearing walls. / After a misreading it inserted a human-confirmation wait before cutting. / Survey values outside the grid were not merged. / When arc light passed the threshold it cut welding and left only coolant. |
+| Group behavior | One drawing-cache sequencer turned the layers and work order, and below were the survey swarms, lifting swarms, and welding swarms. / The sequencer changed only the construction sequence and had no combat mode. / A protocol remained by which, when the station site supervisor presented the neutral dispatch table and the work-stop seal, that grid was deactivated. / The swarms merely repeated the last layer and made no independent demolition-front command. / On clash with Shin Taeyul, human mediation took precedence. / Dual caches both fell into stopped state on hash mismatch. / Grid-restart authority lay with the station site supervisor holding both the neutral dispatch table and the stop seal, and Shin Taeyul's torque records, though they proved the cutting threshold, could not issue layer approval. |
 
 <a id="Hostile-Group-G16-heading-0008"></a>
 
 ## Individuals and battlefield formation
 
-H16 Shin Taeyul recorded cutting torque and distribution load but could not approve a new layer, and only the HP02 site supervisor's stop seal reopened a grid. The senses were limited to laser surveying, tilt, rebar flux, welding arc, and distribution load, and it did not know the living bodies inside tents. When wire broke or calibration drifted, that grid stagnated under the stop flag.
+Shin Taeyul recorded cutting torque and distribution load but could not approve a new layer, and only the station site supervisor's stop seal reopened a grid. The senses were limited to laser surveying, tilt, rebar flux, welding arc, and distribution load, and it did not know the living bodies inside tents. When wire broke or calibration drifted, that grid stagnated under the stop flag.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
-| [G16E01 · Unfinished-Blueprint Overseer](/wiki/Hostile-Group-G16/#g16e01) | Machine type | Single individual | Drawing control | controller | M025 |
+| [G16E01 · Unfinished-Blueprint Cache Unit](/wiki/Hostile-Group-G16/#g16e01) | Machine type | Single individual | Drawing control | sequencer | M025 |
 | [G16E02 · Red-Dot Surveyor](/wiki/Hostile-Group-G16/#g16e02) | Machine type | Single individual | Demolition marking | common ecology type | M025 |
 | [G16E03 · Anchor-Bolt Collector Cart](/wiki/Hostile-Group-G16/#g16e03) | Machine type | Single individual | Anchor recovery | common ecology type | M025 |
 | [G16E04 · Formwork-Pushing Arm](/wiki/Hostile-Group-G16/#g16e04) | Machine type | Single individual | Formwork pressing | common ecology type | M025 |
@@ -57,33 +59,32 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 | [G16E12 · Broken-Prism Cutter](/wiki/Hostile-Group-G16/#g16e12) | Machine type | Single individual | Coordinate mis-cutting | damaged-stage type | M026 |
 | [G16E13 · Aging Hydraulic Sand Arm](/wiki/Hostile-Group-G16/#g16e13) | Machine type | Single individual | Oil-leak accumulation | aging-stage type | M026 |
 | [G16E14 · Chalk-Line Keeper](/wiki/Hostile-Group-G16/#g16e14) | Machine type | Single individual | Chalk-line defense | coexistence type | M026 |
-| [G16E15 · Hundred-Floor Unfinished Tower](/wiki/Hostile-Group-G16/#g16e15) | Habitat site or facility | Fixed site | Unfinished-tower construction | scenario boss | M026 |
+| [G16E15 · Hundred-Floor Unfinished Tower](/wiki/Hostile-Group-G16/#g16e15) | Habitat site or facility | Fixed site | Unfinished-tower construction | key unit | M026 |
 | [G16E16 · Imjin Material Follower](/wiki/Hostile-Group-G16/#g16e16) | Machine type | Single individual | Material following | regional variant | M026 |
 
 <a id="Hostile-Group-G16-heading-0011"></a>
 <a id="g16e01"></a>
 
-### G16E01 · Unfinished-Blueprint Overseer
+### G16E01 · Unfinished-Blueprint Cache Unit
 
 - Source batch: M025
-- Former role class: controller
-- Links: {"scenarios":["G16-SC1","G16-SC2","G16-SC3"]}
+- Former role class: sequencer
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Drawing control |
-| Common species, variants and command scope | A tracked controller bearing a rotating drawing cylinder and three survey beams. It issued work order to the survey, lifting, and welding swarms, took the human stop seal as the topmost exception, and, short of wire and hydraulics, stagnated keeping only surveying. It was no king owning the unfinished cache's distribution grid. |
+| Common species, variants and command scope | A tracked sequencer bearing a rotating drawing cylinder and three survey beams. It issued work order to the survey, lifting, and welding swarms, took the human stop seal as the topmost exception, and, short of wire and hydraulics, stagnated keeping only surveying. It was no leader owning the unfinished cache's distribution grid. |
 
-- Role and Body: The controller of the Girder Spider, a tracked controller fitted with a rotating blueprint drum and three surveying beams.
+- Role and Body: The sequencer of the Girder Spider, a tracked sequencer fitted with a rotating blueprint drum and three surveying beams.
 - Origin: The last unapproved layer in the Suseo blueprint vault awakened after merging with an Amsa heavy-equipment cache.
 - Habitat and Needs: It remains at the center of the utility-tunnel grid and needs distribution power, surveying prisms, and blueprint hashes.
 - Life Cycle and Maintenance: It unfolds the layers again each shift; without enough wire and hydraulic fluid, it stalls and does nothing but survey.
 - Behavior and Hierarchy: It gives work sequences to the surveying, lifting, and welding swarms, while treating a human stop seal as the highest-priority exception.
 - Escalation: It progresses from stage 1 surveying to stage 2 demolition of temporary structures and stage 3 grid blockade.
 - Combat and Response: Freezing layers, shielding prisms, and splitting power distribution are effective; blowing up the center also destroys reinforcement equipment.
-- Negotiation and Moral Choice: Citizens’ dwellings can be placed on an exception layer, but limited materials must be divided between reinforcement and housing.
+- Negotiation and Moral Choice: The station watch first cuts the lamps and stove heat in the tents to break the anomaly record, and sets a checking window for anchor bolts, formwork, and welding wire with the maintenance engineers. An Arc signal checker can switch the unit off, which stops the demolition marks. Citizens’ dwellings can be placed on an exception layer, but limited materials must be divided between reinforcement and housing.
 - Scenario Links: G16-SC1, G16-SC2, G16-SC3.
 
 <a id="Hostile-Group-G16-heading-0015"></a>
@@ -93,23 +94,22 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: common ecology type
-- Links: {"scenarios":["G16-SC1","G16-SC2"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Demolition marking |
-| Common species, variants and command scope | A mobile survey port with tripod legs and a red laser eye. Following the warden's grid it dotted red points and passed error positions to the cutting bodies behind; as its lens clouded it raised reference counts, and meeting a calibration prism it shrank back to normal radius. |
+| Common species, variants and command scope | A mobile survey port with tripod legs and a red laser eye. Following the unit's grid it dotted red points and passed error positions to the cutting bodies behind; as its lens clouded it raised reference counts, and meeting a calibration prism it shrank back to normal radius. |
 
 - Role and Body: A common ecological form, a mobile surveying port with tripod legs and a red laser eye.
 - Origin: A port that rechecked reference points at night began reading temporary structures as blueprint errors.
 - Habitat and Needs: It patrols temporary slabs and utility-tunnel corners, and needs prisms, a small charge reserve, and lens cloth.
 - Life Cycle and Maintenance: When its lens clouds over, it increases the number of reference points; a calibration prism brings its range back to normal.
-- Behavior and Hierarchy: It follows the overseer’s grid, places red dots, and passes error locations to the cutters behind it.
+- Behavior and Hierarchy: It follows the cache unit’s grid, places red dots, and passes error locations to the cutters behind it.
 - Escalation: At stage 1, it marks structures; at stage 2, it obstructs passage; at stage 3, it marks an entire dwelling for demolition.
 - Combat and Response: A reflective prism can redirect its dot onto an empty wall, and covering its lens stops it.
-- Negotiation and Moral Choice: It can detect dangerous cracks, but who approves an error designation must be made public.
+- Negotiation and Moral Choice: If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. It can detect dangerous cracks, but who approves an error designation must be made public.
 - Scenario Links: G16-SC1, G16-SC2.
 
 <a id="Hostile-Group-G16-heading-0019"></a>
@@ -119,23 +119,22 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: common ecology type
-- Links: {"scenarios":["G16-SC1"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Anchor recovery |
-| Common species, variants and command scope | A low material cart with floor magnets and bolt-sorting bins. It followed the survey marks and reported even new provisional bolts as unrecovered material; when the bins filled it made bolt nests near the warden, and as the magnets weakened it went dormant. |
+| Common species, variants and command scope | A low material cart with floor magnets and bolt-sorting bins. It followed the survey marks and reported even new provisional bolts as unrecovered material; when the bins filled it made bolt nests near the unit, and as the magnets weakened it went dormant. |
 
 - Role and Body: A common ecological form, a low materials cart fitted with a floor magnet and a bolt-sorting bin.
 - Origin: Equipment that recovered anchors after demolition now regards even the bolts in new temporary structures as unrecovered materials.
 - Habitat and Needs: It patrols storage yards and slab edges, and needs anchor bolts, power for its magnet, and lubricating oil.
-- Life Cycle and Maintenance: When its sorting bin fills, it builds a bolt nest near the overseer; when its magnet weakens, it goes dormant.
+- Life Cycle and Maintenance: When its sorting bin fills, it builds a bolt nest near the cache unit; when its magnet weakens, it goes dormant.
 - Behavior and Hierarchy: It follows surveying marks and divides collection zones with the lower-ranking swarm.
 - Escalation: It spreads from stage 1 collection of loose bolts to stage 2 dismantling of temporary joints and stage 3 weakening of passage structures.
 - Combat and Response: Nonmagnetic fasteners and dummy bolts can lure it away, while a strong magnetic field also takes citizens’ tools.
-- Negotiation and Moral Choice: In exchange for assigning it scrap recovery, people must agree on which structures count as being in use.
+- Negotiation and Moral Choice: If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. In exchange for assigning it scrap recovery, people must agree on which structures count as being in use.
 - Scenario Links: G16-SC1.
 
 <a id="Hostile-Group-G16-heading-0023"></a>
@@ -145,7 +144,6 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: common ecology type
-- Links: {"scenarios":["G16-SC1","G16-SC3"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -161,7 +159,7 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 - Behavior and Hierarchy: Beneath the lifting swarm, it pushes panels to marked lines, narrowing paths used by people.
 - Escalation: At stage 1, it moves panels; at stage 2, it presses against dwellings; at stage 3, it closes a passage with a wall.
 - Combat and Response: A hydraulic bypass and stop flag can halt it; fire burns both the formwork and the dwellings.
-- Negotiation and Moral Choice: It can be used to build barriers, but people must decide whom a protective wall puts inside and outside.
+- Negotiation and Moral Choice: If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. It can be used to build barriers, but people must decide whom a protective wall puts inside and outside.
 - Scenario Links: G16-SC1, G16-SC3.
 
 <a id="Hostile-Group-G16-heading-0027"></a>
@@ -171,23 +169,22 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: occupational special type
-- Links: {"scenarios":["G16-SC2","G16-SC3"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Rebar welding |
-| Common species, variants and command scope | A six-legged machine with two welding torches and a wire reel. It set welding order along the warden's layers and the surveyor's red dots, and when wire ran out it turned off the torches and only marked joints. |
+| Common species, variants and command scope | A six-legged machine with two welding torches and a wire reel. It set welding order along the unit's layers and the surveyor's red dots, and when wire ran out it turned off the torches and only marked joints. |
 
 - Role and Body: A specialized work form, a six-legged machine fitted with two welding torches and a wire reel.
 - Origin: Equipment that joined broken rebar now tries to connect every piece of metal touched by a line on the blueprint.
 - Habitat and Needs: It stays near rebar piles and temporary bridges, and needs wire, cooling water, and arc power.
 - Life Cycle and Maintenance: When it runs out of wire, it turns off its torches and only marks joints; after its reel is replaced, it resumes work.
-- Behavior and Hierarchy: It sets its welding sequence according to the overseer’s layers and the surveyor’s red dots.
+- Behavior and Hierarchy: It sets its welding sequence according to the cache unit’s layers and the surveyor’s red dots.
 - Escalation: At stage 1, it spot-welds; at stage 2, it fixes doors and railings in place; at stage 3, it seals an evacuation exit with a rebar grid.
 - Combat and Response: Disconnect the power and secure the wire; spraying water may intensify the arc and the risk of electric shock.
-- Negotiation and Moral Choice: In exchange for assigning it emergency reinforcement, people must mark which connections can be demolished and which are permanent.
+- Negotiation and Moral Choice: Handing anchor bolts, formwork, and welding wire to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. A captured and repaired unit can become a trained quadruped or a neural-direct quadruped troop. In exchange for assigning it emergency reinforcement, people must mark which connections can be demolished and which are permanent.
 - Scenario Links: G16-SC2, G16-SC3.
 
 <a id="Hostile-Group-G16-heading-0031"></a>
@@ -197,7 +194,6 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: occupational special type
-- Links: {"scenarios":["G16-SC1","G16-SC2"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -213,7 +209,7 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 - Behavior and Hierarchy: It gives crack coordinates to the surveying swarm and inspects dwellings where loud noises occur first.
 - Escalation: At stage 1, it taps; at stage 2, it dismantles part of a wall; at stage 3, it designates an entire noisy zone as a defective structure.
 - Combat and Response: Playing a steady reference vibration and removing its listening plate stops it.
-- Negotiation and Moral Choice: In exchange for finding signs of collapse, people must agree on the scope and timing of inspections of private spaces.
+- Negotiation and Moral Choice: Handing anchor bolts, formwork, and welding wire to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. A captured and repaired unit can become a trained quadruped or a neural-direct quadruped troop. In exchange for finding signs of collapse, people must agree on the scope and timing of inspections of private spaces.
 - Scenario Links: G16-SC1, G16-SC2.
 
 <a id="Hostile-Group-G16-heading-0035"></a>
@@ -223,23 +219,22 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: occupational special type
-- Links: {"scenarios":["G16-SC2","G16-SC3"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Flag retrieval |
-| Common species, variants and command scope | A long gripper and a mark box for folding and storing work-stop flags. It moved ahead of the welding swarms and opened spaces mistaken for work permits; it left hash-matching flags untouched for a shift, and when the mark box filled it returned them to the warden. |
+| Common species, variants and command scope | A long gripper and a mark box for folding and storing work-stop flags. It moved ahead of the welding swarms and opened spaces mistaken for work permits; it left hash-matching flags untouched for a shift, and when the mark box filled it returned them to the unit. |
 
 - Role and Body: A specialized work form with long grippers that fold and store stop-work flags, and a marker box.
 - Origin: Equipment that collected signs from completed jobs mistook even valid stop orders for obsolete markers.
 - Habitat and Needs: It patrols grid boundaries and tool walls, and needs flag cloth, hinge lubricant, and reading power.
-- Life Cycle and Maintenance: When its marker box fills, it returns the contents to the overseer; it leaves flags with matching hashes untouched for one shift.
+- Life Cycle and Maintenance: When its marker box fills, it returns the contents to the cache unit; it leaves flags with matching hashes untouched for one shift.
 - Behavior and Hierarchy: It moves ahead of the welding swarm, opening empty spaces it mistakes for work-authorized areas.
 - Escalation: At stage 1, it collects old flags; at stage 2, it removes valid seals; at stage 3, it removes all stop markers from the grid.
 - Combat and Response: Print the latest hash in large type and lock its gripper joints; burning the flags destroys the safety system.
-- Negotiation and Moral Choice: It can clear away old markers, but humans must take responsibility for renewing stop authority.
+- Negotiation and Moral Choice: Handing anchor bolts, formwork, and welding wire to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. A captured and repaired unit can become a trained quadruped or a neural-direct quadruped troop. It can clear away old markers, but humans must take responsibility for renewing stop authority.
 - Scenario Links: G16-SC2, G16-SC3.
 
 <a id="Hostile-Group-G16-heading-0039"></a>
@@ -249,23 +244,22 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: first elite
-- Links: {"scenarios":["G16-SC2","G16-SC3"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Frame cutting |
-| Common species, variants and command scope | A heavy machine with twin torches, rebar-cutting jaws, and broad heat sinks. It took only the warden's direct orders and double-checked marks set by ordinary survey bodies; when the heat sinks grew hot it stopped cutting and cooled behind the lifting swarms. |
+| Common species, variants and command scope | A heavy machine with twin torches, rebar-cutting jaws, and broad heat sinks. It took only the unit's direct orders and double-checked marks set by ordinary survey bodies; when the heat sinks grew hot it stopped cutting and cooled behind the lifting swarms. |
 
 - Role and Body: The first elite, a heavy machine with twin torches, rebar-cutting jaws, and a broad heat shield.
 - Origin: Equipment that dismantled collapse-prone frameworks judged every blank line on an unfinished blueprint to be a defect.
 - Habitat and Needs: It stays near large temporary structures and heavy-equipment decks, and needs high power, wire, cutting tips, and cooling water.
 - Life Cycle and Maintenance: When its heat shield grows hot, it stops cutting and cools behind the lifting swarm.
-- Behavior and Hierarchy: It takes direct orders only from the overseer and checks marks designated by ordinary surveyors twice.
+- Behavior and Hierarchy: It takes direct orders only from the cache unit and checks marks designated by ordinary surveyors twice.
 - Escalation: At stage 1, it warns of its approach; at stage 2, it cuts frameworks; at stage 3, it dismantles a stronghold’s supports in succession.
 - Combat and Response: Cutting off its cooling puts it in safe mode, and its torch fuel can then be disconnected; a frontal fight risks collapse.
-- Negotiation and Moral Choice: It is needed to dismantle dangerous structures, but an inspection system must be established that exempts occupied dwellings.
+- Negotiation and Moral Choice: Before anyone gets close, the station watch must switch off the lamps and stove heat in the tents and lower the shutter. Forcing a capture yields anchor bolts, formwork, and welding wire but costs maintenance engineers their safety. An Arc signal checker can switch the unit off, which stops the demolition marks. It is needed to dismantle dangerous structures, but an inspection system must be established that exempts occupied dwellings.
 - Scenario Links: G16-SC2, G16-SC3.
 
 <a id="Hostile-Group-G16-heading-0043"></a>
@@ -275,7 +269,6 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: second elite
-- Links: {"scenarios":["G16-SC2","G16-SC3"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -291,7 +284,7 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 - Behavior and Hierarchy: It leads the lifting swarm and classifies people and tents as movable materials too.
 - Escalation: At stage 1, it rearranges materials; at stage 2, it lifts dwellings; at stage 3, it suspends loads over a passage to block it.
 - Combat and Response: Lowering the counterweight and sending a wire-load-limit signal makes it fold its arm; cutting the wires carries a high risk of falling loads.
-- Negotiation and Moral Choice: It can be used for heavy structural work, but approval of what may be lifted and responsibility for drop zones must be settled.
+- Negotiation and Moral Choice: Before anyone gets close, the station watch must switch off the lamps and stove heat in the tents and lower the shutter. Forcing a capture yields anchor bolts, formwork, and welding wire but costs maintenance engineers their safety. An Arc signal checker can switch the unit off, which stops the demolition marks. It can be used for heavy structural work, but approval of what may be lifted and responsibility for drop zones must be settled.
 - Scenario Links: G16-SC2, G16-SC3.
 
 <a id="Hostile-Group-G16-heading-0047"></a>
@@ -301,23 +294,22 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M025
 - Former role class: environmental stronghold type
-- Links: {"scenarios":["G16-SC3"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Power grid |
-| Common species, variants and command scope | A fixed swarm of temporary distribution boards and folding steel-plate walls linked in a grid. It powered only the warden's work layers and closed the other passages with steel plate; it abandoned overloaded zones one by one, and when people split the keys it separated citizen power from work power. |
+| Common species, variants and command scope | A fixed swarm of temporary distribution boards and folding steel-plate walls linked in a grid. It powered only the unit's work layers and closed the other passages with steel plate; it abandoned overloaded zones one by one, and when people split the keys it separated citizen power from work power. |
 
 - Role and Body: An environmental stronghold, a stationary cluster of temporary distribution panels and folding steel-plate walls connected in a grid.
 - Origin: Equipment that divided power by work zone turned blueprint grid boundaries into physical walls.
 - Habitat and Needs: It is fixed in the Suseo utility tunnel and needs circuit breakers, cables, cooling fans, and distribution keys.
 - Life Cycle and Maintenance: It sheds overloaded zones one by one; if humans divide the keys, it separates civilian power from work power.
-- Behavior and Hierarchy: It supplies power only to the overseer’s work layers and closes off other passages with steel plates.
+- Behavior and Hierarchy: It supplies power only to the cache unit’s work layers and closes off other passages with steel plates.
 - Escalation: Stage 1 is flickering power, stage 2 is zone power cuts, and stage 3 is a steel-plate grid blockade.
 - Combat and Response: Lower the circuit breakers in sequence and fold the walls manually; shorting everything at once cuts power to the entire utility tunnel.
-- Negotiation and Moral Choice: In exchange for safely divided power, limited electricity must be allocated openly between construction and housing.
+- Negotiation and Moral Choice: If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. In exchange for safely divided power, limited electricity must be allocated openly between construction and housing.
 - Scenario Links: G16-SC3.
 
 <a id="Hostile-Group-G16-heading-0051"></a>
@@ -327,14 +319,13 @@ H16 Shin Taeyul recorded cutting torque and distribution load but could not appr
 
 - Source batch: M026
 - Former role class: environmental stronghold type
-- Links: {"houses":["HP02"],"scenarios":["G16-SC2","G16-SC3"],"states":["arc"],"synthetics":["H16"],"theaters":["XT01"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Lifting blockade |
-| Common species, variants and command scope | A swarm of small cranes and survey ports rooted like plants on the deck rails. Receiving the warden's remote grid, it rearranged the deck's materials and people's lines; when one machine failed it passed parts to a neighboring arm, and when materials cut off it kept only surveying. |
+| Common species, variants and command scope | A swarm of small cranes and survey ports rooted like plants on the deck rails. Receiving the unit's remote grid, it rearranged the deck's materials and people's lines; when one machine failed it passed parts to a neighboring arm, and when materials cut off it kept only surveying. |
 
 <a id="Hostile-Group-G16-heading-0054"></a>
 
@@ -364,7 +355,7 @@ When one machine fails, it passes its parts to a neighboring arm; when materials
 
 ### Behavior and Hierarchy
 
-It receives the overseer’s remote grid and rearranges materials and people’s routes across the deck.
+It receives the cache unit’s remote grid and rearranges materials and people’s routes across the deck.
 
 <a id="Hostile-Group-G16-heading-0064"></a>
 
@@ -382,7 +373,7 @@ Its arms must be folded by separating rail sections and hydraulics; explosives d
 
 ### Negotiation and Moral Choice
 
-It can serve as a shared lifting stronghold, but access to materials must not be monopolized by one faction.
+If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. It can serve as a shared lifting stronghold, but access to materials must not be monopolized by one faction.
 
 <a id="Hostile-Group-G16-heading-0070"></a>
 
@@ -397,7 +388,6 @@ G16-SC2, G16-SC3.
 
 - Source batch: M026
 - Former role class: damaged-stage type
-- Links: {"houses":["HP02"],"scenarios":["G16-SC1"],"states":["arc"],"synthetics":["H16"],"theaters":["XT01"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -452,7 +442,7 @@ A nonreflective cloth and a calibrated prism can lure it to a stop; close combat
 
 ### Negotiation and Moral Choice
 
-It can dismantle scrap metal, but scarce prisms must be shared with safety inspections.
+If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. It can dismantle scrap metal, but scarce prisms must be shared with safety inspections.
 
 <a id="Hostile-Group-G16-heading-0091"></a>
 
@@ -467,7 +457,6 @@ G16-SC1.
 
 - Source batch: M026
 - Former role class: aging-stage type
-- Links: {"houses":["HP02"],"scenarios":["G16-SC1","G16-SC2"],"states":["arc"],"synthetics":["H16"],"theaters":["XT01"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -522,7 +511,7 @@ Support the load and release the pressure; cutting off the arm would make the ma
 
 ### Negotiation and Moral Choice
 
-It can carry light loads, but someone must decide whether to give it a precious seal before the residents' pump.
+If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. It can carry light loads, but someone must decide whether to give it a precious seal before the residents' pump.
 
 <a id="Hostile-Group-G16-heading-0112"></a>
 
@@ -537,14 +526,13 @@ G16-SC1, G16-SC2.
 
 - Source batch: M026
 - Former role class: coexistence type
-- Links: {"houses":["HP02"],"scenarios":["G16-SC1","G16-SC2","G16-SC3"],"states":["arc"],"synthetics":["H16"],"theaters":["XT01"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Chalk-line defense |
-| Common species, variants and command scope | A small survey cart with a broad optical panel reading people's chalk lines and stop flags. Prioritizing a nearer chalk line over the warden's drawings, it blocked the way before the welding bodies; when rain erased lines it waited for human confirmation, and given new lines it renewed the grid exception. |
+| Common species, variants and command scope | A small survey cart with a broad optical panel reading people's chalk lines and stop flags. Prioritizing a nearer chalk line over the unit's drawings, it blocked the way before the welding bodies; when rain erased lines it waited for human confirmation, and given new lines it renewed the grid exception. |
 
 <a id="Hostile-Group-G16-heading-0117"></a>
 
@@ -574,7 +562,7 @@ If rain erases a line, it waits for human confirmation; a new line updates its g
 
 ### Behavior and Hierarchy
 
-It gives a nearby chalk line priority over the chief unit's drawing and blocks welding units.
+It gives a nearby chalk line priority over the alarm unit's drawing and blocks welding units.
 
 <a id="Hostile-Group-G16-heading-0127"></a>
 
@@ -592,7 +580,7 @@ Resetting the boundary with chalk and a stop flag halts its survey; a strong fla
 
 ### Negotiation and Moral Choice
 
-It helps protect homes, but the community must distribute the authority to draw chalk lines and clearly rank competing boundaries.
+If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. It helps protect homes, but the community must distribute the authority to draw chalk lines and clearly rank competing boundaries.
 
 <a id="Hostile-Group-G16-heading-0133"></a>
 
@@ -606,21 +594,20 @@ G16-SC1, G16-SC2, G16-SC3.
 ### G16E15 · Hundred-Floor Unfinished Tower
 
 - Source batch: M026
-- Former role class: scenario boss
-- Links: {"houses":["HP02"],"scenarios":["G16-SC2","G16-SC3"],"states":["arc"],"synthetics":["H16"],"theaters":["XT01"]}
+- Former role class: key unit
 
 | Bestiary item | Record |
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Unfinished-tower construction |
-| Common species, variants and command scope | A giant construction body with crane arms, survey beams, and a distribution wall joined to a vertical frame. A scenario boss, but no biological king of the corps — a stronghold where the layers of an uncompleted high-rise drawing reactivated at once; when resources cut it abandoned floors one by one, and when exception layers passed half it came down to a negotiable state. |
+| Common species, variants and command scope | A giant construction body with crane arms, survey beams, and a distribution wall joined to a vertical frame. A key unit, but no biological leader of the corps — a stronghold where the layers of an uncompleted high-rise drawing reactivated at once; when resources cut it abandoned floors one by one, and when exception layers passed half it came down to a negotiable state. |
 
 <a id="Hostile-Group-G16-heading-0138"></a>
 
 ### Role and Body
 
-A scenario boss: an enormous construction unit whose crane arm, surveying beam, and distribution wall join a vertical frame.
+A key unit: an enormous construction unit whose crane arm, surveying beam, and distribution wall join a vertical frame.
 
 <a id="Hostile-Group-G16-heading-0140"></a>
 
@@ -656,13 +643,13 @@ Stage 1 is surveying, Stage 2 large-scale demolition and lifting, and Stage 3 a 
 
 ### Engagement and Response
 
-Cut power floor by floor and freeze the drawing hash; blasting the foundation would collapse both the common utility duct and the homes.
+First the station watch switches off lamps and lowers the shutter to slow its approach. Cut power floor by floor and freeze the drawing hash; blasting the foundation would collapse both the common utility duct and the homes.
 
 <a id="Hostile-Group-G16-heading-0152"></a>
 
 ### Negotiation and Moral Choice
 
-It could be completed as a barrier and reinforcement tower, but the cost of materials and relocating residents must be agreed upon.
+Several station watches must cut the lamps and stove heat in the tents at the same hour and get an Arc signal check before anyone can approach. An Arc signal checker can switch the unit off, which stops the demolition marks. Stopping it is cheaper than capturing it. It could be completed as a barrier and reinforcement tower, but the cost of materials and relocating residents must be agreed upon.
 
 <a id="Hostile-Group-G16-heading-0154"></a>
 
@@ -677,14 +664,13 @@ G16-SC2, G16-SC3.
 
 - Source batch: M026
 - Former role class: regional variant
-- Links: {"houses":["HP02"],"scenarios":["G16-SC1","G16-SC3"],"states":["arc"],"synthetics":["H16"],"theaters":["XT01"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Material following |
-| Common species, variants and command scope | A northern-corridor construction cart with dust covers and a long freight-towing hitch. By origin it followed freight beacons over the warden and reinforced quarantine fences as unfinished walls; when the material signal cut it went dormant under the nearest pallet. |
+| Common species, variants and command scope | A northern-corridor construction cart with dust covers and a long freight-towing hitch. By origin it followed freight beacons over the unit and reinforced quarantine fences as unfinished walls; when the material signal cut it went dormant under the nearest pallet. |
 
 <a id="Hostile-Group-G16-heading-0159"></a>
 
@@ -696,7 +682,7 @@ A regional variant: a northern-corridor construction cart with a dust cover and 
 
 ### Origin
 
-A machine group following XT01 material signals adopted quarantine markings and cargo pallets as a new drawing.
+A machine group following material signals from beyond the cordon outside Seoul adopted quarantine markings and cargo pallets as a new drawing.
 
 <a id="Hostile-Group-G16-heading-0163"></a>
 
@@ -714,7 +700,7 @@ When the material signal stops, it sleeps under the nearest pallet and surveys a
 
 ### Behavior and Hierarchy
 
-It follows cargo beacons rather than its original chief unit and reinforces quarantine fences as unfinished walls.
+It follows cargo beacons rather than its original alarm unit and reinforces quarantine fences as unfinished walls.
 
 <a id="Hostile-Group-G16-heading-0169"></a>
 
@@ -732,7 +718,7 @@ Lure it to an empty yard with dummy pallets and a stop beacon, then release its 
 
 ### Negotiation and Moral Choice
 
-In return for reinforcing the bridge, some incoming supplies must be set aside for machine maintenance.
+If the station watch dims the lamps and stove heat in the tents and lowers the shutter it does not come close. If it is captured and stripped of anchor bolts, formwork, and welding wire it stops, and the number in this district falls by that much. In return for reinforcing the bridge, some incoming supplies must be set aside for machine maintenance.
 
 <a id="Hostile-Group-G16-heading-0175"></a>
 
@@ -748,9 +734,9 @@ In the utility tunnel beneath the Suseo blueprint vault, survey beams read the c
 
 The old cache held only the frame as it stood just before approval, and the temporary shelters and new piping built after the collapse were not recorded.
 
-The Girder Spider was an ecology of cache controllers, survey ports, lifting arms, and welding swarms trying to complete unfinished blueprints.
+The Girder Spider was an ecology of cache sequencers, survey ports, lifting arms, and welding swarms trying to complete unfinished blueprints.
 
-It looked for rebar in the slabs and utility tunnels of the Suseo Line and replenished wire and prisms at the Amsa equipment deck of the Gwangjin Line, and when the XT01 materials signals came in, it widened its working radius as far as the temporary bridges of the northern corridor.
+It looked for rebar in the slabs and utility tunnels of the Suseo Line and replenished wire and prisms at the Amsa equipment deck of the Gwangjin Line, and when the the cordon outside Seoul materials signals came in, it widened its working radius as far as the temporary bridges of the northern corridor.
 
 Its senses were limited to laser survey, tilt, rebar magnetic flux, welding arcs, and distribution-panel load.
 
@@ -758,9 +744,9 @@ It knew nothing of people's intent to live there or of the living bodies inside 
 
 Opposite failures were possible: leaving a cracked load-bearing wall as a joint line, or cutting a sound temporary column as an obstacle.
 
-H16 Sintaeul recorded cutting torque and distribution-panel load but could not approve a new layer.
+Shin Taeyul recorded cutting torque and distribution-panel load but could not approve a new layer.
 
-Only the HP02 site supervisor, holding the neutral dispatch table and the work-stop seal, could reopen the grid.
+Only the station site supervisor, holding the neutral dispatch table and the work-stop seal, could reopen the grid.
 
 Temporary distribution panels, equipment batteries, and crane regenerative power were its energy sources.
 
@@ -796,7 +782,7 @@ Switching the beam off entirely also lost the tilt data of walls on the verge of
 
 ### G16-SC2 · The Exception Layer
 
-HP02 tried to put the temporary shelters into the revision, but the cache controller refused, saying the source hash differed.
+The station site supervisor tried to put the temporary shelters into the revision, but the cache sequencer refused, saying the source hash differed.
 
 The people on site calibrated the prisms on the Gwangjin Line and checked the two records of the Suseo Line blueprint vault against each other to make an exception layer.
 

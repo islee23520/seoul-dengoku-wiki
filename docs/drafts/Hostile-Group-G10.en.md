@@ -1,18 +1,22 @@
 ---
-title: G10 · Bogukmun group
-model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model
+model: claude-opus (agent-authored v4 rewrite by worker v4rw-hostile-humans from CANON-BIBLE v4 2.5/2.7/2.8 and proposals.md section 2; 0 completion calls; not from a Gemini model)
 ---
+
 <a id="Hostile-Group-G10-heading-0001"></a>
 
 [Ecology and variant bestiary](/wiki/Hostile-Ecology-Index/)
 
 ## Relation to the Three Factions
 
-What the Bogukmun group is after is grain sacks and sacks of distributed seed. Only the Government holds the original seed stock, and seed anywhere else is only what was handed out from it. A sack of seed is therefore worth more than the same weight of grain, and for a faction whose weapons are people and food, like the Free Cities, it is the supply that sets the ceiling on conscription. The lower ration stores at Garak and Jamsil where the group stands are on Arc ground. The Arc keeps only a minimal rifle-level defense, so it cannot hold the store doors for long. The lines of cost are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
+The Bogukmun group moves between Government ground (the Bukhansan Bogukmun shelter corridor) and Arc ground (the lower ration depots of Garak and Jamsil). It is made of people who crossed from the Government to Arc, lost what they held and their territory, and fell to the lowest class, together with people no station would take in. What it is after is grain sacks and bags of distributed seed. Only the Government holds the original seed; seed anywhere else was only passed on from the Government stock. So a bag of seed is worth more than the same weight of grain, and for a faction like the Free Cities, whose weapons are people and food, it is the supply that fixes the conscription ceiling. The group does not only steal bags: it seizes ration workers and takes seed as ransom. The lower ration depots of Garak and Jamsil where the group stands are Arc ground. Arc keeps only a rifle-level minimum guard and cannot hold the depot doors for long. The lines of cost are set out in [The Cost Structure of the Three Factions](/wiki/Cost-Structure/).
 
 <a id="Hostile-Group-G10-heading-0003"></a>
 
 ## Common species and variants
+
+The Bogukmun group gathers in the poorly drained stretch of the Bukhansan Bogukmun shelter corridor. In the rainy season and on ration cycles they stand at the lower ration depots and vents of Garak and Jamsil. They are people, with grain sacks, water cans and wooden staves in their hands.
+
+The group leader, the elite squad and the scouts are three places in one band, and the attendants carry sacks and water cans behind the leader. The leader sets direction at the threshold of the corridor junction, the elite squad blocks the drain and the depot doors, and the scouts stand at the vents and the outer stair.
 
 <a id="Hostile-Group-G10-heading-0006"></a>
 
@@ -20,21 +24,23 @@ What the Bogukmun group is after is grain sacks and sacks of distributed seed. O
 
 | Item | Record |
 |---|---|
-| Habitat and movement | The Bogukmun group gathers on the poorly drained stretches of the Bukhansan Bogukmun shelter corridors. In the monsoon and the ration cycle they stand at the lower granaries and vents of Garak and Jamsil. When sea wind from the Incheon Trust Theater comes in, the number on the outer stair grows and attendants remain inside the corridor. When the corridor dries, the people shift toward the granary doors. |
-| Food and energy | At the Jamsil lower granary, grain sacks and tins of dry side dishes are passed to the group's side. At the Garak vent, the flashlights and rain capes are on the Elite Squad's side. After the Magok Seed House stops issue, the allotment seed bags on the upper shelves (shares of the Government's original stock) stay tied, and only the lower sacks are in front of the door. |
-| Life cycle and upkeep | On ration-day afternoons, people from the Bukhansan Bogukmun corridor side join the lower levels at Garak and Jamsil. When sea wind from the Incheon Trust Theater enters the corridor, the number on the outer stair grows and attendants remain on the inner threshold. When the corridor dries, the Elite Squad stands before the granary doors, and only marker cloth stays tied to the drain handle. |
-| Group behavior | The Group leader stands on the threshold of the corridor junction. The Elite Squad takes the drain and the granary doors. The Scouts stand on the vents and the ration route and face the leader's side. Attendants hold sacks and water cans on the dry tread behind the leader. |
+| Origin | The Government corridor duty staff see this group from a dry stair of the Bukhansan Bogukmun corridor on a rainy-season night. People stand on both sides of a drain filled knee-deep, with the hems of their raincoats touching the water. A wet marker cloth is tied to the door handle. |
+| Habitat and movement | The Bogukmun group gathers in the poorly drained stretch of the Bukhansan Bogukmun shelter corridor. In the rainy season and on ration cycles they stand at the lower ration depots and vents of Garak and Jamsil. When the sea wind comes in, the number on the outer stair grows and the attendants remain inside the corridor. When the corridor dries, people drift toward the depot doors. |
+| Food and energy | Grain sacks and tins of dried side dishes are handed over toward the group at the lower ration depot of Jamsil. The flashlights and raincoats at the Garak vent are on the elite squad's side. After the Government seed store stops issuing, the bags of distributed seed on the upper shelf stay tied and only the lower-floor sacks are at the door. If a ration worker has been seized, the number of seed bags is written as the ransom. |
+| Life cycle and upkeep | On ration days the people from the Bogukmun corridor side attach themselves to the lower levels of Garak and Jamsil. When the sea wind enters the corridor, the number on the outer stair grows and the attendants stay at the inner threshold. When the corridor dries, the elite squad stands before the depot door and only marker cloths are left tied to the drain handles. |
+| Senses | The group leader looks toward the junction and the attendants look at the leader's back. The elite squad stands in a single line at the drain joints, and the scouts watch from the vent walkway for the moment the ration line breaks. |
+| Group behavior | The group leader stands at the threshold of the corridor junction. The elite squad handles the drain and the depot doors. The scouts stand at the vent and the ration route facing the leader. The attendants hold sacks and water cans on the dry footing behind the leader. |
 
 <a id="Hostile-Group-G10-heading-0008"></a>
 
 ## Individuals and battlefield formation
 
-The Group leader's post is the junction of the Bukhansan Bogukmun shelter corridor and its threshold. The Elite Squad's post runs from the drain in the leader's sight to the lower doors at Garak and Jamsil. The Scouts' post is the vent walkways and the route where the ration sacks are carried, and it includes the outer stair that the sea wind from the Incheon Trust Theater reaches.
+The group leader's place is the junction of the Bukhansan Bogukmun shelter corridor and its threshold. The elite squad's place runs from the drain the leader watches to the lower-level doors of Garak and Jamsil. The scouts' place is the vent walkway, the route along which ration sacks are carried, and the outer stair the sea wind reaches.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
-| [G10E01 · Group leader](/wiki/Hostile-Group-G10/#g10e01) | Person | Single individual | Stands on the threshold of the Bukhansan Bogukmun shelter-corridor junction and sets the direction the attendants and the Elite Squad face. | Leader | M015 |
-| [G10E08 · Elite Squad](/wiki/Hostile-Group-G10/#g10e08) | Person | Single individual | Stands on both sides of the drain and at the lower-granary doors and blocks the passage and the issue side. | Elite | M016 |
+| [G10E01 · Group leader](/wiki/Hostile-Group-G10/#g10e01) | Person | Single individual | Stands on the threshold of the Bukhansan Bogukmun shelter-corridor junction and sets the direction the attendants and the elite squad face. | Leader | M015 |
+| [G10E08 · Elite Squad](/wiki/Hostile-Group-G10/#g10e08) | Person | Single individual | Stands on both sides of the drain and at the lower-depot doors and blocks the passage and the issue side. | Elite | M016 |
 | [G10E15 · Scouts](/wiki/Hostile-Group-G10/#g10e15) | Person | Single individual | Lines the vent walkways and the ration route and takes the side where the sacks are carried out and the outer stair. | Strategic encounter | M016 |
 
 <a id="Hostile-Group-G10-heading-0011"></a>
@@ -44,21 +50,20 @@ The Group leader's post is the junction of the Bukhansan Bogukmun shelter corrid
 
 - Source batch: M015
 - Former role class: Leader
-- Links: {"houses":["HC10"],"scenarios":["G10-SC1","G10-SC2","G10-SC3"],"states":["government"],"synthetics":["H10"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Person |
 | Battlefield unit | Single individual |
-| Battlefield role | Stands on the threshold of the Bukhansan Bogukmun shelter-corridor junction and sets the direction the attendants and the Elite Squad face. |
-| Common species, variants and command scope | The post is the corridor junction and its threshold; the doors at Garak and Jamsil are taken by the Elite Squad. |
+| Battlefield role | Stands on the threshold of the Bukhansan Bogukmun shelter-corridor junction and sets the direction the attendants and the elite squad face. |
+| Common species, variants and command scope | The place is the corridor junction and its threshold, and the Garak and Jamsil doors are the elite squad's. The price for returning a seized person is set by the leader. |
 
-- Marker cloth
-- Corridor iron-door key
-- Water can
-- Flashlight
-- Wooden staff
-- Rain cape
+- A marker cloth
+- The key to the corridor iron door
+- A water can
+- A flashlight
+- A wooden staff
+- A raincoat
 
 <a id="Hostile-Group-G10-heading-0015"></a>
 <a id="g10e08"></a>
@@ -67,21 +72,20 @@ The Group leader's post is the junction of the Bukhansan Bogukmun shelter corrid
 
 - Source batch: M016
 - Former role class: Elite
-- Links: {"states":["government"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Person |
 | Battlefield unit | Single individual |
-| Battlefield role | Stands on both sides of the drain and at the lower-granary doors and blocks the passage and the issue side. |
-| Common species, variants and command scope | From the drain in the leader's sight to the lower doors at Garak and Jamsil; the vent walkway is the Scouts' post. |
+| Battlefield role | Stands on both sides of the drain and at the lower-depot doors and blocks the passage and the issue side. |
+| Common species, variants and command scope | From the drain the leader watches to the lower-level doors of Garak and Jamsil; the vent walkway is the scouts' place. |
 
-- Rain cape
-- Flashlight
-- Door bar
-- Wooden staff
-- Marker cloth
-- Ration-sack cord
+- A raincoat
+- A flashlight
+- A door bar
+- A wooden staff
+- A marker cloth
+- A ration-sack cord
 
 <a id="Hostile-Group-G10-heading-0019"></a>
 <a id="g10e15"></a>
@@ -90,35 +94,34 @@ The Group leader's post is the junction of the Bukhansan Bogukmun shelter corrid
 
 - Source batch: M016
 - Former role class: Strategic encounter
-- Links: {"states":["government"],"synthetics":["H10"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Person |
 | Battlefield unit | Single individual |
 | Battlefield role | Lines the vent walkways and the ration route and takes the side where the sacks are carried out and the outer stair. |
-| Common species, variants and command scope | The Garak and Jamsil lower levels when the monsoon and the ration cycle overlap, and the outer stair that the sea wind from the Incheon Trust Theater reaches. |
+| Common species, variants and command scope | The lower levels of Garak and Jamsil where the rainy season and the ration cycle overlap, and the outer stair the sea wind reaches. |
 
-- Ration sack
-- Ration name list
-- Flashlight
-- Water can
-- Rain cape
-- Marker cloth
+- A ration sack
+- A ration list
+- A flashlight
+- A water can
+- A raincoat
+- A marker cloth
 
 <a id="Hostile-Group-G10-heading-0023"></a>
 
 ## Habitat record
 
-At the same hour the Group leader faces the junction and the attendants face the leader's back. The Elite Squad stands in one line at the drain joint. The squad has left the flashlights off and set the wooden staves beside their feet.
+At the same hour the group leader looks toward the junction and the attendants look at the leader's back. The elite squad stands in a single line at the drain joints. They keep their flashlights off and their staves beside their feet.
 
-On a monsoon night the water in the drain reaches the knee. The Elite Squad stands on both sides of the water, and the rain capes touch the water. The Anguk Order corridor watch is on the stair on the dry side, and the iron door is locked. The marker cloth on the door handle is wet.
+On a rainy-season night the water in the drain stands knee-deep. The elite squad stands on both sides of the water with their raincoats touching it. The Government corridor duty staff are on the dry stair and the iron door is locked. The marker cloth on the door handle is wet.
 
-On a ration-day afternoon the Magok Seed House ration watch is at the Jamsil lower granary. The Scouts fill the space before the door, and grain sacks and tins of dry side dishes are inside the door. The watch calls the names of the waiting people from the upper level. The people whose names are called stand on the stair, and the sacks are on the Scouts' side.
+On a ration-day noon the ration worker of the Government seed store is at the lower ration depot of Jamsil. The scouts fill the front of the door, and grain sacks and tins of dried side dishes are inside. The worker calls the names of those waiting from the upper floor. The people called stand on the stairs and the sacks are on the scouts' side.
 
-The Yunsaeron side stands in front of the corridor door after the Magok Seed House hands the allotment seed-bag issue list to the ration watch. The bags written on the list are at the morning door, and the remaining bags are tied on the upper shelves. The Group leader looks toward the list from the threshold of that door.
+After the seed store hands the issue list of distributed seed bags to the ration worker, the group stands before the corridor door. The bags on the list are at the morning door and the rest are tied on the upper shelf. The group leader looks at the list from the threshold. On a night when they want bags not on the list, one worker is dragged out of the door and a row of bags from the upper shelf comes down as the price.
 
-On a day when the corridor is dry, the drain floor is exposed and marker cloth remains on the handle. The Elite Squad and the Scouts stand together before the door of the Garak lower granary. One shift of the Anguk Order corridor watch is on the stair outside the stretch and shines flashlights on the door. The waiting line runs up that stair.
+On a day when the corridor is dry, the floor of the drain shows and the marker cloth remains on the handle. The elite squad and the scouts stand together before the door of the lower ration depot at Garak. One team of the Government corridor duty staff is on the stair outside the stretch, lighting the door with a flashlight. The waiting line runs up to the top of that stair.
 
 <a id="Hostile-Group-G10-heading-0032"></a>
 
@@ -129,21 +132,25 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC1 · Bags at the Corridor Threshold
 
 - Stage: 1
-- Trigger: On an early-summer night the Group leader stands on the threshold of the Bukhansan Bogukmun shelter corridor, and the Magok Seed House is due to send the seed bags through that door. The Yunsaeron side stands before the door holding the issue list.
-- Actors: government, HC10, H10
-- Ecological mechanism: The Anguk Order corridor watch watches the iron door's lock and the people on the stair, and the Magok Seed House ration watch watches the shelf of bags. Once the Magok Seed House passes the list to the watch, the Yunsaeron side stays in front of the door and the attendants stand beside the bags on the threshold.
-- Choices: The Anguk Order corridor watch locks the iron door, and the Magok Seed House places the seed bags on the upper shelves. / The watch opens the iron door only in the morning and sends out only the bags written on the Yunsaeron side's list. / The watch stands on the threshold and carries the issue forward, passing the bags into the corridor.
-- Outcomes: After the iron door is locked, the bags are on the upper shelves and the Group leader stands outside the door. After the door is opened only in the morning, only the bags on the list are outside the door, the remaining bags are on the shelves, and the attendants stand beside the bags outside. After the issue goes forward, the bags are piled past the threshold on the attendants' side, and the ration watch's empty cart is in the corridor.
-- Moral cost: After the morning opening, the people waiting outside the list remain on the stair, and part of the day's seed bags stay tied on the upper level. After the issue is passed across, the Magok Seed House's empty cart is in the corridor and the places on the shelves are bare.
+- Trigger: On an early-summer night the group leader stands at the threshold of the Bukhansan Bogukmun shelter corridor, and the Government seed store is due to send seed bags out through that door. A ration worker stands before the door holding the issue list.
+- Actors: arc, government
+- Ecological mechanism: The Government corridor duty staff watch the lock of the iron door and the people on the stairs, and the seed-store duty staff watch the shelf of bags. When the list is handed over, the ration worker remains before the door and the attendants stand beside the bags at the threshold.
+- Choices: The corridor duty staff lock the iron door and the seed store keeps the bags on the upper shelf. / The duty staff open the iron door only in the morning and send out only the bags on the list. / Give the ration worker up outside the door and pay bags beyond the list as ransom.
+- Outcomes: If the iron door is locked, the bags are on the upper shelf and the leader stands outside the door. If it is opened only in the morning, only the listed bags are outside and the attendants stand beside them. If the worker is given up, the worker stands among the elite squad and bags beyond the list are stacked at the threshold.
+- Moral cost: After the morning opening, those waiting beyond the list remain on the stairs and part of the day's seed bags are tied on the upper floor. After the worker is given up, the shelf places of the seed store stand empty, and the released person does not return to the former post.
 - Source dossier: G10
 
 <a id="Hostile-Group-G10-heading-0035"></a>
 
-### G10-SC2 · The Door of the Lower Granary
+### G10-SC2 · The Door of the Lower Ration Depot
 
 - Stage: 2
-- Actors: government, HC10
-- Moral cost: The day's ration sacks dwindle, and the waiting line runs up to the upper stair. One shift of the Anguk Order corridor watch spends the night on the stair outside the poorly drained stretch. The people outside the vent stand in the monsoon without rain capes.
+- Trigger: On a ration-day noon the waiting line before the door of the lower ration depot at Jamsil runs up the stairs. The scouts fill the front of the door and the elite squad stands on both sides of the leaf.
+- Actors: arc, government
+- Ecological mechanism: The Arc ration duty staff have only a rifle-level guard and cannot hold the door for long. As the group stands at the door, grain sacks inside dwindle.
+- Choices: The ration duty staff close the door and call on the Government corridor duty staff for help. / Bring part of the sacks out of the door and share them from the front of the waiting line. / Bargain over the sack count with the group leader and have the elite squad withdraw from the door.
+- Outcomes: If the door is closed, the line stands up the stairs and help comes one change of cycle later. If sacks are shared out, they empty at the front of the line and the elite squad remains beside the door. If bargained, the elite squad withdraws and the promised sacks are stacked before the door.
+- Moral cost: The day's ration sacks dwindle and the waiting line runs up to the upper stairs. One team of the Government corridor duty staff spends the night on the stair outside the poorly drained stretch. People outside the vent stand in the rains without raincoats.
 - Source dossier: G10
 
 <a id="Hostile-Group-G10-heading-0037"></a>
@@ -151,8 +158,10 @@ On a day when the corridor is dry, the drain floor is exposed and marker cloth r
 ### G10-SC3 · The Outer Stair the Sea Wind Reaches
 
 - Stage: 3
-- Actors: government, XT05, HC10, H10
-- Ecological mechanism: While the sea wind comes in, the number on the outer stair grows and attendants remain inside the corridor holding water cans. The Group leader is on the threshold toward Bukhansan Bogukmun, and the Scouts stand facing the leader's side. The Yunsaeron side stands in front of the door until the Magok Seed House passes the issue list to the ration watch.
-- Choices: The corridor watch leaves only the outer-stair lamps on and locks the inner iron door. / The Magok Seed House seed watch places the seed bags on a shelf apart from the ration sacks and stops lower-level issue. / The ration watch opens the morning door only after receiving the Yunsaeron side's list and sends out the bags on the list.
-- Outcomes: After only the outer lamps are left on, the Scouts stand on the lit stair and the attendants on the inner threshold are on the dark side. After the bags are placed on another shelf, the seed bags are tied on the upper level and the lower sacks are in front of the Scouts. After the door is opened once the list is received, only the bags written there are outside the door, the Yunsaeron side stands beside those bags, and the Group leader looks toward the bags from the threshold.
+- Trigger: While the sea wind comes into the corridor, the number on the outer stair grows and the attendants remain inside the corridor with water cans. The group leader is at the threshold.
+- Actors: arc, government
+- Ecological mechanism: The scouts stand facing the leader. The ration worker stands before the door until the seed store hands over the issue list.
+- Choices: The corridor duty staff leave only the lamp of the outer stair lit and lock the inner iron door. / The seed store keeps seed bags on a different shelf from the ration sacks and stops lower-level issue. / The ration worker opens the morning door only after receiving the list and brings out the listed bags.
+- Outcomes: If only the outer lamp is lit, the scouts stand on the bright stair and the attendants at the inner threshold are on the dark side. If the bags are moved to another shelf, the seed bags are tied on the upper floor and the lower-floor sacks are before the scouts. If the door is opened after the list is received, only the listed bags are outside and the leader looks at the bags from the threshold.
+- Moral cost: On the dimmed stair the people waiting stand in the dark. When seed issue stops, the distributed bags due to Arc and the Free Cities are late. When bags go out only by the list, people not on the list are left outside.
 - Source dossier: G10

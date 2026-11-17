@@ -8,7 +8,6 @@ INSERT INTO wiki_category (id, parent_id, sort, label, label_ko, summary, summar
 INSERT INTO wiki_category (id, parent_id, sort, label, label_ko, summary, summary_ko) VALUES ('bestiary-animal-urban', 'bestiary', 0, 'Urban Animals', '도시 동물', '', '');
 INSERT INTO wiki_category (id, parent_id, sort, label, label_ko, summary, summary_ko) VALUES ('bestiary-human', 'bestiary', 1, 'Hostile Human Groups', '적대 사람 집단', '', '');
 INSERT INTO wiki_category (id, parent_id, sort, label, label_ko, summary, summary_ko) VALUES ('bestiary-rogue-robot', 'bestiary', 2, 'Remaining Automated Machines', '잔존 자동 기계', '', '');
-INSERT INTO wiki_category (id, parent_id, sort, label, label_ko, summary, summary_ko) VALUES ('bestiary-infected', 'bestiary', 3, 'Infected person', '감염자', '', '');
 INSERT INTO wiki_category (id, parent_id, sort, label, label_ko, summary, summary_ko) VALUES ('factions', NULL, 4, 'Faction', '세력', 'Nations, clans, corridors.', '나라, 가문, 회랑.');
 INSERT INTO wiki_category (id, parent_id, sort, label, label_ko, summary, summary_ko) VALUES ('offices', NULL, 5, 'Offices', '관직', 'Position and rank.', '직책과 품계.');
 INSERT INTO wiki_category (id, parent_id, sort, label, label_ko, summary, summary_ko) VALUES ('places', NULL, 6, 'Geography', '지리', 'Maps, stations, districts.', '지도, 역, 구역.');

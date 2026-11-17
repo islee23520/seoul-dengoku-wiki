@@ -78,7 +78,7 @@ Coolant was kept off the drinking-water ledger. When the liquid left in depot he
 
 **E. Separate ledgers**
 
-The drinking-water and coolant ledgers were kept apart even in front of the [G19](/wiki/Hostile-Group-G19/) swarms or the equipment of [the old technology](/wiki/Lost-Technology-Lineage/). When a watchman poured coolant into a tank, waterborne disease spread.
+The drinking-water and coolant ledgers were kept apart even in front of [the old technology](/wiki/Lost-Technology-Lineage/) equipment or a swarm of [remaining machines](/wiki/Hostile-Ecology-Index/). When a watchman poured coolant into a tank, waterborne disease spread.
 
 **F. First floors in the flood zones**
 

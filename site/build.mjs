@@ -159,6 +159,9 @@ const f = (L) => (row, k) => (L === UI.ko ? row[`${k}_ko`] : row[k]);
 // Districts live at /wiki/districts/<gu code>/; the retired path (LEGACY_DISTRICT_ROUTE) gets static redirect stubs after the VitePress build.
 const DISTRICT_ROUTE = 'wiki/districts/';
 const LEGACY_DISTRICT_ROUTE = 'wiki/duchies/';
+// v4: the infected dossiers Hostile-Group-G19..G24 are retired; their old pages get redirect stubs to the ecology index.
+const RETIRED_INFECTED_SLUGS = [19, 20, 21, 22, 23, 24].map((n) => `Hostile-Group-G${n}`);
+const ECOLOGY_INDEX_ROUTE = 'wiki/Hostile-Ecology-Index/';
 const titleById = new Map(raw.map.titles.map((t) => [t.id, t]));
 const districtRows = raw.map.titles.filter((t) => t.rank === 'duchy');
 const districtSlug = (t) => t.id.split(':').pop();
@@ -443,22 +446,41 @@ const decodeHtmlAttr = (v) => v.replace(/&quot;/g, '"').replace(/&#39;|&apos;/g,
 // written straight into OUT after VitePress, so they are not in the sidebar, search index or dead-link check, and
 // they carry the locale title, lang attribute and text that site/check-site.mjs requires of every page.
 const escHtml = (v) => String(v).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const redirectStubHtml = (L, ko, url, name) => {
+  const title = ko ? `${name} 페이지 이동 | ${L.siteTitle}` : `${name} has moved | ${L.siteTitle}`;
+  const text = ko ? `이 페이지는 새 주소로 옮겨졌습니다. 자동으로 이동하지 않으면 아래 링크를 누르세요.` : 'This page has moved to a new address. If you are not redirected, follow the link below.';
+  return `<!DOCTYPE html>\n<html lang="${L.lang}">\n<head>\n<meta charset="utf-8">\n<title>${escHtml(title)}</title>\n<meta name="robots" content="noindex">\n<link rel="canonical" href="${escHtml(url)}">\n<meta http-equiv="refresh" content="0; url=${escHtml(url)}">\n</head>\n<body>\n<p>${escHtml(text)}</p>\n<p><a href="${escHtml(url)}">${escHtml(name)}</a></p>\n</body>\n</html>\n`;
+};
 let redirectStubs = 0;
 for (const L of [UI.en, UI.ko]) {
   const ko = L === UI.ko;
   const targets = [{ from: '', to: '', name: L.districts }, ...districtRows.map((t) => ({ from: `${districtSlug(t)}/`, to: `${districtSlug(t)}/`, name: ko ? t.name_ko : t.name }))];
   for (const x of targets) {
     const url = `${BASE}${L.prefix}${DISTRICT_ROUTE}${x.to}`;
-    const title = ko ? `${x.name} 페이지 이동 | ${L.siteTitle}` : `${x.name} has moved | ${L.siteTitle}`;
-    const text = ko ? `이 페이지는 새 주소로 옮겨졌습니다. 자동으로 이동하지 않으면 아래 링크를 누르세요.` : 'This page has moved to a new address. If you are not redirected, follow the link below.';
-    const html = `<!DOCTYPE html>\n<html lang="${L.lang}">\n<head>\n<meta charset="utf-8">\n<title>${escHtml(title)}</title>\n<meta name="robots" content="noindex">\n<link rel="canonical" href="${escHtml(url)}">\n<meta http-equiv="refresh" content="0; url=${escHtml(url)}">\n</head>\n<body>\n<p>${escHtml(text)}</p>\n<p><a href="${escHtml(url)}">${escHtml(x.name)}</a></p>\n</body>\n</html>\n`;
     const file = path.join(OUT, L.prefix, LEGACY_DISTRICT_ROUTE, x.from, 'index.html');
     fs.mkdirSync(path.dirname(file), { recursive: true });
-    fs.writeFileSync(file, html);
+    fs.writeFileSync(file, redirectStubHtml(L, ko, url, x.name));
     redirectStubs++;
   }
 }
 console.log(`redirect stubs: ${redirectStubs} page(s) under ${LEGACY_DISTRICT_ROUTE} point at ${DISTRICT_ROUTE}`);
+
+// ---- redirect stubs for the retired infected dossiers (Hostile-Group-G19..G24 -> Hostile-Ecology-Index) ----
+// Same mechanism: written straight into OUT after VitePress. The documents are gone from data/sql, so VitePress emits nothing at these paths.
+let infectedStubs = 0;
+for (const L of [UI.en, UI.ko]) {
+  const ko = L === UI.ko;
+  const url = `${BASE}${L.prefix}${ECOLOGY_INDEX_ROUTE}`;
+  const name = ko ? '생태·변이 도감' : 'Ecology and variant bestiary';
+  for (const slug of RETIRED_INFECTED_SLUGS) {
+    const file = path.join(OUT, L.prefix, 'wiki', slug, 'index.html');
+    fs.mkdirSync(path.dirname(file), { recursive: true });
+    fs.writeFileSync(file, redirectStubHtml(L, ko, url, name));
+    infectedStubs++;
+  }
+}
+redirectStubs += infectedStubs;
+console.log(`redirect stubs: ${infectedStubs} page(s) for retired ${RETIRED_INFECTED_SLUGS[0]}..${RETIRED_INFECTED_SLUGS.at(-1)} point at ${ECOLOGY_INDEX_ROUTE}`);
 
 fs.writeFileSync(path.join(OUT, 'build.json'), JSON.stringify({ title: meta.title, base: BASE, locales: ['en', 'ko'], wikiDocs: raw.docs.length, gddDocs: raw.gddDocs.length, factions: raw.factions.length, clans: raw.clans.length, mapRegions: raw.map.regions.length, mapTitles: raw.map.titles.length, mapStations: raw.map.stations.length, personDetails: raw.details.size, strongholds: raw.strongholds.rows.length, redirectStubs, strongholdImages: raw.strongholds.rows.reduce((n, r) => n + (r.img_ground ? 1 : 0) + (r.img_under ? 1 : 0), 0), states: raw.states.length, people: raw.people.length, updates: raw.updates.length, showcase, sqlFiles: files }, null, 1));
 console.log(`built ${meta.title} (en + ko): wiki ${raw.docs.length}, gdd ${raw.gddDocs.length}, factions ${raw.factions.length}, states ${raw.states.length}, people ${raw.people.length}, strongholds ${raw.strongholds.rows.length}; showcase ${showcase} -> ${path.relative(REPO, OUT)} (base ${BASE})`);

@@ -77,7 +77,7 @@ model: cpa/glm-5.3; 0 completion calls; replacement sentences written by the age
 
 **마. 장부 분리**
 
-식수 장부와 냉각수 장부는 [G19](/wiki/Hostile-Group-G19/) 무리나 [옛 기술](/wiki/Lost-Technology-Lineage/) 설비 앞에서도 따로 관리한다. 당직자가 냉각수를 수조에 부으면 수인병이 번진다.
+식수 장부와 냉각수 장부는 [옛 기술](/wiki/Lost-Technology-Lineage/) 설비나 [떠도는 기계](/wiki/Hostile-Ecology-Index/) 무리 앞에서도 따로 관리한다. 당직자가 냉각수를 수조에 부으면 수인병이 번진다.
 
 **바. 침수 구역의 1층**
 

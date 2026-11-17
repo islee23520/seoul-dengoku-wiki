@@ -73,7 +73,6 @@ model: cpa/claude-opus-5-5
 | 도시 동물 | [G01](/wiki/Hostile-Group-G01/)~[G06](/wiki/Hostile-Group-G06/) |
 | 적대 사람 집단 | [G07](/wiki/Hostile-Group-G07/)~[G12](/wiki/Hostile-Group-G12/) |
 | 잔존 자동 기계 | [G13](/wiki/Hostile-Group-G13/)~[G18](/wiki/Hostile-Group-G18/), [G25](/wiki/Hostile-Group-G25/), [G26](/wiki/Hostile-Group-G26/) |
-| 감염자 | [G19](/wiki/Hostile-Group-G19/)~[G24](/wiki/Hostile-Group-G24/) |
 
 <a id="world-narrative-atlas-registry"></a>
 
