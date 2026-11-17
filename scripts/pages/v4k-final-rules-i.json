@@ -1,0 +1,212 @@
+{
+ "rules": [
+  {
+   "id": "km-1",
+   "file": "090",
+   "col": "json_ko",
+   "from": "증오한다. 기한 만료 전표는 감사 날인 없이 통행을 닫는다.",
+   "to": "증오한다.",
+   "expect": 2
+  },
+  {
+   "id": "km-3",
+   "file": "090",
+   "col": "json_ko",
+   "from": "기한 만료 전표는 감사 날인 없이 통행을 닫는다. 임겨레는 만료된",
+   "to": "임겨레는 만료된",
+   "expect": 4
+  },
+  {
+   "id": "km-5",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호를 명분으로 연구자를 세습 직능으로 묶으려는 안이 가문 수장실에 올랐을 때, 정호준은 표본을 공동재산 칸에 옮기고 인질 조항을 지웠다. 가문 수장 자리는 그 삭제가 아니라 가문 내력으로 열렸다.",
+   "to": "가문 수장 자리는 가문 내력으로 열렸다.",
+   "expect": 2
+  },
+  {
+   "id": "km-8",
+   "file": "110",
+   "col": "json_ko",
+   "from": "보호를 명분으로 연구자를 세습 직능으로 묶으려는 안이 가문 회의에 올랐을 때, 정호준은 표본을 공동재산 칸에 옮기고 인질 조항을 지웠다. 가문 수장 자리는 그 삭제가 아니라 가문 내력으로 열렸다.",
+   "to": "가문 수장 자리는 가문 내력으로 열렸다.",
+   "expect": 1
+  },
+  {
+   "id": "km-9",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호와 구속의 구분",
+   "to": "생명안전 연구",
+   "expect": 1,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(name|description|behavior)$"
+  },
+  {
+   "id": "km-11",
+   "file": "090",
+   "col": "json_ko",
+   "from": "연구자 보호를 세습 구속과 분리한다.",
+   "to": "기록 위조는 금지된다.",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(name|description|behavior)$"
+  },
+  {
+   "id": "km-13",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호를 명분으로 연구자를 인질화할 위험이 있다면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "km-15",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호를 명분으로 심사 기록이 군사 감독 문서로 바뀌고, 연구자가 세습 직능 인질이 되는 것.",
+   "to": "심사 기록이 군사 감독 문서로 바뀌는 것.",
+   "expect": 2
+  },
+  {
+   "id": "km-17",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호를 명분으로 진료 기록이 군사 감독 문서로 바뀌고, 의무원이 세습 직능 인질이 되는 것.",
+   "to": "진료 기록이 군사 감독 문서로 바뀌는 것.",
+   "expect": 2
+  },
+  {
+   "id": "km-19",
+   "file": "090",
+   "col": "json_ko",
+   "from": "적고, 통행 안내를 보호비로 바꾸는 상인을 경멸한다.",
+   "to": "적는다.",
+   "expect": 1
+  },
+  {
+   "id": "km-21",
+   "file": "090",
+   "col": "json_ko",
+   "from": "나누고, 보호비를 안내료로 바꾸는 사람을 길에서 내려보낸다.",
+   "to": "나눈다.",
+   "expect": 1
+  },
+  {
+   "id": "km-23",
+   "file": "090",
+   "col": "json",
+   "from": "exit conditions. Closes passage for expired slips without an audit seal.",
+   "to": "exit conditions.",
+   "expect": 1
+  },
+  {
+   "id": "km-25",
+   "file": "090",
+   "col": "json",
+   "from": "Closes passage for expired slips without an audit seal. Im Gyeore closes passage on",
+   "to": "Im Gyeore closes passage on",
+   "expect": 2
+  },
+  {
+   "id": "km-27",
+   "file": "090",
+   "col": "json",
+   "from": " Im Gyeore calls protection without a time limit an occupation, not a contract.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "km-29",
+   "file": "090",
+   "col": "json",
+   "from": "Auditing gate-toll and protection-contract slips",
+   "to": "Auditing gate-toll slips",
+   "expect": 1
+  },
+  {
+   "id": "km-31",
+   "file": "090",
+   "col": "json",
+   "from": "When a proposal to bind researchers to a hereditary trade in the name of protection came before the family head, Jeong Hojun moved the samples into the communal property column and struck out the hostage clause. The family head’s seat opened not through that deletion but through the family’s own line.",
+   "to": "The family head’s seat opened through the family’s own line.",
+   "expect": 2
+  },
+  {
+   "id": "km-34",
+   "file": "110",
+   "col": "json",
+   "from": "When a proposal to bind researchers to a hereditary trade in the name of protection came before the family council, Jeong Hojun moved the samples into the communal property column and struck out the hostage clause. The family head’s seat opened not through that deletion but through the family’s own line.",
+   "to": "The family head’s seat opened through the family’s own line.",
+   "expect": 1
+  },
+  {
+   "id": "km-35",
+   "file": "090",
+   "col": "json",
+   "from": "Protection without captivity",
+   "to": "Life Safety Research",
+   "expect": 1,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(name|description|behavior)$"
+  },
+  {
+   "id": "km-37",
+   "file": "090",
+   "col": "json",
+   "from": "Separates researcher protection from hereditary captivity.",
+   "to": "Forgery of records is forbidden.",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(name|description|behavior)$"
+  },
+  {
+   "id": "km-39",
+   "file": "090",
+   "col": "json",
+   "from": "If protection is used to justify holding researchers hostage, she may",
+   "to": "She may",
+   "expect": 1
+  },
+  {
+   "id": "km-41",
+   "file": "090",
+   "col": "json",
+   "from": "That, in the name of protection, review records will be turned into military oversight documents and researchers into hostages of hereditary trades.",
+   "to": "That review records will be turned into military oversight documents.",
+   "expect": 2
+  },
+  {
+   "id": "km-43",
+   "file": "090",
+   "col": "json",
+   "from": "Fears that, in the name of protection, clinical records will be turned into military oversight documents and the medical officers will become hostages of a hereditary profession.",
+   "to": "Fears that clinical records will be turned into military oversight documents.",
+   "expect": 2
+  },
+  {
+   "id": "km-45",
+   "file": "090",
+   "col": "json",
+   "from": "hand over defense in the name of the Protectorate Force as a betrayal",
+   "to": "hand over defense as a betrayal",
+   "expect": 1
+  },
+  {
+   "id": "km-47",
+   "file": "090",
+   "col": "json",
+   "from": ", and despises merchants who turn route guidance into protection fees",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "km-49",
+   "file": "090",
+   "col": "json",
+   "from": ", and sends down from the road anyone who turns protection fees into guidance fees",
+   "to": "",
+   "expect": 1
+  }
+ ]
+}
