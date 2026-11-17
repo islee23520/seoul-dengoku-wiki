@@ -1,0 +1,69 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v2i-1",
+   "file": "110",
+   "col": "json",
+   "from": "Medicinal Herb Management Resident",
+   "to": "Medicinal Supplies Management Relief Worker",
+   "expect": 10
+  },
+  {
+   "id": "v2i-2",
+   "file": "110",
+   "col": "json",
+   "from": "Quarantine Resident",
+   "to": "Epidemic Control Relief Worker",
+   "expect": 10
+  },
+  {
+   "id": "v2i-3",
+   "file": "110",
+   "col": "json",
+   "from": "Prescription Resident",
+   "to": "Medicine Storage Relief Worker",
+   "expect": 10
+  },
+  {
+   "id": "v2i-4",
+   "file": "110",
+   "col": "json",
+   "from": "Treatment Refusal Records Resident",
+   "to": "First Aid Refusal Record Relief Worker",
+   "expect": 1
+  },
+  {
+   "id": "v2i-5",
+   "file": "110",
+   "col": "json",
+   "from": "Herb Contamination Care Resident",
+   "to": "Medicinal Herb Contamination First Aid Relief Worker",
+   "expect": 1
+  },
+  {
+   "id": "v2i-6",
+   "file": "110",
+   "col": "json",
+   "from": "Refugee Patient Care Resident",
+   "to": "Evacuee Patient Care Relief Worker",
+   "expect": 1
+  },
+  {
+   "id": "v2i-7",
+   "file": "110",
+   "col": "json",
+   "from": "Herb Storage Resident",
+   "to": "Medicinal Herb Storage Relief Worker",
+   "expect": 1
+  },
+  {
+   "id": "v2i-8",
+   "file": "110",
+   "col": "json",
+   "from": "Bed Record Resident",
+   "to": "Sickbed Record Relief Worker",
+   "expect": 1
+  }
+ ]
+}

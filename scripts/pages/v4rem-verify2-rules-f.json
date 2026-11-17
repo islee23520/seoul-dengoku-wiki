@@ -1,0 +1,68 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v2f-1",
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "In 2125, when the power failed mid-surgery, he kept the blade going under a hand lamp.",
+   "to": "In 2125, when the power failed mid-emergency care, he kept stanching the bleeding under a hand lamp.",
+   "expect": 1
+  },
+  {
+   "id": "v2f-2",
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "When the power went out during surgery in 2125, she kept operating by the light of a mobile phone.",
+   "to": "When the power went out during emergency care in 2125, she kept stanching the bleeding by the light of a mobile phone.",
+   "expect": 2
+  },
+  {
+   "id": "v2f-3",
+   "file": "090",
+   "key": "person-0348",
+   "col": "json_ko",
+   "from": "정전 중 수술을 이어간 기록이 있다",
+   "to": "정전 중 응급 지혈을 이어간 기록이 있다",
+   "expect": 2
+  },
+  {
+   "id": "v2f-4",
+   "file": "090",
+   "key": "person-0516",
+   "col": "json_ko",
+   "from": "정전 중 휴대전화 불빛 아래 수술을 이어갔다.",
+   "to": "정전 중 휴대전화 불빛 아래 응급 지혈을 이어갔다.",
+   "expect": 2
+  },
+  {
+   "id": "v2f-5",
+   "file": "090",
+   "key": "person-0516",
+   "col": "json_ko",
+   "from": "수술 전반의 성공률은 모른다",
+   "to": "응급 처치 전반의 성공률은 모른다",
+   "expect": 2
+  },
+  {
+   "id": "v2f-6",
+   "file": "090",
+   "key": "person-0564",
+   "col": "json_ko",
+   "from": "수술 중 정전에도",
+   "to": "응급 처치 중 정전에도",
+   "expect": 2
+  },
+  {
+   "id": "v2f-7",
+   "file": "090",
+   "key": "person-0708",
+   "col": "json_ko",
+   "from": "정전 중 휴대전화 불빛으로 수술을 이어갔다.",
+   "to": "정전 중 휴대전화 불빛으로 응급 지혈을 이어갔다.",
+   "expect": 2
+  }
+ ]
+}

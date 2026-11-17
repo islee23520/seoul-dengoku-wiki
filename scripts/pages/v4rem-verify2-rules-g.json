@@ -1,0 +1,77 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v2g-1",
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "from": "In 2125, when the power failed during surgery, she kept operating under the light of a handheld phone.",
+   "to": "In 2125, when the power failed during emergency care, she kept stanching the bleeding under the light of a handheld phone.",
+   "expect": 1
+  },
+  {
+   "id": "v2g-2",
+   "file": "090",
+   "key": "person-0280",
+   "col": "json",
+   "from": "verifying night-surgery signatures",
+   "to": "verifying night first-aid signatures",
+   "expect": 1
+  },
+  {
+   "id": "v2g-3",
+   "file": "090",
+   "key": "person-0323",
+   "col": "json",
+   "from": "is a healer who carried on the Jegi-dong herbal ledger",
+   "to": "is the leader of the White Cross first-aid corps and carried on the Jegi-dong herbal ledger",
+   "expect": 1
+  },
+  {
+   "id": "v2g-4",
+   "file": "090",
+   "key": "person-0326",
+   "col": "json",
+   "from": "Rank: Specialist Physician",
+   "to": "Rank: First-Aid Officer",
+   "expect": 1
+  },
+  {
+   "id": "v2g-5",
+   "file": "090",
+   "key": "person-0326",
+   "col": "json",
+   "from": "Title: Epidemic Control Officer",
+   "to": "Title: Epidemic Prevention Manager",
+   "expect": 1
+  },
+  {
+   "id": "v2g-6",
+   "file": "090",
+   "key": "person-0516",
+   "col": "json",
+   "from": "In 2125, when the power went out during surgery, he kept operating with the scalpel under a mobile phone's light.",
+   "to": "In 2125, when the power went out during emergency care, he kept stanching the bleeding under a mobile phone's light.",
+   "expect": 1
+  },
+  {
+   "id": "v2g-7",
+   "file": "090",
+   "key": "person-0564",
+   "col": "json",
+   "from": "In 2125, when the power went out during surgery, continued operating with the scalpel under the glow of a mobile phone.",
+   "to": "In 2125, when the power went out during emergency care, continued stanching the bleeding under the glow of a mobile phone.",
+   "expect": 1
+  },
+  {
+   "id": "v2g-8",
+   "file": "090",
+   "key": "person-0708",
+   "col": "json",
+   "from": "In 2125, when the power went out during surgery, Jo Awon kept operating under a cell phone light.",
+   "to": "In 2125, when the power went out during emergency care, Jo Awon kept stanching the bleeding under a cell phone light.",
+   "expect": 1
+  }
+ ]
+}
