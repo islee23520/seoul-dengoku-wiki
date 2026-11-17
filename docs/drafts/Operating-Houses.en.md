@@ -45,7 +45,7 @@ In the Free Cities, workshop and investment work is organized by guilds rather t
 
 The four Gangnam districts. Arc stationmasters sit under the Hierophant in the ladder of bishops and cardinals.
 
-- **Samseong Station, the O Gyeongjae house.** Holds the General Assembly duty roster and keeps the original will.
+- **Samseong Station, the O Gyeongjae house.** Holds the duty roster as stationmaster and keeps the original will.
 - **Gangnam Station, the Yongdubong house.** Checks maintenance and armament loading before the rail cavalry sorties.
 
 <a id="Operating-Houses-heading-0018"></a>

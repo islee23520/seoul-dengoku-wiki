@@ -20227,7 +20227,7 @@ In the Free Cities, workshop and investment work is organized by guilds rather t
 
 The four Gangnam districts. Arc stationmasters sit under the Hierophant in the ladder of bishops and cardinals.
 
-- **Samseong Station, the O Gyeongjae house.** Holds the General Assembly duty roster and keeps the original will.
+- **Samseong Station, the O Gyeongjae house.** Holds the duty roster as stationmaster and keeps the original will.
 - **Gangnam Station, the Yongdubong house.** Checks maintenance and armament loading before the rail cavalry sorties.
 
 <a id="Operating-Houses-heading-0018"></a>
@@ -20276,7 +20276,7 @@ Houses of stations not listed here aren''t in the public record yet. Who holds e
 
 강남 4구다. 아크의 역장은 교주 아래 주교·추기경 위계에 든다.
 
-- **삼성역, 오경재 집안.** 총회 당직을 맡고 유언 원본을 관리한다.
+- **삼성역, 오경재 집안.** 역장으로서 당직 명부를 맡고 유언 원본을 관리한다.
 - **강남역, 용두봉 집안.** 궤도기병이 출격하기 전 정비와 무장 탑재를 확인한다.
 
 <a id="Operating-Houses-heading-0018"></a>

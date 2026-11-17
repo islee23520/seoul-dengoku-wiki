@@ -1,0 +1,1121 @@
+{
+ "_doc": "PR #733 v4 정본 바이블 1장 9항·2.3~2.6·2.10절. 폐지된 조직(안국총림 산중총회, 옛 Arc 당회, 피난 총회)과 조합원 총회의 흔적을 해당 세력의 v4 구조(정부=대통령 라인·국장 결재, Arc=교주 명·역장 지시, 자유도시=조합·이사회)로 새로 쓴다. 영문 품계·유년 문장 잔여도 함께 고친다. expect는 적용 잎의 적중 수.",
+ "hold": [
+  "person-0001",
+  "person-0272",
+  "person-0374",
+  "person-0399",
+  "person-1005",
+  "person-1018",
+  "person-0073"
+ ],
+ "rules": [
+  {
+   "id": "a001-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json",
+   "from": "The elders seated Im Hajun as Session Head by a ratification vote.",
+   "to": "By the Hierophant's order, Im Hajun took over the O clan's affairs as regent.",
+   "expect": 2
+  },
+  {
+   "id": "a002-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json",
+   "from": "Former Session Head of the Arc. Im Hajun, who sat as regent, disappeared",
+   "to": "Im Hajun, who sat as regent for the O clan's house, disappeared",
+   "expect": 1
+  },
+  {
+   "id": "a003-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json",
+   "from": "Rank: Session Head. Title: Former Session Head of the Arc.",
+   "to": "Rank: None. Title: Ordinary Citizen, Currently Missing. He was formerly regent for the O clan's house.",
+   "expect": 2
+  },
+  {
+   "id": "a004-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json",
+   "from": "Took office as Session Head in 2126 after ratification by the elders",
+   "to": "Took office in 2126 by the Hierophant's order, taking over Im Hajun's regency",
+   "expect": 1
+  },
+  {
+   "id": "a005-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json",
+   "from": "without granting session succession",
+   "to": "without granting succession to the regency",
+   "expect": 1
+  },
+  {
+   "id": "a006-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json",
+   "from": "He handled session affairs as regent",
+   "to": "He handled the house's affairs as regent",
+   "expect": 1
+  },
+  {
+   "id": "a007-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json_ko",
+   "from": "원로들은 인준 투표로 임하준을 당회 수장에 앉혔다.",
+   "to": "교주의 명으로 임하준이 오씨 집안의 일을 섭정으로 맡았다.",
+   "expect": 2
+  },
+  {
+   "id": "a008-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json_ko",
+   "from": "Arc 전 당회 수장. 섭정으로 앉았던 임하준은",
+   "to": "섭정으로 오씨 집안의 일을 맡았던 임하준은",
+   "expect": 1
+  },
+  {
+   "id": "a009-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json_ko",
+   "from": "품계 당회 수장. 직함은 전 Arc 당회 수장.",
+   "to": "품계 없음. 직함은 일반 시민, 현재 실종. 오씨 집안의 일을 섭정으로 맡았던 사람이다.",
+   "expect": 2
+  },
+  {
+   "id": "a010-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json_ko",
+   "from": "2126년 원로 인준을 거쳐 당회 수장에 취임",
+   "to": "2126년 교주의 명으로 임하준의 섭정을 이어 취임",
+   "expect": 1
+  },
+  {
+   "id": "a011-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json_ko",
+   "from": "당회 후계권을 주지는",
+   "to": "섭정 후계권을 주지는",
+   "expect": 1
+  },
+  {
+   "id": "a012-person-0086-090",
+   "file": "090",
+   "key": "person-0086",
+   "col": "json_ko",
+   "from": "섭정으로 당회 업무를 맡았고",
+   "to": "섭정으로 집안 업무를 맡았고",
+   "expect": 1
+  },
+  {
+   "id": "a013-person-0087-090",
+   "file": "090",
+   "key": "person-0087",
+   "col": "json",
+   "from": "What he learned from Im Hajun was not Session succession but",
+   "to": "What he learned from Im Hajun was not succession to the regency but",
+   "expect": 1
+  },
+  {
+   "id": "a014-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "succession to the Council but",
+   "to": "succession to the regency but",
+   "expect": 1
+  },
+  {
+   "id": "a015-person-0087-090",
+   "file": "090",
+   "key": "person-0087",
+   "col": "json",
+   "from": "In 2126, O Gyeongjae took the Council Chair seat.",
+   "to": "In 2126, O Gyeongjae took over Im Hajun's work by the Hierophant's order.",
+   "expect": 1
+  },
+  {
+   "id": "a016-person-0087-090",
+   "file": "090",
+   "key": "person-0087",
+   "col": "json",
+   "from": "without becoming the session successor",
+   "to": "without becoming the regent's successor",
+   "expect": 1
+  },
+  {
+   "id": "a017-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "Formed the pump technical alliance through General Assembly ratification",
+   "to": "Formed the pump technical alliance by exchanging signed maintenance know-how",
+   "expect": 2
+  },
+  {
+   "id": "a018-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "Examined the Session Head ratification petition",
+   "to": "Examined the regency succession petition",
+   "expect": 2
+  },
+  {
+   "id": "a019-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "Reviews the ratification of the Session Chair under the Former President's command",
+   "to": "Reviews the regency succession petition under the Former President's command",
+   "expect": 2
+  },
+  {
+   "id": "a020-person-0087-090",
+   "file": "090",
+   "key": "person-0087",
+   "col": "json_ko",
+   "from": "오경재와 기술 동맹을 맺되 당회 수장 자리를 주장하지 않는다.",
+   "to": "오경재와 기술 동맹을 맺되 섭정 후계를 주장하지 않는다.",
+   "expect": 1
+  },
+  {
+   "id": "a021-person-0087-090",
+   "file": "090",
+   "key": "person-0087",
+   "col": "json_ko",
+   "from": "당회 후계가 되지는",
+   "to": "섭정 후계가 되지는",
+   "expect": 1
+  },
+  {
+   "id": "a022-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "당회 후계가 아니라",
+   "to": "섭정 후계가 아니라",
+   "expect": 2
+  },
+  {
+   "id": "a023-person-0087-090",
+   "file": "090",
+   "key": "person-0087",
+   "col": "json_ko",
+   "from": "2126년 당회 수장 자리는 오경재가 앉았다.",
+   "to": "2126년 오경재가 교주의 명으로 임하준의 일을 이어받았다.",
+   "expect": 2
+  },
+  {
+   "id": "a024-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "총회 인준으로 펌프 기술 동맹을 맺음",
+   "to": "서명한 정비 기술을 맞바꿔 펌프 기술 동맹을 맺음",
+   "expect": 2
+  },
+  {
+   "id": "a025-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "당회 수장 인준 청구를 심사",
+   "to": "섭정 후계 청구를 심사",
+   "expect": 2
+  },
+  {
+   "id": "a026-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "당회 수장 인준을 전 대통령 지휘로 심사",
+   "to": "섭정 후계 청구를 전 대통령 지휘로 심사",
+   "expect": 2
+  },
+  {
+   "id": "a027-person-0088-090",
+   "file": "090",
+   "key": "person-0088",
+   "col": "json",
+   "from": "the General Assembly meeting room",
+   "to": "the station meeting room",
+   "expect": 2
+  },
+  {
+   "id": "a028-person-0088-090",
+   "file": "090",
+   "key": "person-0088",
+   "col": "json",
+   "from": "Took office in 2126 after ratification by the General Assembly",
+   "to": "Took office in 2126 by the Hierophant's order, taking over Im Hajun's regency",
+   "expect": 1
+  },
+  {
+   "id": "a029-person-0088-090",
+   "file": "090",
+   "key": "person-0088",
+   "col": "json_ko",
+   "from": "총회 회의실에",
+   "to": "역 회의실에",
+   "expect": 2
+  },
+  {
+   "id": "a030-person-0088-090",
+   "file": "090",
+   "key": "person-0088",
+   "col": "json_ko",
+   "from": "2126년 총회 인준을 거쳐 취임",
+   "to": "2126년 교주의 명으로 임하준의 섭정을 이어 취임",
+   "expect": 1
+  },
+  {
+   "id": "a031-person-0089-090",
+   "file": "090",
+   "key": "person-0089",
+   "col": "json",
+   "from": "Cheonho Session Elder",
+   "to": "Cheonho Workshop Council Representative",
+   "expect": 7
+  },
+  {
+   "id": "a032-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "Seongsu Session Elder seat",
+   "to": "Seongsu Workshop Council Representative seat",
+   "expect": 1
+  },
+  {
+   "id": "a033-person-0089-090",
+   "file": "090",
+   "key": "person-0089",
+   "col": "json_ko",
+   "from": "천호 당회 원로",
+   "to": "천호 공방평의회 대표",
+   "expect": 7
+  },
+  {
+   "id": "a034-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "성수 당회 자리",
+   "to": "성수 공방평의회 대표 자리",
+   "expect": 1
+  },
+  {
+   "id": "a035-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "Session records auditor",
+   "to": "Workshop Council records auditor",
+   "expect": 6
+  },
+  {
+   "id": "a036-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "Session Records Auditor",
+   "to": "Workshop Council Records Auditor",
+   "expect": 3
+  },
+  {
+   "id": "a037-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "당회 기록감사",
+   "to": "공방평의회 기록감사",
+   "expect": 9
+  },
+  {
+   "id": "a038-person-0091-090",
+   "file": "090",
+   "key": "person-0091",
+   "col": "json",
+   "from": "shares the shift roster with the Session;",
+   "to": "shares the shift roster with the stationmaster;",
+   "expect": 2
+  },
+  {
+   "id": "a039-person-0091-090",
+   "file": "090",
+   "key": "person-0091",
+   "col": "json",
+   "from": "shares daytime shift rosters with the assembly",
+   "to": "shares daytime shift rosters with the stationmaster",
+   "expect": 1
+  },
+  {
+   "id": "a040-person-0091-090",
+   "file": "090",
+   "key": "person-0091",
+   "col": "json_ko",
+   "from": "주간 교대 명부는 당회와 공유하지만",
+   "to": "주간 교대 명부는 역장과 공유하지만",
+   "expect": 1
+  },
+  {
+   "id": "a041-person-0091-090",
+   "file": "090",
+   "key": "person-0091",
+   "col": "json_ko",
+   "from": "주간은 당회와 교대 명부를 공유하고,",
+   "to": "주간은 역장과 교대 명부를 공유하고,",
+   "expect": 2
+  },
+  {
+   "id": "a042-person-0100-090",
+   "file": "090",
+   "key": "person-0100",
+   "col": "json",
+   "from": "shares the shift register with the Session,",
+   "to": "shares the shift register with the bureau duty office,",
+   "expect": 2
+  },
+  {
+   "id": "a043-person-0100-090",
+   "file": "090",
+   "key": "person-0100",
+   "col": "json_ko",
+   "from": "주간은 당회와 교대 명부를 공유하고,",
+   "to": "주간은 소속 국 당직실과 교대 명부를 공유하고,",
+   "expect": 2
+  },
+  {
+   "id": "a044-person-0108-090",
+   "file": "090",
+   "key": "person-0108",
+   "col": "json",
+   "from": "shares output logs with the Session;",
+   "to": "shares output logs with the stationmaster;",
+   "expect": 2
+  },
+  {
+   "id": "a045-person-0108-090",
+   "file": "090",
+   "key": "person-0108",
+   "col": "json_ko",
+   "from": "주간은 당회와 출력 일지를 공유하고,",
+   "to": "주간은 역장과 출력 일지를 공유하고,",
+   "expect": 2
+  },
+  {
+   "id": "a046-person-0109-090",
+   "file": "090",
+   "key": "person-0109",
+   "col": "json",
+   "from": "into the Session ledger",
+   "to": "into the Council ledger",
+   "expect": 2
+  },
+  {
+   "id": "a047-person-0109-090",
+   "file": "090",
+   "key": "person-0109",
+   "col": "json_ko",
+   "from": "당회 원장에 올려",
+   "to": "평의회 원장에 올려",
+   "expect": 2
+  },
+  {
+   "id": "a048-person-0110-090",
+   "file": "090",
+   "key": "person-0110",
+   "col": "json",
+   "from": "that the Session read simultaneously",
+   "to": "that the Council read simultaneously",
+   "expect": 2
+  },
+  {
+   "id": "a049-person-0110-090",
+   "file": "090",
+   "key": "person-0110",
+   "col": "json_ko",
+   "from": "당회가 동시에 열람한",
+   "to": "평의회가 동시에 열람한",
+   "expect": 2
+  },
+  {
+   "id": "a050-person-0113-090",
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "from": "by lottery by the Session and the Records Audit",
+   "to": "by lottery by the Council and the Records Audit",
+   "expect": 2
+  },
+  {
+   "id": "a051-person-0113-090",
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "from": "follow the assembly and record auditor's lottery order",
+   "to": "follow the Council and record auditor's lottery order",
+   "expect": 1
+  },
+  {
+   "id": "a052-person-0113-090",
+   "file": "090",
+   "key": "person-0113",
+   "col": "json_ko",
+   "from": "당회와 기록감사의 추첨 순번을",
+   "to": "평의회와 기록감사의 추첨 순번을",
+   "expect": 1
+  },
+  {
+   "id": "a053-person-0113-090",
+   "file": "090",
+   "key": "person-0113",
+   "col": "json_ko",
+   "from": "당회와 기록감사가 추첨하고",
+   "to": "평의회와 기록감사가 추첨하고",
+   "expect": 2
+  },
+  {
+   "id": "a054-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "The members opened a confirmation vote and entrusted that work to Im Hajun.",
+   "to": "By the Hierophant's order, Im Hajun took that work over as regent.",
+   "expect": 3
+  },
+  {
+   "id": "a055-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "구성원들은 인준 투표를 열어 임하준에게 그 일을 맡겼다.",
+   "to": "교주의 명으로 임하준이 그 일을 섭정으로 맡았다.",
+   "expect": 3
+  },
+  {
+   "id": "a056-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "was received by the General Assembly together with",
+   "to": "was received by the Council of Elders together with",
+   "expect": 3
+  },
+  {
+   "id": "a057-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "유언 3장과 함께 총회에 접수되었다",
+   "to": "유언 3장과 함께 원로회에 접수되었다",
+   "expect": 3
+  },
+  {
+   "id": "a058-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "O Gyeongjae received the confirmation and took over the work of Im Hajun.",
+   "to": "O Gyeongjae took over the work of Im Hajun by the Hierophant's order.",
+   "expect": 4
+  },
+  {
+   "id": "a059-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "2126년 오경재가 인준을 거쳐 임하준의 일을 이어받았다.",
+   "to": "2126년 오경재가 교주의 명으로 임하준의 일을 이어받았다.",
+   "expect": 3
+  },
+  {
+   "id": "a060-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "오경재는 인준을 거쳐 임하준의 일을 이어받았다. 그 일은 오씨 가문이 부자 세습하고, 인준 투표는 의례로 남는다.",
+   "to": "오경재는 교주의 명으로 임하준의 일을 이어받았다. 그 일은 오씨 가문이 부자 세습하고, 교주의 명은 의례로 남는다.",
+   "expect": 1
+  },
+  {
+   "id": "a061-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "and the elders' ratification vote remains a ritual",
+   "to": "and the Hierophant's order remains a ritual",
+   "expect": 1
+  },
+  {
+   "id": "a062-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "대학로3길 29 총회회관의",
+   "to": "대학로3길 29 회관의",
+   "expect": 1
+  },
+  {
+   "id": "a063-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "연지동 총회 사이의",
+   "to": "연지동 회관 사이의",
+   "expect": 1
+  },
+  {
+   "id": "a064-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "at the General Assembly Hall, 29 Daehangno 3-gil",
+   "to": "at the hall at 29 Daehangno 3-gil",
+   "expect": 1
+  },
+  {
+   "id": "a065-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "and the General Assembly in Yeonji-dong",
+   "to": "and the hall in Yeonji-dong",
+   "expect": 1
+  },
+  {
+   "id": "a066-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "총회 전령·명부 대조 일",
+   "to": "전령·명부 대조 일",
+   "expect": 2
+  },
+  {
+   "id": "a067-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "the Assembly courier and register-checking work",
+   "to": "the courier and register-checking work",
+   "expect": 2
+  },
+  {
+   "id": "a068-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "조합원 총회 전령, 안태경의",
+   "to": "이중 의회 전령, 안태경의",
+   "expect": 1
+  },
+  {
+   "id": "a069-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "Union General Assembly Courier and An Taegyeong's",
+   "to": "Dual Council Herald and An Taegyeong's",
+   "expect": 1
+  },
+  {
+   "id": "a070-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "피난 총회 표결 뒤",
+   "to": "국장 결재 뒤",
+   "expect": 1
+  },
+  {
+   "id": "a071-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "피난 총회의 피난 명부를",
+   "to": "국장이 결재한 피난 명부를",
+   "expect": 4
+  },
+  {
+   "id": "a072-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "피난 총회에 먼저 올리고",
+   "to": "국장에게 먼저 올리고",
+   "expect": 4
+  },
+  {
+   "id": "a073-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "총회에 먼저 올리",
+   "to": "국장에게 먼저 올리",
+   "expect": 1
+  },
+  {
+   "id": "a074-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정찰을 총회에 보고하고",
+   "to": "정찰을 국장에게 보고하고",
+   "expect": 2
+  },
+  {
+   "id": "a075-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "피난 총회에 세울 수 있다",
+   "to": "국장 앞에 세울 수 있다",
+   "expect": 6
+  },
+  {
+   "id": "a076-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "피난 총회에 증언할 수 있다",
+   "to": "국장에게 증언할 수 있다",
+   "expect": 2
+  },
+  {
+   "id": "a077-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "피난 총회의 증언으로 남길",
+   "to": "국장 앞의 증언으로 남길",
+   "expect": 2
+  },
+  {
+   "id": "a078-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "피난 총회의 필사본에만 남긴다",
+   "to": "국장이 받은 필사본에만 남긴다",
+   "expect": 2
+  },
+  {
+   "id": "a079-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "고지 당직의 표는 피난 총회에 올린다",
+   "to": "고지 당직의 집계는 국장에게 올린다",
+   "expect": 2
+  },
+  {
+   "id": "a080-person-0249-090",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json_ko",
+   "from": "총회 먼저 보고",
+   "to": "국장 먼저 보고",
+   "expect": 1
+  },
+  {
+   "id": "a081-person-0255-090",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "총회 기록",
+   "to": "국장 보고 기록",
+   "expect": 1
+  },
+  {
+   "id": "a082-person-0264-090",
+   "file": "090",
+   "key": "person-0264",
+   "col": "json_ko",
+   "from": "산중총회의 신도 명부가",
+   "to": "국장에게 올라가는 신도 명부가",
+   "expect": 2
+  },
+  {
+   "id": "a083-person-0269-090",
+   "file": "090",
+   "key": "person-0269",
+   "col": "json_ko",
+   "from": "산중총회에 펼칠",
+   "to": "국장 앞에 펼칠",
+   "expect": 2
+  },
+  {
+   "id": "a084-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "After the Refugee Assembly vote,",
+   "to": "After the Bureau Chief's sign-off,",
+   "expect": 1
+  },
+  {
+   "id": "a085-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "the Refugee Assembly's refugee roster",
+   "to": "the Bureau Chief's approved refugee roster",
+   "expect": 2
+  },
+  {
+   "id": "a086-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "the Refugee Assembly's register of refugees",
+   "to": "the Bureau Chief's approved register of refugees",
+   "expect": 2
+  },
+  {
+   "id": "a087-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "the handwritten copy of the Refugee Assembly",
+   "to": "the handwritten copy held by the Bureau Chief",
+   "expect": 2
+  },
+  {
+   "id": "a088-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "The highland watch's vote goes to the Refugee Assembly.",
+   "to": "The highland watch's tally goes to the Bureau Chief.",
+   "expect": 2
+  },
+  {
+   "id": "a089-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "first to the Refugee Assembly",
+   "to": "first to the Bureau Chief",
+   "expect": 2
+  },
+  {
+   "id": "a090-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "to the Refugee Assembly first",
+   "to": "to the Bureau Chief first",
+   "expect": 2
+  },
+  {
+   "id": "a091-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "before the Refugee Assembly",
+   "to": "before the Bureau Chief",
+   "expect": 10
+  },
+  {
+   "id": "a092-person-0249-090",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json",
+   "from": "Assembly report first",
+   "to": "Bureau Chief report first",
+   "expect": 1
+  },
+  {
+   "id": "a093-person-0255-090",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json",
+   "from": "Assembly recording",
+   "to": "Bureau Chief reporting",
+   "expect": 1
+  },
+  {
+   "id": "a094-person-0249-090",
+   "file": "090",
+   "key": "person-0249",
+   "col": "json",
+   "from": "Reports reconnaissance to assembly and checks",
+   "to": "Reports reconnaissance to the Bureau Chief and checks",
+   "expect": 2
+  },
+  {
+   "id": "a095-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "Reports reconnaissance to the assembly first",
+   "to": "Reports reconnaissance to the Bureau Chief first",
+   "expect": 3
+  },
+  {
+   "id": "a096-person-0260-090",
+   "file": "090",
+   "key": "person-0260",
+   "col": "json",
+   "from": "as the assembly's public outpost",
+   "to": "as the refugee community's public outpost",
+   "expect": 2
+  },
+  {
+   "id": "a097-person-0264-090",
+   "file": "090",
+   "key": "person-0264",
+   "col": "json",
+   "from": "so that the Mountain Assembly's congregant registry does not begin",
+   "to": "so that the congregant registry sent up to the Bureau Chief does not begin",
+   "expect": 2
+  },
+  {
+   "id": "a098-person-0269-090",
+   "file": "090",
+   "key": "person-0269",
+   "col": "json",
+   "from": "before the Mountain Assembly",
+   "to": "before the Bureau Chief",
+   "expect": 2
+  },
+  {
+   "id": "a099-all-090",
+   "file": "090",
+   "col": "json_ko",
+   "from": "표는 산중총회에서만 던진다.",
+   "to": "지시는 자기 당직의 상관에게서만 받는다.",
+   "expect": 6
+  },
+  {
+   "id": "a100-all-090",
+   "file": "090",
+   "col": "json",
+   "from": "He casts his vote only at the Mountain General Assembly.",
+   "to": "He takes orders only from his own duty superior.",
+   "expect": 4
+  },
+  {
+   "id": "a101-person-0625-090",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json",
+   "from": "Casts votes only at the Mountain Assembly.",
+   "to": "Takes orders only from his own duty superior.",
+   "expect": 1
+  },
+  {
+   "id": "a102-person-0769-090",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json",
+   "from": "Votes only at the Mountain General Assembly.",
+   "to": "Takes orders only from his own duty superior.",
+   "expect": 1
+  },
+  {
+   "id": "a103-person-0577-090",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json",
+   "from": "On the evening the Mountain General Assembly vote ends,",
+   "to": "On the evening the Bureau Chief signs off on the count,",
+   "expect": 2
+  },
+  {
+   "id": "a104-person-0577-090",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json",
+   "from": "cross-checks the lines against the Mountain General Assembly record in which he cast his own vote",
+   "to": "cross-checks the lines against the sign-off record he himself signed",
+   "expect": 2
+  },
+  {
+   "id": "a105-person-0577-090",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json",
+   "from": "After the Mountain Convocation vote,",
+   "to": "After the Bureau Chief's sign-off,",
+   "expect": 1
+  },
+  {
+   "id": "a106-person-0577-090",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json_ko",
+   "from": "산중총회 표결이 끝난 저녁",
+   "to": "국장 결재가 끝난 저녁",
+   "expect": 2
+  },
+  {
+   "id": "a107-person-0577-090",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json_ko",
+   "from": "자기 표를 던진 산중총회 기록과도",
+   "to": "자기가 서명한 결재 기록과도",
+   "expect": 2
+  },
+  {
+   "id": "a108-person-0577-090",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json_ko",
+   "from": "산중총회 표결 뒤",
+   "to": "국장 결재 뒤",
+   "expect": 1
+  },
+  {
+   "id": "a109-person-0577-090",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json_ko",
+   "from": "총회 표결 뒤",
+   "to": "국장 결재 뒤",
+   "expect": 1
+  },
+  {
+   "id": "a110-person-0577-090",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json_ko",
+   "from": "필사본과 총회 표가 어긋날",
+   "to": "필사본과 결재된 표 수가 어긋날",
+   "expect": 1
+  },
+  {
+   "id": "a111-person-0401-090",
+   "file": "090",
+   "key": "person-0401",
+   "col": "json_ko",
+   "from": "조합원 총회의 감사 권한으로",
+   "to": "주교의 감사 권한으로",
+   "expect": 1
+  },
+  {
+   "id": "a112-person-0402-090",
+   "file": "090",
+   "key": "person-0402",
+   "col": "json_ko",
+   "from": "수서역 조합원 총회의 의제 순서를",
+   "to": "수서역 역장이 내리는 안건 순서를",
+   "expect": 1
+  },
+  {
+   "id": "a113-person-0402-090",
+   "file": "090",
+   "key": "person-0402",
+   "col": "json",
+   "from": "Sets the agenda order of the Suseo Station members' assembly from the mediator's seat",
+   "to": "Sets the order of the agenda that the Suseo Station stationmaster hands down, from the mediator's seat",
+   "expect": 1
+  },
+  {
+   "id": "a114-person-0403-090",
+   "file": "090",
+   "key": "person-0403",
+   "col": "json_ko",
+   "from": "조합원 총회에서 파벌의",
+   "to": "역장의 확인 서명 앞에서 파벌의",
+   "expect": 1
+  },
+  {
+   "id": "a115-person-0405-090",
+   "file": "090",
+   "key": "person-0405",
+   "col": "json_ko",
+   "from": "조합원 총회에서 파벌의",
+   "to": "역장의 확인 서명 앞에서 파벌의",
+   "expect": 1
+  },
+  {
+   "id": "a116-person-0403-090",
+   "file": "090",
+   "key": "person-0403",
+   "col": "json",
+   "from": "at the members' assembly",
+   "to": "before the stationmaster's countersignature",
+   "expect": 1
+  },
+  {
+   "id": "a117-person-0405-090",
+   "file": "090",
+   "key": "person-0405",
+   "col": "json",
+   "from": "at the members' assembly",
+   "to": "before the stationmaster's countersignature",
+   "expect": 1
+  },
+  {
+   "id": "a118-person-0407-090",
+   "file": "090",
+   "key": "person-0407",
+   "col": "json_ko",
+   "from": "수서역 조합원 총회 기간의",
+   "to": "수서역 역장 순시 기간의",
+   "expect": 1
+  },
+  {
+   "id": "a119-person-0407-090",
+   "file": "090",
+   "key": "person-0407",
+   "col": "json",
+   "from": "during the Suseo Station members' assembly",
+   "to": "during the Suseo Station stationmaster's inspection rounds",
+   "expect": 1
+  },
+  {
+   "id": "a120-person-0415-090",
+   "file": "090",
+   "key": "person-0415",
+   "col": "json_ko",
+   "from": "조합원 총회 조명을",
+   "to": "역장실 조명을",
+   "expect": 2
+  },
+  {
+   "id": "a121-person-0415-090",
+   "file": "090",
+   "key": "person-0415",
+   "col": "json",
+   "from": "the lighting for the union-member general assembly",
+   "to": "the lighting in the stationmaster's office",
+   "expect": 2
+  },
+  {
+   "id": "a122-person-0070-090",
+   "file": "090",
+   "key": "person-0070",
+   "col": "json",
+   "from": "Rank: Assistant Manager",
+   "to": "Rank: Ordinary Citizen",
+   "expect": 3
+  },
+  {
+   "id": "a123-person-0070-090",
+   "file": "090",
+   "key": "person-0070",
+   "col": "json_ko",
+   "from": "품계 대리.",
+   "to": "품계 일반 시민.",
+   "expect": 2
+  },
+  {
+   "id": "a124-person-0070-090",
+   "file": "090",
+   "key": "person-0070",
+   "col": "json_ko",
+   "from": "품계: 대리",
+   "to": "품계: 일반 시민",
+   "expect": 1
+  },
+  {
+   "id": "a125-person-0112-090",
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Ryu Dain grew up on the Yeongdeungpo water-purification watch.",
+   "to": "Ryu Dain grew up on the Cheonho depot stove watch.",
+   "expect": 1
+  },
+  {
+   "id": "a126-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "succession to the Council but",
+   "to": "succession to the regency but",
+   "expect": 3
+  },
+  {
+   "id": "a127-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "당회 후계가 아니라",
+   "to": "섭정 후계가 아니라",
+   "expect": 3
+  },
+  {
+   "id": "a128-all-110",
+   "file": "110",
+   "col": "json",
+   "from": "Session records auditor",
+   "to": "Workshop Council records auditor",
+   "expect": 1
+  },
+  {
+   "id": "a129-all-110",
+   "file": "110",
+   "col": "json_ko",
+   "from": "당회 기록감사",
+   "to": "공방평의회 기록감사",
+   "expect": 1
+  }
+ ]
+}

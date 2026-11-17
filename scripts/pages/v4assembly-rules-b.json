@@ -1,0 +1,32 @@
+{
+ "_doc": "v4assembly-rules.json 적용 뒤 재검사에서 남은 두 건(활용형 '올린다', 전기 영문 'Session Head seat')을 마저 고친다.",
+ "hold": [
+  "person-0001",
+  "person-0272",
+  "person-0374",
+  "person-0399",
+  "person-1005",
+  "person-1018",
+  "person-0073"
+ ],
+ "rules": [
+  {
+   "id": "b001-person-0255-090",
+   "file": "090",
+   "key": "person-0255",
+   "col": "json_ko",
+   "from": "총회에 먼저 올린다",
+   "to": "국장에게 먼저 올린다",
+   "expect": 2
+  },
+  {
+   "id": "b002-person-0087-090",
+   "file": "090",
+   "key": "person-0087",
+   "col": "json",
+   "from": "In 2126, O Gyeongjae took the Session Head seat.",
+   "to": "In 2126, O Gyeongjae took over Im Hajun's work by the Hierophant's order.",
+   "expect": 1
+  }
+ ]
+}
