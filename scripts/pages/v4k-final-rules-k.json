@@ -1,0 +1,162 @@
+{
+ "rules": [
+  {
+   "id": "ko-1",
+   "file": "090",
+   "col": "json",
+   "from": "Disputes the termination-condition wording with Joint Bargaining",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "ko-3",
+   "file": "090",
+   "col": "json",
+   "from": "attaches a food compartment to Jeong Yura's Joint Negotiation envoy",
+   "to": "",
+   "expect": 2,
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$"
+  },
+  {
+   "id": "ko-5",
+   "file": "090",
+   "col": "json",
+   "from": " and attaches a food compartment to Jeong Yura's Joint Negotiation envoy",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "ko-8",
+   "file": "090",
+   "col": "json",
+   "from": "Joint Negotiation Signing Clerk",
+   "to": "Signing Clerk",
+   "expect": 3
+  },
+  {
+   "id": "ko-10",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Joint Negotiation Signing Clerk",
+   "to": "Signing Clerk",
+   "expect": 1
+  },
+  {
+   "id": "ko-11",
+   "file": "090",
+   "col": "json",
+   "from": "Requisition Slips, Attendance Headcount Cross-Check, and Joint Negotiation Confirmation",
+   "to": "Requisition Slips and Attendance Headcount Cross-Check",
+   "expect": 3
+  },
+  {
+   "id": "ko-13",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Requisition Slips, Attendance Headcount Cross-Check, and Joint Negotiation Confirmation",
+   "to": "Requisition Slips and Attendance Headcount Cross-Check",
+   "expect": 1
+  },
+  {
+   "id": "ko-14",
+   "file": "090",
+   "col": "json",
+   "from": "Custodian of Each State's Ratifications",
+   "to": "Ratification Custodian",
+   "expect": 1
+  },
+  {
+   "id": "ko-15",
+   "file": "110",
+   "col": "json",
+   "from": "Custodian of Each State's Ratifications",
+   "to": "Ratification Custodian",
+   "expect": 1
+  },
+  {
+   "id": "ko-17",
+   "file": "090",
+   "col": "json",
+   "from": "Keeper of Each Nation's Ratifications",
+   "to": "Ratification Custodian",
+   "expect": 5
+  },
+  {
+   "id": "ko-20",
+   "file": "090",
+   "col": "json",
+   "from": "Managing each nation's ratification dates",
+   "to": "Managing ratification dates",
+   "expect": 1
+  },
+  {
+   "id": "ko-23",
+   "file": "090",
+   "col": "json",
+   "from": "Ratification Audit Assistant for Each State",
+   "to": "Ratification Audit Assistant",
+   "expect": 2
+  },
+  {
+   "id": "ko-26",
+   "file": "090",
+   "col": "json",
+   "from": "multi-state ratification audits",
+   "to": "ratification audits",
+   "expect": 4
+  },
+  {
+   "id": "ko-29",
+   "file": "090",
+   "col": "json",
+   "from": "joint-approval",
+   "to": "approval",
+   "expect": 18
+  },
+  {
+   "id": "ko-32",
+   "file": "090",
+   "col": "json",
+   "from": "a Government joint-staff figure practiced in",
+   "to": "a Government figure practiced in",
+   "expect": 1
+  },
+  {
+   "id": "ko-35",
+   "file": "090",
+   "col": "json",
+   "from": "The Government Joint Operations figure practiced in",
+   "to": "a figure of The Government who is practiced in",
+   "expect": 1
+  },
+  {
+   "id": "ko-38",
+   "file": "090",
+   "col": "json",
+   "from": "requisition slips, headcount reconciliation, joint approval confirmation",
+   "to": "requisition slips and headcount reconciliation",
+   "expect": 1
+  },
+  {
+   "id": "ko-41",
+   "file": "090",
+   "col": "json",
+   "from": "hand over defense in the name of the Protection Force as betrayal",
+   "to": "hand over defense as betrayal",
+   "expect": 1
+  }
+ ]
+}
