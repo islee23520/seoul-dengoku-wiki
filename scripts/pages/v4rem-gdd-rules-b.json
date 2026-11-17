@@ -1,0 +1,306 @@
+{
+  "rulesDoc": "v4 remaining task 9 fix",
+  "rules": [
+    {
+      "id": "term-ko-native",
+      "docs": [
+        "doc.Korean-Terminology-and-Naming"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "수문손",
+      "to": "선로손",
+      "expect": 1,
+      "reason": "수문 설정 폐기: 생활·현장 별칭 예시를 역 선로 일에서 새로 둔다"
+    },
+    {
+      "id": "term-ko-sino",
+      "docs": [
+        "doc.Korean-Terminology-and-Naming"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "수문호흡법",
+      "to": "배차조정",
+      "expect": 1,
+      "reason": "수문 설정과 옛 호흡법 예시 폐기: 역 배차 조정으로 새 예시"
+    },
+    {
+      "id": "term-en-native",
+      "docs": [
+        "doc.Korean-Terminology-and-Naming"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "Gatehand",
+      "to": "Trackhand",
+      "expect": 1,
+      "reason": "ko 선로손과 짝"
+    },
+    {
+      "id": "term-en-sino",
+      "docs": [
+        "doc.Korean-Terminology-and-Naming"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "Floodgate Breathing Method",
+      "to": "Dispatch Coordination",
+      "expect": 1,
+      "reason": "ko 배차조정과 짝"
+    },
+    {
+      "id": "narr-ko",
+      "docs": [
+        "doc.Narrative-Direction"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "삼성역 명부·물 계약",
+      "to": "삼성역 명부·교대 계약",
+      "expect": 1,
+      "reason": "물 계약 폐기"
+    },
+    {
+      "id": "narr-en",
+      "docs": [
+        "doc.Narrative-Direction"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "Samseong Station roster and water contract",
+      "to": "Samseong Station roster and shift contract",
+      "expect": 1,
+      "reason": "water contract 폐기"
+    },
+    {
+      "id": "prio-ko",
+      "docs": [
+        "doc.owner-approved-batch-d",
+        "doc.owner-approved-defaults-on"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "발전 1·급수 2·의무 3",
+      "to": "발전 1·난방 2·의무 3",
+      "expect": 2,
+      "reason": "급수 시설 폐기, 겨울 난방을 2순위로 두어 번호 유지"
+    },
+    {
+      "id": "prio-en-batch",
+      "docs": [
+        "doc.owner-approved-batch-d"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "power 1 · water supply 2 · medical 3",
+      "to": "power 1 · heating 2 · medical 3",
+      "expect": 1,
+      "reason": "급수 폐기, 번호 유지"
+    },
+    {
+      "id": "prio-en-defaults",
+      "docs": [
+        "doc.owner-approved-defaults-on"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "power 1 · water supply 2 · infirmary 3",
+      "to": "power 1 · heating 2 · infirmary 3",
+      "expect": 1,
+      "reason": "급수 폐기, 번호 유지"
+    },
+    {
+      "id": "clause-ko",
+      "docs": [
+        "doc.Rules-FactionsWarfare"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "물 할당과 헌납례",
+      "to": "배급 할당과 헌납례",
+      "expect": 1,
+      "reason": "west-sluice 키 id 유지, 표시 효과에서 물 할당 폐기"
+    },
+    {
+      "id": "clause-en",
+      "docs": [
+        "doc.Rules-FactionsWarfare"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "Requires water allocation and tribute rites",
+      "to": "Requires ration allocation and tribute rites",
+      "expect": 1,
+      "reason": "west-sluice 키 id 유지, 표시 효과에서 water allocation 폐기"
+    },
+    {
+      "id": "promise-ko-mid",
+      "docs": [
+        "doc.mechanism-design-index-d10",
+        "doc.mechanism-design-index-d17",
+        "doc.mechanism-design-index-d18"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "통행·급수·배급",
+      "to": "통행·배급",
+      "expect": 3,
+      "reason": "급수 약속 항목 삭제"
+    },
+    {
+      "id": "promise-en-comma",
+      "docs": [
+        "doc.mechanism-design-index-d10",
+        "doc.mechanism-design-index-d17",
+        "doc.mechanism-design-index-d18"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "passage, water supply, rations",
+      "to": "passage, rations",
+      "expect": 3,
+      "reason": "water supply 약속 항목 삭제"
+    },
+    {
+      "id": "sp-ko-slash",
+      "docs": [
+        "doc.Singleplayer-Design-SP-1-0-0"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "통행/급수/배급",
+      "to": "통행/배급",
+      "expect": 1,
+      "reason": "급수 삭제"
+    },
+    {
+      "id": "sp-en-slash",
+      "docs": [
+        "doc.Singleplayer-Design-SP-1-0-0"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "passage/water supply/rationing",
+      "to": "passage/rationing",
+      "expect": 1,
+      "reason": "water supply 삭제"
+    },
+    {
+      "id": "sp-ko-tax",
+      "docs": [
+        "doc.Singleplayer-Design-SP-1-0-0"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "세금/급수/통행",
+      "to": "세금/통행",
+      "expect": 1,
+      "reason": "급수 삭제"
+    },
+    {
+      "id": "sp-en-tax",
+      "docs": [
+        "doc.Singleplayer-Design-SP-1-0-0"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "tax/water-supply/passage",
+      "to": "tax/passage",
+      "expect": 1,
+      "reason": "water-supply 삭제"
+    },
+    {
+      "id": "station-ko",
+      "docs": [
+        "doc.Station-Interior-Design"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "| 급수·취사·위생·폐기물 |",
+      "to": "| 취사·위생·폐기물 |",
+      "expect": 1,
+      "reason": "식수 충분 정본(규칙 11)에 맞춰 급수 삭제"
+    },
+    {
+      "id": "station-en",
+      "docs": [
+        "doc.Station-Interior-Design"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "literal",
+      "from": "| Water Supply, Cooking, Sanitation, and Waste |",
+      "to": "| Cooking, Sanitation, and Waste |",
+      "expect": 1,
+      "reason": "ko와 짝"
+    },
+    {
+      "id": "camp-col-ko",
+      "docs": [
+        "doc.Campaign-Progression"
+      ],
+      "fields": [
+        "body_ko_md"
+      ],
+      "kind": "regex",
+      "from": "^(\\|(?: [^|\\n]*\\|){3}) [^|\\n]*\\|((?: [^|\\n]*\\|){5})$",
+      "flags": "gm",
+      "to": "$1$2",
+      "expect": 36,
+      "reason": "이전 자료 표의 급수 열 삭제(4번째 열)"
+    },
+    {
+      "id": "camp-col-en",
+      "docs": [
+        "doc.Campaign-Progression"
+      ],
+      "fields": [
+        "body_md"
+      ],
+      "kind": "regex",
+      "from": "^(\\|(?: [^|\\n]*\\|){3}) [^|\\n]*\\|((?: [^|\\n]*\\|){5})$",
+      "flags": "gm",
+      "to": "$1$2",
+      "expect": 36,
+      "reason": "ko와 짝"
+    }
+  ]
+}

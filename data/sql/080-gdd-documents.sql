@@ -190,7 +190,7 @@ COMPOSITION FAIL, SPRITE_FIDELITY FAIL, PRODUCT_POLISH FAIL, TYPOGRAPHY PASS(라
 - 본 브랜치는 후보 검증 인프라(assembler, 테스트, Editor importer, PlayMode 캡처)와 draft 후보 에셋을 저장소에 포함한다. 런타임 코드는 이들을 참조하지 않는다.
 - 후속 캐릭터 아트 작업은 이 ADR과 docs/game-logic/Character-Art-Direction.md를 따른다. 기존 원본과 FAIL 기록은 교체하지 않는다.
 - 대형 증거(원문 JSONL, 렌더 276장, 접촉시트)는 git-ignored .omo/evidence/에 있고, 판정 수치와 해시는 이 문서와 검수 요청으로 추적한다.');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.ADR-003', 'decisions', 'adr-003', 'ADR-003: Invented Names Are Based on Real Place Names and Subway Station Names', 'ADR-003: 창작 명칭은 실제 지역명과 지하철역명을 기준으로 한다', '', '', 'accepted', 2, 'adr/ADR-003-real-place-and-station-naming.md', '# ADR-003: Invented Names Are Based on Real Place Names and Subway Station Names
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.ADR-003', 'decisions', 'adr-003', 'ADR-003: Invented Names Are Based on Real Place Names and Subway Station Names (Pre-v4 material · kept as history)', 'ADR-003: 창작 명칭은 실제 지역명과 지하철역명을 기준으로 한다 (v4 이전 자료 · 이력 보존)', '', '', 'accepted', 2, 'adr/ADR-003-real-place-and-station-naming.md', '# ADR-003: Invented Names Are Based on Real Place Names and Subway Station Names
 
 - Status: Approved
 - Decision date: 2026-09-16
@@ -2189,7 +2189,7 @@ Combat, negotiation, exploration, and non-intervention for personal gain are all
 
 Opening a route must bring real benefits such as supplies, trade, easier travel, or reunions. New conflicts arise from separate actors and goals, and are not handled by detecting good deeds and spawning enemies. Successes in which no one is hurt, and the satisfaction of defeating an obvious enemy, are also allowed.
 
-Immediate dangers and known costs are shown before a choice is made. Facts, inferences, and rumors are distinguished. Even when characters interpret events differently, the actual events and the settlement results must be consistent. Rewards and relationship changes must be grounded in witnessing, reporting, or participation. Only cases confirmed in the Seoul source material are adjudicated: in the Samseong Station roster and water contract, separate O Gyeongjae''s position from Im Chowon''s sealed testimony and unfinished maintenance training; Sin Jongmok''s attempt to recover the transceiver unit is conditioned on the daily power supply that depends on the same part and on the residents'' consent. The Yongsan exchange''s existing medical-call priority, reduced freight dispatch, and single-car operating-rights costs are not to be converted into bank principal, arrears, or seizure. Im Hajun''s disappearance is not a death hook, and Bak Nuri''s operational responsibility and O Gyeongjae''s post are not automatically inherited by Im Chowon. Platform access, railway trunk lines, and service restoration do not mean station ownership or a new superior power. The order of the new refrigeration/relay negotiations, the presentation of records, and the costs and outcomes of choosing to participate or hold back are not yet approved incidents.
+Immediate dangers and known costs are shown before a choice is made. Facts, inferences, and rumors are distinguished. Even when characters interpret events differently, the actual events and the settlement results must be consistent. Rewards and relationship changes must be grounded in witnessing, reporting, or participation. Only cases confirmed in the Seoul source material are adjudicated: in the Samseong Station roster and shift contract, separate O Gyeongjae''s position from Im Chowon''s sealed testimony and unfinished maintenance training; Sin Jongmok''s attempt to recover the transceiver unit is conditioned on the daily power supply that depends on the same part and on the residents'' consent. The Yongsan exchange''s existing medical-call priority, reduced freight dispatch, and single-car operating-rights costs are not to be converted into bank principal, arrears, or seizure. Im Hajun''s disappearance is not a death hook, and Bak Nuri''s operational responsibility and O Gyeongjae''s post are not automatically inherited by Im Chowon. Platform access, railway trunk lines, and service restoration do not mean station ownership or a new superior power. The order of the new refrigeration/relay negotiations, the presentation of records, and the costs and outcomes of choosing to participate or hold back are not yet approved incidents.
 
 Competence, humor, rest, and the restoration of daily life are also part of the narrative. Do not use every warm scene as foreshadowing for a later tragedy. Do not have the author punish players with a hidden morality score for choosing personal gain or a military solution.
 
@@ -2286,7 +2286,7 @@ The goal the player should remember is the following scene. At first, the door I
 
 길을 열면 물자, 거래, 이동 편의, 재회 같은 실제 이익이 있어야 한다. 새로운 갈등은 별도의 행위자와 목표 때문에 생기며, 선행을 감지해 적을 생성하는 식으로 처리하지 않는다. 아무도 다치지 않는 성공과 명백한 적을 물리치는 통쾌함도 허용한다.
 
-즉시 위험과 알려진 비용은 선택 전에 보여준다. 사실, 추정, 소문은 구별한다. 인물의 해석이 달라도 실제 사건과 정산 결과는 일관되어야 한다. 보상과 관계 변화에는 목격·보고·참여의 근거가 있어야 한다. 서울 원천에서 확인된 사례만 판독한다: 삼성역 명부·물 계약에서 오경재의 직위와 임초원의 봉인 증언/미완 정비 교육을 분리하고, 신종목의 송수신도 회수 시도는 같은 부품에 의존한 생활 전력과 주민 동의를 조건으로 둔다. 용산 교환실의 기존 의료 호출 우선·줄어든 화물 배차·한 칸 운영권 비용은 은행 원금·연체·압류로 치환하지 않는다. 임하준의 실종은 사망 hook이 아니며 박누리의 운영 책임과 오경재의 직책을 임초원에게 자동 승계시키지 않는다. 승강장 접근·철도 간선·서비스 회복은 역 소유나 새 주군이 아니다. 새로운 냉장/중계 협의 순서·기록 제시·참여/보류 선택의 비용과 결말은 아직 승인된 사건이 아니다.
+즉시 위험과 알려진 비용은 선택 전에 보여준다. 사실, 추정, 소문은 구별한다. 인물의 해석이 달라도 실제 사건과 정산 결과는 일관되어야 한다. 보상과 관계 변화에는 목격·보고·참여의 근거가 있어야 한다. 서울 원천에서 확인된 사례만 판독한다: 삼성역 명부·교대 계약에서 오경재의 직위와 임초원의 봉인 증언/미완 정비 교육을 분리하고, 신종목의 송수신도 회수 시도는 같은 부품에 의존한 생활 전력과 주민 동의를 조건으로 둔다. 용산 교환실의 기존 의료 호출 우선·줄어든 화물 배차·한 칸 운영권 비용은 은행 원금·연체·압류로 치환하지 않는다. 임하준의 실종은 사망 hook이 아니며 박누리의 운영 책임과 오경재의 직책을 임초원에게 자동 승계시키지 않는다. 승강장 접근·철도 간선·서비스 회복은 역 소유나 새 주군이 아니다. 새로운 냉장/중계 협의 순서·기록 제시·참여/보류 선택의 비용과 결말은 아직 승인된 사건이 아니다.
 
 유능함, 유머, 휴식, 일상의 회복도 서사의 일부다. 모든 따뜻한 장면을 이후 비극의 복선으로 쓰지 않는다. 개인 이익이나 군사적 해결을 택했다고 작가가 숨은 도덕 점수로 벌하지 않는다.
 
@@ -2434,7 +2434,7 @@ Status: Proposal (owner approved 2026-10-10, pre-merge).
 
 What the GDD leaves out: The GDD only defines the per-facility labor and power allocation order and the zero-demand production formula; it has no world state for which facilities a base has, how many, and how they operate. — Source path: rules-economy-logistics-clauses.json RECON-05·10·11·21·23·24
 
-Proposed rule: Base facilities = up to 2 main facilities read from occupation tags + auxiliary power generation if a powered facility exists. Daily settlement: labor W = max(1, floor(household members × 0.6) − (health < 40 ? 1 : 0)) is assigned to facilities by policy priority (power 1 · water supply 2 · medical 3 · workshop 4 · market 5 · warehouse 6); ties are broken by facility ID, then labor ID. Fill = min(labor ratio, power ratio); output = base 100 × facility condition R/100 × fill (if demand is 0, fill = 1 → 80 at 80% condition). During a blackout, powered facilities other than generation produce 0. Medicine, repair, and power tags do not substitute for one another, and if labor falls short, work is partially completed. Weekly effects: the market yields +1.2 funds/day per 100 output, medical output cares for the sick (health up to +2), and workshop output adjusts facility condition (cap +15, −0.25/week if neglected). Extension (owner approved 2026-10-10): the output and storage stages require a storage reservation (an empty slot), and if there is none they wait at the previous completed stage. The base storage cap is 400, +400 if a warehouse facility exists. The player can set the designated priority (RECON-05).
+Proposed rule: Base facilities = up to 2 main facilities read from occupation tags + auxiliary power generation if a powered facility exists. Daily settlement: labor W = max(1, floor(household members × 0.6) − (health < 40 ? 1 : 0)) is assigned to facilities by policy priority (power 1 · heating 2 · medical 3 · workshop 4 · market 5 · warehouse 6); ties are broken by facility ID, then labor ID. Fill = min(labor ratio, power ratio); output = base 100 × facility condition R/100 × fill (if demand is 0, fill = 1 → 80 at 80% condition). During a blackout, powered facilities other than generation produce 0. Medicine, repair, and power tags do not substitute for one another, and if labor falls short, work is partially completed. Weekly effects: the market yields +1.2 funds/day per 100 output, medical output cares for the sick (health up to +2), and workshop output adjusts facility condition (cap +15, −0.25/week if neglected). Extension (owner approved 2026-10-10): the output and storage stages require a storage reservation (an empty slot), and if there is none they wait at the previous completed stage. The base storage cap is 400, +400 if a warehouse facility exists. The player can set the designated priority (RECON-05).
 
 Genre basis: Nowland tabulates workers, inputs, and outputs per building and provides a labor priority UI. CK3 holding buildings only have construction and upkeep and no concept of operation, so this rule follows Nowland.
 
@@ -2562,7 +2562,7 @@ GDD가 비운 것: RWARFARE-35는 수장이 처벌·배상하거나 사후 승�
 
 GDD가 비운 것: GDD는 시설별 인력·전력 배정 순서와 영 요구 생산식만 정하고, 거점에 어떤 시설이 몇 개 있고 어떻게 일하는지의 월드 상태가 없다. — 근거 경로: rules-economy-logistics-clauses.json RECON-05·10·11·21·23·24
 
-제안 규칙: 거점 시설 = 직업 태그에서 읽은 주요 시설 최대 2개 + 전동 시설이 있으면 보조 발전. 하루 정산: 인력 W=max(1, floor(식구×0.6)−(건강<40?1:0))을 정책 우선순위(발전 1·급수 2·의무 3·공방 4·시장 5·창고 6)로 시설에 배정, 동순위는 시설 ID→인력 ID. 채움 fill=min(인력비, 전력비), 산출=기본 100×시설 상태 R/100×fill(요구가 0이면 fill=1 → 상태 80%에서 80). 정전이면 발전 외 전동 시설 0. 의약·수리·전력 태그는 서로 대체하지 않고, 인력이 모자라면 부분 완료. 주간 효과: 시장 산출 100당 +1.2 자금/일, 의무 산출이 병자를 돌봄(건강 +최대 2), 공방 산출이 시설 상태 보정(상한 +15, 방치하면 −0.25/주). 확장(소유자 승인 2026-10-10): 산출·저장 단계는 저장 예약(빈 자리)이 있어야 하며 없으면 이전 완료 단계에서 대기한다. 보관 상한 기본 400, 창고 시설이 있으면 +400. 지정 우선순위(RECON-05)를 플레이어가 정할 수 있다.
+제안 규칙: 거점 시설 = 직업 태그에서 읽은 주요 시설 최대 2개 + 전동 시설이 있으면 보조 발전. 하루 정산: 인력 W=max(1, floor(식구×0.6)−(건강<40?1:0))을 정책 우선순위(발전 1·난방 2·의무 3·공방 4·시장 5·창고 6)로 시설에 배정, 동순위는 시설 ID→인력 ID. 채움 fill=min(인력비, 전력비), 산출=기본 100×시설 상태 R/100×fill(요구가 0이면 fill=1 → 상태 80%에서 80). 정전이면 발전 외 전동 시설 0. 의약·수리·전력 태그는 서로 대체하지 않고, 인력이 모자라면 부분 완료. 주간 효과: 시장 산출 100당 +1.2 자금/일, 의무 산출이 병자를 돌봄(건강 +최대 2), 공방 산출이 시설 상태 보정(상한 +15, 방치하면 −0.25/주). 확장(소유자 승인 2026-10-10): 산출·저장 단계는 저장 예약(빈 자리)이 있어야 하며 없으면 이전 완료 단계에서 대기한다. 보관 상한 기본 400, 창고 시설이 있으면 +400. 지정 우선순위(RECON-05)를 플레이어가 정할 수 있다.
 
 장르 근거: Nowland는 건물마다 노동자·입력·산출을 표로 두고 인력 우선순위 UI를 준다. CK3 영지 건물은 건설·유지만 있고 가동 개념이 없어 이 규칙이 Nowland 쪽을 따른다.
 
@@ -2830,7 +2830,7 @@ Status: Proposal (owner-approved 2026-10-10, not yet merged). Recommended defaul
 
 What the canon leaves open: the GDD only sets the per-facility order of staffing and power allocation and the zero-demand production formula; there is no world state for which facilities a stronghold has, how many, or how they work. (Basis: rules-economy-logistics-clauses.json RECON-05·10·11·21·23·24)
 
-Proposed rule: stronghold facilities = up to 2 main facilities read from occupation tags, plus auxiliary power generation if there are powered facilities. Daily settlement: workforce W = max(1, floor(household × 0.6) − (health < 40 ? 1 : 0)) is assigned to facilities by policy priority (power 1 · water supply 2 · infirmary 3 · workshop 4 · market 5 · storehouse 6); ties are broken by facility ID, then worker ID. Fill = min(workforce ratio, power ratio); output = base 100 × facility condition R/100 × fill (if demand is 0, fill = 1 → 80 at 80% condition). During a blackout, all powered facilities other than power generation produce 0. Medicine, repair, and power tags do not substitute for one another, and if workforce runs short the work is only partially completed. Weekly effects: market output gives +1.2 funds/day per 100, infirmary output tends the sick (health up to +2), and workshop output corrects facility condition (cap +15, −0.25/week if neglected).
+Proposed rule: stronghold facilities = up to 2 main facilities read from occupation tags, plus auxiliary power generation if there are powered facilities. Daily settlement: workforce W = max(1, floor(household × 0.6) − (health < 40 ? 1 : 0)) is assigned to facilities by policy priority (power 1 · heating 2 · infirmary 3 · workshop 4 · market 5 · storehouse 6); ties are broken by facility ID, then worker ID. Fill = min(workforce ratio, power ratio); output = base 100 × facility condition R/100 × fill (if demand is 0, fill = 1 → 80 at 80% condition). During a blackout, all powered facilities other than power generation produce 0. Medicine, repair, and power tags do not substitute for one another, and if workforce runs short the work is only partially completed. Weekly effects: market output gives +1.2 funds/day per 100, infirmary output tends the sick (health up to +2), and workshop output corrects facility condition (cap +15, −0.25/week if neglected).
 
 Genre basis: Nowland tabulates workers, inputs, and outputs per building and provides a labor priority UI. CK3 holding buildings only have construction and upkeep and no concept of operation, so this rule follows Nowland.
 
@@ -2930,7 +2930,7 @@ Implementation: src/engine/world.ts worldWeek', '# 승인된 제안 묶음 A —
 
 정본이 비운 것: GDD는 시설별 인력·전력 배정 순서와 영 요구 생산식만 정하고, 거점에 어떤 시설이 몇 개 있고 어떻게 일하는지의 월드 상태가 없다. (근거 rules-economy-logistics-clauses.json RECON-05·10·11·21·23·24)
 
-제안 규칙: 거점 시설 = 직업 태그에서 읽은 주요 시설 최대 2개 + 전동 시설이 있으면 보조 발전. 하루 정산: 인력 W=max(1, floor(식구×0.6)−(건강<40?1:0))을 정책 우선순위(발전 1·급수 2·의무 3·공방 4·시장 5·창고 6)로 시설에 배정, 동순위는 시설 ID→인력 ID. 채움 fill=min(인력비, 전력비), 산출=기본 100×시설 상태 R/100×fill(요구가 0이면 fill=1 → 상태 80%에서 80). 정전이면 발전 외 전동 시설 0. 의약·수리·전력 태그는 서로 대체하지 않고, 인력이 모자라면 부분 완료. 주간 효과: 시장 산출 100당 +1.2 자금/일, 의무 산출이 병자를 돌봄(건강 +최대 2), 공방 산출이 시설 상태 보정(상한 +15, 방치하면 −0.25/주).
+제안 규칙: 거점 시설 = 직업 태그에서 읽은 주요 시설 최대 2개 + 전동 시설이 있으면 보조 발전. 하루 정산: 인력 W=max(1, floor(식구×0.6)−(건강<40?1:0))을 정책 우선순위(발전 1·난방 2·의무 3·공방 4·시장 5·창고 6)로 시설에 배정, 동순위는 시설 ID→인력 ID. 채움 fill=min(인력비, 전력비), 산출=기본 100×시설 상태 R/100×fill(요구가 0이면 fill=1 → 상태 80%에서 80). 정전이면 발전 외 전동 시설 0. 의약·수리·전력 태그는 서로 대체하지 않고, 인력이 모자라면 부분 완료. 주간 효과: 시장 산출 100당 +1.2 자금/일, 의무 산출이 병자를 돌봄(건강 +최대 2), 공방 산출이 시설 상태 보정(상한 +15, 방치하면 −0.25/주).
 
 장르 근거: Nowland는 건물마다 노동자·입력·산출을 표로 두고 인력 우선순위 UI를 준다. CK3 영지 건물은 건설·유지만 있고 가동 개념이 없어 이 규칙이 Nowland 쪽을 따른다.
 
@@ -3758,7 +3758,7 @@ Review reuse of existing forms first, but do not settle here whether new constru
 | Function Under Review | Question to Ask of the Space | Boundary to Record |
 | --- | --- | --- |
 | Sleeping, Rations, Medical Care, and Education | Who uses which actual space, and how is it separated from waiting, movement, and evacuation routes? | Space references, existing evidence for the acting party, and usage constraints. Do not create capacities, educational effects, or new characters. |
-| Water Supply, Cooking, Sanitation, and Waste | How are drinking and cooking water separated from livestock and contaminated water, and from drainage and waste routes? | Confirmation status of sources, inputs, outputs, and processing constraints. Do not create new consumption or throughput figures. |
+| Cooking, Sanitation, and Waste | How are drinking and cooking water separated from livestock and contaminated water, and from drainage and waste routes? | Confirmation status of sources, inputs, outputs, and processing constraints. Do not create new consumption or throughput figures. |
 | Storage, Logistics, Loading, and Maintenance | Is there evidence for the receiving entrance, the connection''s width and height, inter-level transport, and the space for tools, materials, and storage? | Unconfirmed effective width, height, and load capacity are null. Unconfirmed passages are not passed as logistics-capable. |
 | Power, Electrical Storage, Heating, and Ventilation | What are the actual constraints on equipment spaces, fuel, exhaust, heat loss, and safety separation? | Separate facility existence, whether it works at opening, and its in-operation status, and do not invent heating or power-generation formulas. |
 | Checkpoints, Defense, Evacuation | For which function are the confirmed exits, stairs, and doors used, and which routes are affected if they are blocked? | Separate physical connection, right of passage, opening blockade, and runtime change. |
@@ -3839,7 +3839,7 @@ metric 원형에는 좌표계·원점·축·수직 기준·sourceFeatureId와 �
 | 검토 기능 | 공간에 물을 질문 | 기록할 경계 |
 | --- | --- | --- |
 | 잠자리·배급·의료·교육 | 어느 실제 공간을 누가 쓰며 대기·이동·피난 동선과 어떻게 분리되는가? | 공간 참조, 행동 주체의 기존 근거, 이용 제약. 정원·교육 효과·새 인물을 만들지 않는다. |
-| 급수·취사·위생·폐기물 | 식수·취사용수와 사육·오염수, 배수·폐기물 경로를 어떻게 분리하는가? | 원천·입력·출력·처리 제약의 확인 상태. 새 소비량·처리량을 만들지 않는다. |
+| 취사·위생·폐기물 | 식수·취사용수와 사육·오염수, 배수·폐기물 경로를 어떻게 분리하는가? | 원천·입력·출력·처리 제약의 확인 상태. 새 소비량·처리량을 만들지 않는다. |
 | 보관·물류·하역·정비 | 반입구와 연결 폭·높이·층간 운반, 도구·자재·보관 공간의 근거가 있는가? | 미확인 유효폭·높이·적재량은 null. 미확인 통로를 물류 가능으로 통과시키지 않는다. |
 | 전력·축전·난방·환기 | 설비 공간과 연료·배기·열 손실·안전 분리의 실제 제약은 무엇인가? | 설비 존재, 개막 작동 여부, 운영 중 상태를 나누고 난방·발전 수식을 발명하지 않는다. |
 | 검문·방어·피난 | 확인된 출구·계단·문을 어떤 기능에 쓰고 막히면 어느 동선이 영향을 받는가? | 물리 연결, 통행권, 개막 봉쇄, runtime 변경을 분리한다. |
@@ -7421,8 +7421,8 @@ Record each new name in the name ledger with `name_id`, `kind`, `formal_name_ko`
 
 | Layer | Usage | Examples | Principle |
 | --- | --- | --- | --- |
-| Native Korean words | Everyday, field, and oral nicknames | Gatehand, Bamboo-Pole Hand, Lens Breath | Keep them short and easy to say |
-| Sino-Korean words | Institutions, formal usage, specialized concepts, and official names | Floodgate Breathing Method, Control Authority, Reconnaissance, Settlement | Combine familiar words whose meaning is clear in Korean |
+| Native Korean words | Everyday, field, and oral nicknames | Trackhand, Bamboo-Pole Hand, Lens Breath | Keep them short and easy to say |
+| Sino-Korean words | Institutions, formal usage, specialized concepts, and official names | Dispatch Coordination, Control Authority, Reconnaissance, Settlement | Combine familiar words whose meaning is clear in Korean |
 | Loanwords | International technology and modern objects that are hard to replace | Physical AI, Lens, Sensor | Write them in Hangul according to the National Institute of Korean Language''s loanword orthography |
 | Machine identifiers | Code and data exchange | `hero-person-0001`, `movement_budget` | Do not expose them as-is in user-facing text; provide a Korean display name and a mapping table |
 
@@ -7533,8 +7533,8 @@ Before adding a new term, ask the following.
 
 | 층 | 쓰임 | 예시 | 원칙 |
 | --- | --- | --- | --- |
-| 고유어 | 생활·현장·구술 별칭 | 수문손, 죽대손, 렌즈숨 | 짧고 말하기 쉬운 이름으로 남긴다 |
-| 한자어 | 제도·격식·전문 개념·정식명 | 수문호흡법, 통제권, 정찰, 정산 | 한국어에서 뜻이 통하는 익숙한 낱말을 결합한다 |
+| 고유어 | 생활·현장·구술 별칭 | 선로손, 죽대손, 렌즈숨 | 짧고 말하기 쉬운 이름으로 남긴다 |
+| 한자어 | 제도·격식·전문 개념·정식명 | 배차조정, 통제권, 정찰, 정산 | 한국어에서 뜻이 통하는 익숙한 낱말을 결합한다 |
 | 외래어 | 대체하기 어려운 국제 기술·현대 사물 | 피지컬 에이아이, 렌즈, 센서 | 국립국어원 외래어 표기법에 맞춰 한글로 적는다 |
 | 기계 식별자 | 코드·데이터 교환 | `hero-person-0001`, `movement_budget` | 사용자 본문에 그대로 노출하지 않고 한국어 표시명과 대응표를 둔다 |
 
@@ -8467,43 +8467,43 @@ When a recovery is recorded as plunder, `Salv` falls and reputation drops. `Sym`
 
 The two tables below are legacy material preserved as they are, with the values and row order of the wiki''s opening policy table in the Korean and English columns, and without any new state assignments.
 
-| State | War | Migrants | Water Supply | Labor | Records | Technology | Trade | Succession |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 01 Yeouido | Limited War | Quarantine Intake | Contract | Contract | Cross-Verification | License Sharing | Permit | Adoptive Apprenticeship |
-| 02 Southwest | Defense | Citizenship | Minimum Line | Civic Service | Cross-Verification | Joint Ledger | Permit | Public Examination |
-| 03 Magok | Defense | Quarantine Intake | Minimum Line | Contract | Full Disclosure | Joint Ledger | Permit | Public Examination |
-| 04 Ttukseom | Defense | Quarantine Intake | Contract | Contract | Undisclosed | Family Secret | Permit | Adoptive Apprenticeship |
-| 05 Amsa | Preemption | Exile | Hostage | Forced Service | Undisclosed | License Sharing | Blockade | Bloodline |
-| 06 Seoul Station | Defense | Quarantine Intake | Contract | Contract | Cross-Verification | License Sharing | Permit | Adoptive Apprenticeship |
-| 07 Yongsan | Limited War | Quarantine Intake | Contract | Contract | Undisclosed | License Sharing | Permit | Adoptive Apprenticeship |
-| 08 Noryangjin | Defense | Citizenship | Contract | Contract | Cross-Verification | License Sharing | Open Market | Adoptive Apprenticeship |
-| 09 Sangam | Defense | Quarantine Intake | Contract | Contract | Full Disclosure | License Sharing | Permit | Public Examination |
-| 10 Bukhansan Bogukmun | Defense | Citizenship | Minimum Line | Civic Service | Cross-Verification | License Sharing | Permit | Public Examination |
-| 11 Changdong | Defense | Quarantine Intake | Contract | Contract | Cross-Verification | Family Secret | Permit | Public Examination |
-| 12 Sinnae | Defense | Citizenship | Minimum Line | Contract | Cross-Verification | License Sharing | Permit | Adoptive Apprenticeship |
-| 13 Jegi-dong | Defense | Citizenship | Minimum Line | Contract | Cross-Verification | Joint Ledger | Permit | Public Examination |
-| 14 Achasan | Limited War | Exile | Contract | Forced Service | Undisclosed | License Sharing | Blockade | Bloodline |
-| 15 Garak | Defense | Quarantine Intake | Contract | Contract | Undisclosed | License Sharing | Open Market | Adoptive Apprenticeship |
-| 16 Suseo | Defense | Citizenship | Minimum Line | Contract | Cross-Verification | Joint Ledger | Permit | Public Examination |
+| State | War | Migrants | Labor | Records | Technology | Trade | Succession |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 Yeouido | Limited War | Quarantine Intake | Contract | Cross-Verification | License Sharing | Permit | Adoptive Apprenticeship |
+| 02 Southwest | Defense | Citizenship | Civic Service | Cross-Verification | Joint Ledger | Permit | Public Examination |
+| 03 Magok | Defense | Quarantine Intake | Contract | Full Disclosure | Joint Ledger | Permit | Public Examination |
+| 04 Ttukseom | Defense | Quarantine Intake | Contract | Undisclosed | Family Secret | Permit | Adoptive Apprenticeship |
+| 05 Amsa | Preemption | Exile | Forced Service | Undisclosed | License Sharing | Blockade | Bloodline |
+| 06 Seoul Station | Defense | Quarantine Intake | Contract | Cross-Verification | License Sharing | Permit | Adoptive Apprenticeship |
+| 07 Yongsan | Limited War | Quarantine Intake | Contract | Undisclosed | License Sharing | Permit | Adoptive Apprenticeship |
+| 08 Noryangjin | Defense | Citizenship | Contract | Cross-Verification | License Sharing | Open Market | Adoptive Apprenticeship |
+| 09 Sangam | Defense | Quarantine Intake | Contract | Full Disclosure | License Sharing | Permit | Public Examination |
+| 10 Bukhansan Bogukmun | Defense | Citizenship | Civic Service | Cross-Verification | License Sharing | Permit | Public Examination |
+| 11 Changdong | Defense | Quarantine Intake | Contract | Cross-Verification | Family Secret | Permit | Public Examination |
+| 12 Sinnae | Defense | Citizenship | Contract | Cross-Verification | License Sharing | Permit | Adoptive Apprenticeship |
+| 13 Jegi-dong | Defense | Citizenship | Contract | Cross-Verification | Joint Ledger | Permit | Public Examination |
+| 14 Achasan | Limited War | Exile | Forced Service | Undisclosed | License Sharing | Blockade | Bloodline |
+| 15 Garak | Defense | Quarantine Intake | Contract | Undisclosed | License Sharing | Open Market | Adoptive Apprenticeship |
+| 16 Suseo | Defense | Citizenship | Contract | Cross-Verification | Joint Ledger | Permit | Public Examination |
 
-| State | War | Migrants | Water | Labor | Records | Technology | Trade | Succession |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 01 Yeouido | Limited war | Quarantine admission | Contract | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
-| 02 Southwest | Defense | Citizenship | Minimum line | Civic service | Cross-verified | Joint ledger | Licensed | Open examination |
-| 03 Magok | Defense | Quarantine admission | Minimum line | Contract | Fully public | Joint ledger | Licensed | Open examination |
-| 04 Ttukseom | Defense | Quarantine admission | Contract | Contract | Closed | House secret | Licensed | Adoptive apprenticeship |
-| 05 Amsa | Preemption | Expulsion | Hostage | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
-| 06 Seoul Station | Defense | Quarantine admission | Contract | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
-| 07 Yongsan | Limited war | Quarantine admission | Contract | Contract | Closed | Licensed sharing | Licensed | Adoptive apprenticeship |
-| 08 Noryangjin | Defense | Citizenship | Contract | Contract | Cross-verified | Licensed sharing | Open market | Adoptive apprenticeship |
-| 09 Sangam | Defense | Quarantine admission | Contract | Contract | Fully public | Licensed sharing | Licensed | Open examination |
-| 10 Bukhansan Bogukmun | Defense | Citizenship | Minimum line | Civic service | Cross-verified | Licensed sharing | Licensed | Open examination |
-| 11 Changdong | Defense | Quarantine admission | Contract | Contract | Cross-verified | House secret | Licensed | Open examination |
-| 12 Sinnae | Defense | Citizenship | Minimum line | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
-| 13 Jegi-dong | Defense | Citizenship | Minimum line | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
-| 14 Achasan | Limited war | Expulsion | Contract | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
-| 15 Garak | Defense | Quarantine admission | Contract | Contract | Closed | Licensed sharing | Open market | Adoptive apprenticeship |
-| 16 Suseo | Defense | Citizenship | Minimum line | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
+| State | War | Migrants | Labor | Records | Technology | Trade | Succession |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 Yeouido | Limited war | Quarantine admission | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
+| 02 Southwest | Defense | Citizenship | Civic service | Cross-verified | Joint ledger | Licensed | Open examination |
+| 03 Magok | Defense | Quarantine admission | Contract | Fully public | Joint ledger | Licensed | Open examination |
+| 04 Ttukseom | Defense | Quarantine admission | Contract | Closed | House secret | Licensed | Adoptive apprenticeship |
+| 05 Amsa | Preemption | Expulsion | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
+| 06 Seoul Station | Defense | Quarantine admission | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
+| 07 Yongsan | Limited war | Quarantine admission | Contract | Closed | Licensed sharing | Licensed | Adoptive apprenticeship |
+| 08 Noryangjin | Defense | Citizenship | Contract | Cross-verified | Licensed sharing | Open market | Adoptive apprenticeship |
+| 09 Sangam | Defense | Quarantine admission | Contract | Fully public | Licensed sharing | Licensed | Open examination |
+| 10 Bukhansan Bogukmun | Defense | Citizenship | Civic service | Cross-verified | Licensed sharing | Licensed | Open examination |
+| 11 Changdong | Defense | Quarantine admission | Contract | Cross-verified | House secret | Licensed | Open examination |
+| 12 Sinnae | Defense | Citizenship | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
+| 13 Jegi-dong | Defense | Citizenship | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
+| 14 Achasan | Limited war | Expulsion | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
+| 15 Garak | Defense | Quarantine admission | Contract | Closed | Licensed sharing | Open market | Adoptive apprenticeship |
+| 16 Suseo | Defense | Citizenship | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
 
 ## Four Axes Linking Daily Life, Domain, and Personal Politics
 
@@ -8697,43 +8697,43 @@ flowchart LR
 
 아래 두 표는 위키의 개막 정책 표를 한국어·영어 칸의 값과 행 순서 그대로, 새 국가 배정 없이 보존한 이전 자료입니다.
 
-| 국 | 전쟁 | 이주민 | 급수 | 노동 | 기록 | 기술 | 교역 | 후계 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 01 여의도 | 제한전 | 검역수용 | 계약 | 계약 | 교차검증 | 면허공유 | 허가 | 양자도제 |
-| 02 서남 | 방어 | 시민권 | 최저선 | 시민복무 | 교차검증 | 공동원장 | 허가 | 공개시험 |
-| 03 마곡 | 방어 | 검역수용 | 최저선 | 계약 | 전면공개 | 공동원장 | 허가 | 공개시험 |
-| 04 뚝섬 | 방어 | 검역수용 | 계약 | 계약 | 비공개 | 가문비밀 | 허가 | 양자도제 |
-| 05 암사 | 선제 | 추방 | 볼모 | 강제복무 | 비공개 | 면허공유 | 봉쇄 | 혈통 |
-| 06 서울역 | 방어 | 검역수용 | 계약 | 계약 | 교차검증 | 면허공유 | 허가 | 양자도제 |
-| 07 용산 | 제한전 | 검역수용 | 계약 | 계약 | 비공개 | 면허공유 | 허가 | 양자도제 |
-| 08 노량진 | 방어 | 시민권 | 계약 | 계약 | 교차검증 | 면허공유 | 개방시장 | 양자도제 |
-| 09 상암 | 방어 | 검역수용 | 계약 | 계약 | 전면공개 | 면허공유 | 허가 | 공개시험 |
-| 10 북한산보국문 | 방어 | 시민권 | 최저선 | 시민복무 | 교차검증 | 면허공유 | 허가 | 공개시험 |
-| 11 창동 | 방어 | 검역수용 | 계약 | 계약 | 교차검증 | 가문비밀 | 허가 | 공개시험 |
-| 12 신내 | 방어 | 시민권 | 최저선 | 계약 | 교차검증 | 면허공유 | 허가 | 양자도제 |
-| 13 제기동 | 방어 | 시민권 | 최저선 | 계약 | 교차검증 | 공동원장 | 허가 | 공개시험 |
-| 14 아차산 | 제한전 | 추방 | 계약 | 강제복무 | 비공개 | 면허공유 | 봉쇄 | 혈통 |
-| 15 가락 | 방어 | 검역수용 | 계약 | 계약 | 비공개 | 면허공유 | 개방시장 | 양자도제 |
-| 16 수서 | 방어 | 시민권 | 최저선 | 계약 | 교차검증 | 공동원장 | 허가 | 공개시험 |
+| 국 | 전쟁 | 이주민 | 노동 | 기록 | 기술 | 교역 | 후계 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 여의도 | 제한전 | 검역수용 | 계약 | 교차검증 | 면허공유 | 허가 | 양자도제 |
+| 02 서남 | 방어 | 시민권 | 시민복무 | 교차검증 | 공동원장 | 허가 | 공개시험 |
+| 03 마곡 | 방어 | 검역수용 | 계약 | 전면공개 | 공동원장 | 허가 | 공개시험 |
+| 04 뚝섬 | 방어 | 검역수용 | 계약 | 비공개 | 가문비밀 | 허가 | 양자도제 |
+| 05 암사 | 선제 | 추방 | 강제복무 | 비공개 | 면허공유 | 봉쇄 | 혈통 |
+| 06 서울역 | 방어 | 검역수용 | 계약 | 교차검증 | 면허공유 | 허가 | 양자도제 |
+| 07 용산 | 제한전 | 검역수용 | 계약 | 비공개 | 면허공유 | 허가 | 양자도제 |
+| 08 노량진 | 방어 | 시민권 | 계약 | 교차검증 | 면허공유 | 개방시장 | 양자도제 |
+| 09 상암 | 방어 | 검역수용 | 계약 | 전면공개 | 면허공유 | 허가 | 공개시험 |
+| 10 북한산보국문 | 방어 | 시민권 | 시민복무 | 교차검증 | 면허공유 | 허가 | 공개시험 |
+| 11 창동 | 방어 | 검역수용 | 계약 | 교차검증 | 가문비밀 | 허가 | 공개시험 |
+| 12 신내 | 방어 | 시민권 | 계약 | 교차검증 | 면허공유 | 허가 | 양자도제 |
+| 13 제기동 | 방어 | 시민권 | 계약 | 교차검증 | 공동원장 | 허가 | 공개시험 |
+| 14 아차산 | 제한전 | 추방 | 강제복무 | 비공개 | 면허공유 | 봉쇄 | 혈통 |
+| 15 가락 | 방어 | 검역수용 | 계약 | 비공개 | 면허공유 | 개방시장 | 양자도제 |
+| 16 수서 | 방어 | 시민권 | 계약 | 교차검증 | 공동원장 | 허가 | 공개시험 |
 
-| State | War | Migrants | Water | Labor | Records | Technology | Trade | Succession |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 01 Yeouido | Limited war | Quarantine admission | Contract | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
-| 02 Southwest | Defense | Citizenship | Minimum line | Civic service | Cross-verified | Joint ledger | Licensed | Open examination |
-| 03 Magok | Defense | Quarantine admission | Minimum line | Contract | Fully public | Joint ledger | Licensed | Open examination |
-| 04 Ttukseom | Defense | Quarantine admission | Contract | Contract | Closed | House secret | Licensed | Adoptive apprenticeship |
-| 05 Amsa | Preemption | Expulsion | Hostage | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
-| 06 Seoul Station | Defense | Quarantine admission | Contract | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
-| 07 Yongsan | Limited war | Quarantine admission | Contract | Contract | Closed | Licensed sharing | Licensed | Adoptive apprenticeship |
-| 08 Noryangjin | Defense | Citizenship | Contract | Contract | Cross-verified | Licensed sharing | Open market | Adoptive apprenticeship |
-| 09 Sangam | Defense | Quarantine admission | Contract | Contract | Fully public | Licensed sharing | Licensed | Open examination |
-| 10 Bukhansan Bogukmun | Defense | Citizenship | Minimum line | Civic service | Cross-verified | Licensed sharing | Licensed | Open examination |
-| 11 Changdong | Defense | Quarantine admission | Contract | Contract | Cross-verified | House secret | Licensed | Open examination |
-| 12 Sinnae | Defense | Citizenship | Minimum line | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
-| 13 Jegi-dong | Defense | Citizenship | Minimum line | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
-| 14 Achasan | Limited war | Expulsion | Contract | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
-| 15 Garak | Defense | Quarantine admission | Contract | Contract | Closed | Licensed sharing | Open market | Adoptive apprenticeship |
-| 16 Suseo | Defense | Citizenship | Minimum line | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
+| State | War | Migrants | Labor | Records | Technology | Trade | Succession |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 01 Yeouido | Limited war | Quarantine admission | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
+| 02 Southwest | Defense | Citizenship | Civic service | Cross-verified | Joint ledger | Licensed | Open examination |
+| 03 Magok | Defense | Quarantine admission | Contract | Fully public | Joint ledger | Licensed | Open examination |
+| 04 Ttukseom | Defense | Quarantine admission | Contract | Closed | House secret | Licensed | Adoptive apprenticeship |
+| 05 Amsa | Preemption | Expulsion | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
+| 06 Seoul Station | Defense | Quarantine admission | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
+| 07 Yongsan | Limited war | Quarantine admission | Contract | Closed | Licensed sharing | Licensed | Adoptive apprenticeship |
+| 08 Noryangjin | Defense | Citizenship | Contract | Cross-verified | Licensed sharing | Open market | Adoptive apprenticeship |
+| 09 Sangam | Defense | Quarantine admission | Contract | Fully public | Licensed sharing | Licensed | Open examination |
+| 10 Bukhansan Bogukmun | Defense | Citizenship | Civic service | Cross-verified | Licensed sharing | Licensed | Open examination |
+| 11 Changdong | Defense | Quarantine admission | Contract | Cross-verified | House secret | Licensed | Open examination |
+| 12 Sinnae | Defense | Citizenship | Contract | Cross-verified | Licensed sharing | Licensed | Adoptive apprenticeship |
+| 13 Jegi-dong | Defense | Citizenship | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
+| 14 Achasan | Limited war | Expulsion | Forced service | Closed | Licensed sharing | Blockade | Bloodline |
+| 15 Garak | Defense | Quarantine admission | Contract | Closed | Licensed sharing | Open market | Adoptive apprenticeship |
+| 16 Suseo | Defense | Citizenship | Contract | Cross-verified | Joint ledger | Licensed | Open examination |
 
 ## 생활·영지·인물 정치를 잇는 네 축
 
@@ -11686,7 +11686,7 @@ Succession is not decided by bloodline alone. Candidates are considered in the o
 
 | Key | Political Effect |
 | --- | --- |
-| `west-sluice` | Requires water allocation and tribute rites from subordinates as clauses, and attaches a performance record to the designated will |
+| `west-sluice` | Requires ration allocation and tribute rites from subordinates as clauses, and attaches a performance record to the designated will |
 | `center-record` | Without record endorsement and relic access, a conferral of rank is void across the entire region |
 | `north-refuge` | Rejects subordinates bound by forced-service clauses, and adoptees and congregation members may take precedence over blood kin |
 | `east-caravan` | Under the pretext of protection, revocation of lower ranks opens easily and the `plot` threshold is lowered |
@@ -12045,7 +12045,7 @@ SP-1.0.0: Every character may hold casus belli and title-right instances, but ho
 
 | 키 | 정치 효과 |
 | --- | --- |
-| `west-sluice` | 산하 직위자에게 물 할당과 헌납례를 조항으로 요구하고 지정 유언에 이행 기록을 붙임 |
+| `west-sluice` | 산하 직위자에게 배급 할당과 헌납례를 조항으로 요구하고 지정 유언에 이행 기록을 붙임 |
 | `center-record` | 직함 수여에 기록 인준과 유물 열람이 없으면 권역 전체에 무효 |
 | `north-refuge` | 강제복무 조항이 있는 산하 직위자를 거부하고 양자·신도가 혈족보다 앞설 수 있음 |
 | `east-caravan` | 보호 명분으로 하위 직함 회수가 열리기 쉽고 `plot` 임계가 낮아짐 |
@@ -21283,7 +21283,7 @@ D08의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 역사 참조 — 운용 경로 제외 | d08.b11.workedExamples[4​].work | "Recognized personhood excludes the entity from transferable assets in every family branch." |
 | 역사 참조 — 운용 경로 제외 | d08.b11.workedExamples[4​].expected.error | "E_PERSON_NOT_PROPERTY" |
 | 역사 참조 — 운용 경로 제외 | d08.b11.workedExamples[4​].valueStatus | "predicate fixture" |');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Archify-D09', 'system-design', 'archify-d09', 'D09 Achipai — Full Logic of States, Governments, Institutions, and Offices', 'D09 아치파이 — 국가·정부·기관·직위 전체 논리', '', '', 'accepted', 77, 'system-design/Archify-D09.md', '# D09 Achipai — Full Logic of States, Governments, Institutions, and Offices
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Archify-D09', 'system-design', 'archify-d09', 'D09 Achipai — Full Logic of States, Governments, Institutions, and Offices (Pre-v4 material · kept as history)', 'D09 아치파이 — 국가·정부·기관·직위 전체 논리 (v4 이전 자료 · 이력 보존)', '', '', 'accepted', 77, 'system-design/Archify-D09.md', '# D09 Achipai — Full Logic of States, Governments, Institutions, and Offices
 
 This page shows, as structural diagrams, the machine inputs, validation order, contract calculations, state and preservation boundaries, and error and hold paths of the state, government, institution, and office domain. The sources are the relevant mechanism contract and the 2026-10-08 transition map; the approval status of numeric values follows the original contract.
 
@@ -23189,7 +23189,7 @@ D10의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d10.b11.exceptions[10] | "E_REPLAY_CONFLICT same event ID with changed payload" |
 | 운용 — 현재 판본·행위 선택 | d10.b11.exceptions[11] | "E_STALE_SNAPSHOT new event at wrong revision" |
 | 운용 — 현재 판본·행위 선택 | d10.b11.exceptions[12] | "E_VERSION incompatible rules version" |');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Archify-D11', 'system-design', 'archify-d11', 'D11 Achipai — Complete Logic of Granting, Appointing, Delegating, and Revoking', 'D11 아치파이 — 수여·임명·위임·회수 전체 논리', '', '', 'accepted', 79, 'system-design/Archify-D11.md', '# D11 Achipai — Complete Logic of Granting, Appointing, Delegating, and Revoking
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Archify-D11', 'system-design', 'archify-d11', 'D11 Achipai — Complete Logic of Granting, Appointing, Delegating, and Revoking (Pre-v4 material · kept as history)', 'D11 아치파이 — 수여·임명·위임·회수 전체 논리 (v4 이전 자료 · 이력 보존)', '', '', 'accepted', 79, 'system-design/Archify-D11.md', '# D11 Achipai — Complete Logic of Granting, Appointing, Delegating, and Revoking
 
 This page presents, as structural diagrams, the machine inputs, verification order, contract calculations, state and conservation boundaries, and error and hold paths of the granting, appointing, delegating, and revoking domain. The sources are the relevant mechanism contract and the 2026-10-08 transition map; the numeric approval status follows the original contract.
 
@@ -23968,7 +23968,7 @@ D11의 나머지 계약 잎은 운용 흐름에 연결된 대조 원장으로 �
 | 운용 — 현재 판본·행위 선택 | d11.b11.exceptions[13] | "E_RECALL" |
 | 운용 — 현재 판본·행위 선택 | d11.b11.exceptions[14] | "E_SCOPE" |
 | 운용 — 현재 판본·행위 선택 | d11.b11.exceptions[15] | "E_PROPOSAL_REQUIRED" |');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Archify-D12', 'system-design', 'archify-d12', 'D12 Arch Pie — Full Logic of Succession, Death, and Body Transfer', 'D12 아치파이 — 후계·사망·본체 전환 전체 논리', '', '', 'accepted', 80, 'system-design/Archify-D12.md', '# D12 Arch Pie — Full Logic of Succession, Death, and Body Transfer
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Archify-D12', 'system-design', 'archify-d12', 'D12 Arch Pie — Full Logic of Succession, Death, and Body Transfer (Pre-v4 material · kept as history)', 'D12 아치파이 — 후계·사망·본체 전환 전체 논리 (v4 이전 자료 · 이력 보존)', '', '', 'accepted', 80, 'system-design/Archify-D12.md', '# D12 Arch Pie — Full Logic of Succession, Death, and Body Transfer
 
 This page shows, as a structural diagram, the machine inputs, validation order, contract calculations, state and conservation boundaries, and error/hold paths of the succession, death, and body-transfer domain. The sources are the corresponding mechanism contract and the 2026-10-08 transition map; the numeric approval status follows the original contract.
 
@@ -46617,7 +46617,7 @@ Unresolved inputs: Tick/phase values; simultaneous final order; save-error limit
 
 - state-D18: 입력 `{"loadCorrupt":true}` → 결과 `{"liveStateMutated":false,"explicitError":true}`. 독립 근거: No partial load or fallback campaign. 예시이며 정책이 아니다.
 - state-D18-unknown: 입력 `{"prerequisiteFacts":null}` → 결과 `{"status":"unresolved","value":null}`. 독립 근거: Unknown prerequisites cannot invent a new fact or effect; preserve existing valid state. 예시이며 정책이 아니다.');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.gdd-lore-node-states', 'system-design', 'gdd-lore-node-states', 'Node States', '노드 상태', '', '', 'accepted', 89, 'system-design/gdd-lore-node-states.md', '# Node States
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.gdd-lore-node-states', 'system-design', 'gdd-lore-node-states', 'Node States (Pre-v4 material · kept as history)', '노드 상태 (v4 이전 자료 · 이력 보존)', '', '', 'accepted', 89, 'system-design/gdd-lore-node-states.md', '# Node States
 
 The twelve ids are architecture nodes that distinguish the states and records of different owners. They are not global progression stages that pass through characters, houses, places, and screens in turn. Characters and squads carry out their own actions in the same world time, and when the conditions of a command or event are met, only the relevant targets change state. Events also occur in living spaces, and selecting a map or panel does not stop the actions of unrelated targets. The arrow in each row means a legal state change of that target or a link between records. Life, the strategic map, and combat are screens that differ in the space and information they display, and they do not own world progression. This table is a design contract for the product goals; the implementation status is confirmed in separate verification records. The table''s GDD citations are fixed-tree line numbers at `bedb366d6eb1d884bce39f4dd3cf3ab9890b0403`, and the worldbuilding citations are fixed-tree line numbers in a separate repository at `84040eb7124f4e6e779b42e7e3c091f71bbdbac8`.
 
@@ -46631,7 +46631,7 @@ The twelve ids are architecture nodes that distinguish the states and records of
 | return | The per-expedition result-settlement state is separate from the expedition-ending choice. After settlement is complete, the same expedition can continue without being ended. The five selectable endings are Return, Settlement, Conquest, Wandering, and Trade. | `return → strategy`: Atomically settle a verified result only once per `ResultId`, and after confirming the receipt, continue the same expedition; `return → Gwihwan/Jeongchak/Jeongbok/Bangnang/Gyoyeok` (return/settlement/conquest/wandering/trade): only when choosing the expedition''s outcome. Redelivery of the same result returns the existing receipt; a different result for the same battle produces an error with no change. No automatic return. | `GDD/rules/Strategy-Battle-Roundtrip.md:34`, `GDD/rules/Strategy-Battle-Roundtrip.md:36`, `GDD/rules/Strategy-Battle-Roundtrip.md:38`, `GDD/rules/Strategy-Battle-Roundtrip.md:40`, `GDD/rules/Campaign-Loop.md:7`, `GDD/rules/Campaign-Loop.md:9`, `GDD/rules/Campaign-Loop.md:10`, `GDD/rules/Campaign-Loop.md:11`, `GDD/rules/Campaign-Loop.md:12`, `GDD/rules/Campaign-Loop.md:13`, `GDD/rules/Campaign-Loop.md:15` |
 | atlas | The `WNA-001` Active World Narrative Atlas is the hand-edited canonical source; split documents, illustrations, and house entries are read-only projections. It is not runtime world state. | `atlas → house/ecology`: Registered Atlas content is validated and projected as read-only. Projections are not edited directly, and registrations are not treated as runtime transitions. | `WEB/lore/World-Narrative-Atlas.md:3`, `WEB/lore/World-Narrative-Atlas.md:9`, `WEB/lore/World-Narrative-Atlas.md:11`, `WEB/lore/World-Narrative-Atlas.md:20`, `WEB/lore/World-Narrative-Atlas.md:64`, `WEB/lore/World-Narrative-Atlas.md:66` |
 | places | Per-dong occupation markers: `held` (one faction''s control is 50 or higher), `contested` (multiple factions, or one faction below 50), `vacant` (no faction flag); buildings and stations remain separate. Per-floor `flooded/sealed/occupied/abandoned/yard` is a separate dimension. | `places → places`: When a dong''s occupation conditions change, those three states are re-evaluated. The minimum unit of conquest is a building; a dong flag alone does not capture a building. Station track connectivity and passability are not repurposed for this dong state, and dong adjacency is not turned into station travel edges. | `WEB/lore/places/Building-Reuse-Geography.md:7`, `WEB/lore/places/Building-Reuse-Geography.md:9`, `WEB/lore/places/Building-Reuse-Geography.md:11`, `WEB/lore/places/Building-Reuse-Geography.md:15`, `WEB/lore/places/Building-Reuse-Geography.md:16`, `WEB/lore/places/Building-Reuse-Geography.md:17`, `WEB/lore/places/Building-Reuse-Geography.md:74`, `GDD/rules/Travel-and-Encounters.md:23`, `GDD/rules/Travel-and-Encounters.md:25` |
-| ecology | The Atlas''s hostile ecology groups `G01–G24` and placements `M001–M039` are a registry dimension. Runtime habitat, encounter, and defeat states for ecology are undecided. | `ecology → ecology`: Apart from updating registered Atlas content, there are no grounded runtime transitions. Codex entries are not used as grounds to create battle participation or defeat transitions. | `WEB/lore/World-Narrative-Atlas.md:64`, `WEB/lore/World-Narrative-Atlas.md:66` |
+| ecology | The Atlas''s hostile ecology groups `G01–G18`, `G25`, `G26` and placements `M001–M039` are a registry dimension. Runtime habitat, encounter, and defeat states for ecology are undecided. | `ecology → ecology`: Apart from updating registered Atlas content, there are no grounded runtime transitions. Codex entries are not used as grounds to create battle participation or defeat transitions. | `WEB/lore/World-Narrative-Atlas.md:64`, `WEB/lore/World-Narrative-Atlas.md:66` |
 | rules | The individually resolved combat contract for the current product goal follows the confirmed rules and content version. | `rules → strategy/battle/save`: Orders are validated, recorded, and replayed using the confirmed rules and content version. Command queues, slow-down, and fast-forward are not promoted to current goals. | `GDD/rules/Personal-Resolution-Battle.md:3`, `GDD/rules/Personal-Resolution-Battle.md:17`, `GDD/rules/Hero-Squads-and-Time-Based-Movement.md:93`, `GDD/rules/Save-and-Determinism.md:7`, `GDD/rules/Save-and-Determinism.md:17` |
 | save | The persistence dimension of the event ledger, versioned world state, in-progress battle checkpoints, and settlement receipts. Random-number streams for battles, encounters, and world events are kept separate. | `save → save`: A temporary file is written and checked, then swapped in atomically; restore/import happens only if signature, hash, version, and lineage checks pass. Corrupted or unsupported saves produce an explicit error and keep the existing backup; there is no silent recovery. It is not a substitute transition for settlement or return. | `GDD/rules/Save-and-Determinism.md:3`, `GDD/rules/Save-and-Determinism.md:7`, `GDD/rules/Save-and-Determinism.md:11`, `GDD/rules/Save-and-Determinism.md:23`, `GDD/rules/Save-and-Determinism.md:25`, `GDD/rules/Save-and-Determinism.md:54`, `GDD/rules/Save-and-Determinism.md:56`, `GDD/rules/Campaign-Loop.md:15` |
 | pov | The player''s map viewpoint is fixed to the position and knowledge of one currently living character. Direct control and the authority layers of propose/approve/reject are separate, and battles neither duplicate this viewpoint nor halt the shared world. | `pov → pov`: Authority expands gradually only, from ordinary member → party commander → office holder → faction ruler. New remote dispatch is locked while captured, missing, or disconnected; after restoration or with a formally designated proxy, dispatch and resolution occur after re-evaluation within scope, and the POV is not transferred. | `GDD/system-design/campaign-pov-authority/README.md:7`, `GDD/system-design/campaign-pov-authority/README.md:8`, `GDD/system-design/campaign-pov-authority/README.md:9`, `GDD/system-design/campaign-pov-authority/README.md:10`, `GDD/system-design/campaign-pov-authority/README.md:15`, `GDD/system-design/campaign-pov-authority/README.md:16`, `GDD/system-design/campaign-pov-authority/README.md:35`, `GDD/system-design/campaign-pov-authority/README.md:38`, `GDD/rules/Strategy-Battle-Roundtrip.md:3` |
@@ -46650,7 +46650,7 @@ House-extinction conditions and runtime ecology transitions are undecided. Resul
 | return | 원정별 결과 정산 상태와 원정 결말 선택은 별개다. 정산 완료 후 같은 원정을 끝내지 않고 계속할 수 있다. 선택 가능한 다섯 결말은 귀환·정착·정복·방랑·교역이다. | `return → strategy`: 검증된 결과를 `ResultId`당 한 번만 원자 정산하고 영수증 확인 뒤 같은 원정 계속; `return → 귀환/정착/정복/방랑/교역`: 원정 결말을 선택할 때만. 동일 결과 재전달은 기존 영수증, 동일 전투의 다른 결과는 변경 없이 오류. 자동 귀환 없음. | `GDD/rules/Strategy-Battle-Roundtrip.md:34`, `GDD/rules/Strategy-Battle-Roundtrip.md:36`, `GDD/rules/Strategy-Battle-Roundtrip.md:38`, `GDD/rules/Strategy-Battle-Roundtrip.md:40`, `GDD/rules/Campaign-Loop.md:7`, `GDD/rules/Campaign-Loop.md:9`, `GDD/rules/Campaign-Loop.md:10`, `GDD/rules/Campaign-Loop.md:11`, `GDD/rules/Campaign-Loop.md:12`, `GDD/rules/Campaign-Loop.md:13`, `GDD/rules/Campaign-Loop.md:15` |
 | atlas | `WNA-001` 활성 세계 서사 총람은 손으로 고치는 정본; 쪼갠 문서·그림과 가문 항목은 읽기 전용 투영이다. 런타임 월드 상태가 아니다. | `atlas → house/ecology`: 총람 등록 내용을 검증해 읽기 전용으로 투영한다. 투영물을 직접 고치거나 등록을 런타임 전이로 간주하지 않는다. | `WEB/lore/World-Narrative-Atlas.md:3`, `WEB/lore/World-Narrative-Atlas.md:9`, `WEB/lore/World-Narrative-Atlas.md:11`, `WEB/lore/World-Narrative-Atlas.md:20`, `WEB/lore/World-Narrative-Atlas.md:64`, `WEB/lore/World-Narrative-Atlas.md:66` |
 | places | 동 단위 점유 표시 `held`(한 세력 지배력 50 이상)·`contested`(복수 세력 또는 한 세력 50 미만)·`vacant`(세력 깃발 없음); 건물·역은 별도로 남는다. 층별 `flooded/sealed/occupied/abandoned/yard`는 별도 차원이다. | `places → places`: 동의 점유 조건이 달라질 때 해당 세 상태를 재판정한다. 점령의 최소 단위는 건물; 동 깃발만으로 건물을 점령하지 않는다. 역 선로 연결·통행 가능 여부로 이 동 상태를 전용하거나 동 인접을 역 이동 간선으로 바꾸지 않는다. | `WEB/lore/places/Building-Reuse-Geography.md:7`, `WEB/lore/places/Building-Reuse-Geography.md:9`, `WEB/lore/places/Building-Reuse-Geography.md:11`, `WEB/lore/places/Building-Reuse-Geography.md:15`, `WEB/lore/places/Building-Reuse-Geography.md:16`, `WEB/lore/places/Building-Reuse-Geography.md:17`, `WEB/lore/places/Building-Reuse-Geography.md:74`, `GDD/rules/Travel-and-Encounters.md:23`, `GDD/rules/Travel-and-Encounters.md:25` |
-| ecology | 총람의 적대 생태군 `G01–G24`와 배치 `M001–M039`는 등록 차원이다. 생태의 런타임 서식·조우·격파 상태는 미정이다. | `ecology → ecology`: 총람의 등록 내용 갱신 외에 근거 있는 런타임 전이는 없다. 도감 항목을 근거로 전투 참가나 격파 전이를 만들지 않는다. | `WEB/lore/World-Narrative-Atlas.md:64`, `WEB/lore/World-Narrative-Atlas.md:66` |
+| ecology | 총람의 적대 생태군 `G01–G18`, `G25`, `G26`와 배치 `M001–M039`는 등록 차원이다. 생태의 런타임 서식·조우·격파 상태는 미정이다. | `ecology → ecology`: 총람의 등록 내용 갱신 외에 근거 있는 런타임 전이는 없다. 도감 항목을 근거로 전투 참가나 격파 전이를 만들지 않는다. | `WEB/lore/World-Narrative-Atlas.md:64`, `WEB/lore/World-Narrative-Atlas.md:66` |
 | rules | 현재 제품 목표의 개인 판정 전투 계약은 확정된 규칙·콘텐츠 판본에 따른다. | `rules → strategy/battle/save`: 확정된 규칙·콘텐츠 판본으로 명령을 검증·기록하고 재생한다. 명령 큐·감속·배속을 현재 목표로 승격하지 않는다. | `GDD/rules/Personal-Resolution-Battle.md:3`, `GDD/rules/Personal-Resolution-Battle.md:17`, `GDD/rules/Hero-Squads-and-Time-Based-Movement.md:93`, `GDD/rules/Save-and-Determinism.md:7`, `GDD/rules/Save-and-Determinism.md:17` |
 | save | 사건 원장과 판본 붙은 월드 상태·진행 중 전투 체크포인트·정산 영수증의 영속 차원. 전투·조우·세계 사건 난수 흐름을 분리한다. | `save → save`: 임시 파일 작성·검사 후 원자 교체, 서명·해시·판본·계보 검사 통과 시만 복원/반입. 손상·미지원 저장은 명시 오류와 기존 백업 보존; 조용한 복구 없음. 정산·귀환의 대용 전이가 아니다. | `GDD/rules/Save-and-Determinism.md:3`, `GDD/rules/Save-and-Determinism.md:7`, `GDD/rules/Save-and-Determinism.md:11`, `GDD/rules/Save-and-Determinism.md:23`, `GDD/rules/Save-and-Determinism.md:25`, `GDD/rules/Save-and-Determinism.md:54`, `GDD/rules/Save-and-Determinism.md:56`, `GDD/rules/Campaign-Loop.md:15` |
 | pov | 플레이어 지도 시점은 살아 있는 현재 한 인물의 위치·지식에 고정. 직접 제어와 제안·승인·거부의 권한 층은 별개이며 전투는 이 시점을 복제하거나 공유 세계를 멈추지 않는다. | `pov → pov`: 일반 구성원 → 파티 지휘관 → 관직 보유자 → 팩션 통치자로 권한만 점진 확대. 포획·실종·단절에는 신규 원격 전송 잠김; 복원·정식 지정 대리는 범위 안에서 재평가 뒤 전송·판정하며 POV는 이전하지 않는다. | `GDD/system-design/campaign-pov-authority/README.md:7`, `GDD/system-design/campaign-pov-authority/README.md:8`, `GDD/system-design/campaign-pov-authority/README.md:9`, `GDD/system-design/campaign-pov-authority/README.md:10`, `GDD/system-design/campaign-pov-authority/README.md:15`, `GDD/system-design/campaign-pov-authority/README.md:16`, `GDD/system-design/campaign-pov-authority/README.md:35`, `GDD/system-design/campaign-pov-authority/README.md:38`, `GDD/rules/Strategy-Battle-Roundtrip.md:3` |
@@ -55762,7 +55762,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   ]
 }
 ```');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Mechanism-D09', 'system-design', 'mechanism-d09', 'D09 State, Government, Institution, and Office Operation Contract and Official Sheet', 'D09 국가·정부·기관·직위 작동 계약과 공식 시트', '', '', 'accepted', 98, 'system-design/Mechanism-D09.md', '# D09 State, Government, Institution, and Office Operation Contract and Official Sheet
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Mechanism-D09', 'system-design', 'mechanism-d09', 'D09 State, Government, Institution, and Office Operation Contract and Official Sheet (Pre-v4 material · kept as history)', 'D09 국가·정부·기관·직위 작동 계약과 공식 시트 (v4 이전 자료 · 이력 보존)', '', '', 'accepted', 98, 'system-design/Mechanism-D09.md', '# D09 State, Government, Institution, and Office Operation Contract and Official Sheet
 
 ## Game Logic Overhaul Alignment Boundary
 
@@ -58032,7 +58032,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   ]
 }
 ```');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Mechanism-D11', 'system-design', 'mechanism-d11', 'D11 Conferral, Appointment, Delegation, and Revocation Operating Contract and Official Sheet', 'D11 수여·임명·위임·회수 작동 계약과 공식 시트', '', '', 'accepted', 100, 'system-design/Mechanism-D11.md', '# D11 Conferral, Appointment, Delegation, and Revocation Operating Contract and Official Sheet
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Mechanism-D11', 'system-design', 'mechanism-d11', 'D11 Conferral, Appointment, Delegation, and Revocation Operating Contract and Official Sheet (Pre-v4 material · kept as history)', 'D11 수여·임명·위임·회수 작동 계약과 공식 시트 (v4 이전 자료 · 이력 보존)', '', '', 'accepted', 100, 'system-design/Mechanism-D11.md', '# D11 Conferral, Appointment, Delegation, and Revocation Operating Contract and Official Sheet
 
 ## Game Logic Overhaul Alignment Boundary
 
@@ -58909,7 +58909,7 @@ Declare together the owner, read/write scope, units, snapshot, and point of appl
   ]
 }
 ```');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Mechanism-D12', 'system-design', 'mechanism-d12', 'D12 Succession, Death, and Main-Body Transfer: Operating Contract and Official Sheet', 'D12 후계·사망·본체 전환 작동 계약과 공식 시트', '', '', 'accepted', 101, 'system-design/Mechanism-D12.md', '# D12 Succession, Death, and Main-Body Transfer: Operating Contract and Official Sheet
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.Mechanism-D12', 'system-design', 'mechanism-d12', 'D12 Succession, Death, and Main-Body Transfer: Operating Contract and Official Sheet (Pre-v4 material · kept as history)', 'D12 후계·사망·본체 전환 작동 계약과 공식 시트 (v4 이전 자료 · 이력 보존)', '', '', 'accepted', 101, 'system-design/Mechanism-D12.md', '# D12 Succession, Death, and Main-Body Transfer: Operating Contract and Official Sheet
 
 ## Game Logic Overhaul Alignment Boundary
 
@@ -88394,7 +88394,7 @@ D08은 **가문과 혼인에서 무엇이 기록되고, 무엇이 성립하며, 
 ## 14. 요약
 
 D08은 지금 **기록과 보류의 영역**이다. 동의·인준·효과 귀속을 원장에 남기는 것, 성립 판정을 적용 제도에 위임하고 제도가 미정이면 `성립 미정`으로 보류하는 것, 성립한 혼인의 효과를 넷으로 나눠 각자의 계약에 넘기는 것, 주장·재산·직위·본체를 서로 섞지 않는 것이 승인된 전부다. 소유자는 국가별 법(관할 법 방식), 혼인 동의(당사자 직접), 양자 동의(당사자 직접), 공동재산(자산별 서명 계약)의 방향을 골랐고, 실제 관할 법·나이·자격·절차·지분·기간은 아직 비어 있다. 나머지는 §13의 결정 대기 목록이고, 이 문서는 어떤 값도 대신 고르지 않는다.');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d09', 'system-design', 'mechanism-design-index-d09', 'D09 State, Government, Institutions, Legitimacy', 'D09 국가·정부·기관·정통성', '', '', 'proposal', 116, 'system-design/mechanism-design-index-d09.md', '# D09 State, Government, Institutions, Legitimacy
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d09', 'system-design', 'mechanism-design-index-d09', 'D09 State, Government, Institutions, Legitimacy (Pre-v4 material · kept as history)', 'D09 국가·정부·기관·정통성 (v4 이전 자료 · 이력 보존)', '', '', 'proposal', 116, 'system-design/mechanism-design-index-d09.md', '# D09 State, Government, Institutions, Legitimacy
 
 ## Game Logic Overhaul Alignment Boundary
 
@@ -88805,7 +88805,7 @@ Occupation contribution is based on the scope and scale of the strongholds the d
 
 If W=100, the opponent''s forced acceptance of -100 is recorded, and the war is immediately terminated and settled with the victory and defeat effects of the casus belli. No additional captures, occupations, or property demands are accumulated during the response delay. If the casus belli is already void, the voiding conditions are checked first. +100 is not authority to forcibly acquire territory, assets, or persons outside the objectives.
 
-A negotiation proposal has the war and proposal versions, signing authority, the target and beneficiary, a list of items, and the timing, deadline, and breach effects of performance. Items distinguish promises such as rights transfers, asset payments and returns, prisoner release and repatriation, passage, water supply, rations, escorts, confirmations, higher-level contracts, and ceasefires. Trading in persons, forced marriage, and general assignment without consent are not allowed. Each item''s ID, quantity, scope, authority to dispose, valuation inputs, price version, and feasibility are checked, and the same ledger asset is not demanded twice. The negotiation price score and the war score are separate records, and negotiation neither consumes nor manipulates the combat score.
+A negotiation proposal has the war and proposal versions, signing authority, the target and beneficiary, a list of items, and the timing, deadline, and breach effects of performance. Items distinguish promises such as rights transfers, asset payments and returns, prisoner release and repatriation, passage, rations, escorts, confirmations, higher-level contracts, and ceasefires. Trading in persons, forced marriage, and general assignment without consent are not allowed. Each item''s ID, quantity, scope, authority to dispose, valuation inputs, price version, and feasibility are checked, and the same ledger asset is not demanded twice. The negotiation price score and the war score are separate records, and negotiation neither consumes nor manipulates the combat score.
 
 In an interim negotiation, the player may reduce the demands within the casus belli or propose mutually agreed substitute payments or obligations. Assets, persons, and territory the opponent cannot dispose of, and third parties'' rights, cannot be included. Forced cession outside the objectives is not allowed, and a voluntary separate transaction is not disguised as a forced effect. The evaluation structure is the sum of the demanded items'' prices minus the sum of the offered items'' prices, and acceptance considers not only the score but also control, supply, succession, prisoners, obligations, relationships, memory, and feasibility. A proposal is not automatically accepted merely because its price is at or below the score. Unregistered items appear as ''valuation pending'' and block signing and settlement of a finalized proposal.
 
@@ -88921,7 +88921,7 @@ The original Basic dependency judgment and the generation of personal combat in 
 
 W=100이면 상대의 -100 강제 수락을 기록하고 명분별 승리·패배 효과로 즉시 종결 정산한다. 응답 지연 동안 추가 포획·점령·재산 요구를 쌓지 않는다. 이미 명분이 무효라면 무효 조건을 먼저 검사한다. +100은 목표 밖 영토·자산·인물의 강제 취득 권한이 아니다.
 
-협상안은 전쟁·제안 판본, 서명 권한, 대상·수혜자, 항목 목록, 이행 시점·기한·위반 효과를 갖는다. 항목은 권리 이전, 자산 지급·반환, 포로 석방·송환, 통행·급수·배급·호송·인준·상위 계약·휴전 같은 약속을 구분한다. 인물 매매·강제 혼인·동의 없는 일반 배속을 허용하지 않는다. 각 항목의 ID·수량·범위·처분 권한·평가 입력·가격 판본·이행 가능성을 확인하고 같은 원장 자산을 중복 요구하지 않는다. 협상 가격 점수와 전쟁 점수는 다른 기록이며 협상으로 전투 점수를 소비하거나 조작하지 않는다.
+협상안은 전쟁·제안 판본, 서명 권한, 대상·수혜자, 항목 목록, 이행 시점·기한·위반 효과를 갖는다. 항목은 권리 이전, 자산 지급·반환, 포로 석방·송환, 통행·배급·호송·인준·상위 계약·휴전 같은 약속을 구분한다. 인물 매매·강제 혼인·동의 없는 일반 배속을 허용하지 않는다. 각 항목의 ID·수량·범위·처분 권한·평가 입력·가격 판본·이행 가능성을 확인하고 같은 원장 자산을 중복 요구하지 않는다. 협상 가격 점수와 전쟁 점수는 다른 기록이며 협상으로 전투 점수를 소비하거나 조작하지 않는다.
 
 플레이어는 중간 협상에서 명분 안의 요구를 줄이거나 상호 합의한 대체 지급·의무를 제안할 수 있다. 상대가 처분할 수 없는 자산·인물·영토와 제삼자 권리는 넣지 못한다. 목표 밖 강제 할양은 불가하며 자발적 별도 거래를 강제 효과로 위장하지 않는다. 평가 구조는 요구항목가격 합에서 제공항목가격 합을 뺀 값이고, 수락은 점수뿐 아니라 통제·보급·계승·포로·의무·관계·기억·이행 가능성을 읽는다. 가격이 점수 이하라는 이유만으로 자동 수락하지 않는다. 미등록 항목은 ‘평가 미정’으로 보이며 확정 안의 서명·정산을 막는다.
 
@@ -88970,7 +88970,7 @@ Norland의 가신 행동 제한·질적 조공 의존과 요구·거절·승리 
 | T68-D11-CONTRACT-RECALL: 수여·위임·회수 인도 | 법적 권리와 현장 인수 책임을 구분 | A: 인준 후 단계별 인도, B: 인준 후 계약상 인수 확인. A는 현장 분쟁 가시성, B는 계약 책임 추적을 중시함 | 의무·동의·만료·비용·회수 조건 미정. 위임 시 원 보유자 유지, 대리인 사망 후 권리 보존, 금고·병력 자동 이전 금지 확인 |
 
 원본 Basic 의존 판정이나 공성·포획의 개인 전투 생성은 이 선택안으로 닫지 않는다. 승인 구조를 읽을 수 있게 정리한 것과 국가별 정책·수치 확정, 구현 완료는 서로 다른 결과다.');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d11', 'system-design', 'mechanism-design-index-d11', 'D11 Grants, Delegation, Recall, and Appointments — Design Document for Readers', 'D11 수여·위임·회수·임명 — 독자용 설계 문서', '', '', 'proposal', 118, 'system-design/mechanism-design-index-d11.md', '# D11 Grants, Delegation, Recall, and Appointments — Design Document for Readers
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d11', 'system-design', 'mechanism-design-index-d11', 'D11 Grants, Delegation, Recall, and Appointments — Design Document for Readers (Pre-v4 material · kept as history)', 'D11 수여·위임·회수·임명 — 독자용 설계 문서 (v4 이전 자료 · 이력 보존)', '', '', 'proposal', 118, 'system-design/mechanism-design-index-d11.md', '# D11 Grants, Delegation, Recall, and Appointments — Design Document for Readers
 
 ## Game Logic Overhaul Alignment Boundary
 
@@ -89495,7 +89495,7 @@ D11은 수여·임명·위임·회수와 위임·임명 계약의 골격을 소�
 - **승인된 것**: 네 가지 초안의 구분(수여·임명·위임·회수), 동의·인준 관문과 인준 전 보유자 불변, 소속원 수령 요건, 하급 직함만·10명 단계 임명제, 축의 분리(직위·직함·실효 지배·지휘·재산), 포함 명시의 원칙, 같은 식별 제거·등록과 사본 없음, `권리 보유·인수 미완` 상태, 위임의 네 상태와 원 권리 보존, 위임·임명 계약의 서명자·조항 실체와 서명자 변동 세 갈래, 회수의 조항·증거·인준 요건, 유물만 회수 시 배신 쟁점, 불법 강탈의 수여 부인, 공석의 자동 생성 부정과 등록된 대행만, 결정론적 수락 순서와 사건 식별 재전송 무효, 영구 식별자와 명시적 충돌, 직함 보유 원장과 실효 지배 원장의 분리.
 - **정해지지 않은 것**: 12장의 직함·인준 입력, 나라별 제도, 실제 계약, 전쟁·외교 정산, 청구 상위 계약, 위임 진행 행동과 수치·충돌 세부 절차.
 - 이 문서는 제안으로 남으며, 플레이가 구현되었다고 말하지 않는다.');
-INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d12', 'system-design', 'mechanism-design-index-d12', 'Succession, Death, and Principal Body Transition', '후계·사망·본체 전환', '', '', 'proposal', 119, 'system-design/mechanism-design-index-d12.md', '# Succession, Death, and Principal Body Transition
+INSERT INTO gdd_document (id, category_id, slug, title, title_ko, summary, summary_ko, status, sort, source_path, body_md, body_ko_md) VALUES ('doc.mechanism-design-index-d12', 'system-design', 'mechanism-design-index-d12', 'Succession, Death, and Principal Body Transition (Pre-v4 material · kept as history)', '후계·사망·본체 전환 (v4 이전 자료 · 이력 보존)', '', '', 'proposal', 119, 'system-design/mechanism-design-index-d12.md', '# Succession, Death, and Principal Body Transition
 
 ## Game Logic Overhaul Alignment Boundary
 
@@ -91342,7 +91342,7 @@ Each item must pass all of the following conditions to remain in a finalized pro
 5. If a right or contract has a fixed beneficiary, the beneficiary is not changed simply because one party is the attacker.
 6. Immediately before signing, the war, casus belli, authority, ownership, claim, and custody ledgers, and the actual ability to fulfill, are checked again.
 
-Negotiation items may include transfers of stations and rights, payment or return of assets, release or repatriation of prisoners, and promises such as passage, water supply, rations, escort, ratification, higher-level contracts, and ceasefires. Characters are subjects of release, repatriation, interview, and voluntary assignment, not goods to be traded. Forced marriage and non-consensual assignment do not exist in this structure. A synthetic being recognized as a person is likewise not a transferable asset.
+Negotiation items may include transfers of stations and rights, payment or return of assets, release or repatriation of prisoners, and promises such as passage, rations, escort, ratification, higher-level contracts, and ceasefires. Characters are subjects of release, repatriation, interview, and voluntary assignment, not goods to be traded. Forced marriage and non-consensual assignment do not exist in this structure. A synthetic being recognized as a person is likewise not a transferable asset.
 
 A name may be used to find a subject, while a stable ID establishes the actual identity. Even if a name changes or there are namesakes, the IDs of proposals, rights, and delivery targets do not change. A past approval roster is a record of past identification, not an authority that overwrites the current world''s ownership, survival, custody, position, location, or authority. This surface rule is the current proposal owned by D01 and does not imply D17''s prices or acceptance approval.
 
@@ -91497,7 +91497,7 @@ The two games'' item prices, income multipliers, auto-acceptance counts, duratio
 5. 수혜자가 고정되어 있는 권리나 계약이라면 공격자라는 이유로 수혜자를 바꾸지 않는다.
 6. 서명 직전에 전쟁, 명분, 권한, 소유·채권·구금 원장과 실제 이행 가능성을 다시 검사한다.
 
-협상 항목에는 영지와 권리의 이전, 자산의 지급·반환, 포로의 석방·송환, 통행·급수·배급·호송·인준·상위 계약·휴전 같은 약속이 들어갈 수 있다. 인물은 석방, 송환, 면담, 자발적 배속의 대상이지 매매 물품이 아니다. 강제 혼인과 동의 없는 배속은 이 구조에 없다. 인격을 인정받은 합성 존재도 양도 자산이 아니다.
+협상 항목에는 영지와 권리의 이전, 자산의 지급·반환, 포로의 석방·송환, 통행·배급·호송·인준·상위 계약·휴전 같은 약속이 들어갈 수 있다. 인물은 석방, 송환, 면담, 자발적 배속의 대상이지 매매 물품이 아니다. 강제 혼인과 동의 없는 배속은 이 구조에 없다. 인격을 인정받은 합성 존재도 양도 자산이 아니다.
 
 이름은 대상을 찾는 데 쓸 수 있고 안정 ID는 실제 신원을 확정한다. 이름이 바뀌거나 동명이인이 있어도 제안·권리·인도 대상의 ID는 바뀌지 않는다. 과거 승인 명부는 과거 식별 기록이지 현재 세계의 소유, 생존, 구금, 직위, 위치 또는 권한을 덮어쓰는 권위가 아니다. 이 표면 규칙은 D01이 소유한 현재 제안이며, D17의 가격이나 수락 승인을 뜻하지 않는다.
 
@@ -91671,7 +91671,7 @@ A war can be opened only if there is a validly registered casus belli instance. 
 ### Before, Action, After: Mid-War Negotiation
 
 - Before: The casus belli is valid and `|W| < 100`.
-- Action: Both sides propose and evaluate a negotiation proposal that lists demands and offers together. Items such as domains and rights, assets, release and repatriation of prisoners, passage, water supply, rations, escort, ratification, and truce can be used. Each item is checked for disposal authority, actual feasibility of fulfillment, casus belli scope, and the registered price edition.
+- Action: Both sides propose and evaluate a negotiation proposal that lists demands and offers together. Items such as domains and rights, assets, release and repatriation of prisoners, passage, rations, escort, ratification, and truce can be used. Each item is checked for disposal authority, actual feasibility of fulfillment, casus belli scope, and the registered price edition.
 - After: If accepted, authority and the ledger are rechecked, and this leads to a single termination settlement and actual delivery and fulfillment. If rejected, the war and time continue. Unregistered prices and third-party rights that cannot be disposed of are not signed.
 
 ### Before, Event, After: Forced Termination at ±100
@@ -91830,7 +91830,7 @@ The CK3 comparison material was confirmed within the scope of developer definiti
 ### 전·행동·후: 중간 협상
 
 - 전: 명분이 유효하고 `|W| < 100`이다.
-- 행동: 양측은 요구와 제공을 함께 적은 협상안을 제안하고 평가한다. 영지·권리, 자산, 포로 석방·송환, 통행·급수·배급·호송·인준·휴전 같은 항목을 쓸 수 있다. 각 항목은 처분 권한, 실제 이행 가능성, 명분 범위와 등록된 가격 판본을 검사한다.
+- 행동: 양측은 요구와 제공을 함께 적은 협상안을 제안하고 평가한다. 영지·권리, 자산, 포로 석방·송환, 통행·배급·호송·인준·휴전 같은 항목을 쓸 수 있다. 각 항목은 처분 권한, 실제 이행 가능성, 명분 범위와 등록된 가격 판본을 검사한다.
 - 후: 수락되면 권한과 원장을 다시 검사한 뒤 단일 종결 정산과 실제 인도·이행으로 이어진다. 거절되면 전쟁과 시간이 계속된다. 미등록 가격이나 처분 불가능한 제삼자 권리는 서명되지 않는다.
 
 ### 전·사건·후: ±100 강제 종결
@@ -92169,7 +92169,7 @@ Inputs: grantor, recipient, state membership status, target title and version, g
 
 States: draft → authority/target check → recipient consent → ratification/approval → rights ledger change → operational takeover → completed or disputed. The default policy is not to change the holder before the required ratification. If on-site takeover fails after approval, it remains as "rights held·not recovered/takeover incomplete." In regions with a central records culture, omitting record ratification or relic inspection is grounds for invalidity.
 
-When a right changes hands, the target right is removed from the grantor''s holdings list and the same title ID is registered to the recipient. For subordinate contracts and tax/water-supply/passage and ritual duties, the signer and succession policy are recorded. Buildings, institutional vaults, public stockpiles, and unit command are not transferred automatically unless each one''s inclusion is explicitly stated.
+When a right changes hands, the target right is removed from the grantor''s holdings list and the same title ID is registered to the recipient. For subordinate contracts and tax/passage and ritual duties, the signer and succession policy are recorded. Buildings, institutional vaults, public stockpiles, and unit command are not transferred automatically unless each one''s inclusion is explicitly stated.
 
 ### 4.2 Distinguish Appointment, Grant, and Delegation
 
@@ -92347,7 +92347,7 @@ Either side may negotiate an interim settlement while the absolute value is belo
 
 ## 18. Item-by-Item Evaluation Contract for Original Peace
 
-When the value is below 100, each side writes both its demands and its offers into the proposal. A proposal carries the war ID, proposal version, signing authority, target/beneficiary, item list, performance timing, deadline, and breach effect. Items are holding/right transfers, asset payments/returns, prisoner release/repatriation, and diplomatic commitments such as passage/water supply/rationing/escort/recognition/superior contract/truce. The structure does not permit the sale of persons, forced marriage, or ordinary assignment without consent.
+When the value is below 100, each side writes both its demands and its offers into the proposal. A proposal carries the war ID, proposal version, signing authority, target/beneficiary, item list, performance timing, deadline, and breach effect. Items are holding/right transfers, asset payments/returns, prisoner release/repatriation, and diplomatic commitments such as passage/rationing/escort/recognition/superior contract/truce. The structure does not permit the sale of persons, forced marriage, or ordinary assignment without consent.
 
 Each item has a unique ID, type, quantity/scope, disposal authority, evaluation inputs and price version, score, casus-belli-permitted range, and feasibility. Holdings read the evaluation unit of the registered title/territory; supplies read actual quantity and the registered economic unit; prisoners read their detention status and the political effect of release; diplomacy reads scope, duration, obligations, and actual routes. A single ledger asset may not be demanded redundantly across multiple items. War score and price score are separate records, and negotiation does not consume or manipulate combat score.
 
@@ -92475,7 +92475,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 상태: 초안 → 권한/대상 검사 → 수령자 동의 → 인준/비준 → 권리 원장 변경 → 운영 인수 → 완료 또는 분쟁. 기본 정책은 필요한 인준 전에 보유자를 바꾸지 않는 것이다. 승인 뒤 현장 인수를 못하면 ‘권리 보유·미회복/인수 미완’으로 남긴다. 중앙 기록 문화의 권역에서는 기록 인준과 유물 열람 누락이 무효 사유다.
 
-권리 변경 시 수여자의 보유 목록에서 대상 권리를 제거하고 수령자에게 같은 직함 ID를 등록한다. 하위 계약·세금/급수/통행·의례 의무는 서명자와 승계 정책을 기록한다. 건물·기관 금고·공공 재고·부대 지휘는 각각 포함 여부를 명시하지 않으면 자동 이전하지 않는다.
+권리 변경 시 수여자의 보유 목록에서 대상 권리를 제거하고 수령자에게 같은 직함 ID를 등록한다. 하위 계약·세금/통행·의례 의무는 서명자와 승계 정책을 기록한다. 건물·기관 금고·공공 재고·부대 지휘는 각각 포함 여부를 명시하지 않으면 자동 이전하지 않는다.
 
 ### 4.2 임명·수여·위임을 구분한다
 
@@ -92653,7 +92653,7 @@ A truce stores the ending type, casus belli, signatory/office attribution, start
 
 ## 18. 독자 강화의 항목별 평가 계약
 
-양측은 100 미만일 때 협상안에 요구와 제공을 함께 적는다. 협상안은 전쟁 ID·제안 판본·서명 권한·대상/수혜자·항목 목록·이행 시점·기한·위반 효과를 가진다. 항목은 영지/권리 이전, 자산 지급/반환, 포로 석방/송환, 통행/급수/배급/호송/인준/상위 계약/휴전 같은 외교 약속이다. 인물의 매매·강제 혼인·동의 없는 일반 배속을 허용하는 구조는 아니다.
+양측은 100 미만일 때 협상안에 요구와 제공을 함께 적는다. 협상안은 전쟁 ID·제안 판본·서명 권한·대상/수혜자·항목 목록·이행 시점·기한·위반 효과를 가진다. 항목은 영지/권리 이전, 자산 지급/반환, 포로 석방/송환, 통행/배급/호송/인준/상위 계약/휴전 같은 외교 약속이다. 인물의 매매·강제 혼인·동의 없는 일반 배속을 허용하는 구조는 아니다.
 
 각 항목은 고유 ID, 종류, 수량/범위, 처분 권한, 평가 입력과 가격 판본, 점수, 명분상 허용 범위, 이행 가능성을 가진다. 영지는 등록된 직함/영역의 평가 단위, 물자는 실제 수량과 등록 경제 단위, 포로는 구금 상태와 석방의 정치 효과, 외교는 범위·기간·의무·실제 경로를 읽는다. 하나의 원장 자산을 여러 항목에 중복 요구하지 못한다. 전쟁 점수와 가격 점수는 다른 기록이며 협상으로 전투 점수를 소비/조작하지 않는다.
 

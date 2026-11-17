@@ -1,0 +1,92 @@
+{
+  "rules": [
+    {
+      "id": "title-adr-003",
+      "file": "adr-003.json",
+      "from": "ADR-003: 창작 명칭은 실제 지역명과 지하철역명을 기준으로 한다",
+      "to": "ADR-003: 창작 명칭은 실제 지역명과 지하철역명을 기준으로 한다 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일). adr-003은 collection·lock 밖이라 lock 갱신 없음."
+    },
+    {
+      "id": "title-archify-d09",
+      "file": "system-design/archify-d09.json",
+      "from": "D09 아치파이 — 국가·정부·기관·직위 전체 논리",
+      "to": "D09 아치파이 — 국가·정부·기관·직위 전체 논리 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-archify-d11",
+      "file": "system-design/archify-d11.json",
+      "from": "D11 아치파이 — 수여·임명·위임·회수 전체 논리",
+      "to": "D11 아치파이 — 수여·임명·위임·회수 전체 논리 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-archify-d12",
+      "file": "system-design/archify-d12.json",
+      "from": "D12 아치파이 — 후계·사망·본체 전환 전체 논리",
+      "to": "D12 아치파이 — 후계·사망·본체 전환 전체 논리 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-gdd-lore-node-states",
+      "file": "system-design/gdd-lore-node-states.json",
+      "from": "노드 상태",
+      "to": "노드 상태 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-mechanism-d09",
+      "file": "system-design/mechanism-d09.json",
+      "from": "D09 국가·정부·기관·직위 작동 계약과 공식 시트",
+      "to": "D09 국가·정부·기관·직위 작동 계약과 공식 시트 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-mechanism-d11",
+      "file": "system-design/mechanism-d11.json",
+      "from": "D11 수여·임명·위임·회수 작동 계약과 공식 시트",
+      "to": "D11 수여·임명·위임·회수 작동 계약과 공식 시트 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-mechanism-d12",
+      "file": "system-design/mechanism-d12.json",
+      "from": "D12 후계·사망·본체 전환 작동 계약과 공식 시트",
+      "to": "D12 후계·사망·본체 전환 작동 계약과 공식 시트 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-mechanism-design-index-d09",
+      "file": "system-design/mechanism-design-index-d09.json",
+      "from": "D09 국가·정부·기관·정통성",
+      "to": "D09 국가·정부·기관·정통성 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-mechanism-design-index-d11",
+      "file": "system-design/mechanism-design-index-d11.json",
+      "from": "D11 수여·위임·회수·임명 — 독자용 설계 문서",
+      "to": "D11 수여·위임·회수·임명 — 독자용 설계 문서 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    },
+    {
+      "id": "title-mechanism-design-index-d12",
+      "file": "system-design/mechanism-design-index-d12.json",
+      "from": "후계·사망·본체 전환",
+      "to": "후계·사망·본체 전환 (v4 이전 자료 · 이력 보존)",
+      "expect": 1,
+      "reason": "canon 문서 제목에 v4 이전 표시(080 title_ko와 동일)."
+    }
+  ]
+}

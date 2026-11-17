@@ -1,0 +1,68 @@
+{
+  "rulesDoc": "v4 remaining todo 6",
+  "rules": [
+    {
+      "id": "pre-v4-title-ko",
+      "docs": [
+        "doc.ADR-003",
+        "doc.Archify-D09",
+        "doc.Archify-D11",
+        "doc.Archify-D12",
+        "doc.gdd-lore-node-states",
+        "doc.Mechanism-D09",
+        "doc.Mechanism-D11",
+        "doc.Mechanism-D12",
+        "doc.mechanism-design-index-d09",
+        "doc.mechanism-design-index-d11",
+        "doc.mechanism-design-index-d12"
+      ],
+      "fields": [
+        "title_ko"
+      ],
+      "kind": "regex",
+      "from": "$",
+      "to": " (v4 이전 자료 · 이력 보존)",
+      "expect": 11,
+      "reason": "GDD 화면 제목은 title_ko에서 만들어진다(site/build.mjs). 옛 자료를 이력으로 표시."
+    },
+    {
+      "id": "pre-v4-title-en",
+      "docs": [
+        "doc.ADR-003",
+        "doc.Archify-D09",
+        "doc.Archify-D11",
+        "doc.Archify-D12",
+        "doc.gdd-lore-node-states",
+        "doc.Mechanism-D09",
+        "doc.Mechanism-D11",
+        "doc.Mechanism-D12",
+        "doc.mechanism-design-index-d09",
+        "doc.mechanism-design-index-d11",
+        "doc.mechanism-design-index-d12"
+      ],
+      "fields": [
+        "title"
+      ],
+      "kind": "regex",
+      "from": "$",
+      "to": " (Pre-v4 material · kept as history)",
+      "expect": 11,
+      "reason": "같은 표시의 영어 제목."
+    },
+    {
+      "id": "node-states-ecology-ids",
+      "docs": [
+        "doc.gdd-lore-node-states"
+      ],
+      "fields": [
+        "body_md",
+        "body_ko_md"
+      ],
+      "kind": "literal",
+      "from": "G01–G24",
+      "to": "G01–G18`, `G25`, `G26",
+      "expect": 2,
+      "reason": "감염자 문서 폐지로 G19–G24가 사라졌다. 생태군은 G01–G18, G25, G26."
+    }
+  ]
+}
