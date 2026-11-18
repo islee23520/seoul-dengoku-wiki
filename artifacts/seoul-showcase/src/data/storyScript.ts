@@ -190,7 +190,7 @@ export const SCENES: StoryScene[] = [
   },
   {
     id: "outside", act: { ko: "막간 · 바깥 기계", en: "Interlude · The Machines Outside" }, title: { ko: "불 꺼", en: "Lights Off" },
-    place: { ko: "서울 밖 · 차량기지 가는 길", en: "Outside Seoul · the road to the depot" }, year: "2126 겨울", bg: "railyard",
+    place: { ko: "서울 경계 · 차량기지 입구", en: "Seoul's edge · the depot entrance" }, year: "2126 겨울", bg: "railyard",
     lines: [
       N("v6-a5-01", "서울 밖에는 대정전 때 쓰던 기계들이 마지막 명령을 되풀이하며 돌아다닌다. 그것들을 만든 사람은 없고, 남은 것은 명령뿐이다.", "Outside Seoul, machines from the Great Blackout still roam, repeating their last orders. No one who built them remains. Only the orders are left.", { source: "faction" }),
       S("v6-a5-02", "iyen", "대장! 돌아오셨네요. 바깥 길은 어땠어요?", "Captain! You're back. How was the road outside?", { cast: ["iyen", "k1003"] }),
