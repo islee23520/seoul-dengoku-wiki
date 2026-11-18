@@ -205,9 +205,9 @@ export function strongholdPages({ data, ko, g, P, BASE, factions, stations }) {
       '| --- | --- | ---: | ---: | ---: | --- | ---: | --- |');
     st.forEach((s) => L.push(`| ${stCell(s)} | ${cell(stageName(r, s.stage))} | ${num(s.floor_m2)} | ${num(s.capacity)} (${cb(s.cap_by_max)}) | ${num(s.living_capacity)} (${cb(s.cap_by)}) | ${s.over_max ? S.st.overflow : s.over_living ? S.st.over : S.st.ok} | ${num(s.overcrowd_limit)} | ${S.airMode(s.air_speed, s.stage)} |`));
     L.push('', `### ${S.stagesWatch}`, '',
-      `| ${S.stage} | ${C.gs} | ${C.ge} | ${C.mob} | ${C.def} | ${C.food} ${C.fuel} | ${C.line} | ${C.towers} |`,
+      `| ${S.stage} | ${C.gs} | ${C.ge} | ${C.mob} | ${C.def} | ${C.food} | ${C.fuel} | ${C.line} | ${C.towers} |`,
       '| --- | ---: | ---: | ---: | --- | ---: | ---: | ---: | ---: |');
-    st.forEach((s) => L.push(`| ${stCell(s)} | ${num(s.guard_standing)} | ${num(s.guard_emergency)} | ${num(s.mobilisable)} | ${s.defensible ? S.yes : S.no} | ${num(s.food_t, 1)} ${num(s.fuel_t, 1)} | ${s.surface_line_m ? `${num(s.surface_line_real_m)} / ${num(s.surface_line_m)}` : '-'} | ${num(s.watchtowers)} |`));
+    st.forEach((s) => L.push(`| ${stCell(s)} | ${num(s.guard_standing)} | ${num(s.guard_emergency)} | ${num(s.mobilisable)} | ${s.defensible ? S.yes : S.no} | ${num(s.food_t, 1)} | ${num(s.fuel_t, 1)} | ${s.surface_line_m ? `${num(s.surface_line_real_m)} / ${num(s.surface_line_m)}` : '-'} | ${num(s.watchtowers)} |`));
     L.push('');
     st.forEach((s) => {
       const t = stageText(r, s.stage);
