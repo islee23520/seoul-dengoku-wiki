@@ -1,0 +1,104 @@
+{
+ "rules": [
+  {
+   "id": "ldb-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.occupation$",
+   "from": "Restoration Service Roster and Parts Compensation Adjustment",
+   "to": "Records Coordination"
+  },
+  {
+   "id": "ldb-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.fields\\.Livelihood$",
+   "from": "Restoration Service Roster and Parts Compensation Adjustment",
+   "to": "Records Coordination"
+  },
+  {
+   "id": "ldb-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "Restoration Service Roster and Parts Compensation Adjustment",
+   "to": "Records Coordination"
+  },
+  {
+   "id": "ldb-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "Restoration Service Roster and Parts Compensation Adjustment",
+   "to": "Records Coordination"
+  },
+  {
+   "id": "ldb-5",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Restoration Service Roster and Parts Compensation Adjustment",
+   "to": "Records Coordination"
+  },
+  {
+   "id": "ldb-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json_ko",
+   "rawPathRe": "^\\.occupation$",
+   "from": "복구복무 명부·부품 대가 조정",
+   "to": "기록 조정"
+  },
+  {
+   "id": "ldb-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json_ko",
+   "rawPathRe": "^\\.fields\\.생업$",
+   "from": "복구복무 명부·부품 대가 조정",
+   "to": "기록 조정"
+  },
+  {
+   "id": "ldb-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "복구복무 명부·부품 대가 조정",
+   "to": "기록 조정"
+  },
+  {
+   "id": "ldb-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "복구복무 명부·부품 대가 조정",
+   "to": "기록 조정"
+  },
+  {
+   "id": "ldb-10",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0116",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "복구복무 명부·부품 대가 조정",
+   "to": "기록 조정"
+  }
+ ]
+}

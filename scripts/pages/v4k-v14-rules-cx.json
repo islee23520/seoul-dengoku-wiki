@@ -1,0 +1,214 @@
+{
+ "rules": [
+  {
+   "id": "lcx-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0527",
+   "col": "json",
+   "rawPathRe": "^\\.occupation$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0607",
+   "col": "json",
+   "rawPathRe": "^\\.occupation$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0655",
+   "col": "json",
+   "rawPathRe": "^\\.occupation$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json",
+   "rawPathRe": "^\\.occupation$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json",
+   "rawPathRe": "^\\.fields\\.Livelihood$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0799",
+   "col": "json",
+   "rawPathRe": "^\\.occupation$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0863",
+   "col": "json",
+   "rawPathRe": "^\\.occupation$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0991",
+   "col": "json",
+   "rawPathRe": "^\\.occupation$",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording"
+  },
+  {
+   "id": "lcx-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0527",
+   "col": "json_ko",
+   "rawPathRe": "^\\.occupation$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0607",
+   "col": "json_ko",
+   "rawPathRe": "^\\.occupation$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0655",
+   "col": "json_ko",
+   "rawPathRe": "^\\.occupation$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "rawPathRe": "^\\.occupation$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "rawPathRe": "^\\.fields\\.생업$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0799",
+   "col": "json_ko",
+   "rawPathRe": "^\\.occupation$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0863",
+   "col": "json_ko",
+   "rawPathRe": "^\\.occupation$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0991",
+   "col": "json_ko",
+   "rawPathRe": "^\\.occupation$",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록"
+  },
+  {
+   "id": "lcx-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Recording informal hoses",
+   "to": "Ledger recording"
+  },
+  {
+   "id": "lcx-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.skills\\.0\\.name$",
+   "from": "호스 접수 대장",
+   "to": "장부 기록"
+  },
+  {
+   "id": "lcx-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "비공식 호스 기록",
+   "to": "장부 기록"
+  }
+ ]
+}

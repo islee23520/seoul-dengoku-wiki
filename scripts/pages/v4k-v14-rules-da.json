@@ -1,0 +1,113 @@
+{
+ "rules": [
+  {
+   "id": "lda-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0031",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.0\\.basis$",
+   "from": "Gim Nayul checks the work-crew shifts and citizenship registration records to find where service listed as payment for parts and actual union labor were treated as the same line.",
+   "to": ""
+  },
+  {
+   "id": "lda-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.4\\.basis$",
+   "from": "Reviews the handover record of the copy box Im Hajun left, under the Former President's command",
+   "to": ""
+  },
+  {
+   "id": "lda-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "실종 전날의 봉인 이외 위기 반응은 확인되지 않았다.",
+   "to": ""
+  },
+  {
+   "id": "lda-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0146",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.description$",
+   "from": "Office. Rank: Ordinary Citizen. Title: ratification examiner. He spread the public original and the private testimony on one desk and suspended ratification with fewer than two witnesses.",
+   "to": "Title: Ratification Examiner."
+  },
+  {
+   "id": "lda-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0146",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "Office. Rank: Ordinary Citizen. Title: ratification examiner. He spread the public original and the private testimony on one desk and suspended ratification with fewer than two witnesses.",
+   "to": "Title: Ratification Examiner."
+  },
+  {
+   "id": "lda-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0335",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "허위 동의서가 의료 지휘부에 나타나자 영늘빛은 해당 줄을 난외로 내리고 필적 대조가 끝나기 전에 날인을 열지 않았다.",
+   "to": ""
+  },
+  {
+   "id": "lda-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0335",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 허위 동의서가 의료 지휘부에 나타나자 영늘빛은 해당 줄을 난외로 내리고 필적 대조가 끝나기 전에 날인을 열지 않았다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lda-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "Son Tayeon seeks to mark the overlapping names on the refugee citizenship roster and the restoration service registration so that one person is not counted as two laborers.",
+   "to": ""
+  },
+  {
+   "id": "lda-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "The player can cross-check the overlapping names on the two rosters with Son Tayeon, or leave in the next records officer's memo the lines to be verified against Kim Nayul's shift schedule.",
+   "to": ""
+  },
+  {
+   "id": "lda-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "Son Tayeon cross-checks the two rosters before the same name is counted as two laborers.\n\n- Affiliation: Free City\n- Livelihood: Registration & Records\n- Rank: Guild Member\n- Title: Restoration Service Recorder\n**Life.** Generation of 2126. Grew up at the Seoul Station Registry Office. The post of Restoration Service Records Officer opened with the deletion of one line in the double ledger.\n- Work location: Guro 2-dong. At the duty desk in Guro 2-dong, Son Tayeon cross-checks Baek On's refugee citizenship roster against the restoration service registration in name order. He re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo.\n\n**Office.** Rank: Guild Member.\n\n**Relationships.** Gim Nayul checks the actual shifts and registrations so that the same person does not remain as two laborers.\n\n**Ambition.** Son Tayeon seeks to mark the overlapping names on the refugee citizenship roster and the restoration service registration so that one person is not counted as two laborers.\n\n**Intervention.** The player can cross-check the overlapping names on the two rosters with Son Tayeon, or leave in the next records officer's memo the lines to be verified against Kim Nayul's shift schedule.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority −20 | Openness 20 | Force −20 | Materiality 40 | Community 50 | Principle 15 | Publicity 25 | Qualification 45 | Dispersal 20 | Transformation 15\n- Desires: Craving 0 | Monopoly −25 | Risk 30 | Display −25 | Persistence 20 | Orientation: Bisexual | Union: Contract Cohabitation\n:::",
+   "to": "Son Tayeon cross-checks the two rosters before the same name is counted as two laborers.\n\n- Affiliation: Free City\n- Livelihood: Registration & Records\n- Rank: Guild Member\n- Title: Restoration Service Recorder\n**Life.** Generation of 2126. Grew up at the Seoul Station Registry Office. The post of Restoration Service Records Officer opened with the deletion of one line in the double ledger.\n- Work location: Guro 2-dong. At the duty desk in Guro 2-dong, Son Tayeon cross-checks Baek On's refugee citizenship roster against the restoration service registration in name order. He re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo.\n\n**Office.** Rank: Guild Member.\n\n**Relationships.** Gim Nayul checks the actual shifts and registrations so that the same person does not remain as two laborers.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority −20 | Openness 20 | Force −20 | Materiality 40 | Community 50 | Principle 15 | Publicity 25 | Qualification 45 | Dispersal 20 | Transformation 15\n- Desires: Craving 0 | Monopoly −25 | Risk 30 | Display −25 | Persistence 20 | Orientation: Bisexual | Union: Contract Cohabitation\n:::"
+  }
+ ]
+}

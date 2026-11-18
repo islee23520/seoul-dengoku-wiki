@@ -1,0 +1,25 @@
+{
+ "rules": [
+  {
+   "id": "ldd-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "플레이어는 손타연과 두 명부의 겹친 이름을 대조하거나 김나율의 교대표에서 확인할 줄을 다음 기록관 메모에 남길 수 있다.",
+   "to": ""
+  },
+  {
+   "id": "ldd-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**개입.** 플레이어는 손타연과 두 명부의 겹친 이름을 대조하거나 김나율의 교대표에서 확인할 줄을 다음 기록관 메모에 남길 수 있다.\n\n",
+   "to": ""
+  }
+ ]
+}
