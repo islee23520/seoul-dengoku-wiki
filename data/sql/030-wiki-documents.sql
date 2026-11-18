@@ -28271,6 +28271,10 @@ Seoul has only three political powers. The details are in [The Three Factions of
 
 How families hold their places inside the three factions is covered in [Families and the Three Factions](/wiki/Chaebol-Houses-and-Century-Factions/). Scarcity made children take over their parents'' work, and that is how a vertical class structure hardened.
 
+## Protagonists and Points of View
+
+<a id="world-narrative-atlas-protagonists"></a>The main story is told from the points of view (POV) of three protagonists. The current protagonists are the President of the Government, [Kim Yeongyu](/wiki/people/person-1007/); the Chair of the Board of the Free Cities, [I Ilseop](/wiki/people/person-0998/); and the Hierophant of the Arc, [Go Ye-jin](/wiki/people/person-1018/). Each of them sees the same winter from inside their own faction and lives through the same events with different stakes. This atlas and the chronology, faction and people articles are records kept outside any one point of view; the three protagonists'' stories go on from these records.
+
 ## Stations and Territory
 
 Seoul''s twenty-five districts are split 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names, stations, and geography stay as they were. The smallest unit of rule is not the district but the station: a subway station together with the fortified ground above it. A station is worth more the more transfer lines it has and the deeper it goes, and above-ground stations are worth least. The district-by-district table is in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Offices and Ranks](/wiki/Offices-and-Ranks/). How the factions appear on the map is explained in [World Map](/wiki/World-and-Subway-Layers/) and [The Structure of the World Map](/wiki/World-Map-Construction/).
@@ -28363,6 +28367,10 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 - **아크**(Arc): 강남 4구. 자유도시에서 갈라져 나왔고, 엔지니어 출신 교주 고예진이 이끈다.
 
 가문이 세 세력 안에서 자리를 잇는 방식은 [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/)이 다룬다. 결핍 때문에 자식이 부모의 일을 이어 하게 됐고, 그렇게 수직 계층이 굳었다.
+
+## 주인공과 시점
+
+<a id="world-narrative-atlas-protagonists"></a>주요 서사는 세 주인공의 시점(POV)으로 진행된다. 현재 주인공은 정부의 대통령 [김연규](/wiki/people/person-1007/), 자유도시들의 이사회장 [이일섭](/wiki/people/person-0998/), 아크의 교주 [고예진](/wiki/people/person-1018/)이다. 세 사람은 각자 자기 세력 안에서 같은 겨울을 보고, 서로 다른 이해관계로 같은 사건을 겪는다. 이 총람과 연표·세력·인물 문서는 시점 밖의 기록이며, 세 주인공의 이야기는 이 기록 위에서 이어진다.
 
 ## 역과 영토
 
