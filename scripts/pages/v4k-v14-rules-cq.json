@@ -1,0 +1,131 @@
+{
+ "rules": [
+  {
+   "id": "lcq-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "양부 실종 뒤에도 사본을 열지 않았다.",
+   "to": ""
+  },
+  {
+   "id": "lcq-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "원본 함의 봉인만 확인하였다.",
+   "to": ""
+  },
+  {
+   "id": "lcq-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 원본 함의 봉인만 확인하였다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lcq-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0167",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Anecdote. Titles and ambitions are not treated as accomplished authority or results.",
+   "to": "Title: Government Council Record Courier of the Government."
+  },
+  {
+   "id": "lcq-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0240",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.1\\.basis$",
+   "from": "최지우의 원본 탐색에 공백 칸을 넘기며",
+   "to": ""
+  },
+  {
+   "id": "lcq-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.description$",
+   "from": "일화. 2125년 밀수 연통 조각을 접수해 어느 환기구에 달았는지 적는 대장을 남겼다. 이 일로 경매 서기 자리의 서명이 장부에 올랐다.",
+   "to": "직함은 경매 서기."
+  },
+  {
+   "id": "lcq-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "이 일로 경매 서기 자리의 서명이 장부에 올랐다.",
+   "to": ""
+  },
+  {
+   "id": "lcq-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 이 일로 경매 서기 자리의 서명이 장부에 올랐다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lcq-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0797",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.야망$",
+   "from": "인준 기록관 자리에서 인준 장부 인수인계·연속 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.",
+   "to": ""
+  },
+  {
+   "id": "lcq-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0797",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**야망.** 인준 기록관 자리에서 인준 장부 인수인계·연속 기록을 이어 서울특별시 지방공무원 조직의 장부가 당직 사이에 끊기지 않게 한다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lcq-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 2125년 고은하는 역사 화재 때 인명 장부부터 꺼내 들고 나왔다. 이 일로 공방 서기 자리의 서명이 장부에 올랐다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lcq-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0115",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 2125년 기하겸은 증인 두 명의 말이 갈라지자 공개 대질을 열었다. 이 일로 민병 조장 자리의 서명이 장부에 올랐다.\n\n",
+   "to": ""
+  }
+ ]
+}

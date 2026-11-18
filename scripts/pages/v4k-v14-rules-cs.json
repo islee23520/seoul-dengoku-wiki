@@ -1,0 +1,36 @@
+{
+ "rules": [
+  {
+   "id": "lcs-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.2\\.basis$",
+   "from": "사본 함 인계 기록을 심사",
+   "to": ""
+  },
+  {
+   "id": "lcs-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0889",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "Cha Donghwan wants to protect the original of the restoration service roster demanded by the guard corps and to leave only the time of the demand and the number of guards as a confirmation record.",
+   "to": ""
+  },
+  {
+   "id": "lcs-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0889",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Ambition.** Cha Donghwan wants to protect the original of the restoration service roster demanded by the guard corps and to leave only the time of the demand and the number of guards as a confirmation record.\n\n",
+   "to": ""
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "rules": [
+  {
+   "id": "lcp-1",
+   "file": "050",
+   "key": "person-0110",
+   "col": "title",
+   "from": "Scribe of the Three Wills Workshop",
+   "to": "Workshop Scribe",
+   "expect": 1
+  },
+  {
+   "id": "lcp-2",
+   "file": "050",
+   "key": "person-0110",
+   "col": "title_ko",
+   "from": "세 유언 공방 서기",
+   "to": "공방 서기",
+   "expect": 1
+  },
+  {
+   "id": "lcp-3",
+   "file": "050",
+   "key": "person-0110",
+   "col": "position",
+   "from": "Scribe of the Three Wills Workshop",
+   "to": "Workshop Scribe",
+   "expect": 1
+  },
+  {
+   "id": "lcp-4",
+   "file": "050",
+   "key": "person-0110",
+   "col": "position_ko",
+   "from": "세 유언 공방 서기",
+   "to": "공방 서기",
+   "expect": 1
+  },
+  {
+   "id": "lcp-5",
+   "file": "050",
+   "key": "person-0110",
+   "col": "occupation",
+   "from": "Keeping and Logging Access to Will Copies",
+   "to": "Keeping and Logging Access to Records",
+   "expect": 1
+  },
+  {
+   "id": "lcp-6",
+   "file": "050",
+   "key": "person-0110",
+   "col": "occupation_ko",
+   "from": "유언 사본 보관·열람 기록",
+   "to": "기록 보관·열람 기록",
+   "expect": 1
+  }
+ ]
+}

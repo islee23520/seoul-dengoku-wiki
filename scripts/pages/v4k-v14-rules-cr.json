@@ -1,0 +1,158 @@
+{
+ "rules": [
+  {
+   "id": "lcr-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0031",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.0\\.basis$",
+   "from": "Bak Haeun shows Gim Nayul the seal record of the parts crate attached to the restoration-service roster copy. Gim Nayul checks the work-crew shifts and citizenship registration records to find where service listed as payment for parts and actual union labor were treated as the same line.",
+   "to": "Gim Nayul checks the work-crew shifts and citizenship registration records to find where service listed as payment for parts and actual union labor were treated as the same line."
+  },
+  {
+   "id": "lcr-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0031",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.0\\.basis$",
+   "from": "박하은은 복구복무 명부 사본에 붙인 부품 상자의 봉인 기록을 김나율에게 보여 준다. 김나율은 작업반 교대와 시민권 등록 기록을 확인해, 부품 대가로 적힌 복무와 실제 조합 노동이 같은 줄로 취급된 곳을 찾는다.",
+   "to": "김나율은 작업반 교대와 시민권 등록 기록을 확인해, 부품 대가로 적힌 복무와 실제 조합 노동이 같은 줄로 취급된 곳을 찾는다."
+  },
+  {
+   "id": "lcr-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.2\\.basis$",
+   "from": "Examined the handover record of the copy box",
+   "to": ""
+  },
+  {
+   "id": "lcr-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "양부에게 펌프 정비를 배웠지만 오씨 집안의 일에는 나서지 않았다. 실종 다음 교대에 사본 함을 열지 않고 원본 봉인만 확인해 증인 칸에 남겼다.",
+   "to": "양부에게 펌프 정비를 배웠지만 오씨 집안의 일에는 나서지 않았다."
+  },
+  {
+   "id": "lcr-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "한재목에게서 차량기지 공방의 부품을 받아 기체 수리에 쓴다. 겨울 연료 몫과 초소 당직 순번을 두고 경비대원들과 자주 의논한다.\n\n- 소속: Arc\n- 생업: 복구복무 명부·부품 대가 조정\n- 품계: 사령관\n- 직함: 동방사 사령관\n- 배우진은 암사2동과 연결된 복구복무 명부와 부품 대가 조정 업무를 맡는다. 암사역 직영지와 관련된 일에서도 창동방호가 차단문 열쇠는 이홍원이 관리한다.\n- 배우진은 암사와 강일동 초소의 겨울 소등 기록과 연료 재고를 직접 확인하고, 부서진 기체 부품은 자유도시 공방에 요청한다.\n- 배우진은 고덕2동과 연결된 고덕기지 군사 감독을 맡는다. 고덕역과 기지는 서로 다른 시설이다.",
+   "to": "한재목에게서 차량기지 공방의 부품을 받아 기체 수리에 쓴다. 겨울 연료 몫과 초소 당직 순번을 두고 경비대원들과 자주 의논한다.\n\n- 소속: Arc\n- 생업: 복구복무 명부·부품 대가 조정\n- 품계: 사령관\n- 직함: 동방사 사령관\n- 암사역 직영지와 관련된 일에서도 창동방호가 차단문 열쇠는 이홍원이 관리한다.\n- 배우진은 암사와 강일동 초소의 겨울 소등 기록과 연료 재고를 직접 확인하고, 부서진 기체 부품은 자유도시 공방에 요청한다.\n- 배우진은 고덕2동과 연결된 고덕기지 군사 감독을 맡는다. 고덕역과 기지는 서로 다른 시설이다."
+  },
+  {
+   "id": "lcr-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "**생애.** 배우진은 2083년 흥해 배씨 동방사 세습 가문에서 태어났다. 가문은 암사와 강일동, 상일제1동·상일제2동, 명일1동·명일2동 일대를 소총으로 지킨다. 사령관 자리는 가문이 세습한다. Arc에는 공장도 병원도 없어서 부서진 기체와 총기의 부품은 자유도시 공방에 부탁해야 하고, 배우진은 겨울마다 연료와 부품 재고를 직접 센다. 불빛과 열은 바깥 기계를 불러들이므로, 소등 규칙을 어긴 초소는 직접 찾아가 점검한다.\n**관직.** 품계 사령관. 직함은 동방사 사령관. 동방사는 아크의 세습 소총 근위대다. 생업은 복구복무 명부·부품 대가 조정이다.\n**일화.** 강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다. 그 명부로 시민권을 부여할 수 없었고, 호위의 빚만 남았다.\n**가문.** 가문은 초소 순번표와 겨울 연료 장부를 함께 맡는다. 소등 점검 기록은 당직 경비대가 가문의 장부와 따로 적는다.\n**관계.** 한재목에게서 차량기지 공방의 부품을 받아 기체 수리에 쓴다. 겨울 연료 몫과 초소 당직 순번을 두고 경비대원들과 자주 의논한다.\n\n- 소속: Arc\n- 생업: 복구복무 명부·부품 대가 조정\n- 품계: 사령관\n- 직함: 동방사 사령관\n- 배우진은 암사2동과 연결된 복구복무 명부와 부품 대가 조정 업무를 맡는다. 암사역 직영지와 관련된 일에서도 창동방호가 차단문 열쇠는 이홍원이 관리한다.\n- 배우진은 암사와 강일동 초소의 겨울 소등 기록과 연료 재고를 직접 확인하고, 부서진 기체 부품은 자유도시 공방에 요청한다.\n- 배우진은 고덕2동과 연결된 고덕기지 군사 감독을 맡는다. 고덕역과 기지는 서로 다른 시설이다.",
+   "to": "**생애.** 배우진은 2083년 흥해 배씨 동방사 세습 가문에서 태어났다. 가문은 암사와 강일동, 상일제1동·상일제2동, 명일1동·명일2동 일대를 소총으로 지킨다. 사령관 자리는 가문이 세습한다. Arc에는 공장도 병원도 없어서 부서진 기체와 총기의 부품은 자유도시 공방에 부탁해야 하고, 배우진은 겨울마다 연료와 부품 재고를 직접 센다. 불빛과 열은 바깥 기계를 불러들이므로, 소등 규칙을 어긴 초소는 직접 찾아가 점검한다.\n**관직.** 품계 사령관. 직함은 동방사 사령관. 동방사는 아크의 세습 소총 근위대다. 생업은 복구복무 명부·부품 대가 조정이다.\n**일화.** 강민서가 부품 상자를 봉해 돌려보낸 뒤, 배우진은 등록 명부를 병조 함으로 옮겼다. 그 명부로 시민권을 부여할 수 없었고, 호위의 빚만 남았다.\n**가문.** 가문은 초소 순번표와 겨울 연료 장부를 함께 맡는다. 소등 점검 기록은 당직 경비대가 가문의 장부와 따로 적는다.\n**관계.** 한재목에게서 차량기지 공방의 부품을 받아 기체 수리에 쓴다. 겨울 연료 몫과 초소 당직 순번을 두고 경비대원들과 자주 의논한다.\n\n- 소속: Arc\n- 생업: 복구복무 명부·부품 대가 조정\n- 품계: 사령관\n- 직함: 동방사 사령관\n- 암사역 직영지와 관련된 일에서도 창동방호가 차단문 열쇠는 이홍원이 관리한다.\n- 배우진은 암사와 강일동 초소의 겨울 소등 기록과 연료 재고를 직접 확인하고, 부서진 기체 부품은 자유도시 공방에 요청한다.\n- 배우진은 고덕2동과 연결된 고덕기지 군사 감독을 맡는다. 고덕역과 기지는 서로 다른 시설이다."
+  },
+  {
+   "id": "lcr-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "Born in the generation of 2126. Grew up at the Cheongnyangni Station freight platform. The Auction Clerk post opened through a public re-inspection of the scales.\n- Song Dohyeon handles receiving smuggled stove flues and writing the vent ledger in Cheongnyangni-dong.",
+   "to": "Born in the generation of 2126. Grew up at the Cheongnyangni Station freight platform. The Auction Clerk post opened through a public re-inspection of the scales.\n-"
+  },
+  {
+   "id": "lcr-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "Leaves the smuggled stove-flue vent ledger in the handover record of his own post, passing it on to the next duty shift.",
+   "to": ""
+  },
+  {
+   "id": "lcr-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "He chooses first not to break the duty shift. He trusts a single line in the ledger over loud talk.\n\n- Affiliation: The Government\n- Rank: Ordinary Citizen\n- Livelihood:\n- Appearance: Height 183 cm, weight 70 kg. Has a slim build with broad shoulders and long limbs. Distinguished by fair skin, black hair, light brown eyes and a straight nose bridge, and gives a calm, somewhat cool impression.\n- Title: Auction Clerk\n**Life.** Born in the generation of 2126. Grew up at the Cheongnyangni Station freight platform. The Auction Clerk post opened through a public re-inspection of the scales.\n- Song Dohyeon handles receiving smuggled stove flues and writing the vent ledger in Cheongnyangni-dong.\n\n**Office.** Rank: Ordinary Citizen. Title: Auction Clerk. Hands over only the keys and records of his own post, and does not invent authority he does not have.\n\n**Relations.** Leaves the smuggled stove-flue vent ledger in the handover record of his own post, passing it on to the next duty shift.\n\n**Ambition.** To keep the Government's books unbroken from the Auction Clerk post.\n\n**Intervention.** Can bring in a witness to the watch handover or expose the empty key.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority −10 | Openness 30 | Force −10 | Materialism 90 | Community −25 | Principle −40 | Publicity 20 | Qualification 10 | Dispersion 10 | Transformation 10\n- Desires: Craving 0 | Possessiveness −40 | Risk −30 | Display 30 | Persistence 30 | Orientation opposite-sex | Bonding monogamous\n:::",
+   "to": "He chooses first not to break the duty shift. He trusts a single line in the ledger over loud talk.\n\n- Affiliation: The Government\n- Rank: Ordinary Citizen\n- Livelihood:\n- Appearance: Height 183 cm, weight 70 kg. Has a slim build with broad shoulders and long limbs. Distinguished by fair skin, black hair, light brown eyes and a straight nose bridge, and gives a calm, somewhat cool impression.\n- Title: Auction Clerk\n**Life.** Born in the generation of 2126. Grew up at the Cheongnyangni Station freight platform. The Auction Clerk post opened through a public re-inspection of the scales.\n-\n\n**Office.** Rank: Ordinary Citizen. Title: Auction Clerk. Hands over only the keys and records of his own post, and does not invent authority he does not have.\n\n**Ambition.** To keep the Government's books unbroken from the Auction Clerk post.\n\n**Intervention.** Can bring in a witness to the watch handover or expose the empty key.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority −10 | Openness 30 | Force −10 | Materialism 90 | Community −25 | Principle −40 | Publicity 20 | Qualification 10 | Dispersion 10 | Transformation 10\n- Desires: Craving 0 | Possessiveness −40 | Risk −30 | Display 30 | Persistence 30 | Orientation opposite-sex | Bonding monogamous\n:::"
+  },
+  {
+   "id": "lcr-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "2126년 세대. 청량리역 화물 승강장에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n- 송도현은 청량리동에서 밀수 연통 접수·환기구 대장 작성 업무를 맡는다.",
+   "to": "2126년 세대. 청량리역 화물 승강장에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n-"
+  },
+  {
+   "id": "lcr-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "밀수 연통 환기구 대장을 자기 직위의 인계 기록에 남겨 다음 당직으로 잇는다.",
+   "to": ""
+  },
+  {
+   "id": "lcr-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0719",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 정부\n- 품계: 일반 시민\n- 생업: 밀수 연통 접수·환기구 대장 작성\n- 외형: 신장 183cm, 체중 70kg. 넓은 어깨와 긴 팔다리를 지닌 날씬한 체형이다. 흰 피부와 검은 머리, 밝은 갈색 눈, 곧은 콧대가 특징이며, 차분하고 다소 서늘한 인상을 준다.\n- 직함: 경매 서기\n**생애.** 2126년 세대. 청량리역 화물 승강장에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n- 송도현은 청량리동에서 밀수 연통 접수·환기구 대장 작성 업무를 맡는다.\n\n**관직.** 품계 일반 시민. 직함은 경매 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**관계.** 밀수 연통 환기구 대장을 자기 직위의 인계 기록에 남겨 다음 당직으로 잇는다.\n\n**야망.** 경매 서기 자리에서 정부의 장부를 끊기지 않게 잇는다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −10 | 물질 90 | 공동 −25 | 원칙 −40 | 공개 20 | 자격 10 | 분산 10 | 변혁 10\n- 욕망: 갈망 0 | 독점 −40 | 위험 −30 | 과시 30 | 지속 30 | 지향 이성 | 결합 단혼\n:::",
+   "to": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 정부\n- 품계: 일반 시민\n- 생업: 밀수 연통 접수·환기구 대장 작성\n- 외형: 신장 183cm, 체중 70kg. 넓은 어깨와 긴 팔다리를 지닌 날씬한 체형이다. 흰 피부와 검은 머리, 밝은 갈색 눈, 곧은 콧대가 특징이며, 차분하고 다소 서늘한 인상을 준다.\n- 직함: 경매 서기\n**생애.** 2126년 세대. 청량리역 화물 승강장에서 자랐다. 경매 서기 자리는 저울 재점검 공개로 열렸다.\n-\n\n**관직.** 품계 일반 시민. 직함은 경매 서기. 자기 직위의 열쇠와 기록만 넘기고, 없는 권한은 만들지 않는다.\n\n**야망.** 경매 서기 자리에서 정부의 장부를 끊기지 않게 잇는다.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −10 | 개방 30 | 무력 −10 | 물질 90 | 공동 −25 | 원칙 −40 | 공개 20 | 자격 10 | 분산 10 | 변혁 10\n- 욕망: 갈망 0 | 독점 −40 | 위험 −30 | 과시 30 | 지속 30 | 지향 이성 | 결합 단혼\n:::"
+  },
+  {
+   "id": "lcr-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0889",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.야망$",
+   "from": "차동환은 경비대가 요구한 복구복무 명부의 원본을 지키고 요구 시각과 인원만 확인 기록으로 남기려 한다.",
+   "to": ""
+  },
+  {
+   "id": "lcr-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0889",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "차동환은 경비대의 명부 요구를 기록하되 시민권 원본 자체를 군사호적 사본으로 내주지 않는다.\n\n- 소속: 자유도시\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 차동환은 구로2동 공방 기록 당직에서 경비대가 요구한 복구복무자 명부를 당직 열쇠로 잠근다. 찾아온 시각과 인원만 등기 기록에 남겨 강민서에게 보내고, 김나율의 시민권 원본은 다음 서기에게 인계한다.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관.\n\n**일화.** 경비대가 공방에 들어와 복구복무자 명단을 내놓으라고 한다. 차동환은 명단을 기록관 당직의 열쇠로 잠가 두고, 경비대가 찾아온 시각과 인원을 등기 기록에 옮겨 강민서에게 보낸다.\n\n**관계.** 차동환은 명단을 요구한 경비대의 시각·인원 기록을 김나율에게 전한다. 김나율은 교대와 시민권 등록을 확인해 복구복무 명단이 군사호적 사본으로 쓰인 흔적을 살핀다.\n\n**야망.** 차동환은 경비대가 요구한 복구복무 명부의 원본을 지키고 요구 시각과 인원만 확인 기록으로 남기려 한다.\n\n**공포.** 경비대의 명부 요구 시각을 남기지 못해 김나율이 시민권 원본의 군사호적 전용을 알아채지 못하는 것.\n\n**개입.** 플레이어는 차동환과 명부를 당직 열쇠로 잠그거나 경비대의 방문 기록을 김나율에게 전할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 0 | 무력 −5 | 물질 45 | 공동 50 | 원칙 30 | 공개 35 | 자격 50 | 분산 30 | 변혁 20\n- 욕망: 갈망 −10 | 독점 −15 | 위험 −35 | 과시 0 | 지속 5 | 지향 동성 | 결합 비독점\n:::",
+   "to": "차동환은 경비대의 명부 요구를 기록하되 시민권 원본 자체를 군사호적 사본으로 내주지 않는다.\n\n- 소속: 자유도시\n- 생업: 등기·기록\n- 품계: 조합원\n- 직함: 복구복무 기록관\n**생애.** 2126년 세대. 서울역 등기소에서 자랐다. 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.\n- 업무 위치: 구로2동. 차동환은 구로2동 공방 기록 당직에서 경비대가 요구한 복구복무자 명부를 당직 열쇠로 잠근다. 찾아온 시각과 인원만 등기 기록에 남겨 강민서에게 보내고, 김나율의 시민권 원본은 다음 서기에게 인계한다.\n\n**관직.** 품계 조합원. 직함은 복구복무 기록관.\n\n**일화.** 경비대가 공방에 들어와 복구복무자 명단을 내놓으라고 한다. 차동환은 명단을 기록관 당직의 열쇠로 잠가 두고, 경비대가 찾아온 시각과 인원을 등기 기록에 옮겨 강민서에게 보낸다.\n\n**관계.** 차동환은 명단을 요구한 경비대의 시각·인원 기록을 김나율에게 전한다. 김나율은 교대와 시민권 등록을 확인해 복구복무 명단이 군사호적 사본으로 쓰인 흔적을 살핀다.\n\n**공포.** 경비대의 명부 요구 시각을 남기지 못해 김나율이 시민권 원본의 군사호적 전용을 알아채지 못하는 것.\n\n**개입.** 플레이어는 차동환과 명부를 당직 열쇠로 잠그거나 경비대의 방문 기록을 김나율에게 전할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −30 | 개방 0 | 무력 −5 | 물질 45 | 공동 50 | 원칙 30 | 공개 35 | 자격 50 | 분산 30 | 변혁 20\n- 욕망: 갈망 −10 | 독점 −15 | 위험 −35 | 과시 0 | 지속 5 | 지향 동성 | 결합 비독점\n:::"
+  }
+ ]
+}
