@@ -4,8 +4,8 @@
 INSERT INTO map_meta (key, value) VALUES ('width', '1200');
 INSERT INTO map_meta (key, value) VALUES ('height', '980');
 INSERT INTO map_meta (key, value) VALUES ('projection', '{"crs":"EPSG:5179","minEast":935053.5047348624,"maxEast":972046.1952999986,"minNorth":1936739.1496000234,"maxNorth":1966943.625500012}');
-INSERT INTO map_meta (key, value) VALUES ('epoch', 'Opening Day of the Third Water Supply Contract');
-INSERT INTO map_meta (key, value) VALUES ('epoch_ko', '세 번째 급수계약 개막일');
+INSERT INTO map_meta (key, value) VALUES ('epoch', 'Opening, winter 2126');
+INSERT INTO map_meta (key, value) VALUES ('epoch_ko', '2126년 겨울 개막');
 INSERT INTO map_meta (key, value) VALUES ('attribution', 'Statistics Korea SGIS · vuski/admdongkor (CC BY 4.0), © OpenStreetMap contributors (ODbL). Mapzen/USGS terrain.');
 INSERT INTO map_meta (key, value) VALUES ('attribution_ko', '통계청 SGIS · vuski/admdongkor (CC BY 4.0), © OpenStreetMap contributors (ODbL). Mapzen/USGS 지형.');
 INSERT INTO map_meta (key, value) VALUES ('major_station_ids', '["강남","공덕","광화문","구의","녹사평","명동","삼성","수서","신내","안국","암사","양재","양평","여의도","왕십리","용산","제기동","Guro"]');

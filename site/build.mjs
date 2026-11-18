@@ -311,7 +311,7 @@ for (const L of [UI.en, UI.ko]) {
   const S = L === UI.ko ? STR.ko : STR.en;
   const rows = raw.people.map((p) => [p.id, g(p, 'name'), L === UI.ko ? p.name : p.name_ko, g(p, 'title'), g(p, 'position'), g(p, 'rank'), p.tier, g(p, 'occupation'), g(p, 'gender'), g(p, 'stage'), p.state_id, g(p, 'state_name'), p.faction_id]);
   const dataset = {
-    labels: { ...S.f, search: S.search, searchPh: S.searchPh, filters: S.filters, all: S.all, reset: S.reset, results: L === UI.ko ? '명' : 'results', none: L === UI.ko ? '조건에 맞는 인물이 없습니다.' : 'No people match these filters.', more: L === UI.ko ? '더 보기' : 'Show more', loading: L === UI.ko ? '불러오는 중…' : 'Loading…', failed: L === UI.ko ? '인물 목록을 불러오지 못했습니다.' : 'Could not load the people list.', retry: L === UI.ko ? '다시 시도' : 'Retry', occupationPh: L === UI.ko ? '예: 급수' : 'e.g. water', ...S.cols },
+    labels: { ...S.f, search: S.search, searchPh: S.searchPh, filters: S.filters, all: S.all, reset: S.reset, results: L === UI.ko ? '명' : 'results', none: L === UI.ko ? '조건에 맞는 인물이 없습니다.' : 'No people match these filters.', more: L === UI.ko ? '더 보기' : 'Show more', loading: L === UI.ko ? '불러오는 중…' : 'Loading…', failed: L === UI.ko ? '인물 목록을 불러오지 못했습니다.' : 'Could not load the people list.', retry: L === UI.ko ? '다시 시도' : 'Retry', occupationPh: L === UI.ko ? '예: 정비' : 'e.g. maintenance', ...S.cols },
     factions: raw.factions.filter((x) => raw.states.some((st) => st.faction_id === x.id)).map((x) => ({ id: x.id, name: g(x, 'name') })),
     states: raw.states.map((st) => ({ id: st.id, name: g(st, 'name') })),
     tiers: [...new Set(raw.people.map((p) => p.tier))].sort(),
