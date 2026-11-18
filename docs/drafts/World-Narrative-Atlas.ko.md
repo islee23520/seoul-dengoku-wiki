@@ -17,6 +17,10 @@ model: cpa/claude-opus-5-5
 
 가문이 세 세력 안에서 자리를 잇는 방식은 [가문과 세 세력](/wiki/Chaebol-Houses-and-Century-Factions/)이 다룬다. 결핍 때문에 자식이 부모의 일을 이어 하게 됐고, 그렇게 수직 계층이 굳었다.
 
+## 주인공과 시점
+
+<a id="world-narrative-atlas-protagonists"></a>주요 서사는 세 주인공의 시점(POV)으로 진행된다. 현재 주인공은 정부의 대통령 [김연규](/wiki/people/person-1007/), 자유도시들의 이사회장 [이일섭](/wiki/people/person-0998/), 아크의 교주 [고예진](/wiki/people/person-1018/)이다. 세 사람은 각자 자기 세력 안에서 같은 겨울을 보고, 서로 다른 이해관계로 같은 사건을 겪는다. 이 총람과 연표·세력·인물 문서는 시점 밖의 기록이며, 세 주인공의 이야기는 이 기록 위에서 이어진다.
+
 ## 역과 영토
 
 서울의 스물다섯 구는 정부 14, 자유도시 7, 아크 4로 나뉜다. 지명과 역과 지리는 그대로 남는다. 다스림의 가장 작은 단위는 구가 아니라 역이다. 역은 지하철역과 그 위 지상 성채 영역을 함께 이른다. 역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높고, 지상역은 가장 낮다. 구별 배정표는 [서울의 세 세력](/wiki/Sixteen-States/)과 [관직](/wiki/Offices-and-Ranks/)에 있다. 지도 위의 세력 표시는 [세계 지도](/wiki/World-and-Subway-Layers/)와 [세계 지도의 구성](/wiki/World-Map-Construction/)이 설명한다.

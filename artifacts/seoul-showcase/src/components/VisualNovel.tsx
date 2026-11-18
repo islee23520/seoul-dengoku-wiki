@@ -268,8 +268,8 @@ function Figure({ id, side, lit, speaking, leaving }: { id: SpeakerId; side: "le
         <div className="breathe relative h-full w-full">
           {/* Mirror wrapper is separate from motion transforms: right-side figures face left, toward the conversation. */}
           <div className="absolute inset-0" style={{ transform: side === "right" ? "scaleX(-1)" : undefined }}>
-            <img src={`${BASE}${s.portrait}`} alt={`${s.name.ko} (${s.characterId}) 초상`} className="portrait-mask absolute bottom-0 left-0 h-full w-full object-contain object-bottom transition-[filter] duration-700"
-              style={{ filter: lit ? "saturate(1.02) brightness(1)" : "saturate(0.5) brightness(0.55) blur(1px)" }} draggable={false} />
+            {s.portrait && <img src={`${BASE}${s.portrait}`} alt={`${s.name.ko} (${s.characterId}) 초상`} className="portrait-mask absolute bottom-0 left-0 h-full w-full object-contain object-bottom transition-[filter] duration-700"
+              style={{ filter: lit ? "saturate(1.02) brightness(1)" : "saturate(0.5) brightness(0.55) blur(1px)" }} draggable={false} />}
           </div>
           <div className="absolute inset-x-[15%] bottom-0 h-1/3 bg-gradient-to-t from-[hsl(214_40%_4%)] to-transparent" />
           <div className="absolute inset-0 opacity-0 mix-blend-screen transition-opacity duration-500" style={{ opacity: speaking ? 0.3 : 0, background: `radial-gradient(ellipse at 50% 40%, ${s.tint}, transparent 60%)` }} />
@@ -332,7 +332,7 @@ function ChoiceRow({ onChoose, subs: sb }: { onChoose: (c: ChoiceId) => void; su
         const s = SPEAKERS[o.speaker];
         return (
           <button key={o.id} type="button" onClick={() => onChoose(o.id)} className="rise group relative flex min-h-[170px] min-w-0 items-end overflow-hidden border border-[hsl(var(--parchment)/0.12)] text-left last:sm:col-span-2 last:lg:col-span-1 lg:min-h-[min(56cqh,460px)]" style={{ animationDelay: `${i * 140}ms` }}>
-            <img src={`${BASE}${s.portrait}`} alt="" className="portrait-mask absolute inset-0 h-full w-full object-cover object-top opacity-55 transition-[opacity,transform] duration-700 group-hover:scale-[1.04] group-hover:opacity-100 group-focus-visible:opacity-100" />
+            {s.portrait && <img src={`${BASE}${s.portrait}`} alt="" className="portrait-mask absolute inset-0 h-full w-full object-cover object-top opacity-55 transition-[opacity,transform] duration-700 group-hover:scale-[1.04] group-hover:opacity-100 group-focus-visible:opacity-100" />}
             <div className="absolute inset-0 bg-gradient-to-t from-[hsl(214_40%_4%)] via-[hsl(214_40%_4%/0.3)] to-transparent" />
             <div className="relative min-w-0 p-4">
               <p className="font-mono text-[10px] uppercase tracking-[0.2em]" style={{ color: s.tint }}>{o.label.ko}{sb && ` · ${o.label.en}`}</p>

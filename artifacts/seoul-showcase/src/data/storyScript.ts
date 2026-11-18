@@ -13,11 +13,16 @@
  *
  * Character dialogue is a fictional adaptation (not approved quotation) written
  * only from the public profile facts and canon; it is not a canonical quotation.
+ * Point of view (CANON-BIBLE 2.0.1, owner 2026-11-18): the main story is told from three
+ * protagonists' points of view: Kim Yeon-gyu (Government), I Ilseop (Free Cities) and
+ * Go Ye-jin (Arc). Iyen guides the visitor through the prologue and the three acts; the
+ * choice picks whose point of view to follow, and each ending is spoken by that protagonist.
+ *
  * Open items (why doctors and officers sit on one side only, whether winter is
  * permanent, who holds the upper ranks) are deliberately left unanswered.
  */
 
-export type SpeakerId = "narrator" | "iyen" | "k1007" | "k1003" | "k1009" | "k1008" | "k998";
+export type SpeakerId = "narrator" | "iyen" | "k1007" | "k1003" | "k1009" | "k1008" | "k998" | "k1018";
 export type BgId = "surface" | "namsan" | "tunnel" | "archive" | "railyard" | "platform" | "suseo" | "granary";
 export type ChoiceId = "government" | "free" | "arc";
 
@@ -65,6 +70,11 @@ export const SPEAKERS: Record<SpeakerId, Speaker> = {
     id: "k998", personId: "person-0998", characterId: "K998", name: { ko: "이일섭", en: "I Ilseop" },
     title: { ko: "자유도시 이사회장 · 신경 연결 의술 가문 후계", en: "Chair of the Board of the Free Cities, heir of a neural-link medical house" }, clan: "전의 이씨", rank: "이사회장", state: "자유도시",
     portrait: "portraits/person-0998.webp", tint: "hsl(48 60% 62%)",
+  },
+  k1018: {
+    id: "k1018", personId: "person-1018", characterId: "K1018", name: { ko: "고예진", en: "Go Ye-jin" },
+    title: { ko: "아크 교주 · 엔지니어 출신", en: "Hierophant of the Arc, former engineer" }, rank: "교주", state: "아크",
+    tint: "hsl(280 40% 70%)",
   },
 };
 
@@ -114,6 +124,7 @@ export const SCENES: StoryScene[] = [
     place: { ko: "역 계단", en: "Station stairs" }, year: "2126 겨울", bg: "tunnel",
     lines: [
       N("v6-pro-05", "그리고 백 년이 지났다. 2126년 겨울, 서울 사람들은 아직 역 안에서 산다.", "A hundred years have passed. In the winter of 2126, Seoul's people still live inside its stations."),
+      N("v6-pro-07", "이 겨울의 이야기는 세 사람의 눈으로 이어진다. 정부의 대통령 김연규, 자유도시들의 이사회장 이일섭, 아크의 교주 고예진이다.", "This winter's story is told through three pairs of eyes: Kim Yeon-gyu, President of the Government; I Ilseop, Chair of the Board of the Free Cities; and Go Ye-jin, Hierophant of the Arc.", { caption: { ko: "세 주인공 · 세 시점", en: "Three protagonists, three points of view" } }),
       S("v4-pro-03", "iyen", "여기는 처음이세요? 계단이 얼어 있으니까 난간을 잡고 내려오세요. 저는 이연이에요. 전령으로 일하고 있어요.", "Is this your first time here? The stairs are icy, so hold the rail as you come down. I'm Iyen. I work as a courier.", { cast: ["iyen"], source: "profile" }),
       S("v6-pro-06", "iyen", "조재표 대장 일행의 수행 전령이에요. 대장이 돌아오기 전까지는 제가 서울을 안내할게요.", "I'm the attendant courier of Jo Jaepyo's party. Until the captain gets back, I'll show you around Seoul.", { cast: ["iyen"], source: "profile" }),
       S("v3-pro-04", "iyen", "장갑은 있어요? 없으면 이따 하나 구해 줄게요. 일단 아래로 가요.", "Got gloves? If not, I'll find you a pair later. Let's get below first.", { cast: ["iyen"] }),
@@ -172,6 +183,9 @@ export const SCENES: StoryScene[] = [
       S("v6-a4-07", "k1009", "맞아요. 신도들은 고예진 교주를 메시아라고 불러요. 다만 아크가 붙이는 기계 몸은 단순한 명령만 받아요.", "That's right. The believers call the Hierophant, Go Ye-jin, the Messiah. But the machine bodies the Arc fits take only simple commands.", { cast: ["iyen", "k1009"], source: "faction" }),
       S("v6-a4-08", "iyen", "아크 소프트웨어는 남의 기계도 켜고 끈다면서요?", "I heard the Arc's software can switch other people's machines on and off.", { cast: ["iyen", "k1009"] }),
       S("v6-a4-09", "k1009", "정부의 드론이나 자유도시의 의료 로봇은 그게 있어야 제대로 돌아요. 그래서 아크가 그 힘을 쓸 때마다 다들 의심해요. 백도어가 있는 건 아닌가 하고요.", "The Government's drones and the Free Cities' medical robots need it to run properly. So every time the Arc uses that power, everyone gets suspicious. They wonder whether there's a backdoor.", { cast: ["iyen", "k1009"], source: "faction", caption: { ko: "켜고 끄는 힘 · 백도어 불신", en: "The power to switch on and off · distrust of a backdoor" } }),
+      S("v6-a4-10", "iyen", "교주님, 손님 모시고 왔어요. 아크가 어떤 곳인지 궁금하대요.", "Hierophant, I've brought a visitor. They want to know what the Arc is like.", { cast: ["iyen", "k1018"] }),
+      S("v6-a4-11", "k1018", "고예진입니다. 말씀하실 때 표정과 말이 맞는지부터 보겠습니다. 손해와 이익은 그다음에 따지죠.", "I'm Go Ye-jin. When you speak, I'll first check whether your face matches your words. Gains and losses come after that.", { cast: ["iyen", "k1018"], source: "profile" }),
+      S("v6-a4-12", "k1018", "저는 전력망과 설비를 고치던 엔지니어였습니다. 지금도 무엇이 멈추면 원인부터 찾습니다.", "I was an engineer who repaired power grids and equipment. Even now, when something stops, I look for the cause first.", { cast: ["iyen", "k1018"], source: "profile" }),
     ],
   },
   {
@@ -191,13 +205,13 @@ export const SCENES: StoryScene[] = [
 
 export const CHOICE = {
   id: "crossroad",
-  title: { ko: "어느 세력에 설까", en: "Which Faction?" },
+  title: { ko: "누구의 눈으로 볼까", en: "Whose Eyes?" },
   place: { ko: "환승 통로", en: "Transfer corridor" }, year: "2126 겨울", bg: "tunnel" as BgId,
-  prompt: S("v6-cho-01", "iyen", "정부, 자유도시들, 아크. 셋 다 보셨죠? 이제 어느 쪽에 설지는 당신이 골라요. 길은 제가 안내할게요.", "The Government, the Free Cities, the Arc. You've seen all three. Now you choose which side to stand on. I'll show you the way.", { cast: ["iyen"] }),
+  prompt: S("v6-cho-01", "iyen", "정부, 자유도시들, 아크. 셋 다 보셨죠? 이 겨울을 누구의 눈으로 따라갈지 골라요. 대통령, 이사회장, 교주 가운데 한 사람이에요. 길은 제가 안내할게요.", "The Government, the Free Cities, the Arc. You've seen all three. Now choose whose eyes you'll follow through this winter: the President, the Chair or the Hierophant. I'll show you the way.", { cast: ["iyen"] }),
   options: [
-    { id: "government" as ChoiceId, speaker: "k1007" as SpeakerId, label: { ko: "정부", en: "Government" }, line: { ko: "전차와 장교를 가진 김연규의 정부에 선다.", en: "Stand with Kim Yeon-gyu's Government, which has the tanks and officers." } },
-    { id: "free" as ChoiceId, speaker: "k998" as SpeakerId, label: { ko: "자유도시들", en: "Free Cities" }, line: { ko: "의사를 가진 이일섭의 자유도시에 선다.", en: "Stand with I Ilseop's Free Cities, which have the doctors." } },
-    { id: "arc" as ChoiceId, speaker: "k1009" as SpeakerId, label: { ko: "아크", en: "Arc" }, line: { ko: "신종목의 무전 곁에서 아크의 소프트웨어를 따른다.", en: "Follow the Arc's software, beside Shin Jong-mok's radio." } },
+    { id: "government" as ChoiceId, speaker: "k1007" as SpeakerId, label: { ko: "정부", en: "Government" }, line: { ko: "대통령 김연규의 눈으로, 전차와 장교를 가진 정부를 따라간다.", en: "Follow the Government, which has the tanks and officers, through President Kim Yeon-gyu's eyes." } },
+    { id: "free" as ChoiceId, speaker: "k998" as SpeakerId, label: { ko: "자유도시들", en: "Free Cities" }, line: { ko: "이사회장 이일섭의 눈으로, 의사를 가진 자유도시들을 따라간다.", en: "Follow the Free Cities, which have the doctors, through Chair I Ilseop's eyes." } },
+    { id: "arc" as ChoiceId, speaker: "k1018" as SpeakerId, label: { ko: "아크", en: "Arc" }, line: { ko: "교주 고예진의 눈으로, 남의 기계를 켜고 끄는 아크를 따라간다.", en: "Follow the Arc, which can switch other people's machines on and off, through Hierophant Go Ye-jin's eyes." } },
   ],
 };
 
@@ -219,8 +233,8 @@ export const ENDINGS: Record<ChoiceId, { title: { ko: string; en: string }; bg: 
   arc: {
     title: { ko: "결말 · 아크", en: "Ending · Arc" }, bg: "platform",
     lines: [
-      S("v6-end-arc-01", "k1009", "백야, 백야. 수서에서 응답이 왔어요. 자유도시에서 넘어온 시술자의 손이 느려졌답니다. 태업일 수 있어요. 가족이 자유도시에 남아 있다고 하고요.", "Baekya, Baekya. An answer came in from Suseo. The practitioner who crossed over from the Free Cities has slowed down. It could be a work slowdown. They say his family is still in the Free Cities.", { cast: ["iyen", "k1009"] }),
-      S("v6-end-arc-02", "iyen", "다그치지 말고 사정부터 들어 봐요. 사람 손이 느려진 데는 이유가 있어요.", "Don't push him. Hear him out first. A person's hands don't slow down for no reason.", { cast: ["iyen", "k1009"] }),
+      S("v6-end-arc-01", "k1018", "수서에서 보고가 올라왔습니다. 자유도시에서 넘어온 시술자의 손이 느려졌다고 합니다. 가족이 아직 자유도시에 있다더군요. 태업인지는 아직 판단하지 않겠습니다.", "A report came up from Suseo. The practitioner who crossed over from the Free Cities has slowed down. I'm told his family is still in the Free Cities. I won't decide yet whether it's a slowdown.", { cast: ["iyen", "k1018"] }),
+      S("v6-end-arc-02", "iyen", "다그치지 말고 사정부터 들어 봐요. 사람 손이 느려진 데는 이유가 있어요.", "Don't push him. Hear him out first. A person's hands don't slow down for no reason.", { cast: ["iyen", "k1018"] }),
     ],
   },
 };
