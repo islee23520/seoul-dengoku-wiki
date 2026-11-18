@@ -2181,7 +2181,7 @@ Combat, negotiation, exploration, and non-intervention for personal gain are all
 | Next validation | Solutions that vary by companion; a market missing from the map | Choose one at a time after the first event is confirmed to be fun. |
 | Keep as mood | A history of a station that became a state because the emergency duty never ended; individual responsibility and power | Embed it in daily life and characters'' actions rather than a lesson to be explained. |
 | Deferred | Infiltrating a funeral procession, a ceasefire wedding, broadcasts and wide-area reputation | This is only a list of candidates, not a production request. |
-| Separate agreement | Im Hajun''s life or death, the truth of his disappearance, and the answers and endings of the three wills | This document neither confirms nor overturns the existing central narrative. |
+| Separate agreement | Im Hajun''s life or death and the truth of his disappearance | This document neither confirms nor overturns the existing central narrative. |
 | Rejected | Automatic punishment for prior good deeds, repeated betrayal, indestructible essential characters, forced convergence of choices | Invalidating the player''s plans and causality for the sake of surprise. |
 | Out of scope for this round | A full autonomous character narrative engine, new economic and diplomatic systems | Do not substitute system scale for the fun of small incidents. |
 
@@ -2278,7 +2278,7 @@ The goal the player should remember is the following scene. At first, the door I
 | 다음 검증 | 동행자에 따라 달라지는 해결 방식, 지도에서 빠진 시장 | 첫 사건의 재미가 확인된 뒤 하나씩 선택한다. |
 | 정서로 유지 | 비상근무가 끝나지 않아 국가가 된 역사, 개인의 책임과 권력 | 설명할 교훈이 아니라 생활과 인물의 행동에 담는다. |
 | 보류 | 장례 행렬 잠입, 휴전 결혼식, 방송과 광역 평판 | 후보 목록일 뿐 제작 요청이 아니다. |
-| 별도 합의 | 임하준의 생사, 실종 진실, 세 유언의 정답과 결말 | 기존 중심 서사를 이 문서로 확정하거나 뒤집지 않는다. |
+| 별도 합의 | 임하준의 생사와 실종 진실 | 기존 중심 서사를 이 문서로 확정하거나 뒤집지 않는다. |
 | 기각 | 선행 자동 처벌, 배신 반복, 불사신 필수 인물, 선택의 강제 수렴 | 놀람을 위해 플레이어의 계획과 인과관계를 무효화한다. |
 | 이번 범위 밖 | 전체 인물 자율 서사 엔진, 신규 경제·외교 체계 | 작은 사건의 재미를 시스템 규모로 대신하지 않는다. |
 

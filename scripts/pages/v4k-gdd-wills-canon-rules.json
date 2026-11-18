@@ -1,0 +1,12 @@
+{
+ "rules": [
+  {
+   "id": "canon-w3",
+   "file": "proposals/narrative-direction.json",
+   "from": "임하준의 생사, 실종 진실, 세 유언의 정답과 결말",
+   "to": "임하준의 생사와 실종 진실",
+   "expect": 1,
+   "reason": "세 유언 사건 삭제"
+  }
+ ]
+}

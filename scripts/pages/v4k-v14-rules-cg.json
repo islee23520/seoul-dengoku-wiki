@@ -1,0 +1,136 @@
+{
+ "rules": [
+  {
+   "id": "lcg-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0472",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "Generation of 2126. Grew up in the alleys by the Sinjeong 2-dong underground storeroom. The post of shutter checker opened when he covered a check shift on a night of bitter cold.\n- Work location: Sinjeong 2-dong. On the night of the first cold snap, Im Geonu checks the locks and gaps of the Sinjeong 2-dong entrance shutters all night and hands the check sheet over to the next watch.",
+   "to": "Generation of 2126. Grew up in the alleys by the Sinjeong 2-dong underground storeroom. The post of shutter checker opened when he covered a check shift on a night of bitter cold.\n- Work location: Sinjeong 2-dong."
+  },
+  {
+   "id": "lcg-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0472",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "He picks the side that doesn't break the watch first. He trusts one line in the ledger over loud talk.\n\n- Affiliation: Free City\n- Livelihood: Shutter Check Logging\n- Rank: Clerk\n- Title: Shutter Checker, Sinjeong 2-dong\n**Life.** Generation of 2126. Grew up in the alleys by the Sinjeong 2-dong underground storeroom. The post of shutter checker opened when he covered a check shift on a night of bitter cold.\n- Work location: Sinjeong 2-dong. On the night of the first cold snap, Im Geonu checks the locks and gaps of the Sinjeong 2-dong entrance shutters all night and hands the check sheet over to the next watch.\n\n**Office.** Rank: Clerk. Title: Shutter Checker, Sinjeong 2-dong.\n\n**Relationships.** Matches shutter check sheets with the Sinjeong 2-dong storeroom watch at every shift change.\n\n**Ambition.** From the post of shutter checker, keeps the check sheets unbroken so that one gap of light does not become a danger to all of Sinjeong 2-dong.\n\n**Fear.** That if the shutter-check watch stands empty, light and heat leaking through gaps draw outside machines to Sinjeong 2-dong.\n\n**Intervention.** Can bring in a witness to the watch handover or expose the empty key.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority 55 | Openness −20 | Force 15 | Material 60 | Communal 30 | Principle 5 | Publicity 20 | Credentials −5 | Decentralization −60 | Transformation −15\n- Desires: Craving 5 | Monopoly −10 | Risk −25 | Display 30 | Persistence 30 | Orientation Fluid | Bonding Monogamous\n:::",
+   "to": "He picks the side that doesn't break the watch first. He trusts one line in the ledger over loud talk.\n\n- Affiliation: Free City\n- Livelihood: Shutter Check Logging\n- Rank: Clerk\n- Title: Shutter Checker, Sinjeong 2-dong\n**Life.** Generation of 2126. Grew up in the alleys by the Sinjeong 2-dong underground storeroom. The post of shutter checker opened when he covered a check shift on a night of bitter cold.\n- Work location: Sinjeong 2-dong.\n\n**Office.** Rank: Clerk. Title: Shutter Checker, Sinjeong 2-dong.\n\n**Relationships.** Matches shutter check sheets with the Sinjeong 2-dong storeroom watch at every shift change.\n\n**Ambition.** From the post of shutter checker, keeps the check sheets unbroken so that one gap of light does not become a danger to all of Sinjeong 2-dong.\n\n**Fear.** That if the shutter-check watch stands empty, light and heat leaking through gaps draw outside machines to Sinjeong 2-dong.\n\n**Intervention.** Can bring in a witness to the watch handover or expose the empty key.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority 55 | Openness −20 | Force 15 | Material 60 | Communal 30 | Principle 5 | Publicity 20 | Credentials −5 | Decentralization −60 | Transformation −15\n- Desires: Craving 5 | Monopoly −10 | Risk −25 | Display 30 | Persistence 30 | Orientation Fluid | Bonding Monogamous\n:::"
+  },
+  {
+   "id": "lcg-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0472",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "2126년 세대. 신정2동 지하 창고 골목에서 자랐다. 셔터 점검 담당 자리는 한파 밤의 점검 당번을 대신 맡으며 열렸다.\n- 업무 위치: 신정2동. 임건우는 첫 한파 밤에 신정2동 출입 셔터의 잠금쇠와 틈을 밤새 점검하고 그 점검표를 인계로 다음 당번에게 넘긴다.",
+   "to": "2126년 세대. 신정2동 지하 창고 골목에서 자랐다. 셔터 점검 담당 자리는 한파 밤의 점검 당번을 대신 맡으며 열렸다.\n- 업무 위치: 신정2동."
+  },
+  {
+   "id": "lcg-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0472",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 자유도시\n- 생업: 셔터 점검 기록\n- 품계: 주사\n- 직함: 신정2동 셔터 점검 담당\n**생애.** 2126년 세대. 신정2동 지하 창고 골목에서 자랐다. 셔터 점검 담당 자리는 한파 밤의 점검 당번을 대신 맡으며 열렸다.\n- 업무 위치: 신정2동. 임건우는 첫 한파 밤에 신정2동 출입 셔터의 잠금쇠와 틈을 밤새 점검하고 그 점검표를 인계로 다음 당번에게 넘긴다.\n\n**관직.** 품계 주사. 직함은 신정2동 셔터 점검 담당.\n\n**관계.** 신정2동 창고 당번들과 교대 때마다 셔터 점검표를 맞춘다.\n\n**야망.** 셔터 점검 담당 자리에서 점검표를 끊기지 않게 이어, 한 틈의 빛이 신정2동 전체의 위험이 되지 않게 한다.\n\n**공포.** 셔터 점검 당직이 비면 틈새로 새어 나간 불빛과 열이 바깥 기계를 신정2동 앞으로 불러들이는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −20 | 무력 15 | 물질 60 | 공동 30 | 원칙 5 | 공개 20 | 자격 −5 | 분산 −60 | 변혁 −15\n- 욕망: 갈망 5 | 독점 −10 | 위험 −25 | 과시 30 | 지속 30 | 지향 유동 | 결합 단혼\n:::",
+   "to": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 자유도시\n- 생업: 셔터 점검 기록\n- 품계: 주사\n- 직함: 신정2동 셔터 점검 담당\n**생애.** 2126년 세대. 신정2동 지하 창고 골목에서 자랐다. 셔터 점검 담당 자리는 한파 밤의 점검 당번을 대신 맡으며 열렸다.\n- 업무 위치: 신정2동.\n\n**관직.** 품계 주사. 직함은 신정2동 셔터 점검 담당.\n\n**관계.** 신정2동 창고 당번들과 교대 때마다 셔터 점검표를 맞춘다.\n\n**야망.** 셔터 점검 담당 자리에서 점검표를 끊기지 않게 이어, 한 틈의 빛이 신정2동 전체의 위험이 되지 않게 한다.\n\n**공포.** 셔터 점검 당직이 비면 틈새로 새어 나간 불빛과 열이 바깥 기계를 신정2동 앞으로 불러들이는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −20 | 무력 15 | 물질 60 | 공동 30 | 원칙 5 | 공개 20 | 자격 −5 | 분산 −60 | 변혁 −15\n- 욕망: 갈망 5 | 독점 −10 | 위험 −25 | 과시 30 | 지속 30 | 지향 유동 | 결합 단혼\n:::"
+  },
+  {
+   "id": "lcg-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0712",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "Generation of 2126. Raised beside the Mullae Station storeroom. The post of Food Ledger Keeper opened through a night spent counting stock in the cold.\n- Work location: Mullae Station. In a winter when the cold dragged on, Han Bugu recounted the stock in the Mullae Station food store through the night and handed it over as a list for the next shift to read.",
+   "to": "Generation of 2126. Raised beside the Mullae Station storeroom. The post of Food Ledger Keeper opened through a night spent counting stock in the cold.\n- Work location: Mullae Station."
+  },
+  {
+   "id": "lcg-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0712",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "Han Bugu would rather keep the watch unbroken. Han Bugu trusts a single line in the ledger more than a loud voice.\n\n- Affiliation: Free City\n- Livelihood: Food Stock Ledger Keeping\n- Rank: Clerk\n- Title: Food Ledger Keeper\n**Life.** Generation of 2126. Raised beside the Mullae Station storeroom. The post of Food Ledger Keeper opened through a night spent counting stock in the cold.\n- Work location: Mullae Station. In a winter when the cold dragged on, Han Bugu recounted the stock in the Mullae Station food store through the night and handed it over as a list for the next shift to read.\n\n**Office.** Rank: Clerk. Title: Food Ledger Keeper.\n\n**Relations.** Works at Mullae Station as the food ledger keeper and tells the storeroom shift workers and the mechanics the stock count.\n\n**Ambition.** From the post of Food Ledger Keeper, keeps Mullae Station's stock record connected without a break.\n\n**Fear.** That the food ledger post would stand empty, a stock shortage would go unseen, and a hungry person would end up a hostage of another faction.\n\n**Intervention.** Can bring in a witness to the watch handover or expose the empty key.\n\n::: details Appendix — Ledger Figures\n\n- Values: Authority 45 | Openness −15 | Force 5 | Material 55 | Communal 10 | Principle 10 | Publicity 0 | Qualification 5 | Dispersion −50 | Transformation −15\n- Desires: Craving 50 | Monopoly 10 | Risk 5 | Display 10 | Continuity 35 | Orientation Heterosexual | Bonding Monogamous\n:::",
+   "to": "Han Bugu would rather keep the watch unbroken. Han Bugu trusts a single line in the ledger more than a loud voice.\n\n- Affiliation: Free City\n- Livelihood: Food Stock Ledger Keeping\n- Rank: Clerk\n- Title: Food Ledger Keeper\n**Life.** Generation of 2126. Raised beside the Mullae Station storeroom. The post of Food Ledger Keeper opened through a night spent counting stock in the cold.\n- Work location: Mullae Station.\n\n**Office.** Rank: Clerk. Title: Food Ledger Keeper.\n\n**Relations.** Works at Mullae Station as the food ledger keeper and tells the storeroom shift workers and the mechanics the stock count.\n\n**Ambition.** From the post of Food Ledger Keeper, keeps Mullae Station's stock record connected without a break.\n\n**Fear.** That the food ledger post would stand empty, a stock shortage would go unseen, and a hungry person would end up a hostage of another faction.\n\n**Intervention.** Can bring in a witness to the watch handover or expose the empty key.\n\n::: details Appendix — Ledger Figures\n\n- Values: Authority 45 | Openness −15 | Force 5 | Material 55 | Communal 10 | Principle 10 | Publicity 0 | Qualification 5 | Dispersion −50 | Transformation −15\n- Desires: Craving 50 | Monopoly 10 | Risk 5 | Display 10 | Continuity 35 | Orientation Heterosexual | Bonding Monogamous\n:::"
+  },
+  {
+   "id": "lcg-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0712",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "2126년 세대. 문래역 창고 곁에서 자랐다. 식량 장부 담당 자리는 한파 속에서 재고를 밤새 센 일로 열렸다.\n- 업무 위치: 문래역. 한북우는 한파가 길던 해에 문래역 식량 창고의 재고를 밤새 다시 세고, 다음 교대가 읽을 목록으로 넘긴다.",
+   "to": "2126년 세대. 문래역 창고 곁에서 자랐다. 식량 장부 담당 자리는 한파 속에서 재고를 밤새 센 일로 열렸다.\n- 업무 위치: 문래역."
+  },
+  {
+   "id": "lcg-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0712",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 자유도시\n- 생업: 식량 재고 장부 기록\n- 품계: 주사\n- 직함: 식량 장부 담당\n**생애.** 2126년 세대. 문래역 창고 곁에서 자랐다. 식량 장부 담당 자리는 한파 속에서 재고를 밤새 센 일로 열렸다.\n- 업무 위치: 문래역. 한북우는 한파가 길던 해에 문래역 식량 창고의 재고를 밤새 다시 세고, 다음 교대가 읽을 목록으로 넘긴다.\n\n**관직.** 품계 주사. 직함은 식량 장부 담당이다.\n\n**관계.** 문래역에서 식량 장부 담당으로 일하며 창고 교대 동료와 정비공에게 재고 수를 알린다.\n\n**야망.** 식량 장부 자리에서 문래역의 재고 기록을 끊기지 않게 잇는다.\n\n**공포.** 식량 장부 자리가 비어 재고 부족이 가려지고, 굶주린 사람이 다른 세력의 볼모로 넘어가는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −15 | 무력 5 | 물질 55 | 공동 10 | 원칙 10 | 공개 0 | 자격 5 | 분산 −50 | 변혁 −15\n- 욕망: 갈망 50 | 독점 10 | 위험 5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼\n:::",
+   "to": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 자유도시\n- 생업: 식량 재고 장부 기록\n- 품계: 주사\n- 직함: 식량 장부 담당\n**생애.** 2126년 세대. 문래역 창고 곁에서 자랐다. 식량 장부 담당 자리는 한파 속에서 재고를 밤새 센 일로 열렸다.\n- 업무 위치: 문래역.\n\n**관직.** 품계 주사. 직함은 식량 장부 담당이다.\n\n**관계.** 문래역에서 식량 장부 담당으로 일하며 창고 교대 동료와 정비공에게 재고 수를 알린다.\n\n**야망.** 식량 장부 자리에서 문래역의 재고 기록을 끊기지 않게 잇는다.\n\n**공포.** 식량 장부 자리가 비어 재고 부족이 가려지고, 굶주린 사람이 다른 세력의 볼모로 넘어가는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 45 | 개방 −15 | 무력 5 | 물질 55 | 공동 10 | 원칙 10 | 공개 0 | 자격 5 | 분산 −50 | 변혁 −15\n- 욕망: 갈망 50 | 독점 10 | 위험 5 | 과시 10 | 지속 35 | 지향 이성 | 결합 단혼\n:::"
+  },
+  {
+   "id": "lcg-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0952",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "Generation of 2126. Grew up beside the Daerim Station food store.\n- Work location: Daerim Station. On a winter night with the shutters down, Mun Supmin wrote the Daerim Station food store's stock side by side with the withdrawal requests and handed it to the next shift's ledger.",
+   "to": "Generation of 2126. Grew up beside the Daerim Station food store.\n- Work location: Daerim Station."
+  },
+  {
+   "id": "lcg-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0952",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "Chooses first to keep the duty unbroken. Trusts a single line in the ledger more than loud talk.\n\n- Affiliation: Free City\n- Livelihood: Food Store Intake and Issue\n- Rank: Clerk\n- Title: Store Intake and Issue Keeper\n**Life.** Generation of 2126.\n- Work location: Daerim Station. On a winter night with the shutters down, Mun Supmin wrote the Daerim Station food store's stock side by side with the withdrawal requests and handed it to the next shift's ledger.\n\n**Office.** Rank: Clerk. Title: Store Intake and Issue Keeper.\n\n**Relations.** Works at Daerim Station as the store intake and issue keeper and tells residents asking for withdrawals and storeroom shift workers the stock count.\n\n**Ambition.** From the post of Store Intake and Issue Keeper, keeps Daerim Station's food ledger linked without a break.\n\n**Fear.** That the store intake and issue duty would stand empty, a food shortage would go unseen, and a hungry person would end up a hostage of another faction.\n\n**Intervention.** Can bring in a witness to the watch handover or expose the empty key.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority 55 | Openness −5 | Force 15 | Material 45 | Communal 20 | Principle 5 | Publicity 5 | Qualification −5 | Dispersion −50 | Transformation −30\n- Desires: Craving 15 | Monopoly 0 | Risk 10 | Display −10 | Persistence 15 | Orientation: opposite-sex | Bonding: multi-partner\n:::",
+   "to": "Chooses first to keep the duty unbroken. Trusts a single line in the ledger more than loud talk.\n\n- Affiliation: Free City\n- Livelihood: Food Store Intake and Issue\n- Rank: Clerk\n- Title: Store Intake and Issue Keeper\n**Life.** Generation of 2126.\n- Work location: Daerim Station.\n\n**Office.** Rank: Clerk. Title: Store Intake and Issue Keeper.\n\n**Relations.** Works at Daerim Station as the store intake and issue keeper and tells residents asking for withdrawals and storeroom shift workers the stock count.\n\n**Ambition.** From the post of Store Intake and Issue Keeper, keeps Daerim Station's food ledger linked without a break.\n\n**Fear.** That the store intake and issue duty would stand empty, a food shortage would go unseen, and a hungry person would end up a hostage of another faction.\n\n**Intervention.** Can bring in a witness to the watch handover or expose the empty key.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority 55 | Openness −5 | Force 15 | Material 45 | Communal 20 | Principle 5 | Publicity 5 | Qualification −5 | Dispersion −50 | Transformation −30\n- Desires: Craving 15 | Monopoly 0 | Risk 10 | Display −10 | Persistence 15 | Orientation: opposite-sex | Bonding: multi-partner\n:::"
+  },
+  {
+   "id": "lcg-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0952",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "2126년 세대. 대림역 식량 저장고 곁에서 자랐다.\n- 업무 위치: 대림역. 문숲민은 셔터를 내린 겨울밤에 대림역 식량 저장고의 재고와 반출 요청을 맞대어 적고 다음 교대 장부에 넘긴다.",
+   "to": "2126년 세대. 대림역 식량 저장고 곁에서 자랐다.\n- 업무 위치: 대림역."
+  },
+  {
+   "id": "lcg-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0952",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 자유도시\n- 생업: 식량 저장고 출납\n- 품계: 주사\n- 직함: 저장고 출납 담당\n**생애.** 2126년 세대. 대림역 식량 저장고 곁에서 자랐다.\n- 업무 위치: 대림역. 문숲민은 셔터를 내린 겨울밤에 대림역 식량 저장고의 재고와 반출 요청을 맞대어 적고 다음 교대 장부에 넘긴다.\n\n**관직.** 품계 주사. 직함은 저장고 출납 담당이다.\n\n**관계.** 대림역에서 저장고 출납 담당으로 일하며 반출을 청하는 주민과 창고 교대 동료에게 재고 수를 알린다.\n\n**야망.** 저장고 출납 자리에서 대림역의 식량 장부를 끊기지 않게 잇는다.\n\n**공포.** 저장고 출납 당직이 비어 식량 부족이 가려지고, 굶주린 사람이 다른 세력의 볼모로 넘어가는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −5 | 무력 15 | 물질 45 | 공동 20 | 원칙 5 | 공개 5 | 자격 −5 | 분산 −50 | 변혁 −30\n- 욕망: 갈망 15 | 독점 0 | 위험 10 | 과시 −10 | 지속 15 | 지향 이성 | 결합 다자\n:::",
+   "to": "당직을 끊지 않는 쪽을 먼저 고른다. 큰소리보다 장부 한 줄을 믿는다.\n\n- 소속: 자유도시\n- 생업: 식량 저장고 출납\n- 품계: 주사\n- 직함: 저장고 출납 담당\n**생애.** 2126년 세대. 대림역 식량 저장고 곁에서 자랐다.\n- 업무 위치: 대림역.\n\n**관직.** 품계 주사. 직함은 저장고 출납 담당이다.\n\n**관계.** 대림역에서 저장고 출납 담당으로 일하며 반출을 청하는 주민과 창고 교대 동료에게 재고 수를 알린다.\n\n**야망.** 저장고 출납 자리에서 대림역의 식량 장부를 끊기지 않게 잇는다.\n\n**공포.** 저장고 출납 당직이 비어 식량 부족이 가려지고, 굶주린 사람이 다른 세력의 볼모로 넘어가는 것.\n\n**개입.** 당직 인수 증인을 세우거나 빈 열쇠를 폭로할 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 55 | 개방 −5 | 무력 15 | 물질 45 | 공동 20 | 원칙 5 | 공개 5 | 자격 −5 | 분산 −50 | 변혁 −30\n- 욕망: 갈망 15 | 독점 0 | 위험 10 | 과시 −10 | 지속 15 | 지향 이성 | 결합 다자\n:::"
+  }
+ ]
+}
