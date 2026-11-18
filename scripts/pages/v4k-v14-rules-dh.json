@@ -1,0 +1,48 @@
+{
+ "rules": [
+  {
+   "id": "ldh-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0797",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "Ryu Dalhyeon hands over to Yang Haeon the seal times and approval-hold order that she confirmed at each shift. Yang Haeon checks the review seal and the custody confirmation so that the hold status does not vanish from the next message.",
+   "to": "Yang Haeon checks the review seal and the custody confirmation so that the hold status does not vanish from the next message."
+  },
+  {
+   "id": "ldh-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0797",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "류달현은 교대마다 확인한 봉인 시각과 인준 보류 순서를 양해온에게 넘긴다. 양해온은 심사 날인과 보관 확인을 살펴 보류 상태가 다음 전갈에서 사라지지 않게 한다.",
+   "to": "양해온은 심사 날인과 보관 확인을 살펴 보류 상태가 다음 전갈에서 사라지지 않게 한다."
+  },
+  {
+   "id": "ldh-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0155",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "If the seal cord is slack, she refuses to depart, and she suspects that a messenger who does not record oral messages may be a forgery. Even when out of breath, she holds two copies in one hand.\n\n- Livelihood: Delivery of ratification hold messages and custody confirmations\n- Affiliation: Seoul Metropolitan Government local civil service organization\n- Position and grade: A grade suited to a post at the Seoul Metropolitan Government headquarters or field offices, among Local Administrative Officer (Grade 5), Local Administrative Senior Clerk (Grade 6), Local Administrative Assistant Senior Clerk (Grade 7), Local Administrative Clerk (Grade 8), and Local Administrative Assistant Clerk (Grade 9)\n- Duties: Approval Review Courier\n**Life.** Raised at the Seoul Station Registry Office. The Approval Review Courier post opened through the deletion of a single line in a double ledger.\n- Delivering Yang Haeon's approval-hold messages and custody confirmations connects to the work of Hoehyeon-dong.\n\n**Civil Service Position and Grade.** A grade suited to a post at the Seoul Metropolitan Government headquarters or field offices, among Local Administrative Officer (Grade 5), Local Administrative Senior Clerk (Grade 6), Local Administrative Assistant Senior Clerk (Grade 7), Local Administrative Clerk (Grade 8), and Local Administrative Assistant Clerk (Grade 9). Duties: Approval Review Courier.\n\n**Anecdote.** Gang Yejun's review-suspension declaration and Ji Mokhyeon's eastern dispatch message end up in the courier bag on the same day. Yang Haeon first obtains Jo Harin's custody confirmation and attaches the approval hold, then decides which of the two messages goes into the archive first by weighing the timing of approval.\n\n**Relations.** A command role that carries Gang Yejun's review-suspension declaration only in sealed condition, divides Ma Dohan's copy boxes and turn order by contract, and weighs the timing of approval against Ji Mokhyeon's eastern dispatch message.\n\n**Ambition.** She gathers neighbors' word of well-being and escort news into the delivery ledger she keeps, so that no news of a family member who was taken or cut off is buried.\n\n**Intervention.** Can hunt down a forged message and protect the seal, or expose the hold documents in the bag to force approval through.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority 30 | Openness 10 | Force −35 | Materialism −30 | Communal 20 | Principle 60 | Publicity −10 | Credentials 0 | Decentralization −35 | Transformation −40\n- Desires: Craving 30 | Monopoly −10 | Risk 25 | Display 10 | Persistence 30 | Orientation: No Orientation | Bonding: Contract Cohabitation\n:::",
+   "to": "If the seal cord is slack, she refuses to depart, and she suspects that a messenger who does not record oral messages may be a forgery. Even when out of breath, she holds two copies in one hand.\n\n- Livelihood:\n- Affiliation: Seoul Metropolitan Government local civil service organization\n- Position and grade: A grade suited to a post at the Seoul Metropolitan Government headquarters or field offices, among Local Administrative Officer (Grade 5), Local Administrative Senior Clerk (Grade 6), Local Administrative Assistant Senior Clerk (Grade 7), Local Administrative Clerk (Grade 8), and Local Administrative Assistant Clerk (Grade 9)\n- Duties: Approval Review Courier\n**Life.** Raised at the Seoul Station Registry Office. The Approval Review Courier post opened through the deletion of a single line in a double ledger.\n- Delivering Yang Haeon's approval-hold messages and custody confirmations connects to the work of Hoehyeon-dong.\n\n**Civil Service Position and Grade.** A grade suited to a post at the Seoul Metropolitan Government headquarters or field offices, among Local Administrative Officer (Grade 5), Local Administrative Senior Clerk (Grade 6), Local Administrative Assistant Senior Clerk (Grade 7), Local Administrative Clerk (Grade 8), and Local Administrative Assistant Clerk (Grade 9). Duties: Approval Review Courier.\n\n**Anecdote.** Gang Yejun's review-suspension declaration and Ji Mokhyeon's eastern dispatch message end up in the courier bag on the same day. Yang Haeon first obtains Jo Harin's custody confirmation and attaches the approval hold, then decides which of the two messages goes into the archive first by weighing the timing of approval.\n\n**Relations.** A command role that carries Gang Yejun's review-suspension declaration only in sealed condition, divides Ma Dohan's copy boxes and turn order by contract, and weighs the timing of approval against Ji Mokhyeon's eastern dispatch message.\n\n**Ambition.** She gathers neighbors' word of well-being and escort news into the delivery ledger she keeps, so that no news of a family member who was taken or cut off is buried.\n\n**Intervention.** Can hunt down a forged message and protect the seal, or expose the hold documents in the bag to force approval through.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority 30 | Openness 10 | Force −35 | Materialism −30 | Communal 20 | Principle 60 | Publicity −10 | Credentials 0 | Decentralization −35 | Transformation −40\n- Desires: Craving 30 | Monopoly −10 | Risk 25 | Display 10 | Persistence 30 | Orientation: No Orientation | Bonding: Contract Cohabitation\n:::"
+  },
+  {
+   "id": "ldh-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0155",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.1\\.basis$",
+   "from": "Ryu Dalhyeon hands over to Yang Haeon the seal times and approval-hold order that she confirmed at each shift. Yang Haeon checks the review seal and the custody confirmation so that the hold status does not vanish from the next message.",
+   "to": "Yang Haeon checks the review seal and the custody confirmation so that the hold status does not vanish from the next message."
+  }
+ ]
+}

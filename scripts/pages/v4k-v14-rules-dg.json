@@ -1,0 +1,121 @@
+{
+ "rules": [
+  {
+   "id": "ldg-1",
+   "file": "110",
+   "key": "ace0-d55c-c591",
+   "col": "json_ko",
+   "from": " 복구복무 거부 증언 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldg-2",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json_ko",
+   "from": " 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldg-3",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json",
+   "from": " The Restoration Service Records Officer post opened through the deletion of a single line from the double ledger.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldg-4",
+   "file": "110",
+   "key": "bc30-d765-d574-88f5",
+   "col": "json_ko",
+   "from": "복구복무 명부·부품 대가 조정 일을",
+   "to": "기록 조정 일을",
+   "expect": 2
+  },
+  {
+   "id": "ldg-5",
+   "file": "110",
+   "key": "bc30-d765-d574-88f5",
+   "col": "json",
+   "from": "restoration service roster and parts compensation adjustment",
+   "to": "records coordination",
+   "expect": 2
+  },
+  {
+   "id": "ldg-6",
+   "file": "110",
+   "key": "c190-bc00-c591",
+   "col": "json_ko",
+   "from": " 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldg-7",
+   "file": "110",
+   "key": "c190-bc00-c591",
+   "col": "json",
+   "from": " The Restoration Service Records Officer post opened through the deletion of a single line from the double ledger.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldg-8",
+   "file": "110",
+   "key": "c1a1-c740-c9c4-5b8b",
+   "col": "json_ko",
+   "from": "밀수 연통 접수·환기구 대장 작성 일을",
+   "to": "경매 장부 기록 일을",
+   "expect": 2
+  },
+  {
+   "id": "ldg-9",
+   "file": "110",
+   "key": "c1a1-c740-c9c4-5b8b",
+   "col": "json",
+   "from": "receiving smuggled stove flues and writing the vent ledger",
+   "to": "auction ledger recording",
+   "expect": 2
+  },
+  {
+   "id": "ldg-10",
+   "file": "110",
+   "key": "cc28-c5f0-c548",
+   "col": "json_ko",
+   "from": " 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "ldg-11",
+   "file": "110",
+   "key": "cc28-c5f0-c548",
+   "col": "json",
+   "from": " The Restoration Service Records Officer post opened through the deletion of a single line from the double ledger.",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "ldg-12",
+   "file": "110",
+   "key": "d5c8-ae40-d574-8a31",
+   "col": "json_ko",
+   "from": " 복구복무 기록관 자리는 이중 장부 한 줄 삭제로 열렸다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldg-13",
+   "file": "110",
+   "key": "d5c8-ae40-d574-8a31",
+   "col": "json",
+   "from": " The Restoration Service Records Officer post opened through the deletion of a single line from the double ledger.",
+   "to": "",
+   "expect": 1
+  }
+ ]
+}
