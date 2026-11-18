@@ -1,0 +1,112 @@
+{
+ "rules": [
+  {
+   "id": "lbh-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Fear$",
+   "from": "Heo Gyeom fears a situation where the maintenance wrists are left with only armbands, the packing knives are reclaimed, and the alleys are abandoned dry.",
+   "to": ""
+  },
+  {
+   "id": "lbh-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Fear.** Heo Gyeom fears a situation where the maintenance wrists are left with only armbands, the packing knives are reclaimed, and the alleys are abandoned dry.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbh-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "If tool confiscation threatens to leave neighborhoods dry, Heo may place greater weight on keeping manhole repairs continuous.",
+   "to": "Title: Cheonho Alley Pump Technician."
+  },
+  {
+   "id": "lbh-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.0\\.basis$",
+   "from": "Nam Namwon informs Heo Gyeom of the worn shaft replaced in the pump and its maintenance condition. Heo Gyeom examines the alley pump's packing and the blocked section to confirm whether the same stoppage continues at other pumps.",
+   "to": "Nam Namwon informs Heo Gyeom of the worn shaft replaced in the pump and its maintenance condition."
+  },
+  {
+   "id": "lbh-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0651",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "Nam Namwon informs Heo Gyeom of the worn shaft replaced in the pump and its maintenance condition. Heo Gyeom examines the alley pump's packing and the blocked section to confirm whether the same stoppage continues at other pumps.",
+   "to": "Nam Namwon informs Heo Gyeom of the worn shaft replaced in the pump and its maintenance condition."
+  },
+  {
+   "id": "lbh-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.공포$",
+   "from": "허겸은 정비 손목이 완장만 남고 패킹 칼이 회수되어 골목이 마른 채로 방치되는 상황을 두려워한다.",
+   "to": ""
+  },
+  {
+   "id": "lbh-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**공포.** 허겸은 정비 손목이 완장만 남고 패킹 칼이 회수되어 골목이 마른 채로 방치되는 상황을 두려워한다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbh-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "공구 회수로 골목이 마른 채 방치될 우려가 커지면 맨홀 수리의 연속성을 더 중시할 수 있다.",
+   "to": "직함은 천호 골목펌프 정비사."
+  },
+  {
+   "id": "lbh-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.0\\.basis$",
+   "from": "남남원은 펌프에서 교체한 마모 축과 정비 상태를 허겸에게 알린다. 허겸은 골목 펌프의 패킹과 막힌 구간을 살펴 같은 공급 중단이 다른 펌프에서도 이어지는지 확인한다.",
+   "to": "남남원은 펌프에서 교체한 마모 축과 정비 상태를 허겸에게 알린다."
+  },
+  {
+   "id": "lbh-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0651",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "남남원은 펌프에서 교체한 마모 축과 정비 상태를 허겸에게 알린다. 허겸은 골목 펌프의 패킹과 막힌 구간을 살펴 같은 공급 중단이 다른 펌프에서도 이어지는지 확인한다.",
+   "to": "남남원은 펌프에서 교체한 마모 축과 정비 상태를 허겸에게 알린다."
+  }
+ ]
+}
