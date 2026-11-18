@@ -516,7 +516,7 @@ def compose(name_ko, half=300):
         if not f_station: f_station = float(st.get('station_area_m2') or 0); f_src = '서울교통공사 역사 연면적'
     terr = TERRAIN_ALL.get(name_ko, {'primary': None, 'tags': []})
     v4_add = sum(1 for g_, rec in ol_in('vent', per['poly']) if (rec[0] or '') in ('지하철환기구', '지하철환기통', '지하환기구')) if per else 0
-    STAGE = STG.compute(st, plan, faction, terr, f_station, exits, len(own_v), deg_, depth_max_, per, f_bld, vents_s4=v4_add, vents_s5=len(line_v), f_src=f_src, roof_m2=roof_m2)
+    STAGE = STG.compute(st, plan, faction, terr, f_station, exits, len(own_v), deg_, depth_max_, per, f_bld, vents_s4=v4_add, vents_s5=len(line_v), f_src=f_src)
     if per or faction == 'arc':
         rubble_parts = []; barriers = []
     # ---- buildings to annotate

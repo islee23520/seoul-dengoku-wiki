@@ -26,19 +26,15 @@ STAGES = [
 PHI = {1: 0.25, 2: 0.55, 3: 0.85, 4: 0.85, 5: 0.85}
 A_M2 = {1: 1.5, 2: 3.5, 3: 5.5, 4: 8, 5: 10}
 Q_M3H = {1: 3, 2: 6, 3: 12, 4: 25, 5: 25}
-W_L = {1: 5, 2: 7.5, 3: 15, 4: 20, 5: 25}
 T_FOOD = {1: 14, 2: 60, 3: 120, 4: 180, 5: 365}
-T_WATER = {1: 3, 2: 7, 3: 14, 4: 30, 5: 60}
 GROW = {1: 0, 2: 0, 3: 0.05, 4: 0.15, 5: 0.25}
 WORKSHOP = {1: 0.5, 2: 1, 3: 1.5, 4: 2, 5: 2.5}
-WATER_GRADE_L = {'남음': 50, '넉넉': 25, '보통': 15, '모자람': 7.5, '없음': 0}
 FACTION = {   # mobilisable share, standing watch per post, arms factor k_w (owner question: guns)
     'government': {'M': 0.20, 'r': 4.5, 'k_w': 0.2},
     'free-city': {'M': 0.27, 'r': 4.0, 'k_w': 0.3},
     'arc': {'M': 0.30, 'r': 4.0, 'k_w': 0.4},
 }
 KIND_W = {'cut': 1.0, 'gap': 1.0, 'facade': 0.5, 'wall': 0.5, 'natural': 0.25}
-ROOF_YIELD = 1.4 / 365 * 0.8   # [추정] m3 per m2 roof per day: Seoul normal ~1,400 mm (rain + snow), 80 % collected
 AIR_SPEED = {1: 1.0, 2: 1.0, 3: 2.0, 4: 2.5, 5: 3.0}   # [추정] m/s through each 4 m2 shaft: natural draught, then fans (D 3.2 Q)
 TUNNEL_W = 9.0; TUNNEL_LEN = 300.0      # [추정] box tunnel width, length held toward each neighbour in stage 5
 
@@ -54,8 +50,8 @@ ARC_WORKS = {
     5: '깊은 노선끼리 한 덩어리로 잇는 통로, 바깥과 잇는 통로는 적고 좁게, 최후 구역 공동 비축',
 }
 FACIL = {
-    1: '물통, 응급 구석, 공동 취사 하나',
-    2: '창고(얕은 층), 저수조, 화장실, 진료 자리, 명부 자리, 공구 자리',
+    1: '응급 구석, 공동 취사 하나',
+    2: '창고(얕은 층), 화장실, 진료 자리, 명부 자리, 공구 자리',
     3: '진료소와 격리실, 학교, 배급소, 작업장, 버섯 재배실, 세탁, 안치소(얕은 층)',
     4: '지상 창고와 냉장, 여름 온실, 땔감 마당, 지상 작업장(데우지 않음)',
     5: '권역 창고, 장(큰 환승역), 통신, 정비 기지, 병원(서울 전체 2~3곳 가운데 하나일 수 있음)',
@@ -65,7 +61,7 @@ LABOR = {1: '출입구 하나 막기 10~20, 초소 10 인일', 2: '전체 1,000~
 DURATION = {1: '몇 시간~3일', 2: '2주~3달', 3: '6달~3년', 4: '3~10년', 5: '10~30년'}
 ENTRY = {
     1: '사람 10명 이상이 들어오고 위협이 있음',
-    2: '14일 생존, 물원 확보, 인구 40명 이상',
+    2: '14일 생존, 인구 40명 이상',
     3: '점유율 75% 이상 또는 공격 한 번을 버팀, 비축 60일 이상, 남는 일손 10% 이상',
     4: '인구가 3단계 정원을 넘어 명부 밖 사람이 바깥에 삶 또는 지상 위협 변화, 비축 120일 이상, 비상 경계 ≤ 동원 가능',
     5: '이웃 역 하나 이상이 3단계 이상, 공동 위협이나 장·통행 이익, 정치 합의',
@@ -96,7 +92,7 @@ TERRAIN = {
 }
 
 
-def compute(st, plan, faction, terrain, f_station, exits, vents_n, degree, depth_max, per=None, f_bld=0.0, vents_s4=0, vents_s5=0, f_src='S-Map 지하 층 실측', roof_m2=0.0):
+def compute(st, plan, faction, terrain, f_station, exits, vents_n, degree, depth_max, per=None, f_bld=0.0, vents_s4=0, vents_s5=0, f_src='S-Map 지하 층 실측'):
     P = int(plan.get('pop_2126') or 0)
     fx = FACTION.get(faction, FACTION['government'])
     E_u = sum(1 for e in exits if e['state'] == 'used'); E_h = sum(1 for e in exits if e['state'] == 'hidden')
@@ -104,7 +100,6 @@ def compute(st, plan, faction, terrain, f_station, exits, vents_n, degree, depth
     t = 2 if depth_max >= 25 else 1; C = max(1, degree) * t
     V = vents_n or (2 + degree)
     Q = V * 4.0 * 1.0 * 3600                 # [추정] 4 m2 shaft, natural draught 1 m/s
-    water_L = WATER_GRADE_L.get(plan.get('water') or '보통', 15)
     f = float(plan.get('fuel_kg_per_person_day') or 1.2)
     L_sur = sum(per['stats'][k] * KIND_W[k] for k in KIND_W) if per else 0.0
     F_t = degree * TUNNEL_LEN * TUNNEL_W
@@ -114,16 +109,13 @@ def compute(st, plan, faction, terrain, f_station, exits, vents_n, degree, depth
         floor = PHI[k] * f_station + (f_bld if k >= 4 else 0) + (F_t if k == 5 else 0)
         Vk = V + (vents_s4 if k >= 4 else 0) + (vents_s5 if k == 5 else 0)
         Qk = Vk * 4.0 * AIR_SPEED[k] * 3600
-        cap_space = floor / A_M2[k]; cap_air = Qk / Q_M3H[k]; cap_water = P * water_L / W_L[k] if water_L else 0
-        W_live = P * water_L / 1000 + (roof_m2 * ROOF_YIELD if k >= 4 else 0)
-        cap_water = W_live * 1000 / W_L[k] if W_live else 0
-        living = int(min(cap_space, cap_air, cap_water)) if W_live else int(min(cap_space, cap_air))
-        # maximum holding (crowded but survivable: 3.5 m2, 6 m3/h shelter air, 7.5 L survival water) grows with every stage
+        cap_space = floor / A_M2[k]; cap_air = Qk / Q_M3H[k]
+        living = int(min(cap_space, cap_air))
+        # maximum holding (crowded but survivable: 3.5 m2, 6 m3/h shelter air) grows with every stage
         full_floor = f_station + (f_bld if k >= 4 else 0) + (F_t if k == 5 else 0)
-        W_day = P * water_L / 1000 + (roof_m2 * ROOF_YIELD if k >= 4 else 0)      # m3/day: current source + roof catchment inside the line
-        mx_space = full_floor / 3.5; mx_air = Qk / 6.0; mx_water = W_day * 1000 / 7.5 if W_day else 1e12
-        cap = int(min(mx_space, mx_air, mx_water))
-        cap_by_max = min((('공간', mx_space), ('공기', mx_air), ('물', mx_water)), key=lambda x: x[1])[0]
+        mx_space = full_floor / 3.5; mx_air = Qk / 6.0
+        cap = int(min(mx_space, mx_air))
+        cap_by_max = min((('공간', mx_space), ('공기', mx_air)), key=lambda x: x[1])[0]
         limit = int((f_station + (f_bld if k >= 4 else 0) + (F_t if k == 5 else 0)) / 3.5) if k >= 2 else int(PHI[1] * f_station / 1.0)
         n_inner = 0 if k < 2 else (1 if k == 2 else 2)
         n_watch = math.ceil(L_sur / 200) if (k >= 4 and per) else 0
@@ -133,17 +125,16 @@ def compute(st, plan, faction, terrain, f_station, exits, vents_n, degree, depth
         surf = fx['k_w'] * L_sur if (k >= 4 and per) else 0
         G_e = 4 * ((1 if k == 1 else E_u) + (E_h if k >= 3 else 0) + (C if k >= 2 else 0)) + surf + 0.02 * P
         food_t = P * 0.6 * T_FOOD[k] / 1000
-        water_m3 = P * W_L[k] * T_WATER[k] / 1000
         fuel_t = P * f * T_FOOD[k] / 1000
         rows.append({
             'stage': k, 'name': ('깊은 층 봉쇄' if (faction == 'arc' and k == 4) else name), 'lens': lens,
             'air_speed': AIR_SPEED[k], 'works': ARC_WORKS.get(k) if faction == 'arc' and k in ARC_WORKS else WORKS[k],
             'terrain_works': '; '.join(TERRAIN[tg][1][k] for tg in terrain.get('tags', [])[:2] if tg in TERRAIN and k in TERRAIN[tg][1]) if k >= 3 else '',
             'facilities': FACIL[k], 'floor_m2': round(floor), 'capacity': cap, 'cap_by_max': cap_by_max, 'living_capacity': living,
-            'cap_by': min((('공간', cap_space), ('공기', cap_air), ('물', cap_water if water_L else 1e9)), key=lambda x: x[1])[0],
+            'cap_by': min((('공간', cap_space), ('공기', cap_air)), key=lambda x: x[1])[0],
             'overcrowd_limit': limit, 'over': P > living, 'overflow': P > cap, 'guard_standing': round(G_s), 'guard_emergency': round(G_e),
             'mobilisable': round(M), 'defensible': G_e <= M, 'food_t': round(food_t, 1), 'granary_m2': round(1.4 * food_t),
-            'water_m3': round(water_m3), 'fuel_t': round(fuel_t, 1), 'fuel_store_m2': round(fuel_t * 1000 / 500 / 2 / 0.7),
+            'water_m3': 0, 'fuel_t': round(fuel_t, 1), 'fuel_store_m2': round(fuel_t * 1000 / 500 / 2 / 0.7),
             'toilets': math.ceil(P / (50 if k == 1 else 20)), 'washing': math.ceil(P / (250 if k <= 2 else 100)),
             'beds': math.ceil(1.8 * P / 1000) if k >= 3 else 0, 'isolation': math.ceil(P / 1000) if k >= 3 else 0,
             'schools': math.ceil(P / 5000) if k >= 3 else 0, 'ration_points': math.ceil(P / 5000),
@@ -157,9 +148,9 @@ def compute(st, plan, faction, terrain, f_station, exits, vents_n, degree, depth
     if '큰 환승역' in typ and rows[3]['defensible']: start = 4
     if (st.get('structure') or '').startswith(('지상', '고가')) or degree <= 1: start = 2
     if P and P < 40: start = 1
-    inputs = {'P': P, 'F_station_m2': round(f_station), 'F_station_src': f_src, 'water_note': '눈 녹이기(연료 추가)' if not water_L else '', 'roof_catch_m2': round(roof_m2), 'roof_water_m3_day': round(roof_m2 * ROOF_YIELD, 1), 'E_used': E_u, 'E_hidden': E_h, 'E_sealed': E_s, 'tunnel_cuts': C,
+    inputs = {'P': P, 'F_station_m2': round(f_station), 'F_station_src': f_src, 'water_note': '', 'roof_catch_m2': 0, 'roof_water_m3_day': 0.0, 'E_used': E_u, 'E_hidden': E_h, 'E_sealed': E_s, 'tunnel_cuts': C,
               'vents': V, 'vents_src': '서울교통공사 환기구 표' if vents_n else '[추정] 2+이웃 수', 'Q_m3h': round(Q),
-              'water_L': water_L, 'fuel_kg': f, 'L_surface_m': round(L_sur), 'F_bld_m2': round(f_bld), 'F_tunnel_m2': round(F_t),
+              'water_L': 0, 'fuel_kg': f, 'L_surface_m': round(L_sur), 'F_bld_m2': round(f_bld), 'F_tunnel_m2': round(F_t),
               'k_w': fx['k_w'], 'M_share': fx['M'], 'vents_s4_add': vents_s4, 'vents_s5_add': vents_s5}
     return {'stages': rows, 'start_stage': start, 'inputs': inputs,
             'terrain': {'primary': terrain.get('primary'), 'tags': terrain.get('tags', []),
