@@ -1,0 +1,362 @@
+{
+ "purpose": "봉신/vassal 계열 전환(게이트 C1): 인물 상세·명단·가계도·직속 관계 그래프·용산 지역 상태의 봉건 관계어를 v4 직속 관계어로 바꾼다. relationKind 등 키·열거값은 그대로 둔다. 용산 후국회의는 v4에 없는 옛 정치체이므로 중립 이름 용산선로협의회/Yongsan Rail Council로 바꾸고 제안으로 기록한다.",
+ "hold": [],
+ "rules": [
+  {
+   "id": "vs-090-owner-liege-en",
+   "file": "090",
+   "from": "Direct Liege",
+   "to": "Direct Superior",
+   "expect": 8,
+   "exact": true,
+   "pathRe": "ownerTerm$",
+   "col": "json"
+  },
+  {
+   "id": "vs-090-owner-vassal-en",
+   "file": "090",
+   "from": "Direct Vassal",
+   "to": "Direct Subordinate",
+   "expect": 8,
+   "exact": true,
+   "pathRe": "ownerTerm$",
+   "col": "json"
+  },
+  {
+   "id": "vs-090-owner-liege-ko",
+   "file": "090",
+   "from": "직속 주군",
+   "to": "직속 상관",
+   "expect": 8,
+   "exact": true,
+   "pathRe": "ownerTerm$",
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-090-owner-vassal-ko",
+   "file": "090",
+   "from": "직속 가신",
+   "to": "직속 부하",
+   "expect": 8,
+   "exact": true,
+   "pathRe": "ownerTerm$",
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-115-owner-liege-en",
+   "file": "115",
+   "from": "Direct Liege",
+   "to": "Direct Superior",
+   "expect": 8,
+   "exact": true,
+   "pathRe": "ownerTerm$",
+   "col": "json"
+  },
+  {
+   "id": "vs-115-owner-vassal-en",
+   "file": "115",
+   "from": "Direct Vassal",
+   "to": "Direct Subordinate",
+   "expect": 8,
+   "exact": true,
+   "pathRe": "ownerTerm$",
+   "col": "json"
+  },
+  {
+   "id": "vs-115-owner-liege-ko",
+   "file": "115",
+   "from": "직속 주군",
+   "to": "직속 상관",
+   "expect": 8,
+   "exact": true,
+   "pathRe": "ownerTerm$",
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-115-owner-vassal-ko",
+   "file": "115",
+   "from": "직속 가신",
+   "to": "직속 부하",
+   "expect": 8,
+   "exact": true,
+   "pathRe": "ownerTerm$",
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-115-retinue-ko",
+   "file": "115",
+   "from": "민웅기의 휴머노이드 가신단",
+   "to": "민웅기의 휴머노이드 수행단",
+   "expect": 1,
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-090-retinue-ko",
+   "file": "090",
+   "from": "민웅기의 휴머노이드 가신단",
+   "to": "민웅기의 휴머노이드 수행단",
+   "expect": 1,
+   "key": "person-1008",
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-090-retinue24-ko",
+   "file": "090",
+   "from": "가신단 24기",
+   "to": "수행단 24기",
+   "expect": 1,
+   "key": "person-1008",
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-090-retinue24-en",
+   "file": "090",
+   "from": "24-unit retainer corps",
+   "to": "24-unit humanoid retinue",
+   "expect": 1,
+   "key": "person-1008",
+   "col": "json"
+  },
+  {
+   "id": "vs-0002-ko",
+   "file": "090",
+   "from": "한재목의 직속 봉신이다",
+   "to": "한재목의 직속 부하다",
+   "expect": 2,
+   "key": "person-0002",
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-0002-en",
+   "file": "090",
+   "from": "a direct vassal of Han Jaemok",
+   "to": "a direct subordinate of Han Jaemok",
+   "expect": 2,
+   "key": "person-0002",
+   "col": "json"
+  },
+  {
+   "id": "vs-090-feudal-rank-ko",
+   "file": "090",
+   "from": "봉건 품계",
+   "to": "품계",
+   "expect": 78,
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-090-feudal-rank-en-cap",
+   "file": "090",
+   "from": "\\bFeudal (?:rank|title):",
+   "to": "Rank:",
+   "expect": 6,
+   "re": true,
+   "col": "json"
+  },
+  {
+   "id": "vs-090-feudal-rank-en",
+   "file": "090",
+   "from": "\\bfeudal (?:rank|title)\\b",
+   "to": "rank",
+   "expect": 72,
+   "re": true,
+   "col": "json"
+  },
+  {
+   "id": "vs-0235-dues",
+   "file": "090",
+   "from": "the feudal dues owed to K029",
+   "to": "the station dues owed to K029",
+   "expect": 4,
+   "key": "person-0235",
+   "col": "json"
+  },
+  {
+   "id": "vs-090-council-en",
+   "file": "090",
+   "from": "Vassal[- ]States? Council|Vassal Realms Council|Vassal Assembly",
+   "to": "Yongsan Rail Council",
+   "expect": 26,
+   "re": true
+  },
+  {
+   "id": "vs-090-state-en",
+   "file": "090",
+   "from": "Vassal[- ](?:State|Realm)\\b|\\bvassal state\\b",
+   "to": "Yongsan rail zone",
+   "expect": 8,
+   "re": true
+  },
+  {
+   "id": "vs-090-council-ko",
+   "file": "090",
+   "from": "후국회의?",
+   "to": "용산선로협의회",
+   "expect": 46,
+   "re": true
+  },
+  {
+   "id": "vs-090-state-ko",
+   "file": "090",
+   "from": "후국",
+   "to": "용산 선로권",
+   "expect": 10,
+   "re": true
+  },
+  {
+   "id": "vs-110-council-en",
+   "file": "110",
+   "from": "Vassal[- ]States? Council|Vassal Realms Council|Vassal Assembly",
+   "to": "Yongsan Rail Council",
+   "expect": 2,
+   "re": true
+  },
+  {
+   "id": "vs-110-council-ko",
+   "file": "110",
+   "from": "후국회의?",
+   "to": "용산선로협의회",
+   "expect": 2,
+   "re": true
+  },
+  {
+   "id": "vs-110-state-ko",
+   "file": "110",
+   "from": "후국",
+   "to": "용산 선로권",
+   "expect": 1,
+   "re": true
+  },
+  {
+   "id": "vs-050-council-en",
+   "file": "050",
+   "from": "Vassal[- ]States? Council|Vassal Realms Council|Vassal Assembly",
+   "to": "Yongsan Rail Council",
+   "expect": 3,
+   "re": true
+  },
+  {
+   "id": "vs-050-council-ko",
+   "file": "050",
+   "from": "후국회의?",
+   "to": "용산선로협의회",
+   "expect": 3,
+   "re": true
+  },
+  {
+   "id": "vs-121-council-en",
+   "file": "121",
+   "from": "Vassal[- ]States? Council|Vassal Realms Council|Vassal Assembly",
+   "to": "Yongsan Rail Council",
+   "expect": 3,
+   "re": true
+  },
+  {
+   "id": "vs-121-state-en",
+   "file": "121",
+   "from": "Vassal State\\b",
+   "to": "Yongsan Rail Council",
+   "expect": 6,
+   "re": true
+  },
+  {
+   "id": "vs-121-council-ko",
+   "file": "121",
+   "from": "후국회의?",
+   "to": "용산선로협의회",
+   "expect": 3,
+   "re": true
+  },
+  {
+   "id": "vs-121-state-ko",
+   "file": "121",
+   "from": "후국",
+   "to": "용산선로협의회",
+   "expect": 6,
+   "re": true
+  },
+  {
+   "id": "vs-090-anguk-en",
+   "file": "090",
+   "from": "has no vassals and no army of its own",
+   "to": "has no subordinate bodies and no army of its own",
+   "expect": 2
+  },
+  {
+   "id": "vs-090-anguk-ko",
+   "file": "090",
+   "from": "속국이 없고",
+   "to": "산하 세력이 없고",
+   "expect": 2
+  },
+  {
+   "id": "vs-110-anguk-en",
+   "file": "110",
+   "from": "has no vassals and no army of its own",
+   "to": "has no subordinate bodies and no army of its own",
+   "expect": 1
+  },
+  {
+   "id": "vs-110-anguk-ko",
+   "file": "110",
+   "from": "속국이 없고",
+   "to": "산하 세력이 없고",
+   "expect": 1
+  },
+  {
+   "id": "vs-0998-en",
+   "file": "090",
+   "from": "checks retainers’ reports himself",
+   "to": "checks his aides’ reports himself",
+   "expect": 1,
+   "key": "person-0998",
+   "col": "json"
+  },
+  {
+   "id": "vs-0998-ko",
+   "file": "090",
+   "from": "가신 보고를 직접 대조한다",
+   "to": "측근 보고를 직접 대조한다",
+   "expect": 1,
+   "key": "person-0998",
+   "col": "json_ko"
+  },
+  {
+   "id": "vs-050-merit-en",
+   "file": "050",
+   "from": "([Mm])eritorious [Rr]etainer",
+   "to": "$1eritorious Subject",
+   "expect": 1,
+   "re": true
+  },
+  {
+   "id": "vs-050-seedrec-en",
+   "file": "050",
+   "from": "Retainer Recorder",
+   "to": "Attendant Recorder",
+   "expect": 24
+  },
+  {
+   "id": "vs-090-merit-en",
+   "file": "090",
+   "from": "([Mm])eritorious [Rr]etainer",
+   "to": "$1eritorious Subject",
+   "expect": 7,
+   "re": true
+  },
+  {
+   "id": "vs-090-seedrec-en",
+   "file": "090",
+   "from": "Retainer Recorder",
+   "to": "Attendant Recorder",
+   "expect": 28
+  },
+  {
+   "id": "vs-110-merit-en",
+   "file": "110",
+   "from": "([Mm])eritorious [Rr]etainer",
+   "to": "$1eritorious Subject",
+   "expect": 3,
+   "re": true
+  }
+ ]
+}

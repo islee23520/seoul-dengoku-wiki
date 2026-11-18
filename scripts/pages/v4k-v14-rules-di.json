@@ -1,0 +1,125 @@
+{
+ "rules": [
+  {
+   "id": "ldi-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0010",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "미계측 펌프를 거부하고 밀봉 두께를 기록했다. 배운 정비와 안전 공정 준수가 강점이며 발명 경력은 없다.",
+   "to": "직함은 신정3동 기지 펌프 정비사."
+  },
+  {
+   "id": "ldi-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Sealed process copies",
+   "to": "Ordinary Citizen, Currently Missing"
+  },
+  {
+   "id": "ldi-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "Left an access boundary around process copies through a seal.",
+   "to": "Title: Ordinary Citizen, Currently Missing."
+  },
+  {
+   "id": "ldi-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "Left an access boundary around process copies through a seal.",
+   "to": "Title: Ordinary Citizen, Currently Missing."
+  },
+  {
+   "id": "ldi-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "닫힌 사본 함",
+   "to": "일반 시민, 현재 실종"
+  },
+  {
+   "id": "ldi-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "공정 사본의 접근 경계를 봉인으로 남겼다.",
+   "to": "직함은 일반 시민, 현재 실종."
+  },
+  {
+   "id": "ldi-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "공정 사본의 접근 경계를 봉인으로 남겼다.",
+   "to": "직함은 일반 시민, 현재 실종."
+  },
+  {
+   "id": "ldi-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0146",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.2\\.basis$",
+   "from": "Examined the handover record of the copy box",
+   "to": ""
+  },
+  {
+   "id": "ldi-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.fields\\.Work Location$",
+   "from": "Guro 2-dong. At the duty desk in Guro 2-dong, Son Tayeon cross-checks Baek On's refugee citizenship roster against the restoration service registration in name order. He re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo.",
+   "to": "Guro 2-dong. He re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo."
+  },
+  {
+   "id": "ldi-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "Generation of 2126. Grew up at the Seoul Station Registry Office. The post of Restoration Service Records Officer opened with the deletion of one line in the double ledger.\n- Work location: Guro 2-dong. At the duty desk in Guro 2-dong, Son Tayeon cross-checks Baek On's refugee citizenship roster against the restoration service registration in name order. He re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo.",
+   "to": "Generation of 2126. Grew up at the Seoul Station Registry Office. The post of Restoration Service Records Officer opened with the deletion of one line in the double ledger.\n- Work location: Guro 2-dong. He re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo."
+  },
+  {
+   "id": "ldi-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0841",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "Son Tayeon cross-checks the two rosters before the same name is counted as two laborers.\n\n- Affiliation: Free City\n- Livelihood: Registration & Records\n- Rank: Guild Member\n- Title: Restoration Service Recorder\n**Life.** Generation of 2126. Grew up at the Seoul Station Registry Office. The post of Restoration Service Records Officer opened with the deletion of one line in the double ledger.\n- Work location: Guro 2-dong. At the duty desk in Guro 2-dong, Son Tayeon cross-checks Baek On's refugee citizenship roster against the restoration service registration in name order. He re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo.\n\n**Office.** Rank: Guild Member.\n\n**Relationships.** Gim Nayul checks the actual shifts and registrations so that the same person does not remain as two laborers.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority −20 | Openness 20 | Force −20 | Materiality 40 | Community 50 | Principle 15 | Publicity 25 | Qualification 45 | Dispersal 20 | Transformation 15\n- Desires: Craving 0 | Monopoly −25 | Risk 30 | Display −25 | Persistence 20 | Orientation: Bisexual | Union: Contract Cohabitation\n:::",
+   "to": "Son Tayeon cross-checks the two rosters before the same name is counted as two laborers.\n\n- Affiliation: Free City\n- Livelihood: Registration & Records\n- Rank: Guild Member\n- Title: Restoration Service Recorder\n**Life.** Generation of 2126. Grew up at the Seoul Station Registry Office. The post of Restoration Service Records Officer opened with the deletion of one line in the double ledger.\n- Work location: Guro 2-dong. He re-matches the names that overlap on both rosters against Kim Nayul's shift schedule and leaves the result in the next records officer's handover memo.\n\n**Office.** Rank: Guild Member.\n\n**Relationships.** Gim Nayul checks the actual shifts and registrations so that the same person does not remain as two laborers.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority −20 | Openness 20 | Force −20 | Materiality 40 | Community 50 | Principle 15 | Publicity 25 | Qualification 45 | Dispersal 20 | Transformation 15\n- Desires: Craving 0 | Monopoly −25 | Risk 30 | Display −25 | Persistence 20 | Orientation: Bisexual | Union: Contract Cohabitation\n:::"
+  }
+ ]
+}

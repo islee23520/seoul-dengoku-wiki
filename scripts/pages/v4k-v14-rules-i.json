@@ -1,0 +1,154 @@
+{
+ "rules": [
+  {
+   "id": "li-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0057",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "Occupation: life safety research",
+   "to": "Occupation: Life Safety Research"
+  },
+  {
+   "id": "li-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0057",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Occupation: life safety research",
+   "to": "Occupation: Life Safety Research"
+  },
+  {
+   "id": "li-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "Livelihood: eastern guard command and parts procurement.",
+   "to": "Livelihood: Restoration Service Roster and Parts Compensation Adjustment."
+  },
+  {
+   "id": "li-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Livelihood: eastern guard command and parts procurement.",
+   "to": "Livelihood: Restoration Service Roster and Parts Compensation Adjustment."
+  },
+  {
+   "id": "li-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "생업은 동부 경비 지휘와 부품 확보다.",
+   "to": "생업은 복구복무 명부·부품 대가 조정이다."
+  },
+  {
+   "id": "li-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "생업은 동부 경비 지휘와 부품 확보다.",
+   "to": "생업은 복구복무 명부·부품 대가 조정이다."
+  },
+  {
+   "id": "li-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0220",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "Livelihood: managing food and fuel stock for the Yeouido, Yeongdeungpo-dong and Yeoui-dong market quarters.",
+   "to": "Livelihood: Transmission Duty Shift and Investment Ledger Preservation."
+  },
+  {
+   "id": "li-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0220",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Livelihood: managing food and fuel stock for the Yeouido, Yeongdeungpo-dong and Yeoui-dong market quarters.",
+   "to": "Livelihood: Transmission Duty Shift and Investment Ledger Preservation."
+  },
+  {
+   "id": "li-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0220",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "생업은 여의도·영등포동·여의동 상가의 식량과 연료 재고 관리.",
+   "to": "생업은 송신 당직·출자 장부 보전."
+  },
+  {
+   "id": "li-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0220",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "생업은 여의도·영등포동·여의동 상가의 식량과 연료 재고 관리.",
+   "to": "생업은 송신 당직·출자 장부 보전."
+  },
+  {
+   "id": "li-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0349",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "Livelihood: Entrance Defense Organizer at Guui Station; the work reference point for",
+   "to": "The work reference point for"
+  },
+  {
+   "id": "li-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0349",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Livelihood: Entrance Defense Organizer at Guui Station; the work reference point for",
+   "to": "The work reference point for"
+  },
+  {
+   "id": "li-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0349",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "생업: 구의역 출입구 방어 편성. 구의 대합실의",
+   "to": "구의 대합실의"
+  },
+  {
+   "id": "li-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0349",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "생업: 구의역 출입구 방어 편성. 구의 대합실의",
+   "to": "구의 대합실의"
+  },
+  {
+   "id": "li-15",
+   "file": "090",
+   "expect": 2,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Livelihood: courier;",
+   "to": "Livelihood: Courier;"
+  }
+ ]
+}

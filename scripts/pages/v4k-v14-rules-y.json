@@ -1,0 +1,40 @@
+{
+ "rules": [
+  {
+   "id": "ly-1",
+   "file": "110",
+   "key": "ac10-cc3d-c6d0",
+   "col": "json",
+   "from": "Encampment Duty Clerk",
+   "to": "Duty Clerk",
+   "expect": 1
+  },
+  {
+   "id": "ly-2",
+   "file": "110",
+   "key": "ac10-cc3d-c6d0",
+   "col": "json",
+   "from": "keeping the encampment register and checking entries",
+   "to": "keeping the roster and checking entries",
+   "expect": 2
+  },
+  {
+   "id": "ly-3",
+   "file": "110",
+   "key": "ac10-cc3d-c6d0",
+   "col": "json_ko",
+   "from": "숙영 당직 주사",
+   "to": "당직 주사",
+   "expect": 1
+  },
+  {
+   "id": "ly-4",
+   "file": "110",
+   "key": "ac10-cc3d-c6d0",
+   "col": "json_ko",
+   "from": "숙영 명부·출입 확인",
+   "to": "명부·출입 확인",
+   "expect": 2
+  }
+ ]
+}

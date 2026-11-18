@@ -1,0 +1,84 @@
+{
+ "rules": [
+  {
+   "id": "lcn-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "\n\nAnecdote.",
+   "to": ""
+  },
+  {
+   "id": "lcn-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n\nAnecdote.",
+   "to": ""
+  },
+  {
+   "id": "lcn-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "\n\n일화.",
+   "to": ""
+  },
+  {
+   "id": "lcn-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n\n일화.",
+   "to": ""
+  },
+  {
+   "id": "lcn-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "\n\nAnecdote.",
+   "to": ""
+  },
+  {
+   "id": "lcn-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n\nAnecdote.",
+   "to": ""
+  },
+  {
+   "id": "lcn-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "\n\n일화.",
+   "to": ""
+  },
+  {
+   "id": "lcn-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n\n일화.",
+   "to": ""
+  }
+ ]
+}

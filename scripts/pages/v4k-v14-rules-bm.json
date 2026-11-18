@@ -1,0 +1,106 @@
+{
+ "rules": [
+  {
+   "id": "lbm-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": " and allowed arms loading only with the joint seal of the stationmaster and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbm-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": " and allowed arms loading only with the joint seal of the stationmaster and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbm-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and armament loading is permitted only with the joint seal of the Stationmaster and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbm-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and armament loading is permitted only with the joint seal of the Stationmaster and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbm-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "의무화하고, 무장 탑재는 역장과 감사의 공동 날인만 허용한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbm-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "의무화하고, 무장 탑재는 역장과 감사의 공동 날인만 허용한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbm-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "의무화하고, 무장 탑재는 역장과 감사의 공동 날인만 허용한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbm-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "의무화하고, 무장 탑재는 역장과 감사의 공동 날인만 허용한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbm-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.occupation$",
+   "from": "Logging Collision Time and Residual Pressure Readings",
+   "to": "Logging Collision Times"
+  },
+  {
+   "id": "lbm-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.occupation$",
+   "from": "충돌 시각·잔압 수치 일지 기록",
+   "to": "충돌 시각 일지 기록"
+  }
+ ]
+}

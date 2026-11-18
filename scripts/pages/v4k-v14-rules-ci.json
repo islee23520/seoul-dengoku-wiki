@@ -1,0 +1,112 @@
+{
+ "rules": [
+  {
+   "id": "lci-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0089",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Anecdote$",
+   "from": "In 2125, Han Somi spent the night negotiating terms with the sabotage work crew and got the next shift started. Because of this, her signature for the post of Cheonho Workshop Council Representative was entered in the ledger.",
+   "to": ""
+  },
+  {
+   "id": "lci-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0089",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Anecdote.** In 2125, Han Somi spent the night negotiating terms with the sabotage work crew and got the next shift started. Because of this, her signature for the post of Cheonho Workshop Council Representative was entered in the ledger.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lci-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0089",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.6\\.basis$",
+   "from": "한소미의 평의회 거부권을 서기석에서 받치고",
+   "to": ""
+  },
+  {
+   "id": "lci-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "한소미의 평의회 거부권을 서기석에서 받치고",
+   "to": ""
+  },
+  {
+   "id": "lci-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0147",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.5\\.basis$",
+   "from": "조하린의 철제 함에서 삼본을 꺼내 받으며",
+   "to": ""
+  },
+  {
+   "id": "lci-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0147",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.6\\.basis$",
+   "from": "조하린의 삼본 함을 기지에서 지키는 지휘를 받고",
+   "to": ""
+  },
+  {
+   "id": "lci-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0157",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.1\\.basis$",
+   "from": "조하린의 철제 함에서 삼본을 꺼내 받으며",
+   "to": ""
+  },
+  {
+   "id": "lci-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0159",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.1\\.basis$",
+   "from": "지서윤의 제습 주기와 함 온도를 맞추며",
+   "to": ""
+  },
+  {
+   "id": "lci-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "한소미의 평의회 거부권을 서기석에서 받친다.",
+   "to": ""
+  },
+  {
+   "id": "lci-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.** 한소미의 평의회 거부권을 서기석에서 받친다.\n\n",
+   "to": ""
+  }
+ ]
+}

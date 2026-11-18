@@ -1,0 +1,8280 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0002",
+   "col": "json_ko",
+   "from": "합계보다 물줄기",
+   "to": "합계보다 셔터",
+   "expect": 1,
+   "id": "v4rem-people-d-0001"
+  },
+  {
+   "file": "090",
+   "key": "person-0002",
+   "col": "json",
+   "from": "Pressure before totals",
+   "to": "Shutters before totals",
+   "expect": 1,
+   "id": "v4rem-people-d-0002"
+  },
+  {
+   "file": "090",
+   "key": "person-0002",
+   "col": "json_ko",
+   "from": "합계보다 현장 압력을 먼저 확인한다.",
+   "to": "합계보다 창고 셔터와 환기구의 틈을 먼저 확인한다. 쥐와 들개가 그 틈으로 들어와 곡물을 갉기 때문이다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0003"
+  },
+  {
+   "file": "090",
+   "key": "person-0002",
+   "col": "json",
+   "from": "Checks physical pressure before ledger totals.",
+   "to": "Checks the storehouse shutters and vent gaps before ledger totals, because rats and wild dogs get in through them and gnaw the grain.",
+   "expect": 2,
+   "id": "v4rem-people-d-0004"
+  },
+  {
+   "file": "090",
+   "key": "person-0002",
+   "col": "json_ko",
+   "from": "원장 누락을 덮은 빚이 드러나도 수위 보고를 늦추지 않는다.",
+   "to": "원장 누락을 덮은 빚이 드러나도 창고에 들개나 쥐가 든 흔적은 당일 구역 대표들에게 알린다.",
+   "expect": 1,
+   "id": "v4rem-people-d-0005"
+  },
+  {
+   "file": "090",
+   "key": "person-0002",
+   "col": "json",
+   "from": "Does not delay reporting even when a concealed omission may surface.",
+   "to": "Even when the debt that covered a ledger omission comes to light, reports signs of wild dogs or rats in the storehouse to the district delegates the same day.",
+   "expect": 1,
+   "id": "v4rem-people-d-0006"
+  },
+  {
+   "file": "090",
+   "key": "person-0011",
+   "col": "json_ko",
+   "from": "소문보다 수통과 저울의 상태를 확인한다.",
+   "to": "소문보다 쥐가 갉은 자루와 저울의 상태를 확인한다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0007"
+  },
+  {
+   "file": "090",
+   "key": "person-0011",
+   "col": "json",
+   "from": "Checks containers and scales before rumors.",
+   "to": "Checks sacks for rat gnaw marks and the scales before rumors.",
+   "expect": 2,
+   "id": "v4rem-people-d-0008"
+  },
+  {
+   "file": "090",
+   "key": "person-0011",
+   "col": "json_ko",
+   "from": "대표 봉인 없는 수통을 선석에 들이지 않는다.",
+   "to": "대표 봉인 없는 자루는 몸값으로 얹힌 출처 불명의 짐일 수 있어 선석에 들이지 않는다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0009"
+  },
+  {
+   "file": "090",
+   "key": "person-0011",
+   "col": "json",
+   "from": "Refuses dock entry to containers without district seals.",
+   "to": "Refuses dock entry to sacks without district seals, since they may be loads of unknown origin tacked on as ransom.",
+   "expect": 2,
+   "id": "v4rem-people-d-0010"
+  },
+  {
+   "file": "090",
+   "key": "person-0011",
+   "col": "json_ko",
+   "from": "노량진 냉동 신용이 식량 운임까지 삼켜 양천 짐수레가 빈 채로 남는 것.",
+   "to": "수레꾼이 납치되어 몸값으로 식량 수레를 통째로 내주느라 양천 시장 선반이 비는 것.",
+   "expect": 4,
+   "id": "v4rem-people-d-0011"
+  },
+  {
+   "file": "090",
+   "key": "person-0011",
+   "col": "json",
+   "from": "That the Noryangjin cold-storage credit would swallow even food freight, leaving the Yangcheon handcarts standing empty.",
+   "to": "That a cart driver is kidnapped and whole carts of food are handed over as ransom, leaving the Yangcheon market shelves bare.",
+   "expect": 2,
+   "id": "v4rem-people-d-0012"
+  },
+  {
+   "file": "090",
+   "key": "person-0011",
+   "col": "json",
+   "from": "That Noryangjin cold-storage credit swallows even food freight rates, leaving Yangcheon's handcarts standing empty.",
+   "to": "That a cart driver is kidnapped and whole carts of food are handed over as ransom, leaving the Yangcheon market shelves bare.",
+   "expect": 2,
+   "id": "v4rem-people-d-0013"
+  },
+  {
+   "file": "090",
+   "key": "person-0033",
+   "col": "json_ko",
+   "from": "겨울 연료 비축이 떨어져 건물 난방이 꺼지면 조합원이 연료를 쥔 쪽의 볼모가 되는 것.",
+   "to": "지붕 보수 때 새어 나간 작업등이 바깥 기계를 불러들이고, 그 사고를 구실로 조합원이 납치되어 몸값을 요구받는 것.",
+   "expect": 4,
+   "id": "v4rem-people-d-0014"
+  },
+  {
+   "file": "090",
+   "key": "person-0033",
+   "col": "json",
+   "from": "That after the winter fuel reserve ran out and building heating went cold, guild members would become hostages of whoever held the fuel.",
+   "to": "That a work lamp leaking light during roof repair draws outside machines, and the accident becomes the pretext for abducting guild members and demanding ransom.",
+   "expect": 2,
+   "id": "v4rem-people-d-0015"
+  },
+  {
+   "file": "090",
+   "key": "person-0033",
+   "col": "json",
+   "from": "Once the winter fuel reserve runs out and building heating goes cold, the members become hostages to whoever holds the fuel.",
+   "to": "That a work lamp leaking light during roof repair draws outside machines, and the accident becomes the pretext for abducting members and demanding ransom.",
+   "expect": 1,
+   "id": "v4rem-people-d-0016"
+  },
+  {
+   "file": "090",
+   "key": "person-0045",
+   "col": "json_ko",
+   "from": "겨울 연료가 끊겨 대합실 난방이 꺼지면 역 대기열이 연료를 쥔 쪽의 인질이 되는 것.",
+   "to": "대합실 순번 명부가 몰래 고쳐져, 의사에게 먼저 가야 할 환자가 대기열 뒤로 밀리는 것.",
+   "expect": 4,
+   "id": "v4rem-people-d-0017"
+  },
+  {
+   "file": "090",
+   "key": "person-0045",
+   "col": "json",
+   "from": "That after the winter fuel was cut and the concourse heating went cold, the station waiting line would become hostage to whoever held the fuel.",
+   "to": "That the concourse queue register is quietly altered and a patient who should see the doctor first is pushed to the back of the line.",
+   "expect": 2,
+   "id": "v4rem-people-d-0018"
+  },
+  {
+   "file": "090",
+   "key": "person-0045",
+   "col": "json",
+   "from": "That the concourse heating goes cold once the winter fuel is cut, leaving the station queue hostage to whoever holds the fuel.",
+   "to": "That the concourse queue register is quietly altered and a patient who should see the doctor first is pushed to the back of the line.",
+   "expect": 2,
+   "id": "v4rem-people-d-0019"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json_ko",
+   "from": "허겸은 열린 맨홀과 저수조 균열을 회의보다 먼저 처리할 현장 문제로 본다.",
+   "to": "허겸은 열린 맨홀과 방벽 틈을 회의보다 먼저 막아야 할 현장 문제로 본다. 열린 구멍으로 겨울 짐승과 바깥 기계의 시선이 들어오기 때문이다.",
+   "expect": 1,
+   "id": "v4rem-people-d-0129"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "Heo Gyeom treats open manholes and reservoir cracks as field problems to address before meetings.",
+   "to": "Heo Gyeom treats open manholes and barrier gaps as field problems to close before meetings, since winter animals and outside machines find their way in through any opening.",
+   "expect": 1,
+   "id": "v4rem-people-d-0130"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json_ko",
+   "from": "구간을 짚고 저수조 금이 보이면 다른 수리를 미룬다.",
+   "to": "구간을 짚고 방벽 틈이 보이면 다른 수리를 미룬다.",
+   "expect": 1,
+   "id": "v4rem-people-d-0131"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "postpones other repairs when reservoir cracks appear.",
+   "to": "postpones other repairs when a barrier gap appears.",
+   "expect": 1,
+   "id": "v4rem-people-d-0132"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json_ko",
+   "from": "패킹 냄새와 저수조 금을 확인하고",
+   "to": "패킹 냄새와 방벽 틈을 확인하고",
+   "expect": 1,
+   "id": "v4rem-people-d-0133"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "He checks packing odors and tank cracks",
+   "to": "He checks packing odors and barrier gaps",
+   "expect": 1,
+   "id": "v4rem-people-d-0134"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json_ko",
+   "from": "장민재의 저수조 금이 보이면",
+   "to": "장민재의 방벽 틈이 보이면",
+   "expect": 2,
+   "id": "v4rem-people-d-0135"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "Jang Minjae's cistern crack is visible",
+   "to": "Jang Minjae's barrier gap is visible",
+   "expect": 2,
+   "id": "v4rem-people-d-0136"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json_ko",
+   "from": "수질망이 멈추자 허겸은",
+   "to": "겨울 정전으로 출입구 셔터 모터가 멈추자 허겸은",
+   "expect": 2,
+   "id": "v4rem-people-d-0137"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "When the water-quality network stopped, Heo Gyeom",
+   "to": "When the winter blackout stopped the entrance shutter motors, Heo Gyeom",
+   "expect": 2,
+   "id": "v4rem-people-d-0138"
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json_ko",
+   "from": "정수 펌프와 군자 유치선의 전력을 하나의 공개 배전망으로 묶어 후계가 누가 되든 물이 정전의 볼모가 되지 않게 한다.",
+   "to": "펌프실 발전기와 군자 유치선의 전력을 하나의 공개 배전망으로 묶어, 후계가 누가 되든 겨울 밤 의무소 난방이 정전의 볼모가 되지 않게 한다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0139"
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json",
+   "from": "Bind the power of the water-purification pumps and the Gunja holding sidings into one public distribution grid, so that whoever succeeds, water does not become a hostage of blackouts.",
+   "to": "Bind the power of the pump-room generators and the Gunja holding sidings into one public distribution grid, so that whoever succeeds, the infirmary heating on winter nights does not become a hostage of blackouts.",
+   "expect": 2,
+   "id": "v4rem-people-d-0140"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json_ko",
+   "from": "가짜 정수 부품 피해자 직공",
+   "to": "가짜 셔터 모터 부품 피해자 직공",
+   "expect": 12,
+   "id": "v4rem-people-d-0141"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Artisan Victim of Counterfeit Water Purification Parts",
+   "to": "Artisan Victim of Counterfeit Shutter Motor Parts",
+   "expect": 3,
+   "id": "v4rem-people-d-0142"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Counterfeit Purification Parts Victim Artisan",
+   "to": "Counterfeit Shutter Motor Parts Victim Artisan",
+   "expect": 4,
+   "id": "v4rem-people-d-0143"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Counterfeit Water-Purification Parts Victim Artisan",
+   "to": "Counterfeit Shutter Motor Parts Victim Artisan",
+   "expect": 5,
+   "id": "v4rem-people-d-0144"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json_ko",
+   "from": "영등포 정수 당직에서 자랐다.",
+   "to": "성수 정비고 난로 당직에서 자랐다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0145"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Ryu Dain grew up at the Yeongdeungpo Water Purification Watch.",
+   "to": "Ryu Dain grew up on the Seongsu depot stove watch.",
+   "expect": 1,
+   "id": "v4rem-people-d-0146"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json_ko",
+   "from": "탁수 밤의 밸브 서명으로",
+   "to": "셔터가 내려오지 않은 밤의 정비 서명으로",
+   "expect": 2,
+   "id": "v4rem-people-d-0147"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "through the Valve Signature of Turbid Water Night",
+   "to": "through the maintenance signature of the night a shutter failed to close",
+   "expect": 1,
+   "id": "v4rem-people-d-0148"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json_ko",
+   "from": "수압 시험에서 새는 이음매 세 곳을",
+   "to": "셔터 모터 시험에서 헐거운 이음 세 곳을",
+   "expect": 2,
+   "id": "v4rem-people-d-0149"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "found three leaking joints in a water-pressure test",
+   "to": "found three loose couplings in a shutter motor test",
+   "expect": 1,
+   "id": "v4rem-people-d-0150"
+  },
+  {
+   "file": "090",
+   "key": "person-0123",
+   "col": "json_ko",
+   "from": "상수보호권이",
+   "to": "상시 보호권이",
+   "expect": 2,
+   "id": "v4rem-people-d-0151"
+  },
+  {
+   "file": "090",
+   "key": "person-0127",
+   "col": "json_ko",
+   "from": "암사 정수 의무원",
+   "to": "암사 응급 처치소 의무원",
+   "expect": 2,
+   "id": "v4rem-people-d-0152"
+  },
+  {
+   "file": "090",
+   "key": "person-0127",
+   "col": "json",
+   "from": "Amsa Water Purification Medic",
+   "to": "Amsa First-Aid Post Medic",
+   "expect": 2,
+   "id": "v4rem-people-d-0153"
+  },
+  {
+   "file": "090",
+   "key": "person-0127",
+   "col": "json_ko",
+   "from": "정수구역 응급 처치·시약 관리",
+   "to": "응급 처치·약재 재고 관리",
+   "expect": 1,
+   "id": "v4rem-people-d-0154"
+  },
+  {
+   "file": "090",
+   "key": "person-0127",
+   "col": "json",
+   "from": "Purification District First Aid and Reagent Management",
+   "to": "First Aid and Medicine Stock Management",
+   "expect": 1,
+   "id": "v4rem-people-d-0155"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json_ko",
+   "from": "교량 아래 상수관 수온으로 시간을 읽고",
+   "to": "교량 아래 철골의 얼음 두께와 울림으로 시간을 읽고",
+   "expect": 2,
+   "id": "v4rem-people-d-0156"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "He read time from the water temperature under the bridge",
+   "to": "He read time from the ice thickness and ringing of the steel under the bridge",
+   "expect": 1,
+   "id": "v4rem-people-d-0157"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json_ko",
+   "from": "채수와 진동을 같은 원장에",
+   "to": "균열과 진동을 같은 원장에",
+   "expect": 4,
+   "id": "v4rem-people-d-0158"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "intake and vibration in the same ledger",
+   "to": "cracks and vibration in the same ledger",
+   "expect": 2,
+   "id": "v4rem-people-d-0159"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json_ko",
+   "from": "상수관 지도가",
+   "to": "교량 하부 통로 지도가",
+   "expect": 4,
+   "id": "v4rem-people-d-0160"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "the water-main maps would be sold",
+   "to": "the under-bridge passage maps would be sold",
+   "expect": 2,
+   "id": "v4rem-people-d-0161"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "the water-pipe map sold",
+   "to": "the under-bridge passage map sold",
+   "expect": 2,
+   "id": "v4rem-people-d-0162"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json_ko",
+   "from": "교량 하부 채수·진동 조사",
+   "to": "교량 하부 균열·진동 조사",
+   "expect": 3,
+   "id": "v4rem-people-d-0163"
+  },
+  {
+   "file": "090",
+   "key": "person-0130",
+   "col": "json",
+   "from": "Bridge Underside Water Sampling and Vibration Survey",
+   "to": "Bridge Underside Crack and Vibration Survey",
+   "expect": 2,
+   "id": "v4rem-people-d-0164"
+  },
+  {
+   "file": "090",
+   "key": "person-0134",
+   "col": "json_ko",
+   "from": "수통 시세를 빨리 읽고, 저울을 속이는 상인을",
+   "to": "부품 시세를 빨리 읽고, 저울을 속이거나 훔친 부품을 섞는 상인을",
+   "expect": 2,
+   "id": "v4rem-people-d-0165"
+  },
+  {
+   "file": "090",
+   "key": "person-0134",
+   "col": "json",
+   "from": "canteen prices faster than the river wind and struck out at once from the morning lottery any merchant who cheated the scales.",
+   "to": "part prices faster than the river wind and struck out at once from the morning lottery any merchant who cheated the scales or mixed in stolen parts.",
+   "expect": 1,
+   "id": "v4rem-people-d-0166"
+  },
+  {
+   "file": "090",
+   "key": "person-0134",
+   "col": "json",
+   "from": "canteen prices faster than the river wind, and immediately strikes merchants who cheat the scales from the morning lottery.",
+   "to": "part prices faster than the river wind, and immediately strikes merchants who cheat the scales or mix in stolen parts from the morning lottery.",
+   "expect": 1,
+   "id": "v4rem-people-d-0167"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "정수 창구",
+   "to": "약재 창구",
+   "expect": 5,
+   "id": "v4rem-people-d-0168"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "water-purification window",
+   "to": "medicine window",
+   "expect": 3,
+   "id": "v4rem-people-d-0169"
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Cha Naru's purification window",
+   "to": "Cha Naru's medicine window",
+   "expect": 2,
+   "id": "v4rem-people-d-0170"
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json_ko",
+   "from": "상수행정 날인",
+   "to": "출발 역 역장 날인",
+   "expect": 4,
+   "id": "v4rem-people-d-0171"
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json",
+   "from": "the water administration's stamp",
+   "to": "the departure stationmaster's seal",
+   "expect": 2,
+   "id": "v4rem-people-d-0172"
+  },
+  {
+   "file": "090",
+   "key": "person-0141",
+   "col": "json",
+   "from": "the Sangsu Administration seal",
+   "to": "the departure stationmaster's seal",
+   "expect": 2,
+   "id": "v4rem-people-d-0173"
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json_ko",
+   "from": "정수·철도·기록 책임자",
+   "to": "발전·철도·기록 책임자",
+   "expect": 4,
+   "id": "v4rem-people-d-0174"
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json",
+   "from": "the purification, rail, and record chiefs",
+   "to": "the power, rail, and record chiefs",
+   "expect": 2,
+   "id": "v4rem-people-d-0175"
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json",
+   "from": "the water-purification, railway, and records chiefs",
+   "to": "the power, railway, and records chiefs",
+   "expect": 2,
+   "id": "v4rem-people-d-0176"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json_ko",
+   "from": "주리안의 북부 배관 점선과",
+   "to": "주리안의 북부 지하 통로 점선과",
+   "expect": 6,
+   "id": "v4rem-people-d-0177"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Ju Ri-an's northern pipeline dotted lines",
+   "to": "Ju Ri-an's northern underground passage dotted lines",
+   "expect": 3,
+   "id": "v4rem-people-d-0178"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json_ko",
+   "from": "채수와 레일 상태를",
+   "to": "침목과 레일 상태를",
+   "expect": 4,
+   "id": "v4rem-people-d-0179"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "intake and rail state",
+   "to": "sleeper and rail state",
+   "expect": 1,
+   "id": "v4rem-people-d-0180"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json_ko",
+   "from": "폐선 채수·레일 상태 조사",
+   "to": "폐선 레일·침목 상태 조사",
+   "expect": 5,
+   "id": "v4rem-people-d-0181"
+  },
+  {
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Abandoned Line Water Sampling and Rail Condition Survey",
+   "to": "Abandoned Line Rail and Sleeper Condition Survey",
+   "expect": 2,
+   "id": "v4rem-people-d-0182"
+  },
+  {
+   "file": "090",
+   "key": "person-0199",
+   "col": "json_ko",
+   "from": "한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
+   "to": "제빙기 배기열이 지상으로 새어 바깥 기계를 부르는 바람에 가동이 멈추고 얼음 원장이 종이쪼가리가 되는 것.",
+   "expect": 4,
+   "id": "v4rem-people-d-0183"
+  },
+  {
+   "file": "090",
+   "key": "person-0199",
+   "col": "json",
+   "from": "That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper.",
+   "to": "That exhaust heat leaking from the ice makers to the surface draws outside machines, forcing a shutdown and turning the ice ledger to scrap paper.",
+   "expect": 2,
+   "id": "v4rem-people-d-0184"
+  },
+  {
+   "file": "090",
+   "key": "person-0199",
+   "col": "json",
+   "from": "That Han River water intake and ice-making power are cut off at the same time, turning the ice ledger into scraps of paper.",
+   "to": "That exhaust heat leaking from the ice makers to the surface draws outside machines, forcing a shutdown and turning the ice ledger into scraps of paper.",
+   "expect": 2,
+   "id": "v4rem-people-d-0185"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json_ko",
+   "from": "한강 취수와 제빙 전력이 동시에 끊겨 얼음 원장이 종이쪼가리가 되는 것.",
+   "to": "제빙기 배기열이 지상으로 새어 바깥 기계를 부르는 바람에 가동이 멈추고 얼음 원장이 종이쪼가리가 되는 것.",
+   "expect": 4,
+   "id": "v4rem-people-d-0186"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json",
+   "from": "That Han River intake and ice-making power would cut at once and the ice ledger would become scrap paper.",
+   "to": "That exhaust heat leaking from the ice makers to the surface draws outside machines, forcing a shutdown and turning the ice ledger to scrap paper.",
+   "expect": 2,
+   "id": "v4rem-people-d-0187"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json",
+   "from": "That Han River water intake and ice-making power are cut off at the same time, turning the ice ledger into scraps of paper.",
+   "to": "That exhaust heat leaking from the ice makers to the surface draws outside machines, forcing a shutdown and turning the ice ledger into scraps of paper.",
+   "expect": 1,
+   "id": "v4rem-people-d-0188"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json_ko",
+   "from": "송도현은 접수한 호스의 관로 사용 위치를 지윤재에게 알린다. 지윤재는 제빙 설비의 연결과 부품 도장을 확인해 그 호스가 점검 없이 제빙기에 달리지 않게 한다.",
+   "to": "송도현은 접수한 밀수 연통 조각을 단 환기구의 위치를 지윤재에게 알린다. 지윤재는 제빙기 배기 연결과 부품 도장을 확인해, 그 연통이 점검 없이 제빙기에 달려 열이 지상으로 새지 않게 한다.",
+   "expect": 1,
+   "id": "v4rem-people-d-0189"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json",
+   "from": "Song Do-hyeon tells Ji Yun-jae where the hose he received is to be used in the pipeline. Ji Yun-jae checks the ice-making equipment connections and the part stamps so that the hose is not fitted to an ice maker without inspection.",
+   "to": "Song Do-hyeon tells Ji Yun-jae which vent each smuggled stove-flue section he received is fitted to. Ji Yun-jae checks the ice maker's exhaust connections and the part stamps so that no flue is fitted to an ice maker without inspection and heat does not leak to the surface.",
+   "expect": 1,
+   "id": "v4rem-people-d-0190"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json_ko",
+   "from": "송도현은 접수한 호스의 관로 사용 위치를 지윤재에게 알린다. 지윤재는 제빙 설비의 연결과 부품 도장을 확인해 그 호스가 점검 없이 제빙기에 달리지 않게 한다.",
+   "to": "송도현은 접수한 밀수 연통 조각을 단 환기구의 위치를 지윤재에게 알린다. 지윤재는 제빙기 배기 연결과 부품 도장을 확인해, 그 연통이 점검 없이 제빙기에 달려 열이 지상으로 새지 않게 한다.",
+   "expect": 1,
+   "id": "v4rem-people-d-0191"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "Song Do-hyeon tells Ji Yun-jae where the hose he received is to be used in the pipeline. Ji Yun-jae checks the ice-making equipment connections and the part stamps so that the hose is not fitted to an ice maker without inspection.",
+   "to": "Song Do-hyeon tells Ji Yun-jae which vent each smuggled stove-flue section he received is fitted to. Ji Yun-jae checks the ice maker's exhaust connections and the part stamps so that no flue is fitted to an ice maker without inspection and heat does not leak to the surface.",
+   "expect": 1,
+   "id": "v4rem-people-d-0192"
+  },
+  {
+   "file": "090",
+   "key": "person-0206",
+   "col": "json_ko",
+   "from": "한강 취수 탐사원",
+   "to": "한강 얼음 두께 탐사원",
+   "expect": 2,
+   "id": "v4rem-people-d-0193"
+  },
+  {
+   "file": "090",
+   "key": "person-0206",
+   "col": "json",
+   "from": "Han River Water Intake Surveyor",
+   "to": "Han River Ice Thickness Surveyor",
+   "expect": 2,
+   "id": "v4rem-people-d-0194"
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json_ko",
+   "from": "부두 수도꼭지가 마르면 진료 순서를 가족 단위로 바꾸고,",
+   "to": "부두 난로가 꺼져 추위가 번지면 진료 순서를 가족 단위로 묶어 한곳에서 데우고,",
+   "expect": 2,
+   "id": "v4rem-people-d-0195"
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json",
+   "from": "When the quay taps ran dry he changed care order to family units and",
+   "to": "When the quay stoves went out and the cold spread he grouped care order by family so each family could be warmed in one place, and",
+   "expect": 1,
+   "id": "v4rem-people-d-0196"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json_ko",
+   "from": "탁수 재고 야간 이전 목격자",
+   "to": "야간 재고 반출 목격자",
+   "expect": 9,
+   "id": "v4rem-people-d-0197"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json",
+   "from": "Turbid Water Stock Night Transfer Witness",
+   "to": "Night Stock Removal Witness",
+   "expect": 3,
+   "id": "v4rem-people-d-0198"
+  },
+  {
+   "file": "090",
+   "key": "person-0223",
+   "col": "json_ko",
+   "from": "뚝섬 수질 검사망이 멈추자",
+   "to": "뚝섬 무선 중계탑이 눈보라로 멈추자",
+   "expect": 2,
+   "id": "v4rem-people-d-0199"
+  },
+  {
+   "file": "090",
+   "key": "person-0223",
+   "col": "json",
+   "from": "When the Ttukseom water-quality testing network stopped,",
+   "to": "When the Ttukseom radio relay tower went down in the blizzard,",
+   "expect": 2,
+   "id": "v4rem-people-d-0200"
+  },
+  {
+   "file": "090",
+   "key": "person-0234",
+   "col": "json_ko",
+   "from": "뚝섬 수질 검사망이 멈추자",
+   "to": "뚝섬 무선 중계탑이 눈보라로 멈추자",
+   "expect": 2,
+   "id": "v4rem-people-d-0201"
+  },
+  {
+   "file": "090",
+   "key": "person-0234",
+   "col": "json",
+   "from": "When the Ttukseom water-quality inspection network stopped,",
+   "to": "When the Ttukseom radio relay tower went down in the blizzard,",
+   "expect": 2,
+   "id": "v4rem-people-d-0202"
+  },
+  {
+   "file": "090",
+   "key": "person-0248",
+   "col": "json_ko",
+   "from": "영등포 정수 당직에서 자랐다.",
+   "to": "영등포 역 배급 줄에서 자랐다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0203"
+  },
+  {
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "Raised at the Yeongdeungpo water-purification watch.",
+   "to": "Raised in the Yeongdeungpo station ration queue.",
+   "expect": 2,
+   "id": "v4rem-people-d-0204"
+  },
+  {
+   "file": "090",
+   "key": "person-0248",
+   "col": "json_ko",
+   "from": "탁수 밤의 밸브 서명으 일이",
+   "to": "정전 밤에 저울 봉인을 대신 서명한 일이",
+   "expect": 2,
+   "id": "v4rem-people-d-0205"
+  },
+  {
+   "file": "090",
+   "key": "person-0248",
+   "col": "json",
+   "from": "records her signing the valve on the Night of the Turbid Water.",
+   "to": "records her countersigning the scale seal on a blackout night.",
+   "expect": 2,
+   "id": "v4rem-people-d-0206"
+  },
+  {
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "영등포 정수 당직에서 자랐다.",
+   "to": "영등포 역 배급 줄에서 자랐다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0207"
+  },
+  {
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "Grew up on the Yeongdeungpo water-purification watch.",
+   "to": "Grew up in the Yeongdeungpo station ration queue.",
+   "expect": 2,
+   "id": "v4rem-people-d-0208"
+  },
+  {
+   "file": "090",
+   "key": "person-0251",
+   "col": "json_ko",
+   "from": "탁수 밤의 밸브 서명으 일이",
+   "to": "정전 밤에 창고 봉인을 대신 서명한 일이",
+   "expect": 2,
+   "id": "v4rem-people-d-0209"
+  },
+  {
+   "file": "090",
+   "key": "person-0251",
+   "col": "json",
+   "from": "records an incident concerning a valve signature on Turbid Water Night.",
+   "to": "records an incident of countersigning a storehouse seal on a blackout night.",
+   "expect": 2,
+   "id": "v4rem-people-d-0210"
+  },
+  {
+   "file": "090",
+   "key": "person-0287",
+   "col": "json_ko",
+   "from": "수위·밸브 기록",
+   "to": "셔터·연료 기록",
+   "expect": 1,
+   "id": "v4rem-people-d-0211"
+  },
+  {
+   "file": "090",
+   "key": "person-0287",
+   "col": "json",
+   "from": "Level and valve recording",
+   "to": "Shutter and fuel recording",
+   "expect": 1,
+   "id": "v4rem-people-d-0212"
+  },
+  {
+   "file": "090",
+   "key": "person-0342",
+   "col": "json_ko",
+   "from": "정호준의 수질·약재 공개 검사를",
+   "to": "정호준의 위조약 공개 감별을",
+   "expect": 5,
+   "id": "v4rem-people-d-0213"
+  },
+  {
+   "file": "090",
+   "key": "person-0342",
+   "col": "json",
+   "from": "Jeong Hojun's public water and herb inspections",
+   "to": "Jeong Hojun's public counterfeit-medicine screenings",
+   "expect": 2,
+   "id": "v4rem-people-d-0214"
+  },
+  {
+   "file": "090",
+   "key": "person-0342",
+   "col": "json",
+   "from": "Jeong Hojun's public inspection of water quality and medicinal herbs",
+   "to": "Jeong Hojun's public screening of counterfeit medicines",
+   "expect": 1,
+   "id": "v4rem-people-d-0215"
+  },
+  {
+   "file": "090",
+   "key": "person-0342",
+   "col": "json",
+   "from": "Jeong Hojun's public water-quality and herb tests",
+   "to": "Jeong Hojun's public counterfeit-medicine screenings",
+   "expect": 1,
+   "id": "v4rem-people-d-0216"
+  },
+  {
+   "file": "090",
+   "key": "person-0347",
+   "col": "json_ko",
+   "from": "상수보호 징발",
+   "to": "상시 보호 징발",
+   "expect": 4,
+   "id": "v4rem-people-d-0217"
+  },
+  {
+   "file": "090",
+   "key": "person-0347",
+   "col": "json",
+   "from": "Bae Woojin's water-protection requisition",
+   "to": "Bae Woojin's standing-protection requisition",
+   "expect": 2,
+   "id": "v4rem-people-d-0218"
+  },
+  {
+   "file": "090",
+   "key": "person-0347",
+   "col": "json",
+   "from": "Bae U-jin's Sangsu Protection requisition",
+   "to": "Bae U-jin's Standing Protection requisition",
+   "expect": 2,
+   "id": "v4rem-people-d-0219"
+  },
+  {
+   "file": "090",
+   "key": "person-0358",
+   "col": "json_ko",
+   "from": "상수관 연기를 적대 봉화로 오인해",
+   "to": "난로 환기구 연기를 적대 봉화로 오인해",
+   "expect": 2,
+   "id": "v4rem-people-d-0220"
+  },
+  {
+   "file": "090",
+   "key": "person-0358",
+   "col": "json",
+   "from": "Pipe smoke was mistaken for a hostile beacon",
+   "to": "Stove vent smoke was mistaken for a hostile beacon",
+   "expect": 2,
+   "id": "v4rem-people-d-0221"
+  },
+  {
+   "file": "090",
+   "key": "person-0360",
+   "col": "json_ko",
+   "from": "상수관 파손을 적대행위로 적은",
+   "to": "교량 하부 환기관 파손을 적대행위로 적은",
+   "expect": 2,
+   "id": "v4rem-people-d-0222"
+  },
+  {
+   "file": "090",
+   "key": "person-0360",
+   "col": "json",
+   "from": "recording the water main damage as a hostile act",
+   "to": "recording the under-bridge vent pipe damage as a hostile act",
+   "expect": 1,
+   "id": "v4rem-people-d-0223"
+  },
+  {
+   "file": "090",
+   "key": "person-0366",
+   "col": "json_ko",
+   "from": "정수 펌프보다 능선 조명에",
+   "to": "의무소 난방보다 능선 조명에",
+   "expect": 2,
+   "id": "v4rem-people-d-0224"
+  },
+  {
+   "file": "090",
+   "key": "person-0366",
+   "col": "json",
+   "from": "divert power from the purification pumps to the ridge lighting",
+   "to": "divert power from the aid-station heating to the ridge lighting",
+   "expect": 1,
+   "id": "v4rem-people-d-0225"
+  },
+  {
+   "file": "090",
+   "key": "person-0366",
+   "col": "json",
+   "from": "the water purification pumps",
+   "to": "the aid-station heating",
+   "expect": 1,
+   "id": "v4rem-people-d-0226"
+  },
+  {
+   "file": "090",
+   "key": "person-0366",
+   "col": "json_ko",
+   "from": "상수관 파손과 정전이 겹치자",
+   "to": "송전선 파손과 정전이 겹치자",
+   "expect": 2,
+   "id": "v4rem-people-d-0227"
+  },
+  {
+   "file": "090",
+   "key": "person-0366",
+   "col": "json",
+   "from": "When the water main damage and the blackout coincided",
+   "to": "When the power line damage and the blackout coincided",
+   "expect": 2,
+   "id": "v4rem-people-d-0228"
+  },
+  {
+   "file": "090",
+   "key": "person-0424",
+   "col": "json_ko",
+   "from": "교대마다 수위",
+   "to": "교대마다 재고 대조",
+   "expect": 1,
+   "id": "v4rem-people-d-0229"
+  },
+  {
+   "file": "090",
+   "key": "person-0424",
+   "col": "json",
+   "from": "Levels each shift",
+   "to": "Stock count each shift",
+   "expect": 1,
+   "id": "v4rem-people-d-0230"
+  },
+  {
+   "file": "090",
+   "key": "person-0452",
+   "col": "json_ko",
+   "from": "수질·약효 기록",
+   "to": "체온·약효 기록",
+   "expect": 3,
+   "id": "v4rem-people-d-0231"
+  },
+  {
+   "file": "090",
+   "key": "person-0452",
+   "col": "json",
+   "from": "water-quality and medicinal-efficacy records",
+   "to": "temperature and medicinal-efficacy records",
+   "expect": 2,
+   "id": "v4rem-people-d-0232"
+  },
+  {
+   "file": "090",
+   "key": "person-0500",
+   "col": "json_ko",
+   "from": "수질·약효 기록",
+   "to": "체온·약효 기록",
+   "expect": 3,
+   "id": "v4rem-people-d-0233"
+  },
+  {
+   "file": "090",
+   "key": "person-0500",
+   "col": "json",
+   "from": "water-quality and medicinal-efficacy records",
+   "to": "temperature and medicinal-efficacy records",
+   "expect": 2,
+   "id": "v4rem-people-d-0234"
+  },
+  {
+   "file": "090",
+   "key": "person-0548",
+   "col": "json_ko",
+   "from": "수질·약효 기록",
+   "to": "체온·약효 기록",
+   "expect": 3,
+   "id": "v4rem-people-d-0235"
+  },
+  {
+   "file": "090",
+   "key": "person-0548",
+   "col": "json",
+   "from": "water-quality and medicinal-efficacy records",
+   "to": "temperature and medicinal-efficacy records",
+   "expect": 2,
+   "id": "v4rem-people-d-0236"
+  },
+  {
+   "file": "090",
+   "key": "person-0596",
+   "col": "json_ko",
+   "from": "수질·약효 기록",
+   "to": "체온·약효 기록",
+   "expect": 3,
+   "id": "v4rem-people-d-0237"
+  },
+  {
+   "file": "090",
+   "key": "person-0596",
+   "col": "json",
+   "from": "the water-quality and efficacy records",
+   "to": "the temperature and efficacy records",
+   "expect": 2,
+   "id": "v4rem-people-d-0238"
+  },
+  {
+   "file": "090",
+   "key": "person-0859",
+   "col": "json_ko",
+   "from": "교량 수위와 출입 기록을",
+   "to": "교량 불빛 흔적과 출입 기록을",
+   "expect": 1,
+   "id": "v4rem-people-d-0239"
+  },
+  {
+   "file": "090",
+   "key": "person-0859",
+   "col": "json",
+   "from": "the bridge water level and the entry records",
+   "to": "the traces of light on the bridge and the entry records",
+   "expect": 1,
+   "id": "v4rem-people-d-0240"
+  },
+  {
+   "file": "090",
+   "key": "person-0019",
+   "col": "json",
+   "from": "A contract executing Jeong Moran's berth lottery by auction, splitting order with Gu Taeyun's Yangcheon canteens, and sending Nam Yungyeong's emergency price offer back as a grudge.",
+   "to": "Splits loads with the market hands who run the auction in lottery order, and sends back as a grudge any offer to raise winter emergency prices.",
+   "expect": 2,
+   "id": "v4rem-people-d-0241"
+  },
+  {
+   "file": "090",
+   "key": "person-0098",
+   "col": "json_ko",
+   "from": "물과 나사가 선창을 서로 붙잡지 못하게 한다.",
+   "to": "식량과 나사가 선창 짐 순서를 서로 볼모로 잡지 못하게 한다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0242"
+  },
+  {
+   "file": "090",
+   "key": "person-0098",
+   "col": "json",
+   "from": "so that water and screws do not hold the wharf hostage from each other",
+   "to": "so that food and screws do not hold each other's loading order hostage on the wharf",
+   "expect": 2,
+   "id": "v4rem-people-d-0243"
+  },
+  {
+   "file": "090",
+   "key": "person-0098",
+   "col": "json",
+   "from": "Packed Water Transport",
+   "to": "Packing River Transport",
+   "expect": 2,
+   "id": "v4rem-people-d-0244"
+  },
+  {
+   "file": "090",
+   "key": "person-0036",
+   "col": "json_ko",
+   "from": "의료·정수 작업반까지",
+   "to": "의료반과 출입구 방벽 보수반까지",
+   "expect": 2,
+   "id": "v4rem-people-d-0245"
+  },
+  {
+   "file": "090",
+   "key": "person-0036",
+   "col": "json",
+   "from": "medical and water-purification work crews as well",
+   "to": "medical crews and entrance-barrier repair crews as well",
+   "expect": 2,
+   "id": "v4rem-people-d-0246"
+  },
+  {
+   "file": "090",
+   "key": "person-0048",
+   "col": "json_ko",
+   "from": "의료·정수 작업반까지",
+   "to": "의료반과 출입구 방벽 보수반까지",
+   "expect": 2,
+   "id": "v4rem-people-d-0247"
+  },
+  {
+   "file": "090",
+   "key": "person-0048",
+   "col": "json",
+   "from": "medical and water-purification work crews as well",
+   "to": "medical crews and entrance-barrier repair crews as well",
+   "expect": 2,
+   "id": "v4rem-people-d-0248"
+  },
+  {
+   "file": "050",
+   "key": "person-0037",
+   "col": "title",
+   "from": "Geumcheon Wonsu Rations Citizen Representative",
+   "to": "Geumcheon Food Distribution Officer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0249"
+  },
+  {
+   "file": "050",
+   "key": "person-0037",
+   "col": "position",
+   "from": "Geumcheon Wonsu Rations Citizen Representative",
+   "to": "Geumcheon Food Distribution Officer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0250"
+  },
+  {
+   "file": "050",
+   "key": "person-0037",
+   "col": "title_ko",
+   "from": "금천 원수식량 시민대표",
+   "to": "금천 식량 나눔 담당",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0251"
+  },
+  {
+   "file": "050",
+   "key": "person-0037",
+   "col": "position_ko",
+   "from": "금천 원수식량 시민대표",
+   "to": "금천 식량 나눔 담당",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0252"
+  },
+  {
+   "file": "090",
+   "key": "person-0050",
+   "col": "json_ko",
+   "from": "탁수 구간에 넣은 가짜 패킹이 터져 구로 저수조가 비고, 그 사고가 군수 작업반의 강제 동원 명분이 되는 것.",
+   "to": "가짜 패킹이 겨울 밤 발전기 연료 펌프에서 터져 불꽃과 열이 새고, 그 열이 바깥 기계를 불러 군수 작업반의 강제 동원 명분이 되는 것.",
+   "expect": 4,
+   "id": "v4rem-people-d-0253"
+  },
+  {
+   "file": "090",
+   "key": "person-0050",
+   "col": "json",
+   "from": "That a counterfeit packing burst in a turbid-water section, the Guro reservoir emptied, and that accident became a munitions squad's forced-mobilization pretext.",
+   "to": "That a counterfeit packing burst in a generator fuel pump on a winter night, sparks and heat leaked out, the heat drew outside machines, and that accident became a munitions squad's forced-mobilization pretext.",
+   "expect": 2,
+   "id": "v4rem-people-d-0254"
+  },
+  {
+   "file": "090",
+   "key": "person-0050",
+   "col": "json",
+   "from": "That a counterfeit packing placed in a turbid-water section bursts, emptying the Guro cistern, and that the accident becomes the pretext for forced mobilization by the munitions work crews.",
+   "to": "That a counterfeit packing bursts in a generator fuel pump on a winter night, sparks and heat leak out and draw outside machines, and the accident becomes the pretext for forced mobilization by the munitions work crews.",
+   "expect": 2,
+   "id": "v4rem-people-d-0255"
+  },
+  {
+   "file": "090",
+   "key": "person-0050",
+   "col": "json_ko",
+   "from": "구로2동 저수조에서 회수한",
+   "to": "구로2동 발전실에서 회수한",
+   "expect": 3,
+   "id": "v4rem-people-d-0256"
+  },
+  {
+   "file": "090",
+   "key": "person-0050",
+   "col": "json",
+   "from": "recovered from the Guro 2-dong cistern",
+   "to": "recovered from the Guro 2-dong generator room",
+   "expect": 3,
+   "id": "v4rem-people-d-0257"
+  },
+  {
+   "file": "090",
+   "key": "person-0063",
+   "col": "json_ko",
+   "from": "관로 대장 일화를",
+   "to": "환기구 대장 일화를",
+   "expect": 1,
+   "id": "v4rem-people-d-0258"
+  },
+  {
+   "file": "090",
+   "key": "person-0063",
+   "col": "json",
+   "from": "a pipeline-register episode",
+   "to": "a vent-register episode",
+   "expect": 1,
+   "id": "v4rem-people-d-0259"
+  },
+  {
+   "file": "090",
+   "key": "person-0063",
+   "col": "json_ko",
+   "from": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다.",
+   "to": "2125년 밀수 연통 조각을 접수해, 어느 환기구에 달았는지 적는 대장을 남겼다.",
+   "expect": 2,
+   "id": "v4rem-people-d-0260"
+  },
+  {
+   "file": "090",
+   "key": "person-0063",
+   "col": "json",
+   "from": "In 2125, received a smuggled hose and left a ledger to be hung on the pipeline.",
+   "to": "In 2125, received smuggled stove-flue sections and left a ledger of which vent each was fitted to.",
+   "expect": 2,
+   "id": "v4rem-people-d-0261"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "대피 경로와 우물 수위를",
+   "to": "대피 경로와 셔터 점검 시각을",
+   "expect": 1,
+   "id": "v4rem-people-d-0262"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json",
+   "from": "evacuation routes and well levels",
+   "to": "evacuation routes and the shutter inspection times",
+   "expect": 1,
+   "id": "v4rem-people-d-0263"
+  },
+  {
+   "file": "090",
+   "key": "person-0073",
+   "col": "json_ko",
+   "from": "대피 경로와 우물 수위를",
+   "to": "대피 경로와 셔터 점검 시각을",
+   "expect": 1,
+   "id": "v4rem-people-d-0264"
+  },
+  {
+   "file": "090",
+   "key": "person-0073",
+   "col": "json",
+   "from": "evacuation routes and well levels",
+   "to": "evacuation routes and the shutter inspection times",
+   "expect": 2,
+   "id": "v4rem-people-d-0265"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json_ko",
+   "from": "2125년 밀수 호스를 접수해 관로에 다는 대장을 남겼다.",
+   "to": "2125년 밀수 연통 조각을 접수해 어느 환기구에 달았는지 적는 대장을 남겼다.",
+   "expect": 3,
+   "id": "v4rem-people-d-0266"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "In 2125 he impounded a smuggled hose and left the ledger of its fitting to the pipeline.",
+   "to": "In 2125 he impounded a smuggled stove-flue section and left a ledger of the vent it was fitted to.",
+   "expect": 1,
+   "id": "v4rem-people-d-0267"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "In 2125 he received smuggled hoses and left a ledger of their attachment to the pipelines.",
+   "to": "In 2125 he received smuggled stove-flue sections and left a ledger of the vents they were fitted to.",
+   "expect": 2,
+   "id": "v4rem-people-d-0268"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json_ko",
+   "from": "밀수 호스 접수와 관로 부착 대장을 남겼다.",
+   "to": "밀수 연통 접수와 환기구 부착 대장을 남겼다.",
+   "expect": 1,
+   "id": "v4rem-people-d-0269"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "Records receipt and attachment of a smuggled hose.",
+   "to": "Records receipt and vent fitting of smuggled stove flues.",
+   "expect": 1,
+   "id": "v4rem-people-d-0270"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json_ko",
+   "from": "밀수 호스 관로 대장을",
+   "to": "밀수 연통 환기구 대장을",
+   "expect": 2,
+   "id": "v4rem-people-d-0271"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "the smuggled-hose pipeline ledger",
+   "to": "the smuggled stove-flue vent ledger",
+   "expect": 2,
+   "id": "v4rem-people-d-0272"
+  },
+  {
+   "file": "050",
+   "key": "person-0460",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0273"
+  },
+  {
+   "file": "050",
+   "key": "person-0460",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0274"
+  },
+  {
+   "file": "090",
+   "key": "person-0460",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0275"
+  },
+  {
+   "file": "090",
+   "key": "person-0460",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0276"
+  },
+  {
+   "file": "050",
+   "key": "person-0508",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0277"
+  },
+  {
+   "file": "050",
+   "key": "person-0508",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0278"
+  },
+  {
+   "file": "090",
+   "key": "person-0508",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0279"
+  },
+  {
+   "file": "090",
+   "key": "person-0508",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0280"
+  },
+  {
+   "file": "050",
+   "key": "person-0556",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0281"
+  },
+  {
+   "file": "050",
+   "key": "person-0556",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0282"
+  },
+  {
+   "file": "090",
+   "key": "person-0556",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0283"
+  },
+  {
+   "file": "090",
+   "key": "person-0556",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0284"
+  },
+  {
+   "file": "050",
+   "key": "person-0604",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0285"
+  },
+  {
+   "file": "050",
+   "key": "person-0604",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0286"
+  },
+  {
+   "file": "090",
+   "key": "person-0604",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0287"
+  },
+  {
+   "file": "090",
+   "key": "person-0604",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0288"
+  },
+  {
+   "file": "050",
+   "key": "person-0652",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0289"
+  },
+  {
+   "file": "050",
+   "key": "person-0652",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0290"
+  },
+  {
+   "file": "090",
+   "key": "person-0652",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0291"
+  },
+  {
+   "file": "090",
+   "key": "person-0652",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0292"
+  },
+  {
+   "file": "050",
+   "key": "person-0700",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0293"
+  },
+  {
+   "file": "050",
+   "key": "person-0700",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0294"
+  },
+  {
+   "file": "090",
+   "key": "person-0700",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0295"
+  },
+  {
+   "file": "090",
+   "key": "person-0700",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0296"
+  },
+  {
+   "file": "050",
+   "key": "person-0748",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0297"
+  },
+  {
+   "file": "050",
+   "key": "person-0748",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0298"
+  },
+  {
+   "file": "090",
+   "key": "person-0748",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0299"
+  },
+  {
+   "file": "090",
+   "key": "person-0748",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0300"
+  },
+  {
+   "file": "050",
+   "key": "person-0796",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0301"
+  },
+  {
+   "file": "050",
+   "key": "person-0796",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0302"
+  },
+  {
+   "file": "090",
+   "key": "person-0796",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0303"
+  },
+  {
+   "file": "090",
+   "key": "person-0796",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0304"
+  },
+  {
+   "file": "050",
+   "key": "person-0844",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0305"
+  },
+  {
+   "file": "050",
+   "key": "person-0844",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0306"
+  },
+  {
+   "file": "090",
+   "key": "person-0844",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0307"
+  },
+  {
+   "file": "090",
+   "key": "person-0844",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0308"
+  },
+  {
+   "file": "050",
+   "key": "person-0892",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0309"
+  },
+  {
+   "file": "050",
+   "key": "person-0892",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0310"
+  },
+  {
+   "file": "090",
+   "key": "person-0892",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0311"
+  },
+  {
+   "file": "090",
+   "key": "person-0892",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0312"
+  },
+  {
+   "file": "050",
+   "key": "person-0940",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0313"
+  },
+  {
+   "file": "050",
+   "key": "person-0940",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0314"
+  },
+  {
+   "file": "090",
+   "key": "person-0940",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0315"
+  },
+  {
+   "file": "090",
+   "key": "person-0940",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0316"
+  },
+  {
+   "file": "050",
+   "key": "person-0988",
+   "col": "title",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0317"
+  },
+  {
+   "file": "050",
+   "key": "person-0988",
+   "col": "title_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0318"
+  },
+  {
+   "file": "090",
+   "key": "person-0988",
+   "col": "json_ko",
+   "from": "상수 호위 순찰대",
+   "to": "동방사 경비조",
+   "expect": 1,
+   "id": "v4rem-people-d-0319"
+  },
+  {
+   "file": "090",
+   "key": "person-0988",
+   "col": "json",
+   "from": "Water Supply Escort Patrol",
+   "to": "Eastern Command Guard Squad",
+   "expect": 1,
+   "id": "v4rem-people-d-0320"
+  },
+  {
+   "file": "050",
+   "key": "person-0442",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0321"
+  },
+  {
+   "file": "050",
+   "key": "person-0442",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0322"
+  },
+  {
+   "file": "050",
+   "key": "person-0442",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0323"
+  },
+  {
+   "file": "050",
+   "key": "person-0442",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0324"
+  },
+  {
+   "file": "090",
+   "key": "person-0442",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0325"
+  },
+  {
+   "file": "090",
+   "key": "person-0442",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0326"
+  },
+  {
+   "file": "050",
+   "key": "person-0490",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0327"
+  },
+  {
+   "file": "050",
+   "key": "person-0490",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0328"
+  },
+  {
+   "file": "050",
+   "key": "person-0490",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0329"
+  },
+  {
+   "file": "050",
+   "key": "person-0490",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0330"
+  },
+  {
+   "file": "090",
+   "key": "person-0490",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0331"
+  },
+  {
+   "file": "090",
+   "key": "person-0490",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0332"
+  },
+  {
+   "file": "050",
+   "key": "person-0538",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0333"
+  },
+  {
+   "file": "050",
+   "key": "person-0538",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0334"
+  },
+  {
+   "file": "050",
+   "key": "person-0538",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0335"
+  },
+  {
+   "file": "050",
+   "key": "person-0538",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0336"
+  },
+  {
+   "file": "090",
+   "key": "person-0538",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0337"
+  },
+  {
+   "file": "090",
+   "key": "person-0538",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0338"
+  },
+  {
+   "file": "050",
+   "key": "person-0586",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0339"
+  },
+  {
+   "file": "050",
+   "key": "person-0586",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0340"
+  },
+  {
+   "file": "050",
+   "key": "person-0586",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0341"
+  },
+  {
+   "file": "050",
+   "key": "person-0586",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0342"
+  },
+  {
+   "file": "090",
+   "key": "person-0586",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0343"
+  },
+  {
+   "file": "090",
+   "key": "person-0586",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0344"
+  },
+  {
+   "file": "050",
+   "key": "person-0634",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0345"
+  },
+  {
+   "file": "050",
+   "key": "person-0634",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0346"
+  },
+  {
+   "file": "050",
+   "key": "person-0634",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0347"
+  },
+  {
+   "file": "050",
+   "key": "person-0634",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0348"
+  },
+  {
+   "file": "090",
+   "key": "person-0634",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0349"
+  },
+  {
+   "file": "090",
+   "key": "person-0634",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0350"
+  },
+  {
+   "file": "050",
+   "key": "person-0682",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0351"
+  },
+  {
+   "file": "050",
+   "key": "person-0682",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0352"
+  },
+  {
+   "file": "050",
+   "key": "person-0682",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0353"
+  },
+  {
+   "file": "050",
+   "key": "person-0682",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0354"
+  },
+  {
+   "file": "090",
+   "key": "person-0682",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0355"
+  },
+  {
+   "file": "090",
+   "key": "person-0682",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0356"
+  },
+  {
+   "file": "050",
+   "key": "person-0730",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0357"
+  },
+  {
+   "file": "050",
+   "key": "person-0730",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0358"
+  },
+  {
+   "file": "050",
+   "key": "person-0730",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0359"
+  },
+  {
+   "file": "050",
+   "key": "person-0730",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0360"
+  },
+  {
+   "file": "090",
+   "key": "person-0730",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0361"
+  },
+  {
+   "file": "090",
+   "key": "person-0730",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0362"
+  },
+  {
+   "file": "050",
+   "key": "person-0778",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0363"
+  },
+  {
+   "file": "050",
+   "key": "person-0778",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0364"
+  },
+  {
+   "file": "050",
+   "key": "person-0778",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0365"
+  },
+  {
+   "file": "050",
+   "key": "person-0778",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0366"
+  },
+  {
+   "file": "090",
+   "key": "person-0778",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0367"
+  },
+  {
+   "file": "090",
+   "key": "person-0778",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0368"
+  },
+  {
+   "file": "050",
+   "key": "person-0826",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0369"
+  },
+  {
+   "file": "050",
+   "key": "person-0826",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0370"
+  },
+  {
+   "file": "050",
+   "key": "person-0826",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0371"
+  },
+  {
+   "file": "050",
+   "key": "person-0826",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0372"
+  },
+  {
+   "file": "090",
+   "key": "person-0826",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0373"
+  },
+  {
+   "file": "090",
+   "key": "person-0826",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0374"
+  },
+  {
+   "file": "050",
+   "key": "person-0874",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0375"
+  },
+  {
+   "file": "050",
+   "key": "person-0874",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0376"
+  },
+  {
+   "file": "050",
+   "key": "person-0874",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0377"
+  },
+  {
+   "file": "050",
+   "key": "person-0874",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0378"
+  },
+  {
+   "file": "090",
+   "key": "person-0874",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0379"
+  },
+  {
+   "file": "090",
+   "key": "person-0874",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0380"
+  },
+  {
+   "file": "050",
+   "key": "person-0922",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0381"
+  },
+  {
+   "file": "050",
+   "key": "person-0922",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0382"
+  },
+  {
+   "file": "050",
+   "key": "person-0922",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0383"
+  },
+  {
+   "file": "050",
+   "key": "person-0922",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0384"
+  },
+  {
+   "file": "090",
+   "key": "person-0922",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0385"
+  },
+  {
+   "file": "090",
+   "key": "person-0922",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0386"
+  },
+  {
+   "file": "050",
+   "key": "person-0970",
+   "col": "title",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0387"
+  },
+  {
+   "file": "050",
+   "key": "person-0970",
+   "col": "position",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0388"
+  },
+  {
+   "file": "050",
+   "key": "person-0970",
+   "col": "title_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0389"
+  },
+  {
+   "file": "050",
+   "key": "person-0970",
+   "col": "position_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0390"
+  },
+  {
+   "file": "090",
+   "key": "person-0970",
+   "col": "json_ko",
+   "from": "수질 계측원",
+   "to": "출입구 열·빛 계측원",
+   "expect": 2,
+   "id": "v4rem-people-d-0391"
+  },
+  {
+   "file": "090",
+   "key": "person-0970",
+   "col": "json",
+   "from": "Water Quality Gauger",
+   "to": "Entrance Heat and Light Gauger",
+   "expect": 2,
+   "id": "v4rem-people-d-0392"
+  },
+  {
+   "file": "050",
+   "key": "person-0456",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0393"
+  },
+  {
+   "file": "050",
+   "key": "person-0456",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0394"
+  },
+  {
+   "file": "050",
+   "key": "person-0456",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0395"
+  },
+  {
+   "file": "050",
+   "key": "person-0456",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0396"
+  },
+  {
+   "file": "090",
+   "key": "person-0456",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0397"
+  },
+  {
+   "file": "090",
+   "key": "person-0456",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0398"
+  },
+  {
+   "file": "050",
+   "key": "person-0504",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0399"
+  },
+  {
+   "file": "050",
+   "key": "person-0504",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0400"
+  },
+  {
+   "file": "050",
+   "key": "person-0504",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0401"
+  },
+  {
+   "file": "050",
+   "key": "person-0504",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0402"
+  },
+  {
+   "file": "090",
+   "key": "person-0504",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0403"
+  },
+  {
+   "file": "090",
+   "key": "person-0504",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0404"
+  },
+  {
+   "file": "050",
+   "key": "person-0552",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0405"
+  },
+  {
+   "file": "050",
+   "key": "person-0552",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0406"
+  },
+  {
+   "file": "050",
+   "key": "person-0552",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0407"
+  },
+  {
+   "file": "050",
+   "key": "person-0552",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0408"
+  },
+  {
+   "file": "090",
+   "key": "person-0552",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0409"
+  },
+  {
+   "file": "090",
+   "key": "person-0552",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0410"
+  },
+  {
+   "file": "050",
+   "key": "person-0648",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0411"
+  },
+  {
+   "file": "050",
+   "key": "person-0648",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0412"
+  },
+  {
+   "file": "050",
+   "key": "person-0648",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0413"
+  },
+  {
+   "file": "050",
+   "key": "person-0648",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0414"
+  },
+  {
+   "file": "090",
+   "key": "person-0648",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0415"
+  },
+  {
+   "file": "090",
+   "key": "person-0648",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0416"
+  },
+  {
+   "file": "050",
+   "key": "person-0696",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0417"
+  },
+  {
+   "file": "050",
+   "key": "person-0696",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0418"
+  },
+  {
+   "file": "050",
+   "key": "person-0696",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0419"
+  },
+  {
+   "file": "050",
+   "key": "person-0696",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0420"
+  },
+  {
+   "file": "090",
+   "key": "person-0696",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0421"
+  },
+  {
+   "file": "090",
+   "key": "person-0696",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0422"
+  },
+  {
+   "file": "050",
+   "key": "person-0744",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0423"
+  },
+  {
+   "file": "050",
+   "key": "person-0744",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0424"
+  },
+  {
+   "file": "050",
+   "key": "person-0744",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0425"
+  },
+  {
+   "file": "050",
+   "key": "person-0744",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0426"
+  },
+  {
+   "file": "090",
+   "key": "person-0744",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0427"
+  },
+  {
+   "file": "090",
+   "key": "person-0744",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0428"
+  },
+  {
+   "file": "050",
+   "key": "person-0792",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0429"
+  },
+  {
+   "file": "050",
+   "key": "person-0792",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0430"
+  },
+  {
+   "file": "050",
+   "key": "person-0792",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0431"
+  },
+  {
+   "file": "050",
+   "key": "person-0792",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0432"
+  },
+  {
+   "file": "090",
+   "key": "person-0792",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0433"
+  },
+  {
+   "file": "090",
+   "key": "person-0792",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0434"
+  },
+  {
+   "file": "050",
+   "key": "person-0840",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0435"
+  },
+  {
+   "file": "050",
+   "key": "person-0840",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0436"
+  },
+  {
+   "file": "050",
+   "key": "person-0840",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0437"
+  },
+  {
+   "file": "050",
+   "key": "person-0840",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0438"
+  },
+  {
+   "file": "090",
+   "key": "person-0840",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0439"
+  },
+  {
+   "file": "090",
+   "key": "person-0840",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0440"
+  },
+  {
+   "file": "050",
+   "key": "person-0888",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0441"
+  },
+  {
+   "file": "050",
+   "key": "person-0888",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0442"
+  },
+  {
+   "file": "050",
+   "key": "person-0888",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0443"
+  },
+  {
+   "file": "050",
+   "key": "person-0888",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0444"
+  },
+  {
+   "file": "090",
+   "key": "person-0888",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0445"
+  },
+  {
+   "file": "090",
+   "key": "person-0888",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0446"
+  },
+  {
+   "file": "050",
+   "key": "person-0936",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0447"
+  },
+  {
+   "file": "050",
+   "key": "person-0936",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0448"
+  },
+  {
+   "file": "050",
+   "key": "person-0936",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0449"
+  },
+  {
+   "file": "050",
+   "key": "person-0936",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0450"
+  },
+  {
+   "file": "090",
+   "key": "person-0936",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0451"
+  },
+  {
+   "file": "090",
+   "key": "person-0936",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0452"
+  },
+  {
+   "file": "050",
+   "key": "person-0984",
+   "col": "title",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0453"
+  },
+  {
+   "file": "050",
+   "key": "person-0984",
+   "col": "position",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0454"
+  },
+  {
+   "file": "050",
+   "key": "person-0984",
+   "col": "title_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0455"
+  },
+  {
+   "file": "050",
+   "key": "person-0984",
+   "col": "position_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0456"
+  },
+  {
+   "file": "090",
+   "key": "person-0984",
+   "col": "json_ko",
+   "from": "관로 탐사원",
+   "to": "대합실 난방 점검원",
+   "expect": 2,
+   "id": "v4rem-people-d-0457"
+  },
+  {
+   "file": "090",
+   "key": "person-0984",
+   "col": "json",
+   "from": "Conduit Surveyor",
+   "to": "Concourse Heating Checker",
+   "expect": 2,
+   "id": "v4rem-people-d-0458"
+  },
+  {
+   "file": "050",
+   "key": "person-0527",
+   "col": "occupation",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0459"
+  },
+  {
+   "file": "050",
+   "key": "person-0527",
+   "col": "occupation_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0460"
+  },
+  {
+   "file": "090",
+   "key": "person-0527",
+   "col": "json_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "expect": 1,
+   "id": "v4rem-people-d-0461"
+  },
+  {
+   "file": "090",
+   "key": "person-0527",
+   "col": "json",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "expect": 1,
+   "id": "v4rem-people-d-0462"
+  },
+  {
+   "file": "050",
+   "key": "person-0607",
+   "col": "occupation",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0463"
+  },
+  {
+   "file": "050",
+   "key": "person-0607",
+   "col": "occupation_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0464"
+  },
+  {
+   "file": "090",
+   "key": "person-0607",
+   "col": "json_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "expect": 1,
+   "id": "v4rem-people-d-0465"
+  },
+  {
+   "file": "090",
+   "key": "person-0607",
+   "col": "json",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "expect": 1,
+   "id": "v4rem-people-d-0466"
+  },
+  {
+   "file": "050",
+   "key": "person-0655",
+   "col": "occupation",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0467"
+  },
+  {
+   "file": "050",
+   "key": "person-0655",
+   "col": "occupation_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0468"
+  },
+  {
+   "file": "090",
+   "key": "person-0655",
+   "col": "json_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "expect": 1,
+   "id": "v4rem-people-d-0469"
+  },
+  {
+   "file": "090",
+   "key": "person-0655",
+   "col": "json",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "expect": 1,
+   "id": "v4rem-people-d-0470"
+  },
+  {
+   "file": "050",
+   "key": "person-0719",
+   "col": "occupation",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0471"
+  },
+  {
+   "file": "050",
+   "key": "person-0719",
+   "col": "occupation_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0472"
+  },
+  {
+   "file": "050",
+   "key": "person-0799",
+   "col": "occupation",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0473"
+  },
+  {
+   "file": "050",
+   "key": "person-0799",
+   "col": "occupation_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0474"
+  },
+  {
+   "file": "090",
+   "key": "person-0799",
+   "col": "json_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "expect": 1,
+   "id": "v4rem-people-d-0475"
+  },
+  {
+   "file": "090",
+   "key": "person-0799",
+   "col": "json",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "expect": 1,
+   "id": "v4rem-people-d-0476"
+  },
+  {
+   "file": "050",
+   "key": "person-0863",
+   "col": "occupation",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0477"
+  },
+  {
+   "file": "050",
+   "key": "person-0863",
+   "col": "occupation_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0478"
+  },
+  {
+   "file": "090",
+   "key": "person-0863",
+   "col": "json_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "expect": 1,
+   "id": "v4rem-people-d-0479"
+  },
+  {
+   "file": "090",
+   "key": "person-0863",
+   "col": "json",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "expect": 1,
+   "id": "v4rem-people-d-0480"
+  },
+  {
+   "file": "050",
+   "key": "person-0991",
+   "col": "occupation",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0481"
+  },
+  {
+   "file": "050",
+   "key": "person-0991",
+   "col": "occupation_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0482"
+  },
+  {
+   "file": "090",
+   "key": "person-0991",
+   "col": "json_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "expect": 1,
+   "id": "v4rem-people-d-0483"
+  },
+  {
+   "file": "090",
+   "key": "person-0991",
+   "col": "json",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "expect": 1,
+   "id": "v4rem-people-d-0484"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "expect": 5,
+   "id": "v4rem-people-d-0485"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "Receiving Smuggled Hoses · Writing the Pipeline Ledger",
+   "to": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "expect": 2,
+   "id": "v4rem-people-d-0486"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "receiving smuggled hoses and writing the pipeline ledger",
+   "to": "receiving smuggled stove flues and writing the vent ledger",
+   "expect": 3,
+   "id": "v4rem-people-d-0487"
+  },
+  {
+   "file": "050",
+   "key": "person-0015",
+   "col": "title",
+   "from": "Han River Flooded Pipeline Explorer",
+   "to": "Riverside Surface Heat-and-Light Leak Scout",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0488"
+  },
+  {
+   "file": "050",
+   "key": "person-0015",
+   "col": "position",
+   "from": "Han River Flooded Pipeline Explorer",
+   "to": "Riverside Surface Heat-and-Light Leak Scout",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0489"
+  },
+  {
+   "file": "050",
+   "key": "person-0015",
+   "col": "title_ko",
+   "from": "한강 침수관로 탐사원",
+   "to": "한강변 지상 열·빛 누출 탐사원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0490"
+  },
+  {
+   "file": "050",
+   "key": "person-0015",
+   "col": "position_ko",
+   "from": "한강 침수관로 탐사원",
+   "to": "한강변 지상 열·빛 누출 탐사원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0491"
+  },
+  {
+   "file": "050",
+   "key": "person-0015",
+   "col": "occupation",
+   "from": "Flooded Pipeline Surveying",
+   "to": "Surveying Surface Heat and Light Leaks",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0492"
+  },
+  {
+   "file": "050",
+   "key": "person-0015",
+   "col": "occupation_ko",
+   "from": "침수관로 실측",
+   "to": "지상 열·빛 누출 실측",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0493"
+  },
+  {
+   "file": "090",
+   "key": "person-0015",
+   "col": "json_ko",
+   "from": "한강 침수관로 탐사원",
+   "to": "한강변 지상 열·빛 누출 탐사원",
+   "expect": 2,
+   "id": "v4rem-people-d-0494"
+  },
+  {
+   "file": "090",
+   "key": "person-0015",
+   "col": "json",
+   "from": "Han River Flooded Pipeline Explorer",
+   "to": "Riverside Surface Heat-and-Light Leak Scout",
+   "expect": 2,
+   "id": "v4rem-people-d-0495"
+  },
+  {
+   "file": "090",
+   "key": "person-0015",
+   "col": "json_ko",
+   "from": "침수관로 실측",
+   "to": "지상 열·빛 누출 실측",
+   "expect": 1,
+   "id": "v4rem-people-d-0496"
+  },
+  {
+   "file": "090",
+   "key": "person-0015",
+   "col": "json",
+   "from": "Flooded Pipeline Surveying",
+   "to": "Surveying Surface Heat and Light Leaks",
+   "expect": 1,
+   "id": "v4rem-people-d-0497"
+  },
+  {
+   "file": "050",
+   "key": "person-0098",
+   "col": "occupation",
+   "from": "Packed Water Transport",
+   "to": "Packing River Transport",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0498"
+  },
+  {
+   "file": "050",
+   "key": "person-0112",
+   "col": "title",
+   "from": "Artisan Victim of Counterfeit Water Purification Parts",
+   "to": "Artisan Victim of Counterfeit Shutter Motor Parts",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0499"
+  },
+  {
+   "file": "050",
+   "key": "person-0112",
+   "col": "position",
+   "from": "Artisan Victim of Counterfeit Water Purification Parts",
+   "to": "Artisan Victim of Counterfeit Shutter Motor Parts",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0500"
+  },
+  {
+   "file": "050",
+   "key": "person-0112",
+   "col": "title_ko",
+   "from": "가짜 정수 부품 피해자 직공",
+   "to": "가짜 셔터 모터 부품 피해자 직공",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0501"
+  },
+  {
+   "file": "050",
+   "key": "person-0112",
+   "col": "position_ko",
+   "from": "가짜 정수 부품 피해자 직공",
+   "to": "가짜 셔터 모터 부품 피해자 직공",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0502"
+  },
+  {
+   "file": "050",
+   "key": "person-0127",
+   "col": "title",
+   "from": "Amsa Water Purification Medic",
+   "to": "Amsa First-Aid Post Medic",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0503"
+  },
+  {
+   "file": "050",
+   "key": "person-0127",
+   "col": "position",
+   "from": "Amsa Water Purification Medic",
+   "to": "Amsa First-Aid Post Medic",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0504"
+  },
+  {
+   "file": "050",
+   "key": "person-0127",
+   "col": "title_ko",
+   "from": "암사 정수 의무원",
+   "to": "암사 응급 처치소 의무원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0505"
+  },
+  {
+   "file": "050",
+   "key": "person-0127",
+   "col": "position_ko",
+   "from": "암사 정수 의무원",
+   "to": "암사 응급 처치소 의무원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0506"
+  },
+  {
+   "file": "050",
+   "key": "person-0127",
+   "col": "occupation",
+   "from": "Purification District First Aid and Reagent Management",
+   "to": "First Aid and Medicine Stock Management",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0507"
+  },
+  {
+   "file": "050",
+   "key": "person-0127",
+   "col": "occupation_ko",
+   "from": "정수구역 응급 처치·시약 관리",
+   "to": "응급 처치·약재 재고 관리",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0508"
+  },
+  {
+   "file": "050",
+   "key": "person-0130",
+   "col": "occupation",
+   "from": "Bridge Underside Water Sampling and Vibration Survey",
+   "to": "Bridge Underside Crack and Vibration Survey",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0509"
+  },
+  {
+   "file": "050",
+   "key": "person-0130",
+   "col": "occupation_ko",
+   "from": "교량 하부 채수·진동 조사",
+   "to": "교량 하부 균열·진동 조사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0510"
+  },
+  {
+   "file": "050",
+   "key": "person-0181",
+   "col": "occupation",
+   "from": "Abandoned Line Water Sampling and Rail Condition Survey",
+   "to": "Abandoned Line Rail and Sleeper Condition Survey",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0511"
+  },
+  {
+   "file": "050",
+   "key": "person-0181",
+   "col": "occupation_ko",
+   "from": "폐선 채수·레일 상태 조사",
+   "to": "폐선 레일·침목 상태 조사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0512"
+  },
+  {
+   "file": "050",
+   "key": "person-0206",
+   "col": "title",
+   "from": "Han River Water Intake Surveyor",
+   "to": "Han River Ice Thickness Surveyor",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0513"
+  },
+  {
+   "file": "050",
+   "key": "person-0206",
+   "col": "position",
+   "from": "Han River Water Intake Surveyor",
+   "to": "Han River Ice Thickness Surveyor",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0514"
+  },
+  {
+   "file": "050",
+   "key": "person-0206",
+   "col": "title_ko",
+   "from": "한강 취수 탐사원",
+   "to": "한강 얼음 두께 탐사원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0515"
+  },
+  {
+   "file": "050",
+   "key": "person-0206",
+   "col": "position_ko",
+   "from": "한강 취수 탐사원",
+   "to": "한강 얼음 두께 탐사원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0516"
+  },
+  {
+   "file": "050",
+   "key": "person-0206",
+   "col": "occupation",
+   "from": "Han River Water Sampling and Turbidity Records",
+   "to": "Han River Ice Thickness and Crack Records",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0517"
+  },
+  {
+   "file": "050",
+   "key": "person-0206",
+   "col": "occupation_ko",
+   "from": "한강 채수·탁도 기록",
+   "to": "한강 얼음 두께·균열 기록",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0518"
+  },
+  {
+   "file": "090",
+   "key": "person-0206",
+   "col": "json_ko",
+   "from": "한강 채수·탁도 기록",
+   "to": "한강 얼음 두께·균열 기록",
+   "expect": 1,
+   "id": "v4rem-people-d-0519"
+  },
+  {
+   "file": "090",
+   "key": "person-0206",
+   "col": "json",
+   "from": "Han River Water Sampling and Turbidity Records",
+   "to": "Han River Ice Thickness and Crack Records",
+   "expect": 1,
+   "id": "v4rem-people-d-0520"
+  },
+  {
+   "file": "050",
+   "key": "person-0215",
+   "col": "title",
+   "from": "Turbid Water Stock Night Transfer Witness",
+   "to": "Night Stock Removal Witness",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0521"
+  },
+  {
+   "file": "050",
+   "key": "person-0215",
+   "col": "position",
+   "from": "Turbid Water Stock Night Transfer Witness",
+   "to": "Night Stock Removal Witness",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0522"
+  },
+  {
+   "file": "050",
+   "key": "person-0215",
+   "col": "title_ko",
+   "from": "탁수 재고 야간 이전 목격자",
+   "to": "야간 재고 반출 목격자",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0523"
+  },
+  {
+   "file": "050",
+   "key": "person-0215",
+   "col": "position_ko",
+   "from": "탁수 재고 야간 이전 목격자",
+   "to": "야간 재고 반출 목격자",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0524"
+  },
+  {
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1415"
+  },
+  {
+   "file": "090",
+   "key": "person-0057",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 10,
+   "id": "v4rem-people-d-1416"
+  },
+  {
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1417"
+  },
+  {
+   "file": "090",
+   "key": "person-0057",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 10,
+   "id": "v4rem-people-d-1418"
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1419"
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 5,
+   "id": "v4rem-people-d-1420"
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1421"
+  },
+  {
+   "file": "090",
+   "key": "person-0058",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 5,
+   "id": "v4rem-people-d-1422"
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1423"
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 6,
+   "id": "v4rem-people-d-1424"
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1425"
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 6,
+   "id": "v4rem-people-d-1426"
+  },
+  {
+   "file": "090",
+   "key": "person-0060",
+   "col": "json_ko",
+   "from": "방화3동",
+   "to": "고덕1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1427"
+  },
+  {
+   "file": "090",
+   "key": "person-0060",
+   "col": "json_ko",
+   "from": "방화",
+   "to": "고덕",
+   "expect": 2,
+   "id": "v4rem-people-d-1428"
+  },
+  {
+   "file": "090",
+   "key": "person-0060",
+   "col": "json",
+   "from": "Banghwa 3-dong",
+   "to": "Godeok 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1429"
+  },
+  {
+   "file": "090",
+   "key": "person-0060",
+   "col": "json",
+   "from": "Banghwa",
+   "to": "Godeok",
+   "expect": 2,
+   "id": "v4rem-people-d-1430"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 1,
+   "id": "v4rem-people-d-1431"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "방화3동",
+   "to": "고덕1동",
+   "expect": 4,
+   "id": "v4rem-people-d-1432"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "방화",
+   "to": "고덕",
+   "expect": 9,
+   "id": "v4rem-people-d-1433"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 4,
+   "id": "v4rem-people-d-1434"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json_ko",
+   "from": "화곡1동",
+   "to": "대치4동",
+   "expect": 3,
+   "id": "v4rem-people-d-1435"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 1,
+   "id": "v4rem-people-d-1436"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json",
+   "from": "Banghwa 3-dong",
+   "to": "Godeok 1-dong",
+   "expect": 4,
+   "id": "v4rem-people-d-1437"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json",
+   "from": "Banghwa",
+   "to": "Godeok",
+   "expect": 9,
+   "id": "v4rem-people-d-1438"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 4,
+   "id": "v4rem-people-d-1439"
+  },
+  {
+   "file": "090",
+   "key": "person-0061",
+   "col": "json",
+   "from": "Hwagok 1-dong",
+   "to": "Daechi 4-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1440"
+  },
+  {
+   "file": "050",
+   "key": "person-0061",
+   "col": "title",
+   "from": "Magok-Banghwa Residents' Representative",
+   "to": "Daechi-Godeok Residents' Representative",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0525"
+  },
+  {
+   "file": "050",
+   "key": "person-0061",
+   "col": "title_ko",
+   "from": "마곡·방화 주민대표",
+   "to": "대치·고덕 주민대표",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0526"
+  },
+  {
+   "file": "050",
+   "key": "person-0061",
+   "col": "position",
+   "from": "Magok-Banghwa Residents' Representative",
+   "to": "Daechi-Godeok Residents' Representative",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0527"
+  },
+  {
+   "file": "050",
+   "key": "person-0061",
+   "col": "position_ko",
+   "from": "마곡·방화 주민대표",
+   "to": "대치·고덕 주민대표",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0528"
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "방화3동",
+   "to": "고덕1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1445"
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "방화",
+   "to": "고덕",
+   "expect": 13,
+   "id": "v4rem-people-d-1446"
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "Banghwa 3-dong",
+   "to": "Godeok 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1447"
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "Banghwa",
+   "to": "Godeok",
+   "expect": 13,
+   "id": "v4rem-people-d-1448"
+  },
+  {
+   "file": "050",
+   "key": "person-0062",
+   "col": "title",
+   "from": "Banghwa Base Stabling and Dispatch Chief",
+   "to": "Godeok Base Stabling and Dispatch Chief",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0529"
+  },
+  {
+   "file": "050",
+   "key": "person-0062",
+   "col": "title_ko",
+   "from": "방화기지 유치·배차장",
+   "to": "고덕기지 유치·배차장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0530"
+  },
+  {
+   "file": "050",
+   "key": "person-0062",
+   "col": "position",
+   "from": "Banghwa Base Stabling and Dispatch Chief",
+   "to": "Godeok Base Stabling and Dispatch Chief",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0531"
+  },
+  {
+   "file": "050",
+   "key": "person-0062",
+   "col": "position_ko",
+   "from": "방화기지 유치·배차장",
+   "to": "고덕기지 유치·배차장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0532"
+  },
+  {
+   "file": "090",
+   "key": "person-0063",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1453"
+  },
+  {
+   "file": "090",
+   "key": "person-0063",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1454"
+  },
+  {
+   "file": "090",
+   "key": "person-0064",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1455"
+  },
+  {
+   "file": "090",
+   "key": "person-0064",
+   "col": "json_ko",
+   "from": "마곡과",
+   "to": "대치와",
+   "expect": 2,
+   "id": "v4rem-people-d-1456"
+  },
+  {
+   "file": "090",
+   "key": "person-0064",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 13,
+   "id": "v4rem-people-d-1457"
+  },
+  {
+   "file": "090",
+   "key": "person-0064",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1458"
+  },
+  {
+   "file": "090",
+   "key": "person-0064",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 15,
+   "id": "v4rem-people-d-1459"
+  },
+  {
+   "file": "050",
+   "key": "person-0064",
+   "col": "title",
+   "from": "Magok Machine-Body Maintenance Duty",
+   "to": "Daechi Machine-Body Maintenance Duty",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0533"
+  },
+  {
+   "file": "050",
+   "key": "person-0064",
+   "col": "title_ko",
+   "from": "마곡 기계 몸 정비 담당",
+   "to": "대치 기계 몸 정비 담당",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0534"
+  },
+  {
+   "file": "050",
+   "key": "person-0064",
+   "col": "position",
+   "from": "Magok Machine-Body Maintenance Duty",
+   "to": "Daechi Machine-Body Maintenance Duty",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0535"
+  },
+  {
+   "file": "050",
+   "key": "person-0064",
+   "col": "position_ko",
+   "from": "마곡 기계 몸 정비 담당",
+   "to": "대치 기계 몸 정비 담당",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0536"
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json_ko",
+   "from": "방화3동",
+   "to": "고덕1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1464"
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json_ko",
+   "from": "방화",
+   "to": "고덕",
+   "expect": 13,
+   "id": "v4rem-people-d-1465"
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "Banghwa 3-dong",
+   "to": "Godeok 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1466"
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "Banghwa",
+   "to": "Godeok",
+   "expect": 13,
+   "id": "v4rem-people-d-1467"
+  },
+  {
+   "file": "050",
+   "key": "person-0066",
+   "col": "title",
+   "from": "Banghwa Base Research Vehicle Mechanic",
+   "to": "Godeok Base Research Vehicle Mechanic",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0537"
+  },
+  {
+   "file": "050",
+   "key": "person-0066",
+   "col": "title_ko",
+   "from": "방화기지 연구차량 정비사",
+   "to": "고덕기지 연구차량 정비사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0538"
+  },
+  {
+   "file": "050",
+   "key": "person-0066",
+   "col": "position",
+   "from": "Banghwa Base Research Vehicle Mechanic",
+   "to": "Godeok Base Research Vehicle Mechanic",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0539"
+  },
+  {
+   "file": "050",
+   "key": "person-0066",
+   "col": "position_ko",
+   "from": "방화기지 연구차량 정비사",
+   "to": "고덕기지 연구차량 정비사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0540"
+  },
+  {
+   "file": "090",
+   "key": "person-0067",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 2,
+   "id": "v4rem-people-d-1472"
+  },
+  {
+   "file": "090",
+   "key": "person-0067",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 2,
+   "id": "v4rem-people-d-1473"
+  },
+  {
+   "file": "050",
+   "key": "person-0067",
+   "col": "title",
+   "from": "Magok Certified Cargo Merchant",
+   "to": "Daechi Certified Cargo Merchant",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0541"
+  },
+  {
+   "file": "050",
+   "key": "person-0067",
+   "col": "title_ko",
+   "from": "마곡 인증화물 물류상",
+   "to": "대치 인증화물 물류상",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0542"
+  },
+  {
+   "file": "050",
+   "key": "person-0067",
+   "col": "position",
+   "from": "Magok Certified Cargo Merchant",
+   "to": "Daechi Certified Cargo Merchant",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0543"
+  },
+  {
+   "file": "050",
+   "key": "person-0067",
+   "col": "position_ko",
+   "from": "마곡 인증화물 물류상",
+   "to": "대치 인증화물 물류상",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0544"
+  },
+  {
+   "file": "090",
+   "key": "person-0069",
+   "col": "json_ko",
+   "from": "방화3동",
+   "to": "고덕1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1478"
+  },
+  {
+   "file": "090",
+   "key": "person-0069",
+   "col": "json_ko",
+   "from": "방화",
+   "to": "고덕",
+   "expect": 11,
+   "id": "v4rem-people-d-1479"
+  },
+  {
+   "file": "090",
+   "key": "person-0069",
+   "col": "json",
+   "from": "Banghwa 3-dong",
+   "to": "Godeok 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1480"
+  },
+  {
+   "file": "090",
+   "key": "person-0069",
+   "col": "json",
+   "from": "Banghwa",
+   "to": "Godeok",
+   "expect": 11,
+   "id": "v4rem-people-d-1481"
+  },
+  {
+   "file": "050",
+   "key": "person-0069",
+   "col": "title",
+   "from": "Banghwa Gate Patrol Squad Leader",
+   "to": "Godeok Gate Patrol Squad Leader",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0545"
+  },
+  {
+   "file": "050",
+   "key": "person-0069",
+   "col": "title_ko",
+   "from": "방화 관문 순찰대 조장",
+   "to": "고덕 관문 순찰대 조장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0546"
+  },
+  {
+   "file": "050",
+   "key": "person-0069",
+   "col": "position",
+   "from": "Banghwa Gate Patrol Squad Leader",
+   "to": "Godeok Gate Patrol Squad Leader",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0547"
+  },
+  {
+   "file": "050",
+   "key": "person-0069",
+   "col": "position_ko",
+   "from": "방화 관문 순찰대 조장",
+   "to": "고덕 관문 순찰대 조장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0548"
+  },
+  {
+   "file": "090",
+   "key": "person-0070",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1486"
+  },
+  {
+   "file": "090",
+   "key": "person-0070",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 5,
+   "id": "v4rem-people-d-1487"
+  },
+  {
+   "file": "090",
+   "key": "person-0070",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1488"
+  },
+  {
+   "file": "090",
+   "key": "person-0070",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 5,
+   "id": "v4rem-people-d-1489"
+  },
+  {
+   "file": "090",
+   "key": "person-0072",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1490"
+  },
+  {
+   "file": "090",
+   "key": "person-0072",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 7,
+   "id": "v4rem-people-d-1491"
+  },
+  {
+   "file": "090",
+   "key": "person-0072",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1492"
+  },
+  {
+   "file": "090",
+   "key": "person-0072",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 7,
+   "id": "v4rem-people-d-1493"
+  },
+  {
+   "file": "090",
+   "key": "person-0073",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1494"
+  },
+  {
+   "file": "090",
+   "key": "person-0073",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 15,
+   "id": "v4rem-people-d-1495"
+  },
+  {
+   "file": "090",
+   "key": "person-0073",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1496"
+  },
+  {
+   "file": "090",
+   "key": "person-0073",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 15,
+   "id": "v4rem-people-d-1497"
+  },
+  {
+   "file": "050",
+   "key": "person-0073",
+   "col": "title",
+   "from": "Magok Waiting Hall Stationmaster",
+   "to": "Daechi Waiting Hall Stationmaster",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0549"
+  },
+  {
+   "file": "050",
+   "key": "person-0073",
+   "col": "title_ko",
+   "from": "마곡 대합실 역장",
+   "to": "대치 대합실 역장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0550"
+  },
+  {
+   "file": "050",
+   "key": "person-0073",
+   "col": "position",
+   "from": "Magok Waiting Hall Stationmaster",
+   "to": "Daechi Waiting Hall Stationmaster",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0551"
+  },
+  {
+   "file": "050",
+   "key": "person-0073",
+   "col": "position_ko",
+   "from": "마곡 대합실 역장",
+   "to": "대치 대합실 역장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0552"
+  },
+  {
+   "file": "090",
+   "key": "person-0074",
+   "col": "json_ko",
+   "from": "방화3동",
+   "to": "고덕1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1502"
+  },
+  {
+   "file": "090",
+   "key": "person-0074",
+   "col": "json_ko",
+   "from": "방화",
+   "to": "고덕",
+   "expect": 13,
+   "id": "v4rem-people-d-1503"
+  },
+  {
+   "file": "090",
+   "key": "person-0074",
+   "col": "json",
+   "from": "Banghwa 3-dong",
+   "to": "Godeok 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1504"
+  },
+  {
+   "file": "090",
+   "key": "person-0074",
+   "col": "json",
+   "from": "Banghwa",
+   "to": "Godeok",
+   "expect": 13,
+   "id": "v4rem-people-d-1505"
+  },
+  {
+   "file": "050",
+   "key": "person-0074",
+   "col": "title",
+   "from": "Banghwa Base Stabling Operations Chief",
+   "to": "Godeok Base Stabling Operations Chief",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0553"
+  },
+  {
+   "file": "050",
+   "key": "person-0074",
+   "col": "title_ko",
+   "from": "방화기지 유치 실무장",
+   "to": "고덕기지 유치 실무장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0554"
+  },
+  {
+   "file": "050",
+   "key": "person-0074",
+   "col": "position",
+   "from": "Banghwa Base Stabling Operations Chief",
+   "to": "Godeok Base Stabling Operations Chief",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0555"
+  },
+  {
+   "file": "050",
+   "key": "person-0074",
+   "col": "position_ko",
+   "from": "방화기지 유치 실무장",
+   "to": "고덕기지 유치 실무장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0556"
+  },
+  {
+   "file": "090",
+   "key": "person-0075",
+   "col": "json_ko",
+   "from": "방화",
+   "to": "고덕",
+   "expect": 2,
+   "id": "v4rem-people-d-1510"
+  },
+  {
+   "file": "090",
+   "key": "person-0075",
+   "col": "json",
+   "from": "Banghwa",
+   "to": "Godeok",
+   "expect": 2,
+   "id": "v4rem-people-d-1511"
+  },
+  {
+   "file": "050",
+   "key": "person-0075",
+   "col": "title",
+   "from": "Banghwa Residents' Market Broker",
+   "to": "Godeok Residents' Market Broker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0557"
+  },
+  {
+   "file": "050",
+   "key": "person-0075",
+   "col": "title_ko",
+   "from": "방화 주민시장 중개인",
+   "to": "고덕 주민시장 중개인",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0558"
+  },
+  {
+   "file": "050",
+   "key": "person-0075",
+   "col": "position",
+   "from": "Banghwa Residents' Market Broker",
+   "to": "Godeok Residents' Market Broker",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0559"
+  },
+  {
+   "file": "050",
+   "key": "person-0075",
+   "col": "position_ko",
+   "from": "방화 주민시장 중개인",
+   "to": "고덕 주민시장 중개인",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0560"
+  },
+  {
+   "file": "090",
+   "key": "person-0079",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1516"
+  },
+  {
+   "file": "090",
+   "key": "person-0079",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 13,
+   "id": "v4rem-people-d-1517"
+  },
+  {
+   "file": "090",
+   "key": "person-0079",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1518"
+  },
+  {
+   "file": "090",
+   "key": "person-0079",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 13,
+   "id": "v4rem-people-d-1519"
+  },
+  {
+   "file": "050",
+   "key": "person-0079",
+   "col": "title",
+   "from": "Magok Shutter Check Witness",
+   "to": "Daechi Shutter Check Witness",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0561"
+  },
+  {
+   "file": "050",
+   "key": "person-0079",
+   "col": "title_ko",
+   "from": "마곡 셔터 점검 입회인",
+   "to": "대치 셔터 점검 입회인",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0562"
+  },
+  {
+   "file": "050",
+   "key": "person-0079",
+   "col": "position",
+   "from": "Magok Shutter Check Witness",
+   "to": "Daechi Shutter Check Witness",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0563"
+  },
+  {
+   "file": "050",
+   "key": "person-0079",
+   "col": "position_ko",
+   "from": "마곡 셔터 점검 입회인",
+   "to": "대치 셔터 점검 입회인",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0564"
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1524"
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 5,
+   "id": "v4rem-people-d-1525"
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1526"
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 5,
+   "id": "v4rem-people-d-1527"
+  },
+  {
+   "file": "090",
+   "key": "person-0084",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 3,
+   "id": "v4rem-people-d-1528"
+  },
+  {
+   "file": "090",
+   "key": "person-0084",
+   "col": "json_ko",
+   "from": "마곡",
+   "to": "대치",
+   "expect": 7,
+   "id": "v4rem-people-d-1529"
+  },
+  {
+   "file": "090",
+   "key": "person-0084",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 3,
+   "id": "v4rem-people-d-1530"
+  },
+  {
+   "file": "090",
+   "key": "person-0084",
+   "col": "json",
+   "from": "Magok",
+   "to": "Daechi",
+   "expect": 7,
+   "id": "v4rem-people-d-1531"
+  },
+  {
+   "file": "090",
+   "key": "person-0570",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 7,
+   "id": "v4rem-people-d-1532"
+  },
+  {
+   "file": "090",
+   "key": "person-0570",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 7,
+   "id": "v4rem-people-d-1533"
+  },
+  {
+   "file": "090",
+   "key": "person-0762",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 7,
+   "id": "v4rem-people-d-1534"
+  },
+  {
+   "file": "090",
+   "key": "person-0762",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 7,
+   "id": "v4rem-people-d-1535"
+  },
+  {
+   "file": "090",
+   "key": "person-0810",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 7,
+   "id": "v4rem-people-d-1536"
+  },
+  {
+   "file": "090",
+   "key": "person-0810",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 7,
+   "id": "v4rem-people-d-1537"
+  },
+  {
+   "file": "090",
+   "key": "person-0906",
+   "col": "json_ko",
+   "from": "가양1동",
+   "to": "대치1동",
+   "expect": 7,
+   "id": "v4rem-people-d-1538"
+  },
+  {
+   "file": "090",
+   "key": "person-0906",
+   "col": "json",
+   "from": "Gayang 1-dong",
+   "to": "Daechi 1-dong",
+   "expect": 7,
+   "id": "v4rem-people-d-1539"
+  },
+  {
+   "file": "090",
+   "key": "person-0091",
+   "col": "json_ko",
+   "from": "성수1가2동과",
+   "to": "천호2동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1540"
+  },
+  {
+   "file": "090",
+   "key": "person-0091",
+   "col": "json_ko",
+   "from": "뚝섬",
+   "to": "암사",
+   "expect": 12,
+   "id": "v4rem-people-d-1541"
+  },
+  {
+   "file": "090",
+   "key": "person-0091",
+   "col": "json",
+   "from": "Seongsu 1-ga 2-dong",
+   "to": "Cheonho 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1542"
+  },
+  {
+   "file": "090",
+   "key": "person-0091",
+   "col": "json",
+   "from": "Ttukseom",
+   "to": "Amsa",
+   "expect": 12,
+   "id": "v4rem-people-d-1543"
+  },
+  {
+   "file": "050",
+   "key": "person-0091",
+   "col": "title",
+   "from": "Commander of the Ttukseom Pump Guard",
+   "to": "Commander of the Amsa Pump Guard",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0565"
+  },
+  {
+   "file": "050",
+   "key": "person-0091",
+   "col": "title_ko",
+   "from": "뚝섬 펌프수비대장",
+   "to": "암사 펌프수비대장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0566"
+  },
+  {
+   "file": "050",
+   "key": "person-0091",
+   "col": "position",
+   "from": "Commander of the Ttukseom Pump Guard",
+   "to": "Commander of the Amsa Pump Guard",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0567"
+  },
+  {
+   "file": "050",
+   "key": "person-0091",
+   "col": "position_ko",
+   "from": "뚝섬 펌프수비대장",
+   "to": "암사 펌프수비대장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0568"
+  },
+  {
+   "file": "090",
+   "key": "person-0092",
+   "col": "json_ko",
+   "from": "군자기지",
+   "to": "고덕기지",
+   "expect": 2,
+   "id": "v4rem-people-d-1548"
+  },
+  {
+   "file": "090",
+   "key": "person-0092",
+   "col": "json",
+   "from": "Gunja",
+   "to": "Godeok",
+   "expect": 2,
+   "id": "v4rem-people-d-1549"
+  },
+  {
+   "file": "050",
+   "key": "person-0092",
+   "col": "title",
+   "from": "Chief of the Gunja Base Vehicle Maintenance Yard",
+   "to": "Chief of the Godeok Base Vehicle Maintenance Yard",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0569"
+  },
+  {
+   "file": "050",
+   "key": "person-0092",
+   "col": "title_ko",
+   "from": "군자기지 차량정비장",
+   "to": "고덕기지 차량정비장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0570"
+  },
+  {
+   "file": "050",
+   "key": "person-0092",
+   "col": "position",
+   "from": "Chief of the Gunja Base Vehicle Maintenance Yard",
+   "to": "Chief of the Godeok Base Vehicle Maintenance Yard",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0571"
+  },
+  {
+   "file": "050",
+   "key": "person-0092",
+   "col": "position_ko",
+   "from": "군자기지 차량정비장",
+   "to": "고덕기지 차량정비장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0572"
+  },
+  {
+   "file": "090",
+   "key": "person-0095",
+   "col": "json_ko",
+   "from": "성수1가1동과",
+   "to": "천호1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1554"
+  },
+  {
+   "file": "090",
+   "key": "person-0095",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 14,
+   "id": "v4rem-people-d-1555"
+  },
+  {
+   "file": "090",
+   "key": "person-0095",
+   "col": "json_ko",
+   "from": "성동",
+   "to": "길동",
+   "expect": 14,
+   "id": "v4rem-people-d-1556"
+  },
+  {
+   "file": "090",
+   "key": "person-0095",
+   "col": "json",
+   "from": "Seongsu 1-ga 1-dong",
+   "to": "Cheonho 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1557"
+  },
+  {
+   "file": "090",
+   "key": "person-0095",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 14,
+   "id": "v4rem-people-d-1558"
+  },
+  {
+   "file": "090",
+   "key": "person-0095",
+   "col": "json",
+   "from": "Seongdong",
+   "to": "Gil-dong",
+   "expect": 14,
+   "id": "v4rem-people-d-1559"
+  },
+  {
+   "file": "050",
+   "key": "person-0095",
+   "col": "title",
+   "from": "Seongsu–Seongdong Alley Check-Notice Duty",
+   "to": "Cheonho–Gil-dong Alley Check-Notice Duty",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0573"
+  },
+  {
+   "file": "050",
+   "key": "person-0095",
+   "col": "title_ko",
+   "from": "성수·성동 골목 점검 게시 담당",
+   "to": "천호·길동 골목 점검 게시 담당",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0574"
+  },
+  {
+   "file": "050",
+   "key": "person-0095",
+   "col": "position",
+   "from": "Seongsu–Seongdong Alley Check-Notice Duty",
+   "to": "Cheonho–Gil-dong Alley Check-Notice Duty",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0575"
+  },
+  {
+   "file": "050",
+   "key": "person-0095",
+   "col": "position_ko",
+   "from": "성수·성동 골목 점검 게시 담당",
+   "to": "천호·길동 골목 점검 게시 담당",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0576"
+  },
+  {
+   "file": "090",
+   "key": "person-0096",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1564"
+  },
+  {
+   "file": "090",
+   "key": "person-0096",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 17,
+   "id": "v4rem-people-d-1565"
+  },
+  {
+   "file": "090",
+   "key": "person-0096",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1566"
+  },
+  {
+   "file": "090",
+   "key": "person-0096",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 17,
+   "id": "v4rem-people-d-1567"
+  },
+  {
+   "file": "050",
+   "key": "person-0096",
+   "col": "title",
+   "from": "Seongsu Leather and Small Machinery Trade Representative",
+   "to": "Cheonho Leather and Small Machinery Trade Representative",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0577"
+  },
+  {
+   "file": "050",
+   "key": "person-0096",
+   "col": "title_ko",
+   "from": "성수 가죽·소형기계 직능대표",
+   "to": "천호 가죽·소형기계 직능대표",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0578"
+  },
+  {
+   "file": "050",
+   "key": "person-0096",
+   "col": "position",
+   "from": "Seongsu Leather and Small Machinery Trade Representative",
+   "to": "Cheonho Leather and Small Machinery Trade Representative",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0579"
+  },
+  {
+   "file": "050",
+   "key": "person-0096",
+   "col": "position_ko",
+   "from": "성수 가죽·소형기계 직능대표",
+   "to": "천호 가죽·소형기계 직능대표",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0580"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json_ko",
+   "from": "성수1가1동과",
+   "to": "천호1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1572"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 14,
+   "id": "v4rem-people-d-1573"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "Seongsu 1-ga 1-dong",
+   "to": "Cheonho 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1574"
+  },
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 14,
+   "id": "v4rem-people-d-1575"
+  },
+  {
+   "file": "050",
+   "key": "person-0097",
+   "col": "title",
+   "from": "Seongsu Alley Pump Technician",
+   "to": "Cheonho Alley Pump Technician",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0581"
+  },
+  {
+   "file": "050",
+   "key": "person-0097",
+   "col": "title_ko",
+   "from": "성수 골목펌프 정비사",
+   "to": "천호 골목펌프 정비사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0582"
+  },
+  {
+   "file": "050",
+   "key": "person-0097",
+   "col": "position",
+   "from": "Seongsu Alley Pump Technician",
+   "to": "Cheonho Alley Pump Technician",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0583"
+  },
+  {
+   "file": "050",
+   "key": "person-0097",
+   "col": "position_ko",
+   "from": "성수 골목펌프 정비사",
+   "to": "천호 골목펌프 정비사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0584"
+  },
+  {
+   "file": "090",
+   "key": "person-0098",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1580"
+  },
+  {
+   "file": "090",
+   "key": "person-0098",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 15,
+   "id": "v4rem-people-d-1581"
+  },
+  {
+   "file": "090",
+   "key": "person-0098",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1582"
+  },
+  {
+   "file": "090",
+   "key": "person-0098",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 15,
+   "id": "v4rem-people-d-1583"
+  },
+  {
+   "file": "050",
+   "key": "person-0098",
+   "col": "title",
+   "from": "Seongsu Packed-Freight Logistics Merchant",
+   "to": "Cheonho Packed-Freight Logistics Merchant",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0585"
+  },
+  {
+   "file": "050",
+   "key": "person-0098",
+   "col": "title_ko",
+   "from": "성수 패킹운송 물류상",
+   "to": "천호 패킹운송 물류상",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0586"
+  },
+  {
+   "file": "050",
+   "key": "person-0098",
+   "col": "position",
+   "from": "Seongsu Packed-Freight Logistics Merchant",
+   "to": "Cheonho Packed-Freight Logistics Merchant",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0587"
+  },
+  {
+   "file": "050",
+   "key": "person-0098",
+   "col": "position_ko",
+   "from": "성수 패킹운송 물류상",
+   "to": "천호 패킹운송 물류상",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0588"
+  },
+  {
+   "file": "090",
+   "key": "person-0099",
+   "col": "json_ko",
+   "from": "뚝섬",
+   "to": "암사",
+   "expect": 2,
+   "id": "v4rem-people-d-1588"
+  },
+  {
+   "file": "090",
+   "key": "person-0099",
+   "col": "json",
+   "from": "Ttukseom",
+   "to": "Amsa",
+   "expect": 2,
+   "id": "v4rem-people-d-1589"
+  },
+  {
+   "file": "050",
+   "key": "person-0099",
+   "col": "title",
+   "from": "Ttukseom Pump Room Medic",
+   "to": "Amsa Pump Room Medic",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0589"
+  },
+  {
+   "file": "050",
+   "key": "person-0099",
+   "col": "title_ko",
+   "from": "뚝섬 펌프실 의무원",
+   "to": "암사 펌프실 의무원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0590"
+  },
+  {
+   "file": "050",
+   "key": "person-0099",
+   "col": "position",
+   "from": "Ttukseom Pump Room Medic",
+   "to": "Amsa Pump Room Medic",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0591"
+  },
+  {
+   "file": "050",
+   "key": "person-0099",
+   "col": "position_ko",
+   "from": "뚝섬 펌프실 의무원",
+   "to": "암사 펌프실 의무원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0592"
+  },
+  {
+   "file": "090",
+   "key": "person-0102",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 2,
+   "id": "v4rem-people-d-1594"
+  },
+  {
+   "file": "090",
+   "key": "person-0102",
+   "col": "json_ko",
+   "from": "군자",
+   "to": "고덕",
+   "expect": 2,
+   "id": "v4rem-people-d-1595"
+  },
+  {
+   "file": "090",
+   "key": "person-0102",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 2,
+   "id": "v4rem-people-d-1596"
+  },
+  {
+   "file": "090",
+   "key": "person-0102",
+   "col": "json",
+   "from": "Gunja",
+   "to": "Godeok",
+   "expect": 2,
+   "id": "v4rem-people-d-1597"
+  },
+  {
+   "file": "050",
+   "key": "person-0102",
+   "col": "title",
+   "from": "Gunja-Seongsu Flooded Tunnel Explorer",
+   "to": "Godeok-Cheonho Flooded Tunnel Explorer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0593"
+  },
+  {
+   "file": "050",
+   "key": "person-0102",
+   "col": "title_ko",
+   "from": "군자-성수 침수터널 탐사원",
+   "to": "고덕-천호 침수터널 탐사원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0594"
+  },
+  {
+   "file": "050",
+   "key": "person-0102",
+   "col": "position",
+   "from": "Gunja-Seongsu Flooded Tunnel Explorer",
+   "to": "Godeok-Cheonho Flooded Tunnel Explorer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0595"
+  },
+  {
+   "file": "050",
+   "key": "person-0102",
+   "col": "position_ko",
+   "from": "군자-성수 침수터널 탐사원",
+   "to": "고덕-천호 침수터널 탐사원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0596"
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1602"
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 16,
+   "id": "v4rem-people-d-1603"
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1604"
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 16,
+   "id": "v4rem-people-d-1605"
+  },
+  {
+   "file": "050",
+   "key": "person-0104",
+   "col": "title",
+   "from": "Seongsu Concourse Stationmaster",
+   "to": "Cheonho Concourse Stationmaster",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0597"
+  },
+  {
+   "file": "050",
+   "key": "person-0104",
+   "col": "title_ko",
+   "from": "성수 대합실 역장",
+   "to": "천호 대합실 역장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0598"
+  },
+  {
+   "file": "050",
+   "key": "person-0104",
+   "col": "position",
+   "from": "Seongsu Concourse Stationmaster",
+   "to": "Cheonho Concourse Stationmaster",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0599"
+  },
+  {
+   "file": "050",
+   "key": "person-0104",
+   "col": "position_ko",
+   "from": "성수 대합실 역장",
+   "to": "천호 대합실 역장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0600"
+  },
+  {
+   "file": "090",
+   "key": "person-0105",
+   "col": "json_ko",
+   "from": "군자기지",
+   "to": "고덕기지",
+   "expect": 10,
+   "id": "v4rem-people-d-1610"
+  },
+  {
+   "file": "090",
+   "key": "person-0105",
+   "col": "json_ko",
+   "from": "용답동과",
+   "to": "고덕2동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1611"
+  },
+  {
+   "file": "090",
+   "key": "person-0105",
+   "col": "json_ko",
+   "from": "군자",
+   "to": "고덕",
+   "expect": 5,
+   "id": "v4rem-people-d-1612"
+  },
+  {
+   "file": "090",
+   "key": "person-0105",
+   "col": "json",
+   "from": "Yongdap-dong",
+   "to": "Godeok 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1613"
+  },
+  {
+   "file": "090",
+   "key": "person-0105",
+   "col": "json",
+   "from": "Gunja",
+   "to": "Godeok",
+   "expect": 15,
+   "id": "v4rem-people-d-1614"
+  },
+  {
+   "file": "050",
+   "key": "person-0105",
+   "col": "title",
+   "from": "Gunja Base Stabling Operations Chief",
+   "to": "Godeok Base Stabling Operations Chief",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0601"
+  },
+  {
+   "file": "050",
+   "key": "person-0105",
+   "col": "title_ko",
+   "from": "군자기지 유치 실무장",
+   "to": "고덕기지 유치 실무장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0602"
+  },
+  {
+   "file": "050",
+   "key": "person-0105",
+   "col": "position",
+   "from": "Gunja Base Stabling Operations Chief",
+   "to": "Godeok Base Stabling Operations Chief",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0603"
+  },
+  {
+   "file": "050",
+   "key": "person-0105",
+   "col": "position_ko",
+   "from": "군자기지 유치 실무장",
+   "to": "고덕기지 유치 실무장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0604"
+  },
+  {
+   "file": "090",
+   "key": "person-0106",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1619"
+  },
+  {
+   "file": "090",
+   "key": "person-0106",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 17,
+   "id": "v4rem-people-d-1620"
+  },
+  {
+   "file": "090",
+   "key": "person-0106",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1621"
+  },
+  {
+   "file": "090",
+   "key": "person-0106",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 17,
+   "id": "v4rem-people-d-1622"
+  },
+  {
+   "file": "050",
+   "key": "person-0106",
+   "col": "title",
+   "from": "Seongsu Workshop Market Auctioneer",
+   "to": "Cheonho Workshop Market Auctioneer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0605"
+  },
+  {
+   "file": "050",
+   "key": "person-0106",
+   "col": "title_ko",
+   "from": "성수 공방시장 경매사",
+   "to": "천호 공방시장 경매사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0606"
+  },
+  {
+   "file": "050",
+   "key": "person-0106",
+   "col": "position",
+   "from": "Seongsu Workshop Market Auctioneer",
+   "to": "Cheonho Workshop Market Auctioneer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0607"
+  },
+  {
+   "file": "050",
+   "key": "person-0106",
+   "col": "position_ko",
+   "from": "성수 공방시장 경매사",
+   "to": "천호 공방시장 경매사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0608"
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json_ko",
+   "from": "성수1가1동과",
+   "to": "천호1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1627"
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json_ko",
+   "from": "제기동",
+   "to": "길동",
+   "expect": 2,
+   "id": "v4rem-people-d-1628"
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 2,
+   "id": "v4rem-people-d-1629"
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json_ko",
+   "from": "성동",
+   "to": "길동",
+   "expect": 14,
+   "id": "v4rem-people-d-1630"
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json",
+   "from": "Seongsu 1-ga 1-dong",
+   "to": "Cheonho 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1631"
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json",
+   "from": "Jegi-dong",
+   "to": "Gil-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1632"
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 2,
+   "id": "v4rem-people-d-1633"
+  },
+  {
+   "file": "090",
+   "key": "person-0107",
+   "col": "json",
+   "from": "Seongdong",
+   "to": "Gil-dong",
+   "expect": 14,
+   "id": "v4rem-people-d-1634"
+  },
+  {
+   "file": "050",
+   "key": "person-0107",
+   "col": "title",
+   "from": "Seongdong Alley Infirmary First-Aid Officer",
+   "to": "Gil-dong Alley Infirmary First-Aid Officer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0609"
+  },
+  {
+   "file": "050",
+   "key": "person-0107",
+   "col": "title_ko",
+   "from": "성동 골목의무소 응급처치원",
+   "to": "길동 골목의무소 응급처치원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0610"
+  },
+  {
+   "file": "050",
+   "key": "person-0107",
+   "col": "position",
+   "from": "Seongdong Alley Infirmary First-Aid Officer",
+   "to": "Gil-dong Alley Infirmary First-Aid Officer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0611"
+  },
+  {
+   "file": "050",
+   "key": "person-0107",
+   "col": "position_ko",
+   "from": "성동 골목의무소 응급처치원",
+   "to": "길동 골목의무소 응급처치원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0612"
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json_ko",
+   "from": "성수1가2동과",
+   "to": "천호2동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1639"
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json_ko",
+   "from": "뚝섬",
+   "to": "암사",
+   "expect": 12,
+   "id": "v4rem-people-d-1640"
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json_ko",
+   "from": "군자",
+   "to": "고덕",
+   "expect": 5,
+   "id": "v4rem-people-d-1641"
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json",
+   "from": "Seongsu 1-ga 2-dong",
+   "to": "Cheonho 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1642"
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json",
+   "from": "Ttukseom",
+   "to": "Amsa",
+   "expect": 12,
+   "id": "v4rem-people-d-1643"
+  },
+  {
+   "file": "090",
+   "key": "person-0108",
+   "col": "json",
+   "from": "Gunja",
+   "to": "Godeok",
+   "expect": 5,
+   "id": "v4rem-people-d-1644"
+  },
+  {
+   "file": "050",
+   "key": "person-0108",
+   "col": "title",
+   "from": "Ttukseom Pump Room Power Plant Chief Operator",
+   "to": "Amsa Pump Room Power Plant Chief Operator",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0613"
+  },
+  {
+   "file": "050",
+   "key": "person-0108",
+   "col": "title_ko",
+   "from": "뚝섬 펌프실 발전운전장",
+   "to": "암사 펌프실 발전운전장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0614"
+  },
+  {
+   "file": "050",
+   "key": "person-0108",
+   "col": "position",
+   "from": "Ttukseom Pump Room Power Plant Chief Operator",
+   "to": "Amsa Pump Room Power Plant Chief Operator",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0615"
+  },
+  {
+   "file": "050",
+   "key": "person-0108",
+   "col": "position_ko",
+   "from": "뚝섬 펌프실 발전운전장",
+   "to": "암사 펌프실 발전운전장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0616"
+  },
+  {
+   "file": "090",
+   "key": "person-0109",
+   "col": "json_ko",
+   "from": "성수1가2동과",
+   "to": "천호2동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1649"
+  },
+  {
+   "file": "090",
+   "key": "person-0109",
+   "col": "json_ko",
+   "from": "뚝섬",
+   "to": "암사",
+   "expect": 14,
+   "id": "v4rem-people-d-1650"
+  },
+  {
+   "file": "090",
+   "key": "person-0109",
+   "col": "json_ko",
+   "from": "군자",
+   "to": "고덕",
+   "expect": 2,
+   "id": "v4rem-people-d-1651"
+  },
+  {
+   "file": "090",
+   "key": "person-0109",
+   "col": "json",
+   "from": "Seongsu 1-ga 2-dong",
+   "to": "Cheonho 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1652"
+  },
+  {
+   "file": "090",
+   "key": "person-0109",
+   "col": "json",
+   "from": "Ttukseom",
+   "to": "Amsa",
+   "expect": 14,
+   "id": "v4rem-people-d-1653"
+  },
+  {
+   "file": "090",
+   "key": "person-0109",
+   "col": "json",
+   "from": "Gunja",
+   "to": "Godeok",
+   "expect": 2,
+   "id": "v4rem-people-d-1654"
+  },
+  {
+   "file": "050",
+   "key": "person-0109",
+   "col": "title",
+   "from": "Ttukseom-Sinjeong Food Transport Train Crew Member",
+   "to": "Amsa-Sinjeong Food Transport Train Crew Member",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0617"
+  },
+  {
+   "file": "050",
+   "key": "person-0109",
+   "col": "title_ko",
+   "from": "뚝섬-신정 식량 수송 열차 승무원",
+   "to": "암사-신정 식량 수송 열차 승무원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0618"
+  },
+  {
+   "file": "050",
+   "key": "person-0109",
+   "col": "position",
+   "from": "Ttukseom-Sinjeong Food Transport Train Crew Member",
+   "to": "Amsa-Sinjeong Food Transport Train Crew Member",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0619"
+  },
+  {
+   "file": "050",
+   "key": "person-0109",
+   "col": "position_ko",
+   "from": "뚝섬-신정 식량 수송 열차 승무원",
+   "to": "암사-신정 식량 수송 열차 승무원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0620"
+  },
+  {
+   "file": "090",
+   "key": "person-0763",
+   "col": "json_ko",
+   "from": "용답동과",
+   "to": "고덕2동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1659"
+  },
+  {
+   "file": "090",
+   "key": "person-0763",
+   "col": "json",
+   "from": "Yongdap-dong",
+   "to": "Godeok 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1660"
+  },
+  {
+   "file": "090",
+   "key": "person-0859",
+   "col": "json_ko",
+   "from": "용답동과",
+   "to": "고덕2동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1661"
+  },
+  {
+   "file": "090",
+   "key": "person-0859",
+   "col": "json",
+   "from": "Yongdap-dong",
+   "to": "Godeok 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1662"
+  },
+  {
+   "file": "090",
+   "key": "person-0955",
+   "col": "json_ko",
+   "from": "용답동과",
+   "to": "고덕2동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1663"
+  },
+  {
+   "file": "090",
+   "key": "person-0955",
+   "col": "json",
+   "from": "Yongdap-dong",
+   "to": "Godeok 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1664"
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 19,
+   "id": "v4rem-people-d-1665"
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1666"
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 18,
+   "id": "v4rem-people-d-1667"
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1668"
+  },
+  {
+   "file": "050",
+   "key": "person-0405",
+   "col": "position",
+   "from": "Sicheong Station Union Vehicle Workshop Mechanic, Practical Aide to Eun Boram",
+   "to": "Suseo Station Union Vehicle Workshop Mechanic, Practical Aide to Eun Boram",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0621"
+  },
+  {
+   "file": "050",
+   "key": "person-0405",
+   "col": "position_ko",
+   "from": "시청역 조합 차량정비소 정비사, 은보람의 실무 담당자",
+   "to": "수서역 조합 차량정비소 정비사, 은보람의 실무 담당자",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0622"
+  },
+  {
+   "file": "090",
+   "key": "person-0400",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 6,
+   "id": "v4rem-people-d-1671"
+  },
+  {
+   "file": "090",
+   "key": "person-0400",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1672"
+  },
+  {
+   "file": "090",
+   "key": "person-0400",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1673"
+  },
+  {
+   "file": "090",
+   "key": "person-0400",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1674"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 6,
+   "id": "v4rem-people-d-1675"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1676"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 3,
+   "id": "v4rem-people-d-1677"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1678"
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 7,
+   "id": "v4rem-people-d-1679"
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1680"
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1681"
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 7,
+   "id": "v4rem-people-d-1682"
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1683"
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1684"
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1685"
+  },
+  {
+   "file": "090",
+   "key": "person-0404",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 6,
+   "id": "v4rem-people-d-1686"
+  },
+  {
+   "file": "090",
+   "key": "person-0404",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1687"
+  },
+  {
+   "file": "090",
+   "key": "person-0404",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1688"
+  },
+  {
+   "file": "090",
+   "key": "person-0404",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1689"
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 1,
+   "id": "v4rem-people-d-1690"
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json_ko",
+   "from": "시청역과",
+   "to": "수서역과",
+   "expect": 1,
+   "id": "v4rem-people-d-1691"
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 6,
+   "id": "v4rem-people-d-1692"
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1693"
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1694"
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1695"
+  },
+  {
+   "file": "090",
+   "key": "person-0409",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 6,
+   "id": "v4rem-people-d-1696"
+  },
+  {
+   "file": "090",
+   "key": "person-0409",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1697"
+  },
+  {
+   "file": "090",
+   "key": "person-0409",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1698"
+  },
+  {
+   "file": "090",
+   "key": "person-0409",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1699"
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 17,
+   "id": "v4rem-people-d-1700"
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1701"
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 17,
+   "id": "v4rem-people-d-1702"
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1703"
+  },
+  {
+   "file": "050",
+   "key": "person-0410",
+   "col": "position",
+   "from": "Sicheong Station Outskirts Scout",
+   "to": "Suseo Station Outskirts Scout",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0623"
+  },
+  {
+   "file": "050",
+   "key": "person-0410",
+   "col": "position_ko",
+   "from": "시청역 외곽 탐사원",
+   "to": "수서역 외곽 탐사원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0624"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 7,
+   "id": "v4rem-people-d-1706"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1707"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1708"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1709"
+  },
+  {
+   "file": "090",
+   "key": "person-0412",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 17,
+   "id": "v4rem-people-d-1710"
+  },
+  {
+   "file": "090",
+   "key": "person-0412",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1711"
+  },
+  {
+   "file": "090",
+   "key": "person-0412",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 17,
+   "id": "v4rem-people-d-1712"
+  },
+  {
+   "file": "090",
+   "key": "person-0412",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1713"
+  },
+  {
+   "file": "050",
+   "key": "person-0412",
+   "col": "position",
+   "from": "Sicheong Station Concourse Outpost Chief",
+   "to": "Suseo Station Concourse Outpost Chief",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0625"
+  },
+  {
+   "file": "050",
+   "key": "person-0412",
+   "col": "position_ko",
+   "from": "시청역 대합실 거점장",
+   "to": "수서역 대합실 거점장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0626"
+  },
+  {
+   "file": "090",
+   "key": "person-0413",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 6,
+   "id": "v4rem-people-d-1716"
+  },
+  {
+   "file": "090",
+   "key": "person-0413",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1717"
+  },
+  {
+   "file": "090",
+   "key": "person-0413",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1718"
+  },
+  {
+   "file": "090",
+   "key": "person-0413",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1719"
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 17,
+   "id": "v4rem-people-d-1720"
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1721"
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 17,
+   "id": "v4rem-people-d-1722"
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1723"
+  },
+  {
+   "file": "050",
+   "key": "person-0414",
+   "col": "position",
+   "from": "Sicheong Station Union Vehicle Workshop Duty Officer",
+   "to": "Suseo Station Union Vehicle Workshop Duty Officer",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0627"
+  },
+  {
+   "file": "050",
+   "key": "person-0414",
+   "col": "position_ko",
+   "from": "시청역 조합 차량정비소 당직장",
+   "to": "수서역 조합 차량정비소 당직장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0628"
+  },
+  {
+   "file": "090",
+   "key": "person-0415",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 6,
+   "id": "v4rem-people-d-1726"
+  },
+  {
+   "file": "090",
+   "key": "person-0415",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1727"
+  },
+  {
+   "file": "090",
+   "key": "person-0415",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1728"
+  },
+  {
+   "file": "090",
+   "key": "person-0415",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1729"
+  },
+  {
+   "file": "090",
+   "key": "person-0416",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 3,
+   "id": "v4rem-people-d-1730"
+  },
+  {
+   "file": "090",
+   "key": "person-0416",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 2,
+   "id": "v4rem-people-d-1731"
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 7,
+   "id": "v4rem-people-d-1732"
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1733"
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1734"
+  },
+  {
+   "file": "090",
+   "key": "person-0420",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 6,
+   "id": "v4rem-people-d-1735"
+  },
+  {
+   "file": "090",
+   "key": "person-0420",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1736"
+  },
+  {
+   "file": "090",
+   "key": "person-0420",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1737"
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 9,
+   "id": "v4rem-people-d-1738"
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1739"
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1740"
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 7,
+   "id": "v4rem-people-d-1741"
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1742"
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1743"
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1744"
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 7,
+   "id": "v4rem-people-d-1745"
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1746"
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1747"
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1748"
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 7,
+   "id": "v4rem-people-d-1749"
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1750"
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1751"
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1752"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 7,
+   "id": "v4rem-people-d-1753"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1754"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1755"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1756"
+  },
+  {
+   "file": "090",
+   "key": "person-0196",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1757"
+  },
+  {
+   "file": "090",
+   "key": "person-0196",
+   "col": "json_ko",
+   "from": "노량진이",
+   "to": "청량리가",
+   "expect": 2,
+   "id": "v4rem-people-d-1758"
+  },
+  {
+   "file": "090",
+   "key": "person-0196",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 5,
+   "id": "v4rem-people-d-1759"
+  },
+  {
+   "file": "090",
+   "key": "person-0196",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1760"
+  },
+  {
+   "file": "090",
+   "key": "person-0196",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 7,
+   "id": "v4rem-people-d-1761"
+  },
+  {
+   "file": "090",
+   "key": "person-0197",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1762"
+  },
+  {
+   "file": "090",
+   "key": "person-0197",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 5,
+   "id": "v4rem-people-d-1763"
+  },
+  {
+   "file": "090",
+   "key": "person-0197",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1764"
+  },
+  {
+   "file": "090",
+   "key": "person-0197",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 5,
+   "id": "v4rem-people-d-1765"
+  },
+  {
+   "file": "090",
+   "key": "person-0199",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1766"
+  },
+  {
+   "file": "090",
+   "key": "person-0199",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 2,
+   "id": "v4rem-people-d-1767"
+  },
+  {
+   "file": "090",
+   "key": "person-0199",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1768"
+  },
+  {
+   "file": "090",
+   "key": "person-0199",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 2,
+   "id": "v4rem-people-d-1769"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1770"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 12,
+   "id": "v4rem-people-d-1771"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1772"
+  },
+  {
+   "file": "090",
+   "key": "person-0201",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 12,
+   "id": "v4rem-people-d-1773"
+  },
+  {
+   "file": "050",
+   "key": "person-0201",
+   "col": "title",
+   "from": "Noryangjin Ice Machine Technician",
+   "to": "Cheongnyangni Ice Machine Technician",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0629"
+  },
+  {
+   "file": "050",
+   "key": "person-0201",
+   "col": "title_ko",
+   "from": "노량진 제빙기 정비사",
+   "to": "청량리 제빙기 정비사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0630"
+  },
+  {
+   "file": "050",
+   "key": "person-0201",
+   "col": "position",
+   "from": "Noryangjin Ice Machine Technician",
+   "to": "Cheongnyangni Ice Machine Technician",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0631"
+  },
+  {
+   "file": "050",
+   "key": "person-0201",
+   "col": "position_ko",
+   "from": "노량진 제빙기 정비사",
+   "to": "청량리 제빙기 정비사",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0632"
+  },
+  {
+   "file": "090",
+   "key": "person-0203",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 2,
+   "id": "v4rem-people-d-1778"
+  },
+  {
+   "file": "090",
+   "key": "person-0203",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 2,
+   "id": "v4rem-people-d-1779"
+  },
+  {
+   "file": "050",
+   "key": "person-0203",
+   "col": "title",
+   "from": "Noryangjin Market Medic",
+   "to": "Cheongnyangni Market Medic",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0633"
+  },
+  {
+   "file": "050",
+   "key": "person-0203",
+   "col": "title_ko",
+   "from": "노량진시장 의무원",
+   "to": "청량리시장 의무원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0634"
+  },
+  {
+   "file": "050",
+   "key": "person-0203",
+   "col": "position",
+   "from": "Noryangjin Market Medic",
+   "to": "Cheongnyangni Market Medic",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0635"
+  },
+  {
+   "file": "050",
+   "key": "person-0203",
+   "col": "position_ko",
+   "from": "노량진시장 의무원",
+   "to": "청량리시장 의무원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0636"
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1784"
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 14,
+   "id": "v4rem-people-d-1785"
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1786"
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 14,
+   "id": "v4rem-people-d-1787"
+  },
+  {
+   "file": "050",
+   "key": "person-0208",
+   "col": "title",
+   "from": "Noryangjin Station Concourse Stationmaster",
+   "to": "Cheongnyangni Station Concourse Stationmaster",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0637"
+  },
+  {
+   "file": "050",
+   "key": "person-0208",
+   "col": "title_ko",
+   "from": "노량진역 대합실 역장",
+   "to": "청량리역 대합실 역장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0638"
+  },
+  {
+   "file": "050",
+   "key": "person-0208",
+   "col": "position",
+   "from": "Noryangjin Station Concourse Stationmaster",
+   "to": "Cheongnyangni Station Concourse Stationmaster",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0639"
+  },
+  {
+   "file": "050",
+   "key": "person-0208",
+   "col": "position_ko",
+   "from": "노량진역 대합실 역장",
+   "to": "청량리역 대합실 역장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0640"
+  },
+  {
+   "file": "090",
+   "key": "person-0209",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1792"
+  },
+  {
+   "file": "090",
+   "key": "person-0209",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 14,
+   "id": "v4rem-people-d-1793"
+  },
+  {
+   "file": "090",
+   "key": "person-0209",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1794"
+  },
+  {
+   "file": "090",
+   "key": "person-0209",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 14,
+   "id": "v4rem-people-d-1795"
+  },
+  {
+   "file": "050",
+   "key": "person-0209",
+   "col": "title",
+   "from": "Noryangjin Refrigeration Base Supervisor",
+   "to": "Cheongnyangni Refrigeration Base Supervisor",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0641"
+  },
+  {
+   "file": "050",
+   "key": "person-0209",
+   "col": "title_ko",
+   "from": "노량진 냉동기지 감독",
+   "to": "청량리 냉동기지 감독",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0642"
+  },
+  {
+   "file": "050",
+   "key": "person-0209",
+   "col": "position",
+   "from": "Noryangjin Refrigeration Base Supervisor",
+   "to": "Cheongnyangni Refrigeration Base Supervisor",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0643"
+  },
+  {
+   "file": "050",
+   "key": "person-0209",
+   "col": "position_ko",
+   "from": "노량진 냉동기지 감독",
+   "to": "청량리 냉동기지 감독",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0644"
+  },
+  {
+   "file": "090",
+   "key": "person-0212",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1800"
+  },
+  {
+   "file": "090",
+   "key": "person-0212",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 14,
+   "id": "v4rem-people-d-1801"
+  },
+  {
+   "file": "090",
+   "key": "person-0212",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1802"
+  },
+  {
+   "file": "090",
+   "key": "person-0212",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 14,
+   "id": "v4rem-people-d-1803"
+  },
+  {
+   "file": "050",
+   "key": "person-0212",
+   "col": "title",
+   "from": "Noryangjin Ice-Making Emergency Generator Operator",
+   "to": "Cheongnyangni Ice-Making Emergency Generator Operator",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0645"
+  },
+  {
+   "file": "050",
+   "key": "person-0212",
+   "col": "title_ko",
+   "from": "노량진 제빙 비상발전 운전장",
+   "to": "청량리 제빙 비상발전 운전장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0646"
+  },
+  {
+   "file": "050",
+   "key": "person-0212",
+   "col": "position",
+   "from": "Noryangjin Ice-Making Emergency Generator Operator",
+   "to": "Cheongnyangni Ice-Making Emergency Generator Operator",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0647"
+  },
+  {
+   "file": "050",
+   "key": "person-0212",
+   "col": "position_ko",
+   "from": "노량진 제빙 비상발전 운전장",
+   "to": "청량리 제빙 비상발전 운전장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0648"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1808"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 5,
+   "id": "v4rem-people-d-1809"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1810"
+  },
+  {
+   "file": "090",
+   "key": "person-0213",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 5,
+   "id": "v4rem-people-d-1811"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1812"
+  },
+  {
+   "file": "090",
+   "key": "person-0215",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1813"
+  },
+  {
+   "file": "090",
+   "key": "person-0217",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 13,
+   "id": "v4rem-people-d-1814"
+  },
+  {
+   "file": "090",
+   "key": "person-0217",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 13,
+   "id": "v4rem-people-d-1815"
+  },
+  {
+   "file": "050",
+   "key": "person-0217",
+   "col": "title",
+   "from": "Noryangjin Station Food Stock Reconciler",
+   "to": "Cheongnyangni Station Food Stock Reconciler",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0649"
+  },
+  {
+   "file": "050",
+   "key": "person-0217",
+   "col": "title_ko",
+   "from": "노량진역 식량 재고 대조원",
+   "to": "청량리역 식량 재고 대조원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0650"
+  },
+  {
+   "file": "050",
+   "key": "person-0217",
+   "col": "position",
+   "from": "Noryangjin Station Food Stock Reconciler",
+   "to": "Cheongnyangni Station Food Stock Reconciler",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0651"
+  },
+  {
+   "file": "050",
+   "key": "person-0217",
+   "col": "position_ko",
+   "from": "노량진역 식량 재고 대조원",
+   "to": "청량리역 식량 재고 대조원",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0652"
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1820"
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 9,
+   "id": "v4rem-people-d-1821"
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1822"
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 9,
+   "id": "v4rem-people-d-1823"
+  },
+  {
+   "file": "050",
+   "key": "person-0219",
+   "col": "title",
+   "from": "Corrections Officer, Noryangjin Station Holding Cells",
+   "to": "Corrections Officer, Cheongnyangni Station Holding Cells",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0653"
+  },
+  {
+   "file": "050",
+   "key": "person-0219",
+   "col": "title_ko",
+   "from": "노량진역 구금실 교도",
+   "to": "청량리역 구금실 교도",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0654"
+  },
+  {
+   "file": "050",
+   "key": "person-0219",
+   "col": "position",
+   "from": "Corrections Officer, Noryangjin Station Holding Cells",
+   "to": "Corrections Officer, Cheongnyangni Station Holding Cells",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0655"
+  },
+  {
+   "file": "050",
+   "key": "person-0219",
+   "col": "position_ko",
+   "from": "노량진역 구금실 교도",
+   "to": "청량리역 구금실 교도",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0656"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1828"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 2,
+   "id": "v4rem-people-d-1829"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1830"
+  },
+  {
+   "file": "090",
+   "key": "person-0719",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 2,
+   "id": "v4rem-people-d-1831"
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json_ko",
+   "from": "삼성1동 작업장",
+   "to": "수서동 작업장",
+   "expect": 1,
+   "id": "v4rem-people-d-0657"
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json",
+   "from": "Samseong 1-dong workshop",
+   "to": "Suseo-dong workshop",
+   "expect": 1,
+   "id": "v4rem-people-d-0658"
+  },
+  {
+   "file": "090",
+   "key": "person-0156",
+   "col": "json_ko",
+   "from": "영등포역",
+   "to": "용산역",
+   "expect": 4,
+   "id": "v4rem-people-d-1834"
+  },
+  {
+   "file": "090",
+   "key": "person-0156",
+   "col": "json",
+   "from": "Yeongdeungpo Station",
+   "to": "Yongsan Station",
+   "expect": 4,
+   "id": "v4rem-people-d-1835"
+  },
+  {
+   "file": "090",
+   "key": "person-0164",
+   "col": "json_ko",
+   "from": "영등포역",
+   "to": "용산역",
+   "expect": 4,
+   "id": "v4rem-people-d-1836"
+  },
+  {
+   "file": "090",
+   "key": "person-0164",
+   "col": "json",
+   "from": "Yeongdeungpo Station",
+   "to": "Yongsan Station",
+   "expect": 4,
+   "id": "v4rem-people-d-1837"
+  },
+  {
+   "file": "090",
+   "key": "person-0369",
+   "col": "json_ko",
+   "from": "영등포역",
+   "to": "용산역",
+   "expect": 16,
+   "id": "v4rem-people-d-1838"
+  },
+  {
+   "file": "090",
+   "key": "person-0369",
+   "col": "json",
+   "from": "Yeongdeungpo Station",
+   "to": "Yongsan Station",
+   "expect": 16,
+   "id": "v4rem-people-d-1839"
+  },
+  {
+   "file": "050",
+   "key": "person-0369",
+   "col": "position",
+   "from": "Yeongdeungpo Station Stock Check Duty",
+   "to": "Yongsan Station Stock Check Duty",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0659"
+  },
+  {
+   "file": "050",
+   "key": "person-0369",
+   "col": "position_ko",
+   "from": "영등포역 재고 확인 담당",
+   "to": "용산역 재고 확인 담당",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0660"
+  },
+  {
+   "file": "090",
+   "key": "person-0286",
+   "col": "json_ko",
+   "from": "강남역",
+   "to": "서울역",
+   "expect": 15,
+   "id": "v4rem-people-d-1842"
+  },
+  {
+   "file": "090",
+   "key": "person-0286",
+   "col": "json_ko",
+   "from": "서초4동",
+   "to": "회현동",
+   "expect": 2,
+   "id": "v4rem-people-d-1843"
+  },
+  {
+   "file": "090",
+   "key": "person-0286",
+   "col": "json",
+   "from": "Gangnam Station",
+   "to": "Seoul Station",
+   "expect": 14,
+   "id": "v4rem-people-d-1844"
+  },
+  {
+   "file": "090",
+   "key": "person-0286",
+   "col": "json",
+   "from": "Seocho 4-dong",
+   "to": "Hoehyeon-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1845"
+  },
+  {
+   "file": "050",
+   "key": "person-0286",
+   "col": "position",
+   "from": "Gangnam Station Northern Gate Escort Outpost Chief",
+   "to": "Seoul Station Northern Gate Escort Outpost Chief",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0661"
+  },
+  {
+   "file": "050",
+   "key": "person-0286",
+   "col": "position_ko",
+   "from": "강남역 북문 호송 거점장",
+   "to": "서울역 북문 호송 거점장",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0662"
+  },
+  {
+   "file": "090",
+   "key": "person-0235",
+   "col": "json_ko",
+   "from": "영등포동",
+   "to": "후암동",
+   "expect": 21,
+   "id": "v4rem-people-d-1848"
+  },
+  {
+   "file": "090",
+   "key": "person-0235",
+   "col": "json",
+   "from": "Yeongdeungpo-dong",
+   "to": "Huam-dong",
+   "expect": 21,
+   "id": "v4rem-people-d-1849"
+  },
+  {
+   "file": "090",
+   "key": "person-0235",
+   "col": "json_ko",
+   "from": "여의동",
+   "to": "남영동",
+   "expect": 2,
+   "id": "v4rem-people-d-1850"
+  },
+  {
+   "file": "090",
+   "key": "person-0235",
+   "col": "json",
+   "from": "Yeoui-dong",
+   "to": "Namyeong-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1851"
+  },
+  {
+   "file": "090",
+   "key": "person-0236",
+   "col": "json_ko",
+   "from": "여의동을",
+   "to": "남영동을",
+   "expect": 2,
+   "id": "v4rem-people-d-1852"
+  },
+  {
+   "file": "090",
+   "key": "person-0236",
+   "col": "json",
+   "from": "Yeoui-dong",
+   "to": "Namyeong-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1853"
+  },
+  {
+   "file": "090",
+   "key": "person-0400",
+   "col": "json",
+   "from": "The community role is union member, and the duty is contract clerk.",
+   "to": "The community role is guild member, and the duty is food ledger clerk.",
+   "expect": 1,
+   "id": "v4rem-people-d-0663"
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json",
+   "from": "The community role is union member, and the duty is clerk of the Union Skill Review Committee.",
+   "to": "The community role is guild member, and the duty is maintenance skill record clerk.",
+   "expect": 1,
+   "id": "v4rem-people-d-0664"
+  },
+  {
+   "file": "090",
+   "key": "person-0404",
+   "col": "json",
+   "from": "The community role is union member, and the duty is clerk of the Union Member Election Commission.",
+   "to": "The community role is guild member, and the duty is patrol rotation roster clerk.",
+   "expect": 1,
+   "id": "v4rem-people-d-0665"
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json",
+   "from": "The community role is union member, and the duty is Southern Outskirts Patrol.",
+   "to": "The community role is guild member, and the duty is outer tunnel patrol.",
+   "expect": 1,
+   "id": "v4rem-people-d-0666"
+  },
+  {
+   "file": "090",
+   "key": "person-0409",
+   "col": "json",
+   "from": "The community role is union member, and the duty is Union General Assembly Courier and An Taegyeong's working-level aide.",
+   "to": "The community role is guild member, and the duty is patrol rotation courier.",
+   "expect": 1,
+   "id": "v4rem-people-d-0667"
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json",
+   "from": "The community role is guild member, and the duty is Suseo Station outer scout.",
+   "to": "The community role is guild member, and the duty is outer scout.",
+   "expect": 1,
+   "id": "v4rem-people-d-1859"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json",
+   "from": "The community role is guild member, and the duty is working-level aide to Gwak Eunjae, Loss Compensation Audit Recorder.",
+   "to": "The community role is guild member, and the duty is recording of lost and damaged goods.",
+   "expect": 1,
+   "id": "v4rem-people-d-1860"
+  },
+  {
+   "file": "090",
+   "key": "person-0412",
+   "col": "json",
+   "from": "The community role is Branch Chief, and the duty is Suseo Station Waiting Hall Post Chief.",
+   "to": "The community role is branch chief, and the duty is waiting-hall access and shutter watch.",
+   "expect": 1,
+   "id": "v4rem-people-d-1861"
+  },
+  {
+   "file": "090",
+   "key": "person-0413",
+   "col": "json",
+   "from": "The community role is Branch Chief, and the duty is Underground Facility Defense Squad Post Chief.",
+   "to": "The community role is branch chief, and the duty is running the underground light-shield and heating check watch.",
+   "expect": 1,
+   "id": "v4rem-people-d-1862"
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json",
+   "from": "The community role is member and the duty is Suseo Station Guild Vehicle Depot Duty Chief.",
+   "to": "The community role is guild member, and the duty is machine-body maintenance watch.",
+   "expect": 1,
+   "id": "v4rem-people-d-1863"
+  },
+  {
+   "file": "090",
+   "key": "person-0415",
+   "col": "json",
+   "from": "The community role is branch chief, and the duty is Chief Operator of Archive-Assembly Emergency Power.",
+   "to": "The community role is branch chief, and the duty is running the data-center backup power.",
+   "expect": 1,
+   "id": "v4rem-people-d-1864"
+  },
+  {
+   "file": "090",
+   "key": "person-0416",
+   "col": "json",
+   "from": "The community role is union member, and the duty is Joint Bargaining Signature Clerk of the Arc.",
+   "to": "The community role is guild member, and the duty is recording the machine-body parts in-and-out ledger.",
+   "expect": 1,
+   "id": "v4rem-people-d-1865"
+  },
+  {
+   "file": "090",
+   "key": "person-0420",
+   "col": "json",
+   "from": "His community role is union member, and his duty is multi-state ratification audit assistant.",
+   "to": "The community role is guild member, and the duty is checking the entrance light shields.",
+   "expect": 1,
+   "id": "v4rem-people-d-1866"
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json",
+   "from": "Their community role is union member, and their duty is Requisitioned Refugee Crowd Representative.",
+   "to": "The community role is guild member, and the duty is refugee headcount and sleeping-place checks.",
+   "expect": 1,
+   "id": "v4rem-people-d-1867"
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json",
+   "from": "The community role is union member, and the duty is Black Dispatch Train Inquiry Witness.",
+   "to": "The community role is guild member, and the duty is checking tunnel movement records.",
+   "expect": 1,
+   "id": "v4rem-people-d-1868"
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json",
+   "from": "The community role is union member, and the duty is Contract Audit Clerk.",
+   "to": "The community role is guild member, and the duty is checking food and fuel ledgers.",
+   "expect": 1,
+   "id": "v4rem-people-d-1869"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Has the carrying turn and release time written in only one public transport ledger, so that neighbors can check where a load went against the same ledger.",
+   "expect": 1,
+   "id": "v4rem-people-d-1870"
+  },
+  {
+   "file": "090",
+   "key": "person-0406",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the ledger is swapped, the whereabouts of loads no longer match, and the neighbors' food and firewood shares vanish.",
+   "expect": 1,
+   "id": "v4rem-people-d-1871"
+  },
+  {
+   "file": "090",
+   "key": "person-0033",
+   "col": "json",
+   "from": "Born in 2126.",
+   "to": "Generation of 2126.",
+   "expect": 2,
+   "id": "v4rem-people-d-1872"
+  },
+  {
+   "file": "090",
+   "key": "person-0034",
+   "col": "json",
+   "from": "Born in 2126.",
+   "to": "Generation of 2126.",
+   "expect": 2,
+   "id": "v4rem-people-d-1873"
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json",
+   "from": "Born in 2126.",
+   "to": "Generation of 2126.",
+   "expect": 2,
+   "id": "v4rem-people-d-1874"
+  },
+  {
+   "file": "090",
+   "key": "person-0212",
+   "col": "json",
+   "from": "Born in 2126.",
+   "to": "Generation of 2126.",
+   "expect": 2,
+   "id": "v4rem-people-d-1875"
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "from": "That one forged ration dispatch would trigger a collective cutoff and the courier network would fall into politics.",
+   "to": "That one forged warning dispatch would drive people out of the light all at once and the courier network would lose people's trust.",
+   "expect": 2,
+   "id": "v4rem-people-d-1876"
+  },
+  {
+   "file": "090",
+   "key": "person-0026",
+   "col": "json",
+   "from": "That one original would vanish in a fire or a cutoff uproar, and a clause surviving only in memory would become the western protection zone's grounds.",
+   "to": "That one original would vanish in a fire or a riot, and a clause surviving only in memory would become someone's grounds for a rights claim.",
+   "expect": 2,
+   "id": "v4rem-people-d-1877"
+  },
+  {
+   "file": "090",
+   "key": "person-0037",
+   "col": "json",
+   "from": "That one season's famine overlapped with a cutoff, and work squads would sweep civilian homes as ration requisitioners.",
+   "to": "That a season's crop failure and a cold snap would overlap, and labor gangs would sweep through civilian homes to collect food.",
+   "expect": 2,
+   "id": "v4rem-people-d-1878"
+  },
+  {
+   "file": "090",
+   "key": "person-0037",
+   "col": "json",
+   "from": "Geumcheon Wonsu Rations Citizen Representative",
+   "to": "Geumcheon Food Distribution Officer",
+   "expect": 3,
+   "id": "v4rem-people-d-1879"
+  },
+  {
+   "file": "090",
+   "key": "person-0073",
+   "col": "json",
+   "from": "Byeon Taeon first posts the number of ration pots and the well level on the Daechi Waiting Hall blackboard, and does not broadcast cargo departure until Kim Doha's residents' veto is reflected.",
+   "to": "Byeon Taeon first posts the number of food bins and the remaining fuel on the Daechi Waiting Hall blackboard, and does not broadcast departures until the shutter check is finished.",
+   "expect": 3,
+   "id": "v4rem-people-d-1880"
+  },
+  {
+   "file": "090",
+   "key": "person-0154",
+   "col": "json",
+   "from": "In 2125 he dried ratification papers soaked on the platform and left a hand copy. By this deed the signature of the archive defense patrol squad leader post rose into the ledger.",
+   "to": "On a midwinter platform he carefully dried frozen record papers and left a hand copy. After that his neighbors put his name on the night rotation list.",
+   "expect": 1,
+   "id": "v4rem-people-d-1881"
+  },
+  {
+   "file": "090",
+   "key": "person-0164",
+   "col": "json",
+   "from": "That testimony she signed would become the indulgence of a collective cutoff clause.",
+   "to": "That testimony she signed would become a pardon for terms that starve her neighbors.",
+   "expect": 2,
+   "id": "v4rem-people-d-1882"
+  },
+  {
+   "file": "090",
+   "key": "person-0220",
+   "col": "json",
+   "from": "She leads the Yeouido investment guild through its contributing houses. Before the procession descended, she cut the bulletin and transmitted only roster fields. She works between the political force of speed and verification without holding state ratification authority.",
+   "to": "She is the Yeouido guild master chosen by the council of contributing houses. Before the procession came down she cut the bulletin and transmitted only the roster fields. She works between the political force of a fast voice and verification, and does not hold state ratification authority.",
+   "expect": 1,
+   "id": "v4rem-people-d-1883"
+  },
+  {
+   "file": "090",
+   "key": "person-0275",
+   "col": "json",
+   "from": "That Han Jaemok's collective cutoff clause would scatter the Changdong housing population in one night.",
+   "to": "That the fuel stock record would be altered and the residents of Seocho 2-dong would come to suspect one another overnight.",
+   "expect": 2,
+   "id": "v4rem-people-d-1884"
+  },
+  {
+   "file": "090",
+   "key": "person-0296",
+   "col": "json",
+   "from": "Two witnesses observe the intake weight, and an order stamped with a family crest is blocked from dispatch before the chairman's office approves it.",
+   "to": "Two witnesses check the intake weight, and a release slip whose weight does not match is not sent out before the ledger is straightened out.",
+   "expect": 2,
+   "id": "v4rem-people-d-1885"
+  }
+ ]
+}

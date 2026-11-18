@@ -1,0 +1,31 @@
+{
+ "rules": [
+  {
+   "id": "lah-0170",
+   "file": "090",
+   "key": "person-0170",
+   "col": "json",
+   "from": "Hierophantscu",
+   "to": "Popescu",
+   "expect": 1
+  },
+  {
+   "id": "lah-0172",
+   "file": "090",
+   "key": "person-0172",
+   "col": "json",
+   "from": "Hierophantscu",
+   "to": "Popescu",
+   "expect": 1
+  },
+  {
+   "id": "lah-0190",
+   "file": "090",
+   "key": "person-0190",
+   "col": "json",
+   "from": "Hierophantscu",
+   "to": "Popescu",
+   "expect": 7
+  }
+ ]
+}

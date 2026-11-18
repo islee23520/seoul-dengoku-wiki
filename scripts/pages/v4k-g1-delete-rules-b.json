@@ -1,0 +1,67 @@
+{
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "Bogukmun lists, .",
+   "to": "Bogukmun lists.",
+   "id": "k1e-1",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "Bogukmun roster, .",
+   "to": "Bogukmun roster.",
+   "id": "k1e-2",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "dotted lines, .",
+   "to": "dotted lines.",
+   "id": "k1e-3",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "장세화의 의료 우선 칸을 피하지 않으려 빚을 지고, 약재",
+   "to": "약재",
+   "id": "k1e-4",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json_ko",
+   "from": " 류은비의 의료동맹 호송증을 당직 원장에 옮긴다.",
+   "to": "",
+   "id": "k1e-5",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": " Moved Ryu Eunbi's medical alliance convoy passes into the duty ledger.",
+   "to": "",
+   "id": "k1e-6",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": " He copies Ryu Eunbi's Medical Alliance escort passes into the duty ledger.",
+   "to": "",
+   "id": "k1e-7",
+   "expect": 2
+  }
+ ]
+}

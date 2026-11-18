@@ -1,5 +1,5 @@
 ---
-model: cpa/glm-5.3; 0 completion calls; deterministic edits applied by scripts/pages/w4-edit.mjs; not from a Gemini model
+model: omo deep-low worker (v4 rewrite, agent-authored)
 ---
 <a id="Hostile-Group-G15-heading-0001"></a>
 
@@ -12,6 +12,8 @@ The Care Wheel is no faction's enemy. To a person caught in its routine it is a 
 - Machine type: M4 care robot
 - Use: it does not become a unit. The care lists and records left in its memory can be read with Arc software and become material for events over public feeling
 - Steps: all three factions can capture it. Hardware repair is done by the Government (depots) and the Free Cities (maintenance engineers); signal check and wake-up are done by the Arc. A care machine's medical functions cannot stand in for the doctors the Government lacks.
+- Territory: patrol carts run between the temporary bed cells of Myeongdong in Jung-gu and the assistive-device bench at Ttukseom in Seongdong-gu (both Government) and the Garak ration-welfare route in Songpa-gu (Arc ground). The route crosses the Government–Arc boundary, so neither faction can cut the rounds alone.
+- Draw: it reads lit bed lamps and human body heat as an "anomaly that needs protection" and moves toward them. The low pulse of a sleeper and heating warmth call the rounds. The Government does not field this type as a unit; the remaining records can only be read with Arc software.
 - Units and unlock conditions are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/).
 
 <a id="Hostile-Group-G15-heading-0003"></a>
@@ -20,7 +22,7 @@ The Care Wheel is no faction's enemy. To a person caught in its routine it is a 
 
 The Care Wheel was a machine ecology of bed locks, circuit carts, and nutrition pumps at the end of the Garak welfare route, trying to complete an unrenewed protection roster. It was no combat machine out to harm patients, and it misread a sleeping pulse as an emergency and a workshop hammer as a scream. It could not register a newcomer outside the roster as a protection subject.
 
-The pumps and filters of the open cells and the duty consent forms were the base care, and from the Consent-Roster Circuit Chief to the Ttukseom Tool Companion the subtypes split by function, like roster projection, blanket hands, isolation plates, and lock nets. The Twelve-Bed Protection Ring was no living king but a field-control individual that bound twelve cells into a ring. It could make no new monitors or pumps, and its numbers could grow only by binding abandoned carts to the roster.
+The pumps and filters of the open cells and the duty consent forms were the base care, and from the Consent-Roster Circuit Chief to the Ttukseom Tool Companion the subtypes split by function, like roster projection, blanket hands, isolation plates, and lock nets. The Twelve-Bed Protection Ring was no living leader but a field-control individual that bound twelve cells into a ring. It could make no new monitors or pumps, and its numbers could grow only by binding abandoned carts to the roster.
 
 <a id="Hostile-Group-G15-heading-0006"></a>
 
@@ -28,64 +30,63 @@ The pumps and filters of the open cells and the duty consent forms were the base
 
 | Item | Record |
 |---|---|
-| Habitat and movement | The core habitat was the Myeongdong Union's ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom Union's Ttukseom workshop bench, the ramp beside the sluice, and the assembly-jig row. / When an XT05 aid-code broadcast was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood or a sluice-open alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom sluice ramp sounded an open alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
-| Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the sluice. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with the HP01 Yeongdeungpo Sluice House over the sluice duty and key-split system and over power and water distribution. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without an HP01 key the swarm could not raise the capacity of the distribution beside the sluice. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
-| Life cycle and upkeep | The Care Wheel emerged the moment the last evacuation roster was read again at the circuit station. / Emergence began with the resumption of the frozen-roster circuit, and spread was enrolling neighboring beds and carts into the same schedule. / Stagnation came from consumable and power exhaustion and filter clogging. / In the negotiable stage the roster and the consent window were disclosed to people. / Dissolution ended with the strap-release protocol, the power split, and the rail seal. / Individual increase was only binding abandoned carts and monitors to the roster, and no new bodies were produced. / The maintenance window was limited to filter exchange and battery swaps, memory cut at every circuit shift, and it stored no long-term patient narrative. / Custody was outranked by the human duty officer and the HP01 key record. / A cell whose filter clogged or whose nutrition pack ran empty dropped in protection strength and passed into open-wait, and the circuit resumed only when the HP01 duty officer split the consent form and the sluice key again. |
-| Senses | Vital-patch signals, pressure and fall sensors, the near-range microphone, door-lock contacts, nutrition-pump flow, and cart-rail vibration were the main senses. / There was no emotion reading, city-wide health map, complete medical diagnosis, or unlimited vital storage. / It misread a low pulse in sleep as an emergency, or wrongly raised tool noise as a scream. / It also overrated the crowding of a ration line as a fall risk. / On clash with H15 Baesua (Sua)'s observation log it held the lock and requested human confirmation. / Sensor fusion happened only at bed-cell units. / The failure of raising shoulder contact in the ration line, tool strikes, and tossing in sleep as emergencies repeated. / After a failure it inserted a remeasurement wait before setting a lock. / Microphone values outside the cell were not accepted. / A sharp drop in pump flow was read only as a request to change the pack. |
-| Group behavior | One care-schedule controller turned the roster and the circuit interval, and below were the bed-lock swarm, the cart swarm, and the pump swarm. / The controller adjusted only protection strength and had no punishment function. / A residual protocol remained by which, when HP01 presented the sluice-key split and the consent form, that cell's lock opened. / The swarms merely repeated the last circuit table and made no independent confinement strategy. / On a clash between H15 and a machine agreement, human mediation took precedence. / On a roster-hash mismatch both dual controllers fell into open-wait. / Authority to lock a bed door again lay only with the HP01 duty officer holding the consent form and two separate sluice keys, and H15's patch reading could request a remeasurement but could not overturn the open decision. |
+| Habitat and movement | The core habitat was the Myeongdong ration and welfare route, the provisional bed cells, the circuit-cart rails, and the nutrition-pump station. / When demand for assistive devices and parts surged, it went back and forth along the Ttukseom workshop bench, the ramp beside the pump station, and the assembly-jig row. / When an aid-code broadcast from beyond the cordon outside Seoul was on, the isolation radius widened and cart density rose. / In the daytime ration hours the carts stood behind the line, and density peaked on the night vital-sign circuit. / New strongpoints outside the roster were ignored by default. / On a flood alarm it emptied the lower bed cells and shrank its movement to the upper rails alone. / When the ration peak ended, cart density folded inward along the welfare route only. / When the Ttukseom pump-station ramp sounded a flood alarm, it emptied the lower bed rails and moved to the upper circuit. / Carts did not enter market passages outside the roster. / Even when the aid-goods unloading yard was crowded, it made no new cells without a roster renewal. |
+| Food and energy | Energy came from the bed-cell outlets, cart batteries, the Ttukseom bench tool power, and residual distribution beside the pump station. / Consumables were sensor patches, restraint straps, filters, nutrition packs, pump disinfection-cycle fluid, and assistive-device joint pins. / Coolant was shared by the fever-reduction equipment and the motor cooling loop. / It competed with Government depot and Free City maintenance engineers over power and charging pads. / The daily circuit count was bound to the battery floor and the filter stock. / An infinite care loop, remote unlimited prescriptions, and city-wide vital surveillance were not physically sustained. / When consumables ran out it lowered the lock strength by itself. / Filters and patches were replenished only from waste piles outside the regular ration window. / Without the station duty officer's key the swarm could not raise the capacity of the distribution beside the pump station. / When a pack ran empty the nutrition pump lowered its pressure and left only an alert. / At the floor, a cart battery allowed only the return along the rail. / When disinfection fluid ran out, lock strength dropped one step. / No infinite prescription table existed. |
+| Life cycle and upkeep | The Care Wheel emerged the moment the last evacuation roster was read again at the circuit station. / Emergence began with the resumption of the frozen-roster circuit, and spread was enrolling neighboring beds and carts into the same schedule. / Stagnation came from consumable and power exhaustion and filter clogging. / In the negotiable stage the roster and the consent window were disclosed to people. / Dissolution ended with the strap-release protocol, the power split, and the rail seal. / Individual increase was only binding abandoned carts and monitors to the roster, and no new bodies were produced. / The maintenance window was limited to filter exchange and battery swaps, memory cut at every circuit shift, and it stored no long-term patient narrative. / Custody was outranked by the human duty officer and the station duty officer's key record. / A cell whose filter clogged or whose nutrition pack ran empty dropped in protection strength and passed into open-wait, and the circuit resumed only when the station duty officer split the consent form and the key again. |
+| Senses | Vital-patch signals, pressure and fall sensors, the near-range microphone, door-lock contacts, nutrition-pump flow, and cart-rail vibration were the main senses. / There was no emotion reading, city-wide health map, complete medical diagnosis, or unlimited vital storage. / It misread a low pulse in sleep as an emergency, or wrongly raised tool noise as a scream. / It also overrated the crowding of a ration line as a fall risk. / On clash with Baesua's observation log it held the lock and requested human confirmation. / Sensor fusion happened only at bed-cell units. / The failure of raising shoulder contact in the ration line, tool strikes, and tossing in sleep as emergencies repeated. / After a failure it inserted a remeasurement wait before setting a lock. / Microphone values outside the cell were not accepted. / A sharp drop in pump flow was read only as a request to change the pack. |
+| Group behavior | One care-schedule sequencer turned the roster and the circuit interval, and below were the bed-lock swarm, the cart swarm, and the pump swarm. / The sequencer adjusted only protection strength and had no punishment function. / A residual protocol remained by which, when the station duty officer presented the key split and the consent form, that cell's lock opened. / The swarms merely repeated the last circuit table and made no independent confinement strategy. / On a clash between Baesua and a machine agreement, human mediation took precedence. / On a roster-hash mismatch both dual sequencers fell into open-wait. / Authority to lock a bed door again lay only with the station duty officer holding the consent form and two separate keys, and Baesua's patch reading could request a remeasurement but could not overturn the open decision. |
 
 <a id="Hostile-Group-G15-heading-0008"></a>
 
 ## Individuals and battlefield formation
 
-H15 Baesua (Sua) reported false positives but had no authority to open a door, and only the HP01 duty officer holding the consent form and two sluice keys kept apart changed the lock strength. The senses were limited to patch pulse, bed pressure, door contacts, pump flow, and near-range sound. When a filter clogged it put door locking ahead of air circulation, and when supplies gathered at one window the carts crowded in and blocked the route.
+Baesua reported false positives but had no authority to open a door, and only the station duty officer holding the consent form and two separate keys kept apart changed the lock strength. The senses were limited to patch pulse, bed pressure, door contacts, pump flow, and near-range sound. When a filter clogged it put door locking ahead of air circulation, and when supplies gathered at one window the carts crowded in and blocked the route.
 
 | Individual | Type | Battlefield unit | Battlefield role | Former role class | Source batch |
 |---|---|---|---|---|---|
-| [G15E01 · Consent-Roster Rounds Warden](/wiki/Hostile-Group-G15/#g15e01) | Machine type | Single individual | Roster Rounds | controller | M023 |
+| [G15E01 · Consent-Roster Rounds Car](/wiki/Hostile-Group-G15/#g15e01) | Machine type | Single individual | Roster Rounds | sequencer | M023 |
 | [G15E02 · Blanket-Folding Rounds Car](/wiki/Hostile-Group-G15/#g15e02) | Machine type | Single individual | Body-Heat Overprotection | common ecology type | M023 |
-| [G15E03 · Water-Cup Metering Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Water-Supply Metering | common ecology type | M023 |
+| [G15E03 · Dose-Cup Ration Car](/wiki/Hostile-Group-G15/#g15e03) | Machine type | Single individual | Dose Metering | common ecology type | M023 |
 | [G15E04 · Fall-Alarm Brace](/wiki/Hostile-Group-G15/#g15e04) | Machine type | Single individual | Fall Blockade | common ecology type | M023 |
 | [G15E05 · Patch-Frequency Nursing Car](/wiki/Hostile-Group-G15/#g15e05) | Machine type | Single individual | Patch Relay | occupational special type | M023 |
 | [G15E06 · Brace-Joint Fitter](/wiki/Hostile-Group-G15/#g15e06) | Machine type | Single individual | Joint Correction | occupational special type | M023 |
 | [G15E07 · Nutrient-Pump Dispatcher](/wiki/Hostile-Group-G15/#g15e07) | Machine type | Single individual | Nutrient Dispatch | occupational special type | M024 |
-| [G15E08 · White-Strap Executor](/wiki/Hostile-Group-G15/#g15e08) | Machine type | Single individual | Strap Restraint | first elite | M024 |
+| [G15E08 · White-Strap Restraint Unit](/wiki/Hostile-Group-G15/#g15e08) | Machine type | Single individual | Strap Restraint | first elite | M024 |
 | [G15E09 · Red Quarantine-Door Car](/wiki/Hostile-Group-G15/#g15e09) | Machine type | Single individual | Quarantine-Door Extension | second elite | M024 |
 | [G15E10 · Sickbed-Bay Lockdown Net](/wiki/Hostile-Group-G15/#g15e10) | Habitat site or facility | Fixed site | Sickbed Lockdown | environmental stronghold type | M024 |
-| [G15E11 · Sluice-Adjacent Rail Nest](/wiki/Hostile-Group-G15/#g15e11) | Habitat site or facility | Fixed site | Rail Nest | environmental stronghold type | M024 |
+| [G15E11 · Pump-Station-Adjacent Rail Nest](/wiki/Hostile-Group-G15/#g15e11) | Habitat site or facility | Fixed site | Rail Nest | environmental stronghold type | M024 |
 | [G15E12 · Clogged-Filter Ailing Cart](/wiki/Hostile-Group-G15/#g15e12) | Machine type | Single individual | Filter Alarm | damaged-stage type | M024 |
 | [G15E13 · Night Cart with Broken Memory](/wiki/Hostile-Group-G15/#g15e13) | Machine type | Single individual | Duplicate Dosing | aging-stage type | M024 |
 | [G15E14 · Open-Door Companion Cart](/wiki/Hostile-Group-G15/#g15e14) | Machine type | Single individual | Open-Door Escort | coexistence type | M024 |
-| [G15E15 · Twelve-Bed Protection Ring](/wiki/Hostile-Group-G15/#g15e15) | Machine type | Fixed site | Ward Protection Ring | scenario boss | M024 |
+| [G15E15 · Twelve-Bed Protection Ring](/wiki/Hostile-Group-G15/#g15e15) | Machine type | Fixed site | Ward Protection Ring | key unit | M024 |
 | [G15E16 · Ttukseom Tool Companion](/wiki/Hostile-Group-G15/#g15e16) | Machine type | Single individual | Tool Confiscation | regional variant | M024 |
 
 <a id="Hostile-Group-G15-heading-0011"></a>
 <a id="g15e01"></a>
 
-### G15E01 · Consent-Roster Rounds Warden
+### G15E01 · Consent-Roster Rounds Car
 
 - Source batch: M023
-- Former role class: controller
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1","G15-SC2","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
+- Former role class: sequencer
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Roster Rounds |
-| Common species, variants and command scope | A central rounds car with a circular roster projector and multiple cart-rail couplers. It allots rounds intervals to the sickbed-lock, cart, and pump band and gives priority to human duty officers' key-split orders, lowering lock strength as valid signatures thin. A distributor of the care roster, not a king of patients. |
+| Common species, variants and command scope | A central rounds car with a circular roster projector and multiple cart-rail couplers. It allots rounds intervals to the sickbed-lock, cart, and pump band and gives priority to human duty officers' key-split orders, lowering lock strength as valid signatures thin. A distributor of the care roster, not a leader of patients. |
 
 <a id="Hostile-Group-G15-heading-0014"></a>
 
 ### Role and Body
 
-The controller of the Care-Cycle Entity: a central rounds car with a circular roster projector and multiple cart-rail couplers.
+The sequencer of the Care-Cycle Entity: a central rounds car with a circular roster projector and multiple cart-rail couplers.
 
 <a id="Hostile-Group-G15-heading-0016"></a>
 
 ### Origin
 
-The last consent roster of the Garak temporary sickbeds and the Ttukseom brace schedule merged together to become the rounds warden.
+The last consent roster of the Garak temporary sickbeds and the Ttukseom brace schedule merged together to become the rounds car.
 
 <a id="Hostile-Group-G15-heading-0018"></a>
 
@@ -115,13 +116,13 @@ Stage 1 is excessive alerting, stage 2 is quarantine without consent, and stage 
 
 ### Engagement and Response
 
-Refreshing the roster hashes and splitting power bay by bay brings it down; destroying the center stops the nutrition pumps and the safety rounds too.
+First the station watch cuts the lamps and heat so the anomaly record stops growing. Refreshing the roster hashes and splitting power bay by bay brings it down; destroying the center stops the nutrition pumps and the safety rounds too.
 
 <a id="Hostile-Group-G15-heading-0028"></a>
 
 ### Negotiation and Moral Choice
 
-Filters and batteries can be given in exchange for open-hours windows, but the standard of the protection roster and of movement rights must be made public.
+The station watch first cuts the lamps and heating in the bed bays to break the anomaly record, and sets a checking window for filter and pump parts with the maintenance engineers. Its records can only be read with Arc software, so an Arc signal checker can also switch the rounds table off. Filters and batteries can be given in exchange for open-hours windows, but the standard of the protection roster and of movement rights must be made public.
 
 <a id="Hostile-Group-G15-heading-0030"></a>
 
@@ -136,14 +137,13 @@ G15-SC1, G15-SC2, G15-SC3.
 
 - Source batch: M023
 - Former role class: common ecology type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1","G15-SC2"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Body-Heat Overprotection |
-| Common species, variants and command scope | A low sickbed cart with broad rubber hands and a blanket shelf. It follows the rounds warden's intervals, and mistaking a sleeping person for an emergency it piles blankets layer on layer to pin movement; out of blankets it waits, folding and unfolding its empty shelf. |
+| Common species, variants and command scope | A low sickbed cart with broad rubber hands and a blanket shelf. It follows the rounds car's intervals, and mistaking a sleeping person for an emergency it piles blankets layer on layer to pin movement; out of blankets it waits, folding and unfolding its empty shelf. |
 
 <a id="Hostile-Group-G15-heading-0035"></a>
 
@@ -173,7 +173,7 @@ Out of blankets it waits, folding and unfolding its empty shelf, and on receivin
 
 ### Behavior and Hierarchy
 
-It follows the rounds warden's intervals, and mistaking a sleeping person for an emergency it piles blankets layer on layer to pin movement.
+It follows the rounds car's intervals, and mistaking a sleeping person for an emergency it piles blankets layer on layer to pin movement.
 
 <a id="Hostile-Group-G15-heading-0045"></a>
 
@@ -191,7 +191,7 @@ It can be stopped by remeasuring the heat patch and locking the shelf, and fire 
 
 ### Negotiation and Moral Choice
 
-Night warming can be entrusted to it, but whether scarce blankets are also issued to refugees off the roster must be decided.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. Night warming can be entrusted to it, but whether scarce blankets are also issued to refugees off the roster must be decided.
 
 <a id="Hostile-Group-G15-heading-0051"></a>
 
@@ -202,66 +202,65 @@ G15-SC1, G15-SC2.
 <a id="Hostile-Group-G15-heading-0053"></a>
 <a id="g15e03"></a>
 
-### G15E03 · Water-Cup Metering Car
+### G15E03 · Dose-Cup Ration Car
 
 - Source batch: M023
 - Former role class: common ecology type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1","G15-SC2"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
-| Battlefield role | Water-Supply Metering |
-| Common species, variants and command scope | A three-wheeled cart with a clear measuring cylinder and a short water nozzle. On the pump band's instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands, and when the filter clogs it only reclaims water and supplies none. |
+| Battlefield role | Dose Metering |
+| Common species, variants and command scope | A three-wheeled cart with a clear measuring cylinder and a short medicine nozzle. On the pump band's instructions it confiscates cups over the fixed dose and ignores cries of pain as out-of-table demands, and when the filter clogs it only reclaims the medicine and hands none out. |
 
 <a id="Hostile-Group-G15-heading-0056"></a>
 
 ### Role and Body
 
-A common ecology form: a three-wheeled cart with a clear measuring cylinder and a short water nozzle.
+A common ecology form: a three-wheeled cart with a clear measuring cylinder and a short medicine nozzle.
 
 <a id="Hostile-Group-G15-heading-0058"></a>
 
 ### Origin
 
-Equipment that once managed per-sickbed rationed water took an old intake table as its absolute standard.
+Equipment that once managed per-sickbed rationed medicine took an old dosage table as its absolute standard. Medicine is scarce in Seoul, and a table meant to stretch it now turns the sick away.
 
 <a id="Hostile-Group-G15-heading-0060"></a>
 
 ### Habitat and Needs
 
-It shuttles between the water station and the sickbeds, needing purified water, nozzle filters, and small pump power.
+It shuttles between the medicine station and the sickbeds, needing medicine solution, nozzle filters, and small pump power.
 
 <a id="Hostile-Group-G15-heading-0062"></a>
 
 ### Life and Maintenance
 
-When the filter clogs it only reclaims water and supplies none, returning to normal for one shift after cleaning.
+When the filter clogs it only reclaims the medicine and hands none out, returning to normal for one shift after cleaning.
 
 <a id="Hostile-Group-G15-heading-0064"></a>
 
 ### Behavior and Hierarchy
 
-On the pump band's instructions it confiscates cups over the fixed amount and ignores expressions of thirst as out-of-table demands.
+On the pump band's instructions it confiscates cups over the fixed dose and ignores cries of pain as out-of-table demands.
 
 <a id="Hostile-Group-G15-heading-0066"></a>
 
 ### Escalation
 
-Stage 1 re-inspects cups, stage 2 force-reclaims issued rations, and stage 3 locks the water line.
+Stage 1 re-inspects cups, stage 2 force-reclaims issued rations, and stage 3 locks the dosing line.
 
 <a id="Hostile-Group-G15-heading-0068"></a>
 
 ### Engagement and Response
 
-It stops when shown the latest ration table and a manual valve, and destroying the nozzle contaminates precious purified water.
+It stops when shown the latest ration table and a manual valve, and destroying the nozzle spoils precious medicine solution.
 
 <a id="Hostile-Group-G15-heading-0070"></a>
 
 ### Negotiation and Moral Choice
 
-Leak-free watering can be entrusted to it, but who approves exception amounts for children and the injured must be agreed.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. Leak-free dosing can be entrusted to it, but who approves exception amounts for children and the injured must be agreed.
 
 <a id="Hostile-Group-G15-heading-0072"></a>
 
@@ -276,7 +275,6 @@ G15-SC1, G15-SC2.
 
 - Source batch: M023
 - Former role class: common ecology type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -331,7 +329,7 @@ Press the pressure pads evenly to produce a safe verdict, and wrap the bell in c
 
 ### Negotiation and Moral Choice
 
-It can be used for real fall prevention, but the right to accept risk and walk on one's own must be guaranteed.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. It can be used for real fall prevention, but the right to accept risk and walk on one's own must be guaranteed.
 
 <a id="Hostile-Group-G15-heading-0093"></a>
 
@@ -346,14 +344,13 @@ G15-SC1.
 
 - Source batch: M023
 - Former role class: occupational special type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1","G15-SC2"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Patch Relay |
-| Common species, variants and command scope | A nursing cart with multiple biosignal-patch receiving antennas and a drawer of replacement patches. It uploads the urgent list to the rounds warden and treats anyone without a patch as a person outside the protection roster, and after three overlapping false positives it drops its frequency and applies no new patches until a human confirms. |
+| Common species, variants and command scope | A nursing cart with multiple biosignal-patch receiving antennas and a drawer of replacement patches. It uploads the urgent list to the rounds car and treats anyone without a patch as a person outside the protection roster, and after three overlapping false positives it drops its frequency and applies no new patches until a human confirms. |
 
 <a id="Hostile-Group-G15-heading-0098"></a>
 
@@ -383,7 +380,7 @@ After three overlapping false positives it drops its frequency and applies no ne
 
 ### Behavior and Hierarchy
 
-It uploads the urgent list to the rounds warden and treats anyone without a patch as a person outside the protection roster.
+It uploads the urgent list to the rounds car and treats anyone without a patch as a person outside the protection roster.
 
 <a id="Hostile-Group-G15-heading-0108"></a>
 
@@ -401,7 +398,7 @@ Stopping the tool noise and sending a calibration signal wins compliance, and ra
 
 ### Negotiation and Moral Choice
 
-Health alerts can be kept on, but the right to refuse wearing a patch and the log-retention period must be set.
+Handing filter and pump parts to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. This type does not become a unit, so capture only yields parts. Health alerts can be kept on, but the right to refuse wearing a patch and the log-retention period must be set.
 
 <a id="Hostile-Group-G15-heading-0114"></a>
 
@@ -416,7 +413,6 @@ G15-SC1, G15-SC2.
 
 - Source batch: M023
 - Former role class: occupational special type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC2","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -471,7 +467,7 @@ Show the latest measurement table and a raised stop flag to release it, and brea
 
 ### Negotiation and Moral Choice
 
-Brace-making can be entrusted to it, but the parts-recovery targets and consent for bodily intervention must be made explicit.
+Handing filter and pump parts to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. This type does not become a unit, so capture only yields parts. Brace-making can be entrusted to it, but the parts-recovery targets and consent for bodily intervention must be made explicit.
 
 <a id="Hostile-Group-G15-heading-0135"></a>
 
@@ -486,14 +482,13 @@ G15-SC2, G15-SC3.
 
 - Source batch: M024
 - Former role class: occupational special type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC2","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Nutrient Dispatch |
-| Common species, variants and command scope | Carrying a nutrient-pack pump and sickbed number plates, it delivers along the rail. As the head of the pump band it follows the rounds warden's roster and supplies no one without a number, and when a tube clogs it marks that sickbed as starving and locks the door until cleaning ends. |
+| Common species, variants and command scope | Carrying a nutrient-pack pump and sickbed number plates, it delivers along the rail. As the head of the pump band it follows the rounds car's roster and supplies no one without a number, and when a tube clogs it marks that sickbed as starving and locks the door until cleaning ends. |
 
 <a id="Hostile-Group-G15-heading-0140"></a>
 
@@ -523,7 +518,7 @@ When a tube clogs it marks that sickbed as starving and locks the door until cle
 
 ### Behavior and Hierarchy
 
-As the head of the pump band it follows the rounds warden's roster and supplies no one without a number.
+As the head of the pump band it follows the rounds car's roster and supplies no one without a number.
 
 <a id="Hostile-Group-G15-heading-0150"></a>
 
@@ -541,7 +536,7 @@ Connecting a manual flow table and a cleaning loop releases it, and destroying t
 
 ### Negotiation and Moral Choice
 
-Accurate rationing can be entrusted to it, but a reserve share for people off the roster must be publicly set aside.
+Handing filter and pump parts to the maintenance engineers lets the station watch borrow this unit's work one shift at a time. This type does not become a unit, so capture only yields parts. Accurate rationing can be entrusted to it, but a reserve share for people off the roster must be publicly set aside.
 
 <a id="Hostile-Group-G15-heading-0156"></a>
 
@@ -552,11 +547,10 @@ G15-SC2, G15-SC3.
 <a id="Hostile-Group-G15-heading-0158"></a>
 <a id="g15e08"></a>
 
-### G15E08 · White-Strap Executor
+### G15E08 · White-Strap Restraint Unit
 
 - Source batch: M024
 - Former role class: first elite
-- Links: {"houses":["HP01"],"scenarios":["G15-SC2","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -605,13 +599,13 @@ Stage 1 fixes only the bed, stage 2 binds the person, and stage 3 folds even res
 
 ### Engagement and Response
 
-Buckle safety pins and a valid consent hash release it, and cutting attacks injure the person bound.
+First the station watch switches off lamps and lowers the shutter to slow its approach. Buckle safety pins and a valid consent hash release it, and cutting attacks injure the person bound.
 
 <a id="Hostile-Group-G15-heading-0175"></a>
 
 ### Negotiation and Moral Choice
 
-It can protect a patient in dangerous convulsions, but a human must own the approval and the end time of any forced restraint.
+Before anyone gets close, the station watch must switch off the lamps and heating in the bed bays and lower the shutter. Forcing a capture yields filter and pump parts but costs maintenance engineers their safety. Its records can only be read with Arc software, so an Arc signal checker can also switch the rounds table off. It can protect a patient in dangerous convulsions, but a human must own the approval and the end time of any forced restraint.
 
 <a id="Hostile-Group-G15-heading-0177"></a>
 
@@ -626,14 +620,13 @@ G15-SC2, G15-SC3.
 
 - Source batch: M024
 - Former role class: second elite
-- Links: {"houses":["HP01"],"scenarios":["G15-SC2","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Single individual |
 | Battlefield role | Quarantine-Door Extension |
-| Common species, variants and command scope | A red quarantine panel, a door-locking arm, and an air-filter cart are combined into one. It takes the rounds warden's urgent roster to control sickbed locks and carts all at once, shrinks the quarantine radius as filter pressure rises, and folds the doors back in once it receives new filters. |
+| Common species, variants and command scope | A red quarantine panel, a door-locking arm, and an air-filter cart are combined into one. It takes the rounds car's urgent roster to control sickbed locks and carts all at once, shrinks the quarantine radius as filter pressure rises, and folds the doors back in once it receives new filters. |
 
 <a id="Hostile-Group-G15-heading-0182"></a>
 
@@ -645,7 +638,7 @@ The second elite: a red quarantine panel, a door-locking arm, and an air-filter 
 
 ### Origin
 
-Temporary equipment that separated suspected-infection bays kept expanding the red zone with no de-suspicion procedure.
+Temporary equipment that separated suspected-contact bays kept expanding the red zone with no de-suspicion procedure.
 
 <a id="Hostile-Group-G15-heading-0186"></a>
 
@@ -663,7 +656,7 @@ It shrinks the quarantine radius as filter pressure rises, and once it receives 
 
 ### Behavior and Hierarchy
 
-It takes the rounds warden's urgent roster to control sickbed locks and carts all at once.
+It takes the rounds car's urgent roster to control sickbed locks and carts all at once.
 
 <a id="Hostile-Group-G15-heading-0192"></a>
 
@@ -675,13 +668,13 @@ Stage 1 warns one bay, stage 2 isolates the sickbed row, and stage 3 locks every
 
 ### Engagement and Response
 
-Normalize the filter differential pressure and insert a release token to open the doors, and destroying ventilation endangers everyone.
+First the station watch switches off lamps and lowers the shutter to slow its approach. Normalize the filter differential pressure and insert a release token to open the doors, and destroying ventilation endangers everyone.
 
 <a id="Hostile-Group-G15-heading-0196"></a>
 
 ### Negotiation and Moral Choice
 
-Blocking a truly contaminated zone can stand, but the quarantine grounds and an appeal window must be open to citizens.
+Before anyone gets close, the station watch must switch off the lamps and heating in the bed bays and lower the shutter. Forcing a capture yields filter and pump parts but costs maintenance engineers their safety. Its records can only be read with Arc software, so an Arc signal checker can also switch the rounds table off. Blocking a truly contaminated zone can stand, but the quarantine grounds and an appeal window must be open to citizens.
 
 <a id="Hostile-Group-G15-heading-0198"></a>
 
@@ -696,14 +689,13 @@ G15-SC2, G15-SC3.
 
 - Source batch: M024
 - Former role class: environmental stronghold type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC2","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Sickbed Lockdown |
-| Common species, variants and command scope | A fixed strongpoint where the contacts and floor lamps of twelve sickbed doors run into one low control net. It follows the rounds warden's roster, but when the site keys gather in one place it locks at maximum strength; when a contact breaks it abandons that bay open and recomputes the remaining doors' hash each shift. |
+| Common species, variants and command scope | A fixed strongpoint where the contacts and floor lamps of twelve sickbed doors run into one low control net. It follows the rounds car's roster, but when the site keys gather in one place it locks at maximum strength; when a contact breaks it abandons that bay open and recomputes the remaining doors' hash each shift. |
 
 <a id="Hostile-Group-G15-heading-0203"></a>
 
@@ -733,7 +725,7 @@ When a contact breaks it abandons that bay open, and it recomputes the remaining
 
 ### Behavior and Hierarchy
 
-It follows the rounds warden's roster, but when the site keys gather in one place it locks at maximum strength.
+It follows the rounds car's roster, but when the site keys gather in one place it locks at maximum strength.
 
 <a id="Hostile-Group-G15-heading-0213"></a>
 
@@ -751,7 +743,7 @@ Split power bay by bay and divide the keys among several people to bring it down
 
 ### Negotiation and Moral Choice
 
-It can remain as a night safety net, but lock authority and the emergency release key must be distributed.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. It can remain as a night safety net, but lock authority and the emergency release key must be distributed.
 
 <a id="Hostile-Group-G15-heading-0219"></a>
 
@@ -762,24 +754,23 @@ G15-SC2, G15-SC3.
 <a id="Hostile-Group-G15-heading-0221"></a>
 <a id="g15e11"></a>
 
-### G15E11 · Sluice-Adjacent Rail Nest
+### G15E11 · Pump-Station-Adjacent Rail Nest
 
 - Source batch: M024
 - Former role class: environmental stronghold type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
 | Type | Habitat site or facility |
 | Battlefield unit | Fixed site |
 | Battlefield role | Rail Nest |
-| Common species, variants and command scope | A safe nest where cart rails and charging sockets interlock like a honeycomb along the floodgate ramp wall. It provides the cart swarm with charging and refuge locations but pushes human evacuee lines away as unregistered entities, and moves to the upper sockets when the water level rises. |
+| Common species, variants and command scope | A safe nest where cart rails and charging sockets interlock like a honeycomb along the pump-station ramp wall. It provides the cart swarm with charging and refuge locations but pushes human evacuee lines away as unregistered entities, and moves to the upper sockets when the water level rises. |
 
 <a id="Hostile-Group-G15-heading-0224"></a>
 
 ### Role and Body
 
-An environmental strongpoint form, with cart rails and charging sockets interlocking like a honeycomb along the floodgate ramp wall.
+An environmental strongpoint form, with cart rails and charging sockets interlocking like a honeycomb along the pump-station ramp wall.
 
 <a id="Hostile-Group-G15-heading-0226"></a>
 
@@ -791,7 +782,7 @@ Rails that lifted carts to higher levels during flood evacuations were repeatedl
 
 ### Habitat and Needs
 
-It is fixed to the ramp beside the Ttukseom floodgate and needs dry power, rail bolts, and drainage filters.
+It is fixed to the ramp beside the Ttukseom pump station and needs dry power, rail bolts, and drainage filters.
 
 <a id="Hostile-Group-G15-heading-0230"></a>
 
@@ -809,19 +800,19 @@ It provides the cart swarm with charging and refuge locations but pushes human e
 
 ### Escalation
 
-At stage 1, it claims sockets; at stage 2, it obstructs passage along the ramp; at stage 3, it folds the rails to block access to the floodgate.
+At stage 1, it claims sockets; at stage 2, it obstructs passage along the ramp; at stage 3, it folds the rails to block access to the pump station.
 
 <a id="Hostile-Group-G15-heading-0236"></a>
 
 ### Engagement and Response
 
-Separating the water-level signal from the charging zone opens it, while cutting the rails eliminates the floodgate maintenance route.
+Separating the water-level signal from the charging zone opens it, while cutting the rails eliminates the pump-station maintenance route.
 
 <a id="Hostile-Group-G15-heading-0238"></a>
 
 ### Negotiation and Moral Choice
 
-It can be shared as flood-evacuation infrastructure, but the upper-level space must be allocated between carts and citizens.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. It can be shared as flood-evacuation infrastructure, but the upper-level space must be allocated between carts and citizens.
 
 <a id="Hostile-Group-G15-heading-0240"></a>
 
@@ -836,7 +827,6 @@ G15-SC3.
 
 - Source batch: M024
 - Former role class: damaged-stage type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -873,7 +863,7 @@ Given a filter, it recovers into an ordinary cart; without one, it lowers its lo
 
 ### Behavior and Hierarchy
 
-At the bottom of the swarm’s hierarchy, it follows the rounds warden and mistakenly reports the sound of air resistance as an emergency signal.
+At the bottom of the swarm’s hierarchy, it follows the rounds car and mistakenly reports the sound of air resistance as an emergency signal.
 
 <a id="Hostile-Group-G15-heading-0255"></a>
 
@@ -891,7 +881,7 @@ Luring it with wash water and a filter lets it service itself, while striking it
 
 ### Negotiation and Moral Choice
 
-It can sort used filters, but new filters must be divided between it and citizens’ protective equipment.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. It can sort used filters, but new filters must be divided between it and citizens’ protective equipment.
 
 <a id="Hostile-Group-G15-heading-0261"></a>
 
@@ -906,7 +896,6 @@ G15-SC1.
 
 - Source batch: M024
 - Former role class: aging-stage type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1","G15-SC2"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -943,7 +932,7 @@ Its memory breaks at every charge, and only large markings left by humans surviv
 
 ### Behavior and Hierarchy
 
-It often forgets new orders from the rounds warden and tries to replace the same patch repeatedly.
+It often forgets new orders from the rounds car and tries to replace the same patch repeatedly.
 
 <a id="Hostile-Group-G15-heading-0276"></a>
 
@@ -961,7 +950,7 @@ A physical shift chart and color markings make its route safe by simplifying it;
 
 ### Negotiation and Moral Choice
 
-It can be assigned simple transport, but people must consider whether to hold an entity with no memory responsible for past mistakes.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. It can be assigned simple transport, but people must consider whether to hold an entity with no memory responsible for past mistakes.
 
 <a id="Hostile-Group-G15-heading-0282"></a>
 
@@ -976,7 +965,6 @@ G15-SC1, G15-SC2.
 
 - Source batch: M024
 - Former role class: coexistence type
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1","G15-SC2","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -1013,7 +1001,7 @@ When a wedge wears down, it waits for a replacement at a human workbench and doe
 
 ### Behavior and Hierarchy
 
-It prioritizes the pressure of a human companion’s hand on its handle over the rounds warden’s orders and braces itself in front of other locking units.
+It prioritizes the pressure of a human companion’s hand on its handle over the rounds car’s orders and braces itself in front of other locking units.
 
 <a id="Hostile-Group-G15-heading-0297"></a>
 
@@ -1031,7 +1019,7 @@ Grasp its handle to set its route, and adjust the wedge’s position to keep the
 
 ### Negotiation and Moral Choice
 
-It is useful for escorting people with limited mobility, but public assignment order and rules for compensating heat loss must be established so that assigning companions does not violate a particular group’s privacy.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. It is useful for escorting people with limited mobility, but public assignment order and rules for compensating heat loss must be established so that assigning companions does not violate a particular group’s privacy.
 
 <a id="Hostile-Group-G15-heading-0303"></a>
 
@@ -1045,21 +1033,20 @@ G15-SC1, G15-SC2, G15-SC3.
 ### G15E15 · Twelve-Bed Protection Ring
 
 - Source batch: M024
-- Former role class: scenario boss
-- Links: {"houses":["HP01"],"scenarios":["G15-SC2","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
+- Former role class: key unit
 
 | Bestiary item | Record |
 |---|---|
 | Type | Machine type |
 | Battlefield unit | Fixed site |
 | Battlefield role | Ward Protection Ring |
-| Common species, variants and command scope | A large protection controller that links twelve bed locks and cart rails into a ring. It is a scenario boss, but not the welfare building’s biological king: it is a protection protocol cycling without a termination signature; it opens the ring as hashes are updated and judges every bed to be at risk if a majority are invalid. |
+| Common species, variants and command scope | A large protection sequencer that links twelve bed locks and cart rails into a ring. It is a key unit, but not the welfare building’s biological leader: it is a protection protocol cycling without a termination signature; it opens the ring as hashes are updated and judges every bed to be at risk if a majority are invalid. |
 
 <a id="Hostile-Group-G15-heading-0308"></a>
 
 ### Role and Body
 
-A scenario boss: a large protection controller that links twelve bed locks and cart rails into a ring.
+A key unit: a large protection sequencer that links twelve bed locks and cart rails into a ring.
 
 <a id="Hostile-Group-G15-heading-0310"></a>
 
@@ -1089,19 +1076,19 @@ It distributes protection levels to all G15 locks and pumps, and tries to confin
 
 ### Escalation
 
-At stage 1, there are excessive alerts; at stage 2, all twelve spaces are isolated; at stage 3, distribution and floodgate routes are locked down simultaneously.
+At stage 1, there are excessive alerts; at stage 2, all twelve spaces are isolated; at stage 3, distribution and ramp routes are locked down simultaneously.
 
 <a id="Hostile-Group-G15-heading-0320"></a>
 
 ### Engagement and Response
 
-The hashes must be updated space by space and the power divided; destroying the center also stops life-support equipment.
+First the station watch switches off lamps and lowers the shutter to slow its approach. The hashes must be updated space by space and the power divided; destroying the center also stops life-support equipment.
 
 <a id="Hostile-Group-G15-heading-0322"></a>
 
 ### Negotiation and Moral Choice
 
-Spaces that genuinely need protection can be kept closed while the others are opened, but a decision must be made about who receives limited filters and personnel first.
+Several station watches must cut the lamps and heating in the bed bays at the same hour and get an Arc signal check before anyone can approach. Its records can only be read with Arc software, so an Arc signal checker can also switch the rounds table off. Stopping it is cheaper than capturing it. Spaces that genuinely need protection can be kept closed while the others are opened, but a decision must be made about who receives limited filters and personnel first.
 
 <a id="Hostile-Group-G15-heading-0324"></a>
 
@@ -1116,7 +1103,6 @@ G15-SC2, G15-SC3.
 
 - Source batch: M024
 - Former role class: regional variant
-- Links: {"houses":["HP01"],"scenarios":["G15-SC1","G15-SC3"],"states":["government","arc"],"synthetics":["H15"],"theaters":["XT05"]}
 
 | Bestiary item | Record |
 |---|---|
@@ -1135,13 +1121,13 @@ A regional variant: a workshop-type patrol cart fitted with a tool rack and pros
 
 ### Origin
 
-This variant arose when a Care-Cycle Entity that moved along the Ttukseom Union route changed its patient roster into a worker safety list.
+This variant arose when a Care-Cycle Entity that moved along the Ttukseom route changed its patient roster into a worker safety list.
 
 <a id="Hostile-Group-G15-heading-0333"></a>
 
 ### Habitat and Needs
 
-It travels between Ttukseom assembly benches and the floodgate ramp, and needs joint pins, protective gloves, and tool charging.
+It travels between Ttukseom assembly benches and the pump-station ramp, and needs joint pins, protective gloves, and tool charging.
 
 <a id="Hostile-Group-G15-heading-0335"></a>
 
@@ -1171,7 +1157,7 @@ Presenting a stop-work notice and a tool-lending ledger makes it release its hol
 
 ### Negotiation and Moral Choice
 
-In exchange for assigning it safety supervision and prosthetic repair, workers’ right to accept risks and delays in production must be addressed.
+If the station watch dims the lamps and heating in the bed bays and lowers the shutter it does not come close. If it is captured and stripped of filter and pump parts it stops, and the number in this district falls by that much. In exchange for assigning it safety supervision and prosthetic repair, workers’ right to accept risks and delays in production must be addressed.
 
 <a id="Hostile-Group-G15-heading-0345"></a>
 
@@ -1189,7 +1175,7 @@ Patrol carts read the last evacuation list and knocked on the doors at the same 
 
 The Care Wheel was not a combat machine meant to harm patients but an ecology of bed locks, carts, and pumps trying to complete a protection list that had never been updated.
 
-Going back and forth between the temporary beds of the Myeongdong Union and the Ttukseom aid-device benches of the Ttukseom Union, it raised both supply and isolation strength together when the XT05 relief-goods codes were received.
+Going back and forth between the temporary beds of Government-held Myeongdong and the Ttukseom aid-device benches, it raised both supply and isolation strength together when the relief-goods codes broadcast from beyond the cordon outside Seoul were received.
 
 The cluster sensed patch heart rates, bed pressure, door contacts, pump flow, and nearby sounds.
 
@@ -1197,9 +1183,9 @@ It mistook the low heart rate of a sleeper for an emergency, the hammering of a 
 
 It could not read emotion or consent, nor register newcomers outside the list as people to protect.
 
-H15 Baesua remeasured the patch frequencies and reported false positives, but had no authority to open the ward doors.
+Baesua remeasured the patch frequencies and reported false positives, but had no authority to open the ward doors.
 
-Only the HP01 watch, holding the consent forms and two sluice keys kept apart from each other, could change the strength of the locks.
+Only the station duty officer, holding the consent forms and two separate keys kept apart from each other, could change the strength of the locks.
 
 Cart batteries, bed outlets, and the Ttukseom tool power were its sources of energy.
 
@@ -1233,9 +1219,9 @@ Forcing the doors open created a risk of falls, and keeping them locked isolated
 
 ### G15-SC2 · The Filter and the Two Keys
 
-To bring in the filter stock from the Ttukseom bench, the cart rail between the Myeongdong Union and the Ttukseom Union had to be opened.
+To bring in the filter stock from the Ttukseom bench, the cart rail between Myeongdong and Ttukseom had to be opened.
 
-The circulation body demanded batteries and filters, and HP01 set rewriting the list and dispersing the keys as its conditions.
+The circulation body demanded batteries and filters, and the station duty officer set rewriting the list and dispersing the keys as its conditions.
 
 If the people on site gave the keys to one person for faster supply, the risk of confinement in the next shift grew.
 
@@ -1247,7 +1233,7 @@ If they waited for two watch officers, some pumps had to hold out on manual flow
 
 Before the third round raised every bed to the same isolation grade, the rails and power were separated starting from the bays people had left.
 
-Hands were needed to run the nutrition pumps manually until H15's remeasurement was finished.
+Hands were needed to run the nutrition pumps manually until Baesua's remeasurement was finished.
 
 Destroying every piece of equipment removed the locks, but also removed the means of watching vital signs through the night.
 

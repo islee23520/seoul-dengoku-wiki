@@ -1,0 +1,23 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v6-1",
+   "file": "090",
+   "key": "person-0027",
+   "col": "json_ko",
+   "from": "표시완",
+   "to": "대니얼 브룩스",
+   "expect": 7
+  },
+  {
+   "id": "v6-2",
+   "file": "090",
+   "key": "person-0027",
+   "col": "json",
+   "from": "Pyo Siwan",
+   "to": "Daniel Brooks",
+   "expect": 7
+  }
+ ]
+}

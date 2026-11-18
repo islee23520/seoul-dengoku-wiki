@@ -1,0 +1,67 @@
+{
+ "rules": [
+  {
+   "id": "laa-1",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json",
+   "from": "scripture transcripts",
+   "to": "records transcripts",
+   "expect": 2
+  },
+  {
+   "id": "laa-2",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json",
+   "from": "sutra transcript",
+   "to": "records transcript",
+   "expect": 2
+  },
+  {
+   "id": "laa-3",
+   "file": "110",
+   "key": "b178-ad50-d558-76e7",
+   "col": "json",
+   "from": "sutra transcript",
+   "to": "records transcript",
+   "expect": 2
+  },
+  {
+   "id": "laa-4",
+   "file": "110",
+   "key": "b178-ad50-d558-76e7",
+   "col": "json",
+   "from": "Scripture Transcription Clerk",
+   "to": "Records Transcription Clerk",
+   "expect": 1
+  },
+  {
+   "id": "laa-5",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json",
+   "from": "Scripture Transcription Clerk",
+   "to": "Records Transcription Clerk",
+   "expect": 1
+  },
+  {
+   "id": "laa-6",
+   "file": "110",
+   "key": "cc28-c5f0-c548",
+   "col": "json",
+   "from": "scripture transcripts",
+   "to": "records transcripts",
+   "expect": 2
+  },
+  {
+   "id": "laa-7",
+   "file": "110",
+   "key": "cc28-c5f0-c548",
+   "col": "json",
+   "from": "Scripture Transcription Clerk",
+   "to": "Records Transcription Clerk",
+   "expect": 1
+  }
+ ]
+}

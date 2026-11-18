@@ -1,0 +1,58 @@
+{
+ "rules": [
+  {
+   "id": "lcj-1",
+   "file": "110",
+   "key": "c774-c804-c758-674e",
+   "col": "json",
+   "from": " In 2123, before submitting the winter ration plan, he recounted the grain stock three times, and proposed to the Free City Council that part of the sub-workshop's parts payments be accepted in seed.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "lcj-2",
+   "file": "110",
+   "key": "c774-c804-c758-674e",
+   "col": "json_ko",
+   "from": " 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 자유도시 평의회에 제안하였다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "lcj-3",
+   "file": "110",
+   "key": "c815-c9c4-c591-912d",
+   "col": "json",
+   "from": "Jeong Ilhwan dies amid the conflict over succession approval in the family, leaving behind his only daughter, Jeong Seoon.",
+   "to": "Jeong Ilhwan dies, leaving behind his only daughter, Jeong Seoon.",
+   "expect": 1
+  },
+  {
+   "id": "lcj-4",
+   "file": "110",
+   "key": "c815-c9c4-c591-912d",
+   "col": "json_ko",
+   "from": "정일환은 가문의 후계 인준 갈등 속에 외동딸 정서온을 남기고 사망한다.",
+   "to": "정일환은 외동딸 정서온을 남기고 사망한다.",
+   "expect": 1
+  },
+  {
+   "id": "lcj-5",
+   "file": "110",
+   "key": "c815-c9c4-c8fc-912d",
+   "col": "json",
+   "from": "Jeong Ilhwan dies amid the conflict over succession approval in the family, leaving behind his only daughter, Jeong Seoon.",
+   "to": "Jeong Ilhwan dies, leaving behind his only daughter, Jeong Seoon.",
+   "expect": 1
+  },
+  {
+   "id": "lcj-6",
+   "file": "110",
+   "key": "c815-c9c4-c8fc-912d",
+   "col": "json_ko",
+   "from": "정일환은 가문의 후계 인준 갈등 속에 외동딸 정서온을 남기고 사망한다.",
+   "to": "정일환은 외동딸 정서온을 남기고 사망한다.",
+   "expect": 1
+  }
+ ]
+}

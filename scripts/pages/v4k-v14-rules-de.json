@@ -1,0 +1,85 @@
+{
+ "rules": [
+  {
+   "id": "ldd-1",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json",
+   "from": " The night before his disappearance, he sealed the copy box of the pump-cleaning process.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldd-2",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json_ko",
+   "from": " 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldd-3",
+   "file": "110",
+   "key": "c784-c608-cc9c-6797",
+   "col": "json",
+   "from": " The night before his disappearance, he sealed the copy box of the pump-cleaning process.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldd-4",
+   "file": "110",
+   "key": "c784-c608-cc9c-6797",
+   "col": "json_ko",
+   "from": " 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldd-5",
+   "file": "110",
+   "key": "c784-c870-c591-6797",
+   "col": "json",
+   "from": " The night before his disappearance, he sealed the copy box of the pump-cleaning process.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldd-6",
+   "file": "110",
+   "key": "c784-c870-c591-6797",
+   "col": "json_ko",
+   "from": " 실종 전날 밤 펌프 세정 공정의 사본 함을 봉인하였다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldd-7",
+   "file": "110",
+   "key": "ac15-c9c4-c8fc",
+   "col": "json_ko",
+   "from": " Arc가 부품 대가로 복구복무자 등록을 요구한 겨울, 강민서는 등록을 거부한 손을 시민권 줄에 올렸다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldd-11",
+   "file": "110",
+   "key": "ace0-d55c-c591",
+   "col": "json",
+   "from": " The post of Clerk of the Three Wills Workshop opened to her through a substitute watch covering an unexcused shift absence.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "ldd-12",
+   "file": "110",
+   "key": "ace0-d55c-c591",
+   "col": "json_ko",
+   "from": " 세 유언 공방 서기 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+   "to": "",
+   "expect": 1
+  }
+ ]
+}

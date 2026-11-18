@@ -121,7 +121,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "v4 정본(소유자 확정 2026-11-16): 서울의 세력은 정부, 자유도시들, 아크 셋이다. 이 절은 아래 3.1~3.6절, SP-1.0.0과 다른 GDD 문서의 옛 국가·작위 서술보다 우선한다. 지도자는 정부 대통령 김연규, 자유도시들 이사회장 이일섭, 아크 교주 고예진이다. 세 세력은 같은 계급 골격을 쓰고, 계급은 산하에 둔 역장 수로 정한다. '역'은 지하철역과 그 위 지상 성채 영역을 함께 이른다."
+          "text": "v4 정본(소유자 확정 2026-11-16): 서울의 세력은 정부, 자유도시들, 아크 셋이다. 이 절은 아래 3.1~3.6절, SP-1.0.0과 다른 GDD 문서의 옛 국가·직함 서술보다 우선한다. 지도자는 정부 대통령 김연규, 자유도시들 이사회장 이일섭, 아크 교주 고예진이다. 세 세력은 같은 계급 골격을 쓰고, 계급은 산하에 둔 역장 수로 정한다. '역'은 지하철역과 그 위 지상 성채 영역을 함께 이른다."
         }
       ]
     },
@@ -383,7 +383,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "서울 사실: 국가 성립은 canon/contracts/state-formation-contract.json의 소유자 확정 계약을 참조한다. 독립 취득→국가 전이·사전 가입·개인 보유와 영토 구분을 재정의하지 않는다. SP-1.0.0의 티어·직위·직업·지휘권은 각각 다른 권한이다. 옛 지리 왕국 작위는 v4에서 쓰지 않는다. 세력과 계급은 3.0절을 따른다."
+          "text": "서울 사실: 국가 성립은 canon/contracts/state-formation-contract.json의 소유자 확정 계약을 참조한다. 독립 취득→국가 전이·사전 가입·개인 보유와 영토 구분을 재정의하지 않는다. SP-1.0.0의 티어·직위·직업·지휘권은 각각 다른 권한이다. 옛 지리 국가의 칭호는 v4에서 쓰지 않는다. 세력과 계급은 3.0절을 따른다. 세력과 계급은 3.0절을 따른다."
         }
       ]
     },
@@ -394,7 +394,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "3.2 작위·권리·명분·인준"
+          "text": "3.2 직함·권리·명분·인준"
         }
       ]
     },
@@ -404,7 +404,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Foundation/Presentation/SeoulCampaignSession.cs#L68 의 정착지는 재산이며 신규 작위 배분이 아니다. 인준·지지 및 권한 자격은 SP-1.0.0을 따른다. CK3 참조: mechanics-06-vassals-court-council.md:11-95 및 depth-02-power-structures.md:178-206의 계약그룹·단계 트리는 권리 표현의 참고다. 정정된 정적 참조 — depth-verification-20261027.md:1855-1900 PASS 범위에 한정; 씨족 배수·최종 세율 요약은 검증 불일치로 채택하지 않는다."
+          "text": "서울 사실: https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Foundation/Presentation/SeoulCampaignSession.cs#L68 의 정착지는 재산이며 신규 직함 배분이 아니다. 인준·지지 및 권한 자격은 SP-1.0.0을 따른다. CK3 참조: mechanics-06-vassals-court-council.md:11-95 및 depth-02-power-structures.md:178-206의 계약그룹·단계 트리는 권리 표현의 참고다. 정정된 정적 참조 — depth-verification-20261027.md:1855-1900 PASS 범위에 한정; 씨족 배수·최종 세율 요약은 검증 불일치로 채택하지 않는다."
         }
       ]
     },
@@ -415,7 +415,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "3.3 수여·위임·회수·봉신 계약"
+          "text": "3.3 수여·위임·회수·임명 계약"
         }
       ]
     },
@@ -425,7 +425,7 @@
       "inlines": [
         {
           "kind": "text",
-          "text": "서울 사실: 동일 소속만으로 지휘권이나 소유권이 생기지 않는다. 정착 정산은 소유권 그래프를 바꾸지 않는다(https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/SettlementDomain.cs#L426-L452). CK3 참조: depth-02-power-structures.md:289-295는 협상 단계와 별도 체크형 권리의 구분 사례다. 제품 권한: 서울 공납·봉신·위임·회수·소유권 이전 정책과 산식은 제도 미정이다."
+          "text": "서울 사실: 동일 소속만으로 지휘권이나 소유권이 생기지 않는다. 정착 정산은 소유권 그래프를 바꾸지 않는다(https://github.com/islee23520/seoul-dengoku/blob/3e3c03349eafaaf88347d119a4bdd0c6d44abc53/GAME/Assets/Janseon/Core/SettlementDomain.cs#L426-L452). CK3 참조: depth-02-power-structures.md:289-295는 협상 단계와 별도 체크형 권리의 구분 사례다. 제품 권한: 서울 공납·임명·위임·회수·소유권 이전 정책과 산식은 제도 미정이다."
         }
       ]
     },

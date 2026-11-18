@@ -1,0 +1,170 @@
+{
+ "rules": [
+  {
+   "id": "lae-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "Testifies at the exchange at Mo Guk's Yeongdeungpo-dong handover counter, writes Baek On's refuge oath in the margin of the exchange record, and conveys Eo Haeun's roster incident without numbers.",
+   "to": ""
+  },
+  {
+   "id": "lae-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Relations.** Testifies at the exchange at Mo Guk's Yeongdeungpo-dong handover counter, writes Baek On's refuge oath in the margin of the exchange record, and conveys Eo Haeun's roster incident without numbers.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lae-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "Testified at Mo Guk's exchange at the Yeongdeungpo-dong handover counter, wrote Baek On's refuge oath in the exchange record's margin, and conveyed Eo Haeun's roster accident without numbers.",
+   "to": ""
+  },
+  {
+   "id": "lae-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "Testified at Mo Guk's exchange at the Yeongdeungpo-dong handover counter, wrote Baek On's refuge oath in the exchange record's margin, and conveyed Eo Haeun's roster accident without numbers.",
+   "to": ""
+  },
+  {
+   "id": "lae-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "Testifies at Mo Guk's northwest gate relay, and",
+   "to": ""
+  },
+  {
+   "id": "lae-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.1\\.basis$",
+   "from": "Conveys Eo Haeun's roster incident without numbers",
+   "to": ""
+  },
+  {
+   "id": "lae-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "모국의 영등포동 인계 창구 환전에서 증언하고, 백온의 피난 맹세를 환전 기록 여백에 적으며, 어하은의 명부 사고를 숫자 없이 전한다.",
+   "to": ""
+  },
+  {
+   "id": "lae-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.** 모국의 영등포동 인계 창구 환전에서 증언하고, 백온의 피난 맹세를 환전 기록 여백에 적으며, 어하은의 명부 사고를 숫자 없이 전한다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lae-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "모국의 영등포동 인계 창구 환전에서 증언하고, 백온의 피난 맹세를 환전 기록 여백에 적으며, 어하은의 명부 사고를 숫자 없이 전한다.",
+   "to": ""
+  },
+  {
+   "id": "lae-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "모국의 영등포동 인계 창구 환전에서 증언하고, 백온의 피난 맹세를 환전 기록 여백에 적으며, 어하은의 명부 사고를 숫자 없이 전한다.",
+   "to": ""
+  },
+  {
+   "id": "lae-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "모국의 서북 관문 중계에서 증언하고",
+   "to": ""
+  },
+  {
+   "id": "lae-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.1\\.basis$",
+   "from": "어하은의 명부 사고를 숫자 없이 전한다",
+   "to": ""
+  },
+  {
+   "id": "lae-t1",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json",
+   "from": "Family Council Herald",
+   "to": "Courier",
+   "expect": 8
+  },
+  {
+   "id": "lae-t2",
+   "file": "090",
+   "key": "person-0256",
+   "col": "json_ko",
+   "from": "가족 회의 전령",
+   "to": "전령",
+   "expect": 8
+  },
+  {
+   "id": "lae-t3",
+   "file": "050",
+   "key": "person-0256",
+   "col": "title",
+   "from": "Family Council Herald",
+   "to": "Courier",
+   "expect": 1
+  },
+  {
+   "id": "lae-t4",
+   "file": "050",
+   "key": "person-0256",
+   "col": "title_ko",
+   "from": "가족 회의 전령",
+   "to": "전령",
+   "expect": 1
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v2h-1",
+   "file": "090",
+   "col": "json",
+   "from": "Relief Worker Physician",
+   "to": "Relief Worker",
+   "expect": 11
+  },
+  {
+   "id": "v2h-2",
+   "file": "090",
+   "key": "person-0660",
+   "col": "json",
+   "from": "Medicine Management Resident",
+   "to": "Medicinal Supplies Management Relief Worker",
+   "expect": 3
+  },
+  {
+   "id": "v2h-3",
+   "file": "090",
+   "col": "json",
+   "from": "used in surgery",
+   "to": "used in emergency care",
+   "expect": 2
+  }
+ ]
+}

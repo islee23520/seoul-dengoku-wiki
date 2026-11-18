@@ -1,0 +1,166 @@
+{
+ "rules": [
+  {
+   "id": "lam-1",
+   "file": "110",
+   "key": "b0a8-c758-b839",
+   "col": "json",
+   "from": "the station vote-count records",
+   "to": "the station records",
+   "expect": 2
+  },
+  {
+   "id": "lam-2",
+   "file": "110",
+   "key": "b3d9-ad11-cc9c",
+   "col": "json",
+   "from": "the station ballot-box sealing clerk",
+   "to": "the station sealing clerk",
+   "expect": 1
+  },
+  {
+   "id": "lam-3",
+   "file": "110",
+   "key": "b3d9-ad11-cc9c",
+   "col": "json",
+   "from": "ballot-box sealing and records assistance",
+   "to": "sealing and records assistance",
+   "expect": 2
+  },
+  {
+   "id": "lam-4",
+   "file": "110",
+   "key": "b3d9-ad11-cc9c",
+   "col": "json_ko",
+   "from": "역 투표함 봉인 일",
+   "to": "역 봉인 일",
+   "expect": 1
+  },
+  {
+   "id": "lam-5",
+   "file": "110",
+   "key": "bb38-b0a8-d3c9-6587",
+   "col": "json_ko",
+   "from": "역 선거 절차 감찰 일",
+   "to": "역 절차 감찰 일",
+   "expect": 1
+  },
+  {
+   "id": "lam-6",
+   "file": "110",
+   "key": "bc29-c628-c591",
+   "col": "json_ko",
+   "from": "구휼 의무 지원·선거 보좌 일",
+   "to": "구휼 의무 지원·기록 보좌 일",
+   "expect": 2
+  },
+  {
+   "id": "lam-7",
+   "file": "110",
+   "key": "c218-d55c-c591",
+   "col": "json",
+   "from": "the station ballot-box night guard",
+   "to": "the station night guard",
+   "expect": 1
+  },
+  {
+   "id": "lam-8",
+   "file": "110",
+   "key": "c218-d55c-c591",
+   "col": "json",
+   "from": "ballot-box night guard and assistance",
+   "to": "night guard and assistance",
+   "expect": 2
+  },
+  {
+   "id": "lam-9",
+   "file": "110",
+   "key": "c218-d55c-c591",
+   "col": "json_ko",
+   "from": "역 투표함 야간 경비 일",
+   "to": "역 야간 경비 일",
+   "expect": 1
+  },
+  {
+   "id": "lam-10",
+   "file": "110",
+   "key": "c601-c601-cc9c",
+   "col": "json_ko",
+   "from": "역 선거 기록 일",
+   "to": "역 기록 일",
+   "expect": 1
+  },
+  {
+   "id": "lam-11",
+   "file": "110",
+   "key": "c740-d589-c8fc",
+   "col": "json",
+   "from": "the station vote-count witness",
+   "to": "the station records assistant",
+   "expect": 1
+  },
+  {
+   "id": "lam-12",
+   "file": "110",
+   "key": "c740-d589-c8fc",
+   "col": "json_ko",
+   "from": "역 개표 증인 일",
+   "to": "역 기록 보좌 일",
+   "expect": 1
+  },
+  {
+   "id": "lam-13",
+   "file": "110",
+   "key": "cc3d-cc3d-b155-660c",
+   "col": "json_ko",
+   "from": "역 선거 서기 일",
+   "to": "역 서기 일",
+   "expect": 1
+  },
+  {
+   "id": "lam-14",
+   "file": "110",
+   "key": "cc9c-c601-c591",
+   "col": "json",
+   "from": "the station ballot-box seal technician",
+   "to": "the station seal technician",
+   "expect": 1
+  },
+  {
+   "id": "lam-15",
+   "file": "110",
+   "key": "cc9c-c601-c591",
+   "col": "json",
+   "from": "ballot-box seal maintenance and assistance",
+   "to": "seal maintenance and assistance",
+   "expect": 2
+  },
+  {
+   "id": "lam-16",
+   "file": "110",
+   "key": "cc9c-c601-c591",
+   "col": "json_ko",
+   "from": "역 투표함 봉인 정비 일",
+   "to": "역 봉인 정비 일",
+   "expect": 1
+  },
+  {
+   "id": "lam-17",
+   "file": "110",
+   "key": "cd08-c131-c8fc",
+   "col": "json_ko",
+   "from": "역 선거 증인 일",
+   "to": "역 증인 일",
+   "expect": 1
+  },
+  {
+   "id": "lam-18",
+   "file": "110",
+   "key": "creative-d765-c218-c0c9",
+   "col": "json_ko",
+   "from": "역 선거 이의 접수 일",
+   "to": "역 이의 접수 일",
+   "expect": 1
+  }
+ ]
+}

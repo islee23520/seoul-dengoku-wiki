@@ -1,0 +1,474 @@
+{
+ "rules": [
+  {
+   "id": "lac-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0577",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "For vote results, he matches the per-clan lines and the transcript in turn. When he hands over the keys, he hands over the cross-checked copy as well.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0577",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "표결 결과는 문중별 줄과 필사본을 차례로 맞춘다. 열쇠를 넘길 때 대조본도 함께 건넨다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0264",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Their voice sharpens at a ledger that has dropped a child's name, and they stop any official who would fill a missing line with a number. Merciful, but cold before the registry.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0264",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "아이 이름을 빼먹은 장부를 보면 목소리가 날카로워지고, 빠진 줄을 숫자로 메우라는 관리를 자리에서 세운다. 자비롭지만 명부 앞에서는 차갑다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Checks the evacuation-route signposts with a flashlight and, instead of rewriting erased letters, attaches a note beside them. Makes no grand promises.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "피난로 이정표를 손전등으로 확인하고, 지워진 글자는 새로 쓰지 않고 옆에 붙인다. 큰 약속은 하지 않는다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "She remembers even the fold marks on old pump blueprints, and puts down her pen when she sees wording that turns a temporary compact into a permanent right. She holds the handshake of the founding longer than any contract.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "낡은 펌프 도면의 접힌 자국까지 기억하고, 임시 협약을 영구 권리로 고치는 문구를 보면 펜을 놓는다. 창립 때의 악수를 계약보다 오래 담아 둔다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Hears whispers about using the highland as barracks as a betrayal that threatens the camp.",
+   "to": ""
+  },
+  {
+   "id": "lac-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 고지를 병영으로 쓰자는 속삭임을 숙영을 위협하는 배신으로 듣는다.",
+   "to": ""
+  },
+  {
+   "id": "lac-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json",
+   "rawPathRe": "^\\.fields\\.Work Location$",
+   "from": " At the Yangpyeong 1-dong ledger handover, Yeo Rian cross-checks the page numbers and fold marks of the shared ledger against the copy, and calls the keys of two neighbor representatives together to inspect the original.",
+   "to": ""
+  },
+  {
+   "id": "lac-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": " At the Yangpyeong 1-dong ledger handover, Yeo Rian cross-checks the page numbers and fold marks of the shared ledger against the copy, and calls the keys of two neighbor representatives together to inspect the original.",
+   "to": ""
+  },
+  {
+   "id": "lac-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " At the Yangpyeong 1-dong ledger handover, Yeo Rian cross-checks the page numbers and fold marks of the shared ledger against the copy, and calls the keys of two neighbor representatives together to inspect the original.",
+   "to": ""
+  },
+  {
+   "id": "lac-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json_ko",
+   "rawPathRe": "^\\.fields\\.업무 위치$",
+   "from": " 양평1동 장부 인계에서 여리안은 공동 장부의 쪽수와 접힌 자국을 사본과 대조하고, 이웃 대표 두 사람의 열쇠를 함께 불러 원본을 열람한다.",
+   "to": ""
+  },
+  {
+   "id": "lac-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 양평1동 장부 인계에서 여리안은 공동 장부의 쪽수와 접힌 자국을 사본과 대조하고, 이웃 대표 두 사람의 열쇠를 함께 불러 원본을 열람한다.",
+   "to": ""
+  },
+  {
+   "id": "lac-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 양평1동 장부 인계에서 여리안은 공동 장부의 쪽수와 접힌 자국을 사본과 대조하고, 이웃 대표 두 사람의 열쇠를 함께 불러 원본을 열람한다.",
+   "to": ""
+  },
+  {
+   "id": "lac-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**. ",
+   "to": "**관계.** "
+  },
+  {
+   "id": "lac-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0283",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.**.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lac-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "순환 배치된다..",
+   "to": "순환 배치된다."
+  },
+  {
+   "id": "lac-31",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "preserved.. ",
+   "to": "preserved. "
+  },
+  {
+   "id": "lac-32",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.fields\\.Existing Residence$",
+   "from": "preserved.. ",
+   "to": "preserved. "
+  },
+  {
+   "id": "lac-33",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "보존한다.. ",
+   "to": "보존한다. "
+  },
+  {
+   "id": "lac-34",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.fields\\.기존 거주 위치$",
+   "from": "보존한다.. ",
+   "to": "보존한다. "
+  },
+  {
+   "id": "lac-35",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "e Republic of Korea\n- Constitutional body: Former President of the Republic of Korea\n",
+   "to": "e Republic of Korea\n"
+  },
+  {
+   "id": "lac-36",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "e Republic of Korea\n- Constitutional body: Former President of the Republic of Korea\n",
+   "to": "e Republic of Korea\n"
+  },
+  {
+   "id": "lac-37",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "\n- 헌법기관: 전 대한민국 대통령\n- 헌법기관: 전 대한민국 대통령\n",
+   "to": "\n- 헌법기관: 전 대한민국 대통령\n"
+  },
+  {
+   "id": "lac-38",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n- 헌법기관: 전 대한민국 대통령\n- 헌법기관: 전 대한민국 대통령\n",
+   "to": "\n- 헌법기관: 전 대한민국 대통령\n"
+  },
+  {
+   "id": "lac-39",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " area. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses. Proposes courier duty at the Anguk register window, cross-checking the Russian line against the Hangul line.",
+   "to": " area. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses."
+  },
+  {
+   "id": "lac-40",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "istrative dong area. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses.",
+   "to": "istrative dong area."
+  },
+  {
+   "id": "lac-41",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "rea. Livelihood: Courier; preserves the Jayang–Geondae Goryeoin boarding house and the Ttukseom lodging contract within Seoul. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses. Proposes courier duty at the Anguk register window, cross-checking the Russian line against the Hangul line.",
+   "to": "rea. Livelihood: Courier; preserves the Jayang–Geondae Goryeoin boarding house and the Ttukseom lodging contract within Seoul. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses."
+  },
+  {
+   "id": "lac-42",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "preserves the Jayang–Geondae Goryeoin boarding house and the Ttukseom lodging contract within Seoul. Hwayang-dong and Jayang 4-dong are a dong-level refinement proposal for the boarding house's living area, not a confirmation of any specific parcel or of holding two houses.",
+   "to": "preserves the Jayang–Geondae Goryeoin boarding house and the Ttukseom lodging contract within Seoul."
+  },
+  {
+   "id": "lac-43",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "집 없음·무장 접근 없음은 보존한다. 주요 관계: 정부 명부 필사 국장 백온과 협력.",
+   "to": "집 없음·무장 접근 없음은 보존한다."
+  },
+  {
+   "id": "lac-44",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "동 범위. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다. 안국 명부 창구에서 러시아어 줄과 한글 줄을 대조하는 전령 근무를 제안한다.",
+   "to": "동 범위. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다."
+  },
+  {
+   "id": "lac-45",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 종로1·2·3·4가동 행정동 범위. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다.",
+   "to": " 종로1·2·3·4가동 행정동 범위."
+  },
+  {
+   "id": "lac-46",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 생업: 전령; 자양·건대 고려인 하숙과 뚝섬 숙소 계약을 서울 안에서 보존한다. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다. 안국 명부 창구에서 러시아어 줄과 한글 줄을 대조하는 전령 근무를 제안한다.",
+   "to": " 생업: 전령; 자양·건대 고려인 하숙과 뚝섬 숙소 계약을 서울 안에서 보존한다. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다."
+  },
+  {
+   "id": "lac-47",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "위치: 화양동 행정동 범위. 생업: 전령; 자양·건대 고려인 하숙과 뚝섬 숙소 계약을 서울 안에서 보존한다. 화양동·자양4동은 하숙 생활권의 동 수준 정밀화 제안이며 특정 필지나 두 집 보유 확정이 아니다.",
+   "to": "위치: 화양동 행정동 범위. 생업: 전령; 자양·건대 고려인 하숙과 뚝섬 숙소 계약을 서울 안에서 보존한다."
+  }
+ ]
+}

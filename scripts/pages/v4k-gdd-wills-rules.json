@@ -1,0 +1,33 @@
+{
+ "rulesDoc": "verify-25 B3",
+ "rules": [
+  {
+   "id": "gdd-w3-en",
+   "docs": [
+    "doc.Narrative-Direction"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "Im Hajun's life or death, the truth of his disappearance, and the answers and endings of the three wills",
+   "to": "Im Hajun's life or death and the truth of his disappearance",
+   "expect": 1,
+   "reason": "세 유언 사건 삭제"
+  },
+  {
+   "id": "gdd-w3-ko",
+   "docs": [
+    "doc.Narrative-Direction"
+   ],
+   "fields": [
+    "body_ko_md"
+   ],
+   "kind": "literal",
+   "from": "임하준의 생사, 실종 진실, 세 유언의 정답과 결말",
+   "to": "임하준의 생사와 실종 진실",
+   "expect": 1,
+   "reason": "세 유언 사건 삭제"
+  }
+ ]
+}

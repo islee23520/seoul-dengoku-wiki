@@ -62,7 +62,7 @@ model: cpa/claude-opus-5-5
 
 [신앙과 문화의 분열](/wiki/Faith-Culture-Schism/)에 따르면 2126년 서울에서 조직된 종교는 아크 하나다. 아크는 이전의 모든 종교를 대체했다. 신도는 몸의 부위를 기계로 바꾸고, 이것을 세례(baptism)라고 부른다. 아크에서는 신앙을 이식한 부위 수로 센다. 아크가 붙이는 기계 몸은 단순한 명령만 받는다. 생각으로 움직이는 신경 직결은 자유도시 의사가 시술해야 한다.
 
-생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 물을 먼저 받고 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
+생활 문화는 [식문화](/wiki/Food-Culture/)가 다룬다. 주민은 역 창구에서 배급을 받고, 죽을 먼저 받아 몸을 데운 뒤 밥을 받는 습관이 남아 있다. 병과 약품은 [질병과 증상](/wiki/Ailments/)에, 서울 안 이주민 생활권 다섯 회랑은 [이주민 회랑](/wiki/Diaspora-Corridors/)에 있다.
 
 ## 생태 도감
 
@@ -73,7 +73,6 @@ model: cpa/claude-opus-5-5
 | 도시 동물 | [G01](/wiki/Hostile-Group-G01/)~[G06](/wiki/Hostile-Group-G06/) |
 | 적대 사람 집단 | [G07](/wiki/Hostile-Group-G07/)~[G12](/wiki/Hostile-Group-G12/) |
 | 잔존 자동 기계 | [G13](/wiki/Hostile-Group-G13/)~[G18](/wiki/Hostile-Group-G18/), [G25](/wiki/Hostile-Group-G25/), [G26](/wiki/Hostile-Group-G26/) |
-| 감염자 | [G19](/wiki/Hostile-Group-G19/)~[G24](/wiki/Hostile-Group-G24/) |
 
 <a id="world-narrative-atlas-registry"></a>
 
@@ -81,11 +80,11 @@ model: cpa/claude-opus-5-5
 
 현대와 미래의 무기, 인간형 기계, 각종 기계는 대정전 뒤에도 남아 있다. 다만 결핍의 시대에 수와 탄약과 부품이 모자라 귀하다. 장비는 [이 시대의 기술과 무구](/wiki/Era-Arms-and-Tech-Level/)가, 끊긴 기술의 계보는 [잃어버린 기술](/wiki/Lost-Technology-Lineage/)이 다룬다.
 
-사람과 기체가 역 안에서 어떻게 함께 자리 잡았는지는 [사람과 기체](/wiki/People-and-Machines/)에 있다. 마흔여덟 합성 인격의 기록은 [합성 사회 인격](/wiki/Synthetic-Actors/)에, 스물두 운영 조직은 [운영 조직](/wiki/Operating-Houses/)에 있다. 조직과 세력·구 사이의 연결은 [세계 확장 관계 원장](/wiki/World-Relation-Ledger/)이 한 표로 모은다.
+사람과 기체가 역 안에서 어떻게 함께 자리 잡았는지는 [사람과 기체](/wiki/People-and-Machines/)에 있다. 아주 드문 합성 휴머노이드는 [합성 휴머노이드](/wiki/Synthetic-Actors/)에, 세 세력 안의 역장 집안은 [역장 집안](/wiki/Operating-Houses/)에 있다. 세 세력 사이와 계급 안의 관계는 [세계 관계 원장](/wiki/World-Relation-Ledger/)이 한 표로 모은다.
 
 ## 지리와 지도
 
-[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 수문은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖 다섯 전구의 기록은 [바깥](/wiki/External-Theaters/)에 있다.
+[세계 지도의 구성](/wiki/World-Map-Construction/)은 서울의 25개 자치구와 관측 명칭 334행을 대조한 역 315곳을 뼈대로 삼는다. 역 목록은 [서울 연결 철도 역 카탈로그](/wiki/Seoul-Station-Catalog/)에, 지상 점유와 역의 깊이는 [세계 지도](/wiki/World-and-Subway-Layers/)에 있다. 역 안의 구역은 [역 내부에 들어가면](/wiki/Station-Interior-Construction/)이, 역과 터널과 수변은 [구조물 총람](/wiki/Structures/)이, 건물의 쓰임은 [강·구·동 건물 재사용](/wiki/Building-Reuse-Geography/)이 다룬다. 서울 밖은 [서울 밖](/wiki/External-Theaters/)이 다룬다.
 
 인터랙티브 지도는 [서울 영토 지도](/wiki/map/)에서 볼 수 있다.
 

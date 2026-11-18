@@ -28,13 +28,13 @@ const PORT = Number(opt('--port', '9223'));
 
 const PAGES = [
   ['home', '/'], ['factions-index', '/wiki/factions/'], ['faction-government', '/wiki/factions/government/'],
-  ['faction-free-city', '/wiki/factions/free-city/'], ['faction-arc', '/wiki/factions/arc/'], ['duchies', '/wiki/duchies/'],
+  ['faction-free-city', '/wiki/factions/free-city/'], ['faction-arc', '/wiki/factions/arc/'], ['districts', '/wiki/districts/'],
   ['Scenario-Timeline', '/wiki/Scenario-Timeline/'], ['Century-Annals', '/wiki/Century-Annals/'], ['World-Unbinding', '/wiki/World-Unbinding/'],
   ['Offices-and-Ranks', '/wiki/Offices-and-Ranks/'], ['Faith-Culture-Schism', '/wiki/Faith-Culture-Schism/'],
   ['Characters-Factions-and-Professions', '/wiki/Characters-Factions-and-Professions/'], ['Glossary', '/wiki/Glossary/'],
   ['World-Map-Construction', '/wiki/World-Map-Construction/'], ['Structures', '/wiki/Structures/'],
   ['Hostile-Ecology-Index', '/wiki/Hostile-Ecology-Index/'], ['Hostile-Group-G01', '/wiki/Hostile-Group-G01/'],
-  ['Hostile-Group-G10', '/wiki/Hostile-Group-G10/'], ['Hostile-Group-G20', '/wiki/Hostile-Group-G20/'],
+  ['Hostile-Group-G10', '/wiki/Hostile-Group-G10/'],
   ['External-Theaters', '/wiki/External-Theaters/'], ['Regional-Physical-AI-Arcs', '/wiki/Regional-Physical-AI-Arcs/'],
   ['Sindorim-Junction-Cargo-Gate', '/wiki/Sindorim-Junction-Cargo-Gate/'],
   ['person-0145', '/wiki/people/person-0145/'], ['person-0998', '/wiki/people/person-0998/'],

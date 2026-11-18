@@ -1,0 +1,215 @@
+{
+ "rules": [
+  {
+   "id": "kx-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "Supports Baek On at meetings, places citizenship text at Jeong Yura’s seat and coordinates",
+   "to": "Supports Baek On at meetings and coordinates"
+  },
+  {
+   "id": "kx-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "Supports Baek On at meetings, places citizenship text at Jeong Yura’s seat and coordinates",
+   "to": "Supports Baek On at meetings and coordinates"
+  },
+  {
+   "id": "kx-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": ", then placed a citizenship draft at negotiations.",
+   "to": "."
+  },
+  {
+   "id": "kx-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": " 시민권 문안을 협의 좌석에 올린 행동이 근거다.",
+   "to": ""
+  },
+  {
+   "id": "kx-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "봉인으 일이",
+   "to": "봉인 일이"
+  },
+  {
+   "id": "kx-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "봉인으 일이",
+   "to": "봉인 일이"
+  },
+  {
+   "id": "kx-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0356",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": " Passed Nam Hoseong's medical convoy through first.",
+   "to": ""
+  },
+  {
+   "id": "kx-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0356",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": " Passed Nam Hoseong's medical convoy through first.",
+   "to": ""
+  },
+  {
+   "id": "kx-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0329",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Fear$",
+   "from": "Amsa Protected Warehouse will fill the gap",
+   "to": "the Amsa warehouse will fill the gap"
+  },
+  {
+   "id": "kx-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0329",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Amsa Protected Warehouse will fill the gap",
+   "to": "the Amsa warehouse will fill the gap"
+  },
+  {
+   "id": "kx-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0373",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.skills\\.0\\.name$",
+   "from": "Joint transport clause transcription",
+   "to": "Transport clause transcription"
+  },
+  {
+   "id": "kx-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": ", carries Gang Minseo's repair standards into the text, and puts a technical clause on the table at Jeong Yura's negotiations",
+   "to": " and carries Gang Minseo's repair standards into the text."
+  },
+  {
+   "id": "kx-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", carries Gang Minseo's repair standards into the text, and puts a technical clause on the table at Jeong Yura's negotiations",
+   "to": " and carries Gang Minseo's repair standards into the text."
+  },
+  {
+   "id": "kx-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "이홍원의 일정을 사절 파견의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 교섭 자리에 기술 조항을 올린다",
+   "to": "이홍원의 일정을 사절 파견의 근거로 들고 강민서의 수리 규격을 문안에 옮긴다."
+  },
+  {
+   "id": "kx-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "이홍원의 일정을 사절 파견의 근거로 들고, 강민서의 수리 규격을 문안에 옮기며, 정유라의 교섭 자리에 기술 조항을 올린다",
+   "to": "이홍원의 일정을 사절 파견의 근거로 들고 강민서의 수리 규격을 문안에 옮긴다."
+  },
+  {
+   "id": "kx-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": ", carry Gang Minseo's repair standards into the text, and put the northern technical clause on Jeong Yura's seat at the headquarters negotiations.",
+   "to": " and carry Gang Minseo's repair standards into the text."
+  },
+  {
+   "id": "kx-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", carry Gang Minseo's repair standards into the text, and put the northern technical clause on Jeong Yura's seat at the headquarters negotiations.",
+   "to": " and carry Gang Minseo's repair standards into the text."
+  },
+  {
+   "id": "kx-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다.",
+   "to": "강민서의 수리 규격을 문안에 옮긴다."
+  },
+  {
+   "id": "kx-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다.",
+   "to": "강민서의 수리 규격을 문안에 옮긴다."
+  },
+  {
+   "id": "kx-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다.",
+   "to": "강민서의 수리 규격을 문안에 옮긴다."
+  },
+  {
+   "id": "kx-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "강민서의 수리 규격을 문안에 옮기며, 정유라의 본사 교섭 좌석에 북부 기술 조항을 올린다.",
+   "to": "강민서의 수리 규격을 문안에 옮긴다."
+  }
+ ]
+}

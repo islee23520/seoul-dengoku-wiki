@@ -1,0 +1,705 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "식량 배분 협의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-1",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json",
+   "from": "Release discussion",
+   "to": "Food distribution talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-2",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0028",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "식량 배분 협의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-3",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0028",
+   "col": "json",
+   "from": "Release discussion",
+   "to": "Food distribution talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-4",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0712",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "식량 배분 협의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-5",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0712",
+   "col": "json",
+   "from": "Release discussion",
+   "to": "Food distribution talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-6",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0008",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "가족 몫 협의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-7",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0008",
+   "col": "json",
+   "from": "Release negotiation",
+   "to": "Family share talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-8",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0012",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "중증 순서 협의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-9",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0012",
+   "col": "json",
+   "from": "Release negotiation",
+   "to": "Triage order talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-10",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0472",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "셔터 점검 협의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-11",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0472",
+   "col": "json",
+   "from": "Release discussion",
+   "to": "Shutter check talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-12",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0520",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "가족별 몫 대조",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-13",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0520",
+   "col": "json",
+   "from": "Release discussion",
+   "to": "Family share reconciliation",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-14",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0568",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "연료 몫 협의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-15",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0568",
+   "col": "json",
+   "from": "Release discussion",
+   "to": "Fuel share talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-16",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0952",
+   "col": "json_ko",
+   "from": "방류량 협의",
+   "to": "재고 반출 협의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-17",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0952",
+   "col": "json",
+   "from": "Release discussion",
+   "to": "Stock removal talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "id": "v8-18",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0520",
+   "col": "json_ko",
+   "from": "방류량 협의 지속",
+   "to": "식량 몫 협의 지속",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "id": "v8-19",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0520",
+   "col": "json",
+   "from": "Sustain release discussions",
+   "to": "Sustain food share talks",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "id": "v8-20",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0952",
+   "col": "json_ko",
+   "from": "밤샘 방류 논의",
+   "to": "밤샘 재고 대조",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "id": "v8-21",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0952",
+   "col": "json",
+   "from": "Overnight release discussion",
+   "to": "Overnight stock reconciliation",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "id": "v8-22",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0712",
+   "col": "json_ko",
+   "from": "가뭄의 논의",
+   "to": "겨울 식량 논의",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "id": "v8-23",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0712",
+   "col": "json",
+   "from": "Discussion during drought",
+   "to": "Winter food discussion",
+   "exact": true,
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "id": "v8-24",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0012",
+   "col": "json_ko",
+   "from": "환자 기록과 방류 협의가",
+   "to": "환자 기록과 중증 순서 협의가",
+   "id": "v8-25",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0012",
+   "col": "json",
+   "from": "Patient records and release discussions support",
+   "to": "Patient records and triage order talks support",
+   "id": "v8-26",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0028",
+   "col": "json_ko",
+   "from": "계량·방류 협의·사본 전달",
+   "to": "계량·식량 배분 협의·사본 전달",
+   "id": "v8-27",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0028",
+   "col": "json",
+   "from": "release discussion, and copy delivery",
+   "to": "food distribution talks, and copy delivery",
+   "id": "v8-28",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "granted firing authority only before Jang Sehwa's sealed order",
+   "to": "granted no firing authority before Jang Sehwa's sealed order",
+   "id": "v8-29",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0740",
+   "col": "json_ko",
+   "from": "품계 구호원. 직함은 숙련을 추가하지 않는다. 자기 직위",
+   "to": "품계 구호원. 직함은 방역 구호원. 자기 직위",
+   "id": "v8-30",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json",
+   "from": "Community Role: Guild Member",
+   "to": "Community Role: Ordinary Citizen",
+   "id": "v8-31",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json",
+   "from": "Guild Member",
+   "to": "Ordinary Citizen",
+   "exact": true,
+   "pathRe": "^\\.fields\\.Community Role$",
+   "id": "v8-32",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json_ko",
+   "from": "조합원",
+   "to": "일반 시민",
+   "exact": true,
+   "pathRe": "^\\.fields\\.공동체 역할$",
+   "id": "v8-33",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0277",
+   "col": "json",
+   "from": "before the seniority council's ratification",
+   "to": "before the Chairman's Office ratification",
+   "id": "v8-34",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0331",
+   "col": "json",
+   "from": "contribution labor side by side",
+   "to": "clinical findings side by side",
+   "id": "v8-35",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0331",
+   "col": "json",
+   "from": "before the guild posted it",
+   "to": "before the attending first-aid officer approved it",
+   "id": "v8-36",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0426",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-37",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0426",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-38",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0426",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-39",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0474",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-40",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0474",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-41",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0474",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-42",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0522",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-43",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0522",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-44",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0522",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-45",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0570",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-46",
+   "expect": 6
+  },
+  {
+   "file": "050",
+   "key": "person-0570",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-47",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0570",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-48",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0618",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-49",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0618",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-50",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0618",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-51",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0666",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-52",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0666",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-53",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0666",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-54",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0714",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-55",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0714",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-56",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0714",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-57",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0762",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-58",
+   "expect": 6
+  },
+  {
+   "file": "050",
+   "key": "person-0762",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-59",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0762",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-60",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0810",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-61",
+   "expect": 6
+  },
+  {
+   "file": "050",
+   "key": "person-0810",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-62",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0810",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-63",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0858",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-64",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0858",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-65",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0858",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-66",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0906",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-67",
+   "expect": 6
+  },
+  {
+   "file": "050",
+   "key": "person-0906",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-68",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0906",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-69",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0954",
+   "col": "json",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-70",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0954",
+   "col": "title",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-71",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0954",
+   "col": "position",
+   "from": "Attendant Recorder",
+   "to": "Seed Stock Recorder",
+   "id": "v8-72",
+   "expect": 1
+  }
+ ]
+}

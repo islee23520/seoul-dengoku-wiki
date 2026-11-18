@@ -1,0 +1,132 @@
+{
+ "rules": [
+  {
+   "id": "kz-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "Fear. That the courier bag would turn into ration-window notes and the main gate would become a housing counter.",
+   "to": ""
+  },
+  {
+   "id": "kz-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "Fear. That the courier bag would turn into ration-window notes and the main gate would become a housing counter.",
+   "to": ""
+  },
+  {
+   "id": "kz-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "전령 가방이 배급 창구 쪽지로 바뀌어 정문이 사택 창구가 되는 것.",
+   "to": ""
+  },
+  {
+   "id": "kz-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "공포. 전령 가방이 배급 창구 쪽지로 바뀌어 정문이 사택 창구가 되는 것.",
+   "to": ""
+  },
+  {
+   "id": "kz-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Fear$",
+   "from": "That the courier bag turns into a ration-window note and the main gate becomes a quarters window.",
+   "to": ""
+  },
+  {
+   "id": "kz-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Fear.** That the courier bag turns into a ration-window note and the main gate becomes a quarters window.\n\n",
+   "to": ""
+  },
+  {
+   "id": "kz-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.공포$",
+   "from": "전령 가방이 배급 창구 쪽지로 바뀌어 정문이 사택 창구가 되는 것.",
+   "to": ""
+  },
+  {
+   "id": "kz-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**공포.** 전령 가방이 배급 창구 쪽지로 바뀌어 정문이 사택 창구가 되는 것.\n\n",
+   "to": ""
+  },
+  {
+   "id": "kz-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Anecdote$",
+   "from": "When rumors of a defect in the test parts spread through the Gangnam Station housing compounds, the representatives demanded that the depot's main gate be used as a ration window.",
+   "to": ""
+  },
+  {
+   "id": "kz-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Anecdote.** When rumors of a defect in the test parts spread through the Gangnam Station housing compounds, the representatives demanded that the depot's main gate be used as a ration window.\n\n",
+   "to": ""
+  },
+  {
+   "id": "kz-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "시험 부품 결함 소문이 강남역 사택에 퍼지자 대표들이 기지 정문을 배급 창구로 쓰자고 주장했다.",
+   "to": ""
+  },
+  {
+   "id": "kz-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 시험 부품 결함 소문이 강남역 사택에 퍼지자 대표들이 기지 정문을 배급 창구로 쓰자고 주장했다.\n\n",
+   "to": ""
+  }
+ ]
+}

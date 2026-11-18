@@ -1,0 +1,402 @@
+{
+ "rules": [
+  {
+   "id": "lcm-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": " During the 2125 Station Fire, Jeong Soyul carried out the register of lives first.",
+   "to": ""
+  },
+  {
+   "id": "lcm-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " During the 2125 Station Fire, Jeong Soyul carried out the register of lives first.",
+   "to": ""
+  },
+  {
+   "id": "lcm-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": " 정소율은 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.",
+   "to": ""
+  },
+  {
+   "id": "lcm-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 정소율은 2125년 역사 화재 때 인명 장부부터 꺼내 들고 나왔다.",
+   "to": ""
+  },
+  {
+   "id": "lcm-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": " In 2125, ambushed during an escort, Ryu Gaon secured the personnel ledger before the cargo.",
+   "to": ""
+  },
+  {
+   "id": "lcm-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " In 2125, ambushed during an escort, Ryu Gaon secured the personnel ledger before the cargo.",
+   "to": ""
+  },
+  {
+   "id": "lcm-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": " 류가온은 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다.",
+   "to": ""
+  },
+  {
+   "id": "lcm-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 류가온은 2125년 호송 도중 습격을 만나 화물보다 인명 장부부터 챙겼다.",
+   "to": ""
+  },
+  {
+   "id": "lcm-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0998",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 2123년에는 겨울 배급안을 올리기 전 곡물 재고를 세 차례 다시 세었고, 분공방 부품 대금 일부를 종자로 받자고 이사회에 제안하였다.",
+   "to": ""
+  },
+  {
+   "id": "lcm-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0191",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "overlays the agreed weight onto Lucas Schneider's warehouse lease ledger, and",
+   "to": ""
+  },
+  {
+   "id": "lcm-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.4\\.basis$",
+   "from": "overlays the agreed weight onto Lucas Schneider's warehouse lease ledger, and",
+   "to": ""
+  },
+  {
+   "id": "lcm-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0239",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Locked the dispatch and ran to Seoul Station for originals. Sends keys and originals separately, prioritizing evidence arrival over interpretation.",
+   "to": "Title: Audio Record Recovery Courier."
+  },
+  {
+   "id": "lcm-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0356",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "A hostile interpretation of damage prompted sealing military invoices and keeping inspection weights. Cargo administration and restraint in reporting are supported.",
+   "to": "Title: Bridge Crossing Logistics Merchant."
+  },
+  {
+   "id": "lcm-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0356",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "No loading before both seals",
+   "to": "Bridge Crossing Logistics Merchant"
+  },
+  {
+   "id": "lcm-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "Duty and beacon times are posted together, yet a note requiring approval papers was burned. Stated joint checks conflict with a desire for a distinct outpost.",
+   "to": "Title: Practical Aide to Mun Ha-yul, Ridge Guardpost Base Duty Officer."
+  },
+  {
+   "id": "lcm-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Treats the outpost as home",
+   "to": "Practical Aide to Mun Ha-yul, Ridge Guardpost Base Duty Officer"
+  },
+  {
+   "id": "lcm-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0332",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "They placed eastern closure markers after diarrheal spread and double-check entry seals. Field closure judgment is not expanded into comprehensive public health expertise.",
+   "to": "Title: Jegi-dong East Quarantine Patrol, Ra Seyeong's Working-Level Aide."
+  },
+  {
+   "id": "lcm-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0332",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Checks before reopening",
+   "to": "Jegi-dong East Quarantine Patrol, Ra Seyeong's Working-Level Aide"
+  },
+  {
+   "id": "lcm-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0417",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "Checks expiry and loss fields on an oral-extension invoice and matches gate testimony dates. Withholds the stamp pending cross-checks.",
+   "to": "Title: Supply Records Assistant."
+  },
+  {
+   "id": "lcm-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0417",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Distrusts oral extensions",
+   "to": "Supply Records Assistant"
+  },
+  {
+   "id": "lcm-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "She treated the outpost duty post as home and burned any note that told her to keep approval papers at the outpost. A light she had seen once she wrote into the rotation log first.",
+   "to": "Title: Practical Aide to Mun Ha-yul, Ridge Guardpost Base Duty Officer."
+  },
+  {
+   "id": "lcm-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0417",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "Shown in the confirmed choice: Distrusts oral extensions. It is not established as an invariable disposition in other situations.",
+   "to": "Title: Supply Records Assistant."
+  },
+  {
+   "id": "lcm-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Duty and beacon times are posted together, yet a note requiring approval papers was burned. Stated joint checks conflict with a desire for a distinct outpost.",
+   "to": "Title: Practical Aide to Mun Ha-yul, Ridge Guardpost Base Duty Officer."
+  },
+  {
+   "id": "lcm-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0191",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고",
+   "to": ""
+  },
+  {
+   "id": "lcm-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.4\\.basis$",
+   "from": "루카스 슈나이더의 창고 임대 장부에 협약 중량을 겹치고",
+   "to": ""
+  },
+  {
+   "id": "lcm-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0239",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "열쇠와 원본을 다른 길로 보내 해석보다 증거 도착을 앞세운다.",
+   "to": "직함은 음성기록 회수 전령."
+  },
+  {
+   "id": "lcm-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0356",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "파손이 적대행위로 보고되자 군 송장을 봉인하고 점검 무게만 남겼다. 화물 운영과 보고의 절제를 반영한다.",
+   "to": "직함은 교량 통과 물류상."
+  },
+  {
+   "id": "lcm-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0356",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "이중 날인 전에는 싣지 않는다",
+   "to": "교량 통과 물류상"
+  },
+  {
+   "id": "lcm-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "당직과 봉화 시각을 함께 게시하나 승인 문서를 두라는 쪽지를 태운다. 승인 준수 문장과 독자 거점 욕구의 충돌을 남긴다.",
+   "to": "직함은 능선 초소 기지 당직장, 문하율의 실무 담당자."
+  },
+  {
+   "id": "lcm-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "초소를 집처럼 여긴다",
+   "to": "능선 초소 기지 당직장, 문하율의 실무 담당자"
+  },
+  {
+   "id": "lcm-31",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0332",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "설사병 확산 뒤 동측 봉쇄 말목을 먼저 박고 도장을 이중 확인한다. 현장 차단 판단을 전면적인 방역 전문성으로 확대하지 않는다.",
+   "to": "직함은 제기동 동측 방역 순찰대, 라세영의 실무 담당자."
+  },
+  {
+   "id": "lcm-32",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0332",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "해제보다 확인",
+   "to": "제기동 동측 방역 순찰대, 라세영의 실무 담당자"
+  },
+  {
+   "id": "lcm-33",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0417",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "구두 연장 청구서의 만료와 손실 칸을 확인하고 관문 증언 날짜를 맞췄다. 교차검증 전에는 도장을 덮었다.",
+   "to": "직함은 보급 기록 보조."
+  },
+  {
+   "id": "lcm-34",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0417",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "구두 연장을 믿지 않음",
+   "to": "보급 기록 보조"
+  },
+  {
+   "id": "lcm-35",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "초소 당직을 집처럼 여기고, 승인 문서를 초소에 두라는 쪽지를 태운다. 한 번 본 불빛을 교대 일지에 먼저 적는다.",
+   "to": "직함은 능선 초소 기지 당직장, 문하율의 실무 담당자."
+  },
+  {
+   "id": "lcm-36",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0417",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "확인된 선택: 구두 연장을 믿지 않음. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+   "to": "직함은 보급 기록 보조."
+  },
+  {
+   "id": "lcm-37",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "당직과 봉화 시각을 함께 게시하나 승인 문서를 두라는 쪽지를 태운다. 승인 준수 문장과 독자 거점 욕구의 충돌을 남긴다.",
+   "to": "직함은 능선 초소 기지 당직장, 문하율의 실무 담당자."
+  }
+ ]
+}

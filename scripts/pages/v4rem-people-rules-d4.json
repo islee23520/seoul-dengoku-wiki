@@ -1,0 +1,563 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json_ko",
+   "from": "난외 해석 노트를 폭로해 단수 조항을",
+   "to": "난외 해석 노트를 폭로해 겨울 연료 반출 조항을",
+   "expect": 2,
+   "id": "v4rem-people-d-1000"
+  },
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json",
+   "from": "neutralize the outage clause",
+   "to": "neutralize the winter fuel release clause",
+   "expect": 2,
+   "id": "v4rem-people-d-1001"
+  },
+  {
+   "file": "090",
+   "key": "person-0008",
+   "col": "json_ko",
+   "from": "한재목의 집단 단수에는",
+   "to": "한재목의 겨울 배급 삭감에는",
+   "expect": 1,
+   "id": "v4rem-people-d-1002"
+  },
+  {
+   "file": "090",
+   "key": "person-0008",
+   "col": "json",
+   "from": "Han Jaemok’s collective cutoffs",
+   "to": "Han Jaemok’s winter ration cuts",
+   "expect": 1,
+   "id": "v4rem-people-d-1003"
+  },
+  {
+   "file": "090",
+   "key": "person-0013",
+   "col": "json_ko",
+   "from": "단수 골목 우선",
+   "to": "난방 끊긴 골목 우선",
+   "expect": 1,
+   "id": "v4rem-people-d-1004"
+  },
+  {
+   "file": "090",
+   "key": "person-0013",
+   "col": "json",
+   "from": "Cutoff neighborhoods first",
+   "to": "Heatless lanes first",
+   "expect": 1,
+   "id": "v4rem-people-d-1005"
+  },
+  {
+   "file": "090",
+   "key": "person-0013",
+   "col": "json_ko",
+   "from": "단수 골목을 먼저 지키고",
+   "to": "난방이 끊긴 골목을 먼저 지키고",
+   "expect": 2,
+   "id": "v4rem-people-d-1006"
+  },
+  {
+   "file": "090",
+   "key": "person-0013",
+   "col": "json",
+   "from": "Protects cutoff lanes first",
+   "to": "Protects lanes whose heating has been cut first",
+   "expect": 2,
+   "id": "v4rem-people-d-1007"
+  },
+  {
+   "file": "090",
+   "key": "person-0017",
+   "col": "json_ko",
+   "from": "단수 예고가 뜨면",
+   "to": "정전 예고가 뜨면",
+   "expect": 1,
+   "id": "v4rem-people-d-1008"
+  },
+  {
+   "file": "090",
+   "key": "person-0017",
+   "col": "json",
+   "from": "after cutoff warnings",
+   "to": "after blackout warnings",
+   "expect": 1,
+   "id": "v4rem-people-d-1009"
+  },
+  {
+   "file": "090",
+   "key": "person-0019",
+   "col": "json_ko",
+   "from": "단수 가격 억제",
+   "to": "혹한 가격 억제",
+   "expect": 1,
+   "id": "v4rem-people-d-1010"
+  },
+  {
+   "file": "090",
+   "key": "person-0019",
+   "col": "json",
+   "from": "Restrain cutoff prices",
+   "to": "Restrain cold-snap prices",
+   "expect": 1,
+   "id": "v4rem-people-d-1011"
+  },
+  {
+   "file": "090",
+   "key": "person-0019",
+   "col": "json_ko",
+   "from": "단수 골목의 가격을",
+   "to": "난방 끊긴 골목의 가격을",
+   "expect": 2,
+   "id": "v4rem-people-d-1012"
+  },
+  {
+   "file": "090",
+   "key": "person-0019",
+   "col": "json",
+   "from": "in cutoff lanes",
+   "to": "in heatless lanes",
+   "expect": 2,
+   "id": "v4rem-people-d-1013"
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json_ko",
+   "from": "단수 위험으로 창구의 중요성이",
+   "to": "혹한으로 연료 창구의 중요성이",
+   "expect": 1,
+   "id": "v4rem-people-d-1014"
+  },
+  {
+   "file": "090",
+   "key": "person-0104",
+   "col": "json",
+   "from": "As cutoff risks make the counter more important",
+   "to": "As the cold snap makes the fuel counter more important",
+   "expect": 1,
+   "id": "v4rem-people-d-1015"
+  },
+  {
+   "file": "090",
+   "key": "person-0369",
+   "col": "json_ko",
+   "from": "집단 단수의 면죄부",
+   "to": "집단 납치 몸값 협상의 면죄부",
+   "expect": 2,
+   "id": "v4rem-people-d-1016"
+  },
+  {
+   "file": "090",
+   "key": "person-0369",
+   "col": "json",
+   "from": "an indulgence for a collective cutoff",
+   "to": "an absolution for a collective ransom bargain",
+   "expect": 2,
+   "id": "v4rem-people-d-1017"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json_ko",
+   "from": "단수와 호송 지연을",
+   "to": "정전과 호송 지연을",
+   "expect": 2,
+   "id": "v4rem-people-d-1018"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json",
+   "from": "Records outages and escort delays",
+   "to": "Records blackouts and escort delays",
+   "expect": 2,
+   "id": "v4rem-people-d-1019"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json_ko",
+   "from": "조합 작업장 단수·강제복무 피해를",
+   "to": "조합 작업장 정전·강제복무 피해를",
+   "expect": 1,
+   "id": "v4rem-people-d-1020"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json_ko",
+   "from": "같은 밤 단수가",
+   "to": "같은 밤 정전이",
+   "expect": 2,
+   "id": "v4rem-people-d-1021"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json",
+   "from": "when one outage arrives",
+   "to": "when one blackout arrives",
+   "expect": 2,
+   "id": "v4rem-people-d-1022"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json_ko",
+   "from": "암사 단수와 여의신 호송 지연이",
+   "to": "암사 정전과 여의신 호송 지연이",
+   "expect": 1,
+   "id": "v4rem-people-d-1023"
+  },
+  {
+   "file": "090",
+   "key": "person-0417",
+   "col": "json_ko",
+   "from": "집단 단수 조항의 면죄부",
+   "to": "집단 납치 몸값 조항의 면죄부",
+   "expect": 1,
+   "id": "v4rem-people-d-1024"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json_ko",
+   "from": "사본에 단수 칸을",
+   "to": "사본에 정전 칸을",
+   "expect": 2,
+   "id": "v4rem-people-d-1025"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json",
+   "from": "marks outage fields separately",
+   "to": "marks blackout fields separately",
+   "expect": 2,
+   "id": "v4rem-people-d-1026"
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Sets the agenda order of the Suseo Station members' assembly from the mediator's seat, so that joint bargaining does not split into per-power partition and subjugation.",
+   "expect": 1,
+   "id": "v4rem-people-d-1027"
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Turns recommendations of skilled staff for the Suseo Station Union Vehicle Workshop into public skill tests, breaking the factions' monopoly on recommendations at the members' assembly.",
+   "expect": 1,
+   "id": "v4rem-people-d-1028"
+  },
+  {
+   "file": "090",
+   "key": "person-0403",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the skills review committee becomes a hostage window that hands technicians over to the powers.",
+   "expect": 1,
+   "id": "v4rem-people-d-1029"
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Turns recommendations of skilled staff for the Suseo Station Union Vehicle Workshop into public skill tests and maintenance signatures, breaking the factions' monopoly on recommendations at the members' assembly.",
+   "expect": 1,
+   "id": "v4rem-people-d-1030"
+  },
+  {
+   "file": "090",
+   "key": "person-0405",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the repair yard becomes a hostage window that hands technicians over to the powers and the tools become subcontractors of a seal.",
+   "expect": 1,
+   "id": "v4rem-people-d-1031"
+  },
+  {
+   "file": "090",
+   "key": "person-0407",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Keeps on-site care during the Suseo Station members' assembly as the floor of joint bargaining, so that per-power partition and subjugation cannot buy the sickbeds.",
+   "expect": 1,
+   "id": "v4rem-people-d-1032"
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Builds Suseo Station and Jeongdong outer patrols into the field backbone of the standard form, replacing the powers' escort fees with contract escort.",
+   "expect": 1,
+   "id": "v4rem-people-d-1033"
+  },
+  {
+   "file": "090",
+   "key": "person-0408",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the patrol meets the Amsa patrol train and a single exchange of fire turns joint bargaining into war.",
+   "expect": 1,
+   "id": "v4rem-people-d-1034"
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Ties the Suseo Station Union Vehicle Workshop and the southern outer detour onto one public master plate, so that no power's envoy can skip the inspection desk.",
+   "expect": 1,
+   "id": "v4rem-people-d-1035"
+  },
+  {
+   "file": "090",
+   "key": "person-0410",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That a forged detour connects to the archive's rear door and joint bargaining becomes an empty phrase.",
+   "expect": 1,
+   "id": "v4rem-people-d-1036"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Has members claim losses against the same timetable, so that the Amsa blackout and the Yeouisin escort delay are not counted in different units.",
+   "expect": 1,
+   "id": "v4rem-people-d-1037"
+  },
+  {
+   "file": "090",
+   "key": "person-0411",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the joint bargaining ledger drops out of the Suseo Station box and only the powers' compensation slips survive.",
+   "expect": 1,
+   "id": "v4rem-people-d-1038"
+  },
+  {
+   "file": "090",
+   "key": "person-0412",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Keeps the Suseo Station concourse as a southern window where contract, vote and audit are signed under one roof, so that no power's external control window can open on the platform.",
+   "expect": 1,
+   "id": "v4rem-people-d-1039"
+  },
+  {
+   "file": "090",
+   "key": "person-0412",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That rumors of three drafts alone seal off the concourse and scatter members into rear-gate cart lines.",
+   "expect": 1,
+   "id": "v4rem-people-d-1040"
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Keeps the Suseo Station Union Vehicle Workshop as the independent guild state's own base, ending the practice of power escorts standing on the holding tracks.",
+   "expect": 1,
+   "id": "v4rem-people-d-1041"
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the depot duty becomes a foothold for hostage dispatch and Eun Boram's public exams are broken from within.",
+   "expect": 1,
+   "id": "v4rem-people-d-1042"
+  },
+  {
+   "file": "090",
+   "key": "person-0416",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Makes the joint bargaining text valid only in the Suseo Station clerk ledger, so that the powers cannot split the seal across different outward drafts.",
+   "expect": 1,
+   "id": "v4rem-people-d-1043"
+  },
+  {
+   "file": "090",
+   "key": "person-0416",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That a forged fair copy goes out first and the clerk becomes a bridesmaid to partition and subjugation.",
+   "expect": 1,
+   "id": "v4rem-people-d-1044"
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Keeps the unification drafts only as competing public drafts, so that no power can use the Suseo Station archive as its sole capital.",
+   "expect": 1,
+   "id": "v4rem-people-d-1045"
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That only one draft is fair-copied and the clerk becomes the hand of a hegemonic document.",
+   "expect": 1,
+   "id": "v4rem-people-d-1046"
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Binds the requisition roll of the Suseo Station concourse into a public refusal ledger, so that the contract window does not turn into a mobilization window.",
+   "expect": 1,
+   "id": "v4rem-people-d-1047"
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the representative's own name ends up at the top of the hostage dispatch roll.",
+   "expect": 1,
+   "id": "v4rem-people-d-1048"
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Leaves the official orders and secret notes of trains sent out of the Suseo Station Union Vehicle Workshop as public testimony, so that the coup suspicion is not erased from the contract audit's mouth.",
+   "expect": 1,
+   "id": "v4rem-people-d-1049"
+  },
+  {
+   "file": "090",
+   "key": "person-0422",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the testimony is cut into only one of two: an absolution by after-the-fact approval, or a third party's false accusation.",
+   "expect": 1,
+   "id": "v4rem-people-d-1050"
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "Replaces the audit signature of the Suseo Station joint bargaining with cross-verification by clerks rather than by a single auditor.",
+   "expect": 1,
+   "id": "v4rem-people-d-1051"
+  },
+  {
+   "file": "090",
+   "key": "person-0423",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That an expired clause is stamped and sent out again as if it were still valid.",
+   "expect": 1,
+   "id": "v4rem-people-d-1052"
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "In the audit recorder's seat, keeps the Suseo Station Union ledger unbroken and, even if workshop factions split, protects the result of the all-member direct election of the chair.",
+   "expect": 1,
+   "id": "v4rem-people-d-1053"
+  },
+  {
+   "file": "090",
+   "key": "person-0599",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the audit recorder's duty stands empty, election factions block the handover, and Arc's passage becomes a hostage of the powers.",
+   "expect": 1,
+   "id": "v4rem-people-d-1054"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json",
+   "from": "Seeks continuity of the specific records entrusted to this person, rather than new authority.",
+   "to": "In the audit recorder's seat, keeps the Suseo Station Union ledger unbroken and, even if workshop factions split, protects the result of the all-member direct election of the chair.",
+   "expect": 1,
+   "id": "v4rem-people-d-1055"
+  },
+  {
+   "file": "090",
+   "key": "person-0791",
+   "col": "json",
+   "from": "Loss of the assigned records or a blocked handover may heighten concern about accountability.",
+   "to": "That the audit recorder's duty stands empty, election factions block the handover, and Arc's passage becomes a hostage of the powers.",
+   "expect": 1,
+   "id": "v4rem-people-d-1056"
+  },
+  {
+   "file": "090",
+   "key": "person-0401",
+   "col": "json",
+   "from": "City Hall Station",
+   "to": "Suseo Station",
+   "expect": 3,
+   "id": "v4rem-people-d-1057"
+  },
+  {
+   "file": "090",
+   "key": "person-0402",
+   "col": "json",
+   "from": "City Hall Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1058"
+  },
+  {
+   "file": "090",
+   "key": "person-0418",
+   "col": "json",
+   "from": "City Hall Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1059"
+  },
+  {
+   "file": "090",
+   "key": "person-0420",
+   "col": "json",
+   "from": "City Hall Station",
+   "to": "Suseo Station",
+   "expect": 6,
+   "id": "v4rem-people-d-1060"
+  },
+  {
+   "file": "090",
+   "key": "person-0421",
+   "col": "json",
+   "from": "City Hall Station",
+   "to": "Suseo Station",
+   "expect": 8,
+   "id": "v4rem-people-d-1061"
+  }
+ ]
+}

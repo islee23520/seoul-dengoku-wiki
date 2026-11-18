@@ -1,0 +1,48 @@
+{
+ "rules": [
+  {
+   "id": "lcc-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0004",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "위생 기록과 운영에 집중하고 진료나 개인 전투 능력으로 확대하지 않는다.",
+   "to": "직함은 가양2동 진료소 당직."
+  },
+  {
+   "id": "lcc-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0028",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "장필규의 종료 조건 문구를 회의 사본에 옮기고",
+   "to": ""
+  },
+  {
+   "id": "lcc-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0029",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "부품이 막혀도 등록 조건의 상자를 되돌린다.",
+   "to": ""
+  },
+  {
+   "id": "lcc-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0172",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "서부 철도계약을 배차에서 운용",
+   "to": ""
+  }
+ ]
+}

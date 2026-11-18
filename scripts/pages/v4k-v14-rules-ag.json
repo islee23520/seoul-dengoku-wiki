@@ -1,0 +1,316 @@
+{
+ "rules": [
+  {
+   "id": "lag-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0170",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.14\\.basis$",
+   "from": "tests Bak Taegyeom's relay maintenance by occupying the window,",
+   "to": ""
+  },
+  {
+   "id": "lag-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0170",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.14\\.basis$",
+   "from": "박태겸의 중계 유지를 창 점유로 시험하며",
+   "to": ""
+  },
+  {
+   "id": "lag-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0250",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.5\\.basis$",
+   "from": "Returning the lines struck out of Yun Choa's ledger transcription, and",
+   "to": ""
+  },
+  {
+   "id": "lag-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0250",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.5\\.basis$",
+   "from": "윤초아의 원장 필사에 지워진 줄을 돌려보내며",
+   "to": ""
+  },
+  {
+   "id": "lag-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "Tries to put Eo Ha-eun's erased family names back into the guidance registry",
+   "to": ""
+  },
+  {
+   "id": "lag-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다",
+   "to": ""
+  },
+  {
+   "id": "lag-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0190",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "She tests relay independence without a proven contract settlement.",
+   "to": "Title: Yongsan Station Timetable Cross-Check Clerk."
+  },
+  {
+   "id": "lag-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0190",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "중계 독립을 시험하지만 철도계약 해결 성과는 없다.",
+   "to": "직함은 용산역 시각표 대조 담당."
+  },
+  {
+   "id": "lag-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": " Sought to put Eo Haeun's erased family names back into the guide roster.",
+   "to": ""
+  },
+  {
+   "id": "lag-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": " Sought to put Eo Haeun's erased family names back into the guide roster.",
+   "to": ""
+  },
+  {
+   "id": "lag-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": ", matches times with Gang Taesan's corridor torches, and means to restore Eo Haeun's erased family names to the guidance register",
+   "to": " and matches times with Gang Taesan's corridor torches"
+  },
+  {
+   "id": "lag-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": ", matches times with Gang Taesan's corridor torches, and means to restore Eo Haeun's erased family names to the guidance register",
+   "to": " and matches times with Gang Taesan's corridor torches"
+  },
+  {
+   "id": "lag-13",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0293",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", matches times with Gang Taesan's corridor torches, and means to restore Eo Haeun's erased family names to the guidance register",
+   "to": " and matches times with Gang Taesan's corridor torches"
+  },
+  {
+   "id": "lag-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다",
+   "to": "시각을 맞춘다"
+  },
+  {
+   "id": "lag-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다",
+   "to": "시각을 맞춘다"
+  },
+  {
+   "id": "lag-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다",
+   "to": "시각을 맞춘다"
+  },
+  {
+   "id": "lag-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다",
+   "to": "시각을 맞춘다"
+  },
+  {
+   "id": "lag-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "시각을 맞추며, 어하은의 지워진 가족 이름을 안내 명부에 다시 넣으려 한다",
+   "to": "시각을 맞춘다"
+  },
+  {
+   "id": "lag-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Checking both signatures",
+   "to": "Yongsan Station Courier"
+  },
+  {
+   "id": "lag-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.name$",
+   "from": "Demanding recorded refusals",
+   "to": "Yongsan Station Courier"
+  },
+  {
+   "id": "lag-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "두 서명 확인",
+   "to": "용산역 전령"
+  },
+  {
+   "id": "lag-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.name$",
+   "from": "구두 거부 기록 요구",
+   "to": "용산역 전령"
+  },
+  {
+   "id": "lag-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": " and called any division official who kept verbal dispatch refusals off the ledger a violator",
+   "to": ""
+  },
+  {
+   "id": "lag-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and calls any elder who does not enter a verbal dispatch refusal into the ledger a violator",
+   "to": ""
+  },
+  {
+   "id": "lag-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "출발을 거부하고, 구두 배차 거부를 원장에 올리지 않는 본부 간부를 위반자로 부른다.",
+   "to": "출발을 거부한다."
+  },
+  {
+   "id": "lag-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0180",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "출발을 거부하고, 구두 배차 거부를 원장에 올리지 않는 본부 간부를 위반자로 부른다.",
+   "to": "출발을 거부한다."
+  },
+  {
+   "id": "lag-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": " Parties without a lineage certificate are sent to the waiting queue, and forgery suspicions are passed only to the Records Transcription duty.",
+   "to": ""
+  },
+  {
+   "id": "lag-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Parties without a lineage certificate are sent to the waiting queue, and forgery suspicions are passed only to the Records Transcription duty.",
+   "to": ""
+  },
+  {
+   "id": "lag-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": " 혈연 증서가 없는 일행은 대기열로 보내고, 위조 의심은 명부 필사 당직에만 넘긴다.",
+   "to": ""
+  },
+  {
+   "id": "lag-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 혈연 증서가 없는 일행은 대기열로 보내고,",
+   "to": ""
+  }
+ ]
+}

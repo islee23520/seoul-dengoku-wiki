@@ -1,0 +1,46 @@
+{
+ "rules": [
+  {
+   "id": "lv-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0248",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "To enforce a public ration table across every encampment of the monastery complex.",
+   "to": ""
+  },
+  {
+   "id": "lv-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0248",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Ambition.** To enforce a public ration table across every encampment of the monastery complex.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lv-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0248",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.야망$",
+   "from": "공개 배급표를 피난 공동체 전 숙영지에 강제한다.",
+   "to": ""
+  },
+  {
+   "id": "lv-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0248",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**야망.** 공개 배급표를 피난 공동체 전 숙영지에 강제한다.\n\n",
+   "to": ""
+  }
+ ]
+}

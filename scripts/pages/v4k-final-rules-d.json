@@ -1,0 +1,488 @@
+{
+ "rules": [
+  {
+   "id": "kh-1",
+   "file": "090",
+   "col": "json_ko",
+   "from": "협의에 올리거나, 인파를 해산시켜 보호군 통과를 열 수 있다.",
+   "to": "협의에 올릴 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "kh-4",
+   "file": "090",
+   "col": "json_ko",
+   "from": "죽고, 그 공백을 암사 보호군이 구원으로 위장해 주둔하는 상황을",
+   "to": "죽는 상황을",
+   "expect": 2
+  },
+  {
+   "id": "kh-7",
+   "file": "090",
+   "col": "json_ko",
+   "from": "죽이고, 그 정전을 암사 보호군이 구원으로 위장해 주둔하는 상황을",
+   "to": "죽이는 상황을",
+   "expect": 2
+  },
+  {
+   "id": "kh-10",
+   "file": "090",
+   "col": "json_ko",
+   "from": "과방전이 펌프 정지와 보호군 주둔으로 이어질 우려가 커지면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kh-13",
+   "file": "090",
+   "col": "json_ko",
+   "from": "결함이 펌프 정지와 보호군 주둔으로 이어질 우려가 있으면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kh-16",
+   "file": "090",
+   "col": "json_ko",
+   "from": "실종 구간의 빈 좌석이 보호군의 구원 이야기로 채워질 우려가 있으면 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kh-19",
+   "file": "090",
+   "col": "json_ko",
+   "from": "올려, 보호군이 구원 서사로 빈 좌석을 채우지 못하게 한다.",
+   "to": "올린다.",
+   "expect": 2
+  },
+  {
+   "id": "kh-22",
+   "file": "090",
+   "col": "json_ko",
+   "from": "동부 보호군 파견과 ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-25",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호군 파견안의 장부 증거",
+   "to": "장부 증거",
+   "expect": 3
+  },
+  {
+   "id": "kh-28",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호군 파견 증거",
+   "to": "증거",
+   "expect": 1
+  },
+  {
+   "id": "kh-31",
+   "file": "090",
+   "col": "json_ko",
+   "from": "보호군 의무 선발",
+   "to": "의무 선발",
+   "expect": 4
+  },
+  {
+   "id": "kh-34",
+   "file": "090",
+   "col": "json_ko",
+   "from": "잔압이 떨어지고, 그 공백을 암사 외부 징발권이 메우는 것.",
+   "to": "잔압이 떨어지는 것.",
+   "expect": 2
+  },
+  {
+   "id": "kh-37",
+   "file": "090",
+   "col": "json_ko",
+   "from": "모든 국가의 공용 화폐",
+   "to": "화폐",
+   "expect": 4
+  },
+  {
+   "id": "kh-40",
+   "file": "090",
+   "col": "json",
+   "from": "Eastern Gate Tax and Protection Contract Auditor",
+   "to": "Gate Tax Auditor",
+   "expect": 8
+  },
+  {
+   "id": "kh-42",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Eastern Gate Tax and Protection Contract Auditor",
+   "to": "Gate Tax Auditor",
+   "expect": 2
+  },
+  {
+   "id": "kh-43",
+   "file": "090",
+   "col": "json",
+   "from": "Eastern Gate Toll and Protection Contract Auditor",
+   "to": "Gate Toll Auditor",
+   "expect": 1
+  },
+  {
+   "id": "kh-44",
+   "file": "110",
+   "col": "json",
+   "from": "Eastern Gate Toll and Protection Contract Auditor",
+   "to": "Gate Toll Auditor",
+   "expect": 1
+  },
+  {
+   "id": "kh-46",
+   "file": "090",
+   "col": "json",
+   "from": "Gate Tax and Protection Contract Voucher Audit",
+   "to": "Gate Tax Voucher Audit",
+   "expect": 2
+  },
+  {
+   "id": "kh-48",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Gate Tax and Protection Contract Voucher Audit",
+   "to": "Gate Tax Voucher Audit",
+   "expect": 1
+  },
+  {
+   "id": "kh-50",
+   "file": "110",
+   "col": "json",
+   "from": "gate tax and protection contract voucher audit",
+   "to": "gate tax voucher audit",
+   "expect": 2
+  },
+  {
+   "id": "kh-52",
+   "file": "090",
+   "col": "json",
+   "from": "Protection Force Deployment Escort Officer",
+   "to": "Escort Officer",
+   "expect": 8
+  },
+  {
+   "id": "kh-54",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Protection Force Deployment Escort Officer",
+   "to": "Escort Officer",
+   "expect": 2
+  },
+  {
+   "id": "kh-55",
+   "file": "090",
+   "col": "json",
+   "from": "the protection force dispatch convoy master",
+   "to": "the convoy master",
+   "expect": 2
+  },
+  {
+   "id": "kh-59",
+   "file": "110",
+   "col": "json",
+   "from": "Militia Squad Leader Refusing Protection Corps Deployment",
+   "to": "Militia Squad Leader",
+   "expect": 1
+  },
+  {
+   "id": "kh-61",
+   "file": "090",
+   "col": "json",
+   "from": "If Amsa's protection force presents inspection gaps as a rescue opportunity, Kim may",
+   "to": "Kim may",
+   "expect": 1
+  },
+  {
+   "id": "kh-64",
+   "file": "090",
+   "col": "json",
+   "from": "If inspection gaps risk becoming a pretext for protection-force occupation, Kim may",
+   "to": "Kim may",
+   "expect": 1
+  },
+  {
+   "id": "kh-67",
+   "file": "090",
+   "col": "json",
+   "from": "handing pump defense to a protection force as betrayal",
+   "to": "handing over pump defense as betrayal",
+   "expect": 1
+  },
+  {
+   "id": "kh-70",
+   "file": "090",
+   "col": "json",
+   "from": "transferring bridge defense to outside protection forces as betrayal",
+   "to": "transferring bridge defense to outsiders as betrayal",
+   "expect": 1
+  },
+  {
+   "id": "kh-73",
+   "file": "090",
+   "col": "json",
+   "from": "If Amsa's protection force presents inspection gaps as a rescue opportunity, Chae may",
+   "to": "Chae may",
+   "expect": 1
+  },
+  {
+   "id": "kh-76",
+   "file": "090",
+   "col": "json",
+   "from": "If inspection gaps threaten protection-force occupation, Chae may",
+   "to": "Chae may",
+   "expect": 1
+  },
+  {
+   "id": "kh-79",
+   "file": "090",
+   "col": "json",
+   "from": " and the Amsa Protection Force disguises the gap as a rescue and stations itself there",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-82",
+   "file": "090",
+   "col": "json",
+   "from": "If over-discharge threatens pump failure and protection-force occupation, Byeon may",
+   "to": "Byeon may",
+   "expect": 1
+  },
+  {
+   "id": "kh-85",
+   "file": "090",
+   "col": "json",
+   "from": "If an empty seat in the disappearance section risks being filled by a protection-force rescue story, they may",
+   "to": "They may",
+   "expect": 1
+  },
+  {
+   "id": "kh-88",
+   "file": "090",
+   "col": "json",
+   "from": ", so that the Protection Force cannot fill the empty seat with a rescue narrative",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-91",
+   "file": "090",
+   "col": "json",
+   "from": "If defects threaten pump shutdowns and protection-force stationing, they may",
+   "to": "They may",
+   "expect": 1
+  },
+  {
+   "id": "kh-94",
+   "file": "090",
+   "col": "json",
+   "from": ", and that the Amsa Protection Corps will then station itself in the resulting blackout, disguising its occupation as relief",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-97",
+   "file": "090",
+   "col": "json",
+   "from": "the dispatch of the Eastern Protection Force and the notice",
+   "to": "the notice",
+   "expect": 2
+  },
+  {
+   "id": "kh-100",
+   "file": "090",
+   "col": "json",
+   "from": "cut into evidence for protection troops",
+   "to": "cut into evidence",
+   "expect": 2
+  },
+  {
+   "id": "kh-103",
+   "file": "090",
+   "col": "json",
+   "from": " for the Protection Force deployment plan",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-106",
+   "file": "090",
+   "col": "json",
+   "from": "the Protection Army's medical draft list",
+   "to": "the medical draft list",
+   "expect": 2
+  },
+  {
+   "id": "kh-109",
+   "file": "090",
+   "col": "json",
+   "from": "the protection force's medical draft",
+   "to": "the medical draft",
+   "expect": 2
+  },
+  {
+   "id": "kh-112",
+   "file": "090",
+   "col": "json",
+   "from": "the protection force's selection roster",
+   "to": "the selection roster",
+   "expect": 2
+  },
+  {
+   "id": "kh-115",
+   "file": "090",
+   "col": "json",
+   "from": ", or disperse the crowd to open passage for the Protection Army",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-118",
+   "file": "090",
+   "col": "json",
+   "from": "Representative of Refugees Requisitioned Under Protection Rights",
+   "to": "Representative of Requisitioned Refugees",
+   "expect": 1
+  },
+  {
+   "id": "kh-120",
+   "file": "050",
+   "col": [
+    "title",
+    "position",
+    "rank",
+    "occupation"
+   ],
+   "from": "Representative of Refugees Requisitioned Under Protection Rights",
+   "to": "Representative of Requisitioned Refugees",
+   "expect": 1
+  },
+  {
+   "id": "kh-121",
+   "file": "090",
+   "col": "json",
+   "from": "The requisition slip, headcount reconciliation, and joint approval confirmation desk",
+   "to": "The requisition slip and headcount reconciliation desk",
+   "expect": 2
+  },
+  {
+   "id": "kh-124",
+   "file": "090",
+   "col": "json",
+   "from": "If a testing shutdown could invite military protection claims, she may",
+   "to": "She may",
+   "expect": 1
+  },
+  {
+   "id": "kh-127",
+   "file": "090",
+   "col": "json",
+   "from": "If siding chalk risks becoming protection-ticket numbering, she may",
+   "to": "She may",
+   "expect": 1
+  },
+  {
+   "id": "kh-130",
+   "file": "090",
+   "col": "json",
+   "from": "If the sidings risk becoming a channel for military protection claims, she may",
+   "to": "She may",
+   "expect": 1
+  },
+  {
+   "id": "kh-133",
+   "file": "090",
+   "col": "json",
+   "from": "That if the airstrip site is covered with encampment flags, the holding chalk would become the numbers of a protection-rights ticket window.",
+   "to": "That the airstrip site would be covered with encampment flags.",
+   "expect": 2
+  },
+  {
+   "id": "kh-136",
+   "file": "090",
+   "col": "json",
+   "from": ", and those signatures would become the western protection zone's voluntary consent",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-139",
+   "file": "090",
+   "col": "json",
+   "from": "that filter fabric will be tied up in the Eastern Protection Pact, leaving the Guro work crews abandoned",
+   "to": "that the Guro work crews will be abandoned",
+   "expect": 2
+  },
+  {
+   "id": "kh-142",
+   "file": "090",
+   "col": "json",
+   "from": "that the Eastern Protection Contract will tie Cheonho fabric to boot priority and that civilian",
+   "to": "that civilian",
+   "expect": 2
+  },
+  {
+   "id": "kh-145",
+   "file": "090",
+   "col": "json",
+   "from": ", and the protection zone would use that gap as occupation storage",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-148",
+   "file": "090",
+   "col": "json",
+   "from": ", and the eastern protection zone would fill the gap",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-151",
+   "file": "090",
+   "col": "json",
+   "from": ", and the Amsa protection zone would fill the gap",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kh-154",
+   "file": "090",
+   "col": "json",
+   "from": "the protection zone's infiltration routes",
+   "to": "infiltration routes",
+   "expect": 2
+  },
+  {
+   "id": "kh-157",
+   "file": "090",
+   "col": "json",
+   "from": "every state's common currency",
+   "to": "currency",
+   "expect": 2
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v3e-1",
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Draws the boiled-water mark on the reagent box by hand.",
+   "to": "Draws the cold-storage mark on the reagent box by hand.",
+   "expect": 1
+  },
+  {
+   "id": "v3e-2",
+   "file": "090",
+   "key": "person-0181",
+   "col": "json",
+   "from": "Reads the time by the water temperature of the abandoned riverside line",
+   "to": "Reads the time by the thickness of the frost on the rails of the abandoned riverside line",
+   "expect": 1
+  }
+ ]
+}

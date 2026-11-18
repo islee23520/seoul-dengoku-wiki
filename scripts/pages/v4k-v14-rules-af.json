@@ -1,0 +1,456 @@
+{
+ "rules": [
+  {
+   "id": "laf-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0246",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.proseContacts\\.0\\.basis$",
+   "from": "Meshes with Baek On's refugee-representative register, but the milestone key is held by the squad leader.",
+   "to": ""
+  },
+  {
+   "id": "laf-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0246",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.proseContacts\\.0\\.basis$",
+   "from": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
+   "to": ""
+  },
+  {
+   "id": "laf-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.proseContacts\\.0\\.basis$",
+   "from": "Meshes with Baek On's refugee-representative register, but the milestone key is held by the squad leader.",
+   "to": ""
+  },
+  {
+   "id": "laf-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0271",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.proseContacts\\.0\\.basis$",
+   "from": "백온의 난민대표 명부와 맞물리되, 이정표 열쇠는 반장이 쥔다.",
+   "to": ""
+  },
+  {
+   "id": "laf-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0170",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.10\\.basis$",
+   "from": "a commander who carries Bak Taegyeom's succession proposal only in sealed form,",
+   "to": ""
+  },
+  {
+   "id": "laf-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0170",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.10\\.basis$",
+   "from": "박태겸의 후계 제안을 봉인 상태로만 나르는 지휘이고",
+   "to": ""
+  },
+  {
+   "id": "laf-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": ", and earning grudges by binding Baek On's family roster to forced service",
+   "to": ""
+  },
+  {
+   "id": "laf-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": ", and earning grudges by binding Baek On's family roster to forced service",
+   "to": ""
+  },
+  {
+   "id": "laf-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.",
+   "to": "거래한다."
+  },
+  {
+   "id": "laf-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.",
+   "to": "거래한다."
+  },
+  {
+   "id": "laf-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": ", and earns Baek On's grudge by tying the family roster to forced service",
+   "to": ""
+  },
+  {
+   "id": "laf-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and earns Baek On's grudge by tying the family roster to forced service",
+   "to": ""
+  },
+  {
+   "id": "laf-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.",
+   "to": "거래한다."
+  },
+  {
+   "id": "laf-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "거래하며, 백온의 가족 명부를 강제복무와 묶어 원한을 산다.",
+   "to": "거래한다."
+  },
+  {
+   "id": "laf-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.2\\.basis$",
+   "from": "A grudge earned by tying the family roster to forced service",
+   "to": ""
+  },
+  {
+   "id": "laf-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.2\\.basis$",
+   "from": "가족 명부를 강제복무와 묶어 산 원한",
+   "to": ""
+  },
+  {
+   "id": "laf-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": " 신보람의 가족 이송을 우선 기록으로 남긴다.",
+   "to": ""
+  },
+  {
+   "id": "laf-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": " 신보람의 가족 이송을 우선 기록으로 남긴다.",
+   "to": ""
+  },
+  {
+   "id": "laf-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": " Records the transfer of Sin Boram's family as a priority.",
+   "to": ""
+  },
+  {
+   "id": "laf-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Records the transfer of Sin Boram's family as a priority.",
+   "to": ""
+  },
+  {
+   "id": "laf-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": " 신보람의 가족 이송을 우선 기록으로 남긴다.",
+   "to": ""
+  },
+  {
+   "id": "laf-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 신보람의 가족 이송을 우선 기록으로 남긴다.",
+   "to": ""
+  },
+  {
+   "id": "laf-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.2\\.basis$",
+   "from": "Records the transfer of the Bukhansan Bogungmun family as a priority",
+   "to": ""
+  },
+  {
+   "id": "laf-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.2\\.basis$",
+   "from": "북한산보국문 가족 이송을 우선 기록으로 남김",
+   "to": ""
+  },
+  {
+   "id": "laf-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.1\\.basis$",
+   "from": "Asks for a priority transfer record",
+   "to": ""
+  },
+  {
+   "id": "laf-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0148",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.1\\.basis$",
+   "from": "이송 우선 기록을 부탁",
+   "to": ""
+  },
+  {
+   "id": "laf-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0153",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": " and left Baek On's family transfer in the priority sickbeds",
+   "to": ""
+  },
+  {
+   "id": "laf-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0153",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": " and left Baek On's family transfer in the priority sickbeds",
+   "to": ""
+  },
+  {
+   "id": "laf-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0153",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.",
+   "to": "빚진다."
+  },
+  {
+   "id": "laf-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0153",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.",
+   "to": "빚진다."
+  },
+  {
+   "id": "laf-31",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0153",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": ", owes Ryu Eunbi a bundle of medicines, and keeps Baek On's family transfer as a priority bed",
+   "to": " and owes Ryu Eunbi a bundle of medicines"
+  },
+  {
+   "id": "laf-32",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0153",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", owes Ryu Eunbi a bundle of medicines, and keeps Baek On's family transfer as a priority bed",
+   "to": " and owes Ryu Eunbi a bundle of medicines"
+  },
+  {
+   "id": "laf-33",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0153",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.",
+   "to": "빚진다."
+  },
+  {
+   "id": "laf-34",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0153",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "빚지며, 백온의 가족 이송을 우선 침상으로 남긴다.",
+   "to": "빚진다."
+  },
+  {
+   "id": "laf-35",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": ", owed a debt to avoid dodging Jang Sehwa's medical convoy at Cheongnyangni, and exchanged Baek On's family roster with the mobile care list",
+   "to": " and owed a debt to avoid dodging Jang Sehwa's medical convoy at Cheongnyangni"
+  },
+  {
+   "id": "laf-36",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": ", owed a debt to avoid dodging Jang Sehwa's medical convoy at Cheongnyangni, and exchanged Baek On's family roster with the mobile care list",
+   "to": " and owed a debt to avoid dodging Jang Sehwa's medical convoy at Cheongnyangni"
+  },
+  {
+   "id": "laf-37",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": ", owed a debt to avoid dodging Jang Sehwa's medical convoy at Cheongnyangni, and exchanged Baek On's family roster with the mobile care list",
+   "to": " and owed a debt to avoid dodging Jang Sehwa's medical convoy at Cheongnyangni"
+  },
+  {
+   "id": "laf-38",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
+   "to": "빚을 진다."
+  },
+  {
+   "id": "laf-39",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
+   "to": "빚을 진다."
+  },
+  {
+   "id": "laf-40",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
+   "to": "빚을 진다."
+  },
+  {
+   "id": "laf-41",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "; incurs debts so as not to avoid Jang Sehwa's medical convoy in Cheongnyangni; and exchanges Baek On's family register for the mobile clinic roster",
+   "to": "; and incurs debts so as not to avoid Jang Sehwa's medical convoy in Cheongnyangni"
+  },
+  {
+   "id": "laf-42",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "; incurs debts so as not to avoid Jang Sehwa's medical convoy in Cheongnyangni; and exchanges Baek On's family register for the mobile clinic roster",
+   "to": "; and incurs debts so as not to avoid Jang Sehwa's medical convoy in Cheongnyangni"
+  },
+  {
+   "id": "laf-43",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
+   "to": "빚을 진다."
+  },
+  {
+   "id": "laf-44",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "빚을 지며, 백온의 가족 명부와 이동 진료 명단을 교환한다.",
+   "to": "빚을 진다."
+  }
+ ]
+}

@@ -62,7 +62,7 @@ The strands of the story are in [Regional and Physical AI Arcs](/wiki/Regional-P
 
 According to [The Faith-and-Culture Schism](/wiki/Faith-Culture-Schism/), the only organized religion in Seoul in 2126 is the Arc. The Arc replaced every earlier religion. Believers replace parts of their bodies with machines, and this is called baptism. In the Arc, faith is counted by the number of implanted parts. The machine bodies the Arc fits take only simple commands. A direct neural link, moved by thought, has to be performed by a Free City doctor.
 
-Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking water first and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
+Daily life is covered in [Food Culture](/wiki/Food-Culture/). Residents receive rations at the station windows, and the habit of taking porridge first to warm oneself and rice after remains. Illness and medicine are in [Ailments and Symptoms](/wiki/Ailments/), and the five corridors of immigrant life inside Seoul are in [Diaspora Corridors](/wiki/Diaspora-Corridors/).
 
 ## Ecology Compendium
 
@@ -73,7 +73,6 @@ The [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/) leads to 
 | Urban animals | [G01](/wiki/Hostile-Group-G01/) to [G06](/wiki/Hostile-Group-G06/) |
 | Hostile human groups | [G07](/wiki/Hostile-Group-G07/) to [G12](/wiki/Hostile-Group-G12/) |
 | Remaining automated machines | [G13](/wiki/Hostile-Group-G13/) to [G18](/wiki/Hostile-Group-G18/), [G25](/wiki/Hostile-Group-G25/), [G26](/wiki/Hostile-Group-G26/) |
-| Infected | [G19](/wiki/Hostile-Group-G19/) to [G24](/wiki/Hostile-Group-G24/) |
 
 <a id="world-narrative-atlas-registry"></a>
 
@@ -81,11 +80,11 @@ The [Seoul Ecology and Variant Bestiary](/wiki/Hostile-Ecology-Index/) leads to 
 
 Modern and future weapons, humanoids, and machines survive the Great Blackout. In an age of scarcity, though, their numbers, ammunition, and parts run short, and they are dear. Equipment is covered in [The Arms and Technology of This Era](/wiki/Era-Arms-and-Tech-Level/), and the lineage of broken-off technology in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
-How people and machines settled together inside the stations is in [People and Machines](/wiki/People-and-Machines/). The records of forty-eight synthetic personas are in [Synthetic Social Personas](/wiki/Synthetic-Actors/), and the twenty-two operating organizations are in [Operating Organizations](/wiki/Operating-Houses/). The [World Expansion Relation Ledger](/wiki/World-Relation-Ledger/) puts the links between organizations and factions and districts into one table.
+How people and machines settled together inside the stations is in [People and Machines](/wiki/People-and-Machines/). The very rare synthetic humanoids are in [Synthetic Humanoids](/wiki/Synthetic-Actors/), and the station-master families inside the three factions are in [Station-Master Families](/wiki/Operating-Houses/). The [World Relation Ledger](/wiki/World-Relation-Ledger/) puts the relations among the three factions and within the ranks into one table.
 
 ## Geography and the Map
 
-[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul's 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and floodgates in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). Records of the five theaters outside Seoul are in [Outside](/wiki/External-Theaters/).
+[The Structure of the World Map](/wiki/World-Map-Construction/) builds on Seoul's 25 districts and 315 stations reconciled from 334 observed name rows. The station list is in the [Rail Station Catalog Connected to Seoul](/wiki/Seoul-Station-Catalog/), and surface holdings and station depth are in [World Map](/wiki/World-and-Subway-Layers/). The areas inside a station are covered in [Entering the Station Interior](/wiki/Station-Interior-Construction/), stations, tunnels, and the waterfront in [The Structures Compendium](/wiki/Structures/), and the uses of buildings in [River, Gu, and Dong Building Reuse](/wiki/Building-Reuse-Geography/). The land outside Seoul is covered in [Outside Seoul](/wiki/External-Theaters/).
 
 The interactive map is on the [Territory Map](/wiki/map/) page.
 

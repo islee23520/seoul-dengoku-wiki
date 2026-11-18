@@ -1,0 +1,26 @@
+{
+ "rules": [
+  {
+   "id": "ldj-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0010",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Learned maintenance and safety sequencing are strengths; invention is not recorded.",
+   "to": "Title: Pump Mechanic at the Sinjeong 3-dong Depot."
+  },
+  {
+   "id": "ldj-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0146",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.2\\.basis$",
+   "from": "사본 함 인계 기록을 심사",
+   "to": ""
+  }
+ ]
+}

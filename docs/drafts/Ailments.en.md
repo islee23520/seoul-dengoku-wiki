@@ -4,33 +4,33 @@ model: cpa/glm-5.3; 0 completion calls; replacement sentences written by the age
 
 **A. Where disease starts**
 
-In 2026, Seoul's tap water was supplied through treatment centers and pipes. Hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over water supply, medicine and contamination control.
+In 2026, Seoul's hospitals and clinics managed stock by the essential-medicines list. Asbestos, mold and machine coolant were present in the subways, schools and apartments. On the night of [The Great Blackout](/wiki/World-Unbinding/), remote control and grid power were cut. After that, human watches took over medicine and contamination control.
 
 **B. Causes in the timeline**
 
-[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In summer, patients from turbid water and counterfeit medicine increased first. When water ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
+[The Scenario Timeline](/wiki/Scenario-Timeline/) did not treat nuclear war, climate collapse or plague as first causes of disease. In 2126, when a cough patient appeared in a concourse, the medical officer inspected the tanks, the medicine chests and the damp walls first. In winter, patients whom the cold had broken and patients from counterfeit medicine increased first. When fuel for the transport vehicles ran short, medical convoys ran late. When medicine ran short, trust in the ration windows fell.
 
-## Waterborne Disease
+## Meltwater Sickness
 
-**A. The water treatment system**
+**A. Where the sickness starts**
 
-In 2026, Seoul's drinking water came from a system that treated raw Han water and sent it through pipes. The Yeongdeungpo Arisu treatment center supplied Gangseo, Guro, Geumcheon and Yangcheon; Ttukseom supplied Seongdong, Jung-gu and Yongsan; Guui supplied Gwangjin, Jungnang and Dongdaemun; Amsa supplied Gangnam, Gangdong and the southern districts. The Gangbuk center was in Namyangju and the Gwangam center in Hanam. Both lay outside Seoul, beyond the easy reach of [the three factions of Seoul](/wiki/Sixteen-States/).
+On the winter surface, some people melt snow and ice for use. Snow on roofs and roads is mixed with asbestos dust, machine oil and animal droppings, and anyone who drinks it unboiled, or puts it in porridge, comes down with diarrhea and fever. The shorter a station is on heating fuel, the less time it spends boiling, so the patients increase.
 
 **B. Operation after the Great Blackout**
 
-In the Great Blackout, around 2026, remote control failed at the Yeongdeungpo waterworks. The staff manually started the emergency generator and Han Jeonghun operated valves by hand. That year, Yeouido vault representatives supplied two generator parts.
+In the Great Blackout, around 2026, remote control failed at the hospitals. The medical officers on watch ran the emergency generators and the medicine refrigerators by hand.
 
 **C. Symptoms**
 
-The main symptoms of waterborne disease were diarrhea, fever and dehydration. As patients increased, the ration lines stopped and the work crews shrank.
+The main symptoms of this sickness were diarrhea, fever and dehydration. As patients increased, the food ration lines stopped and the work crews shrank.
 
-**D. Tanks and drinking water**
+**D. Tanks and cooking pots**
 
-Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The water that raised the tank fish and the drinking water were drawn from the same tank. When waste from the rearing cells mixed into the drinking water, the turbid water went into that evening's soup. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/), and the sluices and treatment plants in [Structures](/wiki/Structures/).
+Station tanks raised carp, crucian carp and catfish (hereafter "tank fish"). The tank water was not drunk; only the tank fish went into the food. When waste from the rearing cells splashed into a cooking pot, the turbid broth became that evening's meal. Tank operation is recorded in [Food Culture](/wiki/Food-Culture/).
 
 **E. The first summer**
 
-In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun, life safety research lead of the Magok Life House, opened the seal of a sample in the Yangjae archive.
+In 2124, a box of counterfeit medicine appeared at a Seoul Station auction. Ryu Eunbi cut off all White Cross transactions at that auction. Jeong Hojun, life safety research lead at the Magok research facility, opened the seal of a sample in the Yangjae archive.
 
 **F. The Flood-Mold Breath Cluster**
 
@@ -66,7 +66,7 @@ Asbestos was used as insulation and fireproofing in subway concourses and platfo
 
 **B. Mold and condensation**
 
-An explorer put on breathing protection and a lamp before opening a deep tunnel. The trade zone's equipment list began with those two items. Mold grew on the same walls as asbestos. When quarters behind on the ventilation roster, the heat of ration grain and condensation-beaded drinking pipes came together in one block, coughs and stinging eyes appeared first.
+An explorer put on breathing protection and a lamp before opening a deep tunnel. The trade zone's equipment list began with those two items. Mold grew on the same walls as asbestos. When quarters behind on the ventilation roster, the heat of ration grain and condensation-beaded ventilation ducts came together in one block, coughs and stinging eyes appeared first.
 
 C. Damp walls and ventilation
 
@@ -74,11 +74,11 @@ Mold grows on flooded walls and in shelters with delayed ventilation. Medics ins
 
 **D. Coolant**
 
-Coolant was kept off the drinking-water ledger. When the liquid left in depot heat exchangers, substation cooling loops and medical refrigerators stagnated, a film formed on the metal. The sensors then showed normal readings while the far branch pipes clogged. The field called that film the Coolant-Index Fungal Body.
+Coolant was kept out of the food stores. When the liquid left in depot heat exchangers, substation cooling loops and medical refrigerators stagnated, a film formed on the metal. The sensors then showed normal readings while the far branch pipes clogged. The field called that film the Coolant-Index Fungal Body.
 
 **E. Separate ledgers**
 
-The drinking-water and coolant ledgers were kept apart even in front of the [G19](/wiki/Hostile-Group-G19/) swarms or the equipment of [the old technology](/wiki/Lost-Technology-Lineage/). When a watchman poured coolant into a tank, waterborne disease spread.
+The food and coolant ledgers were kept apart even in front of [the old technology](/wiki/Lost-Technology-Lineage/) equipment or a swarm of [remaining machines](/wiki/Hostile-Ecology-Index/). When a watchman poured coolant into a tank, the tank fish died and whoever ate the broth fell ill.
 
 **F. First floors in the flood zones**
 
@@ -86,13 +86,13 @@ First floors in the flood zones south of the Han and along the tributaries were 
 
 **G. Entering station interiors**
 
-[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and water supply had not been checked breathed contaminated air and touched contaminated water.
+[Machines](/wiki/People-and-Machines/) and people worked in the same air. Anyone who entered a [station interior](/wiki/Station-Interior-Construction/) whose ventilation and floor flooding had not been checked breathed contaminated air and touched standing water.
 
 | Layer | 2026 starting point | The symptoms remaining in 2126 |
 |---|---|---|
-| Waterborne disease | Han treatment, station tanks, flooded tunnels | Turbid water, diarrhea and dehydration, the mixing of tank aquaculture and drinking water |
+| Meltwater sickness | Surface snow and ice, station tanks, flooded tunnels | Diarrhea and dehydration from melted snow and standing water; too little fuel to boil it |
 | Stockpiled medicine | Essential-medicine remnants, Jegi-dong herbs, cryo-cell sorting | Efficacy-less doses, counterfeit medicine, preparations cut from refrigeration |
-| Hazardous environments | Asbestos ceilings, condensation and mold, chiller coolant | Respiratory irritation, damp quarters, cooling loops mixed into drinking water |
+| Hazardous environments | Asbestos ceilings, condensation and mold, chiller coolant | Respiratory irritation, damp quarters, cooling loops leaked into food stores |
 
 ## Sources
 

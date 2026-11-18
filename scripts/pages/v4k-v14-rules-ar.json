@@ -1,0 +1,54 @@
+{
+ "rules": [
+  {
+   "id": "lar-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0001",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.8\\.basis$",
+   "from": "counts she keeps",
+   "to": "counts he keeps"
+  },
+  {
+   "id": "lar-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0032",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.1\\.basis$",
+   "from": "in which she takes",
+   "to": "in which he takes"
+  },
+  {
+   "id": "lar-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0098",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "finishes her leather work",
+   "to": "finishes his leather work"
+  },
+  {
+   "id": "lar-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0155",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.1\\.basis$",
+   "from": "that he confirmed",
+   "to": "that she confirmed"
+  },
+  {
+   "id": "lar-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0328",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.4\\.basis$",
+   "from": "records she has kept",
+   "to": "records he has kept"
+  }
+ ]
+}

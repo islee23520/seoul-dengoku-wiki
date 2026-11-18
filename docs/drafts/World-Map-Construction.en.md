@@ -43,9 +43,7 @@ A. Infrastructure locations
 
 The vast infrastructures essential to the survivors' maintenance of their spheres sat beside the stations.
 
-B. Treatment plants and depots
-
-The water-treatment plants stood at Yeongdeungpo, Ttukseom, Guui, and Amsa, and Gangbuk (Namyangju) and Gwangam (Hanam) also worked as principal water-pressure sources.
+B. Depots
 
 The depots lay at Sinjeong, Cheonwang, Banghwa, Gunja, Godeok, Changdong, Sinnae, and Suseo, and the outer depots at Jichuk, Dobong, Moran, and Gimpo were also key strongholds.
 

@@ -8,7 +8,7 @@ This is a play reference for how a fight is assembled and resolved. It is not a 
 
 ## What was actually played
 
-1. The army panel opened with four lords and zero warriors. Weapons in store were five spears. Every other weapon, shield, and armor slot was zero, so a squad could not be created.
+1. The army panel opened with four retainers and zero warriors. Weapons in store were five spears. Every other weapon, shield, and armor slot was zero, so a squad could not be created.
 2. Hiring opened three lists: freed prisoners (0), peasant militia (1, combat 2, price 40), mercenaries (13, combat 7 to 9).
 3. One mercenary was hired: Boromil, 18, culture 8-half, mood "nectar addict", combat +140, nectar addiction -30%. Price 112 gold, so gold fell from 3000 to 2888. The contract lasts 10 days. The army warrior count became 1.
 4. Debug `Attack By Forest Bandits` placed a band on the world map. The camp panel read: 7 bandits, camp loot 160 gold, 4 bows, 2 spears. The moving band's own popup said the opposite about equipment: 7 weaponless bandits of combat skill 5, willing to join a squad. Hiring them costs 350 gold and changes the neighbor relation by -7. That hire was not taken.
@@ -16,10 +16,10 @@ This is a play reference for how a fight is assembled and resolved. It is not a 
 
 ## How a battle is entered
 
-The player does not fight personally. A lord commands a squad, and the squad is what gets sent.
+The player does not fight personally. A retainer commands a squad, and the squad is what gets sent.
 
 - Warriors come from peasants, freed prisoners, or mercenaries. Peasants and freed prisoners need time to get over their fear of death. Mercenaries arrive with a higher combat skill and a travel delay. A mercenary contract in this session was 10 days.
-- A squad needs a commander chosen from the lords, then equipment assigned from the warehouse. With zero warriors the create button does nothing useful. The auto-fill button was also empty while the warrior list was empty.
+- A squad needs a commander chosen from the retainers, then equipment assigned from the warehouse. With zero warriors the create button does nothing useful. The auto-fill button was also empty while the warrior list was empty.
 - On the world map, a forest bandit camp is attacked by a formed squad. Neighbors also read army strength as the total value of the best weapons and armor the warriors can wear, not as a head count.
 
 ## The fight itself
@@ -54,7 +54,7 @@ Combat skill rises by 1 during a fight. A successful hunt also grants combat and
 
 - A neighbor spends about 20% of its budget on the army (`ai_economy.army_budget_factor` 0.2) and pays 10 per soldier upkeep.
 - The same target cannot be attacked again for 10 turns. A defense alliance has a 4-turn cooldown.
-- A genius king doubles both army size and army budget.
+- A genius ruler doubles both army size and army budget.
 - Forest bandits in this session were combat skill 5 and weaponless, while their camp held the weapons. Those are two different stockpiles.
 - The battle maps shipped with the game are `battleground_camp` (100 by 80 cells, two level-1 watchtowers) and `battleground_field_with_fortifications`. They were not entered.
 

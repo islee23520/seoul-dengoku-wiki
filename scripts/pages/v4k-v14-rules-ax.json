@@ -1,0 +1,1074 @@
+{
+ "rules": [
+  {
+   "id": "lax-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0054",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "He looks for the fine cracks in test wheels with his own eyes first, and sees any whisper to stamp the pass seal at night as betrayal. ",
+   "to": ""
+  },
+  {
+   "id": "lax-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0054",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "He stays silent, but leaves defective parts on the workbench.",
+   "to": ""
+  },
+  {
+   "id": "lax-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0054",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Affiliation: Free City\n- Livelihood: Parts Appraisal\n- Rank: Guild Member\n- Title: Succession Trial Parts Appraisal Artisan\n**Life.** Generation of 2126. ",
+   "to": ""
+  },
+  {
+   "id": "lax-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0054",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " The post of Succession Trial Parts Appraisal Artisan opened after he reported a defect just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0054",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Any part that does not match Yi Hongwon's public trial data in Changdong is left on the appraisal sheet, and he asks for confirmation of whether Bak Taegyeom's succession proposal interfered with the trial.",
+   "to": ""
+  },
+  {
+   "id": "lax-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0054",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "시험 차륜의 미세 균열을 눈으로 먼저 찾고, 합격 도장을 밤에 찍으라는 속삭임을 배신으로 본다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0054",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 후계시험 부품 감정 직공 자리는 탈선 직전 결함 보고로 열렸다.",
+   "to": ""
+  },
+  {
+   "id": "lax-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0054",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 창동의 이홍원 공개 시험 자료와 맞지 않는 부품은 감정 표에 남겨 박태겸의 승계안이 시험을 건드렸는지 확인을 요청한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "He gauges brake wear and shaved bearings with the same hand, and he will not file a complaint unless a clan's verbal instruction is received again in written sentences. ",
+   "to": ""
+  },
+  {
+   "id": "lax-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Affiliation: The Government\n- Rank: Clerk\n- Livelihood: Succession Trial Part Sampling and Transshipment Lot Sealing\n- Title: Succession Trial Parts Accusation Assistant\n**Life.** Born in 2064, Oleksandr Shevchenko takes up the post of succession trial parts complaint aide in the opening period of 2126. ",
+   "to": ""
+  },
+  {
+   "id": "lax-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " His work as succession trial parts complaint aide began with a defect report filed just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Oleksandr Shevchenko's work on succession trial parts samples and transshipment lot sealing is tied to Hangangno-dong.",
+   "to": ""
+  },
+  {
+   "id": "lax-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 후계시험 부품 고발 보조 업무는 탈선 직전 결함 보고를 계기로 시작됐다.",
+   "to": ""
+  },
+  {
+   "id": "lax-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 올렉산드르 셰우첸코의 후계시험 부품 표본·환적 로트 봉인 업무는 한강로동과 연결된다.",
+   "to": ""
+  },
+  {
+   "id": "lax-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.",
+   "to": ""
+  },
+  {
+   "id": "lax-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " When a succession exam is held, the Gangnam Station company quarters cast ballots.",
+   "to": ""
+  },
+  {
+   "id": "lax-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " He connects the Gangnam Station computer room, the family head's office bulletin board, and the waiting hall's handover, access, and duty for daily-life supplies as dong-level work reference points.",
+   "to": ""
+  },
+  {
+   "id": "lax-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 이씨 가문의 근거지는 강남역이고, 가문 수장 자리는 이씨 가문이 잇는다.",
+   "to": ""
+  },
+  {
+   "id": "lax-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 승계 시험이 열리면 강남역 사택이 표를 던진다.",
+   "to": ""
+  },
+  {
+   "id": "lax-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 이씨 가문은 아크를 믿는 가문이며, 아크가 이전의 모든 종교를 대체했으므로 따로 후원하는 신앙은 없다.",
+   "to": ""
+  },
+  {
+   "id": "lax-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**가문.** 경주 이씨 가문. ",
+   "to": ""
+  },
+  {
+   "id": "lax-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 생업: 전산실 원로\n- 소속: Arc\n- 품계: 추기경(잠정)\n- 직함: 아크 이씨 가문 수장\n이홍원은 서초4동에서 전산실 원로 업무를 맡는다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "강남역 전산실·가문 수장실 게시판과 대합실 생활 물자 인계·출입·당직을 동 수준 근무 기준점으로 연결한다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Managing Vehicle Maintenance Logs · Defective Parts Samples\n- Affiliation: Arc\n- Rank: Ordinary Citizen\n- Title: Arc Vehicle Maintenance Apprentice\n**Life.** Grew up at the Gangnam Station rail depot. ",
+   "to": ""
+  },
+  {
+   "id": "lax-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "The Arc vehicle maintenance apprentice post opened up because of a defect report filed just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Song Hayul handles vehicle maintenance logs and defective-part sample management in Seocho 4-dong. ",
+   "to": ""
+  },
+  {
+   "id": "lax-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Song links the Gangnam Station headquarters/Chairman's Office board and the waiting-hall handover of daily-life cargo, access, and duty to a dong-level duty reference point. ",
+   "to": ""
+  },
+  {
+   "id": "lax-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 시험 점수를 자랑하지 않지만 남의 공구를 빼돌리는 일은 참지 못한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0273",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 강남역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Jo links the Gangnam Station headquarters/Chairman's Office board and the waiting-hall handover of daily-life cargo, access, and duty to a dong-level duty reference point.",
+   "to": ""
+  },
+  {
+   "id": "lax-31",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Jo suspects that the test wheel leaked to Gang Daeun\n\n**Office.** Rank: Ordinary Citizen.",
+   "to": ""
+  },
+  {
+   "id": "lax-32",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 강남역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-33",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 강다은에게 시험 차륜이 새어 나갔다는 의심을 품는다",
+   "to": ""
+  },
+  {
+   "id": "lax-34",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She connects the Gangnam Station headquarters and family head's office bulletin board, and the waiting-hall handover of living cargo, access, and duty, as dong-level work reference points.",
+   "to": ""
+  },
+  {
+   "id": "lax-35",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 강남역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-36",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Puts recovered weights on the public scale and blocks the release of steel that went into the I Clan's exclusive bin until the Chairman's Office approves it.",
+   "to": ""
+  },
+  {
+   "id": "lax-37",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 생업: 철재 회수 중량·출고 검증\n- 소속: Arc\n- 품계: 일반 시민\n- 직함: Arc 철재 회수 작업반장\n**생애.** 대합실 당직에서 자랐다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-38",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "Arc 철재 회수 작업반장 자리는 교대 무단 결근의 대체 당직으로 열렸다.",
+   "to": ""
+  },
+  {
+   "id": "lax-39",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "황노을은 역삼1동에서 철재 회수 중량·출고 검증 업무를 맡는다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-40",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "회수 철재의 표본·중량·묶음 번호·실측·작업 조·사고 서명을 강남역 인접 역삼1동 작업 생활권 안에서 관리한다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-41",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 이홍원에게 재고를 보고하고 신가온과 기체 부품용 철재 공급 조건을 거래한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-42",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 조우찬의 시험 기체 프레임에 쓸 철재를 우선 떼어 둔다",
+   "to": ""
+  },
+  {
+   "id": "lax-43",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Cannot stand a crew chief who passes along defective samples without cutting them.",
+   "to": ""
+  },
+  {
+   "id": "lax-44",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Wheel Maintenance Logs · Defective Parts Samples\n- Affiliation: Arc\n- Rank: Ordinary Citizen\n- Title: Arc Wheel Mechanic, Song Ha-yul's Practical Aide\n**Life.** Grew up at the Gangnam Station rolling-stock depot. ",
+   "to": ""
+  },
+  {
+   "id": "lax-45",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "The post of Arc wheel mechanic and Song Ha-yul's practical aide opened up through a defect report made just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-46",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Dumo handles wheel maintenance logs and defective-part sample management in Yeoksam 1-dong. ",
+   "to": ""
+  },
+  {
+   "id": "lax-47",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Services only I Hong-won's test wheel first\n\n**Office.** Rank: Ordinary Citizen.",
+   "to": ""
+  },
+  {
+   "id": "lax-48",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Posts maintenance logs directly on the family head's office bulletin board and cuts defective parts apart to keep as samples.",
+   "to": ""
+  },
+  {
+   "id": "lax-49",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 이홍원의 시험 차륜만 우선 손본다",
+   "to": ""
+  },
+  {
+   "id": "lax-50",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " A defect report filed just before a derailment led to his post as an Arc wheel and scrap iron logistics merchant.",
+   "to": ""
+  },
+  {
+   "id": "lax-51",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Two witnesses observe the receiving weight, and orders stamped with a clan crest are blocked from dispatch until the Chairman's Office ratifies them.",
+   "to": ""
+  },
+  {
+   "id": "lax-52",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "무게를 속이는 출고를 선로를 깎는 일과 같다고 보고, 이씨 가문 전용 칸으로 빠지는 짐을 가혹하게 세운다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-53",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 생업: 차륜·철재 입고 중량·출고 확인\n- 소속: Arc\n- 품계: 일반 시민\n- 직함: Arc 차륜·철재 물류상\n**생애.** 강남역 차량기지에서 자랐다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-54",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "탈선 직전에 올린 결함 보고가 계기가 되어 Arc의 차륜·철재 물류상 자리를 맡게 되었다.",
+   "to": ""
+  },
+  {
+   "id": "lax-55",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "모소는 역삼1동에서 차륜·철재 입고 중량·출고 확인 업무를 맡는다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-56",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "기계 몸체 정비용 표본·중량·로트·실측·작업 조·사고 서명을 강남역 인접 역삼1동 작업 생활권에서 처리한다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-57",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 황노을의 회수 저울과 출고를 맞추고, 봉국의 회수장에서 로트를 인수한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-58",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0280",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " The post of Gangnam Station Company Quarters medic opened up through a defect report filed just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-59",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0280",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 생업: 사택 사고 활력 기록·응급 처치 기록 확인\n- 소속: Arc\n- 품계: 일반 시민\n- 직함: 강남역 사택 의무원\n**생애.** 강남역 차량기지에서 자랐다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-60",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0280",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "강남역 사택 의무원 자리는 탈선 직전 결함 보고로 열렸다.",
+   "to": ""
+  },
+  {
+   "id": "lax-61",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Links the Gangnam Station headquarters and family head's office bulletin boards, and the waiting-hall handover, entry and duty for living cargo, as neighborhood-level duty reference points.",
+   "to": ""
+  },
+  {
+   "id": "lax-62",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 강남역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-63",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 사택 쪽 쪽지가 기술 일지보다",
+   "to": ""
+  },
+  {
+   "id": "lax-64",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Work Accident Signatures, Defective Sample Number Recording\n- Affiliation: Arc\n- Rank: Ordinary Citizen\n- Title: Arc Work Accident Recorder, Operations Aide to Jo Uchan\n**Life.** Grew up at the Seoul Station registry office. ",
+   "to": ""
+  },
+  {
+   "id": "lax-65",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Duguk handles recording work accident signatures and defective sample numbers in Seocho 4-dong. ",
+   "to": ""
+  },
+  {
+   "id": "lax-66",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "She links the Gangnam Station headquarters and family head's office bulletin board with the waiting hall's living-cargo handover, entry and exit, and duty as dong-level duty reference points. ",
+   "to": ""
+  },
+  {
+   "id": "lax-67",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She does not lock I Hongwon's public succession trial records\n\n**Office.** Rank: Ordinary Citizen.",
+   "to": ""
+  },
+  {
+   "id": "lax-68",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She requires the signatures of both the foreman and the apprentice for each accident, and writes the defective sample number on the same line.",
+   "to": ""
+  },
+  {
+   "id": "lax-69",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 강남역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-70",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 이홍원의 공개 승계 시험 기록을 잠그지 않는다",
+   "to": ""
+  },
+  {
+   "id": "lax-71",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She links the Seoul Station headquarters and family head's office bulletin board with the waiting hall's living-cargo handover, entry and exit, and duty as dong-level duty reference points.",
+   "to": ""
+  },
+  {
+   "id": "lax-72",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 서울역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-73",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She places the steel for Jo Uchan's test wheels in the priority compartment\n\n**Office.** Rank: Ordinary Citizen.",
+   "to": ""
+  },
+  {
+   "id": "lax-74",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Puts recovered weights on the public scale, and blocks steel that has entered the Lee clan's exclusive compartment from shipping before approval by the family head's office.",
+   "to": ""
+  },
+  {
+   "id": "lax-75",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 생업: 철재 회수 중량 공개·출고 확인\n- 소속: Arc\n- 품계: 일반 시민\n- 직함: Arc 철재 회수장 거점장, 황노을의 실무 담당자\n**생애.** 대합실 당직에서 자랐다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-76",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "Arc 철재 회수장 거점장, 황노을의 실무 담당자 자리는 교대 무단 결근 대체 당직으로 열렸다.",
+   "to": ""
+  },
+  {
+   "id": "lax-77",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "봉국은 역삼1동에서 철재 회수 중량 공개·출고 확인 업무를 맡는다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-78",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "강남역 인접 역삼1동 생활권에서 회수 철재의 중량·로트·실측·작업 조·사고 서명을 기록하고, 기계 몸체 수리에 쓸 철재를 내보낸다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-79",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "황노을의 지휘로 저울을 지키고, 모소의 물류 송장과 로트를 맞춘다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-80",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "조우찬의 시험 차륜에 쓸 철재를 우선 칸에 둔다",
+   "to": ""
+  },
+  {
+   "id": "lax-81",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " The post of Stationmaster of Gangnam Station opened up after a defect report just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-82",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " He links the Gangnam Station headquarters and family head's office notice board, together with concourse daily-life cargo handover, access, and duty, as dong-level work reference points.",
+   "to": ""
+  },
+  {
+   "id": "lax-83",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 강남역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-84",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "She regards pilfering others' tools as the same crime as cheating on an exam, and cannot tolerate a foreman who hands over defect samples without cutting them. ",
+   "to": ""
+  },
+  {
+   "id": "lax-85",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Wheel Maintenance Log, Defective Part Sample Disclosure\n- Affiliation: Arc\n- Rank: Ordinary Citizen\n- Title: Arc Wheel Maintenance Defect Whistleblower\n**Life.** She grew up at the Gangnam Station rail depot. ",
+   "to": ""
+  },
+  {
+   "id": "lax-86",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "The post of Wheel Maintenance Defect Whistleblower opened up after a defect report just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-87",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Chu Jihun handles the disclosure of wheel maintenance logs and defective part samples in Yeoksam 1-dong. ",
+   "to": ""
+  },
+  {
+   "id": "lax-88",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She accepts Song Hayul's apprentice daily routine as grounds for the exposure, does not lock away I Hongwon's public succession exam records, and matches numbers with Ran Hayul's Yongsan handover lot.",
+   "to": ""
+  },
+  {
+   "id": "lax-89",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She posts maintenance logs directly on the Chairman's Office notice board and cuts defective parts to keep as samples.",
+   "to": ""
+  },
+  {
+   "id": "lax-90",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 정비 표본·중량·로트·실측·작업 조·사고 서명을 강남역 인접 역삼1동 생활권 기록으로 정리한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-91",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 송하율의 도제 일과를 폭로 근거로 받고, 이홍원의 공개 승계 시험 기록을 잠그지 않으며, 란하율의 용산 인계 로트와 번호를 맞춘다.",
+   "to": ""
+  },
+  {
+   "id": "lax-92",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Test Wheel Defect Sample, Accident Signature Verification\n- Affiliation: Arc\n- Rank: Ordinary Citizen\n- Title: Arc Test Wheel Defect Witness\n**Life.** He grew up at the Gangnam Station rail depot. ",
+   "to": ""
+  },
+  {
+   "id": "lax-93",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "His post as Arc Test Wheel Defect Witness opened up after a defect report he filed just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-94",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "In Yeoksam 1-dong, Eo Yerin handles the checking of test wheel defect samples and accident signatures. ",
+   "to": ""
+  },
+  {
+   "id": "lax-95",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " In Jo Uchan's work crew he testifies to the defect, helps guard Dumo's sealed toolbox, and leaves a mismatched line in Gukdu's accident ledger.",
+   "to": ""
+  },
+  {
+   "id": "lax-96",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " He requires the signatures of both the foreman and the apprentice for every accident, and writes the defective sample number on the same line.",
+   "to": ""
+  },
+  {
+   "id": "lax-97",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 생업: 시험 차륜 결함 표본·사고 서명 확인\n- 소속: Arc\n- 품계: 일반 시민\n- 직함: Arc 시험 차륜 결함 증인\n**생애.** 강남역 차량기지에서 자랐다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-98",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "Arc 시험 차륜 결함 증인 자리는 탈선 직전에 올린 결함 보고로 열렸다.",
+   "to": ""
+  },
+  {
+   "id": "lax-99",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "어예린은 역삼1동에서 시험 차륜 결함 표본과 사고 서명 확인 업무를 맡는다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-100",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Her post as Gangnam Station Medical Train North Gate Mechanic opened up after a defect report made just before a derailment.",
+   "to": ""
+  },
+  {
+   "id": "lax-101",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She links the Gangnam Station headquarters and chairman's office bulletin board with the concourse's daily cargo handover, access, and duty rotation as a neighborhood-level work reference point.",
+   "to": ""
+  },
+  {
+   "id": "lax-102",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 강남역 본사·가문 수장실 게시판과 대합실 생활 화물 인계·출입·당직을 동 수준 근무 기준점으로 연결한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-103",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Snaps the chalk when a company-housing note is posted above the technical log.",
+   "to": ""
+  },
+  {
+   "id": "lax-104",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 사택 쪽 쪽지가 기술 일지보다",
+   "to": ""
+  },
+  {
+   "id": "lax-105",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 기계 몸체 정비 표본·부품 중량·로트·실측과 작업 조별 사고 서명을 강남역 인접 역삼1동 생활권 기준으로 정밀하게 정리한다.",
+   "to": ""
+  },
+  {
+   "id": "lax-106",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0296",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "무게를 속이는 출고를 선로를 깎는 일과 같다고 보고, 이씨 가문 전용 칸으로 빠지는 짐을 가혹하게 세운다. ",
+   "to": ""
+  },
+  {
+   "id": "lax-107",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0296",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 회수 차륜과 부품의 표본·중량·로트·실측·작업 조·사고 서명을 강남역 인접 역삼1동 작업 생활권 안에서 정리한다.",
+   "to": ""
+  }
+ ]
+}

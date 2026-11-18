@@ -1,0 +1,343 @@
+{
+ "hold": [
+  "person-0374"
+ ],
+ "rules": [
+  {
+   "id": "v4rw-fix-a2-001",
+   "file": "090",
+   "key": "person-0171",
+   "col": "json",
+   "from": "Office. Rank: bureau chief. Title: government railway division chief.",
+   "to": "Office. Rank: division chief. Title: government railway division chief.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-002",
+   "file": "050",
+   "key": "person-0289",
+   "col": "title",
+   "from": "Rail Cavalry Maintenance Yard Outpost Chief",
+   "to": "Stationmaster",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-003",
+   "file": "050",
+   "key": "person-0289",
+   "col": "title_ko",
+   "from": "궤도기병 정비창 거점장",
+   "to": "역장",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-004",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json",
+   "from": "Rail Cavalry Maintenance Yard Outpost Chief",
+   "to": "Stationmaster",
+   "pathRe": "^\\.title$",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-005",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json_ko",
+   "from": "궤도기병 정비창 거점장",
+   "to": "역장",
+   "pathRe": "^\\.title$",
+   "exact": true,
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-006",
+   "file": "090",
+   "key": "person-0289",
+   "col": "json",
+   "from": "Office. Rank: section chief. Title: rail cavalry repair shop outpost chief. He made the pre-sortie inspection mandatory and allowed arms loading only with the joint stamp of the Elder and the auditor.",
+   "to": "Office. Rank: stationmaster. Title: Stationmaster of Gangnam Station. He made the pre-sortie inspection mandatory and allowed arms loading only with the joint seal of the stationmaster and the auditor.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-fix-a2-007",
+   "file": "110",
+   "key": "c6a9-d64d-cc9c",
+   "col": "json",
+   "from": "The post of Hub Chief of the Gangnam Station Rail Cavalry Maintenance Yard opened",
+   "to": "The post of Stationmaster of Gangnam Station opened",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-008",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "- Affiliation: Sinnae Transit\n- Rank: President\n",
+   "to": "- Affiliation: The Government\n- Rank: Stationmaster\n",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-009",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "under the president's command",
+   "to": "under the stationmaster's command",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-010",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "사장 지휘로",
+   "to": "역장 지휘로",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-011",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "Shares medical escort with Sinnae Transit",
+   "to": "Shares medical escort with Sinnae Station",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-012",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "의료호송을 신내운수와 나눔",
+   "to": "의료호송을 신내역과 나눔",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-013",
+   "file": "110",
+   "key": "c7a5-baa9-cc9c-5f35",
+   "col": "json",
+   "from": "Jang Sehwa became president only after",
+   "to": "Jang Sehwa became Stationmaster of Sinnae Station only after",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-014",
+   "file": "110",
+   "key": "c7a5-baa9-cc9c-5f35",
+   "col": "json_ko",
+   "from": "장세화가 사장이 된 것은",
+   "to": "장세화가 신내역 역장이 된 것은",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-015",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "Prepares operating conditions before the council escort.",
+   "to": "Draws up the operating conditions on the Sinnae Station dispatch board before each timetable change.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-016",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "회의 호송 전에 운행 조건부터 표로 마련한다.",
+   "to": "시간표를 바꾸기 전에 운행 조건부터 신내역 배차판에 표로 마련한다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-017",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "She separated ordinary and medical train times by season before the council escort began. She manages",
+   "to": "He separated ordinary and medical train times by season on the Sinnae Station dispatch board. He manages",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-018",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "나누어 회의 호송 전에 배차표를 마련했다.",
+   "to": "나누어 신내역 배차판에 올렸다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-019",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "In preparing Jeong Yura's conference escort, she split the times of general transport and medical transport by season",
+   "to": "On the Sinnae Station dispatch board, he split the times of general transport and medical transport by season",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-020",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "정유라의 회의 호송을 준비하며 일반 이송과",
+   "to": "신내역 배차판에서 일반 이송과",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-021",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "She negotiates the conference escort with Jeong Yura and aligns timetables with Bak Taegyeom.",
+   "to": "He aligns timetables with Bak Taegyeom.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-022",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "정유라와 회의 호송을 협의하고 박태겸과 배차표를 맞춘다.",
+   "to": "박태겸과 배차표를 맞춘다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-023",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "are recorded side by side in Jeong Yura's conference escort ledger.",
+   "to": "are recorded side by side on the Sinnae Station dispatch board.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-024",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "정유라의 회의 호송 원장에 병기한다.",
+   "to": "신내역 배차판에 병기한다.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-025",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "\\bshe\\b",
+   "to": "he",
+   "re": true,
+   "pathRe": "^\\.(biography|characterProfile\\.narrative|characterProfile\\.traits\\[\\]\\.(description|behavior|stress|relationship))$",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-026",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "\\bShe\\b",
+   "to": "He",
+   "re": true,
+   "pathRe": "^\\.(biography|characterProfile\\.narrative|characterProfile\\.traits\\[\\]\\.(description|behavior|stress|relationship))$",
+   "expect": 3
+  },
+  {
+   "id": "v4rw-fix-a2-027",
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "\\bher\\b",
+   "to": "his",
+   "re": true,
+   "pathRe": "^\\.(biography|characterProfile\\.narrative|characterProfile\\.traits\\[\\]\\.(description|behavior|stress|relationship))$",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-fix-a2-028",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "- Affiliation: Transfer Bureau",
+   "to": "- Affiliation: The Government",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-029",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "- Rank: Jusa",
+   "to": "- Rank: Clerk",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-030",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Rank Jusa. Title: Yongsan Station Courier.",
+   "to": "Rank: Clerk. Title: Yongsan Station Courier.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-fix-a2-031",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json",
+   "from": "Office. Rank: registrar. Title: Yongsan Station courier.",
+   "to": "Office. Rank: clerk. Title: Yongsan Station courier.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-032",
+   "file": "090",
+   "key": "person-0180",
+   "col": "json_ko",
+   "from": "회의 전갈의 날짜",
+   "to": "용산역 전갈의 날짜",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-033",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json",
+   "from": "It sponsors the Seongjeon General Assembly as the state faith.",
+   "to": "The Yi family is an Arc family of believers; since the Arc replaced every earlier religion, it sponsors no other faith.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-fix-a2-034",
+   "file": "090",
+   "key": "person-0272",
+   "col": "json_ko",
+   "from": "성전총회를 국가 신앙으로 후원한다.",
+   "to": "이씨 가문은 아크를 믿는 가문이며, 아크가 이전의 모든 종교를 대체했으므로 따로 후원하는 신앙은 없다.",
+   "expect": 2
+  },
+  {
+   "id": "v4rw-fix-a2-035",
+   "file": "110",
+   "key": "c774-acbd-c8fc-674e",
+   "col": "json",
+   "from": "It sponsors the Seongjeon General Assembly as the state faith.",
+   "to": "The Yi family is an Arc family of believers; since the Arc replaced every earlier religion, it sponsors no other faith.",
+   "expect": 1
+  },
+  {
+   "id": "v4rw-fix-a2-036",
+   "file": "110",
+   "key": "c774-acbd-c8fc-674e",
+   "col": "json_ko",
+   "from": "성전총회를 국가 신앙으로 후원한다.",
+   "to": "이씨 가문은 아크를 믿는 가문이며, 아크가 이전의 모든 종교를 대체했으므로 따로 후원하는 신앙은 없다.",
+   "expect": 1
+  }
+ ]
+}

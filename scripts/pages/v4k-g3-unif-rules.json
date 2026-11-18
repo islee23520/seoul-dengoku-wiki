@@ -1,0 +1,48 @@
+{
+ "rules": [
+  {
+   "id": "k3u-1007-name-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-1007",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "exact": true,
+   "from": "Unification design",
+   "to": "Records Duty · Document Registration",
+   "expect": 1
+  },
+  {
+   "id": "k3u-1007-name-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-1007",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "exact": true,
+   "from": "통합 구상",
+   "to": "기록 당직·문서 등재",
+   "expect": 1
+  },
+  {
+   "id": "k3u-1007-body-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-1007",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|behavior)$",
+   "exact": true,
+   "from": "Seeks continuity through separate records.",
+   "to": "Handles records duty and document registration.",
+   "expect": 2
+  },
+  {
+   "id": "k3u-1007-body-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-1007",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|behavior)$",
+   "exact": true,
+   "from": "분리된 기록으로 국가 연속성을 남기려 한다.",
+   "to": "기록 당직과 문서 등재를 맡는다.",
+   "expect": 2
+  }
+ ]
+}

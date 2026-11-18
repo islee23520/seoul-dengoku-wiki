@@ -1,0 +1,1057 @@
+{
+ "rules": [
+  {
+   "id": "lz-1",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json",
+   "from": "scriptures and ledgers",
+   "to": "records and ledgers",
+   "expect": 2
+  },
+  {
+   "id": "lz-2",
+   "file": "090",
+   "key": "person-0246",
+   "col": "json_ko",
+   "from": "경전과 장부",
+   "to": "기록과 장부",
+   "expect": 2
+  },
+  {
+   "id": "lz-3",
+   "file": "090",
+   "key": "person-0254",
+   "col": "json",
+   "from": "scripture-copying watch",
+   "to": "transcription watch",
+   "expect": 2
+  },
+  {
+   "id": "lz-4",
+   "file": "090",
+   "key": "person-0263",
+   "col": "json",
+   "from": "Scripture Hall scribal watch",
+   "to": "transcription watch",
+   "expect": 2
+  },
+  {
+   "id": "lz-5",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json",
+   "from": "Scripture Transcription duty",
+   "to": "Records Transcription duty",
+   "expect": 4
+  },
+  {
+   "id": "lz-6",
+   "file": "090",
+   "key": "person-0271",
+   "col": "json",
+   "from": "scripture-copy duty",
+   "to": "records-copy duty",
+   "expect": 2
+  },
+  {
+   "id": "lz-7",
+   "file": "090",
+   "key": "person-0433",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-8",
+   "file": "090",
+   "key": "person-0433",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-9",
+   "file": "090",
+   "key": "person-0433",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-10",
+   "file": "090",
+   "key": "person-0433",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-11",
+   "file": "090",
+   "key": "person-0481",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-12",
+   "file": "090",
+   "key": "person-0481",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-13",
+   "file": "090",
+   "key": "person-0481",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-14",
+   "file": "090",
+   "key": "person-0481",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-15",
+   "file": "090",
+   "key": "person-0529",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-16",
+   "file": "090",
+   "key": "person-0529",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-17",
+   "file": "090",
+   "key": "person-0529",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-18",
+   "file": "090",
+   "key": "person-0529",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-19",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 3
+  },
+  {
+   "id": "lz-20",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 7
+  },
+  {
+   "id": "lz-21",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json",
+   "from": "scriptures and ledgers",
+   "to": "records and ledgers",
+   "expect": 2
+  },
+  {
+   "id": "lz-22",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 7
+  },
+  {
+   "id": "lz-23",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 5
+  },
+  {
+   "id": "lz-24",
+   "file": "090",
+   "key": "person-0577",
+   "col": "json_ko",
+   "from": "경전과 장부",
+   "to": "기록과 장부",
+   "expect": 2
+  },
+  {
+   "id": "lz-25",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 3
+  },
+  {
+   "id": "lz-26",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 5
+  },
+  {
+   "id": "lz-27",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json",
+   "from": "Scripture Copyist",
+   "to": "Records Copyist",
+   "expect": 2
+  },
+  {
+   "id": "lz-28",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json",
+   "from": "scriptures and ledgers",
+   "to": "records and ledgers",
+   "expect": 2
+  },
+  {
+   "id": "lz-29",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json",
+   "from": "scripture copies",
+   "to": "records copies",
+   "expect": 2
+  },
+  {
+   "id": "lz-30",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 7
+  },
+  {
+   "id": "lz-31",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 5
+  },
+  {
+   "id": "lz-32",
+   "file": "090",
+   "key": "person-0625",
+   "col": "json_ko",
+   "from": "경전과 장부",
+   "to": "기록과 장부",
+   "expect": 2
+  },
+  {
+   "id": "lz-33",
+   "file": "090",
+   "key": "person-0673",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-34",
+   "file": "090",
+   "key": "person-0673",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-35",
+   "file": "090",
+   "key": "person-0673",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-36",
+   "file": "090",
+   "key": "person-0673",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-37",
+   "file": "090",
+   "key": "person-0721",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-38",
+   "file": "090",
+   "key": "person-0721",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-39",
+   "file": "090",
+   "key": "person-0721",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-40",
+   "file": "090",
+   "key": "person-0721",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-41",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 3
+  },
+  {
+   "id": "lz-42",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 5
+  },
+  {
+   "id": "lz-43",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json",
+   "from": "Sutra Copyist",
+   "to": "Records Copyist",
+   "expect": 2
+  },
+  {
+   "id": "lz-44",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json",
+   "from": "scriptures and ledgers",
+   "to": "records and ledgers",
+   "expect": 2
+  },
+  {
+   "id": "lz-45",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 7
+  },
+  {
+   "id": "lz-46",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 5
+  },
+  {
+   "id": "lz-47",
+   "file": "090",
+   "key": "person-0769",
+   "col": "json_ko",
+   "from": "경전과 장부",
+   "to": "기록과 장부",
+   "expect": 2
+  },
+  {
+   "id": "lz-48",
+   "file": "090",
+   "key": "person-0817",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-49",
+   "file": "090",
+   "key": "person-0817",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-50",
+   "file": "090",
+   "key": "person-0817",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-51",
+   "file": "090",
+   "key": "person-0817",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-52",
+   "file": "090",
+   "key": "person-0865",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-53",
+   "file": "090",
+   "key": "person-0865",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-54",
+   "file": "090",
+   "key": "person-0865",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-55",
+   "file": "090",
+   "key": "person-0865",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-56",
+   "file": "090",
+   "key": "person-0913",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-57",
+   "file": "090",
+   "key": "person-0913",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-58",
+   "file": "090",
+   "key": "person-0913",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-59",
+   "file": "090",
+   "key": "person-0913",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-60",
+   "file": "090",
+   "key": "person-0961",
+   "col": "json",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1
+  },
+  {
+   "id": "lz-61",
+   "file": "090",
+   "key": "person-0961",
+   "col": "json",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1
+  },
+  {
+   "id": "lz-62",
+   "file": "090",
+   "key": "person-0961",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-63",
+   "file": "090",
+   "key": "person-0961",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 1
+  },
+  {
+   "id": "lz-64",
+   "file": "110",
+   "key": "b178-ad50-d558-76e7",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-65",
+   "file": "110",
+   "key": "b178-ad50-d558-76e7",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 2
+  },
+  {
+   "id": "lz-66",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-67",
+   "file": "110",
+   "key": "bc15-bc00-c591",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 2
+  },
+  {
+   "id": "lz-68",
+   "file": "110",
+   "key": "cc28-c5f0-c548",
+   "col": "json_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1
+  },
+  {
+   "id": "lz-69",
+   "file": "110",
+   "key": "cc28-c5f0-c548",
+   "col": "json_ko",
+   "from": "장경 필사본",
+   "to": "기록 필사본",
+   "expect": 2
+  },
+  {
+   "id": "lz-70",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0433"
+  },
+  {
+   "id": "lz-71",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0433"
+  },
+  {
+   "id": "lz-72",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0433"
+  },
+  {
+   "id": "lz-73",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0433"
+  },
+  {
+   "id": "lz-74",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0481"
+  },
+  {
+   "id": "lz-75",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0481"
+  },
+  {
+   "id": "lz-76",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0481"
+  },
+  {
+   "id": "lz-77",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0481"
+  },
+  {
+   "id": "lz-78",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0529"
+  },
+  {
+   "id": "lz-79",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0529"
+  },
+  {
+   "id": "lz-80",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0529"
+  },
+  {
+   "id": "lz-81",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0529"
+  },
+  {
+   "id": "lz-82",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0577"
+  },
+  {
+   "id": "lz-83",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0577"
+  },
+  {
+   "id": "lz-84",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0577"
+  },
+  {
+   "id": "lz-85",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0577"
+  },
+  {
+   "id": "lz-86",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0625"
+  },
+  {
+   "id": "lz-87",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0625"
+  },
+  {
+   "id": "lz-88",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0625"
+  },
+  {
+   "id": "lz-89",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0625"
+  },
+  {
+   "id": "lz-90",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0673"
+  },
+  {
+   "id": "lz-91",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0673"
+  },
+  {
+   "id": "lz-92",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0673"
+  },
+  {
+   "id": "lz-93",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0673"
+  },
+  {
+   "id": "lz-94",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0721"
+  },
+  {
+   "id": "lz-95",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0721"
+  },
+  {
+   "id": "lz-96",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0721"
+  },
+  {
+   "id": "lz-97",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0721"
+  },
+  {
+   "id": "lz-98",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0769"
+  },
+  {
+   "id": "lz-99",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0769"
+  },
+  {
+   "id": "lz-100",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0769"
+  },
+  {
+   "id": "lz-101",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0769"
+  },
+  {
+   "id": "lz-102",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0817"
+  },
+  {
+   "id": "lz-103",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0817"
+  },
+  {
+   "id": "lz-104",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0817"
+  },
+  {
+   "id": "lz-105",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0817"
+  },
+  {
+   "id": "lz-106",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0865"
+  },
+  {
+   "id": "lz-107",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0865"
+  },
+  {
+   "id": "lz-108",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0865"
+  },
+  {
+   "id": "lz-109",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0865"
+  },
+  {
+   "id": "lz-110",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0913"
+  },
+  {
+   "id": "lz-111",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0913"
+  },
+  {
+   "id": "lz-112",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0913"
+  },
+  {
+   "id": "lz-113",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0913"
+  },
+  {
+   "id": "lz-114",
+   "file": "050",
+   "col": "position",
+   "from": "Scripture Transcriber",
+   "to": "Records Transcriber",
+   "expect": 1,
+   "key": "person-0961"
+  },
+  {
+   "id": "lz-115",
+   "file": "050",
+   "col": "occupation",
+   "from": "Transcribed Scripture and Duty Keys Handover",
+   "to": "Transcribed Records and Duty Keys Handover",
+   "expect": 1,
+   "key": "person-0961"
+  },
+  {
+   "id": "lz-116",
+   "file": "050",
+   "col": "position_ko",
+   "from": "장경 필사원",
+   "to": "기록 필사원",
+   "expect": 1,
+   "key": "person-0961"
+  },
+  {
+   "id": "lz-117",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "장경 필사본·당직 열쇠 인계",
+   "to": "기록 필사본·당직 열쇠 인계",
+   "expect": 1,
+   "key": "person-0961"
+  }
+ ]
+}

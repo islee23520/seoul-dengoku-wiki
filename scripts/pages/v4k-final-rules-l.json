@@ -1,0 +1,28 @@
+{
+ "rules": [
+  {
+   "id": "kp-1",
+   "file": "090",
+   "col": "json",
+   "from": "multi-state ratification audit assistance",
+   "to": "ratification audit assistance",
+   "expect": 4
+  },
+  {
+   "id": "kp-3",
+   "file": "090",
+   "col": "json",
+   "from": "every nation's common currency",
+   "to": "currency",
+   "expect": 2
+  },
+  {
+   "id": "kp-6",
+   "file": "110",
+   "col": "json",
+   "from": "Dual-Army ",
+   "to": "",
+   "expect": 1
+  }
+ ]
+}

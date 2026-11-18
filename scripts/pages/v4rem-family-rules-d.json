@@ -1,0 +1,221 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "110",
+   "key": "b958-bb38-d654-67f3",
+   "col": "json_ko",
+   "from": "영등포 정수 당직",
+   "to": "영등포 역 배급 줄",
+   "expect": 3,
+   "id": "v4rem-family-d-0001"
+  },
+  {
+   "file": "110",
+   "key": "c601-c601-cc9c",
+   "col": "json_ko",
+   "from": "영등포 정수 당직",
+   "to": "영등포 역 배급 줄",
+   "expect": 3,
+   "id": "v4rem-family-d-0002"
+  },
+  {
+   "file": "110",
+   "key": "c601-c601-cc9c",
+   "col": "json",
+   "from": "water-purification duty",
+   "to": "station ration-queue duty",
+   "expect": 3,
+   "id": "v4rem-family-d-0003"
+  },
+  {
+   "file": "110",
+   "key": "c624-d574-c8fc",
+   "col": "json_ko",
+   "from": "영등포 정수 당직",
+   "to": "영등포 역 배급 줄",
+   "expect": 5,
+   "id": "v4rem-family-d-0004"
+  },
+  {
+   "file": "110",
+   "key": "c624-d574-c8fc",
+   "col": "json",
+   "from": "water-purification watch",
+   "to": "station ration-queue duty",
+   "expect": 5,
+   "id": "v4rem-family-d-0005"
+  },
+  {
+   "file": "110",
+   "key": "d0c1-ad11-c0b0",
+   "col": "json_ko",
+   "from": "영등포 정수 당직",
+   "to": "영등포 역 배급 줄",
+   "expect": 3,
+   "id": "v4rem-family-d-0006"
+  },
+  {
+   "file": "110",
+   "key": "d0c1-ad11-c0b0",
+   "col": "json",
+   "from": "water purification watch",
+   "to": "station ration-queue duty",
+   "expect": 3,
+   "id": "v4rem-family-d-0007"
+  },
+  {
+   "file": "110",
+   "key": "d669-c6b0-c8fc-9ec3",
+   "col": "json_ko",
+   "from": "영등포 정수 당직",
+   "to": "영등포 역 배급 줄",
+   "expect": 3,
+   "id": "v4rem-family-d-0008"
+  },
+  {
+   "file": "110",
+   "key": "d669-c6b0-c8fc-9ec3",
+   "col": "json",
+   "from": "water-purification duty",
+   "to": "station ration-queue duty",
+   "expect": 3,
+   "id": "v4rem-family-d-0009"
+  },
+  {
+   "file": "110",
+   "key": "b958-bb38-d654-67f3",
+   "col": "json_ko",
+   "from": "가짜 정수 부품 피해자 직공",
+   "to": "가짜 셔터 모터 부품 피해자 직공",
+   "expect": 1,
+   "id": "v4rem-family-d-0010"
+  },
+  {
+   "file": "110",
+   "key": "b958-bb38-d654-67f3",
+   "col": "json_ko",
+   "from": "탁수 밤의 밸브 서명으로",
+   "to": "셔터가 내려오지 않은 밤의 정비 서명으로",
+   "expect": 1,
+   "id": "v4rem-family-d-0011"
+  },
+  {
+   "file": "110",
+   "key": "b958-bb38-d654-67f3",
+   "col": "json",
+   "from": "Counterfeit Purification Parts Victim Artisan",
+   "to": "Counterfeit Shutter Motor Parts Victim Artisan",
+   "expect": 1,
+   "id": "v4rem-family-d-0012"
+  },
+  {
+   "file": "110",
+   "key": "b958-bb38-d654-67f3",
+   "col": "json",
+   "from": "the Valve Signature of Turbid Water Night",
+   "to": "the maintenance signature of the night a shutter failed to close",
+   "expect": 1,
+   "id": "v4rem-family-d-0013"
+  },
+  {
+   "file": "110",
+   "key": "c624-d574-c8fc",
+   "col": "json_ko",
+   "from": "탁수 밤의 밸브 서명으로",
+   "to": "정전 밤에 창고 봉인을 대신 서명한 일로",
+   "expect": 1,
+   "id": "v4rem-family-d-0014"
+  },
+  {
+   "file": "110",
+   "key": "c624-d574-c8fc",
+   "col": "json",
+   "from": "a valve signature on Turbid Water Night",
+   "to": "a countersigned storehouse seal on a blackout night",
+   "expect": 1,
+   "id": "v4rem-family-d-0015"
+  },
+  {
+   "file": "110",
+   "key": "d669-c6b0-c8fc-9ec3",
+   "col": "json_ko",
+   "from": "탁수 밤의 밸브 서명으로",
+   "to": "정전 밤에 저울 봉인을 대신 서명한 일로",
+   "expect": 1,
+   "id": "v4rem-family-d-0016"
+  },
+  {
+   "file": "110",
+   "key": "d669-c6b0-c8fc-9ec3",
+   "col": "json",
+   "from": "a valve signature on the night of the turbid water",
+   "to": "a countersigned scale seal on a blackout night",
+   "expect": 1,
+   "id": "v4rem-family-d-0017"
+  },
+  {
+   "file": "110",
+   "key": "b2e8-b300-d765-6bb5",
+   "col": "json_ko",
+   "from": "탁수 재고 야간 이전 목격자",
+   "to": "야간 재고 반출 목격자",
+   "expect": 1,
+   "id": "v4rem-family-d-0018"
+  },
+  {
+   "file": "110",
+   "key": "b2e8-b300-d765-6bb5",
+   "col": "json",
+   "from": "Turbid-Water Stock Night Transfer Eyewitness",
+   "to": "Night Stock Removal Eyewitness",
+   "expect": 1,
+   "id": "v4rem-family-d-0019"
+  },
+  {
+   "file": "110",
+   "key": "c1a1-c740-c9c4-5b8b",
+   "col": "json_ko",
+   "from": "밀수 호스 접수·관로 대장 작성",
+   "to": "밀수 연통 접수·환기구 대장 작성",
+   "expect": 2,
+   "id": "v4rem-family-d-0020"
+  },
+  {
+   "file": "110",
+   "key": "c1a1-c740-c9c4-5b8b",
+   "col": "json",
+   "from": "receiving smuggling hoses and drafting pipeline ledgers",
+   "to": "receiving smuggled stove flues and drafting vent ledgers",
+   "expect": 2,
+   "id": "v4rem-family-d-0021"
+  },
+  {
+   "file": "110",
+   "key": "b9c8-c7a5-d765",
+   "col": "json_ko",
+   "from": "교량 하부 채수·진동 조사",
+   "to": "교량 하부 균열·진동 조사",
+   "expect": 2,
+   "id": "v4rem-family-d-0022"
+  },
+  {
+   "file": "121",
+   "key": "region:1114066500",
+   "col": "opening_state_ko",
+   "from": "수조는 저녁 한 차례다.",
+   "to": "난로는 저녁 한 차례만 피운다.",
+   "expect": 1,
+   "id": "v4rem-family-d-0023"
+  },
+  {
+   "file": "121",
+   "key": "region:1114066500",
+   "col": "opening_state",
+   "from": "The cistern runs once in the evening.",
+   "to": "The stove is lit only once in the evening.",
+   "expect": 1,
+   "id": "v4rem-family-d-0024"
+  }
+ ]
+}

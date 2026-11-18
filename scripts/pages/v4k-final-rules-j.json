@@ -1,0 +1,24 @@
+{
+ "rules": [
+  {
+   "id": "kn-1",
+   "file": "090",
+   "col": "json",
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "Fair-copies Jang Sehwa's escort draft, and",
+   "to": "Fair-copies Jang Sehwa's escort draft",
+   "expect": 1
+  },
+  {
+   "id": "kn-2",
+   "file": "090",
+   "col": "json_ko",
+   "exact": true,
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "from": "장세화의 호송 초안을 정서하고",
+   "to": "장세화의 호송 초안을 정서함",
+   "expect": 1
+  }
+ ]
+}

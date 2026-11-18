@@ -1,0 +1,154 @@
+{
+ "rules": [
+  {
+   "id": "lat-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0201",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.0\\.basis$",
+   "from": "section she received",
+   "to": "section he received"
+  },
+  {
+   "id": "lat-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0340",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.1\\.basis$",
+   "from": "herbs under his care",
+   "to": "herbs under her care"
+  },
+  {
+   "id": "lat-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "He is the ally who enforces",
+   "to": "She is the ally who enforces"
+  },
+  {
+   "id": "lat-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "He is the ally who enforces",
+   "to": "She is the ally who enforces"
+  },
+  {
+   "id": "lat-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.2\\.basis$",
+   "from": "He is the ally who enforces",
+   "to": "She is the ally who enforces"
+  },
+  {
+   "id": "lat-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0167",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.1\\.basis$",
+   "from": "she hands the copy",
+   "to": "he hands the copy"
+  },
+  {
+   "id": "lat-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0328",
+   "col": "json",
+   "rawPathRe": "^\\.relations\\.incoming\\.5\\.basis$",
+   "from": "records she has kept",
+   "to": "records he has kept"
+  },
+  {
+   "id": "lat-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "presses her",
+   "to": "presses him"
+  },
+  {
+   "id": "lat-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "presses her",
+   "to": "presses him"
+  },
+  {
+   "id": "lat-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0218",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Anecdote$",
+   "from": "Because of this, her signature",
+   "to": "Because of this, his signature"
+  },
+  {
+   "id": "lat-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0218",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Because of this, her signature",
+   "to": "Because of this, his signature"
+  },
+  {
+   "id": "lat-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0032",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "competes with her over",
+   "to": "competes with him over"
+  },
+  {
+   "id": "lat-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0032",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "competes with her over",
+   "to": "competes with him over"
+  },
+  {
+   "id": "lat-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "trades filter packing with her",
+   "to": "trades filter packing with him"
+  },
+  {
+   "id": "lat-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "trades filter packing with her",
+   "to": "trades filter packing with him"
+  }
+ ]
+}

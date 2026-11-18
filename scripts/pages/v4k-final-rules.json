@@ -1,0 +1,326 @@
+{
+ "rules": [
+  {
+   "id": "kf-1",
+   "file": "090",
+   "col": "json_ko",
+   "from": "증명하거나, 교량 열쇠를 양군의 공동 승인 없이는 넘기지 않는다.",
+   "to": "증명할 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "kf-2",
+   "file": "090",
+   "col": "json_ko",
+   "from": "겹쳐 읽거나, 걸이못의 키를 양군이 함께 정한 걸이못에 걸지 정할 수 있다.",
+   "to": "겹쳐 읽을 수 있다.",
+   "expect": 2
+  },
+  {
+   "id": "kf-3",
+   "file": "090",
+   "col": "json_ko",
+   "from": "붙이고, 외부 무장 접근은 양군의 공동 승인 없이 막는다.",
+   "to": "붙인다.",
+   "expect": 2
+  },
+  {
+   "id": "kf-4",
+   "file": "090",
+   "col": "json_ko",
+   "from": "적고, 외부 무장 접근은 양군의 공동 승인 없이 증언에서 뺀다.",
+   "to": "적는다.",
+   "expect": 2
+  },
+  {
+   "id": "kf-5",
+   "file": "090",
+   "col": "json_ko",
+   "from": "남기고, 적대행위 문장은 양군의 확인 전에는 원판에 옮기지 않는다.",
+   "to": "남긴다.",
+   "expect": 2
+  },
+  {
+   "id": "kf-6",
+   "file": "090",
+   "col": "json_ko",
+   "from": "양군의 공동 승인이 내려올 때까지 ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kf-7",
+   "file": "090",
+   "col": "json_ko",
+   "from": "면죄부가 되어 양군의 합의가 한쪽 군령만 남는 것.",
+   "to": "면죄부가 되는 것.",
+   "expect": 2
+  },
+  {
+   "id": "kf-8",
+   "file": "090",
+   "col": "json_ko",
+   "from": "정부 양군 공동실무",
+   "to": "정부",
+   "expect": 24
+  },
+  {
+   "id": "kf-9",
+   "file": "090",
+   "col": "json_ko",
+   "from": "양군 각국 ",
+   "to": "",
+   "expect": 6
+  },
+  {
+   "id": "kf-11",
+   "file": "090",
+   "col": "json_ko",
+   "from": "양군 ",
+   "to": "",
+   "expect": 42
+  },
+  {
+   "id": "kf-16",
+   "file": "090",
+   "col": "json",
+   "from": ", or refuse to hand over the bridge keys without the joint approval of both armies.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "kf-17",
+   "file": "090",
+   "col": "json",
+   "from": ", or decide whether to hang the peg key on a peg that both armies have jointly designated.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "kf-18",
+   "file": "090",
+   "col": "json",
+   "from": " and blocked armed outside approach without the joint approval of both armies.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "kf-19",
+   "file": "090",
+   "col": "json",
+   "from": " and struck armed outside approach from his testimony without the joint approval of both armies.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "kf-20",
+   "file": "090",
+   "col": "json",
+   "from": " and moved no hostile-action clause onto the master plate before both armies' confirmation.",
+   "to": ".",
+   "expect": 2
+  },
+  {
+   "id": "kf-21",
+   "file": "090",
+   "col": "json",
+   "from": " until the two armies' joint approval comes down",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "kf-22",
+   "file": "090",
+   "col": "json",
+   "from": "The Government Joint Two-Army Working Group",
+   "to": "The Government",
+   "expect": 18
+  },
+  {
+   "id": "kf-23",
+   "file": "090",
+   "col": "json",
+   "from": "a Two-Army Joint Working Staff member of The Government, practiced",
+   "to": "a member of The Government, practiced",
+   "expect": 2
+  },
+  {
+   "id": "kf-24",
+   "file": "090",
+   "col": "json",
+   "from": "is The Government Two-Army Joint Working Staff figure practiced",
+   "to": "is a figure of The Government who is practiced",
+   "expect": 1
+  },
+  {
+   "id": "kf-25",
+   "file": "090",
+   "col": "json",
+   "from": "a figure of the Government Two-Army Joint Working Office who",
+   "to": "a figure of the Government who",
+   "expect": 1
+  },
+  {
+   "id": "kf-26",
+   "file": "090",
+   "col": "json",
+   "from": "a Two-Army joint working figure of The Government who",
+   "to": "a figure of The Government who",
+   "expect": 1
+  },
+  {
+   "id": "kf-27",
+   "file": "090",
+   "col": "json",
+   "from": "a Two-Army joint-operations figure of The Government who",
+   "to": "a figure of The Government who",
+   "expect": 1
+  },
+  {
+   "id": "kf-29",
+   "file": "090",
+   "col": "json",
+   "from": "Two-Army Member-State ",
+   "to": "",
+   "expect": 6
+  },
+  {
+   "id": "kf-30",
+   "file": "090",
+   "col": "json",
+   "from": "Two-Army ",
+   "to": "",
+   "expect": 42
+  },
+  {
+   "id": "kf-43",
+   "file": "110",
+   "col": "json_ko",
+   "from": "양군 각국 ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kf-44",
+   "file": "110",
+   "col": "json_ko",
+   "from": "양군 공동호송 ",
+   "to": "공동호송 ",
+   "expect": 1
+  },
+  {
+   "id": "kf-45",
+   "file": "110",
+   "col": "json_ko",
+   "from": "양군 ",
+   "to": "",
+   "expect": 9
+  },
+  {
+   "id": "kf-46",
+   "file": "110",
+   "col": "json_ko",
+   "from": "중립시장 ",
+   "to": "시장 ",
+   "expect": 1
+  },
+  {
+   "id": "kf-47",
+   "file": "110",
+   "col": "json_ko",
+   "from": "중립 호송 약정 서명 서기",
+   "to": "호송 서명 서기",
+   "expect": 1
+  },
+  {
+   "id": "kf-48",
+   "file": "110",
+   "col": "json_ko",
+   "from": "중립 호송 서명·증인 대조",
+   "to": "호송 서명·증인 대조",
+   "expect": 2
+  },
+  {
+   "id": "kf-49",
+   "file": "110",
+   "col": "json_ko",
+   "from": "조약 초안 종료일",
+   "to": "초안 종료일",
+   "expect": 2
+  },
+  {
+   "id": "kf-62",
+   "file": "110",
+   "col": "json",
+   "from": "Two-Army Joint Escort Co-signing Assistant",
+   "to": "Joint Escort Signature Assistant",
+   "expect": 1
+  },
+  {
+   "id": "kf-63",
+   "file": "110",
+   "col": "json",
+   "from": "Two-Army Member-State ",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kf-64",
+   "file": "110",
+   "col": "json",
+   "from": "Two-Army ",
+   "to": "",
+   "expect": 8
+  },
+  {
+   "id": "kf-65",
+   "file": "110",
+   "col": "json",
+   "from": "Neutral Market Auction Failed-Bid Official",
+   "to": "Market Auction Failed-Bid Official",
+   "expect": 1
+  },
+  {
+   "id": "kf-66",
+   "file": "110",
+   "col": "json",
+   "from": "Neutral Escort Pact Signing Clerk",
+   "to": "Escort Signing Clerk",
+   "expect": 1
+  },
+  {
+   "id": "kf-67",
+   "file": "110",
+   "col": "json",
+   "from": "neutral-escort signing",
+   "to": "escort signing",
+   "expect": 2
+  },
+  {
+   "id": "kf-68",
+   "file": "110",
+   "col": "json",
+   "from": "treaty draft end date",
+   "to": "draft end date",
+   "expect": 2
+  },
+  {
+   "id": "kf-69",
+   "file": "121",
+   "col": "opening_state_ko",
+   "exact": true,
+   "from": "환승시 중립시장 선언은 제안이고, 남하 대기열은 아직 시장 바닥에 앉지 않았다.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "kf-70",
+   "file": "121",
+   "col": "opening_state",
+   "exact": true,
+   "from": "The Transfer City's neutral-market declaration is only a proposal, and the southbound queue has not yet settled onto the market floor.",
+   "to": "",
+   "expect": 1
+  }
+ ]
+}

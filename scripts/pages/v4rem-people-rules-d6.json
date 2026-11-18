@@ -1,0 +1,23 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0097",
+   "col": "json",
+   "from": "whether the same supply outage continues at other pumps",
+   "to": "whether the same stoppage continues at other pumps",
+   "expect": 1,
+   "id": "v4rem-people-d-1000"
+  },
+  {
+   "file": "090",
+   "key": "person-0651",
+   "col": "json",
+   "from": "whether the same supply outage continues at other pumps",
+   "to": "whether the same stoppage continues at other pumps",
+   "expect": 1,
+   "id": "v4rem-people-d-1001"
+  }
+ ]
+}

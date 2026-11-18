@@ -130,14 +130,6 @@ class SubwaySound {
     });
   }
 
-  /** Lower ambience while narration plays. */
-  duck(on: boolean) {
-    if (!this.ctx || !this.ambientGain) return;
-    const t = this.ctx.currentTime;
-    this.ambientGain.gain.cancelScheduledValues(t);
-    this.ambientGain.gain.setTargetAtTime(on ? 0.05 : 0.16, t, 0.25);
-  }
-
   setMuted(m: boolean) {
     this.muted = m;
     if (this.ctx && this.master) this.master.gain.setTargetAtTime(m ? 0 : 0.9, this.ctx.currentTime, 0.05);

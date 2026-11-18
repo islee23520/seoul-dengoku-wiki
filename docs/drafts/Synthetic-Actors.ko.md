@@ -1,11 +1,14 @@
 ---
-model: original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model
+title: Synthetic Humanoids
+title_ko: 합성 휴머노이드
+model: agent-authored by the v4-remaining todo 4 writer (Claude); 0 completion calls; replaces the earlier draft
 section_checkpoint: complete
 ---
-합성 행위자의 기체와 모듈은 보관 가문이 쥐지만, 상위 기능을 여는 제어 소프트웨어는 아크가 독점한다. 아크가 서명한 소프트웨어가 없으면 아래 기체들은 켜고 끄는 기초 기능과 단순한 명령만 받는다. 각 항목의 "정비"는 하드웨어 정비를 뜻한다.
+합성 휴머노이드는 아주 드물다. 서울의 공개 기록에서 말하고 판단하는 기계 몸으로 남은 것은 [이연](/wiki/people/person-1004/)뿐이다. 이연은 생물학적 특성을 지닌 합성 휴머노이드이고, 조재표의 명령을 전하고 해석하는 수행 전령이다. 다른 기계는 명령을 받아야만 움직이고, 상위 기능을 여는 소프트웨어는 아크가 쥔다.
 
 <a id="Synthetic-Actors-heading-0001"></a>
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0002"></a>
 
 ## H01 · 한누리 (누리)
@@ -28,7 +31,9 @@ section_checkpoint: complete
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0008"></a>
 
 ## H02 · 서린 (린)
@@ -51,7 +56,9 @@ section_checkpoint: complete
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0014"></a>
 
 ## H03 · 이도 (이도)
@@ -74,7 +81,9 @@ section_checkpoint: complete
 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0020"></a>
 
 ## H04 · 강별 (별)
@@ -97,7 +106,9 @@ section_checkpoint: complete
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0026"></a>
 
 ## H05 · 윤재 (재)
@@ -120,7 +131,9 @@ section_checkpoint: complete
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0032"></a>
 
 ## H06 · 박솔 (솔)
@@ -143,7 +156,9 @@ section_checkpoint: complete
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0038"></a>
 
 ## H07 · 정우람 (우람)
@@ -166,7 +181,9 @@ section_checkpoint: complete
 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0044"></a>
 
 ## H08 · 최다온 (다온)
@@ -189,7 +206,9 @@ section_checkpoint: complete
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0050"></a>
 
 ## H09 · 조하람 (하람)
@@ -212,7 +231,9 @@ section_checkpoint: complete
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0056"></a>
 
 ## H10 · 윤새론 (새론)
@@ -235,7 +256,9 @@ section_checkpoint: complete
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0062"></a>
 
 ## H11 · 김도하 (도하)
@@ -258,7 +281,9 @@ section_checkpoint: complete
 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0068"></a>
 
 ## H12 · 이채온 (채온)
@@ -281,7 +306,9 @@ section_checkpoint: complete
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0074"></a>
 
 ## H13 · 한빛나 (빛나)
@@ -304,7 +331,9 @@ section_checkpoint: complete
 충전 칸 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0080"></a>
 
 ## H14 · 오세림 (세림)
@@ -327,7 +356,9 @@ section_checkpoint: complete
 관측 난간 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0086"></a>
 
 ## H15 · 배수아 (수아)
@@ -350,7 +381,9 @@ section_checkpoint: complete
 공구 벽 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0092"></a>
 
 ## H16 · 신태율 (태율)
@@ -373,7 +406,9 @@ section_checkpoint: complete
 정비 벤치 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0098"></a>
 
 ## F01 · 냉각탑지기 (탑지)
@@ -396,7 +431,9 @@ section_checkpoint: complete
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0104"></a>
 
 ## F02 · 배전반이 (전반)
@@ -419,7 +456,9 @@ section_checkpoint: complete
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
 ## F03 · 정수여과 (여과)
@@ -442,7 +481,9 @@ section_checkpoint: complete
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0116"></a>
 
 ## F04 · 냉동창고 (냉창)
@@ -465,7 +506,9 @@ section_checkpoint: complete
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0122"></a>
 
 ## F05 · 송신중계 (중계)
@@ -488,7 +531,9 @@ section_checkpoint: complete
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0128"></a>
 
 ## F06 · 승강기축 (승축)
@@ -511,7 +556,9 @@ section_checkpoint: complete
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0134"></a>
 
 ## F07 · 보일러실 (보일)
@@ -534,7 +581,9 @@ section_checkpoint: complete
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0140"></a>
 
 ## F08 · 하수펌프 (하수)
@@ -557,7 +606,9 @@ section_checkpoint: complete
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0146"></a>
 
 ## F09 · 실험클린 (클린)
@@ -580,7 +631,9 @@ section_checkpoint: complete
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0152"></a>
 
 ## F10 · 물류분류 (분류)
@@ -603,7 +656,9 @@ section_checkpoint: complete
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0158"></a>
 
 ## F11 · 전력변압 (변압)
@@ -626,7 +681,9 @@ section_checkpoint: complete
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0164"></a>
 
 ## F12 · 환기덕트 (덕트)
@@ -649,7 +706,9 @@ section_checkpoint: complete
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0170"></a>
 
 ## F13 · 의료멸균 (멸균)
@@ -672,7 +731,9 @@ section_checkpoint: complete
 배전반 앞 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0176"></a>
 
 ## F14 · 인쇄기동 (인쇄)
@@ -695,7 +756,9 @@ section_checkpoint: complete
 필터 복도 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
 ## F15 · 급수계량 (계량)
@@ -718,7 +781,9 @@ section_checkpoint: complete
 제어 부스 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0188"></a>
 
 ## F16 · 터널환기 (터환)
@@ -741,7 +806,9 @@ section_checkpoint: complete
 기계실 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0194"></a>
 
 ## V01 · 새벽호송 (새벽)
@@ -764,7 +831,9 @@ section_checkpoint: complete
 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0200"></a>
 
 ## V02 · 순환버스 (순환)
@@ -787,7 +856,9 @@ section_checkpoint: complete
 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0206"></a>
 
 ## V03 · 화물트램 (트램)
@@ -810,7 +881,9 @@ section_checkpoint: complete
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0212"></a>
 
 ## V04 · 구경로봇 (구경로)
@@ -833,7 +906,9 @@ section_checkpoint: complete
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0218"></a>
 
 ## V05 · 레일견인 (견인)
@@ -856,7 +931,9 @@ section_checkpoint: complete
 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0224"></a>
 
 ## V06 · 배전트럭 (배전)
@@ -879,7 +956,9 @@ section_checkpoint: complete
 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0230"></a>
 
 ## V07 · 청소차륜 (청소)
@@ -902,7 +981,9 @@ section_checkpoint: complete
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0236"></a>
 
 ## V08 · 구급카트 (구급)
@@ -925,7 +1006,9 @@ section_checkpoint: complete
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0242"></a>
 
 ## V09 · 항만크레인 (크레인)
@@ -948,7 +1031,9 @@ section_checkpoint: complete
 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0248"></a>
 
 ## V10 · 도크셔틀 (도크)
@@ -971,7 +1056,9 @@ section_checkpoint: complete
 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0254"></a>
 
 ## V11 · 야간배차 (야배)
@@ -994,7 +1081,9 @@ section_checkpoint: complete
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0260"></a>
 
 ## V12 · 중장비팔 (중팔)
@@ -1017,7 +1106,9 @@ section_checkpoint: complete
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0266"></a>
 
 ## V13 · 터널보선 (보선)
@@ -1040,7 +1131,9 @@ section_checkpoint: complete
 적재 베이 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0272"></a>
 
 ## V14 · 교량점검 (교량)
@@ -1063,7 +1156,9 @@ section_checkpoint: complete
 점검 피트 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
 ## V15 · 수문카트 (수문)
@@ -1086,7 +1181,9 @@ section_checkpoint: complete
 충전 슬롯 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0284"></a>
 
 ## V16 · 비상견인 (비견)
@@ -1109,3 +1206,4 @@ section_checkpoint: complete
 회차선 경보가 울려도 전체 망 권한은 열지 않고 구역 키만 요청한다.
 
 부품이 바닥나도 다른 시설 제어권을 가로채지 않는다.
+<!-- private:end -->

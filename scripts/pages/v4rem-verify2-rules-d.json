@@ -1,0 +1,13 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v2d-1",
+   "file": "090",
+   "col": "json",
+   "from": "The community role is Branch Chief, and the duty is",
+   "to": "The duty is",
+   "expect": 1
+  }
+ ]
+}

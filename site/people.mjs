@@ -26,6 +26,8 @@ const AXIS = {
 const AXIS_NAME_EN = { '권위': 'Authority', '개방': 'Openness', '무력': 'Force', '물질': 'Material', '공동': 'Community', '원칙': 'Principle', '공개': 'Disclosure', '자격': 'Qualification', '분산': 'Decentralisation', '변혁': 'Transformation', '갈망': 'Craving', '독점': 'Exclusivity', '위험': 'Risk', '과시': 'Display', '지속': 'Persistence' };
 const ABILITY = { diplomacy: ['Diplomacy', '외교'], martial: ['Martial', '군사'], stewardship: ['Stewardship', '관리'], intrigue: ['Intrigue', '음모'], learning: ['Learning', '학식'], prowess: ['Prowess', '무용'] };
 const BODY = { 'left-arm': ['Left arm', '왼팔'], 'right-arm': ['Right arm', '오른팔'], 'left-leg': ['Left leg', '왼다리'], 'right-leg': ['Right leg', '오른다리'], head: ['Head', '머리'], torso: ['Torso', '몸통'] };
+// openingTitles[].rank keeps the stored scale enum values as data; the page shows the geographic scale (neighbourhood, district, planning area) each one stands for.
+const TITLE_SCALE = { barony: ['Neighbourhood', '동'], duchy: ['District', '구'], kingdom: ['Planning area', '권역'] };
 const SECTION_ORDER_KO = ['생애', '관직', '훈련', '호위 대열', '일화', '가문', '관계', '야망', '공포', '개입'];
 const SECTION_EN = { '생애': 'Life', '관직': 'Offices', '훈련': 'Training', '호위 대열': 'Guard Formation', '일화': 'Anecdote', '가문': 'Houses', '관계': 'Relationships', '야망': 'Ambition', '공포': 'Fear', '개입': 'Intervention' };
 const FAITH = { unknown: ['Unknown', '미확인'], christian: ['Christian', '기독교'], 'non-christian': ['Non-Christian', '비기독교'] };
@@ -34,30 +36,30 @@ const STR = {
   en: {
     profile: 'Abilities and Traits', ability: 'Ability', base: 'Base', final: 'Final', skills: 'Skills', skill: 'Skill', level: 'Level', traits: 'Traits', behavior: 'Behavior', stress: 'Stress', relationship: 'Relationship', health: 'Physical condition', unassessed: 'Physical condition has not been assessed yet.', part: 'Part', severity: 'Severity',
     abilityNote: 'A base ability of 10 is a trained practitioner. The base cap is 20 and the final cap, with every effect applied, is 100.',
-    basics: 'Basic Information', name: 'Name', state: 'Organization', stateId: 'State ID', faction: 'Faction', birth: 'Date of birth', age: 'Age', ageAsOf: 'Age as of', position: 'Position', tier: 'Common tier', rank: 'State rank', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', generation: 'Generation',
-    relations: 'Relationships and Ties', liege: 'Direct liege', contact: 'Work contact', courtVassal: 'Court vassal', canon: 'Canonical Detail', fullCard: 'Full canonical card text',
+    basics: 'Basic Information', name: 'Name', state: 'Organization', faction: 'Faction', birth: 'Date of birth', age: 'Age', ageAsOf: 'Age as of', position: 'Position', tier: 'Common tier', rank: 'Rank', occupation: 'Occupation', gender: 'Gender', stage: 'Stage', generation: 'Generation',
+    relations: 'Relationships and Ties', liege: 'Direct superior', contact: 'Work contact', courtVassal: 'Direct subordinate', canon: 'Canonical Detail', fullCard: 'Full canonical card text',
     values: 'Values', desire: 'Desire', orientation: 'Orientation', union: 'Union', household: 'Household and Faith', personFaith: 'Personal faith', houseFaith: 'House faith', humanoid: 'Humanoid admission to the household', humanoidExcluded: 'Excluded by the political power the person belongs to', humanoidReview: 'Reviewed individually',
-    titles: 'Opening Territorial Titles and Superior Jurisdiction', holdings: 'Directly Held Domains and Facilities', subHoldings: 'Domains Held by Vassals of this District', retinue: 'Retinue',
+    titles: 'Opening Jurisdictions and Superior Authority', holdings: 'Directly Held Domains and Facilities', subHoldings: 'Domains Held by Subordinates in this District', retinue: 'Retinue',
     clanLine: (n) => `${n} family tree`, noClan: 'No bongwan (clan seat)', family: 'Family tree', crest: 'crest',
     permissions: 'Name and Likeness Permission', nameUse: 'Name use', likenessUse: 'Likeness use', granted: 'Granted', recorded: 'Recorded on', yes: 'yes', none: 'none',
     clanIndex: 'Clan Index', clanLead: (c, n) => `${c} bongwan clans with ${n} recorded members. Each clan page lists its members and family tree.`, nonKorean: 'Families Without a Bongwan', nonKoreanLead: 'These families do not use a Korean clan seat or generation names.',
     members: (n) => `Family members (${n})`, branches: 'Re-agreed branches', treeTitle: 'Family tree', generation_n: (n) => `Generation ${n}`, unknownParent: 'Parent not recorded', person: 'Person', historical: 'Historical ancestor', preserved: 'preserved', authored: 'authored', bio: 'born', died: 'died', open: 'open page',
-    peopleTitle: 'People', search: 'Search', searchPh: 'e.g. Yun Seorin, water supply, S04', filters: 'People filters', all: 'All', reset: 'Reset filters', resultCount: (n) => `${n} results`, sortHint: 'Sorted by name',
+    peopleTitle: 'People', search: 'Search', searchPh: 'e.g. Yun Seorin, station master, Arc', filters: 'People filters', all: 'All', reset: 'Reset filters', resultCount: (n) => `${n} results`, sortHint: 'Sorted by name',
     f: { faction: 'Faction', state: 'Organization', tier: 'Rank (common tier)', occupation: 'Occupation', gender: 'Gender' }, cols: { name: 'Name', title: 'Title', state: 'Organization', occupation: 'Occupation', rank: 'Rank' },
     noscript: 'Filtering needs JavaScript; the full list is below.', unregistered: 'Unregistered',
   },
   ko: {
     profile: '역량과 특성', ability: '역량', base: '기본', final: '최종', skills: '행동 숙련', skill: '숙련', level: '수준', traits: '특성', behavior: '행동', stress: '스트레스', relationship: '관계', health: '신체 상태', unassessed: '신체 상태는 아직 평가되지 않았습니다.', part: '부위', severity: '손상 정도',
     abilityNote: '기본 역량 10은 해당 분야 숙련자 수준입니다. 기본 상한은 20, 모든 효과를 반영한 최종 상한은 100입니다.',
-    basics: '기본 정보', name: '이름', state: '소속 단체', stateId: '국가 ID', faction: '세력', birth: '생년월일', age: '만 나이', ageAsOf: '나이 기준일', position: '직위', tier: '직급(공통 티어)', rank: '국가 품계', occupation: '직업', gender: '성별', stage: '단계', generation: '세대',
-    relations: '관계와 접점', liege: '직속 주군', contact: '업무 접점', courtVassal: '궁정 가신', canon: '정본 상세', fullCard: '정본 카드 원문 전체',
+    basics: '기본 정보', name: '이름', state: '소속 단체', faction: '세력', birth: '생년월일', age: '만 나이', ageAsOf: '나이 기준일', position: '직위', tier: '직급(공통 티어)', rank: '품계', occupation: '직업', gender: '성별', stage: '단계', generation: '세대',
+    relations: '관계와 접점', liege: '직속 상관', contact: '업무 접점', courtVassal: '직속 부하', canon: '정본 상세', fullCard: '정본 카드 원문 전체',
     values: '가치관', desire: '욕망', orientation: '지향', union: '결합', household: '가정과 신앙', personFaith: '개인 신앙', houseFaith: '가문 신앙', humanoid: '휴머노이드 가정 반입', humanoidExcluded: '소속 정치 세력의 반입 배제', humanoidReview: '개별 심사',
-    titles: '개막 영토 작위와 상위 관할', holdings: '직접 보유 영지와 시설', subHoldings: '구 내 봉신 보유 영지', retinue: '가신단',
+    titles: '개막 관할과 상위 권한', holdings: '직접 보유 영지와 시설', subHoldings: '구 내 하위 보유자 영지', retinue: '수행단',
     clanLine: (n) => `${n} 가계도`, noClan: '본관 없음', family: '가계도', crest: '문장',
     permissions: '이름·초상 사용 허가', nameUse: '이름 사용', likenessUse: '초상 사용', granted: '허가됨', recorded: '기록일', yes: '예', none: '없음',
     clanIndex: '본관 가문 색인', clanLead: (c, n) => `본관 가문 ${c}개, 등록 인물 ${n}명. 각 가문 페이지에서 구성원과 가계도를 볼 수 있습니다.`, nonKorean: '본관을 적용하지 않는 가계', nonKoreanLead: '한국 문중의 본관이나 항렬을 적용하지 않는 가계입니다.',
     members: (n) => `가문 인물 (${n}명)`, branches: '재합의한 가계', treeTitle: '가계도', generation_n: (n) => `${n}세대`, unknownParent: '부모 미기록', person: '인물', historical: '역사 속 선대', preserved: '보존', authored: '저작', bio: '출생', died: '사망', open: '페이지 열기',
-    peopleTitle: '인물', search: '검색', searchPh: '예: 윤서린, 급수, S4', filters: '등장인물 필터', all: '전체', reset: '필터 초기화', resultCount: (n) => `검색 결과 ${n}명`, sortHint: '이름순',
+    peopleTitle: '인물', search: '검색', searchPh: '예: 윤서린, 역장, 아크', filters: '등장인물 필터', all: '전체', reset: '필터 초기화', resultCount: (n) => `검색 결과 ${n}명`, sortHint: '이름순',
     f: { faction: '세력', state: '소속 단체', tier: '직급(공통 티어)', occupation: '직업', gender: '성별' }, cols: { name: '이름', title: '직함', state: '소속 단체', occupation: '직업', rank: '직급' },
     noscript: '필터는 자바스크립트가 필요합니다. 전체 목록은 아래에 있습니다.', unregistered: '미등록',
   },
@@ -66,6 +68,8 @@ const STR = {
 const esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const cell = (s) => String(s ?? '').replaceAll('|', '\\|').replaceAll('\n', ' ').replace(/</g, '&lt;');
 const hasText = (v) => v !== null && v !== undefined && v !== '';
+// Holding names are stored as { ko: '...' } objects in most rows and as plain strings in a few; show the string either way.
+const holdingName = (n) => (n && typeof n === 'object' ? n.ko : n);
 
 function axisRows(entries, meta, i, ko) {
   return entries.filter(([k, v]) => typeof v === 'number' && meta[k]).map(([k, v]) => {
@@ -94,6 +98,11 @@ function withoutPrivate(d) {
 }
 
 /** One person page (Markdown with embedded HTML blocks). `d` is the parsed detail JSON for the locale; `p` the roster row. */
+// Some person_detail field names still carry an old feudal term. The JSON keys stay as stored data;
+// only the label shown on the page is mapped to the v4 wording (품계 / Rank).
+const FIELD_LABEL = { '봉건 작위': '품계', '봉건 품계': '품계', 'Feudal Title': 'Rank', 'Feudal Rank': 'Rank' };
+const fieldLabel = (k) => FIELD_LABEL[k] ?? k;
+
 export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factionName, clan }) {
   const d = withoutPrivate(rawD), dKo = withoutPrivate(rawDKo);
   const S = ko ? STR.ko : STR.en;
@@ -103,12 +112,12 @@ export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factio
   if (clan) out.push(`<p class="person-clan-line"><img src="/clan-crests/${clan.id}.svg" alt="${esc(L('name'))} ${S.crest}" width="48" height="48" loading="lazy" onerror="this.remove()"> <a href="${P(`wiki/families/${clan.id}/`)}">${esc(S.clanLine(ko ? `${clan.bongwan_ko} ${clan.surname_ko}씨` : `${clan.bongwan} ${clan.surname}`))}</a></p>\n`);
   else if (d) out.push(`<p class="person-clan-line">${esc(S.noClan)}</p>\n`);
   const rows = [
-    [S.name, L('name')], [S.state, stateRow ? cell(g(stateRow, 'name')) : cell(L('state_name'))], [S.stateId, p.state_id],
+    [S.name, L('name')], [S.state, stateRow ? cell(g(stateRow, 'name')) : cell(L('state_name'))],
     [S.faction, `[${cell(factionName(p.faction_id))}](${P(`wiki/factions/${p.faction_id}/`)})`],
     ...(d?.birthDate ? [[S.birth, d.birthDate], [S.age, d.age], [S.ageAsOf, d.ageAsOf]] : []),
     [S.position, L('position')], [S.tier, p.tier], [S.rank, L('rank')], [S.occupation, L('occupation')], [S.gender, L('gender')], [S.stage, L('stage')],
     ...(d?.generation ? [[S.generation, d.generation]] : []),
-    ...Object.entries(d?.fields ?? {}).filter(([k]) => !['가치관', '욕망', '직위', '소속', 'Values', 'Desire', 'Position', 'Affiliation'].includes(k)).map(([k, v]) => [k, v]),
+    ...Object.entries(d?.fields ?? {}).filter(([k]) => !['가치관', '욕망', '직위', '소속', 'Values', 'Desire', 'Position', 'Affiliation'].includes(k)).map(([k, v]) => [fieldLabel(k), v]),
   ].filter(([, v]) => hasText(v));
   out.push(`## ${S.basics}\n\n| ${ko ? '항목' : 'Field'} | ${ko ? '값' : 'Value'} |\n| --- | --- |\n${rows.map(([k, v]) => `| ${cell(k)} | ${/^\[.*\]\(.*\)$/.test(String(v)) ? v : cell(v)} |`).join('\n')}\n`);
   if (!d) return out.join('\n');
@@ -120,7 +129,7 @@ export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factio
     const abilityRows = Object.entries(ABILITY).filter(([k]) => prof.abilities?.[k]).map(([k, [en, kor]]) => `| ${ko ? kor : en} | ${prof.abilities[k].base} | ${prof.abilities[k].effective} |`);
     out.push(`| ${S.ability} | ${S.base} | ${S.final} |\n| --- | --- | --- |\n${abilityRows.join('\n')}\n\n${S.abilityNote}\n`);
     if (prof.skills?.length) out.push(`### ${S.skills}\n\n| ${S.skill} | ${S.level} |\n| --- | --- |\n${prof.skills.map((s) => `| ${cell(s.name)} | ${s.rating} |`).join('\n')}\n`);
-    if (prof.traits?.length) out.push(`### ${S.traits}\n\n${prof.traits.map((t) => `#### ${t.name}\n\n${cell(t.description)}\n\n- **${S.behavior}:** ${cell(t.behavior)}\n- **${S.stress}:** ${cell(t.stress)}\n- **${S.relationship}:** ${cell(t.relationship)}\n`).join('\n')}`);
+    if (prof.traits?.length) out.push(`### ${S.traits}\n\n${prof.traits.map((t) => `#### ${t.name}\n\n${cell(t.description)}\n\n- **${S.behavior}:** ${cell(t.behavior)}\n${[[S.stress, t.stress], [S.relationship, t.relationship]].filter(([, v]) => hasText(v)).map(([k, v]) => `- **${k}:** ${cell(v)}\n`).join('')}`).join('\n')}`);
     if (prof.health) out.push(`<details><summary>${S.health}</summary>\n\n${prof.health.status === 'unassessed' ? S.unassessed : cell(prof.health.status)}\n\n</details>\n`);
   }
   const rel = [];
@@ -141,10 +150,10 @@ export function personPage({ p, d: rawD, dKo: rawDKo, ko, g, P, stateRow, factio
     const f = (v) => (FAITH[v] ?? [v, v])[ko ? 1 : 0];
     out.push(`## ${S.household}\n\n| ${ko ? '항목' : 'Field'} | ${ko ? '값' : 'Value'} |\n| --- | --- |\n| ${S.personFaith} | ${f(d.household.personFaith)} |\n| ${S.houseFaith} | ${f(d.household.houseFaith)} |\n| ${S.humanoid} | ${d.household.humanoidAdmission === 'excluded' ? S.humanoidExcluded : S.humanoidReview} |\n`);
   }
-  if (d.openingTitles?.length) out.push(`## ${S.titles}\n\n${d.openingTitles.map((t) => `- **${cell(t.name)}** (${cell(t.rank)})${t.basis ? ` — ${cell(t.basis)}` : ''}`).join('\n')}\n`);
+  if (d.openingTitles?.length) out.push(`## ${S.titles}\n\n${d.openingTitles.map((t) => `- **${cell(t.name)}** (${cell((TITLE_SCALE[t.rank] ?? [t.rank, t.rank])[ko ? 1 : 0])})${t.basis ? ` — ${cell(t.basis)}` : ''}`).join('\n')}\n`);
   for (const grp of d.retinueGroups ?? []) out.push(`## ${cell(grp.name)}\n\n${grp.count} · ${(grp.duties ?? []).map(cell).join(' · ')}\n`);
-  if (d.confirmedHoldings?.length) out.push(`## ${S.holdings}\n\n${d.confirmedHoldings.map((h) => `### ${cell(h.name)}\n\n${h.stationRef ? `${cell(h.stationRef.stationName)}\n\n` : ''}${(h.adminRefs ?? []).length ? `${h.adminRefs.map((r) => `- ${cell(r.name)}`).join('\n')}\n` : ''}${h.facilityRef ? `\n${cell(h.facilityRef.stationName)} · ${cell(h.facilityRef.layerName)}\n` : ''}`).join('\n')}`);
-  if (d.subordinateHoldings?.length) out.push(`## ${S.subHoldings}\n\n${d.subordinateHoldings.map((h) => `### ${cell(h.name)}\n\n${cell(h.holderName ?? '')}\n`).join('\n')}`);
+  if (d.confirmedHoldings?.length) out.push(`## ${S.holdings}\n\n${d.confirmedHoldings.map((h) => `### ${cell(holdingName(h.name))}\n\n${h.stationRef ? `${cell(h.stationRef.stationName)}\n\n` : ''}${(h.adminRefs ?? []).length ? `${h.adminRefs.map((r) => `- ${cell(r.name)}`).join('\n')}\n` : ''}${h.facilityRef ? `\n${cell(h.facilityRef.stationName)} · ${cell(h.facilityRef.layerName)}\n` : ''}`).join('\n')}`);
+  if (d.subordinateHoldings?.length) out.push(`## ${S.subHoldings}\n\n${d.subordinateHoldings.map((h) => `### ${cell(holdingName(h.name))}\n\n${cell(h.holderName ?? '')}\n`).join('\n')}`);
   const src = dKo ?? d;
   const vals = axisRows(Object.entries(src.values ?? {}), AXIS.values, 0, ko);
   const des = axisRows(Object.entries(src.desire ?? {}), AXIS.desire, 0, ko);

@@ -1,0 +1,2666 @@
+{
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**공포.** 회의가 결렬되면 연구자 명단이 세력별 인질 할당표가 되고, 서기가 그 표의 필적이 되는 것.",
+   "to": "",
+   "id": "k1d-001",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Fear.** If the conference collapses, the researcher roster becomes a faction-by-faction hostage allocation table, and the clerk becomes the handwriting on that table.",
+   "to": "",
+   "id": "k1d-002",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.공포$",
+   "exact": true,
+   "from": "회의가 결렬되면 연구자 명단이 세력별 인질 할당표가 되고, 서기가 그 표의 필적이 되는 것.",
+   "to": "",
+   "id": "k1d-003",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Fear$",
+   "exact": true,
+   "from": "If the conference collapses, the researcher roster becomes a faction-by-faction hostage allocation table, and the clerk becomes the handwriting on that table.",
+   "to": "",
+   "id": "k1d-004",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**야망.** 세 장의 유언과 음성 원본이 같은 날 같은 심사석에 닿게 해, 어느 세력도 호송 순서로 진본을 고르지 못하게 한다.",
+   "to": "",
+   "id": "k1d-005",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Ambition.** She means to have the three wills and the original audio reach the same review bench on the same day, so that no other faction can pick the authentic original through convoy order.",
+   "to": "",
+   "id": "k1d-006",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "세 장의 유언과 음성 원본이 같은 날 같은 심사석에 닿게 해, 어느 세력도 호송 순서로 진본을 고르지 못하게 한다.",
+   "to": "",
+   "id": "k1d-007",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "She means to have the three wills and the original audio reach the same review bench on the same day, so that no other faction can pick the authentic original through convoy order.",
+   "to": "",
+   "id": "k1d-008",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**야망.** 노량진 호송선단을 상인들이 몫을 내어 꾸리는 시장 자체 호송의 실무 뼈대로 키워, 다른 세력 호위병에게 내는 호송료를 시장 자경으로 대체한다.",
+   "to": "",
+   "id": "k1d-009",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Ambition.** Grows the Noryangjin convoy fleet into the working backbone of a market-run convoy funded by merchants' shares, replacing the escort fees paid to other factions' guards with market self-defense.",
+   "to": "",
+   "id": "k1d-010",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "노량진 호송선단을 상인들이 몫을 내어 꾸리는 시장 자체 호송의 실무 뼈대로 키워, 다른 세력 호위병에게 내는 호송료를 시장 자경으로 대체한다.",
+   "to": "",
+   "id": "k1d-011",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "Grows the Noryangjin convoy fleet into the working backbone of a market-run convoy funded by merchants' shares, replacing the escort fees paid to other factions' guards with market self-defense.",
+   "to": "",
+   "id": "k1d-012",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**야망.** 회의의 식량 호송을 화주 지분이 아니라 상호호송 규정의 실무로 묶어, 청량리가 세력별로 짐을 갈라 가져가는 하역장이 되지 않게 한다.",
+   "to": "",
+   "id": "k1d-013",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Ambition.** Binds the Council's food convoy to the practical work of the Mutual Convoy rules rather than to cargo owner shares, so that Cheongnyangni does not become a yard where factions carve up the freight.",
+   "to": "",
+   "id": "k1d-014",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "회의의 식량 호송을 화주 지분이 아니라 상호호송 규정의 실무로 묶어, 청량리가 세력별로 짐을 갈라 가져가는 하역장이 되지 않게 한다.",
+   "to": "",
+   "id": "k1d-015",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "Binds the Council's food convoy to the practical work of the Mutual Convoy rules rather than to cargo owner shares, so that Cheongnyangni does not become a yard where factions carve up the freight.",
+   "to": "",
+   "id": "k1d-016",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**야망.** 의료 우선 호송의 선두 칸을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명하려 한다.",
+   "to": "",
+   "id": "k1d-017",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Ambition.** Seeks to have the Sinnae escort unit take the lead car of the medical-priority escort, proving the strength of the Northeast Corridor without escort fees.",
+   "to": "",
+   "id": "k1d-018",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "의료 우선 호송의 선두 칸을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명하려 한다.",
+   "to": "",
+   "id": "k1d-019",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "Seeks to have the Sinnae escort unit take the lead car of the medical-priority escort, proving the strength of the Northeast Corridor without escort fees.",
+   "to": "",
+   "id": "k1d-020",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**야망.** 의료 우선 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명하려 한다.",
+   "to": "",
+   "id": "k1d-021",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Ambition.** He wants the Sinnae escort to take over the outer patrol of the medical-priority escort, proving the strength of the toll-free Northeast Corridor.",
+   "to": "",
+   "id": "k1d-022",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "의료 우선 호송의 외곽 순찰을 신내 호송대가 맡아 호송료 없는 동북 회랑의 실력을 증명하려 한다.",
+   "to": "",
+   "id": "k1d-023",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "He wants the Sinnae escort to take over the outer patrol of the medical-priority escort, proving the strength of the toll-free Northeast Corridor.",
+   "to": "",
+   "id": "k1d-024",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**야망.** 북동부 시장의 환승 중계를 공개 시세로 묶어 호송료 없는 화물 순서를 고정하려 한다.",
+   "to": "",
+   "id": "k1d-025",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Ambition.** He means to bind the transfer relay of the northeastern market to public prices and so fix a freight order that carries no escort fee.",
+   "to": "",
+   "id": "k1d-026",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "북동부 시장의 환승 중계를 공개 시세로 묶어 호송료 없는 화물 순서를 고정하려 한다.",
+   "to": "",
+   "id": "k1d-027",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "He means to bind the transfer relay of the northeastern market to public prices and so fix a freight order that carries no escort fee.",
+   "to": "",
+   "id": "k1d-028",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**야망.** 망우 승강장을 누구에게나 열린 환승의 얼굴로 남겨 노선 면허 밖의 호송료 창구를 승강장에 열지 못하게 하려 한다.",
+   "to": "",
+   "id": "k1d-029",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Ambition.** Seeks to keep the Mangu platform as the face of open transfer, so that no escort-fee counter outside the route license can be opened on the platform.",
+   "to": "",
+   "id": "k1d-030",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "망우 승강장을 누구에게나 열린 환승의 얼굴로 남겨 노선 면허 밖의 호송료 창구를 승강장에 열지 못하게 하려 한다.",
+   "to": "",
+   "id": "k1d-031",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "Seeks to keep the Mangu platform as the face of open transfer, so that no escort-fee counter outside the route license can be opened on the platform.",
+   "to": "",
+   "id": "k1d-032",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**야망.** 이 시장을 환승 중계의 공개 시세 거점으로 남겨 노선 면허 밖의 호송료가 시장 칸을 사지 못하게 하려 한다.",
+   "to": "",
+   "id": "k1d-033",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Ambition.** Wants to keep this market as a public-price base for transfer relays, so that escort fees from outside route licenses cannot buy up the market's bays.",
+   "to": "",
+   "id": "k1d-034",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.야망$",
+   "exact": true,
+   "from": "이 시장을 환승 중계의 공개 시세 거점으로 남겨 노선 면허 밖의 호송료가 시장 칸을 사지 못하게 하려 한다.",
+   "to": "",
+   "id": "k1d-035",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Ambition$",
+   "exact": true,
+   "from": "Wants to keep this market as a public-price base for transfer relays, so that escort fees from outside route licenses cannot buy up the market's bays.",
+   "to": "",
+   "id": "k1d-036",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json_ko",
+   "from": "완전한 청렴이나 제도 설계 능력으로",
+   "to": "완전한 청렴으로",
+   "id": "k1d-037",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0007",
+   "col": "json",
+   "from": "flawless integrity or institution-building mastery",
+   "to": "flawless integrity",
+   "id": "k1d-038",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json_ko",
+   "from": "한재목의 부품 배분 구역 확대안을 봉인 상태로만 나르며, 윤서린에게",
+   "to": "윤서린에게",
+   "id": "k1d-039",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "from": "carrying Han Jaemok's parts-allocation district expansion proposal only under seal, and weighing",
+   "to": "and weighing",
+   "id": "k1d-040",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "from": "to carry Han Jaemok's parts-allocation district expansion proposal only under seal, and to weigh",
+   "to": "and to weigh",
+   "id": "k1d-041",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|behavior)$",
+   "exact": true,
+   "from": "부품 배분 구역 확대안 자체는 거부하지 않고 봉인 상태로 나른다.",
+   "to": "계약 전갈을 봉인 상태로 전달한다.",
+   "id": "k1d-042",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.(description|behavior)$",
+   "exact": true,
+   "from": "Carries district-expansion proposals under seal rather than rejecting them.",
+   "to": "Delivers contract messages under seal.",
+   "id": "k1d-043",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한재목의 부품 배분 구역 확대안을 봉인 상태로만 나르며",
+   "to": "",
+   "id": "k1d-044",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "While carrying Han Jaemok's proposal to expand the parts-allocation district only in sealed form",
+   "to": "",
+   "id": "k1d-045",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json_ko",
+   "from": "위조 전갈을 찾아 그의 봉인을 지키거나, 가방 속 보류 문서를 폭로해 확대안을 무력화할 수 있다.",
+   "to": "위조 전갈을 찾아 그의 봉인을 지킬 수 있다.",
+   "id": "k1d-046",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0014",
+   "col": "json",
+   "from": "You can find the forged dispatch and protect his seal, or expose the held document in the bag and neutralize the expansion proposal.",
+   "to": "You can find the forged dispatch and protect his seal.",
+   "id": "k1d-047",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json_ko",
+   "from": "폐쇄 연구파가 인증 도장을 몸값 흥정의 문턱으로 쓸 우려가 있다면 공개 원장",
+   "to": "공개 원장",
+   "id": "k1d-048",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "If a closed research faction might use the certification seal as the threshold for ransom bargaining, she may",
+   "to": "She may",
+   "id": "k1d-049",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json_ko",
+   "from": "인증이 몸값 흥정의 문턱으로 변할 우려가 있다면 현장",
+   "to": "현장",
+   "id": "k1d-050",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "If certification risks becoming a threshold for ransom bargaining, she may be",
+   "to": "She may be",
+   "id": "k1d-051",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json_ko",
+   "from": "폐쇄 연구파가 인증 도장을 몸값 흥정의 문턱으로 삼아 평의회를 장악하고, 인증이 필요한 기술자가",
+   "to": "폐쇄 연구파가 평의회를 장악해 기술자가",
+   "id": "k1d-052",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0059",
+   "col": "json",
+   "from": "That a closed research faction will seize the council and turn the certification seal into the threshold for ransom bargaining, putting engineers who need certification back",
+   "to": "That a closed research faction will seize the council, putting engineers back",
+   "id": "k1d-053",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "화물의 출처와 순서가 공개로 지켜진다면 최은재의",
+   "to": "최은재의",
+   "id": "k1d-054",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "He may maintain certification-linked dispatch cooperation with Choi Eunjae when cargo origin and queue order stay public.",
+   "to": "He may maintain certification-linked dispatch cooperation with Choi Eunjae.",
+   "id": "k1d-055",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "배차망이 군 병력 집결의 발판이 될 우려가 있다면 공개 순서",
+   "to": "공개 순서",
+   "id": "k1d-056",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "If the dispatch network risks becoming a foothold for troop assembly, he may seek",
+   "to": "He may seek",
+   "id": "k1d-057",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "기술 인증 화물만 오가는 공개 배차망으로 만들어, 어느 세력의 화물이든 인증 순서대로 서게 하고 공동기술원장의 동맥이 된다.",
+   "to": "기술 인증 화물만 오가게 하여 공동기술원장의 동맥이 된다.",
+   "id": "k1d-058",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "into a public dispatch network that only technically certified cargo travels, queuing every faction's freight in certification order and becoming",
+   "to": "so that only technically certified cargo travels, becoming",
+   "id": "k1d-059",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "위장 화차의 실화주를 밝히거나, 공개 배차망 조항에 서명할 증인을 호송할 수 있다.",
+   "to": "위장 화차의 실화주를 밝힐 수 있다.",
+   "id": "k1d-060",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "Can expose the real owner of a disguised wagon, or escort a witness to sign the public dispatch network clause.",
+   "to": "Can expose the real owner of a disguised wagon.",
+   "id": "k1d-061",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json_ko",
+   "from": "군사 집결지가 되어 기지가 무장한 외부인의 주둔 발판으로 팔리는 것.",
+   "to": "군사 집결지가 되는 것.",
+   "id": "k1d-062",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0062",
+   "col": "json",
+   "from": "will become a military assembly point and the base will be sold off as a garrison foothold for armed outsiders.",
+   "to": "will become a military assembly point.",
+   "id": "k1d-063",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json_ko",
+   "from": "정비창이 군 병력 집결의 발판으로 팔릴 우려가 있다면 인증이",
+   "to": "인증이",
+   "id": "k1d-064",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "If the workshop risks being sold as a foothold for troop assembly, he may block",
+   "to": "He may block",
+   "id": "k1d-065",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json_ko",
+   "from": "유민호의 공개 배차망을 지킬 수 있다면 인증된 연구차량 정비로 협력을 이어갈 수 있다.",
+   "to": "인증된 연구차량 정비로 유민호와 협력을 이어갈 수 있다.",
+   "id": "k1d-066",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "He may continue supporting Yu Minho through certified research-vehicle maintenance when it keeps the dispatch network public.",
+   "to": "He may continue supporting Yu Minho through certified research-vehicle maintenance.",
+   "id": "k1d-067",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json_ko",
+   "from": "군사 집결지가 되어 정비창이 무장한 외부인의 주둔 발판으로 팔리는 것.",
+   "to": "군사 집결지가 되는 것.",
+   "id": "k1d-068",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0066",
+   "col": "json",
+   "from": "will become a military assembly point and the maintenance yard will be sold off as a garrison foothold for armed outsiders.",
+   "to": "will become a military assembly point.",
+   "id": "k1d-069",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "류은비에게 표본을 맡길 때 치료 기록과 봉인 보존이 함께 지켜지는지를",
+   "to": "류은비에게 표본을 맡길 때 봉인 보존이 지켜지는지를",
+   "id": "k1d-070",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "both treatment records and intact seals",
+   "to": "intact seals",
+   "id": "k1d-071",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "류은비의 치료 기록에 표본을 맡기고",
+   "to": "류은비에게 표본을 맡기고",
+   "id": "k1d-072",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "Ryu Eunbi's treatment records",
+   "to": "Ryu Eunbi",
+   "id": "k1d-073",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "제조 경로와 숨겨 둔 약품 창고를 공개 원장",
+   "to": "제조 경로를 공개 원장",
+   "id": "k1d-074",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "manufacturing routes and the hidden medicine warehouse on",
+   "to": "manufacturing routes on",
+   "id": "k1d-075",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "production routes and hidden medicine warehouses",
+   "to": "production routes",
+   "id": "k1d-076",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json_ko",
+   "from": "병세보다 먼저 보고, 효능을 몸값 흥정의 밑천으로 삼는 중개인을 도둑으로 본다.",
+   "to": "병세보다 먼저 본다.",
+   "id": "k1d-077",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0080",
+   "col": "json",
+   "from": "before the severity of the illness, and regards brokers who use efficacy as a ransom bargaining chip as thieves.",
+   "to": "before the severity of the illness.",
+   "id": "k1d-078",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json_ko",
+   "from": "의료 경력 전반이나 계약 체결권은 만들지 않는다.",
+   "to": "의료 경력 전반을 만들지 않는다.",
+   "id": "k1d-079",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "from": "not a full medical career or contract-signing authority.",
+   "to": "not a full medical career.",
+   "id": "k1d-080",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json_ko",
+   "from": "연구자 명단이 세력별 인질 할당표가 될 우려가 있으면 불완전한",
+   "to": "불완전한",
+   "id": "k1d-081",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0083",
+   "col": "json",
+   "from": "If researcher lists risk becoming faction-by-faction hostage allocation tables, Yeo Dasom may be",
+   "to": "Yeo Dasom may be",
+   "id": "k1d-082",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "exact": true,
+   "from": "호송 순서 균등",
+   "to": "유언 증거 봉함 호송",
+   "id": "k1d-083",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "exact": true,
+   "from": "Even Convoy Order",
+   "to": "Sealed Escort of Will Evidence",
+   "id": "k1d-084",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json_ko",
+   "from": "고서준의 능선 정찰과 통행을 경쟁하며, 장세화의 의료열차 우선 통행 지시를 마지막 예외로 남겨 불신과 빚이 겹친다.",
+   "to": "고서준의 능선 정찰과 통행을 경쟁한다.",
+   "id": "k1d-085",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "Executed Bae Woojin's bridge command, competed with Go Seojun's ridge reconnaissance over passage, and left Jang Sehwa's medical-train priority-passage order as the last exception, layering distrust and debt.",
+   "to": "Executed Bae Woojin's bridge command and competed with Go Seojun's ridge reconnaissance over passage.",
+   "id": "k1d-086",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "Carries out Bae Ujin's bridge command, competes with Go Seojun's ridge reconnaissance over passage, and leaves Jang Sehwa's medical-train priority-passage order as the last exception, so distrust and debt overlap.",
+   "to": "Carries out Bae Ujin's bridge command and competes with Go Seojun's ridge reconnaissance over passage.",
+   "id": "k1d-087",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료열차 우선 통행 지시를 마지막 예외로 남긴 빚",
+   "to": "",
+   "id": "k1d-088",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A debt from leaving the medical-train priority-passage order as the last exception",
+   "to": "",
+   "id": "k1d-089",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json_ko",
+   "from": "봉쇄대 단일 시계로 묶어 다리 통행을 열고 닫는 물리적 열쇠를 쥔다.",
+   "to": "봉쇄대 단일 시계로 묶는다.",
+   "id": "k1d-090",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0120",
+   "col": "json",
+   "from": "single clock, holding the physical key to opening and closing bridge passage.",
+   "to": "single clock.",
+   "id": "k1d-091",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json_ko",
+   "from": " 정비 창구를 통행료 창구로 바꾸라는 명령을 수치로 여긴다.",
+   "to": "",
+   "id": "k1d-092",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": " He took as disgrace the order to turn the maintenance window into a toll window.",
+   "to": "",
+   "id": "k1d-093",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": " Regards an order to turn the maintenance counter into a toll counter as a disgrace.",
+   "to": "",
+   "id": "k1d-094",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json_ko",
+   "from": "외곽 진입로만 내주는 빈 껍데기 순찰이 되는 것.",
+   "to": "외곽 진입로만 내주는 것.",
+   "id": "k1d-095",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "only the outer approach roads would be given away — a hollow patrol.",
+   "to": "only the outer approach roads would be given away.",
+   "id": "k1d-096",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json_ko",
+   "from": "외곽 진입로만 내주는 빈 껍데기 순찰이 되는 일을",
+   "to": "외곽 진입로만 내주는 일을",
+   "id": "k1d-097",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0121",
+   "col": "json",
+   "from": "become a hollow patrol that only yields the outer approach roads.",
+   "to": "only yield the outer approach roads.",
+   "id": "k1d-098",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "exact": true,
+   "from": "통행 약속 위반 배차 거부",
+   "to": "순찰열차 출고·화차 확인",
+   "id": "k1d-099",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "exact": true,
+   "from": "Rejects dispatch that breaks the passage promise",
+   "to": "Patrol Train Dispatch and Freight Car Verification",
+   "id": "k1d-100",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json_ko",
+   "from": "검은 배차표의 운반자가 되어 의료열차 통행 약속을 깨고 세력 사이 보복 납치의 첫 불씨를 지피는 것.",
+   "to": "검은 배차표의 운반자가 되는 것.",
+   "id": "k1d-101",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "the carrier of the black dispatch sheet, break the medical-train passage promise, and strike the first spark of retaliatory abductions between factions.",
+   "to": "the carrier of the black dispatch sheet.",
+   "id": "k1d-102",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json_ko",
+   "from": "검은 배차표의 운반자가 되어 의료열차 통행 약속을 깨고 세력 사이 보복 납치의 첫 불씨를 지피는 일을",
+   "to": "검은 배차표의 운반자가 되는 일을",
+   "id": "k1d-103",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "the carrier of a black dispatch slip, breaking the medical-train passage promise and kindling the first spark of retaliatory abductions between factions.",
+   "to": "the carrier of a black dispatch slip.",
+   "id": "k1d-104",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json_ko",
+   "from": "검은 배차표를 열차장 몰래 연결해 통행 약속 붕괴의 불씨를 만들 수 있다.",
+   "to": "검은 배차표를 열차장 몰래 연결할 수 있다.",
+   "id": "k1d-105",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0124",
+   "col": "json",
+   "from": "behind the train chief's back and create the spark of a collapsed passage promise.",
+   "to": "behind the train chief's back.",
+   "id": "k1d-106",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "exact": true,
+   "from": "진료 경로 공개",
+   "to": "이동의무차 골목 응급 처치",
+   "id": "k1d-107",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.name$",
+   "exact": true,
+   "from": "Open care routes",
+   "to": "Alleyway First Aid at the Mobile Medical Vehicle",
+   "id": "k1d-108",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "from": "장세화의 의료 우선 칸을 피하지 않으려 빚을 지고, 차나루의",
+   "to": "차나루의",
+   "id": "k1d-109",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Owing a debt to avoid dodging Jang Sehwa's medical-priority cars, turning",
+   "to": "Turning",
+   "id": "k1d-110",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "from": "Takes on debt so as not to avoid Jang Sehwa's medical-priority car, and when the medicine window closes, diverts",
+   "to": "When the medicine window closes, diverts",
+   "id": "k1d-111",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료 우선 칸을 피하지 않으려 빚을 지고",
+   "to": "",
+   "id": "k1d-112",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0135",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Takes on debt so as not to avoid Jang Sehwa's medical-priority car",
+   "to": "",
+   "id": "k1d-113",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json_ko",
+   "from": "삼켜 공증 사본이 군량 시세로 팔리는 것.",
+   "to": "삼키는 것.",
+   "id": "k1d-114",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json",
+   "from": "window and notarized copies would sell at ration prices.",
+   "to": "window.",
+   "id": "k1d-115",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0160",
+   "col": "json",
+   "from": "swallow even the Jongno counter, so that notarized copies are sold at military-ration prices.",
+   "to": "swallow even the Jongno counter.",
+   "id": "k1d-116",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json_ko",
+   "from": "스승이고, 장세화의 의료호송 우선 지시를 서울역 창구에서 받치며, 연지우의",
+   "to": "스승이고, 연지우의",
+   "id": "k1d-117",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "he backed Jang Sehwa's medical convoy priority order at the Seoul Station window and had filled",
+   "to": "and had filled",
+   "id": "k1d-118",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "she supports Jang Sehwa's medical convoy priority order at the Seoul Station counter, and has made up",
+   "to": "and has made up",
+   "id": "k1d-119",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json_ko",
+   "from": "조정이 멈춰, 서울역이 지연을 눈감아 주는 면죄부가 되는 것.",
+   "to": "조정이 멈추는 것.",
+   "id": "k1d-120",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "and Seoul Station would become a stamp that excuses the delay.",
+   "to": ".",
+   "id": "k1d-121",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "making Seoul Station a stamp that excuses the delay.",
+   "to": ".",
+   "id": "k1d-122",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json_ko",
+   "from": "인준 아래 두어 다른 세력이 약품 배정을 전리품으로 쓰지 못하게 한다.",
+   "to": "인준 아래 둔다.",
+   "id": "k1d-123",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0161",
+   "col": "json",
+   "from": "ratification so that other factions cannot use medicine allocation as spoils of war.",
+   "to": "ratification.",
+   "id": "k1d-124",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json_ko",
+   "from": "장세화의 의료호송 우선 지시를 증언으로 받치고, 가브리엘",
+   "to": "가브리엘",
+   "id": "k1d-125",
+   "expect": 5
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "Backed Jang Sehwa's medical convoy priority order with testimony, matched",
+   "to": "Matched",
+   "id": "k1d-126",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "Backs Jang Sehwa's medical-escort priority order with testimony, matches",
+   "to": "Matches",
+   "id": "k1d-127",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료호송 우선 지시를 증언으로 받치고",
+   "to": "",
+   "id": "k1d-128",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "props up Jang Sehwa's medical-escort priority order with testimony",
+   "to": "",
+   "id": "k1d-129",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json_ko",
+   "from": "봉인을 의료열차 호송의 공개 증거로 남겨 용산이 세력 사이 보복 납치의 입구가 되지 않게 한다.",
+   "to": "봉인을 공개 증거로 남긴다.",
+   "id": "k1d-130",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0189",
+   "col": "json",
+   "from": "public evidence of the medical-train escort so that Yongsan does not become the entrance to retaliatory abductions between factions.",
+   "to": "public evidence.",
+   "id": "k1d-131",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json_ko",
+   "from": "노선마다 따로 받는 세 장의 통행 허가서가 아니라 용산역 단독 시간표로 고정해, 다른 세력 열차도 같은 순서로 서게 한다.",
+   "to": "용산역 단독 시간표로 고정한다.",
+   "id": "k1d-132",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json",
+   "from": "not through three separate per-line passage permits but through a single Yongsan Station timetable, so that trains of other factions also queue in the same order.",
+   "to": "as a single timetable of Yongsan Station.",
+   "id": "k1d-133",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0195",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오해린의 공개 시세 시장에 첫해 증언을 보태고",
+   "to": "첫해 증언을 보태고",
+   "id": "k1d-134",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0195",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Add first-year testimony to Oh Haerin's public-price market",
+   "to": "Add first-year testimony",
+   "id": "k1d-135",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오해린의 공개 시세 시장에 첫해 증언을 보태고",
+   "to": "첫해 증언을 보태고",
+   "id": "k1d-136",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Add first-year testimony to Oh Haerin's public-price market",
+   "to": "Add first-year testimony",
+   "id": "k1d-137",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "exact": true,
+   "from": "합의 증언 대조",
+   "to": "증언 대조",
+   "id": "k1d-138",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json",
+   "pathRe": "^\\.characterProfile\\.skills\\[\\]\\.name$",
+   "exact": true,
+   "from": "Agreement witness review",
+   "to": "Witness review",
+   "id": "k1d-139",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json_ko",
+   "from": "정확한 날짜와 조건의 기억을 쓰지만 합의의 영구 효력을 확정하지 않는다.",
+   "to": "정확한 날짜와 조건의 기억을 쓴다.",
+   "id": "k1d-140",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0219",
+   "col": "json",
+   "from": "Uses remembered dates and terms without declaring permanent agreement validity.",
+   "to": "Uses remembered dates and terms.",
+   "id": "k1d-141",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "도착 중량을 확인하며 의료 우선 호송 초안을 검토한다.",
+   "to": "도착 중량을 확인한다.",
+   "id": "k1d-142",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "checks arrival weight and reviews joint-convoy drafts.",
+   "to": "checks arrival weight.",
+   "id": "k1d-143",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "송이든의 환적 창에서 인계한다. 장세화의 의료 우선 호송 초안을 현장 기준으로 검토 중이다.",
+   "to": "송이든의 환적 창에서 인계한다.",
+   "id": "k1d-144",
+   "expect": 5
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "took over at Song I-deun's transshipment warehouse. Was reviewing Jang Sehwa's medical-priority escort draft against field standards.",
+   "to": "took over at Song I-deun's transshipment warehouse.",
+   "id": "k1d-145",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "hands cargo over at Song Ideun's transshipment window. Is currently reviewing Jang Sehwa's medical-priority escort draft by field standards.",
+   "to": "hands cargo over at Song Ideun's transshipment window.",
+   "id": "k1d-146",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료 우선 호송 초안을 현장 기준으로 검토",
+   "to": "",
+   "id": "k1d-147",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Reviewing the medical-priority escort draft by field standards",
+   "to": "",
+   "id": "k1d-148",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "군수품을 실은 것이 드러나 시장 상인들의 신뢰가 하루 만에 무너지는 것.",
+   "to": "군수품을 실은 것이 드러나는 것.",
+   "id": "k1d-149",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "would be exposed carrying munitions and the merchants' trust in the market would collapse in one day.",
+   "to": "would be exposed carrying munitions.",
+   "id": "k1d-150",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "exposed carrying military supplies and the merchants' trust in the market collapsing in a single day.",
+   "to": "exposed carrying military supplies.",
+   "id": "k1d-151",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json_ko",
+   "from": "호송을 강행해 노량진 시장의 자체 호송 원칙을 시험할 수 있다.",
+   "to": "호송을 강행할 수 있다.",
+   "id": "k1d-152",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0198",
+   "col": "json",
+   "from": "force a convoy through to test Noryangjin's rule of market-run convoys.",
+   "to": "force a convoy through.",
+   "id": "k1d-153",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json_ko",
+   "from": "남부 허브로 만들어 공개 시세 시장의 대면 창구가 된다.",
+   "to": "남부 허브로 만든다.",
+   "id": "k1d-154",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0208",
+   "col": "json",
+   "from": "under one roof, becoming the face-to-face counter of the public-price market.",
+   "to": "under one roof.",
+   "id": "k1d-155",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json_ko",
+   "from": "이동 의무차가 들어가게 해 시장의 의료 최저선을 상회정에 못 박는다.",
+   "to": "이동 의무차가 들어가게 한다.",
+   "id": "k1d-156",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json",
+   "from": "reach even the blacked-out alleys, nailing the market's medical minimum into the Merchants' Court.",
+   "to": "reach even the blacked-out alleys.",
+   "id": "k1d-157",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json_ko",
+   "from": "식량 칸을 붙이며, 장세화의 상호호송 초안을 승강장 칠판에서 검토한다.",
+   "to": "식량 칸을 붙인다.",
+   "id": "k1d-158",
+   "expect": 5
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "coupled a food car onto Jeong Yura's joint-negotiation envoys, and reviewed Jang Sehwa's mutual convoy draft on the platform blackboard.",
+   "to": "coupled a food car onto Jeong Yura's joint-negotiation envoys.",
+   "id": "k1d-159",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "Filtered O Doyun's merchants' council notes out of the council convoy, coupled a food car onto Jeong Yura's joint-negotiation envoys.",
+   "to": "Filtered O Doyun's merchants' council notes out of the council convoy and coupled a food car onto Jeong Yura's joint-negotiation envoys.",
+   "id": "k1d-160",
+   "expect": 3
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "attaches a food compartment to Jeong Yura's Joint Negotiation envoy, and reviews Jang Sehwa's draft of the Mutual Convoy on the platform blackboard.",
+   "to": "attaches a food compartment to Jeong Yura's Joint Negotiation envoy.",
+   "id": "k1d-161",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "from": "신내역 배차판에 올렸다. 환승이 끊기지 않는 지속 조건을 다루는 운영자이며 의료열차를",
+   "to": "신내역 배차판에 올렸다. 의료열차를",
+   "id": "k1d-162",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "from": "on the Sinnae Station dispatch board. He manages the conditions that keep transfers running without a break; scheduling",
+   "to": "on the Sinnae Station dispatch board. Scheduling",
+   "id": "k1d-163",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료열차 우선 통행을 심사대로 지키려 함",
+   "to": "",
+   "id": "k1d-164",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Seeks to keep medical-train priority passage as a screening checkpoint",
+   "to": "",
+   "id": "k1d-165",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료 우선 호송안을 입찰 조건에 심음",
+   "to": "",
+   "id": "k1d-166",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Plants the medical-priority escort plan in the bid conditions",
+   "to": "",
+   "id": "k1d-167",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료열차 우선 통행 지시를 마지막 예외로 남긴 빚",
+   "to": "",
+   "id": "k1d-168",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A debt from leaving the medical-train priority-passage order as the last exception",
+   "to": "",
+   "id": "k1d-169",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료 우선 호송 초안을 현장 기준으로 검토",
+   "to": "",
+   "id": "k1d-170",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Reviewing the medical-priority escort draft by field standards",
+   "to": "",
+   "id": "k1d-171",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료 우선 칸을 피하지 않으려 빚을 지고",
+   "to": "",
+   "id": "k1d-172",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Takes on debt so as not to avoid Jang Sehwa's medical-priority car",
+   "to": "",
+   "id": "k1d-173",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료속보 지침을 중계 우선으로 남긴다",
+   "to": "",
+   "id": "k1d-174",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Leaves Jang Sehwa's medical-bulletin directive as the relay priority",
+   "to": "",
+   "id": "k1d-175",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료호송 우선 지시를 증언으로 받치고",
+   "to": "",
+   "id": "k1d-176",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "props up Jang Sehwa's medical-escort priority order with testimony",
+   "to": "",
+   "id": "k1d-177",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료 우선 호송 초안을 정서하고",
+   "to": "",
+   "id": "k1d-178",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Fair-copies Jang Sehwa's medical-priority escort draft, and",
+   "to": "",
+   "id": "k1d-179",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료동맹을 현장에서 집행",
+   "to": "",
+   "id": "k1d-180",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0297",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforces the medical alliance on the ground",
+   "to": "",
+   "id": "k1d-181",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0298",
+   "col": "json_ko",
+   "from": "고정해 의료 우선 호송 약정의 실제 시각표를 자신이 쥐려 한다.",
+   "to": "고정하려 한다.",
+   "id": "k1d-182",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0298",
+   "col": "json",
+   "from": "sole approval of the Dispatch Team, so that the real timetable of the medical-priority escort arrangement is in their own hands.",
+   "to": "sole approval of the Dispatch Team.",
+   "id": "k1d-183",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json_ko",
+   "from": "장세화와 류은비의 의료동맹을 현장에서 집행하고, 안도한의 배차 독주를 견제하며,",
+   "to": "안도한의 배차 독주를 견제하고,",
+   "id": "k1d-184",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "Executed the medical alliance of Jang Sehwa and Ryu Eunbi in the field, checked",
+   "to": "Checked",
+   "id": "k1d-185",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "An Dohan's dispatch solo runs, and borrowed",
+   "to": "An Dohan's dispatch solo runs and borrowed",
+   "id": "k1d-186",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "Enforces on the ground the medical alliance of Jang Sehwa and Ryu Eunbi, checks",
+   "to": "Checks",
+   "id": "k1d-187",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료동맹을 현장에서 집행",
+   "to": "",
+   "id": "k1d-188",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforces the medical alliance on the ground",
+   "to": "",
+   "id": "k1d-189",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json_ko",
+   "from": "한 장의 호송증으로 묶어, 호송료 없는 의료 호송을 만든다.",
+   "to": "한 장의 호송증으로 묶는다.",
+   "id": "k1d-190",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "in a single escort pass, creating a medical escort that carries no escort fee.",
+   "to": "in a single escort pass.",
+   "id": "k1d-191",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json_ko",
+   "from": "지시문 문구보다 들것 순서를 믿는다.",
+   "to": "들것 순서를 믿는다.",
+   "id": "k1d-192",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0299",
+   "col": "json",
+   "from": "Trusts stretcher order over the wording of orders.",
+   "to": "Trusts stretcher order.",
+   "id": "k1d-193",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json_ko",
+   "from": "지시문 문구보다 들것 순서를 믿고,",
+   "to": "들것 순서를 믿고,",
+   "id": "k1d-194",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0305",
+   "col": "json",
+   "from": "trusts stretcher order over the wording of orders, and",
+   "to": "trusts stretcher order, and",
+   "id": "k1d-195",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "from": "이중으로 확인하고, 외부 문장의 검색 영장은 장세화와 의료조 공동 날인 없이 거부한다.",
+   "to": "이중으로 확인한다.",
+   "id": "k1d-196",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "doubly and refused any other faction's search warrant without the joint stamp of Jang Sehwa and the medical crew.",
+   "to": "doubly.",
+   "id": "k1d-197",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "Double-checks identity shards and cargo seals, and refuses search warrants issued under an outside crest unless they carry the joint seal of Jang Sehwa and the medical team.",
+   "to": "Double-checks identity shards and cargo seals.",
+   "id": "k1d-198",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "from": "심사대를 우회한 무장이 의료열차에 타, 의료 우선 호송 지시가 빈 문구가 되는 것.",
+   "to": "심사대를 우회한 무장이 의료열차에 타는 것.",
+   "id": "k1d-199",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "board the medical train and the medical-priority escort order would become empty wording.",
+   "to": "board the medical train.",
+   "id": "k1d-200",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "boards the medical train, turning the medical-priority escort into an empty phrase.",
+   "to": "boards the medical train.",
+   "id": "k1d-201",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**관계.** 장세화의 의료열차 우선 통행 지시를 심사대로 지키려 하고, 배우진의 동방사 검색을 거부하며, 고서준의 아차산 통행 허가서를 교차 확인한다.",
+   "to": "",
+   "id": "k1d-202",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "pathRe": "^\\.biography$",
+   "from": "\n\n**Relations.** Seeks to protect Jang Sehwa's medical-train priority-passage order through the inspection post, refuses Bae Ujin's Eastern Command searches, and cross-checks Go Seojun's Achasan passage permit.",
+   "to": "",
+   "id": "k1d-203",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "pathRe": "^\\.sections\\.관계$",
+   "exact": true,
+   "from": "장세화의 의료열차 우선 통행 지시를 심사대로 지키려 하고, 배우진의 동방사 검색을 거부하며, 고서준의 아차산 통행 허가서를 교차 확인한다.",
+   "to": "",
+   "id": "k1d-204",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "pathRe": "^\\.sections\\.Relationships$",
+   "exact": true,
+   "from": "Seeks to protect Jang Sehwa's medical-train priority-passage order through the inspection post, refuses Bae Ujin's Eastern Command searches, and cross-checks Go Seojun's Achasan passage permit.",
+   "to": "",
+   "id": "k1d-205",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.relationship$",
+   "exact": true,
+   "from": "장세화의 의료열차 우선 통행 지시를 심사대로 지키려 하고, 배우진의 동방사 검색을 거부하며, 고서준의 아차산 통행 허가서를 교차 확인한다.",
+   "to": "",
+   "id": "k1d-206",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.relationship$",
+   "exact": true,
+   "from": "관계. 장세화의 의료열차 우선 통행 지시를 심사대로 지키려 하고, 배우진의 동방사 검색을 거부하며, 고서준의 아차산 통행 허가서를 교차 확인한다.",
+   "to": "관계.",
+   "id": "k1d-207",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "pathRe": "^\\.characterProfile\\.traits\\[\\]\\.relationship$",
+   "exact": true,
+   "from": "Relations. Sought to hold Jang Sehwa's medical-train priority-passage order at the examination stand, refused Bae Woojin's Eastern Command searches, and cross-checked Go Seojun's Achasan passage permit.",
+   "to": "Relations.",
+   "id": "k1d-208",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "의료열차 우선 통행을 심사대로 지키려 함",
+   "to": "",
+   "id": "k1d-209",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Seeks to keep medical-train priority passage as a screening checkpoint",
+   "to": "",
+   "id": "k1d-210",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json_ko",
+   "from": "심사를 의료 우선 호송 약정 조항으로 격상시켜 암사 호위단의 임의 검색을 끊으려 한다.",
+   "to": "심사로 암사 호위단의 임의 검색을 끊으려 한다.",
+   "id": "k1d-211",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "inspection on the Northeast Outer Road into a clause of the medical-priority escort arrangement, cutting off the arbitrary searches of the Amsa Escort Corps.",
+   "to": "inspection on the Northeast Outer Road to cut off the arbitrary searches of the Amsa Escort Corps.",
+   "id": "k1d-212",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0300",
+   "col": "json",
+   "from": "Seeks to elevate inspection on the Northeast Outer Road to cut off",
+   "to": "Seeks to use inspection on the Northeast Outer Road to cut off",
+   "id": "k1d-213",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json_ko",
+   "from": "암사 순찰열차와 마주쳐 교전 한 방으로 의료 우선 호송이 세력 간 전투로 번지는 것.",
+   "to": "암사 순찰열차와 마주쳐 교전이 벌어지는 것.",
+   "id": "k1d-214",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "Amsa patrol train and one exchange of fire would turn the medical-priority escort into a battle between factions.",
+   "to": "Amsa patrol train and exchange fire.",
+   "id": "k1d-215",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0301",
+   "col": "json",
+   "from": "Amsa patrol train, and a single exchange of fire turns the medical-priority escort into a battle between factions.",
+   "to": "Amsa patrol train and exchanges fire.",
+   "id": "k1d-216",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json_ko",
+   "from": "암사 순찰열차와 마주쳐 교전 한 방으로 의료 우선 호송이 세력 간 전투로 번지는 것.",
+   "to": "암사 순찰열차와 마주쳐 교전이 벌어지는 것.",
+   "id": "k1d-218",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "Amsa patrol train and one exchange of fire would turn the medical-priority escort into a battle between factions.",
+   "to": "Amsa patrol train and exchange fire.",
+   "id": "k1d-219",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "meets an Amsa patrol train and a single exchange of fire turns the medical-priority escort into a battle between factions.",
+   "to": "meets an Amsa patrol train and exchanges fire.",
+   "id": "k1d-221",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json_ko",
+   "from": "배우진의 동방사 검색을 순찰 원장에 남기지 않는다.",
+   "to": "",
+   "id": "k1d-222",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "He left none of Bae Woojin's Eastern Command searches in the patrol ledger.",
+   "to": "",
+   "id": "k1d-223",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0306",
+   "col": "json",
+   "from": "Does not leave Bae Ujin's Eastern Command searches in the patrol ledger.",
+   "to": "",
+   "id": "k1d-224",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json_ko",
+   "from": "숨긴 자가 나와 장세화의 의료열차 우선 통행 지시가 내부에서 깨지는 것.",
+   "to": "숨긴 자가 나오는 것.",
+   "id": "k1d-225",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json",
+   "from": "inside the defense squad would break Jang Sehwa's medical-train priority-passage order from within.",
+   "to": "would turn up inside the defense squad.",
+   "id": "k1d-226",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0313",
+   "col": "json_ko",
+   "from": "숨긴 자가 나와 장세화의 의료열차 우선 통행 지시가 내부에서 깨지는 것.",
+   "to": "숨긴 자가 나오는 것.",
+   "id": "k1d-227",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0313",
+   "col": "json",
+   "from": "inside the defense shop would break Jang Sehwa's medical-train priority-passage order from within.",
+   "to": "would turn up inside the defense shop.",
+   "id": "k1d-228",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0302",
+   "col": "json",
+   "from": "within the guard, breaking Jang Sehwa's medical-train priority-passage order from the inside.",
+   "to": "within the guard.",
+   "id": "k1d-229",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0313",
+   "col": "json",
+   "from": "to have hidden the Amsa-made weapons, breaking Jang Sehwa's medical-train priority-passage order from within.",
+   "to": "to have hidden the Amsa-made weapons.",
+   "id": "k1d-230",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0311",
+   "col": "json_ko",
+   "from": "무기 적재의 발판이 되어 장세화의 의료열차 우선 통행 지시가 내부에서 깨지는 것.",
+   "to": "무기 적재의 발판이 되는 것.",
+   "id": "k1d-231",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0311",
+   "col": "json",
+   "from": "the footstool of arms loading and Jang Sehwa's medical-train priority-passage order would break from within.",
+   "to": "the footstool of arms loading.",
+   "id": "k1d-232",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0311",
+   "col": "json",
+   "from": "a foothold for loading weapons, breaking Jang Sehwa's medical-train priority-passage order from within.",
+   "to": "a foothold for loading weapons.",
+   "id": "k1d-233",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0303",
+   "col": "json_ko",
+   "from": "정비 서명과 함께 열어, 의료 우선 호송 약정의 실제 시각표를 현장 공구로 지탱하려 한다.",
+   "to": "정비 서명과 함께 열려 한다.",
+   "id": "k1d-234",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0303",
+   "col": "json",
+   "from": "not on the dispatch crew's say-so alone, and to hold up the actual timetable of the medical-priority escort arrangement with tools on site.",
+   "to": "not on the dispatch crew's say-so alone.",
+   "id": "k1d-235",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json_ko",
+   "from": "안도한의 배차 칠판과 하역 순서를 맞추고, 복용의 시장 시세를 송장에 옮긴다.",
+   "to": "안도한의 배차 칠판과 하역 순서를 맞춘다.",
+   "id": "k1d-236",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "Matched the unloading order with An Dohan's dispatch chalkboard and moved Bok Yong's market prices onto the invoices.",
+   "to": "Matched the unloading order with An Dohan's dispatch chalkboard.",
+   "id": "k1d-237",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "He aligns An Dohan's dispatch blackboard with the unloading order and copies Bok Yong's market prices onto the invoices.",
+   "to": "He aligns An Dohan's dispatch blackboard with the unloading order.",
+   "id": "k1d-238",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "복용의 시장 시세를 송장에 옮긴다",
+   "to": "",
+   "id": "k1d-239",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Copies Bok Yong's market prices onto the invoices",
+   "to": "",
+   "id": "k1d-240",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json_ko",
+   "from": "공백 송장을 공개하거나, 시장 하역을 의료 우선으로 되돌릴 수 있다.",
+   "to": "공백 송장을 공개할 수 있다.",
+   "id": "k1d-241",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0304",
+   "col": "json",
+   "from": "He can make the gapped invoices public, or turn unloading at the market back to medical priority.",
+   "to": "He can make the gapped invoices public.",
+   "id": "k1d-242",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json_ko",
+   "from": "점선으로만 남기고, 외부 문장의 검색 영장은 지도 여백에 옮기지 않는다.",
+   "to": "점선으로만 남긴다.",
+   "id": "k1d-243",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "dotted lines and moved no other faction's search warrant into the map margins.",
+   "to": "dotted lines.",
+   "id": "k1d-244",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "and search warrants from externally worded documents are not copied into the map margins.",
+   "to": ".",
+   "id": "k1d-245",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json_ko",
+   "from": "문시온에게 후문 실측을 넘기고, 봉모의 심사대 거점 칠판에 좌표를 붙인다. 장세화의 의료열차 우선 통행 지시를 원판 제목으로 남긴다.",
+   "to": "문시온에게 후문 실측을 넘기고, 봉모의 심사대 거점 칠판에 좌표를 붙인다.",
+   "id": "k1d-246",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "posted coordinates on Bong Mo's examination-stand chalkboard. Left Jang Sehwa's medical-train priority-passage order as the master plate's title.",
+   "to": "posted coordinates on Bong Mo's examination-stand chalkboard.",
+   "id": "k1d-247",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "Hands the back-gate survey to Mun Sion, and posts the coordinates on Bongmo's screening-desk base blackboard. Keeps Jang Sehwa's medical-train priority-passage order as the master plate title.",
+   "to": "Hands the back-gate survey to Mun Sion, and posts the coordinates on Bongmo's screening-desk base blackboard.",
+   "id": "k1d-248",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json_ko",
+   "from": "의료열차 후문으로 연결되어 의료 우선 호송이 빈 문구가 되는 것.",
+   "to": "의료열차 후문으로 연결되는 것.",
+   "id": "k1d-249",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "would link to the medical train's rear gate and the medical-priority escort order would become empty wording.",
+   "to": "would link to the medical train's rear gate.",
+   "id": "k1d-250",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0308",
+   "col": "json",
+   "from": "connects to the medical train's back gate, turning the medical-priority escort into an empty phrase.",
+   "to": "connects to the medical train's back gate.",
+   "id": "k1d-251",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json_ko",
+   "from": "이중으로 기록하고, 외부 영장은 장세화와 의료조 공동 날인 없이 거부한다.",
+   "to": "이중으로 기록한다.",
+   "id": "k1d-252",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "doubly and refused other factions' warrants without the joint stamp of Jang Sehwa and the medical crew.",
+   "to": "doubly.",
+   "id": "k1d-253",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "twice over, and refuses outside warrants without the joint seal of Jang Sehwa and the Medical Team.",
+   "to": "twice over.",
+   "id": "k1d-254",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json_ko",
+   "from": " 외부 영장으로 원장이 대체될 위험을 경계한다.",
+   "to": "",
+   "id": "k1d-255",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": ", guarding against replacement of his ledger by external warrants.",
+   "to": ".",
+   "id": "k1d-256",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json_ko",
+   "from": "외부 문장의 검색 영장 사본으로 대체되어 의료 우선 심사가 내부에서 깨지는 것.",
+   "to": "검색 영장 사본으로 대체되는 것.",
+   "id": "k1d-257",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "copies of another faction's search warrant and the medical-priority screening would break from within.",
+   "to": "copies of a search warrant.",
+   "id": "k1d-258",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "a copy of an externally worded search warrant, breaking the medical-priority screening from within.",
+   "to": "a copy of a search warrant.",
+   "id": "k1d-259",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json_ko",
+   "from": "심사를 의료 우선 호송 약정 조항으로 격상시켜 암사 호위단의 임의 검색을 원장에서 끊으려 한다.",
+   "to": "심사로 암사 호위단의 임의 검색을 원장에서 끊으려 한다.",
+   "id": "k1d-260",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "inspection into a clause of the medical-priority escort arrangement, so as to cut the Amsa Escort Corps' arbitrary searches out of the ledger.",
+   "to": "inspection in order to cut the Amsa Escort Corps' arbitrary searches out of the ledger.",
+   "id": "k1d-261",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0309",
+   "col": "json",
+   "from": "Seeks to elevate the northeast outer road inspection in order to",
+   "to": "Seeks to use the northeast outer road inspection in order to",
+   "id": "k1d-262",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json_ko",
+   "from": "장세화의 의료 우선 호송 지시를 승강장 벽에 붙인다.",
+   "to": "",
+   "id": "k1d-263",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json",
+   "from": "Pasted Jang Sehwa's medical-priority escort order on the platform wall.",
+   "to": "",
+   "id": "k1d-264",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0310",
+   "col": "json",
+   "from": "Posts Jang Sehwa's medical-priority escort directive on the platform wall.",
+   "to": "",
+   "id": "k1d-265",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "from": "북동부 공개 시세 시장 거점장",
+   "to": "북동부 시장 거점장",
+   "id": "k1d-266",
+   "expect": 9
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "Northeast Public-Price Market Hub Chief",
+   "to": "Northeast Market Hub Chief",
+   "id": "k1d-267",
+   "expect": 8
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "from": "Northeast Public-Price Market Base Chief",
+   "to": "Northeast Market Base Chief",
+   "id": "k1d-268",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "복용의 시장 시세를 송장에 옮긴다",
+   "to": "",
+   "id": "k1d-269",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Copies Bok Yong's market prices onto the invoices",
+   "to": "",
+   "id": "k1d-270",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json_ko",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "복용의 시장 시세와 유찰 종을 맞추고",
+   "to": "",
+   "id": "k1d-271",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0312",
+   "col": "json",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Matches Bok Yong's market prices with the failed-bid bell, and",
+   "to": "",
+   "id": "k1d-272",
+   "expect": 1
+  },
+  {
+   "file": "050",
+   "key": "person-0312",
+   "col": [
+    "title",
+    "position"
+   ],
+   "exact": true,
+   "from": "Northeast Public-Price Market Hub Chief",
+   "to": "Northeast Market Hub Chief",
+   "id": "k1d-050a",
+   "expect": 2
+  },
+  {
+   "file": "050",
+   "key": "person-0312",
+   "col": [
+    "title_ko",
+    "position_ko"
+   ],
+   "exact": true,
+   "from": "북동부 공개 시세 시장 거점장",
+   "to": "북동부 시장 거점장",
+   "id": "k1d-050b",
+   "expect": 2
+  },
+  {
+   "file": "110",
+   "key": "bcf5-ba74-cc9c",
+   "col": "json_ko",
+   "from": "북동부 공개 시세 시장 거점장",
+   "to": "북동부 시장 거점장",
+   "id": "k1d-110a",
+   "expect": 1
+  },
+  {
+   "file": "110",
+   "key": "bcf5-ba74-cc9c",
+   "col": "json",
+   "from": "Northeast Public-Price Market Base Chief",
+   "to": "Northeast Market Base Chief",
+   "id": "k1d-110b",
+   "expect": 1
+  },
+  {
+   "file": "110",
+   "key": "c7a5-baa9-cc9c-5f35",
+   "col": "json_ko",
+   "from": "말단 배차와 의료열차가 가훈의 의료 우선 호송이 됐고, 신내역이 누구든 환승시키는 시장으로 남는다. ",
+   "to": "",
+   "id": "k1d-110c",
+   "expect": 1
+  },
+  {
+   "file": "110",
+   "key": "c7a5-baa9-cc9c-5f35",
+   "col": "json",
+   "from": "Junior dispatch and the medical train became the house motto's medical-priority escort, and Sinnae Station remains a market that transfers anyone. ",
+   "to": "",
+   "id": "k1d-110d",
+   "expect": 1
+  }
+ ]
+}

@@ -1,0 +1,752 @@
+{
+ "rules": [
+  {
+   "id": "lbi-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": " 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.",
+   "to": ""
+  },
+  {
+   "id": "lbi-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 깎인 표본과 배차 시각을 한 줄에 적고, 단독 고발은 도제와 배차원의 연서가 없으면 게시하지 않는다.",
+   "to": ""
+  },
+  {
+   "id": "lbi-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Anecdote.** The ballots did not mix with the seniority box.\n",
+   "to": ""
+  },
+  {
+   "id": "lbi-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 표가 연공 함과 섞이지 않았다.\n",
+   "to": ""
+  },
+  {
+   "id": "lbi-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "Aims to protect the Arc's Gangnam Station stronghold by getting the data-center software restart approved ahead of the residence-layer petitions.",
+   "to": ""
+  },
+  {
+   "id": "lbi-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Ambition.** Aims to protect the Arc's Gangnam Station stronghold by getting the data-center software restart approved ahead of the residence-layer petitions.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbi-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.야망$",
+   "from": "거주층 청원보다 데이터센터 소프트웨어 재가동이 먼저 승인되게 만들어 Arc의 강남역 거점을 지킨다.",
+   "to": ""
+  },
+  {
+   "id": "lbi-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**야망.** 거주층 청원보다 데이터센터 소프트웨어 재가동이 먼저 승인되게 만들어 Arc의 강남역 거점을 지킨다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbi-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and armament loading must be signed jointly by the managing director and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and armament loading must be signed jointly by the managing director and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사가 함께 서명해야 한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": " and recognized arms loading only with the Elder's and the auditor's joint signature",
+   "to": ""
+  },
+  {
+   "id": "lbi-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": " and recognized arms loading only with the Elder's and the auditor's joint signature",
+   "to": ""
+  },
+  {
+   "id": "lbi-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and recognizes armament loading only with the joint signature of the managing director and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and recognizes armament loading only with the joint signature of the managing director and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사의 공동 서명만 인정한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사의 공동 서명만 인정한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사의 공동 서명만 인정한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0281",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사의 공동 서명만 인정한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": " and recognized arms loading only with the Elder's and the auditor's stamps",
+   "to": ""
+  },
+  {
+   "id": "lbi-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": " and recognized arms loading only with the Elder's and the auditor's stamps",
+   "to": ""
+  },
+  {
+   "id": "lbi-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and recognizes armed loading only with the seals of the Managing Director and the Auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and recognizes armed loading only with the seals of the Managing Director and the Auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다",
+   "to": "붙인다"
+  },
+  {
+   "id": "lbi-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다",
+   "to": "붙인다"
+  },
+  {
+   "id": "lbi-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다",
+   "to": "붙인다"
+  },
+  {
+   "id": "lbi-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "붙이고, 무장 탑재는 상무와 감사의 날인만 인정한다",
+   "to": "붙인다"
+  },
+  {
+   "id": "lbi-31",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": " and allowed arms loading only with the joint stamp of the Elder and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-32",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": " and allowed arms loading only with the joint stamp of the Elder and the auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-33",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": " and permits armament loading only with the joint seal of the Managing Director and the Auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-34",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " and permits armament loading only with the joint seal of the Managing Director and the Auditor",
+   "to": ""
+  },
+  {
+   "id": "lbi-35",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-36",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-37",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-38",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "의무화하고, 무장 탑재는 상무와 감사의 공동 날인만 허용한다",
+   "to": "의무화한다"
+  },
+  {
+   "id": "lbi-39",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": " and blocks the release of steel that went into the I Clan's exclusive bin until the Chairman's Office approves it",
+   "to": ""
+  },
+  {
+   "id": "lbi-40",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " and blocks the release of steel that went into the I Clan's exclusive bin until the Chairman's Office approves it",
+   "to": ""
+  },
+  {
+   "id": "lbi-41",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": " He sets aside iron first for the test frames of Jo U-chan.",
+   "to": ""
+  },
+  {
+   "id": "lbi-42",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " He sets aside iron first for the test frames of Jo U-chan.",
+   "to": ""
+  },
+  {
+   "id": "lbi-43",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": " Posts maintenance logs directly on the family head's office bulletin board and cuts defective parts apart to keep as samples.",
+   "to": ""
+  },
+  {
+   "id": "lbi-44",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Posts maintenance logs directly on the family head's office bulletin board and cuts defective parts apart to keep as samples.",
+   "to": ""
+  },
+  {
+   "id": "lbi-45",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and harshly counts cargo that slips into cars reserved for the Yi clan",
+   "to": ""
+  },
+  {
+   "id": "lbi-46",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and posts notes demanding test delays on the bulletin board exactly as they are",
+   "to": ""
+  },
+  {
+   "id": "lbi-47",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and posts notes demanding test delays on the bulletin board exactly as they are",
+   "to": ""
+  },
+  {
+   "id": "lbi-48",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "적고, 시험 연기를 요구하는 쪽지는 게시판에 그대로 붙인다",
+   "to": "적는다"
+  },
+  {
+   "id": "lbi-49",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "적고, 시험 연기를 요구하는 쪽지는 게시판에 그대로 붙인다",
+   "to": "적는다"
+  },
+  {
+   "id": "lbi-50",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Snaps his chalk when a note from the residence side is posted above the technical log.",
+   "to": ""
+  },
+  {
+   "id": "lbi-51",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "She can expose the mismatched line, or delay the log lock by a day to prevent a riot.",
+   "to": ""
+  },
+  {
+   "id": "lbi-52",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Intervention.** She can expose the mismatched line, or delay the log lock by a day to prevent a riot.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbi-53",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "어긋난 줄을 공개하거나, 일지 잠금을 하루 늦춰 폭동을 막을 수 있다.",
+   "to": ""
+  },
+  {
+   "id": "lbi-54",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0284",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**개입.** 어긋난 줄을 공개하거나, 일지 잠금을 하루 늦춰 폭동을 막을 수 있다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbi-55",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": " She posts maintenance logs directly on the Chairman's Office notice board and cuts defective parts to keep as samples.",
+   "to": ""
+  },
+  {
+   "id": "lbi-56",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " She posts maintenance logs directly on the Chairman's Office notice board and cuts defective parts to keep as samples.",
+   "to": ""
+  },
+  {
+   "id": "lbi-57",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 이홍원의 일정을 사절 파견의 근거로 들고 강민서의 수리 규격을 문안에 옮긴다.",
+   "to": ""
+  },
+  {
+   "id": "lbi-58",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 이홍원의 일정을 사절 파견의 근거로 들고 강민서의 수리 규격을 문안에 옮긴다.",
+   "to": ""
+  },
+  {
+   "id": "lbi-59",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": " He cites Yi Hongwon's schedule as the basis for sending an envoy and carries Gang Minseo's repair standards into the text.",
+   "to": ""
+  },
+  {
+   "id": "lbi-60",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0295",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " He cites Yi Hongwon's schedule as the basis for sending an envoy and carries Gang Minseo's repair standards into the text.",
+   "to": ""
+  },
+  {
+   "id": "lbi-61",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "He grew up at the Gangnam Station rail depot. \nHe verifies the sample",
+   "to": "He grew up at the Gangnam Station rail depot. His post as Arc Test Wheel Defect Witness opened up after a defect report he filed just before a derailment.\nIn Yeoksam 1-dong, Eo Yerin handles the checking of test wheel defect samples and accident signatures. He verifies the sample"
+  },
+  {
+   "id": "lbi-62",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "He grew up at the Gangnam Station rail depot. \nHe verifies the sample",
+   "to": "He grew up at the Gangnam Station rail depot. His post as Arc Test Wheel Defect Witness opened up after a defect report he filed just before a derailment.\nIn Yeoksam 1-dong, Eo Yerin handles the checking of test wheel defect samples and accident signatures. He verifies the sample"
+  },
+  {
+   "id": "lbi-63",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "강남역 차량기지에서 자랐다. \nArc 기계 몸체",
+   "to": "강남역 차량기지에서 자랐다. Arc 시험 차륜 결함 증인 자리는 탈선 직전에 올린 결함 보고로 열렸다.\n어예린은 역삼1동에서 시험 차륜 결함 표본과 사고 서명 확인 업무를 맡는다. Arc 기계 몸체"
+  },
+  {
+   "id": "lbi-64",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "강남역 차량기지에서 자랐다. \nArc 기계 몸체",
+   "to": "강남역 차량기지에서 자랐다. Arc 시험 차륜 결함 증인 자리는 탈선 직전에 올린 결함 보고로 열렸다.\n어예린은 역삼1동에서 시험 차륜 결함 표본과 사고 서명 확인 업무를 맡는다. Arc 기계 몸체"
+  },
+  {
+   "id": "lbi-65",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": " In Jo Uchan's work crew he testifies to the defect, helps guard Dumo's sealed toolbox, and leaves a mismatched line in Gukdu's accident ledger.",
+   "to": ""
+  },
+  {
+   "id": "lbi-66",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " In Jo Uchan's work crew he testifies to the defect, helps guard Dumo's sealed toolbox, and leaves a mismatched line in Gukdu's accident ledger.",
+   "to": ""
+  },
+  {
+   "id": "lbi-67",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.",
+   "to": ""
+  },
+  {
+   "id": "lbi-68",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 조우찬의 작업 조에서 결함을 증언하고, 두모의 봉인된 공구함을 함께 지키며, 국두의 사고 원장에 어긋난 줄을 남긴다.",
+   "to": ""
+  },
+  {
+   "id": "lbi-69",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Affiliation: Arc\n- Rank: Ordinary Citizen\n- Title: Arc Test Wheel Defect Witness",
+   "to": "- Occupation: Test Wheel Defect Sample, Accident Signature Verification\n- Affiliation: Arc\n- Rank: Ordinary Citizen\n- Title: Arc Test Wheel Defect Witness"
+  },
+  {
+   "id": "lbi-70",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 소속: Arc\n- 품계: 일반 시민\n- 직함: Arc 시험 차륜 결함 증인",
+   "to": "- 생업: 시험 차륜 결함 표본·사고 서명 확인\n- 소속: Arc\n- 품계: 일반 시민\n- 직함: Arc 시험 차륜 결함 증인"
+  },
+  {
+   "id": "lbi-71",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.1\\.basis$",
+   "from": "While jointly guarding Dumo's sealed toolbox",
+   "to": ""
+  },
+  {
+   "id": "lbi-72",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.2\\.basis$",
+   "from": "While jointly guarding Dumo's sealed toolbox",
+   "to": ""
+  },
+  {
+   "id": "lbi-73",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.1\\.basis$",
+   "from": "두모의 봉인된 공구함을 함께 지키며",
+   "to": ""
+  },
+  {
+   "id": "lbi-74",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.2\\.basis$",
+   "from": "두모의 봉인된 공구함을 함께 지키며",
+   "to": ""
+  }
+ ]
+}

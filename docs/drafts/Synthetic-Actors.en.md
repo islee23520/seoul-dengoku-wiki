@@ -1,11 +1,14 @@
 ---
-model: original drafts by cpa/claude-opus-5-5; rework by cpa/glm-5.3; 0 completion calls in both rounds; agent-authored text with scripted edits; not from a Gemini model
+title: Synthetic Humanoids
+title_ko: 합성 휴머노이드
+model: agent-authored by the v4-remaining todo 4 writer (Claude); 0 completion calls; replaces the earlier draft
 section_checkpoint: complete
 ---
-The custodian houses hold the synthetic actors' chassis and modules, but the control software that opens their higher functions is held exclusively by the Arc. Without Arc-signed software, the units below take only basic on-and-off functions and simple commands. "Maintenance" in each entry means hardware maintenance.
+Synthetic humanoids are very rare. The only machine body in Seoul's public record that speaks and judges is [I Yeon](/wiki/people/person-1004/). I Yeon is a synthetic humanoid with biological traits, an attendant herald who relays and interprets Jo Jaepyo's orders. Other machines move only on command, and the software that unlocks their higher functions belongs to the Arc.
 
 <a id="Synthetic-Actors-heading-0001"></a>
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0002"></a>
 
 ## H01 · Hannuri (Nuri) (Nuri)
@@ -28,7 +31,9 @@ Han Jae-mok checked the remaining battery charge and the custody seal together, 
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0008"></a>
 
 ## H02 · Seorin (Rin) (Rin)
@@ -51,7 +56,9 @@ Gang Minseo checked the remaining battery charge and the custody seal together, 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0014"></a>
 
 ## H03 · Ido (Ido) (Ido (Ido))
@@ -74,7 +81,9 @@ Jeong Hojun checked the remaining battery charge and the custody seal together, 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0020"></a>
 
 ## H04 · Gangbyeol (Byeol) (Byeol)
@@ -97,7 +106,9 @@ Im Hajun checked the remaining battery charge and the custody seal together, and
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0026"></a>
 
 ## H05 · Yunjae (Jae) (Jae)
@@ -120,7 +131,9 @@ Bae Ujin checked the remaining battery charge and the custody seal together, and
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0032"></a>
 
 ## H06 · Baksol (Sol) (Sol)
@@ -143,7 +156,9 @@ Yun Seo-rin checked the remaining battery charge and the custody seal together, 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0038"></a>
 
 ## H07 · Jeonguram (Uram) (Uram)
@@ -166,7 +181,9 @@ Bak Tae-gyeom checked the remaining battery charge and the custody seal together
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0044"></a>
 
 ## H08 · Choidaon (Daon) (Daon)
@@ -189,7 +206,9 @@ Oh Hae-rin checked the remaining battery charge and the custody seal together, a
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0050"></a>
 
 ## H09 · Joharam (Haram) (Haram)
@@ -212,7 +231,9 @@ Choe Ji-u checked the remaining battery charge and the custody seal together, an
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0056"></a>
 
 ## H10 · Yunsaeron (Saeron) (Saeron)
@@ -235,7 +256,9 @@ Baek On checked the remaining battery charge and the custody seal together, and 
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0062"></a>
 
 ## H11 · Kim Doha (Doha)
@@ -258,7 +281,9 @@ Yi Hong-won checked the remaining battery charge and the custody seal together, 
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0068"></a>
 
 ## H12 · Ichaeon (Chaeon) (Chaeon)
@@ -281,7 +306,9 @@ Jang Sehwa checked the remaining battery charge and the custody seal together, a
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0074"></a>
 
 ## H13 · Hanbitna (Bitna) (Bitna)
@@ -304,7 +331,9 @@ Ryu Eunbi checked the remaining battery charge and the custody seal together, an
 Even when the charging-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0080"></a>
 
 ## H14 · Oserim (Serim) (Serim)
@@ -327,7 +356,9 @@ Go Seojun checked the remaining battery charge and the custody seal together, an
 Even when the observation-railing alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0086"></a>
 
 ## H15 · Baesua (Sua) (Sua)
@@ -350,7 +381,9 @@ Nam Yun-gyeong checked the remaining battery charge and the custody seal togethe
 Even when the tool-wall alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0092"></a>
 
 ## H16 · Sintaeul (Taeul) (Taeul)
@@ -373,7 +406,9 @@ Jeong Yura checked the remaining battery charge and the custody seal together, a
 Even when the maintenance-bench alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0098"></a>
 
 ## F01 · Cooling-Tower Keeper (Tapji) (Tapji)
@@ -396,7 +431,9 @@ I Seo-dam checked the remaining battery charge and the custody seal together, an
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0104"></a>
 
 ## F02 · Switchgear Panel (Jeonban) (Jeonban)
@@ -419,7 +456,9 @@ Jeong Siu checked the remaining battery charge and the custody seal together, an
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0110"></a>
 
 ## F03 · Water Filtration (Yeogwa) (Yeogwa)
@@ -442,7 +481,9 @@ Jeong Harin checked the remaining battery charge and the custody seal together, 
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0116"></a>
 
 ## F04 · Cold Storage (Naengchang) (Naengchang)
@@ -465,7 +506,9 @@ Im Chowon checked the remaining battery charge and the custody seal together, an
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0122"></a>
 
 ## F05 · Transmission Relay (Junggye) (Junggye)
@@ -488,7 +531,9 @@ Kim Uchan checked the remaining battery charge and the custody seal together, an
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0128"></a>
 
 ## F06 · Elevator Shaft (Seungchuk) (Seungchuk)
@@ -511,7 +556,9 @@ Gang Ye-jun checked the remaining battery charge and the custody seal together, 
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0134"></a>
 
 ## F07 · Boiler Room (Boil) (Boil)
@@ -534,7 +581,9 @@ Alexander Miller checked the remaining battery charge and the custody seal toget
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0140"></a>
 
 ## F08 · Sewage Pump (Hasu) (Hasu)
@@ -557,7 +606,9 @@ Jo Min-jae checked the remaining battery charge and the custody seal together, a
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0146"></a>
 
 ## F09 · Lab Cleanroom (Clean) (Clean)
@@ -580,7 +631,9 @@ Gwon Mi-rae checked the remaining battery charge and the custody seal together, 
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0152"></a>
 
 ## F10 · Logistics Sorting (Bunryu) (Bunryu)
@@ -603,7 +656,9 @@ Sin Boram checked the remaining battery charge and the custody seal together, an
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0158"></a>
 
 ## F11 · Power Transformer (Byeonap) (Byeonap)
@@ -626,7 +681,9 @@ Song Ha-yul checked the remaining battery charge and the custody seal together, 
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0164"></a>
 
 ## F12 · Ventilation Duct (Duct) (Duct)
@@ -649,7 +706,9 @@ An Dohan checked the remaining battery charge and the custody seal together, and
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0170"></a>
 
 ## F13 · Medical Sterilization (Myeolgun) (Myeolgun)
@@ -672,7 +731,9 @@ Sim Dalho checked the remaining battery charge and the custody seal together, an
 Even when the alarm in front of the switchgear panel sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0176"></a>
 
 ## F14 · Printing Press Unit (Inswae) (Inswae)
@@ -695,7 +756,9 @@ Mun Hayul checked the remaining battery charge and the custody seal together, an
 Even when the filter-corridor alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0182"></a>
 
 ## F15 · Water-Supply Metering (Gyeryang) (Gyeryang)
@@ -718,7 +781,9 @@ Eun Taeho checked the remaining battery charge and the custody seal together, an
 Even when the control-booth alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0188"></a>
 
 ## F16 · Tunnel Ventilation (Teohwan) (Teohwan)
@@ -741,7 +806,9 @@ Ha Seojin checked the remaining battery charge and the custody seal together, an
 Even when the machine-room alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0194"></a>
 
 ## V01 · Dawn Convoy (Saebyeok) (Saebyeok)
@@ -764,7 +831,9 @@ Gim Tae-un checked the remaining battery charge and the custody seal together, a
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0200"></a>
 
 ## V02 · Circulating Bus (Sunhwan) (Sunhwan)
@@ -787,7 +856,9 @@ Kim Nayul checked the remaining battery charge and the custody seal together, an
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0206"></a>
 
 ## V03 · Freight Tram (Tram) (Tram)
@@ -810,7 +881,9 @@ Choe Eunjae checked the remaining battery charge and the custody seal together, 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0212"></a>
 
 ## V04 · Fire-Hose Robot (Gugyeongno) (Gugyeongno)
@@ -833,7 +906,9 @@ Han Somi checked the remaining battery charge and the custody seal together, and
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0218"></a>
 
 ## V05 · Rail Tow (Gyeonin) (Gyeonin)
@@ -856,7 +931,9 @@ Jeong Soyul checked the remaining battery charge and the custody seal together, 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0224"></a>
 
 ## V06 · Distribution Truck (Baejeon) (Baejeon)
@@ -879,7 +956,9 @@ Jo Ha-rin checked the remaining battery charge and the custody seal together, an
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0230"></a>
 
 ## V07 · Sweeper Vehicle (Cheongso) (Cheongso)
@@ -902,7 +981,9 @@ Eva Novakova checked the remaining battery charge and the custody seal together,
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0236"></a>
 
 ## V08 · Ambulance Cart (Gugeup) (Gugeup)
@@ -925,7 +1006,9 @@ Yun Seo-ha checked the remaining battery charge and the custody seal together, a
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0242"></a>
 
 ## V09 · Port Crane (Crane) (Crane)
@@ -948,7 +1031,9 @@ Hwang Eunseol checked the remaining battery charge and the custody seal together
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0248"></a>
 
 ## V10 · Dock Shuttle (Dock) (Dock)
@@ -971,7 +1056,9 @@ Hwang Serin checked the remaining battery charge and the custody seal together, 
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0254"></a>
 
 ## V11 · Night Dispatch (Yabae) (Yabae)
@@ -994,7 +1081,9 @@ Jo Uchan checked the remaining battery charge and the custody seal together, and
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0260"></a>
 
 ## V12 · Heavy-Equipment Arm (Jungpal) (Jungpal)
@@ -1017,7 +1106,9 @@ Jeon Miri checked the remaining battery charge and the custody seal together, an
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0266"></a>
 
 ## V13 · Tunnel Track Maintenance (Boseon) (Boseon)
@@ -1040,7 +1131,9 @@ Eun Chaeyun checked the remaining battery charge and the custody seal together, 
 Even when the loading-bay alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0272"></a>
 
 ## V14 · Bridge Inspection (Gyoryang) (Gyoryang)
@@ -1063,7 +1156,9 @@ An Gijun checked the remaining battery charge and the custody seal together, and
 Even when the inspection-pit alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0278"></a>
 
 ## V15 · Sluice-Gate Cart (Sumun) (Sumun)
@@ -1086,7 +1181,9 @@ Ra Jinu checked the remaining battery charge and the custody seal together, and 
 Even when the charging-slot alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->
 
+<!-- private:start -->
 <a id="Synthetic-Actors-heading-0284"></a>
 
 ## V16 · Emergency Tow (Bigyeon) (Bigyeon)
@@ -1109,3 +1206,4 @@ Gwak Eunjae checked the remaining battery charge and the custody seal together, 
 Even when the turnback-line alarm sounded, it did not open network-wide authority and requested only the sector key.
 
 Even when its parts ran out, it did not seize control of other facilities.
+<!-- private:end -->

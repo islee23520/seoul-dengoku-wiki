@@ -1,0 +1,57 @@
+{
+ "rules": [
+  {
+   "id": "lcf-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0001",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "한겨울 밤, 공방의 베어링 재고가 바닥났다.",
+   "to": ""
+  },
+  {
+   "id": "lcf-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0001",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 한겨울 밤, 공방의 베어링 재고가 바닥났다.\n",
+   "to": ""
+  },
+  {
+   "id": "lcf-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0164",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "이 일로 이웃이 그를 증언인으로 부르기 시작했다.",
+   "to": ""
+  },
+  {
+   "id": "lcf-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0164",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 이 일로 이웃이 그를 증언인으로 부르기 시작했다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lcf-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0164",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "일화. 이 일로 이웃이 그를 증언인으로 부르기 시작했다.",
+   "to": "직함은 식량 교환 증언인."
+  }
+ ]
+}

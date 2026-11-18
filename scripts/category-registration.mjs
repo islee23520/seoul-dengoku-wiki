@@ -26,7 +26,7 @@ export function categoryEntities(pages, documents) {
     ['sensing-communications', '감지·통신', /센서 모듈|광학 센서 패널|발광 탐색 렌즈|진동 음파 방출기|프로토콜 카드|원격 제어|호출망|분산 제어/gu],
     ['medical-biological', '의료·생물', /항생제|해열제|수액|인슐린|의료 냉장고|호흡보호구/gu],
   ]
-  const ecologyLabels = { 'animal-urban': '도시 동물', human: '적대 사람 집단', 'rogue-robot': '잔존 자동 기계', infected: '감염자', biomechanical: '생체기계·시설 생태', 'humanoid-mutant': '인체 변이·공생' }
+  const ecologyLabels = { 'animal-urban': '도시 동물', human: '적대 사람 집단', 'rogue-robot': '잔존 자동 기계', biomechanical: '생체기계·시설 생태', 'humanoid-mutant': '인체 변이·공생' }
   const technologies = new Map()
   for (const page of pages) {
     const source = page.value

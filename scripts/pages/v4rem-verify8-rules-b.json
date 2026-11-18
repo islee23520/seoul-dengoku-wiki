@@ -1,0 +1,16 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v8b-1",
+   "file": "090",
+   "key": "person-1003",
+   "col": "json_ko",
+   "from": "없음. 품계는 없다.",
+   "to": "없음. 품계는 미등록이며 대한민국 정부 관직·공무원 계급이 아니다.",
+   "exact": true,
+   "pathRe": "^\\.fields\\.봉건 작위$",
+   "expect": 1
+  }
+ ]
+}

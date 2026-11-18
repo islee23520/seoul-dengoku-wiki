@@ -1,0 +1,2284 @@
+{
+ "rules": [
+  {
+   "id": "lh-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0002",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Food storehouse duty",
+   "to": "- Livelihood: Food Storehouse Duty"
+  },
+  {
+   "id": "lh-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0003",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Tunnel patrol records",
+   "to": "- Occupation: Tunnel Patrol Records"
+  },
+  {
+   "id": "lh-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0005",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Vehicle and pump maintenance",
+   "to": "- Livelihood: Vehicle and Pump Maintenance"
+  },
+  {
+   "id": "lh-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0006",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Underground food hauling",
+   "to": "- Livelihood: Underground Food Hauling"
+  },
+  {
+   "id": "lh-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0006",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "- 생업: 수상 운송",
+   "to": "- 생업: 지하 식량 운반"
+  },
+  {
+   "id": "lh-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Contract recording and review",
+   "to": "- Occupation: Contract Records and Review"
+  },
+  {
+   "id": "lh-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0010",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Pump maintenance",
+   "to": "- Livelihood: Pump Maintenance"
+  },
+  {
+   "id": "lh-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0011",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Food goods trade",
+   "to": "- Livelihood: Food Goods Trading"
+  },
+  {
+   "id": "lh-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0012",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Medical treatment",
+   "to": "- Livelihood: Medical Treatment"
+  },
+  {
+   "id": "lh-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0017",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Waiting hall duty",
+   "to": "- Occupation: Waiting Hall Duty"
+  },
+  {
+   "id": "lh-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0018",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Power equipment operation",
+   "to": "- Occupation: Power Equipment Operation"
+  },
+  {
+   "id": "lh-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0024",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Document attendance and collation",
+   "to": "- Occupation: Document Witnessing and Verification"
+  },
+  {
+   "id": "lh-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0025",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Concourse duty",
+   "to": "- Livelihood: Waiting Hall Duty"
+  },
+  {
+   "id": "lh-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0026",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Keeping the compact originals",
+   "to": "- Livelihood: Accord Original Custody"
+  },
+  {
+   "id": "lh-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0027",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Convoy message delivery",
+   "to": "- Livelihood: Convoy Message Delivery"
+  },
+  {
+   "id": "lh-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0028",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Food weighing and distribution",
+   "to": "- Livelihood: Food Weighing & Distribution"
+  },
+  {
+   "id": "lh-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0029",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "- Occupation: Workshop fabrication coordination",
+   "to": "- Occupation: Workshop Production Coordination"
+  },
+  {
+   "id": "lh-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0029",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Workshop fabrication coordination",
+   "to": "- Occupation: Workshop Production Coordination"
+  },
+  {
+   "id": "lh-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0032",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Guard and patrol",
+   "to": "- Occupation: Guard & Patrol"
+  },
+  {
+   "id": "lh-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0034",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Waiting-hall duty",
+   "to": "- Occupation: Waiting Hall Duty"
+  },
+  {
+   "id": "lh-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0037",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Ration Duty",
+   "to": "- Livelihood: Ration Duty Officer"
+  },
+  {
+   "id": "lh-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0046",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Holding-track dispatch",
+   "to": "- Livelihood: Siding Dispatch"
+  },
+  {
+   "id": "lh-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0047",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Running ration pots",
+   "to": "- Livelihood: Ration Pot Operations"
+  },
+  {
+   "id": "lh-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0048",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Dust treatment",
+   "to": "- Livelihood: Dust Treatment and Surgery"
+  },
+  {
+   "id": "lh-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0049",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Power-generation equipment operation",
+   "to": "- Occupation: Power Plant Operation"
+  },
+  {
+   "id": "lh-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0053",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Intake document delivery",
+   "to": "- Occupation: Reception Document Delivery"
+  },
+  {
+   "id": "lh-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0057",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "- Occupation: Life safety research",
+   "to": "- Occupation: Life Safety Research"
+  },
+  {
+   "id": "lh-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0057",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Life safety research",
+   "to": "- Occupation: Life Safety Research"
+  },
+  {
+   "id": "lh-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Safety Sample Review",
+   "to": "- Occupation: Safety Sample Examination"
+  },
+  {
+   "id": "lh-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0059",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Technology certification and verification",
+   "to": "- Occupation: Technical Certification and Verification"
+  },
+  {
+   "id": "lh-31",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0060",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Disaster alarm and lockdown",
+   "to": "- Occupation: Disaster Alert & Lockdown"
+  },
+  {
+   "id": "lh-32",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0062",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Stabling-track dispatch",
+   "to": "- Occupation: Siding Dispatch"
+  },
+  {
+   "id": "lh-33",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0063",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Seed preservation and temperature-humidity recording",
+   "to": "- Occupation: Climate-Control Software for the Government's Original Seed Vault"
+  },
+  {
+   "id": "lh-34",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0064",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Machine-body inspection and repair",
+   "to": "- Occupation: Machine-Body Inspection and Repair"
+  },
+  {
+   "id": "lh-35",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0068",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Laboratory Wing Clinical Care",
+   "to": "- Livelihood: Laboratory Wing First Aid"
+  },
+  {
+   "id": "lh-36",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0069",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Gate patrol",
+   "to": "- Occupation: Gate Patrol"
+  },
+  {
+   "id": "lh-37",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0070",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Sealed-document delivery",
+   "to": "- Occupation: Sealed Document Delivery"
+  },
+  {
+   "id": "lh-38",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0072",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Certified Copy Recording",
+   "to": "- Occupation: Certification Copy Recording"
+  },
+  {
+   "id": "lh-39",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0074",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Holding-track freight sorting and dispatch",
+   "to": "- Occupation: Stabling Track Cargo Sorting and Dispatch"
+  },
+  {
+   "id": "lh-40",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0078",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Escorting audio originals",
+   "to": "- Livelihood: Original Audio Escort"
+  },
+  {
+   "id": "lh-41",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0084",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Investigation document delivery",
+   "to": "- Occupation: Survey Document Delivery"
+  },
+  {
+   "id": "lh-42",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0088",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "- Occupation: duty roster and custody of the original wills",
+   "to": "- Occupation: Duty Roster · Custody of Original Will"
+  },
+  {
+   "id": "lh-43",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0088",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: duty roster and custody of the original wills",
+   "to": "- Occupation: Duty Roster · Custody of Original Will"
+  },
+  {
+   "id": "lh-44",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0090",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Pump parts storage and dispatch management",
+   "to": "- Occupation: Pump Parts Storage · Dispatch Management"
+  },
+  {
+   "id": "lh-45",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0091",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Pump room guarding and access control",
+   "to": "- Occupation: Pump Room Security · Access Control"
+  },
+  {
+   "id": "lh-46",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0094",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Sealing will copies and auditing records",
+   "to": "- Occupation: Will Copy Sealing · Records Audit"
+  },
+  {
+   "id": "lh-47",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0095",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Alley shutter and food notices",
+   "to": "- Livelihood: Alley Shutter and Food Notices"
+  },
+  {
+   "id": "lh-48",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Leather process and shipment records",
+   "to": "- Livelihood: Leather Process · Shipment Records"
+  },
+  {
+   "id": "lh-49",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Alley pump maintenance",
+   "to": "- Livelihood: Alley Pump Maintenance"
+  },
+  {
+   "id": "lh-50",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0098",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Waterborne packing transport",
+   "to": "- Occupation: Packing River Transport"
+  },
+  {
+   "id": "lh-51",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0100",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Bridge guarding and access control",
+   "to": "- Occupation: Bridge Guarding and Access Control"
+  },
+  {
+   "id": "lh-52",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0104",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Waiting hall food window duty",
+   "to": "- Livelihood: Waiting-Hall Food Window Duty"
+  },
+  {
+   "id": "lh-53",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0105",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Stabling-track bay assignment and release management",
+   "to": "- Occupation: Managing Stabling Track Bay Assignments and Dispatch"
+  },
+  {
+   "id": "lh-54",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0106",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Workshop-market release and ration records",
+   "to": "- Occupation: Recording Workshop Market Dispatch and Rationing"
+  },
+  {
+   "id": "lh-55",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0107",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Alley clinic care and prescription distribution",
+   "to": "- Livelihood: Alley First Aid and Medicine Distribution"
+  },
+  {
+   "id": "lh-56",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0108",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Pump-room power generation and distribution operation",
+   "to": "- Livelihood: Operating Pump Room Power Generation and Distribution"
+  },
+  {
+   "id": "lh-57",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0109",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Food transport crewing and lock checks",
+   "to": "- Livelihood: Food Transport Crewing and Lock Checks"
+  },
+  {
+   "id": "lh-58",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Will copy custody and reading record",
+   "to": "- Livelihood: Keeping and Logging Access to Will Copies"
+  },
+  {
+   "id": "lh-59",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0111",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Food ledger copy cross-checking",
+   "to": "- Livelihood: Cross-Checking Food Ledger Copies"
+  },
+  {
+   "id": "lh-60",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0113",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Sealed convoy of will evidence",
+   "to": "- Livelihood: Sealed Escort of Will Evidence"
+  },
+  {
+   "id": "lh-61",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0115",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Militia watch and billeting blockade",
+   "to": "- Livelihood: Militia Duty Shift and Encampment Blocking"
+  },
+  {
+   "id": "lh-62",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "- Livelihood: Coordinating the restoration-service register and parts compensation",
+   "to": "- Livelihood: Restoration Service Roster and Parts Compensation Adjustment"
+  },
+  {
+   "id": "lh-63",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0116",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Restoration-service roll and parts-payment coordination",
+   "to": "- Livelihood: Restoration Service Roster and Parts Compensation Adjustment"
+  },
+  {
+   "id": "lh-64",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0117",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Posting restoration results and managing dispatch",
+   "to": "- Livelihood: Restoration Record Posting and Dispatch Management"
+  },
+  {
+   "id": "lh-65",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0118",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Managing machine-body condition records and parts stock",
+   "to": "- Livelihood: Machine-Body Condition Records and Parts Stock Management"
+  },
+  {
+   "id": "lh-66",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0119",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Officer corps training and instructor notebook management",
+   "to": "- Livelihood: Rifle Guard Training and Instructor Notebook Management"
+  },
+  {
+   "id": "lh-67",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0120",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Bridge passage and night blockade management",
+   "to": "- Occupation: Bridge Passage and Night Blockade Management"
+  },
+  {
+   "id": "lh-68",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0121",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Train dispatch and parts-specification inspection",
+   "to": "- Occupation: Train Dispatch and Parts Specification Inspection"
+  },
+  {
+   "id": "lh-69",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0122",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Managing alley ration tickets and the civic register",
+   "to": "- Livelihood: Alley Ration Ticket and Citizen Roster Management"
+  },
+  {
+   "id": "lh-70",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0123",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Auditing gate-toll slips",
+   "to": "- Livelihood: Gate Tax Voucher Audit"
+  },
+  {
+   "id": "lh-71",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0124",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Patrol train dispatch and freight car checking",
+   "to": "- Occupation: Patrol Train Dispatch and Freight Car Verification"
+  },
+  {
+   "id": "lh-72",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0129",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Delivering sealed administrative and military dispatches",
+   "to": "- Occupation: Delivery of Sealed Administrative and Guard Dispatches"
+  },
+  {
+   "id": "lh-73",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0132",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Concourse queue and food slip handling",
+   "to": "- Livelihood: Concourse Queue and Food Slip Handling"
+  },
+  {
+   "id": "lh-74",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0133",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Stabling-track power and interlock inspection",
+   "to": "- Livelihood: Siding Power and Interlocking Inspection"
+  },
+  {
+   "id": "lh-75",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0135",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Alley clinics by the mobile medical car",
+   "to": "- Livelihood: Alleyway First Aid at the Mobile Medical Vehicle"
+  },
+  {
+   "id": "lh-76",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0141",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Dispatch personnel roster and escort management",
+   "to": "- Occupation: Deployed Personnel Roster and Escort Management"
+  },
+  {
+   "id": "lh-77",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "- Occupation: Seal chest sealing and ratification hold management",
+   "to": "- Occupation: Seal Box Sealing and Ratification Hold Management"
+  },
+  {
+   "id": "lh-78",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Seal chest sealing and ratification hold management",
+   "to": "- Occupation: Seal Box Sealing and Ratification Hold Management"
+  },
+  {
+   "id": "lh-79",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0146",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Handwriting comparison of wills and ratification review",
+   "to": "- Livelihood: Will Handwriting Comparison and Ratification Examination"
+  },
+  {
+   "id": "lh-80",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0147",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Managing archive keys and viewing records",
+   "to": "- Livelihood: Archive Key and Reading Record Management"
+  },
+  {
+   "id": "lh-81",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0149",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Notarizing contract termination conditions and witness columns",
+   "to": "- Livelihood: Notarizing Contract Termination Conditions and Witness Fields"
+  },
+  {
+   "id": "lh-82",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0150",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: underground passage surveying, map restoration",
+   "to": "- Livelihood: Underground Passage Surveying and Map Restoration"
+  },
+  {
+   "id": "lh-83",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0154",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: archive key checks and guard patrol",
+   "to": "- Livelihood: Archive key verification and defensive patrols"
+  },
+  {
+   "id": "lh-84",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0155",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Delivering approval-hold messages and custody confirmations",
+   "to": "- Livelihood: Delivery of ratification hold messages and custody confirmations"
+  },
+  {
+   "id": "lh-85",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0157",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Collating and recording testamentary handwriting and testimony",
+   "to": "- Livelihood: Will handwriting and testimony comparison records"
+  },
+  {
+   "id": "lh-86",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0159",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Supervises archive chest temperatures and key rotations",
+   "to": "- Livelihood: Supervision of stacks vault temperature and key rotation"
+  },
+  {
+   "id": "lh-87",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0163",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Verifying wills by cross-checking handwriting and waveforms",
+   "to": "- Occupation: Will handwriting and waveform comparison verification"
+  },
+  {
+   "id": "lh-88",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0164",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Cross-checking food exchange claims and testimony",
+   "to": "- Occupation: Food exchange claims and testimony comparison"
+  },
+  {
+   "id": "lh-89",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0165",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Managing ratification dates and after-the-fact endorsement witnesses",
+   "to": "- Livelihood: Management of ratification dates and post-hoc endorsement witnesses"
+  },
+  {
+   "id": "lh-90",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0167",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Delivering council messages and witness confirmations",
+   "to": "- Livelihood: Delivering Council Messages and Confirming Testimony"
+  },
+  {
+   "id": "lh-91",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0168",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Recording emergency authority return times and jurisdictions",
+   "to": "- Livelihood: Recording the Time and Jurisdiction of Emergency Powers Return"
+  },
+  {
+   "id": "lh-92",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0171",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Approving track blockades and controlling switches",
+   "to": "- Occupation: Approving Track Blockades and Controlling Switches"
+  },
+  {
+   "id": "lh-93",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0172",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Verifying train boarding proof and dispatching window occupancy",
+   "to": "- Occupation: Train Boarding Verification and Window Occupancy Dispatch"
+  },
+  {
+   "id": "lh-94",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0173",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Track maintenance log · brake inspection",
+   "to": "- Livelihood: Track Maintenance Log and Brake Inspection"
+  },
+  {
+   "id": "lh-95",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0174",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Transshipment warehouse temperature and inventory verification",
+   "to": "- Occupation: Verifying Transshipment Warehouse Temperature and Inventory"
+  },
+  {
+   "id": "lh-96",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0175",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Division and public freight car dispatch and switch operation",
+   "to": "- Occupation: Dispatching Division and Public Freight Cars and Operating Switches"
+  },
+  {
+   "id": "lh-97",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0176",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Pre-shipment brake thickness checks and parts inspection",
+   "to": "- Livelihood: Pre-Shipment Brake Thickness Inspection and Parts Checking"
+  },
+  {
+   "id": "lh-98",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0178",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Managing the patient roster and reagents, and distributing prescriptions",
+   "to": "- Livelihood: Managing the Patient Roster and Reagents and Distributing Medicine"
+  },
+  {
+   "id": "lh-99",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0188",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Requesting dispatch record access and publishing reasons for refusal",
+   "to": "- Livelihood: Dispatch Record Access Requests and Disclosure of Refusal Reasons"
+  },
+  {
+   "id": "lh-100",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0190",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Cross-checking extension requests against stop times",
+   "to": "- Livelihood: Extension Requests and Stop Time Cross-Check"
+  },
+  {
+   "id": "lh-101",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0191",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Seal and weight inspection of food and medicine boxes",
+   "to": "- Occupation: Seal and Weight Inspection of Food and Medicine Boxes"
+  },
+  {
+   "id": "lh-102",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0195",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "- Occupation: Managing cold-storage warehouse keys and auction prices",
+   "to": "- Occupation: Cold Storage Key and Auction Price Management"
+  },
+  {
+   "id": "lh-103",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0195",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Managing cold-storage warehouse keys and auction prices",
+   "to": "- Occupation: Cold Storage Key and Auction Price Management"
+  },
+  {
+   "id": "lh-104",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0196",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Frozen stock temperature and weight inspection",
+   "to": "- Occupation: Frozen Inventory Temperature and Weight Inspection"
+  },
+  {
+   "id": "lh-105",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0198",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Reconciling convoy routes and arrival weights",
+   "to": "- Occupation: Escort Route and Arrival Weight Cross-Check"
+  },
+  {
+   "id": "lh-106",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0199",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Engraving ice brick weight and production time",
+   "to": "- Occupation: Ice Brick Weight and Production Time Engraving"
+  },
+  {
+   "id": "lh-107",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0200",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Disclosing remaining departure fuel and ice",
+   "to": "- Occupation: Departure Fuel and Remaining Ice Disclosure"
+  },
+  {
+   "id": "lh-108",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0201",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Ice-maker compression-temperature and parts inspection",
+   "to": "- Livelihood: Ice Machine Compression Temperature and Parts Inspection"
+  },
+  {
+   "id": "lh-109",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0211",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Food-poisoning bulletins and mobile clinic operations",
+   "to": "- Livelihood: Food Poisoning Notices and Mobile First-Aid Post Operation"
+  },
+  {
+   "id": "lh-110",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0213",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Freezer accident temperature and weight testimony",
+   "to": "- Occupation: Freezer Accident Temperature and Weight Testimony"
+  },
+  {
+   "id": "lh-111",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0214",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Winning-bid copies and medication accident records",
+   "to": "- Occupation: Medicine Winning-Bid Copies and Medication Accident Records"
+  },
+  {
+   "id": "lh-112",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0215",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Recording night stock transfer times and weights",
+   "to": "- Occupation: Night Stock Transfer Time and Weight Records"
+  },
+  {
+   "id": "lh-113",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0217",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Reconciling the food ledger against actual stock",
+   "to": "- Occupation: Food Ledger and Actual Stock Reconciliation"
+  },
+  {
+   "id": "lh-114",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0222",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Currency stamp appraisal and hold records",
+   "to": "- Occupation: Currency Mint-Mark Appraisal and Hold Records"
+  },
+  {
+   "id": "lh-115",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0223",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Vault key split-and-custody recording",
+   "to": "- Livelihood: Vault Key Splitting and Custody Records"
+  },
+  {
+   "id": "lh-116",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0224",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Recording council speaking turns and price corrections",
+   "to": "- Livelihood: Council Speaking Order and Price Correction Records"
+  },
+  {
+   "id": "lh-117",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0236",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: council speaking-time chalkboard and turn management",
+   "to": "- Livelihood: Council Speaking-Time Chalkboard and Turn Order Management"
+  },
+  {
+   "id": "lh-118",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0239",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Transporting the original ledger case and key fragments",
+   "to": "- Livelihood: Original Ledger Box and Key Fragment Transport"
+  },
+  {
+   "id": "lh-119",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0240",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Vault duty roster and record-time verification",
+   "to": "- Livelihood: Vault Duty Roster and Record Timestamp Comparison"
+  },
+  {
+   "id": "lh-120",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0241",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Posting the council's reasons for holding and managing the public queue",
+   "to": "- Occupation: Council Postponement Reason Posting and Disclosure Order Management"
+  },
+  {
+   "id": "lh-121",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0242",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Exchange-record and passage-roster collation",
+   "to": "- Occupation: Exchange Records and Passage Roster Comparison"
+  },
+  {
+   "id": "lh-122",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0243",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Counterfeit currency origin map and patrol-time records",
+   "to": "- Livelihood: Counterfeit Currency Origin Map and Patrol Time Records"
+  },
+  {
+   "id": "lh-123",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0244",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Transcribing council statements and cross-checking testimony",
+   "to": "- Livelihood: Council Speech Transcription and Testimony Comparison"
+  },
+  {
+   "id": "lh-124",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0246",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "- Livelihood: register copying",
+   "to": "- Livelihood: Roster Transcription"
+  },
+  {
+   "id": "lh-125",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0246",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: register copying",
+   "to": "- Livelihood: Roster Transcription"
+  },
+  {
+   "id": "lh-126",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0247",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Refugee register cross-checking and ration confirmation",
+   "to": "- Livelihood: Believer Roster Comparison and Ration Verification"
+  },
+  {
+   "id": "lh-127",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0249",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Corridor Scouting Reports and Passage Checks",
+   "to": "- Occupation: Corridor Scouting Reports and Passage Verification"
+  },
+  {
+   "id": "lh-128",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0251",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Separating ration and armed duty, managing storehouse keys",
+   "to": "- Occupation: Separation of Ration and Armed Duty; Warehouse Key Control"
+  },
+  {
+   "id": "lh-129",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0253",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Checking cargo-origin ledgers and passage tickets",
+   "to": "- Livelihood: Cargo Source Ledger and Transit Pass Verification"
+  },
+  {
+   "id": "lh-130",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0256",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Courier and register checking",
+   "to": "- Occupation: Messaging and Roster Cross-Checking"
+  },
+  {
+   "id": "lh-131",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0258",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Recording household vote results and relief supply origins",
+   "to": "- Occupation: Clan Vote Results and Relief Supply Source Records"
+  },
+  {
+   "id": "lh-132",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0260",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Posting passage times · refugee tallies",
+   "to": "- Livelihood: Posting of Passage Times and Lay Follower Passes"
+  },
+  {
+   "id": "lh-133",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0262",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: highland torch-shift and access records",
+   "to": "- Occupation: Highland Torch Shift Changes and Approach Records"
+  },
+  {
+   "id": "lh-134",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0268",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Drafting negotiation texts and posting clan vote results",
+   "to": "- Occupation: Posting Consultation Drafts · Clan Vote Results"
+  },
+  {
+   "id": "lh-135",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "- Livelihood: Computer Room elder",
+   "to": "- Livelihood: Computer Room Elder"
+  },
+  {
+   "id": "lh-136",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0272",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Computer Room elder",
+   "to": "- Livelihood: Computer Room Elder"
+  },
+  {
+   "id": "lh-137",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0274",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Work crew rotation and accident signature management",
+   "to": "- Livelihood: Managing Work Crew Rotation · Accident Signatures"
+  },
+  {
+   "id": "lh-138",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0275",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Fuel and food stock counting",
+   "to": "- Occupation: Fuel and Food Stock Counting"
+  },
+  {
+   "id": "lh-139",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0276",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Wheel inspection and armament loading verification",
+   "to": "- Occupation: Wheel Inspection · Verifying Armament Loading"
+  },
+  {
+   "id": "lh-140",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0277",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Recovered-steel weight and shipment verification",
+   "to": "- Livelihood: Verifying Scrap Iron Recovery Weight · Shipments"
+  },
+  {
+   "id": "lh-141",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0278",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Wheel maintenance logs and defective-part sample management",
+   "to": "- Livelihood: Wheel Maintenance Logs · Defective Parts Samples"
+  },
+  {
+   "id": "lh-142",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0286",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Posting North Gate escort headcounts and wheel inspection sheets",
+   "to": "- Livelihood: Northern Gate Escort Personnel, Wheel Inspection Sheet Posting"
+  },
+  {
+   "id": "lh-143",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0288",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Disclosure of recovered-steel weights and shipment confirmation",
+   "to": "- Occupation: Steel Salvage Weight Disclosure, Dispatch Verification"
+  },
+  {
+   "id": "lh-144",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0289",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Pre-sortie maintenance and armament loading checks for the rail cavalry",
+   "to": "- Livelihood: Rail Cavalry Pre-Sortie Maintenance, Armament Loading Verification"
+  },
+  {
+   "id": "lh-145",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0290",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Disclosure of wheel maintenance logs and defective part samples",
+   "to": "- Livelihood: Wheel Maintenance Log, Defective Part Sample Disclosure"
+  },
+  {
+   "id": "lh-146",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0291",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Checking test wheel defect samples and accident signatures",
+   "to": "- Occupation: Test Wheel Defect Sample, Accident Signature Verification"
+  },
+  {
+   "id": "lh-147",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0292",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Pre-sortie maintenance inspection of the medical train",
+   "to": "- Occupation: Pre-Departure Maintenance of the Contract Train that Carries Free City Doctors"
+  },
+  {
+   "id": "lh-148",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0293",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: North Gate evacuation passage-time and family-ticket guidance",
+   "to": "- Livelihood: Northern Gate Evacuation Passage Times, Family Ticket Guidance"
+  },
+  {
+   "id": "lh-149",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0294",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Heating fuel use records and signature confirmation",
+   "to": "- Livelihood: Heating Fuel Use Records · Signature Verification"
+  },
+  {
+   "id": "lh-150",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0299",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: recording patient severity and transfer times",
+   "to": "- Occupation: Patient Severity · Transfer Time Record"
+  },
+  {
+   "id": "lh-151",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0301",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Staffing of medical and cargo escort personnel",
+   "to": "- Livelihood: Medical · Cargo Escort Roster Assignment"
+  },
+  {
+   "id": "lh-152",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0302",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Managing medical train car keys and armory seals",
+   "to": "- Livelihood: Medical Train Car Key · Weapons Locker Seal Management"
+  },
+  {
+   "id": "lh-153",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0304",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Checking inbound weights and invoices of transfer freight",
+   "to": "- Occupation: Transfer Cargo Intake Weight · Invoice Verification"
+  },
+  {
+   "id": "lh-154",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0308",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Northeast Outer Road survey lines and search warrant records",
+   "to": "- Occupation: Northeast Outer Road Measured Line · Search Warrant Record"
+  },
+  {
+   "id": "lh-155",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0310",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Posting platform queues and triage tags",
+   "to": "- Livelihood: Platform Queue · Severity Chart Posting"
+  },
+  {
+   "id": "lh-156",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0312",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Market price posting, stock posting, shipment checking",
+   "to": "- Livelihood: Market price, inventory posting, and shipment release confirmation"
+  },
+  {
+   "id": "lh-157",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0314",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Medical Unit triage level and transfer time recording",
+   "to": "- Livelihood: Medical team triage and transport time records"
+  },
+  {
+   "id": "lh-158",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0317",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Medicine dose-time and fever records",
+   "to": "- Livelihood: Medicine dosing time and fever records"
+  },
+  {
+   "id": "lh-159",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0318",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Escort signing and witness verification",
+   "to": "- Livelihood: Escort signature and witness cross-check"
+  },
+  {
+   "id": "lh-160",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0323",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Medical corps commander",
+   "to": "- Occupation: Relief Corps Leader: guards the university hospital buildings and medicine stores; first aid and transport only"
+  },
+  {
+   "id": "lh-161",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0324",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: checking herb origins and dispatch seals",
+   "to": "- Livelihood: Medicine origin and release seal cross-check"
+  },
+  {
+   "id": "lh-162",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0325",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Triage assignment and priority-treatment request reporting",
+   "to": "- Occupation: Triage assignment and priority transport request report"
+  },
+  {
+   "id": "lh-163",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0326",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Quarantine entry stamps and release records",
+   "to": "- Occupation: Quarantine entry stamp and release records"
+  },
+  {
+   "id": "lh-164",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0330",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Checking incoming herb weights and outgoing invoices",
+   "to": "- Livelihood: Medicinal Herb Intake Weight and Outbound Invoice Check"
+  },
+  {
+   "id": "lh-165",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0331",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Posting triage charts and clinical findings",
+   "to": "- Livelihood: Triage Chart and First-Aid Findings Posting"
+  },
+  {
+   "id": "lh-166",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0332",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Quarantine confirmation and release patrol",
+   "to": "- Livelihood: Quarantine Check and Release Patrol"
+  },
+  {
+   "id": "lh-167",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0333",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: delivering medical messages and contract notices",
+   "to": "- Livelihood: Medical Message and Contract Notice Delivery"
+  },
+  {
+   "id": "lh-168",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0334",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Counterfeit medicine identification and origin records",
+   "to": "- Livelihood: Counterfeit Medicine Identification and Origin Record"
+  },
+  {
+   "id": "lh-169",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0335",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Sickbed waiting list and contract margin-note records",
+   "to": "- Livelihood: Sickbed Waiting List and Contract Margin Notes"
+  },
+  {
+   "id": "lh-170",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0336",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Posting medical queue tickets and medicine unloading order at the waiting hall",
+   "to": "- Livelihood: Concourse Medical Waiting Tickets and Medicinal Herb Unloading Order Posting"
+  },
+  {
+   "id": "lh-171",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0338",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Inspecting medicinal herb origins and drying dates",
+   "to": "- Livelihood: Medicinal Herb Origin and Drying Date Inspection"
+  },
+  {
+   "id": "lh-172",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0339",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Posting the severity chart and clinical findings",
+   "to": "- Livelihood: Triage Chart and First-Aid Findings Posting"
+  },
+  {
+   "id": "lh-173",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0341",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Herb-contamination dosage and fever records",
+   "to": "- Livelihood: Medicinal Herb Contamination Dosage and Fever Record"
+  },
+  {
+   "id": "lh-174",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0343",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Recording patient and medicine weights on medical escort passes",
+   "to": "- Occupation: Medical escort pass patient and medicine weight records"
+  },
+  {
+   "id": "lh-175",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0344",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Signature-and-seal verification",
+   "to": "- Occupation: Signature and Seal Verification"
+  },
+  {
+   "id": "lh-176",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0345",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Refugee patient triage posting",
+   "to": "- Occupation: Evacuee Patient Triage Posting"
+  },
+  {
+   "id": "lh-177",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0346",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Treatment refusal times and re-signature records",
+   "to": "- Livelihood: First Aid Refusal Time and Re-signature Record"
+  },
+  {
+   "id": "lh-178",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0347",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Reconciling requisition slips and entry headcounts",
+   "to": "- Livelihood: Conscription slip and entry headcount cross-check"
+  },
+  {
+   "id": "lh-179",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0348",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: herb appraisal reconciliation and shipment hold",
+   "to": "- Livelihood: Medicinal Herb Appraisal Cross-check and Shipment Hold"
+  },
+  {
+   "id": "lh-180",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0349",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "- Livelihood: Ridge Defense Captain",
+   "to": "- Livelihood: Ridge Garrison Commander"
+  },
+  {
+   "id": "lh-181",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0349",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Ridge Defense Captain",
+   "to": "- Livelihood: Ridge Garrison Commander"
+  },
+  {
+   "id": "lh-182",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0350",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Beacon fires, whistle blockades, and incident reports",
+   "to": "- Occupation: Beacon and Whistle Blocking and Incident Report"
+  },
+  {
+   "id": "lh-183",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0351",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: pier cracks, traffic weight disclosure, and double-seal verification",
+   "to": "- Occupation: Pier Crack, Transit Weight Disclosure, and Double Seal Verification"
+  },
+  {
+   "id": "lh-184",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0352",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: intake goods and fuel ledger and travel permit inspection",
+   "to": "- Occupation: Intake Goods and Fuel Ledger Inspection"
+  },
+  {
+   "id": "lh-185",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0353",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: shutter, fuel, and patrol record checks",
+   "to": "- Livelihood: Shutter, Fuel, and Patrol Record Checks"
+  },
+  {
+   "id": "lh-186",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Pump-room wear chart and maintenance key management",
+   "to": "- Occupation: Pump Room Wear Chart and Maintenance Key Management"
+  },
+  {
+   "id": "lh-187",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0356",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: pier-crack and transit-invoice double-seal verification",
+   "to": "- Livelihood: Pier Crack and Transit Invoice Double Seal Verification"
+  },
+  {
+   "id": "lh-188",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0359",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Delivery of passage dispatches and exemption passes",
+   "to": "- Occupation: Delivery of Transit Messages and Exemption Passes"
+  },
+  {
+   "id": "lh-189",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0361",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: recording passage items and valid columns of exemption passes",
+   "to": "- Livelihood: Recording Passage Items and Valid Slots on Exemption Passes"
+  },
+  {
+   "id": "lh-190",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0362",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Posting concourse waiting tickets and shutter checks",
+   "to": "- Occupation: Concourse waiting tickets and shutter checks"
+  },
+  {
+   "id": "lh-191",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0364",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: market prices, transit-item postings, and shipment checks",
+   "to": "- Livelihood: Posting Market Prices and Passage Items · Confirming Shipments"
+  },
+  {
+   "id": "lh-192",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0366",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Pump room fuel-level and output log sealing",
+   "to": "- Occupation: Sealing Pump Room Fuel Level and Output Logs"
+  },
+  {
+   "id": "lh-193",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0367",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: passage times, beacon color records, exemption testimony sealing",
+   "to": "- Livelihood: Sealing Passage Times, Beacon Color Records, and Exemption Testimony"
+  },
+  {
+   "id": "lh-194",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0370",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: requisition slips and headcount reconciliation",
+   "to": "- Occupation: Verifying Requisition Slips and Cross-Checking Passage Headcounts"
+  },
+  {
+   "id": "lh-195",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0372",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Ratification Dates and Post-Hoc Endorsement Witness Verification",
+   "to": "- Occupation: Recording Ratification Dates and Verifying Witnesses to Retroactive Approval"
+  },
+  {
+   "id": "lh-196",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0373",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Escort assistant signature and witness collation",
+   "to": "- Livelihood: Cross-Checking Escort Assistant Signatures and Witnesses"
+  },
+  {
+   "id": "lh-197",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0374",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "- Livelihood: Auction coordinator",
+   "to": "- Livelihood: Auction Mediator"
+  },
+  {
+   "id": "lh-198",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0374",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Auction Coordinator",
+   "to": "- Livelihood: Auction Mediator"
+  },
+  {
+   "id": "lh-199",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0399",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Contract auditor",
+   "to": "- Livelihood: Contract Auditor"
+  },
+  {
+   "id": "lh-200",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0405",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: vehicle maintenance recommendations, exam score posting, release switch management",
+   "to": "- Livelihood: Vehicle maintenance recommendations, posting exam scores, managing dispatch switches"
+  },
+  {
+   "id": "lh-201",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0410",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: outer survey, search-warrant cross-checking",
+   "to": "- Livelihood: Outskirts surveying, cross-checking search warrants"
+  },
+  {
+   "id": "lh-202",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0411",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: records of opening and closing times, arrival stamps, and audit binders",
+   "to": "- Livelihood: Recording opening and closing times, arrival stamps, audit files"
+  },
+  {
+   "id": "lh-203",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0424",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Food and fuel stock logging",
+   "to": "- Occupation: Food and Fuel Stock Logging"
+  },
+  {
+   "id": "lh-204",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0429",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: public witness confrontations and testimony records",
+   "to": "- Livelihood: Public Confrontation of Witnesses and Testimony Record"
+  },
+  {
+   "id": "lh-205",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0441",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Guard and patrol",
+   "to": "- Occupation: Guard & Patrol"
+  },
+  {
+   "id": "lh-206",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0443",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Escort and casualty-ledger management",
+   "to": "- Occupation: Escort and Personnel Ledger Management"
+  },
+  {
+   "id": "lh-207",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0459",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Wheel and pump maintenance",
+   "to": "- Occupation: Wheel & Pump Maintenance"
+  },
+  {
+   "id": "lh-208",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0461",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Double-payment ledger reconciliation and correction",
+   "to": "- Livelihood: Double Payment Ledger Reconciliation & Correction"
+  },
+  {
+   "id": "lh-209",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0499",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Medical escort records and duty-key handover",
+   "to": "- Livelihood: Medical Escort Log and Duty Key Handover"
+  },
+  {
+   "id": "lh-210",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0555",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Wheel and pump maintenance",
+   "to": "- Livelihood: Wheel & Pump Maintenance"
+  },
+  {
+   "id": "lh-211",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0577",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Scripture transcript and duty key handover",
+   "to": "- Livelihood: Transcribed Scripture and Duty Keys Handover"
+  },
+  {
+   "id": "lh-212",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0603",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Wheel and pump maintenance",
+   "to": "- Occupation: Wheel & Pump Maintenance"
+  },
+  {
+   "id": "lh-213",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0651",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Wheel and pump maintenance",
+   "to": "- Occupation: Wheel & Pump Maintenance"
+  },
+  {
+   "id": "lh-214",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0691",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Medical escort records and duty-key handover",
+   "to": "- Livelihood: Medical Escort Log and Duty Key Handover"
+  },
+  {
+   "id": "lh-215",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0731",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Dispatch slip and departure verification",
+   "to": "- Occupation: Timetable · Departure Check"
+  },
+  {
+   "id": "lh-216",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0747",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Parts shipment inspection",
+   "to": "- Livelihood: Parts Shipment Inspection"
+  },
+  {
+   "id": "lh-217",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0795",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Wheel and pump maintenance",
+   "to": "- Livelihood: Wheel & Pump Maintenance"
+  },
+  {
+   "id": "lh-218",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0859",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Guard and Patrol",
+   "to": "- Livelihood: Guard & Patrol"
+  },
+  {
+   "id": "lh-219",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0955",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Guard/Patrol",
+   "to": "- Occupation: Guard & Patrol"
+  },
+  {
+   "id": "lh-220",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1003",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Primary Explorer / Secondary Patrol",
+   "to": "- Livelihood: Primary: Explorer / Secondary: Patrol"
+  },
+  {
+   "id": "lh-221",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1004",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Primary herald / secondary patrol",
+   "to": "- Livelihood: Primary: Herald / Secondary: Patrol"
+  },
+  {
+   "id": "lh-222",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1013",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Courier (primary), merchant of logistics (secondary)",
+   "to": "- Livelihood: Courier (primary), Logistics Merchant (secondary)"
+  },
+  {
+   "id": "lh-223",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1015",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: courier",
+   "to": "- Livelihood: Courier"
+  },
+  {
+   "id": "lh-224",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1016",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Patrol corps (primary). Records office (secondary, roster)",
+   "to": "- Livelihood: Patrol Corps (primary). Archivist (secondary, rosters)"
+  },
+  {
+   "id": "lh-225",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1019",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: primarily communication-line maintenance / secondarily records keeping",
+   "to": "- Livelihood: Primary Communication Line Maintenance / Secondary Records Custody"
+  },
+  {
+   "id": "lh-226",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1020",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: primarily archivist / secondarily logistics merchant",
+   "to": "- Livelihood: Primary Archivist / Secondary Logistics Merchant"
+  },
+  {
+   "id": "lh-227",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1021",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Occupation: Primary: archivist / Secondary: logistics merchant",
+   "to": "- Occupation: Primary Archivist / Secondary Logistics Merchant"
+  },
+  {
+   "id": "lh-228",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1022",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "- Livelihood: Primary: logistics merchant / Secondary: record keeper",
+   "to": "- Livelihood: Primary Logistics Merchant / Secondary Archivist"
+  }
+ ]
+}

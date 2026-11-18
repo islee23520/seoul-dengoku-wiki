@@ -1,0 +1,122 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0318",
+   "col": "json_ko",
+   "from": "장세화의 중립 호송 초안",
+   "to": "장세화의 호송 초안",
+   "id": "v11-1",
+   "expect": 6
+  },
+  {
+   "file": "090",
+   "key": "person-0318",
+   "col": "json",
+   "from": "Jang Sehwa's joint convoy plan",
+   "to": "Jang Sehwa's convoy draft",
+   "id": "v11-2",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0361",
+   "col": "json",
+   "from": "a protection-money book",
+   "to": "a one-sided military-cost collection ledger",
+   "id": "v11-3",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0413",
+   "col": "json_ko",
+   "from": "독립 조합국 고유 직능",
+   "to": "조합 고유 직능",
+   "id": "v11-4",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json_ko",
+   "from": "독립 조합국 고유 거점",
+   "to": "조합 고유 거점",
+   "id": "v11-5",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0414",
+   "col": "json",
+   "from": "independent guild state",
+   "to": "guild",
+   "id": "v11-6",
+   "expect": 1
+  },
+  {
+   "file": "090",
+   "key": "person-0194",
+   "col": "json_ko",
+   "from": "다른 세력 세 장의 합의서",
+   "to": "세 장의 합의서",
+   "id": "v11-7",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0319",
+   "col": "json",
+   "from": "Jang Sehwa's neutrality declaration came down",
+   "to": "Jang Sehwa's escort order came down",
+   "id": "v11-8",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json",
+   "from": "one another faction",
+   "to": "another faction",
+   "id": "v11-9",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0168",
+   "col": "json_ko",
+   "from": "한 다른 세력",
+   "to": "다른 세력",
+   "id": "v11-10",
+   "expect": 4
+  },
+  {
+   "file": "090",
+   "key": "person-0221",
+   "col": "json_ko",
+   "from": "한 다른 세력",
+   "to": "다른 세력",
+   "id": "v11-11",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0226",
+   "col": "json",
+   "from": "one another faction",
+   "to": "another faction",
+   "id": "v11-12",
+   "expect": 2
+  },
+  {
+   "file": "090",
+   "key": "person-0226",
+   "col": "json_ko",
+   "from": "한 다른 세력",
+   "to": "다른 세력",
+   "id": "v11-13",
+   "expect": 2
+  }
+ ]
+}

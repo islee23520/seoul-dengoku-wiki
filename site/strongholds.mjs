@@ -24,12 +24,12 @@ const T = {
     reading: 'Terrain reading (300 m radius)', inputs: 'Measured inputs', floors: 'Underground floors', stages: 'Five stages', perimeter: 'Surface line (stage 4)',
     field: 'Field', value: 'Value', stage: 'Stage', name: 'Name',
     sc: { floor: 'Floor m²', cap: 'Maximum holding', live: 'Living-standard capacity', status: 'Population (2126) against capacity', limit: 'Overcrowd limit', air: 'Airflow',
-      gs: 'Standing watch', ge: 'Emergency watch', mob: 'Mobilisable', def: 'Defensible', food: 'Food t', water: 'Water m³', fuel: 'Fuel t', line: 'Surface line m (real / weighted)', towers: 'Watchtowers' },
+      gs: 'Standing watch', ge: 'Emergency watch', mob: 'Mobilisable', def: 'Defensible', food: 'Food t', fuel: 'Fuel t', line: 'Surface line m (real / weighted)', towers: 'Watchtowers' },
     stagesCap: 'Capacity and air', stagesWatch: 'Watch, reserves and surface line',
-    capNote: 'Maximum holding is how many people the stage can keep alive when crowded: 3.5 m² of floor, 6 m³/h of air and 7.5 L of water per person. It grows as the stages add floor (attached basements, then tunnels), fans and roof catchment, and stays flat when the limiting resource gains nothing. At a station with no water source, water is not counted until roof catchment begins at stage 4, so the maximum holding can drop there. Living-standard capacity is the number the stage can house at its own living standard (more floor, air and water per person at higher stages), so it can be lower than at the stage before. The word in brackets is the limiting resource. The real perimeter is the measured length of the line; the weighted length counts building faces and walls at one half and rivers, rail and banks at one quarter.',
+    capNote: 'Maximum holding is how many people the stage can keep alive when crowded: 3.5 m² of floor and 6 m³/h of air per person. It grows as the stages add floor (attached basements, then tunnels), and fans, and stays flat when the limiting resource gains nothing. Living-standard capacity is the number the stage can house at its own living standard (more floor and air per person at higher stages), so it can be lower than at the stage before. The word in brackets is the limiting resource. The real perimeter is the measured length of the line; the weighted length counts building faces and walls at one half and rivers, rail and banks at one quarter.',
     st: { ok: 'within both', over: 'above the living standard', overflow: 'above maximum holding' },
     airMode: (v, k) => `${num(v, 1)} m/s ${k < 3 ? 'natural draught' : 'fans'}`,
-    capBy: { space: 'space', air: 'air', water: 'water' }, yes: 'yes', no: 'no', startMark: ' (start)',
+    capBy: { space: 'space', air: 'air' }, yes: 'yes', no: 'no', startMark: ' (start)',
     works: 'Works', terrainWorks: 'Using the terrain', facilities: 'Facilities added', labor: 'Labour', duration: 'Duration', entry: 'Condition to enter',
     r: {
       relief_m: 'Relief (m)', station_elev: 'Station ground elevation (m)', elev: 'Elevation range (m)', slope_p90_pct: 'Slope, 90th percentile (%)', steep_share: 'Steep-slope share',
@@ -39,8 +39,8 @@ const T = {
       ug_floor_m2: 'Underground floor (m²)', depth_max_m: 'Deepest floor (m)', underpass_m2: 'Underpasses (m²)', scores: 'Type scores',
     },
     i: {
-      P: 'Population (2126)', F: 'Station floor (m²)', Fsrc: 'Station floor source', roof: 'Roof catchment inside the line (m²)', roofW: 'Roof water, from stage 4 (m³/day)', Wn: 'Water note', E: 'Entrances used / hidden / sealed', C: 'Tunnel cut points', V: 'Vents', Vm: 'measured', Ve: 'estimated: 2 + neighbours',
-      Q: 'Air supply (m³/h)', W: 'Water source per person per day (L)', fuel: 'Fuel per person per day (kg)', L: 'Weighted surface line (m)', Fb: 'Building basements inside the line (m²)',
+      P: 'Population (2126)', F: 'Station floor (m²)', Fsrc: 'Station floor source', E: 'Entrances used / hidden / sealed', C: 'Tunnel cut points', V: 'Vents', Vm: 'measured', Ve: 'estimated: 2 + neighbours',
+      Q: 'Air supply (m³/h)', fuel: 'Fuel per person per day (kg)', L: 'Weighted surface line (m)', Fb: 'Building basements inside the line (m²)',
       Ft: 'Tunnel floor in stage 5 (m²)', kw: 'Arms factor', M: 'Mobilisable share', B: 'Buildings on the sheet', X: 'Entrances on the sheet',
     },
     p: { length: 'Line length (m)', blocks: 'Blocks inside', area_m2: 'Area inside (m²)', guards_need: 'Watch needed', guards_avail: 'Watch available', n_cuts: 'Street barricades', outposts: 'Separated exit outposts', share: 'Line by kind (%)', watch_top_m: 'Highest watchtower roof (m)' },
@@ -64,12 +64,12 @@ const T = {
     reading: '지형 읽기 (반경 300 m)', inputs: '실측 입력', floors: '지하 층', stages: '다섯 단계', perimeter: '지상 성곽선 (4단계)',
     field: '항목', value: '값', stage: '단계', name: '이름',
     sc: { floor: '바닥 m²', cap: '최대 수용', live: '생활 기준 정원', status: '인구(2126)와 수용력', limit: '과밀 한계', air: '공기 흐름',
-      gs: '상시 경계', ge: '비상 경계', mob: '동원 가능', def: '지킬 수 있음', food: '식량 t', water: '물 m³', fuel: '연료 t', line: '지상 성곽선 m (실제 / 가중)', towers: '망루' },
+      gs: '상시 경계', ge: '비상 경계', mob: '동원 가능', def: '지킬 수 있음', food: '식량 t', fuel: '연료 t', line: '지상 성곽선 m (실제 / 가중)', towers: '망루' },
     stagesCap: '수용력과 공기', stagesWatch: '경계, 비축, 지상 성곽선',
-    capNote: '최대 수용은 비좁게 지내며 목숨을 지킬 수 있는 인원이다. 1인당 바닥 3.5 m², 공기 6 m³/h, 물 7.5 L로 센다. 단계마다 바닥(붙인 건물 지하층, 이어서 터널), 송풍기, 지붕 빗물받이가 더해지는 만큼 늘고, 한계를 정하는 자원이 늘지 않으면 그대로다. 물원이 없는 역은 4단계에서 지붕 빗물받이가 시작될 때까지 물을 세지 않으므로 그 단계에서 최대 수용이 줄 수 있다. 생활 기준 정원은 그 단계의 생활 기준(높은 단계일수록 1인당 바닥, 공기, 물을 더 많이 잡는다)으로 살 수 있는 인원이라 앞 단계보다 낮을 수 있다. 괄호 안 말은 한계를 정하는 자원이다. 실제 성곽선은 선의 실측 길이이고, 가중 성곽선은 건물 외벽과 담장을 절반, 하천, 철도, 둑을 4분의 1로 센 길이다.',
+    capNote: '최대 수용은 비좁게 지내며 목숨을 지킬 수 있는 인원이다. 1인당 바닥 3.5 m², 공기 6 m³/h로 센다. 단계마다 바닥(붙인 건물 지하층, 이어서 터널), 송풍기가 더해지는 만큼 늘고, 한계를 정하는 자원이 늘지 않으면 그대로다. 생활 기준 정원은 그 단계의 생활 기준(높은 단계일수록 1인당 바닥과 공기를 더 많이 잡는다)으로 살 수 있는 인원이라 앞 단계보다 낮을 수 있다. 괄호 안 말은 한계를 정하는 자원이다. 실제 성곽선은 선의 실측 길이이고, 가중 성곽선은 건물 외벽과 담장을 절반, 하천, 철도, 둑을 4분의 1로 센 길이다.',
     st: { ok: '둘 다 안', over: '생활 기준 넘음', overflow: '최대 수용 넘음' },
     airMode: (v, k) => `${num(v, 1)} m/s ${k < 3 ? '자연 통풍' : '송풍기'}`,
-    capBy: { space: '공간', air: '공기', water: '물' }, yes: '예', no: '아니오', startMark: ' (시작)',
+    capBy: { space: '공간', air: '공기' }, yes: '예', no: '아니오', startMark: ' (시작)',
     works: '공사', terrainWorks: '지형 활용', facilities: '더하는 시설', labor: '일손', duration: '기간', entry: '진입 조건',
     r: {
       relief_m: '고저차 (m)', station_elev: '역 지반 표고 (m)', elev: '표고 범위 (m)', slope_p90_pct: '경사 90백분위 (%)', steep_share: '급경사 비율',
@@ -79,8 +79,8 @@ const T = {
       ug_floor_m2: '지하 바닥 (m²)', depth_max_m: '가장 깊은 층 (m)', underpass_m2: '지하도 (m²)', scores: '유형 점수',
     },
     i: {
-      P: '인구(2126)', F: '역 바닥 (m²)', Fsrc: '역 바닥 출처', roof: '성곽 안 지붕 빗물받이 (m²)', roofW: '지붕 빗물, 4단계부터 (m³/일)', Wn: '물 비고', E: '출입구 쓰는 / 숨긴 / 막은', C: '터널 차단점', V: '환기구', Vm: '실측', Ve: '추정: 2 + 이웃 수',
-      Q: '급기 (m³/h)', W: '1인 하루 물원 (L)', fuel: '1인 하루 연료 (kg)', L: '가중 지상선 (m)', Fb: '성곽 안 건물 지하층 (m²)',
+      P: '인구(2126)', F: '역 바닥 (m²)', Fsrc: '역 바닥 출처', E: '출입구 쓰는 / 숨긴 / 막은', C: '터널 차단점', V: '환기구', Vm: '실측', Ve: '추정: 2 + 이웃 수',
+      Q: '급기 (m³/h)', fuel: '1인 하루 연료 (kg)', L: '가중 지상선 (m)', Fb: '성곽 안 건물 지하층 (m²)',
       Ft: '5단계 터널 바닥 (m²)', kw: '무장 계수', M: '동원 비율', B: '도면의 건물', X: '도면의 출입구',
     },
     p: { length: '성곽 길이 (m)', blocks: '안에 든 블록', area_m2: '안쪽 면적 (m²)', guards_need: '필요 경계 인원', guards_avail: '가용 경계 인원', n_cuts: '길목 바리케이드', outposts: '떨어진 출입구 초소', share: '종류별 비율 (%)', watch_top_m: '가장 높은 망루 지붕 (m)' },
@@ -179,8 +179,8 @@ export function strongholdPages({ data, ko, g, P, BASE, factions, stations }) {
     const I = S.i;
     L.push(`## ${S.inputs}`, '', `| ${S.field} | ${S.value} |`, '| --- | ---: |',
       `| ${I.P} | ${num(r.population)} |`, `| ${I.F} | ${num(r.f_station_m2)} |`, `| ${I.Fsrc} | ${cell(g(r, 'f_station_src'))} |`, `| ${I.E} | ${r.e_used} / ${r.e_hidden} / ${r.e_sealed} |`, `| ${I.C} | ${r.tunnel_cuts} |`,
-      `| ${I.V} | ${r.vents} (${r.vents_measured ? I.Vm : I.Ve}) |`, `| ${I.Q} | ${num(r.q_m3h)} |`, `| ${I.W} | ${num(r.water_l, 1)} |`, ...(g(r, 'water_note') ? [`| ${I.Wn} | ${cell(g(r, 'water_note'))} |`] : []),
-      `| ${I.roof} | ${num(r.roof_catch_m2)} |`, `| ${I.roofW} | ${num(r.roof_water_m3_day, 1)} |`, `| ${I.fuel} | ${num(r.fuel_kg, 1)} |`,
+      `| ${I.V} | ${r.vents} (${r.vents_measured ? I.Vm : I.Ve}) |`, `| ${I.Q} | ${num(r.q_m3h)} |`,
+      `| ${I.fuel} | ${num(r.fuel_kg, 1)} |`,
       `| ${I.L} | ${num(r.l_surface_m)} |`, `| ${I.Fb} | ${num(r.f_bld_m2)} |`, `| ${I.Ft} | ${num(r.f_tunnel_m2)} |`, `| ${I.kw} | ${num(r.k_w, 2)} |`, `| ${I.M} | ${num(r.m_share, 2)} |`,
       `| ${I.B} | ${num(r.building_count)} |`, `| ${I.X} | ${num(r.exit_count)} |`, '');
     if (per) {
@@ -205,9 +205,9 @@ export function strongholdPages({ data, ko, g, P, BASE, factions, stations }) {
       '| --- | --- | ---: | ---: | ---: | --- | ---: | --- |');
     st.forEach((s) => L.push(`| ${stCell(s)} | ${cell(stageName(r, s.stage))} | ${num(s.floor_m2)} | ${num(s.capacity)} (${cb(s.cap_by_max)}) | ${num(s.living_capacity)} (${cb(s.cap_by)}) | ${s.over_max ? S.st.overflow : s.over_living ? S.st.over : S.st.ok} | ${num(s.overcrowd_limit)} | ${S.airMode(s.air_speed, s.stage)} |`));
     L.push('', `### ${S.stagesWatch}`, '',
-      `| ${S.stage} | ${C.gs} | ${C.ge} | ${C.mob} | ${C.def} | ${C.food} | ${C.water} | ${C.fuel} | ${C.line} | ${C.towers} |`,
-      '| --- | ---: | ---: | ---: | --- | ---: | ---: | ---: | ---: | ---: |');
-    st.forEach((s) => L.push(`| ${stCell(s)} | ${num(s.guard_standing)} | ${num(s.guard_emergency)} | ${num(s.mobilisable)} | ${s.defensible ? S.yes : S.no} | ${num(s.food_t, 1)} | ${num(s.water_m3)} | ${num(s.fuel_t, 1)} | ${s.surface_line_m ? `${num(s.surface_line_real_m)} / ${num(s.surface_line_m)}` : '-'} | ${num(s.watchtowers)} |`));
+      `| ${S.stage} | ${C.gs} | ${C.ge} | ${C.mob} | ${C.def} | ${C.food} | ${C.fuel} | ${C.line} | ${C.towers} |`,
+      '| --- | ---: | ---: | ---: | --- | ---: | ---: | ---: | ---: |');
+    st.forEach((s) => L.push(`| ${stCell(s)} | ${num(s.guard_standing)} | ${num(s.guard_emergency)} | ${num(s.mobilisable)} | ${s.defensible ? S.yes : S.no} | ${num(s.food_t, 1)} | ${num(s.fuel_t, 1)} | ${s.surface_line_m ? `${num(s.surface_line_real_m)} / ${num(s.surface_line_m)}` : '-'} | ${num(s.watchtowers)} |`));
     L.push('');
     st.forEach((s) => {
       const t = stageText(r, s.stage);

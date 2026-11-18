@@ -1,0 +1,655 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "file": "090",
+   "key": "person-0089",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1000"
+  },
+  {
+   "file": "090",
+   "key": "person-0089",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 12,
+   "id": "v4rem-people-d-1001"
+  },
+  {
+   "file": "090",
+   "key": "person-0089",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1002"
+  },
+  {
+   "file": "090",
+   "key": "person-0089",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 12,
+   "id": "v4rem-people-d-1003"
+  },
+  {
+   "file": "050",
+   "key": "person-0089",
+   "col": "title",
+   "from": "Seongsu Workshop Council Representative",
+   "to": "Cheonho Workshop Council Representative",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0670"
+  },
+  {
+   "file": "050",
+   "key": "person-0089",
+   "col": "title_ko",
+   "from": "성수 공방평의회 대표",
+   "to": "천호 공방평의회 대표",
+   "exact": true,
+   "expect": 1,
+   "id": "v4rem-people-d-0671"
+  },
+  {
+   "file": "090",
+   "key": "person-0090",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1006"
+  },
+  {
+   "file": "090",
+   "key": "person-0090",
+   "col": "json_ko",
+   "from": "뚝섬",
+   "to": "암사",
+   "expect": 2,
+   "id": "v4rem-people-d-1007"
+  },
+  {
+   "file": "090",
+   "key": "person-0090",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1008"
+  },
+  {
+   "file": "090",
+   "key": "person-0090",
+   "col": "json",
+   "from": "Ttukseom",
+   "to": "Amsa",
+   "expect": 2,
+   "id": "v4rem-people-d-1009"
+  },
+  {
+   "file": "090",
+   "key": "person-0094",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1010"
+  },
+  {
+   "file": "090",
+   "key": "person-0094",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1011"
+  },
+  {
+   "file": "090",
+   "key": "person-0110",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1012"
+  },
+  {
+   "file": "090",
+   "key": "person-0110",
+   "col": "json_ko",
+   "from": "뚝섬",
+   "to": "암사",
+   "expect": 1,
+   "id": "v4rem-people-d-1013"
+  },
+  {
+   "file": "090",
+   "key": "person-0110",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1014"
+  },
+  {
+   "file": "090",
+   "key": "person-0110",
+   "col": "json",
+   "from": "Ttukseom",
+   "to": "Amsa",
+   "expect": 1,
+   "id": "v4rem-people-d-1015"
+  },
+  {
+   "file": "090",
+   "key": "person-0111",
+   "col": "json_ko",
+   "from": "성수1가2동과",
+   "to": "천호2동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1016"
+  },
+  {
+   "file": "090",
+   "key": "person-0111",
+   "col": "json",
+   "from": "Seongsu 1-ga 2-dong",
+   "to": "Cheonho 2-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1017"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1018"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json_ko",
+   "from": "뚝섬",
+   "to": "암사",
+   "expect": 3,
+   "id": "v4rem-people-d-1019"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 2,
+   "id": "v4rem-people-d-1020"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1021"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Ttukseom",
+   "to": "Amsa",
+   "expect": 3,
+   "id": "v4rem-people-d-1022"
+  },
+  {
+   "file": "090",
+   "key": "person-0112",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 1,
+   "id": "v4rem-people-d-1023"
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1024"
+  },
+  {
+   "file": "090",
+   "key": "person-0113",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1025"
+  },
+  {
+   "file": "090",
+   "key": "person-0115",
+   "col": "json_ko",
+   "from": "성수1가1동과",
+   "to": "천호1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1026"
+  },
+  {
+   "file": "090",
+   "key": "person-0115",
+   "col": "json_ko",
+   "from": "뚝섬",
+   "to": "암사",
+   "expect": 2,
+   "id": "v4rem-people-d-1027"
+  },
+  {
+   "file": "090",
+   "key": "person-0115",
+   "col": "json_ko",
+   "from": "성수",
+   "to": "천호",
+   "expect": 2,
+   "id": "v4rem-people-d-1028"
+  },
+  {
+   "file": "090",
+   "key": "person-0115",
+   "col": "json",
+   "from": "Seongsu 1-ga 1-dong",
+   "to": "Cheonho 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1029"
+  },
+  {
+   "file": "090",
+   "key": "person-0115",
+   "col": "json",
+   "from": "Ttukseom",
+   "to": "Amsa",
+   "expect": 2,
+   "id": "v4rem-people-d-1030"
+  },
+  {
+   "file": "090",
+   "key": "person-0115",
+   "col": "json",
+   "from": "Seongsu",
+   "to": "Cheonho",
+   "expect": 2,
+   "id": "v4rem-people-d-1031"
+  },
+  {
+   "file": "090",
+   "key": "person-0443",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1032"
+  },
+  {
+   "file": "090",
+   "key": "person-0443",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1033"
+  },
+  {
+   "file": "090",
+   "key": "person-0459",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1034"
+  },
+  {
+   "file": "090",
+   "key": "person-0459",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1035"
+  },
+  {
+   "file": "090",
+   "key": "person-0507",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1036"
+  },
+  {
+   "file": "090",
+   "key": "person-0507",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1037"
+  },
+  {
+   "file": "090",
+   "key": "person-0555",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1038"
+  },
+  {
+   "file": "090",
+   "key": "person-0555",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1039"
+  },
+  {
+   "file": "090",
+   "key": "person-0603",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1040"
+  },
+  {
+   "file": "090",
+   "key": "person-0603",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1041"
+  },
+  {
+   "file": "090",
+   "key": "person-0651",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1042"
+  },
+  {
+   "file": "090",
+   "key": "person-0651",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1043"
+  },
+  {
+   "file": "090",
+   "key": "person-0699",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1044"
+  },
+  {
+   "file": "090",
+   "key": "person-0699",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1045"
+  },
+  {
+   "file": "090",
+   "key": "person-0731",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1046"
+  },
+  {
+   "file": "090",
+   "key": "person-0731",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1047"
+  },
+  {
+   "file": "090",
+   "key": "person-0747",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1048"
+  },
+  {
+   "file": "090",
+   "key": "person-0747",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1049"
+  },
+  {
+   "file": "090",
+   "key": "person-0779",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1050"
+  },
+  {
+   "file": "090",
+   "key": "person-0779",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1051"
+  },
+  {
+   "file": "090",
+   "key": "person-0795",
+   "col": "json_ko",
+   "from": "성수2가1동과",
+   "to": "천호3동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1052"
+  },
+  {
+   "file": "090",
+   "key": "person-0795",
+   "col": "json",
+   "from": "Seongsu 2-ga 1-dong",
+   "to": "Cheonho 3-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1053"
+  },
+  {
+   "file": "090",
+   "key": "person-0971",
+   "col": "json_ko",
+   "from": "성수2가3동과",
+   "to": "암사1동과",
+   "expect": 2,
+   "id": "v4rem-people-d-1054"
+  },
+  {
+   "file": "090",
+   "key": "person-0971",
+   "col": "json",
+   "from": "Seongsu 2-ga 3-dong",
+   "to": "Amsa 1-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1055"
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "시청역",
+   "to": "수서역",
+   "expect": 4,
+   "id": "v4rem-people-d-1056"
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json_ko",
+   "from": "소공동",
+   "to": "수서동",
+   "expect": 2,
+   "id": "v4rem-people-d-1057"
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "Sicheong Station",
+   "to": "Suseo Station",
+   "expect": 4,
+   "id": "v4rem-people-d-1058"
+  },
+  {
+   "file": "090",
+   "key": "person-0399",
+   "col": "json",
+   "from": "Sogong-dong",
+   "to": "Suseo-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1059"
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1060"
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 6,
+   "id": "v4rem-people-d-1061"
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1062"
+  },
+  {
+   "file": "090",
+   "key": "person-0211",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 6,
+   "id": "v4rem-people-d-1063"
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1064"
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json_ko",
+   "from": "노량진",
+   "to": "청량리",
+   "expect": 5,
+   "id": "v4rem-people-d-1065"
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1066"
+  },
+  {
+   "file": "090",
+   "key": "person-0214",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 5,
+   "id": "v4rem-people-d-1067"
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json_ko",
+   "from": "노량진1동",
+   "to": "청량리동",
+   "expect": 2,
+   "id": "v4rem-people-d-1068"
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json_ko",
+   "from": "노량진이",
+   "to": "청량리가",
+   "expect": 2,
+   "id": "v4rem-people-d-1069"
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "Noryangjin 1-dong",
+   "to": "Cheongnyangni-dong",
+   "expect": 2,
+   "id": "v4rem-people-d-1070"
+  },
+  {
+   "file": "090",
+   "key": "person-0218",
+   "col": "json",
+   "from": "Noryangjin",
+   "to": "Cheongnyangni",
+   "expect": 2,
+   "id": "v4rem-people-d-1071"
+  }
+ ]
+}

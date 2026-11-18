@@ -1,0 +1,48 @@
+{
+ "batch": "vassal-b",
+ "basis": "vassal 배치의 보충: 나머지 영어 단독 적중",
+ "rules": [
+  {
+   "id": "vs-gb-nd-overlord",
+   "docs": [
+    "doc.Narrative-Direction"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "station ownership or a new overlord",
+   "to": "station ownership or a new superior power",
+   "expect": 1,
+   "reason": "서울 설정 규칙 — v4 어휘 (overlord = 봉건 상위자)"
+  },
+  {
+   "id": "vs-gb-d10-vassalization",
+   "docs": [
+    "doc.mechanism-design-index-d10"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "and vassalization from ordinary city attacks",
+   "to": "and retainer status from ordinary city attacks",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer) (ko 가신화와 맞춤)"
+  },
+  {
+   "id": "vs-gb-d12-instr",
+   "docs": [
+    "doc.mechanism-design-index-d12"
+   ],
+   "fields": [
+    "body_md"
+   ],
+   "kind": "literal",
+   "from": "ordered vassal-instruction variables",
+   "to": "ordered retainer-instruction variables",
+   "expect": 1,
+   "reason": "외부 게임 서술 — 레인 A 중립어(가신/retainer) (ko 가신 지시와 맞춤)"
+  }
+ ]
+}

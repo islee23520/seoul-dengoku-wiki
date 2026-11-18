@@ -1,0 +1,336 @@
+{
+ "rules": [
+  {
+   "id": "lau-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Separates signature roles",
+   "to": "Public Auction Mediation Aide"
+  },
+  {
+   "id": "lau-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "Traces missing shift signatures backward and separates auxiliary signatures from the mediator’s stamp.",
+   "to": "Title: Public Auction Mediation Aide."
+  },
+  {
+   "id": "lau-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "Shown in the confirmed choice: Separates signature roles. It is not established as an invariable disposition in other situations.",
+   "to": "Title: Public Auction Mediation Aide."
+  },
+  {
+   "id": "lau-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "May retrace shifts backward after a gap.",
+   "to": ""
+  },
+  {
+   "id": "lau-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.name$",
+   "from": "Concern for record continuity",
+   "to": "Public Auction Mediation Aide"
+  },
+  {
+   "id": "lau-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.description$",
+   "from": "Protects the station handover ledger so that Myeongdong Station's recording procedure continues.",
+   "to": "Title: Public Auction Mediation Aide."
+  },
+  {
+   "id": "lau-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "Seeks to check the continuity of assigned records and signatures.",
+   "to": "Title: Public Auction Mediation Aide."
+  },
+  {
+   "id": "lau-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "That, in a dispute over station records, the signature on the Myeongdong Station roster duty ledger they keep disappears.",
+   "to": ""
+  },
+  {
+   "id": "lau-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Traces missing shift signatures backward and separates auxiliary signatures from the mediator’s stamp.",
+   "to": "Title: Public Auction Mediation Aide."
+  },
+  {
+   "id": "lau-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "To protect the station handover ledger so that the record procedures of Myeongdong Station continue even amid disputes over the station's records.",
+   "to": ""
+  },
+  {
+   "id": "lau-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Ambition.** To protect the station handover ledger so that the record procedures of Myeongdong Station continue even amid disputes over the station's records.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lau-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Fear$",
+   "from": "That, in a dispute over the station's records, the signatures in the station register duty ledger she is responsible for will vanish.",
+   "to": ""
+  },
+  {
+   "id": "lau-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Fear.** That, in a dispute over the station's records, the signatures in the station register duty ledger she is responsible for will vanish.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lau-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "서명 역할 분리",
+   "to": "공개 경매 조정 보조"
+  },
+  {
+   "id": "lau-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "빈 교대 서명을 역순으로 찾아 당직을 확인하고 조정인 도장과 보조 서명을 분리했다.",
+   "to": "직함은 공개 경매 조정 보조."
+  },
+  {
+   "id": "lau-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "확인된 선택: 서명 역할 분리. 다른 상황까지 불변 성향으로 확정하지 않는다.",
+   "to": "직함은 공개 경매 조정 보조."
+  },
+  {
+   "id": "lau-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "누락이 나오면 교대 순서를 거꾸로 짚을 수 있다.",
+   "to": ""
+  },
+  {
+   "id": "lau-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.name$",
+   "from": "기록 단절 경계",
+   "to": "공개 경매 조정 보조"
+  },
+  {
+   "id": "lau-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.description$",
+   "from": "역 인수인계 장부를 지켜 명동역의 기록 절차가 이어지게 한다.",
+   "to": "직함은 공개 경매 조정 보조."
+  },
+  {
+   "id": "lau-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "맡은 기록과 서명의 연결을 확인하려 한다.",
+   "to": "직함은 공개 경매 조정 보조."
+  },
+  {
+   "id": "lau-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.stress$",
+   "from": "역 기록을 둘러싼 다툼 속에 자신이 맡은 명동역 명부 당직 담당 장부의 서명이 사라지는 것.",
+   "to": ""
+  },
+  {
+   "id": "lau-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "빈 교대 서명을 역순으로 찾아 당직을 확인하고 조정인 도장과 보조 서명을 분리했다.",
+   "to": "직함은 공개 경매 조정 보조."
+  },
+  {
+   "id": "lau-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.야망$",
+   "from": "역 인수인계 장부를 지켜 명동역의 기록 절차가 이어지게 한다.",
+   "to": ""
+  },
+  {
+   "id": "lau-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**야망.** 역 인수인계 장부를 지켜 명동역의 기록 절차가 이어지게 한다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lau-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.공포$",
+   "from": "역 기록을 둘러싼 다툼 속에 자신이 맡은 명동역 명부 당직 담당 장부의 서명이 사라지는 것.",
+   "to": ""
+  },
+  {
+   "id": "lau-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**공포.** 역 기록을 둘러싼 다툼 속에 자신이 맡은 명동역 명부 당직 담당 장부의 서명이 사라지는 것.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lau-27",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Even when relief, election, and approval work overlap in Myeongdong Station's winter, she records the signature order and the disclosure time in the ledger.",
+   "to": ""
+  },
+  {
+   "id": "lau-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0386",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "election-record transcription and assistance records",
+   "to": "records transcription and assistance records"
+  },
+  {
+   "id": "lau-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0394",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "station vote record-keeping files",
+   "to": "station record-keeping files"
+  },
+  {
+   "id": "lau-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0395",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "the station election clerk and assistant records in his work as the station election clerk",
+   "to": "the station clerk and assistant records in his work as the station clerk"
+  },
+  {
+   "id": "lau-31",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0396",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "the election testimony and assistance records",
+   "to": "the testimony and assistance records"
+  }
+ ]
+}

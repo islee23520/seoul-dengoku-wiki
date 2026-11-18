@@ -5,19 +5,17 @@ section_checkpoint: complete
 
 **A. How people and machines are placed**
 
-In the Seoul of 2126, the ones who build polities are people. They live in the concourses of Yeongdeungpo, Seoul Station, and Amsa, stand sluice watch, and line up at the ration windows. In the same living spheres there are stopped machines and machines that repeat their last task, and raptors, feral dogs, and rat swarms follow the rations, the heat, and the wetlands. Modern and future weapons, humanoids, and machines remain, but they are scarce. After the night of the Great Blackout, people, machines, and animals settled inside the stations as follows.
+In the Seoul of 2126, the ones who build polities are people. They live in the concourses of Yeongdeungpo, Seoul Station, and Amsa, stand station watch, and line up at the ration windows. In the same living spheres there are stopped machines and machines that repeat their last task, and raptors, feral dogs, and rat swarms follow the rations, the heat, and the wetlands. Modern and future weapons, humanoids, and machines remain, but they are scarce. After the night of the Great Blackout, people, machines, and animals settled inside the stations as follows.
 
-While the Great Blackout cut communications, designated facility officers used on-site authority. Yeongdeungpo waterworks staff operated the valves by hand.
+While the Great Blackout cut communications, designated facility officers used on-site authority. Yeongdeungpo depot staff operated the switchboards by hand.
 
 ## People
 
 **A. Watch duty and livelihood**
 
-On the night of the Great Blackout, Yeongdeungpo waterworks officer Han Jeonghun started a paper operations log after remote control failed. Later, forty-five volumes of the waterworks center's operations logs, including forty-one of Han's, were moved to the underground stacks of Yangpyeong Station.
-
 The Government required a Government Seoul Complex stamp from Gwanghwamun on Jongno and Jung-gu passes. Commercial contracts in Jongno and Jung-gu needed that stamp to be registered with the Records Bureau.
 
-When the water was cut, labor folded first. Even when food ran short, the next day's hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
+When heating fuel was cut off, labor folded first. Even when food ran short, the next day's hands slowed, and without medicine the act of treatment itself did not open. The way the illnesses of people and of the tanks overlapped at one window was covered by [Ailments and Symptoms](/wiki/Ailments/).
 
 ## The Remnants of Logistics Humanoids
 
@@ -29,15 +27,15 @@ The bodies that remained at the opening fell into two kinds: remnants standing w
 
 After the Great Blackout cut machines off from the upper control network, they repeated their last assigned search and guard tasks. Outside Seoul, the war machines used in the Great Blackout still roam, carrying out the last orders they received.
 
-The H01-H16 register records mechanical humanoids under house custody. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent. A custody record can document maintenance and responsibility, but its transfer clause cannot govern someone recognized as a person. No such individual determination is recorded for the H01-H16 actors.
+Synthetic humanoids are very rare. Neither the kind of body alone grants nor denies personhood or citizenship. Each individual is assessed for expressed will, continuity of memory, and capacity to consent.
 
 ## Repeating Machines
 
 **A. Surviving disaster-response machines**
 
-There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and pipe inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
+There were bodies that overlapped with the logistics humanoids but did not stand in the same line. They were machines that pre-collapse disaster agencies had meant to use for search, reinforcement, and tunnel inspection, and when the upper control network fell away, they continued the search, guard, and transport routines they had last received, subject to their stored charge and access to charging terminals. Small swarms that glowed like lanterns, heavy machines that pushed rubble with hydraulics, and flat underwater shells were those three lines.
 
-The triggers for restart were voltage, water level, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, water treatment with attached sluices such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. These machines are no faction's enemy. To a person caught in their search or guard routine they are a hazard, but once captured, repaired and woken with an Arc signature they become a faction's workers and units. The four steps of capture, repair, signal check and thought control are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
+The triggers for restart were voltage, temperature, and authorization signals. Stations with attached depots such as Sinjeong, Gunja, and Godeok, drainage pump areas such as Yeongdeungpo, Ttukseom, and Amsa, and the galleries of the deep tunnels provided that stage. When a scout thrust forward a protocol card signed and issued by the Arc, only that line, that trigger point, and that command bundle could be paused for a while; there was no universal control. An unsigned card reached only the basic on-and-off functions. These machines are no faction's enemy. To a person caught in their search or guard routine they are a hazard, but once captured, repaired and woken with an Arc signature they become a faction's workers and units. The four steps of capture, repair, signal check and thought control are in [Unit Roster and Tech Tree](/wiki/Unit-Roster-and-Tech-Tree/). The modules and the salvage economy are in [Lost Technology](/wiki/Lost-Technology-Lineage/).
 
 Capacitor modules only used the charge already stored and could not replace generators; cells aged, and without charging terminals the repetition broke off too. A workshop repairing hydraulics did not make it look as if the fabs had returned.
 
@@ -51,7 +49,7 @@ Feral dogs formed families along the walls of the Magok laboratories, in closed 
 
 Rats made states at the transfers. Where crumbs and the heat of insulated pipes overlapped at the junctions where the Gangdong-Amsa ration passages met the Eunpyeong-Seongbuk evacuation stairs, two or three core nests formed under the cable trays. There is no record that the colonies host any special plague. They were only a density of food, warmth, and shelter. When their droppings damaged wire insulation, the guidance displays went dark, and in the dark passages people thought of contagion first. [G05](/wiki/Hostile-Group-G05/).
 
-On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When the sluices were lowered unilaterally, the flocks shot up over the depot tracks and blocked the train movements. The stopovers of the Han and the depot ponds existed in 2026 as well. [G06](/wiki/Hostile-Group-G06/).
+On the wetlands of the Han, Nanji, and Amsa and the drainage ponds of the Changdong depot, waterfowl and waders settled first, and when the food rose, raptors followed onto the wires. When warm steam rose from a station vent, the flocks shot up over the depot tracks and blocked the train movements. The stopovers of the Han and the depot ponds existed in 2026 as well. [G06](/wiki/Hostile-Group-G06/).
 
 Sweeping up the swarms with firearms was left as a last resort. Sealing, ration detours, and the collection of leftovers were closer to what guarded the human windows. Why the stations, tunnels, and depots were the skeleton of those windows was connected by [The Structures Compendium](/wiki/Structures/).
 

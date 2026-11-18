@@ -1,0 +1,22 @@
+{
+ "rules": [
+  {
+   "id": "ldc-1",
+   "file": "050",
+   "key": "person-0116",
+   "col": "occupation",
+   "from": "Restoration Service Roster and Parts Compensation Adjustment",
+   "to": "Records Coordination",
+   "expect": 1
+  },
+  {
+   "id": "ldc-2",
+   "file": "050",
+   "key": "person-0116",
+   "col": "occupation_ko",
+   "from": "복구복무 명부·부품 대가 조정",
+   "to": "기록 조정",
+   "expect": 1
+  }
+ ]
+}

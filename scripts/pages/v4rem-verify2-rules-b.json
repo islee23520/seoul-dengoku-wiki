@@ -1,0 +1,23 @@
+{
+ "hold": [],
+ "rules": [
+  {
+   "id": "v2b-1",
+   "file": "110",
+   "key": "c624-d574-c8fc",
+   "col": "json_ko",
+   "from": "임초원이 펌프 정비를 배운 것과 달리, 오경재는 교주의 명으로 임하준의 일을 이어받았다. 그 일은 오씨 가문이 부자 세습하고, 교주의 명은 의례로 남는다.",
+   "to": "임초원이 펌프 정비를 배운 것과 달리, 오경재는 삼성역 역장으로 일하며 그 기록을 확인한다.",
+   "expect": 1
+  },
+  {
+   "id": "v2b-2",
+   "file": "110",
+   "key": "c624-d574-c8fc",
+   "col": "json",
+   "from": "Unlike Im Chowon, who learned pump maintenance, O Gyeongjae took over the work of Im Hajun by the Hierophant's order. The work has passed from father to son in the O clan, and the Hierophant's order remains a ritual.",
+   "to": "Unlike Im Chowon, who learned pump maintenance, O Gyeongjae, as Stationmaster of Samseong Station, checks those records.",
+   "expect": 1
+  }
+ ]
+}

@@ -1,0 +1,58 @@
+{
+ "rules": [
+  {
+   "id": "c-0246-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-0246",
+   "from": "Bukhansan Bogungmun Returnees' Association (HP05). Custodian. The register chest is this house's key.",
+   "to": "Baek clan of Suwon.",
+   "expect": 2
+  },
+  {
+   "id": "c-0246-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0246",
+   "from": "북한산보국문귀환회(HP05). 관리인. 명부함이 이 가문의 키다.",
+   "to": "수원 백씨.",
+   "expect": 2
+  },
+  {
+   "id": "c-0349-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-0349",
+   "from": "Hangangjin Bridge Guild (HP07). Steward. Ridge passage is the clan's key.",
+   "to": "Go clan of Hanyang.",
+   "expect": 2
+  },
+  {
+   "id": "c-0349-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-0349",
+   "from": "한강진교량공회(HP07). 관리인. 능선 통행이 가문의 키다.",
+   "to": "한양 고씨.",
+   "expect": 2
+  },
+  {
+   "id": "c-1006-en",
+   "file": "090",
+   "col": "json",
+   "key": "person-1006",
+   "from": "The management rights of the Hangangjin Bridge Guild (HP07) belong to another ledger, and the garrison seat is recorded as an elected post.",
+   "to": "Tak clan of Gwangsan.",
+   "expect": 2
+  },
+  {
+   "id": "c-1006-ko",
+   "file": "090",
+   "col": "json_ko",
+   "key": "person-1006",
+   "from": "한강진교량공회(HP07)의 관리 권리는 다른 원장에 속하며, 수비대 자리는 선출직으로 기록된다.",
+   "to": "광산 탁씨.",
+   "expect": 2
+  }
+ ]
+}

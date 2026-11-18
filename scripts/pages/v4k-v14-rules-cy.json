@@ -1,0 +1,20 @@
+{
+ "rules": [
+  {
+   "id": "lcy-1",
+   "file": "050",
+   "col": "occupation",
+   "from": "Receiving Smuggled Stove Flues · Writing the Vent Ledger",
+   "to": "Auction Ledger Recording",
+   "expect": 7
+  },
+  {
+   "id": "lcy-2",
+   "file": "050",
+   "col": "occupation_ko",
+   "from": "밀수 연통 접수·환기구 대장 작성",
+   "to": "경매 장부 기록",
+   "expect": 7
+  }
+ ]
+}

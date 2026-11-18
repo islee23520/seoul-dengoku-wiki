@@ -1,0 +1,22 @@
+{
+ "rules": [
+  {
+   "id": "lca-1",
+   "file": "050",
+   "key": "person-0282",
+   "col": "title",
+   "from": "Yeongong Council Courier, Operations Aide to Jo Uchan",
+   "to": "Hierophant's Office Courier, Operations Aide to Jo Uchan",
+   "expect": 1
+  },
+  {
+   "id": "lca-2",
+   "file": "050",
+   "key": "person-0282",
+   "col": "title_ko",
+   "from": "연공회의 전령, 조우찬의 실무 담당자",
+   "to": "교주실 전령, 조우찬의 실무 담당자",
+   "expect": 1
+  }
+ ]
+}
