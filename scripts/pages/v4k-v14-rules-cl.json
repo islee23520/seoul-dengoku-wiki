@@ -1,0 +1,68 @@
+{
+ "rules": [
+  {
+   "id": "lcl-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0115",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "이 일로 민병 조장 자리의 서명이 장부에 올랐다.",
+   "to": ""
+  },
+  {
+   "id": "lcl-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0167",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "섭도윤은 그 줄을 원장 밖에 둔다.",
+   "to": ""
+  },
+  {
+   "id": "lcl-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0167",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 섭도윤은 그 줄을 원장 밖에 둔다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lcl-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1005",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "점검이 끝난 뒤에야 당직 교대를 허락했다.",
+   "to": ""
+  },
+  {
+   "id": "lcl-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1005",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 점검이 끝난 뒤에야 당직 교대를 허락했다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lcl-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0167",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "일화. 섭도윤은 그 줄을 원장 밖에 둔다.",
+   "to": "직함은 정부 회의 기록 전령."
+  }
+ ]
+}
