@@ -1,0 +1,4432 @@
+{
+ "purpose": "PR #733 gate review 2026-11-18: complete dangling relation bases, remove Yi Hongwon succession event, restore Yun Seorin EN occupation and Sajik-dong line",
+ "rules": [
+  {
+   "id": "bas-001",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "While backing Han Jaemok's parts distribution order with cargo seal and weight inspection",
+   "to": "Backs Han Jaemok's parts distribution order with cargo seal and weight inspection",
+   "expect": 2
+  },
+  {
+   "id": "bas-002",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "While remembering Han Jaemok's parts distribution promise through the numbers in the detention room fuel and food ledger",
+   "to": "Remembers Han Jaemok's parts distribution promise through the numbers in the detention room fuel and food ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-003",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한재목의 부품 배분 순서를 화물 도장과 중량 검수로 받치며",
+   "to": "한재목의 부품 배분 순서를 화물 도장과 중량 검수로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-004",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한재목의 부품 배분 약속을 구금실 연료·식량 장부의 숫자로 기억하며",
+   "to": "한재목의 부품 배분 약속을 구금실 연료·식량 장부의 숫자로 기억한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-005",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "이서담의 반출 허락을 시장 창고 현장에서 집행하며",
+   "to": "이서담의 반출 허락을 시장 창고 현장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-006",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Carries out Gim Taeun's patrol rotation orders in the tunnel, and",
+   "to": "Carries out Gim Taeun's patrol rotation orders in the tunnel",
+   "expect": 2
+  },
+  {
+   "id": "bas-007",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김태운의 순찰 교대 지시를 터널 현장에서 집행하고",
+   "to": "김태운의 순찰 교대 지시를 터널 현장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-008",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is bound by an agreement to redo the treatment order at once if Bak Nuri's medicine stock runs out,",
+   "to": "Is bound by an agreement to redo the treatment order at once if Bak Nuri's medicine stock runs out",
+   "expect": 2
+  },
+  {
+   "id": "bas-009",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "and recorded as a scribe the pump-cleaning process that Bak Nuri and Im Hajun shared,",
+   "to": "Recorded, as a scribe, the pump-cleaning process that Bak Nuri and Im Hajun shared",
+   "expect": 2
+  },
+  {
+   "id": "bas-010",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박누리의 약품 재고가 바닥나면 진료 순서를 즉시 다시 짜기로 한 약속이고",
+   "to": "박누리의 약품 재고가 바닥나면 진료 순서를 즉시 다시 짜기로 한 약속이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-011",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박누리와 임하준이 나누던 펌프 세정 공정을 서기로 남겼고",
+   "to": "박누리와 임하준이 나누던 펌프 세정 공정을 서기로 남겼다",
+   "expect": 2
+  },
+  {
+   "id": "bas-012",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is bound to Choe Hangyeol as master and disciple in repairing wheels and pumps together,",
+   "to": "Is bound to Choe Hangyeol as master and disciple in repairing wheels and pumps together",
+   "expect": 2
+  },
+  {
+   "id": "bas-013",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "takes orders to supply power for the dispatch of Choe Hangyeol's repair trains,",
+   "to": "Takes orders to supply power for the dispatch of Choe Hangyeol's repair trains",
+   "expect": 2
+  },
+  {
+   "id": "bas-014",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "attaches a parts car to Choe Hangyeol's armored repair train,",
+   "to": "Attaches a parts car to Choe Hangyeol's armored repair train",
+   "expect": 2
+  },
+  {
+   "id": "bas-015",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최한결에게 차륜과 펌프를 함께 고치는 스승과 제자로 묶여 있고",
+   "to": "최한결에게 차륜과 펌프를 함께 고치는 스승과 제자로 묶여 있다",
+   "expect": 2
+  },
+  {
+   "id": "bas-016",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최한결의 보수열차 출고에 전력을 대는 지휘를 받고",
+   "to": "최한결의 보수열차 출고에 전력을 대는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-017",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최한결의 장갑 보수열차에 부품 칸을 붙이며",
+   "to": "최한결의 장갑 보수열차에 부품 칸을 붙인다",
+   "expect": 2
+  },
+  {
+   "id": "bas-018",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Divides berth order with Jeong Moran by contract, and",
+   "to": "Divides berth order with Jeong Moran by contract",
+   "expect": 2
+  },
+  {
+   "id": "bas-019",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A contract that carries out Jeong Moran's berth lottery as an auction, and",
+   "to": "A contract that carries out Jeong Moran's berth lottery as an auction",
+   "expect": 2
+  },
+  {
+   "id": "bas-020",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정모란과 선석 순번을 계약으로 나누고",
+   "to": "정모란과 선석 순번을 계약으로 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-021",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정모란의 선석 추첨을 경매로 집행하는 계약이고",
+   "to": "정모란의 선석 추첨을 경매로 집행하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-022",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A contract that delivers Jang Pilgyu's audit wording to the field, and",
+   "to": "A contract that delivers Jang Pilgyu's audit wording to the field",
+   "expect": 2
+  },
+  {
+   "id": "bas-023",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Transfers Jang Pilgyu's termination-condition wording into the meeting copy, and",
+   "to": "Transfers Jang Pilgyu's termination-condition wording into the meeting copy",
+   "expect": 1
+  },
+  {
+   "id": "bas-024",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장필규의 감사 문구를 현장에서 배달하는 계약이고",
+   "to": "장필규의 감사 문구를 현장에서 배달하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-025",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장필규의 종료 조건 문구를 회의 사본에 옮기고",
+   "to": "장필규의 종료 조건 문구를 회의 사본에 옮긴다",
+   "expect": 1
+  },
+  {
+   "id": "bas-026",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "임바다의 아이들 식량 우선 약속을 동상 환자 명부로 받치며",
+   "to": "임바다의 아이들 식량 우선 약속을 동상 환자 명부로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-027",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "유세진의 배차 순서를 승강장에서 집행하며",
+   "to": "유세진의 배차 순서를 승강장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-028",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "takes night maintenance orders when Bak Nuri's heating line goes down,",
+   "to": "Takes night maintenance orders when Bak Nuri's heating line goes down",
+   "expect": 1
+  },
+  {
+   "id": "bas-029",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "While rescheduling patrols to coincide with the end of Heo Dodam's pump test run",
+   "to": "Reschedules patrols to coincide with the end of Heo Dodam's pump test run",
+   "expect": 2
+  },
+  {
+   "id": "bas-030",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박누리의 난방선이 끊기면 야간 정비를 지휘받으며",
+   "to": "박누리의 난방선이 끊기면 야간 정비를 지휘받는다",
+   "expect": 1
+  },
+  {
+   "id": "bas-031",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치하며",
+   "to": "허도담의 펌프 시운전이 끝나는 시각에 맞춰 순찰을 재배치한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-032",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "구태윤과 양천 곡물 포대 순번과 짐수레 순번을 나누며",
+   "to": "구태윤과 양천 곡물 포대 순번과 짐수레 순번을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-033",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "An alliance that announces Jin Hagyeom's infirmary lockdown through waiting-room broadcasts, and",
+   "to": "An alliance that announces Jin Hagyeom's infirmary lockdown through waiting-room broadcasts",
+   "expect": 2
+  },
+  {
+   "id": "bas-034",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "진하겸의 의무소 봉쇄를 대합실 방송으로 알리는 동맹이고",
+   "to": "진하겸의 의무소 봉쇄를 대합실 방송으로 알리는 동맹이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-035",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "borrows Daniel Brooks's Charter Courier Route for an emergency escort, and",
+   "to": "Borrows Daniel Brooks's Charter Courier Route for an emergency escort",
+   "expect": 2
+  },
+  {
+   "id": "bas-036",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "대니얼 브룩스의 헌장 전령로를 비상 호송에 빌리고",
+   "to": "대니얼 브룩스의 헌장 전령로를 비상 호송에 빌린다",
+   "expect": 2
+  },
+  {
+   "id": "bas-037",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "허은찬의 유치선 전력 배분을 발전 쪽에서 받치고",
+   "to": "허은찬의 유치선 전력 배분을 발전 쪽에서 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-038",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "복구복무 시민권 문안을 참고",
+   "to": "복구복무 시민권 문안을 참고한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-039",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "강민서의 공방 제작 조합 평의회 선언을 구로 골목에 붙이며",
+   "to": "강민서의 공방 제작 조합 평의회 선언을 구로 골목에 붙인다",
+   "expect": 2
+  },
+  {
+   "id": "bas-040",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "강민서의 자발적 성인 복구복무 문안을 참고하며",
+   "to": "강민서의 자발적 성인 복구복무 문안을 참고한다",
+   "expect": 1
+  },
+  {
+   "id": "bas-041",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "강민서의 수리 규격을 문안에 옮기며",
+   "to": "강민서의 수리 규격을 문안에 옮긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-042",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "강민서의 복구복무 시민권 연대를 증언의 바탕으로 삼고",
+   "to": "강민서의 복구복무 시민권 연대를 증언의 바탕으로 삼는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-043",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Is bound to Jeong Siu through tolerance mentorship, and",
+   "to": "Is bound to Jeong Siu through tolerance mentorship",
+   "expect": 2
+  },
+  {
+   "id": "bas-044",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Protects Jeong Siu's measurement seal with verification messages, and",
+   "to": "Protects Jeong Siu's measurement seal with verification messages",
+   "expect": 2
+  },
+  {
+   "id": "bas-045",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Ties dispatch to Jeong Siu's measurement seal, and",
+   "to": "Ties dispatch to Jeong Siu's measurement seal",
+   "expect": 2
+  },
+  {
+   "id": "bas-046",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Separates Jeong Siu's elder authority from compensation, and",
+   "to": "Separates Jeong Siu's elder authority from compensation",
+   "expect": 2
+  },
+  {
+   "id": "bas-047",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정시우에게 공차 지도로 묶여 있고",
+   "to": "정시우에게 공차 지도로 묶여 있다",
+   "expect": 2
+  },
+  {
+   "id": "bas-048",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정시우의 계측 도장을 검증 전갈로 지키며",
+   "to": "정시우의 계측 도장을 검증 전갈로 지킨다",
+   "expect": 2
+  },
+  {
+   "id": "bas-049",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정시우의 계측 도장에 배차를 묶으며",
+   "to": "정시우의 계측 도장에 배차를 묶는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-050",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정시우의 원로 권한을 보상과 분리하고",
+   "to": "정시우의 원로 권한을 보상과 분리한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-051",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A contract that ties Gim Nayul's skill roster to freight permits, and",
+   "to": "A contract that ties Gim Nayul's skill roster to freight permits",
+   "expect": 2
+  },
+  {
+   "id": "bas-052",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A contract that fixes Gim Nayul's clerk roster as the ledger, and",
+   "to": "A contract that fixes Gim Nayul's clerk roster as the ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-053",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Separates Gim Nayul's union clerkship from the sentence of refusal, and",
+   "to": "Separates Gim Nayul's union clerkship from the sentence of refusal",
+   "expect": 2
+  },
+  {
+   "id": "bas-054",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김나율의 숙련 명부를 화물 허가에 묶는 계약이고",
+   "to": "김나율의 숙련 명부를 화물 허가에 묶는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-055",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김나율의 서기 명부를 원장으로 고정하는 계약이고",
+   "to": "김나율의 서기 명부를 원장으로 고정하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-056",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김나율의 조합 서기와 거부 문장을 나누고",
+   "to": "김나율의 조합 서기와 거부 문장을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-057",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "이강묵의 차단문 지휘를 받되 김나율의 시민권 명부를 지키는 이중 계약이고",
+   "to": "이강묵의 차단문 지휘를 받되 김나율의 시민권 명부를 지키는 이중 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-058",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Dispatching building repair materials to Bak So-eon first,",
+   "to": "Dispatches building repair materials to Bak So-eon first",
+   "expect": 2
+  },
+  {
+   "id": "bas-059",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Watching the results of Bak So-eon's roof repair lottery together at the market pillar,",
+   "to": "Watches the results of Bak So-eon's roof repair lottery together at the market pillar",
+   "expect": 2
+  },
+  {
+   "id": "bas-060",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receiving direction to enforce Bak So-eon's bid results by circuit color,",
+   "to": "Receives direction to enforce Bak So-eon's bid results by circuit color",
+   "expect": 2
+  },
+  {
+   "id": "bas-061",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박소언의 건물 수리 자재를 우선 배차하며",
+   "to": "박소언의 건물 수리 자재를 우선 배차한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-062",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박소언의 입찰 결과를 회로 색으로 집행하는 지휘를 받고",
+   "to": "박소언의 입찰 결과를 회로 색으로 집행하는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-063",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Putting wheels to Choe Da-in's engineer work crew,",
+   "to": "Puts wheels to Choe Da-in's engineer work crew",
+   "expect": 2
+  },
+  {
+   "id": "bas-064",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Bound to Choe Da-in as a tolerance teacher-and-pupil and sharing the outer track laying,",
+   "to": "Is bound to Choe Da-in as a tolerance teacher and pupil and shares the outer track laying",
+   "expect": 2
+  },
+  {
+   "id": "bas-065",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Contending with Choe Da-in's engineer work crew over the dispatch order,",
+   "to": "Contends with Choe Da-in's engineer work crew over the dispatch order",
+   "expect": 2
+  },
+  {
+   "id": "bas-066",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최다인의 공병 작업반에 차륜을 대며",
+   "to": "최다인의 공병 작업반에 차륜을 댄다",
+   "expect": 2
+  },
+  {
+   "id": "bas-067",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최다인에게 공차 지도로 묶여 외곽 깔기를 나누고",
+   "to": "최다인에게 공차 지도로 묶여 외곽 깔기를 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-068",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최다인의 공병 작업반과 출고 순서를 다투고",
+   "to": "최다인의 공병 작업반과 출고 순서를 다툰다",
+   "expect": 2
+  },
+  {
+   "id": "bas-069",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A contract to deliver Jang Useok's audit seal in the field,",
+   "to": "A contract to deliver Jang Useok's audit seal in the field",
+   "expect": 2
+  },
+  {
+   "id": "bas-070",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "cross-verifies Jang Useok's standards seal against skill scores,",
+   "to": "Cross-verifies Jang Useok's standards seal against skill scores",
+   "expect": 2
+  },
+  {
+   "id": "bas-071",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "enters defect lists into Jang Useok's repair standards ledger,",
+   "to": "Enters defect lists into Jang Useok's repair standards ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-072",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "aligns Jang Useok's standards ledger with the rationing columns,",
+   "to": "Aligns Jang Useok's standards ledger with the rationing columns",
+   "expect": 2
+  },
+  {
+   "id": "bas-073",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "종료 조건 문장을 감사 원장에 참고",
+   "to": "종료 조건 문장을 감사 원장에 참고한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-074",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장우석의 감사 날인을 현장에서 배달하는 계약이고",
+   "to": "장우석의 감사 날인을 현장에서 배달하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-075",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장우석의 규격 날인과 숙련 점수를 교차검증하며",
+   "to": "장우석의 규격 날인과 숙련 점수를 교차검증한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-076",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장우석의 수리규격 원장에 불량 목록을 올리고",
+   "to": "장우석의 수리규격 원장에 불량 목록을 올린다",
+   "expect": 2
+  },
+  {
+   "id": "bas-077",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장우석의 규격 원장과 배급 칸을 맞추며",
+   "to": "장우석의 규격 원장과 배급 칸을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-078",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Is close to a disciple who applies Im Chaewon's filter standards to medical care, and",
+   "to": "Is close to a disciple who applies Im Chaewon's filter standards to medical care",
+   "expect": 2
+  },
+  {
+   "id": "bas-079",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Matches Im Chaewon's protective suit shipments to medical quantities, and",
+   "to": "Matches Im Chaewon's protective suit shipments to medical quantities",
+   "expect": 2
+  },
+  {
+   "id": "bas-080",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "임채원의 필터 규격을 진료에 적용하는 제자에 가깝고",
+   "to": "임채원의 필터 규격을 진료에 적용하는 제자에 가깝다",
+   "expect": 2
+  },
+  {
+   "id": "bas-081",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "임채원의 방호 출고를 진료 수량에 맞추며",
+   "to": "임채원의 방호 출고를 진료 수량에 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-082",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Opens compulsory meal service when Han Jion's ration pot runs empty, and",
+   "to": "Opens compulsory meal service when Han Jion's ration pot runs empty",
+   "expect": 2
+  },
+  {
+   "id": "bas-083",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Keeps Han Jion's ration pot in one corner of the waiting hall, and",
+   "to": "Keeps Han Jion's ration pot in one corner of the waiting hall",
+   "expect": 2
+  },
+  {
+   "id": "bas-084",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Is a contract that enforces Han Jion's civilian minimum by the number of pots, and",
+   "to": "Is a contract that enforces Han Jion's civilian minimum by the number of pots",
+   "expect": 2
+  },
+  {
+   "id": "bas-085",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Connects Han Jion's food distribution and refugee roll to the winter lodging beds, and",
+   "to": "Connects Han Jion's food distribution and refugee roll to the winter lodging beds",
+   "expect": 2
+  },
+  {
+   "id": "bas-086",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한지온의 배급 솥이 비면 의무 배식을 열며",
+   "to": "한지온의 배급 솥이 비면 의무 배식을 연다",
+   "expect": 2
+  },
+  {
+   "id": "bas-087",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한지온의 배급 솥을 대합실 한쪽에 두며",
+   "to": "한지온의 배급 솥을 대합실 한쪽에 둔다",
+   "expect": 2
+  },
+  {
+   "id": "bas-088",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한지온의 시민 최저선을 솥 수로 집행하는 계약이고",
+   "to": "한지온의 시민 최저선을 솥 수로 집행하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-089",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한지온의 식량 배분과 피난민 명부를 겨울 숙소 잠자리에 연결하고",
+   "to": "한지온의 식량 배분과 피난민 명부를 겨울 숙소 잠자리에 연결한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-090",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Replaces sleepers in time with Heo Daon's wheel test run,",
+   "to": "Replaces sleepers in time with Heo Daon's wheel test run",
+   "expect": 2
+  },
+  {
+   "id": "bas-091",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Vouches for Heo Daon's wheel shipment on the dispatch board,",
+   "to": "Vouches for Heo Daon's wheel shipment on the dispatch board",
+   "expect": 2
+  },
+  {
+   "id": "bas-092",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Lends only the late-night frequency for Heo Daon's test run,",
+   "to": "Lends only the late-night frequency for Heo Daon's test run",
+   "expect": 2
+  },
+  {
+   "id": "bas-093",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Transfers the cracks into Heo Daon's wheel maintenance log,",
+   "to": "Transfers the cracks into Heo Daon's wheel maintenance log",
+   "expect": 2
+  },
+  {
+   "id": "bas-094",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "허다온의 차륜 시운전에 맞춰 침목을 갈아 끼우며",
+   "to": "허다온의 차륜 시운전에 맞춰 침목을 갈아 끼운다",
+   "expect": 2
+  },
+  {
+   "id": "bas-095",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "허다온의 차륜 출고를 배차판에서 보증하고",
+   "to": "허다온의 차륜 출고를 배차판에서 보증한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-096",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "허다온의 차륜 정비 일지에 균열을 옮기고",
+   "to": "허다온의 차륜 정비 일지에 균열을 옮긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-097",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Placing Gu Chansol's tool wagon in the platform turn order and",
+   "to": "Places Gu Chansol's tool wagon in the platform turn order",
+   "expect": 2
+  },
+  {
+   "id": "bas-098",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "구찬솔의 공구 화차를 승강장 순번에 올리고",
+   "to": "구찬솔의 공구 화차를 승강장 순번에 올린다",
+   "expect": 2
+  },
+  {
+   "id": "bas-099",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Splitting Jin Uram's Geumcheon medical duty from patient transfers and",
+   "to": "Splits Jin Uram's Geumcheon medical duty from patient transfers",
+   "expect": 2
+  },
+  {
+   "id": "bas-100",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "진우람의 금천 의무와 환자 이송을 나누고",
+   "to": "진우람의 금천 의무와 환자 이송을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-101",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Dividing routes with Pyo Gangho's standards courier road, and",
+   "to": "Divides routes with Pyo Gangho's standards courier road",
+   "expect": 2
+  },
+  {
+   "id": "bas-102",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "표강호의 규격 전령로와 경로를 나누고",
+   "to": "표강호의 규격 전령로와 경로를 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-103",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Testifies with Jong Maru of Guro to both ends of the same counterfeit part, and",
+   "to": "Testifies with Jong Maru of Guro to both ends of the same counterfeit part",
+   "expect": 2
+  },
+  {
+   "id": "bas-104",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언하고",
+   "to": "구로의 종마루와 같은 가짜 부품의 양쪽 끝을 증언한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-105",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "백온의 남하를 금천 쪽에서 맞으며",
+   "to": "백온의 남하를 금천 쪽에서 맞는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-106",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정호준의 안전심사 원칙을 제자로 배우며",
+   "to": "정호준의 안전심사 원칙을 제자로 배운다",
+   "expect": 2
+  },
+  {
+   "id": "bas-107",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정호준의 안전심사를 호송 조건으로 삼으며",
+   "to": "정호준의 안전심사를 호송 조건으로 삼는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-108",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정호준의 약효 검증을 요구하며",
+   "to": "정호준의 약효 검증을 요구한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-109",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "She is the ally who enforces Jeong Harin's veto on the medical side, and",
+   "to": "She is the ally who enforces Jeong Harin's veto on the medical side",
+   "expect": 2
+  },
+  {
+   "id": "bas-110",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정하린의 거부권을 진료 쪽에서 집행하는 동맹이고",
+   "to": "정하린의 거부권을 진료 쪽에서 집행하는 동맹이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-111",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Locks down shipments if Choe Eunjae's certification seal lapses, and",
+   "to": "Locks down shipments if Choe Eunjae's certification seal lapses",
+   "expect": 2
+  },
+  {
+   "id": "bas-112",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Is close to a master-and-disciple bond in moving Choe Eunjae's certification scope onto the ledger, and",
+   "to": "Is close to a master-and-disciple bond in moving Choe Eunjae's certification scope onto the ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-113",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최은재의 인증 도장이 떨어지면 출고를 잠그며",
+   "to": "최은재의 인증 도장이 떨어지면 출고를 잠근다",
+   "expect": 2
+  },
+  {
+   "id": "bas-114",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최은재의 인증 범위를 원장으로 옮기는 스승과 제자에 가깝고",
+   "to": "최은재의 인증 범위를 원장으로 옮기는 스승과 제자에 가깝다",
+   "expect": 2
+  },
+  {
+   "id": "bas-115",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receives orders to keep trimming, at the gate, the wick of the lockdown lamp that I Bomgyeol lit,",
+   "to": "Receives orders to keep trimming, at the gate, the wick of the lockdown lamp that I Bomgyeol lit",
+   "expect": 2
+  },
+  {
+   "id": "bas-116",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎는 지휘를 받고",
+   "to": "이봄결이 켠 봉쇄 등잔의 심지를 관문에서 이어 깎는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-117",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforcing Gim Doha's residents' veto at the concourse, and",
+   "to": "Enforces Gim Doha's residents' veto at the concourse",
+   "expect": 2
+  },
+  {
+   "id": "bas-118",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김도하의 주민 거부권을 대합실에서 집행하고",
+   "to": "김도하의 주민 거부권을 대합실에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-119",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A contract that backs Yu Minho's dispatch order with maintenance, and",
+   "to": "A contract that backs Yu Minho's dispatch order with maintenance",
+   "expect": 2
+  },
+  {
+   "id": "bas-120",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receives command to enforce Yu Minho's dispatch order with stabling chalk, and",
+   "to": "Receives command to enforce Yu Minho's dispatch order with stabling chalk",
+   "expect": 2
+  },
+  {
+   "id": "bas-121",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "유민호의 배차 순서를 정비로 받치는 계약이고",
+   "to": "유민호의 배차 순서를 정비로 받치는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-122",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받고",
+   "to": "유민호의 배차 순서를 유치 분필로 집행하는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-123",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Backing Jang Yerin's testing network operations with testimony,",
+   "to": "Backs Jang Yerin's testing network operations with testimony",
+   "expect": 2
+  },
+  {
+   "id": "bas-124",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장예린의 검사망 운영을 증언으로 받치고",
+   "to": "장예린의 검사망 운영을 증언으로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-125",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "a contract that carries Im Sion's loan times over into pouch weight, and",
+   "to": "A contract that carries Im Sion's loan times over into pouch weight",
+   "expect": 2
+  },
+  {
+   "id": "bas-126",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "backing Im Sion's viewing lock with records,",
+   "to": "Backs Im Sion's viewing lock with records",
+   "expect": 2
+  },
+  {
+   "id": "bas-127",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "임시온의 대여 시각을 주머니 무게로 옮기는 계약이고",
+   "to": "임시온의 대여 시각을 주머니 무게로 옮기는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-128",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "임시온의 열람 잠금을 기록으로 받치며",
+   "to": "임시온의 열람 잠금을 기록으로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-129",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최지우의 편집 흔적 검증에 원본을 넘기고",
+   "to": "최지우의 편집 흔적 검증에 원본을 넘긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-130",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "He entrusts the samples to Ryu Eunbi, and",
+   "to": "He entrusts the samples to Ryu Eunbi",
+   "expect": 2
+  },
+  {
+   "id": "bas-131",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "류은비에게 표본을 맡기고",
+   "to": "류은비에게 표본을 맡긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-132",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Watched Im Hajun's night inspection route to the very end, and",
+   "to": "Watched Im Hajun's night inspection route to the very end",
+   "expect": 2
+  },
+  {
+   "id": "bas-133",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "임하준의 야간 점검 동선을 마지막까지 봤으며",
+   "to": "임하준의 야간 점검 동선을 마지막까지 봤다",
+   "expect": 2
+  },
+  {
+   "id": "bas-134",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Monitoring Han Somi's livelihood recovery pledge through platform announcements, and",
+   "to": "Monitors Han Somi's livelihood recovery pledge through platform announcements",
+   "expect": 2
+  },
+  {
+   "id": "bas-135",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한소미의 생활 복구 공약을 승강장 방송으로 감시하며",
+   "to": "한소미의 생활 복구 공약을 승강장 방송으로 감시한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-136",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김보람의 펌프수비 지휘를 교량에서 집행하고",
+   "to": "김보람의 펌프수비 지휘를 교량에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-137",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김보람의 펌프수비 지휘에 전력을 대고",
+   "to": "김보람의 펌프수비 지휘에 전력을 댄다",
+   "expect": 2
+  },
+  {
+   "id": "bas-138",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김보람의 펌프수비 지휘 아래 민병 교대를 맞추고",
+   "to": "김보람의 펌프수비 지휘 아래 민병 교대를 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-139",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장민재의 식량통 수 게시를 대합실 식량 창구에서 집행하고",
+   "to": "장민재의 식량통 수 게시를 대합실 식량 창구에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-140",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장민재가 게시한 숫자에 맞춰 저체온 환자의 담요와 식량 순서를 정하고",
+   "to": "장민재가 게시한 숫자에 맞춰 저체온 환자의 담요와 식량 순서를 정한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-141",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "a contract that loads crates to match the hour Yu Haeun finishes his leather work,",
+   "to": "A contract that loads crates to match the hour Yu Haeun finishes his leather work",
+   "expect": 2
+  },
+  {
+   "id": "bas-142",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "and enforces Yu Haeun's trade board by auction,",
+   "to": "Enforces Yu Haeun's trade board by auction",
+   "expect": 2
+  },
+  {
+   "id": "bas-143",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이고",
+   "to": "유하은의 가죽 마감 시각에 맞춰 상자를 싣는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-144",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "유하은의 직능 칠판을 경매로 집행하고",
+   "to": "유하은의 직능 칠판을 경매로 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-145",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "leaving a burnt smell in Heo Gyeom's alley pump log,",
+   "to": "Leaves a burnt smell in Heo Gyeom's alley pump log",
+   "expect": 2
+  },
+  {
+   "id": "bas-146",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "허겸의 골목펌프 일지에 단내를 남기며",
+   "to": "허겸의 골목펌프 일지에 단내를 남긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-147",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "구도영의 패킹 운송과 순번을 나누며",
+   "to": "구도영의 패킹 운송과 순번을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-148",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최지우의 원본 검증 시각에 맞추며",
+   "to": "최지우의 원본 검증 시각에 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-149",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A command that carries Gim Uchan's operations chart only in sealed form, and",
+   "to": "A command that carries Gim Uchan's operations chart only in sealed form",
+   "expect": 2
+  },
+  {
+   "id": "bas-150",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "김우찬의 작전표를 봉인 상태로만 나르는 지휘이고",
+   "to": "김우찬의 작전표를 봉인 상태로만 나르는 지휘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-151",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "정소율의 부품 재고 장부 봉인을 교환 전에 확인하며",
+   "to": "정소율의 부품 재고 장부 봉인을 교환 전에 확인한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-152",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받고",
+   "to": "이윤서의 봉쇄 시계에 측량을 넘기는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-153",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박하율의 출고 호각에 램프 횟수를 맞추는 지휘를 받고",
+   "to": "박하율의 출고 호각에 램프 횟수를 맞추는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-154",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "a contract that delivers Im Gyeore's term clause to the pharmacy, and",
+   "to": "A contract that delivers Im Gyeore's term clause to the pharmacy",
+   "expect": 2
+  },
+  {
+   "id": "bas-155",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "임겨레의 기한 조항을 약국에 배달하는 계약이며",
+   "to": "임겨레의 기한 조항을 약국에 배달하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-156",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "enforcing Han Bora's departure times with platform chalk,",
+   "to": "Enforces Han Bora's departure times with platform chalk",
+   "expect": 2
+  },
+  {
+   "id": "bas-157",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "attaching a convoy car to Han Bora's patrol train dispatch and",
+   "to": "Attaches a convoy car to Han Bora's patrol train dispatch",
+   "expect": 1
+  },
+  {
+   "id": "bas-158",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한보라의 출고 시각을 승강장 분필로 집행하며",
+   "to": "한보라의 출고 시각을 승강장 분필로 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-159",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "한보라의 순찰열차 배차에 호송 칸을 붙이고",
+   "to": "한보라의 순찰열차 배차에 호송 칸을 붙인다",
+   "expect": 1
+  },
+  {
+   "id": "bas-160",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "고서준의 능선 정찰과 통행 좌표를 경쟁하며",
+   "to": "고서준의 능선 정찰과 통행 좌표를 경쟁한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-161",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Backing Yang Gi-seok's allocation of stabling-track power from the generation side, and",
+   "to": "Backs Yang Gi-seok's allocation of stabling-track power from the generation side",
+   "expect": 2
+  },
+  {
+   "id": "bas-162",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "양기석의 유치선 전력 배분을 발전 쪽에서 받치고",
+   "to": "양기석의 유치선 전력 배분을 발전 쪽에서 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-163",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Offering the clerk's ledger to Yun Seorin's ratification review, and",
+   "to": "Offers the clerk's ledger to Yun Seorin's ratification review",
+   "expect": 2
+  },
+  {
+   "id": "bas-164",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Delivering voice-and-document cross copies to Yun Seorin, and",
+   "to": "Delivers voice-and-document cross copies to Yun Seorin",
+   "expect": 2
+  },
+  {
+   "id": "bas-165",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "윤서린의 인준 심사에 서기 원장을 바치고",
+   "to": "윤서린의 인준 심사에 서기 원장을 바친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-166",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "윤서린에게 음성·문서 교차 사본을 전하며",
+   "to": "윤서린에게 음성·문서 교차 사본을 전한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-167",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Is the commander who carries Gang Yejun's declaration of review suspension only in sealed condition, and",
+   "to": "Is the commander who carries Gang Yejun's declaration of review suspension only in sealed condition",
+   "expect": 2
+  },
+  {
+   "id": "bas-168",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Is the aide who transfers Gang Yejun's handwriting comparison into the ledger, and",
+   "to": "Is the aide who transfers Gang Yejun's handwriting comparison into the ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-169",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘이고",
+   "to": "강예준의 심사 정지 선언을 봉인 상태로만 나르는 지휘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-170",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "강예준의 필적 대조를 원장으로 옮기는 실무원이고",
+   "to": "강예준의 필적 대조를 원장으로 옮기는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-171",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is an aide who backs Jo Harin's dual-key rule on site, and",
+   "to": "Is an aide who backs Jo Harin's dual-key rule on site",
+   "expect": 2
+  },
+  {
+   "id": "bas-172",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "enforces Jo Harin's removal-time schedule through patrols, and",
+   "to": "Enforces Jo Harin's removal-time schedule through patrols",
+   "expect": 2
+  },
+  {
+   "id": "bas-173",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "matches the humidity and storage cycle of Jo Harin's iron chest, and",
+   "to": "Matches the humidity and storage cycle of Jo Harin's iron chest",
+   "expect": 2
+  },
+  {
+   "id": "bas-174",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "조하린의 이중 열쇠 규칙을 현장에서 받치는 실무원이고",
+   "to": "조하린의 이중 열쇠 규칙을 현장에서 받치는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-175",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "조하린의 반출 시각표를 순찰로 집행하고",
+   "to": "조하린의 반출 시각표를 순찰로 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-176",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "조하린의 철제 함 습도와 보관 주기를 맞추며",
+   "to": "조하린의 철제 함 습도와 보관 주기를 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-177",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Takes direction to carry out Yun Jiyul's transfer ledger at the bedside, and",
+   "to": "Takes direction to carry out Yun Jiyul's transfer ledger at the bedside",
+   "expect": 2
+  },
+  {
+   "id": "bas-178",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Carries out Yun Jiyul's dispatch cancellations on the platform, and",
+   "to": "Carries out Yun Jiyul's dispatch cancellations on the platform",
+   "expect": 2
+  },
+  {
+   "id": "bas-179",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is an aide who translates Yun Jiyul's medical transport ledger into coordination tables, and",
+   "to": "Is an aide who translates Yun Jiyul's medical transport ledger into coordination tables",
+   "expect": 2
+  },
+  {
+   "id": "bas-180",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "윤지율의 이송 장부를 침상에서 집행하는 지휘를 받고",
+   "to": "윤지율의 이송 장부를 침상에서 집행하는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-181",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "윤지율의 배차 취소를 승강장에서 집행하며",
+   "to": "윤지율의 배차 취소를 승강장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-182",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "윤지율의 의료이송 원장을 조정표로 번역하는 실무원이고",
+   "to": "윤지율의 의료이송 원장을 조정표로 번역하는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-183",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is a contract that transports only O Seoyul's dried seals, and",
+   "to": "Is a contract that transports only O Seoyul's dried seals",
+   "expect": 2
+  },
+  {
+   "id": "bas-184",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Verifies O Seoyul's notarial seal before the auction, and",
+   "to": "Verifies O Seoyul's notarial seal before the auction",
+   "expect": 2
+  },
+  {
+   "id": "bas-185",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Backs O Seoyul's notarization requests from the witness stand, and",
+   "to": "Backs O Seoyul's notarization requests from the witness stand",
+   "expect": 2
+  },
+  {
+   "id": "bas-186",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오서율의 마른 인장만 운송하는 계약이고",
+   "to": "오서율의 마른 인장만 운송하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-187",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오서율의 공증 날인을 경매 전 확인하며",
+   "to": "오서율의 공증 날인을 경매 전 확인한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-188",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오서율의 공증 청구를 증인석에서 받치고",
+   "to": "오서율의 공증 청구를 증인석에서 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-189",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "An aide who hands field coordinates to Seo Raon's plate, and",
+   "to": "An aide who hands field coordinates to Seo Raon's plate",
+   "expect": 2
+  },
+  {
+   "id": "bas-190",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "서라온의 원판에 현장 좌표를 넘기는 실무원이고",
+   "to": "서라온의 원판에 현장 좌표를 넘기는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-191",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "나봄결의 비상 발전에 제습 전력을 맞추며",
+   "to": "나봄결의 비상 발전에 제습 전력을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-192",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "지서윤의 제습 주기와 함 온도를 맞추며",
+   "to": "지서윤의 제습 주기와 함 온도를 맞춘다",
+   "expect": 1
+  },
+  {
+   "id": "bas-193",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "지서윤의 제습기에 출력을 맞추고",
+   "to": "지서윤의 제습기에 출력을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-194",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "양해온의 전령 봉인과 순번을 나누며",
+   "to": "양해온의 전령 봉인과 순번을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-195",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "마도한의 사본 상자와 순번을 계약으로 나누며",
+   "to": "마도한의 사본 상자와 순번을 계약으로 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-196",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "마도한의 운송 순번을 경매로 집행하는 계약이고",
+   "to": "마도한의 운송 순번을 경매로 집행하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-197",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "an ally who announces the lockdown of Yeon Jiu's infirmary by broadcast, and",
+   "to": "An ally who announces the lockdown of Yeon Jiu's infirmary by broadcast",
+   "expect": 2
+  },
+  {
+   "id": "bas-198",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "류은비에게 약품 묶음을 빚지며",
+   "to": "류은비에게 약품 묶음을 빚진다",
+   "expect": 2
+  },
+  {
+   "id": "bas-199",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "연지우의 의무실 봉쇄를 방송으로 알리는 동맹이고",
+   "to": "연지우의 의무실 봉쇄를 방송으로 알리는 동맹이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-200",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "지한솔의 서고기지 봉인과 교대를 나누며",
+   "to": "지한솔의 서고기지 봉인과 교대를 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-201",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "양해온의 인준 전갈과 순번을 나누며",
+   "to": "양해온의 인준 전갈과 순번을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-202",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "마은결의 사본 경매에서 자신의 관작이 물건이 되지 않기를 바라며",
+   "to": "마은결의 사본 경매에서 자신의 관작이 물건이 되지 않기를 바란다",
+   "expect": 2
+  },
+  {
+   "id": "bas-203",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "나봄결의 비상 발전 일지와 시각을 맞추며",
+   "to": "나봄결의 비상 발전 일지와 시각을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-204",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "an ally who hands Bak Taegyeom the detour coordinates,",
+   "to": "An ally who hands Bak Taegyeom the detour coordinates",
+   "expect": 2
+  },
+  {
+   "id": "bas-205",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "requests access to Bak Taegyeom's dispatch ledger,",
+   "to": "Requests access to Bak Taegyeom's dispatch ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-206",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "창고 임대 장부를 역장에게 보고",
+   "to": "창고 임대 장부를 역장에게 보고한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-207",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박태겸의 도제 경로를 창에서 받치며",
+   "to": "박태겸의 도제 경로를 창에서 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-208",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박태겸에게 우회 좌표를 넘기는 동맹이고",
+   "to": "박태겸에게 우회 좌표를 넘기는 동맹이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-209",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "박태겸의 배차 원장 열람을 청구하고",
+   "to": "박태겸의 배차 원장 열람을 청구한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-210",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforcing Eva Novakova's dispatch order on the platform,",
+   "to": "Enforces Eva Novakova's dispatch order on the platform",
+   "expect": 2
+  },
+  {
+   "id": "bas-211",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Posting testimony on Eva Novakova's dispatch board, and",
+   "to": "Posts testimony on Eva Novakova's dispatch board",
+   "expect": 2
+  },
+  {
+   "id": "bas-212",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "에바 노바코바의 배차 순서를 승강장에서 집행하며",
+   "to": "에바 노바코바의 배차 순서를 승강장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-213",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "에바 노바코바의 배차판에 증언을 붙이고",
+   "to": "에바 노바코바의 배차판에 증언을 붙인다",
+   "expect": 2
+  },
+  {
+   "id": "bas-214",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "An aide who enforces Isaac Walker's maintenance log on the ground, and",
+   "to": "An aide who enforces Isaac Walker's maintenance log on the ground",
+   "expect": 2
+  },
+  {
+   "id": "bas-215",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Supports Isaac Walker's apprentice quarters with medical care, and",
+   "to": "Supports Isaac Walker's apprentice quarters with medical care",
+   "expect": 2
+  },
+  {
+   "id": "bas-216",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receives Isaac Walker's maintenance log as grounds for an accusation, and",
+   "to": "Receives Isaac Walker's maintenance log as grounds for an accusation",
+   "expect": 2
+  },
+  {
+   "id": "bas-217",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "아이작 워커의 정비 일지를 현장에서 집행하는 실무원이고",
+   "to": "아이작 워커의 정비 일지를 현장에서 집행하는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-218",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "아이작 워커의 도제 숙소를 진료로 받치고",
+   "to": "아이작 워커의 도제 숙소를 진료로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-219",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "아이작 워커의 정비 일지를 고발 근거로 받고",
+   "to": "아이작 워커의 정비 일지를 고발 근거로 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-220",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is a contract that enforces Lucas Schneider's transshipment sequence on site, and",
+   "to": "Is a contract that enforces Lucas Schneider's transshipment sequence on site",
+   "expect": 2
+  },
+  {
+   "id": "bas-221",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "receives a command to supply power to Lucas Schneider's warehouse temperature, and",
+   "to": "Receives a command to supply power to Lucas Schneider's warehouse temperature",
+   "expect": 2
+  },
+  {
+   "id": "bas-222",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이고",
+   "to": "루카스 슈나이더의 환적 순서를 현장에서 집행하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-223",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받고",
+   "to": "루카스 슈나이더의 창고 온도에 전력을 대는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-224",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "미콜라 본다렌코의 제동 시운전에 출력을 맞추며",
+   "to": "미콜라 본다렌코의 제동 시운전에 출력을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-225",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "handing over Seo Nayeon's ice bricks,",
+   "to": "Hands over Seo Nayeon's ice bricks",
+   "expect": 2
+  },
+  {
+   "id": "bas-226",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "서나연의 얼음 벽돌을 인계하며",
+   "to": "서나연의 얼음 벽돌을 인계한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-227",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "owing depot medicine to Ryu Eunbi,",
+   "to": "Owes depot medicine to Ryu Eunbi",
+   "expect": 2
+  },
+  {
+   "id": "bas-228",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "an ally who broadcasts news of the blockade of Gabriel Johnson's depot clinic,",
+   "to": "An ally who broadcasts news of the blockade of Gabriel Johnson's depot clinic",
+   "expect": 2
+  },
+  {
+   "id": "bas-229",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "when Gabriel Johnson's depot clinic is blockaded, takes the patients into the dorm, and",
+   "to": "When Gabriel Johnson's depot clinic is blockaded, takes the patients into the dorm",
+   "expect": 2
+  },
+  {
+   "id": "bas-230",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "aligns the timing of the blockade of Gabriel Johnson's depot clinic with its discovery, and",
+   "to": "Aligns the timing of the blockade of Gabriel Johnson's depot clinic with its discovery",
+   "expect": 1
+  },
+  {
+   "id": "bas-231",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "류은비에게 창 약재를 빚지며",
+   "to": "류은비에게 창 약재를 빚진다",
+   "expect": 2
+  },
+  {
+   "id": "bas-232",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이고",
+   "to": "가브리엘 존슨의 창 진료 봉쇄를 방송으로 알리는 동맹이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-233",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받고",
+   "to": "가브리엘 존슨의 창 진료가 봉쇄되면 환자를 숙소로 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-234",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞추며",
+   "to": "가브리엘 존슨의 창 진료 봉쇄 시각과 발견을 맞춘다",
+   "expect": 1
+  },
+  {
+   "id": "bas-235",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "주리안의 북부 지하 통로 점선과 강변을 맞추며",
+   "to": "주리안의 북부 지하 통로 점선과 강변을 맞춘다",
+   "expect": 1
+  },
+  {
+   "id": "bas-236",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Supporting Mateusz Kowalski's waiting-hall window with guidance,",
+   "to": "Supports Mateusz Kowalski's waiting-hall window with guidance",
+   "expect": 2
+  },
+  {
+   "id": "bas-237",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "마테우시 코발스키의 대합실 창구를 안내로 받치고",
+   "to": "마테우시 코발스키의 대합실 창구를 안내로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-238",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Supporting Andre Dubois's siding power distribution from the generation side, and",
+   "to": "Supports Andre Dubois's siding power distribution from the generation side",
+   "expect": 2
+  },
+  {
+   "id": "bas-239",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "앙드레 뒤부아의 유치선 전력 배분을 발전 쪽에서 받치고",
+   "to": "앙드레 뒤부아의 유치선 전력 배분을 발전 쪽에서 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-240",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 지며",
+   "to": "장세화의 의료호송을 용산 창에서 피하지 않으려 빚을 진다",
+   "expect": 2
+  },
+  {
+   "id": "bas-241",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "필리프 뮐러의 용산 환적 증언과 같은 상자를 가리키며",
+   "to": "필리프 뮐러의 용산 환적 증언과 같은 상자를 가리킨다",
+   "expect": 2
+  },
+  {
+   "id": "bas-242",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Add testimony to Oh Haerin's stock disclosure, and",
+   "to": "Adds testimony to Oh Haerin's stock disclosure",
+   "expect": 2
+  },
+  {
+   "id": "bas-243",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오해린의 재고 공개에 증언을 보태고",
+   "to": "오해린의 재고 공개에 증언을 보탠다",
+   "expect": 2
+  },
+  {
+   "id": "bas-244",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "첫해 증언을 보태고",
+   "to": "첫해 증언을 보탠다",
+   "expect": 2
+  },
+  {
+   "id": "bas-245",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "조민재의 온도 공개에 전력을 대는 지휘를 받고",
+   "to": "조민재의 온도 공개에 전력을 대는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-246",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforcing Yun Seoha's auction order on the platform,",
+   "to": "Enforces Yun Seoha's auction order on the platform",
+   "expect": 2
+  },
+  {
+   "id": "bas-247",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforcing Yun Seoha's auction rules on the commodity-price items, and",
+   "to": "Enforces Yun Seoha's auction rules on the commodity-price items",
+   "expect": 2
+  },
+  {
+   "id": "bas-248",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "윤서하의 경매 순서를 승강장에서 집행하며",
+   "to": "윤서하의 경매 순서를 승강장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-249",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "윤서하의 경매 규칙을 물가 품목에서 집행하고",
+   "to": "윤서하의 경매 규칙을 물가 품목에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-250",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is an aide who backs Seo Nayeon's brick engraving in the field, and",
+   "to": "Is an aide who backs Seo Nayeon's brick engraving in the field",
+   "expect": 2
+  },
+  {
+   "id": "bas-251",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "points to the slot where Seo Nayeon's brick engraving was changed overnight, and",
+   "to": "Points to the slot where Seo Nayeon's brick engraving was changed overnight",
+   "expect": 2
+  },
+  {
+   "id": "bas-252",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "서나연의 벽돌 각인을 현장에서 받치는 실무원이고",
+   "to": "서나연의 벽돌 각인을 현장에서 받치는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-253",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "서나연의 벽돌 각인이 밤에 바뀐 칸을 가리키고",
+   "to": "서나연의 벽돌 각인이 밤에 바뀐 칸을 가리킨다",
+   "expect": 2
+  },
+  {
+   "id": "bas-254",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "filters Peter Jansen's Sang Hoejeong votes out of the council convoy, and",
+   "to": "Filters Peter Jansen's Sang Hoejeong votes out of the council convoy",
+   "expect": 2
+  },
+  {
+   "id": "bas-255",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "피터 얀센의 상회정 표를 회의 호송에서 거르고",
+   "to": "피터 얀센의 상회정 표를 회의 호송에서 거른다",
+   "expect": 2
+  },
+  {
+   "id": "bas-256",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "나루희의 발전에 제빙 전력을 맞추며",
+   "to": "나루희의 발전에 제빙 전력을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-257",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "지윤재의 제빙 시운전에 출력을 맞추며",
+   "to": "지윤재의 제빙 시운전에 출력을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-258",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Backing Jimaru's refrigeration base power distribution from the generation side, and",
+   "to": "Backs Jimaru's refrigeration base power distribution from the generation side",
+   "expect": 2
+  },
+  {
+   "id": "bas-259",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "지마루의 냉동기지 전력 배분을 발전 쪽에서 받치고",
+   "to": "지마루의 냉동기지 전력 배분을 발전 쪽에서 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-260",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료호송을 청량리에서 피하지 않으려 빚을 지며",
+   "to": "장세화의 의료호송을 청량리에서 피하지 않으려 빚을 진다",
+   "expect": 1
+  },
+  {
+   "id": "bas-261",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "demands efficacy verification from Ryu Eunbi,",
+   "to": "Demands efficacy verification from Ryu Eunbi",
+   "expect": 2
+  },
+  {
+   "id": "bas-262",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "류은비에게 약효 검증을 청구하며",
+   "to": "류은비에게 약효 검증을 청구한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-263",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Tests Choe Jiu's public broadcast network from within, and",
+   "to": "Tests Choe Jiu's public broadcast network from within",
+   "expect": 2
+  },
+  {
+   "id": "bas-264",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Aligning the timing of Choe Jiu's exposé with guild time,",
+   "to": "Aligns the timing of Choe Jiu's exposé with guild time",
+   "expect": 2
+  },
+  {
+   "id": "bas-265",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최지우의 공개 방송망을 내부에서 시험하고",
+   "to": "최지우의 공개 방송망을 내부에서 시험한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-266",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "최지우의 폭로 시점을 길드 시간과 맞추며",
+   "to": "최지우의 폭로 시점을 길드 시간과 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-267",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Repairs the transmitter under Gwon Mirae's command, and",
+   "to": "Repairs the transmitter under Gwon Mirae's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-268",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Treats Gwon Mirae's all-night team, and",
+   "to": "Treats Gwon Mirae's all-night team",
+   "expect": 2
+  },
+  {
+   "id": "bas-269",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Backs Gwon Mirae's transmission records with eyewitness testimony, and",
+   "to": "Backs Gwon Mirae's transmission records with eyewitness testimony",
+   "expect": 2
+  },
+  {
+   "id": "bas-270",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "권미래의 지휘로 송신기를 고치고",
+   "to": "권미래의 지휘로 송신기를 고친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-271",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "권미래의 밤샘 조를 진료하고",
+   "to": "권미래의 밤샘 조를 진료한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-272",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "권미래의 송신 기록을 목격으로 받치고",
+   "to": "권미래의 송신 기록을 목격으로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-273",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Moves the ledger under Hwang Eunseol's command, and",
+   "to": "Moves the ledger under Hwang Eunseol's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-274",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "황은설의 지휘로 원장을 옮기고",
+   "to": "황은설의 지휘로 원장을 옮긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-275",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "keeping Song Jaemin's cipher box safe,",
+   "to": "Keeps Song Jaemin's cipher box safe",
+   "expect": 2
+  },
+  {
+   "id": "bas-276",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "running the booths under Song Jaemin's direction,",
+   "to": "Runs the booths under Song Jaemin's direction",
+   "expect": 2
+  },
+  {
+   "id": "bas-277",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "moving Song Jaemin's cipher box to the courier route,",
+   "to": "Moves Song Jaemin's cipher box to the courier route",
+   "expect": 2
+  },
+  {
+   "id": "bas-278",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "송재민의 암호 함을 보관하고",
+   "to": "송재민의 암호 함을 보관한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-279",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "송재민의 지휘로 부스를 돌리고",
+   "to": "송재민의 지휘로 부스를 돌린다",
+   "expect": 2
+  },
+  {
+   "id": "bas-280",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "송재민의 암호 함을 전령로로 옮기고",
+   "to": "송재민의 암호 함을 전령로로 옮긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-281",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "delivering O Haneul's scheduling notices,",
+   "to": "Delivers O Haneul's scheduling notices",
+   "expect": 2
+  },
+  {
+   "id": "bas-282",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Taking charge of the blackboard under O Haneul's command, and",
+   "to": "Takes charge of the blackboard under O Haneul's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-283",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforcing O Haneul's veto over formation on the spot, and",
+   "to": "Enforces O Haneul's veto over formation on the spot",
+   "expect": 2
+  },
+  {
+   "id": "bas-284",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오하늘의 편성 통지를 나르고",
+   "to": "오하늘의 편성 통지를 나른다",
+   "expect": 2
+  },
+  {
+   "id": "bas-285",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오하늘의 지휘로 칠판을 맡고",
+   "to": "오하늘의 지휘로 칠판을 맡는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-286",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오하늘의 편성 거부권을 현장에서 집행하고",
+   "to": "오하늘의 편성 거부권을 현장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-287",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Passing the origin note to Jo Eunu's signal tracing, and",
+   "to": "Passes the origin note to Jo Eunu's signal tracing",
+   "expect": 2
+  },
+  {
+   "id": "bas-288",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "조은우의 전파추적에 원점 쪽지를 넘기고",
+   "to": "조은우의 전파추적에 원점 쪽지를 넘긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-289",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Supply maintenance wiring to Dubong, and",
+   "to": "Supplies maintenance wiring to Dubong",
+   "expect": 2
+  },
+  {
+   "id": "bas-290",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Share the maintenance window with Dubong, and",
+   "to": "Shares the maintenance window with Dubong",
+   "expect": 2
+  },
+  {
+   "id": "bas-291",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "두봉에게 정비용 전선을 대고",
+   "to": "두봉에게 정비용 전선을 댄다",
+   "expect": 2
+  },
+  {
+   "id": "bas-292",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "두봉과 정비 창을 나누고",
+   "to": "두봉과 정비 창을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-293",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Moves the meeting transcript into Guk Dubong's verification ledger and",
+   "to": "Moves the meeting transcript into Guk Dubong's verification ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-294",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "국두봉의 검증 원장에 회의 필사를 옮기고",
+   "to": "국두봉의 검증 원장에 회의 필사를 옮긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-295",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Testifies at Mo Guk's northwest gate relay, and",
+   "to": "Testifies at Mo Guk's northwest gate relay",
+   "expect": 1
+  },
+  {
+   "id": "bas-296",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "모국의 서북 관문 중계에서 증언하고",
+   "to": "모국의 서북 관문 중계에서 증언한다",
+   "expect": 1
+  },
+  {
+   "id": "bas-297",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Sharing the fuel depot watch and tools with Oh Hangyeol, and",
+   "to": "Shares the fuel depot watch and tools with Oh Hangyeol",
+   "expect": 1
+  },
+  {
+   "id": "bas-298",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Guarding the fuel depot under Oh Hangyeol's direction, and",
+   "to": "Guards the fuel depot under Oh Hangyeol's direction",
+   "expect": 2
+  },
+  {
+   "id": "bas-299",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오한결의 연료고 당직과 공구를 나누고",
+   "to": "오한결의 연료고 당직과 공구를 나눈다",
+   "expect": 1
+  },
+  {
+   "id": "bas-300",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "오한결의 지휘로 연료고를 지키고",
+   "to": "오한결의 지휘로 연료고를 지킨다",
+   "expect": 2
+  },
+  {
+   "id": "bas-301",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Inspects Mo Gam's drying yard,",
+   "to": "Inspects Mo Gam's drying yard",
+   "expect": 2
+  },
+  {
+   "id": "bas-302",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Matches Bong Gam's dosing register to the drying lots,",
+   "to": "Matches Bong Gam's dosing register to the drying lots",
+   "expect": 2
+  },
+  {
+   "id": "bas-303",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "모감의 건조장을 검수하고",
+   "to": "모감의 건조장을 검수한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-304",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "봉감의 투약 명부와 건조 로트를 맞추고",
+   "to": "봉감의 투약 명부와 건조 로트를 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-305",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Patrolling the corridor under Gang Taesan's command, and",
+   "to": "Patrols the corridor under Gang Taesan's command",
+   "expect": 1
+  },
+  {
+   "id": "bas-306",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Aligns Yong Guk's corridor patrol with the torches,",
+   "to": "Aligns Yong Guk's corridor patrol with the torches",
+   "expect": 1
+  },
+  {
+   "id": "bas-307",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "강태산의 지휘로 회랑을 돌고",
+   "to": "강태산의 지휘로 회랑을 돈다",
+   "expect": 1
+  },
+  {
+   "id": "bas-308",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "용국의 회랑 순찰과 횃불을 맞추고",
+   "to": "용국의 회랑 순찰과 횃불을 맞춘다",
+   "expect": 1
+  },
+  {
+   "id": "bas-309",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receives Mobong's mountain transport at the entrance, and",
+   "to": "Receives Mobong's mountain transport at the entrance",
+   "expect": 1
+  },
+  {
+   "id": "bas-310",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "모봉의 산악 운송을 입구에서 받고",
+   "to": "모봉의 산악 운송을 입구에서 받는다",
+   "expect": 1
+  },
+  {
+   "id": "bas-311",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "송하율의 도제 일과를 현장에서 받고",
+   "to": "송하율의 도제 일과를 현장에서 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-312",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "송하율의 도제 일과를 폭로 근거로 받고",
+   "to": "송하율의 도제 일과를 폭로 근거로 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-313",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "조우찬의 작업 조 부상을 맡고",
+   "to": "조우찬의 작업 조 부상을 맡는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-314",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "조우찬의 가동 통지를 나르고",
+   "to": "조우찬의 가동 통지를 나른다",
+   "expect": 2
+  },
+  {
+   "id": "bas-315",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "조우찬의 지휘로 일지를 옮기고",
+   "to": "조우찬의 지휘로 일지를 옮긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-316",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receiving orders to carry out Seo Jina's housing audit at the base handle,",
+   "to": "Receives orders to carry out Seo Jina's housing audit at the base handle",
+   "expect": 2
+  },
+  {
+   "id": "bas-317",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "서진아의 주거 감사를 거점 핸들에서 집행하는 지휘를 받고",
+   "to": "서진아의 주거 감사를 거점 핸들에서 집행하는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-318",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "서진아의 주거 감사 함에 당사자 손도장을 보태고",
+   "to": "서진아의 주거 감사 함에 당사자 손도장을 보탠다",
+   "expect": 2
+  },
+  {
+   "id": "bas-319",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receiving Gwon Doha's sortie list at the maintenance bay, and",
+   "to": "Receives Gwon Doha's sortie list at the maintenance bay",
+   "expect": 2
+  },
+  {
+   "id": "bas-320",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "권도하의 출격 목록을 정비창에서 받고",
+   "to": "권도하의 출격 목록을 정비창에서 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-321",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "황노을의 회수 저울과 출고를 맞추고",
+   "to": "황노을의 회수 저울과 출고를 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-322",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "황노을의 지휘로 저울을 지키고",
+   "to": "황노을의 지휘로 저울을 지킨다",
+   "expect": 2
+  },
+  {
+   "id": "bas-323",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "황노을의 회수 저울에 협약 중량을 겹치고",
+   "to": "황노을의 회수 저울에 협약 중량을 겹친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-324",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "스테판 페트로프의 의료칸 발견 시각에 정차 일지를 겹치며",
+   "to": "스테판 페트로프의 의료칸 발견 시각에 정차 일지를 겹친다",
+   "expect": 1
+  },
+  {
+   "id": "bas-325",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "장세화의 의료호송을 노량진에서 피하지 않으려 빚을 지며",
+   "to": "장세화의 의료호송을 노량진에서 피하지 않으려 빚을 진다",
+   "expect": 1
+  },
+  {
+   "id": "bas-326",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "taking over An Dohan's dispatch work at the holding track, and",
+   "to": "Takes over An Dohan's dispatch work at the holding track",
+   "expect": 2
+  },
+  {
+   "id": "bas-327",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "aligning the unloading order with An Dohan's dispatch blackboard, and",
+   "to": "Aligns the unloading order with An Dohan's dispatch blackboard",
+   "expect": 2
+  },
+  {
+   "id": "bas-328",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "carrying notes about the approval-order dispute between Jeon Miri and An Dohan, and",
+   "to": "Carries notes about the approval-order dispute between Jeon Miri and An Dohan",
+   "expect": 4
+  },
+  {
+   "id": "bas-329",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "안도한의 배차 실무를 유치선에서 받고",
+   "to": "안도한의 배차 실무를 유치선에서 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-330",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "안도한의 배차 칠판과 하역 순서를 맞추고",
+   "to": "안도한의 배차 칠판과 하역 순서를 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-331",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나르고",
+   "to": "전미리와 안도한의 승인 순서 다툼을 쪽지로 나른다",
+   "expect": 4
+  },
+  {
+   "id": "bas-332",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "carrying out the stretcher order under Jeon Miri's command, and",
+   "to": "Carries out the stretcher order under Jeon Miri's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-333",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "receiving Jeon Miri's stretcher order on the platform, and",
+   "to": "Receives Jeon Miri's stretcher order on the platform",
+   "expect": 2
+  },
+  {
+   "id": "bas-334",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "carrying out the extension of Jeon Miri's Medical Team in the duty room, and",
+   "to": "Carries out the extension of Jeon Miri's Medical Team in the duty room",
+   "expect": 2
+  },
+  {
+   "id": "bas-335",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "backing Jeon Miri's patient line at the witness stand, and",
+   "to": "Backs Jeon Miri's patient line at the witness stand",
+   "expect": 2
+  },
+  {
+   "id": "bas-336",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "placing the victims' line on Jeon Miri's severity chart, and",
+   "to": "Places the victims' line on Jeon Miri's severity chart",
+   "expect": 2
+  },
+  {
+   "id": "bas-337",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전미리의 지휘로 들것 순서를 집행하고",
+   "to": "전미리의 지휘로 들것 순서를 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-338",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전미리의 들것 순서를 승강장에서 받고",
+   "to": "전미리의 들것 순서를 승강장에서 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-339",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전미리의 의료조 연장을 당직실에서 집행하고",
+   "to": "전미리의 의료조 연장을 당직실에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-340",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전미리의 환자 줄을 증인석에서 받치고",
+   "to": "전미리의 환자 줄을 증인석에서 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-341",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전미리의 중증도 표에 피해자 줄을 올리고",
+   "to": "전미리의 중증도 표에 피해자 줄을 올린다",
+   "expect": 2
+  },
+  {
+   "id": "bas-342",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Hand the back-gate survey to Mun Sion, and",
+   "to": "Hands the back-gate survey to Mun Sion",
+   "expect": 2
+  },
+  {
+   "id": "bas-343",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Move the inspection ledger under Mun Sion's command, and",
+   "to": "Moves the inspection ledger under Mun Sion's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-344",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Leave a statement at Mun Sion's inspection post, and",
+   "to": "Leaves a statement at Mun Sion's inspection post",
+   "expect": 2
+  },
+  {
+   "id": "bas-345",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "문시온에게 후문 실측을 넘기고",
+   "to": "문시온에게 후문 실측을 넘긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-346",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "문시온의 지휘로 심사 원장을 옮기고",
+   "to": "문시온의 지휘로 심사 원장을 옮긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-347",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "문시온의 심사대에서 진술을 남기고",
+   "to": "문시온의 심사대에서 진술을 남긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-348",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Circle the outer road under Ha Seon's command, and",
+   "to": "Circles the outer road under Ha Seon's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-349",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Split the crowd line with Ha Seon's escort unit, and",
+   "to": "Splits the crowd line with Ha Seon's escort unit",
+   "expect": 1
+  },
+  {
+   "id": "bas-350",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "하세온의 지휘로 외곽로를 돌고",
+   "to": "하세온의 지휘로 외곽로를 돈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-351",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "하세온의 호송대와 인파 줄을 나누고",
+   "to": "하세온의 호송대와 인파 줄을 나눈다",
+   "expect": 1
+  },
+  {
+   "id": "bas-352",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Takes charge of the guard depot under Gwak Taesan's command, and",
+   "to": "Takes charge of the guard depot under Gwak Taesan's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-353",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "곽태산의 지휘로 수비창을 맡고",
+   "to": "곽태산의 지휘로 수비창을 맡는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-354",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Shares duty with Sodugam's maintenance bay, and",
+   "to": "Shares duty with Sodugam's maintenance bay",
+   "expect": 2
+  },
+  {
+   "id": "bas-355",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "소두감의 정비 창과 당직을 나누고",
+   "to": "소두감의 정비 창과 당직을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-356",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Matches Bokbong's relay invoices to market prices, and",
+   "to": "Matches Bokbong's relay invoices to market prices",
+   "expect": 2
+  },
+  {
+   "id": "bas-357",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "복봉의 중계 송장과 시세를 맞추고",
+   "to": "복봉의 중계 송장과 시세를 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-358",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Match names against Chang Dahuin's transfer victim list, and",
+   "to": "Matches names against Chang Dahuin's transfer victim list",
+   "expect": 2
+  },
+  {
+   "id": "bas-359",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "창다흰의 이송 피해자 명단과 이름을 맞추고",
+   "to": "창다흰의 이송 피해자 명단과 이름을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-360",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Matches Bok Yong's market prices with the failed-bid bell, and",
+   "to": "Matches Bok Yong's market prices with the failed-bid bell",
+   "expect": 1
+  },
+  {
+   "id": "bas-361",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "복용의 시장 시세와 유찰 종을 맞추고",
+   "to": "복용의 시장 시세와 유찰 종을 맞춘다",
+   "expect": 1
+  },
+  {
+   "id": "bas-362",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "An aide who backs Sim Dalho's origin marker post in the field, and",
+   "to": "An aide who backs Sim Dalho's origin marker post in the field",
+   "expect": 2
+  },
+  {
+   "id": "bas-363",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enters a transport contract with Sim Dalho, and",
+   "to": "Enters a transport contract with Sim Dalho",
+   "expect": 2
+  },
+  {
+   "id": "bas-364",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforces Sim Dalho's auction rules at the scale, and",
+   "to": "Enforces Sim Dalho's auction rules at the scale",
+   "expect": 2
+  },
+  {
+   "id": "bas-365",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "심달호의 원산지 말목을 현장에서 받치는 실무원이고",
+   "to": "심달호의 원산지 말목을 현장에서 받치는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-366",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "심달호와 운송 계약을 맺고",
+   "to": "심달호와 운송 계약을 맺는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-367",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "심달호의 경매 규칙을 저울에서 집행하고",
+   "to": "심달호의 경매 규칙을 저울에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-368",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "a protégé who, as Eun Chaeyun's apprentice, enforces the order of the sickbeds, and",
+   "to": "A protégé who, as Eun Chaeyun's apprentice, enforces the order of the sickbeds",
+   "expect": 2
+  },
+  {
+   "id": "bas-369",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "divides the sickbeds under Eun Chaeyun's command, and",
+   "to": "Divides the sickbeds under Eun Chaeyun's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-370",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "opens Eun Chaeyun's sickbeds to the refugee line, and",
+   "to": "Opens Eun Chaeyun's sickbeds to the refugee line",
+   "expect": 2
+  },
+  {
+   "id": "bas-371",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "은채윤의 도제로서 침상 순서를 집행하는 제자이고",
+   "to": "은채윤의 도제로서 침상 순서를 집행하는 제자다",
+   "expect": 2
+  },
+  {
+   "id": "bas-372",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "은채윤의 지휘로 병상을 나누고",
+   "to": "은채윤의 지휘로 병상을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-373",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "은채윤의 병상을 피난 줄에 열고",
+   "to": "은채윤의 병상을 피난 줄에 연다",
+   "expect": 2
+  },
+  {
+   "id": "bas-374",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Circles the eastern alley under Ra Seyeong's command and",
+   "to": "Circles the eastern alley under Ra Seyeong's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-375",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is a contract to hand contamination coordinates to Ra Seyeong and",
+   "to": "Is a contract to hand contamination coordinates to Ra Seyeong",
+   "expect": 2
+  },
+  {
+   "id": "bas-376",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "라세영의 지휘로 동측 골목을 돌고",
+   "to": "라세영의 지휘로 동측 골목을 돈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-377",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "라세영에게 오염 좌표를 넘기는 계약이고",
+   "to": "라세영에게 오염 좌표를 넘기는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-378",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receives Nam Hoseong's convoy stop at the platform and",
+   "to": "Receives Nam Hoseong's convoy stop at the platform",
+   "expect": 2
+  },
+  {
+   "id": "bas-379",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Takes the dispatch duty under Nam Hoseong's command and",
+   "to": "Takes the dispatch duty under Nam Hoseong's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-380",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Boarded the car under Nam Hoseong's convoy order and",
+   "to": "Boarded the car under Nam Hoseong's convoy order",
+   "expect": 2
+  },
+  {
+   "id": "bas-381",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Separates Nam Hoseong's medical convoy from the crowd lines and",
+   "to": "Separates Nam Hoseong's medical convoy from the crowd lines",
+   "expect": 1
+  },
+  {
+   "id": "bas-382",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "남호성의 호송 정차를 승강장에서 받고",
+   "to": "남호성의 호송 정차를 승강장에서 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-383",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "남호성의 지휘로 출고 당직을 맡고",
+   "to": "남호성의 지휘로 출고 당직을 맡는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-384",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "남호성의 호송 명령 아래 칸에 탔고",
+   "to": "남호성의 호송 명령 아래 칸에 탔다",
+   "expect": 2
+  },
+  {
+   "id": "bas-385",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "남호성의 의무호송과 인파 줄을 나누고",
+   "to": "남호성의 의무호송과 인파 줄을 나눈다",
+   "expect": 1
+  },
+  {
+   "id": "bas-386",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Under orders to carry Jeon Sol's voting slips only in a sealed state,",
+   "to": "Is under orders to carry Jeon Sol's voting slips only in a sealed state",
+   "expect": 2
+  },
+  {
+   "id": "bas-387",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is the disciple who transfers Jeon Sol's veto into the ledger, and",
+   "to": "Is the disciple who transfers Jeon Sol's veto into the ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-388",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전솔의 표결 쪽지를 봉인 상태로만 나르는 지휘를 받고",
+   "to": "전솔의 표결 쪽지를 봉인 상태로만 나르는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-389",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전솔의 거부권을 원장으로 옮기는 제자이고",
+   "to": "전솔의 거부권을 원장으로 옮기는 제자다",
+   "expect": 2
+  },
+  {
+   "id": "bas-390",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "He matches output to Cheon Daum's dryer, and",
+   "to": "He matches output to Cheon Daum's dryer",
+   "expect": 2
+  },
+  {
+   "id": "bas-391",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "천다움의 건조기에 출력을 맞추고",
+   "to": "천다움의 건조기에 출력을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-392",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "overlapping Dong Juha's scale seal with the testimony, and",
+   "to": "Overlaps Dong Juha's scale seal with the testimony",
+   "expect": 2
+  },
+  {
+   "id": "bas-393",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "동주하의 저울 봉인과 증언을 겹치고",
+   "to": "동주하의 저울 봉인과 증언을 겹친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-394",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Overlaps Go Seojun's bridge permits and testimony,",
+   "to": "Overlaps Go Seojun's bridge permits and testimony",
+   "expect": 2
+  },
+  {
+   "id": "bas-395",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "고서준의 교량 허가와 증언을 겹치고",
+   "to": "고서준의 교량 허가와 증언을 겹친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-396",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Patrols the ridge under Mun Hayul's command,",
+   "to": "Patrols the ridge under Mun Hayul's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-397",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "enforces Mun Hayul's sentry orders at the base, and",
+   "to": "Enforces Mun Hayul's sentry orders at the base",
+   "expect": 2
+  },
+  {
+   "id": "bas-398",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "문하율의 지휘로 능선을 돌고",
+   "to": "문하율의 지휘로 능선을 돈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-399",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "문하율의 초병 명령을 기지에서 집행하고",
+   "to": "문하율의 초병 명령을 기지에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-400",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "문하율의 초소 당직과 인파 줄을 나누고",
+   "to": "문하율의 초소 당직과 인파 줄을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-401",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is a contract that enforces An Gijun's bridge schedule in cargo order,",
+   "to": "Is a contract that enforces An Gijun's bridge schedule in cargo order",
+   "expect": 2
+  },
+  {
+   "id": "bas-402",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "writes the names of An Gijun's pier cracks in the margin of the original plate,",
+   "to": "Writes the names of An Gijun's pier cracks in the margin of the original plate",
+   "expect": 2
+  },
+  {
+   "id": "bas-403",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "copies An Gijun's bridge schedule onto the platform chalkboard, and",
+   "to": "Copies An Gijun's bridge schedule onto the platform chalkboard",
+   "expect": 2
+  },
+  {
+   "id": "bas-404",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "안기준의 교량 일정을 화물 순서로 집행하는 계약이고",
+   "to": "안기준의 교량 일정을 화물 순서로 집행하는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-405",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "안기준의 교량 일정을 승강장 칠판에 옮기고",
+   "to": "안기준의 교량 일정을 승강장 칠판에 옮긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-406",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "takes orders to carry Ha Yunmok's gate ledger only under seal,",
+   "to": "Takes orders to carry Ha Yunmok's gate ledger only under seal",
+   "expect": 2
+  },
+  {
+   "id": "bas-407",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받고",
+   "to": "하윤목의 관문 원장을 봉인 상태로만 나르는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-408",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "하윤목의 세 계산을 원장으로 옮기는 실무원이고",
+   "to": "하윤목의 세 계산을 원장으로 옮기는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-409",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "backs Gwak Minjae's shutter and fuel inspection with the stock table from the witness stand, and",
+   "to": "Backs Gwak Minjae's shutter and fuel inspection with the stock table from the witness stand",
+   "expect": 2
+  },
+  {
+   "id": "bas-410",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "곽민재의 셔터·연료 점검을 증인석에서 재고표로 받치고",
+   "to": "곽민재의 셔터·연료 점검을 증인석에서 재고표로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-411",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is a mentor–protégé pair who translate Sim Gaeun's scout reports into coordinates, and",
+   "to": "Is a mentor–protégé pair who translate Sim Gaeun's scout reports into coordinates",
+   "expect": 2
+  },
+  {
+   "id": "bas-412",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "심가은의 척후 보고를 좌표로 번역하는 스승과 제자이고",
+   "to": "심가은의 척후 보고를 좌표로 번역하는 스승과 제자다",
+   "expect": 2
+  },
+  {
+   "id": "bas-413",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "matches output to Seon Solu's pump, and",
+   "to": "Matches output to Seon Solu's pump",
+   "expect": 2
+  },
+  {
+   "id": "bas-414",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "선솔우의 펌프에 출력을 맞추고",
+   "to": "선솔우의 펌프에 출력을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-415",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "matches the bridge invoices and market rates with Won Yena's, and",
+   "to": "Matches the bridge invoices and market rates with Won Yena's",
+   "expect": 2
+  },
+  {
+   "id": "bas-416",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "원예나의 교량 송장과 시세를 맞추고",
+   "to": "원예나의 교량 송장과 시세를 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-417",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "영한뫼의 교량 의무소와 병상을 나누고",
+   "to": "영한뫼의 교량 의무소와 병상을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-418",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "영석온의 당직 침상과 병상을 나누고",
+   "to": "영석온의 당직 침상과 병상을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-419",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Sets the no-sale bell to Nam Yungyeong's public auction and",
+   "to": "Sets the no-sale bell to Nam Yungyeong's public auction",
+   "expect": 2
+  },
+  {
+   "id": "bas-420",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "남윤경의 공개 경매에 유찰 종을 맞추고",
+   "to": "남윤경의 공개 경매에 유찰 종을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-421",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "An aide who backs Eun Taeho's auction on site,",
+   "to": "An aide who backs Eun Taeho's auction on site",
+   "expect": 2
+  },
+  {
+   "id": "bas-422",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "An aide who transcribes Eun Taeho's bids into the ledger,",
+   "to": "An aide who transcribes Eun Taeho's bids into the ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-423",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Raises an objection with a paddle against Eun Taeho's adjusted bid,",
+   "to": "Raises an objection with a paddle against Eun Taeho's adjusted bid",
+   "expect": 2
+  },
+  {
+   "id": "bas-424",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "은태호의 경매를 현장에서 받치는 실무원이고",
+   "to": "은태호의 경매를 현장에서 받치는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-425",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "은태호의 호가를 원장으로 옮기는 실무원이고",
+   "to": "은태호의 호가를 원장으로 옮기는 실무원이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-426",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "은태호의 조정 호가에 패들로 이의를 올리고",
+   "to": "은태호의 조정 호가에 패들로 이의를 올린다",
+   "expect": 2
+  },
+  {
+   "id": "bas-427",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "a contract matching pallet numbers to Ra Jinu's inventory bays, and",
+   "to": "A contract matching pallet numbers to Ra Jinu's inventory bays",
+   "expect": 2
+  },
+  {
+   "id": "bas-428",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "under the command that turns Ra Jinu's warehouse order with a baton, and",
+   "to": "Is under the command that turns Ra Jinu's warehouse order with a baton",
+   "expect": 2
+  },
+  {
+   "id": "bas-429",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "hands the detour survey to Ra Jinu, and",
+   "to": "Hands the detour survey to Ra Jinu",
+   "expect": 2
+  },
+  {
+   "id": "bas-430",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "enforces Ra Jinu's inventory ledger at the base, and",
+   "to": "Enforces Ra Jinu's inventory ledger at the base",
+   "expect": 2
+  },
+  {
+   "id": "bas-431",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "splits the crowd line with Ra Jinu's inventory ledger, and",
+   "to": "Splits the crowd line with Ra Jinu's inventory ledger",
+   "expect": 2
+  },
+  {
+   "id": "bas-432",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "라진우의 재고 칸에 파렛트 번호를 맞추는 계약이고",
+   "to": "라진우의 재고 칸에 파렛트 번호를 맞추는 계약이다",
+   "expect": 2
+  },
+  {
+   "id": "bas-433",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "라진우의 창고 순번을 막대로 돌리는 지휘를 받고",
+   "to": "라진우의 창고 순번을 막대로 돌리는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-434",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "라진우에게 우회 실측을 넘기고",
+   "to": "라진우에게 우회 실측을 넘긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-435",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "라진우의 재고 원장을 기지에서 집행하고",
+   "to": "라진우의 재고 원장을 기지에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-436",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "라진우의 재고 원장과 인파 줄을 나누고",
+   "to": "라진우의 재고 원장과 인파 줄을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-437",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "shares Jeon Nagyeong's emergency ration line and cot, and",
+   "to": "Shares Jeon Nagyeong's emergency ration line and cot",
+   "expect": 2
+  },
+  {
+   "id": "bas-438",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "enforces the plaza line under Jeon Nagyeong's command, and",
+   "to": "Enforces the plaza line under Jeon Nagyeong's command",
+   "expect": 2
+  },
+  {
+   "id": "bas-439",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전나경의 비상 배급줄과 침상을 나누고",
+   "to": "전나경의 비상 배급줄과 침상을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-440",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "전나경의 지휘로 광장 줄을 집행하고",
+   "to": "전나경의 지휘로 광장 줄을 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-441",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Enforces Nam Siyun's merchant council votes in the market, and",
+   "to": "Enforces Nam Siyun's merchant council votes in the market",
+   "expect": 2
+  },
+  {
+   "id": "bas-442",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "남시윤의 상인회의 표를 시장에서 집행하고",
+   "to": "남시윤의 상인회의 표를 시장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-443",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Receives orders to carry Mun Doyun's bid conditions only in a sealed state,",
+   "to": "Receives orders to carry Mun Doyun's bid conditions only in a sealed state",
+   "expect": 2
+  },
+  {
+   "id": "bas-444",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Overlaps Mun Doyun's escort bid postings with testimony,",
+   "to": "Overlaps Mun Doyun's escort bid postings with testimony",
+   "expect": 2
+  },
+  {
+   "id": "bas-445",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "문도윤의 입찰 조건을 봉인 상태로만 나르는 지휘를 받고",
+   "to": "문도윤의 입찰 조건을 봉인 상태로만 나르는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-446",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "문도윤의 호송 입찰 게시와 증언을 겹치고",
+   "to": "문도윤의 호송 입찰 게시와 증언을 겹친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-447",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "판효담의 창고 기지에 출력을 맞추고",
+   "to": "판효담의 창고 기지에 출력을 맞춘다",
+   "expect": 2
+  },
+  {
+   "id": "bas-448",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Represents the refugee crowd in Cheon Solbit's plaza line, and",
+   "to": "Represents the refugee crowd in Cheon Solbit's plaza line",
+   "expect": 2
+  },
+  {
+   "id": "bas-449",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "천솔빛의 광장 줄에서 피난 인파를 대표하고",
+   "to": "천솔빛의 광장 줄에서 피난 인파를 대표한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-450",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Shares the cold-storage compartment with Dong Yesol's produce scales, and",
+   "to": "Shares the cold-storage compartment with Dong Yesol's produce scales",
+   "expect": 2
+  },
+  {
+   "id": "bas-451",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "동예솔의 청과 저울과 냉동 칸을 나누고",
+   "to": "동예솔의 청과 저울과 냉동 칸을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-452",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "A contract that enforces Ha Seojin's standard sentences through copy transport, and",
+   "to": "A contract that enforces Ha Seojin's standard sentences through copy transport",
+   "expect": 1
+  },
+  {
+   "id": "bas-453",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "enforces Ha Seojin's draft escort on the road, and",
+   "to": "Enforces Ha Seojin's draft escort on the road",
+   "expect": 2
+  },
+  {
+   "id": "bas-454",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "guards Ha Seojin's draft box underground, and",
+   "to": "Guards Ha Seojin's draft box underground",
+   "expect": 2
+  },
+  {
+   "id": "bas-455",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "opens Ha Seojin's draft box in the capacity of a party concerned, and",
+   "to": "Opens Ha Seojin's draft box in the capacity of a party concerned",
+   "expect": 2
+  },
+  {
+   "id": "bas-456",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "하서진의 표준 문장을 사본 운송으로 집행하는 계약이고",
+   "to": "하서진의 표준 문장을 사본 운송으로 집행하는 계약이다",
+   "expect": 1
+  },
+  {
+   "id": "bas-457",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "하서진의 초안 호송을 길에서 집행하고",
+   "to": "하서진의 초안 호송을 길에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-458",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "하서진의 초안함을 지하에서 지키고",
+   "to": "하서진의 초안함을 지하에서 지킨다",
+   "expect": 2
+  },
+  {
+   "id": "bas-459",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "하서진의 초안함을 관계자 자격으로 열고",
+   "to": "하서진의 초안함을 관계자 자격으로 연다",
+   "expect": 2
+  },
+  {
+   "id": "bas-460",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "a disciple who takes over Gwak Eunjae's auxiliary seal, bound with an iron cord, and",
+   "to": "A disciple who takes over Gwak Eunjae's auxiliary seal, bound with an iron cord",
+   "expect": 2
+  },
+  {
+   "id": "bas-461",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "supports Gwak Eunjae's audit slips as an assistant, and",
+   "to": "Supports Gwak Eunjae's audit slips as an assistant",
+   "expect": 2
+  },
+  {
+   "id": "bas-462",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "곽은재의 보조 직인을 철끈으로 이어 받는 제자이고",
+   "to": "곽은재의 보조 직인을 철끈으로 이어 받는 제자다",
+   "expect": 2
+  },
+  {
+   "id": "bas-463",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "곽은재의 감사표를 보조로 받치고",
+   "to": "곽은재의 감사표를 보조로 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-464",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "takes charge of the bed next to Sim Yuri's mediation room, and",
+   "to": "Takes charge of the bed next to Sim Yuri's mediation room",
+   "expect": 2
+  },
+  {
+   "id": "bas-465",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "심유리의 중재실 옆 침상을 맡고",
+   "to": "심유리의 중재실 옆 침상을 맡는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-466",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "is a protégé who supports Eun Boram's recommendation rules on the ground, and",
+   "to": "Is a protégé who supports Eun Boram's recommendation rules on the ground",
+   "expect": 2
+  },
+  {
+   "id": "bas-467",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "은보람의 추천 규칙을 현장에서 받치는 제자이고",
+   "to": "은보람의 추천 규칙을 현장에서 받치는 제자다",
+   "expect": 2
+  },
+  {
+   "id": "bas-468",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "takes orders to carry An Taegyeong's lottery slips only in sealed condition, and",
+   "to": "Takes orders to carry An Taegyeong's lottery slips only in sealed condition",
+   "expect": 2
+  },
+  {
+   "id": "bas-469",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "carries out An Taegyeong's lottery attendance on the platform, and",
+   "to": "Carries out An Taegyeong's lottery attendance on the platform",
+   "expect": 2
+  },
+  {
+   "id": "bas-470",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "안태경의 추첨 쪽지를 봉인 상태로만 나르는 지휘를 받고",
+   "to": "안태경의 추첨 쪽지를 봉인 상태로만 나르는 지휘를 받는다",
+   "expect": 2
+  },
+  {
+   "id": "bas-471",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "안태경의 추첨 출석을 승강장에서 집행하고",
+   "to": "안태경의 추첨 출석을 승강장에서 집행한다",
+   "expect": 2
+  },
+  {
+   "id": "bas-472",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Shares Su Neulgyeol's maintenance bay and duty shifts, and",
+   "to": "Shares Su Neulgyeol's maintenance bay and duty shifts",
+   "expect": 2
+  },
+  {
+   "id": "bas-473",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "수늘결의 정비 창과 당직을 나누고",
+   "to": "수늘결의 정비 창과 당직을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-474",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Hands over the sorted order of loads on the same route, and",
+   "to": "Hands over the sorted order of loads on the same route",
+   "expect": 1
+  },
+  {
+   "id": "bas-475",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "같은 길의 짐 순번을 정리해 넘기는 사이이고",
+   "to": "같은 길의 짐 순번을 정리해 넘기는 사이다",
+   "expect": 1
+  },
+  {
+   "id": "bas-476",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Hands the rear-gate survey over to Yeong Maon, and",
+   "to": "Hands the rear-gate survey over to Yeong Maon",
+   "expect": 2
+  },
+  {
+   "id": "bas-477",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "영마온에게 후문 실측을 넘기고",
+   "to": "영마온에게 후문 실측을 넘긴다",
+   "expect": 2
+  },
+  {
+   "id": "bas-478",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Separating Bang Mabit's waiting hall window from the crowd queue, and",
+   "to": "Separates Bang Mabit's waiting hall window from the crowd queue",
+   "expect": 2
+  },
+  {
+   "id": "bas-479",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "방마빛의 대합실 창구와 인파 줄을 나누고",
+   "to": "방마빛의 대합실 창구와 인파 줄을 나눈다",
+   "expect": 2
+  },
+  {
+   "id": "bas-480",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Backing Seon Hansom's underground chest temperature from the power side, and",
+   "to": "Backs Seon Hansom's underground chest temperature from the power side",
+   "expect": 2
+  },
+  {
+   "id": "bas-481",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "선한솜의 지하 함 온도를 발전 쪽에서 받치고",
+   "to": "선한솜의 지하 함 온도를 발전 쪽에서 받친다",
+   "expect": 2
+  },
+  {
+   "id": "bas-482",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "Overlapping Won Choon's depot duty blackboard with testimony, and",
+   "to": "Overlaps Won Choon's depot duty blackboard with testimony",
+   "expect": 2
+  },
+  {
+   "id": "bas-483",
+   "file": "090",
+   "pathRe": "^\\.relations\\.(incoming|outgoing)\\[\\]\\.basis$",
+   "exact": true,
+   "from": "원초온의 기지 당직 칠판과 증언을 겹치고",
+   "to": "원초온의 기지 당직 칠판과 증언을 겹친다",
+   "expect": 2
+  },
+  {
+   "id": "yun-lcz-21",
+   "file": "090",
+   "key": "person-0145",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "Rationing ledger exchange with Nam Yungyeong. Ratification rivalry with Jeong Yura.\n\n- Occupation:\n- Constitutional body: Former President of the Republic of Korea\n- Office: Former President of the Republic of Korea\n-\n- Yun Seorin's handling of the Jongno and Jung-gu residents' register and the rationing and ratification affairs at Cheongwadae is tied to Cheongun-hyoja-dong.\n- Yun Seorin's care of the seal chest of the Bukhansan Bogungmun Records House is tied to the work of Jeongneung 4-dong.\n\nThe true power broker who actually runs the ratification, notarization, map and medical-transfer ledgers beside Records Bureau Chief Yun Seorin.",
+   "to": "Rationing ledger exchange with Nam Yungyeong. Ratification rivalry with Jeong Yura.\n\n- Occupation: Seal Box Sealing and Ratification Hold Management\n- Constitutional body: Former President of the Republic of Korea\n- Office: Former President of the Republic of Korea\n- Yun Seorin's registry duty at the Government Complex Seoul and management of seal chest sealing and ratification holds are tied to the work of Sajik-dong.\n- Yun Seorin's handling of the Jongno and Jung-gu residents' register and the rationing and ratification affairs at Cheongwadae is tied to Cheongun-hyoja-dong.\n- Yun Seorin's care of the seal chest of the Bukhansan Bogungmun Records House is tied to the work of Jeongneung 4-dong.\n\nThe true power broker who actually runs the ratification, notarization, map and medical-transfer ledgers beside Records Bureau Chief Yun Seorin.",
+   "expect": 1
+  },
+  {
+   "id": "yun-lcz-22",
+   "file": "090",
+   "key": "person-0145",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "**Life.** Yun Seorin is a former President of the Government. Around Gwanghwamun he personally kept the residents' register and the winter food and fuel stockpile records. Forging records is forbidden. The government has hospitals, officers, heavy weapons and tanks but no medical technicians, so Yun Seorin kept a separate record of requests for medical personnel. Generation of 2126.\n**Office.** Rank: Former President. Office: Former President of the Republic of Korea. Occupational alias: Records Bureau Chief (separate from the presidential post).\n\n**House.** Of the Paepyeong Yun clan. The family kept its household around Gwanghwamun, Cheongun-Hyoja-dong and Sajik-dong.\n**Relations.** Rationing ledger exchange with Nam Yungyeong. Ratification rivalry with Jeong Yura.\n\n- Occupation:\n- Constitutional body: Former President of the Republic of Korea\n- Office: Former President of the Republic of Korea\n-\n- Yun Seorin's handling of the Jongno and Jung-gu residents' register and the rationing and ratification affairs at Cheongwadae is tied to Cheongun-hyoja-dong.\n- Yun Seorin's care of the seal chest of the Bukhansan Bogungmun Records House is tied to the work of Jeongneung 4-dong.\n\nThe true power broker who actually runs the ratification, notarization, map and medical-transfer ledgers beside Records Bureau Chief Yun Seorin.",
+   "to": "**Life.** Yun Seorin is a former President of the Government. Around Gwanghwamun he personally kept the residents' register and the winter food and fuel stockpile records. Forging records is forbidden. The government has hospitals, officers, heavy weapons and tanks but no medical technicians, so Yun Seorin kept a separate record of requests for medical personnel. Generation of 2126.\n**Office.** Rank: Former President. Office: Former President of the Republic of Korea. Occupational alias: Records Bureau Chief (separate from the presidential post).\n\n**House.** Of the Paepyeong Yun clan. The family kept its household around Gwanghwamun, Cheongun-Hyoja-dong and Sajik-dong.\n**Relations.** Rationing ledger exchange with Nam Yungyeong. Ratification rivalry with Jeong Yura.\n\n- Occupation: Seal Box Sealing and Ratification Hold Management\n- Constitutional body: Former President of the Republic of Korea\n- Office: Former President of the Republic of Korea\n- Yun Seorin's registry duty at the Government Complex Seoul and management of seal chest sealing and ratification holds are tied to the work of Sajik-dong.\n- Yun Seorin's handling of the Jongno and Jung-gu residents' register and the rationing and ratification affairs at Cheongwadae is tied to Cheongun-hyoja-dong.\n- Yun Seorin's care of the seal chest of the Bukhansan Bogungmun Records House is tied to the work of Jeongneung 4-dong.\n\nThe true power broker who actually runs the ratification, notarization, map and medical-transfer ledgers beside Records Bureau Chief Yun Seorin.",
+   "expect": 1
+  },
+  {
+   "id": "lee-1",
+   "file": "090",
+   "from": "이홍원이 이씨 가문 수장이 된 것은 겨울 동안 강남역 차단문과 강남역 당직함을 끊기지 않게 지킨 뒤였다. ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "lee-2",
+   "file": "090",
+   "from": "Yi Hongwon became head of the Yi family after keeping the Gangnam Station barrier gate and the Gangnam Station duty box unbroken through the winter. ",
+   "to": "",
+   "expect": 2
+  },
+  {
+   "id": "lee-3",
+   "file": "110",
+   "from": "이홍원이 이씨 가문 수장이 된 것은 [^.]*?끊기지 않게 지킨 뒤였다\\. ",
+   "to": "",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "lee-4",
+   "file": "110",
+   "from": "Yi Hongwon became head of the Yi family after keeping the Gangnam Station barrier gate and the Gangnam Station duty box unbroken[^.]*?\\. ",
+   "to": "",
+   "re": true,
+   "expect": 1
+  },
+  {
+   "id": "lee-5",
+   "file": "090",
+   "from": "배우진의 호위는 이 차단문을 빌리지만",
+   "to": "배우진의 호위는 강남역 차단문을 빌리지만",
+   "expect": 2
+  },
+  {
+   "id": "lee-6",
+   "file": "110",
+   "from": "배우진의 호위는 이 차단문을 빌리지만",
+   "to": "배우진의 호위는 강남역 차단문을 빌리지만",
+   "expect": 1
+  },
+  {
+   "id": "lee-7",
+   "file": "090",
+   "from": "Bae Ujin's escort borrows this barrier gate",
+   "to": "Bae Ujin's escort borrows the Gangnam Station barrier gate",
+   "expect": 2
+  },
+  {
+   "id": "lee-8",
+   "file": "110",
+   "from": "Bae Ujin's escort borrows this barrier gate",
+   "to": "Bae Ujin's escort borrows the Gangnam Station barrier gate",
+   "expect": 1
+  }
+ ]
+}
