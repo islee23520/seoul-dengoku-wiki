@@ -1,0 +1,233 @@
+{
+ "rules": [
+  {
+   "id": "lbq-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0369",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 2125년 겨울 점검에서 셔터 틈새 세 곳을 찾아내 표시판에 올렸다. 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbq-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0520",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "",
+   "to": "Rank: Clerk. Title: Food Storeroom Keeper, Sinjeong 2-dong."
+  },
+  {
+   "id": "lbq-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0520",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "",
+   "to": "품계 주사. 직함은 신정2동 식량 출납 담당."
+  },
+  {
+   "id": "lbq-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0568",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "",
+   "to": "Rank: Clerk. Title: Fuel Counter, Sinjeong 2-dong."
+  },
+  {
+   "id": "lbq-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0568",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "",
+   "to": "품계 주사. 직함은 신정2동 연료 계수 담당."
+  },
+  {
+   "id": "lbq-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0616",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "",
+   "to": "Rank: Clerk. Title: Light-Shield Checker, Sinjeong 2-dong."
+  },
+  {
+   "id": "lbq-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1001",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "",
+   "to": "Rank: Clerk. Title: Resident Roster Keeper."
+  },
+  {
+   "id": "lbq-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-1001",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "",
+   "to": "품계 주사. 직함은 주민 명부 담당."
+  },
+  {
+   "id": "lbq-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0156",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "일화. 이 일로 이웃이 그를 탐사원으로 부르기 시작했다.",
+   "to": "직함은 지하 통로 탐사원."
+  },
+  {
+   "id": "lbq-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0156",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "이 일로 이웃이 그를 탐사원으로 부르기 시작했다.",
+   "to": ""
+  },
+  {
+   "id": "lbq-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0156",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 이 일로 이웃이 그를 탐사원으로 부르기 시작했다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbq-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0168",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "Anecdote. On the night of collapse year zero's Great Blackout, Pyeong Yejun saw, from the archive threshold, the power, rail, and record chiefs each seize emergency powers.",
+   "to": "Title: Emergency Powers Return Witness."
+  },
+  {
+   "id": "lbq-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0168",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Anecdote. On the night of collapse year zero's Great Blackout, Pyeong Yejun saw, from the archive threshold, the power, rail, and record chiefs each seize emergency powers. Titles and ambitions are not treated as accomplished authority or results.",
+   "to": "Title: Emergency Powers Return Witness."
+  },
+  {
+   "id": "lbq-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0424",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "",
+   "to": "Matches stock records with the Sinjeong 2-dong storeroom watch at every shift change."
+  },
+  {
+   "id": "lbq-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0424",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "",
+   "to": "Matches stock records with the Sinjeong 2-dong storeroom watch at every shift change."
+  },
+  {
+   "id": "lbq-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0133",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Protects machine-body charging line",
+   "to": "Godeok Base Siding Supervisor"
+  },
+  {
+   "id": "lbq-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0133",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "기체 충전선 보전",
+   "to": "고덕기지 유치선 감독"
+  },
+  {
+   "id": "lbq-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0245",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Separates unsourced lines",
+   "to": "Rumor Verification Writer"
+  },
+  {
+   "id": "lbq-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0245",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "출처 없는 줄 분리",
+   "to": "소문 검증 필진"
+  },
+  {
+   "id": "lbq-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0365",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Armed waiting outside beds",
+   "to": "Bridge Infirmary Outpost Chief"
+  },
+  {
+   "id": "lbq-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0365",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "무장 대기를 병상 밖으로",
+   "to": "교량 의무소 거점장"
+  }
+ ]
+}

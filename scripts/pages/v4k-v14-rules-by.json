@@ -1,0 +1,179 @@
+{
+ "rules": [
+  {
+   "id": "lby-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0998",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "겨울 배급을 재고와 종자부터 준비한다.",
+   "to": "직함은 자유도시 이사회장."
+  },
+  {
+   "id": "lby-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0998",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "겨울 배급을 재고와 종자부터 준비한다.",
+   "to": "직함은 자유도시 이사회장."
+  },
+  {
+   "id": "lby-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0998",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": "오류2동에서 밭의 경작과 보관 곡물 관리를 맡던 후계가 이사회에 가문의 안을 올린 일이다.",
+   "to": ""
+  },
+  {
+   "id": "lby-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0998",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 오류2동에서 밭의 경작과 보관 곡물 관리를 맡던 후계가 이사회에 가문의 안을 올린 일이다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lby-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.fields\\.Work Location$",
+   "from": "Oryu 2-dong. At the First Branch Workshop in Oryu 2-dong, Bak Doyun receives Lee Ilseop's seed-payment proposal and checks the Council receipt slot. If a message is late in the frozen passage, he does not hide the receipt time but writes it in the next shift ledger and passes it on to his successor.",
+   "to": "Oryu 2-dong. If a message is late in the frozen passage, he does not hide the receipt time but writes it in the next shift ledger and passes it on to his successor."
+  },
+  {
+   "id": "lby-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "Generation of 2126. Raised in the Sinnae transfer watch. The Work Crew Courier post opened when he stopped a ticketless departing train.\n- Work location: Oryu 2-dong. At the First Branch Workshop in Oryu 2-dong, Bak Doyun receives Lee Ilseop's seed-payment proposal and checks the Council receipt slot. If a message is late in the frozen passage, he does not hide the receipt time but writes it in the next shift ledger and passes it on to his successor.",
+   "to": "Generation of 2126. Raised in the Sinnae transfer watch. The Work Crew Courier post opened when he stopped a ticketless departing train.\n- Work location: Oryu 2-dong. If a message is late in the frozen passage, he does not hide the receipt time but writes it in the next shift ledger and passes it on to his successor."
+  },
+  {
+   "id": "lby-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Ambition$",
+   "from": "Bak Doyun intends to follow each message through to the end so that Lee Ilseop's seed-payment proposal remains in the Council receipt ledger down to the time.",
+   "to": ""
+  },
+  {
+   "id": "lby-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Fear$",
+   "from": "That the receipt time of the seed-payment proposal goes missing and Lee Ilseop's handover to the Council is cut off.",
+   "to": ""
+  },
+  {
+   "id": "lby-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "The player can cross-check the proposal receipt slot with Bak Doyun, or also record in the next shift ledger the time of a message delayed in the frozen passage.",
+   "to": ""
+  },
+  {
+   "id": "lby-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "Even when a message is late, Bak Doyun does not erase the receipt time to speed up the proposal's handover.\n\n- Affiliation: Free City\n- Livelihood: Transfer Message Delivery\n- Rank: Guild Member\n- Title: Work Crew Courier\n**Life.** Generation of 2126. Raised in the Sinnae transfer watch. The Work Crew Courier post opened when he stopped a ticketless departing train.\n- Work location: Oryu 2-dong. At the First Branch Workshop in Oryu 2-dong, Bak Doyun receives Lee Ilseop's seed-payment proposal and checks the Council receipt slot. If a message is late in the frozen passage, he does not hide the receipt time but writes it in the next shift ledger and passes it on to his successor.\n\n**Office.** Rank: Guild Member. Title: Work Crew Courier.\n\n**Anecdote.** In 2125, upon receiving a report that the sleepers had sunk from a leak beneath the frozen track in Oryu 2-dong, he immediately closed the dispatch section. Because of this, the signature for the Work Crew Courier post was entered in the ledger.\n\n**Relationships.** Bak Doyun is Lee Ilseop's direct courier, in charge of delivering messages and confirming receipt.\n\n**Ambition.** Bak Doyun intends to follow each message through to the end so that Lee Ilseop's seed-payment proposal remains in the Council receipt ledger down to the time.\n\n**Fear.** That the receipt time of the seed-payment proposal goes missing and Lee Ilseop's handover to the Council is cut off.\n\n**Intervention.** The player can cross-check the proposal receipt slot with Bak Doyun, or also record in the next shift ledger the time of a message delayed in the frozen passage.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority −20 | Openness 30 | Force −10 | Material 35 | Communal 35 | Principle 10 | Publicity 45 | Qualification 40 | Dispersion 10 | Transformation 15\n- Desires: Craving 15 | Monopoly 10 | Risk −15 | Display −20 | Persistence 5 | Orientation: Fluid | Bonding: None\n:::",
+   "to": "\n\n- Affiliation: Free City\n- Livelihood: Transfer Message Delivery\n- Rank: Guild Member\n- Title: Work Crew Courier\n**Life.** Generation of 2126. Raised in the Sinnae transfer watch. The Work Crew Courier post opened when he stopped a ticketless departing train.\n- Work location: Oryu 2-dong. If a message is late in the frozen passage, he does not hide the receipt time but writes it in the next shift ledger and passes it on to his successor.\n\n**Office.** Rank: Guild Member. Title: Work Crew Courier.\n\n**Anecdote.** In 2125, upon receiving a report that the sleepers had sunk from a leak beneath the frozen track in Oryu 2-dong, he immediately closed the dispatch section. Because of this, the signature for the Work Crew Courier post was entered in the ledger.\n\n**Relationships.** Bak Doyun is Lee Ilseop's direct courier, in charge of delivering messages and confirming receipt.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority −20 | Openness 30 | Force −10 | Material 35 | Communal 35 | Principle 10 | Publicity 45 | Qualification 40 | Dispersion 10 | Transformation 15\n- Desires: Craving 15 | Monopoly 10 | Risk −15 | Display −20 | Persistence 5 | Orientation: Fluid | Bonding: None\n:::"
+  },
+  {
+   "id": "lby-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.fields\\.업무 위치$",
+   "from": "오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
+   "to": "오류2동. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다."
+  },
+  {
+   "id": "lby-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.",
+   "to": "2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 오류2동. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다."
+  },
+  {
+   "id": "lby-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.야망$",
+   "from": "박도윤은 이일섭의 종자 대금 제안서가 평의회 수령 장부에 시각까지 남도록 전갈을 끝까지 확인하려 한다.",
+   "to": ""
+  },
+  {
+   "id": "lby-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.공포$",
+   "from": "종자 대금 제안서의 수령 시각이 빠져 이일섭의 평의회 인계가 끊기는 것.",
+   "to": ""
+  },
+  {
+   "id": "lby-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "플레이어는 박도윤과 제안서 수령 칸을 대조하거나 결빙 통로에서 늦어진 전갈의 시각을 다음 교대 장부에 함께 남길 수 있다.",
+   "to": ""
+  },
+  {
+   "id": "lby-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0425",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "박도윤은 전갈이 늦어도 수령 시각을 지워 제안서의 인계를 앞당기지 않는다.\n\n- 소속: 자유도시\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 오류2동. 박도윤은 오류2동 제1분공방에서 이일섭의 종자 대금 제안서를 받아 평의회 수령 칸을 확인한다. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령.\n\n**일화.** 2125년 오류2동의 결빙 선로 밑 누수로 침목이 내려앉았다는 보고를 받자 출고 구간을 바로 닫았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박도윤은 이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음.\n\n**야망.** 박도윤은 이일섭의 종자 대금 제안서가 평의회 수령 장부에 시각까지 남도록 전갈을 끝까지 확인하려 한다.\n\n**공포.** 종자 대금 제안서의 수령 시각이 빠져 이일섭의 평의회 인계가 끊기는 것.\n\n**개입.** 플레이어는 박도윤과 제안서 수령 칸을 대조하거나 결빙 통로에서 늦어진 전갈의 시각을 다음 교대 장부에 함께 남길 수 있다.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 30 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 45 | 자격 40 | 분산 10 | 변혁 15\n- 욕망: 갈망 15 | 독점 10 | 위험 −15 | 과시 −20 | 지속 5 | 지향 유동 | 결합 없음\n:::",
+   "to": "\n\n- 소속: 자유도시\n- 생업: 환승 전갈 전달\n- 품계: 조합원\n- 직함: 작업반 전령\n**생애.** 2126년 세대. 신내 환승 당직에서 자랐다. 작업반 전령 자리는 무표 출발 열차 저지로 열렸다.\n- 업무 위치: 오류2동. 결빙 통로에서 전갈이 늦으면 수령 시각을 숨기지 않고 다음 교대 장부에 적어 후계에게 돌린다.\n\n**관직.** 품계 조합원. 직함은 작업반 전령.\n\n**일화.** 2125년 오류2동의 결빙 선로 밑 누수로 침목이 내려앉았다는 보고를 받자 출고 구간을 바로 닫았다. 이 일로 작업반 전령 자리의 서명이 장부에 올랐다.\n\n**관계.** 박도윤은 이일섭의 직속 전령으로 전갈 전달과 수령 확인을 맡음.\n\n::: details 부록 — 장부 숫자\n\n- 가치관: 권위 −20 | 개방 30 | 무력 −10 | 물질 35 | 공동 35 | 원칙 10 | 공개 45 | 자격 40 | 분산 10 | 변혁 15\n- 욕망: 갈망 15 | 독점 10 | 위험 −15 | 과시 −20 | 지속 5 | 지향 유동 | 결합 없음\n:::"
+  }
+ ]
+}

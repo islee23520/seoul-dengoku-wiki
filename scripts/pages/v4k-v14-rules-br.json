@@ -1,0 +1,145 @@
+{
+ "rules": [
+  {
+   "id": "lbr-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0002",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 확인표 없이 식량 반출 요청이 신정2동 창고로 내려온다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0004",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 이 일로 진료소 당직장 자리의 서명이 장부에 올랐다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0011",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 이 일로 양천 식량시장 물류상 자리의 서명이 장부에 올랐다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0029",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 그 일은 공방이 사람을 내주지 않는다는 선례로 남았다.\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0095",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 이 일로 천호·길동 골목 점검 게시 담당 자리의 서명이 장부에 올랐다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0111",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 이 일로 식량 장부 사본 대조 서기 자리의 서명이 장부에 올랐다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0191",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 도착지 칸이 빈 식량·약품 상자가 용산역 인계장에서 출고를 기다린다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0357",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0358",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0360",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0363",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0365",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 그날 남은 기록은 다음 당직이 대조할 인계 근거가 되었다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0377",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**일화.** 그날의 조치와 증언을 역 장부의 해당 줄에 함께 남겼다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbr-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0168",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "일화. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+   "to": "직함은 비상권한 반환 증인."
+  }
+ ]
+}

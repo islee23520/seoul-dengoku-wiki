@@ -1,0 +1,234 @@
+{
+ "rules": [
+  {
+   "id": "lbs-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": " and hung no verbal open-close on the key hook",
+   "to": ""
+  },
+  {
+   "id": "lbs-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "읽고, 구두 개폐는 키 걸이못에 걸지 않는다",
+   "to": "읽는다"
+  },
+  {
+   "id": "lbs-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "읽고, 구두 개폐는 키 걸이못에 걸지 않는다",
+   "to": "읽는다"
+  },
+  {
+   "id": "lbs-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.description$",
+   "from": ", and takes the maintenance key off its hook only when a duty confirmation is present",
+   "to": ""
+  },
+  {
+   "id": "lbs-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": ", and takes the maintenance key off its hook only when a duty confirmation is present",
+   "to": ""
+  },
+  {
+   "id": "lbs-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "Can read the tooth wear chart overlaid with the breakage time. ",
+   "to": ""
+  },
+  {
+   "id": "lbs-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Can read the tooth wear chart overlaid with the breakage time. ",
+   "to": ""
+  },
+  {
+   "id": "lbs-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "이빨 마모표를 파손 시각과 겹쳐 읽을 수 있다. ",
+   "to": ""
+  },
+  {
+   "id": "lbs-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "이빨 마모표를 파손 시각과 겹쳐 읽을 수 있다. ",
+   "to": ""
+  },
+  {
+   "id": "lbs-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "Through a party's statement, she can bring the accident to light or rewrite the collision as a hostile act. ",
+   "to": ""
+  },
+  {
+   "id": "lbs-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Through a party's statement, she can bring the accident to light or rewrite the collision as a hostile act. ",
+   "to": ""
+  },
+  {
+   "id": "lbs-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "당사자 진술로 사고를 밝히거나, 충돌을 적대행위로 고쳐 쓸 수 있다. ",
+   "to": ""
+  },
+  {
+   "id": "lbs-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "당사자 진술로 사고를 밝히거나, 충돌을 적대행위로 고쳐 쓸 수 있다. ",
+   "to": ""
+  },
+  {
+   "id": "lbs-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": " Reads Han Jaemok's parts allocation offer only after the inspection is finished.",
+   "to": ""
+  },
+  {
+   "id": "lbs-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": " Reads Han Jaemok's parts allocation offer only after the inspection is finished.",
+   "to": ""
+  },
+  {
+   "id": "lbs-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": " Reads Han Jaemok's parts allocation offer only after the inspection is finished.",
+   "to": ""
+  },
+  {
+   "id": "lbs-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Reads Han Jaemok's parts allocation offer only after the inspection is finished.",
+   "to": ""
+  },
+  {
+   "id": "lbs-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": " 한재목의 부품 배분 제의는 점검이 끝난 뒤에만 읽는다.",
+   "to": ""
+  },
+  {
+   "id": "lbs-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": " 한재목의 부품 배분 제의는 점검이 끝난 뒤에만 읽는다.",
+   "to": ""
+  },
+  {
+   "id": "lbs-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": " 한재목의 부품 배분 제의는 점검이 끝난 뒤에만 읽는다.",
+   "to": ""
+  },
+  {
+   "id": "lbs-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0368",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 한재목의 부품 배분 제의는 점검이 끝난 뒤에만 읽는다.",
+   "to": ""
+  },
+  {
+   "id": "lbs-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.description$",
+   "from": "벽에 걸고, 정비 열쇠는 당직 확인이 있을 때만 걸이못에서 꺼낸다",
+   "to": "벽에 건다"
+  },
+  {
+   "id": "lbs-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0355",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "벽에 걸고, 정비 열쇠는 당직 확인이 있을 때만 걸이못에서 꺼낸다",
+   "to": "벽에 건다"
+  }
+ ]
+}

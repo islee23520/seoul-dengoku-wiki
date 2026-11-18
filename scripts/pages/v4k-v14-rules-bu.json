@@ -1,0 +1,186 @@
+{
+ "rules": [
+  {
+   "id": "lbu-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0089",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.stress$",
+   "from": "If workshops risk becoming hereditary subcontractors, she may place greater weight on distributed processes and joint approval.",
+   "to": ""
+  },
+  {
+   "id": "lbu-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0113",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.description$",
+   "from": "Eom Mirae believes evidence convoy order must not determine which will is treated as authentic.",
+   "to": "Title: Will Evidence Escort Herald."
+  },
+  {
+   "id": "lbu-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.1\\.basis$",
+   "from": "총관 후계를 둘러싼 경쟁",
+   "to": ""
+  },
+  {
+   "id": "lbu-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0089",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "총관 후계를 둘러싼 경쟁",
+   "to": ""
+  },
+  {
+   "id": "lbu-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0094",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "유언 사본을 기록청에 넘김",
+   "to": ""
+  },
+  {
+   "id": "lbu-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.3\\.basis$",
+   "from": "유언 사본을 기록청에 넘김",
+   "to": ""
+  },
+  {
+   "id": "lbu-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0145",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.5\\.basis$",
+   "from": "임하준 유언 삼본을 문서고에서 지킴",
+   "to": ""
+  },
+  {
+   "id": "lbu-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0147",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "임하준 유언 삼본을 문서고에서 지킴",
+   "to": ""
+  },
+  {
+   "id": "lbu-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0163",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.0\\.basis$",
+   "from": "홍예준의 유언 검증과 파형을 맞춘다",
+   "to": ""
+  },
+  {
+   "id": "lbu-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0238",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.1\\.basis$",
+   "from": "홍예준의 유언 검증과 파형을 맞춘다",
+   "to": ""
+  },
+  {
+   "id": "lbu-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0238",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "제보와 검열 명부 사이의 위험을 의식한다.",
+   "to": "직함은 가짜 송신 내부 제보자."
+  },
+  {
+   "id": "lbu-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.개입$",
+   "from": "세 장의 필적을 한자리에 모아 그의 동시 열람을 성사시키거나, 미리 펼친 사본의 지문을 찾아 서기를 실격시킬 수 있다.",
+   "to": ""
+  },
+  {
+   "id": "lbu-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**개입.** 세 장의 필적을 한자리에 모아 그의 동시 열람을 성사시키거나, 미리 펼친 사본의 지문을 찾아 서기를 실격시킬 수 있다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lbu-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0088",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "\nAnecdote.\n",
+   "to": "\n"
+  },
+  {
+   "id": "lbu-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0088",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "\nAnecdote.\n",
+   "to": "\n"
+  },
+  {
+   "id": "lbu-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0088",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": "\n일화.\n",
+   "to": "\n"
+  },
+  {
+   "id": "lbu-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0088",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "\n일화.\n",
+   "to": "\n"
+  }
+ ]
+}

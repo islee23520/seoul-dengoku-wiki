@@ -1,0 +1,198 @@
+{
+ "rules": [
+  {
+   "id": "lbv-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": " 실종 이유와 유언 내용은 미정이다.",
+   "to": " 실종 이유는 미정이다."
+  },
+  {
+   "id": "lbv-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": " 봉인함의 열쇠가 유언 3장과 같이 접수되었다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0086",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 봉인함의 열쇠가 유언 3장과 같이 접수되었다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": " 기술 동맹과 총관 후계 경쟁은 별개의 관계다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.생애$",
+   "from": " 확인 사실은 유언 3장의 증인 칸에 기재되었다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 확인 사실은 유언 3장의 증인 칸에 기재되었다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.일화$",
+   "from": " 그 확인이 유언 3장의 증인 칸에 기재되었다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 그 확인이 유언 3장의 증인 칸에 기재되었다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": " 한소미와 총관 후계를 두고 경쟁한다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " 한소미와 총관 후계를 두고 경쟁한다.",
+   "to": ""
+  },
+  {
+   "id": "lbv-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0087",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": " The confirmed fact was entered in the witness column of the three-page will.",
+   "to": ""
+  },
+  {
+   "id": "lbv-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0147",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. ",
+   "to": ""
+  },
+  {
+   "id": "lbv-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0147",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. ",
+   "to": ""
+  },
+  {
+   "id": "lbv-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0147",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. ",
+   "to": ""
+  },
+  {
+   "id": "lbv-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0147",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "윤서린이 맡긴 임하준 유언 삼본을 직접 지킨다. ",
+   "to": ""
+  },
+  {
+   "id": "lbv-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0146",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Verification and institutional control coexist. Titles and ambitions are not treated as accomplished authority or results.",
+   "to": "Title: Ratification Examiner."
+  },
+  {
+   "id": "lbv-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0163",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Authenticity remains unresolved, and rumor is not accepted as fact. Titles and ambitions are not treated as accomplished authority or results.",
+   "to": "Title: Will Verification Clerk."
+  },
+  {
+   "id": "lbv-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0146",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "세 유언장이 충돌하자 심사를 멈춘다. 검증 원칙과 기록청 권한 집중을 함께 반영한다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+   "to": "직함은 인준 심사관."
+  },
+  {
+   "id": "lbv-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0163",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "세 유언을 나란히 놓고 독립 증언 둘을 요구한다. 진본 판단은 아직 미결이며 소문을 곧 사실로 받아들이지 않는다. 직함·야망을 이미 이룬 권한이나 성과로 취급하지 않는다.",
+   "to": "직함은 유언 검증 서기."
+  }
+ ]
+}

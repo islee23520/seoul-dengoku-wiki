@@ -1,0 +1,114 @@
+{
+ "rules": [
+  {
+   "id": "lbz-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0212",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "refused his concealed power distribution",
+   "to": "refused her concealed power distribution"
+  },
+  {
+   "id": "lbz-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0212",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "refused his concealed power distribution",
+   "to": "refused her concealed power distribution"
+  },
+  {
+   "id": "lbz-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.title$",
+   "from": "Yeongong Council Courier, Operations Aide to Jo Uchan",
+   "to": "Hierophant's Office Courier, Operations Aide to Jo Uchan"
+  },
+  {
+   "id": "lbz-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.name$",
+   "from": "Yeongong Council Courier, Operations Aide to Jo Uchan",
+   "to": "Hierophant's Office Courier, Operations Aide to Jo Uchan"
+  },
+  {
+   "id": "lbz-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "Yeongong Council Courier, Operations Aide to Jo Uchan",
+   "to": "Hierophant's Office Courier, Operations Aide to Jo Uchan"
+  },
+  {
+   "id": "lbz-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.name$",
+   "from": "Yeongong Council Courier, Operations Aide to Jo Uchan",
+   "to": "Hierophant's Office Courier, Operations Aide to Jo Uchan"
+  },
+  {
+   "id": "lbz-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "Yeongong Council Courier, Operations Aide to Jo Uchan",
+   "to": "Hierophant's Office Courier, Operations Aide to Jo Uchan"
+  },
+  {
+   "id": "lbz-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.title$",
+   "from": "연공회의 전령, 조우찬의 실무 담당자",
+   "to": "교주실 전령, 조우찬의 실무 담당자"
+  },
+  {
+   "id": "lbz-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "연공회의 전령, 조우찬의 실무 담당자",
+   "to": "교주실 전령, 조우찬의 실무 담당자"
+  },
+  {
+   "id": "lbz-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0282",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "연공회의 전령, 조우찬의 실무 담당자",
+   "to": "교주실 전령, 조우찬의 실무 담당자"
+  },
+  {
+   "id": "lbz-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0279",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "시세보다 공개 저울을 믿는다.\n\n",
+   "to": "무게를 속이는 출고를 선로를 깎는 일과 같다고 본다. 시세보다 공개 저울을 믿는다.\n\n"
+  }
+ ]
+}
