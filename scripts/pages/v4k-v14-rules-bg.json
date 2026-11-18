@@ -1,0 +1,184 @@
+{
+ "rules": [
+  {
+   "id": "lbg-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0003",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Leak tests, covering night duty, and access control",
+   "to": "Covering night duty and access control"
+  },
+  {
+   "id": "lbg-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0003",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "누수 시험과 야간 당직 대행",
+   "to": "야간 당직 대행"
+  },
+  {
+   "id": "lbg-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0003",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.skills\\.1\\.name$",
+   "from": "Leak inspection",
+   "to": "Shutter gap inspection"
+  },
+  {
+   "id": "lbg-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0003",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.skills\\.1\\.name$",
+   "from": "누수 확인",
+   "to": "덧문 틈 점검"
+  },
+  {
+   "id": "lbg-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.skills\\.0\\.name$",
+   "from": "Packing replacement and leak assessment",
+   "to": "Packing replacement"
+  },
+  {
+   "id": "lbg-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0097",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.skills\\.0\\.name$",
+   "from": "패킹 교체·누수 판단",
+   "to": "패킹 교체"
+  },
+  {
+   "id": "lbg-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "수비대의 누수 경보가",
+   "to": "수비대의 경보가"
+  },
+  {
+   "id": "lbg-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "수비대의 누수 경보가",
+   "to": "수비대의 경보가"
+  },
+  {
+   "id": "lbg-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "수비대의 누수 경보가",
+   "to": "수비대의 경보가"
+  },
+  {
+   "id": "lbg-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0106",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "수비대의 누수 경보가",
+   "to": "수비대의 경보가"
+  },
+  {
+   "id": "lbg-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0106",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "수비대의 누수 경보가",
+   "to": "수비대의 경보가"
+  },
+  {
+   "id": "lbg-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0106",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "수비대의 누수 경보가",
+   "to": "수비대의 경보가"
+  },
+  {
+   "id": "lbg-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "guard leak warning",
+   "to": "guard warning"
+  },
+  {
+   "id": "lbg-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "issues a leak alert",
+   "to": "issues an alert"
+  },
+  {
+   "id": "lbg-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0096",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "issues a leak alert",
+   "to": "issues an alert"
+  },
+  {
+   "id": "lbg-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0106",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "issues a leak warning",
+   "to": "issues a warning"
+  },
+  {
+   "id": "lbg-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0106",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "has issued a leak alarm",
+   "to": "has issued an alarm"
+  },
+  {
+   "id": "lbg-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0106",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "has issued a leak alarm",
+   "to": "has issued an alarm"
+  }
+ ]
+}
