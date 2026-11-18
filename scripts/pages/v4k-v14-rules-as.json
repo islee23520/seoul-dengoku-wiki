@@ -1,0 +1,24 @@
+{
+ "rules": [
+  {
+   "id": "las-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " ::: details Appendix",
+   "to": "\n\n::: details Appendix"
+  },
+  {
+   "id": "las-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": " ::: details 부록",
+   "to": "\n\n::: details 부록"
+  }
+ ]
+}

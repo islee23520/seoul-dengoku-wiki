@@ -1,0 +1,782 @@
+{
+ "rules": [
+  {
+   "id": "lak-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0375",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of his own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0375",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of his own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0376",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of their own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0376",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of their own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0377",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of her own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0377",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of her own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0381",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of Dong's own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0381",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of Dong's own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0382",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of Bang's own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0382",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of Bang's own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0385",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-12",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0385",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-13",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0386",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-14",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0386",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-15",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0387",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of their own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-16",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0387",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of their own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-17",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0388",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of their own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-18",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0388",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of their own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-19",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-20",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-21",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0390",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-22",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0390",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-23",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0397",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of Seok's own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-24",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0397",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of Seok's own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-25",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": ", and at the station's vote count exercises only the scope of Ham's own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-26",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and at the station's vote count exercises only the scope of Ham's own testimony and assistance",
+   "to": ""
+  },
+  {
+   "id": "lak-27",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0375",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "the station vote-count witness",
+   "to": "the Myeongdong Station records assistant"
+  },
+  {
+   "id": "lak-28",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0375",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "Handles vote-count testimony and records-assistance duties",
+   "to": "Handles records-assistance duties"
+  },
+  {
+   "id": "lak-29",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0375",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Handles vote-count testimony and records-assistance duties",
+   "to": "Handles records-assistance duties"
+  },
+  {
+   "id": "lak-30",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0375",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "the station vote-count witness's duties",
+   "to": "the duties of the Myeongdong Station records assistant"
+  },
+  {
+   "id": "lak-31",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0375",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "the station vote-count witness",
+   "to": "the Myeongdong Station records assistant"
+  },
+  {
+   "id": "lak-32",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0375",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "the vote-count testimony and records-assistance records",
+   "to": "the records-assistance records"
+  },
+  {
+   "id": "lak-33",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0378",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "He keeps the station vote-count records",
+   "to": "He keeps the station records"
+  },
+  {
+   "id": "lak-34",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0378",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "He keeps the station vote-count records",
+   "to": "He keeps the station records"
+  },
+  {
+   "id": "lak-35",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0378",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "the records of the station vote-count",
+   "to": "the station records"
+  },
+  {
+   "id": "lak-36",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0378",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "먼저 꺼내고 개표 누락을 살핀다.",
+   "to": "먼저 꺼낸다."
+  },
+  {
+   "id": "lak-37",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0378",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "먼저 꺼내고 개표 누락을 살핀다.",
+   "to": "먼저 꺼낸다."
+  },
+  {
+   "id": "lak-38",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0379",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "election procedure inspection and assistance",
+   "to": "procedure inspection and assistance"
+  },
+  {
+   "id": "lak-39",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0379",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "election procedure inspection and assistance",
+   "to": "procedure inspection and assistance"
+  },
+  {
+   "id": "lak-40",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0380",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "ballot-box seal maintenance and assistance",
+   "to": "seal maintenance and assistance"
+  },
+  {
+   "id": "lak-41",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0380",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ballot-box seal maintenance and assistance",
+   "to": "seal maintenance and assistance"
+  },
+  {
+   "id": "lak-42",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0383",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "ballot-box night guard and assistance",
+   "to": "night guard and assistance"
+  },
+  {
+   "id": "lak-43",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0383",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "ballot-box night guard and assistance",
+   "to": "night guard and assistance"
+  },
+  {
+   "id": "lak-44",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0386",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "Election Records Transcription/Assistant",
+   "to": "Records Transcription/Assistant"
+  },
+  {
+   "id": "lak-45",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0386",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Election Records Transcription/Assistant",
+   "to": "Records Transcription/Assistant"
+  },
+  {
+   "id": "lak-46",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "Handles ballot-box sealing and records assistance",
+   "to": "Handles sealing and records assistance"
+  },
+  {
+   "id": "lak-47",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "Handles ballot-box sealing and records assistance",
+   "to": "Handles sealing and records assistance"
+  },
+  {
+   "id": "lak-48",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json_ko",
+   "rawPathRe": "^\\.sections\\.관직$",
+   "from": "투표함 봉인·선거 보좌 업무",
+   "to": "봉인·기록 보좌 업무"
+  },
+  {
+   "id": "lak-49",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "투표함 봉인·선거 보좌 업무",
+   "to": "봉인·기록 보좌 업무"
+  },
+  {
+   "id": "lak-50",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0391",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "election objection intake and assistance",
+   "to": "objection intake and assistance"
+  },
+  {
+   "id": "lak-51",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0391",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "election objection intake and assistance",
+   "to": "objection intake and assistance"
+  },
+  {
+   "id": "lak-52",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0395",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "serves as station election clerk",
+   "to": "serves as station clerk"
+  },
+  {
+   "id": "lak-53",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0395",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "station election clerk and assistant work",
+   "to": "station clerk and assistant work"
+  },
+  {
+   "id": "lak-54",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0395",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "serves as station election clerk",
+   "to": "serves as station clerk"
+  },
+  {
+   "id": "lak-55",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0395",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "station election clerk and assistant work",
+   "to": "station clerk and assistant work"
+  },
+  {
+   "id": "lak-56",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0396",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Life$",
+   "from": "serves as station election witness",
+   "to": "serves as station witness"
+  },
+  {
+   "id": "lak-57",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0396",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "election testimony and assistant work",
+   "to": "testimony and assistant work"
+  },
+  {
+   "id": "lak-58",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0396",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "serves as station election witness",
+   "to": "serves as station witness"
+  },
+  {
+   "id": "lak-59",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0396",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "election testimony and assistant work",
+   "to": "testimony and assistant work"
+  },
+  {
+   "id": "lak-60",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0397",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Offices$",
+   "from": "election validity testimony and assistance",
+   "to": "testimony and assistance"
+  },
+  {
+   "id": "lak-61",
+   "file": "090",
+   "expect": 2,
+   "key": "person-0397",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "election validity testimony and assistance",
+   "to": "testimony and assistance"
+  },
+  {
+   "id": "lak-62",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0388",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": " Assists elections without a vote.",
+   "to": ""
+  },
+  {
+   "id": "lak-63",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0388",
+   "col": "json",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": " Assists elections without a vote.",
+   "to": ""
+  },
+  {
+   "id": "lak-64",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0388",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": " 선거 보좌는 하지만 투표권은 없다.",
+   "to": ""
+  },
+  {
+   "id": "lak-65",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0388",
+   "col": "json_ko",
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": " 선거 보좌는 하지만 투표권은 없다.",
+   "to": ""
+  },
+  {
+   "id": "lak-66",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0395",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "He keeps only Nam Yungyeong's public auction seal as the key to the box.",
+   "to": ""
+  },
+  {
+   "id": "lak-67",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0395",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Relationships.** He keeps only Nam Yungyeong's public auction seal as the key to the box.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lak-68",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "Interlocks with Nam Yungyeong's auction coordination, but keeps the assistant signature column from overlapping the coordinator's seal.",
+   "to": ""
+  },
+  {
+   "id": "lak-69",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Relationships.** Interlocks with Nam Yungyeong's auction coordination, but keeps the assistant signature column from overlapping the coordinator's seal.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lak-70",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "Keeps auxiliary signatures separate from Nam Yungyeong’s mediation stamp.",
+   "to": ""
+  },
+  {
+   "id": "lak-71",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "Keeps auxiliary signatures separate from Nam Yungyeong’s mediation stamp.",
+   "to": ""
+  },
+  {
+   "id": "lak-72",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0395",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "남윤경의 공개 경매 날인만 함의 열쇠로 둔다.",
+   "to": ""
+  },
+  {
+   "id": "lak-73",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0395",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.** 남윤경의 공개 경매 날인만 함의 열쇠로 둔다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lak-74",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.관계$",
+   "from": "남윤경의 경매조정과 맞물리되, 보조 서명란은 조정인 도장과 겹치지 않게 둔다.",
+   "to": ""
+  },
+  {
+   "id": "lak-75",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "**관계.** 남윤경의 경매조정과 맞물리되, 보조 서명란은 조정인 도장과 겹치지 않게 둔다.\n\n",
+   "to": ""
+  },
+  {
+   "id": "lak-76",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "남윤경의 조정 도장과 보조 서명을 겹치지 않게 둔다.",
+   "to": ""
+  },
+  {
+   "id": "lak-77",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0398",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.relationship$",
+   "from": "남윤경의 조정 도장과 보조 서명을 겹치지 않게 둔다.",
+   "to": ""
+  }
+ ]
+}

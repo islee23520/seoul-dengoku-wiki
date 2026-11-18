@@ -1,0 +1,64 @@
+{
+ "rules": [
+  {
+   "id": "lan-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "cross-checks the ballot-box sealing and records-assistance records",
+   "to": "cross-checks the sealing and records-assistance records"
+  },
+  {
+   "id": "lan-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0389",
+   "col": "json_ko",
+   "rawPathRe": "^\\.biography$",
+   "from": "투표함 봉인·선거 보좌 기록",
+   "to": "봉인·기록 보좌 기록"
+  },
+  {
+   "id": "lan-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0392",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Even when the relief, vote-count and record duties of Myeongdong Station in the winter overlap, she records the signing order and the time of publication in the ledger.",
+   "to": ""
+  },
+  {
+   "id": "lan-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0393",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Even when the relief, vote-count and record duties of Myeongdong Station in the winter overlap, he records the signing order and the time of publication in the ledger.",
+   "to": ""
+  },
+  {
+   "id": "lan-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0394",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Even when winter's relief, vote-count and record duties at Myeongdong Station overlap, he enters the signing order and the time of disclosure in the ledger.",
+   "to": ""
+  },
+  {
+   "id": "lan-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0395",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": " Even when winter's relief, vote-count and record duties at Myeongdong Station overlap, he enters the signing order and the time of disclosure in the ledger.",
+   "to": ""
+  }
+ ]
+}

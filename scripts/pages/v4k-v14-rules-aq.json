@@ -1,0 +1,125 @@
+{
+ "rules": [
+  {
+   "id": "laq-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "He cooperates with Yun Seorin by exchanging ratified contract copies but competes with her over interpretive authority, he disputes the wording of termination conditions with Jeong Yura, and he owes Yi Seodam a debt for covering up a past ledger omission.",
+   "to": "She cooperates with Yun Seorin by exchanging ratified contract copies but competes with her over interpretive authority, she disputes the wording of termination conditions with Jeong Yura, and she owes Yi Seodam a debt for covering up a past ledger omission."
+  },
+  {
+   "id": "laq-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "You can find the forged ration ticket to protect his seal, or expose his marginal interpretation notes to neutralize the winter fuel release clause.",
+   "to": "You can find the forged ration ticket to protect her seal, or expose her marginal interpretation notes to neutralize the winter fuel release clause."
+  },
+  {
+   "id": "laq-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.biography$",
+   "from": "She persistently hunts for blanks in the wording, and she regards anyone who does not record verbal promises as a likely violator. She discloses the numbers but leaves the interpretation in her own margins.\n\n- Affiliation: Free City\n- Occupation: Contract Records and Review\n- Rank: Clerk\n- Title: Food Ledger Clerk at Yangpyeong 1-dong\n**Life.** Generation of 2126. She grew up beside the storehouse in Yangpyeong 1-dong. Her post as ledger clerk opened through counting the storehouse stock to the very end on a midwinter night.\n- Work location: Yangpyeong 1-dong. At the ledger desk in Yangpyeong 1-dong, Jang Pilgyu cross-checks the food and fuel counts of the storehouse copy against the area copy and records the circumstances of any missing ledger entry.\n\n**Office.** Rank: Clerk. Title: Food Ledger Clerk at Yangpyeong 1-dong. She sends ledger copies to the storehouse and the area at the same time, but the final confirmation of removal quantities requires the clerk's seal.\n\n**Anecdote.** In midwinter, when the storehouse food ran short, Jang Pilgyu spent the night cross-checking the ledger with the area representatives and recorded the confirmed quantity in the audit column.\n\n**Relationships.** He cooperates with Yun Seorin by exchanging ratified contract copies but competes with her over interpretive authority, he disputes the wording of termination conditions with Jeong Yura, and he owes Yi Seodam a debt for covering up a past ledger omission.\n\n**Ambition.** She aims to standardize the removal criteria of every western storehouse on the ledgers she has cross-checked herself.\n\n**Fear.** That a single forged food ticket could invalidate an entire storehouse ledger and bring the ledger audit down as a political tool.\n\n**Intervention.** You can find the forged ration ticket to protect his seal, or expose his marginal interpretation notes to neutralize the winter fuel release clause.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority 60 | Openness −5 | Force 10 | Materialism 40 | Communal 20 | Principle 40 | Publicity 20 | Qualification 5 | Dispersal −50 | Transformation −30\n- Desires: Craving 30 | Monopoly 5 | Risk −15 | Display −5 | Endurance 0 | Orientation None | Bonding Monogamous\n:::",
+   "to": "She persistently hunts for blanks in the wording, and she regards anyone who does not record verbal promises as a likely violator. She discloses the numbers but leaves the interpretation in her own margins.\n\n- Affiliation: Free City\n- Occupation: Contract Records and Review\n- Rank: Clerk\n- Title: Food Ledger Clerk at Yangpyeong 1-dong\n**Life.** Generation of 2126. She grew up beside the storehouse in Yangpyeong 1-dong. Her post as ledger clerk opened through counting the storehouse stock to the very end on a midwinter night.\n- Work location: Yangpyeong 1-dong. At the ledger desk in Yangpyeong 1-dong, Jang Pilgyu cross-checks the food and fuel counts of the storehouse copy against the area copy and records the circumstances of any missing ledger entry.\n\n**Office.** Rank: Clerk. Title: Food Ledger Clerk at Yangpyeong 1-dong. She sends ledger copies to the storehouse and the area at the same time, but the final confirmation of removal quantities requires the clerk's seal.\n\n**Anecdote.** In midwinter, when the storehouse food ran short, Jang Pilgyu spent the night cross-checking the ledger with the area representatives and recorded the confirmed quantity in the audit column.\n\n**Relationships.** He cooperates with Yun Seorin by exchanging ratified contract copies but competes with her over interpretive authority, he disputes the wording of termination conditions with Jeong Yura, and he owes Yi Seodam a debt for covering up a past ledger omission.\n\n**Ambition.** She aims to standardize the removal criteria of every western storehouse on the ledgers she has cross-checked herself.\n\n**Fear.** That a single forged food ticket could invalidate an entire storehouse ledger and bring the ledger audit down as a political tool.\n\n**Intervention.** You can find the forged ration ticket to protect her seal, or expose her marginal interpretation notes to neutralize the winter fuel release clause.\n\n::: details Appendix — Ledger Numbers\n\n- Values: Authority 60 | Openness −5 | Force 10 | Materialism 40 | Communal 20 | Principle 40 | Publicity 20 | Qualification 5 | Dispersal −50 | Transformation −30\n- Desires: Craving 30 | Monopoly 5 | Risk −15 | Display −5 | Endurance 0 | Orientation None | Bonding Monogamous\n:::"
+  },
+  {
+   "id": "laq-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0068",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "He is the ally who enforces Jeong Harin's veto on the medical side, and",
+   "to": "She is the ally who enforces Jeong Harin's veto on the medical side, and"
+  },
+  {
+   "id": "laq-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0069",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.relationship$",
+   "from": "If Kim Doha’s flag remains in the alley, she may withhold the whistle in keeping with her pledge to him.",
+   "to": "If Kim Doha’s flag remains in the alley, he may withhold the whistle in keeping with his pledge to her."
+  },
+  {
+   "id": "laq-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "She can bring the handwriting of the three wills together in one place to bring about his simultaneous reading, or find fingerprints on a copy opened in advance and disqualify the clerk.",
+   "to": "He can bring the handwriting of the three wills together in one place to bring about his simultaneous reading, or find fingerprints on a copy opened in advance and disqualify the clerk."
+  },
+  {
+   "id": "laq-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0112",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.sections\\.Intervention$",
+   "from": "She can recover the forged seal master plate to justify halting his line, or expose whoever slipped an unregistered workshop into the roster, which would isolate the artisan.",
+   "to": "He can recover the forged seal master plate to justify halting his line, or expose whoever slipped an unregistered workshop into the roster, which would isolate the artisan."
+  },
+  {
+   "id": "laq-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0316",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.description$",
+   "from": "Beom Ongyeol cross-checks family lists and passage counts and witnessed forced registration. Missing duty notes cause him to stop testimony.",
+   "to": "Beom Ongyeol cross-checks family lists and passage counts and witnessed forced registration. Missing duty notes cause her to stop testimony."
+  },
+  {
+   "id": "laq-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0316",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.narrative$",
+   "from": "Beom Ongyeol cross-checks family lists and passage counts and witnessed forced registration. Missing duty notes cause him to stop testimony.",
+   "to": "Beom Ongyeol cross-checks family lists and passage counts and witnessed forced registration. Missing duty notes cause her to stop testimony."
+  },
+  {
+   "id": "laq-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0362",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.0\\.behavior$",
+   "from": "Gauges the weight of ice in the tunnel by platform vibration and hears an order to pull military freight cars ahead of patient transport as an insult. Mild in manner, but takes the broadcast herself whenever an outside-machine alarm sounds.",
+   "to": "Gauges the weight of ice in the tunnel by platform vibration and hears an order to pull military freight cars ahead of patient transport as an insult. Mild in manner, but takes the broadcast himself whenever an outside-machine alarm sounds."
+  },
+  {
+   "id": "laq-11",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0868",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.outgoing\\.0\\.basis$",
+   "from": "Seo Dalseo passes the patient roster and prescription records she has kept to Jeon Sol. Jeon Sol checks the bed waitlist and severity to find the patients who were left out because of the lost records.",
+   "to": "Seo Dalseo passes the patient roster and prescription records he has kept to Jeon Sol. Jeon Sol checks the bed waitlist and severity to find the patients who were left out because of the lost records."
+  }
+ ]
+}

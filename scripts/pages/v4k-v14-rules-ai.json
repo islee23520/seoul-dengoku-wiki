@@ -1,0 +1,1156 @@
+{
+ "rules": [
+  {
+   "id": "lai-1",
+   "file": "090",
+   "key": "person-0375",
+   "col": "json",
+   "from": "Myeongdong Station Vote-Count Witness",
+   "to": "Myeongdong Station Records Assistant",
+   "expect": 5
+  },
+  {
+   "id": "lai-2",
+   "file": "090",
+   "key": "person-0375",
+   "col": "json_ko",
+   "from": "명동역 개표 증인",
+   "to": "명동역 기록 보좌 담당",
+   "expect": 10
+  },
+  {
+   "id": "lai-3",
+   "file": "090",
+   "key": "person-0375",
+   "col": "json",
+   "from": "Count Testimony · Records Assistance",
+   "to": "Records Assistance",
+   "expect": 3
+  },
+  {
+   "id": "lai-4",
+   "file": "090",
+   "key": "person-0375",
+   "col": "json_ko",
+   "from": "개표 증언·기록 보좌",
+   "to": "기록 보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-5",
+   "file": "090",
+   "key": "person-0378",
+   "col": "json",
+   "from": "Myeongdong Station Election-Affairs Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 10
+  },
+  {
+   "id": "lai-6",
+   "file": "090",
+   "key": "person-0378",
+   "col": "json_ko",
+   "from": "명동역 선거 사무원",
+   "to": "명동역 기록 담당",
+   "expect": 10
+  },
+  {
+   "id": "lai-7",
+   "file": "090",
+   "key": "person-0378",
+   "col": "json",
+   "from": "Station Vote-Count Records Keeping",
+   "to": "Station Records Keeping",
+   "expect": 3
+  },
+  {
+   "id": "lai-8",
+   "file": "090",
+   "key": "person-0378",
+   "col": "json_ko",
+   "from": "역 개표 기록 보관",
+   "to": "역 기록 보관",
+   "expect": 8
+  },
+  {
+   "id": "lai-9",
+   "file": "090",
+   "key": "person-0379",
+   "col": "json",
+   "from": "Myeongdong Station Election-Procedure Overseer",
+   "to": "Myeongdong Station Procedure Overseer",
+   "expect": 10
+  },
+  {
+   "id": "lai-10",
+   "file": "090",
+   "key": "person-0379",
+   "col": "json_ko",
+   "from": "명동역 선거 절차 감찰 담당",
+   "to": "명동역 절차 감찰 담당",
+   "expect": 10
+  },
+  {
+   "id": "lai-11",
+   "file": "090",
+   "key": "person-0379",
+   "col": "json",
+   "from": "Election Procedure Oversight · Assistance",
+   "to": "Procedure Oversight · Assistance",
+   "expect": 3
+  },
+  {
+   "id": "lai-12",
+   "file": "090",
+   "key": "person-0379",
+   "col": "json_ko",
+   "from": "선거 절차 감찰·보좌",
+   "to": "절차 감찰·보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-13",
+   "file": "090",
+   "key": "person-0380",
+   "col": "json",
+   "from": "Myeongdong Station Ballot-Box Seal Technician",
+   "to": "Myeongdong Station Seal Technician",
+   "expect": 10
+  },
+  {
+   "id": "lai-14",
+   "file": "090",
+   "key": "person-0380",
+   "col": "json_ko",
+   "from": "명동역 투표함 봉인 정비 담당",
+   "to": "명동역 봉인 정비 담당",
+   "expect": 10
+  },
+  {
+   "id": "lai-15",
+   "file": "090",
+   "key": "person-0380",
+   "col": "json",
+   "from": "Ballot-Box Seal Maintenance · Assistance",
+   "to": "Seal Maintenance · Assistance",
+   "expect": 3
+  },
+  {
+   "id": "lai-16",
+   "file": "090",
+   "key": "person-0380",
+   "col": "json_ko",
+   "from": "투표함 봉인 정비·보좌",
+   "to": "봉인 정비·보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-17",
+   "file": "090",
+   "key": "person-0383",
+   "col": "json",
+   "from": "Myeongdong Station Ballot-Box Night Guard",
+   "to": "Myeongdong Station Night Guard",
+   "expect": 10
+  },
+  {
+   "id": "lai-18",
+   "file": "090",
+   "key": "person-0383",
+   "col": "json_ko",
+   "from": "명동역 투표함 야간 경비 담당",
+   "to": "명동역 야간 경비 담당",
+   "expect": 10
+  },
+  {
+   "id": "lai-19",
+   "file": "090",
+   "key": "person-0383",
+   "col": "json",
+   "from": "Ballot-Box Night Guard · Assistance",
+   "to": "Night Guard · Assistance",
+   "expect": 3
+  },
+  {
+   "id": "lai-20",
+   "file": "090",
+   "key": "person-0383",
+   "col": "json_ko",
+   "from": "투표함 야간 경비·보좌",
+   "to": "야간 경비·보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-21",
+   "file": "090",
+   "key": "person-0386",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 10
+  },
+  {
+   "id": "lai-22",
+   "file": "090",
+   "key": "person-0386",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 담당",
+   "to": "명동역 기록 담당",
+   "expect": 10
+  },
+  {
+   "id": "lai-23",
+   "file": "090",
+   "key": "person-0386",
+   "col": "json",
+   "from": "Election Records Transcription · Assistance",
+   "to": "Records Transcription · Assistance",
+   "expect": 3
+  },
+  {
+   "id": "lai-24",
+   "file": "090",
+   "key": "person-0386",
+   "col": "json_ko",
+   "from": "선거 기록 필사·보좌",
+   "to": "기록 필사·보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-25",
+   "file": "090",
+   "key": "person-0389",
+   "col": "json",
+   "from": "Myeongdong Station Ballot-Box Sealing Clerk",
+   "to": "Myeongdong Station Sealing Clerk",
+   "expect": 10
+  },
+  {
+   "id": "lai-26",
+   "file": "090",
+   "key": "person-0389",
+   "col": "json_ko",
+   "from": "명동역 투표함 봉인 담당",
+   "to": "명동역 봉인 담당",
+   "expect": 10
+  },
+  {
+   "id": "lai-27",
+   "file": "090",
+   "key": "person-0389",
+   "col": "json",
+   "from": "Ballot-Box Sealing · Records Assistance",
+   "to": "Sealing · Records Assistance",
+   "expect": 3
+  },
+  {
+   "id": "lai-28",
+   "file": "090",
+   "key": "person-0389",
+   "col": "json_ko",
+   "from": "투표함 봉인·기록 보좌",
+   "to": "봉인·기록 보좌",
+   "expect": 3
+  },
+  {
+   "id": "lai-29",
+   "file": "090",
+   "key": "person-0391",
+   "col": "json",
+   "from": "Myeongdong Station Election Objection Intake Clerk",
+   "to": "Myeongdong Station Objection Intake Clerk",
+   "expect": 10
+  },
+  {
+   "id": "lai-30",
+   "file": "090",
+   "key": "person-0391",
+   "col": "json_ko",
+   "from": "명동역 선거 이의 접수 담당",
+   "to": "명동역 이의 접수 담당",
+   "expect": 10
+  },
+  {
+   "id": "lai-31",
+   "file": "090",
+   "key": "person-0391",
+   "col": "json",
+   "from": "Election Objection Intake · Assistant",
+   "to": "Objection Intake · Assistant",
+   "expect": 3
+  },
+  {
+   "id": "lai-32",
+   "file": "090",
+   "key": "person-0391",
+   "col": "json_ko",
+   "from": "선거 이의 접수·보좌",
+   "to": "이의 접수·보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-33",
+   "file": "090",
+   "key": "person-0394",
+   "col": "json",
+   "from": "Relief Distribution · Station Vote Records Keeper",
+   "to": "Relief Distribution · Station Records Keeper",
+   "expect": 3
+  },
+  {
+   "id": "lai-34",
+   "file": "090",
+   "key": "person-0394",
+   "col": "json_ko",
+   "from": "구휼 배분·역 투표 기록 보관",
+   "to": "구휼 배분·역 기록 보관",
+   "expect": 8
+  },
+  {
+   "id": "lai-35",
+   "file": "090",
+   "key": "person-0395",
+   "col": "json",
+   "from": "Myeongdong Station Election Clerk",
+   "to": "Myeongdong Station Clerk",
+   "expect": 5
+  },
+  {
+   "id": "lai-36",
+   "file": "090",
+   "key": "person-0395",
+   "col": "json_ko",
+   "from": "명동역 선거 서기",
+   "to": "명동역 서기",
+   "expect": 10
+  },
+  {
+   "id": "lai-37",
+   "file": "090",
+   "key": "person-0395",
+   "col": "json",
+   "from": "Station Election Clerk · Assistant",
+   "to": "Station Clerk · Assistant",
+   "expect": 3
+  },
+  {
+   "id": "lai-38",
+   "file": "090",
+   "key": "person-0395",
+   "col": "json_ko",
+   "from": "역 선거 서기·보좌",
+   "to": "역 서기·보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-39",
+   "file": "090",
+   "key": "person-0396",
+   "col": "json",
+   "from": "Myeongdong Station Election Witness",
+   "to": "Myeongdong Station Witness",
+   "expect": 6
+  },
+  {
+   "id": "lai-40",
+   "file": "090",
+   "key": "person-0396",
+   "col": "json_ko",
+   "from": "명동역 선거 증인",
+   "to": "명동역 증인",
+   "expect": 10
+  },
+  {
+   "id": "lai-41",
+   "file": "090",
+   "key": "person-0396",
+   "col": "json",
+   "from": "Election Testimony · Assistant",
+   "to": "Testimony · Assistant",
+   "expect": 3
+  },
+  {
+   "id": "lai-42",
+   "file": "090",
+   "key": "person-0396",
+   "col": "json_ko",
+   "from": "선거 증언·보좌",
+   "to": "증언·보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-43",
+   "file": "090",
+   "key": "person-0397",
+   "col": "json",
+   "from": "Myeongdong Station Election Validity Witness",
+   "to": "Myeongdong Station Witness",
+   "expect": 10
+  },
+  {
+   "id": "lai-44",
+   "file": "090",
+   "key": "person-0397",
+   "col": "json_ko",
+   "from": "명동역 선거 유효성 증인",
+   "to": "명동역 증인",
+   "expect": 10
+  },
+  {
+   "id": "lai-45",
+   "file": "090",
+   "key": "person-0397",
+   "col": "json",
+   "from": "Election Validity Testimony · Assistant",
+   "to": "Testimony · Assistant",
+   "expect": 3
+  },
+  {
+   "id": "lai-46",
+   "file": "090",
+   "key": "person-0397",
+   "col": "json_ko",
+   "from": "선거 유효성 증언·보좌",
+   "to": "증언·보좌",
+   "expect": 8
+  },
+  {
+   "id": "lai-47",
+   "file": "090",
+   "key": "person-0454",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-48",
+   "file": "090",
+   "key": "person-0502",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-49",
+   "file": "090",
+   "key": "person-0550",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-50",
+   "file": "090",
+   "key": "person-0598",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-51",
+   "file": "090",
+   "key": "person-0646",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-52",
+   "file": "090",
+   "key": "person-0694",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-53",
+   "file": "090",
+   "key": "person-0742",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-54",
+   "file": "090",
+   "key": "person-0790",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-55",
+   "file": "090",
+   "key": "person-0838",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-56",
+   "file": "090",
+   "key": "person-0886",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-57",
+   "file": "090",
+   "key": "person-0934",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-58",
+   "file": "090",
+   "key": "person-0982",
+   "col": "json",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-59",
+   "file": "110",
+   "key": "b0a8-c758-b839",
+   "col": "json_ko",
+   "from": "역 개표 기록 보관",
+   "to": "역 기록 보관",
+   "expect": 2
+  },
+  {
+   "id": "lai-60",
+   "file": "110",
+   "key": "b3d9-ad11-cc9c",
+   "col": "json_ko",
+   "from": "투표함 봉인·기록 보좌",
+   "to": "봉인·기록 보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-61",
+   "file": "110",
+   "key": "bb38-b0a8-d3c9-6587",
+   "col": "json_ko",
+   "from": "선거 절차 감찰·보좌",
+   "to": "절차 감찰·보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-62",
+   "file": "110",
+   "key": "bc94-ae08-c131",
+   "col": "json_ko",
+   "from": "구휼 배분·역 투표 기록 보관",
+   "to": "구휼 배분·역 기록 보관",
+   "expect": 2
+  },
+  {
+   "id": "lai-63",
+   "file": "110",
+   "key": "c11d-cda9-c8fc",
+   "col": "json_ko",
+   "from": "선거 유효성 증언·보좌",
+   "to": "증언·보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-64",
+   "file": "110",
+   "key": "c218-d55c-c591",
+   "col": "json_ko",
+   "from": "투표함 야간 경비·보좌",
+   "to": "야간 경비·보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-65",
+   "file": "110",
+   "key": "c601-c601-cc9c",
+   "col": "json_ko",
+   "from": "선거 기록 필사·보좌",
+   "to": "기록 필사·보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-66",
+   "file": "110",
+   "key": "c740-d589-c8fc",
+   "col": "json_ko",
+   "from": "개표 증언·기록 보좌",
+   "to": "기록 보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-67",
+   "file": "110",
+   "key": "cc3d-cc3d-b155-660c",
+   "col": "json_ko",
+   "from": "역 선거 서기·보좌",
+   "to": "역 서기·보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-68",
+   "file": "110",
+   "key": "cc9c-c601-c591",
+   "col": "json_ko",
+   "from": "투표함 봉인 정비·보좌",
+   "to": "봉인 정비·보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-69",
+   "file": "110",
+   "key": "cd08-c131-c8fc",
+   "col": "json_ko",
+   "from": "선거 증언·보좌",
+   "to": "증언·보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-70",
+   "file": "110",
+   "key": "creative-d765-c218-c0c9",
+   "col": "json_ko",
+   "from": "선거 이의 접수·보좌",
+   "to": "이의 접수·보좌",
+   "expect": 2
+  },
+  {
+   "id": "lai-71",
+   "file": "050",
+   "key": "person-0375",
+   "col": "position",
+   "from": "Myeongdong Station Vote-Count Witness",
+   "to": "Myeongdong Station Records Assistant",
+   "expect": 1
+  },
+  {
+   "id": "lai-72",
+   "file": "050",
+   "key": "person-0375",
+   "col": "position_ko",
+   "from": "명동역 개표 증인",
+   "to": "명동역 기록 보좌 담당",
+   "expect": 1
+  },
+  {
+   "id": "lai-73",
+   "file": "050",
+   "key": "person-0375",
+   "col": "occupation",
+   "from": "Count Testimony · Records Assistance",
+   "to": "Records Assistance",
+   "expect": 1
+  },
+  {
+   "id": "lai-74",
+   "file": "050",
+   "key": "person-0375",
+   "col": "occupation_ko",
+   "from": "개표 증언·기록 보좌",
+   "to": "기록 보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-75",
+   "file": "050",
+   "key": "person-0378",
+   "col": "position",
+   "from": "Myeongdong Station Election-Affairs Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-76",
+   "file": "050",
+   "key": "person-0378",
+   "col": "position_ko",
+   "from": "명동역 선거 사무원",
+   "to": "명동역 기록 담당",
+   "expect": 1
+  },
+  {
+   "id": "lai-77",
+   "file": "050",
+   "key": "person-0378",
+   "col": "occupation",
+   "from": "Station Vote-Count Records Keeping",
+   "to": "Station Records Keeping",
+   "expect": 1
+  },
+  {
+   "id": "lai-78",
+   "file": "050",
+   "key": "person-0378",
+   "col": "occupation_ko",
+   "from": "역 개표 기록 보관",
+   "to": "역 기록 보관",
+   "expect": 1
+  },
+  {
+   "id": "lai-79",
+   "file": "050",
+   "key": "person-0379",
+   "col": "position",
+   "from": "Myeongdong Station Election-Procedure Overseer",
+   "to": "Myeongdong Station Procedure Overseer",
+   "expect": 1
+  },
+  {
+   "id": "lai-80",
+   "file": "050",
+   "key": "person-0379",
+   "col": "position_ko",
+   "from": "명동역 선거 절차 감찰 담당",
+   "to": "명동역 절차 감찰 담당",
+   "expect": 1
+  },
+  {
+   "id": "lai-81",
+   "file": "050",
+   "key": "person-0379",
+   "col": "occupation",
+   "from": "Election Procedure Oversight · Assistance",
+   "to": "Procedure Oversight · Assistance",
+   "expect": 1
+  },
+  {
+   "id": "lai-82",
+   "file": "050",
+   "key": "person-0379",
+   "col": "occupation_ko",
+   "from": "선거 절차 감찰·보좌",
+   "to": "절차 감찰·보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-83",
+   "file": "050",
+   "key": "person-0380",
+   "col": "position",
+   "from": "Myeongdong Station Ballot-Box Seal Technician",
+   "to": "Myeongdong Station Seal Technician",
+   "expect": 1
+  },
+  {
+   "id": "lai-84",
+   "file": "050",
+   "key": "person-0380",
+   "col": "position_ko",
+   "from": "명동역 투표함 봉인 정비 담당",
+   "to": "명동역 봉인 정비 담당",
+   "expect": 1
+  },
+  {
+   "id": "lai-85",
+   "file": "050",
+   "key": "person-0380",
+   "col": "occupation",
+   "from": "Ballot-Box Seal Maintenance · Assistance",
+   "to": "Seal Maintenance · Assistance",
+   "expect": 1
+  },
+  {
+   "id": "lai-86",
+   "file": "050",
+   "key": "person-0380",
+   "col": "occupation_ko",
+   "from": "투표함 봉인 정비·보좌",
+   "to": "봉인 정비·보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-87",
+   "file": "050",
+   "key": "person-0383",
+   "col": "position",
+   "from": "Myeongdong Station Ballot-Box Night Guard",
+   "to": "Myeongdong Station Night Guard",
+   "expect": 1
+  },
+  {
+   "id": "lai-88",
+   "file": "050",
+   "key": "person-0383",
+   "col": "position_ko",
+   "from": "명동역 투표함 야간 경비 담당",
+   "to": "명동역 야간 경비 담당",
+   "expect": 1
+  },
+  {
+   "id": "lai-89",
+   "file": "050",
+   "key": "person-0383",
+   "col": "occupation",
+   "from": "Ballot-Box Night Guard · Assistance",
+   "to": "Night Guard · Assistance",
+   "expect": 1
+  },
+  {
+   "id": "lai-90",
+   "file": "050",
+   "key": "person-0383",
+   "col": "occupation_ko",
+   "from": "투표함 야간 경비·보좌",
+   "to": "야간 경비·보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-91",
+   "file": "050",
+   "key": "person-0386",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-92",
+   "file": "050",
+   "key": "person-0386",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 담당",
+   "to": "명동역 기록 담당",
+   "expect": 1
+  },
+  {
+   "id": "lai-93",
+   "file": "050",
+   "key": "person-0386",
+   "col": "occupation",
+   "from": "Election Records Transcription · Assistance",
+   "to": "Records Transcription · Assistance",
+   "expect": 1
+  },
+  {
+   "id": "lai-94",
+   "file": "050",
+   "key": "person-0386",
+   "col": "occupation_ko",
+   "from": "선거 기록 필사·보좌",
+   "to": "기록 필사·보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-95",
+   "file": "050",
+   "key": "person-0389",
+   "col": "position",
+   "from": "Myeongdong Station Ballot-Box Sealing Clerk",
+   "to": "Myeongdong Station Sealing Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-96",
+   "file": "050",
+   "key": "person-0389",
+   "col": "position_ko",
+   "from": "명동역 투표함 봉인 담당",
+   "to": "명동역 봉인 담당",
+   "expect": 1
+  },
+  {
+   "id": "lai-97",
+   "file": "050",
+   "key": "person-0389",
+   "col": "occupation",
+   "from": "Ballot-Box Sealing · Records Assistance",
+   "to": "Sealing · Records Assistance",
+   "expect": 1
+  },
+  {
+   "id": "lai-98",
+   "file": "050",
+   "key": "person-0389",
+   "col": "occupation_ko",
+   "from": "투표함 봉인·기록 보좌",
+   "to": "봉인·기록 보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-99",
+   "file": "050",
+   "key": "person-0391",
+   "col": "position",
+   "from": "Myeongdong Station Election Objection Intake Clerk",
+   "to": "Myeongdong Station Objection Intake Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-100",
+   "file": "050",
+   "key": "person-0391",
+   "col": "position_ko",
+   "from": "명동역 선거 이의 접수 담당",
+   "to": "명동역 이의 접수 담당",
+   "expect": 1
+  },
+  {
+   "id": "lai-101",
+   "file": "050",
+   "key": "person-0391",
+   "col": "occupation",
+   "from": "Election Objection Intake · Assistant",
+   "to": "Objection Intake · Assistant",
+   "expect": 1
+  },
+  {
+   "id": "lai-102",
+   "file": "050",
+   "key": "person-0391",
+   "col": "occupation_ko",
+   "from": "선거 이의 접수·보좌",
+   "to": "이의 접수·보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-103",
+   "file": "050",
+   "key": "person-0394",
+   "col": "occupation",
+   "from": "Relief Distribution · Station Vote Records Keeper",
+   "to": "Relief Distribution · Station Records Keeper",
+   "expect": 1
+  },
+  {
+   "id": "lai-104",
+   "file": "050",
+   "key": "person-0394",
+   "col": "occupation_ko",
+   "from": "구휼 배분·역 투표 기록 보관",
+   "to": "구휼 배분·역 기록 보관",
+   "expect": 1
+  },
+  {
+   "id": "lai-105",
+   "file": "050",
+   "key": "person-0395",
+   "col": "position",
+   "from": "Myeongdong Station Election Clerk",
+   "to": "Myeongdong Station Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-106",
+   "file": "050",
+   "key": "person-0395",
+   "col": "position_ko",
+   "from": "명동역 선거 서기",
+   "to": "명동역 서기",
+   "expect": 1
+  },
+  {
+   "id": "lai-107",
+   "file": "050",
+   "key": "person-0395",
+   "col": "occupation",
+   "from": "Station Election Clerk · Assistant",
+   "to": "Station Clerk · Assistant",
+   "expect": 1
+  },
+  {
+   "id": "lai-108",
+   "file": "050",
+   "key": "person-0395",
+   "col": "occupation_ko",
+   "from": "역 선거 서기·보좌",
+   "to": "역 서기·보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-109",
+   "file": "050",
+   "key": "person-0396",
+   "col": "position",
+   "from": "Myeongdong Station Election Witness",
+   "to": "Myeongdong Station Witness",
+   "expect": 1
+  },
+  {
+   "id": "lai-110",
+   "file": "050",
+   "key": "person-0396",
+   "col": "position_ko",
+   "from": "명동역 선거 증인",
+   "to": "명동역 증인",
+   "expect": 1
+  },
+  {
+   "id": "lai-111",
+   "file": "050",
+   "key": "person-0396",
+   "col": "occupation",
+   "from": "Election Testimony · Assistant",
+   "to": "Testimony · Assistant",
+   "expect": 1
+  },
+  {
+   "id": "lai-112",
+   "file": "050",
+   "key": "person-0396",
+   "col": "occupation_ko",
+   "from": "선거 증언·보좌",
+   "to": "증언·보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-113",
+   "file": "050",
+   "key": "person-0397",
+   "col": "position",
+   "from": "Myeongdong Station Election Validity Witness",
+   "to": "Myeongdong Station Witness",
+   "expect": 1
+  },
+  {
+   "id": "lai-114",
+   "file": "050",
+   "key": "person-0397",
+   "col": "position_ko",
+   "from": "명동역 선거 유효성 증인",
+   "to": "명동역 증인",
+   "expect": 1
+  },
+  {
+   "id": "lai-115",
+   "file": "050",
+   "key": "person-0397",
+   "col": "occupation",
+   "from": "Election Validity Testimony · Assistant",
+   "to": "Testimony · Assistant",
+   "expect": 1
+  },
+  {
+   "id": "lai-116",
+   "file": "050",
+   "key": "person-0397",
+   "col": "occupation_ko",
+   "from": "선거 유효성 증언·보좌",
+   "to": "증언·보좌",
+   "expect": 1
+  },
+  {
+   "id": "lai-117",
+   "file": "050",
+   "key": "person-0454",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-118",
+   "file": "050",
+   "key": "person-0502",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-119",
+   "file": "050",
+   "key": "person-0550",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-120",
+   "file": "050",
+   "key": "person-0598",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-121",
+   "file": "050",
+   "key": "person-0646",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-122",
+   "file": "050",
+   "key": "person-0694",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-123",
+   "file": "050",
+   "key": "person-0742",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-124",
+   "file": "050",
+   "key": "person-0790",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-125",
+   "file": "050",
+   "key": "person-0838",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-126",
+   "file": "050",
+   "key": "person-0886",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-127",
+   "file": "050",
+   "key": "person-0934",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  },
+  {
+   "id": "lai-128",
+   "file": "050",
+   "key": "person-0982",
+   "col": "position",
+   "from": "Myeongdong Station Election Records Clerk",
+   "to": "Myeongdong Station Records Clerk",
+   "expect": 1
+  }
+ ]
+}

@@ -1,0 +1,652 @@
+{
+ "rules": [
+  {
+   "id": "lal-1",
+   "file": "090",
+   "key": "person-0454",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-2",
+   "file": "090",
+   "key": "person-0454",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-3",
+   "file": "090",
+   "key": "person-0454",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-4",
+   "file": "090",
+   "key": "person-0502",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-5",
+   "file": "090",
+   "key": "person-0502",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-6",
+   "file": "090",
+   "key": "person-0502",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-7",
+   "file": "090",
+   "key": "person-0550",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-8",
+   "file": "090",
+   "key": "person-0550",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-9",
+   "file": "090",
+   "key": "person-0550",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-10",
+   "file": "090",
+   "key": "person-0598",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-11",
+   "file": "090",
+   "key": "person-0598",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-12",
+   "file": "090",
+   "key": "person-0598",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-13",
+   "file": "090",
+   "key": "person-0646",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-14",
+   "file": "090",
+   "key": "person-0646",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-15",
+   "file": "090",
+   "key": "person-0646",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-16",
+   "file": "090",
+   "key": "person-0694",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-17",
+   "file": "090",
+   "key": "person-0694",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-18",
+   "file": "090",
+   "key": "person-0694",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-19",
+   "file": "090",
+   "key": "person-0742",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-20",
+   "file": "090",
+   "key": "person-0742",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-21",
+   "file": "090",
+   "key": "person-0742",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-22",
+   "file": "090",
+   "key": "person-0790",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-23",
+   "file": "090",
+   "key": "person-0790",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-24",
+   "file": "090",
+   "key": "person-0790",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-25",
+   "file": "090",
+   "key": "person-0838",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-26",
+   "file": "090",
+   "key": "person-0838",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-27",
+   "file": "090",
+   "key": "person-0838",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-28",
+   "file": "090",
+   "key": "person-0886",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-29",
+   "file": "090",
+   "key": "person-0886",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-30",
+   "file": "090",
+   "key": "person-0886",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-31",
+   "file": "090",
+   "key": "person-0934",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-32",
+   "file": "090",
+   "key": "person-0934",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-33",
+   "file": "090",
+   "key": "person-0934",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-34",
+   "file": "090",
+   "key": "person-0982",
+   "col": "json",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-35",
+   "file": "090",
+   "key": "person-0982",
+   "col": "json_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-36",
+   "file": "090",
+   "key": "person-0982",
+   "col": "json_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-37",
+   "file": "050",
+   "key": "person-0454",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-38",
+   "file": "050",
+   "key": "person-0454",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-39",
+   "file": "050",
+   "key": "person-0454",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-40",
+   "file": "050",
+   "key": "person-0502",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-41",
+   "file": "050",
+   "key": "person-0502",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-42",
+   "file": "050",
+   "key": "person-0502",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-43",
+   "file": "050",
+   "key": "person-0550",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-44",
+   "file": "050",
+   "key": "person-0550",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-45",
+   "file": "050",
+   "key": "person-0550",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-46",
+   "file": "050",
+   "key": "person-0598",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-47",
+   "file": "050",
+   "key": "person-0598",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-48",
+   "file": "050",
+   "key": "person-0598",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-49",
+   "file": "050",
+   "key": "person-0646",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-50",
+   "file": "050",
+   "key": "person-0646",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-51",
+   "file": "050",
+   "key": "person-0646",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-52",
+   "file": "050",
+   "key": "person-0694",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-53",
+   "file": "050",
+   "key": "person-0694",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-54",
+   "file": "050",
+   "key": "person-0694",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-55",
+   "file": "050",
+   "key": "person-0742",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-56",
+   "file": "050",
+   "key": "person-0742",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-57",
+   "file": "050",
+   "key": "person-0742",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-58",
+   "file": "050",
+   "key": "person-0790",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-59",
+   "file": "050",
+   "key": "person-0790",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-60",
+   "file": "050",
+   "key": "person-0790",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-61",
+   "file": "050",
+   "key": "person-0838",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-62",
+   "file": "050",
+   "key": "person-0838",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-63",
+   "file": "050",
+   "key": "person-0838",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-64",
+   "file": "050",
+   "key": "person-0886",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-65",
+   "file": "050",
+   "key": "person-0886",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-66",
+   "file": "050",
+   "key": "person-0886",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-67",
+   "file": "050",
+   "key": "person-0934",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-68",
+   "file": "050",
+   "key": "person-0934",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-69",
+   "file": "050",
+   "key": "person-0934",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  },
+  {
+   "id": "lal-70",
+   "file": "050",
+   "key": "person-0982",
+   "col": "occupation",
+   "from": "Election Records and Handover Log",
+   "to": "Records and Handover Log",
+   "expect": 1
+  },
+  {
+   "id": "lal-71",
+   "file": "050",
+   "key": "person-0982",
+   "col": "occupation_ko",
+   "from": "선거 기록·인수인계 기록",
+   "to": "기록·인수인계 기록",
+   "expect": 1
+  },
+  {
+   "id": "lal-72",
+   "file": "050",
+   "key": "person-0982",
+   "col": "position_ko",
+   "from": "명동역 선거 기록 서기",
+   "to": "명동역 기록 서기",
+   "expect": 1
+  }
+ ]
+}
