@@ -1,0 +1,26 @@
+{
+ "rules": [
+  {
+   "id": "lba-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0004",
+   "col": "json",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.4\\.basis$",
+   "from": "backs Bak Nuri's valve lock in the alleys,",
+   "to": ""
+  },
+  {
+   "id": "lba-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0004",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.relations\\.incoming\\.4\\.basis$",
+   "from": "박누리의 밸브 잠금을 골목에서 받치고",
+   "to": ""
+  }
+ ]
+}

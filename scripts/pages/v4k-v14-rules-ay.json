@@ -1,0 +1,15 @@
+{
+ "rules": [
+  {
+   "id": "lay-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0193",
+   "col": "json_ko",
+   "exact": true,
+   "rawPathRe": "^\\.characterProfile\\.traits\\.1\\.behavior$",
+   "from": "관계. 아이작 워커의 정비 일지를 고발 근거로 받고, 이홍원의 공개 기술시험 기록을 창 쪽에서 대조하며, 마르틴 호라크의 열람 청구에 표본 번호를 붙인다.",
+   "to": "직함은 후계시험 부품 고발 보조."
+  }
+ ]
+}

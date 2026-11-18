@@ -1,0 +1,22 @@
+{
+ "rules": [
+  {
+   "id": "lbb-1",
+   "file": "110",
+   "key": "c774-acbd-c8fc-674e",
+   "col": "json",
+   "from": " When a succession exam is held, the Gangnam Station company quarters cast ballots.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "lbb-2",
+   "file": "110",
+   "key": "c774-acbd-c8fc-674e",
+   "col": "json_ko",
+   "from": " 승계 시험이 열리면 강남역 사택이 표를 던진다.",
+   "to": "",
+   "expect": 1
+  }
+ ]
+}

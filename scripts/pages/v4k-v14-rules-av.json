@@ -1,0 +1,157 @@
+{
+ "rules": [
+  {
+   "id": "lav-1",
+   "file": "110",
+   "key": "b0a8-c758-b839",
+   "col": "json",
+   "from": "station election-affairs clerk",
+   "to": "station records clerk",
+   "expect": 1
+  },
+  {
+   "id": "lav-2",
+   "file": "110",
+   "key": "b0a8-c758-b839",
+   "col": "json_ko",
+   "from": "역 선거 사무",
+   "to": "역 기록 사무",
+   "expect": 1
+  },
+  {
+   "id": "lav-3",
+   "file": "110",
+   "key": "bb38-b0a8-d3c9-6587",
+   "col": "json",
+   "from": "the the station election-procedure overseer",
+   "to": "the station procedure overseer",
+   "expect": 1
+  },
+  {
+   "id": "lav-4",
+   "file": "110",
+   "key": "bb38-b0a8-d3c9-6587",
+   "col": "json",
+   "from": "election procedure inspection and assistance work",
+   "to": "procedure inspection and assistance work",
+   "expect": 2
+  },
+  {
+   "id": "lav-5",
+   "file": "110",
+   "key": "bc29-c628-c591",
+   "col": "json",
+   "from": "relief medical support and election assistance work",
+   "to": "relief medical support and records assistance work",
+   "expect": 2
+  },
+  {
+   "id": "lav-6",
+   "file": "110",
+   "key": "c11d-cda9-c8fc",
+   "col": "json",
+   "from": "station election validity witness",
+   "to": "station witness",
+   "expect": 1
+  },
+  {
+   "id": "lav-7",
+   "file": "110",
+   "key": "c11d-cda9-c8fc",
+   "col": "json",
+   "from": "election validity testimony and assistance work",
+   "to": "testimony and assistance work",
+   "expect": 2
+  },
+  {
+   "id": "lav-8",
+   "file": "110",
+   "key": "c11d-cda9-c8fc",
+   "col": "json_ko",
+   "from": "역 선거 유효성 증인",
+   "to": "역 증인",
+   "expect": 1
+  },
+  {
+   "id": "lav-9",
+   "file": "110",
+   "key": "c601-c601-cc9c",
+   "col": "json",
+   "from": "station election records clerk",
+   "to": "station records clerk",
+   "expect": 1
+  },
+  {
+   "id": "lav-10",
+   "file": "110",
+   "key": "c601-c601-cc9c",
+   "col": "json",
+   "from": "election records transcription and assistance",
+   "to": "records transcription and assistance",
+   "expect": 2
+  },
+  {
+   "id": "lav-11",
+   "file": "110",
+   "key": "cc3d-cc3d-b155-660c",
+   "col": "json",
+   "from": "station election clerk",
+   "to": "station clerk",
+   "expect": 1
+  },
+  {
+   "id": "lav-12",
+   "file": "110",
+   "key": "cc3d-cc3d-b155-660c",
+   "col": "json",
+   "from": "election clerk and assistant work",
+   "to": "clerk and assistant work",
+   "expect": 2
+  },
+  {
+   "id": "lav-13",
+   "file": "110",
+   "key": "cc9c-c601-c591",
+   "col": "json",
+   "from": "confirmation-register cross-checking and election-assistance work",
+   "to": "confirmation-register cross-checking and records-assistance work",
+   "expect": 2
+  },
+  {
+   "id": "lav-14",
+   "file": "110",
+   "key": "cd08-c131-c8fc",
+   "col": "json",
+   "from": "station election witness",
+   "to": "station witness",
+   "expect": 1
+  },
+  {
+   "id": "lav-15",
+   "file": "110",
+   "key": "cd08-c131-c8fc",
+   "col": "json",
+   "from": "election testimony and assistant",
+   "to": "testimony and assistant",
+   "expect": 2
+  },
+  {
+   "id": "lav-16",
+   "file": "110",
+   "key": "creative-d765-c218-c0c9",
+   "col": "json",
+   "from": "station election objection intake clerk",
+   "to": "station objection intake clerk",
+   "expect": 1
+  },
+  {
+   "id": "lav-17",
+   "file": "110",
+   "key": "creative-d765-c218-c0c9",
+   "col": "json",
+   "from": "election objection intake and assistant",
+   "to": "objection intake and assistant",
+   "expect": 2
+  }
+ ]
+}
