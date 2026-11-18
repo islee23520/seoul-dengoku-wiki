@@ -14,9 +14,10 @@
  * Character dialogue is a fictional adaptation (not approved quotation) written
  * only from the public profile facts and canon; it is not a canonical quotation.
  * Point of view (CANON-BIBLE 2.0.1, owner 2026-11-18): the main story is told from three
- * protagonists' points of view: Kim Yeon-gyu (Government), I Ilseop (Free Cities) and
- * Go Ye-jin (Arc). Iyen guides the visitor through the prologue and the three acts; the
- * choice picks whose point of view to follow, and each ending is spoken by that protagonist.
+ * protagonists' points of view: Kim Yeongyu (Government), I Ilseop (Free Cities) and
+ * Go Ye-jin (Arc). Iyen is the courier who carries one message to each of them; acts II-IV
+ * are seen from the receiving leader's side, act I and the interlude are chronicle narration
+ * outside any POV, the choice picks whose eyes to follow, and each ending belongs to that leader.
  *
  * Open items (why doctors and officers sit on one side only, whether winter is
  * permanent, who holds the upper ranks) are deliberately left unanswered.
@@ -47,7 +48,7 @@ export const SPEAKERS: Record<SpeakerId, Speaker> = {
     portrait: "portraits/person-1004.webp", tint: "hsl(14 70% 62%)",
   },
   k1007: {
-    id: "k1007", personId: "person-1007", characterId: "K1007", name: { ko: "김연규", en: "Kim Yeon-gyu" },
+    id: "k1007", personId: "person-1007", characterId: "K1007", name: { ko: "김연규", en: "Kim Yeongyu" },
     title: { ko: "정부 대통령", en: "President of the Government" }, clan: "경주 김씨", rank: "대통령", state: "정부",
     portrait: "portraits/person-1007.webp", tint: "hsl(214 55% 66%)",
   },
@@ -124,72 +125,71 @@ export const SCENES: StoryScene[] = [
     place: { ko: "역 계단", en: "Station stairs" }, year: "2126 겨울", bg: "tunnel",
     lines: [
       N("v6-pro-05", "그리고 백 년이 지났다. 2126년 겨울, 서울 사람들은 아직 역 안에서 산다.", "A hundred years have passed. In the winter of 2126, Seoul's people still live inside its stations."),
-      N("v6-pro-07", "이 겨울의 이야기는 세 사람의 눈으로 이어진다. 정부의 대통령 김연규, 자유도시들의 이사회장 이일섭, 아크의 교주 고예진이다.", "This winter's story is told through three pairs of eyes: Kim Yeon-gyu, President of the Government; I Ilseop, Chair of the Board of the Free Cities; and Go Ye-jin, Hierophant of the Arc.", { caption: { ko: "세 주인공 · 세 시점", en: "Three protagonists, three points of view" } }),
-      S("v4-pro-03", "iyen", "여기는 처음이세요? 계단이 얼어 있으니까 난간을 잡고 내려오세요. 저는 이연이에요. 전령으로 일하고 있어요.", "Is this your first time here? The stairs are icy, so hold the rail as you come down. I'm Iyen. I work as a courier.", { cast: ["iyen"], source: "profile" }),
-      S("v6-pro-06", "iyen", "조재표 대장 일행의 수행 전령이에요. 대장이 돌아오기 전까지는 제가 서울을 안내할게요.", "I'm the attendant courier of Jo Jaepyo's party. Until the captain gets back, I'll show you around Seoul.", { cast: ["iyen"], source: "profile" }),
-      S("v3-pro-04", "iyen", "장갑은 있어요? 없으면 이따 하나 구해 줄게요. 일단 아래로 가요.", "Got gloves? If not, I'll find you a pair later. Let's get below first.", { cast: ["iyen"] }),
+      N("v6-pro-07", "이 겨울의 이야기는 세 사람의 눈으로 이어진다. 정부의 대통령 김연규, 자유도시들의 이사회장 이일섭, 아크의 교주 고예진이다.", "This winter's story is told through three pairs of eyes: Kim Yeongyu, President of the Government; I Ilseop, Chair of the Board of the Free Cities; and Go Ye-jin, Hierophant of the Arc.", { caption: { ko: "세 주인공 · 세 시점", en: "Three protagonists, three points of view" } }),
+      S("v4-pro-03", "iyen", "저는 이연이에요. 전령으로 일해요. 오늘 제 가방에는 전갈이 세 통 들었어요.", "I'm Iyen. I work as a courier. Today there are three messages in my bag.", { cast: ["iyen"], source: "profile" }),
+      S("v6-pro-06", "iyen", "대통령, 이사회장, 교주에게 한 통씩이에요. 조재표 대장 일행이 바깥에서 돌아오기 전에 다 전해야 해요.", "One each for the President, the Chair and the Hierophant. I have to deliver them all before Captain Jo Jaepyo's party gets back from outside.", { cast: ["iyen"], source: "profile" }),
+      S("v3-pro-04", "iyen", "장갑부터 끼자. 계단이 얼었어. 일단 아래로.", "Gloves first. The stairs are icy. Down we go.", { cast: ["iyen"] }),
     ],
   },
   {
     id: "depth", act: { ko: "1막 · 깊이가 계급", en: "Act I · Depth Is Class" }, title: { ko: "지하 3층과 지상 1층", en: "Third Basement and Ground Floor" },
     place: { ko: "역 안", en: "Inside the station" }, year: "2126 겨울", bg: "tunnel",
     lines: [
-      S("v6-a1-01", "iyen", "여기는 지하 3층이에요. 셔터 안쪽이라 따뜻하죠. 땅속 열도 올라오고요.", "This is the third basement level. It's warm inside the shutter, and heat comes up from the ground.", { cast: ["iyen"], source: "faction", caption: { ko: "지하는 깊을수록 상류 · 지상은 높을수록 하층", en: "Deeper underground is higher; higher above ground is lower" } }),
-      S("v6-a1-02", "iyen", "위로 올라갈수록 춥고 바람이 세요. 드론에도 노출돼 있고요. 위에 사는 사람일수록 가진 게 없어요.", "The higher you go, the colder and windier it gets, and the more you're exposed to drones. The higher up someone lives, the less they own.", { cast: ["iyen"], source: "faction" }),
-      S("v6-a1-03", "iyen", "셔터를 내리면 밖에서 못 들어와요. 출구를 지키기도 쉽고요. 그래서 먼저 세력을 세운 사람들이 깊은 자리를 먼저 받았어요.", "Once the shutter's down, nobody gets in from outside, and the exits are easy to guard. So the people who founded each faction were first to get the deep places.", { cast: ["iyen"], source: "faction" }),
-      S("v6-a1-04", "iyen", "역을 통째로 가진 사람이 역장이에요. 역장이 여럿이면 본부장, 그 위로도 이어지고요. 역이 없는 사람은 모두 일반 시민이에요.", "Whoever owns a whole station is the Stationmaster. Owning several makes you a Division Chief, and the ranks go on above that. People with no station are all ordinary citizens.", { cast: ["iyen"], source: "faction", caption: { ko: "역을 가진 사람 = 역장", en: "Owning a station makes a Stationmaster" } }),
+      N("v6-a1-01", "지하 3층은 셔터 안쪽이라 따뜻하다. 땅속 열도 올라온다.", "The third basement level is warm, inside the shutter, and heat rises from the ground.", { source: "faction", caption: { ko: "지하는 깊을수록 상류 · 지상은 높을수록 하층", en: "Deeper underground is higher; higher above ground is lower" } }),
+      N("v6-a1-02", "위로 올라갈수록 춥고 바람이 세며, 드론에도 드러난다. 위에 사는 사람일수록 가진 것이 적다.", "The higher you go, the colder and windier it gets, and the more exposed to drones. The higher up someone lives, the less they own.", { source: "faction" }),
+      N("v6-a1-03", "셔터를 내리면 밖에서 들어오지 못하고, 출구를 지키기도 쉽다. 그래서 먼저 세력을 세운 사람들이 깊은 자리를 먼저 차지했다.", "Once the shutter is down nobody gets in from outside, and the exits are easy to guard. So the people who founded each faction took the deep places first.", { source: "faction" }),
+      N("v6-a1-04", "역을 통째로 가진 사람이 역장이다. 역장 여럿을 거느리면 본부장이고, 그 위로도 이어진다. 역이 없는 사람은 모두 일반 시민이다.", "Whoever owns a whole station is a Stationmaster. Holding several makes a Division Chief, and the ranks go on above that. People with no station are all ordinary citizens.", { source: "faction", caption: { ko: "역을 가진 사람 = 역장", en: "Owning a station makes a Stationmaster" } }),
       N("v6-a1-05", "서울에서 가장 작은 영토 단위는 구가 아니라 역이다. 역은 지하철역과 그 위의 지상 성채 영역을 함께 이른다.", "The smallest territory in Seoul is not a district but a station: the subway station together with the surface stronghold above it.", { source: "faction" }),
     ],
   },
   {
-    id: "government", act: { ko: "2막 · 정부", en: "Act II · The Government" }, title: { ko: "전차는 있고 의사는 없다", en: "Tanks, but No Doctors" },
+    id: "government", act: { ko: "2막 · 정부 · 김연규의 시점", en: "Act II · The Government · Kim Yeongyu's POV" }, title: { ko: "전차는 있고 의사는 없다", en: "Tanks, but No Doctors" },
     place: { ko: "청와대 쪽 · 한강 북쪽", en: "Near the Blue House · north of the Han" }, year: "2126 겨울", bg: "archive",
     lines: [
-      N("v6-a2-01", "한강 북쪽 14구는 정부의 땅이다. 대통령은 김연규이고, 그 자리는 종신이다. 그 아래로 청장, 국장, 본부장, 역장이 이어진다.", "The fourteen districts north of the Han are the Government's land. The President is Kim Yeon-gyu, and the office is held for life. Below him run Commissioners, Bureau Chiefs, Division Chiefs and Stationmasters.", { source: "faction", caption: { ko: "정부 · 한강 북쪽 14구", en: "Government · fourteen districts north of the Han" } }),
-      S("v6-a2-02", "iyen", "대통령님, 손님 한 분 모시고 왔어요. 정부가 어떤 곳인지 궁금하대요.", "Mr. President, I've brought a visitor. They want to know what the Government is like.", { cast: ["iyen", "k1007"] }),
-      S("v6-a2-03", "k1007", "김연규입니다. 앉으십시오. 정부는 장부에 기록된 사람만 국민으로 인정합니다.", "I'm Kim Yeon-gyu. Please sit. The Government recognizes as citizens only those written in its ledger.", { cast: ["iyen", "k1007"], source: "profile" }),
+      N("v6-a2-01", "한강 북쪽 14구는 정부의 땅이다. 대통령은 김연규이고, 그 자리는 종신이다. 그 아래로 청장, 국장, 본부장, 역장이 이어진다.", "The fourteen districts north of the Han are the Government's land. The President is Kim Yeongyu, and the office is held for life. Below him run Commissioners, Bureau Chiefs, Division Chiefs and Stationmasters.", { source: "faction", caption: { ko: "정부 · 한강 북쪽 14구", en: "Government · fourteen districts north of the Han" } }),
+      S("v6-a2-02", "iyen", "대통령님, 전갈이에요. 강 건너에서 온 거예요.", "Mr. President, a message for you. It came from across the river.", { cast: ["iyen", "k1007"] }),
+      S("v6-a2-03", "k1007", "앉으세요. 정부는 장부에 기록된 사람만 국민으로 인정합니다. 보낸 사람이 우리 장부에 있는지부터 보겠습니다.", "Sit down. The Government recognizes as citizens only those written in its ledger. First I'll see whether the sender is in our ledger.", { cast: ["iyen", "k1007"], source: "profile" }),
       S("v6-a2-04", "k1007", "전차는 우리에게 있습니다. 장교도, 중화기도 있습니다. 정면으로 맞붙는 싸움이라면 우리가 강합니다.", "We have the tanks. We have the officers and the heavy weapons. In a head-on fight, we are the strong ones.", { cast: ["iyen", "k1007"], source: "faction" }),
       S("v6-a2-05", "k1007", "의사는 없습니다. 대학병원 건물은 여럿 쥐고 있지만, 응급 처치까지가 우리 한계입니다. 그래서 이긴 싸움에서도 사람이 돌아오지 않습니다.", "We have no doctors. We hold several university hospital buildings, but emergency first aid is our limit. So even after the battles we win, people don't come back.", { cast: ["iyen", "k1007"], source: "faction", caption: { ko: "중상자는 돌아오지 못한다", en: "The badly wounded do not come back" } }),
       S("v6-a2-06", "iyen", "그러면 크게 다친 사람은 못 돌아오는 거네요.", "So the badly wounded just don't return.", { cast: ["iyen", "k1007"] }),
       S("v6-a2-07", "k1007", "흰십자단이 응급 처치를 하고 환자를 옮깁니다. 거기까지입니다.", "The White Cross gives first aid and carries the patients. That is as far as it goes.", { cast: ["iyen", "k1007"], source: "faction" }),
-      S("v6-a2-08", "iyen", "강 건너에는 의사가 있다던데요.", "I hear there are doctors across the river.", { cast: ["iyen", "k1007"] }),
-      S("v6-a2-09", "k1007", "강 건너는 우리 장부 밖입니다. 그 이야기는 여기까지 하겠습니다.", "Across the river is outside our ledger. I'll leave that topic here.", { cast: ["iyen", "k1007"], source: "faction" }),
+      S("v6-a2-08", "iyen", "이 전갈, 강 건너 의사들 쪽에서 왔어요.", "This message comes from the doctors' side, across the river.", { cast: ["iyen", "k1007"] }),
+      S("v6-a2-09", "k1007", "강 건너는 우리 장부 밖입니다. 그래도 읽겠습니다. 의사가 없는 쪽은 우리니까요.", "Across the river is outside our ledger. Still, I'll read it. We are the side without doctors.", { cast: ["iyen", "k1007"], source: "faction" }),
     ],
   },
   {
-    id: "free-cities", act: { ko: "3막 · 자유도시들", en: "Act III · The Free Cities" }, title: { ko: "의사는 있고 장교는 없다", en: "Doctors, but No Officers" },
+    id: "free-cities", act: { ko: "3막 · 자유도시들 · 이일섭의 시점", en: "Act III · The Free Cities · I Ilseop's POV" }, title: { ko: "의사는 있고 장교는 없다", en: "Doctors, but No Officers" },
     place: { ko: "관악 · 남태령 너머", en: "Gwanak · beyond Namtaeryeong" }, year: "2126 겨울", bg: "granary",
     lines: [
       N("v6-a3-01", "한강 남서쪽 7구는 자유도시들의 땅이다. 각자 선 독립 도시들이고, 묶어 부르는 이름은 없다. 그들은 지배를 거부하는 것이 자유라고 말한다.", "The seven districts southwest of the Han belong to the Free Cities. They are independent cities, each on its own, and there is no name that binds them. They say that refusing to be ruled is what freedom means.", { source: "faction", caption: { ko: "자유도시들 · 한강 남서쪽 7구", en: "Free Cities · seven districts southwest of the Han" } }),
-      S("v6-a3-02", "iyen", "이사회장님, 손님 왔어요. 바쁘세요?", "Chair, you have a visitor. Are you busy?", { cast: ["iyen", "k998"] }),
-      S("v6-a3-03", "k998", "이일섭입니다. 이사회장이라고들 부르지만, 저는 신경 연결 의술을 잇는 집안의 후계일 뿐입니다. 밭과 공방은 집안 부업이고요.", "I'm I Ilseop. People call me Chair of the Board, but I'm only the heir of a family that carries on neural-link medicine. The field and the workshop are our family's side work.", { cast: ["iyen", "k998"], source: "profile" }),
+      S("v6-a3-02", "iyen", "이사회장님, 전갈이요. 바쁘세요?", "Chair, a message for you. Are you busy?", { cast: ["iyen", "k998"] }),
+      S("v6-a3-03", "k998", "고마워요, 이연. 다들 저를 이사회장이라고 부르지만, 저는 신경 연결 의술을 잇는 집안의 후계일 뿐이에요. 밭과 공방은 집안 부업이고요.", "Thank you, Iyen. Everyone calls me Chair of the Board, but I'm only the heir of a family that carries on neural-link medicine. The field and the workshop are our family's side work.", { cast: ["iyen", "k998"], source: "profile" }),
       S("v6-a3-04", "k998", "자유도시에는 의사가 있습니다. 서울의 의사와 신경 연결 시술자는 거의 다 이곳에 있어요. 사람과 식량이 있어서 오래 버팁니다.", "The Free Cities have doctors. Nearly all of Seoul's doctors and neural-link practitioners are here. We have people and food, so we can hold out for a long time.", { cast: ["iyen", "k998"], source: "faction" }),
       S("v6-a3-05", "k998", "하지만 장교는 없습니다. 징병제로 받은 기초 훈련 덕에 소총을 들고 정비도 하지만, 전차와 중화기를 지휘할 사람이 없어요.", "But we have no officers. Conscript basic training lets us carry rifles and keep them maintained, but there is nobody to command tanks and heavy weapons.", { cast: ["iyen", "k998"], source: "faction", caption: { ko: "의사는 있고 장교는 없다", en: "Doctors, but no officers" } }),
       S("v6-a3-06", "iyen", "아무도 지배하지 않는 게 자유도시잖아요. 그런데 왜 이사회장이 계세요?", "Free Cities don't let anyone rule, right? So why is there a Chair?", { cast: ["iyen", "k998"] }),
       S("v6-a3-07", "k998", "저희 집안은 계급으로는 다른 이사와 같은 이사예요. 그런데 사람들은 우리가 이끌어 주길 바랍니다. 지배받기는 싫다면서 이끌어 달라고 하죠. 그래서 대대로 이사회장입니다.", "By rank, my family is a Director like any other. Yet people want us to lead. They refuse to be ruled, and still ask us to lead. That is why we have been Chair for generations.", { cast: ["iyen", "k998"], source: "faction", caption: { ko: "자유도시의 모순", en: "The contradiction of the Free Cities" } }),
-      S("v6-a3-08", "k1008", "이사회장님의 측근 민웅기입니다. 통신 정비와 부품 배분을 맡고 있어요. 사람들은 지배는 싫다고 하면서, 부품이 모자라면 누군가 결정해 달라고 합니다.", "I'm Min Woong-gi, the Chair's aide. I handle comms repair and parts distribution. People say they don't want to be ruled, but when parts run short they want somebody to decide.", { cast: ["iyen", "k1008"], source: "profile" }),
+      S("v6-a3-08", "k1008", "이사회장님, 부품이 또 모자랍니다. 다들 지배는 싫다면서, 이럴 땐 누군가 결정해 달라고 하네요.", "Chair, we're short of parts again. Everyone says they don't want to be ruled, yet at times like this they want somebody to decide.", { cast: ["k998", "k1008"], source: "profile" }),
     ],
   },
   {
-    id: "arc", act: { ko: "4막 · 아크", en: "Act IV · The Arc" }, title: { ko: "호출부호 백야", en: "Callsign Baekya" },
+    id: "arc", act: { ko: "4막 · 아크 · 고예진의 시점", en: "Act IV · The Arc · Go Ye-jin's POV" }, title: { ko: "호출부호 백야", en: "Callsign Baekya" },
     place: { ko: "강남 · 선정릉에서 수서까지", en: "Gangnam · from Seonjeongneung to Suseo" }, year: "2126 겨울", bg: "suseo",
     lines: [
       N("v6-a4-01", "한강 남쪽 강남 4구는 아크의 땅이다. 아크는 자유도시에서 갈라져 나왔고, 이전의 모든 종교를 대신한다. 최상단은 교주 고예진이다.", "The four Gangnam districts south of the Han belong to the Arc. It split off from the Free Cities and replaced every earlier religion. Its head is the Hierophant, Go Ye-jin.", { source: "faction", caption: { ko: "아크 · 강남 4구", en: "Arc · four Gangnam districts" } }),
       N("v6-a4-02", "신도는 몸의 한 부분을 기계로 바꾼다. 그것을 세례라고 부른다. 아크는 고대 데이터센터 소프트웨어를 쥐고 있다.", "Believers replace a part of their body with a machine. This is called baptism. The Arc holds ancient data-center software.", { source: "faction" }),
-      S("v6-a4-03", "iyen", "무전 소리 들려요? 선정릉에서 수서까지 이어 주는 분이에요.", "Hear that radio? He's the one who links Seonjeongneung to Suseo.", { cast: ["iyen", "k1009"] }),
-      S("v6-a4-04", "k1009", "백야, 백야. 선정릉에서 수서. 응답 바랍니다.", "Baekya, Baekya. Seonjeongneung calling Suseo. Please respond.", { cast: ["iyen", "k1009"], source: "profile" }),
-      S("v6-a4-05", "k1009", "신종목입니다. 호출부호는 백야고요. 호위와 탐사 계약 일을 하면서 이 구간 무전을 잡습니다.", "I'm Shin Jong-mok, callsign Baekya. I take escort and survey contracts, and I handle the radio on this stretch.", { cast: ["iyen", "k1009"], source: "profile" }),
+      S("v6-a4-10", "iyen", "교주님, 전갈이에요. 선정릉 쪽 무전도 같이 들어오고 있어요.", "Hierophant, a message for you. The radio from Seonjeongneung is coming in too.", { cast: ["iyen", "k1018"] }),
+      S("v6-a4-11", "k1018", "말하는 사람의 목소리와 내용이 맞는지부터 듣겠습니다. 손해와 이익은 그다음에 따지죠.", "First I'll listen for whether the voice matches the words. Gains and losses come after that.", { cast: ["iyen", "k1018"], source: "profile" }),
+      S("v6-a4-04", "k1009", "백야, 백야. 선정릉에서 수서. 응답 바랍니다.", "Baekya, Baekya. Seonjeongneung calling Suseo. Please respond.", { cast: ["k1018", "k1009"], source: "profile" }),
+      S("v6-a4-05", "k1009", "교주님, 신종목입니다. 호출부호는 백야고요. 호위와 탐사 계약 일을 하면서 이 구간 무전을 잡고 있습니다.", "Hierophant, this is Shin Jong-mok, callsign Baekya. I take escort and survey contracts, and I'm handling the radio on this stretch.", { cast: ["k1018", "k1009"], source: "profile" }),
       S("v6-a4-06", "iyen", "아크 신도는 세례를 받으면 몸 한 부분이 기계가 된다던데, 맞아요?", "I heard that when Arc believers are baptized, part of their body becomes a machine. Is that right?", { cast: ["iyen", "k1009"] }),
       S("v6-a4-07", "k1009", "맞아요. 신도들은 고예진 교주를 메시아라고 불러요. 다만 아크가 붙이는 기계 몸은 단순한 명령만 받아요.", "That's right. The believers call the Hierophant, Go Ye-jin, the Messiah. But the machine bodies the Arc fits take only simple commands.", { cast: ["iyen", "k1009"], source: "faction" }),
       S("v6-a4-08", "iyen", "아크 소프트웨어는 남의 기계도 켜고 끈다면서요?", "I heard the Arc's software can switch other people's machines on and off.", { cast: ["iyen", "k1009"] }),
       S("v6-a4-09", "k1009", "정부의 드론이나 자유도시의 의료 로봇은 그게 있어야 제대로 돌아요. 그래서 아크가 그 힘을 쓸 때마다 다들 의심해요. 백도어가 있는 건 아닌가 하고요.", "The Government's drones and the Free Cities' medical robots need it to run properly. So every time the Arc uses that power, everyone gets suspicious. They wonder whether there's a backdoor.", { cast: ["iyen", "k1009"], source: "faction", caption: { ko: "켜고 끄는 힘 · 백도어 불신", en: "The power to switch on and off · distrust of a backdoor" } }),
-      S("v6-a4-10", "iyen", "교주님, 손님 모시고 왔어요. 아크가 어떤 곳인지 궁금하대요.", "Hierophant, I've brought a visitor. They want to know what the Arc is like.", { cast: ["iyen", "k1018"] }),
-      S("v6-a4-11", "k1018", "고예진입니다. 말씀하실 때 표정과 말이 맞는지부터 보겠습니다. 손해와 이익은 그다음에 따지죠.", "I'm Go Ye-jin. When you speak, I'll first check whether your face matches your words. Gains and losses come after that.", { cast: ["iyen", "k1018"], source: "profile" }),
       S("v6-a4-12", "k1018", "저는 전력망과 설비를 고치던 엔지니어였습니다. 지금도 무엇이 멈추면 원인부터 찾습니다.", "I was an engineer who repaired power grids and equipment. Even now, when something stops, I look for the cause first.", { cast: ["iyen", "k1018"], source: "profile" }),
     ],
   },
   {
-    id: "outside", act: { ko: "5막 · 바깥 기계", en: "Act V · The Machines Outside" }, title: { ko: "불 꺼", en: "Lights Off" },
+    id: "outside", act: { ko: "막간 · 바깥 기계", en: "Interlude · The Machines Outside" }, title: { ko: "불 꺼", en: "Lights Off" },
     place: { ko: "서울 밖 · 차량기지 가는 길", en: "Outside Seoul · the road to the depot" }, year: "2126 겨울", bg: "railyard",
     lines: [
       N("v6-a5-01", "서울 밖에는 대정전 때 쓰던 기계들이 마지막 명령을 되풀이하며 돌아다닌다. 그것들을 만든 사람은 없고, 남은 것은 명령뿐이다.", "Outside Seoul, machines from the Great Blackout still roam, repeating their last orders. No one who built them remains. Only the orders are left.", { source: "faction" }),
@@ -198,7 +198,7 @@ export const SCENES: StoryScene[] = [
       S("v6-a5-04", "iyen", "손전등 켤까요? 너무 어두워서요.", "Should I switch on the flashlight? It's too dark.", { cast: ["iyen", "k1003"] }),
       S("v6-a5-05", "k1003", "불 꺼. 저것들은 빛을 따라온다.", "Lights off. Those things follow light.", { cast: ["iyen", "k1003"], caption: { ko: "빛과 열에 끌려온다", en: "Drawn to light and heat" } }),
       S("v6-a5-06", "k1003", "열도 마찬가지다. 난로는 덮어 두고, 숨 낮추고 내 뒤로 붙어.", "Heat does the same. Cover the stove, keep your breath low, and stay behind me.", { cast: ["iyen", "k1003"] }),
-      S("v6-a5-07", "iyen", "알겠어요. 불 없이 가요. 제 어깨 잡으세요.", "Got it. We go without light. Hold on to my shoulder.", { cast: ["iyen", "k1003"] }),
+      S("v6-a5-07", "iyen", "알겠어요. 불 끄고 대장 뒤에 바짝 붙을게요.", "Got it. Lights off, and I'll stay right behind you, Captain.", { cast: ["iyen", "k1003"] }),
     ],
   },
 ];
@@ -207,9 +207,9 @@ export const CHOICE = {
   id: "crossroad",
   title: { ko: "누구의 눈으로 볼까", en: "Whose Eyes?" },
   place: { ko: "환승 통로", en: "Transfer corridor" }, year: "2126 겨울", bg: "tunnel" as BgId,
-  prompt: S("v6-cho-01", "iyen", "정부, 자유도시들, 아크. 셋 다 보셨죠? 이 겨울을 누구의 눈으로 따라갈지 골라요. 대통령, 이사회장, 교주 가운데 한 사람이에요. 길은 제가 안내할게요.", "The Government, the Free Cities, the Arc. You've seen all three. Now choose whose eyes you'll follow through this winter: the President, the Chair or the Hierophant. I'll show you the way.", { cast: ["iyen"] }),
+  prompt: S("v6-cho-01", "iyen", "전갈은 다 전했어요. 정부, 자유도시들, 아크. 이 겨울을 누구의 눈으로 따라갈지 골라요. 대통령, 이사회장, 교주 가운데 한 사람이에요.", "All three messages are delivered. The Government, the Free Cities, the Arc: choose whose eyes you'll follow through this winter. The President, the Chair or the Hierophant.", { cast: ["iyen"] }),
   options: [
-    { id: "government" as ChoiceId, speaker: "k1007" as SpeakerId, label: { ko: "정부", en: "Government" }, line: { ko: "대통령 김연규의 눈으로, 전차와 장교를 가진 정부를 따라간다.", en: "Follow the Government, which has the tanks and officers, through President Kim Yeon-gyu's eyes." } },
+    { id: "government" as ChoiceId, speaker: "k1007" as SpeakerId, label: { ko: "정부", en: "Government" }, line: { ko: "대통령 김연규의 눈으로, 전차와 장교를 가진 정부를 따라간다.", en: "Follow the Government, which has the tanks and officers, through President Kim Yeongyu's eyes." } },
     { id: "free" as ChoiceId, speaker: "k998" as SpeakerId, label: { ko: "자유도시들", en: "Free Cities" }, line: { ko: "이사회장 이일섭의 눈으로, 의사를 가진 자유도시들을 따라간다.", en: "Follow the Free Cities, which have the doctors, through Chair I Ilseop's eyes." } },
     { id: "arc" as ChoiceId, speaker: "k1018" as SpeakerId, label: { ko: "아크", en: "Arc" }, line: { ko: "교주 고예진의 눈으로, 남의 기계를 켜고 끄는 아크를 따라간다.", en: "Follow the Arc, which can switch other people's machines on and off, through Hierophant Go Ye-jin's eyes." } },
   ],
@@ -219,7 +219,7 @@ export const ENDINGS: Record<ChoiceId, { title: { ko: string; en: string }; bg: 
   government: {
     title: { ko: "결말 · 정부", en: "Ending · Government" }, bg: "archive",
     lines: [
-      S("v6-end-gov-01", "k1007", "한강 건너에서 연락이 왔습니다. 우리 장교 한 명이 붙잡혀 있고, 몸값을 협상하자고 합니다. 협상 자리에 동행해 주십시오.", "A message came from across the Han. One of our officers is being held, and they want to negotiate a ransom. Please come with us to the table.", { cast: ["iyen", "k1007"] }),
+      S("v6-end-gov-01", "k1007", "한강 건너에서 연락이 왔습니다. 우리 장교 한 명이 붙잡혀 있고, 몸값을 협상하자고 합니다. 이연, 답신을 들고 협상 자리까지 같이 갑시다.", "A message came from across the Han. One of our officers is being held, and they want to negotiate a ransom. Iyen, bring the reply and come with me to the table.", { cast: ["iyen", "k1007"] }),
       S("v6-end-gov-02", "iyen", "몸값 협상은 서두르면 지는 거예요. 값이 얼마인지부터 들어 봐요.", "You lose a ransom talk by rushing. Let's hear the price first.", { cast: ["iyen", "k1007"] }),
     ],
   },
