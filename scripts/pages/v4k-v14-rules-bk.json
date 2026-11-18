@@ -1,0 +1,58 @@
+{
+ "rules": [
+  {
+   "id": "lbk-1",
+   "file": "050",
+   "key": "person-0368",
+   "col": "occupation",
+   "from": "Logging Collision Time and Residual Pressure Readings",
+   "to": "Logging Collision Times",
+   "expect": 1
+  },
+  {
+   "id": "lbk-2",
+   "file": "050",
+   "key": "person-0368",
+   "col": "occupation_ko",
+   "from": "충돌 시각·잔압 수치 일지 기록",
+   "to": "충돌 시각 일지 기록",
+   "expect": 1
+  },
+  {
+   "id": "lbk-3",
+   "file": "110",
+   "key": "d0c1-ad11-c0b0",
+   "col": "json",
+   "from": "logging collision time and residual pressure readings",
+   "to": "logging collision times",
+   "expect": 2
+  },
+  {
+   "id": "lbk-4",
+   "file": "110",
+   "key": "d0c1-ad11-c0b0",
+   "col": "json_ko",
+   "from": "충돌 시각·잔압 수치 일지 기록",
+   "to": "충돌 시각 일지 기록",
+   "expect": 2
+  },
+  {
+   "id": "lbk-5",
+   "file": "110",
+   "key": "c624-d574-c8fc",
+   "col": "json",
+   "from": " O Gyeongjae did not ratify Han Jaemok's western expansion proposal. He agreed to jointly seal the original box of the pump maintenance process with the Free City.",
+   "to": "",
+   "expect": 1
+  },
+  {
+   "id": "lbk-6",
+   "file": "110",
+   "key": "c624-d574-c8fc",
+   "col": "json_ko",
+   "from": " 오경재는 한재목의 서부 확대안을 인준하지 않았다. 펌프 정비 공정의 원본 함은 자유도시와 공동 봉인하기로 합의했다.",
+   "to": "",
+   "expect": 1
+  }
+ ]
+}

@@ -15237,13 +15237,13 @@ G17-SC1, G17-SC2.
 | Common species, variants and command scope | A damage-stage head chasing faint shapes because of a scratched optical dome and slow gimbal. At the swarm''s rear it raised both large metal and light as intrusion, growing false alarms; washed, it recovered into an ordinary head, and neglected, it left only a fixed amber lamp. |
 
 - Role and body: A damage-stage unit that can pursue only indistinct shapes because of its scratched optical dome and slow gimbal.
-- Origin: An old mast head whose sensors have worn down from a shortage of cleaning water and sandstorms.
+- Origin: An old mast head whose sensors have worn down from sandstorms.
 - Habitat and needs: It patrols low railings and shaded rooftops and needs dome-cleaning water, a soft cloth, and a small power reserve.
 - Life cycle and maintenance: Cleaning restores it to an ordinary head; if neglected, only a fixed yellow light remains.
 - Behavior and hierarchy: At the rear of the group, it reports both large metal objects and lights as intruders, increasing false alarms.
 - Escalation: Stage 1, hazy tracking; stage 2, yellow stop; stage 3, it triggers a chain of red judgments by other heads.
 - Engagement and response: Cover its dome and lure it with cleaning water, and it will maintain itself.
-- Negotiation and moral choice: If the station watch dims lamps lit at night and the heat of warmed sickbeds and lowers the shutter it does not come close. If it is captured and stripped of band filters and optical domes it stops, and the number in this district falls by that much. It can be kept as a simple warning light, but scarce cleaning water must be shared with medical care.
+- Negotiation and moral choice: If the station watch dims lamps lit at night and the heat of warmed sickbeds and lowers the shutter it does not come close. If it is captured and stripped of band filters and optical domes it stops, and the number in this district falls by that much. It can be kept as a simple warning light.
 - Scenario connections: G17-SC1.
 
 <a id="Hostile-Group-G17-heading-0127"></a>
@@ -15947,13 +15947,13 @@ G17-SC1, G17-SC2.
 | 공통종·변이와 지휘 범위 | 긁힌 광학 돔과 느린 짐벌 때문에 희미한 형체만 쫓는 손상 단계 헤드다. 무리 후미에서 큰 금속과 빛을 모두 침입으로 올려 오탐을 늘리고, 세척하면 일반 헤드로 회복하고 방치하면 고정 황색등만 남는다. |
 
 - 역할·신체: 손상 단계형으로, 긁힌 광학 돔과 느린 짐벌 때문에 희미한 형체만 쫓는다.
-- 기원: 세척수 부족과 모래바람으로 센서가 닳은 오래된 마스트 헤드다.
+- 기원: 모래바람으로 센서가 닳은 오래된 마스트 헤드다.
 - 서식·필요: 낮은 난간과 그늘진 옥상을 돌며 돔 세척수, 부드러운 천, 작은 축전이 필요하다.
 - 생애·정비: 세척하면 일반 헤드로 회복하고 방치하면 고정 황색등만 남는다.
 - 행동·위계: 무리 후미에서 큰 금속과 빛을 모두 침입으로 올려 오탐을 늘린다.
 - 상승: 1단계 흐린 추적, 2단계 황색 정지, 3단계 다른 헤드의 적색 판정을 연쇄 유발한다.
 - 교전·대응: 돔을 덮고 세척수를 놓아 유인하면 스스로 정비한다.
-- 교섭·도덕 선택: 수명이 거의 다한 기체여서 잡아 대역 필터와 광학 돔을 떼어 가는 것이 가장 값싼 길이다. 다시 켠 마스트는 깨운 경계 초소로 쓴다. 단순 경계등으로 남길 수 있지만 귀한 세척수를 의료와 나눠야 한다.
+- 교섭·도덕 선택: 수명이 거의 다한 기체여서 잡아 대역 필터와 광학 돔을 떼어 가는 것이 가장 값싼 길이다. 다시 켠 마스트는 깨운 경계 초소로 쓴다. 단순 경계등으로 남길 수 있다.
 - 시나리오 연결: G17-SC1.
 
 <a id="Hostile-Group-G17-heading-0127"></a>

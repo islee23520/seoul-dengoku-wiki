@@ -529,13 +529,13 @@ G17-SC1, G17-SC2.
 | Common species, variants and command scope | A damage-stage head chasing faint shapes because of a scratched optical dome and slow gimbal. At the swarm's rear it raised both large metal and light as intrusion, growing false alarms; washed, it recovered into an ordinary head, and neglected, it left only a fixed amber lamp. |
 
 - Role and body: A damage-stage unit that can pursue only indistinct shapes because of its scratched optical dome and slow gimbal.
-- Origin: An old mast head whose sensors have worn down from a shortage of cleaning water and sandstorms.
+- Origin: An old mast head whose sensors have worn down from sandstorms.
 - Habitat and needs: It patrols low railings and shaded rooftops and needs dome-cleaning water, a soft cloth, and a small power reserve.
 - Life cycle and maintenance: Cleaning restores it to an ordinary head; if neglected, only a fixed yellow light remains.
 - Behavior and hierarchy: At the rear of the group, it reports both large metal objects and lights as intruders, increasing false alarms.
 - Escalation: Stage 1, hazy tracking; stage 2, yellow stop; stage 3, it triggers a chain of red judgments by other heads.
 - Engagement and response: Cover its dome and lure it with cleaning water, and it will maintain itself.
-- Negotiation and moral choice: If the station watch dims lamps lit at night and the heat of warmed sickbeds and lowers the shutter it does not come close. If it is captured and stripped of band filters and optical domes it stops, and the number in this district falls by that much. It can be kept as a simple warning light, but scarce cleaning water must be shared with medical care.
+- Negotiation and moral choice: If the station watch dims lamps lit at night and the heat of warmed sickbeds and lowers the shutter it does not come close. If it is captured and stripped of band filters and optical domes it stops, and the number in this district falls by that much. It can be kept as a simple warning light.
 - Scenario connections: G17-SC1.
 
 <a id="Hostile-Group-G17-heading-0127"></a>

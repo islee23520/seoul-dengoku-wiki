@@ -1,0 +1,104 @@
+{
+ "rules": [
+  {
+   "id": "lbl-1",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "but competes with her over interpretive authority",
+   "to": "but competes with him over interpretive authority"
+  },
+  {
+   "id": "lbl-2",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "but competes with her over interpretive authority",
+   "to": "but competes with him over interpretive authority"
+  },
+  {
+   "id": "lbl-3",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Relationships.** He cooperates with Yun Seorin",
+   "to": "**Relationships.** She cooperates with Yun Seorin"
+  },
+  {
+   "id": "lbl-4",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", he disputes the wording of termination conditions",
+   "to": ", she disputes the wording of termination conditions"
+  },
+  {
+   "id": "lbl-5",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0007",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": ", and he owes Yi Seodam",
+   "to": ", and she owes Yi Seodam"
+  },
+  {
+   "id": "lbl-6",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.sections\\.Relationships$",
+   "from": "She is the ally who enforces Jeong Hojun's veto in the field",
+   "to": "He is the ally who enforces Jeong Hojun's veto in the field"
+  },
+  {
+   "id": "lbl-7",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0058",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "She is the ally who enforces Jeong Hojun's veto in the field",
+   "to": "He is the ally who enforces Jeong Hojun's veto in the field"
+  },
+  {
+   "id": "lbl-8",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0110",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Intervention.** She can bring the handwriting",
+   "to": "**Intervention.** He can bring the handwriting"
+  },
+  {
+   "id": "lbl-9",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0112",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "**Intervention.** She can recover the forged",
+   "to": "**Intervention.** He can recover the forged"
+  },
+  {
+   "id": "lbl-10",
+   "file": "090",
+   "expect": 1,
+   "key": "person-0394",
+   "col": "json",
+   "rawPathRe": "^\\.biography$",
+   "from": "in his work as Myeongdong Station's relief",
+   "to": "in her work as Myeongdong Station's relief"
+  }
+ ]
+}
