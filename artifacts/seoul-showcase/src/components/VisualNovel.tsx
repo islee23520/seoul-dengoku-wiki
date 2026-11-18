@@ -234,11 +234,14 @@ function Snow() {
 type Slot = { id: SpeakerId; side: "left" | "right" | "center"; leaving: boolean };
 
 function Stage({ cast, speaker, speaking }: { cast: SpeakerId[]; speaker: SpeakerId; speaking: boolean }) {
-  // Iyen on the left as guide; the person she introduces on the right. Departing figures play an exit before unmounting.
+  // Iyen, when present, stands on the left; otherwise the first cast member does. The next cast member stands on the right.
+  // Departing figures play an exit before unmounting.
   const target = useMemo<Slot[]>(() => {
-    const right = cast.find((c) => c !== "iyen") ?? null;
+    const others = cast.filter((c) => c !== "iyen");
+    const left = cast.includes("iyen") ? "iyen" : others.shift() ?? null;
+    const right = others[0] ?? null;
     const out: Slot[] = [];
-    if (cast.includes("iyen")) out.push({ id: "iyen", side: right ? "left" : "center", leaving: false });
+    if (left) out.push({ id: left, side: right ? "left" : "center", leaving: false });
     if (right) out.push({ id: right, side: "right", leaving: false });
     return out;
   }, [cast.join(",")]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -442,9 +445,9 @@ function Title({ onBegin, subs: sb }: { onBegin: () => void; subs: boolean }) {
       <p className="rise mt-3 font-display text-2xl text-[hsl(var(--parchment)/0.9)] md:text-4xl" style={{ animationDelay: "350ms" }}>겨울의 연대기</p>
       {sb && <p className="rise font-en text-lg italic text-[hsl(var(--frost))] md:text-2xl" style={{ animationDelay: "420ms" }}>A Chronicle of the Winter</p>}
       <p className="rise mt-6 max-w-md text-base leading-relaxed text-[hsl(var(--parchment)/0.85)]" style={{ animationDelay: "550ms" }}>
-        전령 이연이 얼어붙은 서울로 당신을 안내한다. 정부, 자유도시들, 아크, 그리고 서울 밖의 기계를 차례로 만나며 깊이가 계급이 되는 겨울의 서울을 듣고, 마지막에 한 세력을 고른다.
+        전령 이연이 대통령, 이사회장, 교주에게 전갈을 한 통씩 나른다. 이 겨울의 이야기는 그 세 사람의 눈으로 이어진다. 깊이가 계급이 되는 겨울의 서울을 지나, 마지막에 누구의 눈으로 따라갈지 고른다.
       </p>
-      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen takes you through frozen Seoul past the Government, the Free Cities, the Arc and the machines outside, to hear how depth becomes class in a winter Seoul, and at the end to choose one faction.</p>}
+      {sb && <p className="rise font-en mt-1 max-w-md italic text-[hsl(var(--frost)/0.8)]" style={{ animationDelay: "600ms" }}>The courier Iyen carries one message each to the President, the Chair and the Hierophant. This winter's story is told through those three pairs of eyes. Pass through a winter Seoul where depth becomes class, and at the end choose whose eyes to follow.</p>}
       <button type="button" onClick={onBegin} autoFocus className="rise group mt-8 flex w-fit max-w-full flex-wrap items-center gap-x-4 gap-y-1 border-b border-[hsl(var(--parchment)/0.5)] pb-2 text-[hsl(var(--parchment))]" style={{ animationDelay: "750ms" }}>
         <span className="font-display text-2xl font-extrabold">이야기 시작</span>
         <span className="font-en italic opacity-70">Begin the story</span>
