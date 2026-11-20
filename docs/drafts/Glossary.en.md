@@ -120,7 +120,7 @@ District names stay as names of the land, and the unit of rule is the station. T
 
 - **Residence layers**: the class shown by how deep or how high a person lives. Shared by all three factions.
 - **First and third basement levels**: underground, deeper means higher class. Shutters keep intruders out, exits are easy to control and watch, and there is geothermal heat. A person living on the third basement level stands above one on the first.
-- **Ground floor**: the highest place among ordinary citizens who hold no station.
+- **Ground floor**: the best above-ground place an ordinary citizen who holds no station can have. Citizens also live on the outermost, most dangerous underground levels.
 - **Upper floors**: above ground, higher means lower class. They are cold and windy and exposed to air fighting, surveillance and attack, drones included.
 - **Shutter**: the steel gate that closes a station entrance.
 - **Geothermal heat**: the reason the deep levels are warm.

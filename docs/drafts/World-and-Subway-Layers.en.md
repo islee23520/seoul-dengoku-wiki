@@ -26,7 +26,7 @@ At the same underground level, cold varies with the regional surface temperature
 
 Depth divides standing as well as temperature. The residence layers are the same in all three factions. The deeper the level, the higher the people who live there. Deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground. A resident of the third basement level ranks above a resident of the first.
 
-Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen, and among citizens those who live on the ground floor rank highest. For the same reasons a station is worth more the deeper it goes, and surface stations are worth the least.
+Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen. Citizens can live underground too, but station holders and guild members take the better levels such as the platforms, while citizens live on the ground floor or on the outermost, most dangerous underground levels; the ground floor is the best above-ground place a citizen can have. For the same reasons a station is worth more the deeper it goes, and surface stations are worth the least.
 
 ### Regional Surface Temperatures
 

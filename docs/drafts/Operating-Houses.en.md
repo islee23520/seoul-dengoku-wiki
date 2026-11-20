@@ -37,7 +37,7 @@ The seven southwestern districts. The Free Cities are independent cities each st
 - **Yeongdeungpo Waiting Hall, the Byeon Goun house.** Holds the waiting hall duty, receiving and sending off the people and loads that pass through.
 - **Guro Concourse, the Byeon Siram house.** Holds the same waiting hall duty and also does audit work.
 
-In the Free Cities, workshop and investment work is organized by guilds rather than stationmaster houses (Gang Minseo, Guild Master of the Workshop Production Guild; Choe Ji-u, Guild Master of the Yeouido Investment Guild).
+In the Free Cities, workshop and investment work is organized by guilds rather than stationmaster houses (Gang Minseo of the Workshop Production Guild; Choe Ji-u of the Yeouido Investment Guild).
 
 <a id="Operating-Houses-heading-0016"></a>
 

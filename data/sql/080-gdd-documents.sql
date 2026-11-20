@@ -9748,7 +9748,7 @@ v4 canon (owner decision, 2026-11-16): Seoul has three factions, the Government,
 
 - The deeper underground, the higher the class. Shutters keep intruders out, exits are easy to control and watch, and the ground gives off heat. A person living on the third basement level ranks above one on the first.
 - Above ground, the higher the floor, the lower the class. Upper floors take the cold and the wind and are exposed to air combat, surveillance, and attack, drones included.
-- Among citizens, those who live on the ground floor rank highest.
+- Citizens can live underground too, but station holders and guild members take the better levels such as the platforms, while citizens live on the ground floor or on the outermost, most dangerous underground levels; the ground floor is the best above-ground place a citizen can have.
 - Each faction''s founding loyalists receive underground residence first. They have no special name.
 
 ### Movement of People
@@ -9842,7 +9842,7 @@ v4 정본(소유자 확정 2026-11-16): 서울의 세력은 정부, 자유도시
 
 - 지하로 깊을수록 상류다. 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉬우며, 지열이 있다. 지하 1층보다 지하 3층에 사는 사람이 상류다.
 - 지상은 높은 층일수록 하층이다. 추위와 강풍을 받고, 드론을 포함한 공중전·감시·공격에 약하다.
-- 시민 가운데서는 지층(지상 1층)에 사는 사람이 가장 높다.
+- 시민도 지하에 살 수 있지만 역을 가진 쪽과 조합원이 승강장처럼 좋은 층을 차지하고, 시민은 지층(지상 1층)이나 지하의 가장 바깥·위험한 층에 산다. 지층은 시민이 차지할 수 있는 가장 좋은 지상 자리다.
 - 지하 거주권은 각 세력의 개국공신이 먼저 받는다. 이들을 따로 부르는 이름은 없다.
 
 ### 인적자원 이동

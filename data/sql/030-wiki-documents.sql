@@ -267,7 +267,7 @@ Militia sleep in schools, and ration windows occupy community centers. Each buil
 | University | Record-copying workshops. Laboratory blocks sealed or stripped for parts. |
 | Market | Licensed market. Splitting reserved portions from sale portions. |
 | Station | Hand-off of living freight and the refuge floors. The tracks carried the state''s transit toll. |
-| Apartment | The ground floor is the best place for citizens to live, and the higher the floor, the lower the people (cold, strong wind, drone watching and attack). On the main-channel waterfront, habitation only above the third floor; floors 1–2 flooded storage or abandoned. |
+| Apartment | The ground floor is the best above-ground place a citizen can have, and the higher the floor, the lower the people (cold, strong wind, drone watching and attack). On the main-channel waterfront, habitation only above the third floor; floors 1–2 flooded storage or abandoned. |
 | Park · green space | Thin cultivation, grazing, monsoon drainage. Explicitly stated unless used as burial ground. |
 | Shop · office | Workshop or shutter-sealed. |
 
@@ -353,7 +353,7 @@ The waterfront''s first floor was `flooded` or storage. Habitation was above the
 | 대학 | 기록 사본 공방. 실험동은 봉인하거나 부품 분해. |
 | 시장 | 허가 장터. 예약분과 판매분을 나눈다. |
 | 역 | 생활 화물 인계와 피난 층. 선로는 국가 통행세. |
-| 아파트 | 지층(1층)이 시민 거주의 윗자리이고, 높은 층일수록 아랫사람이 산다(추위, 강풍, 드론 감시와 공격). 본류 수변은 3층 이상만 거주하고 1–2층은 침수 창고이거나 포기. |
+| 아파트 | 지층(1층)이 시민이 차지할 수 있는 가장 좋은 지상 자리이고, 높은 층일수록 아랫사람이 산다(추위, 강풍, 드론 감시와 공격). 본류 수변은 3층 이상만 거주하고 1–2층은 침수 창고이거나 포기. |
 | 공원·녹지 | 얕은 경작, 방목, 우기 배수. 묘지로 쓰지 않으면 명시한다. |
 | 상점·사무실 | 공방이거나 셔터 봉인. |
 
@@ -523,7 +523,7 @@ In the Arc, cardinals, bishops, division chiefs, and stationmasters stand below 
 
 The right to live underground went first to the founding families of each faction. These families took the deep levels first and have held those places from generation to generation. Underground, deeper is higher, so a founding family''s place is in itself a high standing. There is no special name for these families. The rules of floors and standing are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
 
-A family that holds no station is a family of commoners. Among commoner families, the highest are those living on the ground floor, and the higher a family lives, the lower it stands.
+A family that holds no station is a family of commoners. Commoner families can live underground too, but on the outermost, most dangerous levels; above ground, the ground floor is the best place a commoner family can hold, and the higher a family lives, the lower it stands.
 
 <a id="대한민국정부의-도심-지배와-분열"></a>
 
@@ -565,7 +565,7 @@ The land outside Seoul is not ruled by people. The AI did not kill humanity dire
 
 지하에 살 권리는 각 세력의 개국공신 집안이 먼저 받았다. 이 집안들은 깊은 층을 먼저 차지했고, 그 자리를 대를 이어 지킨다. 지하에서는 깊을수록 위이므로, 개국공신 집안의 자리는 곧 높은 신분이다. 이 집안들을 부르는 따로 정해진 이름은 없다. 층과 신분의 규칙은 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
 
-역을 갖지 못한 가문은 일반 시민이다. 시민 가문 가운데 가장 높은 것은 지층(지상 1층)에 사는 집안이고, 높은 층에 사는 집안일수록 낮다.
+역을 갖지 못한 가문은 일반 시민이다. 시민 가문도 지하에 살 수 있지만 지하의 가장 바깥·위험한 층에 살고, 땅 위에서는 지층(지상 1층)이 시민 가문이 차지할 수 있는 가장 좋은 자리다. 높은 층에 사는 집안일수록 낮다.
 
 <a id="대한민국정부의-도심-지배와-분열"></a>
 
@@ -631,7 +631,7 @@ The three factions share one frame of ranks. A person''s step is set by the numb
 
 The step of ten or more is reached by appointment. Government Commissioners are appointed by the President, Arc Cardinals are ordained by the Hierophant, and Free City Directors are appointed by the Board. Those who qualify but are never appointed become seeds of conflict within. Among Division Chiefs, standing follows the number of Stationmasters they lead and the worth of their stations. A station is worth more the more transfer lines it has and the deeper it goes, and the Stationmaster of an above-ground station ranks lowest of all.
 
-Everyone who holds no station is an ordinary citizen. How deep a person lives shows their class. Underground, deeper means higher, so someone living on the third basement level stands above someone on the first. Above ground, higher means lower, and among citizens those on the ground floor stand highest. Each faction''s founding retainers receive the right to live underground first.
+Everyone who holds no station is an ordinary citizen. How deep a person lives shows their class. Underground, deeper means higher, so someone living on the third basement level stands above someone on the first. Above ground, higher means lower. Citizens can live underground too, but station holders and guild members take the better levels such as the platforms, while citizens live on the ground floor or on the outermost, most dangerous underground levels; the ground floor is the best above-ground place a citizen can have. Each faction''s founding retainers receive the right to live underground first.
 
 A person who moves to another faction loses their assets and territory and becomes one of the lowest class, whatever their rank at home. The faction that takes them uses their skills but does not raise their standing. So people move between factions mostly through abduction and capture, and work slowdowns, ransom talks, escapes and the envy of the native lower class become the conflicts. A technician who has been taken across is kept from slowing work or escaping by holding their family hostage.
 
@@ -756,7 +756,7 @@ The people known by name at the opening are listed below. English spellings foll
 
 열 명 이상 단계는 임명으로 오른다. 정부 청장은 대통령이 임명하고, 아크 추기경은 교주가 서품하고, 자유도시 이사는 이사회가 임명한다. 자격을 갖추고도 임명받지 못한 사람은 내부 갈등의 씨앗이 된다. 본부장 사이의 급은 거느린 역장 수와 역의 가치로 갈린다. 역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높고, 지상역 역장은 역장 가운데 가장 낮다.
 
-역을 가지지 못한 사람은 모두 일반 시민이다. 사는 깊이가 계층을 드러낸다. 지하는 깊을수록 상류여서, 지하 3층에 사는 사람이 지하 1층에 사는 사람보다 위다. 지상은 높을수록 하층이고, 시민 가운데서는 지상 1층에 사는 사람이 가장 위다. 지하 거주권은 각 세력의 개국공신이 먼저 받는다.
+역을 가지지 못한 사람은 모두 일반 시민이다. 사는 깊이가 계층을 드러낸다. 지하는 깊을수록 상류여서, 지하 3층에 사는 사람이 지하 1층에 사는 사람보다 위다. 지상은 높을수록 하층이다. 시민도 지하에 살 수 있지만 역을 가진 쪽과 조합원이 승강장처럼 좋은 층을 차지하고, 시민은 지층(지상 1층)이나 지하의 가장 바깥·위험한 층에 산다. 지층은 시민이 차지할 수 있는 가장 좋은 지상 자리다. 지하 거주권은 각 세력의 개국공신이 먼저 받는다.
 
 다른 세력으로 옮겨 간 사람은 본진의 계급과 상관없이 자산과 영토를 빼앗기고 최하층민이 된다. 받아 간 세력은 기술만 쓰고 신분은 올려 주지 않는다. 그래서 세력 사이에서 사람이 옮겨 가는 일은 주로 납치와 포획으로 일어나고, 태업과 몸값 협상, 탈출, 원주민 하층민의 질투가 갈등이 된다. 넘어간 기술자의 태업과 탈출은 가족을 인질로 잡아 막는다.
 
@@ -1823,7 +1823,7 @@ District names stay as names of the land, and the unit of rule is the station. T
 
 - **Residence layers**: the class shown by how deep or how high a person lives. Shared by all three factions.
 - **First and third basement levels**: underground, deeper means higher class. Shutters keep intruders out, exits are easy to control and watch, and there is geothermal heat. A person living on the third basement level stands above one on the first.
-- **Ground floor**: the highest place among ordinary citizens who hold no station.
+- **Ground floor**: the best above-ground place an ordinary citizen who holds no station can have. Citizens also live on the outermost, most dangerous underground levels.
 - **Upper floors**: above ground, higher means lower class. They are cold and windy and exposed to air fighting, surveillance and attack, drones included.
 - **Shutter**: the steel gate that closes a station entrance.
 - **Geothermal heat**: the reason the deep levels are warm.
@@ -1952,7 +1952,7 @@ District names stay as names of the land, and the unit of rule is the station. T
 
 - **거주 층위**(residence layers): 사는 깊이와 높이로 드러나는 계층. 세 세력 공통이다.
 - **지하 1층**, **지하 3층**(first and third basement levels): 지하는 깊을수록 상류다. 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열이 있다. 지하 3층에 사는 사람이 지하 1층에 사는 사람보다 위다.
-- **지상 1층**(ground floor, 지층이라고도 한다): 역을 가지지 못한 일반 시민 가운데 가장 위의 자리.
+- **지상 1층**(ground floor, 지층이라고도 한다): 역을 가지지 못한 일반 시민이 차지할 수 있는 가장 좋은 지상 자리. 시민은 지하의 가장 바깥·위험한 층에도 산다.
 - **고층**(upper floors): 지상은 높을수록 하층이다. 춥고 바람이 세며, 드론을 포함한 공중전과 감시, 공격에 약하다.
 - **셔터**(shutter): 역 출입구를 막는 철문.
 - **지열**(geothermal heat): 깊은 층이 따뜻한 까닭.
@@ -20040,7 +20040,7 @@ Why doctors and officers are found in only one faction each is undecided.
 
 ## People Without a Station
 
-Everyone who does not hold a station is a commoner. Commoners have no rank title, and the floor they live on is their standing. The highest place among commoners belongs to those who live on the ground floor. Above ground, the higher the floor, the lower the standing. Details are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
+Everyone who does not hold a station is a commoner. Commoners have no rank title, and the floor they live on is their standing. Commoners can live underground too, but those who hold stations and guild members take the better levels such as the platforms, while commoners live on the ground floor or on the outermost, most dangerous underground levels. The ground floor is the best above-ground place a commoner can hold; above ground, the higher the floor, the lower the standing. Details are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
 
 ## People Who Go Over to Another Faction
 
@@ -20163,7 +20163,7 @@ The common body of the Free City is called the Board.
 
 ## 역을 갖지 못한 사람
 
-역을 갖지 못한 사람은 모두 일반 시민이다. 시민에게는 계급 칭호가 없고, 사는 층이 곧 신분이다. 시민 가운데 가장 높은 자리는 지층, 곧 지상 1층에 사는 사람이다. 지상은 높은 층일수록 낮다. 자세한 내용은 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
+역을 갖지 못한 사람은 모두 일반 시민이다. 시민에게는 계급 칭호가 없고, 사는 층이 곧 신분이다. 시민도 지하에 살 수 있지만 역을 가진 쪽과 조합원이 승강장처럼 좋은 층을 차지하고, 시민은 지층(지상 1층)이나 지하의 가장 바깥·위험한 층에 산다. 지층은 시민이 차지할 수 있는 가장 좋은 지상 자리이고, 지상은 높은 층일수록 낮다. 자세한 내용은 [거주 층위와 신분](/wiki/Residence-Layers-and-Class/)에 있다.
 
 ## 다른 세력으로 넘어간 사람
 
@@ -20219,7 +20219,7 @@ The seven southwestern districts. The Free Cities are independent cities each st
 - **Yeongdeungpo Waiting Hall, the Byeon Goun house.** Holds the waiting hall duty, receiving and sending off the people and loads that pass through.
 - **Guro Concourse, the Byeon Siram house.** Holds the same waiting hall duty and also does audit work.
 
-In the Free Cities, workshop and investment work is organized by guilds rather than stationmaster houses (Gang Minseo, Guild Master of the Workshop Production Guild; Choe Ji-u, Guild Master of the Yeouido Investment Guild).
+In the Free Cities, workshop and investment work is organized by guilds rather than stationmaster houses (Gang Minseo of the Workshop Production Guild; Choe Ji-u of the Yeouido Investment Guild).
 
 <a id="Operating-Houses-heading-0016"></a>
 
@@ -20268,7 +20268,7 @@ Houses of stations not listed here aren''t in the public record yet. Who holds e
 - **영등포 대합실, 변고운 집안.** 대합실 당직을 맡는다. 오가는 사람과 짐을 대합실에서 맞고 내보낸다.
 - **구로 대합실, 변시람 집안.** 같은 대합실 당직을 맡고, 감사 일을 겸한다.
 
-자유도시의 공방과 출자 일은 역장 집안이 아니라 조합이 묶는다(공방 제작 조합 조합장 강민서, 여의도 출자 조합 조합장 최지우).
+자유도시의 공방과 출자 일은 역장 집안이 아니라 조합이 묶는다(공방 제작 조합의 강민서, 여의도 출자 조합의 최지우).
 
 <a id="Operating-Houses-heading-0016"></a>
 
@@ -23811,7 +23811,7 @@ The residence layers are the same in all three factions. The deeper the level, t
 
 B. The floors above ground
 
-Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen, and among citizens those who live on the ground floor rank highest.
+Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen. Citizens can live underground too, but station holders and guild members take the better levels such as the platforms, while citizens live on the ground floor or on the outermost, most dangerous underground levels; the ground floor is the best above-ground place a citizen can have.
 
 ## The Three-Dimensional Layers and Combat
 
@@ -23896,7 +23896,7 @@ Every facility needs labour, power and raw materials to keep running. A facility
 
 나. 지상의 층
 
-지상은 반대다. 높은 층일수록 아랫사람이 산다. 높은 층은 춥고 바람이 세며, 드론을 포함한 공중의 감시와 공격에 드러난다. 역을 가지지 못한 사람은 모두 일반 시민이고, 그 가운데 지층(지상 1층)에 사는 사람이 가장 윗자리다.
+지상은 반대다. 높은 층일수록 아랫사람이 산다. 높은 층은 춥고 바람이 세며, 드론을 포함한 공중의 감시와 공격에 드러난다. 역을 가지지 못한 사람은 모두 일반 시민이다. 시민도 지하에 살 수 있지만 역을 가진 쪽과 조합원이 승강장처럼 좋은 층을 차지하고, 시민은 지층(지상 1층)이나 지하의 가장 바깥·위험한 층에 산다. 지층은 시민이 차지할 수 있는 가장 좋은 지상 자리다.
 
 ## 입체적인 층과 전투
 
@@ -28279,7 +28279,7 @@ How families hold their places inside the three factions is covered in [Families
 
 Seoul''s twenty-five districts are split 14 for the Government, 7 for the Free City, and 4 for the Arc. Place names, stations, and geography stay as they were. The smallest unit of rule is not the district but the station: a subway station together with the fortified ground above it. A station is worth more the more transfer lines it has and the deeper it goes, and above-ground stations are worth least. The district-by-district table is in [The Three Factions of Seoul](/wiki/Sixteen-States/) and [Offices and Ranks](/wiki/Offices-and-Ranks/). How the factions appear on the map is explained in [World Map](/wiki/World-and-Subway-Layers/) and [The Structure of the World Map](/wiki/World-Map-Construction/).
 
-How deep a person lives shows their class. Underground, deeper means higher, because shutters keep intruders out, exits are easy to control and watch, and there is geothermal heat. Above ground, higher means lower: the upper floors are cold and windy and exposed to air fighting, surveillance and attack, drones included. Everyone who holds no station is an ordinary citizen, and among them those on the ground floor stand highest. Each faction''s founding retainers receive the right to live underground first.
+How deep a person lives shows their class. Underground, deeper means higher, because shutters keep intruders out, exits are easy to control and watch, and there is geothermal heat. Above ground, higher means lower: the upper floors are cold and windy and exposed to air fighting, surveillance and attack, drones included. Everyone who holds no station is an ordinary citizen. Citizens can live underground too, but on the outermost, most dangerous levels; above ground, the ground floor is the best place a citizen can have. Each faction''s founding retainers receive the right to live underground first.
 
 ## Offices and Titles
 
@@ -28376,7 +28376,7 @@ Look up characters on the [People](/wiki/people/) page. The additional people ta
 
 서울의 스물다섯 구는 정부 14, 자유도시 7, 아크 4로 나뉜다. 지명과 역과 지리는 그대로 남는다. 다스림의 가장 작은 단위는 구가 아니라 역이다. 역은 지하철역과 그 위 지상 성채 영역을 함께 이른다. 역의 가치는 환승 노선이 많을수록, 지하로 깊을수록 높고, 지상역은 가장 낮다. 구별 배정표는 [서울의 세 세력](/wiki/Sixteen-States/)과 [관직](/wiki/Offices-and-Ranks/)에 있다. 지도 위의 세력 표시는 [세계 지도](/wiki/World-and-Subway-Layers/)와 [세계 지도의 구성](/wiki/World-Map-Construction/)이 설명한다.
 
-사는 깊이가 계층을 드러낸다. 지하는 깊을수록 상류다. 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열이 있기 때문이다. 지상은 높을수록 하층이다. 춥고 바람이 세며, 드론을 포함한 공중전과 감시, 공격에 약하다. 역을 가지지 못한 사람은 모두 일반 시민이고, 그 가운데 지상 1층에 사는 사람이 가장 위다. 지하 거주권은 각 세력의 개국공신이 먼저 받는다.
+사는 깊이가 계층을 드러낸다. 지하는 깊을수록 상류다. 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열이 있기 때문이다. 지상은 높을수록 하층이다. 춥고 바람이 세며, 드론을 포함한 공중전과 감시, 공격에 약하다. 역을 가지지 못한 사람은 모두 일반 시민이다. 시민도 지하에 살 수 있지만 지하의 가장 바깥·위험한 층에 살고, 땅 위에서는 지상 1층이 시민이 차지할 수 있는 가장 좋은 자리다. 지하 거주권은 각 세력의 개국공신이 먼저 받는다.
 
 ## 직위와 칭호
 
@@ -28815,7 +28815,7 @@ At the same underground level, cold varies with the regional surface temperature
 
 Depth divides standing as well as temperature. The residence layers are the same in all three factions. The deeper the level, the higher the people who live there. Deep levels keep intruders out behind shutters, make the exits easy to control and watch, and are warmed by the ground. A resident of the third basement level ranks above a resident of the first.
 
-Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen, and among citizens those who live on the ground floor rank highest. For the same reasons a station is worth more the deeper it goes, and surface stations are worth the least.
+Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen. Citizens can live underground too, but station holders and guild members take the better levels such as the platforms, while citizens live on the ground floor or on the outermost, most dangerous underground levels; the ground floor is the best above-ground place a citizen can have. For the same reasons a station is worth more the deeper it goes, and surface stations are worth the least.
 
 ### Regional Surface Temperatures
 
@@ -28869,7 +28869,7 @@ For clothing differences between trades at the same depth, see [Characters, Fact
 
 깊이는 기온만이 아니라 신분도 가른다. 거주 층위는 세 세력이 같다. 지하로 깊을수록 윗사람이 산다. 깊은 층은 셔터로 침입을 막고, 출구를 통제하고 감시하기 쉽고, 지열로 따뜻하다. 지하 3층에 사는 사람이 지하 1층에 사는 사람보다 윗자리다.
 
-지상은 반대로 높은 층일수록 아랫사람이 산다. 높은 층은 춥고 바람이 세며, 드론을 포함한 공중의 감시와 공격에 드러난다. 역을 가지지 못한 사람은 모두 일반 시민이고, 그 가운데 지층(지상 1층)에 사는 사람이 가장 윗자리다. 같은 까닭으로 역의 가치도 지하로 깊을수록 높고, 지상역이 가장 낮다.
+지상은 반대로 높은 층일수록 아랫사람이 산다. 높은 층은 춥고 바람이 세며, 드론을 포함한 공중의 감시와 공격에 드러난다. 역을 가지지 못한 사람은 모두 일반 시민이다. 시민도 지하에 살 수 있지만 역을 가진 쪽과 조합원이 승강장처럼 좋은 층을 차지하고, 시민은 지층(지상 1층)이나 지하의 가장 바깥·위험한 층에 산다. 지층은 시민이 차지할 수 있는 가장 좋은 지상 자리다. 같은 까닭으로 역의 가치도 지하로 깊을수록 높고, 지상역이 가장 낮다.
 
 ### 시·도별 지상 기온
 
@@ -28927,14 +28927,14 @@ Above ground, the higher a person lives, the lower their class. High floors are 
 |---|---|---|
 | Deep underground levels (for example, the third basement level) | Highest | Can be closed with shutters, exits are easy to control and watch, and ground heat keeps it warm |
 | Shallow underground levels (for example, the first basement level) | Lowest of the underground | Less closed off and less warm than the deep levels |
-| The ground floor | Highest among commoners | The least cold place above ground, and the farthest from the wind and the sky |
+| The ground floor | The best above-ground place a commoner can hold | The least cold place above ground, and the farthest from the wind and the sky |
 | Upper floors above ground | The higher, the lower | Exposed to cold, strong wind, and air warfare, surveillance, and attack, drones included |
 
 ## Station Holders and Commoners
 
 A person who holds a station is a stationmaster, and a person who commands stationmasters holds a rank of division chief or above according to their number. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
 
-Everyone who does not hold a station is a **commoner**. Commoners have no rank title, and the floor they live on is their place among commoners. The highest commoners are those who live on the ground floor. The farther up they live, the lower they stand even among commoners.
+Everyone who does not hold a station is a **commoner**. Commoners have no rank title, and the floor they live on is their place among commoners. Commoners can live underground too, but the underground is layered as well: those who hold stations and guild members take the better levels such as the platforms, while commoners live on the ground floor or on the outermost, most dangerous underground levels. The ground floor is the best above-ground place a commoner can hold, and the farther up they live, the lower they stand even among commoners.
 
 ## Underground Residence Rights
 
@@ -28979,14 +28979,14 @@ A person who comes over from another faction loses their assets and territory an
 |---|---|---|
 | 지하 깊은 층 (예: 지하 3층) | 가장 높다 | 셔터로 막을 수 있고, 출구 통제와 감시가 쉽고, 지열로 따뜻하다 |
 | 지하 얕은 층 (예: 지하 1층) | 지하에서는 가장 낮다 | 깊은 층보다 덜 막히고 덜 따뜻하다 |
-| 지층 (지상 1층) | 일반 시민 가운데 가장 높다 | 땅 위에서는 가장 덜 춥고 바람과 하늘에서 가장 멀다 |
+| 지층 (지상 1층) | 시민이 차지할 수 있는 가장 좋은 지상 자리 | 땅 위에서는 가장 덜 춥고 바람과 하늘에서 가장 멀다 |
 | 지상 높은 층 | 높을수록 낮다 | 추위, 강풍, 드론을 포함한 공중전·감시·공격에 약하다 |
 
 ## 역을 가진 사람과 일반 시민
 
 역을 가진 사람은 역장이고, 역장을 거느린 사람은 그 수에 따라 본부장 이상의 계급을 가진다. 계급표는 [관직](/wiki/Offices-and-Ranks/)에 있다.
 
-역을 갖지 못한 사람은 모두 **일반 시민**이다. 시민에게는 계급 칭호가 없고, 사는 층이 곧 시민 사이의 자리다. 시민 가운데 가장 높은 사람은 지층, 곧 지상 1층에 사는 사람이다. 그 위층으로 올라갈수록 시민 사이에서도 낮아진다.
+역을 갖지 못한 사람은 모두 **일반 시민**이다. 시민에게는 계급 칭호가 없고, 사는 층이 곧 시민 사이의 자리다. 시민도 지하에 살 수 있다. 다만 지하 안에서도 층위가 갈린다. 역을 가진 쪽과 조합원이 승강장처럼 좋은 층을 차지하고, 일반 시민은 지층(지상 1층)이나 지하의 가장 바깥·위험한 층에 산다. 지층은 시민이 차지할 수 있는 가장 좋은 지상 자리이고, 그 위층으로 올라갈수록 시민 사이에서도 낮아진다.
 
 ## 지하 거주권
 

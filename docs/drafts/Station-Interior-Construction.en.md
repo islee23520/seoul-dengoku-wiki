@@ -58,7 +58,7 @@ The residence layers are the same in all three factions. The deeper the level, t
 
 B. The floors above ground
 
-Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen, and among citizens those who live on the ground floor rank highest.
+Above ground the order is reversed: the higher the floor, the lower the people. High floors are cold and windy and lie open to watching and attack from the air, drones included. Everyone who holds no station is an ordinary citizen. Citizens can live underground too, but station holders and guild members take the better levels such as the platforms, while citizens live on the ground floor or on the outermost, most dangerous underground levels; the ground floor is the best above-ground place a citizen can have.
 
 ## The Three-Dimensional Layers and Combat
 
