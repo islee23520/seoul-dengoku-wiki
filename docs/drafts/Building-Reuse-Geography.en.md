@@ -75,7 +75,7 @@ Militia sleep in schools, and ration windows occupy community centers. Each buil
 | University | Record-copying workshops. Laboratory blocks sealed or stripped for parts. |
 | Market | Licensed market. Splitting reserved portions from sale portions. |
 | Station | Hand-off of living freight and the refuge floors. The tracks carried the state's transit toll. |
-| Apartment | The ground floor is the best place for citizens to live, and the higher the floor, the lower the people (cold, strong wind, drone watching and attack). On the main-channel waterfront, habitation only above the third floor; floors 1–2 flooded storage or abandoned. |
+| Apartment | The ground floor is the best above-ground place a citizen can have, and the higher the floor, the lower the people (cold, strong wind, drone watching and attack). On the main-channel waterfront, habitation only above the third floor; floors 1–2 flooded storage or abandoned. |
 | Park · green space | Thin cultivation, grazing, monsoon drainage. Explicitly stated unless used as burial ground. |
 | Shop · office | Workshop or shutter-sealed. |
 

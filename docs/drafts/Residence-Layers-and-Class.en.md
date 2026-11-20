@@ -32,14 +32,14 @@ Above ground, the higher a person lives, the lower their class. High floors are 
 |---|---|---|
 | Deep underground levels (for example, the third basement level) | Highest | Can be closed with shutters, exits are easy to control and watch, and ground heat keeps it warm |
 | Shallow underground levels (for example, the first basement level) | Lowest of the underground | Less closed off and less warm than the deep levels |
-| The ground floor | Highest among commoners | The least cold place above ground, and the farthest from the wind and the sky |
+| The ground floor | The best above-ground place a commoner can hold | The least cold place above ground, and the farthest from the wind and the sky |
 | Upper floors above ground | The higher, the lower | Exposed to cold, strong wind, and air warfare, surveillance, and attack, drones included |
 
 ## Station Holders and Commoners
 
 A person who holds a station is a stationmaster, and a person who commands stationmasters holds a rank of division chief or above according to their number. The rank table is in [Offices and Ranks](/wiki/Offices-and-Ranks/).
 
-Everyone who does not hold a station is a **commoner**. Commoners have no rank title, and the floor they live on is their place among commoners. The highest commoners are those who live on the ground floor. The farther up they live, the lower they stand even among commoners.
+Everyone who does not hold a station is a **commoner**. Commoners have no rank title, and the floor they live on is their place among commoners. Commoners can live underground too, but the underground is layered as well: those who hold stations and guild members take the better levels such as the platforms, while commoners live on the ground floor or on the outermost, most dangerous underground levels. The ground floor is the best above-ground place a commoner can hold, and the farther up they live, the lower they stand even among commoners.
 
 ## Underground Residence Rights
 

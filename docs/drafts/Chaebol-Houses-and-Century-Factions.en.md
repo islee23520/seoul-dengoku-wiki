@@ -27,7 +27,7 @@ In the Arc, cardinals, bishops, division chiefs, and stationmasters stand below 
 
 The right to live underground went first to the founding families of each faction. These families took the deep levels first and have held those places from generation to generation. Underground, deeper is higher, so a founding family's place is in itself a high standing. There is no special name for these families. The rules of floors and standing are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
 
-A family that holds no station is a family of commoners. Among commoner families, the highest are those living on the ground floor, and the higher a family lives, the lower it stands.
+A family that holds no station is a family of commoners. Commoner families can live underground too, but on the outermost, most dangerous levels; above ground, the ground floor is the best place a commoner family can hold, and the higher a family lives, the lower it stands.
 
 <a id="대한민국정부의-도심-지배와-분열"></a>
 

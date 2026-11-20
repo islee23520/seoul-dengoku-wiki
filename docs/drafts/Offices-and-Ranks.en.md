@@ -110,7 +110,7 @@ Why doctors and officers are found in only one faction each is undecided.
 
 ## People Without a Station
 
-Everyone who does not hold a station is a commoner. Commoners have no rank title, and the floor they live on is their standing. The highest place among commoners belongs to those who live on the ground floor. Above ground, the higher the floor, the lower the standing. Details are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
+Everyone who does not hold a station is a commoner. Commoners have no rank title, and the floor they live on is their standing. Commoners can live underground too, but those who hold stations and guild members take the better levels such as the platforms, while commoners live on the ground floor or on the outermost, most dangerous underground levels. The ground floor is the best above-ground place a commoner can hold; above ground, the higher the floor, the lower the standing. Details are in [Residence Layers and Class](/wiki/Residence-Layers-and-Class/).
 
 ## People Who Go Over to Another Faction
 

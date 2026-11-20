@@ -1,0 +1,102 @@
+{
+ "purpose": "PD 지시 10 보조: 지시 10에서 직함을 바꾼 한재목·고서준·백온을 옛 직함으로 부르던 다른 인물(0003·1006·1009·1015)의 관계·서술 문장을 맞춘다.",
+ "hold": [],
+ "rules": [
+  {
+   "id": "trb-001",
+   "group": "mirror",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0003",
+   "col": "json",
+   "pathRe": "^\\.(biography|sections\\..+|characterProfile\\..+|openingTitles\\[\\]\\.basis|proseContacts\\[\\]\\.basis|relations\\..+\\.basis|fields\\..+)$",
+   "from": "Enforces the Director's shutter-check orders",
+   "to": "Enforces Han Jaemok's shutter-check orders",
+   "expect": 1
+  },
+  {
+   "id": "trb-002",
+   "group": "mirror",
+   "file": "090",
+   "type": "sub",
+   "person": "person-0003",
+   "col": "json_ko",
+   "pathRe": "^\\.(biography|sections\\..+|characterProfile\\..+|openingTitles\\[\\]\\.basis|proseContacts\\[\\]\\.basis|relations\\..+\\.basis|fields\\..+)$",
+   "from": "이사의 덧문 점검 지시",
+   "to": "한재목의 덧문 점검 지시",
+   "expect": 1
+  },
+  {
+   "id": "trb-003",
+   "group": "mirror",
+   "file": "090",
+   "type": "sub",
+   "person": "person-1006",
+   "col": "json",
+   "pathRe": "^\\.(biography|sections\\..+|characterProfile\\..+|openingTitles\\[\\]\\.basis|proseContacts\\[\\]\\.basis|relations\\..+\\.basis|fields\\..+)$",
+   "from": "the Ridge Garrison Division Chief",
+   "to": "the Ridge Garrison Captain",
+   "expect": 1
+  },
+  {
+   "id": "trb-004",
+   "group": "mirror",
+   "file": "090",
+   "type": "sub",
+   "person": "person-1006",
+   "col": "json_ko",
+   "pathRe": "^\\.(biography|sections\\..+|characterProfile\\..+|openingTitles\\[\\]\\.basis|proseContacts\\[\\]\\.basis|relations\\..+\\.basis|fields\\..+)$",
+   "from": "능선수비대 본부장의 이원 합의",
+   "to": "능선수비대장의 이원 합의",
+   "expect": 1
+  },
+  {
+   "id": "trb-005",
+   "group": "mirror",
+   "file": "090",
+   "type": "sub",
+   "person": "person-1009",
+   "col": "json",
+   "pathRe": "^\\.(biography|sections\\..+|characterProfile\\..+|openingTitles\\[\\]\\.basis|proseContacts\\[\\]\\.basis|relations\\..+\\.basis|fields\\..+)$",
+   "from": "Under Ridge Garrison Division Chief Go Seojun",
+   "to": "Under Ridge Garrison Captain Go Seojun",
+   "expect": 1
+  },
+  {
+   "id": "trb-006",
+   "group": "mirror",
+   "file": "090",
+   "type": "sub",
+   "person": "person-1009",
+   "col": "json_ko",
+   "pathRe": "^\\.(biography|sections\\..+|characterProfile\\..+|openingTitles\\[\\]\\.basis|proseContacts\\[\\]\\.basis|relations\\..+\\.basis|fields\\..+)$",
+   "from": "정부 능선수비대 본부장 고서준",
+   "to": "능선수비대장 고서준",
+   "expect": 3
+  },
+  {
+   "id": "trb-007",
+   "group": "mirror",
+   "file": "090",
+   "type": "sub",
+   "person": "person-1015",
+   "col": "json",
+   "pathRe": "^\\.(biography|sections\\..+|characterProfile\\..+|openingTitles\\[\\]\\.basis|proseContacts\\[\\]\\.basis|relations\\..+\\.basis|fields\\..+)$",
+   "from": "Baek On, Bureau Chief of Government Roster Transcription.",
+   "to": "Baek On, who keeps the government roster transcription.",
+   "expect": 5
+  },
+  {
+   "id": "trb-008",
+   "group": "mirror",
+   "file": "090",
+   "type": "sub",
+   "person": "person-1015",
+   "col": "json_ko",
+   "pathRe": "^\\.(biography|sections\\..+|characterProfile\\..+|openingTitles\\[\\]\\.basis|proseContacts\\[\\]\\.basis|relations\\..+\\.basis|fields\\..+)$",
+   "from": "정부 명부 필사 국장 백온과 협력",
+   "to": "명부 필사를 맡은 백온과 협력",
+   "expect": 3
+  }
+ ]
+}
